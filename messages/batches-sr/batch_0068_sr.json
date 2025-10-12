@@ -1,0 +1,773 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "eightofpentacles": {
+        "position4": {
+          "keywords": [
+            null,
+            "razvodnik",
+            "disciplina",
+            "učenje",
+            "uspeh"
+          ],
+          "context": "Vaš najbolji potencijal je postizanje majstorstva kroz praksu."
+        },
+        "position5": {
+          "upright": "Osam stanovnika je možda uključivalo marljivost u nedavnoj prošlosti, učeći novu veštinu ili napreduje prema majstori.",
+          "reversed": "Invertirano osam stanovnika, možda ste doživeli nevremennost, gubitak motivacije ili ponavljajući iste greške u nedavnoj prošlosti.",
+          "keywords": [
+            "studija",
+            "učenje",
+            "savladav",
+            "motivacija",
+            "veština"
+          ],
+          "context": "Vaša nedavna prošlost možda je obeležena marljivošću ili nepažnjom."
+        },
+        "position6": {
+          "upright": "Osam stanovnika, proces razvoja veština, disciplinovan rad i majstorstvo može doći do izražaja u bliskoj budućnosti.",
+          "reversed": "Otkriveno osam stanovnika može ukazivati na nevremenu, nedostatak motivacije ili ponavljajući iste greške u bliskoj budućnosti.",
+          "keywords": [
+            "studija",
+            "savladav",
+            "učenje",
+            "disciplina",
+            "rad"
+          ],
+          "context": "Vaša bliska budućnost će se oblikovati ravnopravnošću ili nepažnjom."
+        },
+        "position7": {
+          "upright": "Osam stanovnika, trenutno studiraš sa disciplinom, honovanjem svojih veština i savladavanje.",
+          "reversed": "Invertirano osam stanovnika, trenutno može biti nepropasnost, nedostatak motivacije ili tendencija da ponove iste greške.",
+          "keywords": [
+            "studija",
+            "savladav",
+            "disciplina",
+            "učenje",
+            "rad"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je marljivošću ili nedostatkom nege."
+        },
+        "position8": {
+          "upright": "Osam stanovnika, spoljni uticaji mogu ponuditi mogućnosti učenja, radnu disciplinu ili načine za poboljšanje veština.",
+          "reversed": "Invertirani osam stanovnika, spoljni uticaji mogu stvoriti nevoljnost, gubitak motivacije ili ponovljenih grešaka.",
+          "keywords": [
+            "studija",
+            "učenje",
+            "savladav",
+            "rad",
+            "disciplina"
+          ],
+          "context": "Spoljni uticaji mogu podstaći ili opuštati rad."
+        },
+        "position9": {
+          "upright": "Osam stanovnika može ukazivati na strah od neadekvatnog, pravljenje grešaka ili ne može da učini da savladate.",
+          "reversed": "Osetila osam stanovnika može ukazivati na nepažnju, gubitak motivacije ili strah od neuspeha.",
+          "keywords": [
+            "studija",
+            "greška",
+            "savladav",
+            "nedovoljnost",
+            "anksioznost"
+          ],
+          "context": "Vaš strahovi centar oko neuspeha ili ne možete da savladate."
+        }
+      },
+      "nineofpentacles": {
+        "position1": {
+          "upright": "Devet stanovnika može se usredsrediti na nezavisnost, samopouzdanje ili lično ispunjenje.",
+          "reversed": "Devet pentakova preokrećeno, strah od usamljenosti, zavisnosti ili osećaja neadekvatnosti može biti izvor problema.",
+          "keywords": [
+            "nezavisnost",
+            "poverenje",
+            "zadovoljstvo",
+            "samoefikasnost",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba za ličnim zadovoljstvom i nezavisnošću."
+        },
+        "position10": {
+          "upright": "Devet stanovnika, ishod događaja može biti nezavisnost, samopouzdanje i uživanje u izobilju.",
+          "reversed": "Invertirani devet stanovnika, ishod događaja može biti zavisnost, ekstravagantnost ili gubitak slobode.",
+          "keywords": [
+            "nezavisnost",
+            "poverenje",
+            "dosta",
+            "sloboda",
+            "zadovoljstvo"
+          ],
+          "context": "Rezultat može biti sloboda i obilje ili zavisnost."
+        },
+        "position2": {
+          "upright": "Devet stanovnika sugeriše da prepreka može biti strah od nezavisnosti, nedostatak samopouzdanja ili prevelike zavisnosti. Ne mogu da vas mogu slobodno biti slobodni.",
+          "reversed": "Devet pentakova preokrenuo je, strah od usamljenosti, finansijske zavisnosti ili nezadovoljstva može biti izvor prepreke.",
+          "keywords": [
+            "nezavisnost",
+            "poverenje",
+            "zadovoljstvo",
+            "zavisnost",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje zbog nedostatka nezavisnosti i nesigurnosti."
+        },
+        "position3": {
+          "upright": "Devet stanovnika može podsvesti biti prošlo iskustvo nezavisnosti, samopouzdanja ili stojeći na vašoj dva metra.",
+          "reversed": "Invertirani devet stanovnika, zavisnosti, strah od usamljenosti ili nezadovoljstva možda se u prošlosti rešilo u podsvesti u prošlosti.",
+          "keywords": [
+            "nezavisnost",
+            "poverenje",
+            "usamljenost",
+            "zadovoljstvo",
+            "podsvestan"
+          ],
+          "context": "Prošle iskustva nezavisnosti ili zavisnosti mogu uticati na današnje probleme."
+        },
+        "position4": {
+          "upright": "Devet stanovnika je da je vaš najbolji potencijal nezavisnost, znajući svoju vrednost i uživanje u plodovima svog vlastitog rada.",
+          "reversed": "Pretvoreno devet stanovnika, da otključate svoj potencijal, morate da prepustite strah od usamljenosti i ojačate samopouzdanje.",
+          "keywords": [
+            "nezavisnost",
+            "samopouzdanje",
+            "poverenje",
+            "uspeh",
+            "zadovoljstvo"
+          ],
+          "context": "Vaš najbolji potencijal je uživanje u plodovima sopstvenog rada sa samopouzdanjem."
+        },
+        "position5": {
+          "upright": "Devet pentakala, možda ste nedavno stekli nezavisnost, uživali u plodovima svog sopstvenog rada ili ojačali samopouzdanje.",
+          "reversed": "Okrećeno devet stanovnika, možda ste nedavno doživeli zavisnost, strah od usamljenosti ili prekomerne potrage za luksuzom.",
+          "keywords": [
+            "nezavisnost",
+            "poverenje",
+            "uspeh",
+            "zadovoljstvo",
+            "dosta"
+          ],
+          "context": "Vaša nedavna prošlost možda je oblikovana iskustvom nezavisnosti ili zavisnosti."
+        },
+        "position6": {
+          "upright": "Devet pentaka, nezavisnost, osećaj svoje samopotrebe i nagrađen za vaše napore vas čekaju u bliskoj budućnosti.",
+          "reversed": "Invertirani devet stanovnika može ukazivati na strah od usamljenosti, zavisnosti ili finansijskih viškova u bliskoj budućnosti.",
+          "keywords": [
+            "nezavisnost",
+            "poverenje",
+            "zadovoljstvo",
+            "uspeh",
+            "dosta"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati nezavisnošću ili zavisnošću."
+        },
+        "position7": {
+          "upright": "Devet stanovnika, trenutno ste u stanju nezavisnosti, samopouzdanja i energije da biste bili nagrađeni za svoje napore.",
+          "reversed": "Ukratko je devet pentakla, zavisnosti, strah od usamljenosti ili finansijskih viškova trenutno utjelo da vas trenutno utiče.",
+          "keywords": [
+            "nezavisnost",
+            "poverenje",
+            "zadovoljstvo",
+            "dosta",
+            "uspeh"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je nezavisnošću ili zavisnošću."
+        },
+        "position8": {
+          "upright": "Devet stanovnika može ojačati vašu nezavisnost od spoljnih uticaja i pružiti vam poverenje i finansijsko zadovoljstvo.",
+          "reversed": "Invertirani devet stanovnika, spoljni uticaji mogu donijeti usamljenost, zavisnosti ili tendenciju da se preuzme.",
+          "keywords": [
+            "poverenje",
+            "nezavisnost",
+            "dosta",
+            "zadovoljstvo",
+            "poverenje"
+          ],
+          "context": "Spoljni uticaji mogu ojačati ili oslabiti vašu nezavisnost."
+        },
+        "position9": {
+          "upright": "Devet pentakala, možete se plašiti da izgubite svoju nezavisnost, ograničavajući svoju slobodu ili sam sama.",
+          "reversed": "Devet obrnutih preokreta može ukazivati na anksioznost o tome da postane zavisan, gubitak samopouzdanja ili gubitka obilja.",
+          "keywords": [
+            "nezavisnost",
+            "poverenje",
+            "dosta",
+            "usamljenost",
+            "anksioznost"
+          ],
+          "context": "Vaš strahovski centar okolo gubite svoju nezavisnost ili biti sami."
+        }
+      },
+      "tenofpentacles": {
+        "position1": {
+          "upright": "Deset stanovnika može da se centrira na porodici, nasleđe, dugoročnu stabilnost ili trajan uspeh.",
+          "reversed": "Invertirani deset stanovnika, porodičnih problema, nesigurnost ili nestabilnost može biti izvor problema.",
+          "keywords": [
+            "stabilnost",
+            "porodica",
+            "baština",
+            "uspeh",
+            "pitanje"
+          ],
+          "context": "U srcu problema je želja za stalnom sigurnošću i porodičnom stabilnošću."
+        },
+        "position10": {
+          "upright": "Deset stanovnika može biti porodična stabilnost, dugoročni uspeh i trajna sigurnost kao rezultat događaja.",
+          "reversed": "Invertirani Deset stanovnika, ishod događaja može biti porodični nemiri, gubici ili neuspešne investicije.",
+          "keywords": [
+            "porodica",
+            "stabilnost",
+            "uspeh",
+            "uverenje",
+            "dugoročan"
+          ],
+          "context": "Rezultat može biti trajno uverenje ili nelagodnost."
+        },
+        "position2": {
+          "upright": "Deset stanovnika, prepreka bi mogla biti porodični problemi, nedostatak trajne bezbednosti ili finansijske nestabilnosti. Nedostatak dugoročne stabilnosti vas zadržava.",
+          "reversed": "Invertirani deset pentaka, borbi nasleđivanja, porodične sukobe ili neuspeh u uspostavljanju trajnog uspeha može biti izvor prepreke.",
+          "keywords": [
+            "porodica",
+            "stabilnost",
+            "Finansijska sigurnost",
+            "sukob",
+            "prepreka"
+          ],
+          "context": "Invalidnost nastaje iz porodične ili finansijske nestabilnosti."
+        },
+        "position3": {
+          "upright": "On Tılsım, bilinçaltında geçmişte ailevi değerler, miras veya uzun vadeli güvence arayışları olabilir.",
+          "reversed": "Invertirani deset stanovnika može biti podsvesno povezano sa sukobom porodice, finansijskim problemima ili neuspehom u postizanju trajanja uspeha.",
+          "keywords": [
+            "porodica",
+            "baština",
+            "stabilnost",
+            "Finansijska sigurnost",
+            "podsvestan"
+          ],
+          "context": "Porodična dinamika i potraga za sigurnost mogu uticati na današnje probleme."
+        },
+        "position4": {
+          "upright": "Deset stanovnika ima najbolji potencijal da se uspostavi trajna stabilnost, porodičnu sreću i dugoročnu sigurnost.",
+          "reversed": "Prekoračili deset stanovnika, da biste postigli svoj potencijal, morate napustiti kratkoročne interese i fokusirati se na trajne vrednosti.",
+          "keywords": [
+            "stabilnost",
+            "porodica",
+            "uverenje",
+            "baština",
+            "dosta"
+          ],
+          "context": "Vaš najbolji potencijal je izgradnja trajne stabilnosti i sigurnosti."
+        },
+        "position5": {
+          "upright": "Deset stanovnika, možda ste iskusili porodični mir, finansijsku stabilnost ili dugoročnu sigurnost u nedavnoj prošlosti.",
+          "reversed": "Obrnuto deset stanovnika, možda ste iskusili nemire porodice, inženjerijske probleme ili nemogućnost postizanja stalne stabilnosti u nedavnoj prošlosti.",
+          "keywords": [
+            "porodica",
+            "stabilnost",
+            "dosta",
+            "baština",
+            "uverenje"
+          ],
+          "context": "Vaša nedavna prošlost možda je obeležena trajnim stabilnošću ili nemirima."
+        },
+        "position6": {
+          "upright": "Deset stanovnika, porodičnih veza, stalna stabilnost i finansijska sigurnost biće na prvom planu u bliskoj budućnosti.",
+          "reversed": "Invertirani deset stanovnika, mogu postojati porodični problemi, trajna nestabilnost ili sporove nasledstva u bliskoj budućnosti.",
+          "keywords": [
+            "porodica",
+            "stabilnost",
+            "uverenje",
+            "dosta",
+            "baština"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati stabilnošću ili nemirima."
+        },
+        "position7": {
+          "upright": "Deset stanovnika, možda ćete uživati u porodičnim vezama, trajnom stabilnoj i finansijskoj bezbednosti u ovom trenutku.",
+          "reversed": "Uključen deset stanovnika, porodičnih problema, naslednih sporova ili nestabilnosti možda vas trenutno utječu.",
+          "keywords": [
+            "porodica",
+            "stabilnost",
+            "Finansijska sigurnost",
+            "dosta",
+            "obveznica"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je stabilnošću ili porodičnim poteškoćama."
+        },
+        "position8": {
+          "upright": "Deset stanovnika, spoljnih uticaja može vam pružiti porodičnu podršku, nasleđivanje ili trajnu stabilnost.",
+          "reversed": "Invertirani deset stanovnika, spoljni uticaji mogu stvoriti porodične nemire, nasledne sporove ili nestabilnost.",
+          "keywords": [
+            "porodica",
+            "stabilnost",
+            "baština",
+            "tradicija",
+            "dosta"
+          ],
+          "context": "Spoljni uticaji mogu napraviti ili prekinuti stabilnost."
+        },
+        "position9": {
+          "upright": "Deset stanovnika, možete se plašiti gubitka porodične podrške, problemima na nasljeđivanju ili dugoročne nestabilnosti.",
+          "reversed": "Deset stanovnika obrnuto može ukazivati na strah od nemira porodičnih nemira, gubitaka ili uništavanja dugoročnih nosača.",
+          "keywords": [
+            "porodica",
+            "stabilnost",
+            "baština",
+            "gubitak",
+            "anksioznost"
+          ],
+          "context": "Vaš strahovi centar za gubitak porodične podrške ili nestabilnosti."
+        }
+      },
+      "pageofpentacles": {
+        "position1": {
+          "upright": "Princ pentacla može biti u srcu problema, želja za učenjem, potragom za prilikom, ili novi početak.",
+          "reversed": "Ograničeni princ pentakla, nepažnji, gubitak motivacije ili prekršaja može biti izvor problema.",
+          "keywords": [
+            "učenje",
+            "prilika",
+            "početak",
+            "radoznalost",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba za učenjem i otkrivanjem novih stvari."
+        },
+        "position10": {
+          "upright": "Princ Pentacles može biti nova prilika, šansa za učenje i čvrst početak kao rezultat događaja.",
+          "reversed": "Prekoračeni princ pentacle može rezultirati nevoljkošću, gubitkom motivacije ili neuspeha kao rezultat događaja.",
+          "keywords": [
+            "učenje",
+            "prilika",
+            "početak",
+            "Finansijska sigurnost",
+            "motivacija"
+          ],
+          "context": "Ishod može biti prilika za učenje ili neuspeh."
+        },
+        "position2": {
+          "upright": "Princ Pentacles, prepreka može biti nepažnja, nespremnost za učenje ili nemogućnost da utjelovljuje njihove planove. Ne stavljajući teoriju u praksi otežava napredak.",
+          "reversed": "Preokrećeni princ pentakla, gubitak motivacije, pogrešnim ciljevima ili polu-gotovi projekti mogu biti izvor prepreke.",
+          "keywords": [
+            "učenje",
+            "pažnja",
+            "motivacija",
+            "cilj",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje bezbrižnost i izbegava preduzimanje konkretnih koraka."
+        },
+        "position3": {
+          "upright": "Princ Pentacles može biti podsvesna želja za učenjem iz prošlosti, da napravi planove ili da uđe u nove projekte.",
+          "reversed": "Invertirani princ pentakle, prošli nepažljivost, nedostatak motivacije ili pogrešnih ciljeva možda su se podmirili u podsvesti.",
+          "keywords": [
+            "učenje",
+            "plan",
+            "motivacija",
+            "cilj",
+            "podsvestan"
+          ],
+          "context": "Prošlo iskustvo u učenju ili planiranju mogu uticati na današnje probleme."
+        },
+        "position4": {
+          "upright": "Princ Pentacles, vaš najbolji potencijal je da budete otvoreni za učenje, potražite nove mogućnosti i strpljivo gradite svoje planove.",
+          "reversed": "Princ Pentacles je preokrenuo, otključao vaš potencijal, morate se držati podalje od nepažnje i nedovršenih projekata.",
+          "keywords": [
+            "učenje",
+            "plan",
+            "prilika",
+            "strpljenje",
+            "stabilnost"
+          ],
+          "context": "Vaš najbolji potencijal je da se novi počeci postanu željom da učite."
+        },
+        "position5": {
+          "upright": "Princ Pentacles, novo obrazovanje, prilika za posao ili proces planiranja možda je počeo u nedavnoj prošlosti.",
+          "reversed": "Princ Pentacles je preokrenuo, možda ste iskusili nepažnju, gubitak motivacije ili nedovršene projekte u nedavnoj prošlosti.",
+          "keywords": [
+            "učenje",
+            "plan",
+            "početak",
+            "prilika",
+            "motivacija"
+          ],
+          "context": "Vaša nedavna prošlost je možda oblikovana planiranjem ili nepažnjom."
+        },
+        "position6": {
+          "upright": "Princ Pentacles, u bliskoj budućnosti biće otvoren za učenje, istražujući nove mogućnosti ili implementirati svoje planove.",
+          "reversed": "Invertirani princ Talisman, gubitak motivacije, nepažnje ili nedovršene projekte mogu doći do izražaja u bliskoj budućnosti.",
+          "keywords": [
+            "učenje",
+            "prilika",
+            "plan",
+            "istraživanje",
+            "početak"
+          ],
+          "context": "Vaša bliža budućnost će biti oblikovana učenjem ili nepažnjom."
+        },
+        "position7": {
+          "upright": "Princ Pentacles, trenutno ste u energiji koja je otvorena za učenje, istraživanje mogućnosti i priprema se za sprovođenje svojih planova.",
+          "reversed": "Princ Pentacles je preokrenuo, gubitak motivacije, nepažnje, ili nedovršenih projekata možda vas trenutno utiču.",
+          "keywords": [
+            "učenje",
+            "prilika",
+            "plan",
+            "početak",
+            "otkriće"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je nedostatkom učenja ili motivacije."
+        },
+        "position8": {
+          "upright": "Princ Pentacles, spoljni uticaji mogu vam predstaviti nove mogućnosti učenja, projekata ili finansijskim počecima.",
+          "reversed": "Okolišteni princ Pentacles, spoljni uticaji mogu stvoriti nepažnju, gubitak motivacije ili sklonost odlaganju.",
+          "keywords": [
+            "učenje",
+            "početak",
+            "prilika",
+            "plan",
+            "otkriće"
+          ],
+          "context": "Spoljni uticaji mogu donijeti mogućnosti učenja ili odvratiti pažnju."
+        },
+        "position9": {
+          "upright": "Princ Pentacles-a, možda ćete se plašiti da ne možete iskoristiti mogućnosti, nedostajete šansu da naučite ili je neplanirano.",
+          "reversed": "Princ of Pentacles obrnut može ukazivati na gubitak motivacije, distrakcije ili straha od neuspeha.",
+          "keywords": [
+            "učenje",
+            "prilika",
+            "početak",
+            "plan",
+            "anksioznost"
+          ],
+          "context": "Vaš strahovi centar okolo nedostaje šansa za učenje ili neuspeh."
+        }
+      },
+      "knightofpentacles": {
+        "position1": {
+          "upright": "Vitez Pentacles, potreba za disciplinom, strpljenjem ili stalnim napretkom može biti u srcu problema.",
+          "reversed": "Vitez pentakala je obrnuta, lenjost, stagnacija ili nedostatak motivacije mogu biti izvor problema.",
+          "keywords": [
+            "stabilnost",
+            "strpljenje",
+            "disciplina",
+            "studija",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba da nastavite sa strpljenjem i disciplinom."
+        },
+        "position10": {
+          "upright": "Vitez Pentacles, ishod događaja može biti stalni napredak, sigurni koraci i ispunjenje odgovornosti.",
+          "reversed": "Vitez Pentacles-a obrnut, ishod događaja može biti stagnacija, lenjost ili zanemarivanje dužnosti.",
+          "keywords": [
+            "stabilnost",
+            "odgovornost",
+            "napredak",
+            "stabilnost",
+            "poverenje"
+          ],
+          "context": "Rezultat može biti napredak postojano ili ostati statički."
+        },
+        "position2": {
+          "upright": "Vitez Pentacles, prepreka može biti stagnacija, preterani oprez ili nedostatak motivacije. Previše polako otežava rešenje.",
+          "reversed": "Vitez pentakala je obrnuto, lenjost, nepažnja, ili nedostatak planiranja može biti izvor prepreke.",
+          "keywords": [
+            "stabilnost",
+            "paza",
+            "motivacija",
+            "plan",
+            "prepreka"
+          ],
+          "context": "Prepreka nastaje od stagnacije i lenjosti."
+        },
+        "position3": {
+          "upright": "Vitez Pentekla može podsvesti istoriju discipline, radu pacijenta ili preuzeti odgovornost.",
+          "reversed": "Vitez pentaklova obrnuto, lenjost, inercija ili nepažljivost u prošlosti, možda su se namislili u podsvesti.",
+          "keywords": [
+            "disciplina",
+            "odgovornost",
+            "strpljenje",
+            "stabilnost",
+            "podsvestan"
+          ],
+          "context": "Prošle iskustva discipline ili lenjosti mogu uticati na današnje probleme."
+        },
+        "position4": {
+          "upright": "Vitez Pentacles, vaš najbolji potencijal je da se uporno napreduje upornošću, strpljenjem i disciplinom.",
+          "reversed": "Vitez Pentacles-a obrnuo, morate izbegavati lenjost i prekomernu stagnaciju koja ometa vaš potencijal.",
+          "keywords": [
+            "stabilnost",
+            "strpljenje",
+            "rezolucija",
+            "disciplina",
+            "napredak"
+          ],
+          "context": "Vaš najbolji potencijal je da krenete napred sa strpljenjem i disciplinom."
+        },
+        "position5": {
+          "upright": "Vitez Pentacles-a, možda ste postigli stalni napredak u nedavnoj prošlosti kroz upornost, strpljenje i disciplinu.",
+          "reversed": "Vitez pentakala je obrnuo, možda ste iskusili stagnaciju, gubitak motivacije ili ekstremne sporosti u radu u nedavnoj prošlosti.",
+          "keywords": [
+            "strpljenje",
+            "rezolucija",
+            "stabilnost",
+            "razvodnik",
+            "disciplina"
+          ],
+          "context": "Vaša nedavna prošlost je možda bila obeležena istrajnim ili stasisom."
+        },
+        "position6": {
+          "upright": "Knight Pentacles-a, u bliskoj budućnosti, krećete se ka vašim ciljevima sa strpljenjem, disciplinom i odlučnošću.",
+          "reversed": "Vitez pentakala je preokrenut, može postojati stagnacija, lenjost ili prespora napredak u bliskoj budućnosti.",
+          "keywords": [
+            "strpljenje",
+            "stabilnost",
+            "studija",
+            "disciplina",
+            "rezolucija"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati disciplinom ili stazom."
+        },
+        "position7": {
+          "upright": "Vitez Pentacles, sada ste disciplinovani, strpljivi i uredno.",
+          "reversed": "Učitavanje viteza pentakala, lenjost, stagnacije ili sporog napretka može vas u to vreme izazvati.",
+          "keywords": [
+            "strpljenje",
+            "stabilnost",
+            "studija",
+            "disciplina",
+            "rezolucija"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je disciplinom ili stazom."
+        },
+        "position8": {
+          "upright": "Vitez Pentacles, spoljni uticaji mogu vas podstaći da budete disciplinovani, strpljivi i krenite napred sa doslednošću.",
+          "reversed": "Vraćanje viteza pentakala, spoljni uticaji mogu stvoriti stagnaciju, lenjost ili spor napredak.",
+          "keywords": [
+            "strpljenje",
+            "stabilnost",
+            "studija",
+            "disciplina",
+            "rezolucija"
+          ],
+          "context": "Spoljni uticaji mogu pružiti stabilnost ili vas gurnuti u lenjost."
+        },
+        "position9": {
+          "upright": "Vitez Pentacles, možete se bojati da se ne kreće naprijed, preostalo preostali ili vaš trud koji se troši.",
+          "reversed": "Vitez Pentacles-a može da ukaže na lenjost, nevoljkost ili strah da ne mogu da ispune zadatke.",
+          "keywords": [
+            "trud",
+            "stabilnost",
+            "odgovornost",
+            "stabilnost",
+            "anksioznost"
+          ],
+          "context": "Tvoj strahovski centar okolo ne može da krene napred ili potpune zadatke."
+        }
+      },
+      "queenofpentacles": {
+        "position1": {
+          "upright": "Kraljica pentakala može biti u srcu problema, sa ravnotežom, produktivnošću ili efikasnom upotrebom resursa.",
+          "reversed": "Kraljica Pentacles-a preokrenuta, neorganizacija, nedostatak samo-nege ili loše upravljanje resursima može biti izvor problema.",
+          "keywords": [
+            "ravnoteža",
+            "produktivnost",
+            "izvor",
+            "praktičnost",
+            "pitanje"
+          ],
+          "context": "U srcu problema je produktivnost i želja za postizanjem ravnoteže."
+        },
+        "position10": {
+          "upright": "Kraljica pentakala, ishod događaja može biti obilje, saosećajna podrška i finansijska sigurnost.",
+          "reversed": "Kraljica Pentacles-a preokrenuta, ishod događaja može biti nedostatak samo-nege, nesigurnosti ili prekomerne zavisnosti.",
+          "keywords": [
+            "dosta",
+            "saosećanje",
+            "sigurnost",
+            "podrška",
+            "finansijska snaga"
+          ],
+          "context": "Rezultat može biti obilje i sigurnost ili zavisnost."
+        },
+        "position2": {
+          "upright": "Kraljica Pentacla kaže da je prepreka mogla biti nedostatak samo-nege, preuzimajući preveliku odgovornost ili neorganizaciju. Zanemarivanje sebe zatvara put do rešenja.",
+          "reversed": "Invertirana kraljica pentakala, rasipanja, ravnodušnost ili loše upravljanje resursima može biti izvor prepreke.",
+          "keywords": [
+            "nega",
+            "odgovornost",
+            "izvor",
+            "neravnoteža",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje sa samozapuštanja i lošeg upravljanja resursa."
+        },
+        "position3": {
+          "upright": "Kraljica pentakala može podsvestiti prošlost iskustva o samopovredi, produktivnosti ili porodičnoj odgovornosti.",
+          "reversed": "Invertirana kraljica pentakala, prošli rasipnost, ravnodušnost ili loše upravljanje resursima mogu biti utisnute u podsvesti.",
+          "keywords": [
+            "nega",
+            "odgovornost",
+            "izvor",
+            "produktivnost",
+            "podsvestan"
+          ],
+          "context": "Prošla iskustva sa upravljanjem samo-nege ili resursima mogu oblikovati svoje trenutne probleme."
+        },
+        "position4": {
+          "upright": "Kraljica Pentacla je da se stvori vaš najbolji potencijal sa saosećanjem, upravljajući svojim resursima i podelite obilje sa ravnotežom.",
+          "reversed": "Invertirana kraljica pentakala, kako bi se postigla vaš potencijal, ne bi trebalo da zanemarite samo-negu i držite se dalje od rasipnosti.",
+          "keywords": [
+            "saosećanje",
+            "dosta",
+            "produktivnost",
+            "upravljanje resursima",
+            "ravnoteža"
+          ],
+          "context": "Vaš najbolji potencijal je da upravljate svojim resursima sa saosećanjem i podelite svoj obilje."
+        },
+        "position5": {
+          "upright": "Kraljica pentakala je mogla da se pokrene produktivnošću, saosećanje ili porodične odgovornosti u nedavnoj prošlosti.",
+          "reversed": "Ograničena kraljica Pentacla, možda ste doživeli rasipnost, nedostatak samo-nege ili poteškoća u upravljanju resursima u nedavnoj prošlosti.",
+          "keywords": [
+            "produktivnost",
+            "saosećanje",
+            "upravljanje resursima",
+            "porodica",
+            "odgovornost"
+          ],
+          "context": "Vaša nedavna prošlost je možda oblikovana nedostatkom produktivnosti ili nege."
+        },
+        "position6": {
+          "upright": "Kraljica pentakala, u bliskoj budućnosti će se voditi obiljem, saosećanje i energijom efikasnog upravljanja vašim resursima.",
+          "reversed": "Kraljica pentakova obrnuta može ukazivati na nedostatak samo-nege, rasipnosti ili neuravnotežene upotrebe resursa u bliskoj budućnosti.",
+          "keywords": [
+            "dosta",
+            "saosećanje",
+            "upravljanje resursima",
+            "ravnoteža",
+            "produktivnost"
+          ],
+          "context": "Vaša bliža budućnost će biti oblikovana obiljem ili ekstravagancijom."
+        },
+        "position7": {
+          "upright": "Kueen of Pentacles, trenutno ste u procesu obilja, saosećanje i efikasnog upravljanja vašim resursima.",
+          "reversed": "Ukrašena kraljica pentakla, ekstravagancija, nedostatak samo-nege ili neuravnotežene upotrebe resursa možda vas trenutno utiče na vas.",
+          "keywords": [
+            "dosta",
+            "saosećanje",
+            "upravljanje resursima",
+            "ravnoteža",
+            "produktivnost"
+          ],
+          "context": "Vaša trenutna situacija je oblikovana obiljem ili ekstravagancijom."
+        },
+        "position8": {
+          "upright": "Kraljica pentakala, spoljni uticaji mogu vam pružiti saosećanje, obilje i praktičnu podršku.",
+          "reversed": "Ograničena kraljica pentakala, spoljni uticaji mogu stvoriti nedostatak samo-nege, ekstravagancije ili prekomerne zavisnosti.",
+          "keywords": [
+            "saosećanje",
+            "dosta",
+            "praktična podrška",
+            "ravnoteža",
+            "izvor"
+          ],
+          "context": "Spoljni uticaji mogu donijeti obilje ili stvoriti neravnotežu."
+        },
+        "position9": {
+          "upright": "Kraljica Pentacles-a, možeš se bojati nedostatka podrške, finansijske nesigurnosti ili nemogućnosti ispunjavanja brige o odgovornostima.",
+          "reversed": "Kraljica obrnutog preokreta može ukazivati na nedostatak samo-nege, zavisnosti ili straha od ekstravagencija.",
+          "keywords": [
+            "sigurnost",
+            "podrška",
+            "nega",
+            "odgovornost",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi se fokusiraju na gubitak poverenja ili zavisnosti."
+        }
+      },
+      "kingofpentacles": {
+        "position1": {
+          "upright": "Kralj pentakla može biti u srcu problema sa pouzdanošću, liderskom ili finansijskom stabilnošću.",
+          "reversed": "Prekoračen kralj Pentekla, prevelika sredstva, ambiciozna ponašanja ili finansijska nestabilnost može biti izvor problema.",
+          "keywords": [
+            "rukovodstvo",
+            "stabilnost",
+            "uverenje",
+            "kontrola",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potraga za jakom vođstvom i uveravanjem."
+        },
+        "position10": {
+          "upright": "Kralj pentakla može imati veliki uspeh, autoritet i finansijsku sigurnost kao rezultat događaja.",
+          "reversed": "Invertirani kralj pentakla, ishod događaja može biti autoritarizam, prekomerna ambicija ili gubitak.",
+          "keywords": [
+            "uspeh",
+            "vlast",
+            "dosta",
+            "sigurnost",
+            "rukovodstvo"
+          ],
+          "context": "Rezultat može biti trajni uspeh ili pritisak autoriteta."
+        },
+        "position2": {
+          "upright": "Kralj pentakla, prepreka može biti preterana kontrola, ambicija ili zavisnost od finansijske sigurnosti. Boravak finansijski fokusiran sprečava duhovno rešenje.",
+          "reversed": "Prekoračen kralj pentakla, finansijske probleme, ugnjetavanje ili nezasižnost može biti izvor prepreke.",
+          "keywords": [
+            "kontrola",
+            "pohlepa",
+            "Finansijska sigurnost",
+            "nezasitljivost",
+            "prepreka"
+          ],
+          "context": "Prepreka se postavlja prepreka od finansijske probleme i prekomerne želje za kontrolom."
+        },
+        "position3": {
+          "upright": "Kralj pentaklama može podsvestiti prosveto iskustvo uspeha, finansijske sigurnosti ili rukovodstva.",
+          "reversed": "Invertirani kralj pentakala, ambicije, ugnjetavanja ili nezasižnosti možda je u prošlosti mogao da se podmiri u podsvijesti.",
+          "keywords": [
+            "uspeh",
+            "rukovodstvo",
+            "Finansijska sigurnost",
+            "pohlepa",
+            "podsvestan"
+          ],
+          "context": "Prošle uspehe ili nezadovoljstvo mogu uticati na današnje probleme."
+        },
+        "position4": {
+          "upright": "Kralj Pentacles, vaš najbolji potencijal je uspostavljanje sigurnog naloga, uspeh trajno i voditi druge sa vašom mudrošću.",
+          "reversed": "Obrnuti kralj stanovnika, kako bi se oslobodio vašeg potencijala, ne bi se trebalo pretjerano baviti finansijskim problemima i opustiti svoju potrebu za kontrolom.",
+          "keywords": [
+            "uspeh",
+            "poverenje",
+            "dosta",
+            "uputstvo",
+            "stabilnost"
+          ],
+          "context": "Vaš najbolji potencijal je uspostavljanje trajne narudžbe sa poverenjem i obiljem."
+        },
+        "position5": {
+          "upright": "Kralj pentaklama, možda ste pokazali finansijski uspeh, snažnu organizaciju ili liderstvo u nedavnoj prošlosti.",
+          "reversed": "Ograničeni kraljem Pentekla, možda ste iskusili ambiciju, autoritarizam ili nezadovoljstvo u nedavnoj prošlosti.",
+          "keywords": [
+            "uspeh",
+            "narediti",
+            "dosta",
+            "rukovodstvo",
+            "pohlepa"
+          ],
+          "context": "Vaša nedavna prošlost možda je oblikovana iskustvom uspeha ili nezadovoljstva."
+        },
+        "position6": {
+          "upright": "Kralj Talismana, možete uspostaviti snažan nalog, postići uspeh i davati samopouzdanje onima oko vas u bliskoj budućnosti.",
+          "reversed": "Invertirani kralj pentakla, ambicije, ugnjetavanja ili nedostatka stabilnosti može doći do izražaja u bliskoj budućnosti.",
+          "keywords": [
+            "uspeh",
+            "stabilnost",
+            "poverenje",
+            "rukovodstvo",
+            "dosta"
+          ]
+        }
+      }
+    }
+  }
+}

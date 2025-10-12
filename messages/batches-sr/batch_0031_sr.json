@@ -1,0 +1,776 @@
+{
+  "money": {
+    "meanings": {
+      "aceofswords": {
+        "position3": {
+          "keywords": [
+            "oštrina",
+            "odluka",
+            "um",
+            "novac",
+            "real"
+          ],
+          "context": "Oštri um i ispravno znanje su važni u upotrebi novca."
+        },
+        "position4": {
+          "upright": "Jasnoća i nove ideje o finansijskim pitanjima možda su u prošlosti došle do izražaja. Progrevan je sa direktnim odlukama.",
+          "reversed": "Ace mačeva obrnuto ukazuje na neizvesne i neodlučne finansijske stavove.",
+          "keywords": [
+            "oštrina",
+            "odluka",
+            "um",
+            "novac",
+            "početak"
+          ],
+          "context": "U prošlosti je postojala tendencija da se o jasnim odlukama o pitanjima novca."
+        },
+        "position5": {
+          "upright": "Ace mačeva predstavlja jasnoću u finansijskim odgovornostima, odlučivanju i pridržavanju istine. Biti direktno čini obaveze pravednijom.",
+          "reversed": "ACE of Mačevi obrnuti ukazuje na nerazumevanje, zbrku ili prikrivanje finansijskih odgovornosti.",
+          "keywords": [
+            "oštrina",
+            "odluka",
+            "pravda",
+            "istina",
+            "odgovornost"
+          ],
+          "context": "U finansijskim odgovornostima, tačnost i jasnoća ili dvosmislenost dolaze do izražaja."
+        },
+        "position6": {
+          "upright": "Ace mačeva ukazuje na jasnoću, ispravne odluke i oštar početak u novim finansijskim planovima. Postupanje sa činjenicama plaća dividende.",
+          "reversed": "Ace mačeva obrnuto, ukazuje na zbrku u finansijskim planovima, dezinformacijama ili riziku u ishiljenosti odluka.",
+          "keywords": [
+            "oštrina",
+            "istina",
+            "početak",
+            "odluka",
+            "real"
+          ],
+          "context": "Jasno razmišljanje i tačne informacije su važne u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Ace mačeva ukazuje da će jasnoća u finansijskim planovima, nove ideje i oštre odluke donijeti uspeh u budućnosti. Jasnoća uma otkriva mogućnosti.",
+          "reversed": "ACE of Mačevi obrnuti ukazuje da će zbrku, komunikacioni problemi ili loše odluke otežati finansijski napredak.",
+          "keywords": [
+            "oštrina",
+            "odluka",
+            "ideja",
+            "početak",
+            "istina"
+          ],
+          "context": "Jasne odluke ili zbrka će odrediti buduće finansijske planove."
+        },
+        "position8": {
+          "upright": "ACE mačeva ukazuje da mentalna jasnoća, oštar analizu i zdravo veštine donošenja odluka ojačavaju sposobnosti donošenja novca.",
+          "reversed": "Ace mačeva preokrenuti ukazuje da se mogućnosti mogu propustiti zbog zbrke, pogrešno komuniciranja ili prekomerne analize.",
+          "keywords": [
+            "oštrina",
+            "odluka",
+            "analiza",
+            "um",
+            "oštrina"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa mentalnom jasnoćom ili zbrkom."
+        }
+      },
+      "twoofswords": {
+        "position1": {
+          "upright": "Dva mača ukazuje na anksioznost da se ne može odlučiti i zaglaviti između opcija. Možda ćete se brinuti o ishodu vašeg finansijskog izbora.",
+          "reversed": "Otkrivena dva mačeva ukazuje da se odluke izbegavaju stvaraju veću anksioznost. Možda ćete se bojati da će odlaganja pogoršati finansijske probleme.",
+          "keywords": [
+            "nestabilnost",
+            "izbor",
+            "anksioznost",
+            "ravnoteža",
+            "suspenzija"
+          ],
+          "context": "Anksioznost se pojavljuje da ne mogu donositi odluke i odlaganju."
+        },
+        "position2": {
+          "upright": "Njih dvoje mačeva ukazuju na to da tražite sigurnost kroz ravnotežu i pažljivi izbori. Donošenje odluka daje mir uma.",
+          "reversed": "Dvojica obrane mačeva ukazuju na neodlučnost i izbegavanje anksioznosti. Želja za bezbednošću slabi u odloženim izborima.",
+          "keywords": [
+            "ravnoteža",
+            "odluka",
+            "dilema",
+            "sigurnost",
+            "glasati"
+          ],
+          "context": "Nalazite sigurnost sa uravnoteženim izborima."
+        },
+        "position3": {
+          "upright": "Dvoje mačeva ukazuju na tendenciju da bude neodlučna ili izbegava izbor prilikom trošenja novca. Traži se ravnoteža.",
+          "reversed": "Dva obrnuta mačeva ukazuju na to da je odložene finansijske odluke mogu dovesti do krize.",
+          "keywords": [
+            "nestabilnost",
+            "ravnoteža",
+            "dilema",
+            "odluka",
+            "novac"
+          ],
+          "context": "Postoji rizik od dileme i odlaganja odluka u korištenju novca."
+        },
+        "position4": {
+          "upright": "Dileme i nemogućnost odlučivanja o finansijskim pitanjima možda su u prošlosti bili istaknuti.",
+          "reversed": "Ograničena dva mačeva nanijela je zanemarene finansijske probleme da rastu.",
+          "keywords": [
+            "dilema",
+            "nestabilnost",
+            "oklevanje",
+            "novac",
+            "neravnoteža"
+          ],
+          "context": "U prošlosti je neodlučnost prevladala u odnosu prema novcu."
+        },
+        "position5": {
+          "upright": "Njih dvoje mačeva ukazuju na potrebu ravnoteže i nepristrasnosti u odlučivanju o finansijskim odgovornostima. Možda postoji dilema.",
+          "reversed": "Dva obrnuta mačeva ukazuju na izbegavanje sukoba ili ignorisanja neslaganja u vezi sa finansijskim odgovornostima.",
+          "keywords": [
+            "dilema",
+            "odluka",
+            "ravnoteža",
+            "konfrontacija",
+            "odgovornost"
+          ],
+          "context": "Može se poštovati poteškoće u donošenju odluka ili izbegavanje finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Dvoje mačeva ukazuju na dilemu, neodlučnost i dve opcije koje je potrebno uravnotežiti u finansijskim planovima.",
+          "reversed": "Preokrećena dva mačeva znači izbegavanje donošenja odluka ili ne prepoznavanje slepih mesta u finansijskim planovima.",
+          "keywords": [
+            "nestabilnost",
+            "ravnoteža",
+            "dilema",
+            "glasati",
+            "rešenje"
+          ],
+          "context": "Neodlučnost ili pojašnjenje biće efikasno u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Njih dvoje mačeva ukazuju na neodlučnost u finansijskim planovima u budućnosti, zaglavljen između opcija i pokušaja da ostane neutralan.",
+          "reversed": "Dva obrnuta mačeva ukazuju na to da će se odluke koje su odlagali dugo vremena doći do izražaja i vreme je da se suoči sa činjenicama.",
+          "keywords": [
+            "nestabilnost",
+            "dilema",
+            "ravnoteža",
+            "konfrontacija",
+            "glasati"
+          ],
+          "context": "Neodlučnost ili sukob će doći do zaruka u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Njih dvoje mačeva ukazuje da je uravnoteženo razmišljanje i nepristrasno donošenje odluka poboljšalo sposobnosti donošenja novca.",
+          "reversed": "Dva obrnuta mačeva ukazuju na to da se mogućnosti mogu propustiti zbog nemogućnosti da se odluče, neodlučnost ili ignorišu istinu.",
+          "keywords": [
+            "ravnoteža",
+            "odluka",
+            "dilema",
+            "nepristrasnost",
+            "oštrina"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa utvrđivanjem ili neodlučnošću."
+        }
+      },
+      "threeofswords": {
+        "position1": {
+          "upright": "Tri mačeva ukazuje na zabrinutost da će finansijski gubici prouzrokovati emocionalno ogorčenje. Možda ćete se plašiti da će novac oštetiti vaše odnose.",
+          "reversed": "Preokrećena tri mačeva ukazuje na anksioznost zbog toga što nisu u stanju da zaceli od prošlih gubitaka. Ponovno iskustvo finansijske bolove stvara nemire.",
+          "keywords": [
+            "gubitak",
+            "razočaranje",
+            "anksioznost",
+            "ugao",
+            "finansijska povreda"
+          ],
+          "context": "Anksioznost proizilazi iz bola finansijskih gubitaka."
+        },
+        "position2": {
+          "upright": "Tri mačeva ukazuju na to da tražite sigurnost merenjem srca. Učenje iz teškoća daje snagu.",
+          "reversed": "Preokrećena tri mačeva ukazuje na anksioznost prepuštanja starih boli. Želja za bezbednošću je zasjenjena držanjem rana.",
+          "keywords": [
+            "ugao",
+            "probijanje",
+            "sigurnost",
+            "zarastanje",
+            "istina"
+          ],
+          "context": "Izgradite sigurnost isceljivanjem prošlosti boli."
+        },
+        "position3": {
+          "upright": "Tri mačeva ukazuje na uticaj razočaranja ili gubitaka prilikom trošenja novca. Bolno iskustvo postaje lekcija.",
+          "reversed": "Preokrećena tri mačeva ukazuje na postupak oporavka i popravke nakon finansijskih gubitaka.",
+          "keywords": [
+            "gubitak",
+            "razočaranje",
+            "novac",
+            "ugao",
+            "lekcija"
+          ],
+          "context": "Prošle rane mogu biti efikasne u upotrebi novca."
+        },
+        "position4": {
+          "upright": "Možda su u prošlosti bili finansijski gubici ili razočarenja.",
+          "reversed": "Preokrećena tri mačeva ukazuje na oporavak i isceljenje od finansijskih gubitaka.",
+          "keywords": [
+            "gubitak",
+            "razočaranje",
+            "novac",
+            "starost",
+            "oporavak"
+          ],
+          "context": "U prošlosti je bilo razočarenja sa novcem."
+        },
+        "position5": {
+          "upright": "Tri mačeva mogu ukazivati na ogorčenje, razočaranje ili nesuglasice zbog finansijskih odgovornosti. Akcije mogu da napregnu srce.",
+          "reversed": "Pretvorena tri mačeva ukazuje da je započeo proces isceljenja u finansijskim odgovornostima, pomirenjem i popravku zajedničkih tereta.",
+          "keywords": [
+            "razočaranje",
+            "sukob",
+            "poboljšanje",
+            "pomirljivost",
+            "odgovornost"
+          ],
+          "context": "Procesi ogorčenosti ili popravke dolaze na prednji plan u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Tri mačeva znači razočaranje, gubitak ili bolnu odluku u finansijskim planovima.",
+          "reversed": "Pretvorena tri mačeva ukazuje na poboljšanje finansijskih planova, oporavka i nadoknade za prošle gubitke.",
+          "keywords": [
+            "razočaranje",
+            "gubitak",
+            "odluka",
+            "poboljšanje",
+            "oporavak"
+          ],
+          "context": "Razočaranje ili oporavak se mogu pojaviti u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Tri mačeva ukazuju da je pauza finansijskih planova, gubitka ili bolna odluka može doći u naruka u budućnosti.",
+          "reversed": "Preokrećena tri mačeva ukazuje na proces isceljenja, zarastanje finansijskih rana i formiranje svetinijih planova.",
+          "keywords": [
+            "gubitak",
+            "odluka",
+            "ugao",
+            "poboljšanje",
+            "real"
+          ],
+          "context": "Proces gubitka ili oporavka imaće uticaj na buduće finansijske planove."
+        },
+        "position8": {
+          "upright": "Tri mačeva ukazuje da su lekcije naučene od razočarenja i poteškoća ojačale finansijske veštine.",
+          "reversed": "Preokrenuta tri mačeva ukazuje da se mogu izgubiti prilike zbog zaglavljenih u prošlosti boli ili emocionalne rane koje utiču na svoje odluke.",
+          "keywords": [
+            "lekcija",
+            "razočaranje",
+            "iskustvo",
+            "poteškoće",
+            "odluka"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa učenjem iz izazova ili se zaglave u prošlosti."
+        }
+      },
+      "fourofswords": {
+        "position1": {
+          "upright": "Četiri mačeva ukazuje na anksioznost ne dozvoljavajući odmor i predah. Možda se plašite da se ne možete opustiti zbog finansijskih problema.",
+          "reversed": "Preokrećena četiri mačeva otkriva anksioznost izgaranja i stalnog stresa. Ne mogu se opustiti u finansijskim pitanjima izaziva nemiri.",
+          "keywords": [
+            "odmor",
+            "izgorevanje",
+            "anksioznost",
+            "um",
+            "stres"
+          ],
+          "context": "Anksioznost se pojavljuje da se ne može odmoriti i biti pod stalnim stresom."
+        },
+        "position2": {
+          "upright": "Četiri mačeva ukazuje na traženje sigurnosti kroz odmor i oporavak. Tišina donosi mir.",
+          "reversed": "Pretvorena četvorka mačeva ukazuje na anksioznost zbog toga što nije u stanju da nađe mir i izgaranje. Želja za sigurnost može patiti od nedostatka predaha.",
+          "keywords": [
+            "odmor",
+            "oporavak",
+            "sigurnost",
+            "tišina",
+            "regeneracija"
+          ],
+          "context": "Nalazite sigurnost u mirovanju i obnovu."
+        },
+        "position3": {
+          "upright": "Četiri mačeva ukazuje na potrebu da se odmori u upotrebi novca ili zaustavljanja potrošnje. Vreme je da uštedite novac.",
+          "reversed": "Preokrećena četiri mačeva ukazuje na propuštene mogućnosti zbog neaktivnosti.",
+          "keywords": [
+            "odmor",
+            "čekati",
+            "štedljiv",
+            "prekršiti",
+            "novac"
+          ],
+          "context": "Kada koristite novac, pauze i ušteda dolaze u prvi plan."
+        },
+        "position4": {
+          "upright": "Možda je bilo perioda odmora i čekanja u vezi sa finansijskim pitanjima u prošlosti.",
+          "reversed": "Preokrećena četvorka mačeva ukazuje da su mogućnosti propuštene zbog odlaganja i pasivnosti.",
+          "keywords": [
+            "odmor",
+            "suspenzija",
+            "čekati",
+            "novac",
+            "pasivnost"
+          ],
+          "context": "U prošlosti su odložene finansijske odluke."
+        },
+        "position5": {
+          "upright": "Četiri mačeva ukazuju na potrebu da se odmaraju, preuzmu pauzu ili odložite finansijske odgovornosti. Prekomerno opterećenje mogu prouzrokovati umor.",
+          "reversed": "Preokrećena četiri mačeva ukazuje na odbijanje prenosa od finansijskih odgovornosti ili ostatak pod stalnim stresom.",
+          "keywords": [
+            "odmor",
+            "planiranje",
+            "opteretiti",
+            "stres",
+            "odgovornost"
+          ],
+          "context": "Uzimanje pauze ili umora određuje finansijske odgovornosti."
+        },
+        "position6": {
+          "upright": "Četiri mačeva ukazuje na strategiranje odmarajućim, razmišljajući i preduzimanje pauze u finansijskim planovima.",
+          "reversed": "Preokrećena četiri mačeva ukazuje na izgaranje, nemogućnost da se dobiju dovoljno odmora ili pogrešne strategije u finansijskim planovima.",
+          "keywords": [
+            "odmor",
+            "strategija",
+            "prekršiti",
+            "priprema",
+            "ravnoteža"
+          ],
+          "context": "Odmor i odraz će biti važno u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Četiri mačeva ukazuju da ćete ući u period odmora, oporavka i strateškog razmišljanja u finansijskim planovima u budućnosti.",
+          "reversed": "Preokrećena četiri mačeva ukazuje da će prevelika umor, neaktivnost ili odlaganje potrebnih pauza predstavljati rizik.",
+          "keywords": [
+            "odmor",
+            "strategija",
+            "oporavak",
+            "planiranje",
+            "ravnoteža"
+          ],
+          "context": "Strateški pauzni ili umor doći će do zaruka u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Četiri mačeva ukazuje da se veštine pravljenja novca poboljšavaju kroz odmor, oporavak i mentalno obnovu.",
+          "reversed": "Preokrećena četiri mačeva ukazuje na izgaranje, prekomerno učvršćivanje i gubitak finansijske sposobnosti zbog nepotrebnih pauza.",
+          "keywords": [
+            "odmor",
+            "regeneracija",
+            "spokojstvo",
+            "ravnoteža",
+            "oporavak"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa obnovom ili izgaranjem."
+        }
+      },
+      "fiveofswords": {
+        "position1": {
+          "upright": "Petorica mačeva ukazuje na takmičenje i strah od gubitka. Možete se brinuti da ostale steknu gornju ruku u materijalnom svetu.",
+          "reversed": "Otkriveni pet mačeva ukazuje da argumenti i nesporazumi uzrokuju finansijsku anksioznost. Brinete se o sukobu zbog resursa.",
+          "keywords": [
+            "rivalstvo",
+            "ne gubi se",
+            "anksioznost",
+            "sukob",
+            "ego"
+          ],
+          "context": "Anksioznost proizilazi iz konkurencije i sukoba u finansijskim pitanjima."
+        },
+        "position2": {
+          "upright": "Petorica mačeva pokazuje da neko traži sigurnost ostaje dalje od sukoba. Mir daje samopouzdanje umesto pravednosti.",
+          "reversed": "Petorica modra preokrenuta ukazuje na strah od gubitka i anksioznosti nepopravljivog sukoba. Želja za bezbednošću se gubi u ego bitkama.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "sigurnost",
+            "kompromis",
+            "istina"
+          ],
+          "context": "Otkrićete sigurnost povlačenjem iz sukoba i kompromisa."
+        },
+        "position3": {
+          "upright": "Petorica mačeva ukazuje na konkurenciju ili sukob interesa prilikom trošenja novca. Borba za pobedu dolazi do izražaja.",
+          "reversed": "Otkriveni pet mačeva ukazuje na rešavanje sporova ili prihvatanje gubitaka u finansijskim pitanjima.",
+          "keywords": [
+            "sukob",
+            "rivalstvo",
+            "novac",
+            "izgubiti",
+            "borba"
+          ],
+          "context": "Diskusija i borba mogu doći do izražaja u pogledu upotrebe novca."
+        },
+        "position4": {
+          "upright": "Sukob i konkurencija u finansijskim pitanjima možda su u prošlosti bili istaknuti.",
+          "reversed": "Preokrećeno pet mačeva pokazuje lekcije naučene iz prošlih finansijskih diskusija.",
+          "keywords": [
+            "sukob",
+            "rivalstvo",
+            "novac",
+            "borba",
+            "lekcija"
+          ],
+          "context": "Novčana pitanja su izazvala sukob u prošlosti."
+        },
+        "position5": {
+          "upright": "Petorica mačeva ukazuje na probleme sa finansijskim odgovornostima zbog sukoba, želja da bude u pravu ili sebičnost.",
+          "reversed": "Preokrećeno pet mačeva ukazuje na želju za mirom, kompromisom i popravkom ogorčenja u pogledu finansijskih odgovornosti.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "kompromis",
+            "legitimitet",
+            "odgovornost"
+          ],
+          "context": "Sukob ili kompromis dolazi do izražaja finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Petorica mača ukazuje na neslaganje u finansijskim planovima, sukobi ega ili gubitak dobiti.",
+          "reversed": "Reversed Pet mačeva označava pomirenje, kompromise i rešavanje sukoba u finansijskim planovima.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "izvor",
+            "kompromis",
+            "ravnoteža"
+          ],
+          "context": "Možda postoji proces neslaganja ili rezolucije u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Petorica mačeva ukazuje na to da se takmičenje, sukobi interesa ili nepotrebnih argumenata mogu pojaviti u finansijskim pitanjima u budućnosti.",
+          "reversed": "Preokrećeno pet mačeva ukazuje na šansu za popravak, pomirenje i povratak izgubljenog poverenja u finansijske odnose.",
+          "keywords": [
+            "rivalstvo",
+            "sukob",
+            "ego",
+            "popraviti",
+            "kompromis"
+          ],
+          "context": "Sukob ili popravak pojavit će se u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Petorica mačeva ukazuje da mogućnost učenja od takmičenja i prave strateške poteze može povećati finansijski dobitak.",
+          "reversed": "Otkriveni pet mačeva ukazuje da njihove veštine mogu biti oslabljene prekomernom takmičenjem, ambicijom ili sukobom interesa.",
+          "keywords": [
+            "rivalstvo",
+            "strategija",
+            "sukob",
+            "lekcija",
+            "ravnoteža"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa strategijom ili ambicijom."
+        }
+      },
+      "sixofswords": {
+        "position1": {
+          "upright": "Šest mačeva ukazuje na anksioznost da ne mogu da pronađu izlaz iz finansijskih teškoća. Zabrinjavajući se da ne možete doći do sigurnog utočišta, možete da vas umorite.",
+          "reversed": "Prekoračenje šest mačeva otkriva tjeskobu da se ne može razbiti od prošlih problema. Možda se plašite stalno boravka u istom ciklusu.",
+          "keywords": [
+            "prelaz",
+            "izlaz",
+            "anksioznost",
+            "putovanje",
+            "zaglaviti"
+          ],
+          "context": "Anksioznost se pojavljuje da ne mogu da pronađu izlaz iz finansijskih teškoća."
+        },
+        "position2": {
+          "upright": "Šest mačeva pokazuje da neko traži sigurnost odlikom od teških situacija. Tranzicija i isceljenje donose mir.",
+          "reversed": "Pretvoreni šest mačeva ukazuje na tjeskobu da se ne može razbiti od prošlosti. Želja za bezbednošću oslabite se starim teretama.",
+          "keywords": [
+            "prelaz",
+            "poboljšanje",
+            "sigurnost",
+            "putovanje",
+            "spokojstvo"
+          ],
+          "context": "Sigurnost pronalazite puštanjem prošlosti i prelazak u novo."
+        },
+        "position3": {
+          "upright": "Šest mačeva ukazuje na odmak od problema u korištenju novca ili prelaska na novo finansijsko planiranje.",
+          "reversed": "Okolište šest mačeva ukazuje da je prošlo finansijske navike teško ostaviti.",
+          "keywords": [
+            "prelaz",
+            "plan",
+            "pobjeći",
+            "novac",
+            "regeneracija"
+          ],
+          "context": "U upotrebi novca postoji proces tranzicije i isceljenja."
+        },
+        "position4": {
+          "upright": "Možda je bilo perioda oporavka i olakšanje od teških finansijskih perioda u prošlosti.",
+          "reversed": "Prekoračenje šest mačeva ukazuje na odlaganja u oporavku od finansijskih nevolja u prošlosti.",
+          "keywords": [
+            "prelaz",
+            "opuštanje",
+            "poteškoće",
+            "novac",
+            "napredak"
+          ],
+          "context": "U prošlosti su doživljeni procesi fiskalne tranzicije."
+        },
+        "position5": {
+          "upright": "Šest mačeva obeležava prelazak na smireniji period finansijskih odgovornosti. Postoji želja da se skloni od teškoća.",
+          "reversed": "Okolišteno šest mačeva može značiti da se ne može odseliti od finansijskih odgovornosti i nastavlja da nosi teret u prošlosti.",
+          "keywords": [
+            "prelaz",
+            "odmicali se",
+            "mir",
+            "prošlo opterećenje",
+            "odgovornost"
+          ],
+          "context": "Tranzicija ili posvećenost prošlosti je na čelu u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Šest mačeva ukazuje na mirnost u finansijskim planovima, odseli se od teškoća i siguran prolaz.",
+          "reversed": "Uokrećena šest mačeva ukazuje na rizik da se u prošlosti zaglave ili ne može da napreduje u finansijskim planovima.",
+          "keywords": [
+            "prelaz",
+            "spokojstvo",
+            "poverenje",
+            "putovanje",
+            "rešenje"
+          ],
+          "context": "Tranzicija i smirenost ističu se na novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Šest mačeva ukazuje na smirenost u finansijskim planovima, odseljavanje od rizičnih situacija i prelaska u sigurne vode u budućnosti.",
+          "reversed": "Uokrećena šest mačeva ukazuje na rizik da se pridržava prošlih finansijskih problema i pronalaženje je teško napredovati.",
+          "keywords": [
+            "prelaz",
+            "spokojstvo",
+            "odmicali se",
+            "ruta",
+            "poverenje"
+          ],
+          "context": "Siguran prolaz ili zaglavljen će doći do zaruka u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Šest mačeva ukazuje da sposobnost da se odseli od problema i prema smirenim uslovima povećava finansijski potencijal.",
+          "reversed": "Ukinuta šest mačeva ukazuje da se mogu propustiti prilike za razvoj zbog zaglavljenih u prošlim problemima.",
+          "keywords": [
+            "prelaz",
+            "poboljšanje",
+            "napredak",
+            "ravnoteža",
+            "promeniti"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa napretkom ili ostalom u prošlosti."
+        }
+      },
+      "sevenofswords": {
+        "position1": {
+          "upright": "Sedam mačeva ukazuje na anksioznost o prevarenim i krađu resursa. Možda ćete se bojati poveriti svoju finansijsku sigurnost drugima.",
+          "reversed": "Preokrećeno sedam mačeva ukazuje na zabrinutost za samoobmalu i pogrešnu strategiju. Brinete se da niste iskreni u svojim finansijskim odlukama.",
+          "keywords": [
+            "varati",
+            "anksioznost",
+            "strategija",
+            "ne zavaravaj se",
+            "nesigurnost"
+          ],
+          "context": "Anksioznost proizilazi da se prevari u finansijskim pitanjima ili biraju pogrešnu strategiju."
+        },
+        "position2": {
+          "upright": "Sedam mačeva ukazuje da tražite bezbednost sa strategijom i negu. Smart Planing pruža mir uma.",
+          "reversed": "Preokrećeno sedam mačeva ukazuje na anksioznost o izdaji ili obmani. Želja za bezbednošću oslabljena je nedostatkom iskrenosti.",
+          "keywords": [
+            "strategija",
+            "plan",
+            "sigurnost",
+            "iskrenost",
+            "um"
+          ],
+          "context": "Nalazite sigurnost sa pametnim planiranjem i iskrenošću."
+        },
+        "position3": {
+          "upright": "Sedam mačeva ukazuje na tajnu potrošnju ili strategiju u finansijskim pitanjima. Možda postoji nedostatak transparentnosti.",
+          "reversed": "Preokrećeno sedam mačeva ukazuje na otkrivanje finansijskih tajni ili važnost poštenja.",
+          "keywords": [
+            "sigurnost",
+            "strategija",
+            "varati",
+            "novac",
+            "rizikovati"
+          ],
+          "context": "Strategija i privatnost mogu biti efikasni u upotrebi novca."
+        },
+        "position4": {
+          "upright": "Možda je bilo tajnih ili skrivenih sporazuma o finansijskim pitanjima u prošlosti.",
+          "reversed": "Uokrećeno sedam mačeva ukazuje na potragu za iskrenošću u finansijskim pitanjima.",
+          "keywords": [
+            "sigurnost",
+            "varati",
+            "novac",
+            "iskrenost",
+            "strategija"
+          ],
+          "context": "U prošlosti su tajnost i strategija došla do zaruka u finansijskim pitanjima."
+        },
+        "position5": {
+          "upright": "Sedam mačeva može pokazati tendenciju ka tajnosti, strategiji ili utaji finansijskih odgovornosti.",
+          "reversed": "Preokrećeno sedam mačeva ukazuje na povratak iskrenosti u finansijskim odgovornostima, otkrivenjem skrivenih istina ili proces odgovornosti.",
+          "keywords": [
+            "sigurnost",
+            "strategija",
+            "izbegavanje",
+            "iskrenost",
+            "odgovornost"
+          ],
+          "context": "Prikrivanje ili otvorenost je presudan u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Sedam mačeva ukazuje na napredak u finansijskim planovima sa strategijom, oprezom i nevidljivim planovima.",
+          "reversed": "Okrećeno sedam mačeva ukazuje na obmanu, poluistine ili otkrivenje skrivenih pitanja u finansijskim planovima.",
+          "keywords": [
+            "strategija",
+            "sigurnost",
+            "taktika",
+            "real",
+            "otkrivanje"
+          ],
+          "context": "Strategija ili tajnost će biti presudni u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Sedam mačeva ukazuje na strateški napredak, tajne projekte ili pametne korake koje treba preduzeti u finansijskim planovima u budućnosti.",
+          "reversed": "Preokrećeno sedam mačeva ukazuje na rizik od nepoštenosti, izloženosti finansijskih tajni ili samoobmanju.",
+          "keywords": [
+            "strategija",
+            "sigurnost",
+            "plan",
+            "obaveštajna služba",
+            "rizikovati"
+          ],
+          "context": "Test strategije ili iskrenosti će biti istaknuto u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Sedam mačeva ukazuje da je inteligencija, strategija i sposobnost da iskoriste mogućnosti u nevidljivim načinima pružaju finansijsku prednost.",
+          "reversed": "Preokrećeno sedam mačeva ukazuje da vaše veštine mogu biti oslabljene nepoštenim metodama ili samo-obmanom.",
+          "keywords": [
+            "strategija",
+            "obaveštajna služba",
+            "prilika",
+            "sigurnost",
+            "pažnja"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa strategijom ili iskrenošću."
+        }
+      },
+      "eightofswords": {
+        "position1": {
+          "upright": "Osam mačeva ukazuje na bespomoćnost i zategnutost anksioznost. Možda ćete se plašiti da vas finansijski problemi neće osloboditi.",
+          "reversed": "Osetila osam mačeva otkriva anksioznost još uvek zarobljene uprkos želje da se oslobodi. Percepcija nedostatka rešenja čini vas nelagodnim.",
+          "keywords": [
+            "zaglaviti",
+            "očajavati",
+            "anksioznost",
+            "sloboda",
+            "zamka materijala"
+          ],
+          "context": "Anksioznost proizilazi iz finansijskih problema koji vas ostavljaju bespomoćne."
+        },
+        "position2": {
+          "upright": "Osam mačeva ukazuje da se neko traži bezbednost prevazilazeći mentalne granice. Smaljenje verovanja daje mir.",
+          "reversed": "Okolište osam mačeva ukazuje na anksioznost da ne mogu da postigne slobodu. Želja za sigurnost je sužavana ograničenim uverenjima.",
+          "keywords": [
+            "sloboda",
+            "granica",
+            "sigurnost",
+            "strah",
+            "verovanje"
+          ],
+          "context": "Nalazite sigurnost prekidajući mentalne lance."
+        },
+        "position3": {
+          "upright": "Osam mačeva ukazuje na zategnutost u korištenju novca i nemogućnosti da se slobodno kreću.",
+          "reversed": "Otkriveno osam mačeva ukazuje na slobodu ili oslobađanje od finansijskih ograničenja.",
+          "keywords": [
+            "zaglaviti",
+            "Ograničenje",
+            "novac",
+            "sloboda",
+            "prepreka"
+          ],
+          "context": "Osjećaj ograničenja je dominantan u upotrebi novca."
+        },
+        "position4": {
+          "upright": "Možda ste se osećali ograničenim ili bespomoćnim u vezi sa novcem u prošlosti.",
+          "reversed": "Otkriveno osam mačeva ukazuje na napore da izbegnu finansijske poteškoće.",
+          "keywords": [
+            "Ograničenje",
+            "očajavati",
+            "novac",
+            "oslobođenje",
+            "prepreke"
+          ],
+          "context": "U prošlosti je došlo do finansijske krivice."
+        },
+        "position5": {
+          "upright": "Osam mačeva ukazuje na bespomoćnost finansijskih odgovornosti, osjećajući se ograničenom ili ograničenom prostoru za delovanje.",
+          "reversed": "Osvećeno osam mačeva ukazuje da ulazite u proces oslobađanja od finansijskih odgovornosti, oslobodite se prepreka ili pronalaženje rešenja.",
+          "keywords": [
+            "očajavati",
+            "ograničenje",
+            "oslobođenje",
+            "prepreka",
+            "odgovornost"
+          ],
+          "context": "Bespomoćnost ili učitelj oslobađanja dolazi do zaruka u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Osam mačeva ukazuje na osećaj mentalnih ograničenja, strahova i neaktivnosti u finansijskim planovima.",
+          "reversed": "Oslanje osam mačeva ukazuje na oslobađanje u finansijskim planovima, prevazilaženjem ograničenja i sticanjem nove vizije.",
+          "keywords": [
+            "ograničenje",
+            "strah",
+            "sloboda",
+            "vizija",
+            "odluka"
+          ],
+          "context": "Mentalno ograničenje ili oslobađanje je na snazi u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Osam mačeva ukazuje na osećaj ograničenja u finansijskim planovima u budućnosti, prepreku sopstvenim uverenjima i percepcijom da nema izlaza.",
+          "reversed": "Osetila osam mačeva pokazuje proces probijanja bez granica, oslobađanja i pronalaska novih finansijskih rešenja.",
+          "keywords": [
+            "ograničenje",
+            "strah",
+            "sloboda",
+            "prepreke",
+            "verovanje"
+          ],
+          "context": "Ograničenje ili oslobađanje će doći do zaruka u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Osam mačeva ukazuje da mentalna ograničenja i strahovi ograničavaju svoje sposobnosti. Oslobođenje je potrebno da se potencijalni otkrije.",
+          "reversed": "Otkriveni osam mačeva ukazuje da se vaše veštine mogu poboljšati slomom mentalnih lanaca i povećavajući samopouzdanje.",
+          "keywords": [
+            "Ograničenje",
+            "oslobođenje",
+            "strah",
+            "um",
+            "potencijal"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa predajom strahovima ili oslobađanju."
+        }
+      },
+      "nineofswords": {
+        "position1": {
+          "upright": "Devet mačeva ukazuje na besane noći i intenzivna anksioznost. Možda ćete se plašiti da će vam finansijski stres stalno zaokupljati um.",
+          "reversed": "Invertirani devet mačeva ukazuje na strah da se ne može rešiti strepnje i izaći iz noćnog mora. Možda imate poteškoće sa mentalnim pritiskom finansijskog tereta.",
+          "keywords": [
+            "nesanica",
+            "stres",
+            "anksioznost",
+            "anksioznost"
+          ]
+        }
+      }
+    }
+  }
+}

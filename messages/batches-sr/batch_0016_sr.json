@@ -1,0 +1,804 @@
+{
+  "marriage": {
+    "meanings": {
+      "thehangedman": {
+        "position10": {
+          "keywords": [
+            null,
+            null,
+            null,
+            null,
+            "vizija"
+          ],
+          "context": "Brak će biti moguć iz druge perspektive."
+        },
+        "position2": {
+          "upright": "Dok čekate, promenite svoju perspektivu. Predaja vam donosi novu svest.",
+          "reversed": "Prekomerno čekanje ili zagušenje čini proces težak. Budite fleksibilni.",
+          "keywords": [
+            "perspektivan",
+            "predaja",
+            "svest",
+            "čekati"
+          ],
+          "context": "Korisno je videti to iz različitih uglova dok čekate. Predaja donosi mir."
+        },
+        "position3": {
+          "upright": "Obučeni čovek ukazuje na žrtvu i čeka u finansijskom deljenju. Stanje mogu se uspostaviti sa strpljenjem.",
+          "reversed": "Okrušen čovek naopako simbolizuje nevoljni žrtvu ili opstrukciju. Napredak se može zaustaviti u deljenju.",
+          "keywords": [
+            "žrtvovati",
+            "čekanje",
+            "ravnoteža",
+            "blokiranost"
+          ],
+          "context": "U deljenju postoji strpljenje i žrtve. Ali previše može prouzrokovati zaglavljivanje."
+        },
+        "position4": {
+          "upright": "Obučeni čovek pokazuje da su u procesu lepljenja i nove perspektive potrebne u procesu lepljenja. Bond koja sazreva tokom vremena postaje jači.",
+          "reversed": "Invertirani obješen čovek, nevoljnost ili psihologija žrtve mogu biti efikasni u želji da se obavežu. Poželjno je da bijeg može da se poželjuje umesto žrtvovanja.",
+          "keywords": [
+            "čekanje",
+            "mišljenje",
+            "predaja",
+            "žrtvovati"
+          ],
+          "context": "Pričvršćivanje sazreva vremenom i razumevanjem."
+        },
+        "position5": {
+          "upright": "Promena perspektive i pronalaženje značenja u čekanju su slične. Čak i ako ste zaglavili, razumećete jedni druge.",
+          "reversed": "Narativa žrtva / navika za odlaganja može raditi drugačije za vas. Neradov žrtva poremeti sklad.",
+          "keywords": [
+            "perspektivan",
+            "predaja",
+            "žrtvovati",
+            "čekanje",
+            "značenje"
+          ],
+          "context": "Perspektivna fleksibilnost je uobičajena. Podesite odlaganju svesno."
+        },
+        "position6": {
+          "upright": "Obučeni čovek kaže da prihvatanje zahteva promenu perspektive i čekanja pacijenta. Viđenje porodičnog sveta kroz njihove oči čine mostove trajne.",
+          "reversed": "Podteglom implikacija muškarca koji se obješena \"suspenzija\" i neodlučnost može sporo prihvatanje. Umesto pripovijesti žrtve, male dobrovoljne žrtve rastu poverenje.",
+          "keywords": [
+            "perspektivan",
+            "strpljenje",
+            "predaja",
+            "empatija",
+            "most"
+          ],
+          "context": "Proces koji se omekšava vremenom i empatijom. Dobrovoljna fleksibilnost ubrzava prihvatanje."
+        },
+        "position7": {
+          "upright": "Obučeni čovek kaže da će se sastanak doći kada steknete drugačiju perspektivu tokom suspendovanog perioda. Zaustavljanje planova i usporavanje ritma stvara neočekivani susret.",
+          "reversed": "Okrušeni muškarac naopako objašnjava da se odlagati i neodlučnost mogu zatvoriti prilika. Kada žrtva spusti svoju priču i uzima mikro korak, staze u krstu.",
+          "keywords": [
+            "čekanje",
+            "perspektivan",
+            "predaja",
+            "nazvati"
+          ],
+          "context": "Upoznate se u trenutku usporavanja. Promena perspektive otvara vrata. Dugotrajno odlaganje promaši priliku."
+        },
+        "position8": {
+          "upright": "Obučeni čovek pokazuje da se harmonija može postići pokušavajući da razumeju različite stanovište. Empatija gradi mostove u komunikaciji.",
+          "reversed": "Okrušeni muškarac naopako ukazuje da će mentalitet žrtve ili tvrdoglavost biti teško slagati. Promjena perspektive olakšava adaptaciju.",
+          "keywords": [
+            "perspektivan",
+            "empatija",
+            "razlika",
+            "predaja"
+          ],
+          "context": "Empatija osigurava harmoniju; Tvrdoglavost sprečava ugovor."
+        },
+        "position9": {
+          "upright": "Obučeni čovek, vaš pogodan partner je neko ko može da se žrtvuje i otvori se za različite stanovište. Njegova fleksibilnost povećava prilagodljivost.",
+          "reversed": "Muškarac naopako, pasivan, svestan žrtve, ili osoba koja je nepropusna za promenu nije pogodna za vas.",
+          "keywords": [
+            "žrtvovati",
+            "fleksibilnost",
+            "mišljenje",
+            "raport"
+          ],
+          "context": "Idealan partner je onaj koji pruža ravnotežu sa fleksibilnom perspektivom."
+        }
+      },
+      "death": {
+        "position1": {
+          "upright": "U vašem braku biće završetka i transformacije. Zaključak; Može biti obnavljanje i novi početak.",
+          "reversed": "Otpornost na promene ili neriješena prošlost može komplikovati ishod braka. Napredak se može odložiti.",
+          "keywords": [
+            "transformacija",
+            "završiti",
+            "regeneracija",
+            "početak"
+          ],
+          "context": "Zaključak; transformacija i novo rođenje. Ali otpornost može ometati napredak."
+        },
+        "position10": {
+          "upright": "Smrt označava kraj ere i novog početka, a udruži se na put za brak.",
+          "reversed": "Ukrasana smrt, držeći se prošlosti može ometati brak.",
+          "keywords": [
+            "transformacija",
+            "završiti",
+            "regeneracija",
+            "početak",
+            "promeniti"
+          ],
+          "context": "Brak će se održati nakon transformacije."
+        },
+        "position2": {
+          "upright": "Dok čekate, pustite stare priloge i navike. Podmlađivanje vas priprema za pravog partnera.",
+          "reversed": "Ostatak zaglavljen u prošlosti čini proces težak. Dozvolite promene.",
+          "keywords": [
+            "transformacija",
+            "završiti",
+            "regeneracija",
+            "izdanje"
+          ],
+          "context": "Korisno je pustiti prošlost dok čekate. Ovo vas priprema za novo."
+        },
+        "position3": {
+          "upright": "Smrt ukazuje da će se star naređenje u finansijskom delivanju završiti i pojaviti novi sistem. Promjena je neizbežna.",
+          "reversed": "Ukrasana smrt ukazuje na otpor promenama u finansijskim pitanjima ili preostalim zaglavljenim u starim navikama.",
+          "keywords": [
+            "promeniti",
+            "regeneracija",
+            "otpornost",
+            "transformacija"
+          ],
+          "context": "Vreme je za transformaciju u deljenju. Otpornost otežava adaptaciju."
+        },
+        "position4": {
+          "upright": "Smrt pokazuje da je veza moguća prepuštanjem starih navika i pravljenje svežeg početka. Konverzija olakšava odluku da da.",
+          "reversed": "Obrnuta smrt može biti nemogućnost razbijanja starih veza ili otpora da se promeni želja da se povežete. To otežava uspostavljanje nove veze.",
+          "keywords": [
+            "transformacija",
+            "odlazak",
+            "regeneracija",
+            "početak"
+          ],
+          "context": "Pričvršćivanje je ojačano puštanjem starog i prihvata novog."
+        },
+        "position5": {
+          "upright": "Slična hrabrost u puštanju i transformaciji. Možete baciti stare školjke i pozvati nove zajedno.",
+          "reversed": "Vaš nivo otpornosti na promene može biti drugačiji. Ako se zatvaranje ne postigne, zajedničko tlo će se suziti.",
+          "keywords": [
+            "transformacija",
+            "završiti",
+            "regeneracija",
+            "izdanje",
+            "prag"
+          ],
+          "context": "Partnerstvo u miru sa transformacijom. Ako se naiđe na otpor, ritual je koristan."
+        },
+        "position6": {
+          "upright": "Smrt ukazuje na prelazak praga u odnosu sa porodicom i otvaranje nove stranice prepuštajući se starim predrasudama. Zdrava transformacija prihvata prihvatanje verodostojnije.",
+          "reversed": "Obrnuta smrt opisuje kako se pridržavati prošlih obrazaca može odložiti prihvatanje. Mekani zbogom i jasne granice stvaraju prostor za novo da se rodi.",
+          "keywords": [
+            "transformacija",
+            "završiti",
+            "ponovno rođenje",
+            "prag",
+            "izdanje"
+          ],
+          "context": "Ako se stare presude oproštaju, postupak će se ubrzati. Transformacija donosi trajno prihvatanje."
+        },
+        "position7": {
+          "upright": "Smrt kaže da se sastanak nakon snažnog zatvaranja i transformacije. Kada završite stari ciklus, vidite jedni druge u svežem početnom području.",
+          "reversed": "Reverzna smrt objašnjava da se držeći staro kašnjenje novog susreta. Kada počastite oproštaj, staze se prirodno spajaju.",
+          "keywords": [
+            "završiti",
+            "transformacija",
+            "ponovno rođenje",
+            "izdanje"
+          ],
+          "context": "Upoznate se nakon zatvaranja. Transformacija otvara prostor. Otpornost produžava proces."
+        },
+        "position8": {
+          "upright": "Smrt pokazuje da se možete prilagoditi puštanjem starih obrazaca komunikacije i uspostavljanje novih. Transformacija jača sporazum.",
+          "reversed": "Reverzna smrt kaže da će se otporno promjena otežavati komunikaciju. Puštanje starog donošenja harmonije.",
+          "keywords": [
+            "transformacija",
+            "regeneracija",
+            "izdanje",
+            "komunikacija"
+          ],
+          "context": "Prepuštanje starih jačaći sporazum; Otpor narušava harmoniju."
+        },
+        "position9": {
+          "upright": "Smrt, vaš pogodan partner je neko ko je otvoren za transformaciju, koji pušta stare i obuhvata novo. Moć obnove dodaje vitalnost prema vezi.",
+          "reversed": "Obrnuti smrt, neko ko je zaglavljen u prošlosti i odolijeva promeni nije u redu za vas.",
+          "keywords": [
+            "transformacija",
+            "regeneracija",
+            "završiti",
+            "početak"
+          ],
+          "context": "Idealan partner je neko ko se ne boji transformacije."
+        }
+      },
+      "temperance": {
+        "position1": {
+          "upright": "Vaš brak će biti izgrađen na ravnoteži, harmoniji i umerenosti. Zaključak; To može biti mirna i pacijentna veza.",
+          "reversed": "Viškovi ili nestrpljenje mogu komplicirati ishod braka. Harmonija se može izgubiti.",
+          "keywords": [
+            "ravnoteža",
+            "raport",
+            "strpljenje",
+            "temperatura"
+          ],
+          "context": "Zaključak; Meren i uravnotežen brak. Ali odlazak u krajnje može biti problem."
+        },
+        "position10": {
+          "upright": "Pokazuje da je brak moguć sa ravnotežom, strpljenjem i harmonijom.",
+          "reversed": "Preokrećena ravnoteža, viškovi ili disharmonija mogu oslabiti mogućnost braka.",
+          "keywords": [
+            "ravnoteža",
+            "raport",
+            "strpljenje",
+            "protok",
+            "adaptacija"
+          ],
+          "context": "Brak će biti osnovan sa strpljenjem i harmonijom."
+        },
+        "position2": {
+          "upright": "Pronađite svoj balans, budite umereni. Strpljenje i harmonija će vas ojačati dok čekate.",
+          "reversed": "Viškovi ili neravnoteža otežavaju proces. Izaberite srednji put.",
+          "keywords": [
+            "ravnoteža",
+            "strpljenje",
+            "raport",
+            "temperatura"
+          ],
+          "context": "Korisno je biti skladno i mereno dok čekate. To vas čini mirnim."
+        },
+        "position3": {
+          "upright": "Bilans donosi umjerenost i harmoniju u finansijskom deljenju. Ima moć da kombinuje resurse za opšte dobro.",
+          "reversed": "Reversed Balance ukazuje na viške ili disharmonija u finansijskim pitanjima. Kada se ravnoteža ne utvrdi, pojavljuju se problemi.",
+          "keywords": [
+            "ravnoteža",
+            "merenje",
+            "raport",
+            "deljenje"
+          ],
+          "context": "Harmonija i umerenost su snažne u deljenju. Višak uzrokuje probleme."
+        },
+        "position4": {
+          "upright": "Ravnoteža ukazuje da će se veza uspostaviti sa harmonijom i strpljenjem. Dok stranke daju jedni druge prostora i sastaju se na zajedničkom terenu, veza postaje jača.",
+          "reversed": "Invertirana ravnoteža, krajnosti i disharmonija u procesu priloga mogu stvoriti probleme. Jedna od strana može imati poteškoće u pronalaženju ravnoteže.",
+          "keywords": [
+            "ravnoteža",
+            "raport",
+            "strpljenje",
+            "u srednjem stanju"
+          ],
+          "context": "Priloge dobija snagu strpljenje i harmoniju."
+        },
+        "position5": {
+          "upright": "Voliš metar, sinteza i srednja zemlja. Doziranje je vaša kolektivna obaveštajna služba.",
+          "reversed": "Ako se vaša tendencija ljuljate na krajnosti promene, smeša će biti poremećena. Nestrpljenje uništava harmoniju.",
+          "keywords": [
+            "ravnoteža",
+            "sinteza",
+            "merenje",
+            "strpljenje",
+            "raport"
+          ],
+          "context": "Srednji osnov je uobičajena vrednost. Tempo mora biti kalibriran zajedno."
+        },
+        "position6": {
+          "upright": "Kaže da u porodici možete da stvorite harmoniju u porodici sa vašim ravnotežom, izmerenom i posredovanjem. Nježno mešanje stilova bez mešanja vas pozicionira kao \"konektor\".",
+          "reversed": "Obrnuti ravnoteža, ekstremni stavovi i ishitli pritisak da se približi mogu da poremete harmoniju. Srednji osnov i fer količina kontakta gradi poverenje korak po korak.",
+          "keywords": [
+            "raport",
+            "merenje",
+            "strpljenje",
+            "sinteza",
+            "konsenzus"
+          ],
+          "context": "Nježno kalibracione pasmine prihvatanje. Odaberite doslednost zbog užurbanih poteza."
+        },
+        "position7": {
+          "upright": "Ravnoteža kaže da će se sastanak pojaviti u okruženju u kojem se dva svetska mešavina u harmoniji. Međusobni prijatelj, mešoviti projekat ili zarađeni prostori za isceljivanje / zdravlje dovešće vas zajedno.",
+          "reversed": "Reverzna ravnoteža ukazuje da višak ili nespojiv tempo može prisiliti zbližavanje. Srednji put i strpljenje sazrevaju susret.",
+          "keywords": [
+            "raport",
+            "u srednjem stanju",
+            "strpljenje",
+            "smeša"
+          ],
+          "context": "U mešovitoj oblasti, staze se presijecaju. Srednja staza raste obveznica. Ekstremizam poremeti postupak."
+        },
+        "position8": {
+          "upright": "Ravnoteža ukazuje da će harmonična i merena komunikacija olakšati razumevanje. Srednji put daje samopouzdanje.",
+          "reversed": "Obrnuti balans ukazuje da se prepuštanje krajnosti može da poremeti komunikaciju. Umjeravanje osigurava harmoniju.",
+          "keywords": [
+            "ravnoteža",
+            "merenje",
+            "raport",
+            "u srednjem stanju"
+          ],
+          "context": "Umereni jezik donosi harmoniju; Ekstremizam otežava dogovor."
+        },
+        "position9": {
+          "upright": "Ravnoteža, vaš pogodan partner se meri, strpljiv i skladan. Biti u stanju da nađe srednji tlo daje samopouzdanje.",
+          "reversed": "Invertirana ravnoteža, osoba koja ide u ekstremima je nestrpljiva ili nepažnjativna nije pogodna za vas.",
+          "keywords": [
+            "ravnoteža",
+            "strpljenje",
+            "raport",
+            "merenje"
+          ],
+          "context": "Idealan supružnik je taj koji može pronaći srednji tlo sa harmonijom i strpljenjem."
+        }
+      },
+      "thedevil": {
+        "position1": {
+          "upright": "Jaka strast i posvećenost će doći do izražaja u vašem braku. Zaključak; To može biti duboko, ali ponekad restriktivno udruženje.",
+          "reversed": "Kršenje lanaca zavisnosti donijet će oslobađanje kao rezultat braka. Zaključak; To može biti zdravija veza.",
+          "keywords": [
+            "strast",
+            "lojalnost",
+            "zavisnost",
+            "oslobođenje"
+          ],
+          "context": "Zaključak; Strastvena i intenzivna veza. Ali područje slobode mora biti zaštićeno."
+        },
+        "position10": {
+          "upright": "Sotona označava da se odnosi na osnovu zavisnosti ili jake strasti mogu ući na brak.",
+          "reversed": "Sa preokretom demonom, slobodom od zavisnosti i oslobađanja, mogućnost povećanja braka.",
+          "keywords": [
+            "zavisnost",
+            "strast",
+            "oslobođenje",
+            "obveznica",
+            "senka"
+          ],
+          "context": "Postoji mogućnost braka; To postaje zdravo kroz slobodne izbore."
+        },
+        "position2": {
+          "upright": "Biti bez zavisnosti i prekomernih strasti. Ojačajte svoju slobodnu volju dok čekate.",
+          "reversed": "Osetljivi osećaji ili ropstvo otežavaju proces. Sećate se sopstvene moći.",
+          "keywords": [
+            "sloboda",
+            "zavisnost",
+            "senka",
+            "strast"
+          ],
+          "context": "Važno je biti slobodan dok čekate. Ovo vas priprema za zdravo vezivanje."
+        },
+        "position3": {
+          "upright": "Sotona označava zavisnost ili odnose interesovanja za finansijsku deljenje. Resursi mogu biti sredstvo za kontrolu.",
+          "reversed": "Reversed Đavo pokazuje slobodu od finansijskih zavisnosti. Zarobljeništvo resursa može završiti.",
+          "keywords": [
+            "zavisnost",
+            "kamate",
+            "sloboda",
+            "kontrola"
+          ],
+          "context": "Postoji rizik od samo-interesovanja i zavisnosti u deljenju. Granice su neophodne za slobodu."
+        },
+        "position4": {
+          "upright": "Đavo može ukazivati na to da se želja za pričvršćivanjem podstiče strašću, zavisnosti ili jakom atrakcijom. Međutim, ako se uspostave zdrave granice, veza će biti trajna.",
+          "reversed": "Ograničena sotona, ograničenja slobode i zavisnosti mogu prouzrokovati probleme u prilogu. Jedna od stranaka možda želi da izbegne ovaj pritisak.",
+          "keywords": [
+            "strast",
+            "zavisnost",
+            "povući",
+            "granica"
+          ],
+          "context": "Zdrava vezanost je moguća sa slobodom i graničnom svešću."
+        },
+        "position5": {
+          "upright": "Jaka sličnost u strasti i privlačnosti. Ako se diskutuju granice, snaga je uravnotežena ljubavlju.",
+          "reversed": "Očnici ljubomore / zavisnosti mogu drugačije raditi. Nivo sukoba sa senkom određuje harmoniju.",
+          "keywords": [
+            "strast",
+            "senka",
+            "granica",
+            "povući",
+            "sloboda"
+          ],
+          "context": "Visoko gravitaciono zajedničko područje. Granice i transparentnost su obavezni."
+        },
+        "position6": {
+          "upright": "Sotona označava da teme ljubomore, kontrole ili zavisnosti mogu da oblaku percepciju porodice. Poštovanje granica i transparentnih sporazuma smiruje zabrinutost.",
+          "reversed": "Reversed Demon ukazuje da se prepreke prihvataju mogu rešiti sa namerom oslobađanja od nezdrave dinamike. Mali \"Ne\" ne stvara veliko poverenje.",
+          "keywords": [
+            "senka",
+            "granica",
+            "kontrola",
+            "oslobođenje",
+            "transparentnost"
+          ],
+          "context": "Ime pokreću, pojasnite granice. Kako senka postaje lakša, prihvatanje se povećava."
+        },
+        "position7": {
+          "upright": "Sotona vam kaže da se sastanete u okruženju u kojem postoji intenzivna atrakcija i privlačnost. Strast može biti velika; Granice i svest čine Bond zdravu.",
+          "reversed": "Reversed Đavo nam govori da će nam se oslobađati od toksičnih ciklusa, pravi susret će naći prostor. Izlazak iz zavisnosti poziva čisti sastanak.",
+          "keywords": [
+            "strast",
+            "povući",
+            "granica",
+            "senka"
+          ],
+          "context": "Upoznate se gde je privlačnost snažna. Svesne granice su obaveza. Oslobađanje pročišćava prostor."
+        },
+        "position8": {
+          "upright": "Seitan, iletisimde bagımlılık veia manipulasiona dikkat edilmesi gerektigini soiler. Otvorene granice donose harmoniju.",
+          "reversed": "Okrećeni vrag pokazuje da možete razbiti lance i pošteno komunicirati. Besplatni izraz olakšava sporazum.",
+          "keywords": [
+            "zavisnost",
+            "granica",
+            "manipulacija",
+            "sloboda"
+          ],
+          "context": "Otvorene granice ojačavaju harmoniju; Igre razbijaju Bond."
+        },
+        "position9": {
+          "upright": "Sotona, vaš pogodan partner je neko ko ima jake strasti, stvara atrakciju, ali počastite slobodnu volju. Bond je hranjen strašću.",
+          "reversed": "Preokrećeni demon, zavisni, ljubomorni, manipulativni ili sloboda koja ograničava osobu nije pogodna za vas.",
+          "keywords": [
+            "strast",
+            "povući",
+            "sloboda",
+            "ravnoteža"
+          ],
+          "context": "Idealan partner je neko ko može uravnotežiti strast i slobodu."
+        }
+      },
+      "thetower": {
+        "position1": {
+          "upright": "Vaš brak će biti oblikovan nagnutim promenama i svesti. Zaključak; To može biti uništavanje starih fondacija i uspostavljanje novih.",
+          "reversed": "Odložene krize mogu izneti ishod bračne traumatike. Neizvesnosti mogu dalje rasti.",
+          "keywords": [
+            "rušenje",
+            "svest",
+            "rekonstrukcija",
+            "kriza"
+          ],
+          "context": "Zaključak; Transformacija koja uništava staro i čini prostor za novo. Ali krize mogu rasti ako su odloženi."
+        },
+        "position10": {
+          "upright": "Toranj ukazuje da možete ući u put braka sa naglim dešavanjima i radikalnim promenama.",
+          "reversed": "U obrnutom toranj, odložene krize ili strahovi mogu otežati brak.",
+          "keywords": [
+            "rušenje",
+            "promeniti",
+            "kriza",
+            "ponovno rođenje",
+            "real"
+          ],
+          "context": "Postoji mogućnost braka; Dolazi nakon radikalne promene."
+        },
+        "position2": {
+          "upright": "Dok čekate, uništite pogrešne temelje. Shakes Pripremite vas za jači meč.",
+          "reversed": "Ne suočavaju se sa činjenicama otežava proces. Ne odgađajte rušenje.",
+          "keywords": [
+            "rušenje",
+            "istina",
+            "rekonstrukcija",
+            "svest"
+          ],
+          "context": "Korisno je pustiti greške tokom čekanja. Ovo vas priprema za pravu osnovu."
+        },
+        "position3": {
+          "upright": "Kula ukazuje na nagli krizu ili promene finansijske divizije. Nebezbedne fondacije mogu se srušiti.",
+          "reversed": "Invertirani kula pokazuje da se krize odlože ili skrivaju. Privremena rešenja mogu dovesti do trajnih problema.",
+          "keywords": [
+            "kriza",
+            "promeniti",
+            "rušenje",
+            "osnova"
+          ],
+          "context": "Možda postoje krize u deljenju. Čvrsta fondacija je obavezna."
+        },
+        "position4": {
+          "upright": "Toranj ukazuje da može postojati iznenadna konfrontacija ili prekid u procesu lepljenja. Ovo uništenje stvara priliku da formira jaču vezu.",
+          "reversed": "Invertirani toranj može biti bekstvo od naglih kriza u prilogu ili odloženim ispadima. Ako stranke ne razgovaraju otvoreno, veza slabi.",
+          "keywords": [
+            "kriza",
+            "real",
+            "rušenje",
+            "restrukturiranje"
+          ],
+          "context": "Prilog je ojačan obnovom nakon krize."
+        },
+        "position5": {
+          "upright": "Vaša hrabrost da se suoči sa istinom je slična; Kriza vas pročišćava. Volja za obnovu je uobičajena.",
+          "reversed": "Vaše tendencije za odlaganje zemljotresa mogu biti drugačija. Površinski popravak slabi prikladno.",
+          "keywords": [
+            "istina",
+            "rušenje",
+            "prečišćavanje",
+            "struktura",
+            "ponovo instalacija"
+          ],
+          "context": "Lojalnost istini je uobičajena. Ne odložite, popravite ga."
+        },
+        "position6": {
+          "upright": "Toranj kaže da šokantni događaj ili oštar trenutak istine mogu da se potaknu percepciju porodice. Međutim, ovo uništavanje može pretvoriti u priliku da uspostavi iskrenija i čvrsta tlo.",
+          "reversed": "Invertirana kula objašnjava da odložene eksplozije povećavaju osnovnu napetost. Deljenje istine pravovremenog i merenog načina pretvara krizu u poverenje.",
+          "keywords": [
+            "kriza",
+            "istina",
+            "rušenje",
+            "rekonstrukcija",
+            "prečišćavanje"
+          ],
+          "context": "Nastavite sa nežnim otvorenosti, a da ne skrivate istinu. Utvrđena struktura nakon toga biće čvrste."
+        },
+        "position7": {
+          "upright": "Toranj govori o sastanku nakon nagle pauze ili neočekivanog događaja. Kriza nešto uništava, istina vas čini vidljivim jedni drugima.",
+          "reversed": "Inverterovatna kula objašnjava da je odložena konfrontacija blokiraju proces. Prihvatanje istine otvara vrata pravom sastanku.",
+          "keywords": [
+            "kriza",
+            "real",
+            "rušenje",
+            "buđenje"
+          ],
+          "context": "Nakon zemljotresa, staze ukrštaju. Istina donosi bliže. Odlaganja izbegavanja."
+        },
+        "position8": {
+          "upright": "Kula ukazuje da iznenadni izlivi ili istine u komunikaciji mogu da se potaknu sporazum. Prihvatanje istine dugoročno donosi ravnotežu.",
+          "reversed": "Invertirani kula ukazuje da će potisnuti krize oštetiti komunikaciju. Otvoreno sukob olakšava harmoniju.",
+          "keywords": [
+            "kriza",
+            "istina",
+            "rušenje",
+            "otvorenost"
+          ],
+          "context": "Jasna istina donosi harmoniju; Represija stvara sukob."
+        },
+        "position9": {
+          "upright": "Kule, vaš pogodan partner je neko ko može stvoriti iznenadna svest i ne boji se suočiti sa činjenicama. Iskrenost jača temelj obveznice.",
+          "reversed": "Invertirana kula, osoba koja stalno stvara krize, je destruktivna ili sakriva istinu nije pogodna za vas.",
+          "keywords": [
+            "real",
+            "svest",
+            "iskrenost",
+            "promeniti"
+          ],
+          "context": "Idealan partner je neko ko deli istinu bez straha."
+        }
+      },
+      "thestar": {
+        "position1": {
+          "upright": "Vaš brak će biti izgrađen na nadi, isceljujućem i inspiraciji. Zaključak; Doneće mir i obnavljanje.",
+          "reversed": "Očaj ili gubitak poverenja mogu potkopati ishod braka. Energija se može smanjiti.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "inspiracija",
+            "regeneracija"
+          ],
+          "context": "Zaključak; Brak koji je hranjen nadom. Ali postoji rizik od gubitka poverenja."
+        },
+        "position10": {
+          "upright": "Zvezda pokazuje da je put ka braku otvoren sa nadom, inspiracijom i isceljenjem.",
+          "reversed": "Invertirana zvezda, očaj ili razočarenja mogu odložiti put ka braku.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "zarastanje",
+            "budućnost",
+            "vizija"
+          ],
+          "context": "Mogućnost braka je jaka; Podržava se nada."
+        },
+        "position2": {
+          "upright": "Dok čekate, krenite naprijed sa nadom i verom. Unutrašnji isceljivanje vas priprema za supružniku.",
+          "reversed": "Očaj otežava proces. Držite svoju veru živu.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "verovanje",
+            "regeneracija"
+          ],
+          "context": "Korisno je biti nada se dok čekate. Proces lečenja vas jača."
+        },
+        "position3": {
+          "upright": "Zvezda simbolizuje nadu i oporavak u finansijskom deljenju. Zajednički resursi se mogu sigurno preneti u budućnost.",
+          "reversed": "Inverterovana zvezda ukazuje na očaj ili nesigurnost u finansijskoj podjeli. Nedostatak vere stvara probleme.",
+          "keywords": [
+            "nadati se",
+            "poboljšanje",
+            "poverenje",
+            "deljenje"
+          ],
+          "context": "Postoji nada i isceljenje u deljenju. Gubitak poverenja stvara rizik."
+        },
+        "position4": {
+          "upright": "Zvezda pokazuje da će veza biti izgrađena sa nadom, transparentnošću i inspiracijom. Kada stranke veruju jedno u drugo, veza donosi izlečenje.",
+          "reversed": "Inverterovana zvezda može ukazivati na očaj ili nevericu u želji da se poveže. U ovom slučaju stranke mogu izgubiti osećaj poverenja.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "transparentnost",
+            "zarastanje"
+          ],
+          "context": "Prilog zasnovan na nadi je trajno."
+        },
+        "position5": {
+          "upright": "Upoznate se u nadi, isceljujućem i jednostavnosti. Gledate isto nebo i delite isti dah.",
+          "reversed": "Jezik očaja može biti dominantniji u jednom od vas. Escapism umesto jednostavnosti smanjuje harmoniju.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "jednostavnost",
+            "inspiracija",
+            "regeneracija"
+          ],
+          "context": "Lekovita nada je uobičajena vrednost. Uspostavite ritual tokom vremena očaja."
+        },
+        "position6": {
+          "upright": "Iıldız kaže da ona može omekšati porodično srce svojim mirnim nadom i transparentnim jezikom izlečenja. Jednostavnost i iskrenost automatski povećavaju poverenje.",
+          "reversed": "Invertirana zvezda, diskurs očaja i introvoverzija mogu suziti put prihvatanja. Pravljenje malih trenutaka isceljenja vidljivih poziva nazad svetlo.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "jednostavnost",
+            "iskrenost",
+            "regeneracija"
+          ],
+          "context": "Podelite malo, ali suštinske radosti. Jezik nade otvara vrata prihvatanja."
+        },
+        "position7": {
+          "upright": "Zvezda govori o sastanku u periodu nade i isceljenja. Inspirativna zajednica, kreativni prostor ili volontiranje nežno vas ujedinjuje.",
+          "reversed": "Invertovana zvezda nam govori da beznadežni jezik može zatamiti svetlo. Zahvalnost i jednostavnost Poziv za pravu sinhronost.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "inspiracija",
+            "jednostavnost"
+          ],
+          "context": "Sifa ve ilham anında tanısırsınız. Jednostavnost čini Bond sjaj. Očaj postaje zavesa."
+        },
+        "position8": {
+          "upright": "Zvezda pokazuje da će komunikacija puna nade i inspiracije olakšati sporazum. Transparentnost daje poverenje.",
+          "reversed": "Invertovana zvezda nam govori da iscrpljenost ili beznadežan jezik može da poremeti sklad. Malene nade daju dogovor veći.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "transparentnost",
+            "poverenje"
+          ],
+          "context": "Transparentni jezik donosi harmoniju; Očaj slabi vezu."
+        },
+        "position9": {
+          "upright": "Iıldız, vaš pogodan partner je neko ko je nadam se, nadahnjujuće i transparentan. To stvara poverenje u budućnost svojim svetlom.",
+          "reversed": "Invertirana zvezda, neko ko je beznadežan, pesimistički ili daje lažnu nadu nije pogodan za vas.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "transparentnost",
+            "budućnost"
+          ],
+          "context": "Idealan partner je neko ko donosi nadu i transparentnost."
+        }
+      },
+      "themoon": {
+        "position1": {
+          "upright": "Intuicija, snovi i ponekad i nesigurnost će doći do izražaja u vašem braku. Zaključak; Možda postoji emocionalna dubina.",
+          "reversed": "Iluzije ili strahovi mogu zbuniti ishod braka. Pogrešne pretpostavke mogu prouzrokovati probleme.",
+          "keywords": [
+            "intuicija",
+            "sanjati",
+            "neizvesnost",
+            "strah"
+          ],
+          "context": "Zaključak; Brak se produbio intuicijom. Ali maglama mogu stvoriti senke."
+        },
+        "position10": {
+          "upright": "Mesec pokazuje da mogu postojati nesigurno i emotivne uspone i padove na putu ka braku.",
+          "reversed": "Invertirani mesec, čišćenje magle i otkrivenje istine pojašnjava put ka braku.",
+          "keywords": [
+            "neizvesnost",
+            "intuicija",
+            "osećanje",
+            "iluzija",
+            "prosvetljenje"
+          ],
+          "context": "Postoji mogućnost braka; postaje moguće nakon pojašnjenja."
+        },
+        "position2": {
+          "upright": "Dok čekate, verujte svojoj intuiciji i suočite se sa svojim strahovima. Kada se magla pročisti, put postaje jasan.",
+          "reversed": "Izgubiti se u zabludi ili snovi otežavaju proces. Tražiti jasnoću.",
+          "keywords": [
+            "intuicija",
+            "strah",
+            "neizvesnost",
+            "prosvetljenje"
+          ],
+          "context": "Korisno je poverenje intuiciji dok čekate. Neizvesnost je privremena."
+        },
+        "position3": {
+          "upright": "Mesec ukazuje na nesigurnost i iluzije u finansijskim pitanjima. Traženje jasnoće u deljenju je važno.",
+          "reversed": "Invertirani mesec simbolizuje rasipanje magle i jasnoće u finansijskim pitanjima. Sumnje se mogu smanjiti.",
+          "keywords": [
+            "neizvesnost",
+            "iluzija",
+            "oštrina",
+            "poverenje"
+          ],
+          "context": "Postoji neizvesnost u deljenju. Kada se postigne jasnoća, poverenje se povećava."
+        },
+        "position4": {
+          "upright": "Mesec pokazuje da može postojati neizvesnost i emocionalne fluktuacije u procesu lepljenja. Međutim, ako delujemo sa intuicijom, veza postaje jača.",
+          "reversed": "Invertirani Mesec možda će biti nesporazumi ili iluzije u želji da se povežu. Veza se ne može u potpunosti uspostaviti dok se činjenice ne budu jasne.",
+          "keywords": [
+            "neizvesnost",
+            "intuicija",
+            "iluzija",
+            "osećanje"
+          ],
+          "context": "Jasnoća i iskrenost su od suštinskog značaja za vezu."
+        },
+        "position5": {
+          "upright": "Slični ste u mašti i intuiciji. Ako se razgovara o strahovima, osnovana je duboka obveznica.",
+          "reversed": "Vaša tolerancija prema pretpostavci i sumnji se može razlikovati. Ako se jasnoća ne dođe, percepcija sličnosti postaje zamagljena.",
+          "keywords": [
+            "intuicija",
+            "neizvesnost",
+            "strah",
+            "sanjati",
+            "oštrina"
+          ],
+          "context": "Intuitivna bliskost je uobičajena. Potreban je test stvarnosti."
+        },
+        "position6": {
+          "upright": "Mesec nam govori da neizvesnost i projekcije mogu dovesti do nesporazuma na porodičnoj strani. Konkretne informacije i mirna jasnoća čiste maglu.",
+          "reversed": "Reverse Moon označava da je magla počela da očisti, ali tragovi nesigurnosti mogu ostati. Dosledno ponašanje i vreme će zaceliti šta ostaje.",
+          "keywords": [
+            "neizvesnost",
+            "strah",
+            "projekcija",
+            "oštrina",
+            "poverenje"
+          ],
+          "context": "Izaberite verifikaciju nad pretpostavkom. Kako se povećava jasnoća, prihvatanje postaje lakše."
+        },
+        "position7": {
+          "upright": "Mesec nam govori da će nas intuicija voditi u procesu koji uključuje neizvesnost. Snovi, umetnost, noćna aktivnost ili područja u blizini unutrašnjeg sveta tkaju sastanak.",
+          "reversed": "Reverse Moon nam govori da pretpostavke i strahovi mogu izobličiti signale. Obriši mini stepenice podižu magla; poznanstvo postaje jasno.",
+          "keywords": [
+            "intuicija",
+            "neizvesnost",
+            "sanjati",
+            "unutrašnji svet"
+          ],
+          "context": "Upoznaćete intuitivne tragove. Jasnost osvetljava proces. Strah je zatamnjen protok."
+        },
+        "position8": {
+          "upright": "Mesec označava intuitivan, ali nejasan stil komunikacije. Neizvesnost je prevaziđena postavljanjem pitanja i harmonija se postiže.",
+          "reversed": "Reverse Moon kaže da nesporazumi i zablude mogu da poremete komunikaciju. Otvorena pitanja ojačajte rapport.",
+          "keywords": [
+            "neizvesnost",
+            "intuicija",
+            "pitanje",
+            "prosvetljenje"
+          ],
+          "context": "Dvosmislenost se rešava pitanjem; Zabranjenost ometa harmoniju."
+        },
+        "position9": {
+          "upright": "Ai, vaš pogodan partner je neko ko je intuitivan, empatičan i može se povezati sa njihovim emocijama. Adapši se adapsa za emocionalnu osetljivost.",
+          "reversed": "Invertirani mesec, neko ko stvara neizvesnost, manipulativno je ili daje u njihovim strahovima nije pogodan za vas.",
+          "keywords": [
+            "intuicija",
+            "empatija",
+            "osećanje",
+            "raport"
+          ],
+          "context": "Idealan supružnik je neko ko nadahnjuje poverenje u njihovu intuiciju."
+        }
+      },
+      "thesun": {
+        "position1": {
+          "upright": "Vaš brak će sijati radošću, otvorenom i toplinom. Zaključak; To može biti srećna i svetla unija.",
+          "reversed": "Lažna sreća ili površna harmonija mogu potkopati ishod braka. Postoji rizik od isključenja od stvarnosti."
+        }
+      }
+    }
+  }
+}

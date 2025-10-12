@@ -1,0 +1,832 @@
+{
+  "tarotCards": {
+    "pentacles": {
+      "knight": {
+        "meaning": {
+          "upright": "Naporan rad, rutinska"
+        },
+        "name": "Vitez zlata"
+      },
+      "page": {
+        "keywords": [
+          "manifestacija",
+          "prilika"
+        ],
+        "meaning": {
+          "reversed": "Nedostatak napretka, odlaganja",
+          "upright": "Manifestacija, finansijska prilika"
+        },
+        "name": "Princ zlata"
+      },
+      "queen": {
+        "keywords": [
+          "hranilac",
+          "praktičan"
+        ],
+        "meaning": {
+          "reversed": "Finansijska nezavisnost, sukob rada",
+          "upright": "Hranljiv, praktičan"
+        },
+        "name": "Kraljica zlata"
+      }
+    },
+    "swords": [
+      null,
+      {
+        "keywords": [
+          "jasnoća",
+          "skok"
+        ],
+        "meaning": {
+          "reversed": "Konfuzija, haos",
+          "upright": "proboj, jasnoća"
+        },
+        "name": "Ace mačeva"
+      },
+      {
+        "keywords": [
+          "odluka",
+          "zastoj"
+        ],
+        "meaning": {
+          "reversed": "Neodlučnost, konfuzija",
+          "upright": "Teške odluke, mrtve krajeve"
+        },
+        "name": "Dvoje mačeva"
+      },
+      {
+        "keywords": [
+          "srp",
+          "tuga"
+        ],
+        "meaning": {
+          "reversed": "Oslobodite bol, optimizam",
+          "upright": "Heartbreak, tuga"
+        },
+        "name": "Trio mačeva"
+      },
+      {
+        "keywords": [
+          "odmor",
+          "meditacija"
+        ],
+        "meaning": {
+          "reversed": "Izgaranje, izgaranje",
+          "upright": "Odmor, meditacija"
+        },
+        "name": "Kvartet mačeva"
+      },
+      {
+        "keywords": [
+          "sukob",
+          "poraz"
+        ],
+        "meaning": {
+          "reversed": "Pomirenje, prošli ogorčeni",
+          "upright": "sukob, poraz"
+        },
+        "name": "Pet mačeva"
+      },
+      {
+        "keywords": [
+          "prelaz",
+          "promeniti"
+        ],
+        "meaning": {
+          "reversed": "Lična tranzicija, otpornost",
+          "upright": "tranzicija, promena"
+        },
+        "name": "Šest mačeva"
+      },
+      {
+        "keywords": [
+          "izdaja",
+          "varati"
+        ],
+        "meaning": {
+          "reversed": "Gindrom Impostor, Tajne",
+          "upright": "Izdaja, obmana"
+        },
+        "name": "Sedam mačeva"
+      },
+      {
+        "keywords": [
+          "Ograničenje",
+          "zatvor"
+        ],
+        "meaning": {
+          "reversed": "Samoograničavajuća uverenja, unutrašnji kritičar",
+          "upright": "Ograničenje, zatvor"
+        },
+        "name": "Osam mačeva"
+      },
+      {
+        "keywords": [
+          "anksioznost",
+          "strah"
+        ],
+        "meaning": {
+          "reversed": "Unutrašnji nemir, oslobađanje anksioznosti",
+          "upright": "anksioznost, strah"
+        },
+        "name": "Devet mačeva"
+      },
+      {
+        "keywords": [
+          "završetak",
+          "izdaja"
+        ],
+        "meaning": {
+          "reversed": "Isceljivanje, odupiru se kraju",
+          "upright": "Bolni završeci, izdaja"
+        },
+        "name": "Deset mačeva"
+      }
+    ],
+    "wands": [
+      null,
+      {
+        "keywords": [
+          "inspiracija",
+          "snaga"
+        ],
+        "meaning": {
+          "reversed": "Nedostatak energije, dosada",
+          "upright": "Inspiracija, nove mogućnosti"
+        },
+        "name": "ACE OF SHANDS"
+      },
+      {
+        "keywords": [
+          "planiranje",
+          "odluka"
+        ],
+        "meaning": {
+          "reversed": "Lični ciljevi, strah od nepoznatog",
+          "upright": "Buduće planiranje, odluke"
+        },
+        "name": "Dva štampa"
+      },
+      {
+        "keywords": [
+          "ekspanzija",
+          "predviđanje"
+        ],
+        "meaning": {
+          "reversed": "Malo igranje, LAGS",
+          "upright": "Proširenje, predviđanje"
+        },
+        "name": "Tri štapića"
+      },
+      {
+        "keywords": [
+          "proslava",
+          "raport"
+        ],
+        "meaning": {
+          "reversed": "Lična proslava, sukob",
+          "upright": "Proslava, harmonija"
+        },
+        "name": "Četiri štampe"
+      },
+      {
+        "keywords": [
+          "sukob",
+          "rivalstvo"
+        ],
+        "meaning": {
+          "reversed": "Unutrašnji sukob, izbegavanje",
+          "upright": "Sukob, takmičenje"
+        },
+        "name": "Pet štapića"
+      },
+      {
+        "keywords": [
+          "uspeh",
+          "prepoznavanje"
+        ],
+        "meaning": {
+          "reversed": "Posebni uspeh, pad sa milosti",
+          "upright": "uspeh, prepoznavanje"
+        },
+        "name": "Šest štapića"
+      },
+      {
+        "keywords": [
+          "izazov",
+          "upornost"
+        ],
+        "meaning": {
+          "reversed": "Izgaranje, ne odustaj",
+          "upright": "izazov, upornost"
+        },
+        "name": "Sedam štapića"
+      },
+      {
+        "keywords": [
+          "brzina",
+          "napredak"
+        ],
+        "meaning": {
+          "reversed": "Kašnjenja, razočaranje",
+          "upright": "Brzina, napredak"
+        },
+        "name": "Osam štapića"
+      },
+      {
+        "keywords": [
+          "izdržljivost",
+          "hrabrost"
+        ],
+        "meaning": {
+          "reversed": "Unutrašnji resursi, borba",
+          "upright": "Izdržljivost, hrabrost"
+        },
+        "name": "Devet štapića"
+      },
+      {
+        "keywords": [
+          "opteretiti",
+          "odgovornost"
+        ],
+        "meaning": {
+          "reversed": "Do-It-all, delegatni autoritet",
+          "upright": "teret, odgovornost"
+        },
+        "name": "Deset štapića"
+      }
+    ]
+  },
+  "tarotPage": {
+    "careerSpread": {
+      "summary": "Opšta procena",
+      "summaryText": "Sa saosećajnim uputstvima kartica; Pogledajte prilike u svom putovanju u karijeri, omekšajte prepreke i ponesite jasne korake."
+    },
+    "problemSolvingSpread": {
+      "summary": "Opšta procena",
+      "summaryText": "Sa saosećajnim uputstvima kartica; Mirno analizirajte svoj problem i otkrijte izbračna rešenja."
+    },
+    "situationAnalysisSpread": {
+      "summary": "Opšta procena",
+      "summaryText": "Sa saosećajnim uputstvima kartica; Vidite trenutnu situaciju, čujte svoj unutrašnji glas i planirajte svoj sledeći korak sa pouzdanjem."
+    }
+  },
+  "tarotSpreadSelector": {
+    "morePositions": "Pozicija više ...",
+    "scrollHint": "Dođite do pogledajte više otvora",
+    "showLess": "Pokazati manje",
+    "spreadMeaning": "Značenje ove ekspanzije",
+    "spreadPositions": "Otvaranje pozicija:"
+  },
+  "technical": {
+    "paths": {
+      "adminUserModals": "./Adminusermodals",
+      "auditLogViewer": ". /AuditlogViever",
+      "autoReporting": "./Autoriport",
+      "baseInterpretation": "./Baseinterpretation",
+      "cardDetails": "./CardDetails",
+      "careerTarot": "@ / Funkcije / Tarot / Komponente / Karijera-Spread / Careertarot",
+      "creditManagementModal": ". / Creditmanagementmodal",
+      "emailTemplateModals": "./Emailtemplatemodals",
+      "footer": "./Footer",
+      "loveTarot": "@ / Funkcije / Tarot / Komponente / LOVE-SPORT / LOVETAROT",
+      "marriageTarot": "@ / Funkcije / Tarot / Komponente / brak / Marriagetarot",
+      "messagesPath": "../../../Messages/${locale}.json",
+      "moneyTarot": "@ / Funkcije / Tarot / Komponente / Monei-namaz / Moneitarot",
+      "newLoverTarot": "@ / Funkcije / Tarot / Komponente / Nev-Lover / Nevlovertarot",
+      "paymentHistory": "./PaimentHistori",
+      "pdfExport": "./Pdfekport",
+      "problemSolvingTarot": "@ / Funkcije / Tarot / Komponente / Rešavanje problema / Problemi za većinu",
+      "readingDetailModal": ". /Readingdetailmodal",
+      "readingHistory": ". /Readinghistori",
+      "readingStatusUtils": "@ / utils / status čitanje-utils",
+      "spreadEditor": "./Spreadeditor",
+      "transactionHistory": "./Transactionhistori",
+      "useReadingCards": "@ / kuke / useroundcards",
+      "useReadingQuestions": "@ / kuke / userouDingKuetions",
+      "userDetailModal": "./Userdetailmodal"
+    },
+    "symbols": {
+      "asterisk": "*",
+      "at": "@",
+      "colon": ":",
+      "comma": ",",
+      "dot": ".",
+      "letterA": "a",
+      "letterT": "T",
+      "newline": "\\ n",
+      "slash": "/",
+      "underscore": "_"
+    },
+    "templates": {
+      "cardKey": "${cardKey}",
+      "configTranslationNamespace": "${config.translationNamespace}",
+      "namespace": "${namespace}"
+    },
+    "urls": {
+      "authError": "/ $ {locale} / auth? ERROR = $ {greška}",
+      "dashboard": "/ $ {locale} / kontrolna tabla",
+      "forwardedHostFullPath": "HTTPS: // $ {FORRHORDEDHOST} $ {FULLPATH}",
+      "originFullPath": "${origin}${fullPath}"
+    }
+  },
+  "toast": {
+    "cardSelectionReady": "Možete da pređete na izbor kartice.",
+    "readingSaveError": "Došlo je do greške prilikom čuvanja čitanja.",
+    "readingSaveErrorLog": "Greška u sačuvanju:",
+    "simpleReadingComplete": "Jednostavno čitanje završeno!"
+  },
+  "validation": {
+    "between": "{min} ile {max} arasında olmalıdır",
+    "confirmPassword": "Lozinke se ne podudaraju",
+    "date": "Unesite važeći datum",
+    "email": "Unesite važeću adresu e-pošte",
+    "integer": "Unesite celi broj",
+    "max": "Mora biti u većini {mak}",
+    "maxLength": "Mora biti u većini {mak} znakova",
+    "min": "Mora biti barem {min}",
+    "minLength": "Mora biti najmanje {min} likovi",
+    "negative": "Unesite negativan broj",
+    "number": "Unesite važeći broj",
+    "password": {
+      "noLowercase": "Potrebno je najmanje jedno malo slovo",
+      "noNumber": "Potrebna je barem jedna cifra",
+      "noSpecialChar": "Potreban je bar jedan poseban znak",
+      "noUppercase": "Barem jedno veliko slovo potrebno je",
+      "rules": "Lozinka mora da sadrži najmanje 8 znakova, velika slova, mala slova i brojeve",
+      "strength": {
+        "medium": "U sredini",
+        "strong": "Jak",
+        "veryStrong": "Veoma jak",
+        "weak": "Slab"
+      },
+      "tooShort": "Lozinka prekratka"
+    },
+    "pattern": "Nevažeći format",
+    "phone": "Unesite važeći broj telefona",
+    "phoneRequired": "Telefonski broj je potreban za VhatsApp",
+    "positive": "Unesite pozitivan broj",
+    "realTime": {
+      "checking": "Provera ...",
+      "invalid": "Nevažeći",
+      "valid": "Validan"
+    },
+    "required": "Ovo polje je potrebno",
+    "url": "Unesite važeću URL adresu"
+  },
+  "profile2": {
+    "noName": "Ime nije navedeno"
+  },
+  "profile": {
+    "personalInfo": "Lične informacije",
+    "firstName": "Naziv",
+    "title": "Informacije o profilu",
+    "lastName": "Prezime",
+    "lastNamePlaceholder": "Unesite svoje prezime",
+    "fullName": "Puno ime",
+    "fullNamePlaceholder": "Unesite svoje puno ime",
+    "birthDate": "Datum rođenja"
+  },
+  "blog": {
+    "title": "Vodič za tarot kartice",
+    "subtitle": "Otkrijte duboka značenja svake kartice",
+    "description": "Krenite na put u misteriozni svet Tarot kartica. Ravna i obrnuta značenja svake kartice, njihove interpretacije na ljubav, karijeru, novac i duhovne smernice.",
+    "cards": {
+      "the-fool": {
+        "name": "Crazi - putnik beskonačnih mogućnosti",
+        "short_description": "Luda je kartica novih početaka, čisti potencijal i ulazak u nepoznato. Pomičite se napred sa hrabrošću, verujte unutrašnjim uputstvima i istražite životnog putovanja.",
+        "meanings": {
+          "upright": {
+            "general": "Ludi simbolizuje početak životne putovanja. Shvatite potencijal u vama, preuzmite korake sa radoznalošću i hrabrošću. Čeka vas nova iskustva i mogućnosti učenja.",
+            "love": "Zaljubljeni, Deli predstavlja sveže početke i spontane emocije. Moguće je novi odnos ili oživljavanje postojećeg odnosa.",
+            "career": "Na putu karijere imate hrabrosti da započnete kreativne projekte i korak ispred svoje zone komfora. Rizikujte i isprobajte nove načine.",
+            "money": "U finansijskim pitanjima važno je intuitivno procijeniti mogućnosti. Mali rizici mogu dovesti do velikih dobitaka, ne zaboravite da budete oprezni.",
+            "spiritual": "Duhovno je lud karta unutrašnjeg istraživanja i svesti. Verujte svojoj intuiciji i vidite svako iskustvo kao prilika za učenje."
+          },
+          "reversed": {
+            "general": "Ludo obrnuto je upozorenje o neparnosti i nedostatku planiranja. Uklopne odluke mogu ometati vaš potencijal. Budite planirani i svesni.",
+            "love": "Označava neodlučnost i nedostatak komunikacije u ljubavi. Razjasnite svoja osećanja i prioritet iskrenost.",
+            "career": "Nesporednost ili isprekidni koraci u projektima mogu stvoriti rizike. Prvo planirajte, a zatim krenite napred.",
+            "money": "Postoji rizik od finansijskih grešaka i gubitaka. Pređite na planirani način.",
+            "spiritual": "Možda ste duhovno izgubili svoj put. Pretvorite se na svoje unutrašnje smernice i verujte svojoj intuiciji."
+          }
+        },
+        "context": {
+          "mythology": "Madman nosi univerzalni putnik i simbol nule. U mitologiji, putovanje i transformacija počinju sa korakom heroja u nepoznato. Hermes i Trickster Energija predstavlja slobodu i radoznalost luđaka.",
+          "celtic_cross": {
+            "future": "U budućnosti ćete biti otvoreni za nova iskustva i iznenađenja. Neočekivane staze će predstavljati mogućnosti za učenje i rast.",
+            "hidden_influences": "Skriveni uticaji oblikuju događaje i ljude oko vas čistoćom i hrabrošću u vama. Smjernice da niste svesni da je na snazi."
+          }
+        },
+        "story": {
+          "title": "Unutrašnji put luđaka",
+          "description": "Luđak stoji na početku staze života; On nema ničega u rukama, on se samo kreće naprijed sa samopouzdanjem i radoznalošću. Njegovi unutrašnji smernice vodi korak po korak. Svako iskustvo donosi hrabrost, učenje i rast.",
+          "historytitle": "Istorijsko poreklo: nula i početak",
+          "history_message": "Deli je uključen u tarot sekvencu sa brojem 0. Nula predstavlja potencijal, prazninu i početak. U srednjovekovnim i renesansnim karticama, luđak je prikazan kao simbol putovanja i učenja.",
+          "mystic_title": "Duhovna poruka: Prostrano koračajte",
+          "mystic_message": "Madman vas poziva da otvoriš svoje srce i um. Svaki korak je namera, svako iskustvo je učenje. Neustrašivo se kretati unaprijed, nepoznat će vas zreo.",
+          "cultural_title": "Moderna interpretacija: iscelitelj iznutra",
+          "cultural_message": "U modernim vremenima, Luda simbolizuje unutrašnji iscelitelj, hrabar preduzetnik i osobu koja pleše životna iznenađenja. Saznaje sa svim iskustvom i crta snagu od pada.",
+          "lesson": "Deli vas uči da otkrijete svoj potencijal hrabrošću i radoznalošću. Putovanje je više o učenju i razvoju od odredišta."
+        },
+        "keywords": {
+          "keywords_title": "Kreze ključne reči",
+          "keywords_message": "Mad Tarot znači, budala Tarot Turski, Tarot Novi početak, Dušo, tarot potencijal, tarot putovanje",
+          "positive_title": "Ovlašćenja svetlosti",
+          "positive_message": "Novi počeci, čisti potencijal, hrabrost, radoznalost, učenje i unutrašnje otkriće.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Izbegavajte nepažnju, nastavite sa intuicijom i svešću umesto isplovnih koraka.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Svaki korak je prilika za učenje. Slušajte svoje unutrašnje smernice i u korak po samopouzdanju nepoznato."
+        },
+        "associations": {
+          "title": "Kosmičke veze lude karte",
+          "astrology": "Uran (promena, inovacija, sloboda)",
+          "numerology": "0 (početni, potencijalni, nulta tačka)",
+          "element": "Vazduh (um, inteligencija, istraživanje)",
+          "chakra": "Kruna - inspiracija i univerzalno znanje"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa Delijem",
+          "combinations": [
+            {
+              "card": "Mađioničar",
+              "meaning": "Kada čisti potencijal kombinuje sa veštinom čarobnjaka, ideje se brzo sprovode."
+            },
+            {
+              "card": "Visoki sveštenik",
+              "meaning": "Intuicija i unutrašnji smernice čine luđački put sigurnim i smislenim."
+            },
+            {
+              "card": "Sunce",
+              "meaning": "Novi počeci se mogu pretvoriti u sreću i uspeh; Događaju se pozitivni razvoj."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Odobrenja deli kartice",
+          "affirmation_list": [
+            "S mojim srcem i umom otvorenim, ulazim u nepoznato.",
+            "Svako iskustvo je prilika da rastem.",
+            "Krećem naprijed sa uputstvom iscelitelja u meni."
+          ]
+        },
+        "cta": {
+          "main": "Oslobodite svoju unutrašnju hrabrost i uzmite prvi korak!",
+          "micro": "Danas napravite mali korak: ideja, inicijativa ili novo iskustvo."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja luda kartica?",
+            "answer": "Predstavlja nove početke, čisti potencijal, hrabrost i ulazak u nepoznato. Vreme je da verujete svojim unutrašnjim smernicama."
+          },
+          {
+            "question": "Zašto je luda karta važna?",
+            "answer": "Ova kartica vas podseća na početak putovanja i rasta kroz učenje i iskustvo. Verujte svom potencijalu i preduzmite korake."
+          },
+          {
+            "question": "Šta reverzno lud naznačava?",
+            "answer": "Obrnuta pozicija upozorava na nepažnju, iskrivene odluke ili neodgovorno ponašanje. Budite planirani i svesni."
+          }
+        ],
+        "imageUrl": "/cards/rvs/0-fol.vebp"
+      },
+      "the-magician": {
+        "name": "Čarobnjak - snaga i master će uneti nameru",
+        "short_description": "Mađioničar je simbol umjetnosti korišćenja volje, veštine i resursa svesno. Predstavlja majstoriju okretanja namere u manifestaciju sa četiri elementa u ruci (ćeplot, halice, mač, pentagram).",
+        "meanings": {
+          "upright": {
+            "general": "Kada se čarobnjak stoji visok, u periodu ste u kojem se vešto okupljaju vaši unutrašnji resursi i alati spoljnog sveta. Svoje snove možete pretvoriti u beton sa voljom, fokusom i veštinama. Ova kartica vas podseća da vam je potrebno da realizuješ svoju snagu stvaranja, razjasnite svoju nameru i preduzmite mere. Imate energiju i veštine da biste pretvorili ideje u akciju; Sada je vreme da ih organizujete.",
+            "love": "Ljubav mađioničar predstavlja komunikaciju, privlačnost i namerne interakcije. Ulazite u impresivan period; Imate moć da utičete na drugu osobu i svesno oblikate dinamiku odnosa. Ako započinjete novu vezu, izrazite se jasno i odlučno; U postojećim odnosima kreativna rešenja i iskrena diskursa će doći do izražaja.",
+            "career": "Što se tiče karijere, mađioničar donosi vreme prilikom prikazivanja talenata, veština preduzetništva i uvjeravanja i napred. To je pogodan period za prezentacije, projekti i nove inicijative. Efikasno koristite resurse, mobilizirajte mrežu i pretvorite ideje u konkretne planove. Kada se tehnička veština kombinuje sa harizmom, napredak ubrzava.",
+            "money": "U finansijskim pitanjima mađioničar demonstrira sposobnost strateškog upotreba i pronalaženje kreativnih sredstava prihoda. Koristeći svoje resurse na pravom mestu, možete postići transformativne rezultate sa malim, ali efikasnim ulaganjima. Međutim, namera mora biti jasna; Budite selektivni i planirani umesto da se bavite svakom prilikom.",
+            "spiritual": "Na duhovnom nivou, mađioničar je povezan sa energetskim radom, obredom namjene i realizacije. Ojačati svoju nameru sa meditacijama, poravnajte energetske centre i ubrzajte unutrašnju transformaciju kroz simbole. Kada kombinujete volju sa unutrašnjim saznanjima, vaše duhovne veštine postaju prakse."
+          },
+          "reversed": {
+            "general": "Mađioničar u obrnutom označava nedostatak potpune upotrebe sposobnosti, distrakcije ili manipulacijanih namera. Ne dozvolite da potencijal idi na otpad; Nedostatak planiranja, nedostatak samopouzdanja ili tendencije manipulacije drugima mogu prouzrokovati probleme. Preispitujte svoje namere i proverite etiku o eticini svojih postupaka.",
+            "love": "Zaljubljena, obrnuta pozicija ukazuje na rizik od neverstva, preterano kontrolirati ponašanje ili neiskreno komunikaciju. Iskrenost i otvorenost su neophodni tako da želja za impresionom ne dovodi do neravnoteže u vezi.",
+            "career": "U karijeri, obrnuti mađioničar može značiti gubitak reputacije ili neuspešnih projekata zbog pokazivačkih ili površnih pristupa. Ne započinjete projekte u žurbi; Prvo se uverite da imate dovoljno veština i podrške.",
+            "money": "Finansijski negativan položaj nosi opasnost da donosi pogrešne odluke o ulaganjima, pad za lažne obećanja ili korišćenje resursa neefikasno. Implementirajte realni plan i procese verifikacije.",
+            "spiritual": "Na duhovnom nivou, obrnuti mađioničar se odnosi na duhovni ego ili \"traženje prečica\". Izbegavajte prakse koje su za prikazivanje, a ne stvarnu praksu i disciplinu; Primati skromno učenje i uputstvo."
+          }
+        },
+        "context": {
+          "mythology": "Čarobnjak je usko povezan sa Hermesom / Mercuri Archetipom: majstorstvo komunikacije, veštine, lukavstva i iskustva. Četiri alata u njegovoj ruci (osoblje, kalež, mač, pentagram) simbolizuju četiri elementa i sve resurse koji se mogu koristiti u fizičkom svetu. U mitologiji se slične brojke vide kao posrednici koji donose božanske poruke do sveta.",
+          "celtic_cross": {
+            "future": "Ako se čarobnjak pojavljuje u vašoj budućnosti, postoji dobra šansa da ćete započeti nešto koristeći svoje sposobnosti. Kada podržavate svoje planove sa namerom, pred vama će se pojaviti potrebni alati i ljudi.",
+            "hidden_influences": "U oblasti skrivenih uticaja, veštine koje imate ili podrška nekoga bliskog vama možda utiču na vaše odluke. Ne podcenjujte svoju vlastitu moć; Poravnajte se sa spoljnim resursima."
+          }
+        },
+        "story": {
+          "title": "Priča o kartici: Gospodar četiri elementa na stolu",
+          "description": "Mađioničar stoji iza stola; Pred sobom je osoblje, kalež, mač i pentagram. Ovi objekti simbolizuju materijal koji mu je na raspolaganju i njegovu sposobnost transformisanja sveta. Jedna ruka se proteže do neba, a druga na zemlju - demonstrira princip 'kao gore, tako ispod.' Izgrađuje most: pretvori ideje u akciju, nameru u stvarnosti.",
+          "historytitle": "Istorijsko poreklo: prvi glavni i simbolički alati",
+          "history_message": "Kroz istoriju se figura mađioničara pojavljuje u raznim glavnim tradicijama, od alhemičara do reči. Tokom renesanse, slikarnica Magus odnosila se na čovekov kapacitet da oblikuje svoju sudbinu. Alat u simbolizmu predstavljaju i unutrašnji i spoljni resursi: mentalna sposobnost, emocionalna ravnoteža, mentalna jasnoća i materijalni resurs.",
+          "mystic_title": "Duhovno značenje: snaga namere",
+          "mystic_message": "Duhovno, mađioničar predaje važnost rada sa harmonijom namere i jastva. Pomoću VillPover-a, fokusiranja i discipline, svoju unutrašnju snagu možete pretvoriti u konkretne rezultate. Duhovne prakse, studije omjera i tehnike upravljanja energijom čine duhovnu praksu ove kartice.",
+          "cultural_title": "Kulturni refleksije: zanatlija, preduzetnik, komunikator",
+          "cultural_message": "U modernom smislu, mađioničar predstavlja preduzetnik, vođa koji predstavlja osobu, osobu koja oblikuje svet kroz tehnologiju i kreativnost. On je lik koji je opremljen znanjem, pretvara svoje veštine prilikom i utiče na njegovo okruženje."
+        },
+        "keywords": {
+          "keywords_title": "Čarobska karta - SEO Ključne reči",
+          "keywords_message": "Mađioničar Tarot znači, mađioničar Tarot Turski, mađioničar doslovno značenje, mađioničar Reverse značenje, manifestacija namere, tarot manifestacija",
+          "positive_title": "Ključne teme (svetlo)",
+          "positive_message": "Namera, veština, fokus, efikasna upotreba resursa, komunikacija, kreativnosti, moć manifestovanja.",
+          "balance_title": "Bodovi koji zahtevaju ravnotežu",
+          "balance_message": "Izbegavanje manipulacije, razvijanje stvarne veštine, a ne pokazuju se, koristeći nameru etički i odgovorno.",
+          "soul_title": "Duhovno podučavanje",
+          "soul_message": "Kada se i namera kombinuju, počinje stvarna promena. Probuditi gospodara u vama; Mudro koristite svoje alate."
+        },
+        "associations": {
+          "title": "Kosmičke veze čarobnjaka",
+          "astrology": "Merkur (Komunikacija, obaveštajna služba, majstorstvo)",
+          "numerology": "Izdanje 1 (Početljivanje, liderstvo, Jedinstvena snaga)",
+          "element": "Vazduh (um, komunikacija) - takođe savladavanje četiri elementa",
+          "chakra": "Solarni pleksus (Manipura) - VillPover i lična snaga"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa čarobnjakom",
+          "combinations": [
+            {
+              "card": "Lud",
+              "meaning": "Kada je madmanov sirovi potencijal kombinuje sa talentom čarobnjaka, ideje se brzo formiraju i sprovode. Bold Start + veština = Brz napredak."
+            },
+            {
+              "card": "Abbess",
+              "meaning": "Kada se uhvate unutrašnja intuicija i mađioničara akciona moći, preduzimaju se i tačni i efikasni koraci. Manifestacija zasnovana na intuiciji."
+            },
+            {
+              "card": "Sunce",
+              "meaning": "Rad čarobnjaka pretvara se u uspeh; Stvorena stvar donosi sjajnu slavu ili priznanje."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Aktivirajte energiju mage",
+          "affirmation_list": [
+            "Ja razjašnjavam svoju nameru i koristim svoju energiju na fokusiran način.",
+            "Svoje snove se ostvaruju sa resursima koje imam.",
+            "Stvaram sopstvenom snagom i prihvatam transformaciju u kojoj sam instrumentalan."
+          ]
+        },
+        "cta": {
+          "main": "Postavite nameru i počnite da se manifestujete sa jednim malim korakom danas.",
+          "micro": "Napišite nameru: \"Koji opipljiv rezultat želim da vidim do kraja ove nedelje?\""
+        },
+        "faq": [
+          {
+            "question": "Šta simbolizuje karticu čarobnjaka?",
+            "answer": "Magar predstavlja snagu namere, veština i resursa koji će se okupiti da bi se nešto materijalizovala. Vreme je da se manifestuje sa fokusom i voljom."
+          },
+          {
+            "question": "Šta to znači kada je pravopisnik obrnut?",
+            "answer": "Invertirani položaj upozorava na zloupotrebu potencijala, manipulacije, nedostatak plana ili ishitrenih koraka snimljenih bez dovoljno veštine. Pregledajte namere i metode."
+          },
+          {
+            "question": "Koji su simboli važni na čarobnoj kartici?",
+            "answer": "Četiri alata, kao što je štapić, halice, mač i pentagram, predstavljaju četiri elementa i resurse koje možete koristiti u fizičkom svetu. Jedna ruka čarobnjaka izgleda na nebo, drugi na zemlju; To pokazuje princip \"kao gore, pa ispod\"."
+          }
+        ],
+        "imageUrl": "/cards/rvs / magician.vebp"
+      },
+      "the-high-priestess": {
+        "name": "Abbess",
+        "short_description": "Tihi poziv intuicije, unutrašnje mudrosti i neviđene smernice.",
+        "meanings": {
+          "upright": {
+            "general": "Slušajte tišinu i svetlost unutrašnje mudrosti. Visoki sveštenici kaže: \"Odgovori su skriveni u vašoj duši, čekajući da izgledaju bez žurbe.\"",
+            "love": "Zaljubljena, obveznice izvan reči, duboke i intuitivne energije veze.",
+            "career": "Intuicija i strategija su na čelu u karijeri; period istraživanja i napretka pacijenta.",
+            "money": "Skrivene mogućnosti u finansijskim pitanjima; Mirno planiranje i pažljivo posmatranje isplate dividende.",
+            "spiritual": "Koristite unutrašnju smernicu mudrosti i intuicije na vašem duhovnom putovanju; Meditacija i snovi daju smernice."
+          },
+          "reversed": {
+            "general": "Rizik od ignorisanja vaše intuicije, probijanje od unutrašnje tišine. Postupak bez realizacije poverljivih informacija može dovesti do pogrešnih koraka.",
+            "love": "Tajne, udaljenost ili pasivnost mogu stvoriti probleme u odnosima.",
+            "career": "Ostati zatvoren za znanje, ignorisanje intuicije; Možda ćete propustiti skrivene mogućnosti.",
+            "money": "Rizik da ne vidite ili ne zakrši finansijske mogućnosti.",
+            "spiritual": "Gubitak duhovne svesti; Morate slušati unutrašnje smernice."
+          }
+        },
+        "context": {
+          "mythology": "Povezan sa mesecom i podsvesnim; čuvar skrivenog znanja. U drevnim mitovima povezano je sa ženskim figurama koji vode sa skrivenom mudrošću i intuicijom.",
+          "celtic_cross": {
+            "future": "Osvetliti svoj put sa unutrašnjom mudrošću; Tišina i svest dovode do pravog izbora.",
+            "hidden_influences": "Skrivene intuicije i nepoznate veze vodi mu život."
+          }
+        },
+        "story": {
+          "title": "Priča o kartici",
+          "description": "Visoka sveštenica je čuvar tajne i nepoznato.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Visoka sveštenica se vidi u drevnim boginjama i mističnim tradicijama kao mudra žena koja čuva tajne znanje.",
+          "mystic_title": "Duhovno značenje",
+          "mystic_message": "Pristup unutrašnjoj mudrosti i intuiciji; Otkrijte duhovno prosvetljenje meditacijom i introspekcijom.",
+          "cultural_title": "Kulturni aspekt",
+          "cultural_message": "U različitim kulturama, visoki sveštenici se pojavljuje kao simbol znanja, tajne i intuicije; Predstavlja smernice i strpljenje."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči",
+          "keywords_message": "Intuicija, mudrost, misterija, unutrašnji smernice, podsvesni, strpljenje, tišina",
+          "positive_title": "Pozitivna energija",
+          "positive_message": "Uvid, strpljenje, svest, duhovno uputstvo",
+          "balance_title": "Ravnoteža",
+          "balance_message": "Tišina, posmatranje, svesna akcija",
+          "soul_title": "Smisao duha",
+          "soul_message": "unutrašnja mudrost, intuicija, duhovno otkriće"
+        },
+        "cta": {
+          "main": "Pozovite uvještaje sa visokim sveštenicima u svoj život",
+          "micro": "Slušajte tišinu, otkrijte svoju intuiciju i krenite napred sa unutrašnjom mudrošću"
+        },
+        "associations": {
+          "title": "Kosmičke veze sa visokim sveštenicima",
+          "astrology": "Mesec (intuicija, mudrost, misterija)",
+          "numerology": "2 (harmonija, odluka, unutrašnja mudrost)",
+          "element": "Voda (emocije, intuicija, unutrašnji smernice)",
+          "chakra": "Treće oči - unutrašnja vizija i mudrost"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa visokim sveštenicima",
+          "combinations": [
+            {
+              "card": "Lud",
+              "meaning": "Intuicija i nevinost osiguravaju da je putovanje bezbedno i svesno."
+            },
+            {
+              "card": "Sunce",
+              "meaning": "Unutrašnja mudrost i svest kombinuju se sa srećom i prosvetljenjem."
+            },
+            {
+              "card": "Pustinjak",
+              "meaning": "Podržava duhovno istraživanje kroz duboko unutrašnje pretrage, intuiciju i samoću."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Validacije kartice visoke sveštenice",
+          "affirmation_list": [
+            "Verujem svojoj intuiciji i sledim svoje unutrašnje smernice.",
+            "Nalazim svoje odgovore u tišini i delujem sa unutrašnjom mudrošću.",
+            "Povećavam svoju svest pod vođstvom moje duše."
+          ]
+        },
+        "faq": [
+          {
+            "question": "U kojim situacijama je pozitivno visoki sveštenik?",
+            "answer": "Kada slušate intuiciju i svetlost unutrašnje mudrosti, dobijate moć da istražite nepoznato kroz tišinu i meditaciju."
+          },
+          {
+            "question": "Kako ja ojačam svoju intuiciju?",
+            "answer": "Možete aktivno koristiti svoju intuiciju meditacijom, praćenje snova, simbola i unutrašnje svesti."
+          },
+          {
+            "question": "Šta kaže obrnuti visoki sveštenici?",
+            "answer": "Označava da suzbijate svoju intuiciju, donosite ispričane odluke ili nastavite bez realizacije skrivenih informacija. Budite oprezni i okrenite se prema unutra."
+          }
+        ],
+        "related_cards": [
+          "mesec",
+          "pustinjak",
+          "kampera"
+        ],
+        "imageUrl": "/cards/rvs/ii-hoghpriestess.vebp"
+      },
+      "the-empress": {
+        "name": "Carica - obilje, kreativnost i prirodni tok",
+        "short_description": "Carica je simbol obilja, kreativne snage i prirodnog toka. Prigrlite mogućnosti Life nudi i utjelovljuje vašu kreativnost sa vašim unutrašnjim uputstvima.",
+        "meanings": {
+          "upright": {
+            "general": "Empripress simbolizuje obilje života i snagu kreativnosti. Tokom ovog perioda imate mogućnosti da primetite lepotu oko vas i negujte ga. Vaša unutrašnja isceljenje energija donosi obilje i ravnotežu u vaš život u mestu kada se sastaju kreativnost i intuicija. Svako iskustvo obogaćuje vas i lično i duhovno.",
+            "love": "Zaljubljena, carica predstavlja period saosećanja, duboke predanosti i emocionalne negovane. Međusobna podrška i razumevanje povećanja odnosa. Ako ste samac, možete privući nekoga novo u svoj život sa svojim prirodnim šarmom i ljubavljivim energijom. U vašoj vezi, ljubav i empatija su na čelu.",
+            "career": "U pogledu karijere, vaša kreativnost i produktivnost ističu se. U povoljnom ste periodu za pokretanje novih projekata, vodite tim i postići konkretne rezultate. Energija carica daje mogućnost efikasnim upotrebom resursa i proceni mogućnosti u pravo vreme.",
+            "money": "U finansijskim pitanjima, obilje i efikasno upravljanje resursima su na čelu. Procene finansijskih mogućnosti sa intuicijom i planiranjem vaših investicija mudro može dovesti do dugoročnih dobitaka. Važno je izbeći nepotrebne troškove i preuzeti svesne korake.",
+            "spiritual": "Na duhovnom putovanju, carica savetuje da deluje sa unutrašnjim ravnotežom i harmonijom. Možete ojačati svoju unutrašnju energiju kroz povezivanje sa prirodom, kreativnim radom i meditacijom. Ova kartica je poziv za otkrivanje sopstvene ozdrave i proširila ga u svoj život."
+          },
+          "reversed": {
+            "general": "Reverzna carica ukazuje na situacije u kojima je kreativnost blokirana, zanemariva ili prevladavanje. Stavovi koji ometaju prirodni tok života mogu biti oštećenja. Budite ljubazni prema sebi i okolini i ponovo pronađite protok.",
+            "love": "Zaljubljeni, obrnuta carica znači emocionalnost hladnoća ili nedostatak posvećenosti. Potrebno je održavati ravnotežu u odnosu i povećati komunikaciju.",
+            "career": "Obrnuta pozicija u karijeri ukazuje na period kada se ometaju kreativnost i produktivnost. Nedostatak planiranja i kohezije u timu može stvoriti probleme.",
+            "money": "U finansijskim pitanjima postoji rizik od neefikasno korišćenja resursa ili neefikasno. Potrebna je štednja i pažljivo razmatranje.",
+            "spiritual": "U duhovnom smislu, obrnuta carica ukazuje da je zatvorena za unutrašnje smernice ili zanemarivanje sebe. Važno je da se ponovo povežete kroz ravnotežu i svest."
+          }
+        },
+        "context": {
+          "mythology": "CEMPRES je povezan sa boginjama prirode, plodnosti i ljubavi, poput Demetera, Gaia ili Aphrodite. Predstavlja energiju obilja, produktivnosti i saosećanja; Vodi nas da se prilagodimo kreativnim ciklusima života.",
+          "celtic_cross": {
+            "future": "Produktivni i plodni period počinje u budućnosti u kreativnim projektima i odnosima. Strpljenje i briga omogućiće vam da postignete uspešne rezultate.",
+            "hidden_influences": "Skriveni uticaji, podržavajuće energije oko vas, a vaša sopstvena intuitivna svest oblikuju vaš put. Svesno preduzmite svoje korake shvatajući ove snage."
+          }
+        },
+        "story": {
+          "title": "Priču o carici",
+          "description": "Carica sedi na njenom prestolu, simbolizuje obilje i kreativnu snagu života. Okružen je cvećem, poljima i rekama; To djeluje u skladu sa prirodom. On neguje svet sa kreativnom energijom i ljubav u rukama.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Carica, treća karta Tarota, povezana je sa plodnošću, obiljem i kreativnom snagom u drevnim tradicijama. U renesansnoj umetnosti to je predstavljeno po prirodi i ženskim figurama.",
+          "mystic_title": "Duhovno značenje",
+          "mystic_message": "Kombinuju unutrašnje smernice i kreativnu snagu. Ojačati sopstvenu isceljujuću energiju meditacijom i povezivanjem sa prirodom.",
+          "cultural_title": "Moderna interpretacija",
+          "cultural_message": "U modernom svetu, carica predstavlja kreativni vođa, mentora ili vođu zajednice. Fokusira se na otkrivanje potencijala onih oko njega.",
+          "lesson": "Campress predaje o negovanju obilja života i kreativnosti. Shvatite svoju unutrašnju energiju i odražavajte ga na spoljni svet harmonosti i saosećajno."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči empress kartice",
+          "keywords_message": "Campress Tarot značenje, carica Tarot Turska, kreativna energija, obilje, saosećanje, priroda, intuicija, iscelitelj Tarot",
+          "positive_title": "Pozitivna energija",
+          "positive_message": "Obilje, kreativnost, saosećanje, negovanje, harmonija sa prirodom, unutrašnjim smernicama",
+          "balance_title": "Ravnoteža",
+          "balance_message": "Ne mešajte negovanje energije sa prekomernim tekstom. Držite kreativnost i saosećanje u ravnoteži.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Poverite prirodni tok, oslobodite svoju kreativnu energiju i negujte ga saosećanjem."
+        },
+        "associations": {
+          "title": "Kosmičke veze sa caricom",
+          "astrology": "Venera (ljubav, lepota, obilje)",
+          "numerology": "3 (kreativnost, produktivnost, ravnoteža)",
+          "element": "Zemlja (priroda, plodnost, opipljivost)",
+          "chakra": "Srčana čakra - ljubav i empatija"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa caricom",
+          "combinations": [
+            {
+              "card": "Lud",
+              "meaning": "Novi počeci, u kombinaciji sa plodnom energijom carice, iniciraju snažno i kreativno putovanje."
+            },
+            {
+              "card": "Abbess",
+              "meaning": "Intuicija i unutrašnja mudrosti vodili su empressov kreativni potencijal i osigurati ravnotežu."
+            },
+            {
+              "card": "Sunce",
+              "meaning": "Kreativna energija u kombinaciji sa srećom i uspeh donosi pozitivne rezultate i ugodne razvoj događaja."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Validacije empress kartice",
+          "affirmation_list": [
+            "Negujem svoj život svojim kreativnom energijom i intuicijom.",
+            "Prihvatam obilje i obilje i spreman sam da podelim.",
+            "Shvaćam svoju unutrašnju isceljujuću snagu i prilagodim je svom svakodnevnom životu."
+          ]
+        },
+        "cta": {
+          "main": "Oslobodite svoju kreativnost i prigrlite obilje života.",
+          "micro": "Danas ponesite kreativan korak i verujte svojoj intuiciji."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja carinska kartica?",
+            "answer": "To je kartica obilja, kreativna energija, saosećanje i prirodni tok. Prigrlite mogućnosti života ponude i sledite svoje unutrašnje smernice."
+          },
+          {
+            "question": "Šta to znači kada je kartica licem prema dole?",
+            "answer": "Invertirani položaj ukazuje na blokadu kreativnosti, prekomerne kontrole ili zanemarivanje. Potrebno je ponovno otkrivanje protoka i unutrašnjih smernica."
+          },
+          {
+            "question": "Koje kartice formiraju snažnu kombinaciju sa caricom?",
+            "answer": "U kombinaciji sa Madmanom, visokim sveštenicima i suncem, kreativni potencijal, intuicija i uspeh ojačani su na uravnotežen način."
+          }
+        ],
+        "related_cards": [
+          "budala",
+          "visoki sveštenik",
+          "sunce"
+        ],
+        "imageUrl": "/cards/rvs/ii -Empress.vebp"
+      },
+      "the-emperor": {
+        "name": "Car - snaga, narudžba i prizemljena vlast",
+        "short_description": "Car je kartica strukture, odlučnosti i rukovodstva. Vodi vas da u svom životu uspostavite čvrste temelje, odredite svoje granice i disciplinuju svoju volju.",
+        "meanings": {
+          "upright": {
+            "general": "Car znači autoritet, red i snažno rukovodstvo. Ako tražite stabilnost i sigurnost u svom životu, ova kartica vas podseća da morate krenuti naprijed sa jasnom vizijom, strategijom i odlučnošću. U pravo vreme ste za podešavanje pravila, postavite granice i preuzeti odgovornost. Stavite svoje korijene u zemlju, biti disciplinovani da postignete svoje ciljeve.",
+            "love": "Zaljubljen, car simbolizuje zaštitni i podržavajući partner ili potrebu za jasnoćom i strukturom u vezi. To je period kada logika dođe do izražaja kao i emocija. Odnosi izgrađeni na čvrstim temeljima postaju jači.",
+            "career": "Vođstvo, upravljanje i strategija su na čelu u vašoj karijeri. Imate mogućnosti da koristite svoj autoritet, organizujte projekte i usmerite svoj tim. Dajte dugoročne planove i implementirajte ih sa određivanjem.",
+            "money": "U finansijskim pitanjima je važno disciplinovano upravljanje budžetom, sigurna ulaganja i finansijska stabilnost. Izbegavajte rizike, fokusirajte se na dugoročne dobitke.",
+            "spiritual": "Duhovno, car vas traži da izgradite svoju unutrašnju snagu i volju. To je pogodan rok za određivanje sopstvenih granica, iskorištavanje korena i razvijajući duhovnu disciplinu."
+          },
+          "reversed": {
+            "general": "Reversirani car ukazuje na previsoku kontrolu, krutih pravila ili problema sa ovlašćenjima. Naučite da budete fleksibilni, dajte druge prostora i ne pretvorite sopstvenu moć u tiraniju.",
+            "love": "Opršilasti stavovi, emocionalna udaljenost ili prekomerna kontrola u ljubavi mogu stvoriti probleme u vezi. Zajednostavno poštovanje i sloboda su važna.",
+            "career": "U karijeri, sukob sa ovlašćenjima, preterana disciplina ili nedostatak fleksibilnosti može blokirati projekte. Davati značaj timski rad.",
+            "money": "Finansijski previsoban konsekvat, strah od rizika ili ne deljenje resursa može dovesti do problema. Pronađite ravnotežu.",
+            "spiritual": "Duhovno, ograničavajući se previše ili suzbijanje vašeg unutrašnjeg autoriteta ometa vaš rast. Ponekad morate ići sa tokom."
+          }
+        },
+        "context": {
+          "mythology": "Car je povezan sa nebeskim otac, zakonodavstvom i zaštitničkim figurama u drevnim mitologijama. Bogovi kao što su Zevs, Odin ili Marduk su arhetipovi koji pružaju narudžbu i društvenu strukturu. Carev presto simbolizuje unija zemaljskog i božanskog poretka; Dobija svoju moć direktno sa tla i korena.",
+          "celtic_cross": {
+            "future": "U bliskoj budućnosti ćete preuzeti više strukture, narudžbe i liderske uloge u bliskoj budućnosti. Preuzimanje odgovornosti i razjašnjenja granica donosi uspeh.",
+            "hidden_influences": "Skriveni uticaji mogu naglasiti potrebu za snažnom autoritetom, porodične tradicije ili unutrašnju disciplinu. Vlastiti sopstvenu snagu."
+          }
+        },
+        "story": {
+          "title": "Na carevom prestolu: snaga naloga",
+          "description": "Sjedeći na kamenom prestolu na vrhu visoke planine, car je spušten na svet. Sadrži žezlo, simbol života i globusa, predstavljajući zemaljsku snagu. Okružen je crvenim ogrtačem i oklopom; On je i zaštitni i odlučan vođa. On donosi red, sigurnost i stabilnost svom kraljevstvu."
+        }
+      }
+    }
+  }
+}

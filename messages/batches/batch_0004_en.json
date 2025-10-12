@@ -1,0 +1,938 @@
+{
+  "career": {
+    "meanings": {
+      "knightofswords": {
+        "position7": {
+          "keywords": {
+            "0": "speed",
+            "1": "determination",
+            "2": "target",
+            "3": "Courage",
+            "4": "future"
+          }
+        }
+      },
+      "queenofswords": {
+        "position1": {
+          "keywords": {
+            "0": "Intelligence",
+            "1": "independence",
+            "2": "clarity",
+            "3": "real",
+            "4": "logic"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "logic",
+            "1": "independence",
+            "2": "clarity",
+            "3": "justice",
+            "4": "intelligence"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "logic",
+            "1": "judgment",
+            "2": "Objectivity",
+            "3": "communication",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "logic",
+            "1": "independence",
+            "2": "effort",
+            "3": "discipline",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "logic",
+            "1": "Objectivity",
+            "2": "clarity",
+            "3": "discipline",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "criticism",
+            "1": "coldness",
+            "2": "logic",
+            "3": "Distance",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "logic",
+            "1": "Objectivity",
+            "2": "independence",
+            "3": "clarity",
+            "4": "future"
+          }
+        }
+      },
+      "kingofswords": {
+        "position1": {
+          "keywords": {
+            "0": "authority",
+            "1": "justice",
+            "2": "strategy",
+            "3": "intelligence",
+            "4": "logic"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "leadership",
+            "1": "strategy",
+            "2": "justice",
+            "3": "intelligence",
+            "4": "wisdom"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "authority",
+            "1": "decision",
+            "2": "strategy",
+            "3": "judgment",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "wisdom",
+            "1": "justice",
+            "2": "leadership",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "wisdom",
+            "1": "strategy",
+            "2": "leadership",
+            "3": "justice",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "authority",
+            "1": "rigor",
+            "2": "justice",
+            "3": "logic",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "wisdom",
+            "1": "justice",
+            "2": "authority",
+            "3": "leadership",
+            "4": "future"
+          }
+        }
+      },
+      "aceofwands": {
+        "position1": {
+          "keywords": {
+            "0": "Inspired",
+            "1": "start",
+            "2": "creativity",
+            "3": "energy",
+            "4": "passion"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "Inspired",
+            "1": "start",
+            "2": "energy",
+            "3": "passion",
+            "4": "creativity"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "Inspired",
+            "1": "energy",
+            "2": "opportunity",
+            "3": "start",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "passion",
+            "1": "Inspired",
+            "2": "effort",
+            "3": "start",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "creativity",
+            "1": "start",
+            "2": "Courage",
+            "3": "Inspired",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "start",
+            "1": "Inspired",
+            "2": "Courage",
+            "3": "opportunity",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "start",
+            "1": "Inspired",
+            "2": "creativity",
+            "3": "Motivation",
+            "4": "future"
+          }
+        }
+      },
+      "twoofwands": {
+        "position1": {
+          "keywords": {
+            "0": "planning",
+            "1": "Vision",
+            "2": "decision",
+            "3": "Progress",
+            "4": "opportunity"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "Courage",
+            "3": "Enlargement",
+            "4": "target"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "Plan",
+            "1": "Vision",
+            "2": "opportunity",
+            "3": "uncertainty",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "target",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "Plan",
+            "1": "Vision",
+            "2": "long term",
+            "3": "target",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "long term",
+            "3": "narrow view",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "Plan",
+            "1": "Vision",
+            "2": "future",
+            "3": "target",
+            "4": "Progress"
+          }
+        }
+      },
+      "threeofwands": {
+        "position1": {
+          "keywords": {
+            "0": "Progress",
+            "1": "opportunity",
+            "2": "Vision",
+            "3": "Enlargement",
+            "4": "preparation"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "research",
+            "1": "Enlargement",
+            "2": "opportunity",
+            "3": "Progress",
+            "4": "preparation"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "Enlargement",
+            "1": "opportunity",
+            "2": "waiting",
+            "3": "timing",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "Enlargement",
+            "1": "opportunity",
+            "2": "waiting",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "opportunity",
+            "1": "Vision",
+            "2": "Enlargement",
+            "3": "target",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "opportunity",
+            "1": "horizon",
+            "2": "Vision",
+            "3": "Enlargement",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "opportunity",
+            "1": "horizon",
+            "2": "Enlargement",
+            "3": "Vision",
+            "4": "future"
+          }
+        }
+      },
+      "fourofwands": {
+        "position1": {
+          "keywords": {
+            "0": "celebration",
+            "1": "success",
+            "2": "solidarity",
+            "3": "basic",
+            "4": "stability"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "basic",
+            "1": "celebration",
+            "2": "support",
+            "3": "compatibility",
+            "4": "solidarity"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "support",
+            "1": "celebration",
+            "2": "compatibility",
+            "3": "Community",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "solidarity",
+            "1": "compatibility",
+            "2": "support",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "compatibility",
+            "1": "celebration",
+            "2": "Team",
+            "3": "balance",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "compatibility",
+            "1": "Peace",
+            "2": "celebration",
+            "3": "stability",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "compatibility",
+            "1": "stability",
+            "2": "celebration",
+            "3": "success",
+            "4": "future"
+          }
+        }
+      },
+      "fiveofwands": {
+        "position1": {
+          "keywords": {
+            "0": "competition",
+            "1": "struggle",
+            "2": "conflict",
+            "3": "defence",
+            "4": "ambition"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "competition",
+            "1": "struggle",
+            "2": "defence",
+            "3": "ambition",
+            "4": "Motivation"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "competition",
+            "1": "conflict",
+            "2": "struggle",
+            "3": "Tension",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "competition",
+            "1": "struggle",
+            "2": "resistance",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "competition",
+            "1": "struggle",
+            "2": "energy",
+            "3": "opportunity",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "competition",
+            "1": "conflict",
+            "2": "struggle",
+            "3": "debate",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "struggle",
+            "1": "competition",
+            "2": "Determination",
+            "3": "resistance",
+            "4": "future"
+          }
+        }
+      },
+      "sixofwands": {
+        "position1": {
+          "keywords": {
+            "0": "victory",
+            "1": "recognition",
+            "2": "success",
+            "3": "appreciation",
+            "4": "pride"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "success",
+            "1": "appreciation",
+            "2": "visibility",
+            "3": "Self - confidence",
+            "4": "victory"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "appreciation",
+            "1": "success",
+            "2": "visibility",
+            "3": "support",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "success",
+            "1": "appreciation",
+            "2": "Self - confidence",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "success",
+            "1": "Self - confidence",
+            "2": "appreciation",
+            "3": "visibility",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "appreciation",
+            "1": "success",
+            "2": "Self - confidence",
+            "3": "value",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "victory",
+            "1": "appreciation",
+            "2": "Self - confidence",
+            "3": "success",
+            "4": "future"
+          }
+        }
+      },
+      "sevenofwands": {
+        "position1": {
+          "keywords": {
+            "0": "defence",
+            "1": "struggle",
+            "2": "Courage",
+            "3": "resistance",
+            "4": "determination"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "defence",
+            "1": "resistance",
+            "2": "Courage",
+            "3": "determination",
+            "4": "balance"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "defence",
+            "1": "struggle",
+            "2": "resistance",
+            "3": "pressure",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "defence",
+            "1": "resistance",
+            "2": "effort",
+            "3": "determination",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "Courage",
+            "1": "defence",
+            "2": "resistance",
+            "3": "determination",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "defence",
+            "1": "Courage",
+            "2": "determination",
+            "3": "struggle",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "defence",
+            "1": "determination",
+            "2": "Courage",
+            "3": "position",
+            "4": "future"
+          }
+        }
+      },
+      "eightofwands": {
+        "position1": {
+          "keywords": {
+            "0": "speed",
+            "1": "Progress",
+            "2": "news",
+            "3": "opportunity",
+            "4": "acceleration"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "acceleration",
+            "3": "opportunity",
+            "4": "movement"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "opportunity",
+            "3": "timing",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "speed",
+            "1": "determination",
+            "2": "effort",
+            "3": "opportunity",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "speed",
+            "1": "Action",
+            "2": "opportunity",
+            "3": "energy",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "speed",
+            "1": "opportunity",
+            "2": "movement",
+            "3": "delay",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "speed",
+            "1": "opportunity",
+            "2": "Progress",
+            "3": "movement",
+            "4": "future"
+          }
+        }
+      },
+      "nineofwands": {
+        "position1": {
+          "keywords": {
+            "0": "endurance",
+            "1": "determination",
+            "2": "resistance",
+            "3": "War",
+            "4": "protection"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "endurance",
+            "1": "Patience",
+            "2": "resistance",
+            "3": "power",
+            "4": "protection"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "resistance",
+            "1": "barriers",
+            "2": "Tired.",
+            "3": "endurance",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "endurance",
+            "1": "effort",
+            "2": "Patience",
+            "3": "resistance",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "endurance",
+            "1": "resistance",
+            "2": "Determination",
+            "3": "Patience",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "Tired.",
+            "1": "resistance",
+            "2": "defence",
+            "3": "To give up",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "endurance",
+            "1": "Patience",
+            "2": "resistance",
+            "3": "protection",
+            "4": "future"
+          }
+        }
+      },
+      "tenofwands": {
+        "position1": {
+          "keywords": {
+            "0": "responsibilities",
+            "1": "load",
+            "2": "Don't be coercion",
+            "3": "effort",
+            "4": "endurance"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "responsibilities",
+            "1": "load",
+            "2": "balance",
+            "3": "effort",
+            "4": "planning"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "pressure",
+            "3": "effort",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "responsibilities",
+            "1": "load",
+            "2": "effort",
+            "3": "Patience",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "responsibilities",
+            "1": "load",
+            "2": "balance",
+            "3": "support",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "support",
+            "3": "balance",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "responsibilities",
+            "1": "balance",
+            "2": "load",
+            "3": "Determination",
+            "4": "future"
+          }
+        }
+      },
+      "pageofwands": {
+        "position1": {
+          "keywords": {
+            "0": "curiosity",
+            "1": "Inspired",
+            "2": "discovery",
+            "3": "learning",
+            "4": "start"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "learning",
+            "1": "discovery",
+            "2": "Inspired",
+            "3": "testing",
+            "4": "creativity"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "Inspired",
+            "1": "opportunity",
+            "2": "new path",
+            "3": "timing",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "curiosity",
+            "1": "learning",
+            "2": "fad",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "learning",
+            "1": "curiosity",
+            "2": "fad",
+            "3": "testing",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "fad",
+            "1": "testing",
+            "2": "Inspired",
+            "3": "Motivation",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "idea",
+            "1": "fad",
+            "2": "testing",
+            "3": "Inspired",
+            "4": "future"
+          }
+        }
+      },
+      "knightofwands": {
+        "position1": {
+          "keywords": {
+            "0": "passion",
+            "1": "Courage",
+            "2": "adventure",
+            "3": "movement",
+            "4": "energy"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "Courage",
+            "1": "passion",
+            "2": "Action",
+            "3": "Progress",
+            "4": "energy"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "energy",
+            "1": "opportunity",
+            "2": "movement",
+            "3": "Sudden development",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "Courage",
+            "1": "passion",
+            "2": "effort",
+            "3": "energy",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "Courage",
+            "1": "energy",
+            "2": "determination",
+            "3": "target",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "Hurry",
+            "1": "risk",
+            "2": "I can't wait.",
+            "3": "Courage",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "Courage",
+            "1": "energy",
+            "2": "Progress",
+            "3": "target",
+            "4": "future"
+          }
+        }
+      },
+      "queenofwands": {
+        "position1": {
+          "keywords": {
+            "0": "leadership",
+            "1": "Self - confidence",
+            "2": "Charisma",
+            "3": "Inspired",
+            "4": "power"
+          }
+        }
+      }
+    }
+  }
+}

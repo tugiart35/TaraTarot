@@ -1,0 +1,778 @@
+{
+  "situation-analysis": {
+    "meanings": {
+      "eightofswords": {
+        "position3": {
+          "keywords": {
+            "0": "Self-restraint",
+            "1": "fear",
+            "2": "mind trap",
+            "3": "Freedom",
+            "4": "experiment"
+          },
+          "context": "Secret self-restraints and exit attempts."
+        },
+        "position4": {
+          "upright": "At the center, it surrounds self-restraint beliefs, and the small chain of evidence relaxes.",
+          "reversed": "The center is beginning to unravel, but the old fears are beginning.",
+          "keywords": {
+            "0": "Self-restraint",
+            "1": "fear",
+            "2": "mind trap",
+            "3": "Freedom",
+            "4": "experiment"
+          },
+          "context": "Center: untie the ropes."
+        },
+        "position5": {
+          "upright": "The Eight Swords show that external regulation/restraint narrows the range of movement.",
+          "reversed": "The Reverse Eight Swords say the constraints can be loosened or the exemptions can be opened outside.",
+          "keywords": {
+            "0": "Restrict",
+            "1": "Regulation",
+            "2": "obstacle",
+            "3": "exemption",
+            "4": "flexibility"
+          },
+          "context": "The rule set defines the area; the search for flexibility is important."
+        },
+        "position6": {
+          "upright": "Advice: Test the limits of faith with small experiments; collect evidence.",
+          "reversed": "Advice: Ask for help; write the exit steps.",
+          "keywords": {
+            "0": "faith",
+            "1": "experiment",
+            "2": "Evidence",
+            "3": "help",
+            "4": "Freedom"
+          },
+          "context": "Advice: to untie the mental node."
+        },
+        "position7": {
+          "upright": "Possible future: If self-sustaining beliefs persist, the movement is narrow; evidence-based trials are essential.",
+          "reversed": "Possible future: Mental nodes unravel; freedom steps accelerate.",
+          "keywords": {
+            "0": "Self-restraint",
+            "1": "fear",
+            "2": "Release",
+            "3": "faith",
+            "4": "experiment"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "nineofswords": {
+        "position1": {
+          "upright": "Nine Swords represent intense anxiety, fear, or sleeplessness in the past. These experiences may have kept your mind busy and directly affected your mood today. This card shows that these past concerns still affect you deeply and can be the basis of the problems you face today.",
+          "reversed": "The Reverse-Nine Sword represents fears, repressed concerns or sufferings that have been ignored in the past. Feelings that you may have avoided at that time may have grown even bigger today. This card emphasizes that having difficulty in finding mental peace in the past may have affected today's conditions.",
+          "keywords": {
+            "0": "Concern",
+            "1": "Stress",
+            "2": "anxiety",
+            "3": "night",
+            "4": "history"
+          },
+          "context": "The fear of the past is the effect of your mood today."
+        },
+        "position2": {
+          "upright": "The Nine Swords now indicate that anxiety, night thoughts, and disaster scenarios occupy the mind. The lack of sleep cloudes clarity.",
+          "reversed": "The Reverse Nine Swords indicate that reality seems more portable in the morning of the nightmare. However, there may be triggers. The record of breath, body regulatory and small achievements balances.",
+          "keywords": {
+            "0": "Concern",
+            "1": "insomnia",
+            "2": "Don't be a disaster.",
+            "3": "Regulation",
+            "4": "a reality test"
+          },
+          "context": "The current need is anxiety hygiene and rhythm."
+        },
+        "position3": {
+          "upright": "Nine Swords, night anxiety, disaster, and اya... show that the scenarios are gnawing at the mind behind the curtain. Sleepless thoughts can cloud the function of the day. This card reminds us of the power of externalizing anxiety (writing/ speech).",
+          "reversed": "The Reverse Nine Swords say that in the morning of the nightmare it began to be noticed that reality was less frightening, yet the mental cycles may sometimes return. This card emphasizes evidence-based corrosives and body-regulation weakens the cycle.",
+          "keywords": {
+            "0": "Concern",
+            "1": "insomnia",
+            "2": "Don't be a disaster.",
+            "3": "resolution",
+            "4": "Regulation"
+          },
+          "context": "The secret cycle of anxiety and the need for a test of reality."
+        },
+        "position4": {
+          "upright": "There's anxiety and nights at the center, and writing and looking for evidence will weaken the cycle.",
+          "reversed": "Morning clarity is rising at the center, and regulation and small victories bring balance.",
+          "keywords": {
+            "0": "Concern",
+            "1": "insomnia",
+            "2": "Don't be a disaster.",
+            "3": "Regulation",
+            "4": "reality"
+          },
+          "context": "Center: anxiety button."
+        },
+        "position5": {
+          "upright": "The Nine Swords indicate that the climate of anxiety, crisis reports, and stress is dominant outside.",
+          "reversed": "The Reverse Nine Swords say the wave of panic will cease and a more rational tone will rise outside.",
+          "keywords": {
+            "0": "Concern",
+            "1": "crisis",
+            "2": "news",
+            "3": "Stress",
+            "4": "rationality"
+          },
+          "context": "The outside story stream is affecting your emotional state."
+        },
+        "position6": {
+          "upright": "Advice: Write down the list of fears, refute the evidence; do body regulatory.",
+          "reversed": "Advice: Make it a habit to test reality with the morning ritual.",
+          "keywords": {
+            "0": "Concern",
+            "1": "writing",
+            "2": "Evidence",
+            "3": "Regulation",
+            "4": "ritual"
+          },
+          "context": "Advice: anxiety hygiene."
+        },
+        "position7": {
+          "upright": "Possible future: anxiety can be peaked and then extinguished by a test of reality; support and ritual comfort.",
+          "reversed": "Possible future: After sleepless nights, clarity comes; mental burden is lighter.",
+          "keywords": {
+            "0": "Concern",
+            "1": "insomnia",
+            "2": "reality",
+            "3": "Regulation",
+            "4": "relief"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "tenofswords": {
+        "position1": {
+          "upright": "The Ten Swords point to a past ending, betrayal, or sudden loss. Although this ending may be painful, it may also have opened the way for a new beginning. Today's situation may have been shaped after this closure. This card reminds us that the great destruction you experienced in the past could also be the source of your power today.",
+          "reversed": "The Reverse Ten Swords represent the past, but not accepted endings, delayed closures, or prolonged suffering. Perhaps you can't accept the end of something that needs to be ended, and it still affects you. This card shows that past loops are the origin of today's problems.",
+          "keywords": {
+            "0": "end",
+            "1": "Betrayal",
+            "2": "Pain",
+            "3": "closure",
+            "4": "history"
+          },
+          "context": "The effects of past endings and losses."
+        },
+        "position2": {
+          "upright": "The Ten Swords show that a cycle is now in effect and that surrender is at the door. After the bottom, the direction is just up.",
+          "reversed": "The Reverse Ten Swords say the recovery and framing of the story has begun. Changing the way you look at old pain speeds up recovery. Small advanced agreements create renewed power.",
+          "keywords": {
+            "0": "end",
+            "1": "Surrender",
+            "2": "Rebirth",
+            "3": "Recovery",
+            "4": "again frame"
+          },
+          "context": "Current threshold: acceptance of closure, spark of the beginning."
+        },
+        "position3": {
+          "upright": "The Ten Swords show that a cycle has already passed mentally, but the acceptance has come from behind. The lowest story points to the threshold of rebirth. This card says that honoring the end will create strength and lightness.",
+          "reversed": "The Reverse Ten Swords show that the intention to recover, drop the load, and reframe the story has sprouted inside. The urge to return to the old pain may occasionally check. This card emphasizes that small deals facing forward (with you) will make recovery permanent.",
+          "keywords": {
+            "0": "end",
+            "1": "Surrender",
+            "2": "Rebirth",
+            "3": "Agreed",
+            "4": "Recovery"
+          },
+          "context": "Secret end acceptance and reboot threshold."
+        },
+        "position4": {
+          "upright": "A cycle is over at the center, honoring the end will make room for a new one.",
+          "reversed": "The center is starting to recover, and the frame is powering up again.",
+          "keywords": {
+            "0": "end",
+            "1": "Surrender",
+            "2": "Rebirth",
+            "3": "Recovery",
+            "4": "closure"
+          },
+          "context": "Center: gift of the end."
+        },
+        "position5": {
+          "upright": "The Ten Swords show harsh endings, such as closing a case outside, ending or bankruptcy.",
+          "reversed": "The Reverse Ten Swords say there's a reboot outside, debris removal and recovery ground.",
+          "keywords": {
+            "0": "end",
+            "1": "closure",
+            "2": "crisis",
+            "3": "reboot",
+            "4": "Recovery"
+          },
+          "context": "External closures require new routes."
+        },
+        "position6": {
+          "upright": "Advice: Accept the end and design the new frame.",
+          "reversed": "Advice: Make small future deals; restore power.",
+          "keywords": {
+            "0": "end",
+            "1": "Agreed",
+            "2": "again frame",
+            "3": "start",
+            "4": "power"
+          },
+          "context": "Advice: Then build a new one."
+        },
+        "position7": {
+          "upright": "Possible future: a certain end; the story closes and the rebirth threshold appears.",
+          "reversed": "Possible future: recovery begins; past loads are dropped and power is restored.",
+          "keywords": {
+            "0": "end",
+            "1": "closure",
+            "2": "Rebirth",
+            "3": "Recovery",
+            "4": "Agreed"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "pageofswords": {
+        "position1": {
+          "upright": "The Sword Prince represents a process that began in the past with desire to learn, curiosity, or communication efforts. The information or small steps you took at that time may be at the root of the situation today. This card reminds you that this past learning process has led you to a more careful and analytical perspective.",
+          "reversed": "The Reverse-Sword Prince represents being guided by false information in the past, being led by rumors, or being carelessly taken steps. This misdirection can be effective in shaping today's conditions. This card can also show that careless words or hasty decisions have been traced to this day.",
+          "keywords": {
+            "0": "learning",
+            "1": "curiosity",
+            "2": "information",
+            "3": "communication",
+            "4": "history"
+          },
+          "context": "The effect of past learning efforts or false information."
+        },
+        "position2": {
+          "upright": "The Sword Prince shows that curiosity is high now, observation is sharp and the desire to learn is alive. Questions are moving to the right place. New ideas require controlled risks.",
+          "reversed": "The Reverse-Sword Prince points to the risk of disorganized information, hasty judgment or gossip.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "observation",
+            "2": "communication",
+            "3": "Verification",
+            "4": "learning"
+          },
+          "context": "Current mode: discovery and data collection, but selective."
+        },
+        "position3": {
+          "upright": "The Sword Prince shows that mental curiosity, observation and openness to new ideas are a powerful thrust behind the curtain. Asking questions is your invisible fuel. This card says that when curiosity is balanced by responsibility, it creates a sharp learning curve.",
+          "reversed": "The Reverse-Sword Prince demonstrates the hidden risk of gossip, disorganizing information, or alert extremism. Fast judgments can raise the wrong flag. This card emphasizes that verifying the source and clarifying the intention will clear the mind.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "observation",
+            "2": "learning",
+            "3": "(PHP 3, PHP 4)",
+            "4": "Verification"
+          },
+          "context": "It's a need for secret curiosity and information hygiene."
+        },
+        "position4": {
+          "upright": "There's curiosity and observation at the center, picking up selective data will speed up progress.",
+          "reversed": "There's a high-profile risk of judgment or gossip at the station.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "observation",
+            "2": "learning",
+            "3": "communication",
+            "4": "Verification"
+          },
+          "context": "Center: the shore of discovery."
+        },
+        "position5": {
+          "upright": "The Prince of Sword shows a high demand for curiosity, questions and information outside.",
+          "reversed": "The Reverse Sword Prince says rumors, false information, and hasty judgments spread outside.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "information",
+            "2": "Question",
+            "3": "gossip",
+            "4": "Verification"
+          },
+          "context": "Information hygiene provides competitive advantage."
+        },
+        "position6": {
+          "upright": "Advice: Search, question, question, collect data; speed up learning.",
+          "reversed": "Advice: Do a source confirmation; avoid gossip.",
+          "keywords": {
+            "0": "research",
+            "1": "Question",
+            "2": "data",
+            "3": "Verification",
+            "4": "learning"
+          },
+          "context": "Advice: discipline curiosity."
+        },
+        "position7": {
+          "upright": "Possible future: curiosity is triggered; news, ideas, or the opportunity to learn speeds up progress.",
+          "reversed": "Possible future: gossip and hasty judgment can lead to error; confirmation is critical.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "news",
+            "2": "learning",
+            "3": "Verification",
+            "4": "communication"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "knightofswords": {
+        "position1": {
+          "upright": "The Sword Knight represents quick decisions made in the past, bold moves, or sudden change of direction. The courage you showed at that time can be the basis of today's situation. Your rapid progress may have taken you to your present position. This card shows that this past indiscretion still shapes your approach to events today.",
+          "reversed": "The Reverse-Sword Knight represents attempts in the past, lack of plans, or uncontrollable behavior. These missteps may still be at the root of today's problems. The hasty words or impulsive steps may remain in effect. This card also emphasizes that the patience shown in the past may have made today's processes difficult.",
+          "keywords": {
+            "0": "Courage",
+            "1": "speed",
+            "2": "move",
+            "3": "decision",
+            "4": "history"
+          },
+          "context": "The influence of the rash or bold decisions of the past."
+        },
+        "position2": {
+          "upright": "The Knight of the Sword now shows that fast movement, clear defense and ambitious communication are coming forward. The mind wants a decision fast.",
+          "reversed": "The Reverse Sword Knight points to the risk of hastyness, impulsive speech, and hurtful speech. The desire for righteousness can slow down listening.",
+          "keywords": {
+            "0": "speed",
+            "1": "determination",
+            "2": "debate",
+            "3": "strategy",
+            "4": "expression"
+          },
+          "context": "Current acceleration: think fast, apply wisely."
+        },
+        "position3": {
+          "upright": "The Sword Knight shows that the quick move, the sharp argument and the idea are strong inside. The mind requires speed; the call for action plays loud. This card reminds that when speed is not combined with strategy, it can create vulnerability.",
+          "reversed": "The Reverse Sword Knight demonstrates the hidden risk of hasty, impulsive speech, or aggressive communication. The desire to be right can reduce the ability to listen. This card emphasizes that the rhythm of breathing will be effective.",
+          "keywords": {
+            "0": "speed",
+            "1": "debate",
+            "2": "defence",
+            "3": "Hurry",
+            "4": "strategy"
+          },
+          "context": "The need for the hidden mind and the balance of the brake and the gas."
+        },
+        "position4": {
+          "upright": "There's a quick move and a clear defense at the center, and speed is a sharp result when combined with strategy.",
+          "reversed": "In the centre, haste can harden style. The rhythm of speech is good.",
+          "keywords": {
+            "0": "speed",
+            "1": "determination",
+            "2": "defence",
+            "3": "strategy",
+            "4": "expression"
+          },
+          "context": "Center: speedy mind."
+        },
+        "position5": {
+          "upright": "The Knight of the Sword shows that there are fast-moving actors and aggressive communication in the field.",
+          "reversed": "The Reverse Sword Knight says that hasty/strength speech can backfire and give rise to resistance.",
+          "keywords": {
+            "0": "speed",
+            "1": "Aggressive",
+            "2": "idiosyncrasy",
+            "3": "risk",
+            "4": "tempo"
+          },
+          "context": "You need strategic brake-gas in the fast zone."
+        },
+        "position6": {
+          "upright": "Advice: Add a clear plan to fast action; give the message directly.",
+          "reversed": "Advice: Apply the rhythm of breathing and talking, and do not break it in haste.",
+          "keywords": {
+            "0": "speed",
+            "1": "Plan",
+            "2": "Message",
+            "3": "rhythm",
+            "4": "effect"
+          },
+          "context": "Advice, quickly, but with accuracy."
+        },
+        "position7": {
+          "upright": "Possible future: quick action and sharp communication results; speed merges with strategy.",
+          "reversed": "Possible future: haste increases the risk of conflict and backfire; rhythm must be adjusted.",
+          "keywords": {
+            "0": "speed",
+            "1": "determination",
+            "2": "idiosyncrasy",
+            "3": "strategy",
+            "4": "risk"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "queenofswords": {
+        "position1": {
+          "upright": "The Queen of the Sword represents an independent and powerful figure who has made logical decisions in the past. This person could be you or someone else who has been effective in your life. His attitude may be at the root of your present situation. This card reminds you that this logical and decisive approach in the past has made you more independent and clear-minded today.",
+          "reversed": "The Reverse-Sword Queen represents an extreme critical, cold, or distant attitude in the past. This attitude may have caused the building of walls in relationships. Perhaps this approach is one of the root causes for the difficulty of today's conditions. This card describes the problems of the past, solid and critical behaviors today.",
+          "keywords": {
+            "0": "logic",
+            "1": "independence",
+            "2": "criticism",
+            "3": "coldness",
+            "4": "history"
+          },
+          "context": "The effect of rational or cold approaches in the past."
+        },
+        "position2": {
+          "upright": "The Queen of the Sword now shows that clarity, boundaries, and objectiveness are compasses. Data is superior to myth; a fair look brings clarity. The right decision is born when the mind is balanced with a warm heart.",
+          "reversed": "The Reverse Sword Queen points to extreme criticism, sharp language, or distance of protection. Hardness can thinn the connection.",
+          "keywords": {
+            "0": "objectivity",
+            "1": "limit",
+            "2": "clarity",
+            "3": "communication",
+            "4": "Compassionate tone"
+          },
+          "context": "Current posture: clear mind, soft expression."
+        },
+        "position3": {
+          "upright": "The Sword Queen shows that there is a compass within the capacity of clearness, limiting, and fair assessment. The mind wants data, not myth. This card reminds of the fairest outcome when cold-hearted mind is held together.",
+          "reversed": "The Reverse Sword Queen shows the hidden risk of extreme criticism, bitter irony or sharp language. For protection, distance can thin the connection. This card emphasizes that tender language and soft boundaries will enrich interaction.",
+          "keywords": {
+            "0": "clarity",
+            "1": "limit",
+            "2": "objectivity",
+            "3": "criticism",
+            "4": "Compassionate language"
+          },
+          "context": "It's a risk of hidden analytic compass and sharpness in language."
+        },
+        "position4": {
+          "upright": "There's clarity, boundaries and objectiveness at the center, and the cool mind makes a fair decision.",
+          "reversed": "In the center, extreme criticism can thin the connection, and the compassionate language is effective.",
+          "keywords": {
+            "0": "clarity",
+            "1": "limit",
+            "2": "objectivity",
+            "3": "justice",
+            "4": "communication"
+          },
+          "context": "Center: clear compass."
+        },
+        "position5": {
+          "upright": "The Queen of the Sword shows high expectations of objectiveness, translucent mind and fair assessment outside.",
+          "reversed": "The Reverse Sword Queen says that extreme criticism, subtle regiment, or harsh tongue can create coolness outside.",
+          "keywords": {
+            "0": "objectivity",
+            "1": "justice",
+            "2": "transparency",
+            "3": "criticism",
+            "4": "communication"
+          },
+          "context": "The rational frame increases acceptance; the language tone is critical."
+        },
+        "position6": {
+          "upright": "Advice: Set clear boundaries, make objective decisions, be fair.",
+          "reversed": "Advice: Soften the tongue; try to be open with compassion.",
+          "keywords": {
+            "0": "limit",
+            "1": "objectivity",
+            "2": "justice",
+            "3": "communication",
+            "4": "Compassion"
+          },
+          "context": "My advice is to be clear, but kind."
+        },
+        "position7": {
+          "upright": "Possible future: objective decision and clear boundaries lead to a fair conclusion.",
+          "reversed": "Possible future: Hard language can weaken connection; compassion requires clarity.",
+          "keywords": {
+            "0": "objectivity",
+            "1": "limit",
+            "2": "justice",
+            "3": "communication",
+            "4": "clarity"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "kingofswords": {
+        "position1": {
+          "upright": "The Sword King represents a fair, logical, authoritarian figure in the past. The influence of this person or the way you act may have been the basis of today's process. His wisdom and decisions may have led to your life. This card emphasizes that the search for discipline and justice in the past is one of the reasons underlying your present situation.",
+          "reversed": "The Reverse Sword King represents a figure in the past that is oppressive, cold, or unfair. This authority may have shaped your present circumstances in a negative way. Perhaps an overly controlling person or unjust decision is at the root of today's problems. This card also reminds us that past injustices or cold authority still remains.",
+          "keywords": {
+            "0": "justice",
+            "1": "logic",
+            "2": "authority",
+            "3": "leadership",
+            "4": "history"
+          },
+          "context": "The influence of the righteous or oppressive figures of the past."
+        },
+        "position2": {
+          "upright": "The Sword King shows that principles, ethics, and strategic logic are behind the wheel now. The system-building mind regulates confusion.",
+          "reversed": "The Reverse Sword King points to the risk of using strict rules, dogmatic thought, or mind. Cold logic can cloud empathy.",
+          "keywords": {
+            "0": "logic",
+            "1": "ethics",
+            "2": "authority",
+            "3": "strategy",
+            "4": "empathy"
+          },
+          "context": "Current axis: primitive mind, balanced authority."
+        },
+        "position3": {
+          "upright": "The Sword King shows that there is an executive principle within the principles, ethical and strategic mind. The frame of reason quickly regulates confusion. This card reminds us that the use of fair force is building trust.",
+          "reversed": "The Reverse Sword King demonstrates the hidden risk of dogmatic thinking, strict rules, or using reason for power. Cold logic can cloud empathy. This card emphasizes that matching ethics and empathy will increase both effect and acceptance.",
+          "keywords": {
+            "0": "ethics",
+            "1": "logic",
+            "2": "authority",
+            "3": "dogma",
+            "4": "empathy"
+          },
+          "context": "The threshold of hidden principle focus and rigor."
+        },
+        "position4": {
+          "upright": "There are principles and strategic logic at the center. Ethic power builds trust.",
+          "reversed": "There's a risk of rigor or dogdom at the center.",
+          "keywords": {
+            "0": "ethics",
+            "1": "logic",
+            "2": "authority",
+            "3": "strategy",
+            "4": "empathy"
+          },
+          "context": "Center: primitive mind."
+        },
+        "position5": {
+          "upright": "The Sword King shows that foreign authority, expert committees and ethical standards shape the game.",
+          "reversed": "The Reverse Sword King says that strict/dogmatic decisions and abuse of power can create confidence erosion outside.",
+          "keywords": {
+            "0": "authority",
+            "1": "expert",
+            "2": "ethics",
+            "3": "dogma",
+            "4": "Trust"
+          },
+          "context": "The external mind and ethical framework set the course."
+        },
+        "position6": {
+          "upright": "Advice: Write policy based on principles; make the strategy clear.",
+          "reversed": "Advice: reduce participation; add empathy to the frame.",
+          "keywords": {
+            "0": "principle",
+            "1": "strategy",
+            "2": "policy",
+            "3": "communication",
+            "4": "empathy"
+          },
+          "context": "Advice: To unite principle and empathy."
+        },
+        "position7": {
+          "upright": "Possible future: a strategic and ethical judgment is given; a system-building mind builds trust.",
+          "reversed": "Possible future: solid/dogmatic approach can cause blockage; empathic frame is required.",
+          "keywords": {
+            "0": "strategy",
+            "1": "ethics",
+            "2": "authority",
+            "3": "rule",
+            "4": "Trust"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "aceofwands": {
+        "position1": {
+          "upright": "The wand ace represents an idea, inspiration, or a passionate beginning born in the past. This energy may have created a powerful motivation to step into a new project or to add excitement to your life. This spark has played an important role in your present situation. This card also reminds you that this initiative has shaped your next steps by giving you confidence.",
+          "reversed": "The Reverse Stick Ace points to a failed attempt in the past, loss of motivation or aimlessness. Opportunities that have not been used while potential may have created the causes of today's situation. Perhaps you have lost your opportunity because you did not act at the right time. This card shows that these shortcomings in the past still affect your energy today.",
+          "keywords": {
+            "0": "start",
+            "1": "Inspired",
+            "2": "passion",
+            "3": "Motivation",
+            "4": "history"
+          },
+          "context": "The effect of inspiring beginnings in the past or of unfinished enterprises."
+        },
+        "position2": {
+          "upright": "The wand ace shows that the spark of inspiration is on fire right now, that you are ready for a creative beginning. Energy is high, motivation is fresh; the universe is green for a new project, initiative or passionate step. This card emphasizes that it is a good time to turn intention into action, to put it off, and to take the first step with courage.",
+          "reversed": "The Reverse Stick Ace indicates that you are currently experiencing a blockage of inspiration, aimlessness, or delayed beginnings. There may be sparks within you, but it may be difficult to grow fears or disorganized focus fire. Declaring intent before starting over will solve the obstruction in small and decisive steps.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "start",
+            "2": "energy",
+            "3": "Motivation",
+            "4": "Now."
+          },
+          "context": "Creative sparks or temporary obstruction that are now rising."
+        },
+        "position3": {
+          "upright": "The wand ace shows a strong spark in your subconscious, the desire to create, and the urge to start immediately. You want to take a risk inside, and you want to go on a new stage; passion may be pushing your decisions invisiblely. This card reminds you that repressed inspiration can create a rapid leap when it's poured into the right channel.",
+          "reversed": "The Reverse Stick ace says that the spark that exists inside of you is suppressed by fears, perfectionism, or disorganized focus. &gt;&gt; What if I'm wrong? &gt;&gt; His anxiety may be cutting off the flow of inspiration in secret.&gt; This card emphasizes that it will simplify the intention, and that it will solve the obstruction of self-esteem with tiny experiments. &gt;&gt;&gt;",
+          "keywords": {
+            "0": "spark",
+            "1": "Inspired",
+            "2": "start",
+            "3": "Courage",
+            "4": "flow"
+          },
+          "context": "It's subconsciously repressed inspiration and a desire to take risks."
+        },
+        "position4": {
+          "upright": "There's a spark of inspiration and action at the center.",
+          "reversed": "There could be a blockage of inspiration or a delay at the center, opening up a small stream of action.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "start",
+            "2": "energy",
+            "3": "Courage",
+            "4": "movement"
+          },
+          "context": "Center: spark of fire."
+        },
+        "position5": {
+          "upright": "The ace of wands shows fresh opportunities, accelerating demand and entrepreneurial energy out there.",
+          "reversed": "The Reverse Stick ace says the external spark may be short-lived or the timing may be premature/late.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "demand",
+            "2": "energy",
+            "3": "initiative",
+            "4": "timing"
+          },
+          "context": "There's a Sunday fever; don't miss the window."
+        },
+        "position6": {
+          "upright": "Advice: Turn the first spark into a small action immediately.",
+          "reversed": "Advice: Set a 10-minute microstart to bypass the block.",
+          "keywords": {
+            "0": "spark",
+            "1": "start",
+            "2": "movement",
+            "3": "tiny step",
+            "4": "acceleration"
+          },
+          "context": "A word of advice: to light fire with practice."
+        },
+        "position7": {
+          "upright": "Possible future: The spark of inspiration ignites a strong initiative; energy and courage rise.",
+          "reversed": "Possible future: wrong timing or fear may delay the beginning; it opens up a tiny stream of action.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "start",
+            "2": "energy",
+            "3": "Courage",
+            "4": "movement"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "twoofwands": {
+        "position1": {
+          "upright": "Two wands represent plans made in the past, vision development, and the first steps towards the future. The process that expands your horizons may be at the root of today's conditions. This card reminds you that your past plans are guiding you to the opportunities you face today.",
+          "reversed": "The Reverse Two Wands show that there has been a lack of clear vision, hesitation or lack of trust in the past. Perhaps the steps that you do not have the courage to take have resulted in the shortcomings of today's situation. This card tells us that delaying moves to shape the future creates a jam today.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "future",
+            "3": "Progress",
+            "4": "history"
+          },
+          "context": "The effect of the past plans or incomplete vision today."
+        },
+        "position2": {
+          "upright": "Two wands show that you are now in the phase of creating vision, comparing options and planning the route. Your horizons expand; you weigh the possibility of growth by exiting the comfort zone. A net strategy and quantifiable steps will bring potential to reality.",
+          "reversed": "The Reverse Two Wands now indicate a lack of hesitation, comfort space commitment or vision. Indecisiveness may slow progress. Simplify priorities and focus on the first small step gives momentum.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "decision",
+            "3": "horizon",
+            "4": "Now."
+          },
+          "context": "Planning phase or comfort zone compression."
+        },
+        "position3": {
+          "upright": "Two wands show the intention of expanding the horizon behind the curtain, planning, and coming up to a larger stage. The desire to leave the comfort zone is quietly maturing. The secret factor is, more is that it is possible to expand the vision of the belief.",
+          "reversed": "The Reverse Two Wands point to the tendency to reduce vision due to an invisible hesitation, self-reliance, and to play in self-safeness, and to reduce its anxiety. The inner caution may be delaying the breakthrough. This card reminds us that even one small step can move the pendulum forward.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "hesitation",
+            "3": "Enlargement",
+            "4": "It's a comfort zone."
+          },
+          "context": "The hidden vision is the comfort zone, the pendulum and the courage to decide."
+        },
+        "position4": {
+          "upright": "There's vision and planning at the center, and you need a controlled exit from the comfort zone.",
+          "reversed": "At the center, hesitation reduces vision, the first small step gives acceleration.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "horizon",
+            "3": "decision",
+            "4": "Enlargement"
+          },
+          "context": "Center: horizon drawing."
+        },
+        "position5": {
+          "upright": "Two Wands show that there is a chance of expansion in the foreign markets and contact with new regions.",
+          "reversed": "The Reverse Two Wands say that external ambiguities can reduce risk appetites and create pressure to stay inside.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "Sunday",
+            "2": "horizon",
+            "3": "risk",
+            "4": "Vision"
+          },
+          "context": "Planned step out in the field gives the competitive edge."
+        },
+        "position6": {
+          "upright": "Advice: Make a 90-day plan; map the horizon.",
+          "reversed": "Advice: Test the big vision with the little pilot.",
+          "keywords": {
+            "0": "Plan",
+            "1": "horizon",
+            "2": "pilot",
+            "3": "risk",
+            "4": "map"
+          },
+          "context": "Advice: lower vision to the ground."
+        },
+        "position7": {
+          "upright": "Possible future: the horizon expands; planned out of comfort zone.",
+          "reversed": "Possible future: hesitation can narrow vision; small pilot step gives acceleration.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "horizon",
+            "3": "risk",
+            "4": "Enlargement"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "threeofwands": {
+        "position1": {
+          "upright": "Three wands represent the capture of a flashy opportunity in the past, new collaborations and expanding possibilities. This process may have strengthened the basis of today's conditions. This card shows that the bold steps taken in the past take you to where you are today.",
+          "reversed": "The Reverse Three Wand represents delays in the past, failure attempts or failure to meet the expected. The failure of your dreams may be at the root of today's process. This card says that a period when expectations are not met has marred your present situation.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "Enlargement",
+            "2": "co-operation",
+            "3": "Vision",
+            "4": "history"
+          },
+          "context": "The effect of past collaborations or disappointments."
+        },
+        "position2": {
+          "upright": "Three wands say that your preparations are about to bear fruit, and there are opportunities for expansion on the horizon. Co-operations, distant connections or new markets may be on the agenda. Waiting patiently and meeting opportunities proactively speeds up growth.",
+          "reversed": "The Reverse Three Wand is now a warning of delays, consequences or short-sightedness below expectations. Forceing resources to grow without diversification can cause a blockage. Expansion, feedback, and revision of the plan will open the flow.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "opportunity",
+            "2": "co-operation",
+            "3": "horizon"
+          }
+        }
+      }
+    }
+  }
+}

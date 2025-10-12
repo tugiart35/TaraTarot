@@ -824,176 +824,174 @@ export const position4Meanings: MarriagePositionMeaning[] = [
   // WANDS — ASALAR (14)
   // =========================
   {
-    id: 'ace_of_pentacles_ma_pos4',
-    card: 'Ace of Pentacles',
+    id: 'ace_of_wands_ma_pos4',
+    card: 'Ace of Wands',
     position: 4,
     upright:
-      'Somut bir başlangıç, güven ve istikrar arzusu bağlanmayı güçlendirir. İki taraf da ortak bir temele yatırım koymaya istekli olduğunda ilişki kök salar.',
+      'Değnek Ası, bağlanma isteğinde tutkulu bir başlangıç ve yaratıcı enerjiyi gösterir. Heyecan ve ilham, iki tarafın da kalpten evet demesini kolaylaştırır.',
     reversed:
-      'Maddi endişeler veya güvence eksikliği bağlanmayı erteleyebilir. Somut planlar netleşmeden kalpler “evet” demekte çekingen kalır.',
-    keywords: ['başlangıç', 'güvence', 'somutluk', 'yatırım', 'istikrar'],
+      'Ters Değnek Ası, bağlanmada motivasyon eksikliği veya enerji düşüklüğü olabilir. İlham kaybı, adım atmayı geciktirir.',
+    keywords: ['tutku', 'yaratıcılık', 'başlangıç', 'ilham', 'enerji'],
     context:
-      'Bağlanma, somut adımlar ve güvenceyle kolaylaşır; belirsizlik geciktirebilir.',
-    group: 'Tılsımlar',
+      'Bağlanma, tutkulu bir başlangıçla güçlenir; enerji eksikliği geciktirir.',
+    group: 'Asalar',
   },
   {
-    id: 'two_of_pentacles_ma_pos4',
-    card: 'Two of Pentacles',
+    id: 'two_of_wands_ma_pos4',
+    card: 'Two of Wands',
     position: 4,
     upright:
-      'Zaman, enerji ve kaynakları dengelemek bağlanmayı mümkün kılar. Esnek bir ritim kurulduğunda ilişki yük olmadan ilerler.',
+      'İki Değnek, bağlanmada ortak vizyon ve geleceğe birlikte bakma isteğini işaret eder. Plan yapma ve hedef belirleme bağı güçlendirir.',
     reversed:
-      'Aşırı koşturma ve öncelik karmaşası bağlanma kararını zorlaştırabilir. Programlar uyumlanmadıkça gönüller aynı anda “evet” diyemez.',
-    keywords: ['denge', 'esneklik', 'zamanlama', 'uyum', 'öncelik'],
+      'Ters İki Değnek, bağlanma isteğinde kararsızlık ve geleceğe dair belirsizlik olabilir. Farklı yönlere çekilme, evet demeyi zorlaştırır.',
+    keywords: ['vizyon', 'plan', 'gelecek', 'hedef', 'karar'],
+    context: 'Bağlanma, ortak vizyon ve planlarla güçlenir.',
+    group: 'Asalar',
+  },
+  {
+    id: 'three_of_wands_ma_pos4',
+    card: 'Three of Wands',
+    position: 4,
+    upright:
+      'Üç Değnek, bağlanmada genişleme ve yeni fırsatlara açıklığı gösterir. Ufukların açılması, birlikte büyüme isteğini artırır.',
+    reversed:
+      'Ters Üç Değnek, bağlanmada dar görüşlülük veya fırsatları görememe olabilir. Sınırlı perspektif, bağı zayıflatır.',
+    keywords: ['genişleme', 'fırsat', 'ufuk', 'ilerleme', 'vizyon'],
+    context: 'Bağlanma, geniş ufuklar ve fırsatlarla gelişir.',
+    group: 'Asalar',
+  },
+  {
+    id: 'four_of_wands_ma_pos4',
+    card: 'Four of Wands',
+    position: 4,
+    upright:
+      'Dört Değnek, bağlanmada kutlama, huzur ve sağlam temelleri işaret eder. Birlik duygusu ve istikrar, evet demeyi kolaylaştırır.',
+    reversed:
+      'Ters Dört Değnek, bağlanmada geçici huzursuzluk veya temel eksikliği olabilir. Uyumsuzluk, sözü zorlaştırır.',
+    keywords: ['kutlama', 'birlik', 'huzur', 'istikrar', 'temel'],
+    context: 'Bağlanma, huzur ve sağlam temellerle güçlenir.',
+    group: 'Asalar',
+  },
+  {
+    id: 'five_of_wands_ma_pos4',
+    card: 'Five of Wands',
+    position: 4,
+    upright:
+      'Beş Değnek, bağlanmada farklılıkları kabul etme ve yapıcı tartışmaları gösterir. Rekabet yerine işbirliği öne çıkarsa bağ güçlenir.',
+    reversed:
+      'Ters Beş Değnek, bağlanmada sürekli çatışma veya uyumsuzluk riski vardır. Kavgalar, evet demeyi zorlaştırır.',
+    keywords: ['farklılık', 'rekabet', 'uyum', 'yapıcılık', 'çatışma'],
     context:
-      'Bağlanma için ritim ve öncelikler uyumlanmalı; dağınıklık engel olur.',
-    group: 'Tılsımlar',
+      'Bağlanma, farklılıkları yapıcı kullanmakla güçlenir; çatışma zayıflatır.',
+    group: 'Asalar',
   },
   {
-    id: 'three_of_pentacles_ma_pos4',
-    card: 'Three of Pentacles',
+    id: 'six_of_wands_ma_pos4',
+    card: 'Six of Wands',
     position: 4,
     upright:
-      'İşbirliği, rol netliği ve ortak emeğin görünür olması bağlanmayı güçlendirir. “Bir ekip” gibi hareket etmek uzun vadeli söze zemin hazırlar.',
+      'Altı Değnek, bağlanmada başarı, takdir ve gururu gösterir. Taraflar birbirlerinin başarılarını paylaştığında bağ derinleşir.',
     reversed:
-      'Rol belirsizliği ve görünmeyen emek kırgınlık yaratır. Takdir ve görev paylaşımı netleşmeden bağlanma askıda kalabilir.',
-    keywords: ['işbirliği', 'rol', 'takdir', 'süreç', 'kalite'],
-    context:
-      'Bağlanma, net görevler ve adil takdirle büyür; belirsizlik yıpratır.',
-    group: 'Tılsımlar',
+      'Ters Altı Değnek, bağlanmada takdir eksikliği veya kıskançlık olabilir. Desteklenmeme, bağı zayıflatır.',
+    keywords: ['başarı', 'takdir', 'paylaşım', 'gurur', 'destek'],
+    context: 'Bağlanma, başarıyı paylaşmakla güçlenir.',
+    group: 'Asalar',
   },
   {
-    id: 'four_of_pentacles_ma_pos4',
-    card: 'Four of Pentacles',
+    id: 'seven_of_wands_ma_pos4',
+    card: 'Seven of Wands',
     position: 4,
     upright:
-      'Güvenliği koruma ihtiyacı yüksektir ve bu, bağlanmayı temkinli ama sağlam kılar. Paylaşım dengeli olduğunda bağ uzun ömürlü olur.',
+      'Yedi Değnek, bağlanmada değerleri koruma ve birbirine sadakat gösterir. Güçlü duruş, bağı sağlamlaştırır.',
     reversed:
-      'Aşırı tutma, kıskançlık veya kontrol eğilimi yakınlığı kısıtlayabilir. Esnemeden bağ kurmak zorlaşır.',
-    keywords: ['güvenlik', 'kontrol', 'paylaşım', 'tutma', 'sınır'],
-    context: 'Bağlanma için güvenlik duygusu şart; aşırı kontrol akışı keser.',
-    group: 'Tılsımlar',
+      'Ters Yedi Değnek, bağlanmada aşırı savunmacılık veya tehdit algısı olabilir. Korku, yakınlaşmayı engeller.',
+    keywords: ['değer', 'koruma', 'sadakat', 'savunma', 'güç'],
+    context: 'Bağlanma, değerleri korumakla güçlenir.',
+    group: 'Asalar',
   },
   {
-    id: 'five_of_pentacles_ma_pos4',
-    card: 'Five of Pentacles',
+    id: 'eight_of_wands_ma_pos4',
+    card: 'Eight of Wands',
     position: 4,
     upright:
-      'Yoksunluk hissi veya dışlanmışlık, “evet” demeyi zorlaştırabilir. Ancak birlikte dayanışma gösterildiğinde bağ derinleşir.',
+      'Sekiz Değnek, bağlanmada hızlı ilerleme ve açık iletişimi gösterir. Hız ve netlik, evet demeyi kolaylaştırır.',
     reversed:
-      'Toparlanma kapısı aralanır; destek istendiğinde yalnızlık azalır. İyileşme boyunca şeffaf kalmak bağlanmayı mümkün kılar.',
-    keywords: ['yoksunluk', 'destek', 'yalnızlık', 'şifa', 'dayanışma'],
-    context: 'Bağlanma, zor günlerde omuz omuza verildiğinde güçlenir.',
-    group: 'Tılsımlar',
+      'Ters Sekiz Değnek, bağlanmada gecikmeler veya iletişim eksikliği olabilir. Yavaşlık, bağı zorlaştırır.',
+    keywords: ['hız', 'iletişim', 'ilerleme', 'netlik', 'hareket'],
+    context: 'Bağlanma, hızlı iletişim ve netlikle güçlenir.',
+    group: 'Asalar',
   },
   {
-    id: 'six_of_pentacles_ma_pos4',
-    card: 'Six of Pentacles',
+    id: 'nine_of_wands_ma_pos4',
+    card: 'Nine of Wands',
     position: 4,
     upright:
-      'Adil verme–alma dengesi bağlanma isteğini artırır. Şeffaf koşullar ve karşılıklılık güven inşa eder.',
+      'Dokuz Değnek, bağlanmada direnç, sabır ve mücadele gücünü gösterir. Zorluklara rağmen evet demek, bağı sağlamlaştırır.',
     reversed:
-      'Koşullu yardım, borçluluk hissi veya güç asimetrisi bağı zedeler. Eşitlik hissi kurulmadan kalıcı söz zorlaşır.',
-    keywords: ['adalet', 'paylaşım', 'eşitlik', 'güven', 'karşılıklılık'],
-    context: 'Bağlanma, adil değiş tokuşla yeşerir; güç dengesizliği engeldir.',
-    group: 'Tılsımlar',
+      'Ters Dokuz Değnek, bağlanmada yorgunluk veya pes etme riski vardır. Tükenmişlik, adım atmayı geciktirir.',
+    keywords: ['direnç', 'sabır', 'mücadele', 'güç', 'dayanıklılık'],
+    context: 'Bağlanma, sabır ve dirençle güçlenir.',
+    group: 'Asalar',
   },
   {
-    id: 'seven_of_pentacles_ma_pos4',
-    card: 'Seven of Pentacles',
+    id: 'ten_of_wands_ma_pos4',
+    card: 'Ten of Wands',
     position: 4,
     upright:
-      'Sabır ve değerlendirme dönemi, “evet”in olgunlaşmasını sağlar. Küçük iyileştirmelerle bağın verimi artar.',
+      'On Değnek, bağlanmada sorumluluk paylaşma ve yükleri hafifletme isteğini gösterir. Ortak taşıma, bağı güçlendirir.',
     reversed:
-      'Batık maliyet inadı ya da sabırsızlık, yanlış kararlara itebilir. Kriterler netleşmeden bağlanma aceleye gelmemelidir.',
-    keywords: ['sabır', 'değerlendirme', 'verim', 'zamanlama', 'ölçüm'],
-    context: 'Bağlanma, olgunlaşmış karar ve sabırla kalıcı olur.',
-    group: 'Tılsımlar',
+      'Ters On Değnek, bağlanmada aşırı yüklenme veya sorumluluktan kaçma olabilir. Dengesiz yük, bağı zorlaştırır.',
+    keywords: ['sorumluluk', 'paylaşım', 'yük', 'emek', 'dayanışma'],
+    context: 'Bağlanma, sorumluluk paylaşımıyla güçlenir.',
+    group: 'Asalar',
   },
   {
-    id: 'eight_of_pentacles_ma_pos4',
-    card: 'Eight of Pentacles',
+    id: 'page_of_wands_ma_pos4',
+    card: 'Page of Wands',
     position: 4,
     upright:
-      'Düzenli emek, öğrenme ve kalite standardı bağlanmayı destekler. Alışkanlıklar uyumlandıkça güven artar.',
+      'Değnek Prensi, bağlanmada heyecan, keşif ve yenilik isteğini gösterir. Girişkenlik, evet demeyi kolaylaştırır.',
     reversed:
-      'Özensizlik, yüzeysellik veya “hemen olsun” isteği bağı gevşetir. Disiplin olmadan kalıcı söz zorlanır.',
-    keywords: ['emek', 'disiplin', 'öğrenme', 'kalite', 'alışkanlık'],
-    context: 'Bağlanma, düzenli emek ve kaliteyle sağlamlaşır.',
-    group: 'Tılsımlar',
+      'Ters Değnek Prensi, bağlanmada hedefsizlik veya dağınıklık olabilir. Tutarsızlık, bağı zayıflatır.',
+    keywords: ['heyecan', 'keşif', 'girişim', 'yenilik', 'enerji'],
+    context: 'Bağlanma, heyecan ve keşifle güçlenir.',
+    group: 'Asalar',
   },
   {
-    id: 'nine_of_pentacles_ma_pos4',
-    card: 'Nine of Pentacles',
+    id: 'knight_of_wands_ma_pos4',
+    card: 'Knight of Wands',
     position: 4,
     upright:
-      'Sağlıklı bağımsızlık ve özdeğer, yetişkin bir “evet” için zemin hazırlar. Kendi ayakları üzerinde duran iki kişi daha dengeli bağ kurar.',
+      'Değnek Şövalyesi, bağlanmada tutku, cesaret ve hızlı hareket etmeyi gösterir. Atılganlık, evet demeyi kolaylaştırır.',
     reversed:
-      'Aşırı bağımsızlık ya da konfora düşkünlük ortak hayatı zorlaştırabilir. “Biz” alanını küçültmek bağlanmayı geciktirir.',
-    keywords: ['özdeğer', 'bağımsızlık', 'konfor', 'olgunluk', 'sınır'],
-    context: 'Bağlanma, sağlıklı bireysellikten doğan “biz” ile güçlenir.',
-    group: 'Tılsımlar',
+      'Ters Değnek Şövalyesi, bağlanmada acelecilik veya dengesizlik riski vardır. Aşırı hız, bağı zorlaştırır.',
+    keywords: ['tutku', 'cesaret', 'hız', 'hareket', 'atılganlık'],
+    context: 'Bağlanma, cesaret ve tutkuyla güçlenir.',
+    group: 'Asalar',
   },
   {
-    id: 'ten_of_pentacles_ma_pos4',
-    card: 'Ten of Pentacles',
+    id: 'queen_of_wands_ma_pos4',
+    card: 'Queen of Wands',
     position: 4,
     upright:
-      'Aile, miras ve uzun vadeli güvence temaları bağlanmayı güçleştirir. Ortak sistem ve düzen kurma niyeti yüksektir.',
+      'Değnek Kraliçesi, bağlanmada özgüven, neşe ve hayat doluluğu gösterir. Karizma ve enerji, evet demeyi kolaylaştırır.',
     reversed:
-      'Aile baskısı, mal–mülk tartışmaları veya sistem çatışması bağlanmayı zorlayabilir. Kurallar netleşmeden kalıcı söz kırılgan kalır.',
-    keywords: ['aile', 'güvence', 'sistem', 'uzun vade', 'düzen'],
-    context: 'Bağlanma, ortak düzen ve aile entegrasyonuyla kalıcı olur.',
-    group: 'Tılsımlar',
+      'Ters Değnek Kraliçesi, bağlanmada baskıcılık veya kıskançlık olabilir. Güvensizlik, bağı zayıflatır.',
+    keywords: ['özgüven', 'neşe', 'enerji', 'karizma', 'liderlik'],
+    context: 'Bağlanma, özgüven ve neşeyle güçlenir.',
+    group: 'Asalar',
   },
   {
-    id: 'page_of_pentacles_ma_pos4',
-    card: 'Page of Pentacles',
+    id: 'king_of_wands_ma_pos4',
+    card: 'King of Wands',
     position: 4,
     upright:
-      'Somut bir hedefe odaklanma ve öğrenme iştahı, bağlanmaya hazırlık getirir. Küçük adımlar ileride büyük bir sözün temeli olur.',
+      'Değnek Kralı, bağlanmada vizyon, liderlik ve ilham vermeyi gösterir. Güçlü enerji, evet demeyi kolaylaştırır.',
     reversed:
-      'Erteleme, dağınık odak veya motivasyon düşüklüğü süreci uzatır. Taahhüt için disiplinli plan gerekir.',
-    keywords: ['hedef', 'öğrenme', 'başlangıç', 'pratik', 'somut adım'],
-    context: 'Bağlanma, küçük ama kararlı adımlarla yaklaşır.',
-    group: 'Tılsımlar',
-  },
-  {
-    id: 'knight_of_pentacles_ma_pos4',
-    card: 'Knight of Pentacles',
-    position: 4,
-    upright:
-      'Yavaş ama tutarlı ilerleyiş güven verir. Rutin ve istikrar, bağlanma kararını doğal biçimde olgunlaştırır.',
-    reversed:
-      'Aşırı durağanlık veya esneklik eksikliği ilişkiyi monotonlaştırabilir. Küçük yenilikler olmadan “evet” isteği sönük kalır.',
-    keywords: ['istikrar', 'tutarlılık', 'rutin', 'güven', 'sabır'],
-    context:
-      'Bağlanma, emin adımlarla ve istikrarla büyür; durağanlıkta zorlanır.',
-    group: 'Tılsımlar',
-  },
-  {
-    id: 'queen_of_pentacles_ma_pos4',
-    card: 'Queen of Pentacles',
-    position: 4,
-    upright:
-      'Besleyen pratiklik, ev kurma enerjisi ve kaynak yönetimi bağlanmayı güçlendirir. Güvenli, sıcak bir zemin oluşur.',
-    reversed:
-      'Aşırı yüklenme ve özbakım eksikliği ilişkiyi yorar. Paylaşılmayan yükler “evet” demeyi erteletebilir.',
-    keywords: ['bakım', 'pratiklik', 'ev', 'kaynak', 'güven'],
-    context: 'Bağlanma, besleyen düzen ve özbakımla kalıcılaşır.',
-    group: 'Tılsımlar',
-  },
-  {
-    id: 'king_of_pentacles_ma_pos4',
-    card: 'King of Pentacles',
-    position: 4,
-    upright:
-      'Stratejik sağlamlık, cömertlik ve uzun vade vizyonu bağlanmayı destekler. Koruyucu ama paylaşan bir tutum “evet”i kolaylaştırır.',
-    reversed:
-      'Aşırı kontrol, statü odağı veya katı kurallar yakınlığı soğutabilir. Gücün paylaşılmadığı yerde kalıcı söz zorlaşır.',
-    keywords: ['sağlamlık', 'vizyon', 'paylaşım', 'koruma', 'güvence'],
-    context: 'Bağlanma, paylaşılan güç ve uzun vade vizyonuyla güçlenir.',
-    group: 'Tılsımlar',
+      'Ters Değnek Kralı, bağlanmada baskıcılık veya yönsüzlük olabilir. Otoriter tavır, bağı zorlaştırır.',
+    keywords: ['vizyon', 'liderlik', 'ilham', 'güç', 'enerji'],
+    context: 'Bağlanma, vizyon ve liderlikle güçlenir.',
+    group: 'Asalar',
   },
 ];
 

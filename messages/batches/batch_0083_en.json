@@ -1,0 +1,780 @@
+{
+  "situation-analysis": {
+    "meanings": {
+      "queenofcups": {
+        "position3": {
+          "keywords": {
+            "4": "hidden"
+          },
+          "context": "Subliminal and hidden factors"
+        },
+        "position4": {
+          "upright": "There's empathy, intuitive leadership, and safe emotional space at the center.",
+          "reversed": "There could be border meltdowns or emotional spillage at the center, self-regulation would set the balance.",
+          "keywords": {
+            "0": "empathy",
+            "1": "Compassion",
+            "2": "intuition",
+            "3": "limit",
+            "4": "It's a cure."
+          },
+          "context": "Center: Compassionate containment."
+        },
+        "position5": {
+          "upright": "The Queen of Hearts shows that there are empathic leaders and protective areas outside, and secure relationships can be built.",
+          "reversed": "The reverse Queen of the Cup says that border meltdown, emotional manipulation, or extreme sensitivity can create chaos in the outside world.",
+          "keywords": {
+            "0": "empathy",
+            "1": "field holding",
+            "2": "Trust",
+            "3": "limit",
+            "4": "manipulation"
+          },
+          "context": "External support is compassionate, but there's a risk of border violation."
+        },
+        "position6": {
+          "upright": "Advice: Keep safe emotional space, listen empathic, guide with compassion.",
+          "reversed": "Advice: Strengthen your boundaries; prioritize self-care.",
+          "keywords": {
+            "0": "empathy",
+            "1": "field",
+            "2": "limit",
+            "3": "self - care",
+            "4": "It's a cure."
+          },
+          "context": "Advice: Balance of compassion."
+        },
+        "position7": {
+          "upright": "Possible future: Empathic leadership and safe emotional space settle; healing becomes permanent.",
+          "reversed": "Possible future: border melting can cause fatigue; self-care and framework are needed.",
+          "keywords": {
+            "0": "empathy",
+            "1": "It's a cure.",
+            "2": "limit",
+            "3": "leadership",
+            "4": "Trust"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "kingofcups": {
+        "position1": {
+          "upright": "The King of Hearts represents past emotional maturity, wise guidance, or a balanced attitude. This energy may be the basis of today's conditions. This card shows that this wise attitude in the past still guides you.",
+          "reversed": "The reverse King of the Cup points to emotional pressures, manipulations, or repressed feelings in the past. These experiences may be at the root of your mood today. This card tells us that emotional pressures from the past still cast a shadow on your relationships today.",
+          "keywords": {
+            "0": "emotion",
+            "1": "maturity",
+            "2": "guidance",
+            "3": "balance",
+            "4": "history"
+          },
+          "context": "The effect of emotional maturity or pressures in the past."
+        },
+        "position2": {
+          "upright": "The King of Hearts now describes his period of emotional maturity, calm leadership and wise guidance. Even in the storm, he is capable of staying in the center.",
+          "reversed": "The reverse King of the Cup now points to the risk of suppressing emotions, passive aggression or emotional manipulation. Silent anger can damage ties.",
+          "keywords": {
+            "0": "maturity",
+            "1": "emotion management",
+            "2": "It's a cure.",
+            "3": "Tranquillity",
+            "4": "Now."
+          },
+          "context": "Don't stay in the emotional center or solve the suppression."
+        },
+        "position3": {
+          "upright": "The King of Hearts shows that emotional maturity, calmness, and wise balance are an anchor inside; even the desire to stay in the center of the storm may be guiding.",
+          "reversed": "The reverse King of the Cup tells of the hidden effect of the need to suppress emotions, passive-aggression, or control.",
+          "keywords": {
+            "0": "maturity",
+            "1": "emotion management",
+            "2": "Don't press it.",
+            "3": "passive-aggression",
+            "4": "hidden"
+          },
+          "context": "Subliminal and hidden factors"
+        },
+        "position4": {
+          "upright": "There's emotional maturity and calm leadership at the center, and it's reassuring to stay in the center of the storm.",
+          "reversed": "It can be repressed emotion or passive aggression at the center. Open expression restores confidence.",
+          "keywords": {
+            "0": "maturity",
+            "1": "Tranquillity",
+            "2": "emotion management",
+            "3": "leadership",
+            "4": "Trust"
+          },
+          "context": "Central: calm captain."
+        },
+        "position5": {
+          "upright": "The King of Hearts shows that there is cool leadership out there in a time of emotional maturity and crisis, and even in difficult circumstances, peace is maintained.",
+          "reversed": "The reverse King of the Cup says that passive-aggressive attitudes, repressed emotions, and tidal responses can force foreign relations.",
+          "keywords": {
+            "0": "maturity",
+            "1": "Tranquillity",
+            "2": "crisis management",
+            "3": "passive-aggression",
+            "4": "balance"
+          },
+          "context": "Outer leadership is stable; shadow side is hidden tension."
+        },
+        "position6": {
+          "upright": "A word of advice: remain calm in the storm; be confident with emotional leadership.",
+          "reversed": "Advice: Express suppression; stop passive-aggression.",
+          "keywords": {
+            "0": "Tranquillity",
+            "1": "leadership",
+            "2": "expression",
+            "3": "balance",
+            "4": "Trust"
+          },
+          "context": "Advice: leadership by emotion management."
+        },
+        "position7": {
+          "upright": "Possible future: emotionally mature crises are governed by calm; there is a reassuring outcome.",
+          "reversed": "Possible future: repressed emotions can cause passive-aggressive fluctuations; open expression is necessary.",
+          "keywords": {
+            "0": "maturity",
+            "1": "Tranquillity",
+            "2": "leadership",
+            "3": "expression",
+            "4": "balance"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "aceofswords": {
+        "position1": {
+          "upright": "The Sword Ace represents a mental enlightenment, a strong decision, or a clear idea that you have experienced in the past. This experience has given you a new perspective and has been effective at the basis of your current situation. A statement may have created the beginning point of your process of decision or sharp awareness. This card also shows that your desire to find the truth in the past and your need for honesty guides you. To understand the situation today, it is important to keep track of the clarity you have gained at that time.",
+          "reversed": "The Reverse Sword Ace shows the confusion, misunderstandings, or clouded decision process in the past. Decisions made in uncertainty instead of clarity may be at the root of today's challenges. Wrong communications or unproven ideas may have drawn a wrong path to you. This card also tells you that the effects of hurtful words or incomplete conversations may still be felt today. Unclosed issues may have clouded your present circumstances.",
+          "keywords": {
+            "0": "clarity",
+            "1": "decision",
+            "2": "enlightenment",
+            "3": "mind",
+            "4": "history"
+          },
+          "context": "The effect of mental clarity or confusion in the past."
+        },
+        "position2": {
+          "upright": "In your current situation, the Sword Ace shows a sharp clarity, an energy of vision and mental breakthrough. The fog is about to fall apart; the right words and the right decision are at the door. This card emphasizes that when you form a clear statement of intent, the disorganized issues will quickly align.",
+          "reversed": "The Reverse Sword Ace points to the mental blur caused by unstable rhetoric, information pollution, or excessive analysis. Avoiding the truth may slow progress. Simplify the message and clarify the core question opens the block.",
+          "keywords": {
+            "0": "clarity",
+            "1": "Truth",
+            "2": "decision",
+            "3": "communication",
+            "4": "cognitive"
+          },
+          "context": "The current mental climate: the search for sharpness and frankness."
+        },
+        "position3": {
+          "upright": "The Sword Ace shows that your subconscious need to make a mental leap, to see the naked truth and to call the truth by name is strong. A clear spark of insight burns within you; the desire to cut through the misty areas may be invisiblely guiding your choices. This card reminds you that when you draw a line of honesty to your words and decisions, distributive thoughts will quickly align.",
+          "reversed": "The Reverse Sword Ace shows that the tendency to think misty, overanalyticize, or avoid telling the truth is working behind the curtain. Too much data can delay a bold sentence. This card emphasizes that simplifying the message and reducing the intention to a clear sentence will solve the mental block.",
+          "keywords": {
+            "0": "clarity",
+            "1": "Truth",
+            "2": "grip",
+            "3": "communication",
+            "4": "sharpness"
+          },
+          "context": "The search for hidden clarity and the courage to call the truth."
+        },
+        "position4": {
+          "upright": "There's clarity and naked truth at the center. The correct sentence aligns the whole picture.",
+          "reversed": "It could be a blur at the center, or it could be an overanalyzing focus, simplify the message.",
+          "keywords": {
+            "0": "clarity",
+            "1": "Truth",
+            "2": "decision",
+            "3": "cognitive",
+            "4": "expression"
+          },
+          "context": "Center: sharp mind."
+        },
+        "position5": {
+          "upright": "The Sword Ace shows that clear information, sharp analysis, and the correct expression are valued outside, opening open communication doors.",
+          "reversed": "The Reverse Sword Ace says that information pollution, distorted rhetoric, or unstable messages are confusing outside.",
+          "keywords": {
+            "0": "clarity",
+            "1": "information",
+            "2": "analysis",
+            "3": "communication",
+            "4": "Message"
+          },
+          "context": "The field offers a price for the sharp and true promise."
+        },
+        "position6": {
+          "upright": "Advice: Write your intentions in one sentence and decide accordingly.",
+          "reversed": "Advice: Simplify the message, cut the crowd of information.",
+          "keywords": {
+            "0": "clarity",
+            "1": "decision",
+            "2": "Message",
+            "3": "simplicity",
+            "4": "focus"
+          },
+          "context": "Advice: Getting to the core sentence."
+        },
+        "position7": {
+          "upright": "Possible future: A mental breakthrough and a sharp decision will clarify the table; the truth will speed things up.",
+          "reversed": "Possible future: If information pollution and blurs continue, the decision can be postponed; it must be simplified.",
+          "keywords": {
+            "0": "Progress",
+            "1": "clarity",
+            "2": "real",
+            "3": "decision",
+            "4": "communication"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "twoofswords": {
+        "position1": {
+          "upright": "The Two Swords indicate that you are stuck between your past ambivalences or two options. The fact that you have not made or postponed your choice at the time can be effective at the heart of today's situation. You may have tried to protect yourself by staying neutral, but this process has delayed the search for internal balance, but it may have been the basis for today's conditions.",
+          "reversed": "Two Reverse-Swords represent the wrong decisions or facts made in the past. Perhaps the issues that you avoid facing still remain on you today. Decisions made without knowing the facts can be the source of today's problems. This card also reflects the situation of being trapped by decisions delayed by fear. These challenges may be the basis of your present challenges.",
+          "keywords": {
+            "0": "decision",
+            "1": "The dilemma",
+            "2": "balance",
+            "3": "selection",
+            "4": "history"
+          },
+          "context": "The effect of past choices or indecisiveness."
+        },
+        "position2": {
+          "upright": "The Two Swords indicate that you are now wavering between the two options, that you are at a threshold where you are trying to disable emotions and balance your mind only. Postponding the decision gives temporary calm. To invite the heart data to the table makes the scales fair.",
+          "reversed": "The Reverse Two Swords say that the avoided confrontations are now pushing the door and the blind spots are becoming visible. Maintaining indecisiveness increases anxiety. A small test of reality and a limited window of time makes the decision easier.",
+          "keywords": {
+            "0": "The dilemma",
+            "1": "indecisive",
+            "2": "balance",
+            "3": "Don't face it.",
+            "4": "blind spot"
+          },
+          "context": "Current knot: decision paralysis and postponement."
+        },
+        "position3": {
+          "upright": "Two Swords show that a mental barrier and indecisive pattern in your subconscious can work. Inside, it may tend to keep eyes closed so as not to disturb the balance between the two options. This card simply reminds you that it can create a blockage of judgment without inviting heart data to the table.",
+          "reversed": "The Reverse Two Swords say that the avoided confrontations are now pressurizing from the inside, that blind spots are beginning to come to light. Postponing the decision increases anxiety. This card states that a small test of reality and a gradual opening will untie the knot.",
+          "keywords": {
+            "0": "indecisive",
+            "1": "barricade",
+            "2": "blind spot",
+            "3": "balance",
+            "4": "Don't face it."
+          },
+          "context": "Secret decision-making paralysis and the tendency to leave emotion out."
+        },
+        "position4": {
+          "upright": "There's a dilemma and a waiting strategy at the center, and putting emotion on the table balances the scales.",
+          "reversed": "It's delaying the avoidance of the decision at the center, the blind spot must be illuminated.",
+          "keywords": {
+            "0": "The dilemma",
+            "1": "indecisive",
+            "2": "balance",
+            "3": "Don't face it.",
+            "4": "blind spot"
+          },
+          "context": "Central: decision-making node."
+        },
+        "position5": {
+          "upright": "Two swords show the wait-and-see attitude or ambiguity of the foreign shareholders. The files can remain suspended.",
+          "reversed": "The Reverse Two Swords say the delayed confrontations will be revealed and the pressure of decision will increase.",
+          "keywords": {
+            "0": "indecisive",
+            "1": "don't wait.",
+            "2": "Don't face it.",
+            "3": "Libra",
+            "4": "threshold"
+          },
+          "context": "The external decision structure is working hard; the time plan is important."
+        },
+        "position6": {
+          "upright": "Advice: Gather the missing data and set a date for the decision.",
+          "reversed": "Advice: End decision paralysis; allow small error and choose.",
+          "keywords": {
+            "0": "decision",
+            "1": "data",
+            "2": "date",
+            "3": "The dilemma",
+            "4": "selection"
+          },
+          "context": "Advice: Open a decision window."
+        },
+        "position7": {
+          "upright": "Possible future: a temporary stage continues; without the emotion on the table, the scales do not balance.",
+          "reversed": "Possible future: the blind spot illuminates and determines; the flow begins again.",
+          "keywords": {
+            "0": "stalemate",
+            "1": "The dilemma",
+            "2": "balance",
+            "3": "Don't face it.",
+            "4": "decision"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "threeofswords": {
+        "position1": {
+          "upright": "The Three Swords represent a past heartbreak, betrayal, or deep disappointment. This bitter experience may have made you more careful and cautious, but it has also left deep marks in your heart. The losses you suffered at that time may have directly affected your present condition. This card may remind you of the instructive aspect of the pain. The disappointments that you experienced today may have made you more conscious choices.",
+          "reversed": "The Reverse Three Sword points to unresolved wounds, unforgivable resentments, and unforgettable betrayals in the past. Perhaps you tried to suppress the pain you experienced in the past, but it remained unresolved. In the root of the problems you face today, these may be unresolved wounds. This card also emphasizes that the difficulty to forgive yourself or others continues to cause inner unrest. The weight of the past may have clouded today.",
+          "keywords": {
+            "0": "Heartbreak",
+            "1": "Pain",
+            "2": "Betrayal",
+            "3": "Disappointment",
+            "4": "history"
+          },
+          "context": "A reflection of the sufferings of the past today."
+        },
+        "position2": {
+          "upright": "The Three Swords indicate that you are now passing through the shadow of resentment, disappointment, or harsh truth. The mind may be sharpened to protect the heart.",
+          "reversed": "The Reverse Three Swords show that a healing wound binds a shell, but triggers can still sting from time to time. Forgiveness remains with flexible boundaries.",
+          "keywords": {
+            "0": "Frustration",
+            "1": "mourning",
+            "2": "Truth",
+            "3": "expression",
+            "4": "Recovery"
+          },
+          "context": "Current tone: confronting and repair a broken heart."
+        },
+        "position3": {
+          "upright": "The Three Swords show that unsubstantiated resentment, disappointment or betrayal can sharpen your thoughts. Mental arguments can be on guard to protect the heart. This card says that naming pain and giving away the share of mourning will bring back mental clarity.",
+          "reversed": "The Reverse Three Swords tells us that a healing scar and forgiveness call sprouted inside. However, triggers can be sharpened in unexpected moments. This card emphasizes that safe expression and tender boundaries will strengthen vulnerability.",
+          "keywords": {
+            "0": "Frustration",
+            "1": "mourning",
+            "2": "Betrayal",
+            "3": "Recovery",
+            "4": "expression"
+          },
+          "context": "That secret heart pain sharpens thought patterns."
+        },
+        "position4": {
+          "upright": "There's resentment or harsh truth in the center, and the share of grief brings clarity.",
+          "reversed": "At the center, the desire to heal sprouts, the tender tongue unties the knot.",
+          "keywords": {
+            "0": "Frustration",
+            "1": "mourning",
+            "2": "Truth",
+            "3": "Recovery",
+            "4": "expression"
+          },
+          "context": "Center: Face pain."
+        },
+        "position5": {
+          "upright": "The Three Swords have the effect of hurtful criticism, disagreements, or negative press outside.",
+          "reversed": "The Reverse Three Swords say that with repair and honest communication, external fractures can be repaired.",
+          "keywords": {
+            "0": "criticism",
+            "1": "disagreement",
+            "2": "PR",
+            "3": "repair",
+            "4": "expression"
+          },
+          "context": "Foreign criticism is vital."
+        },
+        "position6": {
+          "upright": "Advice: Have an honest confrontation and a kind talk; share the share of grief.",
+          "reversed": "Advice: Get closure/therapy support; rewrite the story in a healing way.",
+          "keywords": {
+            "0": "Don't face it.",
+            "1": "expression",
+            "2": "closure",
+            "3": "It's a cure.",
+            "4": "communication"
+          },
+          "context": "Advice: The dialogue that transforms pain."
+        },
+        "position7": {
+          "upright": "Possible future: faced with harsh truth or disappointment; this opening begins to heal.",
+          "reversed": "Possible future: healing accelerates; forgiveness repair bridges.",
+          "keywords": {
+            "0": "Frustration",
+            "1": "real",
+            "2": "Recovery",
+            "3": "expression",
+            "4": "Forgiveness"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "fourofswords": {
+        "position1": {
+          "upright": "The Four Swords show a period of rest, a mandatory pause or recovery in the past. The current pause may have provided you with the basis for the conditions you face today. This process may have given you the opportunity to breathe and recover. At the same time, this card indicates that your past silence or retreat has become part of today's internal strength.",
+          "reversed": "The Reverse Four Swords represent past neglected rests, delayed recoverys, or permanent postponement. The fact that you have not given yourself time after a tiring period may be the origin of today's challenges. The endless fuss or lack of rest may have affected your health and decisions. This card shows that past neglects can still appear today in the form of fatigue and fatigue.",
+          "keywords": {
+            "0": "rest",
+            "1": "Recovery",
+            "2": "pause",
+            "3": "Peace",
+            "4": "history"
+          },
+          "context": "The effect of past rest or neglect."
+        },
+        "position2": {
+          "upright": "The Four Swords now show that the need for rest, retreat, and mental recovery is evident. A quiet pause matures strategy. The solution comes naturally as it opens the space of silence.",
+          "reversed": "The Reverse Four Swords point to a mental noise so intense that they can even delay a break. If I stop, I will fall.",
+          "keywords": {
+            "0": "rest",
+            "1": "Recovery",
+            "2": "strategy",
+            "3": "Tranquillity",
+            "4": "Regeneration"
+          },
+          "context": "What we need now is mental space and rhythmic breath."
+        },
+        "position3": {
+          "upright": "The Four Swords show that your subconscious need to retreat, relax your mind and self-recovery. Tired thoughts may call for a quiet pause. This card reminds you that the strategy has matured in sleep and that rest has opened space for new solutions.",
+          "reversed": "The Reverse Four Sword points to a mental noise that even delays rest. If I stop now, I will fall. This card emphasizes that short and regular micro-stops will call back efficiency.",
+          "keywords": {
+            "0": "rest",
+            "1": "Recovery",
+            "2": "Introduction",
+            "3": "strategy",
+            "4": "Tranquillity"
+          },
+          "context": "The need for hidden rest and the call to silence the mental noise."
+        },
+        "position4": {
+          "upright": "At the center, he needs to rest and gather his mind, and peace matures strategy.",
+          "reversed": "At the center, break resistance increases, micro-stops are required.",
+          "keywords": {
+            "0": "rest",
+            "1": "Recovery",
+            "2": "strategy",
+            "3": "Tranquillity",
+            "4": "Regeneration"
+          },
+          "context": "Central: silent power."
+        },
+        "position5": {
+          "upright": "Four Swords indicate temporary pauses, holidays or waiting windows in external processes.",
+          "reversed": "The Reverse Four Swords say that the culture of working without rest is lowering efficiency outside.",
+          "keywords": {
+            "0": "pause",
+            "1": "calendar",
+            "2": "don't wait.",
+            "3": "rhythm",
+            "4": "efficiency"
+          },
+          "context": "Field rhythm is intermittent; capture the window well."
+        },
+        "position6": {
+          "upright": "Advice: Plan rest blocks; as the mind cools, the solution arises.",
+          "reversed": "Advice: reduce consumption by micro-stopping and digital diet.",
+          "keywords": {
+            "0": "rest",
+            "1": "timeout",
+            "2": "Recovery",
+            "3": "rhythm",
+            "4": "clarity"
+          },
+          "context": "Advice: to fill the energy bank."
+        },
+        "position7": {
+          "upright": "Possible future: the rest and recovery process bear fruit; when the mind cools, the solution arises.",
+          "reversed": "Possible future: If rest is postponed, weariness may grow; micro-stoppings are essential.",
+          "keywords": {
+            "0": "rest",
+            "1": "Recovery",
+            "2": "Tranquillity",
+            "3": "strategy",
+            "4": "Regeneration"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "fiveofswords": {
+        "position1": {
+          "upright": "Five Swords represent a past conflict, fights, or victory that does not bring you lasting happiness. This experience may have left you with confusion. This tension may have been at the root of your present situation. This card also reminds you that you should think that something you have won actually has been lost. These conflicts in the past may be reflected in your relationships and choices today.",
+          "reversed": "The Reverse Five Swords represent the past unresolved disputes, the absences of pride or the abduction of peace opportunities. Perhaps you refused to step back in the past, and this has created a conflict energy that dates back to this day. This card tells you that the scars of old fights may still be on you and that the unrest continue because you do not follow the path of forgiveness.",
+          "keywords": {
+            "0": "conflict",
+            "1": "victory",
+            "2": "Concern",
+            "3": "Incompatibility",
+            "4": "history"
+          },
+          "context": "The impact of past conflicts today."
+        },
+        "position2": {
+          "upright": "The Five Swords now show that they can shift to the right dating ground and ignore relative costs. The victory may be empty. Reviewing the definition of win protects the bridges.",
+          "reversed": "The Reverse Five Swords say that the intention of lowering blood pressure and repair has arisen, but pride can intervene. The flexible debate opens. Focus on the better than the right one.",
+          "keywords": {
+            "0": "conflict",
+            "1": "Rightness",
+            "2": "ego",
+            "3": "repair",
+            "4": "Negotiation"
+          },
+          "context": "The current lesson is the balance of fairness."
+        },
+        "position3": {
+          "upright": "The Five Swords show the obsession to win, the need to be justified, and the defensive mind to work behind the curtain. Whatever it is, the triumphal narrative can wear off relations. This card emphasizes the importance of reviewing the definition of profit and setting boundaries without burning bridges.",
+          "reversed": "The Reverse Five Swords indicate that tensions and apology/responsibility will appear inside; but pride can produce resistance. This card says that the flexible negotiation and common ground will cover invisible wounds.",
+          "keywords": {
+            "0": "conflict",
+            "1": "Rightness",
+            "2": "victory",
+            "3": "ego",
+            "4": "repair"
+          },
+          "context": "It's an obsession with the secret winning and the relationship cost intersection."
+        },
+        "position4": {
+          "upright": "The desire to be right at the center may be harshing the conflict, redefine the win to protect the bridges.",
+          "reversed": "The centre has the intention of repair, and the flexible negotiation solves tension.",
+          "keywords": {
+            "0": "conflict",
+            "1": "ego",
+            "2": "Rightness",
+            "3": "repair",
+            "4": "Negotiation"
+          },
+          "context": "Central: connection or right."
+        },
+        "position5": {
+          "upright": "The Five Swords show that there's a win-win-all-out attitude and a sharp competition.",
+          "reversed": "The Reverse Five Swords say that compromises and facial recovery solutions are possible outside.",
+          "keywords": {
+            "0": "competition",
+            "1": "conflict",
+            "2": "Compromise",
+            "3": "cost",
+            "4": "strategy"
+          },
+          "context": "The winning climate is focused; go ahead without burning the bridges."
+        },
+        "position6": {
+          "upright": "Advice: Instead of being right, choose the winning that protects the relationship.",
+          "reversed": "Advice: Fix bridges with an apology/responsibility offer.",
+          "keywords": {
+            "0": "relationship",
+            "1": "ego",
+            "2": "gain",
+            "3": "repair",
+            "4": "Negotiation"
+          },
+          "context": "Advice: not to burn bridges."
+        },
+        "position7": {
+          "upright": "Possible future: a high price gain is possible in the taste of Pyrrhus victory; relative cost is visible.",
+          "reversed": "Possible future: repairs and a hundred-saving compromise doors open.",
+          "keywords": {
+            "0": "conflict",
+            "1": "victory",
+            "2": "cost",
+            "3": "ego",
+            "4": "Compromise"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "sixofswords": {
+        "position1": {
+          "upright": "Six Swords represent a transition, a journey, or away from a difficult period in the past. This process may have given you a chance to improve and move on to a quieter life. Your situation today may have been affected by these decisions at that time. This card also shows that this journey in the past has made you more emotionally mature.",
+          "reversed": "Instead of moving forward in the past, the Reverse Six Swords point to going back, or being stuck, or being left unfinished. You wanted to get away from something, but it wasn't done. So you may still feel stuck in the same loop today. This card reminds you that you can't evaluate opportunities for progress in the past is the source of today's problems.",
+          "keywords": {
+            "0": "transition",
+            "1": "journey",
+            "2": "Progress",
+            "3": "Escape",
+            "4": "history"
+          },
+          "context": "The effect of the past transition or compression."
+        },
+        "position2": {
+          "upright": "Six Swords indicate that you are now taking a calmer course than stormy waters. Logic is drawing a secure exit line.",
+          "reversed": "The Reverse Six Swords indicate that the thin threads linking back to the past make the transition difficult. Fear of uncertainty may cloud the course. Small transports and support make the movement possible.",
+          "keywords": {
+            "0": "transition",
+            "1": "Recovery",
+            "2": "Tranquillity",
+            "3": "course",
+            "4": "Don't go away"
+          },
+          "context": "Current movement: quiet and secure change of direction."
+        },
+        "position3": {
+          "upright": "Six Swords in their subconscious show that their desire to move away from here and into calmer waters is strong. The mind draws a path out of the emotional storm. This card reminds them that the transition will be more sustainable when it is quiet and gradual.",
+          "reversed": "The Reverse Six Swords show that ropes and uncertain waters that bind to the past delay the transition. This card may call back the old ways of thought. It emphasizes that small transports and secure escorts will facilitate the transition.",
+          "keywords": {
+            "0": "transition",
+            "1": "Don't go away",
+            "2": "Tranquillity",
+            "3": "uncertainty",
+            "4": "Do not set course"
+          },
+          "context": "The desire to sneak away and the thin threads that bind to the past."
+        },
+        "position4": {
+          "upright": "There's a transition to calm waters at the center, and it's the healthiest thing to do.",
+          "reversed": "The threads linking the past at the center are clouding the course, making the transition easier with backup.",
+          "keywords": {
+            "0": "transition",
+            "1": "course",
+            "2": "Tranquillity",
+            "3": "Recovery",
+            "4": "Don't go away"
+          },
+          "context": "Central: secure access line."
+        },
+        "position5": {
+          "upright": "The Six Swords show that there are transitional programs, moving/turn projects and soft landing opportunities outside.",
+          "reversed": "The Reverse Six Swords say that road/age problems or transit resistance can create obstacles outside.",
+          "keywords": {
+            "0": "transition",
+            "1": "Don't move.",
+            "2": "transformation",
+            "3": "network",
+            "4": "obstacle"
+          },
+          "context": "External infrastructure can facilitate or make the transition difficult."
+        },
+        "position6": {
+          "upright": "Advice: Make a comprehensive transition plan; find safe escorts.",
+          "reversed": "Advice: Proceed with small movements instead of big jumps.",
+          "keywords": {
+            "0": "transition",
+            "1": "Plan",
+            "2": "escort",
+            "3": "gradually",
+            "4": "Trust"
+          },
+          "context": "Advice: route to calm waters."
+        },
+        "position7": {
+          "upright": "Possible future: Moving to calmer waters; a smooth transition brings peace.",
+          "reversed": "Possible future: Old bonds can delay progress; they need to be moved gradually.",
+          "keywords": {
+            "0": "transition",
+            "1": "Recovery",
+            "2": "Tranquillity",
+            "3": "course",
+            "4": "Don't go away"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "sevenofswords": {
+        "position1": {
+          "upright": "The Seven Swords show the hidden truths, hidden plans, or strategic moves in the past. Perhaps sharing something openly or alone may be at the root of today's situation. This card points to problems today, even though the strategy you followed in the past has worked in the short term.",
+          "reversed": "The Reverse Seven Sword represents secrets that have been revealed in the past, captured tricks or failed strategies. The emergence of hidden truths may have directly affected today's conditions. This card also reminds you that you may have more problems because you have delayed honesty.",
+          "keywords": {
+            "0": "strategy",
+            "1": "secrecy",
+            "2": "trick",
+            "3": "Plan",
+            "4": "history"
+          },
+          "context": "The effect of past covert moves."
+        },
+        "position2": {
+          "upright": "The Seven Swords now show that the need for strategic progress, low visibility, low movement and protection of resources is stronger than defence. The minimum secrecy is useful if the intention is clean.",
+          "reversed": "The Reverse Seven Swords, half truth, tells you that self-deception or fear of being captured have reduced efficiency. Trust is wearing off.",
+          "keywords": {
+            "0": "strategy",
+            "1": "tactics",
+            "2": "secrecy",
+            "3": "auto-reality",
+            "4": "Trust"
+          },
+          "context": "Current approach: smart plan, clean intent."
+        },
+        "position3": {
+          "upright": "The Seven Swords show that strategy, secrecy, and progress without drawing attention to themselves are behind the curtain. To protect resources, their hidden tactics may be in operation. This card reminds them that if intention is clean, the strategy must be balanced by transparency.",
+          "reversed": "The Reverse Seven Swords indicate that self - deception, half-truths, or the anxiety of capture can create tension. Hidden plans can wear off confidence. This card emphasizes that confession and re-altering eases the mind.",
+          "keywords": {
+            "0": "strategy",
+            "1": "secrecy",
+            "2": "tactics",
+            "3": "Self-reliance",
+            "4": "Trust"
+          },
+          "context": "The thin line between a secret strategy and a need for transparency."
+        },
+        "position4": {
+          "upright": "There's low strategy and visibility at the center, minimal secrecy is useful if intent is clean.",
+          "reversed": "In the center, self-reliance or half-truths corrode confidence, transparency is essential.",
+          "keywords": {
+            "0": "strategy",
+            "1": "tactics",
+            "2": "secrecy",
+            "3": "Trust",
+            "4": "Honesty"
+          },
+          "context": "Center: the line of the smart plan."
+        },
+        "position5": {
+          "upright": "The Seven Swords show that strategic moves outside are effective in the practice of lobbying and withholding information.",
+          "reversed": "The Reverse Seven Sword says that leaks, disclosures, and loss of trust pose a risk outside.",
+          "keywords": {
+            "0": "strategy",
+            "1": "backstage",
+            "2": "secrecy",
+            "3": "leak",
+            "4": "Trust"
+          },
+          "context": "The rules of the game are not written on stage, but backstage."
+        },
+        "position6": {
+          "upright": "Advice: Set up an ethical strategy; do not explain everything unnecessarily.",
+          "reversed": "Advice: Straighten out the half-truths; line up the transparency.",
+          "keywords": {
+            "0": "strategy",
+            "1": "ethics",
+            "2": "tactics",
+            "3": "transparency",
+            "4": "Trust"
+          },
+          "context": "Advice: smart and clean game."
+        },
+        "position7": {
+          "upright": "Possible future: A smart tactic can bring short-term gains, but trust management is critical.",
+          "reversed": "Possible future: The revelation of hidden issues creates a chance to clean up; new confidence in transparency.",
+          "keywords": {
+            "0": "strategy",
+            "1": "tactics",
+            "2": "Trust",
+            "3": "transparency",
+            "4": "risk"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "eightofswords": {
+        "position1": {
+          "upright": "Eight Swords represent a time in the past when your freedom was restricted or you felt helpless. This experience may have made you aware of your own limitations, but it also may have fed your fears at the heart of today's situation. This card reminds you that desperation in the past may have limited your perceptions today.",
+          "reversed": "The Reverse Eight Swords point to situations where you have a chance to get out of the past and you continue to limit yourself. Perhaps it was possible to be free, but your fears stopped you. So you may still feel the echoes of the same chains today. This card shows that in the past, contempt of your own power leads to problems today.",
+          "keywords": {
+            "0": "freedom",
+            "1": "obstacle",
+            "2": "limit",
+            "3": "despair",
+            "4": "history"
+          },
+          "context": "It's the effect of the past, or the efforts to be liberated."
+        },
+        "position2": {
+          "upright": "Eight Swords now show that there is no exit and that self-sustaining beliefs narrow your field of motion. Mental chains are tighter than they really are. Small experiments create the first relaxation in these chains.",
+          "reversed": "The Reverse Eight Swords say that the knots are beginning to unravel, but the old fears are returning from time to time, collecting evidence speeds up the liberation.",
+          "keywords": {
+            "0": "Self-restraint",
+            "1": "fear",
+            "2": "mind trap",
+            "3": "Freedom",
+            "4": "experiment"
+          },
+          "context": "Current theme: testing perceived obstacles."
+        },
+        "position3": {
+          "upright": "The Eight Swords show that self-restraint beliefs and the no-exit narrative are an invisible wall in the subconscious. The mind may have created a labyrinth that limits freedom. This card reminds us that the little experiments that test the truth will untie the ropes.",
+          "reversed": "The Reverse Eight Swords say that the intention of dissolution and liberation is strengthened inside, but old fears can sometimes come back as blindfolds. This card recommends collecting evidence and asking for support as leverages of freedom."
+        }
+      }
+    }
+  }
+}

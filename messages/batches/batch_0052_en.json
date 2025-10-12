@@ -1,0 +1,774 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "nineofcups": {
+        "position8": {
+          "upright": "Nine Cups, external effects can give you the support of satisfaction, happiness, and wishes.",
+          "reversed": "Reverse Nine Cups, external effects can lead you to superficial satisfaction, dissatisfaction, or empty promises.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Happiness",
+            "2": "Wish",
+            "3": "expectation",
+            "4": "abundance"
+          },
+          "context": "It affects you through external effects, satisfaction, or disappointment."
+        },
+        "position9": {
+          "upright": "Nine Cups may show dissatisfaction, fear of expectations being met or taken away from happiness.",
+          "reversed": "The Reverse Nine Cup can cause the anxiety of superficial happiness, dissatisfaction, or inner emptiness.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "satisfaction",
+            "2": "expectation",
+            "3": "dissatisfaction",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on dissatisfaction or loss of happiness."
+        }
+      },
+      "pageofcups": {
+        "position1": {
+          "upright": "The Prince of Hearts may be at the center of the problem of creativity, emotional expression, or a new feeling.",
+          "reversed": "The Reverse Cup Prince may be the source of the problem of imagination, lack of emotional maturity or carelessness.",
+          "keywords": {
+            "0": "creativity",
+            "1": "expression",
+            "2": "dream",
+            "3": "emotion",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is the search for emotional expression and creativity."
+        },
+        "position10": {
+          "upright": "The Prince of Hearts may result in an emotional offer, a new romantic beginning, or an inspirational development.",
+          "reversed": "The Reverse Cup Prince may result in superficial emotions, rejection, or disappointment.",
+          "keywords": {
+            "0": "romance",
+            "1": "proposal",
+            "2": "start",
+            "3": "Inspired",
+            "4": "dream"
+          },
+          "context": "The result may be a romantic development or disappointment."
+        },
+        "position2": {
+          "upright": "The Prince of Hearts may be emotionally immature, delusional or careless, but when it's unrealistic, it's hard to find a solution.",
+          "reversed": "The reverse Prince of the Cup may be the source of extreme sensitivity, escape into the fantasy world, or carelessness.",
+          "keywords": {
+            "0": "Imagination",
+            "1": "emotion",
+            "2": "maturity",
+            "3": "sensitivity",
+            "4": "obstacle"
+          },
+          "context": "The obstacle arises from lack of emotional maturity and flight of dreams."
+        },
+        "position3": {
+          "upright": "The Prince of Hearts can be subconsciously an experience of pure emotions, creativity or imagination that you've experienced in the past.",
+          "reversed": "The reverse Prince of the Cup may have settled into the subconscious of emotional maturity, carelessness or imagination.",
+          "keywords": {
+            "0": "Imagination",
+            "1": "creativity",
+            "2": "emotion",
+            "3": "maturity",
+            "4": "subconscious"
+          },
+          "context": "Pure emotions and imagination in the past may have shaped your problems today."
+        },
+        "position4": {
+          "upright": "The Prince of Hearts says his best potential is to express his feelings with curiosity, open up creative playgrounds and take his inner child's intuition seriously.",
+          "reversed": "The Reverse Cup Prince, in order to expand your potential, you have to stop postponing emotionally, embrace your sensitivity as a force, and put it into production.",
+          "keywords": {
+            "0": "creativity",
+            "1": "expression",
+            "2": "curiosity",
+            "3": "intuition",
+            "4": "Sensitivity"
+          },
+          "context": "The best potential is to open up the creative and sincere channels of expression."
+        },
+        "position5": {
+          "upright": "The Prince of Hearts, in recent times, you may have experienced a new feeling, creative inspiration, or a sincere feeling.",
+          "reversed": "The Reverse Cup Prince, you may have experienced a recent lack of imagination, emotional maturity, or carelessness.",
+          "keywords": {
+            "0": "creativity",
+            "1": "feeling",
+            "2": "Inspired",
+            "3": "Imagination",
+            "4": "intimacy"
+          },
+          "context": "Your recent past may have been determined by sincere inspiration or imagination."
+        },
+        "position6": {
+          "upright": "Prince of Hearts, in the near future, you may experience a creative inspiration, a romantic gesture, or a new emotional opening.",
+          "reversed": "In the near future, the reverse Prince of the Cup may have a lack of imagination, emotional maturity, or intimacy issues.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "romance",
+            "2": "creativity",
+            "3": "dream",
+            "4": "intimacy"
+          },
+          "context": "Your near future will be shaped by inspiration or imagination."
+        },
+        "position7": {
+          "upright": "Prince of Hearts, you may be experiencing a romantic inspiration, a creative spark, or a new emotional opening.",
+          "reversed": "The Reverse Cup Prince, you may now experience a lack of imagination, emotional maturity, or intimacy issues.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "romance",
+            "2": "creativity",
+            "3": "dream",
+            "4": "intimacy"
+          },
+          "context": "Your current condition is shaped by inspiration or imagination."
+        },
+        "position8": {
+          "upright": "Prince of Hearts, outside effects can bring you a romantic offer, creative inspiration, or an emotional opening.",
+          "reversed": "The reverse Prince of the Cup, the external effects can affect you with imagination, superficiality, or lack of emotional maturity.",
+          "keywords": {
+            "0": "romance",
+            "1": "Inspired",
+            "2": "creativity",
+            "3": "proposal",
+            "4": "dream"
+          },
+          "context": "It affects you through external effects, romance, or superficiality."
+        },
+        "position9": {
+          "upright": "Prince of Hearts, you may be afraid of being rejected, not being emotionally taken seriously, or that your dreams will be underestimated.",
+          "reversed": "The Reverse Cup Prince may show the fear of superficial romance, deceptive proposals, or disappointment.",
+          "keywords": {
+            "0": "romance",
+            "1": "Rejection",
+            "2": "Inspired",
+            "3": "sentimentality",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on questioning emotional seriousness."
+        }
+      },
+      "knightofcups": {
+        "position1": {
+          "upright": "The Knight of Hearts may be at the center of the problem, following idealism, romantic perspective, or dreams.",
+          "reversed": "The Reverse Cup Knight may be the source of the problem of breaking the truth or over-imagining.",
+          "keywords": {
+            "0": "idealism",
+            "1": "dream",
+            "2": "Vision",
+            "3": "romance",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is the effect of dreams and ideals."
+        },
+        "position10": {
+          "upright": "Knight of the Cup, the result may be an emotional journey, a romantic offer, or an idealistic attempt.",
+          "reversed": "The Reverse Cup Knight may result in empty promises, misleading proposals, or emotional disappointments.",
+          "keywords": {
+            "0": "romance",
+            "1": "proposal",
+            "2": "dream",
+            "3": "journey",
+            "4": "ideal"
+          },
+          "context": "The result may be a romantic offer or empty promise."
+        },
+        "position2": {
+          "upright": "Knight of the Cup, your obstacle can be too idealism, romance or truth, and when you get too caught up in dreams, it's hard to move forward.",
+          "reversed": "The reverse Knight of the Cup, disappointments, unrealistic expectations or inconsistencies may be the source of the problem.",
+          "keywords": {
+            "0": "idealism",
+            "1": "romance",
+            "2": "dream",
+            "3": "Inconsistencies",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born from delusions and distance from reality."
+        },
+        "position3": {
+          "upright": "Knight of Hearts, subconsciously following dreams in the past can be a romantic perspective or idealistic emotion.",
+          "reversed": "The reverse Knight of the Cup, disappointments, unrealistic expectations, or emotional confusion may have settled in your subconscious.",
+          "keywords": {
+            "0": "idealism",
+            "1": "romance",
+            "2": "dream",
+            "3": "Realism",
+            "4": "subconscious"
+          },
+          "context": "Idealism and disappointments in the past may be affecting your problems today."
+        },
+        "position4": {
+          "upright": "The Knight of the Cup shows that his best potential is to carry his ideals with grace, make inspiring proposals and add emotional gravity to his vision.",
+          "reversed": "Knight of the Reverse Cup, for potential, you need to balance your idealism with the plan of action, develop consistency, and make realistic commitments.",
+          "keywords": {
+            "0": "idealism",
+            "1": "Inspired",
+            "2": "proposal",
+            "3": "gravity",
+            "4": "consistency"
+          },
+          "context": "The best potential is to carry inspiration consistent with concrete steps."
+        },
+        "position5": {
+          "upright": "Knight of the Cup, you may have recently taken a romantic approach, a visionary attempt, or an idealist step.",
+          "reversed": "Knight of the Reverse Cup, you may have recently encountered unrealistic expectations, inconsistencies, or misleading proposals.",
+          "keywords": {
+            "0": "romance",
+            "1": "proposal",
+            "2": "idealism",
+            "3": "dream",
+            "4": "step"
+          },
+          "context": "Your recent history may have been determined by romantic attempts or misleading steps."
+        },
+        "position6": {
+          "upright": "Knight of Hearts, in the near future, you can expect a romantic offer, a creative venture, or an inspiring journey.",
+          "reversed": "Knight of the Reverse Cup, in the near future, you may experience inconsistency, empty promises, or unrealistic expectations.",
+          "keywords": {
+            "0": "romance",
+            "1": "proposal",
+            "2": "Inspired",
+            "3": "dream",
+            "4": "step"
+          },
+          "context": "Your near future will be shaped by romance or inconsistencies."
+        },
+        "position7": {
+          "upright": "Knight of the Cup, you are now in the midst of a romantic offer, a creative venture, or an inspiring journey.",
+          "reversed": "Knight of the Reverse Cup, at this moment, you may be forced by inconsistency, empty promises, or unrealistic expectations.",
+          "keywords": {
+            "0": "romance",
+            "1": "proposal",
+            "2": "Inspired",
+            "3": "dream",
+            "4": "movement"
+          },
+          "context": "Your current situation is shaped by romance or inconsistencies."
+        },
+        "position8": {
+          "upright": "Knight of the Cup, the outside effects can bring you a romantic offer, creative journey, or emotional support.",
+          "reversed": "Reverse Cup Knight, external effects can create empty promises, inconsistencies, or extreme imagination.",
+          "keywords": {
+            "0": "romance",
+            "1": "proposal",
+            "2": "Inspired",
+            "3": "dream",
+            "4": "support"
+          },
+          "context": "It affects you through external effects, inspiration or inconsistencies."
+        },
+        "position9": {
+          "upright": "The Knight of Hearts may show a fear of false promises, romantic disappointment, or extreme sentimentality.",
+          "reversed": "The Reverse Cup Knight can create a fear of inconsistencies, emotional games, or misleading proposals.",
+          "keywords": {
+            "0": "romance",
+            "1": "Inconsistencies",
+            "2": "proposal",
+            "3": "emotion",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on romantic promises or emotional games."
+        }
+      },
+      "queenofcups": {
+        "position1": {
+          "upright": "The Queen of Hearts may be at the center of the problem of empathy, emotional balance, or focusing too much on others.",
+          "reversed": "The Reverse Cup Queen may be the source of extreme sensitivity, emotional confusion, or addiction.",
+          "keywords": {
+            "0": "empathy",
+            "1": "sensitivity",
+            "2": "balance",
+            "3": "Sensitivity",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is emotional sensitivity and empathy."
+        },
+        "position10": {
+          "upright": "The Queen of Hearts may result in a process of emotional balance, compassion, and understanding.",
+          "reversed": "The reverse Queen of the Cup may result in extreme sensitivity, addiction, or emotional imbalance.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "balance",
+            "2": "understanding",
+            "3": "sensitivity",
+            "4": "emotion"
+          },
+          "context": "The result could be emotional balance or extremes."
+        },
+        "position2": {
+          "upright": "Queen of Hearts, the obstacle can be extreme sensitivity, taking on other people's problems, or emotional confusion.",
+          "reversed": "The reverse Queen of the Cup, addiction, manipulation, or emotional imbalance, could be the source of the obstacle.",
+          "keywords": {
+            "0": "empathy",
+            "1": "sensitivity",
+            "2": "addiction",
+            "3": "emotion",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born from extreme sensitivity and emotional overload."
+        },
+        "position3": {
+          "upright": "The Queen of Hearts may be subconsciously focused on past empathy, emotional sensitivity, or others.",
+          "reversed": "Reverse Queen of the Cup, extreme sensitivity, addiction, or emotional imbalance may have been applied to the subconscious.",
+          "keywords": {
+            "0": "empathy",
+            "1": "sensitivity",
+            "2": "balance",
+            "3": "Sensitivity",
+            "4": "subconscious"
+          },
+          "context": "Excessive empathy or addiction in the past may be the basis of today's problems."
+        },
+        "position4": {
+          "upright": "The Queen of Hearts says that her best potential is to transform your environment with compassion, with deep empathy, intuitive leadership, and the ability to hold emotional space.",
+          "reversed": "In order to achieve its potential, you have to stop overloading and maintain your limits and prioritize self-care.",
+          "keywords": {
+            "0": "empathy",
+            "1": "intuition",
+            "2": "Compassion",
+            "3": "leadership",
+            "4": "limit"
+          },
+          "context": "The best potential is to maintain healthy boundaries while leading with compassion."
+        },
+        "position5": {
+          "upright": "Queen of Hearts, you may have recently experienced empathy, compassion, or emotional support.",
+          "reversed": "Inverse Queen of the Cup, you may have recently experienced extreme sensitivity, addiction, or emotional imbalance.",
+          "keywords": {
+            "0": "empathy",
+            "1": "Compassion",
+            "2": "support",
+            "3": "sensitivity",
+            "4": "balance"
+          },
+          "context": "Your recent history may have been determined by compassion or emotional fluctuations."
+        },
+        "position6": {
+          "upright": "Queen of Hearts, in the near future, you will be guided by compassion, empathy, and emotional wisdom.",
+          "reversed": "Reverse Queen of the Cup, in the near future, you may experience extreme sensitivity, addiction, or emotional imbalance.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "empathy",
+            "2": "wisdom",
+            "3": "sensitivity",
+            "4": "balance"
+          },
+          "context": "Your near future will be shaped by compassion or imbalance."
+        },
+        "position7": {
+          "upright": "Queen of Hearts, you are now guided by compassion, empathy, and emotional wisdom.",
+          "reversed": "Reverse Queen of Hearts, right now, extreme sensitivity, addiction, or emotional imbalance can be a challenge.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "empathy",
+            "2": "wisdom",
+            "3": "sensitivity",
+            "4": "balance"
+          },
+          "context": "Your current condition is shaped by compassion or emotional imbalance."
+        },
+        "position8": {
+          "upright": "Queen of Hearts, external effects can offer you compassion, empathy, and emotional support.",
+          "reversed": "Reverse Queen of the Cup, external effects can affect you with extreme sensitivity, emotional addiction, or imbalance.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "empathy",
+            "2": "support",
+            "3": "sensitivity",
+            "4": "balance"
+          },
+          "context": "It affects you through external effects, compassion, or emotional sensitivity."
+        },
+        "position9": {
+          "upright": "Queen of Hearts, you may be afraid of being emotionally hurt, too sensitive to be seen or dependent on others.",
+          "reversed": "The reverse Queen of the Cup may show emotional abuse, extreme sensitivity, or fear of addiction.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "sensitivity",
+            "2": "Don't get hurt.",
+            "3": "addiction",
+            "4": "anxiety"
+          },
+          "context": "Your fears are about extreme sensitivity or addiction."
+        }
+      },
+      "kingofcups": {
+        "position1": {
+          "upright": "The King of Hearts may need emotional maturity, coolness, or credibility at the heart of the problem.",
+          "reversed": "The reverse King of the Cup, emotional imbalance, repressed feelings or uncontrollability, could be the source of the problem.",
+          "keywords": {
+            "0": "maturity",
+            "1": "balance",
+            "2": "leadership",
+            "3": "emotion",
+            "4": "Question"
+          },
+          "context": "The problem needs emotional maturity and a balanced approach at its centre."
+        },
+        "position10": {
+          "upright": "The King of Hearts may result in maturity, balance of emotions, and wise guidance.",
+          "reversed": "The reverse King of the Cup may result in emotional instability, manipulation, or loss of control.",
+          "keywords": {
+            "0": "maturity",
+            "1": "balance",
+            "2": "guidance",
+            "3": "emotion",
+            "4": "control"
+          },
+          "context": "The result may be maturity or imbalance."
+        },
+        "position2": {
+          "upright": "The King of Hearts may not be able to control the emotions of the obstacle, lack of trust, or lose the coolness.",
+          "reversed": "The reverse King of the Cup, emotional imbalance, repressed anger or responsibility may be the source of the obstacle.",
+          "keywords": {
+            "0": "balance",
+            "1": "maturity",
+            "2": "Trust",
+            "3": "responsibilities",
+            "4": "obstacle"
+          },
+          "context": "The obstacle arises from loss of emotional maturity and imbalance."
+        },
+        "position3": {
+          "upright": "The King of Hearts may have a subconscious experience of mature emotions, coolness, or leading others in the past.",
+          "reversed": "Reverse King of the Cup, emotional imbalance, repressed anger, or control issues may be embedded in his subconscious.",
+          "keywords": {
+            "0": "maturity",
+            "1": "balance",
+            "2": "leadership",
+            "3": "Anger",
+            "4": "subconscious"
+          },
+          "context": "The emotional experiences of the past may be the basis for today's problems."
+        },
+        "position4": {
+          "upright": "The King of Hearts shows that his best potential is to remain calm, to guide and build trust in stormy waters through emotional maturity.",
+          "reversed": "In order to open up the potential, the reverse King of the Cup requires that instead of suppressing emotions, you establish regular expressions and consciously direct the triggers.",
+          "keywords": {
+            "0": "maturity",
+            "1": "Tranquillity",
+            "2": "Trust",
+            "3": "guidance",
+            "4": "balance"
+          },
+          "context": "The best potential is to be a trusted guide with emotional stability."
+        },
+        "position5": {
+          "upright": "King of Hearts, you may have recently experienced emotional maturity, calmness, or wise guidance.",
+          "reversed": "Reverse King of the Cup, you may have recently experienced emotionally out of control, repressed anger, or insecurity.",
+          "keywords": {
+            "0": "maturity",
+            "1": "Tranquillity",
+            "2": "balance",
+            "3": "guidance",
+            "4": "emotion"
+          },
+          "context": "Your recent past may have been shaped by emotional maturity or imbalances."
+        },
+        "position6": {
+          "upright": "King of Hearts, in the near future, you will be guided by emotional maturity, wise guidance, and the energy of calm.",
+          "reversed": "In the near future, you may experience emotional loss of control, repressed anger, or insecurity.",
+          "keywords": {
+            "0": "maturity",
+            "1": "balance",
+            "2": "calm",
+            "3": "guidance",
+            "4": "wisdom"
+          },
+          "context": "Your near future will be shaped by maturity or imbalance."
+        },
+        "position7": {
+          "upright": "King of Hearts, you may be acting on emotional maturity, wisdom, and the energy of calm.",
+          "reversed": "Reverse King of the Cup, you may be experiencing emotional loss of control, repressed anger, or insecurity.",
+          "keywords": {
+            "0": "maturity",
+            "1": "balance",
+            "2": "calm",
+            "3": "wisdom",
+            "4": "guidance"
+          },
+          "context": "Your current condition is shaped by emotional maturity or imbalance."
+        },
+        "position8": {
+          "upright": "King of Hearts, external influences can give you wise guidance, emotional maturity, and support.",
+          "reversed": "Reverse King of the Cup, external effects can affect you with emotional manipulation, loss of control, or imbalance.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "maturity",
+            "2": "balance",
+            "3": "support",
+            "4": "guidance"
+          },
+          "context": "It affects you through external effects, wisdom, or manipulation."
+        },
+        "position9": {
+          "upright": "King of Hearts, you may be afraid of not being able to control your emotions, not being supported, or being manipulated.",
+          "reversed": "The reverse King of the Cup may show concern for emotional imbalance, abuse, or oppression.",
+          "keywords": {
+            "0": "maturity",
+            "1": "control",
+            "2": "manipulation",
+            "3": "balance",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on losing emotional control or being manipulated."
+        }
+      },
+      "aceofswords": {
+        "position1": {
+          "upright": "The Sword Ace may be at the center of the problem, seeking clarity, finding the truth, or the need for a new idea.",
+          "reversed": "Reverse Sword Ace, confusion, communication problems or misunderstandings may be the source of the problem.",
+          "keywords": {
+            "0": "clarity",
+            "1": "real",
+            "2": "idea",
+            "3": "communication",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is to reveal the truth and become clear."
+        },
+        "position10": {
+          "upright": "Sword Ace, the result is clarity, a strong decision, and a new mental start.",
+          "reversed": "The Reverse Sword Ace may result in confusion, misunderstandings, or failures.",
+          "keywords": {
+            "0": "clarity",
+            "1": "decision",
+            "2": "start",
+            "3": "mind",
+            "4": "real"
+          },
+          "context": "The result could be mental clarity or confusion."
+        },
+        "position2": {
+          "upright": "The Sword Ace may have problems of not being able to think clearly, of not being able to see the truth, of communication, and when the clarity of the mind is lacking, the solutions remain blurry.",
+          "reversed": "The Reverse Sword Ace may be an obstacle to confusion, misleading information or lies.",
+          "keywords": {
+            "0": "clarity",
+            "1": "real",
+            "2": "communication",
+            "3": "Confusion",
+            "4": "obstacle"
+          },
+          "context": "The obstacle comes from not being able to think clearly and not being able to see the truth."
+        },
+        "position3": {
+          "upright": "The Sword Ace may have been an experience in your subconscious, in your past, in search of enlightenment, clarity, or in discovering the truth, and your mental clarity may have led you to your problems today.",
+          "reversed": "In the past, the Reverse Sword Ace may have entered the subconscious of wrong decisions, misleading words, or confusion.",
+          "keywords": {
+            "0": "clarity",
+            "1": "real",
+            "2": "mind",
+            "3": "decision",
+            "4": "subconscious"
+          },
+          "context": "In the past, mental clarity may have shaped the problems of searching or confusion today."
+        },
+        "position4": {
+          "upright": "The Sword Ace is the best potential for seeing the truth with mental clarity, making strong decisions, and turning a new leaf with sharp awareness.",
+          "reversed": "In order to reveal your potential, you have to overcome confusion, develop clarity in communication, and be honest with yourself.",
+          "keywords": {
+            "0": "clarity",
+            "1": "decision",
+            "2": "real",
+            "3": "enlightenment",
+            "4": "awareness"
+          },
+          "context": "Your best potential is to make new beginnings with mental clarity."
+        },
+        "position5": {
+          "upright": "The Sword Ace indicates that he may have recently made a mental enlightenment, clarity, or strong decision.",
+          "reversed": "Reverse Sword Ace, you may have recently experienced confusion, miscommunication or lack of clarity.",
+          "keywords": {
+            "0": "clarity",
+            "1": "decision",
+            "2": "communication",
+            "3": "enlightenment",
+            "4": "mind"
+          },
+          "context": "Your recent past may have been shaped by mental clarity or confusion."
+        },
+        "position6": {
+          "upright": "Sword Ace, in the near future, mental clarity, a strong decision, and a new beginning energy awaits you.",
+          "reversed": "Reverse Sword Ace, in the near future, you may experience confusion, misunderstandings, or lack of clarity.",
+          "keywords": {
+            "0": "clarity",
+            "1": "decision",
+            "2": "communication",
+            "3": "start",
+            "4": "mind"
+          },
+          "context": "Your near future will be shaped by mental clarity or confusion."
+        },
+        "position7": {
+          "upright": "Sword Ace, you may be getting mental clarity right now, focusing on a new idea or a strong decision.",
+          "reversed": "Reverse Sword Ace, you may be under the influence of confusion, communication problems, or misjudgment.",
+          "keywords": {
+            "0": "clarity",
+            "1": "decision",
+            "2": "idea",
+            "3": "start",
+            "4": "communication"
+          },
+          "context": "Your current situation is shaped by clarity or confusion."
+        },
+        "position8": {
+          "upright": "Sword Ace, external effects can bring you clarity, new ideas and strong communication support.",
+          "reversed": "Reverse Sword Ace, external effects can fool you with confusion, communication problems or misinformation.",
+          "keywords": {
+            "0": "clarity",
+            "1": "idea",
+            "2": "decision",
+            "3": "communication",
+            "4": "start"
+          },
+          "context": "It affects you through external effects, clarity, or false information."
+        },
+        "position9": {
+          "upright": "You may be afraid of making the wrong decision, of not seeing the truth, of losing clarity.",
+          "reversed": "The Reverse Sword Ace shows fear of confusion, misunderstanding, or communication problems.",
+          "keywords": {
+            "0": "clarity",
+            "1": "decision",
+            "2": "communication",
+            "3": "real",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on not making the right decision or getting the wrong information."
+        }
+      },
+      "twoofswords": {
+        "position1": {
+          "upright": "Two swords may be at the center of the problem, indecision, search for balance, or making a choice.",
+          "reversed": "The Reverse Two Swords may be the source of the problem whether to reject the truth or avoid making decisions.",
+          "keywords": {
+            "0": "decision",
+            "1": "balance",
+            "2": "The dilemma",
+            "3": "selection",
+            "4": "Question"
+          },
+          "context": "There's a critical choice at the center of the problem."
+        },
+        "position10": {
+          "upright": "The two swords may be the result of an important decision or balance.",
+          "reversed": "The Inverse Two Swords may be blind spots or wrong choices, as a result of the incident.",
+          "keywords": {
+            "0": "decision",
+            "1": "balance",
+            "2": "The dilemma",
+            "3": "selection",
+            "4": "clarity"
+          },
+          "context": "The result may be decision making or indecision."
+        },
+        "position2": {
+          "upright": "Two swords, your obstacle may be indecisive, dilemmas, or ignoring the facts, but the fact that you can't make a choice forces you.",
+          "reversed": "The Reverse Two Swords, stubbornness, postponement of decision or denial of truth may be the source of the obstacle.",
+          "keywords": {
+            "0": "decision",
+            "1": "The dilemma",
+            "2": "To ignore",
+            "3": "balance",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born from not making choices and rejecting facts."
+        },
+        "position3": {
+          "upright": "Two swords can be subconsciously a difficult decision you've made in the past, the dilemmas you've had, or the fact that you're ignoring the truth.",
+          "reversed": "The Reverse Two Swords may have settled in the subconscious of the past to postpone a permanent decision, stubbornness, or denial of truth.",
+          "keywords": {
+            "0": "decision",
+            "1": "The dilemma",
+            "2": "To ignore",
+            "3": "balance",
+            "4": "subconscious"
+          },
+          "context": "The uncertainty and dilemmas of the past may have been the basis for today's problems."
+        },
+        "position4": {
+          "upright": "Two Swords, your best potential is to make balanced choices, to reconcile conflicts and to combine logic with intuition.",
+          "reversed": "Two Reverse Swords, in order to reveal your potential, you must overcome uncertainty, face facts, and not delay your choices.",
+          "keywords": {
+            "0": "balance",
+            "1": "selection",
+            "2": "Compromise",
+            "3": "decision",
+            "4": "Introduction"
+          },
+          "context": "Your best potential is to use intuition and logic to make decisions."
+        },
+        "position5": {
+          "upright": "Two Swords, you may have had a dilemma recently, had trouble making decisions, or closed your eyes from the truth.",
+          "reversed": "Inverse Two Swords, you may have delayed a difficult decision in the past, or been stuck in uncertainty, or made the wrong choice in a hurry.",
+          "keywords": {
+            "0": "indecisive",
+            "1": "The dilemma",
+            "2": "selection",
+            "3": "balance",
+            "4": "To ignore"
+          },
+          "context": "Your recent history may have been determined by decision-making or postponement."
+        },
+        "position6": {
+          "upright": "Two Swords, in the near future, you may face a difficult choice, you may experience indecisiveness.",
+          "reversed": "Two Reverse Swords, you may be able to avoid making decisions in the near future or make the wrong choice.",
+          "keywords": {
+            "0": "indecisive",
+            "1": "selection",
+            "2": "balance",
+            "3": "The dilemma",
+            "4": "fork of road"
+          },
+          "context": "Your near future will be shaped by decision-making processes."
+        },
+        "position7": {
+          "upright": "Two swords could be in the process of making a decision right now, trying to balance the two options.",
+          "reversed": "The Reverse Two Swords are trying to avoid making decisions right now, so maybe you're making the wrong choices.",
+          "keywords": {
+            "0": "decision",
+            "1": "balance",
+            "2": "The dilemma",
+            "3": "indecisive",
+            "4": "fork of road"
+          },
+          "context": "Your current situation is shaped by choice or ambiguity."
+        },
+        "position8": {
+          "upright": "Two swords, external effects can force you to decide, pressures from your environment may require you to choose.",
+          "reversed": "Reverse Two Swords, external effects can lead to indecisiveness, misdirection, or postponement.",
+          "keywords": {
+            "0": "decision",
+            "1": "The dilemma",
+            "2": "balance",
+            "3": "indecisive",
+            "4": "selection"
+          },
+          "context": "External effects can make it easier or difficult for you to choose."
+        },
+        "position9": {
+          "upright": "Two Swords, you may be afraid of not making up your mind, of being stuck between dilemmas, or of choosing the wrong side.",
+          "reversed": "The Reverse Two Swords reflect the fear of delaying decisions, not recognizing blind spots or wrong choices.",
+          "keywords": {
+            "0": "decision",
+            "1": "The dilemma",
+            "2": "balance",
+            "3": "selection",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on not being able to choose or the wrong choice."
+        }
+      },
+      "threeofswords": {
+        "position1": {
+          "upright": "The Three Swords may be a disappointing, heartbreaking, or painful experience at the heart of the problem.",
+          "reversed": "The Reverse Three Swords may be the source of the problem if you can't heal the wounds of the past or bear emotional burdens.",
+          "keywords": {
+            "0": "Disappointment",
+            "1": "Pain"
+          }
+        }
+      }
+    }
+  }
+}

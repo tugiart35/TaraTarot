@@ -1,0 +1,774 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "fiveofcups": {
+        "position6": {
+          "context": "Vaša bliža budućnost će se oblikovati žalovanjem ili isceljivanje procesa."
+        },
+        "position7": {
+          "upright": "Petorica šoljica se trenutno fokusira na vaše gubitke i možda ćete doživeti žaljenje ili tugu.",
+          "reversed": "Okrećeno pet šoljica, trenutno ostavljate prošlost iza sebe, fokusirajući se na lepotu koja ostaje i isceljuju.",
+          "keywords": [
+            "gubitak",
+            "žaliti",
+            "tuga",
+            "zarastanje",
+            "svest"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je tuga ili isceljenje."
+        },
+        "position8": {
+          "upright": "Petorica šoljica, spoljni uticaji mogu vas dovesti do gubitaka, žaljenja ili emocionalnih razočaranja.",
+          "reversed": "Okolišteno pet šoljica, spoljni uticaji mogu vas dovesti do zaceljenju, ostavite prošlost iza sebe i usredsredite se na lepotu koja ostaje.",
+          "keywords": [
+            "gubitak",
+            "žaliti",
+            "tuga",
+            "zarastanje",
+            "svest"
+          ],
+          "context": "Spoljni uticaji utiču na vas kroz gubitak ili zarastanje."
+        },
+        "position9": {
+          "upright": "Pet šoljica, možda ćete se plašiti doživljavanja gubitka, žaljenja i emocionalnog razočaranja.",
+          "reversed": "Preokrećena pet šoljica ukazuje na anksioznost da ne mogu da premeštaju prošle prošlih udaljenosti ili stalno fokusirajući na gubitke.",
+          "keywords": [
+            "gubitak",
+            "žaliti",
+            "tuga",
+            "razočaranje",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi potiču iz doživljavanja gubitka ili ne mogu da napuste prošlost iza sebe."
+        }
+      },
+      "sixofcups": {
+        "position1": {
+          "upright": "Šest šoljica: sećanja iz prošlosti, dečiji uticaji ili nostalgija mogu biti u srcu problema.",
+          "reversed": "Invertirani šest šoljica može biti izvor problema, zaglavljen u prošlosti ili ne može da se kreće napred.",
+          "keywords": [
+            "prošlost",
+            "moment",
+            "detinjstvo",
+            "nostalgija",
+            "pitanje"
+          ],
+          "context": "U srcu problema su emocionalni uticaji iz prošlosti."
+        },
+        "position10": {
+          "upright": "Šest šoljica može predstavljati dobre uspomene iz prošlosti, pomirenja ili nostalgične sreće kao rezultat događaja.",
+          "reversed": "Invertirani šest šoljica može rezultirati prebivalištem u prošlosti, a ne može da se kreće napred ili djetinjasto ponašanje kao rezultat događaja.",
+          "keywords": [
+            "prošlost",
+            "nostalgija",
+            "pomirljivost",
+            "sreća",
+            "sećanja"
+          ],
+          "context": "Rezultat je možda sreća iz prošlosti ili nemogućnost napredovanja."
+        },
+        "position2": {
+          "upright": "Šest šoljica može biti efekti detinjstva invalidnosti, nostalgije ili veze iz prošlosti. Čvrsto se drži stara uspomena, zadržava vas nazad.",
+          "reversed": "Pretvoreni šest šoljica može biti prepreka da se ne mogu odbiti od prošlosti, a ne da se radujete prema naprijed ili se stalno vraćaju.",
+          "keywords": [
+            "prošlost",
+            "detinjstvo",
+            "obveznica",
+            "nostalgija",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje iz činjenice da su veze iz prošlosti još uvek efikasne."
+        },
+        "position3": {
+          "upright": "Šest šoljica može podsvesno imati uticaja detinjstva, nostalgične veze ili porodične situacije.",
+          "reversed": "Uključena šest pehara može se ukorijeniti u podsvijesti da se ne može odbiti od prošlosti, a ne da se radujete prema naprijed ili se zaglave u starim sećanjima.",
+          "keywords": [
+            "prošlost",
+            "detinjstvo",
+            "obveznica",
+            "nostalgija",
+            "podsvestan"
+          ],
+          "context": "Prošle sećanja u detinjstvu i stare veze možda su dovele do današnjih problema."
+        },
+        "position4": {
+          "upright": "Šest šoljica pokazuje da je njen najbolji potencijal u nevinosti, iskrenosti i stvaranju sigurnih obveznica donošenjem negovanja sećanja iz prošlosti u sadašnjost.",
+          "reversed": "Invertirani šest šoljica, da biste postigli svoj potencijal, potrebno je prestati da prebivate na nostalgiji i odgovorite na saosećajno u stvarne potrebe trenutka.",
+          "keywords": [
+            "nevinost",
+            "iskrenost",
+            "moć sećanja",
+            "poverenje",
+            "saosećanje"
+          ],
+          "context": "Najbolji potencijal je transformisanje topline prošlosti u zdrave veze u sadašnjosti."
+        },
+        "position5": {
+          "upright": "Šest šoljica se možda nedavno vratilo na prošli uspomene, iskusnu nostalgiju ili je izneo veze detinjstva.",
+          "reversed": "Invertirani šest šoljica možda je bilo pitanje da se u prošlosti zaglave u nedavnoj prošlosti, nesposobni da se raduje ili razbijam od starih veza.",
+          "keywords": [
+            "prošlost",
+            "nostalgija",
+            "moment",
+            "detinjstvo",
+            "obveznica"
+          ],
+          "context": "Vaša nedavna prošlost može se odrediti prošlih sećanja ili se ne mogu slomiti od njih."
+        },
+        "position6": {
+          "upright": "Šest šoljica, možete naići na osobu iz prošlosti u bliskoj budućnosti, iskusiti nostalgiju ili donošenje sećanja u detinjstvu.",
+          "reversed": "Invertirani šest šoljica može značiti da ostane zaglavljen u prošlosti, a ne može se radovati ili nositi teret starih veza u bliskoj budućnosti.",
+          "keywords": [
+            "prošlost",
+            "moment",
+            "nostalgija",
+            "detinjstvo",
+            "obveznica"
+          ],
+          "context": "Vaša bliža budućnost će biti oblikovana prošlim vezama ili nemogućnosti da se kreće naprijed u budućnost."
+        },
+        "position7": {
+          "upright": "Šest šoljica može se trenutno na dnevnom redu uspomena iz prošlosti, starih prijateljstava ili nostalgičnih osećanja.",
+          "reversed": "Invertirani šest šoljica, možda ćete se trenutno previše zaglaviti u prošlosti ili ne možete da krenete napred.",
+          "keywords": [
+            "prošlost",
+            "moment",
+            "nostalgija",
+            "detinjstvo",
+            "obveznica"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je prilogom u prošlost ili nemogućnost otvaranja u budućnosti."
+        },
+        "position8": {
+          "upright": "Šest šoljica, spoljni uticaji mogu izvesti prijateljstva, sećanja ili podrška obveznica iz prošlosti.",
+          "reversed": "Invertirani šest šoljica, spoljni uticaji mogu vas ovisiti o prošlosti ili usporiti vaš napredak.",
+          "keywords": [
+            "prošlost",
+            "moment",
+            "nostalgija",
+            "detinjstvo",
+            "obveznica"
+          ],
+          "context": "Spoljni uticaji utiču na vas kroz veze iz prošlosti ili nemogućnost napredovanja."
+        },
+        "position9": {
+          "upright": "Šest šoljica može ukazivati na strah od zaglavljenog u prošlosti, ne može se razbiti od starih veza ili izgubljenih u nostalgiji.",
+          "reversed": "Invertirani šest šoljica može prouzrokovati anksioznost o ponavljanju problema iz prošlosti ili da se ne mogu kretati napred.",
+          "keywords": [
+            "prošlost",
+            "nostalgija",
+            "obveznica",
+            "detinjstvo",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi se fokusiraju na to da se ne mogu razbiti od prošlosti ili ponavljati iste greške."
+        }
+      },
+      "sevenofcups": {
+        "position1": {
+          "upright": "Sedam šoljica može biti obilje opcija, snova ili zbrke u srcu problema.",
+          "reversed": "Pretvorenih sedam šoljica može biti izvor problema, koji je isključen iz stvarnosti ili pogrešnim izborom.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "zbrka",
+            "vizija",
+            "pitanje"
+          ],
+          "context": "Konfuzija ili izgubljena u opcijama je u srcu problema."
+        },
+        "position10": {
+          "upright": "Sedam šoljica može značiti mnogo opcija kao rezultat događaja, realizacije snova ili procesa ispunjenog kreativnošću.",
+          "reversed": "Invertirani sedam šoljica, može biti zbrke, pogrešne izbore ili iluzije kao rezultat događaja.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "kreativnost",
+            "odluka",
+            "iluzija"
+          ],
+          "context": "Rezultat može biti period višestrukih izbora ili zbrke."
+        },
+        "position2": {
+          "upright": "Sedam šoljica ukazuje da prepreka može biti previše opcija, konfuzije ili zablude. Kada ne možete da donesete realne izbore, vaš put postaje zamagljen.",
+          "reversed": "Pretvorenih sedam šoljica, pogrešan izbor, obmana ili odreda od stvarnosti može biti prepreka.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "zbrka",
+            "Nemojte biti prevareni",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje od zbrke i pogrešnih izbora."
+        },
+        "position3": {
+          "upright": "Sedam šoljica može podsvesno znači da se gubi u prošlosti u konfuziji, sanjari, ili previše opcija.",
+          "reversed": "Invertirano sedam šoljica, pogrešan izbor, iluzije ili bekstvo možda su se podmirili u podsvesti.",
+          "keywords": [
+            "sanjati",
+            "izbor",
+            "zbrka",
+            "iluzija",
+            "podsvestan"
+          ],
+          "context": "Konfuzija i pogrešni izbori u prošlosti su možda bili osnova za današnje probleme."
+        },
+        "position4": {
+          "upright": "Sedam šoljica sugerira da je vaš najbolji potencijal da se fokusira na realnu viziju kombinovanjem mašte sa jasnim namerama i pojednostavljenjem opcija.",
+          "reversed": "Pretvoreno sedam šoljica, da proširi svoj potencijal, potrebno je eliminisati ometajući fantazije, postaviti jasne prioritete i preduzeti mere.",
+          "keywords": [
+            "vizija",
+            "glasati",
+            "fokus",
+            "kreativnost",
+            "oštrina"
+          ],
+          "context": "Najbolji potencijal je pročišćavanje opcija i fokusiran na jednu istinsku nameru."
+        },
+        "position5": {
+          "upright": "Sedam šoljica, možda ste bili rastrgani između mnogih opcija u nedavnoj prošlosti, borite se sa snovima ili doživljavate konfuziju.",
+          "reversed": "Okrećeno sedam šoljica, možda ste nedavno razjasnili svoje mogućnosti i prešli iz snova u realne ciljeve.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "zbrka",
+            "vizija",
+            "oštrina"
+          ],
+          "context": "Vaša nedavna prošlost je možda oblikovana konfuzijom ili jasnoćom."
+        },
+        "position6": {
+          "upright": "Sedam šoljica, možete se suočiti sa mnogim opcijama u bliskoj budućnosti i morate odlučiti između snova i stvarnosti.",
+          "reversed": "Invertirano sedam šoljica može značiti prekid konfuzije, sticanje jasnoće i preduzimanje konkretnih koraka u bliskoj budućnosti.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "odluka",
+            "vizija",
+            "oštrina"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati procesima zbrke ili dobitak jasnoće."
+        },
+        "position7": {
+          "upright": "Sedam šoljica, možda ćete trenutno imati mnogo opcija ili snova i možda ćete imati poteškoća da odlučujete.",
+          "reversed": "Okrećeno sedam šoljica, sada ostavljate konfuziju u svom umu iza, steći jasnoću i krećete prema konkretnim izborima.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "odluka",
+            "vizija",
+            "oštrina"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je zbrkom ili jasnoćom."
+        },
+        "position8": {
+          "upright": "Sedam šoljica, spoljni uticaji mogu se suočiti sa vama sa opcijama, snovima ili primamljivim, ali nerealnim mogućnostima.",
+          "reversed": "Okrećeno sedam šoljica, spoljni uticaji mogu vas dovesti do toga da steknete jasnoću, ostvarite realne izbore i raščisti konfuziju.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "prilika",
+            "oštrina",
+            "odluka"
+          ],
+          "context": "Spoljni uticaji utiču na vas sa zbrkom ili jasnoćom."
+        },
+        "position9": {
+          "upright": "Sedam šoljica, možda ćete se plašiti da napravite pogrešan izbor, uhvate se u zabludama ili se odložite od stvarnosti.",
+          "reversed": "Pretvorenih sedam šoljica može ukazivati na razočaranje, gubitak jasnoće ili straha od pogrešnih opcija.",
+          "keywords": [
+            "izbor",
+            "iluzija",
+            "sanjati",
+            "odluka",
+            "anksioznost"
+          ],
+          "context": "Fokusira se na vaše strahove, pogrešne izbore ili pogrešne snove."
+        }
+      },
+      "eightofcups": {
+        "position1": {
+          "upright": "Osam šoljica može biti u srcu problema sa nezadovoljstvom ili potrebom da nešto ostavim iza.",
+          "reversed": "Invertirano osam šoljica, poteškoće u prepuštanju odlaska ili zavisnosti može biti izvor problema.",
+          "keywords": [
+            "da odete",
+            "prekršiti",
+            "nezadovoljstvo",
+            "potraga",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba da se otpusti nešto nezadovoljavajuće."
+        },
+        "position10": {
+          "upright": "Osam šoljica može značiti da ostavi iza sebe ono što je nezadovoljavajući kao rezultat događaja i krećući se na novi put.",
+          "reversed": "Invertirano osam šoljica može ukazivati na preokret, nemogućnost kretanja napred ili neodlučnost kao rezultat događaja.",
+          "keywords": [
+            "odlazak",
+            "putovanje",
+            "nezadovoljstvo",
+            "pobjeći",
+            "napredak"
+          ],
+          "context": "Ishod može biti da se kreće napred ili se okrene nazad."
+        },
+        "position2": {
+          "upright": "Osam šoljica, vaša prepreka ne bi mogla da prepuštaš onome što bi trebalo da izbegavate nezadovoljstvo ili posvećenost. Nošenje onoga što vam ostaje zaostajanje.",
+          "reversed": "Pretvoreno osam šoljica, zavisnost, nemogućnost povratka ili odlaska može biti izvor problema.",
+          "keywords": [
+            "da odete",
+            "nezadovoljstvo",
+            "zavisnost",
+            "vratiti se",
+            "prepreka"
+          ],
+          "context": "Aprestracite se pojavljuje da ne pušta stvari koje vas više ne poboljšaju."
+        },
+        "position3": {
+          "upright": "Osam šoljica može podsvesno značiti da se odlazi, ostavljajući nešto iza sebe ili odustajanje od nezadovoljstva u prošlosti.",
+          "reversed": "Invertirano osam šoljica može biti podsvesno prikriveno u prošlosti da se ne može razbiti, pustiti ili vratiti.",
+          "keywords": [
+            "nezadovoljstvo",
+            "da odete",
+            "vratiti se",
+            "lojalnost",
+            "podsvestan"
+          ],
+          "context": "Prošli ostrige ili zavisnosti mogu uticati na današnje probleme."
+        },
+        "position4": {
+          "upright": "Osam šoljica vam govori da je vaš najbolji potencijal da se časno ostavi iza onoga što vas više ne hrani i prelazite na značajniji put.",
+          "reversed": "Pretvoreno osam šoljica, da dostignete svoj potencijal, morate da zacelimo emocionalne priloge, izaberite radoznalost zbog straha i prihvatite zbogom kada je to potrebno.",
+          "keywords": [
+            "odlazak",
+            "Potražite značenje",
+            "zrelost",
+            "hrabrost",
+            "napredak"
+          ],
+          "context": "Najbolji potencijal je traženje dublje ispunjenosti kroz iskreno oproštaj."
+        },
+        "position5": {
+          "upright": "Osam šoljica, možda ste ostavili situaciju koja vas nije zadovoljila u nedavnoj prošlosti i krenula u novu potragu.",
+          "reversed": "Pretvoreno osam šoljica, možda ste imali poteškoća da se odmori u nedavnoj prošlosti, vratili se u stare navike ili su neodlučni da ga pustite.",
+          "keywords": [
+            "odlazak",
+            "potraga",
+            "nezadovoljstvo",
+            "odluka",
+            "nov način"
+          ],
+          "context": "Vaša nedavna prošlost je možda određena vašom sposobnošću da se pustite ili ne možete da se pustite stvari."
+        },
+        "position6": {
+          "upright": "Osam šoljica, možda ćete moći da pustite nešto nezadovoljavajuće i krenete na novo putovanje u bliskoj budućnosti.",
+          "reversed": "Invertirano osam šoljica, možda ćete doživeti poteškoće od odlaska, vraćajući se u prošlost ili neodlučnost u bliskoj budućnosti.",
+          "keywords": [
+            "odlazak",
+            "potraga",
+            "nezadovoljstvo",
+            "odluka",
+            "pobjeći"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati ostavljanjem ili povratkom."
+        },
+        "position7": {
+          "upright": "Osam šoljica, možda ste u procesu prepuštanja situaciji koja se trenutno ne može bezbrižan za vas ili se kreće na novo putovanje.",
+          "reversed": "Okrećeno osam šoljica, trenutno se možete osvrnuti na prošlost, imati poteškoće od odlaska ili je neodlučan.",
+          "keywords": [
+            "odlazak",
+            "potraga",
+            "nezadovoljstvo",
+            "odluka",
+            "pobjeći"
+          ],
+          "context": "Vaša trenutna situacija je oblikovana ostavljanjem ili povratkom."
+        },
+        "position8": {
+          "upright": "Osam šoljica, spoljni uticaji mogu vas dovesti do odustajanja, odmaknite se od stvari koje su nezadovoljne ili traže nove staze.",
+          "reversed": "Okolište osam čaše, spoljni uticaji mogu naterati da se vratite u prošlost ili naterate da ostanete neodlučni.",
+          "keywords": [
+            "odlazak",
+            "potraga",
+            "pobjeći",
+            "nezadovoljstvo",
+            "odluka"
+          ],
+          "context": "Spoljni uticaji utiču na vas kroz odlazak ili povratak."
+        },
+        "position9": {
+          "upright": "Osam šoljica, možda ćete se plašiti puštanja da ne budete u stanju da se krećete ili krenete dalje od stvari koje se ne moguća.",
+          "reversed": "Osetljena osam šoljica pokazuje anksioznost o povratku, neodlučnosti ili da se ne može kretati napred.",
+          "keywords": [
+            "odlazak",
+            "pobjeći",
+            "nezadovoljstvo",
+            "odluka",
+            "anksioznost"
+          ],
+          "context": "Tvoj strahovski centar okolo ne može da se kreće napred ili puštanje."
+        }
+      },
+      "nineofcups": {
+        "position1": {
+          "upright": "Devet šoljica može biti usredsređeno na želju za zadovoljstvom, uspehom ili ličnim ispunjenjem.",
+          "reversed": "Invertirani devet šoljica, površne zahvalnosti ili prekomerna očekivanja mogu biti izvor problema.",
+          "keywords": [
+            "zadovoljstvo",
+            "uspeh",
+            "sreća",
+            "očekivanje",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potraga za ličnom srećom i ispunjenjem."
+        },
+        "position10": {
+          "upright": "Devet šoljica može biti ispunjenje, zadovoljstvo i sreća kao rezultat događaja.",
+          "reversed": "Invertirani devet šoljica može ukazivati na površno zadovoljstvo, nezadovoljstvo ili razočaranje kao rezultat događaja.",
+          "keywords": [
+            "sreća",
+            "zadovoljstvo",
+            "želja",
+            "zadovoljstvo",
+            "zadovoljstvo"
+          ],
+          "context": "Rezultat može biti ili velika sreća ili nezadovoljstvo."
+        },
+        "position2": {
+          "upright": "Devet šoljica sugerira da bi prepreka mogla biti prevelika očekivanja, nezadovoljstvo ili jednostavno prioritet sopstvene sreće.",
+          "reversed": "Okrećeno devet šoljica, površne zahvalnosti, nezadovoljstvo ili unutrašnje praznine mogu biti izvor prepreke.",
+          "keywords": [
+            "zadovoljstvo",
+            "očekivanje",
+            "zadovoljstvo",
+            "površnost",
+            "prepreka"
+          ],
+          "context": "Prekidanja se pojavljuje od prekomernih očekivanja i unutrašnjeg nezadovoljstva."
+        },
+        "position3": {
+          "upright": "Devet šoljica može podsvesno predstavljati prethodna dostignuća, zadovoljstva ili ličnu sreću. Ova iskustva su vam danas dali perspektivu koju imate danas.",
+          "reversed": "Invertirani devet šoljica, površne zahvalnosti, prekomerna očekivanja ili nezadovoljstvo može se ugraditi u podsvesno.",
+          "keywords": [
+            "zadovoljstvo",
+            "očekivanje",
+            "uspeh",
+            "nezasitljivost",
+            "podsvestan"
+          ],
+          "context": "Prošli uspesi ili razočarenja mogu oblikovati današnje probleme."
+        },
+        "position4": {
+          "upright": "Devet čaša govori vam da je vaš najbolji potencijal da negujete svoju vrednost i uživate u voću, pomnožite sa ispunjenjem zahvalnosti i pristupite svojim željama sa konkretnim koracima.",
+          "reversed": "Invertirani devet šoljica, za otključavanje potencijala, morate prestati da se prestanete popraviti na površinsku zahvalnosti i poravnajte se sa vašim vrednostima za trajnu sreću.",
+          "keywords": [
+            "zadovoljstvo",
+            "zahvalnost",
+            "samopouzdanje",
+            "želja",
+            "poravnanje"
+          ],
+          "context": "Najbolji potencijal je da se stvori održivo zadovoljstvo usklađeno sa istinskim vrednostima."
+        },
+        "position5": {
+          "upright": "Devet šoljica, možda ste iskusili ispunjenje, ispunjenje ili ličnu sreću u nedavnoj prošlosti.",
+          "reversed": "Okrećeno devet šoljica, možda ste iskusili površne zahvalnosti, prekomerne očekivanja ili nezadovoljstvo u nedavnoj prošlosti.",
+          "keywords": [
+            "zadovoljstvo",
+            "želja",
+            "sreća",
+            "očekivanje",
+            "zadovoljstvo"
+          ],
+          "context": "Vaša nedavna prošlost je možda oblikovana iskustvom zadovoljstva ili nezadovoljstva."
+        },
+        "position6": {
+          "upright": "Devet šoljica, možete doživeti ispunjenost želja, lično zadovoljstvo i sreću u bliskoj budućnosti.",
+          "reversed": "Uključeno devet šoljica, možete doživeti nezadovoljni očekivanja, površno zadovoljstvo ili nezadovoljstvo u bliskoj budućnosti.",
+          "keywords": [
+            "želja",
+            "zadovoljstvo",
+            "sreća",
+            "zadovoljstvo",
+            "očekivanje"
+          ],
+          "context": "Vaša bliža budućnost će biti oblikovana zadovoljstvom ili očekivanjem."
+        },
+        "position7": {
+          "upright": "Devet šoljica, možda ćete biti trenutno u periodu u kojem se vaše želje ostvare i zadovoljni ste i srećnim.",
+          "reversed": "Invertirani devet šoljica, u ovom trenutku mogu postojati površno zadovoljstvo, nezadovoljstvo ili neispunjene očekivanja.",
+          "keywords": [
+            "zadovoljstvo",
+            "želja",
+            "sreća",
+            "zadovoljstvo",
+            "očekivanje"
+          ],
+          "context": "Vaša trenutna situacija je oblikovana zadovoljstvom ili nezadovoljstvom."
+        },
+        "position8": {
+          "upright": "Devet šoljica, spoljni uticaji mogu vas podržati u postizanju zadovoljstva, sreće i ispunjenja želja.",
+          "reversed": "Ograničeno devet šoljica, spoljni uticaji mogu vas dovesti do površnih zahvalnosti, nezasidljivosti ili praznim obećanjima.",
+          "keywords": [
+            "zadovoljstvo",
+            "sreća",
+            "želja",
+            "očekivanje",
+            "dosta"
+          ],
+          "context": "Spoljni uticaji utiču na vas zadovoljstvom ili razočaranjem."
+        },
+        "position9": {
+          "upright": "Devet šoljica može ukazivati na nezadovoljstvo, strah od očekivanja da se ne ispunjavaju ili strah od opljačkanja sreće.",
+          "reversed": "Prekoračeni devet šoljica može prouzrokovati površinsku sreću, nezadovoljstvo ili anksioznost u unutrašnjoj praznini.",
+          "keywords": [
+            "sreća",
+            "zadovoljstvo",
+            "očekivanje",
+            "nezasitljivost",
+            "anksioznost"
+          ],
+          "context": "Vaš strahovi centar za nezadovoljstvo ili gubitak sreće."
+        }
+      },
+      "pageofcups": {
+        "position1": {
+          "upright": "Princ čaša može imati kreativnost, emocionalni izraz ili novi osećaj u srcu problema.",
+          "reversed": "Invertirani princ čaše, sanjarenja, nedostatak emocionalne zrelosti ili nepažnje može biti izvor problema.",
+          "keywords": [
+            "kreativnost",
+            "izraz",
+            "sanjati",
+            "osećanje",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potraga za emocionalnom izrazom i kreativnošću."
+        },
+        "position10": {
+          "upright": "Princ of Cups može biti emotivni predlog, novi romantični početak ili inspirativni razvoj kao rezultat događaja.",
+          "reversed": "Invertirani princ čaše, mogu biti površne emocije, odbacivanje ili razočaranje kao rezultat događaja.",
+          "keywords": [
+            "romantika",
+            "ponuditi",
+            "početak",
+            "inspiracija",
+            "sanjati"
+          ],
+          "context": "Rezultat može biti romantično proboj ili razočaranje."
+        },
+        "position2": {
+          "upright": "Princ čaša, prepreka može biti nedostatak emocionalne zrelosti, sanjarine ili nepažnje. Kada je nerealno, postaje teško pronaći rešenje.",
+          "reversed": "Princ Cup-ova preokrenuo je, pretjeranu osetljivost, bekstvo u snu ili nepažnju može biti izvor prepreke.",
+          "keywords": [
+            "snjati",
+            "osećanje",
+            "zrelost",
+            "senzibilitet",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje od nedostatka emocionalne zrelosti i bekstvo u snove."
+        },
+        "position3": {
+          "upright": "Princ čaša moglo bi biti podsvesna iskustva čistih emocija, kreativnosti ili mašte koju ste imali u prošlosti.",
+          "reversed": "U obrnutom princu CUP-ova, nedostatak emocionalne zrelosti, nepažnje ili sanjari se mogu srediti u podsvesti.",
+          "keywords": [
+            "snjati",
+            "kreativnost",
+            "osećanje",
+            "zrelost",
+            "podsvestan"
+          ],
+          "context": "Čiste emocije i mašta iz prošlosti mogu se oblikovati današnji problemi."
+        },
+        "position4": {
+          "upright": "Princ Cup-ova kaže da je vaš najbolji potencijal da izrazite svoja osećanja sa radoznalošću, otvorite kreativno igrališta i shvatite intuiciju unutrašnjeg deteta ozbiljno.",
+          "reversed": "Princ obrnutih šoljica, da raste vaš potencijal, morate zaustaviti emocionalnu odlaganju, prigrlite svoju osetljivost kao snagu i stavite je u proizvodnju.",
+          "keywords": [
+            "kreativnost",
+            "izraz",
+            "radoznalost",
+            "intuicija",
+            "osetljivost"
+          ],
+          "context": "Najbolji potencijal je otvaranje kanala kreativnog i iskrenog izražavanja."
+        },
+        "position5": {
+          "upright": "Princ Cup-ova, možda ste iskusili novu emociju, kreativnu inspiraciju ili intimni osećaj u nedavnoj prošlosti.",
+          "reversed": "Princ of Cups se preokrenuo, možda ste doživeli sanjarenje, nedostatak emocionalne zrelosti ili nepažnje u nedavnoj prošlosti.",
+          "keywords": [
+            "kreativnost",
+            "osećanje",
+            "inspiracija",
+            "snjati",
+            "iskrenost"
+          ],
+          "context": "Vaša nedavna prošlost možda je obeležena iskrenim nadahom ili sanjarenjem."
+        },
+        "position6": {
+          "upright": "Princ Cup-ova, možete da doživite kreativnu inspiraciju, romantičnu gestu ili novi emotivni proboj u bliskoj budućnosti.",
+          "reversed": "Prestova se prenošeni moglo bi da doživljava san, nedostatak emocionalne zrelosti ili pitanja intimnosti u bliskoj budućnosti.",
+          "keywords": [
+            "inspiracija",
+            "romantika",
+            "kreativnost",
+            "sanjati",
+            "iskrenost"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati inspiracijom ili sanjarinom."
+        },
+        "position7": {
+          "upright": "Princ Cup-ova, možda ćete imati romantičnu inspiraciju, kreativnu iskru ili novi emotivni proboj trenutno.",
+          "reversed": "Princ of Cups se preokrenuo, možda ćete doživljavati san, nedostatak emocionalne zrelosti ili pitanja intimnosti trenutno.",
+          "keywords": [
+            "inspiracija",
+            "romantika",
+            "kreativnost",
+            "sanjati",
+            "iskrenost"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je inspiracijom ili sanjarinom."
+        },
+        "position8": {
+          "upright": "Princ čaša, spoljni uticaji mogu vam donijeti romantično predlaganje, kreativnu inspiraciju ili emocionalno otkrivenje.",
+          "reversed": "Princ of Cups preokrenuo je, spoljni uticaji mogu uticati na vas sa sanjarinom, površnosti ili nedostatkom emocionalne zrelosti.",
+          "keywords": [
+            "romantika",
+            "inspiracija",
+            "kreativnost",
+            "ponuditi",
+            "sanjati"
+          ],
+          "context": "Spoljni uticaji utiču na romantizam ili površnost."
+        },
+        "position9": {
+          "upright": "Princ Cup-ova, možete se plašiti odbacivanja, a da se ne shvate ozbiljno emocionalno ili imate svoje snove.",
+          "reversed": "Prestova se obrnuta princa može ukazivati na površnu romantiku, obmanjujući predlog ili strah od razočaranja.",
+          "keywords": [
+            "romantika",
+            "odbijanje",
+            "inspiracija",
+            "senzualnost",
+            "anksioznost"
+          ],
+          "context": "Fokusira se na ispitivanje straha i emocionalne ozbiljnosti."
+        }
+      },
+      "knightofcups": {
+        "position1": {
+          "upright": "Knight of Cups, idealizam, romantični izgled, ili koji sledi snovi mogu biti u srcu problema.",
+          "reversed": "Vraćeni vitez šoljica, odred od stvarnosti ili prekomernog sanjarenja može biti izvor problema.",
+          "keywords": [
+            "idealizam",
+            "sanjati",
+            "vizija",
+            "romantika",
+            "pitanje"
+          ],
+          "context": "U srcu problema je uticaj snova i ideala."
+        },
+        "position10": {
+          "upright": "Knight of Cups, ishod događaja može biti emocionalno putovanje, romantični predlog ili idealističko preduzeće.",
+          "reversed": "Invertirani vitez čaše, ishod događaja može biti prazna obećanja, pogrešne ponude ili emocionalne razočarenja.",
+          "keywords": [
+            "romantika",
+            "ponuditi",
+            "sanjati",
+            "putovanje",
+            "idealan"
+          ],
+          "context": "Rezultat može biti romantični predlog ili prazno obećanje."
+        },
+        "position2": {
+          "upright": "Vitez čaše, prepreka može biti previše idealizam, romantizam ili odred od stvarnosti. Kada se previše uhvate u snovima, postaje teško krenuti napred.",
+          "reversed": "Knight of Cups preokrenut: razočarenja, nerealna očekivanja ili nedoslednost mogu biti izvor problema.",
+          "keywords": [
+            "idealizam",
+            "romantika",
+            "sanjati",
+            "nedoslednost",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje da se uhvate u snovima i odseli se od stvarnosti."
+        },
+        "position3": {
+          "upright": "Vitez čaše može podsvesno dostaviti snove, romantične izglede ili idealističke osećaje u prošlosti.",
+          "reversed": "Invertirani vitez čaše, razočarenja, nerealna očekivanja ili emocionalna previranja mogu se podnijeti u podsvesti.",
+          "keywords": [
+            "idealizam",
+            "romantika",
+            "sanjati",
+            "realizam",
+            "podsvestan"
+          ],
+          "context": "Prošli idealizam i razočarenja mogu uticati na današnje probleme."
+        },
+        "position4": {
+          "upright": "Vitez Cupa pokazuje njegov najbolji potencijal u nošenju svojih ideala sa milošću, čineći nadahnjujućim citata i dodavanje emocionalne privlačnosti njegovom viziji.",
+          "reversed": "Knight of Cups preokrenuo je, na potencijal koji morate da uravnotežite svoj idealizam sa planom delovanja, razvijati doslednost i ostvariti realne obaveze.",
+          "keywords": [
+            "idealizam",
+            "inspiracija",
+            "ponuditi",
+            "povući",
+            "doslednost"
+          ],
+          "context": "Najbolji potencijal je da se dosledno prenosi inspiraciju konkretnim koracima."
+        },
+        "position5": {
+          "upright": "Vitez čaše, možda ste napravili romantični predlog, sanjiv poduhvat ili idealistički korak u nedavnoj prošlosti.",
+          "reversed": "Ograničeni vitez čaše, možda ste naišli na nerealna očekivanja, nedoslednost ili pogrešnu ponudu u nedavnoj prošlosti.",
+          "keywords": [
+            "romantika",
+            "ponuditi",
+            "idealizam",
+            "sanjati",
+            "moje ime"
+          ],
+          "context": "Vaša nedavna prošlost možda su obeležene romantičnim poduhvatima ili pogrešnim koracima."
+        },
+        "position6": {
+          "upright": "Knight of Cups, romantični predlog, kreativni poduhvat ili nadahnjujuće putovanje može vas čekati u bliskoj budućnosti.",
+          "reversed": "Vitez Cup-a preokrenut, možda ćete doživeti nedoslednost, prazna obećanja ili nerealna očekivanja u bliskoj budućnosti.",
+          "keywords": [
+            "romantika",
+            "ponuditi",
+            "inspiracija",
+            "sanjati",
+            "moje ime"
+          ],
+          "context": "Vaša bliska budućnost će biti oblikovana romantikom ili nedoslednošću."
+        },
+        "position7": {
+          "upright": "Knight of Cups, trenutno ste usred romantičnog predloga, kreativnog nastojanja ili nadahnjujući put.",
+          "reversed": "Okrećeno vitez čaše, možete osporiti nedoslednost, prazna obećanja ili nerealno očekivanja trenutno.",
+          "keywords": [
+            "romantika",
+            "ponuditi",
+            "inspiracija",
+            "sanjati",
+            "pokret"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je romantizam ili nedoslednost."
+        },
+        "position8": {
+          "upright": "Vitez čaše, spoljni uticaji mogu vam doneti romantični predlog, kreativno putovanje ili emocionalnu podršku.",
+          "reversed": "Vitez Cup-a obrnut, spoljni uticaji mogu stvoriti prazna obećanja, nedoslednost ili prekomernu sanjuju.",
+          "keywords": [
+            "romantika",
+            "ponuditi",
+            "inspiracija",
+            "sanjati",
+            "podrška"
+          ],
+          "context": "Spoljni uticaji utiču na vas putem inspiracije ili nedoslednosti."
+        },
+        "position9": {
+          "upright": "Vitez čaše može ukazivati na strah da padne za prazna obećanja, romantično razočaranje ili prekomerno emocionalnost.",
+          "reversed": "Vitez Cup-a obrnut može stvoriti strah od nedoslednosti, emocionalnih igara ili pogrešnih ponuda.",
+          "keywords": [
+            "romantika"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,792 @@
+{
+  "new-lover": {
+    "meanings": {
+      "thestar": {
+        "position4": {
+          "upright": "Zvezda podržava dugoročni odnos nade i isceljenja. Inspiracija obnavlja obveznice.",
+          "reversed": "Invertirana zvezda, beznađa ili apatija dugoročno otežavaju.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "inspiracija",
+            "regeneracija",
+            "dugoročan"
+          ],
+          "context": "Nadam se da dugoročno neguje dugoročno, ravnodušnost testira obveznica."
+        },
+        "position5": {
+          "upright": "Zvezda ukazuje na srodni priključak nade, isceljenja i inspiracije. Ova veza donosi duhovnu obnovu.",
+          "reversed": "Inverterovana zvezda, očaj ili gubitak inspiracije mogu da oblakne srodnu vezu srodne duše.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "zarastanje",
+            "regeneracija",
+            "srodna duša"
+          ],
+          "context": "Nadam se da neguje matesništvo duše, očaj testira vezu."
+        },
+        "position6": {
+          "upright": "Zvezda daje nadu i inspiraciju da će se vaša želja ostvariti. Možete da unesete proces lečenja tako što ćete održavati svoju veru.",
+          "reversed": "Invertovana zvezda vam govori da očaj i neverica mogu otežati da se vaša želja ostvari.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "inspiracija",
+            "verovanje",
+            "regeneracija"
+          ],
+          "context": "Održavanje nade poziva na vašu želju."
+        }
+      },
+      "themoon": {
+        "position1": {
+          "upright": "Mesec ukazuje da se približava emocionalna i misteriozna veza. Uskoro će vas osećaji voditi.",
+          "reversed": "Reverse Moon vas savetuje da budete oprezni za varljive situacije. Nastavite sa otvorenim očima.",
+          "keywords": [
+            "osećanje",
+            "misterija",
+            "intuicija",
+            "neizvesnost"
+          ],
+          "context": "Veza uskoro dolazi, ali je potrebna jasnoća."
+        },
+        "position2": {
+          "upright": "Mesec predstavlja Ribe. Ova osoba je intuitivna, emocionalna i kreativna.",
+          "reversed": "Invertirani mesec u senci Riba može pokazati iluzije, zbrke i emocionalne fluktuacije.",
+          "keywords": [
+            "Riba",
+            "intuicija",
+            "osećanje",
+            "kreativnost"
+          ],
+          "context": "Uticaj Ribe je jak."
+        },
+        "position3": {
+          "upright": "Mesec nam govori da harmonija može produbiti intuiciju i empatiju. Slušanje vašeg srca neguje vašu vezu.",
+          "reversed": "Obrnuti mesec, nesporazumi ili zablude u oblaku. Jasnoća zahteva otvorenu komunikaciju.",
+          "keywords": [
+            "intuicija",
+            "empatija",
+            "raport",
+            "senzibilitet",
+            "osećanje"
+          ],
+          "context": "Intuicija produbljuje harmoniju. Želje gumaju obveznice."
+        },
+        "position4": {
+          "upright": "Mesec dugoročno podržava intuiciju i emocionalnu dubinu. Jasnoća dolazi s vremenom.",
+          "reversed": "Obrnuti mesec, obmana ili nesigurnost šteti dugoročno.",
+          "keywords": [
+            "intuicija",
+            "dubina",
+            "neizvesnost",
+            "osećanje",
+            "dugoročan"
+          ],
+          "context": "Intuicija neguje dugoročno, nesigurnost testira obveznica."
+        },
+        "position5": {
+          "upright": "Mesec nam govori da srodne duše obveznice dolazi sa intuitivnim i ponekad i misterioznim znakovima. Unutrašnja osećanja predstavljaju ovu obveznicu.",
+          "reversed": "Invertirani mesec, iluzije ili strahovi otežavaju razumevanje srodne veze.",
+          "keywords": [
+            "intuicija",
+            "misterija",
+            "strah",
+            "prosvetljenje",
+            "srodna duša"
+          ],
+          "context": "Intuicija uvodi matesništvo duše, strahovi se testiraju vezu."
+        },
+        "position6": {
+          "upright": "Mesec ukazuje da na putu vaše želje mogu biti nesigurnosti. Pouzdajući vašu intuiciju, vodiće vas.",
+          "reversed": "Invertirani mesec označava da obmana ili strahovi mogu ometati vašu želju. Traženje jasnoće je važno.",
+          "keywords": [
+            "neizvesnost",
+            "intuicija",
+            "strah",
+            "prosvetljenje",
+            "uvid"
+          ],
+          "context": "Ako intuicija donese jasnoću, vaša želja se može ostvariti."
+        }
+      },
+      "thesun": {
+        "position1": {
+          "upright": "Sunce kaže da će se nova veza definitivno pojaviti. Sreća i jasnoća čekaju vas.",
+          "reversed": "Obrnuti sunce upozorava da lažna očekivanja mogu da bacaju senku. Ipak, potencijal odnosa je visok.",
+          "keywords": [
+            "sreća",
+            "oštrina",
+            "početak",
+            "radost"
+          ],
+          "context": "Novi odnos je gotovo siguran."
+        },
+        "position2": {
+          "upright": "Sunce predstavlja horoskopski znak Leo. Ova osoba je vesela, harizmatična i puna života.",
+          "reversed": "Obrnuti sunce u Leo Shadov može pokazati sebičnost, arogantnost ili lažnu vedrinu.",
+          "keywords": [
+            "Lav",
+            "radost",
+            "karizma",
+            "kreativnost"
+          ],
+          "context": "Leo energija je jaka."
+        },
+        "position3": {
+          "upright": "Sunce kaže da će radost i otvorenost olakšati harmoniju. Zajedničke radosti ojačajte svoju vezu.",
+          "reversed": "Obrnuti sunce, površnost ili prekomerni optimizam otežavaju harmoniju. Potrebna je realna perspektiva.",
+          "keywords": [
+            "radost",
+            "otvorenost",
+            "deljenje",
+            "raport",
+            "lov"
+          ],
+          "context": "Joi podstiče harmoniju. Površnost sužava veze."
+        },
+        "position4": {
+          "upright": "Sunce, sreća i jasnoća podržavaju dugoročne odnose. Radost traje obveznice.",
+          "reversed": "Obrnuti sunce, lažna sreća ili površnost dugoročno smisleno.",
+          "keywords": [
+            "sreća",
+            "oštrina",
+            "radost",
+            "raport",
+            "dugoročan"
+          ],
+          "context": "Radost goriva dugoročno, podvrsno je iscrpljujuće."
+        },
+        "position5": {
+          "upright": "Sunce osvetljava srodnu vezu sa dušem, otvorenost i autentičnost. Udruženje sa ovom osobom može donijeti toplinu i sreću.",
+          "reversed": "Obrnuti sunce, lažna radost ili nedostatak jasnoće može da opterene dušu.",
+          "keywords": [
+            "radost",
+            "otvorenost",
+            "autentičnost",
+            "sreća",
+            "srodna duša"
+          ],
+          "context": "Otvorenost podstiče matesništvo duše, nedostatak autentičnosti testira vezu."
+        },
+        "position6": {
+          "upright": "Sunce heralds koje će se vaša želja ostvariti. Vaša želja će se ostvariti energijom radosti, uspeha i jasnoće.",
+          "reversed": "Obrnuti sunce pokazuje da privremeni pesimizam može zatamiti svetlost vaših želja. Prava radost će se ponovo otkriti.",
+          "keywords": [
+            "sreća",
+            "uspeh",
+            "oštrina",
+            "radost",
+            "nadati se"
+          ],
+          "context": "Pozitivna energija podržava vašu želju koja se ostvari."
+        }
+      },
+      "judgement": {
+        "position1": {
+          "upright": "Sud označava rođenje nove veze sa zatvaranjem prošlosti.",
+          "reversed": "Obrnuti sud, ostanak zaglavljen u prošlosti može ometati novi odnos.",
+          "keywords": [
+            "regeneracija",
+            "svest",
+            "početak",
+            "zatvaranje"
+          ],
+          "context": "Možda će uskoro biti veza, morate da prepustite prošlost."
+        },
+        "position2": {
+          "upright": "Sud nosi uticaj Plutona. Povezano na znak Škorpije, ova osoba je transformaciona, intuitivna i moćna.",
+          "reversed": "Preokrenuti sud, u senci Škorpiona, može ukazivati na prebivalište u prošlosti, opsesiji ili prekomernom ispitivanju.",
+          "keywords": [
+            "Škorpion",
+            "transformacija",
+            "ponovno rođenje",
+            "intuicija"
+          ],
+          "context": "Energija Scorpio dolazi do izražaja."
+        },
+        "position3": {
+          "upright": "Sudstvo pokazuje da možete izgraditi rastvor u učenju iz prethodnih iskustava. Oprostite jedni drugima jača vašu vezu.",
+          "reversed": "Obrnuti sud, držeći se za prošlost, ometa harmoniju. Stare greške mogu ponoviti.",
+          "keywords": [
+            "konfrontacija",
+            "da oprosti",
+            "učenje",
+            "raport",
+            "regeneracija"
+          ],
+          "context": "Učenje iz prošlosti donosi Harmoniju. Boravak zaglavljene razbija obveznice."
+        },
+        "position4": {
+          "upright": "Sudstvo, suočavanje sa prošlošću i oproštaj podržavaju dugoročnu vezu. Obnavljanje jača obveznice.",
+          "reversed": "Reverse Sud, žaljenje ili samo-presuda boli dugoročno.",
+          "keywords": [
+            "konfrontacija",
+            "oproštenje",
+            "regeneracija",
+            "sloboda",
+            "dugoročan"
+          ],
+          "context": "Oproštenje podržava dugoročno, samo-prosuđivanje testira obveznice."
+        },
+        "position5": {
+          "upright": "Sud pokazuje da priključak za srodne duše dobije izlečenje prošlih iskustava i oproštenja. Rebirt je otvara vrata dušem.",
+          "reversed": "Reversed Sud, Prekomerna presuda ili nemogućnost oproštenja otežava se srodne veze.",
+          "keywords": [
+            "presuda",
+            "regeneracija",
+            "oproštenje",
+            "odluka",
+            "srodna duša"
+          ],
+          "context": "Oproštenje neguje matesnicu duše, presuda testira obveznice."
+        },
+        "position6": {
+          "upright": "Sud kaže da se da će vaša želja ostvariti, morate se suočiti sa prošlošću i doneti odluku. Pravi izbor će vas odvesti do vašeg cilja.",
+          "reversed": "Reverdirani sud ukazuje da težina prošlosti odgađa ispunjenje vaše želje.",
+          "keywords": [
+            "odluka",
+            "regeneracija",
+            "konfrontacija",
+            "oslobođenje",
+            "glasati"
+          ],
+          "context": "Jasna odluka otvara vrata vaše želje."
+        }
+      },
+      "theworld": {
+        "position1": {
+          "upright": "Svet nam govori da će novi odnos početi nakon završenog ciklusa. Neko ko donosi harmoniju uskoro ući u vaš život.",
+          "reversed": "Reversed Earth ukazuje da nedostajuće zatvaranje mogu odložiti novu vezu.",
+          "keywords": [
+            "završetak",
+            "početak",
+            "raport",
+            "petlja"
+          ],
+          "context": "Nova veza je na vratima, ciklus je završen."
+        },
+        "position2": {
+          "upright": "Zemlja predstavlja kombinaciju fiksnih znakova (Bik, Leo, Scorpio, Akuarius). Ova osoba nosi trajne, snažne i stabilne energije.",
+          "reversed": "Invertirana zemlja, u senci fiksnih znakova, može pokazati tvrdoglavost, krutost ili nepotpunost.",
+          "keywords": [
+            "Bik",
+            "Lav",
+            "Škorpion",
+            "Akuarius",
+            "stabilnost"
+          ],
+          "context": "To može biti jedan od fiksnih znakova."
+        },
+        "position3": {
+          "upright": "Svet kaže da će se harmonija postići kroz celovitost i završetak. Ravnoteža se pojavljuje da se međusobno dopunjava.",
+          "reversed": "Invertirana Zemlja, osećaj nepotpunosti slabi se sklad. Nedovršeni posao može ometati obveznice.",
+          "keywords": [
+            "završetak",
+            "integritet",
+            "ravnoteža",
+            "raport",
+            "potpunost"
+          ],
+          "context": "Kompletnost jača harmoniju. Nepotpunost ispada obveznice."
+        },
+        "position4": {
+          "upright": "Zemlja, završetak i celovitost podržavaju dugoročnu vezu. Zajednički ciljevi čine Bondete stalne.",
+          "reversed": "Ograničena zemlja, nepotpuno ili nepotpuno zatvaranje dugoročno otežava.",
+          "keywords": [
+            "završetak",
+            "integritet",
+            "cilj",
+            "stabilnost",
+            "dugoročan"
+          ],
+          "context": "Integritet jača dugoročno, nepotpuno testira obveznica."
+        },
+        "position5": {
+          "upright": "Zemlja, završetka i celovitost su najjači pokazatelji srodne veze. Ova obveznica pruža integraciju zatvaranjem petlja.",
+          "reversed": "Uostala Zemlja, nepotpunost ili nepotpunost može otežati osećaj pune srodne veze.",
+          "keywords": [
+            "završetak",
+            "integritet",
+            "spajanje",
+            "ravnoteža",
+            "srodna duša"
+          ],
+          "context": "Celovitost ukazuje na matesi u dušu, nepotpuno testira obveznica."
+        },
+        "position6": {
+          "upright": "Svet pokazuje da će se vaša želja ostvariti i doći ćete na ciklus završetka. Rezultat koji želite da donese proslavu.",
+          "reversed": "Naglavačke Zemlja ukazuje da se dovršetak vaše želje može odložiti zbog nedostajućih komada.",
+          "keywords": [
+            "završetak",
+            "proslava",
+            "uspeh",
+            "integritet",
+            "pobeda"
+          ],
+          "context": "Dovršetak potvrđuje da se vaša želja ostvariva."
+        }
+      },
+      "aceofcups": {
+        "position1": {
+          "upright": "ACE CUPS heralds da se srce otvorilo za potpuno novu ljubav. Uskoro ćete iskusiti emocionalni početak i intenzivnu romantiku.",
+          "reversed": "ACE of Cups preokrenuti vam govori da se mogućnosti mogu propustiti jer ste isključili svoje emocije. Čak i ako dođe nova veza, možete se oduprijeti otvaranju.",
+          "keywords": [
+            "lova",
+            "početak",
+            "osećanje",
+            "romantika"
+          ],
+          "context": "Mogućnost nove ljubavi je tako jaka, vaše srce mora biti spremno."
+        },
+        "position2": {
+          "upright": "ACE CUP-a ukazuje da ova osoba nosi snažan uticaj vode. Označava sveže emocionalno otvor koji dolazi sa rakom, škorpijom ili energijom u Ribe.",
+          "reversed": "ACE of Cups preokrenuti se može senčano vodnim znakovima, što rezultira emocionalnim previranjem ili introversijom. Možda postoji profil koji ima poteškoće u razminiranju svojih osećanja.",
+          "keywords": [
+            "vodni znak",
+            "osećanje",
+            "ekspanzija",
+            "empatija"
+          ],
+          "context": "Vodeni znakovi poput raka, škorpiona ili ribe dolaze do izražaja."
+        },
+        "position3": {
+          "upright": "ACE of Cups kaže da emocionalni počeci nose veliki potencijal za harmoniju. Otvorena srca i početna osećanja stvaraju čistu harmoniju u vezi.",
+          "reversed": "Ace Cups preokrenuti, nemogućnost izražavanja emocija ili zatvaranja harmonije srčanog Marsa. Ponizbijeni osećaji poremetite ravnotežu.",
+          "keywords": [
+            "početak",
+            "osećanje",
+            "raport",
+            "otvorenost",
+            "potencijal"
+          ],
+          "context": "Nove emocije stvaraju Harmoniju. Zatvoreni sojevi srca veza."
+        },
+        "position4": {
+          "upright": "ACE CUP-a ukazuje na početak čiste ljubavi i potencijala za duboku emocionalnu vezu. Ova veza može dugoročno hraniti srce.",
+          "reversed": "Invertirani ACE CUP-a, nedostatak emocionalne otvorenosti može biti prepreka dugoročnoj vezi. Zatvaranje ili ogorčenje otežava kontinuitet.",
+          "keywords": [
+            "početak",
+            "lov",
+            "emocionalna veza",
+            "potencijal",
+            "dugoročan"
+          ],
+          "context": "Čista ljubav podržava dugoročno, zatvaranje slabi vezu."
+        },
+        "position5": {
+          "upright": "ACE CUP-a ukazuje na čisto otvaranje srca i rođenje duhovne veze. To je možda najnevidniji i duhovniji oblik ljubavi između vas i ove osobe.",
+          "reversed": "Ace of Cups preokrenuti, potiskujući emocije ili ne u potpunosti otvaranje srca može ometati dušu vezu. Za potencijal srodne duše, potrebno je otvoriti srce transparentno.",
+          "keywords": [
+            "lova",
+            "početak",
+            "duša",
+            "saosećanje",
+            "inovativnost"
+          ],
+          "context": "Novo otvaranje srca povećava potencijal za materije za dušu."
+        },
+        "position6": {
+          "upright": "Sa snagom asova, postoji velika šansa da će vaša želja doneti emotivni novi početak. Svježa sreća se može pojaviti u kojem će vam u srcu biti uzvraćeno.",
+          "reversed": "Invertirani ACE, emocionalna blokada ili isključivanje može sprečiti da vaša želja ostvari. Mogućnosti mogu ostati nevidljive ako ne otvorite svoje srce.",
+          "keywords": [
+            "početak",
+            "osećanje",
+            "ekspanzija",
+            "šansa",
+            "nadati se"
+          ],
+          "context": "Ako otvorite svoje srce, postoji mogućnost da će vaša želja klijati."
+        }
+      },
+      "twoofcups": {
+        "position1": {
+          "upright": "Dvoje šoljica kaže da će uskoro postati jednak i skladna veza. Međusobna atrakcija i zajednička namera su vrlo jasna.",
+          "reversed": "Dva trupa preokrenuta ukazuje na mogućnost nesporazuma ili nestabilne veze.",
+          "keywords": [
+            "raport",
+            "povući",
+            "reciprocitet",
+            "partnerstvo"
+          ],
+          "context": "Odnos sa obostranom privlačnošću uskoro može početi."
+        },
+        "position2": {
+          "upright": "Dva šoljicama ukazuje na skladan i uravnotežen znak. Komplementarne kombinacije vodenih elemenata kao što su karcinom-ribe ili rak škorpiona doprinose.",
+          "reversed": "Okrećena dva šolja mogu ukazivati na neravnotežu ili prekid veze. Iako je njegov horoskopski znak orijentisan u odnos (rak, Vaga), možda ima poteškoća u uspostavljanju veza u senci.",
+          "keywords": [
+            "raport",
+            "vodni znak",
+            "ravnoteža",
+            "odnos"
+          ],
+          "context": "Povezan je na rak, ribe ili škorpio energiju."
+        },
+        "position3": {
+          "upright": "Dve šolje, međusobna ljubav i jednakost formiraju osnovu harmonije. Ogledalo vaše duše donosi snažan ravnotežu.",
+          "reversed": "Njih dvoje šoljicama obrnuto, nesporazumi ili neuravnotežene veze oslabiju harmoniju. Nedostatak usporavanja reciprociteta rastojanja.",
+          "keywords": [
+            "lov",
+            "jednakost",
+            "reciprocitet",
+            "raport",
+            "ravnoteža"
+          ],
+          "context": "Jednakost podstiče harmoniju. Neravnoteža oštećena obveznice."
+        },
+        "position4": {
+          "upright": "Dve šolje, međusobni sklad i partnerstvo postaju osnova dugoročne veze. Ravnopravnost između srca čini Bond stalnu.",
+          "reversed": "Ukrajana dva šolja, disharmonija ili neuravnotežena trgovina slabi dugoročno.",
+          "keywords": [
+            "raport",
+            "partnerstvo",
+            "jednakost",
+            "lov",
+            "dugoročan"
+          ],
+          "context": "Pravičnost neguje dugoročno, neravnoteža iznosi obveznica."
+        },
+        "position5": {
+          "upright": "Dvoje šoljicama je jedan od najjačih pokazatelja srodne veze. Međusobna ljubav i jednaka razmena ukazuju na duhovnu dubinu ove veze.",
+          "reversed": "Dve šolje preokrenute, nejednakost ili nesporazumi mogu otežati vezu s duhovima. Međutim, ova veza se može ponovo uspostaviti komunikacijom.",
+          "keywords": [
+            "srodna duša",
+            "reciprocitet",
+            "jednakost",
+            "obveznica",
+            "lova"
+          ],
+          "context": "Međusobna ljubav jača mafije za dušu, neravnoteža stvara senke."
+        },
+        "position6": {
+          "upright": "Ova kartica ukazuje da će se vaša želja ostvariti i promovisati se zajedno sa obostranim skladom. Kada se međusobne namere okupe, vaša želja dolazi u život.",
+          "reversed": "Ograničena binarna označava da se ispunjenje vaše želje može odložiti zbog nekompatibilnosti ili nesporazuma. Potrebna je jasnoća i otvorena komunikacija.",
+          "keywords": [
+            "raport",
+            "reciprocitet",
+            "obveznica",
+            "sporazum",
+            "ravnoteža"
+          ],
+          "context": "Međusobna namera čini vašu želju vidljivom."
+        }
+      },
+      "threeofcups": {
+        "position1": {
+          "upright": "Tri sata šalice ukazuju na novi odnos kroz društveni krug ili prijateljstvo. Energija proslave i sreće vas zove.",
+          "reversed": "Tri trostruko preokrenuta skreću pažnju na rizik zbunjenog početka zbog pogrešnog okruženja ili uticaja trećih lica.",
+          "keywords": [
+            "društveni",
+            "proslava",
+            "okruženje",
+            "zajedništvo"
+          ],
+          "context": "Novi odnos može nastati kroz društveno okruženje."
+        },
+        "position2": {
+          "upright": "Tri šolje ukazuju na uticaj riba ili raka sa snažnim socijalnim aspektom. Ova osoba je neko ko je u skladu sa svojim okruženjem i voli da proslavi.",
+          "reversed": "Tri trošena učvršćena mogu ukazivati na socijalni umor ili preveliku površnost. Iako je to vodni znak, može postojati nered u senci Riba.",
+          "keywords": [
+            "društvenost",
+            "proslava",
+            "vodni znak",
+            "prijateljstvo"
+          ],
+          "context": "Ribe ili naglasak raka dolazi do izražaja."
+        },
+        "position3": {
+          "upright": "Tri šolje pokazuju da će radost i deljenje ojačati harmoniju. Proslava zajedno produbljuje vašu vezu.",
+          "reversed": "Tri trupa preokrenuta, prekomerna društvena faktora ili prisustvo trećih lica mogu poremetiti harmoniju. Možda će biti potrebno da vaša obveznica bude privatna.",
+          "keywords": [
+            "radost",
+            "deljenje",
+            "zajednica",
+            "raport",
+            "proslava"
+          ],
+          "context": "Deljenje raste skladno. Viškovi naprežu vezu."
+        },
+        "position4": {
+          "upright": "Energija tri šolje, prijateljstva i proslave jača vezu dugoročno. Zajednička radost produžava život odnosa.",
+          "reversed": "Prekoračila je tri šolje, preterana površnost ili uticaj trećih lica dugoročno čine dugoročno.",
+          "keywords": [
+            "proslava",
+            "prijateljstvo",
+            "deljenje",
+            "radost",
+            "dugoročan"
+          ],
+          "context": "Radost goriva dugoročno, podvrsno je iscrpljujuće."
+        },
+        "position5": {
+          "upright": "Tri šolje kažu da je pronalaženje vaše srodne duše moguće kroz radosne proslave ili društveno okruženje. Ova veza može da procveta iz prijateljske topline.",
+          "reversed": "Tri šolje preokrenula je, previše socijalne neorganizacije, ili uticaj trećih lica može zasjeniti dušu vezu.",
+          "keywords": [
+            "proslava",
+            "zajednica",
+            "obveznica",
+            "radost",
+            "srodna duša"
+          ],
+          "context": "Radost povećava potencijal za matesništvo duše, spoljni uticaji stvaraju senke."
+        },
+        "position6": {
+          "upright": "Trio ukazuje da će ispunjenje vaše želje doneti proslavu i radost. Socijalna podrška i prijateljstva mogu vas pratiti na ovom putu.",
+          "reversed": "Invertirani trini pokazuje da su površne veze ili pogrešna okruženja možda otežavalo da se vaša želja ostvari.",
+          "keywords": [
+            "proslava",
+            "podrška",
+            "jedinstvo",
+            "radost",
+            "deljenje"
+          ],
+          "context": "Pravo okruženje olakšava želje da se vaša želja ostvari."
+        }
+      },
+      "fourofcups": {
+        "position1": {
+          "upright": "Četiri šolje kažu da možda nećete videti priliku za novu vezu. Treba obratiti pažnju na ponudu ispred srca.",
+          "reversed": "Četiri šolje obrnuta ukazuju na to da se može otvoriti na novu vezu sa povećanom svešću.",
+          "keywords": [
+            "prilika",
+            "recesija",
+            "svest",
+            "ekspanzija"
+          ],
+          "context": "Možda će uskoro biti veza, ali morate da primetite."
+        },
+        "position2": {
+          "upright": "Četiri šolje ukazuju na introvertiranu energiju raka. Ova osoba je osetljiva, skriva svoje emocije, ali može imati duboka osećanja.",
+          "reversed": "Četvoro čekova obrnuta mogu ukazivati na melanholiju ili apatiju u senci raka. Introverzija se može odraziti u odnosu.",
+          "keywords": [
+            "okretanje prema unutra",
+            "Rak",
+            "senzibilitet",
+            "osećanje"
+          ],
+          "context": "Opisuje unutrašnju stranu raka."
+        },
+        "position3": {
+          "upright": "Četiri šolje sugeriraju da može postojati nezadovoljstvo ili emocionalno povlačenje koje ometa harmoniju. Primećujući inovacije obnavlja ravnotežu.",
+          "reversed": "Pretvorena četvero šoljica, harmonija se preporodi kao svest buđenja. Približavanje sa zahvalnošću neguje obveznice.",
+          "keywords": [
+            "nezadovoljstvo",
+            "svest",
+            "raport",
+            "transformacija",
+            "zahvalnost"
+          ],
+          "context": "Svest donosi Harmoniju. Zatvaranje slabi obveznice."
+        },
+        "position4": {
+          "upright": "Četiri šolje pokazuju da dugoročni odnos tokom vremena može da oseti stagnantno. Svest održava vitalnost.",
+          "reversed": "Prekoračeno četvoro šoljica donosi novu svežinu odnosu sa povećanom svešću. Ovo podržava dugoročno.",
+          "keywords": [
+            "stabilnost",
+            "svest",
+            "zadovoljstvo",
+            "regeneracija",
+            "dugoročan"
+          ],
+          "context": "Svest podstiče dugoročno, nezadovoljstvo testira obveznice."
+        },
+        "position5": {
+          "upright": "Četiri šolje ukazuju na rizik da ne primećuju srodnu dušu ili ignoriše dostupne mogućnosti. Veza srodne duše može biti vidljiva.",
+          "reversed": "Sa preokretom četiri šolje, buđenje i svest, potencijal srodne duše postaje vidljiv. Želja za otvaranjem srca može pokrenuti ovu vezu.",
+          "keywords": [
+            "prilika",
+            "svest",
+            "buđenje",
+            "osećanje",
+            "srodna duša"
+          ],
+          "context": "Svest se uvlači put za matesništvo duše, ravnodušnost sprečava vezu."
+        },
+        "position6": {
+          "upright": "Četvorostruke pokazuju da iako postoje mogućnosti da se vaša želja ostvari, možda ćete biti ometani. Emocionalno buđenje poziva vašu želju.",
+          "reversed": "Invertirani četverokuta ukazuje na mogućnost da se vaša želja ožive. Ako izgledate sa zahvalnošću, rezultat koji želite da bude vidljiv.",
+          "keywords": [
+            "prilika",
+            "buđenje",
+            "nezadovoljstvo",
+            "zahvalnost",
+            "svest"
+          ],
+          "context": "Svest će otvoriti put prema vašoj želji."
+        }
+      },
+      "fiveofcups": {
+        "position1": {
+          "upright": "Petorica šoljica vam govori da nećete biti spremni za novu vezu ako ne prepustite prošlo razočarenja. Međutim, pred nama su nove mogućnosti.",
+          "reversed": "Petorica preokrenula su nam da nam to nakon žalostinja, srce počne da se otvara za novi odnos.",
+          "keywords": [
+            "gubitak",
+            "zarastanje",
+            "Nova prilika",
+            "regeneracija"
+          ],
+          "context": "Ako pustite prošlost, mogu doći nove veze."
+        },
+        "position2": {
+          "upright": "Petorica šoljica označava senku škorpiona. Ova osoba ima duboke strasti, ali takođe može biti osetljiva na gubitak.",
+          "reversed": "Petorica preokrećenih šoljica otkriva transformacionu stranu Škorpije. Može da se pojavi od bola jači.",
+          "keywords": [
+            "Škorpion",
+            "osećanje",
+            "transformacija",
+            "strast"
+          ],
+          "context": "Uticaj Scorpio-a može biti jak."
+        },
+        "position3": {
+          "upright": "Petorica šoljica sugerira da gubici ili prošli tuge mogu napregnuti sklad. Fokusiranje na ono što vraća harmoniju.",
+          "reversed": "Petorica preokrećenih CUP-ova ukazuje da se harmonija može poboljšati sa pojavom prihvatanja. Prepuštanje prošlosti donosi mir.",
+          "keywords": [
+            "gubitak",
+            "tuga",
+            "prihvatanje",
+            "raport",
+            "zarastanje"
+          ],
+          "context": "Otpuštanje prošlosti otvara harmoniju. Žalovanje sužava veze."
+        },
+        "position4": {
+          "upright": "Petorica šoljica ukazuje da se fokusiranje na gubitke može opteretiti dugoročni odnos. Navika da se vidi šta pri ruci pruža kontinuitet.",
+          "reversed": "Otkriveni pet šoljica popravlja dugoročne obveznice lečenja i nade nakon tuge.",
+          "keywords": [
+            "gubitak",
+            "starost",
+            "nadati se",
+            "poboljšanje",
+            "dugoročan"
+          ],
+          "context": "Povratak na nazu neguje dugoročno, prebivalište gubitaka testira obveznice."
+        },
+        "position5": {
+          "upright": "Petorica šoljica ukazuje na mogućnost pronalaska srodne duše nakon prošlih gubitaka. Ne gubitak nade donosi ovu vezu.",
+          "reversed": "Petorica šoljica je preokrenula: sa krajem žalosti, srodna snaga može postati vidljiva. Nakon gubitka dolazi nova šansa.",
+          "keywords": [
+            "gubitak",
+            "zarastanje",
+            "nadati se",
+            "ponovno rođenje",
+            "srodna duša"
+          ],
+          "context": "Izlečenje nakon gubitka utisnim put za druženje duše."
+        },
+        "position6": {
+          "upright": "Fives pokazuju da možete proći kroz razočaranje ili gubitak u procesu vaše želje koja se ostvaruje. Međutim, ako se fokusirate na preostale mogućnosti, vaša želja može biti moguća.",
+          "reversed": "Invertirani pentač označava da se vaša želja može ostvariti sa oporavkom i obnovljenom nadom.",
+          "keywords": [
+            "gubitak",
+            "nadati se",
+            "zarastanje",
+            "ponovno rođenje",
+            "prihvatanje"
+          ],
+          "context": "Održavanje nade održava vašu želju živom."
+        }
+      },
+      "sixofcups": {
+        "position1": {
+          "upright": "Šest šoljica, odnos s nekim iz prošlosti može se uskoro pojaviti ili nevina ljubav sa detetom dušom može doći.",
+          "reversed": "Šest šoljica je preokrenulo: ako ostanete zaglavljeni u prošlosti, vrata novoj vezi neće se otvoriti.",
+          "keywords": [
+            "prošlost",
+            "nostalgija",
+            "nevinost",
+            "opet"
+          ],
+          "context": "Nova veza može biti povezana sa prošlim vezama."
+        },
+        "position2": {
+          "upright": "Šest šoljica ukazuje na nostalgičan i brižan znak raka. Ova osoba pridaje značaj povezivanju sa prošlošću.",
+          "reversed": "Šest obrnutih šoljica može ukazivati na osobu u senci raka koji se ne može odbiti od prošlosti i previše je zaglavljen u prošlosti.",
+          "keywords": [
+            "Rak",
+            "nostalgija",
+            "osećanje",
+            "porodica"
+          ],
+          "context": "Energija raka je vidljiva."
+        },
+        "position3": {
+          "upright": "Šest šoljica pokazuje da nostalgija i čiste obveznice ojačaju harmoniju. Unutrašnja deca energija donosi toplinu.",
+          "reversed": "Šest šoljica je preokrenulo: preterano zaglavljen u prošlosti otežava se sklad. Potrebno je vratiti se na sadašnjost.",
+          "keywords": [
+            "nostalgija",
+            "čistoća",
+            "unutrašnji dete",
+            "raport",
+            "prošlost"
+          ],
+          "context": "Čista priključak FOSTERS HARMONI. Pričvršćivanje guma Bond."
+        },
+        "position4": {
+          "upright": "Šest šoljica, topline i iskrenosti iz prošlosti pružaju korijene za dugoročnu vezu. Nevinost čini vezu živu.",
+          "reversed": "Obrnuto šest šoljica, ostajući previše zaglavljen u prošlosti, dugoročno je teško. Potrebno je usredsrediti na sadašnjost.",
+          "keywords": [
+            "nostalgija",
+            "nevinost",
+            "toplota",
+            "prošlost",
+            "dugoročan"
+          ],
+          "context": "Toplina podržava dugoročno, prebivalište na prošlim gumama Bond."
+        },
+        "position5": {
+          "upright": "Šest šoljica sugeriše da duša može biti povezana na prošlog život ili nekoga iz prošlosti. Poznata toplina definiše ovu obvezu.",
+          "reversed": "Šest šoljica je preokrenulo: Držeći se previše do prošlosti može otežati vezu srodne duše. Samo čast memorije može se uspostaviti nova veza.",
+          "keywords": [
+            "prošlost",
+            "nostalgija",
+            "poznatost",
+            "duša",
+            "srodna duša"
+          ],
+          "context": "Toplina prošlosti može ukazivati na matesništvo duše."
+        },
+        "position6": {
+          "upright": "Sektet označava mogućnost vaše želje koja se ostvaruje sa vezom iz prošlosti ili nostalgične energije. Poznata vrata mogu se otvoriti.",
+          "reversed": "Invertirani sektet vam govori da se preveliko drži u prošlosti može ometati vaše želje. Danas je potrebno fokusirati se danas.",
+          "keywords": [
+            "prošlost",
+            "nostalgija",
+            "obveznica",
+            "saosećanje",
+            "moment"
+          ],
+          "context": "Veza iz prošlosti može pokrenuti želju."
+        }
+      },
+      "sevenofcups": {
+        "position1": {
+          "upright": "Sedam šoljica pokazuje da se možete susresti sa mnogim ljubavnim prilikama. Međutim, važno je da pravite pravi izbor.",
+          "reversed": "Sedam revernih šoljica govori vam da će vam se iluzije u vašoj glavi rasipati i možete odabrati stvarni odnos.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "odluka",
+            "prilika"
+          ],
+          "context": "Uskoro može biti mnogo mogućnosti odnosa."
+        },
+        "position2": {
+          "upright": "Sedam šoljica označava maštovito ribe. Ova osoba može biti kreativna, intuitivna, ali ponekad neodlučna.",
+          "reversed": "Uokrećeno sedam šoljica može ukazivati na neorganizaciju ili iluzije u senci Riba. Možda ima poteškoća u donošenju odluka.",
+          "keywords": [
+            "Riba",
+            "sanjati",
+            "intuicija",
+            "složenost"
+          ],
+          "context": "Uticaj Ribe dolazi do izražaja."
+        },
+        "position3": {
+          "upright": "Sedam šoljica pokazuje da snovi mogu podsticati harmoniju. Pravi izbori stvaraju zajedničku viziju."
+        }
+      }
+    }
+  }
+}

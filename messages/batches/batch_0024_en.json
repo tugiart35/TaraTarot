@@ -1,0 +1,776 @@
+{
+  "money": {
+    "meanings": {
+      "sixofwands": {
+        "position7": {
+          "keywords": {
+            "0": "success",
+            "1": "recognition",
+            "2": "victory",
+            "3": "Motivation",
+            "4": "leadership"
+          },
+          "context": "Success or lack of appreciation will be decisive in future financial plans."
+        },
+        "position8": {
+          "upright": "Six Wands show that success, recognition, and leadership skills increase the potential for financial gain.",
+          "reversed": "The Reverse Six Wands indicate that fear of arrogance, lack of visibility, or failure can prevent opportunities.",
+          "keywords": {
+            "0": "success",
+            "1": "recognition",
+            "2": "leadership",
+            "3": "Self - confidence",
+            "4": "victory"
+          },
+          "context": "Your ability to earn money is linked to success or lack of self - confidence."
+        }
+      },
+      "sevenofwands": {
+        "position1": {
+          "upright": "The Seven Wands point to anxiety that I can't defend your position, and you might be afraid that you won't be able to protect your rights.",
+          "reversed": "The Reverse Seven Wands expose the anxiety of weariness and vulnerability, and you might be worried about losing your strength.",
+          "keywords": {
+            "0": "defence",
+            "1": "Concern",
+            "2": "rights",
+            "3": "resistance",
+            "4": "protection"
+          },
+          "context": "The anxiety comes from not being able to defend its position and being powerless."
+        },
+        "position2": {
+          "upright": "The Seven of wands show that you seek safety by keeping your limits, and determination gives you peace.",
+          "reversed": "The Reverse Stick Seven points to fatigue and resistance anxiety, a desire for safety, a lack of defence.",
+          "keywords": {
+            "0": "defence",
+            "1": "determination",
+            "2": "security",
+            "3": "limit",
+            "4": "resistance"
+          },
+          "context": "You'll find security with decisive defense."
+        },
+        "position3": {
+          "upright": "The Seven Wands point to a defensive stance in the use of money and the desire to protect resources.",
+          "reversed": "The Reverse Seven Wands indicate a lack of defence or difficulty in fiscal struggle.",
+          "keywords": {
+            "0": "defence",
+            "1": "protection",
+            "2": "struggle",
+            "3": "Money",
+            "4": "risk"
+          },
+          "context": "In the use of money, protection and defense stand out."
+        },
+        "position4": {
+          "upright": "In the past, financial resources may have been shaped by defence, position protection and competition.",
+          "reversed": "The reverse Seven Asas may have been unable to maintain a financial position due to fatigue and loss of resistance.",
+          "keywords": {
+            "0": "defence",
+            "1": "position",
+            "2": "Money",
+            "3": "competition",
+            "4": "endurance"
+          },
+          "context": "In the past, financial attitudes were focused on defence and protection."
+        },
+        "position5": {
+          "upright": "Seven wands point to defence, position and struggle in financial responsibilities.",
+          "reversed": "The Reverse Seven Wands can show fatigue, resistance loss, or excessive defensiveness in financial responsibilities.",
+          "keywords": {
+            "0": "defence",
+            "1": "protection",
+            "2": "resistance",
+            "3": "struggle",
+            "4": "responsibilities"
+          },
+          "context": "The struggle or fatigue of financial responsibilities is decisive."
+        },
+        "position6": {
+          "upright": "The Seven Wands show the defence of financial plans to maintain strong stance and rights in a competitive environment.",
+          "reversed": "The Reverse Seven Wands indicate fatigue, a decrease in resistance, or loss of position.",
+          "keywords": {
+            "0": "defence",
+            "1": "competition",
+            "2": "endurance",
+            "3": "protection",
+            "4": "struggle"
+          },
+          "context": "Strong defence or fatigue will be effective in new financial plans."
+        },
+        "position7": {
+          "upright": "Seven Asas show strong positions in future financial plans, defence and the right position in competition.",
+          "reversed": "The Reverse Seven Asa points out that fatigue, lack of defence, or the tendency to give up can force financial stability.",
+          "keywords": {
+            "0": "defence",
+            "1": "resistance",
+            "2": "competition",
+            "3": "determination",
+            "4": "power"
+          },
+          "context": "In future financial plans, strong posture or fatigue will be effective."
+        },
+        "position8": {
+          "upright": "The Seven Wands show that your position, your strength, and your tenacity have improved your ability to earn money.",
+          "reversed": "The Reverse Seven Wands indicate that opportunities can be avoided due to fatigue, loss of resistance, or vulnerability.",
+          "keywords": {
+            "0": "defence",
+            "1": "endurance",
+            "2": "Determination",
+            "3": "struggle",
+            "4": "determination"
+          },
+          "context": "Your ability to earn money is linked to endurance or fatigue."
+        }
+      },
+      "eightofwands": {
+        "position1": {
+          "upright": "Eight Wands point to anxiety that opportunities are developing very quickly, and you may be afraid that you will not be able to keep up with the rapidly changing conditions.",
+          "reversed": "The Reverse Eight Wands show delays and congestion anxiety, and the anxiety of not being able to move forward can wear you out.",
+          "keywords": {
+            "0": "speed",
+            "1": "opportunity",
+            "2": "Concern",
+            "3": "Progress",
+            "4": "flow"
+          },
+          "context": "Concern arises from being unable to adapt to rapid changes or being blocked."
+        },
+        "position2": {
+          "upright": "The Stick Eight shows you're looking for security with speed and flow, and the opportunities of your time will give you peace.",
+          "reversed": "The Reverse Stick Eight points to delay or chaos anxiety, and the desire for safety is shaken by confusion.",
+          "keywords": {
+            "0": "speed",
+            "1": "flow",
+            "2": "security",
+            "3": "acceleration",
+            "4": "opportunity"
+          },
+          "context": "You'll find security in rapid and compatible flow."
+        },
+        "position3": {
+          "upright": "Eight Wands point to rapid improvements in the use of money and sudden spending, and fast investments can come forward.",
+          "reversed": "The Reverse Eight Wands show casualties due to delays or wrong timing.",
+          "keywords": {
+            "0": "speed",
+            "1": "investment",
+            "2": "Progress",
+            "3": "spending",
+            "4": "opportunity"
+          },
+          "context": "Quick progress in the use of money comes up."
+        },
+        "position4": {
+          "upright": "There may have been rapid developments, sudden financial opportunities and activity in the past.",
+          "reversed": "Reverse Eight Asas, due to delays and communication problems, the financial flow has slowed down.",
+          "keywords": {
+            "0": "speed",
+            "1": "Progress",
+            "2": "Money",
+            "3": "opportunity",
+            "4": "movement"
+          },
+          "context": "In the past, financial processes have advanced rapidly."
+        },
+        "position5": {
+          "upright": "Eight Wands represent rapid developments in financial responsibilities, news or acceleration.",
+          "reversed": "The Reverse Eight Wands mean delays in financial responsibilities, confusion or slow progress.",
+          "keywords": {
+            "0": "speed",
+            "1": "acceleration",
+            "2": "news",
+            "3": "Progress",
+            "4": "responsibilities"
+          },
+          "context": "Speed or delay in financial responsibilities is a prerequisite."
+        },
+        "position6": {
+          "upright": "Eight Wands point to speed, opportunity and rapid progress in financial plans.",
+          "reversed": "Reverse Eight Wands point to delays, miscommunications or blocked flow.",
+          "keywords": {
+            "0": "speed",
+            "1": "Progress",
+            "2": "opportunity",
+            "3": "communication",
+            "4": "flow"
+          },
+          "context": "Quick progress or delays in new financial plans will be on the agenda."
+        },
+        "position7": {
+          "upright": "Eight Asas point to the coming of speed, communication and sudden opportunities in future financial plans.",
+          "reversed": "The Reverse Eight Asa shows that delays, communication problems, or wrong timings will delay opportunities.",
+          "keywords": {
+            "0": "speed",
+            "1": "opportunity",
+            "2": "communication",
+            "3": "acceleration",
+            "4": "timing"
+          },
+          "context": "The future financial plans will determine speed or delay."
+        },
+        "position8": {
+          "upright": "Eight Wands show that their ability to respond immediately to speed, communication, and opportunities increases their ability to earn money.",
+          "reversed": "The Reverse Eight Wands indicate that opportunities can be missed due to delays, miscommunications or disorganisation.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "opportunity",
+            "3": "acceleration",
+            "4": "sync"
+          },
+          "context": "Your ability to earn money is linked to quick response or delay."
+        }
+      },
+      "nineofwands": {
+        "position1": {
+          "upright": "Nine wands point to the anxiety of losing weariness and endurance, and you may be tired of the long struggles.",
+          "reversed": "The Reverse Nine Wands bring out the anxiety of giving up and not finding the strength to endure, and you might be worried about being in constant struggles.",
+          "keywords": {
+            "0": "endurance",
+            "1": "Tired.",
+            "2": "Concern",
+            "3": "struggle",
+            "4": "resistance"
+          },
+          "context": "Concern arises from long-term struggles and the end of endurance."
+        },
+        "position2": {
+          "upright": "The Nine of the wand shows that you seek security with endurance and patience, and it gives you peace of mind to stay strong.",
+          "reversed": "The Reverse Stick Nine points to weariness and anxiety of overzealousness, a desire for security, a weakness of fatigue.",
+          "keywords": {
+            "0": "resistance",
+            "1": "Patience",
+            "2": "security",
+            "3": "protection",
+            "4": "endurance"
+          },
+          "context": "You find security with patience and resistance."
+        },
+        "position3": {
+          "upright": "Nine wands point to caution and caution in the use of money, and prior losses lead to caution.",
+          "reversed": "The Reverse Nine Wand points to rigor in the use of money due to excessive fatigue or constant anxiety.",
+          "keywords": {
+            "0": "precaution",
+            "1": "Conscientious",
+            "2": "resistance",
+            "3": "Concern",
+            "4": "Money"
+          },
+          "context": "In the use of money, caution and caution arise."
+        },
+        "position4": {
+          "upright": "In the past, resistance, endurance, and the effort to overcome difficult times may have stepped forward.",
+          "reversed": "The Reverse Nine Wands, weariness and extreme alertness, have weakened financial confidence.",
+          "keywords": {
+            "0": "endurance",
+            "1": "defence",
+            "2": "Money",
+            "3": "It's a hard time.",
+            "4": "protection"
+          },
+          "context": "In the past, the financial situation has been sustained by resistance to difficulties."
+        },
+        "position5": {
+          "upright": "Nine Wands represent resistance, endurance, and a final effort in financial responsibilities.",
+          "reversed": "The Reverse Nine Wands point to fatigue, fatigue, or a reduction in defence in financial responsibilities.",
+          "keywords": {
+            "0": "resistance",
+            "1": "endurance",
+            "2": "struggle",
+            "3": "expiration",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, endurance or extinction comes first."
+        },
+        "position6": {
+          "upright": "Nine wands point to endurance, resistance, and the struggle to the final stage of financial plans.",
+          "reversed": "The Reverse Nine Wands indicate weariness, extra loads or unnecessary defenses.",
+          "keywords": {
+            "0": "endurance",
+            "1": "resistance",
+            "2": "defence",
+            "3": "load",
+            "4": "determination"
+          },
+          "context": "In new financial plans, endurance or exhaustion will be effective."
+        },
+        "position7": {
+          "upright": "Nine Asas indicate the determination to resist financial plans in the future, to endure patience, and to succeed at the final stage.",
+          "reversed": "The Reverse Nine Asas risk delaying opportunities due to exhaustion, unnecessary defense, or fatigue.",
+          "keywords": {
+            "0": "endurance",
+            "1": "Patience",
+            "2": "defence",
+            "3": "determination",
+            "4": "protection"
+          },
+          "context": "In future financial plans, patience or weariness will stand out."
+        },
+        "position8": {
+          "upright": "Nine wands indicate that resistance, perseverance, and limitation skills strengthen financial potential.",
+          "reversed": "The Reverse Nine Wands indicate that weariness, constant defence, or fatigue can weaken opportunities.",
+          "keywords": {
+            "0": "resistance",
+            "1": "Persistence",
+            "2": "limit",
+            "3": "protection",
+            "4": "determination"
+          },
+          "context": "Your ability to make money is linked to perseverance or exhaustion."
+        }
+      },
+      "tenofwands": {
+        "position1": {
+          "upright": "Ten wands point to overburdening and responsibility, and you may be afraid that material burdens will crush you.",
+          "reversed": "The Reverse Ten Wand shows that you can't let go of your loads and that you're concerned about overburdening yourself.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "Concern",
+            "3": "weight",
+            "4": "financial pressure"
+          },
+          "context": "Concern is born from overburdening and responsibilities."
+        },
+        "position2": {
+          "upright": "The Ten of Wands shows that you seek security by taking responsibility, and carrying the loads brings peace.",
+          "reversed": "The Reverse Stick Ten points to the anxiety of overload, the desire for security, the lack of sharing.",
+          "keywords": {
+            "0": "responsibilities",
+            "1": "load",
+            "2": "security",
+            "3": "effort",
+            "4": "stability"
+          },
+          "context": "You find security with a sense of responsibility."
+        },
+        "position3": {
+          "upright": "Ten Wands point to excessive responsibility and overload in the use of money.",
+          "reversed": "The Reverse Ten Wands indicate that too much responsibilities and relief have begun.",
+          "keywords": {
+            "0": "responsibilities",
+            "1": "load",
+            "2": "Money",
+            "3": "pressure",
+            "4": "endurance"
+          },
+          "context": "The use of money comes with burdens and responsibility."
+        },
+        "position4": {
+          "upright": "In the past, financial responsibilities may have felt like a burden.",
+          "reversed": "The Reverse Ten Wands have suffered a loss of consumption and efficiency due to the lack of sharing of cargo.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "Money",
+            "3": "effort",
+            "4": "Don't be coercion"
+          },
+          "context": "In the past, he's had a lot of responsibility for money."
+        },
+        "position5": {
+          "upright": "Ten Wands weigh heavily on financial responsibilities, pointing to excesses and pressures.",
+          "reversed": "The Reverse Ten Wands show the need to reduce burdens, share or release responsibilities in financial responsibilities.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "excess",
+            "3": "pressure",
+            "4": "share"
+          },
+          "context": "The relief of burdens or burdens in financial responsibilities is decisive."
+        },
+        "position6": {
+          "upright": "Ten Wands point to heavy responsibilities, loads, and a project that is close to completion in financial plans.",
+          "reversed": "The Reverse Ten Wands indicate excessive loads, abandonment of tasks or exhaustion.",
+          "keywords": {
+            "0": "responsibilities",
+            "1": "load",
+            "2": "complete",
+            "3": "effort",
+            "4": "extremism"
+          },
+          "context": "The new financial plans will bring heavy burdens or the need to let go."
+        },
+        "position7": {
+          "upright": "Ten Asas will come to the forefront of financial plans in the future with heavy responsibilities, workloads, and efforts to achieve goals.",
+          "reversed": "Inverted Ten Asa points to the risk of overburdening, not being able to delegate, or being forced by pressure from responsibilities.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "effort",
+            "3": "complete",
+            "4": "difficulty"
+          },
+          "context": "In future financial plans, intense efforts or excess loads will be decisive."
+        },
+        "position8": {
+          "upright": "The Ten Wands show that responsibility, management of the workload, and determination have improved their ability to earn money.",
+          "reversed": "The Reverse Ten Wands indicate that opportunities can be lost due to excessive burden, stress, or non-interruption of tasks.",
+          "keywords": {
+            "0": "responsibilities",
+            "1": "load",
+            "2": "Determination",
+            "3": "work",
+            "4": "effort"
+          },
+          "context": "Your ability to earn money is related to taking responsibility or overloading."
+        }
+      },
+      "pageofwands": {
+        "position1": {
+          "upright": "The Prince of the Wand points out his anxiety about me stepping into new ideas and losing his enthusiasm, and you may be afraid of losing your courage.",
+          "reversed": "The Reverse Stick Prince brings out the anxiety of distractions and distractions, and you may be concerned that you may not be able to proceed as you wish.",
+          "keywords": {
+            "0": "Courage",
+            "1": "fad",
+            "2": "Concern",
+            "3": "idea",
+            "4": "testing"
+          },
+          "context": "The anxiety comes from losing courage and disorder."
+        },
+        "position2": {
+          "upright": "The Prince of the Wand shows you seek security through discovery and learning, and new experiences bring you peace.",
+          "reversed": "The Reverse Wand Prince points to disorientation or disorientation, a desire for safety, a weakness in direction.",
+          "keywords": {
+            "0": "discovery",
+            "1": "learning",
+            "2": "security",
+            "3": "experience",
+            "4": "Inspired"
+          },
+          "context": "You'll find security with discovery and new experience."
+        },
+        "position3": {
+          "upright": "The Prince of the Wand points to an enthusiastic and explorer approach to the use of money, and new opportunities are excitedly assessed.",
+          "reversed": "The Reverse Wand Prince points to disorganisation or unstable financial decisions.",
+          "keywords": {
+            "0": "fad",
+            "1": "opportunity",
+            "2": "discovery",
+            "3": "Money",
+            "4": "start"
+          },
+          "context": "In the use of money, enthusiasm and discovery emerge."
+        },
+        "position4": {
+          "upright": "In the past, the spirit of new ideas, courage, and discovery may have led to financial initiatives.",
+          "reversed": "The Prince of Reverse Asa has been missed by distractions or distractions.",
+          "keywords": {
+            "0": "discovery",
+            "1": "Courage",
+            "2": "Money",
+            "3": "innovation",
+            "4": "Inspired"
+          },
+          "context": "In the past, the financial situation was carried out by the spirit of discovery."
+        },
+        "position5": {
+          "upright": "The Prince of the Wand represents the desire to learn in financial responsibilities, new projects and discovery.",
+          "reversed": "The Reverse Wand Prince points to disorganisation of financial responsibilities, carelessness, or rash work.",
+          "keywords": {
+            "0": "learning",
+            "1": "discovery",
+            "2": "fad",
+            "3": "Attention",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, enthusiasm or carelessness are effective."
+        },
+        "position6": {
+          "upright": "The Prince of the Wand points to discovery, enthusiasm and new projects in financial plans.",
+          "reversed": "The Reverse Stick Prince points to disorientation, inconsistency, or immediate boredom.",
+          "keywords": {
+            "0": "discovery",
+            "1": "fad",
+            "2": "start",
+            "3": "experience",
+            "4": "Excitement"
+          },
+          "context": "The discovery or inconsistencies will be effective in new financial plans."
+        },
+        "position7": {
+          "upright": "Prince of Asa, in the future, discovering financial plans, new ideas, and eager steps will come forward.",
+          "reversed": "The reverse Prince of Asa risks being careless, impatient, or impatient.",
+          "keywords": {
+            "0": "discovery",
+            "1": "fad",
+            "2": "start",
+            "3": "creativity",
+            "4": "energy"
+          },
+          "context": "In future financial plans, discovery or impatientness will stand out."
+        },
+        "position8": {
+          "upright": "The Prince of the Wand shows that curiosity, discovery, and the ability to produce new ideas increase the potential to earn money.",
+          "reversed": "The Reverse Wand Prince points out that opportunities can be limited due to the rapid extinction of impatience, disarray, or enthusiasm.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "discovery",
+            "2": "Inspired",
+            "3": "fad",
+            "4": "idea"
+          },
+          "context": "Your ability to make money is linked to discovery or impatience."
+        }
+      },
+      "knightofwands": {
+        "position1": {
+          "upright": "Knight of the Wand, rash attempts and rash actions indicate anxiety, and you may be afraid to take uncontrollably steps.",
+          "reversed": "The Reverse Wand Knight exposes the anxiety of instability and interruption, and you might be worried that you won't be able to sustain it.",
+          "keywords": {
+            "0": "Hurry",
+            "1": "initiative",
+            "2": "Concern",
+            "3": "Out of control",
+            "4": "imbalance"
+          },
+          "context": "Concern arises from hasty attempts and failure to maintain."
+        },
+        "position2": {
+          "upright": "Knight of the Wand shows you seek security with bold steps and passion.",
+          "reversed": "The Reverse Wand Knight points to the anxiety of looseness and half-life, and the desire for safety is shaken by indecisiveness.",
+          "keywords": {
+            "0": "Courage",
+            "1": "passion",
+            "2": "security",
+            "3": "movement",
+            "4": "adventure"
+          },
+          "context": "You find security with bold steps and passion."
+        },
+        "position3": {
+          "upright": "The Knight of the Wand points to bold and fast steps in the use of money, and investments can be risky but exciting.",
+          "reversed": "The Knight of the Inverted Wand shows fiscal decisions or reckless decisions.",
+          "keywords": {
+            "0": "Courage",
+            "1": "speed",
+            "2": "risk",
+            "3": "Money",
+            "4": "movement"
+          },
+          "context": "The use of money brings forth courage and speed."
+        },
+        "position4": {
+          "upright": "In the past, rashness, bold initiatives and quick movements may have shaped financial attitudes.",
+          "reversed": "The Knight of the Reverse Asa has been unable to maintain financial stability due to impatience and carelessness.",
+          "keywords": {
+            "0": "Courage",
+            "1": "speed",
+            "2": "Money",
+            "3": "initiative",
+            "4": "Progress"
+          },
+          "context": "In the past, financial decisions were made bold and swift."
+        },
+        "position5": {
+          "upright": "The Knight of the Wand points to courage, rapid progress and passionate steps in financial responsibilities.",
+          "reversed": "The Knight of the Reverse Wand may show insufferability, lack of patience, or instability in financial responsibilities.",
+          "keywords": {
+            "0": "Courage",
+            "1": "passion",
+            "2": "speed",
+            "3": "stability",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, courage or instability arise."
+        },
+        "position6": {
+          "upright": "The Knight of the Wand points to bold attempts at financial plans, speed and strong steps.",
+          "reversed": "The Knight of the Reverse Wand is a sign of hastyness, looseness, or half-life.",
+          "keywords": {
+            "0": "Courage",
+            "1": "initiative",
+            "2": "speed",
+            "3": "Progress",
+            "4": "energy"
+          },
+          "context": "The new financial plans will bring forth bold initiatives or hastyness."
+        },
+        "position7": {
+          "upright": "Knight of Asa, in the future there will be bold attempts at financial plans, passion and rapid progress.",
+          "reversed": "The Reverse Asa Knight points to the risk of hastyness, instability, or unfinished projects.",
+          "keywords": {
+            "0": "Courage",
+            "1": "passion",
+            "2": "speed",
+            "3": "Progress",
+            "4": "target"
+          },
+          "context": "Courage or haste will be decisive in future financial plans."
+        },
+        "position8": {
+          "upright": "The Knight of the Wand shows that courage, initiative, and the ability to act quickly strengthen their financial skills.",
+          "reversed": "The Reverse Wand Knight points out that opportunities can be lost due to rashness, carelessness, or instability.",
+          "keywords": {
+            "0": "Courage",
+            "1": "initiative",
+            "2": "speed",
+            "3": "passion",
+            "4": "energy"
+          },
+          "context": "Your ability to make money depends on courage or haste."
+        }
+      },
+      "queenofwands": {
+        "position1": {
+          "upright": "The Stick Queen points to the anxiety of losing confidence and losing charisma, and you may be afraid of not being able to maintain your charm.",
+          "reversed": "The Reverse Stick Queen brings out the anxiety of jealousy and insecurities, and you might be worried about underestimating your own power.",
+          "keywords": {
+            "0": "Trust",
+            "1": "Charisma",
+            "2": "Concern",
+            "3": "Attraction",
+            "4": "Self - confidence"
+          },
+          "context": "Concern is born from losing confidence and charm."
+        },
+        "position2": {
+          "upright": "The Stick Queen shows you seek safety with confidence and warm leadership, and charisma will give you peace.",
+          "reversed": "The Reverse Stick Queen points to jealousy or insecurity anxiety, a desire for safety, a lack of self-worth.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "leadership",
+            "2": "security",
+            "3": "Charisma",
+            "4": "energy"
+          },
+          "context": "You find security with confidence leadership and warmth."
+        },
+        "position3": {
+          "upright": "The Stick Queen points to self-esteem, charisma and practicality in the use of money, and sources are creatively evaluated.",
+          "reversed": "The Reverse Wand Queen points to the loss of resources due to excessive spending or self-worth issues.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "practice",
+            "2": "Charisma",
+            "3": "Money",
+            "4": "leadership"
+          },
+          "context": "In the use of money, self - confidence and creativity emerge."
+        },
+        "position4": {
+          "upright": "In the past, the spirit of charisma, self-esteem, and entrepreneurialism may have stepped forward under the management of financial resources.",
+          "reversed": "The reverse Queen of Asa, insecurity and jealousy, may have forced financial development.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "leadership",
+            "2": "Money",
+            "3": "Charisma",
+            "4": "initiative"
+          },
+          "context": "In the past, financial attitudes have evolved with a strong spirit of leadership."
+        },
+        "position5": {
+          "upright": "The Queen of the Wand represents self-esteem, leadership, and efficient use of resources in financial responsibilities.",
+          "reversed": "The Reverse Stick Queen points to jealousy, insecurities, or extreme control in financial responsibilities.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "leadership",
+            "2": "resource management",
+            "3": "Trust",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, confidence or insecurity are decisive."
+        },
+        "position6": {
+          "upright": "The Stick Queen points to confidence, charisma and creative leadership in financial plans.",
+          "reversed": "The Reverse Stick Queen points to insecurity, jealousy, or lack of self-worth.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "leadership",
+            "2": "Charisma",
+            "3": "Inspired",
+            "4": "creativity"
+          },
+          "context": "The new financial plans will raise confidence or distrust."
+        },
+        "position7": {
+          "upright": "In future financial plans, the Queen of Asa points to the potential to grow charisma, leadership, and self-esteem.",
+          "reversed": "The Reverse Asa Queen shows that insecurity, jealousy, or a desire for extreme control can be a problem.",
+          "keywords": {
+            "0": "leadership",
+            "1": "self-confidence",
+            "2": "Charisma",
+            "3": "Vision",
+            "4": "Courage"
+          },
+          "context": "In future financial plans, confidence or insecurity will be effective."
+        },
+        "position8": {
+          "upright": "The Stick Queen shows that self-esteem, leadership, and inspirational approach improve their ability to make money.",
+          "reversed": "The Reverse Stick Queen points out that jealousy, insecurity, or lack of leadership can limit opportunities.",
+          "keywords": {
+            "0": "leadership",
+            "1": "Self - confidence",
+            "2": "Inspired",
+            "3": "Charisma",
+            "4": "creativity"
+          },
+          "context": "Your ability to make money depends on self - confidence or insecurities."
+        }
+      },
+      "kingofwands": {
+        "position1": {
+          "upright": "The Stick King points to the anxiety of losing leadership and losing control, and you may be afraid of not being able to maintain your material vision.",
+          "reversed": "The Reverse Wand King exposes the weakness of authority and the anxiety of trust, and you may be concerned that you will not be able to maintain your strategy.",
+          "keywords": {
+            "0": "leadership",
+            "1": "Vision",
+            "2": "Concern",
+            "3": "authority",
+            "4": "control"
+          },
+          "context": "It comes from anxiety, leadership, and loss of vision."
+        },
+        "position2": {
+          "upright": "The King of the Wand shows that he seeks security with visionary leadership and strategy, and the brave look brings peace.",
+          "reversed": "The Reverse Wand king points to authority or ego anxiety. The desire for safety weakens the lack of harmony.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "security",
+            "3": "strategy",
+            "4": "Courage"
+          },
+          "context": "You find security through vision and strategic vision."
+        },
+        "position3": {
+          "upright": "The Stick King points to strategic leadership and vision in the use of money. Sources are directed to long-term projects.",
+          "reversed": "The Reverse Stick King shows overbearing or selfish financial decisions.",
+          "keywords": {
+            "0": "leadership",
+            "1": "Vision",
+            "2": "strategy",
+            "3": "Money",
+            "4": "long term"
+          },
+          "context": "In the use of money, leadership and strategy emerge."
+        },
+        "position4": {
+          "upright": "In the past, visionary leadership, strategic decisions and bold steps may have provided financial security.",
+          "reversed": "The Reverse Asa King may have limited authoritarian attitudes or impatient financial progress.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "Money",
+            "3": "strategy",
+            "4": "Courage"
+          },
+          "context": "In the past, financial resources were led by strategic courage."
+        },
+        "position5": {
+          "upright": "The King of the Wand points to visionary leadership in financial responsibilities, strategic decisions and long-term planning.",
+          "reversed": "The Reverse Wand King may show a repressive attitude in financial responsibilities, authoritarian behavior, or extreme risk.",
+          "keywords": {
+            "0": "leadership",
+            "1": "Vision",
+            "2": "strategy",
+            "3": "risk"
+          }
+        }
+      }
+    }
+  }
+}

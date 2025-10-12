@@ -1,0 +1,878 @@
+{
+  "blog": {
+    "cards": {
+      "four-of-cups": {
+        "keywords": {
+          "balance_title": "Balance and Warning",
+          "balance_message": "Don't ignore what life has to offer; open your heart and reconnect.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "There is an answer in silence. Listen to your heart, for the guide in you calls you."
+        },
+        "associations": {
+          "title": "Four of Hearts Cosmic Connections",
+          "astrology": "Crab Burcu (Emotional Depth, Internal Trust)",
+          "numerology": "4 (Defense, Patience, Stability)",
+          "element": "Water, Feelings, Introduction, Awareness",
+          "chakra": "Heart (Heart chakra) ▪ Acceptance and Compassion"
+        },
+        "card_combinations": {
+          "title": "Combinations Step Up With the Four of Hearts",
+          "combinations": {
+            "0": {
+              "card": "Ace of Hearts",
+              "meaning": "The new emotional awareness and heart opening begin."
+            },
+            "1": {
+              "card": "Eight of Hearts",
+              "meaning": "It's time to get away from emotional situations that don't feed you."
+            },
+            "2": {
+              "card": "Judicial (Judgment)",
+              "meaning": "With spiritual awakening and awareness, a new chapter opens."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Four of Hearts Approved",
+          "affirmation_list": {
+            "0": "I'm open to noticing the beauty of life.",
+            "1": "I listen to my heart in silence, I trust my inner guide.",
+            "2": "Every recession is an opportunity for awareness."
+          }
+        },
+        "cta": {
+          "main": "Open your heart again, find your way with the light of consciousness!",
+          "micro": "Make a quiet moment today, breathe, and realize what the universe has to offer you."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Four of Hearts represent?",
+            "answer": "The Four of Hearts reminds us that emotional introverts, lack of awareness, and new opportunities need to be noticed."
+          },
+          "1": {
+            "question": "What does the Reverse Cup Four mean?",
+            "answer": "The opposite position represents increased awareness, reinvention, and emotional opening."
+          },
+          "2": {
+            "question": "In what circumstances is the card strong?",
+            "answer": "The search for inner stability is powerful during the study of awareness and emotional renewal."
+          }
+        },
+        "related_cards": {
+          "0": "ace-of-cups",
+          "1": "eight-of-cups",
+          "2": "judgment"
+        },
+        "imageUrl": "/cards/rws/IV-Cups.webp"
+      },
+      "five-of-cups": {
+        "name": "Five of hearts lost, Admission and Healing",
+        "short_description": "The Five of Hearts represents the emotional impact of past losses and disappointments, but it is also the beginning of healing, forgiveness, and the process of finding hope again.",
+        "meanings": {
+          "upright": {
+            "general": "The Five of Hearts represents feelings of loss, sadness, or regret, but this card is not just an invitation to recognize the good that remains, but the burden of the past, and open your heart to love again.",
+            "love": "In love, wounds, breakups, or resentments can come back to the surface, but the process of healing, forgiveness, and courage to trust again begins.",
+            "career": "In a career, you may feel failure or disappointment, but focus on what you have left, not on what you have lost, but on what you have left, and each ending is a new learning.",
+            "money": "Financial losses or misinvestments may have upset you in the past, but this experience allows you to make more conscious decisions in the future.",
+            "spiritual": "Spiritually, this card reminds us to give up emotional healing and past, and from pain comes wisdom, which makes the soul mature."
+          },
+          "reversed": {
+            "general": "The Reverse Heart Five means forgiveness, healing, and finding hope again, and it's time to step out of the shadow of the past and return to the light.",
+            "love": "The opposite position in love shows that emotional closure is over, ready to reconnect or open your heart.",
+            "career": "The process of recovery in the career, new beginnings, and regaining lost motivation begins.",
+            "money": "Financially, it means balancing and turning to new opportunities, learned from old mistakes.",
+            "spiritual": "In a spiritual sense, the process of forgiving the past and reaching inner peace begins, opening the healing door."
+          }
+        },
+        "context": {
+          "mythology": "The Five of Hearts represents the teaching of loss, as in ancient mythology, heroes pass through the dark valley and rise again, and this card tells of the transformation of the soul.",
+          "celtic_cross": {
+            "future": "Soon, after the loss, a regeneration process may begin, and emotional balance and hope will return.",
+            "hidden_influences": "Sticking to the past or blaming yourself may not be an easy step forward without being aware of it."
+          }
+        },
+        "story": {
+          "title": "Five of Hearts, from Darkness to Dawn",
+          "description": "A figure in a black cloak is on the card, looking at three hearts that have been knocked over, with two strong trophies standing behind it, which means that even after the loss, there is hope and love, and the bridge behind the bridge is the way to the past to the future.",
+          "historytitle": "Historical Origin",
+          "history_message": "The Five of Hearts was seen as a symbol of mourning and internal transformation in the Middle Ages, reminding that acceptance of loss is a necessary step for spiritual maturity.",
+          "mystic_title": "Spiritual Meaning - Forgiveness and Rebirth",
+          "mystic_message": "Spiritually, this card teaches you to forgive past suffering and to open the heart to love, and true healing is born from acceptance of loss.",
+          "cultural_title": "Modern Comment: Healing and Awareness",
+          "cultural_message": "In the modern world, the Five of Hearts represents the process of awareness and transformation followed by emotional loss.",
+          "lesson": "Focus not on what you have lost, but on what you have left, beginning with healing, awareness and acceptance."
+        },
+        "keywords": {
+          "keywords_title": "Five of Hearts Keywords",
+          "keywords_message": "The five of hearts meaning tarot, five of cups, lost, healing, forgiveness, rebirth, hope",
+          "positive_title": "Positive Themes",
+          "positive_message": "Acceptance, forgiveness, awareness, hope again, emotional maturity.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Being stuck in the past can stop you, and you're hungry to forgive your heart and start over.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Every loss is a transformation, find healing, honoring the past."
+        },
+        "associations": {
+          "title": "Five of Hearts Cosmic Connections",
+          "astrology": "Scorpion Burcu (Turning, Emotional Deepness, Healing)",
+          "numerology": "5 (Change, Challenge, Transformation)",
+          "element": "Water, Emotions, Healing, Regeneration",
+          "chakra": "Heart (Heart chakra) ▪ Forgiveness and Love"
+        },
+        "card_combinations": {
+          "title": "Combinations With the Five of Hearts",
+          "combinations": {
+            "0": {
+              "card": "Death",
+              "meaning": "A great transformation and rebirth begins, the old pain ends."
+            },
+            "1": {
+              "card": "The Six of Hearts",
+              "meaning": "A process of reconciliation with the past and nostalgic healing begins."
+            },
+            "2": {
+              "card": "Sun (The Sun)",
+              "meaning": "After darkness comes light, hope is reborn."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Five of Hearts Approved",
+          "affirmation_list": {
+            "0": "I leave the past with love, open my heart to forgiveness.",
+            "1": "Every loss gives birth to me again, because life keeps changing.",
+            "2": "Even in the dark, I can see the light."
+          }
+        },
+        "cta": {
+          "main": "Honor the past, open your heart to healing and be reborn!",
+          "micro": "Forgive a past feeling today, approach yourself with love, and remember inner peace."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Five of Hearts represent?",
+            "answer": "The Five of Hearts represents facing loss, remorse, and emotional disappointments, followed by healing."
+          },
+          "1": {
+            "question": "What does the Reverse Cup Five mean?",
+            "answer": "The reverse position represents the process of healing, forgiveness, and reunification, and the heart begins to open."
+          },
+          "2": {
+            "question": "In what circumstances is the card strong?",
+            "answer": "After loss, it is powerful in healing, emotional transformation, and forgiveness."
+          }
+        },
+        "related_cards": {
+          "0": "death",
+          "1": "six-of-cups",
+          "2": "the-sun"
+        },
+        "imageUrl": "/cards/rws/V-Cups.webp"
+      },
+      "six-of-cups": {
+        "name": "Six of Hearts, Past, Innocence and Compassion",
+        "short_description": "The Six of Hearts represents childhood memories, nostalgia, and pure love, which symbolizes reconciliation with the past, the reminiscence of innocence, and compassion from the heart.",
+        "meanings": {
+          "upright": {
+            "general": "The Six of Hearts represents emotional ties from the past, memories and old friendships, which tells us that love, kindness, and sharing must be remembered.",
+            "love": "In love, a past relationship or an old lover may come back to life, and in the current relationship, a more pure, sincere, and understanding period begins.",
+            "career": "Learning from past career experiences means reintegrating old business connections or reviving nostalgic projects.",
+            "money": "Financially, there may be a return of past investments or old opportunities, and the gains based on loyalty and trust stand out.",
+            "spiritual": "In a spiritual sense, the Six of Hearts want you to reconnect with your inner child and remember pure love, heal your heart with the loving side of the past."
+          },
+          "reversed": {
+            "general": "The Reverse Heart Sixers point to the past too much or too much nostalgia, and now it's time to let go of the past and go back to today.",
+            "love": "In love, it is possible to remain in the shadow of old relationships, or the emotional scars of the past affect today, focus on the present moment.",
+            "career": "Hanging on past mistakes in your career doesn't move you forward, so apply the lessons you've learned to create new visions.",
+            "money": "Financially, it may be a tendency to question past decisions, focus not on the past, but on today's opportunities.",
+            "spiritual": "Spiritually, you may have neglected your inner child, listen to him with love, but don't get lost in the past."
+          }
+        },
+        "context": {
+          "mythology": "The Six of Hearts is associated with the god child archetypes that represent the pure form of love, the spiritual power of innocence and generosity from the heart.",
+          "celtic_cross": {
+            "future": "Soon you may encounter someone from the past or a memory again, and you may experience an emotional healing.",
+            "hidden_influences": "Emotional ties from the past or unresolved memories may now affect their decision."
+          }
+        },
+        "story": {
+          "title": "The Six of Hearts (A Memorial of Innocence)",
+          "description": "On the card, one child extends a cup to another, and it's full of flowers, and this scene represents pure love, kindness, and the warm energy of the past, and it wants you to awaken your heart with the pure love of the past.",
+          "historytitle": "Historical Origin",
+          "history_message": "The Six of Hearts is one of the cards that represents the innocence of love, the peace of childhood and the power of friendship in the Middle Ages.",
+          "mystic_title": "Spiritual Meaning - Peace With Internal Child",
+          "mystic_message": "Spiritually, this card tells you to remember the child inside and embrace it with love, pure emotion is the key to spiritual healing.",
+          "cultural_title": "Modern Comment: Nostalgia and Emotional Healing",
+          "cultural_message": "In the chaos of modern life, the Six of Hearts reminds us of the warmth of the past and the value of simple happiness.",
+          "lesson": "Honor the past with love, but don't stay there, remember today's innocence."
+        },
+        "keywords": {
+          "keywords_title": "Six of Hearts Keywords",
+          "keywords_message": "The six of hearts meaning tarot, six of cups, nostalgia, past, inner child, compassion, reconciliation.",
+          "positive_title": "Positive Themes",
+          "positive_message": "Innocence, nostalgia, love, reconciliation, compassion, inner peace.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Remember the peace of the past, but don't miss out on today's opportunities.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Embrace your inner child, for he is the source of the light in your heart."
+        },
+        "associations": {
+          "title": "Six of Hearts Cosmic Connections",
+          "astrology": "Crab Burcu (Family, Emotional Trust, Past)",
+          "numerology": "6 (Implementation, Love, Balance)",
+          "element": "Water, Feelings, Compassion, Connection",
+          "chakra": "Heart (Heart chakra) ▪ Love and Compassion"
+        },
+        "card_combinations": {
+          "title": "Combinations Step Up With the Six of Hearts",
+          "combinations": {
+            "0": {
+              "card": "Five of Hearts",
+              "meaning": "The process of healing and forgiveness begins from past sufferings."
+            },
+            "1": {
+              "card": "Sun (The Sun)",
+              "meaning": "Childhood cheer, innocent happiness and inner peace stand out."
+            },
+            "2": {
+              "card": "Nine of Hearts",
+              "meaning": "A deep peace comes from emotional satisfaction and reconciliation with the past."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Six of Hearts Approved",
+          "affirmation_list": {
+            "0": "I honor my past with love and move forward peacefully.",
+            "1": "I am at peace with my inner child; I embrace my innocence with love.",
+            "2": "The nostalgia in my heart gives me hope and inspiration again."
+          }
+        },
+        "cta": {
+          "main": "Remember the warmth of the past, embrace your inner child with love!",
+          "micro": "Remember a childhood moment that made you happy today and smile with that feeling."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Six of Hearts represent?",
+            "answer": "The Six of Hearts represents reconciliation with the past, nostalgia, pure love and healing of the inner child."
+          },
+          "1": {
+            "question": "What does the reverse Six of Hearts mean?",
+            "answer": "The reverse position indicates that you're stuck in the past or that old emotional attachments affect the present."
+          },
+          "2": {
+            "question": "In what circumstances is the card strong?",
+            "answer": "It's powerful in times of facing the past, forgiveness, and inner peace."
+          }
+        },
+        "related_cards": {
+          "0": "Five-of-cups",
+          "1": "Nana-of-cups",
+          "2": "the-sun"
+        },
+        "imageUrl": "/cards/rws/VI-Cups.webp"
+      },
+      "seven-of-cups": {
+        "name": "Seven of Hearts ▪ Dreams, Elections and Reality",
+        "short_description": "The Seven of Hearts represents being lost in abundance, the charm of many options, and the need to distinguish between fantasy and reality. This card is as much a symbol of illusion as inspiration.",
+        "meanings": {
+          "upright": {
+            "general": "The Seven of Hearts shows that many possibilities surround you, but not all options are real; some are dreams, some are opportunities. This card reminds you to use your intuition to choose the way to your heart.",
+            "love": "Multiple possibilities in love, confusion, or idealized relationship may come to the agenda.",
+            "career": "In a career, many projects or ideas can excite you, but all of them can create a mess; prioritize.",
+            "money": "Financially, there may be a variety of opportunities, but they're not all reliable.",
+            "spiritual": "Spiritually, the Seven of Hearts represents the time when you get rid of illusions and realize the truth."
+          },
+          "reversed": {
+            "general": "The reverse seven of hearts shows that the uncertainty is over and it's time to make a clear decision.",
+            "love": "In love, the confusion is over, and now you know what you want, so get ready to make a real emotional connection.",
+            "career": "In a career, goals become clear and focus regains, making decisions leads to success.",
+            "money": "Financially, you make the right investment with careful analysis, it's not a fantasy anymore, it's action time.",
+            "spiritual": "Spiritually, illusions are solved and awareness increases, and you find true guidance."
+          }
+        },
+        "context": {
+          "mythology": "The Seven of Hearts is a symbol of the hero who roams the realm of dreams in mythology. This card shows both the power of imagination and the trap of illusion; it takes courage to get to the truth.",
+          "celtic_cross": {
+            "future": "Soon you'll have a lot of options to decide, clarity, intuitive awareness.",
+            "hidden_influences": "The uncertainty, fear, or imagination may be clouding its true potential."
+          }
+        },
+        "story": {
+          "title": "Seven of Hearts ▪ In the Valley of Dreams",
+          "description": "A figure on the card looks at seven cups floating in the air, and in each cup there is a symbol: snake, treasure, crown, dragon, heart... it describes the mind trapped between desires, fears, and dreams.",
+          "historytitle": "Historical Origin",
+          "history_message": "The Seven of Hearts has been referred to as the 'choice illusion' and the 'dream' in the medieval tarot deck, which represents how the human mind is released between desire and fear.",
+          "mystic_title": "Spiritual Meaning - Between Reality and Dream",
+          "mystic_message": "Spiritually, this card teaches us to direct the power of imagination, to dream without falling apart from reality, is the purest form of creation.",
+          "cultural_title": "Modern Comment: Careful Choices",
+          "cultural_message": "In today's world, the Seven of Hearts represents excesses of knowledge and distraction, so return to your true desires and listen to the voice that guides your heart.",
+          "lesson": "Imagine it, but make a choice with the light of your heart, because not every cup has the same brightness."
+        },
+        "keywords": {
+          "keywords_title": "Seven of Hearts Keywords",
+          "keywords_message": "The tarot meaning of the seven of hearts, the love of cups, the options, the illusion, the decision-making, the reality.",
+          "positive_title": "Positive Themes",
+          "positive_message": "Creativity, vision, inspiration, potential, spiritual discovery.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Not every shining thing is gold, but intuitively distinguish the truth.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Your dreams are your guide, but listen to your heart if your mind gets misty."
+        },
+        "associations": {
+          "title": "Cosmic Connections of the Seven of Hearts",
+          "astrology": "Fish Burcu (Imagination, Sentiment, Intuition)",
+          "numerology": "7 (Search, Consciousness, Spiritual Depth)",
+          "element": "Water, Imagination, Emotion, Inspiration",
+          "chakra": "Third Eye (Buy Chakra) ▪ Intuition and Sight"
+        },
+        "card_combinations": {
+          "title": "Combinations Step Up With the Seven of Hearts",
+          "combinations": {
+            "0": {
+              "card": "Moon (The Moon)",
+              "meaning": "Illusions and dreams are concentrated; proceed with intuition guidance."
+            },
+            "1": {
+              "card": "Ace of Hearts",
+              "meaning": "Dreams become emotionally concrete, hearts become guides."
+            },
+            "2": {
+              "card": "Eight of Hearts",
+              "meaning": "You give up non-real options and you turn to spiritual truth."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Seven of Hearts Approved",
+          "affirmation_list": {
+            "0": "I see the truth with my intuition, I choose with my heart.",
+            "1": "I guide my dreams with wisdom, and leave illusions behind me.",
+            "2": "My mind is clear, my heart is my guide."
+          }
+        },
+        "cta": {
+          "main": "Clear your dreams, choose the one that will become real!",
+          "micro": "Write down a dream today, then take the first small step to make it come true."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Seven of Hearts represent?",
+            "answer": "The Seven of Hearts represents imagination, illusion, abundance of choice and the challenges of decision-making."
+          },
+          "1": {
+            "question": "What does the reverse seven of hearts mean?",
+            "answer": "Reverse position, clarity, decision-making, and the dissolution of uncertainty, and now you know what your heart wants."
+          },
+          "2": {
+            "question": "In what circumstances is the card strong?",
+            "answer": "Creativity is powerful in vision development, intuitive awareness and decision-making."
+          }
+        },
+        "related_cards": {
+          "0": "the-moon",
+          "1": "eight-of-cups",
+          "2": "ace-of-cups"
+        },
+        "imageUrl": "/cards/rws/VII-Cups.webp"
+      },
+      "eight-of-cups": {
+        "name": "The Eight of Hearts, the Farewells, the Inner Travel and the Conscious Departure",
+        "short_description": "The Eight of Hearts represents giving up emotional ties that no longer serve, taking a new course with internal guidance, and spiritual maturity.",
+        "meanings": {
+          "upright": {
+            "general": "The Eight of Hearts is the time to take the weight off your shoulders and walk knowingly towards a new journey that will bring you up. The trophies behind the figure represent completed emotional cycles and stories that no longer match with you. This card recommends the healing of quitting, leaving with wisdom and trusting the unknown.",
+            "love": "In love, the Eight of Hearts indicates the need to end a phase of a relationship or to separate from a bond that can't move emotionally. This separation is not always 'missing'; it is sometimes a necessary cleansing to reach deeper integrity.",
+            "career": "It's time for conscious separations from careers, projects, environments or roles. Staying in the comfort zone may be stopping you; there's a call to act on a new position, a different path, or a project that fits your passion.",
+            "money": "Financially, the Eight of Hearts demonstrates the need to risk certain short-term sacrifices for unnecessary financial commitments and long-term peace.",
+            "spiritual": "On a spiritual level, this card offers to obey an internal call, to choose a life that serves the higher goals of the soul, to speed up the healing of meditation, dream studies and isolation in nature."
+          },
+          "reversed": {
+            "general": "Inverse position, avoidance, rejection of the past, or rejection of goodbyes, you may not be able to act because of fear or guilt, courage comes from within; it comes from a small, conscious step towards freedom.",
+            "love": "In love, the Reverse Eight represents the prolonged relationship, the desire to reconnect, or the fear of separation, emotional honesty and clear boundaries are needed.",
+            "career": "In a career, it means not giving up on comfort and security, blocking potential, taking realistic steps to break the secure chains.",
+            "money": "Financially, there's a risk of hanging out with old spending habits or continuing harmful investments, rescheduling and failings.",
+            "spiritual": "Spiritually, it means not listening to the inner call or delay spiritual transformation, work with fears and reconnect with small rituals."
+          }
+        },
+        "context": {
+          "mythology": "In mythological narratives, heroes often leave a home, a world, or a love behind, and go into the unknown. The Eight of Hearts is one of those moments of heroism: the trophies are learned lessons; the journey is the invitation of maturity and fate.",
+          "celtic_cross": {
+            "future": "In the future, you may need to end some emotional addiction for the calm and new horizons that await you, which will open new doors in line with your internal guidance.",
+            "hidden_influences": "The unresolved emotional burdens of the past may be affecting your choices, but subconscious nostalgia and hope that it might be better may be holding you back."
+          }
+        },
+        "story": {
+          "title": "The Eight of Hearts (Episode 8) Crossing the Bridge",
+          "description": "A figure walks slowly in the light of eight cups in the middle of the night. The trophies standing behind him are a symbol of past experiences, of completed stories. The figure has a mark of sadness and determination; the only thing it carries is a whisper of hope and inner guide. Far away, it seems that a new valley is not easy, but it is necessary for the soul.",
+          "historytitle": "Historical Origin: Icon of Quittance",
+          "history_message": "The Eight of Hearts represents farewells, voluntary separation, and spiritual pursuit since the classic Rider/Waite images. Traditional interpretations discuss this card as two sides of both sadness and freedom.",
+          "mystic_title": "Spiritual Message - Walk Away With Courage",
+          "mystic_message": "Your soul wants you to be free of burdens that no longer raise you. This is not a abandonment, but a cure. Look in your shadow and thank him. Then move on.",
+          "cultural_title": "Modern Comment: Conscious Departure",
+          "cultural_message": "In modern context, the Eight of Hearts is a call to build emotional minimalism and healthy boundaries, and don't let social media, past circumstances, or relationship patterns hold you.",
+          "lesson": "It takes courage to let go; every conscious separation is the birth of a new layer of the soul; the farewell rites, the writing, or symbolic rituals speed up the healing."
+        },
+        "keywords": {
+          "keywords_title": "Eight of Hearts",
+          "keywords_message": "Eight of hearts means eight of cups, farewells tarot, tarot separation, spiritual journey, conscious separation",
+          "positive_title": "Basic Positive Themes",
+          "positive_message": "Conscious farewells, spiritual growth, inner courage, cleansing, new journeys.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Know the difference between running from opportunities and being afraid, and if the breakup isn't healing, call for backup.",
+          "soul_title": "Spiritual Focus",
+          "soul_message": "Listen to the real call in your heart; sometimes growth is possible with what you leave behind."
+        },
+        "associations": {
+          "title": "Eight of Hearts Cosmic Connections",
+          "astrology": "The effects of fish/Neptune (soul searching, inspiration, goodbyes) (e.g., sometimes the subject of emotional bonding comes to light in Krabs).",
+          "numerology": "8 (Turns, Completion, New Direction)",
+          "element": "Water (Emotions, Transformation, Inner Travel)",
+          "chakra": "Heart and Third Eye."
+        },
+        "card_combinations": {
+          "title": "Combinations Step Up With the Eight of Hearts",
+          "combinations": {
+            "0": {
+              "card": "Nine of Hearts",
+              "meaning": "After goodbyes, the inner satisfaction and the fulfillment of wishes are more peaceful than where you left off."
+            },
+            "1": {
+              "card": "Sword Ten (Ten of Swords)",
+              "meaning": "The end of repeated cycles like nightmares is rebirth after the bottom of pain."
+            },
+            "2": {
+              "card": "Ermiş (The Hermit)",
+              "meaning": "A lonely walk, a deep cleansing and a gain of wisdom with internal guidance."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Eight of Hearts Approved",
+          "affirmation_list": {
+            "0": "I honor the past, and now I choose a new path to my soul.",
+            "1": "Letting go is a healing; each step makes me more real with my essence.",
+            "2": "I trust my internal guidance and step into the unknown."
+          }
+        },
+        "cta": {
+          "main": "Hear the guidance of the healer in you, and let it go gently, and take a new path.",
+          "micro": "Make a farewell ritual today: write the old ones down and leave them safe."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Eight of Hearts represent?",
+            "answer": "It represents conscious departures, spiritual journeys, and estrangement from emotional bonds that no longer serve you, which is a card of maturity and inner courage."
+          },
+          "1": {
+            "question": "What does the Reverse Eight of Hearts mean?",
+            "answer": "The opposite position is the tendency to get stuck in the past, to avoid goodbyes or to postpone change, and you have to take small, decisive steps."
+          },
+          "2": {
+            "question": "In what circumstances is this card powerful?",
+            "answer": "In relationships, conscious dissolutions are strong in career changes, life-changing and spiritual transformation processes."
+          }
+        },
+        "related_cards": {
+          "0": "Seven-of-cups",
+          "1": "Nana-of-cups",
+          "2": "the-hermit"
+        },
+        "imageUrl": "/cards/rws/VIII-Cups.webp"
+      },
+      "nine-of-cups": {
+        "name": "Nine of Hearts (Ninets of Hearts) ▪ The Fulfillment of Wishes and Emotional Satisfaction",
+        "short_description": "The Nine of Hearts represents a time when wishes came true, when the heart was satisfied, and emotional satisfaction reached its peak, a manifestation of inner peace and gratitude.",
+        "meanings": {
+          "upright": {
+            "general": "The Nine of Hearts is often known as 'Wish Card'. It has the potential to do something that you desire. This card represents a time when inner peace, joy, happiness, and success are intertwined. It is time to breathe with pleasure.",
+            "love": "In love, emotional satisfaction, romantic harmony, and mutual happiness are at the forefront, and in current relationships, trust increases, and if you're single, there's a good chance you'll meet someone who will fill your heart.",
+            "career": "It's a time when success, recognition, and self-esteem rise.",
+            "money": "Financial stability and abundance are dominated, as well as emotional satisfaction as financial prosperity.",
+            "spiritual": "In a spiritual sense, this card is a symbol of inner peace and satisfaction, and you feel complete and complete, and the energy of the soul enters the resonance."
+          },
+          "reversed": {
+            "general": "The Reverse Cup Nine can represent a mask of satisfaction, superficial satisfaction, temporary happiness, or satisfaction that hides inner emptiness, a tendency to seek true peace in material or external sources.",
+            "love": "In reverse position in love, it means putting your needs too ahead of you or feeling emotional dissatisfaction, and balance with compassion.",
+            "career": "In your career, even though you've achieved success, you may feel an internal dissatisfaction.",
+            "money": "Even if there's financial abundance, there's a lack of emotional satisfaction, and beyond the money, there's a search for meaning.",
+            "spiritual": "Spiritually, this card is a calling to go beyond superficial satisfaction and seek the true peace of the heart."
+          }
+        },
+        "context": {
+          "mythology": "The Nine of Hearts represents the sacred moment when wishes are accepted in ancient myths, where fertility goddesses smile, and this card represents the balance of both desire and gratitude.",
+          "celtic_cross": {
+            "future": "Soon your wishes will come true, inner peace or emotional satisfaction will find you.",
+            "hidden_influences": "Unknowingly, the limits that you set to yourself may prevent you from fully feeling happiness."
+          }
+        },
+        "story": {
+          "title": "Nine of Hearts (Nine of Hearts) At the Gate of Wish",
+          "description": "A man sits proudly in front of nine trophies lined up behind him, representing success and inner peace, but the expression on his face also reminds us that true satisfaction is not only in winning, but in sharing.",
+          "historytitle": "Historical Origin",
+          "history_message": "In ancient tarot traditions, the Nine of Hearts has been referred to as 'Happy Card' or 'Faith of Wishes'. This card carries the energy of satisfaction followed by effort.",
+          "mystic_title": "Spiritual Meaning - Gratitude and Satisfaction",
+          "mystic_message": "Spiritually, this card invites you to a awareness of gratitude, and as you maintain the awareness of abundance, life offers you more.",
+          "cultural_title": "Modern Comment: Internal Wealth",
+          "cultural_message": "The Nine of Hearts in the modern world is a call to enjoy success and to strengthen self-worth awareness, and sharing happiness with others increases the abundance.",
+          "lesson": "The true wish is hidden in the presence of your heart. Praise, share, simplify, because the essence of satisfaction is in your heart."
+        },
+        "keywords": {
+          "keywords_title": "Nine of Hearts Keywords",
+          "keywords_message": "Nine of hearts meaning tarot, nana of cups, wish card, emotional satisfaction, happiness, abundance, gratitude",
+          "positive_title": "Positive Themes",
+          "positive_message": "Happiness, satisfaction, success, abundance, self-esteem, emotional balance.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Don't look for satisfaction in external sources; feed gratitude and inner peace.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Satisfaction is not out; it's in the quiet center of your heart."
+        },
+        "associations": {
+          "title": "Nine of Hearts Cosmic Connections",
+          "astrology": "Fish Burcu (Sense, plenty, Emotional Satisfaction)",
+          "numerology": "9 (Finishment, Success, Peace)",
+          "element": "Water, feelings, abundance, thanksgiving",
+          "chakra": "Heart & Solar Plexus (Heart and Sun Nerve) ▪ Peace and Self - Value"
+        },
+        "card_combinations": {
+          "title": "Combinations Step Up With the Nine of Hearts",
+          "combinations": {
+            "0": {
+              "card": "Ten of Hearts",
+              "meaning": "Full emotional satisfaction and family happiness come true peace becomes permanent."
+            },
+            "1": {
+              "card": "Sun (The Sun)",
+              "meaning": "In life, joy, success and abundance reach its peak, and your wishes come to light."
+            },
+            "2": {
+              "card": "Eight of Hearts",
+              "meaning": "After a period of farewell, your heart's wish comes true; the reward comes in peace."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Nine of Hearts Approved",
+          "affirmation_list": {
+            "0": "My wishes come true because my heart is full of gratitude.",
+            "1": "I embrace the beauty of life with gratitude.",
+            "2": "Happiness is born in me and multiplying in every breath."
+          }
+        },
+        "cta": {
+          "main": "Be thankful, celebrate, and honor your heart's wish by sharing the energy of wealth.",
+          "micro": "Write down three things you're grateful for today and thank the universe."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Nine of Hearts represent?",
+            "answer": "The Nine of Hearts represents the fulfillment of wishes, inner peace and emotional satisfaction, known as the Wish Card."
+          },
+          "1": {
+            "question": "What does the Reverse Cup Nine mean?",
+            "answer": "The reverse position represents the feeling of superficial happiness or inner emptiness, the call to find true satisfaction in the heart."
+          },
+          "2": {
+            "question": "In what circumstances is the card strong?",
+            "answer": "Success, gratitude, abundance, and emotional satisfaction are powerful in times when wishes are manifest."
+          }
+        },
+        "related_cards": {
+          "0": "eight-of-cups",
+          "1": "ten-of-cups",
+          "2": "the-sun"
+        },
+        "imageUrl": "/cards/rws/IX-Cups.webp"
+      },
+      "ten-of-cups": {
+        "name": "Ten of Hearts ▪ Family, Harmony and Emotional Completion",
+        "short_description": "The Ten of Hearts represents the culmination of emotional integrity, family harmony and spiritual satisfaction, a sacred balance of love and peace spread throughout all areas of life.",
+        "meanings": {
+          "upright": {
+            "general": "The Ten of Hearts is one of Tarot's happiest cards. This card represents peace from the heart, loving bonds and inner integrity. You will reach the height of both emotional and spiritual satisfaction. Balance, peace and harmony prevail in your life. The universe brings you the feeling of completion.",
+            "love": "In love, the Ten of Hearts represents true love, lasting happiness and family ties, your relationship is at a peaceful stage, or it's time to meet the soul mate, love, trust, and the energy to grow together.",
+            "career": "In a career, there's a process in the team that leads to harmony and success, which combines business with personal satisfaction and emotional balance, and you collect the fruits of projects you've been targeting for a long time.",
+            "money": "Financially, the energy of abundance and stability prevails, and with money comes inner peace, but the real gain is spiritual satisfaction.",
+            "spiritual": "On a spiritual level, the Ten of Hearts represents inner peace and the consciousness of universal love, and your heart is in complete harmony with the universe, and love becomes your nature."
+          },
+          "reversed": {
+            "general": "The Inverse Ten of Hearts can show dissonance, incompatibility, inability to meet expectations, or temporary tensions in relationships. The search for external happiness can prevent inner peace. Remember the source of true satisfaction.",
+            "love": "In reverse positions in love indicate misunderstandings or lack of communication within the family, stretching expectations and restoring heart-to-heart communication.",
+            "career": "In the career, despite external success, there may be a lack of inner peace.",
+            "money": "Despite financial abundance, you may feel emotional dissatisfaction, but remember that true wealth comes from love.",
+            "spiritual": "Spiritually, it may need to reconnect with love, and meditation and gratitude will restore inner balance."
+          }
+        },
+        "context": {
+          "mythology": "The Ten of Hearts corresponds to the archetype of the Garden of Heaven in the myths of creation, where love and harmony are joined by the divine balance, which represents the integration of the human soul and unconditional love.",
+          "celtic_cross": {
+            "future": "Soon there will be a time of love in your heart, a time of peace in family, relationships and friendships.",
+            "hidden_influences": "The search for perfection can sometimes cloud happiness, and true peace lies in recognizing the love within the imperfections."
+          }
+        },
+        "story": {
+          "title": "Ten of Hearts (Ten) Full Office of Love",
+          "description": "On the card, a family looks at ten cups, standing under a rainbow in the sky, children dance, parents thank the sky with their arms spread out, this is a symbol of peace, love, and shared happiness, the Ten of Hearts completes the cycle of love: giving, taking, and giving, and thanking together.",
+          "historytitle": "Historical Origin",
+          "history_message": "The Ten of Hearts has been interpreted as the peak of happiness in tarots for centuries, seen as a symbol of family unity and social peace in the Middle Ages.",
+          "mystic_title": "Spiritual Meaning - The Cure of the Union",
+          "mystic_message": "Spiritually, this card shows that the heart chakra has been fully opened and has reached the consciousness of unconditional love, and you are now in harmony with your own and collective love.",
+          "cultural_title": "Modern Comment: A Peaceful Life",
+          "cultural_message": "In the modern world, the Ten of Hearts represents the balance between work, family and spirit, true success is measured by peace of heart, simplify and bond with your loved ones.",
+          "lesson": "Happiness is not a goal, but a share, and peace grows when it pours love freely."
+        },
+        "keywords": {
+          "keywords_title": "Ten of Hearts Keywords",
+          "keywords_message": "Ten of hearts meaning tarot, ten of cups, happiness, family harmony, love, peace, emotional completion",
+          "positive_title": "Positive Themes",
+          "positive_message": "Peace, family ties, love, emotional integrity, balance, satisfaction.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Instead of looking for perfection, appreciate the happiness that exists.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "True heaven lies in a loving heart."
+        },
+        "associations": {
+          "title": "The Ten of Hearts Cosmic Connections",
+          "astrology": "Fish Burcu (Patronity, Unity, Love Consciousness)",
+          "numerology": "10 (Completion, Harmony, End of Cycle)",
+          "element": "Water, Love, Connection, Emotional Wealth",
+          "chakra": "Heart (Heart Chakra) ▪ Unconditional Love"
+        },
+        "card_combinations": {
+          "title": "Combinations Step Up With the Ten of Hearts",
+          "combinations": {
+            "0": {
+              "card": "Sun (The Sun)",
+              "meaning": "Family happiness, abundance, and joy combine, and it's time for a real celebration."
+            },
+            "1": {
+              "card": "Nine of Hearts",
+              "meaning": "Personal happiness becomes community happiness, your dreams come true."
+            },
+            "2": {
+              "card": "Lovers (The Lovers)",
+              "meaning": "Holy unity and spiritual harmony take your relationship to the divine level."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Ten of Hearts Approved",
+          "affirmation_list": {
+            "0": "I'm surrounded by love, my heart is filled with peace.",
+            "1": "My family, my friends and I are in harmony; my life is flowing with blessing.",
+            "2": "I'm grateful for the love the universe has given me."
+          }
+        },
+        "cta": {
+          "main": "Open your heart, share love, and expand the cycle of peace.",
+          "micro": "Send a little thank you or a message of love to your loved ones today."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Ten of Hearts represent?",
+            "answer": "The Ten of Hearts represents emotional completion, family peace, loving ties, and spiritual integrity."
+          },
+          "1": {
+            "question": "What does the Reverse Heart Ten mean?",
+            "answer": "Inverse position means temporary incompatibility, pressure of expectation, or emotional disconnection, and true happiness lies in internal balance."
+          },
+          "2": {
+            "question": "In what circumstances is the card strong?",
+            "answer": "He is strong in family relationships, in marriage, in long-term ties, and in the search for spiritual integrity."
+          }
+        },
+        "related_cards": {
+          "0": "Nana-of-cups",
+          "1": "the-lovers",
+          "2": "the-sun"
+        },
+        "imageUrl": "/cards/rws/X-Cups.webp"
+      },
+      "page-of-cups": {
+        "name": "Prince of Hearts ▪ Intuition, Inspiration and Emotional Exploration",
+        "short_description": "The Prince of Heart is a young messenger with the first whispers of the heart, creative sparks and intuitive messages, representing a pure and gentle energy that dares the discovery of emotions.",
+        "meanings": {
+          "upright": {
+            "general": "The Prince of Hearts points to a new awakening of the inner world, a spark burns through dreams, intuition, or an unexpected message, and the energy that comes with curiosity and clarity supports emotional learning and gentle discovery.",
+            "love": "In love, the Prince of Hearts is a harbinger of first emotional gestures, sincere confessions, or new emotional awareness. If you are single, a kind and sincere offer can come to life if you are in a relationship, emotional communication comes to life.",
+            "career": "In a career, a creative idea may be an inspired project or a supportive message from fellow workers, open to new beginnings; a small idea may grow in time.",
+            "money": "In a financial sense, the Prince of the Cup points to small, intuitive opportunities and creative sources of income, a sudden offer or unexpected generosity.",
+            "spiritual": "On a spiritual level, this card points to dream studies, meditation, and guidance through symbols. Listen to your inner child; play and curiosity nurture spiritual discovery."
+          },
+          "reversed": {
+            "general": "The reverse Prince of the Cup warns of emotional puberty, emotion landings, or disappointments, and note the risk of misinterpreting messages, oversensitivity, or disappointment.",
+            "love": "In reverse position in love, lack of emotional maturity, superficial gestures, or misunderstanding of messages may mean that open communication is important.",
+            "career": "In a career, it's possible for sudden ideas to create unrealistic expectations or to force business relations with emotional responses without consolidating ideas.",
+            "money": "Financially, intuitive trust or emotional spending can lead to mistakes.",
+            "spiritual": "In the spiritual field, it's an insufferable warning of superficial spiritual practices or the pursuit of guidance."
+          }
+        },
+        "context": {
+          "mythology": "In ancient tales, the Prince of Heart echoes with young messengers and dream commentators, like a message from the sea or a secret that whispers in the moonlight; fresh, transformative, and sometimes surprising.",
+          "celtic_cross": {
+            "future": "In the near future, unexpected emotional news, invitation, or creative inspiration may knock on your door.",
+            "hidden_influences": "The hidden effects may include childhood memories, repressed emotions, or symbolic dreams, which form the source of the messages."
+          }
+        },
+        "story": {
+          "title": "Prince of Hearts ▪ The Letter of Dreams",
+          "description": "On a beach, there's a note in a box that waves through the wind. The young figure that opens the note meets a loving invitation. The Prince of Heart is such a figure: a gentle news, an inner call or an unexpected spark of inspiration. It's both fragile and bold; it's an invitation to discover.",
+          "historytitle": "Historical Origin",
+          "history_message": "The Prince of Hearts is the archetype of emotional journalists and young creativity in traditional tarots, and in Renaissance and early tarot comments, messages that bring the prince in point to growth and learning.",
+          "mystic_title": "Spiritual Meaning - The Great Effect of Small News",
+          "mystic_message": "On a spiritual level, the Prince of the Cup teaches that little dream messages, intuitive impulses, and the voice of an inner child can lead to great transformations, and every little inspiration can open a door.",
+          "cultural_title": "Modern Comment: Intuition in the Digital Age",
+          "cultural_message": "Today, the Prince of Cup represents a brief message, an unexpected e-mail, or an invitation in social context that can create a spiritual spark.",
+          "lesson": "Listen to the small news; the whisper of intuition gently changes the way of life."
+        },
+        "keywords": {
+          "keywords_title": "Prince of Hearts",
+          "keywords_message": "Prince of hearts tarot meaning, page of cups, intuition card, emotional news, tarot inspiration, dream messages",
+          "positive_title": "Positive Themes",
+          "positive_message": "Inspiration, intuition, emotional curiosity, creativity, gentle news, connection with the inner child.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Balance between pure emotions and realistic boundaries; do not jump to any inspiration.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Listen to the small voices; the whisper of the heart is a letter that lights your way."
+        },
+        "associations": {
+          "title": "The Prince of Hearts Cosmic Connections",
+          "astrology": "Neptune/Fish effects (dream, intuition, empathy) are strengthened by Mercury pulses.",
+          "numerology": "Page (prens) ▪ 11/2 effects (communication, bridge, two-way learning)",
+          "element": "Water, Intuition, Emotion, Imagination",
+          "chakra": "Heart and Third Eye (Heart and Third Eye)"
+        },
+        "card_combinations": {
+          "title": "Combinations With the Prince of Hearts",
+          "combinations": {
+            "0": {
+              "card": "Queen of Hearts",
+              "meaning": "The prince's emotional message matures and deepens with the Queen's tender guidance."
+            },
+            "1": {
+              "card": "Knight of the Heart",
+              "meaning": "A romantic proposal or a creative project can become an emotional journey; naivety and passion combine."
+            },
+            "2": {
+              "card": "The Moon (Moon)",
+              "meaning": "Dream messages and subconscious symbols come forward; interpret intuition carefully."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "The Prince of Hearts Approved",
+          "affirmation_list": {
+            "0": "I listen to my intuition, accept the kind messages that come through.",
+            "1": "Inspiration changes me in small steps; I move with curiosity.",
+            "2": "I listen to my inner child and trust his guidance."
+          }
+        },
+        "cta": {
+          "main": "Listen to the gentle news that small inspirations are capable of great transformations.",
+          "micro": "Write down a dream or inner whisper that came in today; test a little idea of inspiration."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Prince of Heart represent?",
+            "answer": "The Prince of Hearts represents intuitive messages, new emotional awareness and creative inspiration, reminding that small news can lead to great changes."
+          },
+          "1": {
+            "question": "What does the reverse Prince of the Cup mean?",
+            "answer": "Inverse position, emotional sensitivity, disappointment, or misunderstanding of messages, patience and clarity are needed."
+          },
+          "2": {
+            "question": "In what circumstances is the card strong?",
+            "answer": "New emotional beginnings are strong in dream studies, creative inspiration and openness to gentle news."
+          }
+        },
+        "related_cards": {
+          "0": "page-of-penticles",
+          "1": "queen-of-cups",
+          "2": "knight-of-cups"
+        },
+        "imageUrl": "/cards/rws/Page-Cups.webp"
+      },
+      "knight-of-cups": {
+        "name": "Knight of Hearts ▪ Romance, Inspiration and Emotional Journey",
+        "short_description": "The Knight of Hearts is a hero who is guided by the heart, and the intuition, the emotion, the inspiration, is the representative of emotional discovery and creative steps.",
+        "meanings": {
+          "upright": {
+            "general": "The Knight of Hearts shows that emotions and creativity are actively traveling, it's time to express their feelings, make romantic or artistic attempts, bold steps and sincere intentions.",
+            "love": "In love, romantic proposals are a harbinger of emotional openness and passionate commitment, which may trigger a new relationship or indicate emotional deepening in the current relationship.",
+            "career": "In the career, the empathic approach to creative projects, inspired missions, or coworkers can lead to success, following inspiration can lead to success.",
+            "money": "Financially, intuitive investments and creative income routes come to the agenda, taking risks based on intuition; opportunities can be combined with your emotional intelligence.",
+            "spiritual": "Spiritually, the Knight of the Cup supports emotional and spiritual growth through meditation, ritual or inner journeys, and it's important to trust the guidance of your heart."
+          },
+          "reversed": {
+            "general": "The Reverse Cup Knight warns of emotional indecision, disappointment, or superficial romance, that your emotions may be out of control or over idealized.",
+            "love": "In love, the opposite position, emotional illusions, disappointments, or emotional messages are at risk of misunderstanding.",
+            "career": "In careers, projects with extreme emotional or unrealistic expectations can be a problem, solidify plans and take your time.",
+            "money": "Financially, intuitive trust in intuition or emotional decisions can lead to mistakes.",
+            "spiritual": "In the spiritual field, extreme romanticism or superficial spiritual approaches alert, deepening and balance are important."
+          }
+        },
+        "context": {
+          "mythology": "In ancient myths, the Knight of Heart is linked to the heroic archetype that follows the path of the heart, which begins an emotional journey of discovery and inspiration with the fluid energy of the water element.",
+          "celtic_cross": {
+            "future": "In the near future, an emotional or creative invitation, an offer or inspirational opportunity may arise.",
+            "hidden_influences": "There may be hidden effects, repressed emotions, or intuitive messages, and it's important to recognize the source of your emotions."
+          }
+        },
+        "story": {
+          "title": "Knight of the Heart (The Traveler of the Heart)",
+          "description": "On the edge of a river, a knight moves up his cup, symbolizing the hearts of the cup, the inner inspiration and the emotional message, the journey of the brave and gentle heart, the Knight of the Cup, a guide that moves with emotion and intuitiveness.",
+          "historytitle": "Historical Origin",
+          "history_message": "The Knight of Heart is described as a harbinger of emotional and creative journeys in the traditional tarot, paired with the figures of poets and romantic heroes in medieval cards.",
+          "mystic_title": "Spiritual Meaning: Sentimental Journey",
+          "mystic_message": "Spiritually, this card teaches to follow emotional intelligence, the voice of the heart and inner inspiration, each step is an opportunity for learning and internal growth.",
+          "cultural_title": "Modern Comment: Inspiration and Empathy",
+          "cultural_message": "In modern times, the Knight of the Cup represents emotional communication, creative projects, and kind, sincere behavior, empathy and heart connection are at the forefront.",
+          "lesson": "Act with emotion and inspiredness, and be courageous and kind on the journey."
+        },
+        "keywords": {
+          "keywords_title": "Knight of Hearts (SEO) Keywords",
+          "keywords_message": "Knight of hearts, tarot meaning, night of cups, emotional journey, romance, inspiration card, tarot creativity, intuitive motion.",
+          "positive_title": "Positive Themes",
+          "positive_message": "Romance, inspiration, emotional expression, gentle courage, creative journey, guidance of the heart.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Balance between imagination and reality; review emotional decisions.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Trust in the guidance of your heart; inspiration lights your way in your emotional journey."
+        },
+        "associations": {
+          "title": "Knight of Heart Cosmic Connections",
+          "astrology": "Venus / Fish effect (emotional intelligence, romance, inspiration)",
+          "numerology": "Knight 12/3 (moving, creative flow, step-stepping)",
+          "element": "Water, Intuition, Feelings, Imagination",
+          "chakra": "Heart and Sacral (Heart and Sub-Abdominal) ▪ Emotional balance and creative energy"
+        },
+        "card_combinations": {
+          "title": "Combinations With the Knight of Hearts",
+          "combinations": {
+            "0": {
+              "card": "Prince of Hearts",
+              "meaning": "When the prince's fresh emotional messages are combined with the Knight, they become a romantic or creative journey."
+            },
+            "1": {
+              "card": "Queen of Hearts",
+              "meaning": "Emotional maturity and tender guidance deepen the energy and stability of the Knight."
+            },
+            "2": {
+              "card": "The Lovers.",
+              "meaning": "Romance and emotional decisions become a powerful opportunity for unity or selection by the movement of the Knight."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Knights of Hearts Approved",
+          "affirmation_list": {
+            "0": "I express my feelings with courage and kindness.",
+            "1": "I'm open to creative and emotional journeys under the guidance of my heart.",
+            "2": "I act with inspiration and empathy, every step is an opportunity to learn."
+          }
+        }
+      }
+    }
+  }
+}

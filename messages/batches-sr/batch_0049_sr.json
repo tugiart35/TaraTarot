@@ -1,0 +1,742 @@
+{
+  "blog": {
+    "footer": {
+      "legalPages": {
+        "privacyPolicy": {
+          "sections": {
+            "changes": {
+              "title": "12. Promene",
+              "content": "Ova politika se periodično ažurira u skladu sa regulatornim ili operativnim zahtevima. Najistaknutija verzija će uvek biti objavljena na vvv.tarotnumeroloji.com."
+            },
+            "contact": {
+              "title": "13. Kontakt informacije",
+              "email": {
+                "title": "E-mail",
+                "address": "info@busbuskimki.com"
+              },
+              "address": {
+                "title": "Adresa",
+                "location": "Podgorica, Crna Gora"
+              },
+              "dataController": {
+                "title": "Kontroler podataka",
+                "name": "Busbuskimki konsultantska i digitalna agencija doo",
+                "registration": "Registracija: AZLP"
+              }
+            }
+          }
+        },
+        "termsOfUse": {
+          "title": "Uslovi korišćenja",
+          "subtitle": "Ovi uslovi objašnjavaju pravila koju morate da sledite i vaša prava kada koristite našu platformu.",
+          "lastUpdated": "Poslednje ažuriranje: 8. jula 2025",
+          "montenegroCompliant": "Crna Gora PDPL kompatibilan",
+          "sections": {
+            "general": {
+              "title": "1. Opšte",
+              "content": "Ovi \"Uslovi korišćenja\" (\"uslovi\") regulišu uslove korišćenja svih sadržaja, usluga i aplikacija na vvv.busbuskimki.com (\"sajt\"). Koristeći veb lokaciju smatrate da ste prihvatili ove uslove."
+            },
+            "serviceDescription": {
+              "title": "2 Opis usluge",
+              "content": "Sajt nudi profesionalni sadržaj u oblastima kao što su usluge čitanja Tarot i Numerologije, individualne analize i konsultacije. Sve usluge se sprovode u skladu sa zakonodavstvom i PDPL-om Crne Gore."
+            },
+            "usageConditions": {
+              "title": "3. Uslovi korišćenja i usaglašenosti",
+              "usagePurpose": {
+                "title": "Nameravana upotreba",
+                "content": "Sadržaj sajta može se koristiti samo za lične, nekomercijalne i zakoničke svrhe."
+              },
+              "intellectualProperty": {
+                "title": "Intelektualno vlasništvo",
+                "content": "Sva relevantna prava intelektualne svojine (tekst, slike, grafiku, kod) pripadaju sajtu."
+              },
+              "usageRules": {
+                "title": "Uslovi korišćenja",
+                "content": "Korisnik se slaže da će lokaciju koristiti na građanski, pošteni i zakonit način."
+              }
+            },
+            "registration": {
+              "title": "4. Registracija, sigurnost računa i obrada podataka",
+              "accountSecurity": {
+                "title": "Sigurnost naloga",
+                "content": "Neke usluge mogu da zahtevaju registraciju i kreiranje računa. Informacije o računu moraju se čuvati poverljivi."
+              },
+              "dataProcessing": {
+                "title": "Obrada podataka",
+                "content": "Vaši lični podaci se obrađuju i štite u skladu sa odredbama PDPL-a."
+              }
+            },
+            "disclaimer": {
+              "title": "5. Odricanje od odgovornosti i ograničenja odgovornosti",
+              "content": "Sajt nudi usluge Tarota i Numerologije za zabavne svrhe. Ove usluge nisu zamjena za savet u stvarnom životu i ne pružaju profesionalni medicinski, pravni ili finansijski savet."
+            },
+            "contact": {
+              "title": "6 Komunikacija",
+              "content": "Za vaša pitanja možete nas kontaktirati na info@busbuskimki.com."
+            }
+          }
+        }
+      },
+      "contact": {
+        "title": "Komunikacija",
+        "email": "info@busbuskimki.com",
+        "phone": "+382 (67) 010176",
+        "address": "Podgorica, Crna Gora"
+      },
+      "payment": {
+        "title": "Načini plaćanja",
+        "securePayment": "Sigurna uplata"
+      },
+      "social": {
+        "title": "Društveni mediji"
+      },
+      "copyright": {
+        "text": "Sva prava zadržana.",
+        "disclaimer": "Ova veb lokacija je za potrebe za zabave i nije zamena za stvarne životne savete."
+      }
+    },
+    "common": {
+      "cups": "Šolje",
+      "pentacles": "pentaklovi",
+      "swords": "Mačevi",
+      "wands": "Štapić",
+      "three": "Tri",
+      "four": "Četvoro",
+      "five": "Pet",
+      "seven": "Koji voli",
+      "eight": "osam",
+      "nine": "Baka",
+      "page": "Stranica",
+      "knight": "Vitez",
+      "queen": "kraljica",
+      "king": "Kralj",
+      "kupalar": "trofeji",
+      "tilsimlar": "talismani",
+      "kiliclar": "mačevi",
+      "asalar": "štapić",
+      "kupovi": "Kupovi",
+      "pentakli": "pentacle",
+      "ucretsiz-tarot-okumasi": "Nacrtajte svoje kartice sa besplatnim čitanjem Tarota",
+      "draw-your-own": "Nacrtajte svoje kartice sa besplatnim čitanjem Tarota",
+      "kisilik": "Ličnost",
+      "olgunluk": "Zrelost",
+      "personality": "Ličnost",
+      "maturity": "Zrelost",
+      "compatibility": "Kompatibilnost",
+      "zrelost": "Zrelost",
+      "kompatibilnost": "Kompatibilnost",
+      "busbuskimki": "Busbuskimki",
+      "article": "član",
+      "person": "osoba",
+      "organization": "organizacija",
+      "home": "Dom",
+      "numeroloji": "Numerologija",
+      "numerology": "Numerologija",
+      "numerologija": "numerologija",
+      "thing": "Stvar",
+      "yakinda": "Ubrzo",
+      "secim-yapin": "Dajte svoj izbor",
+      "hizmetlerimiz": "Naše usluge",
+      "ozelliklerimiz": "Naše karakteristike",
+      "istatistiklerimiz": "Naše statistike",
+      "panel": "Panel",
+      "giris": "Ulaz",
+      "email-confirmation-callback": "Poziv za potvrdu e-pošte",
+      "email-confirmation-successful": "Potvrda e-pošte je uspela",
+      "email-confirmation-error": "Greška potvrde putem e-pošte",
+      "email-confirmation-exception": "Izuzetak potvrde e-pošte",
+      "guvenli-giris-yapin": "Prijavite se sigurno ili kreirajte novi nalog",
+      "sifreler-eslesmiyor": "Lozinke se ne podudaraju",
+      "sifre-guncelleme-hatasi": "Greška ažuriranja lozinke",
+      "sifre-sifirlama-hatasi": "Greška resetovanja lozinke",
+      "yeni-sifrenizi-girin": "Unesite svoju novu lozinku",
+      "sifrenizi-tekrar-girin": "Ponovna lozinka",
+      "dashboard": "komandna tabla",
+      "okuma-verisi": "Podaci o čitanju",
+      "kullanici-email-adresi": "Korisnička adresa e-pošte",
+      "email-basariyla-gonderildi": "E-pošta je uspešno poslata",
+      "email-gonderimi-basarisiz": "Slanje e-pošte nije uspelo",
+      "bilinmeyen-hata": "nepoznata greška",
+      "gecerli-bir-email": "Unesite važeću adresu e-pošte",
+      "email-gonderilemedi": "E-pošta nije mogla biti poslata",
+      "rate-limit-exceeded": "Prekoračena granica stopa",
+      "cache": "Keš",
+      "fallback": "pakovanje",
+      "internal-server-error": "Greška interne servera",
+      "doviz-kuru-alinirken": "Došlo je do greške prilikom dobijanja kursa",
+      "para-birimi-donusumunde": "Greška u konverziji valuta",
+      "unknown": "nepoznat",
+      "security-check-failed": "Bezbednosna provera nije uspela",
+      "missing-signature": "Nedostaje potpis",
+      "bilinmiyor": "nepoznat",
+      "payment-failure-notification": "Obaveštenje o zaštiti plaćanja CENTIFIKACIJA CENTIRANjA",
+      "payment-not-successful": "Plaćanje nije uspešno",
+      "payment-already-processed": "Plaćanje je već prerađeno",
+      "package-not-found": "Paket nije pronađen",
+      "user-profile-not": "Korisnički profil nije pronađen",
+      "failed-to-update": "Ažuriranje kreditnog bilansa nije uspelo",
+      "payment-notification-email": "E-pošta obaveštenja o plaćanju uspešno poslata",
+      "payment-processed-successfully": "Plaćanje uspešno obrađeno",
+      "no-meaning": "Bez značenja",
+      "sesli": "glas",
+      "yazili": "Napisano",
+      "basit": "Jednostavan",
+      "strength": "Snaga",
+      "justice": "Pravda",
+      "death": "smrt",
+      "temperance": "Temperatura",
+      "judgement": "presuda",
+      "kariyerimde-degistiremedigim-taraflar": "Delovi moje karijere koje se ne mogu promeniti",
+      "kariyerimde-yardimci-olacak": "Koje će mi promene pomoći u karijeri?",
+      "gecmisimdeki-hangi-engeller": "Koje prepreke u mojoj prošlosti",
+      "sonuc-ne-olacak": "Šta će biti rezultat",
+      "dilek-karti": "karata",
+      "beyaz-atli-prens": "Princ Šarmantan",
+      "cinsel-dileklerin-gerceklesmesi": "Seksualne želje se ostvaruju",
+      "kirli-konusma": "prljav razgovor",
+      "tek-gecelik-iliski": "Stand za jednu noć",
+      "hakkinda-soru-sordugun": "Osoba o kojoj pitate",
+      "fiziksel-ve-cinsel": "Vaša fizička i seksualna veza",
+      "duygusal-ve-ruhsal": "Vaša emocionalna i duhovna veza",
+      "iliskinin-uzun-vadeli": "Dugoročni ishod odnosa",
+      "temel-anlam": "osnovno značenje",
+      "ters-anlam": "obrnuti značenje",
+      "close": "Zatvoriti",
+      "edit": "Urediti",
+      "cancel": "Otkazati",
+      "save": "Sačuvati",
+      "saving": "Snimanje ..."
+    },
+    "legal": {
+      "misyonumuz": "Naša misija",
+      "vizyonumuz": "Naša vizija",
+      "busbuskimki": "Busbuskimki",
+      "uyumluluk-ve-destek": "Kompatibilnost i podrška",
+      "tam-klavye-destegi": "Podrška za punu tastaturu",
+      "iletisim": "Komunikacija",
+      "mesajiniz": "Vaša poruka"
+    },
+    "maintenance": {
+      "su-anki-zaman": "Trenutno vreme",
+      "yenile": "Osvežiti",
+      "sistem-guncellemesi": "Ažuriranje sistema",
+      "performans-iyilestirmesi": "Poboljšanje performansi",
+      "guvenlik-guncellemesi": "Bezbednosno ažuriranje"
+    },
+    "shared": {
+      "dashboard": "komandna tabla",
+      "pakize": "pakirati",
+      "profil": "Profil",
+      "ana-navigasyon-menusu": "Glavni meni za navigaciju",
+      "hakkimizda": "O nama",
+      "yasal": "Pravni",
+      "iletisim": "Komunikacija",
+      "guvenli-odeme": "Sigurna uplata",
+      "turkish": "Turski",
+      "turkce": "Turski",
+      "english": "Engleski",
+      "srpski": "Serpski",
+      "dil-sec": "Izaberite jezik",
+      "kapat": "Zatvoriti",
+      "ters": "Nasuprot",
+      "tum-pozisyonlar-dolu": "Sve pozicije su ispunjene",
+      "karistir": "mešati",
+      "kaydirarak-tum-kartlari": "Pogledajte sve kartice prelivavanjem",
+      "kart-destesi-bos": "Kartica je prazna",
+      "kart": "Karta",
+      "guvenli-olmayan-resim": "nesigurna slika",
+      "basit-okuma-secildi": "Jednostavno izabrano čitanje",
+      "giris-yapin": "Prijaviti se",
+      "loading": "Utovarivanje",
+      "inter": "Među",
+      "sesli": "glas",
+      "audio": "Audio",
+      "yazili": "Napisano",
+      "written": "Napisano",
+      "kartlarin-rehberligi": "Uputstvo za kartice",
+      "uyari-mesajini-kapat": "Zatvori poruku upozorenja"
+    }
+  },
+  "new-lover": {
+    "meanings": {
+      "thefool": {
+        "position1": {
+          "upright": "Ludo ti šapuće da ste na ivici novog početka. Svježa energija i sastanka iznenađenja može uskoro doći u vaš život.",
+          "reversed": "Ludi preokrenuti ukazuje da nepažljivi koraci mogu dovesti do kratkoročne veze. Morate biti strpljivi prilikom otvaranja novog.",
+          "keywords": [
+            "početak",
+            "iznenađenje",
+            "sloboda",
+            "iskustvo"
+          ],
+          "context": "Mogućnost nove veze je veoma visoka, ali su potrebni oprez i ravnoteža."
+        },
+        "position2": {
+          "upright": "Ludo pokazuje da je horoskopski znak ove osobe nije fiksno, već može da nosi promenljive energije. Blizanci mogu biti jedan od slobodnih horoskopskih znakova na otvorenom poput Strelca ili Vodolije.",
+          "reversed": "Invertirani lud nam govori da ta osoba može imati neuravnotežen nastup zbog njegove potrage za slobodom. Vodolija ili Blizanci mogu imati poteškoće u povezivanju u senci.",
+          "keywords": [
+            "sloboda",
+            "promenljiv",
+            "inovativnost",
+            "nezavisnost"
+          ],
+          "context": "Znak može imati promašene elemente. Slanja se sa svojim slobodnim duhom."
+        },
+        "position3": {
+          "upright": "Luda ukazuje da se u vašoj vezi može pojaviti sveža harmonija. Kada se možete pustiti jedni drugima lagano, spontano i besplatno, harmonija se lako uspostavlja u prirodnom toku.",
+          "reversed": "Okolišteni lud ukazuje da će ishodno uskladiti užurbane odluke i koraci osipa. Neizvesnost očekivanja može stvoriti neravnotežu.",
+          "keywords": [
+            "sloboda",
+            "početak",
+            "raport",
+            "lakoća",
+            "ravnoteža"
+          ],
+          "context": "Za harmoniju je potrebno podeliti slobodu. Previše je žurba može da uznemiri ravnotežu."
+        },
+        "position4": {
+          "upright": "Luda ukazuje da će odnos početi slobodom i svežini. Da bi se to dugo trajalo, mora se dodati svest o odgovornosti.",
+          "reversed": "OGRANIČENO LjUDI, nedostatak planiranja i ozbiljnosti dugoročno otežavaju. Važno je pronaći ravnotežu.",
+          "keywords": [
+            "sloboda",
+            "početak",
+            "odgovornost",
+            "ravnoteža",
+            "dugoročan"
+          ],
+          "context": "Svežina neguje dugoročno, neodgovornost čini obveznicama."
+        },
+        "position5": {
+          "upright": "Luda, u vašoj vezi sa ovom osobom postoji nevinost i nova početna energija. Mogućnost srodne duše ojačana je vašom otvorenom da zajedno podebljam istraživanje.",
+          "reversed": "Osvetljen ludom, veza koja se smanjuje u površnost može oslabiti potencijal srodne duše. Bekstvo iz dubine može se pretvoriti u kratkotrajno avanturu umesto matesa sa dušema.",
+          "keywords": [
+            "početak",
+            "nevinost",
+            "otkriće",
+            "hrabrost",
+            "srodna duša"
+          ],
+          "context": "Novi početak neguje mogućnost srodne duše, površnost testira obveznice."
+        },
+        "position6": {
+          "upright": "Ludo pokazuje da vam obećava novog početka i hrabre korake ka ostvarivanju želje. Vrata vaših snova mogu se otvoriti sa neočekivanom prilikom.",
+          "reversed": "Okolišteni lud vam govori da isprekidani radnje mogu teško da otežavaju vašu želju. Nesporni koraci se mogu pretvoriti u razočaranje.",
+          "keywords": [
+            "početak",
+            "hrabrost",
+            "prilika",
+            "rizikovati",
+            "nov način"
+          ],
+          "context": "Odvažni i svesni koraci mogu da se ostvare vaša želja."
+        }
+      },
+      "themagician": {
+        "position1": {
+          "upright": "Mađioničar pokazuje da možete da pozovete novu vezu sa svojom harizmom i namerom. Uskoro će privući pažnju i postojaće šansa da formira snažnu vezu.",
+          "reversed": "Reversed Magician kaže da će vaše oči ostati otvorene da bi se izbeglo razočaranje. Ne bi trebalo da se uhvate u iluzijama.",
+          "keywords": [
+            "povući",
+            "početak",
+            "volja",
+            "priključak"
+          ],
+          "context": "Mogućnost veze je jaka, vaše namere moraju biti jasne."
+        },
+        "position2": {
+          "upright": "Mađioničar kaže da ova osoba može pripadati znak koji je vladao žive. Blizanci ili energija Djevica je dominantna, komunikacija je snažna.",
+          "reversed": "Manipulativni ili preterano izračunati stavovi mogu se pojaviti u obrnutom mađioničaku, Blizanci-Djevica senka. Možda je obiban u rečima, ali slabi u supstanci.",
+          "keywords": [
+            "komunikacija",
+            "obaveštajna služba",
+            "stvaranje",
+            "izraz"
+          ],
+          "context": "Merkur je uticajan znak: njen naglasak na Blizancima ili Djevicu je jak."
+        },
+        "position3": {
+          "upright": "Čarobnjak kaže da će vaša moć komunikacije i međusobni izraz podržati Harmoniju. Vaše reči postaju magija da biste otključali potencijal jedni drugima.",
+          "reversed": "Preokrećeni mađioničar, nesporazumi ili manipulativni stavovi mogu otežati harmoniju. Poverenje za razbijanje slabi most komunikacije.",
+          "keywords": [
+            "izraz",
+            "komunikacija",
+            "potencijal",
+            "raport",
+            "poverenje"
+          ],
+          "context": "Ključ harmonije je otvorena komunikacija. ILLUSIJE Uništite most."
+        },
+        "position4": {
+          "upright": "Mađitelj ukazuje na snažno potencijalno kreiranje za dugoročnu vezu. Komunikacijske veštine osiguravaju kontinuitet.",
+          "reversed": "VELIKO MAGIČNICI, manipulacija ili nepošteno ponašanje će se dugoročno naštetiti.",
+          "keywords": [
+            "stvaranje",
+            "potencijal",
+            "komunikacija",
+            "iskrenost",
+            "dugoročan"
+          ],
+          "context": "Jasna namera neguje dugoročno, igre iskaču vezu."
+        },
+        "position5": {
+          "upright": "Spellcaster pokazuje da srodne duše energije dolazi sa snažnim usklađivanjem atrakcije i namere. Komunikacija i međusobne namere neguju duhovnu dubinu ove veze.",
+          "reversed": "Ograničeni mađioničar, pogrešno komuniciranje ili manipulativne tendencije mogu oštetiti vezu srodne duše. Neravnoteža reči i namera može učiniti obveznica površnim.",
+          "keywords": [
+            "namera",
+            "povući",
+            "izraz",
+            "obveznica",
+            "srodna duša"
+          ],
+          "context": "Poravnanje namere povećava potencijal srodne duše, manipulacija stvara senke."
+        },
+        "position6": {
+          "upright": "Mađioničar pokazuje da imate sve alate da se vaša želja ostvari. Ako ste jasno postavili nameru i preduzmite mere, vaši snovi će se ostvariti.",
+          "reversed": "Prekoračeni mađioničar pokazuje da možete zloupotrebiti svoju želju za ispunjenje želja ili propustite prilike zbog raštrkanog fokusa.",
+          "keywords": [
+            "namera",
+            "stvaranje",
+            "fokus",
+            "snaga",
+            "uspeh"
+          ],
+          "context": "Jasna namera i utvrđena radnja donose svoju želju stvarnosti."
+        }
+      },
+      "thehighpriestess": {
+        "position1": {
+          "upright": "Visoka sveštenica upozorava da je nevidljivi odnos na vratima. Sastanak koji se javlja u tišini može vas iznenaditi.",
+          "reversed": "Prekoračili visoko sveštenici, ako suzbijate svoju intuiciju, možda nećete prepoznati priliku. Morate da otvorite svoje srce.",
+          "keywords": [
+            "intuicija",
+            "tajna",
+            "prilika",
+            "čekanje"
+          ],
+          "context": "Odnos je neposredan, ali strpljenje i intuicija su obaveza."
+        },
+        "position2": {
+          "upright": "Visoki sveštenik ukazuje da ta osoba može biti iz vodenog znaka. Rak, Škorpion ili Ribe imaju visoku intuiciju.",
+          "reversed": "Preokrećena visoka sveštenica opisuje stranu sjene vodenih znakova: oni mogu biti previše misteriozni, povučeni ili u emocionalnom previrućima.",
+          "keywords": [
+            "intuicija",
+            "vodni znak",
+            "dubina",
+            "misterija"
+          ],
+          "context": "Energija vodene grupe: Rak, Škorpija, Ribe."
+        },
+        "position3": {
+          "upright": "Visoka sveštenica kaže da se harmonija tiho može da se tiho uspostavi kroz intuitivna veza i duboko razumevanje. Nema potrebe da se mnogo razgovarate da biste se razumeli.",
+          "reversed": "Obrnuti visoki sveštenici, preterana tajnost ili introverzija zasjenjene harmonijom. Nepotrebljene tajne mogu stvoriti udaljenost.",
+          "keywords": [
+            "intuicija",
+            "obveznica",
+            "razumevanje",
+            "tišina",
+            "raport"
+          ],
+          "context": "Tiha veza jača harmoniju. Secreci stvara distancu."
+        },
+        "position4": {
+          "upright": "Visoka sveštenica, odnos može da nastavi sa dubokim uvidom i razumevanjem. Ovo je snažna osnova za dugotrajno lepljenje.",
+          "reversed": "Ograničena visoka sveštenica, prekomerna tajnost ili introverzija stvara probleme dugoročno.",
+          "keywords": [
+            "intuicija",
+            "razumevanje",
+            "tajna",
+            "dubina",
+            "dugoročan"
+          ],
+          "context": "Duboka intuicija jača dugoročno, prekomerna tajnost slabila je vezu."
+        },
+        "position5": {
+          "upright": "Visoka sveštenica pokazuje da je povezanost srodne duše utkane sa dubokim intuicijom i nevidljivim vezama. U ovoj osobi može biti snažan unutrašnji osećaj priznanja.",
+          "reversed": "Ograničena visoka svećenica, tajne i prekomerna tajnost mogu ometati srodnu vezu. To stvara udaljenost umesto duhovne blizine.",
+          "keywords": [
+            "intuicija",
+            "misterija",
+            "duhovna veza",
+            "unutrašnje priznanje",
+            "srodna duša"
+          ],
+          "context": "Intuitivna veza ukazuje na matesni brod, tajnost stvara distancu."
+        },
+        "position6": {
+          "upright": "Visoka sveštenica vam govori da ostvarivanje vaše želje koja se ostvari zavisi od poverenja u vašu unutrašnju intuiciju. Možete pronaći pravo vreme i put slušajući svoj unutrašnji svet.",
+          "reversed": "Preokrećena visoka sveštenica ukazuje da ignoriše vašu intuiciju koja sprečava vašu želju da se ostvari. Suzbijanje vašeg unutrašnjeg glasa otežava da krene napred.",
+          "keywords": [
+            "intuicija",
+            "strpljenje",
+            "mudrost",
+            "vremenski vreme",
+            "unutrašnja snaga"
+          ],
+          "context": "Intuicija i strpljenje će otvoriti put prema vašoj želji."
+        }
+      },
+      "theempress": {
+        "position1": {
+          "upright": "Carica ukazuje na vezu koja će vas uskoro hraniti i odgajati vas ljubavlju. Emotivna i fizička harmonija učiniće vas srećnim.",
+          "reversed": "Reversed carica upozorava na pad u preveliku zavisnost. Čak i ako dođe odnos, morate da održavate ravnotežu.",
+          "keywords": [
+            "lov",
+            "snabdevanje",
+            "raport",
+            "dosta"
+          ],
+          "context": "Novi odnos može doći na topli i plodan način."
+        },
+        "position2": {
+          "upright": "CEMPRES označava Bik ili Vaga, koju vlada Venera. Ova osoba je elegantna, skladna i voli estetiku.",
+          "reversed": "Invertirana carica može pokazati preterano posesivno ili površno ponašanje u senci Biće-Vaga.",
+          "keywords": [
+            "Venes",
+            "lepota",
+            "raport",
+            "ženska energija"
+          ],
+          "context": "Energija Bika ili biblioteka je dominantna."
+        },
+        "position3": {
+          "upright": "Carica pokazuje da će saosećanje i deljenje podsticati harmoniju. Bond koja neguje i raste jedni druge je prirodno harmonična.",
+          "reversed": "Invertirana carica, prevelika zavisnost ili sebičnost mogu poremetiti harmoniju. Budući da je previše apsorbovan u svojim potrebama podrivaju ravnotežu.",
+          "keywords": [
+            "saosećanje",
+            "deljenje",
+            "rast",
+            "raport",
+            "snabdevanje"
+          ],
+          "context": "Deljenje raste skladno. Sebičnost sužava mostove."
+        },
+        "position4": {
+          "upright": "Carica, plodna i hranjiva vinograda podržava dugoročno. Ljubavna nega osigurava kontinuitet odnosa.",
+          "reversed": "Okolištena carica, preterano posesivnost ili izgaranje dugoročno otežava.",
+          "keywords": [
+            "obilje",
+            "ishrana",
+            "lov",
+            "kontinuitet",
+            "ravnoteža"
+          ],
+          "context": "Negujući ljubav jača dugoročno, iscrpljenost je sojena obveznica."
+        },
+        "position5": {
+          "upright": "Carica, obilje, saosećanje i negu od srca formiraju osnovu srodne veze. Susret sa ovom osobom može donijeti unutrašnji mir i toplinu.",
+          "reversed": "Invertirana carica, preterana zavisnost ili nedostatak samo-nege mogu ometati zdrav razvoj srodne duše.",
+          "keywords": [
+            "saosećanje",
+            "obilje",
+            "snabdevanje",
+            "raport",
+            "srodna duša"
+          ],
+          "context": "Negujući energiju podržava matesništvo duše, testiranje veze zavisnosti."
+        },
+        "position6": {
+          "upright": "Carica pokazuje da vaša želja ima potencijal da se ostvari sa obiljem, obiljem i prirodnom tokom. Vaša želja može doći do pretresa.",
+          "reversed": "Reversirana carica ukazuje da prekomerna očekivanja ili nedostatak samo-nege mogu otežati da se vaša želja ostvari.",
+          "keywords": [
+            "dosta",
+            "obilje",
+            "kreativnost",
+            "priroda",
+            "protok"
+          ],
+          "context": "Neguje vašu želju za prirodnom protokom i samo-negom."
+        }
+      },
+      "theemperor": {
+        "position1": {
+          "upright": "Car kaže da će jaka, pouzdana osoba ući u njegov život. Ozbiljni odnos može uskoro početi.",
+          "reversed": "Reversirani car vam savetuje da budete oprezni u mogućnosti kontrolnog partnera. Čak i ako dođe veza, morate zaštititi svoju slobodu.",
+          "keywords": [
+            "snaga",
+            "stabilnost",
+            "vlast",
+            "zaštita"
+          ],
+          "context": "Postoji šansa za ozbiljan i utemeljeni odnos."
+        },
+        "position2": {
+          "upright": "Car nosi energiju ojaka. Ova osoba je preduzetni, vođa i jak lik.",
+          "reversed": "U senci Ovna, obrnuti car može da otkrije tvrdoglav, kontroliran i oštar stav.",
+          "keywords": [
+            "Ram",
+            "rukovodstvo",
+            "snaga",
+            "disciplina"
+          ],
+          "context": "Energija Aries je dominantan znak."
+        },
+        "position3": {
+          "upright": "Car kaže da će se harmonija ojačati sa redom i jasnim granicama. Međusobna deljenja odgovornosti stvara čvrste temelje.",
+          "reversed": "Prekoračeni car, prekomerna autoritet ili kruta pravila sprovode usaglašenost. Nedostatak fleksibilnosti može udariti dah od veze.",
+          "keywords": [
+            "narediti",
+            "odgovornost",
+            "granica",
+            "snaga",
+            "ravnoteža"
+          ],
+          "context": "Jasne granice stvaraju harmoniju. Krutost sužava vezu."
+        },
+        "position4": {
+          "upright": "Car, čvrsta struktura i stabilnost podržavaju dugoročno. Pouzdanost postaje temelj obveznice.",
+          "reversed": "Reversirani car, prevelika kontrola ili kruta pravila otežavaju dugoročno.",
+          "keywords": [
+            "stabilnost",
+            "poverenje",
+            "vlast",
+            "struktura",
+            "dugoročan"
+          ],
+          "context": "Stabilnost neguje dugoročno, krutost testira vezu."
+        },
+        "position5": {
+          "upright": "Car, čvrsti temelji i pouzdanost pružaju snažnu osnovu za vezu s duhovima. Stalni red može ukazivati na matesništvo duše.",
+          "reversed": "Reversirani car, kruta kontrola i nedostatak fleksibilnosti mogu da ograničavaju vezu s duhovima.",
+          "keywords": [
+            "poverenje",
+            "osnova",
+            "stabilnost",
+            "zaštita",
+            "srodna duša"
+          ],
+          "context": "Slaiditi podržava matesništvo duše, čvrstine testira Bond."
+        },
+        "position6": {
+          "upright": "Car pokazuje da su potrebne discipline i čvrsto planiranje da se vaša želja ostvari. Jednom kada uspostavite nalog, vaša želja postaje trajna.",
+          "reversed": "Reversirani car vam govori da je možda teško da se vaša želja ostvari zbog prekomerne kontrole ili krutosti.",
+          "keywords": [
+            "narediti",
+            "disciplina",
+            "stabilnost",
+            "plan",
+            "vlast"
+          ],
+          "context": "Čvrsta struktura će biti osnova vaše želje."
+        }
+      },
+      "thehierophant": {
+        "position1": {
+          "upright": "Saint ukazuje na mogućnost socijalno odobrene, ozbiljne i tradicionalne veze. Možda će neko uskoro doći sa ozbiljnim namerama.",
+          "reversed": "Ograničeno svetlo pokazuje da mogu postojati prepreke zbog straha od posvećenosti ili različitih vrednosti.",
+          "keywords": [
+            "tradicija",
+            "ozbiljnost",
+            "koji se povezuje",
+            "vrednosti"
+          ],
+          "context": "Ozbiljan i siguran odnos može uskoro početi."
+        },
+        "position2": {
+          "upright": "Saint predstavlja Bik. Ova osoba je neko ko traži poverenje je odano i posvećeno njegovim vrednostima.",
+          "reversed": "U senci Bika, obrnuti svetac se može držati strogo pravila ili je previše tvrdoglav.",
+          "keywords": [
+            "Bik",
+            "vrednost",
+            "tradicija",
+            "stabilnost"
+          ],
+          "context": "Taurus Accent je jak."
+        },
+        "position3": {
+          "upright": "Aziz kaže da će slične vrednosti i uobičajena uverenja promovisati harmoniju. Tradicije ili rituali grade zajedničke mostove.",
+          "reversed": "Ograničena sveca, sukobi vrednosti ili tvrdoglavost mogu poremetiti harmoniju. Fleksibilnost je potrebna, a ne slepa lojalnost.",
+          "keywords": [
+            "vrednosti",
+            "verovanje",
+            "ritual",
+            "raport",
+            "tradicija"
+          ],
+          "context": "Uobičajene vrednosti podstiču harmoniju. Razlike zahtevaju mostove."
+        },
+        "position4": {
+          "upright": "Sveti, tradicionalne vrednosti i posvećenost podržavaju dugoročni odnos. Zajednička uverenja ojačavaju obveznice.",
+          "reversed": "Okolišteni Sveti, slep tradicionalizam ili pobuna dugoročno otežava.",
+          "keywords": [
+            "tradicija",
+            "lojalnost",
+            "verovanje",
+            "raport",
+            "dugoročan"
+          ],
+          "context": "Zajedničke vrednosti podržavaju dugoročno, slepo pravila nose vezu."
+        },
+        "position5": {
+          "upright": "Svetac kaže da se matesi u dušu mogu ojačati zajedničkim vrednostima, tradicijama ili uverenjima. Duhovna veza ukazuje na društvo duše.",
+          "reversed": "Ograničeno sveti, različiti sistemi vrednosti ili slepa pobuna mogu stvoriti poteškoće u vezi sa dušem.",
+          "keywords": [
+            "vrednost",
+            "verovanje",
+            "duh",
+            "raport",
+            "srodna duša"
+          ],
+          "context": "Kongružena vrednost promoviše materije sa dušema, disonanca stvara senke."
+        },
+        "position6": {
+          "upright": "Saint ukazuje na važnost smernica, vrednosti i podržavajućih obveznica da se vaša želja ostvari. Tradicionalni načini mogu dovesti do uspeha.",
+          "reversed": "Ograničeno Saint kaže da slepo se pridržava tradicija može blokirati vaše želje. Morate otkriti svoj jedinstveni put.",
+          "keywords": [
+            "vrednosti",
+            "uputstvo",
+            "tradicija",
+            "raport",
+            "podrška"
+          ],
+          "context": "Pravilno uputstvo olakšava vašu želju."
+        }
+      },
+      "thelovers": {
+        "position1": {
+          "upright": "Ljubitelji kažu da će se pojaviti snažna romantična veza. Veoma je moguće upoznati nekoga ko je uskoro kompatibilan sa srcem.",
+          "reversed": "Ljubitelji preokrenuti ukazuju na neodlučnost ili rizik od pogrešnog izbora. Fokusirajte se na odabir prave osobe.",
+          "keywords": [
+            "lova",
+            "raport",
+            "priključak",
+            "odluka"
+          ],
+          "context": "Mogućnost nove veze je veoma visoka."
+        },
+        "position2": {
+          "upright": "Ljubitelji predstavljaju znak zodijaka Blizanci. Ova osoba je prilagodljiva, radoznala i snažna u komunikaciji.",
+          "reversed": "Invertirani ljubitelji mogu biti neodlučni, nedosledni i neorganizovani prema GEMINI SANOV.",
+          "keywords": [
+            "Blizanci",
+            "raport",
+            "komunikacija",
+            "glasati"
+          ],
+          "context": "Gemini energija je dominantna."
+        },
+        "position3": {
+          "upright": "Ljubitelji pokazuju da će prirodna atrakcija i izbor između vas donijeti harmoniju. Kada kažete \"da\" zajedno, srca tuku u istom ritmu.",
+          "reversed": "Invertirani ljubitelji, neodlučnost ili ambivalentnost slabe harmoniju. Nejasni izbori poremetite ravnotežu obveznice.",
+          "keywords": [
+            "lov",
+            "povući",
+            "glasati",
+            "raport",
+            "jedinstvo"
+          ],
+          "context": "Sa izborom dolazi harmonija. U skladu sa senkama u senci."
+        },
+        "position4": {
+          "upright": "Ljubitelji, snažni izbor i kompatibilnost podržavaju dugoročnu uniju. Jasnoća srca osigurava kontinuitet.",
+          "reversed": "Invertirani ljubavnici, neodlučnost ili nespojivost dugoročno otežavaju.",
+          "keywords": [
+            "raport",
+            "glasati",
+            "lova",
+            "posvećenost"
+          ]
+        }
+      }
+    }
+  }
+}

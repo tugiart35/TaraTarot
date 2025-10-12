@@ -1,0 +1,792 @@
+{
+  "new-lover": {
+    "meanings": {
+      "pageofswords": {
+        "position3": {
+          "keywords": {
+            "0": "curiosity",
+            "1": "communication",
+            "2": "compatibility",
+            "3": "learning",
+            "4": "Truth"
+          },
+          "context": "Open knowledge nourishes harmony, and error consumes bonds."
+        },
+        "position4": {
+          "upright": "The Prince of Sword, curiosity and honest communication keep the long-term bond alive.",
+          "reversed": "Reverse Sword Prince, gossip or superficiality weakens the long-term bond.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "communication",
+            "2": "Honesty",
+            "3": "learning",
+            "4": "long term"
+          },
+          "context": "Honest communication feeds the long term, testing the bond of superficiality."
+        },
+        "position5": {
+          "upright": "The Prince of the Sword, his curiosity and desire to learn, may help you to recognize the bond of a soul mate.",
+          "reversed": "The Reverse Sword Prince, gossip or false knowledge, can cloud the bond of a soul mate.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "learning",
+            "2": "communication",
+            "3": "real",
+            "4": "soul mate"
+          },
+          "context": "Curiosity strengthens the bond, false knowledge casts a shadow."
+        },
+        "position6": {
+          "upright": "The prince shows that your wish will be granted through research and observation.",
+          "reversed": "Reverse prince, gossip or hasty judgment can make your wish difficult.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "observation",
+            "2": "learning",
+            "3": "Truth",
+            "4": "communication"
+          },
+          "context": "Research can guide your wish."
+        }
+      },
+      "knightofswords": {
+        "position1": {
+          "upright": "The Knight of the Sword tells of fast-growing messages and a clear approach, and soon a decisive step can start a new relationship faster than expected.",
+          "reversed": "The Reverse Sword Knight says that quick and harsh style can burn bridges.",
+          "keywords": {
+            "0": "speed",
+            "1": "determination",
+            "2": "Message",
+            "3": "style"
+          },
+          "context": "Speed is useful, but it requires a gentle tone, so the beginning becomes stronger."
+        },
+        "position2": {
+          "upright": "The Knight of the Sword describes the fast, decisive and sharp side of Aquarius, a brave and direct one.",
+          "reversed": "The Reverse Sword Knight may be impatient or impatient in the shadow of the Bucket.",
+          "keywords": {
+            "0": "Bucket",
+            "1": "Courage",
+            "2": "speed",
+            "3": "sharpness"
+          },
+          "context": "Bucket energy is dominant."
+        },
+        "position3": {
+          "upright": "The Knight of the Sword shows that fast communication and clear behavior can support harmony, and focus on the target creates momentum in the bond.",
+          "reversed": "Reverse-Sword Knight, rash words can break harmony, and without thinking about it, it breaks the bonds.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "compatibility",
+            "3": "clarity",
+            "4": "determination"
+          },
+          "context": "Clearness brings harmony, rashness pushes the bond."
+        },
+        "position4": {
+          "upright": "Knight of the Sword, quick movement and clarity add momentum in the long run, decisive posture supports continuity.",
+          "reversed": "The Reverse-Sword Knight makes it difficult for a long time to act rashly and sternly.",
+          "keywords": {
+            "0": "speed",
+            "1": "determination",
+            "2": "clarity",
+            "3": "strategy",
+            "4": "long term"
+          },
+          "context": "Determination supports the long term, and haste tests the bond."
+        },
+        "position5": {
+          "upright": "Knight of the Sword, a brave communication can trigger a bond of soul mates.",
+          "reversed": "Reverse Sword Knight, rash behavior can force the bond of a soul mate.",
+          "keywords": {
+            "0": "Courage",
+            "1": "communication",
+            "2": "speed",
+            "3": "Honesty",
+            "4": "soul mate"
+          },
+          "context": "Courage opens up your soul mate, and quickly casts a shadow."
+        },
+        "position6": {
+          "upright": "The knight may need a swift and courageous step to make your wish come true, calling for determination to move forward.",
+          "reversed": "Reverse knight, rashness can put your wish at risk, patience and strategy are important.",
+          "keywords": {
+            "0": "Courage",
+            "1": "speed",
+            "2": "decision",
+            "3": "step",
+            "4": "strategy"
+          },
+          "context": "Quick decision makes your wish possible."
+        }
+      },
+      "queenofswords": {
+        "position1": {
+          "upright": "The Queen of the Sword points to a relationship with clear boundaries and mature communication, and honesty and selectiveness will soon attract the right one.",
+          "reversed": "The Reverse Sword Queen warns that extreme critical tone can reduce the temperature, and compassionate clarity makes the relationship possible.",
+          "keywords": {
+            "0": "clarity",
+            "1": "limit",
+            "2": "maturity",
+            "3": "communication"
+          },
+          "context": "Nice and clear communication calls for the right match."
+        },
+        "position2": {
+          "upright": "The Queen of the Sword points to the Libra, a fair, clear and reasonable man.",
+          "reversed": "The Reverse Sword Queen may be overly critical or distant in her Libra shadow.",
+          "keywords": {
+            "0": "Libra",
+            "1": "justice",
+            "2": "logic",
+            "3": "balance"
+          },
+          "context": "The energy of the Libra comes forward."
+        },
+        "position3": {
+          "upright": "The Queen of the Sword demonstrates that logic and objectiveness will strengthen harmony, and open boundaries bring clarity to the bond.",
+          "reversed": "Reverse Sword Queen, extreme criticism or coldness weakens harmony.",
+          "keywords": {
+            "0": "logic",
+            "1": "clarity",
+            "2": "compatibility",
+            "3": "borders",
+            "4": "Objectivity"
+          },
+          "context": "Objectivity nourishes harmony, coldness wears off the bonds."
+        },
+        "position4": {
+          "upright": "The Queen of the Sword, objectiveness and justice provide balance in the long-term bond, and clarity fosters continuity.",
+          "reversed": "Reverse Sword Queen, extreme criticism can thin out the long-term bond.",
+          "keywords": {
+            "0": "justice",
+            "1": "clarity",
+            "2": "Objectivity",
+            "3": "balance",
+            "4": "long term"
+          },
+          "context": "Objectivity strengthens the long term, and criticism tests the bond."
+        },
+        "position5": {
+          "upright": "The Queen of the Sword shows that the soul mate bond can be established with clarity and honesty, and the balance of intuition and logic is important.",
+          "reversed": "Reverse Sword Queen, extreme criticism can force the bond of a soul mate.",
+          "keywords": {
+            "0": "Honesty",
+            "1": "clarity",
+            "2": "intuition",
+            "3": "logic",
+            "4": "soul mate"
+          },
+          "context": "Netness strengthens the spirit's association, and criticism tests the bond."
+        },
+        "position6": {
+          "upright": "The Queen makes it possible for your wish to come true with clarity, justice, and boundaries.",
+          "reversed": "Reverse queen, extreme criticism or harshness may interfere with your wish, opening up a tender tongue.",
+          "keywords": {
+            "0": "clarity",
+            "1": "justice",
+            "2": "limit",
+            "3": "Truth",
+            "4": "mind"
+          },
+          "context": "To be fair and clear strengthens your wish."
+        }
+      },
+      "kingofswords": {
+        "position1": {
+          "upright": "The King of the Sword shows a serious beginning with principles and strategic clarity, a relationship that may soon be nourished by thoughtful harmony.",
+          "reversed": "The Reverse Sword King points to the risk of harsh judgment and distance, and when it's balanced by empathy, the chance of a new relationship becomes stronger.",
+          "keywords": {
+            "0": "principle",
+            "1": "strategy",
+            "2": "clarity",
+            "3": "empathy"
+          },
+          "context": "A good start is possible when mental heart balance is established."
+        },
+        "position2": {
+          "upright": "The Sword King shows the wisdom and strategic side of Aquarius, a man who acts on his principles.",
+          "reversed": "The Reverse Sword King may act solid, cold, or dogmatic in the shadow of the Bucket.",
+          "keywords": {
+            "0": "Bucket",
+            "1": "wisdom",
+            "2": "strategy",
+            "3": "authority"
+          },
+          "context": "The Aquarius effect is dominant."
+        },
+        "position3": {
+          "upright": "The Sword King shows that strategic thought and honesty will strengthen harmony, and the principled approach will build confidence in the bond.",
+          "reversed": "The Reverse Sword King makes it difficult to adapt to strict rules or extreme criticism.",
+          "keywords": {
+            "0": "strategy",
+            "1": "Honesty",
+            "2": "compatibility",
+            "3": "logic",
+            "4": "Trust"
+          },
+          "context": "Principles feed harmony, consensual bond limits."
+        },
+        "position4": {
+          "upright": "Sword King, strategic thought and principled stance provide a strong basis for long-term bonding.",
+          "reversed": "Reverse Sword King, rigidity and coldness make the long-term bond difficult.",
+          "keywords": {
+            "0": "strategy",
+            "1": "principle",
+            "2": "authority",
+            "3": "logic",
+            "4": "long term"
+          },
+          "context": "Principles feed the long term and test the bond of rigor."
+        },
+        "position5": {
+          "upright": "The Sword King points to the bond of a soul mate based on logic and ethical values.",
+          "reversed": "Reverse Sword King, strict rules or lack of empathy can make the bond of a soul mate difficult.",
+          "keywords": {
+            "0": "ethics",
+            "1": "logic",
+            "2": "justice",
+            "3": "Honesty",
+            "4": "soul mate"
+          },
+          "context": "Ethics and logic support soul mates."
+        },
+        "position6": {
+          "upright": "The King supports the fulfillment of your wish with logic, discipline, and strategy, making it permanent as a result of ethical power.",
+          "reversed": "Reverse king, rigidity or coldness can make your wish difficult to fulfill, empathy brings balance.",
+          "keywords": {
+            "0": "logic",
+            "1": "ethics",
+            "2": "authority",
+            "3": "discipline",
+            "4": "clarity"
+          },
+          "context": "Discipline makes your wish come true."
+        }
+      },
+      "aceofwands": {
+        "position1": {
+          "upright": "The wand ace heralds the spark of a new relationship, a beginning full of passion, excitement, and courage.",
+          "reversed": "The Reverse Stick ace shows that lack of inspiration or fear can delay an opportunity, even a little courage can lead to a new relationship.",
+          "keywords": {
+            "0": "passion",
+            "1": "start",
+            "2": "spark",
+            "3": "Courage"
+          },
+          "context": "The energy of a new love is sparking; get ready."
+        },
+        "position2": {
+          "upright": "The ace of the wand carries the direct energy of the constellations of fire, whether it's a ram or a Lion or a Sagittarius, it could be an eager and aggressive person.",
+          "reversed": "The Reverse Stick Ace suggests that this person may appear to have lost the attributes of the Firestar, which may be impatient or lack of motivation.",
+          "keywords": {
+            "0": "Coach",
+            "1": "Lion",
+            "2": "Sagittarius",
+            "3": "fad",
+            "4": "start"
+          },
+          "context": "Coach, the Lion or Sagittarius effect is dominant."
+        },
+        "position3": {
+          "upright": "The ace of the wand brings fresh energy and passion to the relationship, and a creative spark ignites the beginning of harmony.",
+          "reversed": "Reverse Stick Ace, lack of motivation, or postponement, can make it difficult to adapt.",
+          "keywords": {
+            "0": "passion",
+            "1": "start",
+            "2": "creativity",
+            "3": "compatibility",
+            "4": "energy"
+          },
+          "context": "The new spark stimulates harmony, the dull fire weakens the bond."
+        },
+        "position4": {
+          "upright": "The wand, a new spark, and a powerful energy, can lay the foundation of a long-term bond, and passion in the long-term brings life to the relationship.",
+          "reversed": "Reverse Asa's ace, lack of inspiration, or delayed beginnings can cause a long-term relationship to fail.",
+          "keywords": {
+            "0": "start",
+            "1": "passion",
+            "2": "Inspired",
+            "3": "energy",
+            "4": "long term"
+          },
+          "context": "Passion strengthens the long term, the lack of inspiration tests the bond."
+        },
+        "position5": {
+          "upright": "The ace of the staff carries the spark of a new beginning, and meeting this person can be a powerful attraction and inspiration that ignites the spirit, and it gives an instinctive sense of yes.",
+          "reversed": "The Ace of the Reverse Wands tells of quick sparks or meeting at the wrong time, where the energy of soul mates is there, but it may not have been fully exposed.",
+          "keywords": {
+            "0": "start",
+            "1": "Inspired",
+            "2": "gravity",
+            "3": "spark",
+            "4": "spirit bond"
+          },
+          "context": "The possibility of a new soul mate is strong, but the timing is critical."
+        },
+        "position6": {
+          "upright": "The staff carries strong inspiration and new beginning energy to make your wish come true, and a creative spark allows you to take action.",
+          "reversed": "The Reverse Wand, lack of inspiration, or delay, can make your wish difficult, and small steps can restart the flow.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "start",
+            "2": "energy",
+            "3": "creativity",
+            "4": "movement"
+          },
+          "context": "The creative spark begins your wish."
+        }
+      },
+      "twoofwands": {
+        "position1": {
+          "upright": "Two wands show that there may be a chance for a new relationship between your plans for the future, and when the horizon is open, your heart opens up a new one.",
+          "reversed": "The Reverse Two Wands tells us that love can be delayed by indecision and lack of vision, and when it becomes clear, the new beginning comes quickly.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "decision",
+            "3": "opportunity"
+          },
+          "context": "Your horizons are inviting a new relationship into your life."
+        },
+        "position2": {
+          "upright": "The Two Sticks point to the horizon and visionary nature of Sagittarius, who may be planned and forward looking.",
+          "reversed": "The Reverse Wand Duo may show a lack of resolution or risk in the Sagittarius shadow.",
+          "keywords": {
+            "0": "Sagittarius",
+            "1": "Vision",
+            "2": "Plan",
+            "3": "horizon"
+          },
+          "context": "The Sagittarius is coming forward."
+        },
+        "position3": {
+          "upright": "A pair of wands fosters a shared vision of the future, a plan that balances the relationship.",
+          "reversed": "The Reverse-Stitch Duo may disrupt the fitness of uncertainty or decision-making.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "partnership",
+            "3": "compatibility",
+            "4": "balance"
+          },
+          "context": "The shared vision enhances harmony, testing the bond of indecisiveness."
+        },
+        "position4": {
+          "upright": "Two Asas, sharing their plans for the future is a powerful sign of long-term bonding, a common vision that allows continuity.",
+          "reversed": "Two Reverse Asas, lack of vision or hesitation, make the development of the long-term bond difficult.",
+          "keywords": {
+            "0": "Vision",
+            "1": "planning",
+            "2": "future",
+            "3": "partnership",
+            "4": "long term"
+          },
+          "context": "The common vision supports the long term, the hesitation tests the bond."
+        },
+        "position5": {
+          "upright": "The Dual of Wands carries vision and co-planning energy for the future, which can expand the horizon of life with the potential to be soul mates.",
+          "reversed": "Two of the Reverse Wands tells of uncertainty or lack of commonality, and there's a possibility of soul mates, but decisions may not be adaptable until they're clear.",
+          "keywords": {
+            "0": "Vision",
+            "1": "common path",
+            "2": "potential",
+            "3": "planning",
+            "4": "spirit bond"
+          },
+          "context": "Common vision blends in; indecisiveness weakens the spirit bond."
+        },
+        "position6": {
+          "upright": "Two Asas show that in order for your wish to be granted, you need to set a vision and plan, and expanding the horizon strengthens your wish.",
+          "reversed": "Inverse duo, hesitation or narrow perspective may delay your wish.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "Enlargement",
+            "3": "decision",
+            "4": "horizon"
+          },
+          "context": "Vision and plan strengthen your wish."
+        }
+      },
+      "threeofwands": {
+        "position1": {
+          "upright": "Three wands tell you that expanding environments and new opportunities will bring love, new people and journeys can open the door to love.",
+          "reversed": "The Reverse Three Wands, narrow-mindedness, or impatientness, can force a new relationship, and keeping the horizon wide calls for love.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "opportunity",
+            "2": "horizon",
+            "3": "journey"
+          },
+          "context": "New environments and experiences speed up the coming of love."
+        },
+        "position2": {
+          "upright": "The Three Sticks carry the expanding energy of Aslan. He may be courageous and open to cooperation.",
+          "reversed": "The Reverse Stick Triad can show narrow-mindedness or too much pride in the Lion's shadow.",
+          "keywords": {
+            "0": "Lion",
+            "1": "Enlargement",
+            "2": "co-operation",
+            "3": "Courage"
+          },
+          "context": "The effect of the Leo is significant."
+        },
+        "position3": {
+          "upright": "The Trinity of wands, together expansion and opportunities strengthen harmony, and looking at the horizon fosters bonds.",
+          "reversed": "The Reverse Stick Triad, narrow-mindedness or delays make it difficult to fit in.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "Enlargement",
+            "2": "compatibility",
+            "3": "Vision",
+            "4": "unity"
+          },
+          "context": "The horizon nourishes harmony, testing the bond of delay."
+        },
+        "position4": {
+          "upright": "Three Asas, opportunities and progress that expand the horizon, contribute to the growth of long-term relationships.",
+          "reversed": "Inverse Three Asas, narrow-mindedness or delays may prevent the development of the long-term bond.",
+          "keywords": {
+            "0": "horizon",
+            "1": "opportunity",
+            "2": "Enlargement",
+            "3": "Progress",
+            "4": "long term"
+          },
+          "context": "Enlargement feeds the long term, testing the late bond."
+        },
+        "position5": {
+          "upright": "The trinity of the staff represents a journey to distant horizons, which can be your soul mate; you carry together the energy of growth and discovery.",
+          "reversed": "The Trinity of Reverse Wands talks about not meeting expectations or focusing on the wrong directions, even if there is a possibility of soul mates, distances or timing may prevent them.",
+          "keywords": {
+            "0": "horizon",
+            "1": "journey",
+            "2": "Development",
+            "3": "partnership",
+            "4": "spirit bond"
+          },
+          "context": "The desire to grow opens the door for soul mates."
+        },
+        "position6": {
+          "upright": "The three Asas show that opportunities are on the horizon in the fulfillment of your wish, and preparation and courageous action results.",
+          "reversed": "Inverse threesomes, impatientness, or shortsightedness can make your wish difficult.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "Enlargement",
+            "2": "preparation",
+            "3": "horizon",
+            "4": "Progress"
+          },
+          "context": "Looking at the horizon makes your wish possible."
+        }
+      },
+      "fourofwands": {
+        "position1": {
+          "upright": "The Four Wands show that you can meet a new person in celebration, an invitation, or a social environment, and this relationship can be based on a secure basis.",
+          "reversed": "The Reverse Four Wands, the lack of planning or social retreat, can delay the opportunity of love, and the celebrations you participate in can bring new love.",
+          "keywords": {
+            "0": "celebration",
+            "1": "basic",
+            "2": "security",
+            "3": "social environment"
+          },
+          "context": "There's a possibility of a new relationship in social areas."
+        },
+        "position2": {
+          "upright": "The rod quartet represents Aslan's quest for celebration and belonging. This person can be cheerful and sharing.",
+          "reversed": "The Reverse Wand Four may show a fear of unrest or commitment in the Lion's shadow.",
+          "keywords": {
+            "0": "Lion",
+            "1": "celebration",
+            "2": "belonging",
+            "3": "compatibility"
+          },
+          "context": "Lion energy is dominant."
+        },
+        "position3": {
+          "upright": "The four of wands carry the energy of celebration and harmony, and the bond of mutual happiness strengthens.",
+          "reversed": "The Reverse Stick Four can bring temporary disorder or unrest rather than harmony.",
+          "keywords": {
+            "0": "celebration",
+            "1": "compatibility",
+            "2": "balance",
+            "3": "unity",
+            "4": "stability"
+          },
+          "context": "Celebration strengthens harmony, disorder weakens bond."
+        },
+        "position4": {
+          "upright": "Four Asas, celebration, harmony, and a solid foundation are signs of a long-term relationship.",
+          "reversed": "The Reverse Four Asas, instability or unfinishedness, can force a long term.",
+          "keywords": {
+            "0": "celebration",
+            "1": "compatibility",
+            "2": "stability",
+            "3": "basic",
+            "4": "long term"
+          },
+          "context": "The solid foundation supports the long term, testing the bond of instability."
+        },
+        "position5": {
+          "upright": "The quartet of the rods speaks of celebration, unity, and roots. This person can be your soul mate; your relationship can bring lasting happiness.",
+          "reversed": "The Four Against Wands indicate a lack of roots or imbalance, and even if there is a soul mate, there is a need for solid foundations.",
+          "keywords": {
+            "0": "celebration",
+            "1": "unity",
+            "2": "stability",
+            "3": "Happiness",
+            "4": "spirit bond"
+          },
+          "context": "Permanent happiness strengthens the possibility of soul mates."
+        },
+        "position6": {
+          "upright": "Four Asas, the energy of celebration, harmony, and stability in the fulfillment of your wish, gives you an opening to your wish that the foundation be firm.",
+          "reversed": "Reverse four, temporary disorder can delay your wish.",
+          "keywords": {
+            "0": "stability",
+            "1": "celebration",
+            "2": "compatibility",
+            "3": "basic",
+            "4": "threshold"
+          },
+          "context": "It supports your solid basic wish."
+        }
+      },
+      "fiveofwands": {
+        "position1": {
+          "upright": "The Five Wands show that it can connect with a new person between small competition and lively debates, and dynamic energy can become a relationship.",
+          "reversed": "The Reverse-Five Wand says that extreme conflict or competition can make the relationship difficult, and fun competition fosters closeness.",
+          "keywords": {
+            "0": "competition",
+            "1": "Enliversity",
+            "2": "dynamic",
+            "3": "gravity"
+          },
+          "context": "A spark of love can appear in dynamics and living environments."
+        },
+        "position2": {
+          "upright": "The five of the rods show the competitive and challenging side of the ram. He may be a living, ambitious person.",
+          "reversed": "The Reverse Wand Five may show unnecessary debate or impatience in the coach's shadow.",
+          "keywords": {
+            "0": "Coach",
+            "1": "competition",
+            "2": "challenge",
+            "3": "Enliversity"
+          },
+          "context": "The Aries effect is coming out."
+        },
+        "position3": {
+          "upright": "The Cane Five shows that healthy competition can feed harmony.",
+          "reversed": "The Reverse-Stitch Five, the increase in conflict, can hurt the harmony, and it takes balance to blend in.",
+          "keywords": {
+            "0": "competition",
+            "1": "struggle",
+            "2": "compatibility",
+            "3": "balance",
+            "4": "dynamism"
+          },
+          "context": "The constructive competition keeps the harmony alive."
+        },
+        "position4": {
+          "upright": "Five Asas, competition and differences of opinion can be a test in the long-term bond, and the solution process matures the relationship.",
+          "reversed": "Reverse Five Asas, repressed tension can weaken the long term, transparency is essential.",
+          "keywords": {
+            "0": "competition",
+            "1": "conflict",
+            "2": "Tension",
+            "3": "solution",
+            "4": "long term"
+          },
+          "context": "The solution feeds the long term, testing the tension bond."
+        },
+        "position5": {
+          "upright": "The five of the wands show that small conflicts are actually an opportunity to grow, and the energy of the soul mate can be revealed by the transformation of the differences into sleep.",
+          "reversed": "The Five of the Reverse Wands tells us that unnecessary strife can force a relationship, even if there is a possibility of soul mates, patience and understanding are needed.",
+          "keywords": {
+            "0": "conflict",
+            "1": "learning",
+            "2": "compatibility",
+            "3": "energy",
+            "4": "spirit bond"
+          },
+          "context": "Variety is a test; if it is adapted, the spirit bond deepens."
+        },
+        "position6": {
+          "upright": "Five Asas, competition and small obstacles can be seen in the fulfillment of your wish, and the struggle will strengthen you.",
+          "reversed": "Inverse fives, unnecessary conflicts can make your wish difficult. Focus is essential.",
+          "keywords": {
+            "0": "competition",
+            "1": "struggle",
+            "2": "obstacle",
+            "3": "energy",
+            "4": "determination"
+          },
+          "context": "Overcoming obstacles brings your wish closer."
+        }
+      },
+      "sixofwands": {
+        "position1": {
+          "upright": "Six wands, with visible success and appreciation, show you that love is drawn to you, and you can connect with someone new in the places where you shine.",
+          "reversed": "The Reverse Six Wands, the invisibility or lack of appreciation, can postpone the new love when it expresses itself, love becomes closer.",
+          "keywords": {
+            "0": "victory",
+            "1": "recognition",
+            "2": "gravity",
+            "3": "appreciation"
+          },
+          "context": "Success and visibility open the door to love."
+        },
+        "position2": {
+          "upright": "The six of wands point to the charismatic leadership of Leo, who may be well-known and well-liked.",
+          "reversed": "The Reverse Stick Six can show ego problems or approval addiction in the Lion's shadow.",
+          "keywords": {
+            "0": "Lion",
+            "1": "victory",
+            "2": "recognition",
+            "3": "Charisma"
+          },
+          "context": "The lion's energy is distinct."
+        },
+        "position3": {
+          "upright": "The Six of wands, the sharing of success and appreciation, they grow in harmony, and honoring each other strengthens the bonds.",
+          "reversed": "Reverse Stick Six, jealousy or lack of appreciation may disrupt the harmony.",
+          "keywords": {
+            "0": "success",
+            "1": "appreciation",
+            "2": "compatibility",
+            "3": "support",
+            "4": "victory"
+          },
+          "context": "Appreciation fosters harmony, lacks approval."
+        },
+        "position4": {
+          "upright": "Six Asas increase the confidence of joint victories and recognition in a long-term relationship.",
+          "reversed": "Inverse Six Asas, lack of appreciation can make the long-term bond difficult.",
+          "keywords": {
+            "0": "victory",
+            "1": "recognition",
+            "2": "success",
+            "3": "appreciation",
+            "4": "long term"
+          },
+          "context": "Victory feeds the long term, a lack of appreciation tests the bond."
+        },
+        "position5": {
+          "upright": "The Six of the staff represents success and recognition. This person can be your soul mate, and together you can create a relationship to be proud of.",
+          "reversed": "The Six of the Reverse Wands tells of the shadow of the expectation of external approval, and inner trust is essential for the energy of soul mates.",
+          "keywords": {
+            "0": "success",
+            "1": "victory",
+            "2": "pride",
+            "3": "Trust",
+            "4": "spirit bond"
+          },
+          "context": "Joint achievements fuel the possibility of soul mates."
+        },
+        "position6": {
+          "upright": "Six Asas have the energy of success and visible victory in the fulfillment of your wish, and it speeds up your wish to be appreciated.",
+          "reversed": "Reverse sixes, lack of appreciation, or vanity can block your wish.",
+          "keywords": {
+            "0": "victory",
+            "1": "success",
+            "2": "visibility",
+            "3": "Motivation",
+            "4": "appreciation"
+          },
+          "context": "The energy of victory feeds your wish."
+        }
+      },
+      "sevenofwands": {
+        "position1": {
+          "upright": "The Seven Wands say that when you defend your own stance, someone might appear to attract your attention.",
+          "reversed": "The Reverse Seven Wands show that over-defensive approach can make the opportunity of love difficult.",
+          "keywords": {
+            "0": "defence",
+            "1": "Stop",
+            "2": "gravity",
+            "3": "determination"
+          },
+          "context": "Your own posture attracts the right person to you."
+        },
+        "position2": {
+          "upright": "The Seven of wands show the decisive and defensive side of the Aries, who may be stubborn and challenging.",
+          "reversed": "The Reverse Stick Seven may tend to wear out or give up in the coach's shadow.",
+          "keywords": {
+            "0": "Coach",
+            "1": "struggle",
+            "2": "defence",
+            "3": "stubborn"
+          },
+          "context": "Aries are dominant."
+        },
+        "position3": {
+          "upright": "The Seven of wands say it's important to keep boundaries in harmony.",
+          "reversed": "The Reverse Cane Seven, too much defensiveness can damage the harmony.",
+          "keywords": {
+            "0": "defence",
+            "1": "limit",
+            "2": "compatibility",
+            "3": "balance",
+            "4": "power"
+          },
+          "context": "Solid boundaries feed harmony, force the bond."
+        },
+        "position4": {
+          "upright": "The Seven Asas maintain the long - term bond, maintaining the borders and determination.",
+          "reversed": "The Reverse Seven Asas, excessive defensiveness or fatigue, weaken the long-term bond.",
+          "keywords": {
+            "0": "defence",
+            "1": "limit",
+            "2": "determination",
+            "3": "resistance",
+            "4": "long term"
+          },
+          "context": "Determination supports a long term, and fatigue tests it."
+        },
+        "position5": {
+          "upright": "The Seven of Wands show you to defend your beliefs and draw boundaries, and you may have to go through that process for a strong bond with your soul mate.",
+          "reversed": "The Seven of the Reverse Asas indicate fatigue or loss of resistance, even with the potential for soul mates, determination may weaken.",
+          "keywords": {
+            "0": "defence",
+            "1": "faith",
+            "2": "limit",
+            "3": "resistance",
+            "4": "spirit bond"
+          },
+          "context": "The bond passed through exams is strengthened for soul mates."
+        },
+        "position6": {
+          "upright": "Seven Asas say you must defend your position in order to grant your wish. Resistance will strengthen you.",
+          "reversed": "Inverse sevens, fatigue, or indecisiveness may delay your wish.",
+          "keywords": {
+            "0": "defence",
+            "1": "resistance",
+            "2": "determination",
+            "3": "limit",
+            "4": "power"
+          },
+          "context": "Determination makes your wish possible."
+        }
+      },
+      "eightofwands": {
+        "position1": {
+          "upright": "Eight Wands indicate that a fast-growing love is on the horizon, and suddenly news or meeting can lead to a new relationship.",
+          "reversed": "Reverse Eight Wands, delays or communication may delay love.",
+          "keywords": {
+            "0": "speed",
+            "1": "news",
+            "2": "communication",
+            "3": "flow"
+          },
+          "context": "There may soon be a rapid development of love."
+        },
+        "position2": {
+          "upright": "The Stick Eight points to the fast and mobile nature of Sagittarius, which may be related to travel or rapid developments.",
+          "reversed": "The Reverse Stick Eight can show chaos or undirected speed in the Sagittarius shadow."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,796 @@
+{
+  "marriage": {
+    "meanings": {
+      "twoofwands": {
+        "position4": {
+          "context": "Connection is strengthened by common vision and plans."
+        }
+      },
+      "threeofwands": {
+        "position1": {
+          "upright": "The result will be expansion, co-operation and growth together, with new opportunities on the horizon.",
+          "reversed": "The lack of expectations can be disappointing, and patience is necessary.",
+          "keywords": {
+            "0": "growth",
+            "1": "co-operation",
+            "2": "Vision",
+            "3": "Patience"
+          },
+          "context": "The result is a marriage that expands together, but expectations must be realistic."
+        },
+        "position10": {
+          "upright": "Three wands indicate that your horizons are expanding and that the opportunities for marriage are near.",
+          "reversed": "Delays or narrow perspective may slow the marriage down. It's useful to revisit the plan.",
+          "keywords": {
+            "0": "horizon",
+            "1": "opportunity",
+            "2": "Enlargement",
+            "3": "waiting",
+            "4": "Vision"
+          },
+          "context": "Opportunities for marriage are coming up, you have to keep the vision wide."
+        },
+        "position2": {
+          "upright": "Think broad, set distant goals, and wait patiently while waiting.",
+          "reversed": "Insufferability or narrow-mindedness makes the process difficult.",
+          "keywords": {
+            "0": "width",
+            "1": "target",
+            "2": "Patience",
+            "3": "Perspective"
+          },
+          "context": "It helps to think broadly while waiting."
+        },
+        "position3": {
+          "upright": "Enlargement and expected returns are on the horizon, co-ordination strengthens sharing.",
+          "reversed": "Delays and narrow-mindedness demoralize the budget.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "timing",
+            "2": "co-operation",
+            "3": "horizon"
+          },
+          "context": "The plan needs dynamic upgrades."
+        },
+        "position5": {
+          "upright": "Your ability to expand and coordinate is similar to your ability to look at the horizon together.",
+          "reversed": "If the timing syncs up, the motivation drops.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "sync",
+            "2": "preparation",
+            "3": "horizon",
+            "4": "time"
+          },
+          "context": "Coordinate, partner."
+        },
+        "position6": {
+          "upright": "The family can relate you to the opportunity to expand and move forward, and your open-minded and cooperative attitude pleases them, making the wide horizon easier to accept.",
+          "reversed": "Family may perceive you as a narrow-minded or unprogressive person, not meeting expectations delays acceptance.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "Progress",
+            "2": "co-operation",
+            "3": "horizon",
+            "4": "openness"
+          },
+          "context": "Wide view increases acceptance, narrow perspective can cool the family down."
+        },
+        "position7": {
+          "upright": "The three Asas show you how to meet in the process of expansion and co-operation, and the opportunity that arises on the horizon brings you together.",
+          "reversed": "The Inverse Three Asas say that delays or narrow-mindedness can push the bond, and revisiting the plan makes it easier to meet.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "opportunity",
+            "2": "co-operation",
+            "3": "horizon"
+          },
+          "context": "You'll meet him in the expansion process."
+        },
+        "position8": {
+          "upright": "The Three Sticks show the potential for expansion and mutual support in communication. The open horizons strengthen the agreement.",
+          "reversed": "The Reverse Stick Triad indicates that narrow-mindedness can be difficult to fit into, and open-mindedness makes it a deal.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "support",
+            "2": "horizon",
+            "3": "communication"
+          },
+          "context": "Open horizons expand the deal."
+        },
+        "position9": {
+          "upright": "Three of the wands, a wife who likes to expand her horizons, who is open to new opportunities.",
+          "reversed": "Three of the Reverse Wands, you're not cut out for someone who doesn't see opportunities.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "Vision",
+            "2": "Progress",
+            "3": "horizon"
+          },
+          "context": "The horizon is wide open."
+        },
+        "position4": {
+          "upright": "Three wands show expansion in connectivity and openness to new opportunities. The opening of horizons increases the desire to grow together.",
+          "reversed": "The Reverse Three Wands may not be able to see narrow-mindedness or opportunities in bonding, but the limited perspective weakens the bond.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "opportunity",
+            "2": "horizon",
+            "3": "Progress",
+            "4": "Vision"
+          },
+          "context": "Connection develops with broad horizons and opportunities."
+        }
+      },
+      "fourofwands": {
+        "position1": {
+          "upright": "The result will be a marriage celebration, stability, and a safe home.",
+          "reversed": "Temporarily irregularities or marital rituals may appear to be lacking.",
+          "keywords": {
+            "0": "celebration",
+            "1": "stability",
+            "2": "nest",
+            "3": "Trust"
+          },
+          "context": "The result is a stable and happy marriage, and small irregularities must be overcome."
+        },
+        "position10": {
+          "upright": "The Four Wands show that marriage is possible with the energy of celebration and unity, and there is a strong home base.",
+          "reversed": "Disorganisation or unfinishedness can make marriage plans difficult, and rituals and stability support the process.",
+          "keywords": {
+            "0": "celebration",
+            "1": "unity",
+            "2": "nest",
+            "3": "stability",
+            "4": "basic"
+          },
+          "context": "She's got a good home for marriage and the energy to celebrate."
+        },
+        "position2": {
+          "upright": "Celebrate your achievements, strengthen your social ties, be in the community while you wait.",
+          "reversed": "Excessive socialism or loneliness makes the process difficult.",
+          "keywords": {
+            "0": "celebration",
+            "1": "success",
+            "2": "Community",
+            "3": "social"
+          },
+          "context": "It helps to strengthen social ties while waiting."
+        },
+        "position3": {
+          "upright": "The threshold, the house, and the celebration are co-founded, the foundation is solid.",
+          "reversed": "Unfinished and disorder creates tension in the ceremony/house budget.",
+          "keywords": {
+            "0": "basic",
+            "1": "threshold",
+            "2": "stability",
+            "3": "celebration"
+          },
+          "context": "First the foundation, then the ceremony; then the order is important."
+        },
+        "position5": {
+          "upright": "It's similar to belonging, celebrating, and meeting on the threshold, and if the foundation is sound, the ceremony comes naturally.",
+          "reversed": "You may have a different sense of threshold order, but half-prepared can be disappointing.",
+          "keywords": {
+            "0": "threshold",
+            "1": "celebration",
+            "2": "basic",
+            "3": "belonging",
+            "4": "home"
+          },
+          "context": "The threshold ritual is common, the sequence must be protected."
+        },
+        "position6": {
+          "upright": "The family may see you as someone who brings in the spirit of celebration and unity, and your adaptive and warm behavior gives the family a sense of belonging, and your desire to mingle with them makes the process easier.",
+          "reversed": "Family may perceive you as a distant person or a lack of a sense of belonging, and incompatibility to celebrations makes it difficult to accept, and the fact that you're out there, it undermines confidence.",
+          "keywords": {
+            "0": "celebration",
+            "1": "belonging",
+            "2": "compatibility",
+            "3": "unity",
+            "4": "blending"
+          },
+          "context": "Harmony and belonging make acceptance easier, distance perception creates resistance in the family."
+        },
+        "position7": {
+          "upright": "Four Asas show the moment of celebration or stability, the basic bond of trust.",
+          "reversed": "The Reverse Four Wands say that disorder or loose ends can force us to meet, and rituals make the bond easier.",
+          "keywords": {
+            "0": "celebration",
+            "1": "stability",
+            "2": "basic",
+            "3": "unity"
+          },
+          "context": "You meet in a celebration setting, and stability strengthens the bond."
+        },
+        "position8": {
+          "upright": "The wand quartet is a sign of celebration in communication, stability and harmony, and trust built together makes the deal easier.",
+          "reversed": "The Reverse Stick Four shows that temporary unrest can force communication, and small celebrations strengthen the bond.",
+          "keywords": {
+            "0": "stability",
+            "1": "celebration",
+            "2": "Trust",
+            "3": "compatibility"
+          },
+          "context": "Celebrating together deepens the deal."
+        },
+        "position9": {
+          "upright": "The Four of Wands, the wife who cares about her sense of unity, shares in celebration and peace, suit you well.",
+          "reversed": "Four of the Reverse Wands, someone who's far from harmony or restless is not suitable for you.",
+          "keywords": {
+            "0": "unity",
+            "1": "celebration",
+            "2": "Peace",
+            "3": "solidarity"
+          },
+          "context": "A partner with a sense of unity is appropriate."
+        },
+        "position4": {
+          "upright": "Four wands point to celebration, peace and sound foundations in bonding, and the sense of unity and stability makes it easier to say yes.",
+          "reversed": "The Reverse Four Wands may be temporary unrest or lack of foundation in binding, and incompatibility makes words difficult.",
+          "keywords": {
+            "0": "celebration",
+            "1": "unity",
+            "2": "Peace",
+            "3": "stability",
+            "4": "basic"
+          },
+          "context": "It is strengthened by commitment, peace, and solid foundations."
+        }
+      },
+      "fiveofwands": {
+        "position1": {
+          "upright": "The result is that differences of opinion and small competition will add dynamics to the relationship.",
+          "reversed": "Excessive conflict can force the outcome of a marriage.",
+          "keywords": {
+            "0": "conflict",
+            "1": "competition",
+            "2": "dynamism",
+            "3": "solution"
+          },
+          "context": "The result is a marriage that is strengthened by arguments."
+        },
+        "position10": {
+          "upright": "Five Wands point to small conflicts and competition on the way to marriage, which can be overcome by healthy dialogue.",
+          "reversed": "Repressed tension can damage a marriage, open communication needs a solution.",
+          "keywords": {
+            "0": "conflict",
+            "1": "competition",
+            "2": "dialogue",
+            "3": "Tension",
+            "4": "difference"
+          },
+          "context": "For marriage, the healthy rule of conflict is essential."
+        },
+        "position2": {
+          "upright": "Keep the competition healthy, resolve the conflicts, learn to compete in the waiting.",
+          "reversed": "Excessive competition or conflict will complicate the process.",
+          "keywords": {
+            "0": "competition",
+            "1": "conflict",
+            "2": "compatibility",
+            "3": "solution"
+          },
+          "context": "It helps to learn healthy competition while waiting."
+        },
+        "position3": {
+          "upright": "Rehearsal fights and competition are all about money talk, rules need to be clear.",
+          "reversed": "Configured dialogue makes tension productive.",
+          "keywords": {
+            "0": "conflict",
+            "1": "competition",
+            "2": "rule",
+            "3": "fascilation"
+          },
+          "context": "If the rules of the game are understood, there's more efficiency."
+        },
+        "position5": {
+          "upright": "You're similar in live debate and game competition, and when you set a rule, energy flows creatively.",
+          "reversed": "Without Fascitation, the resemblance becomes a conflict.",
+          "keywords": {
+            "0": "strife",
+            "1": "game",
+            "2": "competition",
+            "3": "rule",
+            "4": "energy"
+          },
+          "context": "Let's keep the rules clear."
+        },
+        "position6": {
+          "upright": "Family may find you energetic, but at times competitive, and expressing yourself through healthy arguments allows you to accept, and it's important to make conflict constructive.",
+          "reversed": "Family may see you as a man of quarrel or incompatibility, and unnecessary tension makes acceptance difficult, hardness undermines confidence.",
+          "keywords": {
+            "0": "energy",
+            "1": "debate",
+            "2": "competition",
+            "3": "expression",
+            "4": "compatibility"
+          },
+          "context": "A constructive statement increases acceptance, makes it harder to accept unnecessary fighting."
+        },
+        "position7": {
+          "upright": "Five Asas show us to meet in a competition or a rehearsal environment, energy-fighting bonding.",
+          "reversed": "The Reverse Five Asa says that repressed tension can force the bond. It opens a structured dialogue process.",
+          "keywords": {
+            "0": "competition",
+            "1": "rehearsal",
+            "2": "conflict",
+            "3": "dialogue"
+          },
+          "context": "You meet in an energetic environment, and dialogue strengthens the bond."
+        },
+        "position8": {
+          "upright": "The Cane Five shows that conflict of opinion can stand out in communication, and the healthy argument strengthens harmony.",
+          "reversed": "The Reverse Stick Five says that repressed anger can damage communication, and open and constructive speech makes the deal easier.",
+          "keywords": {
+            "0": "conflict",
+            "1": "debate",
+            "2": "energy",
+            "3": "communication"
+          },
+          "context": "Healthy discussion strengthens the agreement."
+        },
+        "position9": {
+          "upright": "Five of the wands, a wife with constructive competition, who accepts differences, suits you.",
+          "reversed": "Five of the Reverse Wands, you're not cut out for someone who fights all the time or doesn't fit in.",
+          "keywords": {
+            "0": "competition",
+            "1": "difference",
+            "2": "compatibility",
+            "3": "creativity"
+          },
+          "context": "The mate who uses differences constructively is suitable."
+        },
+        "position4": {
+          "upright": "The Five Wands demonstrate differences in connection with acceptance and constructive debates, and if co-operation comes out instead of competition, the bond becomes stronger.",
+          "reversed": "The Reverse Five Wand is a constant risk of conflict or incompatibility in bonding, which makes it difficult to say yes.",
+          "keywords": {
+            "0": "difference",
+            "1": "competition",
+            "2": "compatibility",
+            "3": "creativity",
+            "4": "conflict"
+          },
+          "context": "Connection is strengthened by constructive use of differences; conflict weakens."
+        }
+      },
+      "sixofwands": {
+        "position1": {
+          "upright": "The result is that success, victory, and mutual pride will adorn your marriage.",
+          "reversed": "Lack of appreciation can force the outcome of marriage, and small achievements must be celebrated.",
+          "keywords": {
+            "0": "victory",
+            "1": "success",
+            "2": "appreciation",
+            "3": "pride"
+          },
+          "context": "The result is a marriage full of triumphs together, but it must be appreciated."
+        },
+        "position10": {
+          "upright": "Six wands show that the path to marriage is clear with the energy of success and recognition, and your efforts will be rewarded.",
+          "reversed": "Lack of recognition or inadequacy can make the marriage process difficult, and small achievements must be celebrated.",
+          "keywords": {
+            "0": "success",
+            "1": "recognition",
+            "2": "Motivation",
+            "3": "victory",
+            "4": "Progress"
+          },
+          "context": "The energy for success and celebration for marriage is strong."
+        },
+        "position2": {
+          "upright": "Honor your accomplishments, earn your trust, and look worthy while you wait.",
+          "reversed": "Too much pride or fear of failure makes the process difficult.",
+          "keywords": {
+            "0": "success",
+            "1": "Trust",
+            "2": "honor",
+            "3": "value"
+          },
+          "context": "It would be helpful to honor the achievements while we wait."
+        },
+        "position3": {
+          "upright": "The apparent success and recognition increase the common motivation, the shared victory multiplys.",
+          "reversed": "Invisible labor produces resentment; transparent appreciation is required.",
+          "keywords": {
+            "0": "victory",
+            "1": "appreciation",
+            "2": "Motivation",
+            "3": "visibility"
+          },
+          "context": "Write the success story together."
+        },
+        "position5": {
+          "upright": "It's like a heart to share appreciation and visible success, and you celebrate victory together.",
+          "reversed": "Unseen labor can create resentment, establish a transparent appreciation system.",
+          "keywords": {
+            "0": "appreciation",
+            "1": "victory",
+            "2": "visibility",
+            "3": "Motivation",
+            "4": "support"
+          },
+          "context": "Joint joy is strong, let the hard work be seen."
+        },
+        "position6": {
+          "upright": "Family may see you as successful and appreciated, and your victories and your visible achievements will speed up your acceptance, and success will bring pride to the family.",
+          "reversed": "Family can perceive you as overblown or self-righteous, making it hard to accept that I'm not appreciated, too much pride creates space in the family.",
+          "keywords": {
+            "0": "success",
+            "1": "appreciation",
+            "2": "visibility",
+            "3": "victory",
+            "4": "pride"
+          },
+          "context": "Success creates trust in the family, making it difficult to accept too much pride."
+        },
+        "position7": {
+          "upright": "Six Asas show the moment of success and recognition, the bond of apparent victory expands.",
+          "reversed": "The Reverse Six Asa says that lack of appreciation can cloud the bond, making the open-sharing process easier.",
+          "keywords": {
+            "0": "success",
+            "1": "recognition",
+            "2": "victory",
+            "3": "visibility"
+          },
+          "context": "You meet at the moment of victory, and recognition strengthens the bond."
+        },
+        "position8": {
+          "upright": "The six of wands point to appreciation and visible success in communication, and mutual approval enhances harmony.",
+          "reversed": "The Reverse Stick Six shows that lack of appreciation can make the deal difficult, and small praise strengthens the bond.",
+          "keywords": {
+            "0": "appreciation",
+            "1": "success",
+            "2": "confirmation",
+            "3": "communication"
+          },
+          "context": "The sharing of appreciation increases harmony."
+        },
+        "position9": {
+          "upright": "The Six of the Wands, the wife who shares her accomplishments, who stands with her with pride, fits you.",
+          "reversed": "Six of the Reverse Wands, a man who is jealous and does not support you is not fit for you.",
+          "keywords": {
+            "0": "success",
+            "1": "pride",
+            "2": "support",
+            "3": "share"
+          },
+          "context": "A partner who shares his success is suitable."
+        },
+        "position4": {
+          "upright": "Six wands show success, appreciation and pride in bonding, and when sides share each other's achievements, the bond deepens.",
+          "reversed": "The Reverse Six Wands may be a lack of appreciation or jealousy in bonding, and not being supported weakens the bond.",
+          "keywords": {
+            "0": "success",
+            "1": "appreciation",
+            "2": "share",
+            "3": "pride",
+            "4": "support"
+          },
+          "context": "Connection is strengthened by sharing success."
+        }
+      },
+      "sevenofwands": {
+        "position1": {
+          "upright": "The result is that you will show determination and defense to protect your marriage.",
+          "reversed": "Tiredness and vulnerability can complicate the outcome of marriage.",
+          "keywords": {
+            "0": "determination",
+            "1": "defence",
+            "2": "struggle",
+            "3": "power"
+          },
+          "context": "The result is a protected and defended marriage, but fatigue must be governed."
+        },
+        "position10": {
+          "upright": "The Seven Wands show the need to maintain your position and fight commitment on the way to marriage.",
+          "reversed": "Tiredness or defensive behavior may prevent progress in marriage, and it is beneficial to receive support.",
+          "keywords": {
+            "0": "Determination",
+            "1": "defence",
+            "2": "determination",
+            "3": "struggle",
+            "4": "consistency"
+          },
+          "context": "Marriage requires determination and determination."
+        },
+        "position2": {
+          "upright": "Defend your position, maintain your beliefs, stand strong while waiting.",
+          "reversed": "Excessive defense or shyness makes the process difficult.",
+          "keywords": {
+            "0": "defence",
+            "1": "position",
+            "2": "faith",
+            "3": "power"
+          },
+          "context": "It would be helpful to defend your position while you wait."
+        },
+        "position3": {
+          "upright": "Positions may need defending and limiting.",
+          "reversed": "Excessive defense measures; delegates and support ensure balance.",
+          "keywords": {
+            "0": "defence",
+            "1": "limit",
+            "2": "determination",
+            "3": "support"
+          },
+          "context": "The clear border protects justice."
+        },
+        "position5": {
+          "upright": "Similar determination in border protection and posture. Consistency is reassuring.",
+          "reversed": "Extremism can be lonely.",
+          "keywords": {
+            "0": "limit",
+            "1": "defence",
+            "2": "consistency",
+            "3": "resistance",
+            "4": "flexibility"
+          },
+          "context": "Stand, partner, ease it with flexibility."
+        },
+        "position6": {
+          "upright": "The family may see you as a firm and stable man, and your values that you stand for make your acceptance easier, and consistency gives you confidence.",
+          "reversed": "Family may find you stubborn or over-defensive, lack of flexibility makes the acceptance process difficult.",
+          "keywords": {
+            "0": "determination",
+            "1": "defence",
+            "2": "values",
+            "3": "consistency",
+            "4": "Trust"
+          },
+          "context": "Determination makes acceptance easier, too much stiffness creates distance in the family."
+        },
+        "position7": {
+          "upright": "Seven Asas indicate meeting in an environment where boundaries and consistency stand out.",
+          "reversed": "The Reverse Seven Asa says that fatigue can harden the defense, and flexibility and support make it easier to meet.",
+          "keywords": {
+            "0": "defence",
+            "1": "limit",
+            "2": "determination",
+            "3": "resistance"
+          },
+          "context": "You meet him in a stable environment."
+        },
+        "position8": {
+          "upright": "The Seven of wands represent their own boundaries in communication.",
+          "reversed": "The Reverse Cane Seven indicates that defensive behavior can make communication difficult.",
+          "keywords": {
+            "0": "defence",
+            "1": "limit",
+            "2": "determination",
+            "3": "communication"
+          },
+          "context": "Consistent boundaries make the deal easier."
+        },
+        "position9": {
+          "upright": "The seven of the staffs are worthy of you, the wife who keeps her values and stays by her side.",
+          "reversed": "The Seven of the Reverse Wands, they are not always defensive or menacing for you.",
+          "keywords": {
+            "0": "value",
+            "1": "protection",
+            "2": "Loyalty",
+            "3": "power"
+          },
+          "context": "The spouse who maintains his values is suitable."
+        },
+        "position4": {
+          "upright": "The Seven Wands maintain values and loyalty to one another in bonding, and the strong stance strengthens the bond.",
+          "reversed": "The Reverse Seven Wands may have a sense of over-defensive or threat in connection, and fear prevents closeness.",
+          "keywords": {
+            "0": "value",
+            "1": "protection",
+            "2": "Loyalty",
+            "3": "defence",
+            "4": "power"
+          },
+          "context": "Connection is strengthened by maintaining values."
+        }
+      },
+      "eightofwands": {
+        "position1": {
+          "upright": "The result is that with rapid progress and fluent communication, your marriage will improve.",
+          "reversed": "Delays or communication problems may force the process.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "flow",
+            "3": "Progress"
+          },
+          "context": "The result is a quick and fluid marriage, but delays must be avoided."
+        },
+        "position10": {
+          "upright": "Eight wands indicate that rapid developments and news lead to marriage. The process is accelerating.",
+          "reversed": "Delays and misunderstandings can make the marriage path difficult.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "news",
+            "3": "Progress",
+            "4": "flow"
+          },
+          "context": "Fast progress for marriage is at hand."
+        },
+        "position2": {
+          "upright": "Move fast, seize opportunities, maintain momentum while waiting.",
+          "reversed": "Rushing or stagnation will complicate the process.",
+          "keywords": {
+            "0": "speed",
+            "1": "opportunity",
+            "2": "momentum",
+            "3": "movement"
+          },
+          "context": "It helps to be quick and decisive while waiting."
+        },
+        "position3": {
+          "upright": "Quick communication and process in time opens the window of opportunity, and the flow speeds up.",
+          "reversed": "Delays and canal confusion lead to false payments.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "sync",
+            "3": "flow"
+          },
+          "context": "Sequence and role clarity maintain flow."
+        },
+        "position5": {
+          "upright": "Fast communication and net signal language are similar.",
+          "reversed": "You may have a different threshold for channel confusion. The sequence has to simplify.",
+          "keywords": {
+            "0": "speed",
+            "1": "signal",
+            "2": "flow",
+            "3": "sync",
+            "4": "communication"
+          },
+          "context": "The rapid flow is common."
+        },
+        "position6": {
+          "upright": "The family may see you as a quick adapter and open to communication, and it's comforting to be able to move with the flow, and the clear and fast answers create confidence.",
+          "reversed": "Family may find you hasty or inadequate in communication, and confusion and delay make the acceptance process difficult, and uncertainty makes the family nervous.",
+          "keywords": {
+            "0": "communication",
+            "1": "compatibility",
+            "2": "speed",
+            "3": "clarity",
+            "4": "flow"
+          },
+          "context": "Quick harmony and clarity increase acceptance, chaos forces the family."
+        },
+        "position7": {
+          "upright": "Eight Asas show you to meet in rapid progress and in the flow of communication, and news, travel, or sudden meeting unites you.",
+          "reversed": "The Reverse Eight Asa says that delays or confusion can push the bond, so the net order makes it easier to meet.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "acceleration",
+            "3": "flow"
+          },
+          "context": "You meet him in rapid development, he builds a net."
+        },
+        "position8": {
+          "upright": "The Stick Eight points to rapid and fluid communication, and in time, messages strengthen the deal.",
+          "reversed": "The Reverse Stick Eight says delays and misunderstandings can force harmony.",
+          "keywords": {
+            "0": "speed",
+            "1": "flow",
+            "2": "Message",
+            "3": "communication"
+          },
+          "context": "Communication improves harmony in time."
+        },
+        "position9": {
+          "upright": "Eight of the wands, you're good for a fast, open-communicator and action partner.",
+          "reversed": "Eight of the Reverse Wands, a non-communicational and postponing person is not suitable for you.",
+          "keywords": {
+            "0": "communication",
+            "1": "movement",
+            "2": "speed",
+            "3": "clarity"
+          },
+          "context": "The partner who communicates quickly and openly is suitable."
+        },
+        "position4": {
+          "upright": "Eight wands show rapid progress in connection and open communication, speed and clarity make it easier to say yes.",
+          "reversed": "The Reverse Eight Canes may be delayed in connection or lack of communication, and slowness makes the bond difficult.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "Progress",
+            "3": "clarity",
+            "4": "movement"
+          },
+          "context": "Connection is strengthened by rapid communication and clarity."
+        }
+      },
+      "nineofwands": {
+        "position1": {
+          "upright": "The result is patience, endurance, and the power shown at the final stage will make your marriage permanent.",
+          "reversed": "Excession or extreme caution can force the outcome of a marriage.",
+          "keywords": {
+            "0": "endurance",
+            "1": "Patience",
+            "2": "power",
+            "3": "protection"
+          },
+          "context": "The result is a marriage that grows stronger with patience, but extreme fatigue can prevent it."
+        },
+        "position10": {
+          "upright": "The Nine Wands indicate endurance and the final stage on the way to marriage, and those who resist with patience succeed.",
+          "reversed": "Extinction and the tendency to give up can undermine the plans for marriage, and you have to continue with support.",
+          "keywords": {
+            "0": "endurance",
+            "1": "Patience",
+            "2": "protection",
+            "3": "resistance",
+            "4": "complete"
+          },
+          "context": "Marriage is the final stage, it's the strength of patience."
+        },
+        "position2": {
+          "upright": "Test your endurance, hold your strength, and be patient while you wait.",
+          "reversed": "It complicates the process of exhaustion or premature abandonment.",
+          "keywords": {
+            "0": "endurance",
+            "1": "Patience",
+            "2": "power",
+            "3": "test"
+          },
+          "context": "It helps to have endurance while waiting."
+        },
+        "position3": {
+          "upright": "In the last corner, endurance is important; budget discipline is maintained; small breaks are essential.",
+          "reversed": "Excessive alertness and fatigue lower the threshold of debate.",
+          "keywords": {
+            "0": "endurance",
+            "1": "He's alert.",
+            "2": "timeout",
+            "3": "continuity"
+          },
+          "context": "When the rhythm is maintained, the result comes."
+        },
+        "position5": {
+          "upright": "Consistency and the analogy of the last corner of psychology, power is maintained by small breaks.",
+          "reversed": "You may have a different set of triggers and fatigue thresholds.",
+          "keywords": {
+            "0": "endurance",
+            "1": "He's alert.",
+            "2": "timeout",
+            "3": "protection",
+            "4": "continuity"
+          },
+          "context": "Resistance, partner, rest culture is essential."
+        },
+        "position6": {
+          "upright": "The family may see you as a strong and determined man, and your endurance is precious to them; and your patience makes it easier for you to accept.",
+          "reversed": "Family may see you as too tired or too closed, defensive behaviors make it hard to accept, and weariness diminishes confidence.",
+          "keywords": {
+            "0": "endurance",
+            "1": "Determination",
+            "2": "Patience",
+            "3": "resistance",
+            "4": "protection"
+          },
+          "context": "Determination increases acceptance, fatigue and closure create doubts in the family."
+        },
+        "position7": {
+          "upright": "Nine Asas demonstrate meeting in the process of endurance and border protection, bringing confidence to a meeting at the end of a difficult period.",
+          "reversed": "The Reverse Nine Asa says that exhaustion can force the bond, and the support network makes it easier to meet.",
+          "keywords": {
+            "0": "endurance",
+            "1": "protection",
+            "2": "limit",
+            "3": "Trust"
+          },
+          "context": "You'll meet him in the process of endurance, he'll strengthen the support bond."
+        },
+        "position8": {
+          "upright": "The Nine Sticks indicate patience and endurance in communication, and not giving up strengthens harmony.",
+          "reversed": "The Reverse Stick Nine shows that fatigue can make communication difficult, and small breaks protect the bond.",
+          "keywords": {
+            "0": "Patience"
+          }
+        }
+      }
+    }
+  }
+}

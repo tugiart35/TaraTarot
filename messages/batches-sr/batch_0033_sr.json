@@ -1,0 +1,776 @@
+{
+  "money": {
+    "meanings": {
+      "twoofwands": {
+        "position8": {
+          "keywords": [
+            "vizija",
+            "planiranje",
+            "ekspanzija",
+            "odluka",
+            "horizont"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa razvojem vizije ili oklevanja."
+        }
+      },
+      "threeofwands": {
+        "position1": {
+          "upright": "Tri štapića ukazuje na anksioznost o nedostajućim mogućnostima za širenje i rast. Možda se plašite da ne možete proširiti svoje horizonte.",
+          "reversed": "Pretvoreni tri štapića ukazuje na zabrinutost za odlaganje i neuspešnu saradnju. Možda ćete se brinuti da će vaša očekivanja biti razočarana.",
+          "keywords": [
+            "ekspanzija",
+            "prilika",
+            "anksioznost",
+            "rast",
+            "vizija"
+          ],
+          "context": "Anksioznost proizilazi iz nestalih mogućnosti rasta."
+        },
+        "position2": {
+          "upright": "Tri štapića ukazuje da se bezbednost traže kroz širenje horizonta i saradnje. Nove mogućnosti čine da rastete.",
+          "reversed": "Tri štapića obrnuta ukazuju na uski umudbu i anksioznost o odugovlaci. Želja za bezbednošću slabi sa nestrpljenjem.",
+          "keywords": [
+            "ekspanzija",
+            "partnerstvo",
+            "sigurnost",
+            "horizont",
+            "prilika"
+          ],
+          "context": "Nalazite sigurnost kroz kolaboracije u toku horizonta."
+        },
+        "position3": {
+          "upright": "Tri štapića ukazuju na mogućnosti rasta i saradnje u korištenju novca. Investicije u toku horizonta u toku.",
+          "reversed": "Pretvoreni tri štapića ukazuje na kašnjenje u očekivanim finansijskim dobicima.",
+          "keywords": [
+            "ekspanzija",
+            "partnerstvo",
+            "vizija",
+            "očekivanje",
+            "investicija"
+          ],
+          "context": "Saradnja i širenje u korištenju novca dolaze na prednji deo."
+        },
+        "position4": {
+          "upright": "U prošlosti je možda bilo širenje, saradnje ili potrage za novim tržištima za finansijski razvoj.",
+          "reversed": "Prekoračio tri štapića, napredak je ograničen kratkovidnom ili odlaganjem.",
+          "keywords": [
+            "ekspanzija",
+            "partnerstvo",
+            "novac",
+            "vizija",
+            "napredak"
+          ],
+          "context": "U prošlosti je finansijski razvoj podržan uslovi za širenje i saradnju."
+        },
+        "position5": {
+          "upright": "Tri štapića ukazuju na širenje u finansijskim odgovornostima, saradnji i proceni dugoročnih mogućnosti.",
+          "reversed": "Pretvoreni tri štapića ukazuju na odlaganja u finansijskim odgovornostima, uskim izgledima ili opstrukcijom napretka.",
+          "keywords": [
+            "ekspanzija",
+            "partnerstvo",
+            "Dugoročni plan",
+            "vizija",
+            "odgovornost"
+          ],
+          "context": "Proširenje ili kašnjenje u finansijskim odgovornostima dolazi do izražaja."
+        },
+        "position7": {
+          "upright": "Tri štapića ukazuju na širenje u finansijskim planovima, saradnji i otvaranju na dugoročne mogućnosti u budućnosti.",
+          "reversed": "Tri štapića obrnuta ukazuju na rizik od kratkodiranja, odlaganja ili pogrešne mogućnosti.",
+          "keywords": [
+            "ekspanzija",
+            "partnerstvo",
+            "prilika",
+            "horizont",
+            "vremenski vreme"
+          ],
+          "context": "Proširenje ili propuštene mogućnosti će doći do zaruka u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Tri štapića ukazuje da širenje, poslovna poduhvata i saradnja podržavaju sposobnosti donošenja novca.",
+          "reversed": "Prekornjaka Tri štapića ukazuje da se mogućnosti mogu biti ograničene zbog kratkovidne, nedostatka planiranja ili nestrpljenja.",
+          "keywords": [
+            "ekspanzija",
+            "partnerstvo",
+            "prilika",
+            "trgovina",
+            "vizija"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa širenjem ili uskogrudgu."
+        },
+        "position6": {
+          "upright": "Tri štapića ukazuju na širenje u finansijskim planovima, novim saradnim i dugoročnim mogućnostima profita.",
+          "reversed": "Pretvoreni tri štapića ukazuju na odlaganje, kratkovidnost ili blokadu u planovima.",
+          "keywords": [
+            "ekspanzija",
+            "partnerstvo",
+            "dugoročan",
+            "vizija",
+            "prilika"
+          ],
+          "context": "Proširenje ili uska ugovornost biće presudni u novim finansijskim planovima."
+        }
+      },
+      "fourofwands": {
+        "position1": {
+          "upright": "Četiri štapića ukazuju na anksioznost zbog gubitka stabilnosti i proslave. Ne osećanje sigurnosti može stvoriti anksioznost.",
+          "reversed": "Preokrećena četiri štapića otkriva anksioznost da nema čvrste temelje. Možda ćete se plašiti da će vaši napori biti uzaludni.",
+          "keywords": [
+            "stabilnost",
+            "proslava",
+            "anksioznost",
+            "osnova",
+            "poverenje"
+          ],
+          "context": "Anksioznost proizilazi iz nestabilnosti i nesigurnosti."
+        },
+        "position2": {
+          "upright": "Četiri štapića ukazuju na to da tražite sigurnost u proslavi, jedinstvu i stabilnosti. Čvrsta fondacija donosi mir.",
+          "reversed": "Pretvorena četrna mesta ukazuje na anksioznost o poremećaju ili pripadnosti. Želja za sigurnost uzdrma se privremenom prazninom.",
+          "keywords": [
+            "stabilnost",
+            "jedinstvo",
+            "sigurnost",
+            "proslava",
+            "osnova"
+          ],
+          "context": "Smatrate sigurnost u trenucima jedinstva i proslave."
+        },
+        "position3": {
+          "upright": "U upotrebi novca, četiri štapića ukazuju na proslave, troškove za dom ili porodicu. Označen je osećaj sigurnosti.",
+          "reversed": "Pretvoreni četvorici štapića ukazuje da neplanirani troškovi mogu poremetiti redosled.",
+          "keywords": [
+            "proslava",
+            "sigurnost",
+            "porodica",
+            "kuću",
+            "trošenje"
+          ],
+          "context": "Teme sigurnosti i proslave dolaze na prvi plan u upotrebi novca."
+        },
+        "position4": {
+          "upright": "U prošlosti su finansijska pitanja možda ojačana proslavama, zajedničkim dostignućima ili porodičnom podrškom.",
+          "reversed": "Ukrasano četiri štapića znači fluktuacije u prihodima zbog nestabilnosti ili nedostatka fondacija.",
+          "keywords": [
+            "proslava",
+            "stabilnost",
+            "novac",
+            "podrška",
+            "porodica"
+          ],
+          "context": "U prošlosti su finansirane finansirane zajedničke proslave i podrške."
+        },
+        "position5": {
+          "upright": "Četiri štapića ukazuju na stabilnost, slavlje i osnivačku konsolidaciju u finansijskim odgovornostima.",
+          "reversed": "Preokrećena četiri štapića znači privremena nestabilnost, neorganizaciju ili nedovršeni posao u finansijskim odgovornostima.",
+          "keywords": [
+            "stabilnost",
+            "osnova",
+            "proslava",
+            "porodica",
+            "odgovornost"
+          ],
+          "context": "Stabilnost ili nepravilnost je na čelu u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Četiri štapića ukazuju na stabilnost u finansijskim planovima, proslavi zajedničkih dostignuća i čvrstih temelja.",
+          "reversed": "Preokrećena četiri štapića ukazuje na privremeni poremećaj, disharmonija ili nedovršene projekte.",
+          "keywords": [
+            "stabilnost",
+            "proslava",
+            "osnova",
+            "raport",
+            "uspeh"
+          ],
+          "context": "Čvrsta fondacija ili nespojivost mogu doći do predloga u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Četiri štapića ukazuje da će stabilnost, proslava i saradnja pružiti čvrstu osnovu za finansijske planove u budućnosti.",
+          "reversed": "Četiri štapića obrnuta ukazuju na rizik privremenog poremećaja i nemira u porodičnim ili poslovnim odnosima.",
+          "keywords": [
+            "stabilnost",
+            "proslava",
+            "osnova",
+            "partnerstvo",
+            "raport"
+          ],
+          "context": "Stabilnost ili nemiri uticaće na buduće finansijske planove."
+        },
+        "position8": {
+          "upright": "Četiri štapića ukazuju na to da su čvrsti temelji, proslave i sigurni prostori poboljšavaju sposobnosti donošenja novca.",
+          "reversed": "Preokrećena četvorica štapića ukazuje da je nesposobnost, nestabilnost, nestabilnost ili brza planiranje mogu potkopati mogućnosti.",
+          "keywords": [
+            "osnova",
+            "stabilnost",
+            "proslava",
+            "jedinstvo",
+            "pripadnik"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa stabilnošću ili poremećajem."
+        }
+      },
+      "fiveofwands": {
+        "position1": {
+          "upright": "Pet štapića ukazuje na anksioznost o konkurenciji i sukobu. Možda se bojte da se ne možete izdvojiti u materijalnom svetu.",
+          "reversed": "Preokrećeno pet štapića otkriva potisnutu napetost i nepotrebnu anksioznost borbe. Možete se brinuti da će vas sukobi konzumirati.",
+          "keywords": [
+            "rivalstvo",
+            "sukob",
+            "anksioznost",
+            "borba",
+            "ego"
+          ],
+          "context": "Anksioznost se pojavljuje od konkurencije i sukoba u materijalnom svetu."
+        },
+        "position2": {
+          "upright": "Petorica štapića pokazuje da se neko traži bezbednost borbom i konkurencijom. Vaš trud vam daje snagu.",
+          "reversed": "Pet štapića preokrećeno ukazuje na skrivene sukobe ili motivacijske anksioznost. Želja za sigurnost oslabljena je napetošću.",
+          "keywords": [
+            "borba",
+            "rivalstvo",
+            "sigurnost",
+            "trud",
+            "motivacija"
+          ],
+          "context": "Nalazite sigurnost kroz snagu borbe."
+        },
+        "position3": {
+          "upright": "Petorica štapića ukazuje na konkurenciju i nesuglasice u korištenju novca. Možda je trenje u zajedničkim resursima.",
+          "reversed": "Otkriveni pet štapića ukazuje da finansijski sporovi počinju da se reše.",
+          "keywords": [
+            "rivalstvo",
+            "sukob",
+            "novac",
+            "sukob",
+            "izvor"
+          ],
+          "context": "Konkurencija i sukobi mogu doći do zaruka u korištenju novca."
+        },
+        "position4": {
+          "upright": "Konkurencija, neslaganja ili probe protiv finansijskih sredstava možda su došle do izražaja u prošlosti.",
+          "reversed": "Pet štapića preokrećeno ukazuje da granični dobici neriješenih sukoba.",
+          "keywords": [
+            "rivalstvo",
+            "sukob",
+            "novac",
+            "borba",
+            "razvoj"
+          ],
+          "context": "U prošlosti je bilo takmičarsko okruženje u novcu."
+        },
+        "position5": {
+          "upright": "Petorica štapića ukazuje na rivalstvo, argument ili neslaganje zbog finansijskih odgovornosti.",
+          "reversed": "Invertirani pet štapića ukazuje na proces pomirenja, rešavanje sporova i harmonija u finansijskim odgovornostima.",
+          "keywords": [
+            "rivalstvo",
+            "argument",
+            "rešenje",
+            "raport",
+            "odgovornost"
+          ],
+          "context": "Sukob ili rezolucija je efikasna u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Pet štapića ukazuje na konkurenciju, sukob interesa i razlike u mišljenju u finansijskim planovima.",
+          "reversed": "Otkriveni pet štapića ukazuje na rešavanje sukoba, konstruktivnu saradnju ili kompromise.",
+          "keywords": [
+            "rivalstvo",
+            "sukob",
+            "neslaganje",
+            "kompromis",
+            "dinamičnost"
+          ],
+          "context": "Konkurencija ili kompromis će biti presudan u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Petorica štapića, takmičenja, sukoba ideja i produktivnih borbi biće u budućnosti u FINANSIJSKOJ planovima.",
+          "reversed": "Petorica osnivanih štapića ukazuje da je neproduktivna argumenta, nepotrebna konkurencija ili pen-up bes, mogu komplikovati planove.",
+          "keywords": [
+            "rivalstvo",
+            "borba",
+            "Sukob ideja",
+            "razvoj",
+            "prihod"
+          ],
+          "context": "Konkurencija ili neproduktivni sukob će istaknuti u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Petorica štapića ukazuje na to da je konkurencija, praktična veština i borba za borbu protiv sposobnosti donošenja novca.",
+          "reversed": "Otkriveni pet štapića ukazuje da nepotreban sukob, ljubomora ili raštrkana energija može ograničiti mogućnosti.",
+          "keywords": [
+            "rivalstvo",
+            "borba",
+            "pokušati",
+            "praktičan",
+            "rast"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa konkurencijom ili sukobom."
+        }
+      },
+      "sixofwands": {
+        "position1": {
+          "upright": "Šest štapića ukazuje na anksioznost zbog toga što ne može da održava uspeh. Možda se plašite gubitka prepoznavanja.",
+          "reversed": "Uokrećena šest štapića otkriva anksioznost zbog neuspeha i bezvrede. Možda ćete se brinuti da ne dobijate priznanje koje zaslužujete.",
+          "keywords": [
+            "uspeh",
+            "prepoznavanje",
+            "anksioznost",
+            "pobeda",
+            "motivacija"
+          ],
+          "context": "Anksioznost se pojavljuje da ne mogu da održavaju uspeh i ne priznaju se."
+        },
+        "position2": {
+          "upright": "Šest štapića ukazuje da tražite sigurnost uspehom i prepoznavanjem. Vidljivost vam donosi mir.",
+          "reversed": "Šest štapića preokrećeno ukazuje na anksioznost zbog nedostatka uvažavanja. Želja za sigurnost oslabljena je beskorisnošću.",
+          "keywords": [
+            "uspeh",
+            "diskrecija",
+            "sigurnost",
+            "pobeda",
+            "motivacija"
+          ],
+          "context": "Nalazite sigurnost u uspehu i prepoznavanju."
+        },
+        "position3": {
+          "upright": "Šest štapića ukazuje na uspeh, vidljivost i dobitak u upotrebi novca. Potrošnja se vrši sa samopouzdanjem.",
+          "reversed": "Ukidani šest štapića stvara nezadovoljstvo zbog neprihvaćenih napora.",
+          "keywords": [
+            "uspeh",
+            "diskrecija",
+            "zaraditi",
+            "poverenje",
+            "novac"
+          ],
+          "context": "Uspeh i zahvalnost dolaze na prvi plan u upotrebi novca."
+        },
+        "position4": {
+          "upright": "Finansijski uspeh i priznavanje možda su postignuti u prošlosti. Uspeh je povećala motivacija.",
+          "reversed": "Pretvoreno šest štapića, dostignuća se mogu ugroziti nedostatkom uvažavanja ili pogrešne displeja.",
+          "keywords": [
+            "uspeh",
+            "prepoznavanje",
+            "novac",
+            "motivacija",
+            "pobeda"
+          ],
+          "context": "U prošlosti je finansijski uspeh pružio vidljivost i motivaciju."
+        },
+        "position5": {
+          "upright": "Šest štapića ukazuje na uspeh, prepoznavanje i vidljivi napredak u finansijskim odgovornostima.",
+          "reversed": "Prekoračenje šest štapića ukazuje na nedostatak uvažavanja finansijskih odgovornosti, straha od neuspeha ili nevidljive radne snage.",
+          "keywords": [
+            "uspeh",
+            "diskrecija",
+            "napredak",
+            "vidljivost",
+            "odgovornost"
+          ],
+          "context": "Osjećaj uspeha ili beskorisnosti dolazi do izražaja finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Šest štapića ukazuje na uspeh u finansijskim planovima, prepoznavanju i nagradu za napore.",
+          "reversed": "Okrećeno šest štapića ukazuje na nedostatak uvažavanja, privremenog uspeha ili prekomernog ponosa.",
+          "keywords": [
+            "uspeh",
+            "prepoznavanje",
+            "rad",
+            "diskrecija",
+            "pobeda"
+          ],
+          "context": "Novi finansijski planovi će imati uspeh ili nedostatak priznanja."
+        },
+        "position7": {
+          "upright": "Šest štapića će u budućnosti sadržati uspeh, prepoznavanje i vidljive pobede u finansijskim planovima u budućnosti.",
+          "reversed": "Šest štapića preokrećeno ukazuje na rizik od nemilnosti, potcenjenosti dostignuća ili nedostatka uvažavanja.",
+          "keywords": [
+            "uspeh",
+            "prepoznavanje",
+            "pobeda",
+            "motivacija",
+            "rukovodstvo"
+          ],
+          "context": "Budući finansijski planovi će se odrediti uspehom ili nedostatkom toga."
+        },
+        "position8": {
+          "upright": "Šest štapića ukazuje da veštine postignuća, priznanja i liderstva povećavaju potencijal za finansijsku korist.",
+          "reversed": "Prekoračenje šest štapića ukazuje da arogancija, nedostatak vidljivosti ili straha od neuspeha mogu blokirati mogućnosti.",
+          "keywords": [
+            "uspeh",
+            "prepoznavanje",
+            "rukovodstvo",
+            "poverenje",
+            "pobeda"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa uspehom ili nedostatkom samopouzdanja."
+        }
+      },
+      "sevenofwands": {
+        "position1": {
+          "upright": "Sedam štapića ukazuje na anksioznost da ne može da brani nečiji položaj. Možda se plašite da niste u stanju da zaštitite svoja prava.",
+          "reversed": "Preokrećeno sedam štapića otkriva anksioznost o izgorelosti i ranjivosti. Možete se brinuti zbog gubitka moći.",
+          "keywords": [
+            "odbrana",
+            "anksioznost",
+            "prava",
+            "otpornost",
+            "zaštita"
+          ],
+          "context": "Anksioznost se pojavljuje da ne mogu da brane nečiji položaj i budete nemoćni."
+        },
+        "position2": {
+          "upright": "Sedam štapića pokazuje da tražite sigurnost štitećim granicama. Određivanje vam daje mir.",
+          "reversed": "Preokrećeno sedam štapića ukazuje na umor i anksioznost. Želja za sigurnost oslabljena je nedostatkom odbrane.",
+          "keywords": [
+            "odbrana",
+            "stabilnost",
+            "sigurnost",
+            "granica",
+            "otpornost"
+          ],
+          "context": "Vi sigurnosti smatrate odlučnom odbranom."
+        },
+        "position3": {
+          "upright": "Sedam štapića ukazuje na odbrambeni stav u upotrebi novca i želje za zaštitom resursa.",
+          "reversed": "Invertirani sedam štapića ukazuje na ranjivost ili finansijsku poteškoću.",
+          "keywords": [
+            "odbrana",
+            "zaštita",
+            "borba",
+            "novac",
+            "rizikovati"
+          ],
+          "context": "Zaštita i odbrana dolaze u prvi plan u upotrebi novca."
+        },
+        "position4": {
+          "upright": "U prošlosti, finansijska sredstva mogu oblikovati odbrana, zaštita položaja i konkurencije.",
+          "reversed": "Okrećeno sedam štapića, finansijski položaj se ne može održavati zbog umora i gubitka otpornosti.",
+          "keywords": [
+            "odbrana",
+            "položaj",
+            "novac",
+            "rivalstvo",
+            "izdržljivost"
+          ],
+          "context": "U prošlosti su fiskalni stavovi bili fokusirani na odbranu i zaštitu."
+        },
+        "position5": {
+          "upright": "Sedam štapića ukazuje na odbranu, održavanje položaja i borbu u finansijskim odgovornostima.",
+          "reversed": "Preokrećeno sedam štapića može ukazivati na umora, gubitak otpornosti ili prekomerne odbrane u pogledu finansijskih odgovornosti.",
+          "keywords": [
+            "odbrana",
+            "zaštita",
+            "otpornost",
+            "borba",
+            "odgovornost"
+          ],
+          "context": "Borba ili umor određuje finansijske odgovornosti."
+        },
+        "position6": {
+          "upright": "Sedam štapića pokazuje odbranu u finansijskim planovima, snažnom stavu u konkurentnom okruženju i zaštitu nečijih prava.",
+          "reversed": "Pretvorenih sedam štapića ukazuje na umor, smanjenu izdržljivost ili gubitak položaja.",
+          "keywords": [
+            "odbrana",
+            "rivalstvo",
+            "izdržljivost",
+            "zaštita",
+            "borba"
+          ],
+          "context": "Snažna odbrana ili umora biće efikasna u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Sedam štapića ukazuje na snažan stav u finansijskim planovima u budućnosti, odbrana u konkurentnom okruženju i održavanje zasluženog položaja.",
+          "reversed": "Preokrećeno sedam štapića ukazuje da umor, nedostatak odbrane ili tendencija da se odrekne mogu osporiti finansijsku stabilnost.",
+          "keywords": [
+            "odbrana",
+            "otpornost",
+            "rivalstvo",
+            "stabilnost",
+            "snaga"
+          ],
+          "context": "Jak stav ili umor će biti efikasni u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Sedam štapića ukazuje da veštine u odbrani nečijeg položaja, izdržljivosti i upornosti poboljšavaju njihovu sposobnost da zarade novac.",
+          "reversed": "Okolište sedam štapića ukazuje da se mogu propustiti prilici zbog umora, gubitka otpornosti ili ranjivosti.",
+          "keywords": [
+            "odbrana",
+            "izdržljivost",
+            "rezolucija",
+            "borba",
+            "stabilnost"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa izdržljicom ili umorom."
+        }
+      },
+      "eightofwands": {
+        "position1": {
+          "upright": "Osam štapića ukazuje na zabrinutost zbog prebrzo razvoja. Možda se plašite da ne možete da nastavite sa ubrzanim uslovima brzo promjene.",
+          "reversed": "Pretvoreni osam štapića ukazuje na anksioznost o kašnjenjima i zagušenju. Zabrinjavajući se da ne možete da napredujete, možete da vas umorite.",
+          "keywords": [
+            "brzina",
+            "prilika",
+            "anksioznost",
+            "napredak",
+            "protok"
+          ],
+          "context": "ANKSIETE proizlazi da ne mogu da budu u toku sa brzim promenama ili da se zaglave."
+        },
+        "position2": {
+          "upright": "Osam štapića ukazuje na to da tražite sigurnost brzinom i protokom. Mogućnosti koje dolaze na vreme daju vam mir.",
+          "reversed": "Osam o ljudskim štapićima ukazuje na anksioznost o kašnjenju ili haosu. Želja za bezbednošću uzdrma se zbrkom.",
+          "keywords": [
+            "brzina",
+            "protok",
+            "sigurnost",
+            "ubrzanje",
+            "prilika"
+          ],
+          "context": "Nalazite sigurnost u brzom i kompatibilnom protoku."
+        },
+        "position3": {
+          "upright": "Osam štapića ukazuje na brzi razvoj u upotrebi novca i naglim troškovima. Brze investicije mogu doći do izražaja.",
+          "reversed": "Invertirana osam štapića ukazuje na gubitke zbog kašnjenja ili loših vremena.",
+          "keywords": [
+            "brzina",
+            "investicija",
+            "razvoj",
+            "trošenje",
+            "prilika"
+          ],
+          "context": "Brzi razvoj u korištenju novca dolaze do izražaja."
+        },
+        "position4": {
+          "upright": "Možda je bilo brza razvoj, nagledne finansijske mogućnosti i pokretljivost u prošlosti.",
+          "reversed": "Okolište osmi štapića znači finansijske tokove usporile zbog kašnjenja i problema sa komunikacijama.",
+          "keywords": [
+            "brzina",
+            "razvoj",
+            "novac",
+            "prilika",
+            "pokret"
+          ],
+          "context": "U prošlosti su se finansijski procesi brzo napredovali."
+        },
+        "position5": {
+          "upright": "Osam štapića predstavlja brzi razvoj, vesti ili zamah u finansijskim odgovornostima.",
+          "reversed": "Otkriveno osam štapića znači odlaganja, zbrku ili spor napredak u finansijskim odgovornosti.",
+          "keywords": [
+            "brzina",
+            "ubrzanje",
+            "vesti",
+            "razvoj",
+            "odgovornost"
+          ],
+          "context": "Brzina ili kašnjenje je na čelu u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Osam štapića ukazuje na brzinu, oduzimajući prilike i brz napredak u finansijskim planovima.",
+          "reversed": "Otkriveni osam štapića ukazuje na odlaganje, pogrešno komuniciranje ili ometano protok.",
+          "keywords": [
+            "brzina",
+            "napredak",
+            "prilika",
+            "komunikacija",
+            "protok"
+          ],
+          "context": "Brz napredak ili kašnjenja u novim finansijskim planovima biće na dnevnom redu."
+        },
+        "position7": {
+          "upright": "Osam štapića ukazuje na brzinu finansijskih planova, komunikacije i dolasku iznenadnih prilika u budućnosti.",
+          "reversed": "Otkriveni osam štapića ukazuje da će kašnjenja, komunikacioni problemi ili loše vreme odložiti mogućnosti.",
+          "keywords": [
+            "brzina",
+            "prilika",
+            "komunikacija",
+            "ubrzanje",
+            "vremenski vreme"
+          ],
+          "context": "Brzina ili kašnjenje biće presudne u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Osam štapića ukazuje na to da je brzina, komunikacija i sposobnost da odmah reaguju mogućnosti povećavaju njihovu sposobnost da zarade.",
+          "reversed": "Otkriveno osam štapića ukazuje da se mogućnosti mogu propustiti zbog kašnjenja, pogrešno komuniciranja ili neorganizacije.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "prilika",
+            "ubrzanje",
+            "sinhronost"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca vezano su da brzo reaguju ili kasnite."
+        }
+      },
+      "nineofwands": {
+        "position1": {
+          "upright": "Devet štapića ukazuje na obeshrabrenje i anksioznost zbog gubitka izdržljivosti. Možda ste umorni od dugih borbi.",
+          "reversed": "Reversed devet štapića otkriva anksioznost odustajanja i da nema snage da izdrži. Biti u stalnoj borbi može vas naterati da vas anksiozni.",
+          "keywords": [
+            "izdržljivost",
+            "umor",
+            "anksioznost",
+            "borba",
+            "otpornost"
+          ],
+          "context": "Anksioznost nastaje dugoročne borbe i iscrpljenost izdržljivosti izdržljivosti."
+        },
+        "position2": {
+          "upright": "Devet štapića ukazuje na to da tražite sigurnost putem otpornosti i strpljenja. Ostanite snažni vam daje mir.",
+          "reversed": "Devet štapića preokrećeno ukazuje na anksioznost o izgaranju i hipervigilanciji. Želja za bezbednošću slabi se sa umorom.",
+          "keywords": [
+            "otpornost",
+            "strpljenje",
+            "sigurnost",
+            "zaštita",
+            "izdržljivost"
+          ],
+          "context": "Nalazite sigurnost kroz strpljenje i otpornost."
+        },
+        "position3": {
+          "upright": "Devet štapića ukazuje na oprez i oprez u upotrebi novca. Prethodni gubici dovode do opreza.",
+          "reversed": "Invertirani devet štapića ukazuje na krutost u korištenju novca zbog ekstremne umora ili stalne anksioznosti.",
+          "keywords": [
+            "predostrožnost",
+            "paza",
+            "otpornost",
+            "anksioznost",
+            "novac"
+          ],
+          "context": "Njega i oprez dolaze na prednji plan kada koristite novac."
+        },
+        "position4": {
+          "upright": "U prošlosti, otpornosti, izdržljivosti i napori da se prevaziđu teška vremena možda su došle do izražaja u finansijskim stvarima.",
+          "reversed": "Okrećeno devet štapića, izgaranje i hipervigilancije oslabilo je finansijsko samopouzdanje.",
+          "keywords": [
+            "izdržljivost",
+            "odbrana",
+            "novac",
+            "težak period",
+            "zaštita"
+          ],
+          "context": "U prošlosti je finansijska situacija održavana putem otpornosti."
+        },
+        "position5": {
+          "upright": "Devet štapića predstavlja otpornost, izdržljivost i poslednji napor jarke u finansijskim odgovornostima.",
+          "reversed": "Invertirani devet štapića ukazuje na umor, izgaranje ili smanjenu želju za odbranom finansijskih odgovornosti.",
+          "keywords": [
+            "otpornost",
+            "izdržljivost",
+            "borba",
+            "iscrpljenost",
+            "odgovornost"
+          ],
+          "context": "Otpornost ili iscrpljenost dolazi do izražaja finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Devet štapića ukazuje na izdržljivost, otpornost i borbu sa gorkim ciljem u finansijskim planovima.",
+          "reversed": "Invertirani devet štapića ukazuje na iscrpljenost, preopterećenje ili nepotrebnu odbranu.",
+          "keywords": [
+            "izdržljivost",
+            "otpornost",
+            "odbrana",
+            "opteretiti",
+            "stabilnost"
+          ],
+          "context": "Otpornost ili izgaranje biće uticajni u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Devet štapića signalizira otpornost, strpljenje i odlučnost da na kraju postigne uspeh u budućim finansijskim planovima.",
+          "reversed": "Reversed devet štapića ukazuje na rizik odlaganja mogućnosti zbog izgaranja, nepotrebne odbrane ili iscrpljenosti.",
+          "keywords": [
+            "izdržljivost",
+            "strpljenje",
+            "odbrana",
+            "stabilnost",
+            "zaštita"
+          ],
+          "context": "Strpljenje ili iscrpljenost biće istaknuti u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Devet štapića pokazuje da je topostojnost, upornost i veštine podešavanja granica ojačati vaš finansijski potencijal.",
+          "reversed": "Invertirani devet štapića ukazuje da izgaranje, stalna odbrana ili iscrpljenost mogu podrivati mogućnosti.",
+          "keywords": [
+            "otpornost",
+            "upornost",
+            "granica",
+            "zaštita",
+            "stabilnost"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa upornošću ili izgaranjem."
+        }
+      },
+      "tenofwands": {
+        "position1": {
+          "upright": "Deset štapića ukazuje na zabrinutost zbog preopterećenja i odgovornosti. Možda ćete se plašiti da će vas finansijska opterećenja srušiti.",
+          "reversed": "Preokrećeno deset štapića ukazuje na nemogućnost puštanja opterećenja i prekomerne anksioznosti odgovornosti. Možete se brinuti da će vas iscrpiti previše težine.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "anksioznost",
+            "težina",
+            "materijalni pritisak"
+          ],
+          "context": "Anksioznost se pojavljuje da se nosi prekomerno opterećenje i odgovornost."
+        },
+        "position2": {
+          "upright": "Deset štapića pokazuje da tražite sigurnost preuzimanjem odgovornosti. Nošenje tereta pruža mir.",
+          "reversed": "Prekoračeni deset štapića ukazuje na anksioznost o preopterećenju. Želja za sigurnost oslabljena je nedostatkom deljenja.",
+          "keywords": [
+            "odgovornost",
+            "opteretiti",
+            "sigurnost",
+            "trud",
+            "stabilnost"
+          ],
+          "context": "Smatrate sigurnost sa osećajem odgovornosti."
+        },
+        "position3": {
+          "upright": "Deset štapića ukazuje na prekomernu odgovornost i preopterećenje u upotrebi novca. Prekomeno finansijsko opterećenje može stvoriti pritisak.",
+          "reversed": "Invertirani deset štapića ukazuje na početak prepuštanja viška odgovornosti i osvetljenje.",
+          "keywords": [
+            "odgovornost",
+            "opteretiti",
+            "novac",
+            "ugnjetavanje",
+            "izdržljivost"
+          ],
+          "context": "Teret i odgovornost dolaze u napred u upotrebi novca."
+        },
+        "position4": {
+          "upright": "U prošlosti su se finansijske odgovornosti možda osećale kao veliko opterećenje. Preduzeti su previše zadataka.",
+          "reversed": "Invertirani deset štapića, izgaranje i gubitak produktivnosti događa se zbog deljenja tereta.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "novac",
+            "trud",
+            "naprezanje"
+          ],
+          "context": "U prošlosti je bio preterano odgovoran za novac za novac."
+        },
+        "position5": {
+          "upright": "Deset štapića ukazuje na velike opterećenja, višak i pritisak u finansijskim odgovornostima.",
+          "reversed": "Prekoračeni deset štapića ukazuje na potrebu da se smanji opterećenja, udio ili puštanje finansijskih odgovornosti.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "višak",
+            "ugnjetavanje",
+            "deljenje"
+          ],
+          "context": "U finansijskim odgovornostima, teret ili osvetljenje tereta je presudan."
+        },
+        "position6": {
+          "upright": "Deset štapića ukazuje na veliku odgovornost, opterećenje finansijskih planova i projekat koji je blizu završetka.",
+          "reversed": "Invertirani deset štapića ukazuje na preopterećenje, odustajanje od zadataka ili izgaranje.",
+          "keywords": [
+            "odgovornost",
+            "opteretiti",
+            "završetak",
+            "trud"
+          ]
+        }
+      }
+    }
+  }
+}

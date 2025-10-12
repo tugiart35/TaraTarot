@@ -1,0 +1,782 @@
+{
+  "money": {
+    "meanings": {
+      "tenofwands": {
+        "position6": {
+          "keywords": [
+            null,
+            null,
+            null,
+            null,
+            "izgorevanje"
+          ],
+          "context": "Teška opterećenja ili potreba da se prepuštaju, doći će na prvi plan u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Deset štapića, finansijski planovi u budućnosti sadrže teške odgovornosti, opterećenje i intenzivni napori da postignu ciljeve.",
+          "reversed": "Deset štapića preokrećeno ukazuje na rizik da se preopterećena, ne može delegirati ili napeti pritiskom odgovornosti.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "trud",
+            "završetak",
+            "poteškoće"
+          ],
+          "context": "Intenzivni napori ili višak tereta biće određivanje faktora u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Deset štapića ukazuje da veštine preuzimanja odgovornosti, upravljanja radnom opterećenjem i upornost poboljšavaju svoju sposobnost zarade novca.",
+          "reversed": "Invertirani deset štapića ukazuje da se mogućnosti mogu izgubiti zbog preopterećenja, stresa ili nedostatka podele zadataka.",
+          "keywords": [
+            "odgovornost",
+            "opteretiti",
+            "rezolucija",
+            "rad",
+            "trud"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa preuzimanjem odgovornosti ili preopterećene."
+        }
+      },
+      "pageofwands": {
+        "position1": {
+          "upright": "Princ štapiće ukazuje na tjeskobu da ne prelazite u nove ideje i gubitak entuzijazma. Možda se plašite gubitka hrabrosti.",
+          "reversed": "Princ Vands Reversed je otkrio anksioznost zbog nepažnje i neorganizacije. Možda ćete se brinuti da ne možete da napredujete onako kako želite.",
+          "keywords": [
+            "hrabrost",
+            "entuzijazam",
+            "anksioznost",
+            "ideja",
+            "pokušati"
+          ],
+          "context": "Anksioznost nastaje od obeshrabnosti i neorganizacije."
+        },
+        "position2": {
+          "upright": "Princ štapiće ukazuje da on traži sigurnost istraživanjem i učenjem. Nova iskustva vam daju mir.",
+          "reversed": "Princ Vands Reversed-a ukazuje na neorganizovanu pažnju ili neodlučnost. Želja za sigurnost oslabljena je nedostatkom smera.",
+          "keywords": [
+            "otkriće",
+            "učenje",
+            "sigurnost",
+            "iskustvo",
+            "inspiracija"
+          ],
+          "context": "Nalazite sigurnost otkrivanjem i novim iskustvima."
+        },
+        "position3": {
+          "upright": "Princ štapiće ukazuje na entuzijastičan i istraživački pristup upotrebi novca. Nove mogućnosti se ocenjuju entuzijazmom.",
+          "reversed": "Princ štapića preokrenuo je ukazuje na neorganizaciju ili nestabilne finansijske odluke.",
+          "keywords": [
+            "entuzijazam",
+            "prilika",
+            "otkriće",
+            "novac",
+            "početak"
+          ],
+          "context": "Entuzijazam i otkriće dolaze uruka u upotrebi novca."
+        },
+        "position4": {
+          "upright": "Nove ideje, hrabrost i duh otkrića možda su u prošlosti vodio finansijska ulaganja.",
+          "reversed": "Invertirani princ štapiće, nedostaju se prilike zbog nepažnje ili neorganizacije.",
+          "keywords": [
+            "otkriće",
+            "hrabrost",
+            "novac",
+            "inovativnost",
+            "inspiracija"
+          ],
+          "context": "U prošlosti su finansije pokrenule duh istraživanja."
+        },
+        "position5": {
+          "upright": "Princ Vands predstavlja entuzijazam za učenje, nove projekte i istraživanje u finansijskim odgovornostima.",
+          "reversed": "Princ Vands Reversed-a ukazuje na neorganizaciju, nepažnju ili žurbu u finansijskim odgovornostima.",
+          "keywords": [
+            "učenje",
+            "otkriće",
+            "entuzijazam",
+            "pažnja",
+            "odgovornost"
+          ],
+          "context": "Entuzijazam ili nepažnja je efikasan u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Princ Stands ukazuje na istraživanje, entuzijazam i ulazi u nove projekte u finansijskim planovima.",
+          "reversed": "Princ Vindes Reversed-a ukazuje na neorganizaciju, nedoslednost ili lako je dosaditi.",
+          "keywords": [
+            "otkriće",
+            "entuzijazam",
+            "početak",
+            "iskustvo",
+            "uzbuđenje"
+          ],
+          "context": "Otkrivanje ili nedoslednost u novim finansijskim planovima biće efikasno."
+        },
+        "position7": {
+          "upright": "Princ ljudskih pribora, istraživanja, nove ideje i oduševljeni koraci će u budućnosti doći do finansijskih planova.",
+          "reversed": "Princ Vindes Reversed-a ukazuje na rizik nepažnje, nestrpljivosti ili brzo blede entuzijazam.",
+          "keywords": [
+            "otkriće",
+            "entuzijazam",
+            "početak",
+            "kreativnost",
+            "energija"
+          ],
+          "context": "Istraživanje ili nestrpljenje će biti istaknuti u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Princ štapiće ukazuje da znatiželjnost, istraživanje i sposobnost generisanja novih ideja povećavaju potencijal za donošenje novca.",
+          "reversed": "Princ Vands Reversed-a ukazuje da se mogućnosti mogu ograničiti zbog nestrpljenja, neorganizacije ili brzog blede entuzijazma.",
+          "keywords": [
+            "radoznalost",
+            "otkriće",
+            "inspiracija",
+            "entuzijazam",
+            "ideja"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa istraživanjem ili upornošću."
+        }
+      },
+      "knightofwands": {
+        "position1": {
+          "upright": "Vitez štapiće ukazuje na anksioznost u ožiljnim inicijativama i rasipnim pokretima. Možda se plašite da preduzmete nekontrolisane korake.",
+          "reversed": "Vraćeni vitez štapiće otkriva nestabilnost i anksioznost napuštanja. Ne mogu da održite, može vas brinuti.",
+          "keywords": [
+            "žuriti",
+            "pokušati",
+            "anksioznost",
+            "nedostatak kontrole",
+            "neravnoteža"
+          ],
+          "context": "Anksioznost se pojavljuje iz užurbanih pokušaja i neuspeha da se održi."
+        },
+        "position2": {
+          "upright": "Vitez štapiće pokazuje da on traži bezbednost sa hrabrim koracima i strašću. Asertivnost vam donosi mir.",
+          "reversed": "Vitez štapića obrnut označava rasipanje i anksioznost o napuštanju. Želja za sigurnost uzdrma se neodlučnošću.",
+          "keywords": [
+            "hrabrost",
+            "strast",
+            "sigurnost",
+            "pokret",
+            "avantura"
+          ],
+          "context": "Nalazite sigurnost sa hrabrim koracima i strašću."
+        },
+        "position3": {
+          "upright": "Vitez štapiće ukazuje na podebljane i brze korake u upotrebi novca. Investicije mogu biti rizične, ali uzbudljive.",
+          "reversed": "Vitez štapića preokrećeno ukazuje na rasipne ili nepromišljene finansijske odluke.",
+          "keywords": [
+            "hrabrost",
+            "brzina",
+            "rizikovati",
+            "novac",
+            "pokret"
+          ],
+          "context": "Hrabrost i brzina dolaze u napred u upotrebi novca."
+        },
+        "position4": {
+          "upright": "U prošlosti, asertivnost, smela inicijativa i brze radnje mogu imati oblikovati finansijske stavove.",
+          "reversed": "Invertirani vitez štapića, finansijska stabilnost nije postignuta zbog nestrpljenja i nepažnje.",
+          "keywords": [
+            "hrabrost",
+            "brzina",
+            "novac",
+            "pokušati",
+            "skok"
+          ],
+          "context": "U prošlosti su finansijske odluke postale hrabro i brzo."
+        },
+        "position5": {
+          "upright": "Vitez štapiće ukazuje na hrabrost, brzi napredak i strastvene akcije u finansijskim odgovornostima.",
+          "reversed": "Učitavanje viteza štapića može pokazati nestrpljenje, rasipanje ili nestabilnost u finansijskim odgovornostima.",
+          "keywords": [
+            "hrabrost",
+            "strast",
+            "brzina",
+            "stabilnost",
+            "odgovornost"
+          ],
+          "context": "Hrabrost ili nestabilnost dolazi do zaruka u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Vitez štapića ukazuje na smele inicijative, brzinu i snažne korake u finansijskim planovima.",
+          "reversed": "Vitez štapića obrnut ukazuje na žurbu, rasipanje ili napuštanje.",
+          "keywords": [
+            "hrabrost",
+            "pokušati",
+            "brzina",
+            "skok",
+            "energija"
+          ],
+          "context": "Boblja inicijativa ili žurba će doći do prenosa novih finansijskih planova."
+        },
+        "position7": {
+          "upright": "Vitez štapiće, smele inicijative, strasti i brzi napredak u finansijskim planovima biće istaknuti u budućnosti.",
+          "reversed": "Prekoračeni vitez štapića ukazuje na žurbu, nestabilnost ili rizik od projekata koji su nedovršeni.",
+          "keywords": [
+            "hrabrost",
+            "strast",
+            "brzina",
+            "skok",
+            "cilj"
+          ],
+          "context": "Hrabrost ili užurbanost će biti presudni u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Vitez štapiće ukazuje na togu hrabrosti, inicijative i sposobnost da se brzo ojačaju finansijske veštine.",
+          "reversed": "Vitez štapića obrnut ukazuje da se mogućnosti mogu izgubiti zbog žurbe, nepažnje ili nestabilnosti.",
+          "keywords": [
+            "hrabrost",
+            "pokušati",
+            "brzina",
+            "strast",
+            "energija"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa hrabrovima ili bezobzirno."
+        }
+      },
+      "queenofwands": {
+        "position1": {
+          "upright": "Kraljica štapića ukazuje na anksioznost zbog gubitka poverenja i harizme. Možda se bojte da niste u stanju da održite svoju privlačnost.",
+          "reversed": "Kraljica štapića obrnuta otkriva anksioznost ljubomore i nesigurnosti. Možete se brinuti zbog potcenjivanja sopstvene moći.",
+          "keywords": [
+            "poverenje",
+            "karizma",
+            "anksioznost",
+            "čarolija",
+            "poverenje"
+          ],
+          "context": "Anksioznost proizilazi iz gubitka samopouzdanja i atraktivnosti."
+        },
+        "position2": {
+          "upright": "Kraljica štapića ukazuje da traži sigurnost samopouzdanjem i toplim vođstvom. Charisma vam daje mir.",
+          "reversed": "Kraljica štapića obrnuta ukazuje na anksioznost o ljubomori ili nesigurnosti. Želja za sigurnost oslabljena je nedostatkom samo-vrednosti.",
+          "keywords": [
+            "poverenje",
+            "rukovodstvo",
+            "sigurnost",
+            "karizma",
+            "energija"
+          ],
+          "context": "Smatrate sigurnost samopouzdanim vođstvom i toplinom."
+        },
+        "position3": {
+          "upright": "Kraljica štapića ukazuje na samopouzdanje, harizmu i praktičnost u upotrebi novca. Resursi se koriste kreativno.",
+          "reversed": "Kraljica štapića obrnuta ukazuje na gubitak resursa zbog prenosa ili samo-vrednog pitanja.",
+          "keywords": [
+            "poverenje",
+            "praktičnost",
+            "karizma",
+            "novac",
+            "rukovodstvo"
+          ],
+          "context": "Samopouzdanje i kreativnost dolaze na prvi prilikom korišćenja novca."
+        },
+        "position4": {
+          "upright": "U prošlosti, karizma, samopouzdanje i preduzetnički duh možda su došli do izražaja u upravljanju finansijskim sredstvima.",
+          "reversed": "Invertirana kraljica štapića, nesigurnost i ljubomora možda je nategnuta finansijski razvoj.",
+          "keywords": [
+            "poverenje",
+            "rukovodstvo",
+            "novac",
+            "karizma",
+            "pokušati"
+          ],
+          "context": "U prošlosti su fiskalni stavovi vođeni duhom snažnog rukovodstva."
+        },
+        "position5": {
+          "upright": "Kraljica štapića predstavlja samopouzdanje, liderstvo i efikasno korišćenje resursa u finansijskim odgovornostima.",
+          "reversed": "Kraljica štapića obrnuta ukazuje na ljubomoru, nesigurnost ili preterano preuređivanje unapređenih finansijskih odgovornosti.",
+          "keywords": [
+            "poverenje",
+            "rukovodstvo",
+            "upravljanje resursima",
+            "poverenje",
+            "odgovornost"
+          ],
+          "context": "Samopouzdanje ili nesigurnost određuje finansijske odgovornosti."
+        },
+        "position6": {
+          "upright": "Kraljica štapića ukazuje na samopouzdanje, karizmu i kreativno vođstvo u finansijskim planovima.",
+          "reversed": "Kraljica štapića obrnuta ukazuje na nesigurnost, ljubomoru ili nedostatak samo-vrednosti.",
+          "keywords": [
+            "poverenje",
+            "rukovodstvo",
+            "karizma",
+            "inspiracija",
+            "kreativnost"
+          ],
+          "context": "Samopouzdanje ili nesigurnost doći će na prednji plan u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Kraljica štapića ukazuje na potencijal da raste resurse sa harizmom, liderstvom i samopouzdanjem u finansijske planove u budućnosti.",
+          "reversed": "Kraljica štapića obrnuta ukazuje da nesigurnost, ljubomora ili preterana želja za kontrolom mogu da prouzrokuju probleme.",
+          "keywords": [
+            "rukovodstvo",
+            "poverenje",
+            "karizma",
+            "vizija",
+            "hrabrost"
+          ],
+          "context": "Samopouzdanje ili nesigurnost biće efikasni u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Kraljica štapića ukazuje da samopouzdanje, liderstvo i inspirativni pristup poboljšavaju sposobnosti donošenja novca.",
+          "reversed": "Kraljica štapića obrnuta ukazuje na to da je ljubomora, nesigurnost ili nedostatak vođstva mogu ograničiti mogućnosti.",
+          "keywords": [
+            "rukovodstvo",
+            "poverenje",
+            "inspiracija",
+            "karizma",
+            "kreativnost"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa ustajanjem sa samopouzdanjem ili nesigurnošću."
+        }
+      },
+      "kingofwands": {
+        "position1": {
+          "upright": "Kralj štapića ukazuje na anksioznost zbog gubitka vođstva i kontrole. Možda se plašite da ne možete da održite svoju finansijsku viziju.",
+          "reversed": "Reversirani kralj štapića otkriva slabljenje vlasti i anksioznosti o poverenju. Možete se brinuti da ne možete da održite svoje strategije.",
+          "keywords": [
+            "rukovodstvo",
+            "vizija",
+            "anksioznost",
+            "vlast",
+            "kontrola"
+          ],
+          "context": "Anksioznost proizilazi iz gubitka vođstva i vizije."
+        },
+        "position2": {
+          "upright": "Kralj štapića ukazuje da traži sigurnost kroz vizionarno vođstvo i strategiju. Hrabar izgled daje mir.",
+          "reversed": "Prekoračeni kralj štapića ukazuje na autoritarizam ili ego anksioznost. Želja za bezbednošću slabi u nedostatku harmonije.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "sigurnost",
+            "strategija",
+            "hrabrost"
+          ],
+          "context": "Nalazite sigurnost vizijom i strateškom perspektivom."
+        },
+        "position3": {
+          "upright": "Kralj štapića ukazuje na strateško vođstvo i viziju u upotrebi novca. Resursi su usmereni na dugoročne projekte.",
+          "reversed": "Prekoračeni kralj štapića ukazuje na preterano autoritarne ili sebične finansijske odluke.",
+          "keywords": [
+            "rukovodstvo",
+            "vizija",
+            "strategija",
+            "novac",
+            "dugoročan"
+          ],
+          "context": "Vođstvo i strategija dolaze na prvi plan u upotrebi novca."
+        },
+        "position4": {
+          "upright": "U prošlosti, vizionarno rukovodstvo, strateške odluke i podebljani koraci mogu da obezbede finansijsku sigurnost.",
+          "reversed": "Invertirani kralj štapića, autoritarni stavovi ili nestrpljenje mogu imati ograničen finansijski napredak.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "novac",
+            "strategija",
+            "hrabrost"
+          ],
+          "context": "U prošlosti su finansijska sredstva upravljana strateškim hrabrošću."
+        },
+        "position5": {
+          "upright": "Kralj štapića ukazuje na vizionarno rukovodstvo, strateške odluke i dugoročno planiranje u finansijskim odgovornostima.",
+          "reversed": "Preokrećeni kralj štapića može ukazivati na dominirajući stav, autoritarno ponašanje ili prekomernog uzimanja rizika u vezi sa finansijskim odgovornostima.",
+          "keywords": [
+            "rukovodstvo",
+            "vizija",
+            "strategija",
+            "rizikovati",
+            "odgovornost"
+          ],
+          "context": "Vizionarski pogled ili opresivni stav je na čelu u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Kralj štapića ukazuje na stratešku viziju, preduzetništvo i liderstvo u finansijskim planovima.",
+          "reversed": "Preokrećeni kralj štapića ukazuje na autoritarni stav, ego ili prekomernu kontrolu.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "strategija",
+            "pokušati",
+            "snaga"
+          ],
+          "context": "Vizija ili ekstremna kontrola doći će na prvi plan u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Kralj štapića ukazuje da će vizionarno rukovodstvo, strateške investicije i podebljani koraci doći do finansijskih planova u budućnosti.",
+          "reversed": "Preokrećeni kralj štapića ukazuje da je autoritarizam, prekomerna ambicija ili zanemarivanje za slušanje može prouzrokovati probleme.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "strategija",
+            "hrabrost",
+            "investicija"
+          ],
+          "context": "Vizionarno rukovodstvo ili autoritarizam biće presudan u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Kralj štapića ukazuje da strateška vizija, liderstvo i preduzetnički duh jačaju sposobnosti donošenja novca.",
+          "reversed": "Prekoračeni kralj štapića ukazuje da je autoritarni stav, prevelik konverziju ili nedostatak planiranja mogu ograničiti mogućnosti.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "preduzetništvo",
+            "strategija",
+            "hrabrost"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa strateškim vođstvom ili ekstremizmom."
+        }
+      },
+      "aceofpentacles": {
+        "position1": {
+          "upright": "Ace pentaklova ukazuje na anksioznost nestalih ili ne mogu da iskoriste novu priliku. Možda ćete se plašiti gubitka finansijske sreće.",
+          "reversed": "ACE Of Pentacles obrnut ukazuje na anksioznost o nestabilnosti i izgubljenim resursima. Možete se brinuti da novi počeci neće uspeti.",
+          "keywords": [
+            "prilika",
+            "anksioznost",
+            "stabilnost",
+            "početak",
+            "poverenje"
+          ],
+          "context": "Anksioznost proizilazi iz nemogućnosti da iskoriste mogućnosti i nestabilnost."
+        },
+        "position2": {
+          "upright": "ACE of Penteklova ukazuje da tražite sigurnost kroz nove mogućnosti i čvrste početke. Finansijska stabilnost može biti obećavajuća.",
+          "reversed": "ACE Of Pentacles obrnut ukazuje na anksioznost o propuštenim mogućnostima ili nesigurnosti. Želja za sigurnost uzdrma se neutemeljenjem.",
+          "keywords": [
+            "prilika",
+            "početak",
+            "sigurnost",
+            "osnova materijala",
+            "stabilnost"
+          ],
+          "context": "Nalazite sigurnost novim i čvrstim materijalnim koracima."
+        },
+        "position3": {
+          "upright": "ACE Of Pentacles je znak novih prilika i čvrstih početaka u upotrebi novca. Rashodi se mogu pretvoriti u konkretne investicije.",
+          "reversed": "ACE of Pentecles Reversed ukazuje na anksioznost o nedostajućim mogućnostima ili zabludi finansijskih sredstava.",
+          "keywords": [
+            "prilika",
+            "početak",
+            "investicija",
+            "dosta",
+            "sigurnost"
+          ],
+          "context": "Novi i pouzdani počeci dolaze u izraz novca u upotrebi novca."
+        },
+        "position4": {
+          "upright": "Nove finansijske mogućnosti i opipljivi dobici možda su došli do izražaja u prošlosti. Fondacije su postavljene čvrsto.",
+          "reversed": "Reversirani ACE Pentaklova ukazuje na propuštene prilike ili odlaganje materijalnih početaka.",
+          "keywords": [
+            "prilika",
+            "početak",
+            "novac",
+            "investicija",
+            "osnova"
+          ],
+          "context": "Nove finansijske mogućnosti otvorile su se u prošlosti, ali neki su možda propušteni."
+        },
+        "position5": {
+          "upright": "ACE Of Pentacles ukazuje na novu priliku u finansijskim odgovornostima i priliku da uspostave čvrste temelje. Snažan početak može se izvršiti za finansijsku stabilnost.",
+          "reversed": "Ace Pentacles obrnuta ukazuje da su propuštene mogućnosti ili pogrešna ulaganja opterećuju finansijske odgovornosti.",
+          "keywords": [
+            "početak",
+            "prilika",
+            "stabilnost",
+            "investicija",
+            "odgovornost"
+          ],
+          "context": "Čvrsti temelji ili izgubljene mogućnosti su na čelu u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "ACE Of Pentacles ukazuje na novu priliku, čvrst početak i plodna investiciona vrata u finansijskim planovima.",
+          "reversed": "ACE Of Pentacles je preokrenuo upozorenosti propuštenih prilika, pogrešnih investicija ili nestabilnih planova.",
+          "keywords": [
+            "prilika",
+            "početak",
+            "investicija",
+            "stabilnost",
+            "obilje"
+          ],
+          "context": "U novim finansijskim planovima, čvrst početak ili nedostaje prilika je na dnevnom redu."
+        },
+        "position7": {
+          "upright": "ACE Of Pentacles navodi put za nove finansijske mogućnosti, čvrste početke i stalne investicije u budućnosti. Snažna osnova je postavljena za dugoročnu sigurnost.",
+          "reversed": "Reversed Ace Pentacla ukazuje na rizik od propuštenih prilika, finansijske nesigurnosti ili pogrešnih investicija.",
+          "keywords": [
+            "prilika",
+            "osnova",
+            "investicija",
+            "sigurnost",
+            "početak"
+          ],
+          "context": "Nove mogućnosti ili propuštene mogućnosti biće presudne u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "ACE Of Pentacles ukazuje da nove finansijske mogućnosti, investicije i konkretni počeci podržavaju sposobnosti donošenja novca.",
+          "reversed": "Reversed Ace Pentaklova ukazuje da se finansijski potencijal ne može koristiti zbog propuštenih prilika, loših odluka o investiranju ili lenjosti.",
+          "keywords": [
+            "prilika",
+            "početak",
+            "investicija",
+            "dosta",
+            "osnova"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su za oduzimanje novih mogućnosti ili ih nedostaju."
+        }
+      },
+      "twoofpentacles": {
+        "position1": {
+          "upright": "Dva pentaklama ukazuje na anksioznost u vezi sa finansijskim bilansom i višestrukim odgovornostima. Možda se plašite da imate poteškoća da upravljate svojim resursima.",
+          "reversed": "Dvojica obrnutog povratka otkrivaju anksioznost o neorganizaciji i gubitku kontrole. Možete se brinuti zbog grešaka u upravljanju novcem.",
+          "keywords": [
+            "ravnoteža",
+            "anksioznost",
+            "kontrola",
+            "Finansijsko upravljanje",
+            "odgovornost"
+          ],
+          "context": "Anksioznost proizilazi iz nemogućnosti uspostavljanja ravnoteže i težine odgovornosti."
+        },
+        "position2": {
+          "upright": "Dva pentaklama ukazuje da tražite sigurnost kroz ravnotežu i fleksibilnost. Dobra balansiranje pruža mir.",
+          "reversed": "Otkrivena dva pentaklama ukazuje na anksioznost o neravan i neravnoteži. Želja za sigurnost oslabljena je nedostatkom prioriteta.",
+          "keywords": [
+            "ravnoteža",
+            "fleksibilnost",
+            "sigurnost",
+            "prioritet",
+            "vreme"
+          ],
+          "context": "Nalazite sigurnost sa uravnoteženim upravljanjem i fleksibilnošću."
+        },
+        "position3": {
+          "upright": "Dva pentaklova ukazuje na fleksibilnost i ravnotežu u korištenju novca. Upravljanje troškovima prihoda se vešto se izvodi.",
+          "reversed": "Otkrivena dva pentaklova ukazuje na naprezanje zbog finansijske nestabilnosti ili odlaganja.",
+          "keywords": [
+            "ravnoteža",
+            "fleksibilnost",
+            "vreme",
+            "izvor",
+            "raport"
+          ],
+          "context": "Bilansno i svestrano upravljanje važni su u upotrebi novca."
+        },
+        "position4": {
+          "upright": "U prošlosti je postojao napor da se održi finansijski bilans, upravljanje budžetom i više zadataka.",
+          "reversed": "Otkrivena dva pentakla ukazuje na neravnotežu i povećane finansijske terete.",
+          "keywords": [
+            "ravnoteža",
+            "budžet",
+            "novac",
+            "više poslova",
+            "raport"
+          ],
+          "context": "U prošlosti je napor za postizanje finansijske ravnoteže bio dominantan."
+        },
+        "position5": {
+          "upright": "Dva pentaklama predstavlja ravnotežu u finansijskim odgovornostima, upravljanju budžetom i višetosite. Fleksibilnost olakšava opterećenja.",
+          "reversed": "Otkrivena dva od Pentekla je znak neravnoteže u finansijskim odgovornostima, gomilanje dugovanja ili lošeg vremena.",
+          "keywords": [
+            "ravnoteža",
+            "fleksibilnost",
+            "budžet",
+            "multitasking",
+            "odgovornost"
+          ],
+          "context": "Bilans ili neravnoteža dolazi do izražaja finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Njih dvoje Pentaklova pokazuje važnost ravnoteže, upravljanje više izvora prihoda i fleksibilnosti u finansijskim planovima.",
+          "reversed": "Otkrivena dva pentakla ukazuje na neorganizaciju, finansijsku nestabilnost ili preopterećenje.",
+          "keywords": [
+            "ravnoteža",
+            "Višestruki izvor",
+            "fleksibilnost",
+            "upravljanje",
+            "raport"
+          ],
+          "context": "Novi finansijski planovi mogu zahtevati balansiranje ili uređivanje nereda."
+        },
+        "position7": {
+          "upright": "Dva pentaklova ukazuje na fleksibilnost u finansijskim planovima u budućnosti, upravljajući više izvora prihoda i traženje ravnoteže.",
+          "reversed": "Otkrivena dva od pentakla ukazuje da će neravnoteža, neravnoteža ili previše odgovornosti opteretiti finansijski napredak.",
+          "keywords": [
+            "ravnoteža",
+            "fleksibilnost",
+            "svestranost",
+            "raport",
+            "upravljanje vremenom"
+          ],
+          "context": "Bilans ili neravnoteža će doći do zaruka u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Dva pentaklova ukazuje da mogućnost balansa više zadataka i upravljanje vremenom i resursima pojačava sposobnosti donošenja novca.",
+          "reversed": "Otkrivena dva pentakla ukazuje da se mogućnosti mogu izgubiti zbog neorganizacije, lošeg planiranja ili zbrke prioriteta.",
+          "keywords": [
+            "ravnoteža",
+            "planiranje",
+            "upravljanje vremenom",
+            "fleksibilnost",
+            "prioritet"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa ravnotežom ili rasipacijom."
+        }
+      },
+      "threeofpentacles": {
+        "position1": {
+          "upright": "Tri od tri pentakla ukazuje na anksioznost da ne mogu da sarađuju ili budu dovoljno cenjeni. Možda se plašite da niste nagrađeni za svoje napore.",
+          "reversed": "Trojica preokretanih pentakala ukazuju na anksioznost o neskladnim timskim radu i neuspešnoj saradnji. Možda ćete se brinuti da će se vaši finansijski napori biti izgubljeni.",
+          "keywords": [
+            "partnerstvo",
+            "anksioznost",
+            "nagrada za rad",
+            "vrednost",
+            "raport"
+          ],
+          "context": "Anksioznost proizilazi iz nedostatka saradnje i napora koji se nagrađuje."
+        },
+        "position2": {
+          "upright": "Tri od tri pentakla ukazuju na traženje sigurnosti kroz saradnju i dijeljenje veština. Timski rad daje mir uma.",
+          "reversed": "Tri preokrenuta pentakova ukazuje na anksioznost zbog nedostatka saradnje. Želja za bezbednošću oslabljena je raštrkanim naporom.",
+          "keywords": [
+            "partnerstvo",
+            "veština",
+            "sigurnost",
+            "raport",
+            "studija"
+          ],
+          "context": "Nalazite sigurnost kroz saradnju."
+        },
+        "position3": {
+          "upright": "Tri Pentekla ukazuje na saradnju i zajedničko planiranje u korištenju novca. Materijalni resursi postaju efikasniji sa timskim radom.",
+          "reversed": "Preokrećena tri pentakla ukazuju da se resursi mogu zloupotrebiti zbog neskladnosti i nedostatka komunikacije.",
+          "keywords": [
+            "partnerstvo",
+            "plan",
+            "izvor",
+            "savladav",
+            "deljenje"
+          ],
+          "context": "Saradnja i koordinacija dolaze u napred u korištenju novca."
+        },
+        "position4": {
+          "upright": "Saradnja, timski rad i zajednički projekti možda su u prošlosti odigrali ulogu u finansijskom razvoju.",
+          "reversed": "Okolištena tri pentakla ukazuje da nedostatak saradnje i nedostatak planiranja dovodi do gubitaka.",
+          "keywords": [
+            "partnerstvo",
+            "tim",
+            "novac",
+            "plan",
+            "savladav"
+          ],
+          "context": "U prošlosti su finansijski dobici oblikovani timskim radom."
+        },
+        "position5": {
+          "upright": "Tri od tri pentakla ukazuje da se finansijske odgovornosti olakšavaju saradnjom, timskom radom i deljenjem uloga.",
+          "reversed": "Tri preokrenuta Penteklama ukazuje na neslaganje, neslaganje ili nedovoljnu saradnju u finansijskim odgovornostima.",
+          "keywords": [
+            "partnerstvo",
+            "Deljenje uloga",
+            "rad",
+            "raport",
+            "odgovornost"
+          ],
+          "context": "Saradnja ili nepoštovanje utvrđuje finansijske odgovornosti."
+        },
+        "position6": {
+          "upright": "Tri Pentekla pokazuje vrednost saradnje, timskog rada i zajedničkih ulaganja u finansijske planove.",
+          "reversed": "Ograničena tri pentakla ukazuju na nesklad, nedostatak saradnje ili problema sa zajedničkim projektima.",
+          "keywords": [
+            "partnerstvo",
+            "set",
+            "investicija",
+            "partnerstvo",
+            "raport"
+          ],
+          "context": "Saradnja ili nesklad će doći do predloga u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Tri Pentola ukazuje na budući finansijski rast kroz saradnju, zajedničke projekte i timski rad.",
+          "reversed": "Prekoračila tri Penfala ukazuje na rizik od neslaganja, problema sa unutar tima ili raspada saradnje.",
+          "keywords": [
+            "partnerstvo",
+            "partnerstvo",
+            "planiranje",
+            "izgradnja",
+            "deljenje"
+          ],
+          "context": "Saradnja ili nesklad će odrediti buduće finansijske planove."
+        },
+        "position8": {
+          "upright": "Tri Pentola pokazuju da saradnja, timski rad i deljenje stručnosti poboljšavaju finansijske veštine.",
+          "reversed": "Tri preokrenuta pentaklova ukazuje da tim disharmonija tima, loša saradnja ili nedostatak komunikacije mogu podrivati mogućnosti.",
+          "keywords": [
+            "partnerstvo",
+            "tim",
+            "stručnost",
+            "studija",
+            "deljenje"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa saradnjom ili neskladom."
+        }
+      },
+      "fourofpentacles": {
+        "position1": {
+          "upright": "Četiri pentaklova ukazuje na anksioznost zbog gubitka onoga što imate i niste sigurni. Možda se plašite gubitka novca.",
+          "reversed": "Pretvorena četvorica pentakla ukazuje na anksioznost o previsoku ili preterano trošenju. Možete se brinuti da ne možete da delujete uravnoteženo.",
+          "keywords": [
+            "sigurnost",
+            "anksioznost",
+            "gubitak",
+            "zaštita",
+            "ravnoteža"
+          ],
+          "context": "Anksioznost proizilazi iz gubitka onoga što imate i gubite samopouzdanje."
+        },
+        "position2": {
+          "upright": "Četiri pentakla pokazuju da se čovek traži zaštitom onoga što ima. Stabilnost daje mir.",
+          "reversed": "Četiri pentaklova obrnuta ukazuju na prekomerno zadržavanje ili anksioznost zbog gubitka. Želja za sigurnošću oduzima od fleksibilnosti.",
+          "keywords": [
+            "zaštita",
+            "stabilnost",
+            "sigurnost",
+            "kontrola",
+            "materijal"
+          ],
+          "context": "Nalazite sigurnost zaštitom i stabilnošću."
+        },
+        "position3": {
+          "upright": "Četiri pentaklova ukazuje na konzervativizam u upotrebi novca i tendenciju da se očuva ono što je dostupno. Strah od gubitka je dominantan.",
+          "reversed": "Prekoračenje Četiri pentakla ukazuje da je zaglavljena u ekstremnoj šljokiri ili ekstravaganciji.",
+          "keywords": [
+            "kontrola",
+            "zaštita",
+            "konzervativizam",
+            "novac",
+            "sigurnost"
+          ],
+          "context": "U upotrebi novca traže se ravnoteža između držanja i oslobađanja."
+        },
+        "position4": {
+          "upright": "U prošlosti je postojala tendencija da se nadmaši, čuva i kontroliše novčane stvari.",
+          "reversed": "Uokrećena četvorica pentakla ukazuje na ekstravaganciju ili stavove LAKS u finansijskim pitanjima.",
+          "keywords": [
+            "zadrzati",
+            "akumulacija",
+            "novac",
+            "kontrola",
+            "sigurnost"
+          ],
+          "context": "U prošlosti je u monetarnim pitanjima izvršena stroga kontrola."
+        },
+        "position5": {
+          "upright": "Četiri pentaklova ukazuje na štednju sa finansijskim odgovornostima, očuvajući ono što je dostupno i traženje sigurnosti.",
+          "reversed": "Preokrećena četiri pentakla mogu prouzrokovati probleme sa šljokicem sa finansijskim odgovornostima, prekomernom kontrolom ili nespremnosti da se udeli."
+        }
+      }
+    }
+  }
+}

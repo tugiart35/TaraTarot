@@ -1,0 +1,936 @@
+{
+  "career": {
+    "meanings": {
+      "knightofcups": {
+        "position5": {
+          "keywords": {
+            "0": "idealism",
+            "1": "Vision",
+            "2": "opportunity",
+            "3": "application",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "idealism",
+            "1": "Vision",
+            "2": "Realism",
+            "3": "opportunity",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "Vision",
+            "1": "idealism",
+            "2": "target",
+            "3": "opportunity",
+            "4": "future"
+          }
+        }
+      },
+      "queenofcups": {
+        "position1": {
+          "keywords": {
+            "0": "empathy",
+            "1": "intuition",
+            "2": "emotion",
+            "3": "Compassion",
+            "4": "Inspired"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "empathy",
+            "1": "intuition",
+            "2": "Compassion",
+            "3": "awareness",
+            "4": "Inspired"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "empathy",
+            "1": "emotion",
+            "2": "intuition",
+            "3": "effect",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "empathy",
+            "1": "Sensitivity",
+            "2": "Compassion",
+            "3": "intimacy",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "empathy",
+            "1": "Sensitivity",
+            "2": "balance",
+            "3": "awareness",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "Sensitivity",
+            "1": "sacrifice",
+            "2": "balance",
+            "3": "empathy",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "empathy",
+            "1": "balance",
+            "2": "Sensitivity",
+            "3": "awareness",
+            "4": "future"
+          }
+        }
+      },
+      "kingofcups": {
+        "position1": {
+          "keywords": {
+            "0": "balance",
+            "1": "wisdom",
+            "2": "emotion",
+            "3": "maturity",
+            "4": "leadership"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "balance",
+            "1": "maturity",
+            "2": "wisdom",
+            "3": "leadership",
+            "4": "emotion"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "leadership",
+            "1": "authority",
+            "2": "emotion",
+            "3": "balance",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "balance",
+            "1": "maturity",
+            "2": "leadership",
+            "3": "empathy",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "maturity",
+            "1": "balance",
+            "2": "leadership",
+            "3": "Peace",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "balance",
+            "1": "emotional maturity",
+            "2": "Coolness",
+            "3": "control",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "maturity",
+            "1": "leadership",
+            "2": "balance",
+            "3": "Trust",
+            "4": "future"
+          }
+        }
+      },
+      "aceofswords": {
+        "position1": {
+          "keywords": {
+            "0": "mind clarity",
+            "1": "idea",
+            "2": "real",
+            "3": "decision",
+            "4": "start"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "mind clarity",
+            "1": "decision",
+            "2": "idea",
+            "3": "strategy",
+            "4": "start"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "enlightenment",
+            "1": "idea",
+            "2": "communication",
+            "3": "clarity",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "clarity",
+            "1": "decision",
+            "2": "mind power",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "clarity",
+            "1": "decision",
+            "2": "Vision",
+            "3": "mind power",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "decision",
+            "1": "clarity",
+            "2": "communication",
+            "3": "Vision",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "clarity",
+            "1": "decision",
+            "2": "Vision",
+            "3": "communication",
+            "4": "future"
+          }
+        }
+      },
+      "twoofswords": {
+        "position1": {
+          "keywords": {
+            "0": "decision",
+            "1": "The dilemma",
+            "2": "balance",
+            "3": "selection",
+            "4": "Two of a kind."
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "decision",
+            "1": "balance",
+            "2": "The dilemma",
+            "3": "Courage",
+            "4": "clarity"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "decision",
+            "1": "The dilemma",
+            "2": "balance",
+            "3": "waiting",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "decision",
+            "1": "balance",
+            "2": "The dilemma",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "decision",
+            "1": "balance",
+            "2": "The dilemma",
+            "3": "Vision",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "indecisive",
+            "1": "The dilemma",
+            "2": "postponement",
+            "3": "Don't face it.",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "selection",
+            "1": "balance",
+            "2": "decision",
+            "3": "The dilemma",
+            "4": "future"
+          }
+        }
+      },
+      "threeofswords": {
+        "position1": {
+          "keywords": {
+            "0": "sadness",
+            "1": "Disappointment",
+            "2": "missing",
+            "3": "Betrayal",
+            "4": "real"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "lesson",
+            "1": "experience",
+            "2": "Recovery",
+            "3": "awareness",
+            "4": "Progress"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "Disappointment",
+            "1": "missing",
+            "2": "Pain",
+            "3": "experience",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "Disappointment",
+            "1": "effort",
+            "2": "endurance",
+            "3": "Patience",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "lesson",
+            "1": "Recovery",
+            "2": "awareness",
+            "3": "Patience",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "Disappointment",
+            "1": "Frustration",
+            "2": "Pain",
+            "3": "Wounds",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "lesson",
+            "1": "difficulty",
+            "2": "Disappointment",
+            "3": "learning",
+            "4": "future"
+          }
+        }
+      },
+      "fourofswords": {
+        "position1": {
+          "keywords": {
+            "0": "rest",
+            "1": "Recovery",
+            "2": "Recovery",
+            "3": "Introduction",
+            "4": "Regeneration"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "rest",
+            "1": "Plan",
+            "2": "Regeneration",
+            "3": "preparation",
+            "4": "balance"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "rest",
+            "1": "timeout",
+            "2": "Obligation",
+            "3": "waiting",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "rest",
+            "1": "balance",
+            "2": "preparation",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "rest",
+            "1": "balance",
+            "2": "preparation",
+            "3": "health",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "rest",
+            "1": "postponement",
+            "2": "health",
+            "3": "preparation",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "rest",
+            "1": "Recovery",
+            "2": "Regeneration",
+            "3": "balance",
+            "4": "future"
+          }
+        }
+      },
+      "fiveofswords": {
+        "position1": {
+          "keywords": {
+            "0": "conflict",
+            "1": "Tension",
+            "2": "defeat",
+            "3": "ego",
+            "4": "struggle"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "conflict",
+            "1": "Compromise",
+            "2": "experience",
+            "3": "awareness",
+            "4": "balance"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "conflict",
+            "1": "Tension",
+            "2": "struggle",
+            "3": "It's a misunderstanding.",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "struggle",
+            "1": "resistance",
+            "2": "effort",
+            "3": "conflict",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "Compromise",
+            "1": "communication",
+            "2": "ego",
+            "3": "compatibility",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "conflict",
+            "1": "Losing",
+            "2": "stubborn",
+            "3": "ego",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "conflict",
+            "1": "victory",
+            "2": "learning",
+            "3": "ego",
+            "4": "future"
+          }
+        }
+      },
+      "sixofswords": {
+        "position1": {
+          "keywords": {
+            "0": "transition",
+            "1": "Recovery",
+            "2": "Progress",
+            "3": "journey",
+            "4": "hope"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "transition",
+            "1": "Progress",
+            "2": "journey",
+            "3": "Recovery",
+            "4": "opportunity"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "transition",
+            "1": "change",
+            "2": "Obligation",
+            "3": "journey",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "transition",
+            "1": "Patience",
+            "2": "journey",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "transition",
+            "1": "journey",
+            "2": "Progress",
+            "3": "solution",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "transition",
+            "1": "Progress",
+            "2": "journey",
+            "3": "Staying stuck.",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "Progress",
+            "1": "transition",
+            "2": "Tranquillity",
+            "3": "journey",
+            "4": "future"
+          }
+        }
+      },
+      "sevenofswords": {
+        "position1": {
+          "keywords": {
+            "0": "strategy",
+            "1": "Plan",
+            "2": "secrecy",
+            "3": "Awakeness",
+            "4": "account"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "strategy",
+            "1": "Plan",
+            "2": "Awakeness",
+            "3": "Attention",
+            "4": "account"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "strategy",
+            "1": "Honesty",
+            "2": "secrecy",
+            "3": "Plan",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "strategy",
+            "1": "Intelligence",
+            "2": "effort",
+            "3": "planning",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "strategy",
+            "1": "Plan",
+            "2": "Intelligence",
+            "3": "awareness",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "Don't cheat.",
+            "1": "secrecy",
+            "2": "strategy",
+            "3": "trick",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "strategy",
+            "1": "Plan",
+            "2": "Attention",
+            "3": "tactics",
+            "4": "future"
+          }
+        }
+      },
+      "eightofswords": {
+        "position1": {
+          "keywords": {
+            "0": "limit",
+            "1": "compression",
+            "2": "fear",
+            "3": "no way",
+            "4": "Freedom"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "Freedom",
+            "1": "limit",
+            "2": "awareness",
+            "3": "Courage",
+            "4": "Progress"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "limit",
+            "1": "barriers",
+            "2": "Mental block",
+            "3": "freedom",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "limit",
+            "1": "effort",
+            "2": "Freedom",
+            "3": "Patience",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "freedom",
+            "1": "mind",
+            "2": "awareness",
+            "3": "self-confidence",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "limit",
+            "1": "mind",
+            "2": "freedom",
+            "3": "faith",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "freedom",
+            "1": "mind",
+            "2": "borders",
+            "3": "faith",
+            "4": "future"
+          }
+        }
+      },
+      "nineofswords": {
+        "position1": {
+          "keywords": {
+            "0": "Concern",
+            "1": "Stress",
+            "2": "anxiety",
+            "3": "mental burden",
+            "4": "The Boogeyman"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "Concern",
+            "1": "anxiety",
+            "2": "Stress",
+            "3": "Freedom",
+            "4": "balance"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "Concern",
+            "1": "anxiety",
+            "2": "Stress",
+            "3": "Obligation",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "Concern",
+            "1": "effort",
+            "2": "anxiety",
+            "3": "Patience",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "Concern",
+            "1": "self-confidence",
+            "2": "Don't face it.",
+            "3": "awareness",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "Concern",
+            "1": "fear",
+            "2": "anxiety",
+            "3": "Stress",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "Concern",
+            "1": "Don't face it.",
+            "2": "Courage",
+            "3": "Stress",
+            "4": "future"
+          }
+        }
+      },
+      "tenofswords": {
+        "position1": {
+          "keywords": {
+            "0": "last",
+            "1": "closure",
+            "2": "Pain",
+            "3": "end",
+            "4": "Regeneration"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "end",
+            "1": "Regeneration",
+            "2": "transformation",
+            "3": "new path",
+            "4": "Progress"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "end",
+            "1": "Regeneration",
+            "2": "Obligation",
+            "3": "Inevitability",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "end",
+            "1": "Regeneration",
+            "2": "effort",
+            "3": "Patience",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "end",
+            "1": "Rebirth",
+            "2": "awareness",
+            "3": "Cleanup",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "end",
+            "1": "Betrayal",
+            "2": "Wounds",
+            "3": "load",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "end",
+            "1": "cycle",
+            "2": "Regeneration",
+            "3": "transformation",
+            "4": "future"
+          }
+        }
+      },
+      "pageofswords": {
+        "position1": {
+          "keywords": {
+            "0": "learning",
+            "1": "curiosity",
+            "2": "idea",
+            "3": "communication",
+            "4": "discovery"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "learning",
+            "1": "curiosity",
+            "2": "research",
+            "3": "idea",
+            "4": "discovery"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "information",
+            "1": "news",
+            "2": "learning",
+            "3": "communication",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "learning",
+            "1": "curiosity",
+            "2": "effort",
+            "3": "discovery",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "learning",
+            "1": "curiosity",
+            "2": "research",
+            "3": "information",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "information",
+            "1": "learning",
+            "2": "superficiality",
+            "3": "Carelessness",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "learning",
+            "1": "curiosity",
+            "2": "information",
+            "3": "discovery",
+            "4": "future"
+          }
+        }
+      },
+      "knightofswords": {
+        "position1": {
+          "keywords": {
+            "0": "speed",
+            "1": "determination",
+            "2": "Courage",
+            "3": "Action",
+            "4": "focus"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "Courage",
+            "1": "speed",
+            "2": "decision",
+            "3": "focus",
+            "4": "Progress"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "speed",
+            "1": "opportunity",
+            "2": "unexpected",
+            "3": "Action",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "Courage",
+            "1": "speed",
+            "2": "effort",
+            "3": "focus",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "Courage",
+            "1": "movement",
+            "2": "Vision",
+            "3": "Determination",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "In a hurry.",
+            "1": "I can't wait.",
+            "2": "Anger",
+            "3": "speed",
+            "4": "history"
+          }
+        }
+      }
+    }
+  }
+}

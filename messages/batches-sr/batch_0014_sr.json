@@ -1,0 +1,760 @@
+{
+  "love": {
+    "modals": {
+      "step1": "Unesite svoje lične podatke",
+      "step2": "Odgovorite na pitanja o ljubavi",
+      "step3": "Izaberite i pregledajte 4 kartice",
+      "step4": "Sačuvaj čitanje; Dobijte rezultate na vašu e-poštu",
+      "successMessage": "Vaše ljubavno otvaranje je zabeleženo i analizirano. Rezultati možete da vidite sa panela.",
+      "successTitle": "Čitanje sačuvane",
+      "writtenReading": "Pismeno čitanje",
+      "writtenReadingText": "Ako želite, biće isporučeno kao detaljan pisani izveštaj; Možete ga ponovo pročitati kad god želite."
+    },
+    "positions": {
+      "position1": {
+        "description": "Pravi ton osobe koju imate na umu, njihov pogled na vas, njihov pristup i njihove namere. To čini neizgovorenim vidljivim; Osjećate da osećate ono što držite u svom srcu.",
+        "title": "Osoba koju ste zainteresovani"
+      },
+      "position2": {
+        "description": "Toplina atrakcije između vas, harmonija vašeg jezika tela i ravnoteže fizičke blizine. Kako energet toče kada ste ovde zajedno otkriveni.",
+        "title": "Fizička veza"
+      },
+      "position3": {
+        "description": "Most u srcu do srca: dubina empatije, poverenja i duhovne harmonije. Na ovoj kartici se pojavljuje činjenica da se čujete i vibriraju na istoj frekvenciji.",
+        "title": "Emotivna veza"
+      },
+      "position4": {
+        "description": "Način na koji odnos sazreva, potencijal da rasti zajedno i put koji vam je vrijeme sugeriše. Daje znakove o strpljenju, stabilnosti i budućoj slici.",
+        "title": "Dugoročni proces"
+      }
+    }
+  },
+  "marriage": {
+    "credit": {
+      "cancel": "Otkazati",
+      "confirm": "Potvrditi",
+      "description": "Kredit će se koristiti za snimanje ovog čitanja. Da li želite da nastavite?",
+      "saving": "Snimanje ...",
+      "title": "Odobrenje kredita"
+    },
+    "data": {
+      "badgeText": "Komentari kartice samo su u informativne svrhe. Čitanje je detaljno da vam pomogne.",
+      "detailedTitle": "Proširenje braka - Detaljno lično čitanje",
+      "interpretationTitle": "Komentar za ekspanziju braka",
+      "spreadName": "Otvaranje braka"
+    },
+    "description": "Posebna sesija sa 10 kartica za vaš brak i put koji nalaze supružnika",
+    "form": {
+      "birthDate": "Vaš datum rođenja",
+      "birthDateRequired": "Datum rođenja",
+      "cancel": "Otkazati",
+      "clearAll": "Očistiti sve",
+      "communicationMethod": "Metoda komunikacije",
+      "concern": "Vaša brisačka zabrinutost",
+      "concernQuestion": "Šta se najviše brinete o braku?",
+      "concernRequired": "neophodan",
+      "continue": "Nastavljati",
+      "email": "Vaša adresa e-pošte",
+      "emailCommunication": "E-mail",
+      "emailRequired": "Potrebna adresa e-pošte",
+      "emotional": "Vaš trenutni status braka",
+      "emotionalQuestion": "Koje emocionalne prepreke doživljavate u vezi sa brakom?",
+      "emotionalRequired": "Potrebno je emocionalno stanje",
+      "firstName": "Vaše ime",
+      "lastName": "vaše prezime",
+      "loginRequired": "Morate biti prijavljeni da biste spremili čitanje",
+      "name": "Vaše ime",
+      "nameRequired": "Potrebno je ime",
+      "personalInfo": "Vaše lične podatke",
+      "phone": "Telefonski broj",
+      "questions": "Pitanja",
+      "saveAndOpen": "Spremite i otvorite",
+      "saveError": "Došlo je do greške prilikom čuvanja čitanja",
+      "saveReading": "Sačuvati čitanje",
+      "saved": "Čitanje je uspešno sačuvano",
+      "selectAllCards": "Izaberite sve kartice",
+      "surname": "vaše prezime",
+      "surnameRequired": "Potrebno je prezime",
+      "title": "Informacije o proširenju braka",
+      "understanding": "Šta želite da razumete",
+      "understandingQuestion": "Koje biste područja braka voleli da bolje razumete?",
+      "understandingRequired": "Potrebno je razumevanje",
+      "whatsappCommunication": "Vhatsapp"
+    },
+    "info": {
+      "close": "Zatvoriti",
+      "description": "Ova ekspanzija pokazuje vaš bračni potencijal, vaš idealan supružnik i kako će vaše bračno putovanje napredovati. To je posebna ekspanzija prilagođena knjizi Silvia Abraha.",
+      "howToUse": "Kako se koristi:",
+      "step1": "Izaberite jednu karticu za svaku poziciju",
+      "step2": "Postavite kartice u red",
+      "step3": "Pročitajte svoj komentar",
+      "step4": "Sačuvaj svoje čitanje",
+      "title": "O otvaranju braka"
+    },
+    "interpretation": {
+      "conclusion": "Ovaj komentar će vas voditi na vašem bračnom putovanju. Budite strpljivi i verujte da će vam prava osoba doći.",
+      "intro": "Ova ekspanzija pruža važne informacije o vašem bračnom putovanju. Svaka kartica osvetljava vaš proces braka iz druge perspektive.",
+      "title": "Komentar za ekspanziju braka"
+    },
+    "modals": {
+      "aboutSpread": "O otvaranju",
+      "aboutSpreadText": "Ova ekspanzija pokazuje vaš bračni potencijal, vaš idealan supružnik i kako će vaše bračno putovanje napredovati. To je posebna ekspanzija prilagođena knjizi Silvia Abraha.",
+      "cancel": "Otkazati",
+      "cardCount": "Broj karata",
+      "communicationMethod": "Metoda komunikacije",
+      "confirm": "Potvrditi",
+      "continue": "Nastavljati",
+      "creditConfirm": "Odobrenje kredita",
+      "creditConfirmMessage": "Za ovo čitanje će se koristiti kredit. Jeste li sigurni da želite da nastavite?",
+      "detailedReading": "Čitanje naglas",
+      "detailedReadingText": "Snimite svoj komentar kao toplo glasovno snimanje. Posebno je pripremljen za vas; Možete preuzeti i slušati kad god želite.",
+      "emailCommunication": "E-mail",
+      "infoTitle": "O otvaranju braka",
+      "loveAttention": "Nakon snimanja čitanja, obično vam pošaljem vaš lični komentar u roku od 2-4 sata. Ova studija je samo za smernice samo; Konačni izbori su vaši.",
+      "loveAttentionInfo": "Ljubazna beleška",
+      "process": "Period",
+      "processing": "Obrada ...",
+      "redirecting": "💍 Usmereni ste na početnu stranicu ...",
+      "saveReading": "Sačuvaj čitanje 💍",
+      "savingReading": "Snimanje ...",
+      "step1": "Unesite svoje lične podatke",
+      "step2": "Odgovorite na pitanja o braku",
+      "step3": "Izaberite i pregledajte 9 kartica",
+      "step4": "Sačuvaj čitanje; Dobijte rezultate na vašu e-poštu",
+      "successMessage": "Vaše ekspanzija braka je zabeležena i analizirana. Rezultati možete da vidite sa panela.",
+      "successTitle": "Čitanje sačuvane",
+      "whatsappCommunication": "Vhatsapp",
+      "writtenReading": "Pismeno čitanje",
+      "writtenReadingText": "Ako želite, biće isporučeno kao detaljan pisani izveštaj; Možete ga sačuvati i ponovo pročitati."
+    },
+    "title": "Otvaranje braka",
+    "meanings": {
+      "thefool": {
+        "position1": {
+          "upright": "Vaš brak će biti oblikovan svežim početkom koji je slobodno uzet. Zaključak; Može biti nada, avantura i otvaranje novih staza.",
+          "reversed": "Nedostatak planiranja ili prekomerne naivnost može zatamniti ishod bračnog procesa. Uzemljeni koraci mogu brzo da kreiraju krhkošću.",
+          "keywords": [
+            "početak",
+            "sloboda",
+            "nadati se",
+            "hrabrost"
+          ],
+          "context": "Zaključak; početak novog putovanja. Međutim, nedostatak temelja nosi rizike."
+        },
+        "position10": {
+          "upright": "Deli ukazuje na novi početak slobode u bračnom putu. Uzimanje korak sa hrabrošću i čisto vera otvara vrata braku.",
+          "reversed": "Okolišteno ludo kaže da nedostatak planiranja ili nepažljivih koraka može odložiti put ka braku. Potreban je svesniji pristup.",
+          "keywords": [
+            "početak",
+            "hrabrost",
+            "verovanje",
+            "sloboda",
+            "nov način"
+          ],
+          "context": "Postoji mogućnost braka; Ali zahteva svesni izbor i namera."
+        },
+        "position2": {
+          "upright": "Dok čekate, budite otvoreni za nova iskustva i živite život sa lakoljnom i radoznalošću. Vaše putovanje vam daje slobodu da se približite pravoj osobi.",
+          "reversed": "Nepažnja ili neodgovorni koraci mogu vam otežati da se pripremite za pravu osobu. Dok čekate, fokusirajte se na čvrste temelje, a ne bez ukorijenjenosti.",
+          "keywords": [
+            "inovativnost",
+            "sloboda",
+            "iskustvo",
+            "lakoća"
+          ],
+          "context": "Korisno je istražiti život sa radoznalošću dok čeka. Ali umesto neodgovornih koraka potrebno je ojačati fondaciju."
+        },
+        "position3": {
+          "upright": "Deli ukazuje na slobodno i fleksibilno deljenje u finansijskim pitanjima. Može postojati tendencija da se odvaja, ali impulsivni koraci u zajedničkim troškovima.",
+          "reversed": "Ludi preokrenuti ukazuje na nepažnju i nepripremljeno ponašanje u finansijskim pitanjima. Nedostatak planiranja može prouzrokovati probleme u deljenju.",
+          "keywords": [
+            "sloboda",
+            "rizikovati",
+            "nedostatak planiranja",
+            "fleksibilnost"
+          ],
+          "context": "Postoji sloboda u deljenju, ali nedostatak smera može predstavljati rizike. Važno je pronaći ravnotežu."
+        },
+        "position4": {
+          "upright": "Ludo simbolizuje novi početak i slobodni duh kada je u pitanju posvećenost. To pokazuje da se odnos može isprobati bez straha, a kada kažete da iz srca, veza će se pretvoriti u prijatno putovanje.",
+          "reversed": "Ludi preokrenuti ukazuje na stanje neodlučnosti i nespremanje za posvećenost. Ako jedna od strana nerado preuzme odgovornost, postupak veznog računa može se odložiti ili ostati površan.",
+          "keywords": [
+            "sloboda",
+            "početak",
+            "hrabrost",
+            "odgovornost"
+          ],
+          "context": "Želja za povezivanje dolazi sa hrabrošću, ali mora biti uravnotežena sa osećajem odgovornosti."
+        },
+        "position5": {
+          "upright": "Sličnost gledanja na svet čistom, svežom dušom je moćna. Oboje volite spontanost i istraživanje; Učenje zajedno je dobro za vas.",
+          "reversed": "Možda će trebati sloboda više, ostala je potrebna sigurnost. Ako se ne uspostavi ravnoteža između nedostatka planiranja i opreza, zajednički ritam će biti napeti.",
+          "keywords": [
+            "početak",
+            "sloboda",
+            "radoznalost",
+            "igra",
+            "naivnost"
+          ],
+          "context": "Ljubav prema istraživanju je zajednička osnova. Tempo i bezbednosne potrebe mogu se razlikovati. Kada se uspostavi ravnoteža, harmonija se povećava."
+        },
+        "position6": {
+          "upright": "Deli kartica ukazuje da će vas porodica pozdraviti bez predrasuda i svežom energijom. Za njih ste drugačija i slobodna duša; Vremenom, ova originalnost može pobuditi radoznalost i olakšati prihvatanje. Vaš iskren i otvoren stav otvoriće vrata za vas.",
+          "reversed": "Ludo naopako ukazuje da vas porodica može doživljavati kao malo previše neodgovorno ili užurbano. Možda ćete u početku imati poteškoća u uspostavljanju poverenja. Možete prekršiti ovu percepciju tako što ćete ozbiljniji i uravnoteženiji pristup.",
+          "keywords": [
+            "početak",
+            "sloboda",
+            "radoznalost",
+            "predrasude",
+            "ravnoteža"
+          ],
+          "context": "Pristup vašoj porodici može da oscilira između radoznalosti i opreza. Vaša iskrenost će ubrzati proces prihvatanja."
+        },
+        "position7": {
+          "upright": "Deli kaže da će se vaš sastanak dogoditi spontano i neočekivano. Vaša prirodnost i stav sa protokom privući će vas jedni druge. Vaš susret će doći sa iznenađenjem i laganom energijom.",
+          "reversed": "Ludi preokret ukazuje da vaš susret može biti u užurbanom ili bezbrižnom okruženju. Sastanak koji prvo izgleda neozbiljno može steći smisao tokom vremena. Važno je pristupiti bez predrasuda.",
+          "keywords": [
+            "početak",
+            "slučajnost",
+            "prirodnost",
+            "lakoća",
+            "protok"
+          ],
+          "context": "Vaš sastanak može biti iznenađujuće, svetlo i teče. Iako je prvi utisak može biti užurban, može se produbiti."
+        },
+        "position8": {
+          "upright": "Deli pokazuje da se možete razumeti sa otvorenom i prirodnom iskrenošću u komunikaciji. Nepredviđeni pristup sprečava nesporazume i jača vezu.",
+          "reversed": "Okolišteno ludo kaže da nepažnja i govor bez razmišljanja mogu da otežavaju razumevanje. Svesniji i pažljiviji izrazi uspostavljaju ravnotežu.",
+          "keywords": [
+            "iskrenost",
+            "otvorenost",
+            "prirodnost",
+            "nezainteresovanastnost"
+          ],
+          "context": "Prirodna otvorena osigurava harmoniju; Nepažnja može dovesti do nesporazuma."
+        },
+        "position9": {
+          "upright": "Ludo, vaš pogodan partner je neko ko pozdravlja život s lakoćom i radošću. Radoznatko, hrabar i otvoren za nova iskustva čuva vašu vezu svježu.",
+          "reversed": "Invertirani lud vam govori da je supružnik koji deluje nervozno i ima poteškoće u preuzimanju odgovornosti nije pogodno za vas. Žuriće zbog toga što treba izbegavati gubitak ravnoteže.",
+          "keywords": [
+            "sloboda",
+            "entuzijazam",
+            "radoznalost",
+            "hrabrost"
+          ],
+          "context": "Idealan supružnik je taj koji zagrli život sa lakoljnom i uravnoteženo je odgovornost."
+        }
+      },
+      "themagician": {
+        "position1": {
+          "upright": "Vaš brak će pronaći snažnu osnovu međusobnom komunikacijom i voljom. Zaključak; To može biti kreativno i skladno partnerstvo.",
+          "reversed": "Mršavstvo ili manipulacija može potkopati zdravu osnove braka. Zaključak; To može biti proces koji u pitanje poverenje.",
+          "keywords": [
+            "stvaranje",
+            "volja",
+            "komunikacija",
+            "snaga"
+          ],
+          "context": "Zaključak; Zavisi od harmonije namere i akcije. Transparentna komunikacija je obavezna."
+        },
+        "position10": {
+          "upright": "Čarobnjak ukazuje na vašu moć da postigne brak. Možete da stvorite svoju sudbinu izražavajući svoje želje jasno.",
+          "reversed": "Možda postoje prepreke na putu braka zbog obrnutog mađioničara, obmanjujućih obećanja ili manipulacije.",
+          "keywords": [
+            "stvaranje",
+            "izraz",
+            "snaga",
+            "fokus",
+            "realizacija"
+          ],
+          "context": "Brak vam je u rukama; Iskrenost i fokus su od suštinskog značaja."
+        },
+        "position2": {
+          "upright": "Razvijte sopstveni potencijal, realizujte svoje talente. Koristite period čekanja da konsolidujete svoju ličnu snagu.",
+          "reversed": "Podjela svoju energiju ili podcjenjivanje sebe može vas usporiti. Pomičite se napred sa jasnom namerom i disciplinom.",
+          "keywords": [
+            "snaga",
+            "stvaranje",
+            "potencijal",
+            "izraz"
+          ],
+          "context": "Izgradite snagu dok čekate. Fokusiran za boravak priprema vas za pravu osobu."
+        },
+        "position3": {
+          "upright": "Mađioničar simbolizuje veštinu i kreativnost u finansijskim pitanjima. Imate visok potencijal da mudro upravljate zajedničkim resursima.",
+          "reversed": "Mađioničar za obrnuti ukazuje na probleme sa deljenjem kroz manipulaciju ili prevareni stavovi. Bez transparentnosti, poverenje je oštećeno.",
+          "keywords": [
+            "veština",
+            "kreativnost",
+            "transparentnost",
+            "poverenje"
+          ],
+          "context": "Inteligencija i veština za deljenje su snažne. Međutim, ako odstupate od iskrenosti, poverenje se gubi."
+        },
+        "position4": {
+          "upright": "Mađioničar pokazuje da stranke mogu snažno otkriti svoju volju i nameru da se međusobno povežu. Pravilna komunikacija i odlučnost stvara snažan početak braka.",
+          "reversed": "Mađioničar obrnuti ukazuje da želja za povezivanjem može ostati verbalna i namere možda nisu iskrene. Ako postoji razlika između onoga što se kaže i ono što se radi, prilog ne daje poverenje.",
+          "keywords": [
+            "namera",
+            "izraz",
+            "stabilnost",
+            "komunikacija"
+          ],
+          "context": "Jasna namera i dosledne korake ojačavaju vezivanje."
+        },
+        "position5": {
+          "upright": "Postoje slične energije oko postavljanja namera i povezivanje reči na akciju. Vaša komunikaciona moć čini jedni druge sjaj.",
+          "reversed": "Jedan stil izražavanja može ostati magičan, drugi sumnjivi. Preterivanje ili tišina prelazi zajedničku zemlju.",
+          "keywords": [
+            "namera",
+            "izraz",
+            "stvaranje",
+            "doslednost",
+            "komunikacija"
+          ],
+          "context": "Orijentisana orijentisana u komunikaciji je velika. Ako se održava transparentnost, harmonija se produbljuje."
+        },
+        "position6": {
+          "upright": "Mađioničar pokazuje da vas lako može prihvatiti zahvaljujući snažnim veštinama komunikacije i ubedjivanja. Ispravne reči i iskreni stavovi pomoći će vam da pobedite u srcu svoje porodice. Možete brzo da uspostavite vezu sa svojim impresivnim i pouzdanim energijom.",
+          "reversed": "Reversirani mađioničar vam kaže da vaša porodica može da dovede u pitanje vaše namere ili reči. Ako se previše pokažete, vaša iskrenost se može ispitivati. Miran i transparentan pristup će olakšati prihvatanje.",
+          "keywords": [
+            "komunikacija",
+            "ubeđivanje",
+            "snaga",
+            "iskrenost",
+            "transparentnost"
+          ],
+          "context": "Vaše reči i stavovi biće presudni u procesu prihvatanja. Iskrenost jača poverenje."
+        },
+        "position7": {
+          "upright": "Mađioničar pokazuje da ćete jedni druge pronaći zahvaljujući vašoj komunikacijske moći i šarmu. Vaše reči i energija će vaše sastanke učiniti posebnim. Razgovor ili zajednički projekat može vam približiti bliže.",
+          "reversed": "Mađioničar u obrnutom jeziku ukazuje na susret koji započinje nesporazumima ili varljivim energijama. Jasnoća u početku može nedostajati, ali vremenom istinskih namera pojavljuju se. Strpljenje i otvorenost olakšavaju proces.",
+          "keywords": [
+            "komunikacija",
+            "povući",
+            "projekat",
+            "priključak",
+            "iskrenost"
+          ],
+          "context": "Sastanak će biti putem komunikacije. Otvorenost i iskrenost ojačavaju vezu."
+        },
+        "position8": {
+          "upright": "Mađioničar pokazuje da imate veliku komunikacijsku snagu. Međusobno razumevanje postaje lakše sa jasnim namerama i jasnim rečima.",
+          "reversed": "Mađioničar obrnuti ukazuje da manipulacija ili preuveličavanje mogu da poremete komunikaciju. Transparentnost i doslednost osigurava poštovanje.",
+          "keywords": [
+            "komunikacija",
+            "oštrina",
+            "izrazi",
+            "namera"
+          ],
+          "context": "Jasne namere olakšavaju sporazum; Igre za štetu komunikaciji."
+        },
+        "position9": {
+          "upright": "Čarobnjak, vaš pogodan partner je neko ko ima visoko komunikacione veštine, kreativni je i određen. Osoba čija su reči i postupci u skladu sa vama daju samopouzdanje.",
+          "reversed": "Nekoliko mađioničarka ukazuje da je partner koji je manipulativan, nepouzdan ili živi sa maskima nije pogodan za vas. Držite se podalje od ljudi koji sakriju svoje prave namere.",
+          "keywords": [
+            "komunikacija",
+            "kreativnost",
+            "stabilnost",
+            "poverenje"
+          ],
+          "context": "Idealan supružnik je neko čija su reči i postupci kompatibilni, iskreni i odlučni."
+        }
+      },
+      "thehighpriestess": {
+        "position1": {
+          "upright": "Duboko razumevanje, intuicija i unutrašnja veza će doći do izražaja u vašem braku. Zaključak; To može biti sigurna i duhovna intimnost.",
+          "reversed": "Skrivene emocije ili tajne mogu stvoriti nepoverenje u ishod braka. Nedostatak jasnoće može uzgajati distancu.",
+          "keywords": [
+            "intuicija",
+            "mudrost",
+            "tajna",
+            "duhovna veza"
+          ],
+          "context": "Zaključak; veza zasnovana na unutrašnjoj harmoniji i intuiciji. Ali tajne mogu da erodiraju poverenje."
+        },
+        "position10": {
+          "upright": "Visoka sveštenica pokazuje da je brak moguće kroz unutrašnju intuiciju i duboku vezu. Strpljenje i unutrašnji smernice su važni.",
+          "reversed": "Ograničena visoka sveštenica, tajnost ili skrivene istine mogu blokirati put ka braku.",
+          "keywords": [
+            "intuicija",
+            "tajna",
+            "mudrost",
+            "strpljenje",
+            "obveznica"
+          ],
+          "context": "Brak će biti oblikovan poverenjem u unutrašnju intuiciju."
+        },
+        "position2": {
+          "upright": "Slušajte svoju intuiciju i razvijte svoj unutrašnji svet. Unutrašnja mudrost će vas pripremiti za pravog partnera.",
+          "reversed": "Prekomerna pasivnost ili introverzija može otežati proces. Stanje u stanju deljenja i otvorenog srca.",
+          "keywords": [
+            "intuicija",
+            "mudrost",
+            "unutrašnja smernica",
+            "ravnoteža"
+          ],
+          "context": "Korisno je ojačati intuiciju dok čekate. Ali umesto da se zatvara, trebalo bi da deli."
+        },
+        "position3": {
+          "upright": "Visoka sveštenica nosi energiju intuicije i tajnosti u finansijskim pitanjima. Duboko razmišljanje i svesni izbori u vezi sa resursima su na čelu.",
+          "reversed": "Uokrećena visoka sveštenica kaže da tajnost i tajne mogu stvoriti nepoverenje u finansijsku deljenje. Nedostatak jasnoće izaziva probleme.",
+          "keywords": [
+            "intuicija",
+            "tajna",
+            "mudrost",
+            "otvorenost"
+          ],
+          "context": "Intuicija i svesni pristup su korisni u deljenju. Ako postoji previše tajnosti, nastaće sukob."
+        },
+        "position4": {
+          "upright": "Visoki sveštenici ukazuje da će želja za povezivanje podržati unutrašnja mudrost. Objašnjava da se može reći da sa dubokom intuicijom slušajući srca stranaka.",
+          "reversed": "Preokrećena visoka sveštenica ukazuje na prisustvo tajnosti i nejasna osećanja u želji za pričvršćivanjem. Ako se ne govori otvoreno, osnova obveznice će biti oslabljena.",
+          "keywords": [
+            "intuicija",
+            "mudrost",
+            "sigurnost",
+            "unutrašnji aspekt"
+          ],
+          "context": "Prilog postaje jasan čujući zvuk srca."
+        },
+        "position5": {
+          "upright": "Slična frekvencija u intuiciji, unutrašnji svet i privatnost. Razumete se čak i u svojim tihim trenucima.",
+          "reversed": "Jedan od vas može se otvoriti dok drugi čuva tajne. Zatvoreni dnevni red slabi osećaj poverenja.",
+          "keywords": [
+            "intuicija",
+            "tajna",
+            "privatnost",
+            "uvid",
+            "spokojstvo"
+          ],
+          "context": "Partnerstvo u dubini i intuiciji. Ako se tendencija da se tajnost razlikuje, potrebna je otvorenost."
+        },
+        "position6": {
+          "upright": "Visoki sveštenici ukazuje da vas porodica može uočiti kao pomalo udaljenu, ali mudru osobu u početku. Uverite ih sa svojom intuicijom bez da previše govorite privući će njihovu pažnju. Vremenom, vaša iskrenost će biti otkrivena.",
+          "reversed": "Reverzna visoka sveštenica pokazuje da vas porodica može pronaći povući ili misteriozno. To može usporiti proces prihvatanja. Otvorenost i deljenje smanjiće udaljenost.",
+          "keywords": [
+            "intuicija",
+            "rastojanje",
+            "mudrost",
+            "tajna",
+            "deljenje"
+          ],
+          "context": "Iako se u početku možda čini pomalo rezervisano, toplina vaše porodice će se povećati kako se povećava vaša mesta."
+        },
+        "position7": {
+          "upright": "Visoki sveštenici kaže da vaš sastanak može biti kroz duboku intuiciju ili duhovnu vezu. Upoznaćete se kroz osećanja i vezu sa energijom, a ne rečima.",
+          "reversed": "Obrnuti visoki sveštenici, na sastanku može postojati tajnost ili nesigurnost. Možda ćete je teško potpuno otvoriti jedni drugima u početku. Kada se poverenje tokom vremena izgradi, veza se produbljuje.",
+          "keywords": [
+            "intuicija",
+            "duša",
+            "tajna",
+            "da se osećam",
+            "energija"
+          ],
+          "context": "Sastanak se može pojaviti sa snažnom unutrašnjom intuicijom. Vremenom će otvorena ojačati vašu obveznicu."
+        },
+        "position8": {
+          "upright": "Visoki sveštenik ukazuje da je intuitivno prigušivanje snažno. Razumevanje tišine i primete unutrašnjih znakova olakšava razumevanje.",
+          "reversed": "Prekoračena visoka sveštenica ukazuje da preterana sredstva ili tajne mogu da otežavaju komunikaciju. Sigurna otvorena povećava usklađenost.",
+          "keywords": [
+            "intuicija",
+            "raport",
+            "tajna",
+            "uvid"
+          ],
+          "context": "Potencijal za tiho razumevanje je visok; Prikrivanje ometa harmoniju."
+        },
+        "position9": {
+          "upright": "Visoka sveštenica, vaš pogodan prijatelj je neko ko je intuitivan, duboki mislilac i zna kako da čuva tajne. Unutrašnja mudrost stvara skladnu vezu.",
+          "reversed": "Prekoračeni visoki sveštenici ukazuje da je partner koji je preterano misteriozan, skriva svoja osećanja ili izbegava komunikaciju nije pogodna za vas.",
+          "keywords": [
+            "intuicija",
+            "mudrost",
+            "dubina",
+            "raport"
+          ],
+          "context": "Idealan partner je neko ko je intuitivan i povezuje se kroz duboko i pouzdano deljenje."
+        }
+      },
+      "theempress": {
+        "position1": {
+          "upright": "Vaš brak će biti izgrađen na saosećanje, obilje i produktivnosti. Zaključak; To može biti život koji raste sa ljubavlju.",
+          "reversed": "Prekomerno posesivnost ili nedostatak samo-nege mogu umanjiti mir braka. Zaključak; Možda je nestabilna veza.",
+          "keywords": [
+            "dosta",
+            "lova",
+            "saosećanje",
+            "obilje"
+          ],
+          "context": "Zaključak; plodna i brižna veza. Ali ravnoteža se mora održati."
+        },
+        "position10": {
+          "upright": "Empresse kaže da je obilje, ljubav i želja da započnu porodicu ojačavaju potencijal za brak.",
+          "reversed": "Prekoračena carica, prevelika zavisnost ili neuravnotežena ljubav može otežati brak.",
+          "keywords": [
+            "lova",
+            "dosta",
+            "porodica",
+            "saosećanje",
+            "kreativnost"
+          ],
+          "context": "Mogućnost braka je jaka; Treba ga hraniti saosećanje i ravnoteža."
+        },
+        "position2": {
+          "upright": "Pokažite saosećanje sebi i razviti svest o obilje i obilju. Vaš postupak samo-nege priprema vas za supružniku.",
+          "reversed": "Prekomerna zavisnost ili zanemarivanje samo-vrednosti otežava proces. Naučite prvo da sebe negujete.",
+          "keywords": [
+            "saosećanje",
+            "dosta",
+            "nega",
+            "kreativnost"
+          ],
+          "context": "Nega i saosećanja su važni dok čekate. Ovo vas priprema za skladnu zajednicu."
+        },
+        "position3": {
+          "upright": "Carica simbolizuje obilje i velikodušnost. Postoji plodna i podržavajuća energija u razmjeni finansijskih sredstava.",
+          "reversed": "Reversed carica opisuje prekomernu potrošnju ili neuravnoteženu deljenje. Proterivanje resursa može prouzrokovati probleme.",
+          "keywords": [
+            "dosta",
+            "velikodušnost",
+            "ravnoteža",
+            "podrška"
+          ],
+          "context": "Energija obilja prevladava u deljenju. Ali ekstravagancija može da uznemiri ravnotežu."
+        },
+        "position4": {
+          "upright": "Empripress pokazuje da će prilog zasnovati na ljubavi, saosećanje i produktivnosti. Strane su spremne da se međusobno pružaju okruženje mira i poverenja.",
+          "reversed": "Reversed carica stvara rizik da bude preterano posesivan ili uguši drugu osobu u svojoj želji da se poveže. Ova neravnoteža može otežati formiranje trajne veze.",
+          "keywords": [
+            "saosećanje",
+            "poverenje",
+            "mir",
+            "obilje"
+          ],
+          "context": "Zdrava vezanost uspeva u ravnoteži slobode i saosećanja."
+        },
+        "position5": {
+          "upright": "Slična zadovoljstva u negovatini, produktivnosti i estetici. Stvara se toplo, njegovanje zajedničkog prostora.",
+          "reversed": "Percepcija prekomernog vlasništva / zanemarivanja može poremetiti ritam. Ako se ne uspostavi ravnoteža samo-nege, zadovoljstvo se smanjuje.",
+          "keywords": [
+            "saosećanje",
+            "obilje",
+            "briga",
+            "estetski",
+            "telo"
+          ],
+          "context": "Hranljive, senzorne sličnosti su snažne. Obratite pažnju na dozu posesivnosti."
+        },
+        "position6": {
+          "upright": "Carica kaže da će vas porodica brzo prihvatiti sa vašim toplim, brižnim i negovanjem energije. Način na koji prihvatate ljubav može uticati na njih. U njihovim očima ćete biti neko ko će dodati vrednost porodici.",
+          "reversed": "Ukrašena carica ukazuje da vas porodica može doživljavati kao previše posesivan ili zavisan. Preveliv stav ponekad može da stvori osećaj pritiska na drugu stranku. Izbalansiran pristup će vas lako prihvatiti.",
+          "keywords": [
+            "saosećanje",
+            "toplota",
+            "snabdevanje",
+            "porodica",
+            "ravnoteža"
+          ],
+          "context": "Vaša ljubazna i njegovanja stav može brzo da usvoji porodica."
+        },
+        "position7": {
+          "upright": "Carica kaže da će vaš sastanak biti sa saosećanjem, toplinom i prirodnom okruženjem. Porodica, prijatelji ili događaj vezani za prirodu mogu vas sastaviti. Prijateljska atmosfera neguje vašu vezu.",
+          "reversed": "Ukrašena carica može biti preterano posesivna ili anticipativna energija na sastanku. Previše je emocija u početku može da vas naprestene. Balans i smirenost čine lakši sastanak.",
+          "keywords": [
+            "saosećanje",
+            "toplota",
+            "priroda",
+            "porodica",
+            "blizina"
+          ],
+          "context": "Sastanak se može odvijati u toplom, prijateljskom i negutnom okruženju. Važan je ravnoteža emocija."
+        },
+        "position8": {
+          "upright": "Carica ukazuje da će prevladati saosećajan i negovani stil komunikacije. Mekani jezik olakšava razumevanje.",
+          "reversed": "Reverse carica kaže da prekomerno posesivnost ili emocionalni preliv može prouzrokovati poteškoće u komunikaciji. Izbalansiran izraz donosi Harmoniju.",
+          "keywords": [
+            "saosećanje",
+            "izraz",
+            "ishrana",
+            "ravnoteža"
+          ],
+          "context": "Saosećajna komunikacija jača ugovor; Višak stvara prepreke."
+        },
+        "position9": {
+          "upright": "Carica, vaš pogodan partner je saosećajan, negujući i produktivni. Njegov ljubavni pristup vam daje mir.",
+          "reversed": "Invertirana carica, neko ko je preterano zavisan, ljubomoran ili zanemaruje svoje potrebe nisu u pravu.",
+          "keywords": [
+            "saosećanje",
+            "snabdevanje",
+            "dosta",
+            "ženska energija"
+          ],
+          "context": "Idealan supružnik je neko ko je voli i zna kako da podeli."
+        }
+      },
+      "theemperor": {
+        "position1": {
+          "upright": "Vaš brak će dobiti poverenje, naređenje i čvrstu strukturu. Zaključak; To može biti stabilna unija.",
+          "reversed": "Prekomerna kontrola ili kruti stavovi mogu otežati protok braka. Zaključak; To može biti opresivni nalog.",
+          "keywords": [
+            "poverenje",
+            "narediti",
+            "stabilnost",
+            "vlast"
+          ],
+          "context": "Zaključak; Čvrsta i sigurna osnova. Ali preterana krutost može biti problem."
+        },
+        "position10": {
+          "upright": "Car podržava mogućnost braka sa redom, odlučnošću i jakim temeljima.",
+          "reversed": "Reversirani car, kontrola ili krutost mogu da se umanjuju na braku.",
+          "keywords": [
+            "narediti",
+            "poverenje",
+            "stabilnost",
+            "stabilnost",
+            "osnova"
+          ],
+          "context": "Brak se odvija sa sigurnom strukturom i stabilnošću."
+        },
+        "position2": {
+          "upright": "Usvojiti red i čvrste granice u vašem životu. Dok čekate, svest o odgovornosti vas sazreva.",
+          "reversed": "Prekomerna krutost ili potreba za kontrolom može da otežava proces. Takođe naučite fleksibilnost.",
+          "keywords": [
+            "narediti",
+            "odgovornost",
+            "poverenje",
+            "stabilnost"
+          ],
+          "context": "Korisno je uspostaviti red dok čekate. Ali priđite ga sa ravnotežom, a ne kružnošću."
+        },
+        "position3": {
+          "upright": "Car demonstrira potrebu za narudžbom i jasnim pravilima u finansijskoj distribuciji. Sa disciplinom i odgovornošću, resursi postaju sigurni.",
+          "reversed": "Reversirani car kaže da kruta kontrola ili pritisak mogu otežati deljenje. Osjećaj poverenja može se oštetiti.",
+          "keywords": [
+            "narediti",
+            "vlast",
+            "odgovornost",
+            "sigurnost"
+          ],
+          "context": "Disciplina i pravila u deljenju donose poverenje. Prekomerna kontrola stvara sukob."
+        },
+        "position4": {
+          "upright": "Car označava da se pričvršćivanje može izgraditi na disciplini, stabilnosti i jakim temeljima. Da dolazi sa ozbiljnim osećajem odgovornosti.",
+          "reversed": "Reversirani car ukazuje da se želja za vezom može zamutiti pretjerano kontrolom ili krutom pristupom. Jedna strana se može osećati pod pritiskom.",
+          "keywords": [
+            "stabilnost",
+            "vlast",
+            "odgovornost",
+            "poverenje"
+          ],
+          "context": "Čvrsti prilog je trajan sa korektnim bilansom."
+        },
+        "position5": {
+          "upright": "Vaše vrednosti strukture, narudžbe i preuzimanje odgovornosti su slične. Pravila i granice daju mir.",
+          "reversed": "Vaš nivo rigidnosti može se razlikovati. Doza kontrolnog jezika utiče na bliskost.",
+          "keywords": [
+            "narediti",
+            "granica",
+            "poverenje",
+            "sedeći",
+            "odgovornost"
+          ],
+          "context": "Potraga za strukturom i poverenje je uobičajena. Kako se ivica fleksibilnosti povećava, povećava se usaglašenost."
+        },
+        "position6": {
+          "upright": "Car kaže da će vas porodica prihvatiti po pouzdanoj i urednoj prirodi. Velika je prednost za njih da se pojave kao čvrsta i odgovorna osoba. Disciplina i ozbiljnost zarađuju poštovanje.",
+          "reversed": "Reversirani car ukazuje da vas porodica može doživljavati kao previše strogo, tvrdoglave ili kontrolne. Ovo može stvoriti rastojanje. Prikazivanje fleksibilnosti i mekoće ubrzava proces prihvatanja.",
+          "keywords": [
+            "poverenje",
+            "narediti",
+            "vlast",
+            "fleksibilnost",
+            "poštovanje"
+          ],
+          "context": "Vaše ozbiljne i pouzdanije ponašanje olakšava prihvatanje, ali krutost može da stvori udaljenost."
+        },
+        "position7": {
+          "upright": "Car kaže da će vaš sastanak biti u ozbiljnom i urednom okruženju. Rad, obrazovanje ili službeni proces mogu vas sastajati. Poverenje i stabilnost ojačaće vaše poznanstvo.",
+          "reversed": "Reversirani car može imati oštar ili kontrolišući ton u vašem poznanstvu. U početku formalnost može stvoriti udaljenost. Moguće je uspostaviti vezu koja vremenom omekšava.",
+          "keywords": [
+            "ozbiljnost",
+            "rad",
+            "narediti",
+            "stabilnost",
+            "formalnost"
+          ],
+          "context": "Sastanak se može odvijati u ozbiljnom i redovnom okruženju. Intimnost se vremenom povećava."
+        },
+        "position8": {
+          "upright": "Car pokazuje da se harmonija može postići jasnim granicama i nalogom u komunikaciji. Određivanje daje samopouzdanje.",
+          "reversed": "Reversirani car ukazuje da će strogi i komandni jezik teško razumeti. Fleksibilnost povećava prilagodljivost.",
+          "keywords": [
+            "granica",
+            "narediti",
+            "stabilnost",
+            "poverenje"
+          ],
+          "context": "Jasan raspored poboljšava komunikaciju; Krutost stvara prekid veze."
+        },
+        "position9": {
+          "upright": "Car, vaš pogodan supružnik je neko ko je uredan, zaštitnički i pouzdan. Mogućnost preuzimanja odgovornosti dodaje stabilnost vašem odnosu.",
+          "reversed": "Invertirani car, neko ko ima strogu pravila, kontroliše ili je nefleksibilan nije pogodan za vas.",
+          "keywords": [
+            "poverenje",
+            "stabilnost",
+            "zaštita",
+            "odgovornost"
+          ],
+          "context": "Idealan supružnik je neko ko je organizovan, pouzdan i odgovoran."
+        }
+      },
+      "thehierophant": {
+        "position1": {
+          "upright": "Vaš brak će biti podržan tradicijom, vrednostima i zajedničkim uverenjima. Zaključak; To može biti duboko ukorenjena i pouzdana veza.",
+          "reversed": "Slepi tradicionalizam ili sukobi vrednosti mogu komplicirati ishod braka. Razlike mogu izazvati napetost.",
+          "keywords": [
+            "tradicija",
+            "vrednost",
+            "raport",
+            "lojalnost"
+          ],
+          "context": "Zaključak; Bond je ojačana zajedničkim vrednostima. Ali stroga pravila mogu da bacaju senku."
+        },
+        "position10": {
+          "upright": "Saint označava tradicionalne načine braka, odobrenja porodice i svetoj vezi.",
+          "reversed": "Ograničeno sveti, otpornost ili nepoštovanje tradicionalnih pravila mogu odložiti put ka braku.",
+          "keywords": [
+            "tradicija",
+            "lojalnost",
+            "porodica",
+            "svetost",
+            "raport"
+          ],
+          "context": "Mogućnost braka je jaka; biće podržan tradicionalnim sredstvima."
+        },
+        "position2": {
+          "upright": "Ojačati svoje vrednosti i uverenja. Pravilno uputstvo i informacije će vas voditi dok čekate.",
+          "reversed": "Slepo pridržavanje tradicija može vas ograničiti. Razjasnite svoje sopstvene vrednosti.",
+          "keywords": [
+            "vrednosti",
+            "verovanje",
+            "uputstvo",
+            "učenje"
+          ],
+          "context": "Korisno je razjasniti svoje vrednosti dok čekate. To vam olakšava vaš meč."
+        },
+        "position3": {
+          "upright": "Saint ukazuje na tradicionalne metode finansijske razmene. Zajedničke vrednosti i pravila podržavaju Harmoniju.",
+          "reversed": "Ograničeni sveti pokazuje sukob različitih uverenja i vrednosti u finansijskim pitanjima. Adaptacija se ne može postići bez fleksibilnosti.",
+          "keywords": [
+            "vrednosti",
+            "tradicija",
+            "raport",
+            "pravila"
+          ]
+        }
+      }
+    }
+  }
+}

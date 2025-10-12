@@ -1,0 +1,802 @@
+{
+  "marriage": {
+    "meanings": {
+      "pageofcups": {
+        "position5": {
+          "keywords": [
+            null,
+            null,
+            null,
+            null,
+            "izraz"
+          ],
+          "context": "Kreativni srčani partner. Važna je praksa zrele ekspresije."
+        },
+        "position6": {
+          "upright": "Princ Cup-ova kaže da nevinost i kreativna intuicija mogu vam približiti porodicu. Male geste i osetljive izraze uvećavaju prihvatanje.",
+          "reversed": "Preveliki princ čaše, prekomerna osetljivost ili dečija percepcija može stvoriti udaljenost u porodici. Balansiranje emocija sa rokom dospeća pruža samopouzdanje.",
+          "keywords": [
+            "nevinost",
+            "senzibilitet",
+            "inspiracija",
+            "kreativnost",
+            "gest"
+          ],
+          "context": "Iskreni i brižni stav ojačava obveznice. Zrelost donosi ravnotežu."
+        },
+        "position7": {
+          "upright": "Princ čaša označava sastanak u kreativnom i znatiželjnom trenutku. Umetnost, snovi ili trenuci inspiracije dovode vas zajedno.",
+          "reversed": "Prenoćini princ CUP-ova kaže da preterana osetljivost ili zabluda može zasjeniti susret. Realan pristup otvara čista vrata.",
+          "keywords": [
+            "inspiracija",
+            "radoznalost",
+            "kreativnost",
+            "senzibilitet"
+          ],
+          "context": "Upoznate se u kreativnom trenutku. Stvara vezu igre i inspiracije."
+        },
+        "position8": {
+          "upright": "Princ čaša označava kreativnu i nevinu komunikaciju. Otvorena radoznalost olakšava razumevanje.",
+          "reversed": "Princ Cup-ova obrnut kaže da preterana osetljivost ili sanjać može da se otežava. Realistična radoznalost donosi harmoniju.",
+          "keywords": [
+            "nevinost",
+            "radoznalost",
+            "kreativnost",
+            "senzibilitet"
+          ],
+          "context": "Radoznalost povećava harmoniju; Sprečava pretjeranu osetljivost."
+        },
+        "position9": {
+          "upright": "Princ Cup-ova, neko ko je kreativan, osetljiv i izražava da vam iskrena osećanja odgovara. Obučava svoju vezu svojim čistom srcem.",
+          "reversed": "Princ of Cups se preokrenuo, neko ko je preterano sanjao ili nema nezrelih emocija nije pogodan za vas.",
+          "keywords": [
+            "kreativnost",
+            "senzibilitet",
+            "nevinost",
+            "izraz"
+          ],
+          "context": "Pogodan je neko čistog srca i kreativan."
+        }
+      },
+      "knightofcups": {
+        "position1": {
+          "upright": "Vaš brak će napredovati sa koracima koji dolaze iz romantike, elegancije i srca. Zaključak; idealistička, ali ljubavna veza.",
+          "reversed": "Nedosledna obećanja ili prekomjerni idealizam mogu naštetiti ishodu braka. Realizam je važan.",
+          "keywords": [
+            "romantika",
+            "idealizam",
+            "milost",
+            "strast"
+          ],
+          "context": "Zaključak; Romantični i elegantni brak. Ali vaša stopala će možda trebati biti na zemlji."
+        },
+        "position10": {
+          "upright": "Vitez čaše pokazuje put do predloga za brakanje sa romantičnim pristupom i elegantnim gestima. Ako idealna osećanja ispunjavaju praktični plan, proces se ubrzava.",
+          "reversed": "Nedosledna obećanja ili prekomerna idealizacija mogu stvoriti razočaranje. Harmonija diskursa-akcije je od suštinskog značaja.",
+          "keywords": [
+            "romantika",
+            "gest",
+            "ponuditi",
+            "ideali",
+            "doslednost"
+          ],
+          "context": "Romantika + Harmonija planova je neophodna za brak."
+        },
+        "position2": {
+          "upright": "Stavite svoje snove u akciju. Pomičite se napred sa emocionalnom hrabrošću dok čekate.",
+          "reversed": "Nedoslednost ili prekomjerni idealizam usložnjava proces. Budite jasni.",
+          "keywords": [
+            "pokret",
+            "sanjati",
+            "hrabrost",
+            "osećanje"
+          ],
+          "context": "Emocionalna hrabrost je korisna dok čekate."
+        },
+        "position3": {
+          "upright": "Romantični ideali povećavaju velikodušnost; Geste se ogledaju u budžetu. Potraga za harmonijom je velika.",
+          "reversed": "Nekompatibilnost obećanja - nespojivost stvara nepoverenje. Snaga sila nedoslednosti.",
+          "keywords": [
+            "idealizam",
+            "gest",
+            "doslednost",
+            "raport"
+          ],
+          "context": "Nežni pristup je lep; Kontinuitet i planiranje su od suštinskog značaja."
+        },
+        "position4": {
+          "upright": "Romantične previse i emocionalna otvorena olakšavaju vezivanje. Elegancija i iskrenost dominiraju u vezi.",
+          "reversed": "Nedoslednost ili prekomjerni idealizam slabi prilog. Mora se obezbediti kontinuitet.",
+          "keywords": [
+            "romantika",
+            "ponuditi",
+            "iskrenost",
+            "ideali",
+            "obveznica"
+          ],
+          "context": "Želja za povezivanjem ojačana je romantikom, ali je potrebna doslednost."
+        },
+        "position5": {
+          "upright": "Slijedilost na jeziku romantičnih ideala i elegancija. Gradite mostove sa svojim gestama.",
+          "reversed": "Harmonija reči-akcije može biti teška za jednog od vas. Ako se konzistentnost ne održava, harmonija će erodirati.",
+          "keywords": [
+            "romantika",
+            "idealan",
+            "gest",
+            "doslednost",
+            "milost"
+          ],
+          "context": "Romantični ton je čest. Održivost je obavezna."
+        },
+        "position6": {
+          "upright": "Vitez čaše kaže da će njegov romantični i elegantan pristup impresionirati porodicu. Suptilno ponašanje će vas lako dovesti do njihovog prihvatanja.",
+          "reversed": "Invertirani vitez čaše, nedosledna obećanja ili preterano idealistički stavovi mogu stvoriti sumnju u porodici. Poverenje se postiže jasnoćom i kontinuitetom.",
+          "keywords": [
+            "romantika",
+            "milost",
+            "ponuditi",
+            "iskrenost",
+            "oštrina"
+          ],
+          "context": "Ljubazno i dosledno prisustvo donosi prihvatanje. Treba da se držite podalje od preuveličavanja."
+        },
+        "position7": {
+          "upright": "Vitez čaše pokazuje sastanak u romantičnoj i idealističkoj sredini. Ponuda iz srca preći će vaše staze.",
+          "reversed": "Vitez Cup-a obrnut kaže da nedosledna obećanja mogu otežati obveznice. Jasna namera čini da se sastanak čini zdravim.",
+          "keywords": [
+            "romantika",
+            "idealizam",
+            "ponuditi",
+            "vizija"
+          ],
+          "context": "Upoznajete romantični predlog. Jasnoća jača odnos."
+        },
+        "position8": {
+          "upright": "Knight of Cups ukazuje na romantičnu i idealističku komunikaciju. Elegantne reči olakšavaju razumevanje.",
+          "reversed": "Vraćanje viteza CUP-ova kaže da nedosledna obećanja mogu naštetiti komunikaciji. Jasnoća i kontinuitet osiguravaju harmoniju.",
+          "keywords": [
+            "romantika",
+            "idealizam",
+            "milost",
+            "oštrina"
+          ],
+          "context": "Elegantni jezik jača harmoniju; Neusklađenost boli."
+        },
+        "position9": {
+          "upright": "Vitez čaše, neko ko je romantičan, vizionar, i hrabro otvara svoje srce je pogodno za vas. Njegov elegantan pristup vas neguje.",
+          "reversed": "Vitez šoljica je preokrenuo, neko ko pravi nedosledna obećanja ili je preterano sanjala, nije za vas.",
+          "keywords": [
+            "romantika",
+            "vizija",
+            "hrabrost",
+            "osećanje"
+          ],
+          "context": "Pogodan je romantični i otvorenim partnerom."
+        }
+      },
+      "queenofcups": {
+        "position1": {
+          "upright": "Zaključak; Biće to brak izgrađen na empatiji, dubokim emocijama i siguran emotivni prostor.",
+          "reversed": "Prekomerna osetljivost ili nedostatak granica može komplicirati ishod braka.",
+          "keywords": [
+            "empatija",
+            "saosećanje",
+            "senzibilitet",
+            "emocionalna ravnoteža"
+          ],
+          "context": "Zaključak; brižna i emocionalna veza. Ali granice moraju biti zaštićene."
+        },
+        "position10": {
+          "upright": "Kraljica Cupa kaže da brak može cvjetati dubokom empatijom i emocionalnom poverenju. Holding compassionski prostor podstiče formalno lepljenje.",
+          "reversed": "Granična rastovina ili emocionalna manipulacija stvara nesigurnost. Samo-nega i jasne granice očistite zemlju za brak.",
+          "keywords": [
+            "empatija",
+            "poverenje",
+            "saosećanje",
+            "granica",
+            "duboko vezan"
+          ],
+          "context": "Brak; raste u sigurnom, brižnom spiralu."
+        },
+        "position2": {
+          "upright": "Ojačati svoju empatiju i intuiciju. Uzrazite unutrašnje saosećanje dok čekate.",
+          "reversed": "Granični rastopljeni ili emocionalni preliv otežava proces. Ostanite uravnoteženi.",
+          "keywords": [
+            "empatija",
+            "intuicija",
+            "saosećanje",
+            "ravnoteža"
+          ],
+          "context": "Dok su čekali, empatija i saosećanje su od pomoći."
+        },
+        "position3": {
+          "upright": "Empatija i emocionalno upravljanje olakšavaju deljenje fer. Siguran emotivni prostor takođe se odražava i u budžetu.",
+          "reversed": "Granična rastovina ili emocionalna manipulacija ometaju finansijsku ravnotežu.",
+          "keywords": [
+            "empatija",
+            "saosećanje",
+            "granica",
+            "ravnoteža"
+          ],
+          "context": "Postoji potreba za budžetom koji je saosećajan, ali ima jasne granice."
+        },
+        "position4": {
+          "upright": "Empatija, saosećanje i emocionalno poverenje ojačavaju želju za povezivanjem. Odnos se pretvara u topli dom.",
+          "reversed": "Prekomerna emocionalna zavisnost može otežati prilog. Emotivna ravnoteža je od suštinskog značaja.",
+          "keywords": [
+            "empatija",
+            "saosećanje",
+            "poverenje",
+            "osećanje",
+            "obveznica"
+          ],
+          "context": "Želja za prilogom je jaka, ali zavisnost treba izbegavati."
+        },
+        "position5": {
+          "upright": "Slijedilost u empatiji, intuitivne nege i uspostavljanje sigurnog emocionalnog prostora. Delite saosećajno rukovodstvo.",
+          "reversed": "Granični topljenje može se pojaviti u jednom od vas. Potrebno je uspostaviti ravnotežu samoregulacije.",
+          "keywords": [
+            "empatija",
+            "saosećanje",
+            "granica",
+            "intuicija",
+            "zarastanje"
+          ],
+          "context": "Harmonija na jeziku saosećanja. Granični nadzor je važan."
+        },
+        "position6": {
+          "upright": "Kraljica Cupa kaže da će njeno saosećajno i empatično stav bitno ceniti porodica. Siguran emotivni prostor olakšava prihvatanje.",
+          "reversed": "Ograničena kraljica šoljica, topljenje granica ili emocionalnog prelivanja može stvoriti haos u porodici. Harmonija se postiže samoregulacijom.",
+          "keywords": [
+            "saosećanje",
+            "empatija",
+            "intuicija",
+            "granica",
+            "poverenje"
+          ],
+          "context": "Saosećajni prostor je ključ za prihvatanje. Pazite na izlivanje emocija."
+        },
+        "position7": {
+          "upright": "Kraljica CUP-a ukazuje na sastanak u brižnom i intuitivnom okruženju. Empatija i emocionalna otvorenost Pozovite vezu.",
+          "reversed": "Ograničena kraljica Cupa kaže da topljenje granica može da opterene obveznice. Zdrave granice stvaraju trajne obveznice.",
+          "keywords": [
+            "saosećanje",
+            "intuicija",
+            "empatija",
+            "granica"
+          ],
+          "context": "Upoznate se u saosećajnom prostoru. Zdrave granice ojačavaju vašu vezu."
+        },
+        "position8": {
+          "upright": "Kraljica šoljica označava empatičnu i intuitivnu komunikaciju. Saosećajno slušanje olakšava razumevanje.",
+          "reversed": "Kraljica Cup-ova preokrenuta kaže da prekomerna emotivnost ili gubitak granica može da otežava komunikaciju. Izbalansirano saosećanje donosi Harmoniju.",
+          "keywords": [
+            "empatija",
+            "saosećanje",
+            "intuicija",
+            "ravnoteža"
+          ],
+          "context": "Saosećanje raste harmonija; Granični gubitak sprečava."
+        },
+        "position9": {
+          "upright": "Kraljica šoljica je saosećajna i verovanje supružnika sa visokim veštinama empatije. Njihova unutrašnja intuicija je jaka.",
+          "reversed": "Kraljica šoljica je preokrenula, neko ko izgubi granice ili je emocionalno manipulativno nije za vas.",
+          "keywords": [
+            "empatija",
+            "saosećanje",
+            "intuicija",
+            "poverenje"
+          ],
+          "context": "Prikladan je saosećajni i intuitivni partner."
+        }
+      },
+      "kingofcups": {
+        "position1": {
+          "upright": "Vaš brak će napredovati sa emocionalnim zrelošću i mirno vođstvo. Zaključak; To će biti sigurna i uravnotežena unija.",
+          "reversed": "Suzbijanje emocija ili pasivne agresije može naštetiti ishodu braka.",
+          "keywords": [
+            "zrelost",
+            "ravnoteža",
+            "rukovodstvo",
+            "spokojstvo"
+          ],
+          "context": "Zaključak; Zreo i uravnotežen brak. Ali emocije ne bi trebalo da se suzbijaju."
+        },
+        "position10": {
+          "upright": "Kralj šoljica pokazuje da možete da podnesete odluku o braku sa emocionalnim zrelošću i mirno vođstvo. Boravak u centru tokom kriza olakšava službeni korak.",
+          "reversed": "Suzbiće ljutnja ili pasivni agresivan talas može da uruči bračno poverenje. Jasan i uravnotežen izraz je od suštinskog značaja.",
+          "keywords": [
+            "zrelost",
+            "spokojstvo",
+            "Emocionalno upravljanje",
+            "poverenje",
+            "rukovodstvo"
+          ],
+          "context": "Brak; Moguće je i čvrsti sa zrelim emocionalnim menadžmentom."
+        },
+        "position2": {
+          "upright": "Steći emocionalnu zrelost. Mirnoća i razumevanje daju vam snagu dok čekate.",
+          "reversed": "Potisnuti emocije ili pasivnost otežavaju proces. Budite otvoreni.",
+          "keywords": [
+            "zrelost",
+            "miran",
+            "osećanje",
+            "rukovodstvo"
+          ],
+          "context": "Emocionalna zrelost je korisna tokom čekanja."
+        },
+        "position3": {
+          "upright": "Emocionalna zrelost i smirenost dodaju stabilnost na novčane razgovore. Čak se i u krizi održava ravnoteža.",
+          "reversed": "Potisnuta emocija i pasivno agresivan stav urušili su poverenje u deljenje novca.",
+          "keywords": [
+            "zrelost",
+            "spokojstvo",
+            "poverenje",
+            "rukovodstvo"
+          ],
+          "context": "Smireno vođstvo omogućava pravedno deljenje."
+        },
+        "position4": {
+          "upright": "Zreli emotivna ravnoteža podržava želju za povezivanjem. Strane mogu da deluju u poverenju i miru.",
+          "reversed": "Potpuno emocija ili pasivno agresivni stavovi mogu se ublažiti pričvršćivanje.",
+          "keywords": [
+            "zrelost",
+            "ravnoteža",
+            "mir",
+            "poverenje",
+            "obveznica"
+          ],
+          "context": "Želja za priključkom jača sa zrelošću, ali otvorena je od suštinskog značaja."
+        },
+        "position5": {
+          "upright": "Slijedilost u zrelosti i spokoj u emocionalnom upravljanju. Znate kako ostati u centru oluje.",
+          "reversed": "Pasivni agresivni talasi mogu biti vidljivi u jednom od vas. Jasan izraz održava harmoniju.",
+          "keywords": [
+            "zrelost",
+            "spokojstvo",
+            "osećanje",
+            "rukovodstvo",
+            "poverenje"
+          ],
+          "context": "Zreli emotivni jezik je uobičajen. Kanal ekspresije mora se otvoriti."
+        },
+        "position6": {
+          "upright": "Kralj Cupa kaže da će emocionalna zrelost i mirno rukovodstvo dati pouzdanje porodici. Čak i u olujnim vremenima, uravnoteženi ubrzani ubrzavaju prihvatanje.",
+          "reversed": "Ograničeni kralj šoljica, potisnuti emocije ili pasivno-agresivni stavovi mogu stvoriti nepoverenje u porodicu. Ova prepreka se može prevazići otvorenom i uravnoteženom komunikacijom.",
+          "keywords": [
+            "zrelost",
+            "ravnoteža",
+            "rukovodstvo",
+            "osećanje",
+            "poverenje"
+          ],
+          "context": "Emotivna ravnoteža daje poverenje porodici. Otvoreni izraz stvara prihvatanje."
+        },
+        "position7": {
+          "upright": "Kralj šoljica ukazuje na sastanak sa zrelom i mirnom okruženjem. Emotivna ravnoteža i poverenje formiraju osnovu obveznice.",
+          "reversed": "Ograničeni kralj Cupa kaže da potisnuti emocije mogu da oblakne obveznice. Jasan izraz olakšava puteve.",
+          "keywords": [
+            "zrelost",
+            "ravnoteža",
+            "poverenje",
+            "spokojstvo"
+          ],
+          "context": "Upoznaćete zrelost. Otvorena jača vašu obveznicu."
+        },
+        "position8": {
+          "upright": "Kralj šoljica označava zrelu i uravnoteženu komunikaciju. Stav koji izražava nečije osećanje mirno olakšava razumevanje.",
+          "reversed": "Prekoračeni kralj Cupa kaže da pasivne agresivne ili potisnute emocije mogu poremetiti harmoniju. Jasan izraz jača ugovor.",
+          "keywords": [
+            "zrelost",
+            "ravnoteža",
+            "izraz",
+            "spokojstvo"
+          ],
+          "context": "Zrela komunikacija povećava harmoniju; Suzbijanje stvara prepreke."
+        },
+        "position9": {
+          "upright": "Kralj šoljica, zreli, emocionalno uravnotežen i miran supružnik je pogodan za vas. Neko ko može da ostane u teškim vremenima nadahnjuje samopouzdanje.",
+          "reversed": "Kralj šoljica je preokrenuo: neko ko potiskuje svoje emocije ili pokazuje pasivni agresivan stav nije pogodan za vas.",
+          "keywords": [
+            "zrelost",
+            "ravnoteža",
+            "miran",
+            "poverenje"
+          ],
+          "context": "Supružnik sa emocionalnim zrelošću je pogodan."
+        }
+      },
+      "aceofswords": {
+        "position1": {
+          "upright": "Zaključak; Biće jasnoće, iskrenosti i snažna mentalna veza u vašem braku. Činjenice će biti otkrivene jasno.",
+          "reversed": "Nesporazumi ili zamagljena komunikacija mogu da oblaku ishod braka.",
+          "keywords": [
+            "oštrina",
+            "istina",
+            "odluka",
+            "um"
+          ],
+          "context": "Zaključak; Brak na osnovu istine i otvorenosti. Ali jasnoća se mora održati u komunikaciji."
+        },
+        "position10": {
+          "upright": "Ace mačeva ukazuje da su jasnoća i prave odluke u vezi sa brakom na vratima. Videći istinu i odlučnost utrljavaju put prema braku.",
+          "reversed": "Neizvesnost, pogrešno komuniciranje ili zbrka može odložiti bračnu jasnoću. Komunikacija je potrebno pojednostavljeno.",
+          "keywords": [
+            "oštrina",
+            "odluka",
+            "istina",
+            "komunikacija",
+            "početak"
+          ],
+          "context": "Mogućnost braka je jaka; Jasna odluka i poštena komunikacija su od suštinskog značaja."
+        },
+        "position2": {
+          "upright": "Steknite mentalnu jasnoću, pogledajte činjenice. Donesu prave odluke dok čekate.",
+          "reversed": "Oblačnost ili prekomerne analize kompliciraju proces. Potražite jednostavnost.",
+          "keywords": [
+            "oštrina",
+            "istina",
+            "odluka",
+            "um"
+          ],
+          "context": "Pomaže da razmišljate jasno dok čekate."
+        },
+        "position3": {
+          "upright": "Jasna odluka i transparentno ugovor usklađuje se budžet. Postavljanje činjenica na stol donosi rešenja.",
+          "reversed": "Nejasna komunikacija i poluiistine razmnožavaju nepoverenje u deljenje novca.",
+          "keywords": [
+            "oštrina",
+            "odluka",
+            "transparentnost",
+            "istina"
+          ],
+          "context": "Oštri plan i definicija osigurava pravdu."
+        },
+        "position4": {
+          "upright": "Povezivanje se može postići jasnoćom i iskrenošću. Otvorena i direktna komunikacija obe strane jača temelj obveznice.",
+          "reversed": "Nesporazumi ili neudatene istine mogu otežati proces vezivanja. Nedostatak komunikacije stvara distancu.",
+          "keywords": [
+            "oštrina",
+            "istina",
+            "komunikacija",
+            "istina",
+            "obveznica"
+          ],
+          "context": "Želja za povezivanjem ojačana je otvorenom, ali slabi ako se komunikacija pokvari."
+        },
+        "position5": {
+          "upright": "Jasnoća, istina i slična hrabrost u govoru. Pravu rečenicu vas dobija na istoj stranici.",
+          "reversed": "Vaša tolerancija za nejasnoće može se razlikovati. Polu istine uništavaju Harmoniju.",
+          "keywords": [
+            "oštrina",
+            "istina",
+            "oštrina",
+            "definicija",
+            "odluka"
+          ],
+          "context": "Otvorene reči su uobičajene vrednosti. Rizik od mešanja mernih melova."
+        },
+        "position6": {
+          "upright": "Otvorena komunikacija i jasnoća dolaze u prednji plan u porodici. Iako u početku mogu postojati oštre pitanja i testove, vaš iskrenost i utvrđeni stav će izgraditi poverenje. Sa jasnim rečenicama i jasnim namerama, vaše šanse da budu prihvaćeni porast.",
+          "reversed": "Nesporazumi, skrivene tenzije ili dvosmislene izjave mogu oštetiti porodične veze. Ono što se ne kaže može nakupiti i izazvati distancu. Ako je tišina izabrana umesto transparentnosti, proces prihvatanja postaje duži i napeti.",
+          "keywords": [
+            "oštrina",
+            "komunikacija",
+            "istina",
+            "početak",
+            "iskrenost"
+          ],
+          "context": "Iskrenost i jasna namera olakšavaju prihvatanje porodice. Nedostatak komunikacije može stvoriti rastojanje."
+        },
+        "position7": {
+          "upright": "Kao što je Kılıc kaže da će se sastanak početi sa jasnoćom i novem idejom. Trening sednica, prezentacija ili iskren razgovor će vas ujediniti.",
+          "reversed": "Obrnuti as mačeva ukazuje da je zamagljena komunikacija može da opterene obveznica. Jasnoća jača vezu.",
+          "keywords": [
+            "oštrina",
+            "komunikacija",
+            "ideja",
+            "odluka"
+          ],
+          "context": "Odmah ispunjavate jasnu ideju. Frankness ubrzava obveznice."
+        },
+        "position8": {
+          "upright": "Ace mačeva ukazuje da će jasnoća i iskrenost doći do zaruka u komunikaciji. Jasne reči i jasno razmišljanje olakšavaju razumevanje.",
+          "reversed": "Ace mačeva obrnuto kaže da nepravično ili netačno izrazi mogu otežati komunikaciju. Pojednostavljivanje reči donosi Harmoniju.",
+          "keywords": [
+            "oštrina",
+            "istina",
+            "misao",
+            "komunikacija"
+          ],
+          "context": "Jasnoća jača ugovor; Oštećenja zamućenja."
+        },
+        "position9": {
+          "upright": "Ace mačeva, neko ko jasno i iskreno komunicira je pogodan za vas. Supružnik koji otvoreno izražava istinu čini se sigurno.",
+          "reversed": "Ace mačeva obrnuto, neko ko skriva ili manipuliše istinom nije pogodan za vas. Dvosmislenost u komunikaciji otežava vezivanje.",
+          "keywords": [
+            "iskrenost",
+            "oštrina",
+            "komunikacija",
+            "istina"
+          ],
+          "context": "Supružnik koji komunicira otvoreno i pošteno je pogodno."
+        }
+      },
+      "twoofswords": {
+        "position1": {
+          "upright": "Zaključak; Možda ćete morati da donesete kritičke odluke. Konfrontacija će biti od suštinske važnosti za pronalaženje ravnoteže u vašem braku.",
+          "reversed": "Neodlučnost ili let mogu ishoditi neizvesno od braka.",
+          "keywords": [
+            "odluka",
+            "ravnoteža",
+            "dilema",
+            "konfrontacija"
+          ],
+          "context": "Zaključak; Brak koji će se oblikovati trenutcima odluke. Nesigurnost mora biti rešena."
+        },
+        "position10": {
+          "upright": "Dvoje mačeva ukazuju na dilemu i poteškoće u donošenju odluka u vezi sa brakom. Kada su srce i um u skladu, put ka braku postaje jasan.",
+          "reversed": "Odlaganje odluka i izbegavanje konfrontacije može usporiti razvoj braka. Potrebno je direktno rešiti probleme.",
+          "keywords": [
+            "dilema",
+            "odluka",
+            "ravnoteža",
+            "konfrontacija",
+            "nestabilnost"
+          ],
+          "context": "Mora se osnovati ravnoteža srca u mihu za odluku o braku."
+        },
+        "position2": {
+          "upright": "Potražite ravnotežu, a ne neodlučnost. Dok čekate, slušajte svoje srce.",
+          "reversed": "Izbegavana odluka blokira proces. Mora se suočiti.",
+          "keywords": [
+            "odluka",
+            "dilema",
+            "ravnoteža",
+            "glasati"
+          ],
+          "context": "Određivanje je važno tokom čekanja."
+        },
+        "position3": {
+          "upright": "Odluka paraliza odlaže odluke o budžetu. Želja da ostane neutralna odlaganja ravnoteža.",
+          "reversed": "Pojavljuje se izbegavana sukoba; Uključujući emocije odvezeni čvor.",
+          "keywords": [
+            "dilema",
+            "izbegavanje",
+            "konfrontacija",
+            "ravnoteža"
+          ],
+          "context": "Razjašnjenje odluke otvara pravednije deljenje."
+        },
+        "position4": {
+          "upright": "Neodlučnost može odložiti posvećenost. Ako jedna od stranaka ima poteškoća da uravnotežuju svoja osećanja, polaganje jasnog koraka može se odložiti.",
+          "reversed": "Otkrivene su ignorisane istine i izrađen je izbor. U ovom trenutku prilog ili ojačava ili pauze.",
+          "keywords": [
+            "nestabilnost",
+            "glasati",
+            "ravnoteža",
+            "sukob",
+            "obveznica"
+          ],
+          "context": "Postoji želja za povezivanjem, ali odluka se može odložiti, otvorena je važna."
+        },
+        "position5": {
+          "upright": "Slijedilost uravnoteženom odlučivanju i smirenom težinom. Izgradite most koji osećaj uma zajedno.",
+          "reversed": "Vaš prag za izbegavanje / paraliza odlučivanja može biti drugačiji. Treba razgovarati o slepim spotovima.",
+          "keywords": [
+            "odluka",
+            "ravnoteža",
+            "konfrontacija",
+            "dilema",
+            "spokojstvo"
+          ],
+          "context": "Smirni partner za vaganje. Jezik izbegavanja treba da se smanji."
+        },
+        "position6": {
+          "upright": "Porodica može biti oklevanje zbog prihvatanja vas. Iako može biti očigledna neutralnost ili udaljenost, imate priliku da gradite mostove sa strpljenjem i razumevanjem. Moguće je da na vreme posmatraju vaš odnos i pronađu ravnotežu.",
+          "reversed": "Neodlučnost se može zameniti otvorenim odbacivanjem ili čvrstim stavom. Porodica može razviti predrasude a da vas ne poznaje dovoljno dobro. Ako su zatvoreni za dijalog, proces prihvatanja će usporiti.",
+          "keywords": [
+            "nestabilnost",
+            "ravnoteža",
+            "predrasude",
+            "čekati",
+            "test"
+          ],
+          "context": "Porodica u početku može biti neodlučna. Prihvatanje je moguće sa strpljenjem i vremenom, ali ne bi trebalo biti žurbe."
+        },
+        "position7": {
+          "upright": "Dvoje mačeva ukazuje da će se sastanak doći u neizvesno razdoblje. Usred dileme, jasan izbor donosi sastanak.",
+          "reversed": "Uokrenuli su dva mačeva kažu da izbegavanje sukoba može odložiti proces. Uspostavlja jasnu odluku.",
+          "keywords": [
+            "nestabilnost",
+            "glasati",
+            "ravnoteža",
+            "konfrontacija"
+          ],
+          "context": "Pokrenite se u trenutku odluke. Jasnoća daje smer vezu."
+        },
+        "position8": {
+          "upright": "Njih dvoje mačeva ukazuju na potragu za ravnotežom u donošenju odluka i komunikaciji. Neutralnost čuva sporazum.",
+          "reversed": "Dvojica obronjenih mačeva kažu da je izbegavano konfrontacije mogu blokirati komunikaciju. Otvorena stvara sporazum.",
+          "keywords": [
+            "ravnoteža",
+            "odluka",
+            "dilema",
+            "konfrontacija"
+          ],
+          "context": "Balans uvećava sporazum; Izbegavanje stvara prepreke."
+        },
+        "position9": {
+          "upright": "Dvoje mačeva, neko ko stvara ravnotežu i djeluju pošteno u njihovim odlukama je pogodan za vas. Supružnik koji mirno upravlja razlike u mišljenju donosi mir.",
+          "reversed": "Dvoje mačeva preokrenuli su: neko ko je stalno neodlučan ili izbegava konfrontaciju nije pogodno za vas.",
+          "keywords": [
+            "ravnoteža",
+            "odluka",
+            "pravda",
+            "raport"
+          ],
+          "context": "Supružnik koji pravi fer i uravnotežene odluke je pogodan."
+        }
+      },
+      "threeofswords": {
+        "position1": {
+          "upright": "Zaključak; Možda postoji srčana ruka ili suočavanje sa teškim istinama. Ali nakon ovog procesa pojavljuje se jasnija veza.",
+          "reversed": "Proces isceljenja i oproštenja može učiniti ishod braka jači.",
+          "keywords": [
+            "srp",
+            "konfrontacija",
+            "poboljšanje",
+            "real"
+          ],
+          "context": "Zaključak; veza kristalizirana izazovnim, ali transformativnim iskustvom."
+        },
+        "position10": {
+          "upright": "Tri mačeva kaže da prošle ogorčenja mogu da se najave odluku o braku. Sa isceljivanjem i oproštenjem, ova veza se može preduzeti u službene korake.",
+          "reversed": "Vi ste u procesu zarastanja i popravka srca; Ovo stvara jasniju put ka braku.",
+          "keywords": [
+            "razočaranje",
+            "starost",
+            "real",
+            "poboljšanje",
+            "izraz"
+          ],
+          "context": "Brak postaje jači kada se mone za srce postave."
+        },
+        "position2": {
+          "upright": "Suočiti se sa prošlim ocjeni. Izlečite svoje srce dok čekate.",
+          "reversed": "Boravak u boli otežava proces. Oproštaj vodi.",
+          "keywords": [
+            "razočaranje",
+            "starost",
+            "oproštenje",
+            "zarastanje"
+          ],
+          "context": "Korisno je zaceliti rane srca dok čekate."
+        },
+        "position3": {
+          "upright": "Štetne reči i razočaranje čine da novac razgovore oštar. Bez popravke, postaje teško napredovati.",
+          "reversed": "Saosećajni dijalog sa namerom zaceljivanje obnavlja budžetsko jedinstvo.",
+          "keywords": [
+            "razočaranje",
+            "ugao",
+            "popraviti",
+            "izraz"
+          ],
+          "context": "Prvo rana mora biti zaceljena; Tada bi plan trebalo da se raspravlja."
+        },
+        "position4": {
+          "upright": "Heartbreaks i prošli bol mogu otežati da se povežu. Treće strane ili pitanja poverenja mogu ometati obveznicu.",
+          "reversed": "Kada je bol ostavljen iza sebe, nastaje isceljenje za vezu. Proces oproštenja otvara prostor za odnos.",
+          "keywords": [
+            "srp",
+            "ugao",
+            "prepreke",
+            "zarastanje",
+            "obveznica"
+          ],
+          "context": "Prošle rane moraju se popraviti za vezu."
+        },
+        "position5": {
+          "upright": "Iskren kontakt sa bolom i sličnošću u nameri da se popravi. Mogu se progovoriti krhke istine.",
+          "reversed": "Jedan od vas može imati tendenciju da suzbija bol. Potrebna je saosećajna sukoba.",
+          "keywords": [
+            "razočaranje",
+            "real",
+            "popraviti",
+            "saosećanje",
+            "izraz"
+          ],
+          "context": "Zreli kontakt sa bolom je uobičajen. Ne dajte prostor za suzbijanje."
+        },
+        "position6": {
+          "upright": "Prošle ogorčene ili emocionalne rane mogu da uđu u igru tokom procesa prihvatanja porodice. Možda postoji gubitak, razočaranje ili porodična napetost u njihovom srcu koji im otežava da vas prihvati. Vaš saosećajni pristup može olakšati ove rane.",
+          "reversed": "Kada se stare ogorčenja potisnu neizgovorena, hladnoća i udaljenost mogu se povećati. Ako se neophodna konfrontacija za isceljenje nisu napravljene, porodične veze mogu vas opteretiti. Proces se mora ublažiti vremenom i razumevanjem.",
+          "keywords": [
+            "razočaranje",
+            "rastojanje",
+            "rane",
+            "prehlađen",
+            "poboljšanje"
+          ],
+          "context": "Porodica može biti u senci prošlih rana. Saosećajni pristup može utrljati put za prihvatanje."
+        },
+        "position7": {
+          "upright": "Tri mačeva ukazuju na sastanak nakon ogorčenosti ili razdvajanja. Otvoreno srce daje rođenje nove veze.",
+          "reversed": "Okolici tri mačeva kažu da proces isceljenja stvara prostor za sastanak. Saosećajna komunikacija raste obveznica.",
+          "keywords": [
+            "odvajanje",
+            "razočaranje",
+            "poboljšanje",
+            "konfrontacija"
+          ],
+          "context": "Srešće se nakon zatvaranja. Saosećanje ubrzava postupak."
+        },
+        "position8": {
+          "upright": "Tri mačeva ukazuje da je ogorčena ili oštre reči u komunikaciji mogu da otežavaju razumevanje. Saosećajni jezik je restorativan.",
+          "reversed": "Tri reverzija mačeva ukazuje da oproštaj i nežna komunikacija nude priliku za pomirenje.",
+          "keywords": [
+            "razočaranje",
+            "starost",
+            "saosećanje",
+            "jezik"
+          ],
+          "context": "Saosećajni jezik jača razumevanje; Krutost oštećuje ligamente."
+        },
+        "position9": {
+          "upright": "Tri mačeva, neko ko je naučio od srčanih i može saosećati je pogodan za vas. Supružnik koji raste od bola daje samopouzdanje.",
+          "reversed": "Tri mačeva se preokrenula: neko ko ne može da prepusti prošli bol ili koji je stalno ogorčen nije pogodan za vas.",
+          "keywords": [
+            "empatija",
+            "lekcija",
+            "zrelost",
+            "zarastanje"
+          ],
+          "context": "Zrela osoba koja je naučila iz prošlosti je pogodna."
+        }
+      },
+      "fourofswords": {
+        "position1": {
+          "upright": "Zaključak; Mirnoća, unutrašnji odmor i miran prostor će hraniti vaš brak.",
+          "reversed": "Prekomerni stres ili nedostatak ostatka može potkopati ishod braka.",
+          "keywords": [
+            "odmor",
+            "mir",
+            "um",
+            "oporavak"
+          ],
+          "context": "Zaključak; Brak na osnovu smirenosti i mira. Ali naglasak se mora upravljati."
+        },
+        "position10": {
+          "upright": "Četiri mačeva kažu da je pitanje braka u mirnoj i planiranskoj fazi. Uzimanje pauze i razmišljanja jasno olakšava dugoročne korake.",
+          "reversed": "Izbegavanje odmora ili žurbe sprečava jasnoću o braku. Um i srce se moraju oporaviti.",
+          "keywords": [
+            "odmor",
+            "strategija",
+            "spokojstvo",
+            "planiranje",
+            "oporavak"
+          ],
+          "context": "Vreme je za tiho planiranje za proces braka."
+        },
+        "position2": {
+          "upright": "Odmarajte se, okupite svoj um. Pronađite unutrašnji smiri dok čekate.",
+          "reversed": "Odbijanje da se odmori dovodi do izgaranja. Dozvoli pauze.",
+          "keywords": [
+            "odmor",
+            "oporavak",
+            "spokojstvo",
+            "poboljšanje"
+          ],
+          "context": "Bilo bi korisno odmarati dok čekate."
+        },
+        "position3": {
+          "upright": "Pauziranje i odraz dovode do zdrave finansijske strategije. Zaustavljene su ishitrene odluke.",
+          "reversed": "Poricanje odmora stvara izgaranje; Pogrešni koraci budžeta povećavaju se.",
+          "keywords": [
+            "prekršiti"
+          ]
+        }
+      }
+    }
+  }
+}

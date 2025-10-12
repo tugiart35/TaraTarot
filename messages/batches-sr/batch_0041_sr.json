@@ -1,0 +1,886 @@
+{
+  "blog": {
+    "cards": {
+      "the-hanged-man": {
+        "card_combinations": {
+          "combinations": [
+            {
+              "meaning": "Nakon predaje dolazi radikalna transformacija. Stari samo torbi, novo se rodilo."
+            },
+            {
+              "card": "Pustinjak",
+              "meaning": "Pronalazite mudrost u unutrašnjoj tišini. Duhovna svest se produbljuje."
+            },
+            {
+              "card": "Toranj",
+              "meaning": "Prisilna pauza vas priprema za radikalno restrukturiranje."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "OBJEKOVANO ČOVEK",
+          "affirmation_list": [
+            "Predajem se toku, život me transformiše.",
+            "Smatram da je smisao čak i u pauzi.",
+            "Kako sam pustio, osećam se lakše i moja svest raste."
+          ]
+        },
+        "cta": {
+          "main": "STOP I PRIJAVITE - TRUE TRANSFORMACIJA je rođena u tišini.",
+          "micro": "Ne žurite danas. Vidite to kao što je to, odaberite prihvatanje umesto otpora."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja obešena man kartica?",
+            "answer": "Obučeni čovek predstavlja postupak predaje, čeka i gledajući stvari iz druge perspektive. To je kartica sticanja duhovne svesti."
+          },
+          {
+            "question": "Šta znači naopako vešeni čovek?",
+            "answer": "Invertirani položaj ukazuje na otpor, tvrdoglavost ili strah od promene. Prepuštanje starih obrazaca uvlači put za transformaciju."
+          },
+          {
+            "question": "U kojim se situacijama pojavljuje ova kartica?",
+            "answer": "Javlja se tokom perioda kada ste pozvani u unutrašnju tišinu, strpljenje i primljeno posmatranje."
+          }
+        ],
+        "related_cards": [
+          "smrt",
+          "pustinjak",
+          "toranj"
+        ],
+        "imageUrl": "/cards/rvs / cii-bangedman.vebp"
+      },
+      "death": {
+        "name": "SMRT - TRANSFORACIJA, OBNOVA I REBITTH",
+        "short_description": "Kartica smrti nije kraj, to su vrata transformacije. Vreme je da se prepustimo starim, da budemo oslobođeni lanaca prošlosti i roditi se u novoj fazi života.",
+        "meanings": {
+          "upright": {
+            "general": "Kartica smrti predstavlja važnu prekretnicu i radikalnu promenu u vašem životu. Kako se stara doba dolazi do kraja, rođena je nova svest. Ova kartica je energija duhovne transformacije i ponovna rođenja, a ne fizička smrt. Poziva hrabrost da pusti stvari koje vam više ne služe.",
+            "love": "Zaljubljeni, odnos ili emocionalni ciklus će možda trebati da se okončaju ili transformišu. Authentičnija ljubav se može pojaviti iz onoga što je gotovo.",
+            "career": "Nosi energiju važnog zatvaranja, promene dužnosti ili novog početka u karijeri. Sada se vaš stari stil rada ili ciljevi mogu promeniti.",
+            "money": "Finansijski, stari poredak je završio kraj. Vreme je za restrukturiranje, transformisati svoj budžet ili pretvoriti u različite izvore prihoda.",
+            "spiritual": "Duhovno je smrt rastvaranje ega i ponovno rođenje suštine. Da biste se približili svom istinskom sebi, morate da pustite stare identitete."
+          },
+          "reversed": {
+            "general": "Reversed Death Card pokazuje otpornost na promenu i održavanje prošlosti. Što više odupirate, teže transformacija postaje. Dozvolite obnovu.",
+            "love": "Zaljubljena, obrnuta pozicija ukazuje na nemogućnost razbijanja, držeći se stara osećanja ili odbijajući transformisanje. Očistite svoje srce.",
+            "career": "Oduprijeti se promenama u polju karijere može stvoriti blokadu. Vreme je da granimo novi pravac.",
+            "money": "U finansijskim stvarima, održavanje starih navika može stvoriti finansijsku neravnotežu. Budite otvoreni za inovacije.",
+            "spiritual": "Duhovno, ne puštajući stare obrasce verovanja ometa rast. Prava transformacija započinje predajom."
+          }
+        },
+        "context": {
+          "mythology": "Kartica smrti povezana je sa mitovima u kojima je Anubis, Bog transformacije, nosi duše na zagrobni život. Takođe simbolizuje ponovno rođenje iz pepela sagorevanjem, poput ptice feničanskog jezika. Smrt nije kraj, to je prolaz.",
+          "celtic_cross": {
+            "future": "Ubrzo počinju kraj ere i duhovna obnova. Ovaj kraj nosi seme novog početka.",
+            "hidden_influences": "Univerzalne energije rade na brisanju starih obrazaca. Prihvatite transformaciju umesto da se odupirete."
+          }
+        },
+        "story": {
+          "title": "Tiha transformacija smrti",
+          "description": "Kako se crni oklopna figura vozi napred na konju, drevni kralj pada na zemlju. Sunce se diže na horizontu Heralds novi život. Svaki kraj nosi svetlost drugog početka.",
+          "historytitle": "Istorijsko poreklo: Arhetip smrti i ponovnog rođenja",
+          "history_message": "U stara vremena smrt je bila simbol tranzicije. Raspuštanje starog samostala omogućava evoluciju duše. U Tarotu, ova kartica nas podseća na neizbežni zakon ciklusa života.",
+          "mystic_title": "Duhovno značenje: sveta transformacije",
+          "mystic_message": "Kartica smrti je podučavanje predaje i ponovnog rođenja. Svaki gubitak stvara prostor za čistiju energiju. Vaša duša se priprema za ponovno rođenje.",
+          "cultural_title": "Savremeni komentar: Moć puštanja",
+          "cultural_message": "U današnjem svetu, ova kartica ukazuje da je vreme da se prepusti stare identitete, odnose ili obrasce misli. Praznina je materica robe.",
+          "lesson": "Prava transformacija započinje kada možete da častite i oslobodite prošlost. Kraj je samo vrata na drugi početak."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči kartice smrti",
+          "keywords_message": "smrt tarot Značenje, smrt Tarot Turski, TAROT TRANSFORMACIJA, REBERTH TAROT, TAROT završava, Tarot prepusti",
+          "positive_title": "Pozitivna energija",
+          "positive_message": "Transformacija, obnavljanje, svest, prečišćavanje, ponovno rođenje.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Ne bojte se završetka kraja. Svaki kraj je deo duhovnog ponovnog rođenja.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Vaša duša poziva na obnovu i prečišćavanje. Predajte se, ponovo se rodite."
+        },
+        "associations": {
+          "title": "Kosmičke veze sa demrom kartice",
+          "astrology": "Škorpija (transformacija, dubina, ponovno rođenje)",
+          "numerology": "13 (kraj, prečišćavanje, obnavljanje)",
+          "element": "Voda (emocionalni protok, transformacija, dubina)",
+          "chakra": "Solarni pleksus i srčana čakra - snaga i isceljenje"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa smrću",
+          "combinations": [
+            {
+              "card": "Vešeni čovek",
+              "meaning": "Nakon predaje dolazi transformacija. Stari samo se rastvara, novo se rodilo."
+            },
+            {
+              "card": "Toranj",
+              "meaning": "Nagli kraj donosi radikalno restrukturiranje. Ne odupirite se, prihvatite ponovno rođenje."
+            },
+            {
+              "card": "Zvezda",
+              "meaning": "Nakon završetka dođe do nade i svetlosti. Izlečenje je s vama."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Potvrde o smrti",
+          "affirmation_list": [
+            "Ja ostavljam prošlost sa ljubavlju.",
+            "Svaki kraj me vodi na novi početak.",
+            "Predajem se energiji transformacije."
+          ]
+        },
+        "cta": {
+          "main": "Pustite se da vam život povratka poziva na obnovu.",
+          "micro": "Ostavite naviku, misao ili vezu u prošlosti danas. Napravite prostor za nove energije."
+        },
+        "faq": [
+          {
+            "question": "Šta zastupa kartica smrti?",
+            "answer": "Kartica smrti predstavlja transformaciju, završavanje i ponovno rođenje. Zatvaranje starog ciklusa je početak nove."
+          },
+          {
+            "question": "Šta znači preokrenuta kartica smrti?",
+            "answer": "Invertirani položaj ukazuje na otpornost na promenu i držanje prošlosti. Puštanje je ključ za obnovu."
+          },
+          {
+            "question": "Zašto kartica smrti izgleda zastrašujuće?",
+            "answer": "Simbolika kartice ne opisuje fizičku smrt, već duhovnu transformaciju. Završeci su samo deo razvode."
+          }
+        ],
+        "related_cards": [
+          "presjećen čovek",
+          "toranj",
+          "zvezda"
+        ],
+        "imageUrl": "/cards/rvs / ciii-death.vebp"
+      },
+      "temperance": {
+        "name": "Ravnoteža - harmonija, strpljenje i unutrašnji integritet",
+        "short_description": "Radna karta predstavlja kombinovanje različitih energija života u harmoniji i pronalaženju unutrašnjeg mira. To je vodič za putovanje strpljenja, umerenosti i isceljenja.",
+        "meanings": {
+          "upright": {
+            "general": "Bilansna karta je poziv za pronalaženje harmonije između unutrašnjih i spoljnih energija, da se predaje protoku života i strpljivo napreduje. Izbegavajte krajnosti, izaberite srednju stazu i poverite u unutrašnje smernice. Ova kartica nas podseća na važnost preduzimanja koraka sa strpljenjem i svesno upravljanja energijama.",
+            "love": "Zaljubljeni, predstavlja harmoniju, razumevanje i međusobno poštovanje. Pravo je vreme da se nađe ravnoteža u vezi i skladno korišćenje emocionalnih i mentalnih energija. Ako ste samci, možda postoji prilika za uravnoteženi i zreli odnos.",
+            "career": "U karijeri, radu i projektima, strategiji, saradnji i merilo je na čelu. Harmonija u timskom radu i uravnoteženo korišćenje resursa donosi uspeh.",
+            "money": "U finansijskom smislu, čuvanje prihoda i troškova uravnoteženih, planiranih investicija i ušteda su važni. Izbegavajte nagli troškovi i svesno upravljajte svojim budžetom.",
+            "spiritual": "Duhovno, ravnoteža uči u pronalaženju unutrašnje harmonije meditacijom, energetskim radom i ritualima. Odabir srednje staze između dve krajnosti donosi duhovnu celu i izlečenje."
+          },
+          "reversed": {
+            "general": "Reversed Balance je upozorenje o disharmoniji, nestrpljivosti ili viškova. To ukazuje na rizik gubitka ravnoteže između energije, ishiljenog ponašanja ili nedostatka kontrole.",
+            "love": "Invertirani položaj u ljubavi ukazuje na sukobe, nestabilne odnose ili nedostatak komunikacije. Pronađite zajedničku zemlju i budite strpljivi.",
+            "career": "Invertirana ravnoteža u karijeri ukazuje na nedostatak saradnje, neplanirane radnje ili rizik od zloupotrebe resursa. Strategija i moderiranje su neophodni.",
+            "money": "U finansijskim pitanjima upozorenje je prekomernih rashoda ili neplaniranih ulaganja. Potrebno je vratiti ravnotežu i zameniti.",
+            "spiritual": "Duhovno, obrnuta pozicija ukazuje na unutrašnji nemir, nedostatak meditacije i energetskih blokova. Svest je od suštinskog značaja za vraćanje ravnoteže."
+          }
+        },
+        "context": {
+          "mythology": "Radna karta je povezana sa simbolima Hermesa / Merkura i grčke filozofije srednjeg puta. Podseća nas na univerzalne zakone ravnoteže, umerenosti i harmonije u mitologiji.",
+          "celtic_cross": {
+            "future": "U budućnosti će biti važno da se osigura unutrašnja i spoljna harmonija i da se odmeri i svesni koraci odlukama.",
+            "hidden_influences": "Energije oko vas i vaše prethodne iskustva podržavaju vas u pronalaženju srednjeg tla. Budite strpljivi i svesni."
+          }
+        },
+        "story": {
+          "title": "Tiho ples kartice bilansa",
+          "description": "Anđeo stoji sa jednom nogom u vodi, a drugi na zemljištu; U ruci prenosi tečnost između dve čaše. Ovo simbolizuje harmoniju i kontinuitet različitih energija. Svaki pokret je svestan, meri se svaki korak; Strpljenje i harmonija vode put.",
+          "historytitle": "Istorijsko poreklo: Moderacija i harmonija",
+          "history_message": "Radna karta predstavlja teme srednje zemlje, umerenosti i unutrašnje harmonije. U verzijama u istoriji Tarota, figura anđela simbolizuje svesni ravnoteža i skladnu kombinaciju energija.",
+          "mystic_title": "Duhovno značenje: unutrašnja harmonija",
+          "mystic_message": "Balance nas uči da uravnotežimo dve suprotstavljene energije, da budemo strpljivi i da delujemo svesno. Donosi duhovnu harmoniju i isceljenje.",
+          "cultural_title": "Moderna interpretacija: srednji put i strpljenje",
+          "cultural_message": "Danas ravnoteža predstavlja pacijent i meri se u različitim oblastima života, pravilno upravljajući resursima i koristeći energije u skladu.",
+          "lesson": "Strpljenje i umerenost u protoku života ključ su dugoročnog uspeha i duhovnog mira."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči bilansa kartice",
+          "keywords_message": "Stanje Tarota značenja, temperament Tarot Turski, Tarot Harmoni, Parot Strpljenje, Tarot Moderacija, Tarot Duhovni integritet",
+          "positive_title": "Pozitivna energija",
+          "positive_message": "Harmonija, strpljenje, umerenost, svesna akcija, duhovno isceljivanje, energetski bilans.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Izbegavajte krajnosti i žurba; Upravljajte svesno da upravljate energijama.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Pronađite unutrašnju harmoniju, krenite napred sa strpljenjem i ojačajte svoj duhovni integritet."
+        },
+        "associations": {
+          "title": "Kosmičke veze sa balansira",
+          "astrology": "Strelac (sloboda, putovanje, duhovna mudrost)",
+          "numerology": "14 (srednji put, harmonija, strpljenje)",
+          "element": "Voda i vatra - ravnoteža emocionalnih i mentalnih energija",
+          "chakra": "Srce i solarni pleksus - Energetski balans i isceljenje"
+        },
+        "card_combinations": {
+          "title": "Kombinacije koji se tiču ravnoteže",
+          "combinations": [
+            {
+              "card": "Smrt",
+              "meaning": "Pronalaženje harmonije nakon transformacije pokazuje korake neophodne za postizanje bilansa."
+            },
+            {
+              "card": "Vrag",
+              "meaning": "Označava oslobađanje balansiranjem energije zavisnosti i viška."
+            },
+            {
+              "card": "Zvezda",
+              "meaning": "Kada se balans i nada kombinuju, nastaju duhovno isceljivanje i inspiracija."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Odobrenja balansa",
+          "affirmation_list": [
+            "Usaglašavam svoje unutrašnje i spoljne energije.",
+            "Nastavljam sa strpljenjem i preuzmem merene i svesne korake.",
+            "Moja duša i telo su u ravnoteži; Harmonija i isceljenje su sa mnom."
+          ]
+        },
+        "cta": {
+          "main": "Pronađite srednji tlo, uravnotežite energiju i zagrlite mir.",
+          "micro": "Da danas bude umeren u jednoj oblasti; Koristite energiju i vremenski balans."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja balans karticu?",
+            "answer": "Radna bilansa predstavlja sklad, strpljenje, umerenost i unutrašnji integritet. Uči nas da pronađemo srednji put u protoku života."
+          },
+          {
+            "question": "Šta znači obrnuta balans karta?",
+            "answer": "Reverse pozicija je upozorenje o disharmoniji, viškovima ili nestrpljivima. Rebalansirajte svoje energije i ponašajte se svesno."
+          },
+          {
+            "question": "U kojim oblastima je jaka karta ravnoteže?",
+            "answer": "Jak je u duhovnom harmoniji, ravnoteži u odnosima i umjerenosti u finansijskom planiranju i procesima donošenja odluka."
+          }
+        ],
+        "related_cards": [
+          "smrt",
+          "zvezda",
+          "sunce"
+        ],
+        "imageUrl": "/cards/rvs/kiv-temperance.vebp"
+      },
+      "the-devil": {
+        "name": "Sotona - zavisnost, senka i oslobađanje",
+        "short_description": "Devil kartica otkriva unutrašnje senke, zavisnosti i restriktivne energije u vašem životu. To je poziv za oslobađanje kroz svest i svest.",
+        "meanings": {
+          "upright": {
+            "general": "Devil kartica predstavlja sukob sa našim stranim stranim senkima, zavisnosti i nekontrolisanim željama. Vaši strahovi i navike vas mogu ograničiti; Postupanje sa svešću i svešću omogućava vam da se rešite svojih lanaca.",
+            "love": "Zaljubljen je to upozorenje o opsesiji, zavisnosti ili kontroli odnosima. Potrebno je upravljati emocionalnim vezama sa svešću i postaviti zdrave granice.",
+            "career": "U polju karijere pazite na borbe za vlasti, manipulaciju ili neetičko ponašanje. Umesto da se vuče, napravite svesni izbor i primenite svoje vrednosti.",
+            "money": "U finansijskim pitanjima označava rizik prenapona, zavisnosti ili resursa za zloupotrebe. Zakon planira i zaštiti svoju finansijsku slobodu.",
+            "spiritual": "Duhovno je prilika da istražite strane svoje senke, prepoznate zavisnosti i oslobađate samoograničavanjem uverenja. Izaberite da budete oslobođeni kao unutrašnji iscelitelj."
+          },
+          "reversed": {
+            "general": "Reversed Demon ukazuje na povećanu svest i zavisnosti i senke koje počinju rastvarati. Proces probijanja lanaca i oslobađanja napreduje.",
+            "love": "Prilika da se oslobode odnosa i skloni se od zavisnosti i opsesije. Osnovana su zdrave granice.",
+            "career": "Vreme je da se odseli od manipulacija u poslovanju i projektima i da napravite etičke i svesne odluke.",
+            "money": "Prilika za finansijsku slobodu i odgovornu upotrebu resursa. Držite se dalje od prekomernih troškova.",
+            "spiritual": "Proces suočavanja sa suočavanjem aspekta senke i zavisnosti od odustajanja napreduje. Verujte u svoje unutrašnje smernice."
+          }
+        },
+        "context": {
+          "mythology": "Devil kartica je povezana sa baphomet i drugim ezoterijskim figurama. Predstavlja senku ljudske prirode, želje i svest o ograničenjima.",
+          "celtic_cross": {
+            "future": "U budućnosti ćete imati priliku da se suočite sa ovisima ili restriktivnim situacijama i postanite slobodni.",
+            "hidden_influences": "Skrivene zavisnosti oko vas ili unutar vas vodi vas bez da to shvatite. Svesno primećujte i preuzmete kontrolu."
+          }
+        },
+        "story": {
+          "title": "Shadov Dance of Demon Card",
+          "description": "Figura dominira dva očajana ljudi; Povezana ih je mračnim i atraktivnim energijom. Ali lanci su labavi i oslobođenje je moguće. Ova kartica je simbol primećenih senki, oslobađanja zavisnosti i oslobođen svesti.",
+          "historytitle": "Istorijsko poreklo: Senka i zavisnost",
+          "history_message": "Devil kartica simbolizuje želje, zavisnosti i tamnu stranu ljudske prirode u srednjovekovnim i renesansnim tarotima. Povezana je sa baphomet i drugim ezoterijskim simbolima.",
+          "mystic_title": "Duhovno značenje: Suočite se sa senkom",
+          "mystic_message": "Sotona nas uči da se suočimo sa našim stranim senkima, prepoznajući zavisnosti i postanemo slobodni sa svešću. Koristite svoju unutrašnju lekovite snagu i oslobodite se svojih lanaca.",
+          "cultural_title": "Moderna interpretacija: svest i oslobađanje",
+          "cultural_message": "Danas je sotona povezan sa zavisnicima, kompulzivnim ponašanjem i potrebom da pređu granice. Moguće je razbiti ove lance s svešću i svešću.",
+          "lesson": "Suočavanje o zavisnosti, strahu i strahom straha je put do oslobođenja i istinskog osnaživanja."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči vragova",
+          "keywords_message": "Đavo Tarot Značenje, Đavo Tarot Turski, ovisnost o tarotu, tarot senka, oslobođenje tarota, svest o tarotu",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Svest, oslobađanje, primećujući senku, svesni izbor, prevazilazeći granice.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Pazite na zavisnosti, strahove i viškove. Djelovati s svešću.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Primjetite senku, pustite zavisnosti i prigrlite svoju slobodu."
+        },
+        "associations": {
+          "title": "Kosmičke veze đavola",
+          "astrology": "Jarac (odgovornost, granice, senke)",
+          "numerology": "15 (ograničenje, zavisnost, transformacija)",
+          "element": "Zemlja i vatra - fizičke i strastvene energije",
+          "chakra": "Koren i solarni pleksus - ukorijenjenost, lična snaga i zavisnosti"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa sotonom",
+          "combinations": [
+            {
+              "card": "Temperatura",
+              "meaning": "Pronalaženje srednjeg tla i oslobađanja se odseli od krajnosti i zavisnosti."
+            },
+            {
+              "card": "Smrt",
+              "meaning": "Kraj starih zavisnosti i restriktivnih navika; Nova sloboda i transformacija."
+            },
+            {
+              "card": "Zvezda",
+              "meaning": "Transformacija senke i duhovno isceljivanje kroz nadu i svesnu svest."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Afirmacije đavola",
+          "affirmation_list": [
+            "Shvaćam zavisnosti i ograničenja i postane slobodna.",
+            "Slomim lance svojim sopstvenom snagom.",
+            "Suočio se sa senkom i krećem naprijed sa svešću."
+          ]
+        },
+        "cta": {
+          "main": "Shvatite svoje senke i izaberite svoj put do oslobođenja!",
+          "micro": "Danas prepoznate zavisnost ili ograničavajuću naviku i napravite mali korak."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja đavo karticu?",
+            "answer": "Predstavlja zavisnost, stranke u senci, nekontrolisane želje i poziv za oslobađanje. Morate se ponašati sa svesti."
+          },
+          {
+            "question": "Šta znači obrnuti vrag?",
+            "answer": "Invertirani položaj ukazuje na početak oslobođenja i raspuštanja zavisnosti. Svest i svesni izbor su na čelu."
+          },
+          {
+            "question": "U kojim oblastima je Đavola karta snažna?",
+            "answer": "Ovisnosti su moćne u procesima sukobanja strana u senci, ograničenja postavljanja i svesnog oslobođenja."
+          }
+        ],
+        "related_cards": [
+          "temperament",
+          "smrt",
+          "zvezda"
+        ],
+        "imageUrl": "/cards/rvs/kv-devil.vebp"
+      },
+      "the-tower": {
+        "name": "Toranj - uništavanje, iznenadna promena i suočavanje sa stvarnošću",
+        "short_description": "TOVER CARD simbolizuje neočekivane promene, uništavanje i suočavanje sa stvarnošću života. To je vreme iznenadne svesti i transformacije.",
+        "meanings": {
+          "upright": {
+            "general": "Toranj predstavlja nagle promene i neočekivane događaje u vašem životu. Sagorevanje starih struktura znači propast lažne verovanja i situacije koje se smatra sigurnim. Iako je ovaj proces bolan, dugoročno to donosi oslobađanje i pravu svest.",
+            "love": "Zaljubljeni, toranj znači šokantno razum ili ispitivanje temelja odnosa. To otkriva lažno poverenje i uvažavanje u vezi. Ovo je prilika da se vidi činjenice i rekonstruišete po potrebi.",
+            "career": "Možda postoje nagle promene u karijeri i projektima, neočekivane prepreke ili kolaps planova. Ova situacija je poziv za izgradnju čvrstijih i svesnih struktura.",
+            "money": "U finansijskim pitanjima mogu se dogoditi nagli gubici ili neočekivani troškovi. Pregledajte svoje finansijsko planiranje i iskoristite svoju moć da biste krize pretvorili u mogućnosti.",
+            "spiritual": "Duhovno, kula savetuje suočavanje sa ego, iluzijama i starim uverenjima. Uništavanje otvara vrata nove svesti i duhovnu transformaciju."
+          },
+          "reversed": {
+            "general": "Invertirani toranj ukazuje da su efekti uništenja ublaženi ili se mogu izbeći. Svest se povećava; Moguće je sačuvati stare strukture ili preuzeti mere predostrožnosti pre nego što ih rušite.",
+            "love": "To znači da izbegavaju nagle promene ili krize u odnosu, jačanje komunikacije i djelovanja sa svešću.",
+            "career": "Moguće je otkriti probleme u projektima rano i minimizirati njihove destruktivne efekte. Planiranje i adaptacija su važne.",
+            "money": "Pazite da unapred prepoznate finansijske krize i smanjite rizike. Moguće je zaštititi od neočekivanih promena.",
+            "spiritual": "U duhovnom smislu, proces preobražavanja starih uverenja olakšava se ili je kriza sprečila unapred primećenim. Svesna svest dolazi do izražaja."
+          }
+        },
+        "context": {
+          "mythology": "Toranj je povezan sa Zeusovim grom, legendama kule babalnih i mitoloških uništavanja. Božanske intervencije simbolizuju čovekovo sukob sa svojim ponosom i lažnim uverenjima.",
+          "celtic_cross": {
+            "future": "Neočekivani događaji i promene vas očekuju u budućnosti; Stare strukture će se srušiti i pojaviti se nova svest.",
+            "hidden_influences": "Nesigurnosti i lažna uverenja unutar ili oko sebe možete pokrenuti neočekivane događaje. Budite spremni."
+          }
+        },
+        "story": {
+          "title": "Uništavanje i prosvetljenje kule",
+          "description": "Toranj je uništen grom; Kako ljudi padnu, grom i eksplozije svetlosti se vide na nebu. Uništavanje predstavlja haos i strah, ali takođe otvara vrata svesti i oslobađanju. Kula služi dušu da bi dostigla istinu i njenu suštinu da razbije ego i iluzije.",
+          "historytitle": "Istorijsko poreklo: uništavanje i buđenje",
+          "history_message": "U renesansnim tarotima, torna karta predstavlja uništavanje ponosa i iluzija. Thunderbolts su prikazani kao božanska intervencija i šok istine.",
+          "mystic_title": "Duhovno značenje: suočiti se sa stvarnošću",
+          "mystic_message": "Kula je poziv za duhovno buđenje, suočavanje sa iluzijama i restrukturiranjem sa svešću. Bolno uništenje je neophodno za novu svest i oslobađanje.",
+          "cultural_title": "Moderana interpretacija: nagle promene i svest",
+          "cultural_message": "Danas je toranj povezan sa naglim krizama, neočekivanim gubicima ili razumljivim razmakom života. Moguće je da se jače iz ovih procesa sa svešću i svešću.",
+          "lesson": "Poremećaj, haos i neočekivana promena su neizbežni delovi duhovnog i ličnog rasta. Realizovati, osloboditi i obnoviti bez straha."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči tornja",
+          "keywords_message": "Toranj Tarot Značenje, toranj Tarot Turski, uništavanje Tarota, Promjena Tarota, TAROT Kriza, tarot svest",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Svest, učenje od krize, oslobođenja, suočavanja sa činjenicama, transformacija.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Budite spremni za nagle promene i krize; Djeluju s svešću umesto panike.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Ostavite stare strukture, pogledajte činjenice i obnovite svešću."
+        },
+        "associations": {
+          "title": "Kosmičke veze sa toranjskom kartom",
+          "astrology": "Mars (iznenadni pokret, promena, energija)",
+          "numerology": "16 (Karma, kriza, transformacija)",
+          "element": "Vatra (uništavanje, energija, iznenadna svest)",
+          "chakra": "Solarni pleksus i koren - snaga, ukorijenjenost i haos"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa kulom",
+          "combinations": [
+            {
+              "card": "Vrag",
+              "meaning": "Konfrontacija sa ovisima i stranim senkima jača destruktivni efekat kule."
+            },
+            {
+              "card": "Smrt",
+              "meaning": "Kraj starih struktura i novih početaka; Proces transformacije se ubrzava."
+            },
+            {
+              "card": "Zvezda",
+              "meaning": "U buđenju krize i razaranja, pojavljuju se nada i duhovno isceljivanje."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Validacije tornja",
+          "affirmation_list": [
+            "Prihvatam i učim iz neočekivanih promena.",
+            "Primjećujem uništavanje starih struktura i osloboditi se.",
+            "Obnovam se sa sopstvenim svetlošću i svešću."
+          ]
+        },
+        "cta": {
+          "main": "Primjetite iznenadne promene, oslobodite i obnovu!",
+          "micro": "Danas bacite staru strukturu ili naučite lekciju iz krize."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja Tover karta?",
+            "answer": "Predstavlja naglo uništavanje, neočekivane promene, krizu i suočavaju se sa činjenicama. To je poziv za svest i transformaciju."
+          },
+          {
+            "question": "Šta znači obrnuta kula?",
+            "answer": "Invertirani položaj ukazuje da su efekti uništavanja ublaženi ili se mogu sprečiti. Svest i spremnost dolaze do izražaja."
+          },
+          {
+            "question": "U kojim oblastima je torna karta snažna?",
+            "answer": "Jak je u oblastima krize, nagle promene, svest, sukob sa starim strukturama i duhovnom transformacijom."
+          }
+        ],
+        "related_cards": [
+          "smrt",
+          "vrag",
+          "zvezda"
+        ],
+        "imageUrl": "/cards/rvs/kvi-tover.vebp"
+      },
+      "the-star": {
+        "name": "Iıldız - Nada, inspiracija i duhovno isceljivanje",
+        "short_description": "Star kartica je simbol nade, obnove i inspiracije. Predstavlja duhovno isceljivanje i pouzdano u obzir budućnost.",
+        "meanings": {
+          "upright": {
+            "general": "Zvezda je simbol nade i inspiracije koja dolazi posle mraka. Vi ste u vreme duhovne i lične obnove slići svetlost unutrašnjeg smernica. Otkrijte unutrašnji mir i ravnotežu, verujte u sebe i univerzum.",
+            "love": "Zvezda u ljubavi donosi iskrenost, transparentnost i nadu u odnose. Srdačna komunikacija i poverenje dolaze do izražaja. Moguće je novi odnos ili isceljenje u postojećoj vezi.",
+            "career": "Na putu karijere, zvezda pokazuje da su inspiracija, kreativnost i vizija na čelu. Postoje mogućnosti za uspeh u kreativnim projektima i sprovođenju novih ideja.",
+            "money": "U finansijskim pitanjima finansijski bilans se može postići nadom i planiranju. Povjerenje i intuicija o budućem vodiču prava ulaganja i koraka.",
+            "spiritual": "U duhovnom smislu, zvezda predstavlja isceljujuće, unutrašnje prosvetljenje i univerzalnu vezu. Meditacija, rad i intuicija namera jačaju duhovni razvoj."
+          },
+          "reversed": {
+            "general": "Inverrovana zvezda ukazuje na očaj, razočaranje ili gubitak smera. Preispitujte nade i fokusirajte se na isceljenje u malim koracima.",
+            "love": "Možda postoji nedostatak poverenja ili komunikacijskih problema u vezi. Postizanje ravnoteže sa strpljenjem i otvorenom komunikacijom.",
+            "career": "Gubitak motivacije ili nedostatak inspiracije može se primetiti u karijeri. Preispitni planovi, dobijajte podršku.",
+            "money": "U finansijskim stvarima postoji rizik od anksioznosti i nesigurnosti. Važno je da se ponašate planiranim i svesno.",
+            "spiritual": "Možda postoji osećaj duhovnog isključenja ili nedostatka isceljenja. Ponovo se povežite sa meditacijom i pažnjom."
+          }
+        },
+        "context": {
+          "mythology": "Zvezdana kartica povezana je sa Venerom i zvezdama u mitologiji, sa svetlom nade i smernica. Poznat je kao vodeća svetlost u stara vremena; vodilice u mraku.",
+          "celtic_cross": {
+            "future": "Nada, inspiracija i duhovna uputstva čekaju vas u budućnosti. Dolazi vreme za obnovu i isceljenje.",
+            "hidden_influences": "Pozitivna energija i intuicija okolo ili unutar vas vodi vaše odluke i razvoj."
+          }
+        },
+        "story": {
+          "title": "Svetlost i regeneracija zvezda",
+          "description": "Žena sipa vodu u vodu u svetlu zvezde sija na nebu; Ova akcija simbolizuje duhovno isceljenje i obnavljanje. Lagani vodiči i nosi nadu u mrak. Zvezda podseća na srce i dušu poverenja; Svaka kap nosi energiju i isceljenje.",
+          "historytitle": "Istorijsko poreklo: Vodič svetlosti",
+          "history_message": "Star kartica je prikazana u renesansnim tarotima kao simbol nade i smernica. Zvezde vodi budućnost kao simbole navigacije i svetlosti.",
+          "mystic_title": "Duhovno značenje: nada i inspiracija",
+          "mystic_message": "Zvezda je poziv duhovnom isceljivanju, inspiraciji i pristupu univerzalnim uputstvima. Povećajte unutrašnju svetlost i osećajte nadu i ravnotežu sa meditacijama i vežbi namjene.",
+          "cultural_title": "Moderna interpretacija: inspiracija i obnova",
+          "cultural_message": "Danas Iıldız predstavlja duhovni i lični razvoj motivacijom, nadom i nadahnjujućim projektima. Shvatite sopstveno svetlo i vodite druge.",
+          "lesson": "Zvezda predaje ponovno rođenje nadom, isceljenje i inspiracijom. Verujte sebi, sledite svoje unutrašnje smernice i pronađite svoju svetlost u tami."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči zvezdane kartice",
+          "keywords_message": "Zvezda Tarot Značenje, zvezda Tarot Turski, nada, inspiracija, duhovno isceljivanje, obnavljanje, Vodič za tarot",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Nada, inspiracija, isceljenje, obnavljanje, uputstvo, unutrašnji mir, duhovna ravnoteža.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Kada se osećate razočaranje ili očaj, sećate se svetla i smernice i krenite napred, korak po korak.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Pratite svoju unutrašnju svetlost, krenite napred sa nadom i prihvatite duhovno isceljivanje."
+        },
+        "associations": {
+          "title": "Kosmičke veze sa zvezdanim karticama",
+          "astrology": "Akuarius (sloboda, obnova, inspiracija)",
+          "numerology": "17 (nada, inspiracija, kreativna obnova)",
+          "element": "Vazduh (um, inspiracija, obnavljanje)",
+          "chakra": "Srce i treće oko - nada, intuicija i isceljenje"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa zvezdom",
+          "combinations": [
+            {
+              "card": "Toranj",
+              "meaning": "U buđenju uništenja, nada i isceljenje koje se pojavljuju; Rebirt nakon krize."
+            },
+            {
+              "card": "Sunce",
+              "meaning": "Donosi inspiraciju i radost, u kombinaciji sa pozitivnom energijom i uspehom."
+            },
+            {
+              "card": "Pustinjak",
+              "meaning": "Unutrašnje smernice i tišina ojačaju nadu i svetlost."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Afirmacije zvezdane kartice",
+          "affirmation_list": [
+            "Vidim svetlo u meni i kreću se naprijed sa nadom.",
+            "Prihvatam duhovno isceljivanje i inspiraciju.",
+            "Krećem naprijed sa samopouzdanjem i ravnotežom na svakom koraku."
+          ]
+        },
+        "cta": {
+          "main": "Pratite nadu i svetlost, prihvatite duhovno isceljivanje!",
+          "micro": "Stvorite izvor inspiracije ili danas ostvarite svoje unutrašnje svetlo."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja zvezda karta?",
+            "answer": "Predstavlja nadu, inspiraciju, duhovno isceljivanje i obnavljanje. Podseća nas na svetlost i pouzdanje posle pesimizma."
+          },
+          {
+            "question": "Šta znači obrnuta zvezda?",
+            "answer": "Invertirani položaj ukazuje na očaj, gubitak inspiracije ili nedostatak motivacije. Ponovo uspostaviti ravnotežu sa malim koracima."
+          },
+          {
+            "question": "U kojim oblastima je Star kartica jaka?",
+            "answer": "Jak je u oblastima nade, inspiracije, duhovnog isceljenja, obnove, motivacije i kreativnih projekata."
+          }
+        ],
+        "related_cards": [
+          "toranj",
+          "sunce",
+          "pustinjak"
+        ],
+        "imageUrl": "/cards/rvs/kvii-star.vebp"
+      },
+      "the-moon": {
+        "name": "Moon - podsvesna, intuicija i misterija",
+        "short_description": "Mesečeska karta je simbol nepoznate, intuicije i misteriozne energije. Povlači pažnju na svest i unutrašnje smernice u duhovnom putovanju.",
+        "meanings": {
+          "upright": {
+            "general": "Mesec je karta podsvesnih, intuicijskih i misterioznih procesa. Suočite se sa nevidljivim snagama i emocionalnim fluktuacijama. Slušajte svoj unutrašnji glas, verujte svojoj intuiciji i ne bojte se suočiti se sa nepoznatim.",
+            "love": "Ljubav, Mesec predstavlja emocionalnu složenost i nepoznato. Verujte svojoj intuiciji; Možda postoje skrivene emocije ili nesigurnosti u odnosima.",
+            "career": "Možda postoji neizvesnost i tajne interakcije u karijeri. Pažljivo pratite tragove i koristite svoju intuiciju kao vodič.",
+            "money": "Neočekivane situacije mogu nastati u finansijskim pitanjima. Razmotrite rizike i nepoznate faktore, delujte s intuicijom.",
+            "spiritual": "Na duhovnom putu, Mesec je povezan sa podsvesnim istraživanjem i radom iz snova. Meditacija, simboli i introspekciju povećavaju duhovnu svest."
+          },
+          "reversed": {
+            "general": "Invertirani mesec znači iluzije, zbrku i nedostatak intuicije. Pazite da jasno vidite činjenice i budite oprezni za pogrešne situacije.",
+            "love": "Možda postoji tajnost, nesigurnost ili nesporazumi u odnosima. Potrebne su otvorene komunikacije i poverenje u intuiciju.",
+            "career": "Neizvesnost ili zlostavljanje u karijeri mogu predstavljati rizike. Usredsredite se na jasne informacije i pouzdane izvore.",
+            "money": "Mogu se dogoditi finansijske nesigurnosti i netačne prognoze. Budite planirani i oprezni.",
+            "spiritual": "Duhovno je moguće ostati zatvoren za unutrašnje smernice ili biti uhvaćen u iluzijama. Primjetite svoju unutrašnju svetlost i intuiciju."
+          }
+        },
+        "context": {
+          "mythology": "Mesečarska kartica povezana je sa Artemidom / Dianom i Hekatom u mitologiji. Mesec osvetljava noć, predstavlja podsvest i intuiciju; Pruža smernice u mraku.",
+          "celtic_cross": {
+            "future": "U budućnosti će vas ubuduće vaša podsvesna i intuitivna svest. Emocije i interne poruke mogu uticati na njihove odluke.",
+            "hidden_influences": "Skriveni strahovi, podsvesni uticaji i intuitivno znanje oblikuju razvoj u vašem životu."
+          }
+        },
+        "story": {
+          "title": "Misteriozno putovanje Meseca",
+          "description": "Kako Mesec blista na noćnom nebu, to se diže između dva psa i vepra. Moonlight osvetljava skrivene staze i otvara vrata podsvesti. Putovanje vas uči da uđete u nepoznato, slušate intuiciju i primijetite senke.",
+          "historytitle": "Istorijsko poreklo: noć i intuicija",
+          "history_message": "Mesečeska karta je prikazana u renesansnim tarotima kao i kartica podsvesnih, snova i intuicije. Moonlight je vodič koji prikazuje put u mraku.",
+          "mystic_title": "Duhovno značenje: vođena intuicijom",
+          "mystic_message": "Mesec povećava duhovnu svest kroz podsvesno istraživanje i smernice kroz snove i simbole. Intuicija je ojačana meditacijom i introspekcijom.",
+          "cultural_title": "Moderna interpretacija: Misterija i unutrašnje otkriće",
+          "cultural_message": "U modernom svetu, Mesec je povezan sa podsvesnim procesima, emocionalnom svešću i duhovnim uputstvima. Unutrašnje istraživanje i intuicija su važni.",
+          "lesson": "Mesec predaje misteriju, intuiciju i istraživanje podsvesnog. Ne bojte se mraka; Slijedite svetlo i verujte u svoje unutrašnje smernice."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči moon kartice",
+          "keywords_message": "Moon Tarot znači, Mesec Tarot Tursko, podsvesno, intuicija, misterija, duhovna svest, Tarot San",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Intuicija, podsvesna svest, unutrašnje otkriće, misteriozno putovanje, duhovno uputstvo.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Izbegavajte iluzije, koristite svoju intuiciju i budite uravnoteženi kada se suočite sa nepoznatom.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Verujte svoje unutrašnje smernice, sledite svoju intuiciju i primjetite poruke svoje podsvesti."
+        },
+        "associations": {
+          "title": "Kosmičke veze na mesečevoj kartici",
+          "astrology": "Rak (emocije, intuicija, empatija)",
+          "numerology": "18 (intuicija, misterija, unutrašnja svest)",
+          "element": "Voda (emocije, podsvesni, protok)",
+          "chakra": "Treće oko i sakracija - intuicija, unutrašnja vizija i emocionalni tok"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa mesecom",
+          "combinations": [
+            {
+              "card": "Visoki sveštenik",
+              "meaning": "Ojačana su intuicija i podsvesno istraživanje; Prepoznajte poverljive informacije."
+            },
+            {
+              "card": "Pustinjak",
+              "meaning": "Unutrašnje smernice i samoća osvetljavaju podsvest."
+            },
+            {
+              "card": "Zvezda",
+              "meaning": "Nada i inspiracija kombinuju se sa podsvesnim procesima kako bi se doneli izlečenje."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Potvrde lunarske kartice",
+          "affirmation_list": [
+            "Verujem svojoj intuiciji i zakoračim u nepoznato.",
+            "Primjećujem svoje unutrašnje poruke i slušam ih.",
+            "Prihvatam svetlost i smernice svoje podsvesti."
+          ]
+        },
+        "cta": {
+          "main": "Slijedite svoju intuiciju i prihvatite uputstva svoje podsvesti!",
+          "micro": "Danas beležite svoje snove ili obavestite unutrašnje poruke meditacijom."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja Mesečarska kartica?",
+            "answer": "Predstavlja podsvest, intuiciju, misteriju i unutrašnje smernice. Simbolizuje svetlost koja vodi u mraku i povezivanja sa intuicijom."
+          },
+          {
+            "question": "Šta znači obrnuti mesec?",
+            "answer": "Invertirani položaj znači iluziju, zbrku ili nedostatak intuicije. Imajte na umu jasnoće i svesti."
+          },
+          {
+            "question": "U kojima je područja mesečina jaka?",
+            "answer": "Jak je u oblastima podsvesnog istraživanja, intuicije, radnog dela Dream, duhovne smernice i emocionalne svesti."
+          }
+        ],
+        "related_cards": [
+          "visoki sveštenik",
+          "zvezda",
+          "pustinjak"
+        ],
+        "imageUrl": "/cards/rvs/kvii-moon.vebp"
+      },
+      "the-sun": {
+        "name": "Sunce - uspeh, radost i prosvetljenje",
+        "short_description": "Sunčana karta predstavlja prosvetljujuće, sjajne trenutke života i čiste radosti života. Ona je nasleđuje napredak sa uspehom, jasnoćom i toplom unutrašnjom isceljivanjem.",
+        "meanings": {
+          "upright": {
+            "general": "Sunce simbolizuje jasnoću i uspeh koji dolazi posle mraka. Poteškoće iza kulisa njegovog života sada dolaze na svetlost; Vaši napori postaju vidljivi. Ovo je vreme kada će se povećati samopouzdanje, otkriveće se kreativnost i ciljevi će se pretvoriti u konkretne rezultate. Nosi osećaj sreće koji je živahni, vedar i ritmičan, poput filmske scene - smeh unutrašnjeg deteta susreće sadašnjost.",
+            "love": "Zaljubljen, sunce predstavlja međusobnu radost, otvorenost i zdravu deljenje. Odnos se pretvara u jasniji, intimniji i životni oblik. Ako ste samac, imate dobre šanse da napravite nove veze sa atraktivnim, samopouzdanim energijom. Sunce se osvetljava dnevnim ritmom ljubavi.",
+            "career": "U karijeri, sunce znači uspeh, prepoznavanje i blistava projekata. Plodno vreme za prezentacije, lansiranje ili promocije. Vaše kreativne ideje će biti uvažene; Učinite rezultate dok pružaju liderstvo i pozitivnu motivaciju u timu.",
+            "money": "U materijalnom pogledu, sunce je znak obilja i protoka; Pravi koraci, izmereni rizici i pozitivna energija podržava finansijsku stabilnost. Vaši izvori prihoda mogu ojačati; Proslavite protok, ali zapamtite jednostavnost i mudrost u potrošnji.",
+            "spiritual": "U duhovnom carstvu, sunce donosi prosvetljenje, isceljenje i čistu svest. Osjećat ćete se više celini i djelovati u skladu sa svojim unutrašnjim vodičem. Solarna energija aktivira vaš unutrašnji iscelitelj i omogućava vam radosno praćenje ritma života."
+          },
+          "reversed": {
+            "general": "Obrnuti sud može ukazivati na privremeni gubitak nade, slom za samopouzdanje ili unutrašnjih strahova koji je zasjenio uspeh. Svetlo spolja nije nestalo; Očistite unutrašnju sočivu i počnite ponovo da blistate primećujući male pobede.",
+            "love": "Suprotnija pozicija u odnosu može stvoriti nedostatak komunikacije ili neusklađenosti očekivanja. Malo strpljenja i transparentan razgovor će vam vratiti solarnu energiju.",
+            "career": "U karijeri, obrnuta sunce može značiti nedostatak uvažavanja ili odloženih nagrada. Ponovo se strategirati da biste se postali vidljivi; Čak i ako je uspeh kasni, to može biti trajno.",
+            "money": "Finansijski preokret može ukazivati na lošu potrošnju ili nedostatak planiranja zbog prekomernog optimizma. Pregledajte svoj budžet, koristite lagano balansiranje.",
+            "spiritual": "Normalno je iskusiti kratkoročne promjene raspoloženja i osećaj smanjene energije. Odmarajte se, napunite i nazovite svoje svetlo malim ritualima."
+          }
+        },
+        "context": {
+          "mythology": "U drevnim mitologijama sunce je povezano sa danom i životom koji daje bogove kao što je Ra, Helios ili Mitra. Izlazak sunca je arhetip pobede nakon mraka, od junačkog sjajanog trenutka na pozornici.",
+          "celtic_cross": {
+            "future": "Vaš trud može podnijeti plod u bliskoj budućnosti; Mogući su vidljivi uspeh i socijalno odobrenje. Prilike koje će doneti svetlo na pozornicu su na vratima.",
+            "hidden_influences": "Skrivena podrška, prošla ulaganja, ili mali, ali pravi koraci možda su vas pripremili za vaš trenutni sjaj. Vaš unutrašnji talenat ogleda se u spoljnom svetu."
+          }
+        },
+        "story": {
+          "title": "Sunce Sunce - filmski okvir",
+          "description": "Usred reflektora, figura se bori smejući se u zlatnoj svetlosti toplog jutra. Dečiji smeh u pozadini, topli vetar koji se diže iz oblasti; Svako ima sjaj na licu. Kamera polako zumira i jednostavna, ali duboka istina tog trenutka otkriva se: život je zamišljen da se proslavi. Ovo je scena u kojoj su male pobede utkane kao jedan veliki film.",
+          "historytitle": "Istorijsko poreklo: Sunce i život",
+          "history_message": "Slične slike su povezane sa životom i proslavom u drevnim civilizacijama. U tradicijama Tarota, broj KSIKS godinama se godinama istakao kao simbol prosvetljenja, radosti iz detinjstva i plodnosti.",
+          "mystic_title": "Duhovno značenje: isceljivanje svetlošću",
+          "mystic_message": "Sunce podiže vibraciju duše; Donosi isceljenje, energiju i jasnoću. Sunce koje stiže nakon mraka osvetljava unutrašnje senke i nudi isceljujuće ritam.",
+          "cultural_title": "Moderna interpretacija: uspeh i svakodnevna radost",
+          "cultural_message": "Danas je sunce simbol performansi, vidljivosti, pozitivnog brendiranja i ličnog uspeha. Ali najvrednija stvar je da budete u mogućnosti da proslavite ovaj uspeh jednostavne radosti i zahvalnosti.",
+          "lesson": "Sunce nas podseća na jednostavnu istinu: sve je spremno za sjaj. Sad se nasmejte, delite i širite velikodušno."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči Sun kartice",
+          "keywords_message": "Sun Tarot znači, sunce tarot Turski, tarot uspjeh, tarot radost, prosvetljenje tarota, tarot unutrašnje isceljivanje, tarot sjaj",
+          "positive_title": "Pozitivna energija",
+          "positive_message": "Energije radosti, uspeha, jasnoće, samopouzdanje, kreativnost, isceljenje i obilje.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Izbegavajte prekomernu ponos ili pokatnost; Ponizno proslavite i delite svoj uspeh.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Prihvatite svoju svetlost; Radost i isceljujuće prolaze iz vašeg srca. Mala sreća hrani vašu dušu."
+        },
+        "associations": {
+          "title": "Kosmičke veze sa sunčeve kartice",
+          "astrology": "Sunce (Leo) - naglasak na samoizražanju, kreativnosti i vitalnosti",
+          "numerology": "19 (završetak, rođenje svetlosti, vrata na nove početke)",
+          "element": "Vatra (animacija, strast, stvaranje)",
+          "chakra": "Solarni pleksus i srce - lična ravnoteža snage, radosti i ljubavi"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa suncem",
+          "combinations": [
+            {
+              "card": "Budala",
+              "meaning": "Sunce, u kombinaciji sa čistim potencijalom i novim počecima, krunira avantura radošću i uspehom."
+            },
+            {
+              "card": "Carica",
+              "meaning": "Kreativnost i obilje pronalazeći sjajan izraz; produktivna i hranljiva dostignuća."
+            },
+            {
+              "card": "Zvezda",
+              "meaning": "Sjajan uspeh u kombinaciji sa inspiracijom i nadom; Završetak ciklusa isceljenja i prosvetljenja."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Odobrenja solarne kartice",
+          "affirmation_list": [
+            "Prihvatam svetlo u meni i velikodušno je širio svetu.",
+            "Uspeh i radost su moje prirodno stanje; Svakodnevno blistam malo više.",
+            "Moje srce i moja volja su jedan; Ja stvaram, delim i donosim isceljenje."
+          ]
+        },
+        "cta": {
+          "main": "Otkrijte svoje svetlo, proslavite svoj uspeh i delite svoju radost!",
+          "micro": "Proslavite malu pobedu danas: Napišite hvala, pevajte uspeh naglas ili izađite napolje i provedete 5 minuta vežbajući pažljivost na suncu."
+        },
+        "faq": [
+          {
+            "question": "Šta znači Sun kartica?",
+            "answer": "Sunčana karta predstavlja radost, uspeh, jasnoća, kreativnost i unutrašnje isceljenje. Heralds je u periodu kada su vidljivi život sjaji i ciljevi."
+          },
+          {
+            "question": "Šta znači obrnuto sunce?",
+            "answer": "Invertirani položaj može značiti privremeni pad samopouzdanja, odloženo priznanje ili zamagljivanje unutrašnje svetlosti. Korisno je primetiti male pobede i napuniti energiju."
+          },
+          {
+            "question": "U kojim situacijama se pojavljuje kartica za sunčanje?",
+            "answer": "Projekat je uspešan kada postoje pozitivni i vidljivi rezultati, kao što su radost nakon lične transformacije, jasnoća u odnosima i nastanku sjajnih prilika."
+          }
+        ],
+        "related_cards": [
+          "budala",
+          "zvezda",
+          "kampera"
+        ],
+        "imageUrl": "/cards/rvs/kik-sun.vebp"
+      },
+      "judgment": {
+        "name": "Apokalipsa - buđenje, svest i ponovno rođenje",
+        "short_description": "Doomsdai kartica je simbol duhovnog buđenja, suočavanje sa prošlošću i ponovnom rogodom. To je poziv da slušate svoj unutrašnji glas i prelazak na novu eru.",
+        "meanings": {
+          "upright": {
+            "general": "THE DOOMSDAI CARD predstavlja trenutak velike svesti. Vreme je da se suočite sa senkama prošlosti, učite od grešaka i uspon do novog nivoa svesti. Ova kartica simbolizuje zatvaračku zavesu životnog ciklusa i ponovno rođenje duše. Sada ste oslobođeni opterećenja prošlosti.",
+            "love": "Apokalipsa u ljubavi donosi energiju ponovnog procene odnosa, praštanju ili pretvarajući novu stranicu. Stare rane za srce su izlečene; Odnos se može premestiti u svesniji dimenzija.",
+            "career": "Ušli ste u periodu u vašoj karijeri u kojoj vas vodi prošlost iskustva. Moguće je novi početak ili promena smera. Učenje sa grešaka učiniće da rastete.",
+            "money": "Vreme je da naučite iz prošlih grešaka i finansijski preuzeti odgovornost. Vi steknite jasnoću da biste uspostavili novi plan.",
+            "spiritual": "Duhovno, Apokalipska kartica predstavlja duboko buđenje, rastvaranje karme i visine svesti. To je poziv da ostavite svoj stari identitet iza i probudite se na svoju istinu."
+          },
+          "reversed": {
+            "general": "Reverse presuda može ukazivati na stanje fiksacije u prošlosti, žali i nemogućnost oprosti. Vrata duhovnog buđenja su otvorena, ali ustručavate se da napravite korak.",
+            "love": "Zaljubljeni, može postojati tendencija da se ne razuzda ili prebivaju na prošlim ogorčenjima. Oproštenje donosi unutrašnju slobodu.",
+            "career": "Kada se lekcije ne nauče iz prošlih grešaka u karijeri, slični ciklusi se mogu ponoviti. Promenite smer sa hrabrošću.",
+            "money": "Težina vaše finansijske istorije još uvek može uticati na vas. Vreme je za restrukturiranje dugova ili starih planova.",
+            "spiritual": "Možda imate poteškoće unositi mir sa prošlošću duhovno. Prihvatite ponovno rođenje kroz meditaciju i praksu pažljivosti."
+          }
+        },
+        "context": {
+          "mythology": "Doomsdai kartica povezana je sa mitološkim scenama u kojima anđeo Gabriel probudi ljudske duše svojim trubom. Ova kartica simbolizuje duhovno buđenje, oproštenje i snagu druge šanse.",
+          "celtic_cross": {
+            "future": "Velika svest ili duhovno buđenje čeka vas u bliskoj budućnosti. Suočavanje sa prošlošću postaviće vas besplatno.",
+            "hidden_influences": "Ciklusi karme i duhovne smernice Energije su efikasni u vašem životu. Slušajte svoj unutrašnji glas, pravac vam je već šapnuo."
+          }
+        },
+        "story": {
+          "title": "Poziv apokalipse - ponovno rođenje duha",
+          "description": "Anđeo mu puše trubu sa neba, ljudi se dižu iz njihovih grobova. Ova scena nije rođenje smrti, već rođenje svesti. Duše ostavljaju svoje prošle terete iza i ulaze u svetlost. Ova kartica je priča o tranziciji na novi čin vašeg životnog u unutrašnjoj filmskoj sceni, buđenje počinje u srcu svetlosti.",
+          "historytitle": "Istorijsko poreklo: Zvuk trube",
+          "history_message": "U srednjovekovnim tarotima, apokalipsa je simbol božanske presude i ponovnog rođenja. Truba predstavlja poziv istine i zvuk svesti.",
+          "mystic_title": "Duhovno značenje: Buđenje i svest",
+          "mystic_message": "Doomddai kartica govori o tome da se mir postigne prošlost i ponovno rođenje duše. Čuvši da vaš sopstveni unutrašnji glas otvara vrata za postizanje istine.",
+          "cultural_title": "Moderna interpretacija: Novi počeci",
+          "cultural_message": "Danas je apokalipsa povezan sa procesima transformacije, svesti i lične obnove. Čujte svoj unutrašnji poziv i preduzmite mere.",
+          "lesson": "Doomsdai kartica je učenje oproštenja prošlosti, što se rodila s svešću i svesno birajući pravcu života."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči doomsdai kartice",
+          "keywords_message": "Apokalipsa Tarot Značenje, presuda Tarot Turski, Paketing, ponovno rođenje, svest, oproštaj",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Buđenje, oproštenje, ponovno rođenje, svest, unutrašnji poziv, transformacija.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Prepustite se prošlosti i otvori novu stranicu sa svešću. Ne odupirite se, promena će vas osloboditi.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Počinje duhovno ponovno rođenje. Slušajte svoj unutrašnji poziv i pustite prošlost sa ljubavlju."
+        },
+        "associations": {
+          "title": "Kosmičke veze sa doomsdai kartica",
+          "astrology": "Pluton (transformacija, ponovno rođenje, karmička energija)",
+          "numerology": "20 (svest, obnova, karmalično čišćenje)",
+          "element": "Požar i vazduh - svest i duhovna obnova",
+          "chakra": "Crovn & Heart - Božanska veza i oprost"
+        },
+        "card_combinations": {
+          "title": "Istaknute kombinacije sa Doomsdai-om",
+          "combinations": [
+            {
+              "card": "Smrt",
+              "meaning": "Kompletna transformacija i duhovno ponovno rođenje. Stari identitet potpuno se rastvara."
+            },
+            {
+              "card": "Sunce",
+              "meaning": "Pojava uspeha i svetlosti nakon buđenja i svesti."
+            },
+            {
+              "card": "Svet",
+              "meaning": "Završetak i prelazak na novi ciklus. Sticanje duhovne zrelosti."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Afirmacije doomsdai kartice",
+          "affirmation_list": [
+            "Prošlost ostavljam ljubavlju i prerodim sam.",
+            "Čujem svoj unutrašnji poziv i djelovati s svešću.",
+            "Moja duša je lakša, moje srce je otvoreno za nove početke."
+          ]
+        },
+        "cta": {
+          "main": "Ostavite prošlost, ponovo se rađati sa svešću!",
+          "micro": "Oprostite danas žali ili napisati nameru da se resetujete."
+        },
+        "faq": [
+          {
+            "question": "Šta zastupa Card-a Doomsdai?",
+            "answer": "Predstavlja buđenje, svest, ponovno rođenje i mir sa prošlošću. To je vrata duhovne transformacije."
+          },
+          {
+            "question": "Šta znači obrnuta presuda?",
+            "answer": "Invertirani položaj znači da se zaglavi u prošlosti, ne može da preduzme mere zbog neulogenosti ili straha. Vreme je da koračate hrabro."
+          },
+          {
+            "question": "U kojoj su oblasti snažna karta Doomsdai-a?",
+            "answer": "Jak je u oblastima duhovne svesti, unutrašnje buđenje, oproštaj, nove početke i kliringa karme."
+          }
+        ],
+        "related_cards": [
+          "smrt",
+          "sunce",
+          "svet"
+        ]
+      }
+    }
+  }
+}

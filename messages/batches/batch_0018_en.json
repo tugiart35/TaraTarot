@@ -1,0 +1,776 @@
+{
+  "money": {
+    "meanings": {
+      "strength": {
+        "position8": {
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "Patience",
+            "2": "self - discipline",
+            "3": "Compassion",
+            "4": "determination"
+          },
+          "context": "Your ability to make money depends on patience or patience."
+        }
+      },
+      "thehermit": {
+        "position1": {
+          "upright": "Ermitted exposes anxiety of loneliness and lack of financial support, internal interrogations can cause financial unrest.",
+          "reversed": "Reverse Ermi points to the anxiety of extreme isolation, and avoiding asking for help can raise financial concerns.",
+          "keywords": {
+            "0": "loneliness",
+            "1": "support",
+            "2": "Introduction",
+            "3": "Concern",
+            "4": "search"
+          },
+          "context": "Concern arises from loneliness and lack of support, and it is reassuring to receive open communication support."
+        },
+        "position2": {
+          "upright": "The melt shows that you seek security through inner wisdom and lonely assessments, and trust in your own inner light protects you.",
+          "reversed": "Inverted melts indicate anxiety of extreme loneliness and isolation, and the desire for safety decreases when it's away from external connections.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "Introduction",
+            "2": "security",
+            "3": "guidance",
+            "4": "field"
+          },
+          "context": "You find security with inner wisdom and simple choices."
+        },
+        "position3": {
+          "upright": "Melted tends to use money in a simple, conscious way.",
+          "reversed": "Inverted melts indicate anxiety about extreme isolation or getting away from money.",
+          "keywords": {
+            "0": "simplicity",
+            "1": "consciousness",
+            "2": "savings",
+            "3": "Introduction",
+            "4": "Money"
+          },
+          "context": "Simplification and conscious spending in use of money are in the forefront."
+        },
+        "position4": {
+          "upright": "There has been an introverted and careful attitude in financial matters in the past, and decisions may have been made alone.",
+          "reversed": "Reverse Ermi points out that financial decisions without extreme loneliness or support pose a risk.",
+          "keywords": {
+            "0": "Introduction",
+            "1": "Attention",
+            "2": "loneliness",
+            "3": "research",
+            "4": "self-satisfactory"
+          },
+          "context": "Introvertion and attention were ahead in financial attitudes in the past."
+        },
+        "position5": {
+          "upright": "He tends to act alone in financial responsibilities or seek internal guidance. He is responsible for individual decisions.",
+          "reversed": "Reverse Ermit, extreme isolation or a tendency to avoid responsibilities may have been a burden.",
+          "keywords": {
+            "0": "loneliness",
+            "1": "wisdom",
+            "2": "responsibilities",
+            "3": "guidance",
+            "4": "Introduction"
+          },
+          "context": "In financial responsibilities, individual decision-making and internal guidance step forward."
+        },
+        "position6": {
+          "upright": "The melt points to the need for introverted thinking, research and strategy alone in new financial plans.",
+          "reversed": "Reverse Ermis can show extreme isolation in financial plans, decision-making alone, and rejection of guidance.",
+          "keywords": {
+            "0": "research",
+            "1": "Introduction",
+            "2": "wisdom",
+            "3": "guidance",
+            "4": "Plan"
+          },
+          "context": "In the new financial plans, meditation and analysis will be a guide."
+        },
+        "position7": {
+          "upright": "The melt points to the period of internal wisdom and lonely decision-making in future financial plans, and deep analysis is a long-term gain.",
+          "reversed": "Inverted means that extreme isolation or lonely decisions can be risky.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "analysis",
+            "2": "Introduction",
+            "3": "long term",
+            "4": "loneliness"
+          },
+          "context": "In future financial plans, deep analysis or isolation will step forward."
+        },
+        "position8": {
+          "upright": "It shows that molten, internal wisdom, experience, and the ability to work alone support their ability to earn money.",
+          "reversed": "Inverted, extreme isolation, loneliness, or support from others indicate that opportunities can be avoided.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "Introduction",
+            "2": "experience",
+            "3": "independence",
+            "4": "guidance"
+          },
+          "context": "Your ability to make money is linked to internal wisdom or isolation."
+        }
+      },
+      "thewheeloffortune": {
+        "position1": {
+          "upright": "The Wheel of Destiny shows concern for financial fluctuations, and the change of fortune can make you feel uneasy.",
+          "reversed": "Reverse Wheels, uncontrollable losses and repeated cycles are a source of concern, and you may be afraid to make the same mistakes over and over again.",
+          "keywords": {
+            "0": "cycle",
+            "1": "change",
+            "2": "Luck",
+            "3": "Concern",
+            "4": "uncertainty"
+          },
+          "context": "The anxiety comes from the influence of variable fortune, understanding cycles is a comfort."
+        },
+        "position2": {
+          "upright": "The Wheel of Destiny shows you're looking for security by accepting the cycles of change, and you're supported by luck and opportunity.",
+          "reversed": "The Reverse Wheel points to loss of control and unfortunate anxiety, and the desire for security can be shaken by unexpected changes.",
+          "keywords": {
+            "0": "cycle",
+            "1": "Luck",
+            "2": "security",
+            "3": "opportunity",
+            "4": "timing"
+          },
+          "context": "You find security by adapting to the cycles of change."
+        },
+        "position3": {
+          "upright": "The Wheel of Destiny shows cyclical opportunity and changeability in the use of money.",
+          "reversed": "Reverse Wheels point to unexpected losses or repeat mistakes.",
+          "keywords": {
+            "0": "cycle",
+            "1": "Luck",
+            "2": "change",
+            "3": "opportunity",
+            "4": "Money"
+          },
+          "context": "In the use of money, cycles and lucky moments matter."
+        },
+        "position4": {
+          "upright": "In the past, luck and fate have been effective in matters of money, and there may have been unexpected gains or losses.",
+          "reversed": "The Reverse Wheel points to the situation of repeated financial cycles or the loss of opportunity.",
+          "keywords": {
+            "0": "Luck",
+            "1": "cycle",
+            "2": "opportunity",
+            "3": "missing",
+            "4": "Fate"
+          },
+          "context": "In the past, luck and cycles were effective in financial attitudes."
+        },
+        "position5": {
+          "upright": "The Wheel of Destiny shows that there are cyclical effects in financial responsibilities, that luck, market or external conditions have shaped obligations.",
+          "reversed": "The Reverse Destiny Wheel indicates that unexpected setbacks and misfortunes increase financial responsibilities.",
+          "keywords": {
+            "0": "cycle",
+            "1": "Luck",
+            "2": "responsibilities",
+            "3": "Fate",
+            "4": "external conditions"
+          },
+          "context": "Financial responsibilities are affected by the cyclical ups and downs of fate."
+        },
+        "position6": {
+          "upright": "The Wheel of Destiny signals the support of unexpected opportunities, luck and cycles in financial plans.",
+          "reversed": "The Reverse Destiny Wheel may show setbacks in financial plans, repeated errors or out of control delays.",
+          "keywords": {
+            "0": "Luck",
+            "1": "opportunity",
+            "2": "cycle",
+            "3": "change",
+            "4": "Plan"
+          },
+          "context": "Luck and cycles are powerful in new financial plans."
+        },
+        "position7": {
+          "upright": "The Wheel of Destiny holds the emphasis on future financial plans of luck, cyclical opportunities and change, and the right decision at the right time will bring blessings.",
+          "reversed": "The Reverse Destiny Wheel points to the risk of misfortune, wrong timing, or missing opportunity.",
+          "keywords": {
+            "0": "Luck",
+            "1": "cycle",
+            "2": "opportunity",
+            "3": "timing",
+            "4": "change"
+          },
+          "context": "In future financial plans, lucky opportunities or wrong timing will arise."
+        },
+        "position8": {
+          "upright": "The Wheel of Destiny shows that their ability to make money is supported by change, cycles and luck, and opportunities come at the right time.",
+          "reversed": "The Reverse Destiny Wheel points to difficulties in financial development due to repeated mistakes, out-of-control events, or bad luck.",
+          "keywords": {
+            "0": "cycle",
+            "1": "Luck",
+            "2": "change",
+            "3": "opportunity",
+            "4": "timing"
+          },
+          "context": "Your ability to make money is linked to luck or repeated mistakes."
+        }
+      },
+      "justice": {
+        "position1": {
+          "upright": "Justice, injustice, and unfair circumstances show concern, and the search for equality in a material area can challenge you.",
+          "reversed": "Inverse justice is a sign of concern for error and misunderstanding, the fear of miscalculations or unjust circumstances raises anxiety.",
+          "keywords": {
+            "0": "justice",
+            "1": "Equality",
+            "2": "injustice",
+            "3": "Concern",
+            "4": "balance"
+          },
+          "context": "The anxiety is born from fear of being wronged, and transparency and righteousness bring peace."
+        },
+        "position2": {
+          "upright": "Justice means you seek security with fair choices and transparency, and trust in the right decisions protects you.",
+          "reversed": "Reverse justice points to injustice and injustice, and a desire for security can weaken by double standards.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "security",
+            "3": "responsibilities",
+            "4": "clarity"
+          },
+          "context": "You're setting up security with fair choices and transparency."
+        },
+        "position3": {
+          "upright": "Justice tends to use money in a balanced and fair manner. Transparency creates trust.",
+          "reversed": "Reverse Justice points to injustice or hidden details in financial matters.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "transparency",
+            "3": "Money",
+            "4": "responsibilities"
+          },
+          "context": "Use of money requires a fair and balanced approach."
+        },
+        "position4": {
+          "upright": "In the past, there has been a fair, balanced, and responsible attitude in financial matters, accountability at the forefront.",
+          "reversed": "Reverse Justice, unfair or unstable financial decisions may have been made.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "responsibilities",
+            "3": "account",
+            "4": "Honesty"
+          },
+          "context": "In the past, justice and balance were ahead in financial attitudes."
+        },
+        "position5": {
+          "upright": "Justice, transparency in financial responsibilities, and the fair work department have been in the forefront. The responsibilities have been tried to share equally.",
+          "reversed": "Reverse Justice, injustice, or inequality of responsibilities have been a problem.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "responsibilities",
+            "3": "transparency",
+            "4": "Equality"
+          },
+          "context": "Financial responsibilities have a search for justice and transparency."
+        },
+        "position6": {
+          "upright": "Justice points to transparency, honesty, and acting in accordance with legal regulations in new financial plans.",
+          "reversed": "Reverse Justice points to the risk of injustice, lack of information or legal problems in financial plans.",
+          "keywords": {
+            "0": "justice",
+            "1": "Honesty",
+            "2": "law",
+            "3": "balance",
+            "4": "Plan"
+          },
+          "context": "Transparency and fair approach are essential in new financial plans."
+        },
+        "position7": {
+          "upright": "Justice points to the right functioning of fair decisions, transparency and contracts in future financial plans.",
+          "reversed": "Reverse Justice points to the risk of injustice, miscalculations, or non-transparable decisions.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "contract",
+            "3": "decision",
+            "4": "responsibilities"
+          },
+          "context": "Fair or unfair decisions will be effective in future financial plans."
+        },
+        "position8": {
+          "upright": "Justice, honesty, transparency, and ethical behavior support their ability to make money.",
+          "reversed": "Reverse Justice indicates that financial skills can be weakened by injustice, lying, or taking responsibility.",
+          "keywords": {
+            "0": "justice",
+            "1": "ethics",
+            "2": "transparency",
+            "3": "balance",
+            "4": "responsibilities"
+          },
+          "context": "Your ability to make money is related to unethical or unethical behavior."
+        }
+      },
+      "thehangedman": {
+        "position1": {
+          "upright": "The Hanged Man reveals the anxiety of waiting and inaction, and static in material matters can cause unrest.",
+          "reversed": "The Inverted Man points to the fear that sacrifice will go unrequited, and you may be concerned that your efforts will be ineffective.",
+          "keywords": {
+            "0": "waiting",
+            "1": "stasis",
+            "2": "sacrifice",
+            "3": "Concern",
+            "4": "Surrender"
+          },
+          "context": "Fear of anxiety, stasis, and unrequited change of perspective brings peace."
+        },
+        "position2": {
+          "upright": "The Hanged Man shows that he calls security with patience and different perspectives, and it's a relief to accept waiting.",
+          "reversed": "The Inverted Hanging Man points to the anxiety of victimhood and stasis, and the desire for safety can be lost in passiveness.",
+          "keywords": {
+            "0": "Perspective",
+            "1": "Patience",
+            "2": "security",
+            "3": "don't wait.",
+            "4": "Surrender"
+          },
+          "context": "You find security with different perspectives and patience."
+        },
+        "position3": {
+          "upright": "The Hanged Man tends to take money from a different point of view, and patience earns.",
+          "reversed": "The Reverse Hanged Man points to victim consciousness or postponing anxiety in the use of money.",
+          "keywords": {
+            "0": "Perspective",
+            "1": "Patience",
+            "2": "don't wait.",
+            "3": "sacrifice",
+            "4": "Money"
+          },
+          "context": "Patience and a new look are important in the use of money."
+        },
+        "position4": {
+          "upright": "In the past, you chose to wait on financial matters and see things differently.",
+          "reversed": "The Reverse Hanged Man points to a postponement of indecision or steps that need to be taken.",
+          "keywords": {
+            "0": "don't wait.",
+            "1": "sacrifice",
+            "2": "Perspective",
+            "3": "decision",
+            "4": "Patience"
+          },
+          "context": "In the past, waiting and patience were ahead in financial attitudes."
+        },
+        "position5": {
+          "upright": "The Hanged Man may be the first to make sacrifices or delays in financial responsibilities, and the waiting has affected the course of obligations.",
+          "reversed": "The Reverse Hanged Man has weighed down responsibility for the role of victim or the tendency to escape.",
+          "keywords": {
+            "0": "sacrifice",
+            "1": "don't wait.",
+            "2": "responsibilities",
+            "3": "Surrender",
+            "4": "balance"
+          },
+          "context": "In financial responsibilities, sacrifices or delayed decisions have been effective."
+        },
+        "position6": {
+          "upright": "The hanged Man points to different viewpoints, patience, and temporary sacrifice in financial plans.",
+          "reversed": "The Inverted Man can show stubbornness in financial plans, resistance to change, or delay opportunities.",
+          "keywords": {
+            "0": "Patience",
+            "1": "different view",
+            "2": "sacrifice",
+            "3": "waiting",
+            "4": "Plan"
+          },
+          "context": "Patience and different viewpoints are important in new financial plans."
+        },
+        "position7": {
+          "upright": "The Hanged Man points to the importance of future financial plans, sacrifice, and a different perspective.",
+          "reversed": "The Reverse Hanged Man points to the role of reluctant waiting, indecisive or unnecessary sacrifice.",
+          "keywords": {
+            "0": "waiting",
+            "1": "sacrifice",
+            "2": "Perspective",
+            "3": "Patience",
+            "4": "flow"
+          },
+          "context": "The waiting or indecision of future financial plans will be decisive."
+        },
+        "position8": {
+          "upright": "The Hanged Man shows that the ability to make money will improve by changing perspective, patience, and trying new methods.",
+          "reversed": "The Reverse Hanged Man points out that integrating, delaying opportunities, or reluctant sacrifices will prevent financial development.",
+          "keywords": {
+            "0": "Perspective",
+            "1": "Patience",
+            "2": "sacrifice",
+            "3": "method",
+            "4": "Atlasity"
+          },
+          "context": "Their ability to make money is related to new perspectives or atlasm."
+        }
+      },
+      "death": {
+        "position1": {
+          "upright": "Death points to the fear of loss and endlessness, and sudden changes in material order can cause anxiety.",
+          "reversed": "Reverse Death exposes the anxiety of change resistance and uncertainty, and hanging on to the past brings unrest.",
+          "keywords": {
+            "0": "change",
+            "1": "end",
+            "2": "Concern",
+            "3": "resistance",
+            "4": "Regeneration"
+          },
+          "context": "The anxiety comes from the resistance to change, the acceptance of endings brings peace."
+        },
+        "position2": {
+          "upright": "Death means that you've given up on security, and you've been looking for it in a transformation, regeneration will bring you peace.",
+          "reversed": "Reverse Death is a sign of resistance to change and loss anxiety, and the desire for security is clouded by the fact that you can't let go of the past.",
+          "keywords": {
+            "0": "transformation",
+            "1": "Don't let go",
+            "2": "security",
+            "3": "Regeneration",
+            "4": "closure"
+          },
+          "context": "You're building security with transformation and regeneration."
+        },
+        "position3": {
+          "upright": "Death shows that old habits are left behind in the use of money, and new order is created, and transformation brings profit.",
+          "reversed": "Reverse Death indicates fear of change or anxiety of loss.",
+          "keywords": {
+            "0": "transformation",
+            "1": "Don't let go",
+            "2": "Regeneration",
+            "3": "Money",
+            "4": "change"
+          },
+          "context": "In use of money, old habits need to be left behind."
+        },
+        "position4": {
+          "upright": "In the past, there have been financial closures and reconstructions, old methods may have been left behind.",
+          "reversed": "Reverse Death indicates avoiding change or sticking to old financial habits.",
+          "keywords": {
+            "0": "end",
+            "1": "change",
+            "2": "Regeneration",
+            "3": "transformation",
+            "4": "Money"
+          },
+          "context": "In the past, transmutation and end were ahead in financial attitudes."
+        },
+        "position5": {
+          "upright": "Death points to radical transformations in financial responsibilities, old obligations closed, new ones opened up.",
+          "reversed": "Reverse Death, resistance to change, or the tendency to maintain obligations that need to be fulfilled, has become a burden.",
+          "keywords": {
+            "0": "transformation",
+            "1": "end",
+            "2": "responsibilities",
+            "3": "change",
+            "4": "Regeneration"
+          },
+          "context": "In financial responsibilities, the old loads have been closed or the process of transformation has begun."
+        },
+        "position6": {
+          "upright": "Death represents the process of leaving the old ways and building the new one in new financial plans.",
+          "reversed": "Inverted Death, resistance to change in financial plans may indicate a firm commitment to old regulations.",
+          "keywords": {
+            "0": "transformation",
+            "1": "end",
+            "2": "innovation",
+            "3": "Don't let go",
+            "4": "Plan"
+          },
+          "context": "Leaving the old one in the new financial plans will invite the new one."
+        },
+        "position7": {
+          "upright": "Death shows the process of transforming financial plans in the future, leaving old systems and meeting new ones.",
+          "reversed": "Reverse Death, resistance to change, the risk of holding on to old plans and delaying the new.",
+          "keywords": {
+            "0": "transformation",
+            "1": "end",
+            "2": "innovation",
+            "3": "Don't let go",
+            "4": "Rebirth"
+          },
+          "context": "Change or resistance will be effective in future financial plans."
+        },
+        "position8": {
+          "upright": "Death shows that their ability to earn money will be strengthened by transformation, abandonment of old habits, and renewal.",
+          "reversed": "Reverse Death indicates that opportunities can be avoided by resisting change, clinging to unsealed files or old methods.",
+          "keywords": {
+            "0": "transformation",
+            "1": "Don't let go",
+            "2": "Regeneration",
+            "3": "last",
+            "4": "start"
+          },
+          "context": "Your ability to make money is linked to transformation or resistance."
+        }
+      },
+      "temperance": {
+        "position1": {
+          "upright": "Balance points to anxiety about excesses, excessive spending in material matters, or extreme attitude, causing unrest.",
+          "reversed": "Inverse balance, incompatibility, and inconsistency expose anxiety, and inability to find balance raises anxiety.",
+          "keywords": {
+            "0": "balance",
+            "1": "compatibility",
+            "2": "measure",
+            "3": "Concern",
+            "4": "Patience"
+          },
+          "context": "The anxiety comes from lack of balance, the middle path leads to peace."
+        },
+        "position2": {
+          "upright": "Balance means you seek safety with measurement and harmony, and the middle way gives you peace.",
+          "reversed": "The reverse balance points to the anxiety of extremes and incompatibility, and the desire for security can be lost at the extremes.",
+          "keywords": {
+            "0": "balance",
+            "1": "compatibility",
+            "2": "security",
+            "3": "Patience",
+            "4": "measure"
+          },
+          "context": "You'll find security by measure and harmony."
+        },
+        "position3": {
+          "upright": "Balance demonstrates the use of money in a measured and compatible manner, and avoiding excesses brings peace.",
+          "reversed": "Reverse balance points to extravagance or excessive restraint anxiety.",
+          "keywords": {
+            "0": "measure",
+            "1": "balance",
+            "2": "compatibility",
+            "3": "Money",
+            "4": "Patience"
+          },
+          "context": "The measurement and balance of the use of money are in the forefront."
+        },
+        "position4": {
+          "upright": "In the past, the balance and measurement of financial matters has been prioritized, spending and savings have been kept in line.",
+          "reversed": "Reverse balance, extremism, or unstable spending may have been a problem in the past.",
+          "keywords": {
+            "0": "balance",
+            "1": "measure",
+            "2": "compatibility",
+            "3": "savings",
+            "4": "control"
+          },
+          "context": "In the past, balance and harmony have preceded financial attitudes."
+        },
+        "position5": {
+          "upright": "The balance shows a moderate and balanced approach to financial responsibilities, and the loads are carried in harmony.",
+          "reversed": "Reverse balance, imbalance, or excesses have made responsibilities difficult.",
+          "keywords": {
+            "0": "balance",
+            "1": "measure",
+            "2": "responsibilities",
+            "3": "compatibility",
+            "4": "Patience"
+          },
+          "context": "Financial responsibilities are governed by measureability and the search for balance."
+        },
+        "position6": {
+          "upright": "Balance points to measurement, harmony, and patient progress in new financial plans.",
+          "reversed": "Inverse balance may show extremes, impatience or erratic approach to financial plans.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "measure",
+            "2": "balance",
+            "3": "Patience",
+            "4": "Plan"
+          },
+          "context": "The balance and measurement of new financial plans is prerequisite."
+        },
+        "position7": {
+          "upright": "Balance points to measurement, harmony, and long-term stability in financial plans.",
+          "reversed": "Inverse balance, extremes, imbalance, or lack of plan.",
+          "keywords": {
+            "0": "balance",
+            "1": "measure",
+            "2": "compatibility",
+            "3": "stability",
+            "4": "Patience"
+          },
+          "context": "The future financial plans will determine fitness or imbalance."
+        },
+        "position8": {
+          "upright": "Balance, harmony, patience, and measurement support the ability to make money.",
+          "reversed": "Reverse Balance indicates that extremes, impatience, or unstable decisions can weaken financial development.",
+          "keywords": {
+            "0": "balance",
+            "1": "compatibility",
+            "2": "Patience",
+            "3": "measurance",
+            "4": "Peace"
+          },
+          "context": "Your ability to make money is linked to balance or imbalance."
+        }
+      },
+      "thedevil": {
+        "position1": {
+          "upright": "Satan points to addiction and the anxiety of material addiction, and debt or excessive consumption can worry you.",
+          "reversed": "The Reverse Devil exposes the anxiety of feeling chained, and the conditions that restrict your financial freedom are overwhelming.",
+          "keywords": {
+            "0": "addiction",
+            "1": "debt",
+            "2": "Concern",
+            "3": "freedom",
+            "4": "limit"
+          },
+          "context": "It comes from anxiety, addiction, and restraints, and it's peaceful to take back control."
+        },
+        "position2": {
+          "upright": "Satan tends to search for security through control and addiction, and financial ties can suppress his desire for security.",
+          "reversed": "The Reverse Devil points to anxiety of addiction and loss, and the desire for safety can be clouded by fear of losing its freedom.",
+          "keywords": {
+            "0": "addiction",
+            "1": "control",
+            "2": "security",
+            "3": "shadow",
+            "4": "limit"
+          },
+          "context": "You call security with control and connections, but freedom is also important."
+        },
+        "position3": {
+          "upright": "Satan tends to use money with addiction or excessive consumption.",
+          "reversed": "The Reverse Devil points to the process of getting rid of financial addictions.",
+          "keywords": {
+            "0": "addiction",
+            "1": "control",
+            "2": "extremism",
+            "3": "Money",
+            "4": "freedom"
+          },
+          "context": "Notice the balance of addiction and freedom in the use of money."
+        },
+        "position4": {
+          "upright": "In the past, addiction, debt, or excessive consumption may have been a factor in money matters.",
+          "reversed": "The Reverse Satan points to the process of getting rid of material addictions or letting go of harmful habits.",
+          "keywords": {
+            "0": "addiction",
+            "1": "debt",
+            "2": "consumption",
+            "3": "control",
+            "4": "freedom"
+          },
+          "context": "In the past, addiction and debt were ahead in financial attitudes."
+        },
+        "position5": {
+          "upright": "Satan may have stepped up addictions, debts, or pressures in financial responsibilities.",
+          "reversed": "The Reverse Devil points to the process of breaking addictions and freeing them from financial pressures.",
+          "keywords": {
+            "0": "addiction",
+            "1": "debt",
+            "2": "responsibilities",
+            "3": "pressure",
+            "4": "Freedom"
+          },
+          "context": "Financial responsibilities may have become heavy due to addiction or pressure."
+        },
+        "position6": {
+          "upright": "Satan draws attention to addiction, extreme risk, or interest in financial plans.",
+          "reversed": "In reverse Satan's financial plans, he points to breaking the chains, getting rid of addictions, and liberation.",
+          "keywords": {
+            "0": "addiction",
+            "1": "risk",
+            "2": "freedom",
+            "3": "subtract",
+            "4": "Plan"
+          },
+          "context": "It's important to recognize addictions in new financial plans."
+        },
+        "position7": {
+          "upright": "Satan shows that future financial plans can dominate addiction, excessive debt, or material ambitions.",
+          "reversed": "The Reverse Devil points to the end of chains, financial freedom and addiction.",
+          "keywords": {
+            "0": "addiction",
+            "1": "debt",
+            "2": "ambition",
+            "3": "freedom",
+            "4": "control"
+          },
+          "context": "The future financial plans will bring up addiction or freedom."
+        },
+        "position8": {
+          "upright": "Satan has the effect of passion, commitment, and ambition in his ability to earn money, but this bond can sometimes become addictive.",
+          "reversed": "The Reverse Devil points out that fiscal abilities will be strengthened by breaking the chains, freeing and abandoning addictions.",
+          "keywords": {
+            "0": "passion",
+            "1": "commitment",
+            "2": "ambition",
+            "3": "freedom",
+            "4": "shadow"
+          },
+          "context": "Your ability to earn money is linked to passion, commitment, or liberation."
+        }
+      },
+      "thetower": {
+        "position1": {
+          "upright": "The tower points to sudden loss and fear of collapse, and the shaking of material foundations can make you uneasy.",
+          "reversed": "The Reverse Tower reveals the anxiety of unexpected changes, and even minor tremors can cause great fears.",
+          "keywords": {
+            "0": "Devastation",
+            "1": "change",
+            "2": "missing",
+            "3": "Concern",
+            "4": "basic"
+          },
+          "context": "The anxiety comes from sudden change and loss, and it's peaceful to build solid ground."
+        },
+        "position2": {
+          "upright": "The tower shows you're looking for security through post-destruct reconstruction, and the real confrontation provides permanent security.",
+          "reversed": "The Reverse Tower points to collapse and loss anxiety, and the desire for safety can be shaken in fear of crises.",
+          "keywords": {
+            "0": "destruction",
+            "1": "rebuild",
+            "2": "security",
+            "3": "Truth",
+            "4": "basic"
+          },
+          "context": "You can build security with solid foundations after the destruction."
+        },
+        "position3": {
+          "upright": "The tower points to sudden changes in the use of money and unexpected expenses.",
+          "reversed": "The Reverse Tower points to delayed seizures or minor tremors.",
+          "keywords": {
+            "0": "sudden change",
+            "1": "crisis",
+            "2": "Money",
+            "3": "destruction",
+            "4": "rebuild"
+          },
+          "context": "An unexpected development in the use of money can be transformative."
+        },
+        "position4": {
+          "upright": "In the past, there may have been unexpected financial crises or sudden losses.",
+          "reversed": "The Reverse Tower shows that there's been a delayed crisis or smaller tremors.",
+          "keywords": {
+            "0": "crisis",
+            "1": "missing",
+            "2": "destruction",
+            "3": "unexpected",
+            "4": "reconstruction"
+          },
+          "context": "In the past, financial attitudes have led to crisis and loss."
+        },
+        "position5": {
+          "upright": "The tower indicates that sudden crises or unexpected costs increase financial responsibilities.",
+          "reversed": "The Reverse Tower has expanded the responsibilities of postponing or ignoring the crisis.",
+          "keywords": {
+            "0": "crisis",
+            "1": "cost",
+            "2": "responsibilities",
+            "3": "Reconstruction",
+            "4": "change"
+          },
+          "context": "Financial responsibilities may have been shaken by sudden attacks."
+        },
+        "position6": {
+          "upright": "The tower points to a sudden change in financial plans, an unexpected crisis, or destructive transformation, and the collapse of old structures may give rise to new opportunities.",
+          "reversed": "The Reverse Tower warns of delaying financial plans, repressed problems, or minor tremors.",
+          "keywords": {
+            "0": "crisis",
+            "1": "destruction",
+            "2": "transformation",
+            "3": "rebuild"
+          }
+        }
+      }
+    }
+  }
+}

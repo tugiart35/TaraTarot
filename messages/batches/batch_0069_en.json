@@ -1,0 +1,776 @@
+{
+  "relationship-problems": {
+    "meanings": {
+      "thechariot": {
+        "position5": {
+          "keywords": {
+            "4": "method"
+          },
+          "context": "Strong acceleration, speed incompatibility, method debates piled up, and now the common pace is necessary."
+        },
+        "position6": {
+          "upright": "The Chariot praises the clarity of direction and target, but when the speed and pressure increases, demand can become a compulsion, and if the steering wheel is in one hand, the risk of exploitation increases.",
+          "reversed": "The Reverse Chariot points to pushing and pushing to win over the partner's border instead of pulling strings, it's a compromise.",
+          "keywords": {
+            "0": "pressure",
+            "1": "direction",
+            "2": "speed",
+            "3": "Don't push it.",
+            "4": "Compromise"
+          },
+          "context": "Theme: acceleration and consent; Risk: pressure for target; joint tempo and control sharing."
+        },
+        "position7": {
+          "upright": "The Chariot says that competitive environment, job pressure, or family goals lead to relationships.",
+          "reversed": "The Reverse Chariot shows that outside pressure for success/responsibility takes over the steering wheel, so don't be thrown away by the speed of others.",
+          "keywords": {
+            "0": "competition",
+            "1": "family goal",
+            "2": "labour pressure",
+            "3": "tempo",
+            "4": "direction"
+          },
+          "context": "External targets are disrupting the internal rhythm, set a common speed and protective limit."
+        },
+        "position8": {
+          "upright": "The Chariot tells of a clear financial target and decisive action, and disciplined progress will set the money straight.",
+          "reversed": "The Reverse Chariot says that hasty decisions, impulse shopping and performance pressure increase financial errors.",
+          "keywords": {
+            "0": "target",
+            "1": "discipline",
+            "2": "speed",
+            "3": "impulse",
+            "4": "pressure"
+          },
+          "context": "Not speed; consistency; run the steps with calendars and limits."
+        },
+        "position9": {
+          "upright": "With the Chariot, the common goal and discipline, the relationship stays on track.",
+          "reversed": "Reverse Chariots, different speeds, and power battles are the only thing that drives the relationship away.",
+          "keywords": {
+            "0": "target",
+            "1": "acceleration",
+            "2": "direction",
+            "3": "discipline",
+            "4": "power"
+          },
+          "context": "To drive: the tempo agreement + sharing acceleration."
+        }
+      },
+      "strength": {
+        "position1": {
+          "upright": "Power, emotional regulation, and the test of patience are basic tensions, and the lack of pride, stubbornness, or vulnerability, the inability to express, fosters conflict.",
+          "reversed": "The reverse force, the surge of self-esteem, the jealousy, or the impatience, shows that trust is wearing off in the relationship, and when the pressure comes on instead of the soft force, the contradiction increases.",
+          "keywords": {
+            "0": "Patience",
+            "1": "emotion management",
+            "2": "pride",
+            "3": "Jealousy",
+            "4": "Compassion"
+          },
+          "context": "The nature of conflict in a relationship: the balance of soft strength and pressure."
+        },
+        "position2": {
+          "upright": "Power says the problem is in the body of emotional regulation and patience. Instead of polite courage, he went on stage with tension and stubbornness. The trick is to enlarge the triggers, the battle of pride and the melting of gentle boundaries. The problem is that soft power is forgotten.",
+          "reversed": "Reverse Power says that self-esteem fluctuations and jealousy shadows are causing problems. Insufferability exerts pressure on sensitive areas.",
+          "keywords": {
+            "0": "Courage",
+            "1": "Patience",
+            "2": "Compassion",
+            "3": "Self - confidence",
+            "4": "Regulation"
+          },
+          "context": "The root problem: emotion management and gentle boundary. It affects areas: conflict language, trust, intimacy."
+        },
+        "position3": {
+          "upright": "Power says it may have grown fire by the tone and impatientness of the trigger, and when it forgets the soft power, the bridges burn.",
+          "reversed": "It says that you're growing your share in reverse power, a surge of self-esteem and a shadow of jealousy, and the little spark turns into a storm.",
+          "keywords": {
+            "0": "Courage",
+            "1": "Patience",
+            "2": "Compassion",
+            "3": "Self - confidence",
+            "4": "Regulation"
+          },
+          "context": "Pay: emotion regulatory deficit. Influence: communication quality. Proposition: try again breath-alarm."
+        },
+        "position4": {
+          "upright": "The force says that it can legitimize and despise your contribution when it is forgotten. When it is forgotten, your share is invisible.",
+          "reversed": "The Reverse Power tends to deny the surge of jealousy and self-esteem by saying that I am like this. No Regulation, no responsibility.",
+          "keywords": {
+            "0": "Patience",
+            "1": "gentle power",
+            "2": "triggering",
+            "3": "self-organization",
+            "4": "Compassion"
+          },
+          "context": "What I'm ignoring is the ton/feeling effect. The effect: closeness is stretched. Do it: try again."
+        },
+        "position5": {
+          "upright": "Power says that in difficult times you hold on to each other with compassion and patience.",
+          "reversed": "Reverse Powers, triggers, and the battle of pride tells us that there have been wounds in the past, and the impatient moments can trigger today.",
+          "keywords": {
+            "0": "Patience",
+            "1": "Compassion",
+            "2": "Regulation",
+            "3": "pride",
+            "4": "triggering"
+          },
+          "context": "The compassionate legacy of power, the tone that sometimes hardens, the tolerance threshold is wavy, and now the gentle power must be restored."
+        },
+        "position6": {
+          "upright": "Power says that gentle strength is healing, but through jealousy and shame, attempts to restrain them can turn to exploitation; compassion should not be disguised as judgment.",
+          "reversed": "The reverse force triggers emotions and pulls them back to increase the possibility that the partner will be punished or charged with guilt, and if there's no self-balance, the power imbalance will increase.",
+          "keywords": {
+            "0": "gentle power",
+            "1": "Jealousy",
+            "2": "shame",
+            "3": "self-organization",
+            "4": "balance"
+          },
+          "context": "Theme: compassionate effect; risk: emotional restraint; do: pause at trigger moment and open demand."
+        },
+        "position7": {
+          "upright": "Power is the soothing effect of a mature friend/mental teacher, and when the right person intervenes, the balance is set.",
+          "reversed": "The Reverse Power says that a jealous person restrains and provokes emotions under the name of goodness.",
+          "keywords": {
+            "0": "Negotiator",
+            "1": "mature friend",
+            "2": "Jealousy",
+            "3": "sedation",
+            "4": "control"
+          },
+          "context": "It's important who interferes. Choose a secure mediator instead of the people in charge."
+        },
+        "position8": {
+          "upright": "With strength, patience, self - control, and compassion, it speaks of improving the budget, and gentle discipline softens the crises.",
+          "reversed": "The Reverse Power means not asking for help because of pride, not to blow up, or to miss out on money management with emotional triggers.",
+          "keywords": {
+            "0": "Self - control",
+            "1": "Patience",
+            "2": "help",
+            "3": "trigger",
+            "4": "Restrict"
+          },
+          "context": "Time out for emotional triggers, support if necessary, gentle but clear boundaries."
+        },
+        "position9": {
+          "upright": "Your relationship with strength, gentle strength, patience, and self - control increases, and compassionate consistency brings long life.",
+          "reversed": "Reverse Power, rising with triggers, jealousy and pride will force the continuation, and if there's no regression, the wearout will grow.",
+          "keywords": {
+            "0": "Patience",
+            "1": "gentle power",
+            "2": "Regulation",
+            "3": "Jealousy",
+            "4": "endurance"
+          },
+          "context": "To drive: trigger map + calm protocol."
+        }
+      },
+      "thehermit": {
+        "position1": {
+          "upright": "The melt says there's tension between the need for loneliness and the prospect of intimacy, while one side wants space, while the other can perceive negligence.",
+          "reversed": "Inverted means that introverts, avoidance, or emotional retreats block communication, and the remote posture is misinterpreted and expands contradictions.",
+          "keywords": {
+            "0": "field",
+            "1": "Closeness",
+            "2": "Introduction",
+            "3": "Don't go away",
+            "4": "communication"
+          },
+          "context": "The nature of conflict in relationship: the balance of space and intimacy."
+        },
+        "position2": {
+          "upright": "The melt says the problem is born from the balance between the need for loneliness and the need for unity. While listening to the inner voice, the escort may have been forgotten.",
+          "reversed": "Inverted Ermis explains that unsanitary isolation and avoidance chronicize the problem. There's internal reckoning, there's no common solution.",
+          "keywords": {
+            "0": "Introduction",
+            "1": "Distance",
+            "2": "loneliness",
+            "3": "share",
+            "4": "guidance"
+          },
+          "context": "The root problem is the area's proximity balance. The areas it affects are the rhythm of communication, support, empathy."
+        },
+        "position3": {
+          "upright": "And when he shall withdraw, and speak not of his will, he saith, thou mayest have the spark: and thy silence hath been read as omission.",
+          "reversed": "He says he's growing his share in reverse, unhealthy isolation and avoidance.",
+          "keywords": {
+            "0": "Introduction",
+            "1": "Distance",
+            "2": "loneliness",
+            "3": "share",
+            "4": "guidance"
+          },
+          "context": "Pay: unexplainable distance. Effect: closeness, trust. Suggest: make the needs visible."
+        },
+        "position4": {
+          "upright": "He says that he can ignore his share of the communication axis by describing the need for drawn in. Silence can be read as negligence.",
+          "reversed": "Inverted, unhealthy isolation emphasizes your tendency to normalize and deny avoidance, but trying to solve it can cloud your contribution.",
+          "keywords": {
+            "0": "Distance",
+            "1": "Introduction",
+            "2": "avoidance",
+            "3": "share",
+            "4": "guidance"
+          },
+          "context": "What I'm ignoring is the unspoken need. The effect: trust/responsibility weakens. Do it: share it because of it."
+        },
+        "position5": {
+          "upright": "It says that the period of healthy distance and introverting mature your relationship, and loneliness has brought wisdom.",
+          "reversed": "Inverted, it tells us that extreme closure and avoidance leave a mark, and the unspoken needs can be echoed today.",
+          "keywords": {
+            "0": "Introduction",
+            "1": "Distance",
+            "2": "wisdom",
+            "3": "avoidance",
+            "4": "share"
+          },
+          "context": "Useful field + communication gaps, neglect perceptions, needs to be expressed clearly."
+        },
+        "position6": {
+          "upright": "It tells of the benefit of molten, healthy loneliness, but using distance and silence as leverage is exploitation. Retreat should not turn into a means of punishment.",
+          "reversed": "Inverted melts the risk of building a stone wall and locking on communication, stressing the risk of collecting and controlling power, the relationship cannot be punished by conscious isolation.",
+          "keywords": {
+            "0": "Distance",
+            "1": "loneliness",
+            "2": "communication",
+            "3": "Punishment",
+            "4": "field"
+          },
+          "context": "Theme: field and connection; Risk: stone wall behavior; Do: planned break and return protocol."
+        },
+        "position7": {
+          "upright": "The melt says you have to get out of the crowd and find your own truth.",
+          "reversed": "Inverted Ermish points to extreme isolation to avoid external judgments, and to avoid interference, it can break the bridges.",
+          "keywords": {
+            "0": "insulation",
+            "1": "crowd",
+            "2": "judgment",
+            "3": "inner voice",
+            "4": "balance"
+          },
+          "context": "The noise is loud, the inner wisdom is low, set up selective distance and secure counseling."
+        },
+        "position8": {
+          "upright": "Melted, simplification, frugal life and internal accounting.",
+          "reversed": "Inversely, Ermi says that the overkill, the sharing, and I will take care of the isolation has increased the burden.",
+          "keywords": {
+            "0": "Simplification",
+            "1": "savings",
+            "2": "Accounting",
+            "3": "Isolation",
+            "4": "share"
+          },
+          "context": "The simple plan is good; it's not about cutting communication, it's about making decisions together."
+        },
+        "position9": {
+          "upright": "It says that your relationship with molten, healthy space and conscious loneliness can breathe, and inner wisdom supports continuity.",
+          "reversed": "Reverse Melt, extreme insulation and wall-to-wall silence weaken the bonds, and if the distance grows, it becomes difficult to maintain.",
+          "keywords": {
+            "0": "field",
+            "1": "Sight",
+            "2": "loneliness",
+            "3": "communication",
+            "4": "balance"
+          },
+          "context": "To drive: planned field + planned connection rhythm."
+        }
+      },
+      "thewheeloffortune": {
+        "position1": {
+          "upright": "The Wheel of Destiny says that loops and timing-related ups and downs trigger conflict, and if the roles and conditions change, if the harmony is not updated, friction increases.",
+          "reversed": "The Reverse Destiny Wheel shows that you don't get stuck in repeating patterns, and it always does, that your faith breaks hope, that destiny chronicizes conflict.",
+          "keywords": {
+            "0": "cycle",
+            "1": "timing",
+            "2": "habit",
+            "3": "change",
+            "4": "fatalism"
+          },
+          "context": "The nature of conflict in relationship: cyclical patterns and timing."
+        },
+        "position2": {
+          "upright": "The Wheel of Destiny says the problem is stuck in loops and timing windows. The same debate repeats on different days.",
+          "reversed": "The Reverse Destiny Wheel shows that fatalism and repetitive habits lock the relationship. Waiting for change and delaying action prolongs the problem. Unlearned lessons, vicious cycle. The problem grows in the error of not noticing the cycle.",
+          "keywords": {
+            "0": "cycle",
+            "1": "timing",
+            "2": "habit",
+            "3": "change",
+            "4": "vicious cycle"
+          },
+          "context": "The root problem: repetitive patterns. It affects areas: moments of decision, crisis management, flexibility."
+        },
+        "position3": {
+          "upright": "The Wheel of Destiny says that when he returns to the same cycle of debate without realizing it's his share, the scene repeats unless he's learned.",
+          "reversed": "The reverse Wheel of Destiny tells us that you may have grown up with your attitude, so that it evaporates responsibility.",
+          "keywords": {
+            "0": "cycle",
+            "1": "timing",
+            "2": "habit",
+            "3": "change",
+            "4": "vicious cycle"
+          },
+          "context": "The numerator: repeated patterns. The effect: hope, progress. The suggestion: make a small difference."
+        },
+        "position4": {
+          "upright": "The Wheel of Destiny says that he can label repeated patterns and ignore his share. Unless he learns a lesson, the tour will come again.",
+          "reversed": "The Reverse Destiny Wheel tends to take refuge in fatalism and deny the replaceable part, and when responsibility is invisible, change delays.",
+          "keywords": {
+            "0": "cycle",
+            "1": "habit",
+            "2": "timing",
+            "3": "change",
+            "4": "learning"
+          },
+          "context": "What I ignore is: my share of the cycle. The effect: hope and progress are blocked. Do it: make one small difference."
+        },
+        "position5": {
+          "upright": "The Wheel of Destiny says that you live together in relationship cycles, and you have the ability to adapt to change.",
+          "reversed": "The Reverse Destiny Wheel says that the same argument is repeated at different times.",
+          "keywords": {
+            "0": "cycle",
+            "1": "timing",
+            "2": "habit",
+            "3": "change",
+            "4": "learning"
+          },
+          "context": "Repeating patterns, sometimes harmony, sometimes hanging out, now it's time to make a conscious difference."
+        },
+        "position6": {
+          "upright": "The Wheel of Destiny draws attention to its repeating winning and losing cycles. If the mold is not noticed, the same game keeps spinning.",
+          "reversed": "The Reverse Destiny Wheel speaks of the risk of legitimizing the abuse of destiny, and that's how it goes, sabotaging the rhetoric, sabotaging the change.",
+          "keywords": {
+            "0": "cycle",
+            "1": "habit",
+            "2": "balance",
+            "3": "awareness",
+            "4": "change"
+          },
+          "context": "Theme: the pattern again; risk: normalized exploitation; do it: the rule that makes a small difference."
+        },
+        "position7": {
+          "upright": "The Wheel of Destiny says that the same people are back on the stage from the semester round, the family cycle, the business cycle, or the old friends' agenda.",
+          "reversed": "Inverted Wheel of Destiny, by saying such a fate, refers to the risk of normalizing the outside effect and drawing attention to the interference.",
+          "keywords": {
+            "0": "cycle",
+            "1": "repeaters",
+            "2": "habit",
+            "3": "timing",
+            "4": "Agreed"
+          },
+          "context": "It's always the same actors on the line, so break the cycle and set up a new rule."
+        },
+        "position8": {
+          "upright": "The Wheel of Destiny shows the fluctuation in the income/governing cycles. Flexible plan and backup language are essential.",
+          "reversed": "The Reverse Destiny Wheel points to repeated debt, tardy payments, and financial errors linked to the entity.",
+          "keywords": {
+            "0": "fluctuation",
+            "1": "pillow",
+            "2": "debt",
+            "3": "habit",
+            "4": "timing"
+          },
+          "context": "Fix emergency funds for wave management and repetitive patterns."
+        },
+        "position9": {
+          "upright": "The Wheel of Destiny says that couples who run ups and downs together can stay in the long run, flexible and adaptability is the key.",
+          "reversed": "The Reverse Destiny Wheel, if repeated toxic cycles don't break, the relationship will wear out.",
+          "keywords": {
+            "0": "cycle",
+            "1": "flexibility",
+            "2": "compatibility",
+            "3": "habit",
+            "4": "change"
+          },
+          "context": "To drive: cycle awareness + small system updates."
+        }
+      },
+      "justice": {
+        "position1": {
+          "upright": "Justice, unfair work department, states that double standard or balance of responsibility is the main conflict. The demand for accountability is high.",
+          "reversed": "The reverse justice, the cycle of accusations, the bias, or the disregard for it, is a breach of trust, and the perception of injustice is a fundamental contradiction.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "responsibilities",
+            "3": "Equality",
+            "4": "accountability"
+          },
+          "context": "The nature of conflict in relationship: the search for justice and balance."
+        },
+        "position2": {
+          "upright": "Justice says the problem lies in the unfair work department and the double standard. The scale does not feel equal. The scale does not feel equal. The demand for accountability, the need for transparency. The problem is that responsibilities are not clearly shared.",
+          "reversed": "Reverse Justice tells us that prejudice and ignoring are wearing off the trust. Apology is late, it doesn't make amends.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "responsibilities",
+            "3": "transparency",
+            "4": "compensation"
+          },
+          "context": "Root problem: Fair share and transparency deficit. It affects areas: trust, compromise, division of duty."
+        },
+        "position3": {
+          "upright": "When justice fails in duty and transparency, the spark says you can have it, and when the shrouds don't feel equal, resentment grows.",
+          "reversed": "Reverse Justice says you've increased your share with an excuse and a way of ignoring it, and when it's late, trust is restored.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "responsibilities",
+            "3": "transparency",
+            "4": "compensation"
+          },
+          "context": "Pay: fair share deficit. Effect: trust, compromise. Proposal: open account + compensation."
+        },
+        "position4": {
+          "upright": "Justice says that you can normalize and not see your share of the work that is unfair, saying, \"I'll do it.\" Without transparency, the balance is not set.",
+          "reversed": "Reverse Justice emphasizes the tendency to see the error and delay compensation or defend with an excuse. Self-responsibility breeds denial.",
+          "keywords": {
+            "0": "justice",
+            "1": "transparency",
+            "2": "account",
+            "3": "compensation",
+            "4": "balance"
+          },
+          "context": "What I'm ignoring is my share of responsibility. The effect: trust wears off. Do it: open account + make up in time."
+        },
+        "position5": {
+          "upright": "Justice says that in the past, fair share and open account strengthen your relationship.",
+          "reversed": "Reverse Justice, the perception of inequality and late amends may be affecting today.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "account",
+            "3": "compensation",
+            "4": "transparency"
+          },
+          "context": "Fair effort; practical setbacks, obvious need for open account; now you need compensation and clear frames."
+        },
+        "position6": {
+          "upright": "Justice dictates open account and balanced sharing, and when rules and sanctions work on one side, right becomes a means of power.",
+          "reversed": "Reverse Justice points to abuse with double standard, selective memory and late recovery, and trust is restored unless balance is established.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "account",
+            "3": "compensation",
+            "4": "transparency"
+          },
+          "context": "Theme: accountability; risk: double standard; do: clear metric and make up in time."
+        },
+        "position7": {
+          "upright": "Justice says that legal/governmental actors (HR, mediator, family elders) can come into play. A neutral eye can balance.",
+          "reversed": "Reverse Justice points to double standard family pressure, unfair judgment and selective memory.",
+          "keywords": {
+            "0": "neutrality",
+            "1": "Referee",
+            "2": "institution",
+            "3": "double standard",
+            "4": "balance"
+          },
+          "context": "Look for neutral mechanisms, choose transparent rules instead of relative-responsibility."
+        },
+        "position8": {
+          "upright": "Justice emphasizes fair sharing, transparent budget and record discipline, and clarity brings peace.",
+          "reversed": "Reverse Justice says double standard, secret spending, and late recovery undermines confidence.",
+          "keywords": {
+            "0": "justice",
+            "1": "transparency",
+            "2": "recording",
+            "3": "double standard",
+            "4": "compensation"
+          },
+          "context": "It's an open book; quick compensation in error, equal rules."
+        },
+        "position9": {
+          "upright": "The relationship with justice, transparency, equality and compensation in time is sustainable. It restores open account trust.",
+          "reversed": "Reverse Justice reduces the rope of double standard and late apology, and if injustice is not restored, the risk is to continue.",
+          "keywords": {
+            "0": "Equality",
+            "1": "transparency",
+            "2": "compensation",
+            "3": "right",
+            "4": "Trust"
+          },
+          "context": "To drive: light metrics + rapid repair culture."
+        }
+      },
+      "thehangedman": {
+        "position1": {
+          "upright": "The Hanged Man says that the unilateral perception of sacrifices and the suspended decisions have sparked conflict, and the change of perspective may have been delayed.",
+          "reversed": "The Man Hanged Reverse points to victim psychology, postponement and passiveness.",
+          "keywords": {
+            "0": "sacrifice",
+            "1": "Don't hang up.",
+            "2": "Perspective",
+            "3": "postponement",
+            "4": "victim"
+          },
+          "context": "The nature of conflict in relationship: the perception of one-sided sacrifice."
+        },
+        "position2": {
+          "upright": "Hanged Man says the problem is tied in the perception of suspended decisions and unilateral sacrifice. Perspective change is delayed.",
+          "reversed": "The man who was hanged upside down tells the root problem of victim narrative and passiveness. He clings to where he needs to be left. The blame cycle, the inertia. The problem deepens in the comfort zone that resists action.",
+          "keywords": {
+            "0": "Don't hang up.",
+            "1": "sacrifice",
+            "2": "Perspective",
+            "3": "postponement",
+            "4": "Atlasity"
+          },
+          "context": "The root problem: decision hanger and sacrifice. It affects: progress, hope, balance."
+        },
+        "position3": {
+          "upright": "The hanged man says that you have a share in keeping the decisions on hold, and then the longer we look at them, the more the conflict increases.",
+          "reversed": "You may have fed the fire when the Reverse Hanger took refuge in the victim's narrative and postponed the act, and there's no progress without a change of perspective.",
+          "keywords": {
+            "0": "Don't hang up.",
+            "1": "sacrifice",
+            "2": "Perspective",
+            "3": "postponement",
+            "4": "Atlasity"
+          },
+          "context": "Pay: postponement. Effect: hope, clarity. Proposal: a small/clean decision."
+        },
+        "position4": {
+          "upright": "The hanged man says he can underestimate your contribution by calling it delaying time, and it is a choice to remain in suspense.",
+          "reversed": "The man who is hanging upside down points to his tendency to deny his share by taking refuge in the narrative of the victim and rejecting the act, and without changing perspective, there is no responsibility.",
+          "keywords": {
+            "0": "postponement",
+            "1": "Perspective",
+            "2": "Atlasity",
+            "3": "sacrifice",
+            "4": "hanger"
+          },
+          "context": "What I ignore is: I don't avoid decisions. The effect: hope and clarity melt. Make small decisions."
+        },
+        "position5": {
+          "upright": "The Hanged Man says that suspension and waiting can sometimes give you a new perspective, and patience has brought you perspective.",
+          "reversed": "The Reverse Hanger tells us that postponement has become chronic and ambiguity, and the victim's narratives may have moved today.",
+          "keywords": {
+            "0": "don't wait.",
+            "1": "Perspective",
+            "2": "postponement",
+            "3": "sacrifice",
+            "4": "uncertainty"
+          },
+          "context": "It's a risk of useful posture plus drag, clear decisions delayed, and now it's time to take it off the hook."
+        },
+        "position6": {
+          "upright": "The Hanged Man says sacrifice is a gift, but when it becomes chronic, it can turn itself from sacrifice to passive pressure.",
+          "reversed": "The Reverse Hanged Man increases the risk of making the victim's narrative a power tool, putting it on hold and delaying it may be a way to control the other side.",
+          "keywords": {
+            "0": "sacrifice",
+            "1": "Don't hang up.",
+            "2": "sacrifice",
+            "3": "passive pressure",
+            "4": "balance"
+          },
+          "context": "Theme: the balance of giving and receiving; risk: to leverage the sacrifice; do it: the definition of voluntary limit and time."
+        },
+        "position7": {
+          "upright": "The Hanged Man says that you are on hold for outside expectations, and the call of others to be patient may put you on hold.",
+          "reversed": "The Inverted Man points to a third person who manipulates the victim's narratives, and your empathy can be leveraged.",
+          "keywords": {
+            "0": "don't wait.",
+            "1": "empathy",
+            "2": "expectation",
+            "3": "Don't hang up.",
+            "4": "manipulation"
+          },
+          "context": "The outside voices say wait. You set the time and conditions, set the open limit."
+        },
+        "position8": {
+          "upright": "Hanged Man talks about short-term sacrifice, postponement, and re-privilegation.",
+          "reversed": "The Inverted Hanger warns with the remaining payments, then the cycle, and financial postponement.",
+          "keywords": {
+            "0": "sacrifice",
+            "1": "postponement",
+            "2": "priority",
+            "3": "hanger",
+            "4": "Cash flow"
+          },
+          "context": "The temporary limit must be conscious and continuous; do not create permanent postponement."
+        },
+        "position9": {
+          "upright": "The Hanged Man recovers from short-term sacrifice and perspective change, and if the hanger is conscious, it provides continuity.",
+          "reversed": "The Man Hanged Reverses the chronic delay and the victim's narrative rots the relationship in the suspender.",
+          "keywords": {
+            "0": "sacrifice",
+            "1": "Perspective",
+            "2": "postponement",
+            "3": "hanger",
+            "4": "balance"
+          },
+          "context": "To drive: permanent sacrifice + clear return date."
+        }
+      },
+      "death": {
+        "position1": {
+          "upright": "Death says there's a need for transformation and a conflict around the end of the old order.",
+          "reversed": "Reverse Death means resistance to change and holding on to the past prolongs the crisis.",
+          "keywords": {
+            "0": "transformation",
+            "1": "end",
+            "2": "Don't let go",
+            "3": "Regeneration",
+            "4": "resistance"
+          },
+          "context": "The nature of conflict in relationship: the threshold of change and abandonment."
+        },
+        "position2": {
+          "upright": "Death says that the problem is born from prolonged and fear of transformation. The old shells are narrow. The trick is that I can't let go of the habit, the unresolved files. The problem is that the new one doesn't open up.",
+          "reversed": "Reverse Death says that resistance to change chronicizes the crisis. It's exhausting to try to continue without saying goodbye. It's always the same argument, hope erosion. The problem grows where the end is not blessed.",
+          "keywords": {
+            "0": "end",
+            "1": "transformation",
+            "2": "Don't let go",
+            "3": "Rebirth",
+            "4": "resistance"
+          },
+          "context": "The root problem: lack of closure and transformation. The areas it affects: habit, expectation, regeneration."
+        },
+        "position3": {
+          "upright": "When death extends what it needs to be finished and grabs onto the old shell, it may have a high share, and the longer the transformation delays, the more the tension becomes chronic.",
+          "reversed": "The Reverse Death tells us that you've grown the spark by refusing to say good-bye and carrying the past.",
+          "keywords": {
+            "0": "end",
+            "1": "transformation",
+            "2": "Don't let go",
+            "3": "Rebirth",
+            "4": "resistance"
+          },
+          "context": "Pay: resistance to change. Effect: renewal, flexibility. Proposal: conscious abandonment."
+        },
+        "position4": {
+          "upright": "Death says that you can ignore what has to be done, and that you can ignore your share. The more the old shell is narrow, the more the tension grows.",
+          "reversed": "Reverse Death tends to reject goodbyes and deny change, and without giving up, there's no new one; that's self-responsibility.",
+          "keywords": {
+            "0": "end",
+            "1": "Don't let go",
+            "2": "transformation",
+            "3": "resistance",
+            "4": "Regeneration"
+          },
+          "context": "What I'm ignoring is what I'm supposed to leave. The effect: blockage, fatigue. Do it: the conscious closure ritual."
+        },
+        "position5": {
+          "upright": "Death says you've been through great transformations together, the courage to leave the old one has renewed your relationship.",
+          "reversed": "Reverse Death tells us that the cycles that need to end are extended, and the clings may have increased the wear and tear today.",
+          "keywords": {
+            "0": "end",
+            "1": "transformation",
+            "2": "Regeneration",
+            "3": "resistance",
+            "4": "Don't let go"
+          },
+          "context": "The transformation capacity is high, some goodbyes are delayed, and now you have to leave it conscious."
+        },
+        "position6": {
+          "upright": "Death says that prolonging what needs to be done can give power to one of the parties, delaying closure creates control over indecisiveness.",
+          "reversed": "Reverse Death uses the fear of change to explain the risk of keeping the partner in place and narrowing the options, and threatening to leave is exploitation.",
+          "keywords": {
+            "0": "end",
+            "1": "change",
+            "2": "fear",
+            "3": "control",
+            "4": "closure"
+          },
+          "context": "Theme: threshold and goodbye; Risk: blackmail with closure; Do it: clear decision and safe passage."
+        },
+        "position7": {
+          "upright": "Death says that third parties (ex-partner, family bond) related to the end of a relationship (ex-partner, family bond) are on the agenda. Healthy closure reduces external effects.",
+          "reversed": "Reverse Death means unfinished relationships, unfinished goodbyes, and unbreakable ties are still between you.",
+          "keywords": {
+            "0": "end",
+            "1": "closure",
+            "2": "old bond",
+            "3": "Don't say goodbye.",
+            "4": "glue"
+          },
+          "context": "The past files are open, clean closure and border will cut off the outside effects."
+        },
+        "position8": {
+          "upright": "Death tells him to shut down subscribers, debts, and inefficient habits that he needs to finish. Simplification is difficult.",
+          "reversed": "The Reverse Death talks about avoiding unnecessary expenses and harming us because of the comfort we've become accustomed to.",
+          "keywords": {
+            "0": "end",
+            "1": "Cleanup",
+            "2": "habit",
+            "3": "Don't pay off the debt.",
+            "4": "Simplification"
+          },
+          "context": "Do a financial detox, shut down the unnecessary, open up the source."
+        },
+        "position9": {
+          "upright": "Death says that if you finish the old molds, the relationship can continue to be renewed.",
+          "reversed": "Reverse Death, resistance to change, and holding on to the one who has come to say good-bye makes the continuum even more difficult.",
+          "keywords": {
+            "0": "transformation",
+            "1": "end",
+            "2": "Regeneration",
+            "3": "resistance",
+            "4": "Purge"
+          },
+          "context": "To drive: good-bye again; it is hard to go on without making room."
+        }
+      },
+      "temperance": {
+        "position1": {
+          "upright": "The balance, the excesses, and the lack of a common mixture tells us that the conflict arises, and the tempo, style, and value dosages require recalibratement.",
+          "reversed": "The inverse balance shows that swings to the ends, erratic rhythms and impatientness increase tension, and the lack of calibration forces the connection.",
+          "keywords": {
+            "0": "balance",
+            "1": "middle path",
+            "2": "calibration",
+            "3": "extremism",
+            "4": "Patience"
+          },
+          "context": "The nature of conflict in relationship: mixture and rhythm calibration."
+        },
+        "position2": {
+          "upright": "Balance says that the problem lies in extremes and incompatible mix. When doses don't hold, peace breaks.",
+          "reversed": "The reverse balance tells us that an impatient and extreme attitude has increased the problem. The rhythm can't be achieved together. It's either a cycle or no cycle, a slowness conflict. The problem is that it doesn't get the middle path.",
+          "keywords": {
+            "0": "balance",
+            "1": "measure",
+            "2": "synthesis",
+            "3": "compatibility",
+            "4": "Patience"
+          },
+          "context": "Root problem: mixture and tempo calibration. It affects: daily rhythm, combat management."
+        },
+        "position3": {
+          "upright": "The balance tells you you can have the fuse when you've missed a dose and thrown it to the ends, and when there's no middle ground, little things grow.",
+          "reversed": "Inverse Balance says that it increases its share with impatientness and zero hundred mentality. The lack of calibration exhausts the relationship.",
+          "keywords": {
+            "0": "balance",
+            "1": "measure",
+            "2": "synthesis",
+            "3": "compatibility",
+            "4": "Patience"
+          },
+          "context": "Pay: tempo/ton calibration. Effect: peace, continuity."
+        },
+        "position4": {
+          "upright": "The balance says that you can legitimize and ignore your share by saying that I am this. The lack of calibration fosters conflict.",
+          "reversed": "It emphasizes the tendency to deny inverse balance, impatience, ya-hep-ya-no attitude, the middle path is rejected, making self-responsibility invisible.",
+          "keywords": {
+            "0": "balance",
+            "1": "measure",
+            "2": "synthesis",
+            "3": "Patience",
+            "4": "calibration"
+          },
+          "context": "What I'm ignoring is my dose of tempo. The effect: peace escapes. Do it: middle course, moderate."
+        },
+        "position5": {
+          "upright": "It says that with balance, harmony and synthesis, you soften the crises together.",
+          "reversed": "The reverse balance tells us that overdose behaviors have caused a fluctuation in the past, and the loss of patience can be triggered today."
+        }
+      }
+    }
+  }
+}

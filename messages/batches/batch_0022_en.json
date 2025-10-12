@@ -1,0 +1,774 @@
+{
+  "money": {
+    "meanings": {
+      "fiveofswords": {
+        "position2": {
+          "keywords": {
+            "0": "conflict",
+            "1": "ego",
+            "2": "security",
+            "3": "Compromise",
+            "4": "Truth"
+          },
+          "context": "You'll find security by withdrawing from the conflict and compromise."
+        },
+        "position3": {
+          "upright": "The Five Swords point to competition or conflict of interest when spending money.",
+          "reversed": "The Reverse Five Swords show the resolving of disputes or acceptance of losses in financial matters.",
+          "keywords": {
+            "0": "conflict",
+            "1": "competition",
+            "2": "Money",
+            "3": "Losing",
+            "4": "struggle"
+          },
+          "context": "The use of money can lead to debate and struggle."
+        },
+        "position4": {
+          "upright": "In the past, conflict and competition may have stepped up in financial matters.",
+          "reversed": "The Reverse Five Sword shows lessons learned from past financial debates.",
+          "keywords": {
+            "0": "conflict",
+            "1": "competition",
+            "2": "Money",
+            "3": "struggle",
+            "4": "lesson"
+          },
+          "context": "In the past, money issues have led to conflict."
+        },
+        "position5": {
+          "upright": "The Five Swords point to problems due to conflict in financial responsibilities, a desire to be justified, or selfishness.",
+          "reversed": "The Reverse Five Swords show the desire to restore peace, reconciliation, and resentment in financial responsibilities.",
+          "keywords": {
+            "0": "conflict",
+            "1": "ego",
+            "2": "Compromise",
+            "3": "Rightness",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, conflict or reconciliation arises."
+        },
+        "position6": {
+          "upright": "Five Swords point to conflict, ego conflict, or loss of income in financial plans.",
+          "reversed": "The Reverse Five Swords mean reconciliation, reconciliation and resolution of financial plans.",
+          "keywords": {
+            "0": "conflict",
+            "1": "ego",
+            "2": "resource",
+            "3": "Compromise",
+            "4": "balance"
+          },
+          "context": "New financial plans may have a conflict or a process of resolution."
+        },
+        "position7": {
+          "upright": "The Five Swords point to the possibility of future financial competition, conflict of interest, or unnecessary debates.",
+          "reversed": "The Reverse Five Swords show a chance to repair financial relations, compromise, and regain lost trust.",
+          "keywords": {
+            "0": "competition",
+            "1": "conflict",
+            "2": "ego",
+            "3": "repair",
+            "4": "Compromise"
+          },
+          "context": "The future financial plans will bring up conflict or repair."
+        },
+        "position8": {
+          "upright": "The Five Swords show that their ability to learn from competition and make strategic moves can increase financial gain.",
+          "reversed": "The Reverse Five Swords indicate that their skills can be weakened due to excessive competition, ambition, or conflict of interest.",
+          "keywords": {
+            "0": "competition",
+            "1": "strategy",
+            "2": "conflict",
+            "3": "lesson",
+            "4": "balance"
+          },
+          "context": "Your ability to make money is linked to strategy or ambition."
+        }
+      },
+      "sixofswords": {
+        "position1": {
+          "upright": "The Six Swords show concern that I can't find a way out of financial distress, and the worry that I can't reach the safe harbor can wear you out.",
+          "reversed": "The Reverse Six Sword brings out the anxiety of not being able to break away from past problems, and you might be afraid to stay in the same loop all the time.",
+          "keywords": {
+            "0": "transition",
+            "1": "exit",
+            "2": "Concern",
+            "3": "journey",
+            "4": "compression"
+          },
+          "context": "Concern arises from not finding a way out of financial distress."
+        },
+        "position2": {
+          "upright": "The Sword Sixer shows that he seeks security away from difficult situations, bringing peace of mind to transition and recovery.",
+          "reversed": "The Reverse Sword Six points to the anxiety of not being able to break away from the past, the desire for safety weakens with old burdens.",
+          "keywords": {
+            "0": "transition",
+            "1": "Recovery",
+            "2": "security",
+            "3": "journey",
+            "4": "Tranquillity"
+          },
+          "context": "You'll find security by leaving the past and renovating."
+        },
+        "position3": {
+          "upright": "Six Swords point to the transition of money use to avoid problems or to a new financial planning.",
+          "reversed": "The Reverse Six Sword shows that past financial habits are hard to leave behind.",
+          "keywords": {
+            "0": "transition",
+            "1": "Plan",
+            "2": "Escape",
+            "3": "Money",
+            "4": "Regeneration"
+          },
+          "context": "There's a transition and recovery process in the use of money."
+        },
+        "position4": {
+          "upright": "There may have been a period of relief and relief from difficult financial times in the past.",
+          "reversed": "The Reverse Six Sword points to delays in recovering from financial difficulties in the past.",
+          "keywords": {
+            "0": "transition",
+            "1": "relief",
+            "2": "difficulty",
+            "3": "Money",
+            "4": "Progress"
+          },
+          "context": "In the past, financial transition processes have been experienced."
+        },
+        "position5": {
+          "upright": "The Six Swords point to a calmer period in financial responsibilities, a desire to get away from difficulties.",
+          "reversed": "The Reverse Six Sword may mean continuing to carry the burdens of the past, not being able to move away from financial responsibilities.",
+          "keywords": {
+            "0": "transition",
+            "1": "Don't go away",
+            "2": "Peace",
+            "3": "past load",
+            "4": "responsibilities"
+          },
+          "context": "The transition to financial responsibilities or commitment to the past is a prerequisite."
+        },
+        "position6": {
+          "upright": "The Six Swords indicate calming of financial plans, avoiding difficulties, and a safe passage.",
+          "reversed": "The Reverse Six Sword points to the risk of staying in the past or not going forward in financial plans.",
+          "keywords": {
+            "0": "transition",
+            "1": "Tranquillity",
+            "2": "Trust",
+            "3": "journey",
+            "4": "solution"
+          },
+          "context": "The new financial plans lead to transition and calming."
+        },
+        "position7": {
+          "upright": "The Six Swords point to future financial plans, calming down, moving away from risky situations, and transitioning to safe waters.",
+          "reversed": "The Reverse Six Swords show the risk of sticking to past financial problems and having difficulty moving forward.",
+          "keywords": {
+            "0": "transition",
+            "1": "Tranquillity",
+            "2": "Don't go away",
+            "3": "course",
+            "4": "Trust"
+          },
+          "context": "In future financial plans, safe passage or wear will step forward."
+        },
+        "position8": {
+          "upright": "The Six Swords show that your ability to move away from problems and move towards more calm conditions increases your financial potential.",
+          "reversed": "The Reverse Six Sword points out that development opportunities can be avoided because of the fact that the past is stuck in problems.",
+          "keywords": {
+            "0": "transition",
+            "1": "Recovery",
+            "2": "Progress",
+            "3": "balance",
+            "4": "change"
+          },
+          "context": "Your ability to make money depends on progress or remaining in the past."
+        }
+      },
+      "sevenofswords": {
+        "position1": {
+          "upright": "The Seven Swords indicate the anxiety of deception and the theft of the source, and you may be afraid to entrust your financial security to others.",
+          "reversed": "The Reverse Seven Sword shows self-deception and false strategy anxiety, and you're worried about not being honest in your financial decisions.",
+          "keywords": {
+            "0": "Don't cheat.",
+            "1": "Concern",
+            "2": "strategy",
+            "3": "Don't be fooled.",
+            "4": "Insecurity"
+          },
+          "context": "Concern arises from being deceived in material matters or choosing the wrong strategy."
+        },
+        "position2": {
+          "upright": "The Sword Seven shows you're looking for security, strategy, and careful, and the smart plan brings peace.",
+          "reversed": "The Reverse Sword Seven points to a fear of betrayal or deception, a desire for security, a lack of honesty.",
+          "keywords": {
+            "0": "strategy",
+            "1": "Plan",
+            "2": "security",
+            "3": "Honesty",
+            "4": "mind"
+          },
+          "context": "You find security with clever planning and honesty."
+        },
+        "position3": {
+          "upright": "The Seven Swords indicate strategic behavior in secret expenditures or financial matters, possibly a lack of transparency.",
+          "reversed": "The Reverse Seven Sword shows the release of financial secrets or the importance of honesty.",
+          "keywords": {
+            "0": "secrecy",
+            "1": "strategy",
+            "2": "trick",
+            "3": "Money",
+            "4": "risk"
+          },
+          "context": "Strategy and secrecy can be effective in the use of money."
+        },
+        "position4": {
+          "upright": "In the past, there may have been a secret or secret agreement on financial matters.",
+          "reversed": "The Reverse Seven Swords indicate the pursuit of honesty in financial matters.",
+          "keywords": {
+            "0": "secrecy",
+            "1": "trick",
+            "2": "Money",
+            "3": "Honesty",
+            "4": "strategy"
+          },
+          "context": "In the past, there was secrecy and strategy in financial matters."
+        },
+        "position5": {
+          "upright": "The Seven Swords may tend to avoid secrecy, strategy or obligations in financial responsibilities.",
+          "reversed": "The Reverse Seven Swords point to honesty in financial responsibilities, revealing or accountability of hidden truths.",
+          "keywords": {
+            "0": "secrecy",
+            "1": "strategy",
+            "2": "avoidance",
+            "3": "Honesty",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, concealment or clarity is a determinant."
+        },
+        "position6": {
+          "upright": "The Seven Swords point to moving forward with strategy, attention and invisible plans in financial plans.",
+          "reversed": "The Reverse Seven Sword shows that fiscal plans reveal deception, half-truths, or secret issues.",
+          "keywords": {
+            "0": "strategy",
+            "1": "secrecy",
+            "2": "tactics",
+            "3": "real",
+            "4": "Don't be exposed."
+          },
+          "context": "New financial plans will determine strategy or secrecy."
+        },
+        "position7": {
+          "upright": "The Seven Swords indicate strategic progress in financial plans, hidden projects or clever steps in the future.",
+          "reversed": "The Reverse Seven Sword is the risk of being dishonest, exposing financial secrecy, or deceiving itself.",
+          "keywords": {
+            "0": "strategy",
+            "1": "secrecy",
+            "2": "Plan",
+            "3": "intelligence",
+            "4": "risk"
+          },
+          "context": "In future financial plans, the strategy or honesty test will step up."
+        },
+        "position8": {
+          "upright": "The Seven Swords indicate that the ability to evaluate intelligence, strategy, and opportunities in invisible ways provides a financial advantage.",
+          "reversed": "The Reverse Seven Swords indicate that their skills can be weakened by dishonest methods or self - deception.",
+          "keywords": {
+            "0": "strategy",
+            "1": "intelligence",
+            "2": "opportunity",
+            "3": "secrecy",
+            "4": "Attention"
+          },
+          "context": "Your ability to make money is linked to strategy or honesty."
+        }
+      },
+      "eightofswords": {
+        "position1": {
+          "upright": "Eight swords point to despair and frustration, and you may be afraid that financial problems won't set you free.",
+          "reversed": "The Reverse Eight Sword, despite its desire to be saved, brings out the anxiety of still being held captive, and the perception of unresolvedness makes you uneasy.",
+          "keywords": {
+            "0": "compression",
+            "1": "despair",
+            "2": "Concern",
+            "3": "freedom",
+            "4": "financial entrapment"
+          },
+          "context": "The anxiety comes from the fact that financial problems make you desperate."
+        },
+        "position2": {
+          "upright": "The Sword Eight shows you're looking for security by crossing mental boundaries, breaking beliefs is a comfort.",
+          "reversed": "The Reverse Sword Eight points to the anxiety of not being able to obtain its freedom, and the desire for security is narrowed by limited beliefs.",
+          "keywords": {
+            "0": "freedom",
+            "1": "limit",
+            "2": "security",
+            "3": "fear",
+            "4": "faith"
+          },
+          "context": "You find security by breaking mental chains."
+        },
+        "position3": {
+          "upright": "The Eight Swords indicate a tightness in the use of money and a lack of free movement.",
+          "reversed": "The Reverse Eight Swords point to fiscal constraints or liberation.",
+          "keywords": {
+            "0": "compression",
+            "1": "limit",
+            "2": "Money",
+            "3": "freedom",
+            "4": "obstacle"
+          },
+          "context": "The sense of restraint in the use of money is dominant."
+        },
+        "position4": {
+          "upright": "In the past, you may have felt limited or helpless in matters of money.",
+          "reversed": "The Reverse Eight Swords make an effort to get out of financial jams.",
+          "keywords": {
+            "0": "limit",
+            "1": "despair",
+            "2": "Money",
+            "3": "Freedom",
+            "4": "barriers"
+          },
+          "context": "In the past, there's been a problem with money."
+        },
+        "position5": {
+          "upright": "Eight Swords point to a lack of fiscal responsibility, a tightness of feeling, or a narrowness of movement.",
+          "reversed": "The Reverse Eight Swords show that there is a process of freeing financial responsibilities, getting rid of obstacles or finding solutions.",
+          "keywords": {
+            "0": "despair",
+            "1": "Restriction",
+            "2": "Freedom",
+            "3": "obstacle",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, the effects of desperation or liberation arise."
+        },
+        "position6": {
+          "upright": "Eight Swords point to mental constraints, fears, and feelings of inaction in financial plans.",
+          "reversed": "The Reverse Eight Sword shows freeing of financial plans, overcoming restrictions and gaining a new vision.",
+          "keywords": {
+            "0": "Restrict",
+            "1": "fear",
+            "2": "freedom",
+            "3": "Vision",
+            "4": "decision"
+          },
+          "context": "Mental constraints or liberalisation are effective in new financial plans."
+        },
+        "position7": {
+          "upright": "The Eight Swords indicate a sense of constraint in future financial plans, a barrier to their own beliefs, and a sense of impotence.",
+          "reversed": "The Reverse Eight Swords show the process of getting rid of borders, liberation and the discovery of new financial solutions.",
+          "keywords": {
+            "0": "Restrict",
+            "1": "fear",
+            "2": "freedom",
+            "3": "barriers",
+            "4": "faith"
+          },
+          "context": "The future financial plans will lead to limitations or liberation."
+        },
+        "position8": {
+          "upright": "The Eight Swords show that mental constraints and fears limit your abilities.",
+          "reversed": "The Reverse Eight Swords indicate that their skills can be improved by dissolving mental chains and boosting self - confidence.",
+          "keywords": {
+            "0": "limit",
+            "1": "Freedom",
+            "2": "fear",
+            "3": "mind",
+            "4": "potential"
+          },
+          "context": "Your ability to earn money is linked to surrendering to fear or freedom."
+        }
+      },
+      "nineofswords": {
+        "position1": {
+          "upright": "Nine Swords point to sleepless nights and intense anxiety, and you may be afraid that financial stress will keep your mind busy.",
+          "reversed": "The Reverse Nine Swords show the fear that you can't get rid of the anxiety and the fear that you can't get out of the nightmare cycle, and you may find it difficult to carry the mental pressure of the material burden.",
+          "keywords": {
+            "0": "insomnia",
+            "1": "Stress",
+            "2": "Concern",
+            "3": "anxiety",
+            "4": "♪ dark thoughts ♪"
+          },
+          "context": "The anxiety comes from the mental pressure of financial stress."
+        },
+        "position2": {
+          "upright": "The Sword Nine shows you seek security by calming your anxiety, and facing the facts brings peace.",
+          "reversed": "The Reverse Sword Nine points to the anxiety of nightmares and extreme fear, and the desire for safety is broken by mental unrest.",
+          "keywords": {
+            "0": "Concern",
+            "1": "fear",
+            "2": "security",
+            "3": "real",
+            "4": "mind"
+          },
+          "context": "You find security by balancing anxiety."
+        },
+        "position3": {
+          "upright": "Nine Swords point to financial concerns, anxiety and sleepless nights, and anxiety management is important.",
+          "reversed": "The Reverse Nine Swords show the process of relief and relief from financial concerns.",
+          "keywords": {
+            "0": "Concern",
+            "1": "anxiety",
+            "2": "Money",
+            "3": "nightmare",
+            "4": "Stress"
+          },
+          "context": "Tensions and stress arise in the use of money."
+        },
+        "position4": {
+          "upright": "You may have had financial concerns and sleepless nights in the past.",
+          "reversed": "The Reverse Nine Swords indicate a slow release from financial concerns.",
+          "keywords": {
+            "0": "Concern",
+            "1": "anxiety",
+            "2": "Money",
+            "3": "night",
+            "4": "Stress"
+          },
+          "context": "There were intense concerns about money in the past."
+        },
+        "position5": {
+          "upright": "Nine Swords means intense anxiety, stress, and sleeplessness about financial responsibilities.",
+          "reversed": "The Reverse Nine Swords, the ease of anxiety in financial responsibilities, indicate a more rational approach.",
+          "keywords": {
+            "0": "Concern",
+            "1": "Stress",
+            "2": "anxiety",
+            "3": "absorption",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, anxiety or calming arises."
+        },
+        "position6": {
+          "upright": "Nine Swords point to anxiety, stress, and intense concern for the future in financial plans.",
+          "reversed": "The Reverse Nine Swords show the recovery of financial plans, lower anxiety, and the light of hope.",
+          "keywords": {
+            "0": "Concern",
+            "1": "anxiety",
+            "2": "Stress",
+            "3": "Recovery",
+            "4": "hope"
+          },
+          "context": "New financial plans will determine anxiety or relief."
+        },
+        "position7": {
+          "upright": "The Nine Swords indicate that future financial plans may include anxiety, insomnia, and anxiety.",
+          "reversed": "The Reverse Nine Swords show the process of getting rid of these concerns, of seeing the facts more clearly, and of increasing inner peace.",
+          "keywords": {
+            "0": "Concern",
+            "1": "anxiety",
+            "2": "reality",
+            "3": "Freedom",
+            "4": "nightmare"
+          },
+          "context": "The future financial plans will determine anxiety or inner peace."
+        },
+        "position8": {
+          "upright": "The Nine Swords show that anxiety and insomnia can cloud their ability to make money.",
+          "reversed": "The Reverse Nine Swords indicate that their skills can be improved by dissolving anxiety and making healthier decisions in the morning clarity.",
+          "keywords": {
+            "0": "Concern",
+            "1": "insomnia",
+            "2": "fear",
+            "3": "thought",
+            "4": "balance"
+          },
+          "context": "Your ability to make money depends on anxiety or clarity."
+        }
+      },
+      "tenofswords": {
+        "position1": {
+          "upright": "The Ten Swords point to the anxiety that a whole financial cycle will collapse, the fear that everything will end and you won't be able to recover.",
+          "reversed": "The Reverse Ten Sword indicates that even the possibility of starting over might cause anxiety, that it may not be able to stand up after the financial end.",
+          "keywords": {
+            "0": "end",
+            "1": "Devastation",
+            "2": "Concern",
+            "3": "Rebirth",
+            "4": "destruction"
+          },
+          "context": "The anxiety arises from the fear of financial collapse and of starting over."
+        },
+        "position2": {
+          "upright": "The Sword Ten shows you seek security with acceptance of the end, and the end calls for peace.",
+          "reversed": "The Reverse Sword Ten points to the anxiety of losing again in the recovery process, and the desire for security is shaken by fear of closure.",
+          "keywords": {
+            "0": "end",
+            "1": "Rebirth",
+            "2": "security",
+            "3": "acceptance",
+            "4": "transformation"
+          },
+          "context": "You'll find security by accepting the end and being reborn."
+        },
+        "position3": {
+          "upright": "The Ten Swords point to the end and loss of a financial cycle.",
+          "reversed": "The Reverse Ten Swords point to recovery and fiscal restructuring.",
+          "keywords": {
+            "0": "last",
+            "1": "missing",
+            "2": "Regeneration",
+            "3": "Money",
+            "4": "end"
+          },
+          "context": "Ending and rebirth in the use of money comes forward."
+        },
+        "position4": {
+          "upright": "It shows that a financial cycle has ended painfully in the past.",
+          "reversed": "The Reverse Ten Swords point to recovery from the financial crisis and a new beginning.",
+          "keywords": {
+            "0": "end",
+            "1": "crisis",
+            "2": "Money",
+            "3": "Rebirth",
+            "4": "Recovery"
+          },
+          "context": "In the past, a financial cycle had ended."
+        },
+        "position5": {
+          "upright": "The Ten Swords point to the end of a heavy burden in financial responsibilities or the end of a difficult cycle.",
+          "reversed": "The Inverted Ten Swords demonstrate the process of resuscitation in financial responsibilities, recuperating, and making a fresh start.",
+          "keywords": {
+            "0": "last",
+            "1": "end",
+            "2": "Regeneration",
+            "3": "Recovery",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, the end or rebirth comes first."
+        },
+        "position6": {
+          "upright": "The Ten Swords point to the end of a difficult period, closure, and rebirth of financial plans.",
+          "reversed": "The Reverse Ten Swords show recovery, reconstruction and healing energy in financial plans.",
+          "keywords": {
+            "0": "end",
+            "1": "Rebirth",
+            "2": "closure",
+            "3": "Recovery",
+            "4": "solution"
+          },
+          "context": "An end or reconstruction process will be effective in new financial plans."
+        },
+        "position7": {
+          "upright": "The Ten Swords show that a future financial cycle will end, and a new beginning will come after the end.",
+          "reversed": "The Reverse Ten Swords point to the recovery process, the ability to move on to new opportunities after the end.",
+          "keywords": {
+            "0": "end",
+            "1": "Rebirth",
+            "2": "Surrender",
+            "3": "opportunity",
+            "4": "Recovery"
+          },
+          "context": "There will be an end or a recovery of future financial plans."
+        },
+        "position8": {
+          "upright": "The Ten Swords show that the end of a difficult cycle can give you a fresh start in your ability to make money.",
+          "reversed": "The Reverse Ten Swords indicate that their skills can be strengthened by leaving the old wounds behind and rebuilding.",
+          "keywords": {
+            "0": "end",
+            "1": "Regeneration",
+            "2": "difficulty",
+            "3": "balance",
+            "4": "start"
+          },
+          "context": "Your ability to make money depends on endings or restructuring."
+        }
+      },
+      "pageofswords": {
+        "position1": {
+          "upright": "The Sword Prince points to financial lack of experience and constant concern of observation, which can wear you out if you're constantly researching, but not trusting.",
+          "reversed": "The Reverse-Sword Prince shows that with false information and rumors, anxiety will increase, and you may be afraid that you will not be able to base your financial decisions on solid knowledge.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "information",
+            "2": "Concern",
+            "3": "lack of experience",
+            "4": "false information"
+          },
+          "context": "It comes from anxiety, misinformation, and lack of experience."
+        },
+        "position2": {
+          "upright": "The Prince of the Sword shows you seek security with curiosity and knowledge, and learning brings peace.",
+          "reversed": "The Reverse Sword Prince points to false information or gossip anxiety, a desire for security, a weakness when truth is lost.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "learning",
+            "2": "security",
+            "3": "information",
+            "4": "communication"
+          },
+          "context": "You'll find it with security and accuracy."
+        },
+        "position3": {
+          "upright": "The Sword Prince points to the tendency of curiosity and research in financial matters. It's important to gather information before spending.",
+          "reversed": "The Reverse Sword Prince points to reckless spending or trusting false information.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "research",
+            "2": "information",
+            "3": "Money",
+            "4": "learning"
+          },
+          "context": "In the use of money, research and information are the key."
+        },
+        "position4": {
+          "upright": "He may have shown a curious and investigative attitude in the past.",
+          "reversed": "The Reverse Sword Prince points to false financial decisions made by superficial information.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "information",
+            "2": "research",
+            "3": "Money",
+            "4": "learning"
+          },
+          "context": "In the past, there was a desire to learn in financial attitudes."
+        },
+        "position5": {
+          "upright": "The Sword Prince points to curiosity, a desire to learn, and careful observation in financial responsibilities.",
+          "reversed": "The Reverse Sword Prince shows superficiality in financial responsibilities, decisions based on gossip or lack of knowledge.",
+          "keywords": {
+            "0": "learning",
+            "1": "curiosity",
+            "2": "observation",
+            "3": "superficiality",
+            "4": "responsibilities"
+          },
+          "context": "The effects of learning or superficiality in financial responsibilities arise."
+        },
+        "position6": {
+          "upright": "The Sword Prince shows the energy of curiosity, learning and careful observation in financial plans.",
+          "reversed": "The Reverse Sword Prince points to false information, gossip or hasty judgment in financial plans.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "learning",
+            "2": "Attention",
+            "3": "observation",
+            "4": "information"
+          },
+          "context": "In new financial plans, curiosity or false information may arise."
+        },
+        "position7": {
+          "upright": "In the future, the Prince of Swords points to learning, research, and openness to new information.",
+          "reversed": "The Reverse Sword Prince shows superficial information, hasty decisions or misdirections caused by gossip.",
+          "keywords": {
+            "0": "learning",
+            "1": "curiosity",
+            "2": "information",
+            "3": "observation",
+            "4": "Verification"
+          },
+          "context": "In future financial plans, learning or superficiality will be effective."
+        },
+        "position8": {
+          "upright": "The Sword Prince shows that the desire to learn, observation, and curiosity have improved their ability to earn money.",
+          "reversed": "The Reverse Sword Prince points out that his skills can be weakened by recklessness, misinformation, or hasty decisions.",
+          "keywords": {
+            "0": "learning",
+            "1": "curiosity",
+            "2": "observation",
+            "3": "intelligence",
+            "4": "communication"
+          },
+          "context": "Your ability to earn money is linked in learning or haste."
+        }
+      },
+      "knightofswords": {
+        "position1": {
+          "upright": "The Knight of the Sword points to the anxiety of hasty decisions and sudden actions, and the pressure to take quick steps in material matters can wear you out.",
+          "reversed": "The Reverse-Sword Knight reveals concern that rashness will cause chaos, and you may be afraid that the wrong moves will cause great damage.",
+          "keywords": {
+            "0": "Hurry",
+            "1": "decision",
+            "2": "Concern",
+            "3": "speed",
+            "4": "Chaos"
+          },
+          "context": "It comes from anxiety, hasty decisions, and pressure to act quickly."
+        },
+        "position2": {
+          "upright": "The Knight of the Sword shows that you seek security with swift determination and courage.",
+          "reversed": "The Reverse Sword Knight points to the anxiety of haste and hardness, the desire for safety weakens without thinking.",
+          "keywords": {
+            "0": "Courage",
+            "1": "speed",
+            "2": "security",
+            "3": "decision",
+            "4": "mind"
+          },
+          "context": "You'll find security in quick but conscious steps."
+        },
+        "position3": {
+          "upright": "The Knight of the Sword points to sudden and rapid spending decisions.",
+          "reversed": "The Reverse Sword Knight shows that hasty steps can cause financial damage.",
+          "keywords": {
+            "0": "speed",
+            "1": "risk",
+            "2": "Money",
+            "3": "Sudden decision",
+            "4": "Courage"
+          },
+          "context": "In the use of money, rash decisions can come to the forefront."
+        },
+        "position4": {
+          "upright": "In the past, financial decisions may have been hasty or bold.",
+          "reversed": "The Reverse Sword Knight shows the damage of reckless financial steps.",
+          "keywords": {
+            "0": "Hurry",
+            "1": "Courage",
+            "2": "decision",
+            "3": "Money",
+            "4": "risk"
+          },
+          "context": "In the past, financial decisions had been rushed forward."
+        },
+        "position5": {
+          "upright": "The Knight of the Sword points to a swift and decisive approach to financial responsibilities.",
+          "reversed": "The Reverse Sword Knight points to rash, aggressive or unplanned decisions in financial responsibilities.",
+          "keywords": {
+            "0": "speed",
+            "1": "determination",
+            "2": "Courage",
+            "3": "In a hurry.",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, courage or hastyness comes first."
+        },
+        "position6": {
+          "upright": "The Knight of the Sword points to swift action, determination, and bold initiatives in financial plans.",
+          "reversed": "The Reverse Sword Knight points out the risk of hasty financial plans, of impatientness or misdirection.",
+          "keywords": {
+            "0": "speed",
+            "1": "determination",
+            "2": "Courage",
+            "3": "Hurry",
+            "4": "risk"
+          },
+          "context": "The new financial plans will determine speed or haste."
+        },
+        "position7": {
+          "upright": "The Knight of the Sword points to quick decisions, bold initiatives, and strategic breakthroughs in the future.",
+          "reversed": "Reverse Sword Knight, rashness, impatientness, and impulsive action can do harm.",
+          "keywords": {
+            "0": "speed",
+            "1": "strategy",
+            "2": "decision",
+            "3": "Courage",
+            "4": "Progress"
+          },
+          "context": "Courage or haste will be decisive in future financial plans."
+        },
+        "position8": {
+          "upright": "The Knight of the Sword shows that quick thinking, determination, and initiative strengthen their ability to make money.",
+          "reversed": "The Reverse Sword Knight points out that hasty, impatient, or harsh communication can weaken opportunities.",
+          "keywords": {
+            "0": "speed",
+            "1": "determination",
+            "2": "Initiative",
+            "3": "strategy"
+          }
+        }
+      }
+    }
+  }
+}

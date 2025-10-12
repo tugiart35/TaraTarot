@@ -1,0 +1,774 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "thelovers": {
+        "position8": {
+          "upright": "Lovers, external influences guide you through relationships, partnerships, or important choices.",
+          "reversed": "Reverse lovers can bring external effects, incompatibility, wrong choices, or indecisive energy.",
+          "keywords": {
+            "0": "relationship",
+            "1": "partnership",
+            "2": "selection",
+            "3": "compatibility",
+            "4": "decision"
+          },
+          "context": "It affects you through external effects, choices or relationships."
+        },
+        "position9": {
+          "upright": "Lovers, you may have a fear of making the wrong choice, of being incompatible, or of being attached.",
+          "reversed": "Reverse lovers, separation, incompatibility, or the fear of wrong judgment can affect you.",
+          "keywords": {
+            "0": "relationship",
+            "1": "selection",
+            "2": "compatibility",
+            "3": "connection",
+            "4": "anxiety"
+          },
+          "context": "Your fears are linked to wrong choices or incompatible relationships."
+        }
+      },
+      "thechariot": {
+        "position1": {
+          "upright": "The Chariot may lack direction, control or determination at the center of the problem.",
+          "reversed": "The Reverse Chariot, the mess, the lack of control or focus on the target could be the source of the problem.",
+          "keywords": {
+            "0": "control",
+            "1": "will",
+            "2": "determination",
+            "3": "direction",
+            "4": "Question"
+          },
+          "context": "The problem needs control and navigation at its center."
+        },
+        "position10": {
+          "upright": "The Chariot shows that you have decisive progress, victory, and control as a result of the incident.",
+          "reversed": "The Reverse Chariot may result in loss of direction, failure or lack of control.",
+          "keywords": {
+            "0": "victory",
+            "1": "control",
+            "2": "Progress",
+            "3": "success",
+            "4": "determination"
+          },
+          "context": "The result may be success or loss of control."
+        },
+        "position2": {
+          "upright": "The Chariot, the obstacle may have a lack of direction, loss of control or determination, and when it can't focus on the target, progress remains.",
+          "reversed": "The Reverse Chariot, the chaos, the overzealous, or the mess, may be blocking your path.",
+          "keywords": {
+            "0": "control",
+            "1": "will",
+            "2": "direction",
+            "3": "Chaos",
+            "4": "obstacle"
+          },
+          "context": "The obstacle stems from a lack of clear direction and determination."
+        },
+        "position3": {
+          "upright": "The Chariot may have a subconscious history of disorientation, lack of control, or too much ambition.",
+          "reversed": "The Reverse Chariot may have settled in the subconscious of the past, disorientation, loss of control or failure to find its way.",
+          "keywords": {
+            "0": "control",
+            "1": "will",
+            "2": "ambition",
+            "3": "directionlessness",
+            "4": "subconscious"
+          },
+          "context": "In the past, lack of direction and control problems may have been the basis for their problems today."
+        },
+        "position4": {
+          "upright": "The Chariot says that its potential is to strengthen its will, to take control, and to move forward with determination.",
+          "reversed": "Reverse Chariot, to save your potential, you need to stay out of direction and out of mess.",
+          "keywords": {
+            "0": "will",
+            "1": "control",
+            "2": "determination",
+            "3": "target",
+            "4": "potential"
+          },
+          "context": "Your best potential is to focus on your goals with will."
+        },
+        "position5": {
+          "upright": "In recent times, the Chariot may have strengthened your will, focused on your goals, and you may have traveled with determination.",
+          "reversed": "You may have experienced reverse chariot, disorientation, loss of control, or disorganized energy in the recent past.",
+          "keywords": {
+            "0": "will",
+            "1": "target",
+            "2": "determination",
+            "3": "control",
+            "4": "Progress"
+          },
+          "context": "Your recent history may have developed through focus or focuslessness."
+        },
+        "position6": {
+          "upright": "In the near future, the Chariot will strengthen your will, focus on your goals, and drive with determination.",
+          "reversed": "Reverse Chariots, in the near future, you may experience loss of control, disorientation, or disorganized energy.",
+          "keywords": {
+            "0": "will",
+            "1": "determination",
+            "2": "target",
+            "3": "control",
+            "4": "Progress"
+          },
+          "context": "Your near future will depend on the balance of will and control."
+        },
+        "position7": {
+          "upright": "Chariot, right now, you're using your will to move decisively towards your goals.",
+          "reversed": "Reverse Chariot, you may be experiencing disorientation, disorientation, or loss of control.",
+          "keywords": {
+            "0": "will",
+            "1": "determination",
+            "2": "control",
+            "3": "target",
+            "4": "Progress"
+          },
+          "context": "Your current situation is based on the balance of will and control."
+        },
+        "position8": {
+          "upright": "Chariot, external effects may lead you to progress, focus on the target, and success.",
+          "reversed": "Reverse Chariot, external effects can contain disorganization, disorientation, or loss of control energy.",
+          "keywords": {
+            "0": "Progress",
+            "1": "target",
+            "2": "will",
+            "3": "control",
+            "4": "success"
+          },
+          "context": "External effects can support or slow your progress."
+        },
+        "position9": {
+          "upright": "The Chariot, you can carry the fear of losing control, of not being able to find its way, of not being able to move forward.",
+          "reversed": "Reverse Chariot, failure, loss of motivation, or disorientation could cause anxiety.",
+          "keywords": {
+            "0": "control",
+            "1": "Progress",
+            "2": "direction",
+            "3": "success",
+            "4": "anxiety"
+          },
+          "context": "Your fears are about losing control or not moving forward."
+        }
+      },
+      "strength": {
+        "position1": {
+          "upright": "Power may need to face patience, self-esteem, or fear at the heart of the problem.",
+          "reversed": "Reverse Power, lack of self-esteem, succumbing to fear, or impatientness may be the source of the problem.",
+          "keywords": {
+            "0": "power",
+            "1": "Courage",
+            "2": "self-confidence",
+            "3": "Patience",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is to use courage and face fears."
+        },
+        "position10": {
+          "upright": "Power shows that patience, courage, and inner endurance can overcome problems as a result.",
+          "reversed": "Reverse Power may result in a lack of patience, loss of self - confidence, or anger management problem.",
+          "keywords": {
+            "0": "Courage",
+            "1": "Patience",
+            "2": "balance",
+            "3": "endurance",
+            "4": "Self - confidence"
+          },
+          "context": "The result may be to stand strong or to lose patience."
+        },
+        "position2": {
+          "upright": "Power, the obstacle may be impatient, lack of self-esteem, or internal fears, but when you don't use your courage, the problem grows.",
+          "reversed": "The Reverse Power may be the source of the obstacle to succumbing to fear, loss of control, or anger.",
+          "keywords": {
+            "0": "Courage",
+            "1": "self-confidence",
+            "2": "fear",
+            "3": "Patience",
+            "4": "obstacle"
+          },
+          "context": "The obstacle comes from internal fears and a lack of self-esteem."
+        },
+        "position3": {
+          "upright": "Power, subconsciously, can't face the fears you've experienced in the past, can be self-esteem issues or impatientness.",
+          "reversed": "The Reverse Force may have settled in the subconscious of the past, the loss of courage, the outbursts of anger, or the loss of control.",
+          "keywords": {
+            "0": "Courage",
+            "1": "self-confidence",
+            "2": "fear",
+            "3": "I can't wait.",
+            "4": "subconscious"
+          },
+          "context": "Fears of the past and self-esteem may be clouding your present condition."
+        },
+        "position4": {
+          "upright": "Power shows that its potential is to overcome challenges with patience, courage, and inner balance.",
+          "reversed": "When using your potential, reverse power, you must avoid impatience, anger, or insecurities.",
+          "keywords": {
+            "0": "Courage",
+            "1": "Patience",
+            "2": "balance",
+            "3": "Trust",
+            "4": "potential"
+          },
+          "context": "Your best potential is to move forward with patience and courage."
+        },
+        "position5": {
+          "upright": "In the near past, you may have shown courage, patiently advanced, and found inner balance.",
+          "reversed": "Inverse Power, you may have recently experienced insecurity, loss of anger control, or lack of courage.",
+          "keywords": {
+            "0": "Courage",
+            "1": "balance",
+            "2": "Patience",
+            "3": "Trust",
+            "4": "will"
+          },
+          "context": "Your recent past may have been determined by experience of courage or insecurity."
+        },
+        "position6": {
+          "upright": "In the near future, you will show courage, progress patiently, and influence your environment with your inner balance.",
+          "reversed": "In the near future, you may experience insecurity, outbursts of anger, or lack of patience.",
+          "keywords": {
+            "0": "Courage",
+            "1": "balance",
+            "2": "Patience",
+            "3": "Trust",
+            "4": "will"
+          },
+          "context": "Your near future can be determined by courage and patience or insecurity."
+        },
+        "position7": {
+          "upright": "Power, you're acting with courage, patience, and inner stability, and even in difficult situations, you remain calm.",
+          "reversed": "Reverse Power, right now, the insecurity, the insufferability, or the outbursts of anger can force you.",
+          "keywords": {
+            "0": "Courage",
+            "1": "Patience",
+            "2": "balance",
+            "3": "Trust",
+            "4": "will"
+          },
+          "context": "Your current situation is shaped by courage or insecurity."
+        },
+        "position8": {
+          "upright": "Power, external effects may encourage you to have courage, patience, and endurance.",
+          "reversed": "Reverse Power, external effects can bring in insecurity, anger, or impatience.",
+          "keywords": {
+            "0": "Courage",
+            "1": "Patience",
+            "2": "endurance",
+            "3": "balance",
+            "4": "Trust"
+          },
+          "context": "It affects you through external effects, courage, or insecurities."
+        },
+        "position9": {
+          "upright": "You may have a fear of being strong, impatient, weak, or unable to control your emotions.",
+          "reversed": "Reverse Power, insecurities, outbursts of anger, or impatience may affect you.",
+          "keywords": {
+            "0": "Courage",
+            "1": "Patience",
+            "2": "balance",
+            "3": "Self - confidence",
+            "4": "Concern"
+          },
+          "context": "Your fears are related to losing your strength or losing your patience."
+        }
+      },
+      "thehermit": {
+        "position1": {
+          "upright": "The melt may be the center of the problem, the need for introvertion, loneliness, or the search for the right guide.",
+          "reversed": "Inverted, extreme loneliness, closeness, or lack of guidance may be the source of the problem.",
+          "keywords": {
+            "0": "loneliness",
+            "1": "Introduction",
+            "2": "wisdom",
+            "3": "search",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is the need for internal guidance."
+        },
+        "position10": {
+          "upright": "As a result, you can gain inner awareness, wisdom, and guidance from yourself alone.",
+          "reversed": "Inverted, the result may be extreme loneliness, isolation, or misdirection.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "search",
+            "2": "guidance",
+            "3": "loneliness",
+            "4": "enlightenment"
+          },
+          "context": "The result may be finding your inner light or retreating to loneliness."
+        },
+        "position2": {
+          "upright": "Melish, your obstacle may be to be overshut down, to take refuge in loneliness, or not be guided, and it's exhausting trying to solve the problem on your own.",
+          "reversed": "Reverse Ermit, insulation, avoiding guidance, or getting away from the world may be expanding your problem.",
+          "keywords": {
+            "0": "loneliness",
+            "1": "guidance",
+            "2": "Introduction",
+            "3": "Isolation",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born without being too lonely and avoiding support."
+        },
+        "position3": {
+          "upright": "Melted, subconsciously, there may be extreme loneliness in the past, closure, or failure to find the right guide.",
+          "reversed": "Reverse Ermit, isolation, lack of guidance, or getting away from society may have moved from the past.",
+          "keywords": {
+            "0": "loneliness",
+            "1": "guidance",
+            "2": "Isolation",
+            "3": "wisdom",
+            "4": "subconscious"
+          },
+          "context": "The loneliness and lack of guidance in the past may be the basis of today's problems."
+        },
+        "position4": {
+          "upright": "The melt shows that its potential comes from inner wisdom, awareness born of loneliness, and lighting its own path.",
+          "reversed": "Inverted, you don't have to be isolated, you have to share your inner knowledge with the world to show your potential.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "loneliness",
+            "2": "enlightenment",
+            "3": "guidance",
+            "4": "potential"
+          },
+          "context": "Your best potential is to explore and share your own inner light."
+        },
+        "position5": {
+          "upright": "You may have recently gone on an internal journey, been alone, or turned to retreat in search of wisdom.",
+          "reversed": "Inverted, you may have recently experienced extreme isolation, lack of guidance, or a lack of loneliness.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "loneliness",
+            "2": "guidance",
+            "3": "internal search",
+            "4": "Abstract"
+          },
+          "context": "Your recent past may have been shaped by inner journeys or experience of loneliness."
+        },
+        "position6": {
+          "upright": "In the near future, you can embark on an inner journey, be alone, seek wisdom, or find your own light.",
+          "reversed": "Inverted, you may experience extreme loneliness, lack of guidance or isolation in the near future.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "internal search",
+            "2": "loneliness",
+            "3": "guidance",
+            "4": "awareness"
+          },
+          "context": "Your near future will be shaped by inner journey or loneliness."
+        },
+        "position7": {
+          "upright": "Ermi, you could be on an internal journey right now, trying to discover yourself by being alone.",
+          "reversed": "Reverse Ermi, right now you can be pushed by extreme loneliness, lack of guidance, or introvertion.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "internal search",
+            "2": "loneliness",
+            "3": "guidance",
+            "4": "awareness"
+          },
+          "context": "Your current situation is shaped by internal exploration or loneliness."
+        },
+        "position8": {
+          "upright": "Melted, external effects may trigger the need for introvertion, wisdom, and loneliness.",
+          "reversed": "Inverted, external effects can lead to extreme isolation, isolation, or false guidance.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "search",
+            "2": "loneliness",
+            "3": "guidance",
+            "4": "Introduction"
+          },
+          "context": "It affects you through external influences, wisdom, or loneliness."
+        },
+        "position9": {
+          "upright": "You may experience the fear of being alone, of being without guidance, of being lost on an inner journey.",
+          "reversed": "Reverse Ermit, isolation, extreme loneliness, or the fear of misguided guidance may affect you.",
+          "keywords": {
+            "0": "loneliness",
+            "1": "wisdom",
+            "2": "guidance",
+            "3": "search",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on loneliness or misdirection."
+        }
+      },
+      "thewheeloffortune": {
+        "position1": {
+          "upright": "The Wheel of Destiny may be at the center of the problem of luck, cycles and uncontrollable events.",
+          "reversed": "The Reverse Destiny Wheel, resisting misfortune or change, could be the source of the problem.",
+          "keywords": {
+            "0": "Fate",
+            "1": "Luck",
+            "2": "cycle",
+            "3": "change",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is the cycles of fate and the changes that are out of control."
+        },
+        "position10": {
+          "upright": "The Wheel of Destiny may be the result of a turn of fortune, a turn of fortune, and the beginning of positive changes.",
+          "reversed": "The Reverse Destiny Wheel could be repeated misfortunes, bad timing or out of control.",
+          "keywords": {
+            "0": "Fate",
+            "1": "Luck",
+            "2": "change",
+            "3": "cycle",
+            "4": "opportunity"
+          },
+          "context": "The result could be a chance to open up or get stuck in a negative loop."
+        },
+        "position2": {
+          "upright": "The Wheel of Destiny may be resisting out-of-control events, luck factor or change, but you're having trouble finding out about the cycles.",
+          "reversed": "The Reverse Destiny Wheel may be an obstacle to misfortune, wrong timing, or repeated negative cycles.",
+          "keywords": {
+            "0": "Fate",
+            "1": "cycle",
+            "2": "Luck",
+            "3": "timing",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is that you can't get out of the loops and you can't accept change."
+        },
+        "position3": {
+          "upright": "The Wheel of Destiny, in the subconscious, may have been effective in the past, in the past, by chance factors, by out-of-control changes or cyclical repetitions.",
+          "reversed": "Reverse Wheel of Destiny, unfortunate, wrong timing, or repeated negative loops may have entered his subconscious.",
+          "keywords": {
+            "0": "Fate",
+            "1": "cycle",
+            "2": "It's unfortunate.",
+            "3": "timing",
+            "4": "subconscious"
+          },
+          "context": "In the past, misfortune and cycles can be the basis for your problems today."
+        },
+        "position4": {
+          "upright": "The Wheel of Destiny shows that its potential is to take advantage of cycles, adapt to change, and seize opportunities.",
+          "reversed": "Reverse Wheel of Destiny, you need to get away from the fear of misfortune and the obsession of control that limits your potential.",
+          "keywords": {
+            "0": "Fate",
+            "1": "opportunity",
+            "2": "cycle",
+            "3": "compatibility",
+            "4": "potential"
+          },
+          "context": "Your best potential is to recognize and evaluate opportunities."
+        },
+        "position5": {
+          "upright": "The Wheel of Destiny may have been a matter of sudden changes in your life, cycles of fate, or opportunities.",
+          "reversed": "The Reverse Destiny Wheel, in the recent past, you may have had bad luck, wrong timing, or repeating loops.",
+          "keywords": {
+            "0": "Fate",
+            "1": "opportunity",
+            "2": "change",
+            "3": "timing",
+            "4": "cycle"
+          },
+          "context": "Your recent history may have developed through lucky or unlucky cycles."
+        },
+        "position6": {
+          "upright": "The Wheel of Destiny, in the near future, the sudden changes, the return of fate, or the lucky opportunity may be waiting for you.",
+          "reversed": "The Reverse Destiny Wheel, in the near future, you may experience bad luck, wrong timing, or repeating loops.",
+          "keywords": {
+            "0": "Fate",
+            "1": "Luck",
+            "2": "cycle",
+            "3": "opportunity",
+            "4": "change"
+          },
+          "context": "The near future will be determined by the positive or negative aspects of the cycles."
+        },
+        "position7": {
+          "upright": "The Wheel of Destiny may be coming out of your life right now, with significant changes, cycles, and lucky opportunities.",
+          "reversed": "Reverse Wheel of Destiny, you could be in bad luck, wrong timing or repeating loops right now.",
+          "keywords": {
+            "0": "Fate",
+            "1": "Luck",
+            "2": "cycle",
+            "3": "opportunity",
+            "4": "change"
+          },
+          "context": "Your current situation is shaped by positive or negative cycles."
+        },
+        "position8": {
+          "upright": "The Wheel of Destiny can bring unexpected chances, opportunities, or cyclical changes to your life.",
+          "reversed": "The Reverse Destiny Wheel, the outside effects can force you with bad luck, bad timing or repeating loops.",
+          "keywords": {
+            "0": "Fate",
+            "1": "Luck",
+            "2": "change",
+            "3": "opportunity",
+            "4": "cycle"
+          },
+          "context": "It affects you through external effects, lucky opportunities, or negative cycles."
+        },
+        "position9": {
+          "upright": "You can carry the Wheel of Destiny, the fear of misfortune, of out of control, or of a change of fortune.",
+          "reversed": "The Reverse-destiny Wheel can cause the anxiety of loops, repeated misfortunes, or bad timing.",
+          "keywords": {
+            "0": "Fate",
+            "1": "Luck",
+            "2": "change",
+            "3": "cycle",
+            "4": "Concern"
+          },
+          "context": "It's about fear, or chance, or not being able to get out of the loops."
+        }
+      },
+      "justice": {
+        "position1": {
+          "upright": "Justice may be at the center of the problem - honesty, fair decisions, and the search for balance.",
+          "reversed": "Reverse Justice, misjudgment, injustice or honesty may be the source of the problem.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "decision",
+            "3": "responsibilities",
+            "4": "Question"
+          },
+          "context": "At the center of the problem is the pursuit of justice and the need to make the right decision."
+        },
+        "position10": {
+          "upright": "Justice shows that righteousness, honesty, and right decisions will be balanced as a result of the event.",
+          "reversed": "Reverse Justice can result in injustice, wrong decisions, or aberration of responsibility.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "decision",
+            "3": "responsibilities",
+            "4": "real"
+          },
+          "context": "The result may be the pursuit of justice or facing injustice."
+        },
+        "position2": {
+          "upright": "There may be justice, obstruction of integrity, injustice or wrong decisions, and you find it difficult to balance between rights and responsibility.",
+          "reversed": "Reverse Justice, injustice, misunderstandings, or not taking responsibility may be an obstacle.",
+          "keywords": {
+            "0": "justice",
+            "1": "responsibilities",
+            "2": "balance",
+            "3": "decision",
+            "4": "obstacle"
+          },
+          "context": "The obstacle stems from failing to make a fair decision and avoiding responsibilities."
+        },
+        "position3": {
+          "upright": "Justice can be subconsciously unfair in the past, wrong decisions or unstable situations.",
+          "reversed": "Reverse Justice, not being honest, avoiding misunderstandings or responsibility, may have settled in your subconscious.",
+          "keywords": {
+            "0": "justice",
+            "1": "decision",
+            "2": "balance",
+            "3": "injustice",
+            "4": "subconscious"
+          },
+          "context": "The injustices of the past may be clouding today's problems."
+        },
+        "position4": {
+          "upright": "Justice shows that its potential is to make honest, fair decisions and balance.",
+          "reversed": "Reverse Justice may be avoiding biased thoughts and responsibility that weaken your potential.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "decision",
+            "3": "Truth",
+            "4": "potential"
+          },
+          "context": "Your best potential is to make fair and balanced choices."
+        },
+        "position5": {
+          "upright": "In the recent past, you may have made a fair decision, uncovered the truth, or balanced the balance.",
+          "reversed": "In reverse justice, you may have been wronged in the past, erred, or deviated from righteousness.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "decision",
+            "3": "Honesty",
+            "4": "real"
+          },
+          "context": "Your recent past may have been determined by unjust or unfair circumstances."
+        },
+        "position6": {
+          "upright": "In the near future, there will be a fair decision, balance, or opportunity to learn the truth.",
+          "reversed": "In reverse justice, in the near future, you may experience misunderstandings, injustice, or instability.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "real",
+            "3": "decision",
+            "4": "Honesty"
+          },
+          "context": "Your near future can be shaped by fair or unfair decisions."
+        },
+        "position7": {
+          "upright": "Justice, right now, is the process of finding balance in your life, of making fair decisions and facing facts.",
+          "reversed": "Reverse Justice, right now, misunderstandings, injustice or imbalance may be pushing you.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "real",
+            "3": "decision",
+            "4": "Honesty"
+          },
+          "context": "Your current situation is shaped by unfair or unfair decisions."
+        },
+        "position8": {
+          "upright": "Justice, external influences offer you fair decisions, objective assessments, or balancing energy.",
+          "reversed": "Reverse Justice, external influences can lead to injustice, misjudgment, or imbalance.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "decision",
+            "3": "real",
+            "4": "Honesty"
+          },
+          "context": "It affects you with external influences, fair evaluations, or injustice."
+        },
+        "position9": {
+          "upright": "You may experience fear of justice, injustice, misjudgment, or disorientation.",
+          "reversed": "The fear of reverse justice, injustice, abuse, or running away from responsibility may affect you.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "decision",
+            "3": "real",
+            "4": "Concern"
+          },
+          "context": "Your fears are linked to being judged or wronged."
+        }
+      },
+      "thehangedman": {
+        "position1": {
+          "upright": "The hanged man may need to change perspective or surrender at the center of the problem.",
+          "reversed": "The Inverse Hanging Man may be the source of the problem of resistance, indecisive or unwillingness.",
+          "keywords": {
+            "0": "From a point of view",
+            "1": "Surrender",
+            "2": "awareness",
+            "3": "balance",
+            "4": "Question"
+          },
+          "context": "The problem needs to be looked at from a different angle at the center."
+        },
+        "position10": {
+          "upright": "The Hanged Man may be the result of gaining a new perspective, surrender and acceptance.",
+          "reversed": "The Inverted Hanger may result in reluctance, stability, or futile sacrifice.",
+          "keywords": {
+            "0": "From a point of view",
+            "1": "Surrender",
+            "2": "sacrifice",
+            "3": "awareness",
+            "4": "pause"
+          },
+          "context": "The result may be to gain a new look or to remain stable."
+        },
+        "position2": {
+          "upright": "Hanged Adam, it may be not changing the point of view of the obstacle, running from surrender, or getting stuck in a spot.",
+          "reversed": "The Reverse Hanging Man may be an obstacle to stubbornness, resistance, or inability to give up.",
+          "keywords": {
+            "0": "From a point of view",
+            "1": "Surrender",
+            "2": "stubborn",
+            "3": "eclipse",
+            "4": "obstacle"
+          },
+          "context": "The obstacle stems from not accepting a different perspective."
+        },
+        "position3": {
+          "upright": "The Hanged Man may be subconsciously avoiding surrender in the past, ignoring different viewpoints, or experiencing obstruction.",
+          "reversed": "Inverted Man, stubbornness, inability to give up or resist may have settled in your subconscious.",
+          "keywords": {
+            "0": "From a point of view",
+            "1": "Surrender",
+            "2": "stubborn",
+            "3": "resistance",
+            "4": "subconscious"
+          },
+          "context": "Not accepting a different perspective in the past can be the basis for today's problems."
+        },
+        "position4": {
+          "upright": "The Hanged Man shows that his potential is to gain a different perspective, show surrender, and develop new insights.",
+          "reversed": "The Inverted Hanger may be stubbornness, resistance, and narrow vision that limits its potential.",
+          "keywords": {
+            "0": "Surrender",
+            "1": "From a point of view",
+            "2": "acceptance",
+            "3": "learning",
+            "4": "potential"
+          },
+          "context": "Your best potential comes from learning from different perspectives."
+        },
+        "position5": {
+          "upright": "Hanged Adam, you may have changed your perspective recently, made a sacrifice, or gained a new understanding.",
+          "reversed": "Inverse Hanging Man, you may have experienced stubbornness, resistance, or incapacity in the recent past.",
+          "keywords": {
+            "0": "From a point of view",
+            "1": "Surrender",
+            "2": "sacrifice",
+            "3": "Agreed",
+            "4": "learning"
+          },
+          "context": "Your recent past may have been shaped by changes in perspective or resistance."
+        },
+        "position6": {
+          "upright": "Hanged Adam, in the near future, you will gain a different perspective, make sacrifices, or develop a new understanding.",
+          "reversed": "In the near future you may experience stubbornness, resistance, or incapacity.",
+          "keywords": {
+            "0": "From a point of view",
+            "1": "Surrender",
+            "2": "sacrifice",
+            "3": "awareness",
+            "4": "learning"
+          },
+          "context": "The near future will be shaped by new perspectives or resistance."
+        },
+        "position7": {
+          "upright": "Hanged Adam, right now, you're getting a different perspective, making sacrifices, or waiting.",
+          "reversed": "Inverted Man, right now, resistance, stubbornness, or a lack of surrender may force you.",
+          "keywords": {
+            "0": "From a point of view",
+            "1": "Surrender",
+            "2": "sacrifice",
+            "3": "awareness",
+            "4": "learning"
+          },
+          "context": "Your current situation is shaped by a new perspective or resistance."
+        },
+        "position8": {
+          "upright": "Hanged Adam, the outside effects may encourage you to wait, gain a different perspective, or make sacrifices.",
+          "reversed": "Inverted Man, external effects can force you with stubbornness, resistance, or a lack of surrender.",
+          "keywords": {
+            "0": "From a point of view",
+            "1": "don't wait.",
+            "2": "sacrifice",
+            "3": "Surrender",
+            "4": "awareness"
+          },
+          "context": "The external effects affect you with a new perspective or resistance."
+        },
+        "position9": {
+          "upright": "Hanged Man, you may have a fear of giving up control, uncertainty, or sacrifice.",
+          "reversed": "The Man hanging upside down can create a fear of inaction, reluctance, or false sacrifice.",
+          "keywords": {
+            "0": "sacrifice",
+            "1": "don't wait.",
+            "2": "Surrender",
+            "3": "uncertainty",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on waiting or surrendering."
+        }
+      },
+      "death": {
+        "position1": {
+          "upright": "Death may need a radical transformation, closure, or renewal at the heart of the problem.",
+          "reversed": "Reverse Death may be the source of the problem if you refuse to resist or abandon change.",
+          "keywords": {
+            "0": "transformation",
+            "1": "end"
+          }
+        }
+      }
+    }
+  }
+}

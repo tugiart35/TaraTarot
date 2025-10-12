@@ -1,0 +1,782 @@
+{
+  "money": {
+    "meanings": {
+      "sevenofcups": {
+        "position4": {
+          "keywords": [
+            null,
+            null,
+            null,
+            null,
+            "nestabilnost"
+          ],
+          "context": "U prošlosti su snovi i obilje opcija bili istaknuti u finansijskim stavovima."
+        },
+        "position5": {
+          "upright": "Sedam šoljica ukazuje na previše izbora ili zbrke u finansijskim odgovornostima. Može se teško odlučiti.",
+          "reversed": "Pretvorenih sedam šoljica ukazuje na pojašnjenje finansijskih odgovornosti i postavke prioriteta.",
+          "keywords": [
+            "izbor",
+            "nestabilnost",
+            "pojašnjenje",
+            "prioritet",
+            "odgovornost"
+          ],
+          "context": "Opecijalnost ili pojašnjenje u vezi sa finansijskim odgovornostima dolazi do izražaja."
+        },
+        "position6": {
+          "upright": "Sedam šoljica ukazuje da postoji mnogo opcija i snova u finansijskim planovima. Važno je postaviti jasne ciljeve.",
+          "reversed": "Preokrećeno sedam šoljica ukazuje na proces donošenja realnih izbora i fokusiranje na finansijske planove.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "cilj",
+            "oštrina",
+            "vizija"
+          ],
+          "context": "Potrebno je postaviti jasne ciljeve u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Sedam šoljica ukazuje da će se mnoge finansijske mogućnosti predstaviti u budućnosti, ali je potrebna jasnoća kada birate.",
+          "reversed": "Preokrećeno sedam šoljica signalizira kraj zbrke i proces jasnoće u finansijskim planovima.",
+          "keywords": [
+            "prilika",
+            "snova",
+            "glasati",
+            "oštrina",
+            "vizija"
+          ],
+          "context": "Obilje ili pojašnjenje biće presudno u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Sedam šoljica ukazuje da višestruke mogućnosti, snovi i vizije podržavaju sposobnosti donošenja novca. Ali jasan izbor je važan.",
+          "reversed": "Invertirani sedam šoljica ukazuje da se mogućnosti mogu izgubiti zbog zabluda ili neodlučnosti.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "vizija",
+            "nestabilnost",
+            "oštrina"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa pojašnjenjem ili raspadanjem snova."
+        }
+      },
+      "eightofcups": {
+        "position1": {
+          "upright": "Osam šoljica ukazuje na anksioznost o napuštanju i ostavljajući iza sebe. Možda ćete se plašiti da morate poremetiti svoj finansijski poredak.",
+          "reversed": "Okolište osam šoljica otkriva tjeskobu da ne bude u stanju da se pusti i zaglavi u istom ciklusu. Ne mogu da napreduju finansijski uzrokuje nemiri.",
+          "keywords": [
+            "izdanje",
+            "anksioznost",
+            "napustiti",
+            "petlja",
+            "materijalni nalog"
+          ],
+          "context": "Anksioznost proizilazi iz nemogućnosti da se pusti ili napusti stari materijal."
+        },
+        "position2": {
+          "upright": "Osam šoljica pokazuje da tražite sigurnost odabirom značajnih staza. Puštanje starog donošenja mira.",
+          "reversed": "Osvećeno osam šoljica ukazuje na strah od razdvajanja i anksioznosti o stasisu. Želja za bezbednošću je zasjenjena nesposobnost napretka.",
+          "keywords": [
+            "odlazak",
+            "značenje",
+            "sigurnost",
+            "putovanje",
+            "regeneracija"
+          ],
+          "context": "Smatrate sigurnost u smislenim izborima i novim načinima."
+        },
+        "position3": {
+          "upright": "Osam šoljica pokazuje da se odseli od nezadovoljstva i tražeći nove načine korišćenja novca. Transformacija materijala počinje.",
+          "reversed": "Otkriveni osam šoljica pokazuje povratak na stare navike potrošnje ili imati problema sa puštanjem.",
+          "keywords": [
+            "nezadovoljstvo",
+            "novi pravac",
+            "novac",
+            "pobjeći",
+            "transformacija"
+          ],
+          "context": "Pretraga za nove načine korišćenja novca dolazi do izražaja."
+        },
+        "position4": {
+          "upright": "Možda ste odlučili da ostavite neke finansijske situacije iza prošlosti.",
+          "reversed": "Otkriveni osam šoljica pokazuje da izbegavaju potrebne promene.",
+          "keywords": [
+            "odvajanje",
+            "promeniti",
+            "odluka",
+            "novac",
+            "napredak"
+          ],
+          "context": "U prošlosti je bilo neko napuštanje u finansijskim stavovima."
+        },
+        "position5": {
+          "upright": "Osam šoljica ukazuje na svestan potez od nekih finansijskih odgovornosti i potrage za novim pravcem.",
+          "reversed": "Otkriveno osam šoljica ukazuje na nemogućnost odvojenosti od finansijskih odgovornosti ili poteškoća u prepuštanju prošlih tereta.",
+          "keywords": [
+            "izdanje",
+            "odmicali se",
+            "novi pravac",
+            "Nemogućnost razbijanja",
+            "odgovornost"
+          ],
+          "context": "Učinak prepuštanja ili zavisi od finansijskih odgovornosti dolazi do izražaja."
+        },
+        "position6": {
+          "upright": "Osam šoljica ukazuje na davanje starih navika u finansijskim planovima i krećući se ka smislenijim ciljevima.",
+          "reversed": "Osvećeno osam šoljica ukazuje na neodlučnost u finansijskim planovima.",
+          "keywords": [
+            "odlazak",
+            "promeniti",
+            "značenje",
+            "nov način",
+            "vizija"
+          ],
+          "context": "Biće potrebno da se fokusiramo na smislene ciljeve na novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Osam šoljica pokazuje da se odseli od trenutnih finansijskih planova i traženje više ispunjenih staza u potrazi za značenjem u budućnosti.",
+          "reversed": "Okolište osam šoljica ukazuje da je zaglavljen između odlaska i boravka ili ostavljanja finansijskih projekata nedovršenih.",
+          "keywords": [
+            "odlazak",
+            "značenje",
+            "zadovoljstvo",
+            "nov način",
+            "odluka"
+          ],
+          "context": "Novi stazi ili neodlučnost doći će na prednji plan u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Osam šoljica pokazuje vašu sposobnost da ostavi neispunjavajuće poslove ili projekte i pređe na značajnije mogućnosti.",
+          "reversed": "Otkriveni osam šoljica ukazuje da ćete možda ograničiti svoj potencijal zbog neodlučnosti između odlaska ili boravka.",
+          "keywords": [
+            "odlazak",
+            "Potražite značenje",
+            "putovanje",
+            "hrabrost",
+            "promeniti"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa potragom za značenjem ili neodlučnošću."
+        }
+      },
+      "nineofcups": {
+        "position1": {
+          "upright": "Devet šoljica ukazuje na anksioznost zbog gubitka sreće. Možete se brinuti da će zadovoljstvo materijala biti privremeno.",
+          "reversed": "Reversed devet šoljica otkriva lažno zadovoljstvo i anksioznost zbog potrošnje. Ne mogu da održite obilje čini vas nelagodnim.",
+          "keywords": [
+            "zadovoljstvo",
+            "dosta",
+            "anksioznost",
+            "lažna sreća",
+            "zadovoljstvo"
+          ],
+          "context": "Anksioznost proizilazi iz nemogućnosti da se održi obilje ili lažno zadovoljstvo."
+        },
+        "position2": {
+          "upright": "Devet šoljica pokazuje da tražite sigurnost zadovoljstvom i ličnim uspehom. Zadovoljstvo donosi mir.",
+          "reversed": "Devet šoljica preokrećeno ukazuje na ekstremno nezadovoljstvo ili zabrinutost zbog površnog zadovoljstva. Želja za bezbednošću nestaje kada se neko kreće od dubokih vrednosti.",
+          "keywords": [
+            "zadovoljstvo",
+            "uspeh",
+            "sigurnost",
+            "dosta",
+            "zadovoljstvo"
+          ],
+          "context": "Nalazite sigurnost u unutrašnjem zadovoljstvu i uspehu."
+        },
+        "position3": {
+          "upright": "Devet šoljica ukazuje na tendenciju da se koristi novac za zadovoljstvo i lično zadovoljstvo. Raslovi luksuza dolaze do izražaja.",
+          "reversed": "Reversed devet šoljica ukazuje na tendenciju prema prekomernoj potrošnji ili nezasitnoj potrošnji.",
+          "keywords": [
+            "zadovoljstvo",
+            "luksuzan",
+            "zadovoljstvo",
+            "novac",
+            "zadovoljstvo"
+          ],
+          "context": "Lični ukusi određuju upotrebu novca."
+        },
+        "position4": {
+          "upright": "U prošlosti je možda bilo perioda finansijskog zadovoljstva i obilja.",
+          "reversed": "Reversed devet šoljica ukazuje na nepotrebnu potrošnju u potrazi za površnim zadovoljstvom.",
+          "keywords": [
+            "zadovoljstvo",
+            "dosta",
+            "novac",
+            "trošenje",
+            "zadovoljstvo"
+          ],
+          "context": "U prošlosti je finansijsko zadovoljstvo bilo na čelu."
+        },
+        "position5": {
+          "upright": "Devet šoljica ukazuje da su finansijske odgovornosti ispunjene zadovoljstvom i zadovoljstvom. Deljenje može biti ugodno.",
+          "reversed": "Reversed devet šoljica ukazuje na osećaj nezadovoljstva ili površnošću u finansijskim odgovornostima.",
+          "keywords": [
+            "zadovoljstvo",
+            "zadovoljstvo",
+            "deljenje",
+            "površnost",
+            "odgovornost"
+          ],
+          "context": "Efekat zadovoljstva ili nezadovoljstva dolazi do izražaja finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Devet šoljica predstavlja zadovoljstvo, uspeh i zahvalnost u finansijskim planovima. Trenutna zarada donosi sreću.",
+          "reversed": "Reversed devet šoljica ukazuje na nezadovoljstvo finansijskim planovima ili prekomernom potražnjom za zadovoljstvo.",
+          "keywords": [
+            "zadovoljstvo",
+            "uspeh",
+            "zahvalnost",
+            "dosta",
+            "zadovoljstvo"
+          ],
+          "context": "Zadovoljstvo i zahvalnost nalaze se na novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Devet šoljica ukazuje na buduće finansijsko zadovoljstvo, uživajući u uspeh i obilju.",
+          "reversed": "Reversed devet šoljica ukazuje da površno zadovoljstvo ili prekomerna luksuzna potrošnja može dovesti do razočaranja.",
+          "keywords": [
+            "zadovoljstvo",
+            "dosta",
+            "zadovoljstvo",
+            "uspeh",
+            "luksuzan"
+          ],
+          "context": "Zadovoljstvo ili površno zadovoljstvo pojaviće se u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Devet šoljica ukazuje da lično zadovoljstvo, obilje i unutrašnji mir podržavaju sposobnosti donošenja novca.",
+          "reversed": "Reversed devet šoljica ukazuje da dugoročni uspeh može biti u riziku zbog prekomernog hedonizma ili površnog zadovoljstva.",
+          "keywords": [
+            "zadovoljstvo",
+            "dosta",
+            "sreća",
+            "zadovoljstvo",
+            "unutrašnji mir"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa zadovoljstvom ili površnom osobom."
+        }
+      },
+      "tenofcups": {
+        "position1": {
+          "upright": "Deset šoljica ukazuje na zabrinutost da će finansijski nedostaci poremetiti porodično mir. Možda ćete se bojati da će vaša sreća biti zasjenjena novcem.",
+          "reversed": "Invertirani deset šoljica ukazuje na zabrinutost da će finansijske nesposobnosti oštetiti porodične veze. Ne mogu da postignu idealnu sliku sreće stvara nemire.",
+          "keywords": [
+            "porodica",
+            "sreća",
+            "anksioznost",
+            "mir",
+            "finansijski nedostatak"
+          ],
+          "context": "Anksioznost proizilazi iz finansijskih problema koji utiču na porodični mir."
+        },
+        "position2": {
+          "upright": "Deset šoljica ukazuje da tražite sigurnost u porodici, harmoniji i jedinstvu. Zajednička sreća jača osećaj poverenja.",
+          "reversed": "Preokrećeni deset šoljica ukazuje na anksioznost o nesklađu i porodičnom sukobu. Želja za bezbednošću postaje krhka kada se kreće dalje od ideala.",
+          "keywords": [
+            "porodica",
+            "raport",
+            "jedinstvo",
+            "sigurnost",
+            "sreća"
+          ],
+          "context": "Nalazite sigurnost u porodičnim vezama i osećaj jedinstva."
+        },
+        "position3": {
+          "upright": "Deset šoljica ukazuje na tendenciju da se koristi novac za porodično blagostanje i zajedničku sreću. Deljenje donosi sreću.",
+          "reversed": "Invertirani deset šoljica ukazuje na rizik od porodičnog neslaganja ili nezadovoljstva u finansijskim pitanjima.",
+          "keywords": [
+            "porodica",
+            "sreća",
+            "blagostanje",
+            "deljenje",
+            "novac"
+          ],
+          "context": "Porodično dobrobit i sreća su na čelu kada koriste novac."
+        },
+        "position4": {
+          "upright": "Rashodi su možda u prošlosti doneli porodičnu sreću.",
+          "reversed": "Pretvoreni deset šoljica ukazuje na finansijska neslaganja u porodici.",
+          "keywords": [
+            "porodica",
+            "sreća",
+            "raport",
+            "novac",
+            "trošenje"
+          ],
+          "context": "U prošlosti su po porodično orijentisane finansijske odluke bile na čelu."
+        },
+        "position5": {
+          "upright": "Deset šoljica pokazuje da su finansijske odgovornosti ispunjene porodičnom harmonijom i mirom. Zajednička sreća olakšava ove terete.",
+          "reversed": "Invertirani deset šoljica ukazuje na nesuglasice porodice ili problemi sa harmonijom u pogledu finansijskih odgovornosti.",
+          "keywords": [
+            "porodica",
+            "raport",
+            "sreća",
+            "odgovornost",
+            "ravnoteža"
+          ],
+          "context": "Porodična harmonija ili disharmonija je odlučujući faktor finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Deset šoljica ukazuje na porodičnu harmoniju, spokoj i zajedničku sreću u finansijskim planovima. Finansijska sigurnost takođe podržava emocionalno blagostanje.",
+          "reversed": "Invertirani deset šoljica ukazuje na neslaganje u okviru porodične ili očekivanja praznog prostora u finansijskim planovima.",
+          "keywords": [
+            "raport",
+            "porodica",
+            "mir",
+            "sreća",
+            "partnerstvo"
+          ],
+          "context": "Porodični Harmonija i mir dolaze u predru u nove finansijske planove."
+        },
+        "position7": {
+          "upright": "Deset šoljica obećava finansijsku harmoniju, spokoj i dugoročnu sigurnost u porodici u budućnosti.",
+          "reversed": "Invertirani deset šoljica ukazuje na finansijski odstupanje u porodici ili rizik od očekivanja koje nisu ispunjene.",
+          "keywords": [
+            "porodica",
+            "raport",
+            "mir",
+            "dugoročan",
+            "sigurnost"
+          ],
+          "context": "Porodično skladanje ili disharmonija biće efikasni u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Deset šoljica pokazuje da porodica, zajednica i snažne emocionalne obveznice podržavaju sposobnosti donošenja novca.",
+          "reversed": "Invertirani deset šoljica ukazuje da nespojivi odnosi ili porodični problemi mogu ograničiti svoje finansijske sposobnosti.",
+          "keywords": [
+            "porodica",
+            "zajednica",
+            "raport",
+            "priključak",
+            "mir"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa harmonijom ili disharmonijom."
+        }
+      },
+      "pageofcups": {
+        "position1": {
+          "upright": "Princ čaša ukazuje na anksioznost zbog finansijskog neiskustva. Osjećaj naivne i nespremne u materijalnom svetu može stvoriti nemire.",
+          "reversed": "Princ Cup-ova obrnut otkriva anksioznost sanja i neodgovornosti. Nedostatak ozbiljnosti u materijalnom svetu dovodi do anksioznosti.",
+          "keywords": [
+            "neiskustvo",
+            "snjati",
+            "anksioznost",
+            "senzualnost",
+            "čistoća"
+          ],
+          "context": "Anksioznost se pojavljuje od neiskustva u finansijskim pitanjima."
+        },
+        "position2": {
+          "upright": "Princ čaša ukazuje da on traži sigurnost kroz kreativnu maštu i intuiciju. Nevinost donosi mir.",
+          "reversed": "Princ of Cups obrnut ukazuje na anksioznost zbog razočaranja i emocionalne osetljivosti. Želja za bezbednošću osporava se ekstremna ranjivost.",
+          "keywords": [
+            "kreativnost",
+            "intuicija",
+            "sigurnost",
+            "nevinost",
+            "inspiracija"
+          ],
+          "context": "Nalazite sigurnost kreativnošću i nevinom intuicijom."
+        },
+        "position3": {
+          "upright": "Princ čaša teži da koristi novac za kreativne projekte ili nove ideje. Mali koraci donose obilje.",
+          "reversed": "Princ Cup-ova preokrećeno ukazuje na rizik od nepažljivog i sanjivog trošenja.",
+          "keywords": [
+            "kreativnost",
+            "sanjati",
+            "novac",
+            "početak",
+            "projekti"
+          ],
+          "context": "Snovi i male inicijative dolaze na prvi plan u upotrebi novca."
+        },
+        "position4": {
+          "upright": "Možda ste imali san ili emotivni stav o novcu u prošlosti.",
+          "reversed": "Princ of Cups preokrenuo je znak neodgovornosti ili nepažnje u finansijskim pitanjima.",
+          "keywords": [
+            "snjati",
+            "osećanje",
+            "neodgovornost",
+            "novac",
+            "početak"
+          ],
+          "context": "U prošlosti je došlo do sanjivog pristupa novca."
+        },
+        "position5": {
+          "upright": "Princ čaša označava novi, mali i emocionalni korak u finansijskim odgovornostima. Vi ste u procesu učenja.",
+          "reversed": "Princ Cup-ova obrnut može pokazati ekstremne naivnost, sanjarnost ili nedostatak ozbiljnosti prema finansijskim odgovornostima.",
+          "keywords": [
+            "učenje",
+            "naivnost",
+            "sanjati",
+            "početak",
+            "odgovornost"
+          ],
+          "context": "Učenje ili preterana sanjarina je određivanje faktora finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Princ Cup-ova ukazuje na kreativne ideje, nove mogućnosti i inspiraciju u finansijskim planovima.",
+          "reversed": "Princ of Cups preokrenut ukazuje na rizik od sanije ili nedoslednosti u finansijskim planovima.",
+          "keywords": [
+            "kreativnost",
+            "inspiracija",
+            "prilika",
+            "iskustvo",
+            "inovativnost"
+          ],
+          "context": "Kreativna rešenja će se pojaviti u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Princ Cup-a ukazuje na nove ideje, kreativne investicije i obećavajuće mogućnosti u budućnosti.",
+          "reversed": "Preokrećeni princ CUP-a ukazuje na rizik od sanjarskih pristupa, raštrkanih projekata ili nedoslednih investicija.",
+          "keywords": [
+            "kreativnost",
+            "nadati se",
+            "ideja",
+            "početak",
+            "inspiracija"
+          ],
+          "context": "Kreativne mogućnosti ili neorganizacija će imati na ubudu u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Princ Cup-a ukazuje da kreativnost, radoznalost i mašta podržavaju veštine pravljenja novca.",
+          "reversed": "Princ of Cups preokrenuti ukazuje da finansijske veštine mogu biti oslabljene zbog nepažnje, sanjanja ili prenaseljenja.",
+          "keywords": [
+            "kreativnost",
+            "mašta",
+            "radoznalost",
+            "inspiracija",
+            "senzibilitet"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa kreativnošću ili nepažnjom."
+        }
+      },
+      "knightofcups": {
+        "position1": {
+          "upright": "Vitez čaše pokazuje anksioznost o izbegavanju finansijskih odgovornosti. Možete se brinuti da su vaši romantični snovi u sukobu sa finansijskim stvarnostima.",
+          "reversed": "Vitez Cup-ova obrnut otkriva anksioznost zbog nedoslednosti i praznih obećanja. Neuspjeh u ispunjavanju finansijskih obaveza stvara nemire.",
+          "keywords": [
+            "odgovornost",
+            "nedoslednost",
+            "anksioznost",
+            "sanjati",
+            "materijalna činjenica"
+          ],
+          "context": "Anksioznost proizilazi iz sukoba između materijalnih stvarnosti i snova."
+        },
+        "position2": {
+          "upright": "Vitez čaše pokazuje da on traži sigurnost kroz ideale i postupke iz srca. Romantična vizija daje mir.",
+          "reversed": "Vitez Cup-ova obrnut ukazuje na zabrinutost za nedoslednost i prekomernu sanjaju. Želja za bezbednošću je prekinuta od strane nestabilnih obećanja.",
+          "keywords": [
+            "idealizam",
+            "pokret",
+            "sigurnost",
+            "vizija",
+            "osećanje"
+          ],
+          "context": "Nalazite sigurnost sa idealističkim koracima koji dolaze iz srca."
+        },
+        "position3": {
+          "upright": "Vitez čaše obično koristi novac za idealističke svrhe i svesrdne investicije.",
+          "reversed": "Vitez Cup-a preokrenut ukazuje na nerealne finansijske korake ili odlaganja.",
+          "keywords": [
+            "idealizam",
+            "investicija",
+            "sanjati",
+            "novac",
+            "cilj"
+          ],
+          "context": "Idealistički aspekti su dominantni u upotrebi novca."
+        },
+        "position4": {
+          "upright": "Možda ste izložili idealističko ponašanje u prošlosti u vezi sa zaradom ili trošenjem novca.",
+          "reversed": "Učitavanje viteza CUP-a ukazuje na nedosledne finansijske odluke.",
+          "keywords": [
+            "idealizam",
+            "nedoslednost",
+            "novac",
+            "vizija",
+            "trošenje"
+          ],
+          "context": "U prošlosti su idealizam i nedoslednost bili istaknuti u finansijskim stavovima."
+        },
+        "position5": {
+          "upright": "Knight of Cups ukazuje na idealistički i entuzijastični pristup finansijskim odgovornostima. Mogu se uključiti emocija i romantika.",
+          "reversed": "Učitavanje viteza CUP-ova ukazuje da se mogu pojaviti poteškoće zbog nedoslednosti u finansijskim odgovornostima ili prekomerne sanja.",
+          "keywords": [
+            "idealizam",
+            "entuzijazam",
+            "nedoslednost",
+            "romantika",
+            "odgovornost"
+          ],
+          "context": "Efekat entuzijazma ili nedoslednosti dolazi do izražaja finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Vitez čaše predstavlja idealističke pristupe i vizionarski koraci u finansijskim planovima.",
+          "reversed": "Vitez Cup-a preokrenut ukazuje na neusklađenost, previsoku romantizaciju ili razočaranje finansijskih planova.",
+          "keywords": [
+            "vizija",
+            "idealan",
+            "pokret",
+            "ponuditi",
+            "osećanje"
+          ],
+          "context": "Vizionarski koraci će biti presudni u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Vitez čaše ukazuje na idealističke investicije, vizionarne projekte i kreće se naprijed sa milošću u budućnosti.",
+          "reversed": "Ukrasan vitez čaše ukazuje na neusklađenost, previsoku romantizaciju ili odred od finansijskih stvarnosti.",
+          "keywords": [
+            "idealizam",
+            "vizija",
+            "investicija",
+            "milost",
+            "cilj"
+          ],
+          "context": "Vizionarska ulaganja ili nedoslednost biće efikasna u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Vitez CAP-a ukazuje da idealizam, eleganciju i ubedljivost podržavaju sposobnosti donošenja novca.",
+          "reversed": "Vitez Cup-a preokrećeno ukazuje da vaše veštine mogu biti oslabljene nedoslednosti, razočaranja ili odreda od stvarnosti.",
+          "keywords": [
+            "idealizam",
+            "ubeđivanje",
+            "milost",
+            "vizija",
+            "doslednost"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa idealizmom ili nedoslednošću."
+        }
+      },
+      "queenofcups": {
+        "position1": {
+          "upright": "Kueen of Cups ukazuje na anksioznost zamućenih granica materijala. Prekomerna žrtva može stvoriti finansijsku neravnotežu.",
+          "reversed": "Kraljica Cup-ova obrnuta otkriva emocionalnu ispad i anksioznost zbog nedostatka kontrole. Brine se kada emocije dominiraju u finansijskim odlukama.",
+          "keywords": [
+            "žrtvovati",
+            "granica",
+            "anksioznost",
+            "senzualnost",
+            "ravnoteža"
+          ],
+          "context": "Anksioznost proizilazi iz prekomerne emocionalnosti i nedostatka materijalnih granica."
+        },
+        "position2": {
+          "upright": "Kraljica šoljica pokazuje da traži sigurnost putem empatije, intuicije i saosećanja. Emotivni prostor pruža mir.",
+          "reversed": "Kraljica Cup-ova preokrenuta ukazuje na anksioznost o emocionalnom obilusu i gubitku granica. Želja za bezbednošću slabi kada se izgubi interni nalog.",
+          "keywords": [
+            "empatija",
+            "saosećanje",
+            "sigurnost",
+            "intuicija",
+            "ravnoteža"
+          ],
+          "context": "Nalazite sigurnost kroz saosećanje i emocionalnu ravnotežu."
+        },
+        "position3": {
+          "upright": "Kraljica šoljica obično koristi novac za intuiciju i emocionalnu sigurnost. Emocije utiču na potrošnju.",
+          "reversed": "Kraljica CUP-ova obrnuta ukazuje na rizik od prekomernih emocionalnih troškova ili zavisnosti.",
+          "keywords": [
+            "intuicija",
+            "sigurnost",
+            "novac",
+            "osećanje",
+            "trošenje"
+          ],
+          "context": "Intuicija i emocionalne potrebe su efikasne u upotrebi novca."
+        },
+        "position4": {
+          "upright": "Kompationalni i podržavački stav u vezi sa novcem pitanjima možda je u prošlosti istaknut.",
+          "reversed": "Kraljica Cup-ova preokrenuta ukazuje na prekomernu emocionalnu potrošnju.",
+          "keywords": [
+            "saosećanje",
+            "podrška",
+            "trošenje",
+            "osećanje",
+            "novac"
+          ],
+          "context": "U prošlosti su finansijske odluke bile povezane sa emocionalnom podrškom."
+        },
+        "position5": {
+          "upright": "Kraljica šoljica ukazuje na brižnu i zaštitnu stav prema finansijskim odgovornostima. Deluje sa empatijom i intuicijom.",
+          "reversed": "Kraljica CUP-ova preokrećena ukazuje na rizik od slabljenja emocionalnih granica, preopterećenja ili manipulacija u finansijskim odgovornostima.",
+          "keywords": [
+            "saosećanje",
+            "empatija",
+            "zaštita",
+            "granica",
+            "odgovornost"
+          ],
+          "context": "Saosećanje ili nedostatak granica su presudni u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Kraljica šoljica pruža intuiciju, empatiju i sigurne emocionalne smernice u finansijskim planovima.",
+          "reversed": "Kraljica Cups-a preokrenuta ukazuje na rizik od emocionalne nestabilnosti ili preterane nadzora u finansijskim planovima.",
+          "keywords": [
+            "intuicija",
+            "empatija",
+            "uputstvo",
+            "ravnoteža",
+            "poverenje"
+          ],
+          "context": "Intuitivna smernica je važna u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Kraljica CUP-a ukazuje na intuitivno rukovodstvo, empatiju i stvaranje sigurnog prostora u finansijskim pitanjima u budućnosti.",
+          "reversed": "Kraljica Cup-ova preokrenuta ukazuje na topljenje emocionalnih granica ili prekomerne osetljivosti stavljanja naprezanja na finansijske planove.",
+          "keywords": [
+            "empatija",
+            "intuicija",
+            "rukovodstvo",
+            "saosećanje",
+            "poverenje"
+          ],
+          "context": "Intuicija ili emocionalni ekstremitet će biti presudni u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Kraljica šoljica pokazuje da empatija, intuicija i emocionalna inteligencija podržavaju veštine pravljenja novca.",
+          "reversed": "Kraljica Cups-a obrnuta ukazuje da se mogućnosti mogu oslabiti prekomerno osetljivošću, emocionalnom zavisnošću ili nedostatkom samo-ograničenja.",
+          "keywords": [
+            "empatija",
+            "intuicija",
+            "emocionalna inteligencija",
+            "senzibilitet",
+            "saosećanje"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa empatijom ili preosetljivošću."
+        }
+      },
+      "kingofcups": {
+        "position1": {
+          "upright": "Kralj šoljica pokazuje da je zabrinut da će finansijske odluke stvoriti emocionalni teret. Odgovornosti mogu poremetiti emocionalnu ravnotežu.",
+          "reversed": "Prekoračeni kralj CUP-a ukazuje da suzbijanje emocija i pasivno-agresivnih stavova dovode do finansijske anksioznosti. Odlaganje finansijskih odluka izaziva nemiri.",
+          "keywords": [
+            "odgovornost",
+            "osećanje",
+            "anksioznost",
+            "ravnoteža",
+            "kontrola"
+          ],
+          "context": "Anksioznost se pojavljuje kada se emocije sukobljavaju sa finansijskim odgovornostima."
+        },
+        "position2": {
+          "upright": "Kralj šoljica pokazuje da traži sigurnost u emocionalnom zrelosti i mudrim pristupu. Mirnoća daje samopouzdanje.",
+          "reversed": "Prekoračeni kralj Cupa ukazuje na emocionalnu represiju ili pasivno-agresivnu anksioznost. Želja za bezbednošću slabi u nedostatku jasnog izražavanja.",
+          "keywords": [
+            "zrelost",
+            "mudrost",
+            "sigurnost",
+            "ravnoteža",
+            "rukovodstvo"
+          ],
+          "context": "Nalazite sigurnost u zrelom i uravnoteženom emocionalnom pristupu."
+        },
+        "position3": {
+          "upright": "Kralj šoljica teži da obrađuje novac sa ravnotežom i emocionalnom zrelošću. Osjećaj odgovornosti dolazi do izražaja.",
+          "reversed": "Preokrećeni kralj šoljica ukazuje na emocionalnu manipulaciju ili nestabilnost u finansijskim pitanjima.",
+          "keywords": [
+            "ravnoteža",
+            "zrelost",
+            "odgovornost",
+            "novac",
+            "poverenje"
+          ],
+          "context": "Zrelost i ravnoteža su važni u korištenju novca."
+        },
+        "position4": {
+          "upright": "U prošlosti ste upravljali novcem dok održavate emocionalnu ravnotežu. Smiljene su mirne i zrele odluke.",
+          "reversed": "Obrnuti kralj šoljica signaliziraju da pasivno-agresivne ili potisnute emocije negativno utiču na finansijske odluke.",
+          "keywords": [
+            "ravnoteža",
+            "zrelost",
+            "novac",
+            "miran",
+            "rukovodstvo"
+          ],
+          "context": "U prošlosti je došlo do zrelog i uravnoteženog pristupa novca."
+        },
+        "position5": {
+          "upright": "Kralj šoljica ukazuje na zreli, uravnotežen i emocionalno snažan pristup finansijskim odgovornostima. Čak i u oluji ste u centru.",
+          "reversed": "Invertirani kralj šoljica, suzbijanje nečijih emocija ili djelovanje pasiva-agresivno kada se bave finansijskim odgovornostima mogu prouzrokovati probleme.",
+          "keywords": [
+            "zrelost",
+            "ravnoteža",
+            "starateljstvo",
+            "rukovodstvo",
+            "odgovornost"
+          ],
+          "context": "Zrelost ili represija određuje finansijske odgovornosti."
+        },
+        "position6": {
+          "upright": "Kralj šoljica ukazuje na emocionalnu zrelost, mirno vođstvo i mudri pristup finansijskim planovima.",
+          "reversed": "Preokrećeni kralj CUP-a može biti rizik od potisnih emocija ili pasivnih stavova u finansijskim planovima.",
+          "keywords": [
+            "rukovodstvo",
+            "zrelost",
+            "ravnoteža",
+            "mudrost",
+            "odgovornost"
+          ],
+          "context": "Mudri i mirni pristup važan je u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Kralj šoljica ukazuje na zrelost u finansijskim planovima, mirno vođstvo i pouzdane finansijske strategije u budućnosti.",
+          "reversed": "Preokrećeni kralj CUP-a ukazuje na rizik od potisnih emocija, pasivnog agresivnog ponašanja ili nejasnog finansijskog upravljanja.",
+          "keywords": [
+            "zrelost",
+            "rukovodstvo",
+            "poverenje",
+            "strategija",
+            "ravnoteža"
+          ],
+          "context": "Zrelost ili nestabilnost doći će do zaruka u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Kralj šoljica pokazuje da je emocionalna ravnoteža, ročnost i veštine diplomatije podržavaju sposobnosti donošenja novca.",
+          "reversed": "Ograničeni kralj šoljica signalizira da pasivnost, potisnuta emocija ili pasivno agresivni stavovi mogu potkopati vaše finansijske veštine.",
+          "keywords": [
+            "ravnoteža",
+            "zrelost",
+            "diplomacija",
+            "Emocionalno upravljanje",
+            "poverenje"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa zrelošću ili pasivnosti."
+        }
+      },
+      "aceofswords": {
+        "position1": {
+          "upright": "ACE mačeva ukazuje da se plašite da vidite istinu i date jasne odluke u finansijskim pitanjima. HARSHINGE FINANSIJSKE REALNOSTI MOŽETE vas brinuti.",
+          "reversed": "Ace mačeva obrnuto, ukazuje na zbrku i anksioznost u vezi sa pogrešnom odlukom. Možete se plašiti da će pogrešan korak doneti ozbiljne posledice.",
+          "keywords": [
+            "real",
+            "oštrina",
+            "anksioznost",
+            "odluka",
+            "um"
+          ],
+          "context": "Anksioznost proizilazi da vide oštre činjenice i donošenje ispravne odluke."
+        },
+        "position2": {
+          "upright": "ACE mačeva ukazuje da tražite sigurnost kroz jasne odluke i jasno razmišljanje. Logička rešenja donose mir.",
+          "reversed": "Ace mačeva obrnuto ukazuje na zbrku i anksioznost o pogrešnim odlukama. Želja za bezbednošću može se zamagliti neizvesnošću.",
+          "keywords": [
+            "oštrina",
+            "odluka",
+            "sigurnost",
+            "istina",
+            "um"
+          ],
+          "context": "Vi sigurnosti smatrate jasnim razmišljanjem i pravim odlukama."
+        },
+        "position3": {
+          "upright": "Ace mačeva ukazuje na jasnoću i oštre odluke u upotrebi novca. Racionalno planiranje donosi uspeh.",
+          "reversed": "Ace mačeva obrnuto ukazuje na odluke na osnovu dezinformacija ili finansijske konfuzije."
+        }
+      }
+    }
+  }
+}

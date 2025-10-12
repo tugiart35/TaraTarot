@@ -1,0 +1,780 @@
+{
+  "career": {
+    "meanings": {
+      "queenofcups": {
+        "position1": {
+          "context": "Vaša istinska karijera otkriva se na način na koji pokazujete svoju empatiju i emocionalnu inteligenciju."
+        },
+        "position2": {
+          "upright": "Kraljica šoljica preporučuje upotrebu vaše empatije i intuicije u karijeri. Kretanje napred sa saosećanjem u ljudskim odnosima stvara nove mogućnosti.",
+          "reversed": "Kraljica Cup-ova preokrenuta ukazuje da vas prekomerna emotivnost ili samozapuštanje mogu da vas napregnu.",
+          "keywords": [
+            "empatija",
+            "intuicija",
+            "saosećanje",
+            "svest",
+            "inspiracija"
+          ],
+          "context": "Da biste unapredili svoju karijeru, morate preduzeti korake sa empatijom i intuicijom."
+        },
+        "position3": {
+          "upright": "Kraljica šoljica vam govori da ne kontrolišete emocionalne reakcije ljudi oko vas.",
+          "reversed": "Ograničena kraljica šoljica, možda će biti neizbežna da će emocionalna nestabilnost drugih uticati na vas.",
+          "keywords": [
+            "empatija",
+            "osećanje",
+            "intuicija",
+            "uticaj",
+            "van kontrole"
+          ],
+          "context": "U vašoj karijeri ne možete da promenite emocionalne stavove drugih ljudi."
+        },
+        "position4": {
+          "upright": "Kraljica srca pokazuje da ona donosi empatiju, osetljivost i saosećanje na njen rad. Tvoj napor je u tom pogledu dragoceno.",
+          "reversed": "Invertirana kraljica šoljica, višak emotivnosti može vam naneti poteškoće da uravnotežujete svoje performanse.",
+          "keywords": [
+            "empatija",
+            "osetljivost",
+            "saosećanje",
+            "iskrenost",
+            "performanse"
+          ],
+          "context": "Vaš trud postaje vidljiviji sa vašom empatijom i emocionalnom inteligencijom."
+        },
+        "position5": {
+          "upright": "Kraljica šoljica, koristeći svoju empatiju i emocionalnu inteligenciju, stvoriće pozitivne promene u vašoj karijeri.",
+          "reversed": "Okolišena kraljica šoljica, morate se odmaknuti od prekomerne emocionalnosti i pronaći ravnotežu.",
+          "keywords": [
+            "empatija",
+            "osetljivost",
+            "ravnoteža",
+            "svest",
+            "promeniti"
+          ],
+          "context": "Za promenu u vašoj karijeri morate odrediti prioritet empatiju i ravnotežu."
+        },
+        "position6": {
+          "upright": "Kraljica srca je možda preterano emotivna ili previše samo-žrtvovana u prošlosti, koja je možda ograničila karijeru.",
+          "reversed": "Invertirana kraljica šoljica, emocionalna nestabilnost može biti prepreka u prošlosti.",
+          "keywords": [
+            "osetljivost",
+            "žrtvovati",
+            "ravnoteža",
+            "empatija",
+            "prošlost"
+          ],
+          "context": "Prekomerna emocionalnost u prošlosti možda je ometala svoju trenutnu karijeru."
+        },
+        "position7": {
+          "upright": "Kraljica šoljica pokazuje da će ishod vašeg putovanja u karijeri oblikovati empatija, razumevanje i emocionalna ravnoteža.",
+          "reversed": "Invertirana kraljica šoljica, emocionalna nestabilnost može da oblakne ishod.",
+          "keywords": [
+            "empatija",
+            "ravnoteža",
+            "osetljivost",
+            "svest",
+            "budućnost"
+          ],
+          "context": "Rezultat će biti putovanje ojačano emocionalnom bilansom i empatijom."
+        }
+      },
+      "kingofcups": {
+        "position1": {
+          "upright": "Kralj šoljica simbolizuje zrelost, mudrost i emocionalnu ravnotežu. Ako možete upravljati svojim emocijama u uravnoteženom načinu u karijeri, na pravom ste putu.",
+          "reversed": "Prekoračeni kralj šoljica može ukazivati na emocionalnu manipulaciju ili unutrašnju nestabilnost. Možda vas rad emocionalno isušuje.",
+          "keywords": [
+            "ravnoteža",
+            "mudrost",
+            "osećanje",
+            "zrelost",
+            "rukovodstvo"
+          ],
+          "context": "Vaša istinska karijera je način na koji upravljate svojim emocijama sa zrelošću i nadahnite druge."
+        },
+        "position2": {
+          "upright": "Kralj šoljica preporučuje upravljanje vašim emocijama na uravnotežen način. Zrele i mudre odluke će vas unaprediti u vašoj karijeri.",
+          "reversed": "Prekoračeni kralj Cupa kaže da emocionalna nestabilnost ili preosjetljivost mogu osporiti razvoj.",
+          "keywords": [
+            "ravnoteža",
+            "zrelost",
+            "mudrost",
+            "rukovodstvo",
+            "osećanje"
+          ],
+          "context": "Da biste poboljšali svoju karijeru, morate upravljati svojim emocijama sa zrelošću."
+        },
+        "position3": {
+          "upright": "Kralj šoljica pokazuje da su emocionalni stavovi onih na pozicijama vlasti izvan vas.",
+          "reversed": "Invertirani kralj šoljica, možda će biti neizbežno da će neravnotežene odluke onih u organu oko vas uticati na vas.",
+          "keywords": [
+            "rukovodstvo",
+            "vlast",
+            "osećanje",
+            "ravnoteža",
+            "van kontrole"
+          ],
+          "context": "Ne možete odrediti stavove lidera ili menadžera u vašoj karijeri."
+        },
+        "position4": {
+          "upright": "Kralj šoljica pokazuje da on nastavlja sa svojim radom sa zrelošću i emocionalnom ravnotežom. Dajete sve od sebe.",
+          "reversed": "Invertirani kralj šoljica, emocionalna nestabilnost može umanjiti vrednost vašeg nastupa.",
+          "keywords": [
+            "ravnoteža",
+            "zrelost",
+            "rukovodstvo",
+            "empatija",
+            "performanse"
+          ],
+          "context": "Vaš trud se ogleda u vašem radu sa zrelošću i emocionalnom bilansom."
+        },
+        "position5": {
+          "upright": "Kralj šoljica, koji se kreće naprijed sa emocionalnom zrelošću i smirenosti osigurava konstruktivne promene u vašoj karijeri.",
+          "reversed": "Ograničeni kralj Cupa olakšava razvoj rešavanjem neravnoteže.",
+          "keywords": [
+            "zrelost",
+            "ravnoteža",
+            "rukovodstvo",
+            "mir",
+            "promeniti"
+          ],
+          "context": "Za promenu u vašoj karijeri morate da održavate emocionalnu ravnotežu."
+        },
+        "position6": {
+          "upright": "Kralj šoljica, nemogućnost održavanja emocionalne kontrole ili ponašajte mirno, možda je ometala karijeru u prošlosti.",
+          "reversed": "Prekoračen kralj čaše: Neuravnoteženi stavovi u prošlosti možda su uticali na vaš trenutni put.",
+          "keywords": [
+            "ravnoteža",
+            "emocionalna zrelost",
+            "ohladiti",
+            "kontrola",
+            "prošlost"
+          ],
+          "context": "Nedostatak emocionalne kontrole u ​​prošlosti možda je danas ometala karijeru."
+        },
+        "position7": {
+          "upright": "Kralj šoljica pokazuje da će ishod vašeg putovanja u karijeri biti dospeća, smirenost i pouzdano rukovodstvo.",
+          "reversed": "Prekoračeni kralj šoljica može ograničiti ishod zbog nestabilnosti ili prekomerne emocionalnosti.",
+          "keywords": [
+            "zrelost",
+            "rukovodstvo",
+            "ravnoteža",
+            "poverenje",
+            "budućnost"
+          ],
+          "context": "Rezultat će biti zreli i uravnotežen vođstvo."
+        }
+      },
+      "aceofswords": {
+        "position1": {
+          "upright": "Ace mačeva je kartica mentalne jasnoće i nove ideje. Prilika ili inspiracija se može pojaviti u vašoj karijeri koja će vam donijeti jasnoću.",
+          "reversed": "Ace mačeva obrnuto ukazuje na probleme sa zbrkom ili komunikacijom. Možda vam sada trenutni put ne nudi jasnoću.",
+          "keywords": [
+            "jasnoća uma",
+            "ideja",
+            "real",
+            "odluka",
+            "početak"
+          ],
+          "context": "Vaša istinska karijera je ona koja stvara jasnoću i novu viziju u vašem umu."
+        },
+        "position2": {
+          "upright": "Ace mačeva preporučuje jasnu viziju i snažne odluke za razvoj. Mentalna jasnoća, nova ideja ili strateški plan će vas premestiti napred.",
+          "reversed": "ACE of Mačevi preokrenuti ukazuje da vas zabune ili problemi sa komunikacijom mogu usporiti.",
+          "keywords": [
+            "jasnoća uma",
+            "odluka",
+            "ideja",
+            "strategija",
+            "početak"
+          ],
+          "context": "Da biste unapredili svoju karijeru, morate steći mentalnu jasnoću i napraviti hrabru odluku."
+        },
+        "position3": {
+          "upright": "Ace mačeva, ne možete da kontrolišete kada dođu iznenadne realizacije i mentalne prosvetle. Ova unutrašnja jasnoća otkriva se u svoje vreme.",
+          "reversed": "Obrnuti as mačeve, zbrke ili komunikacione barijere ponekad se razvijaju izvan vas.",
+          "keywords": [
+            "prosvetljenje",
+            "ideja",
+            "komunikacija",
+            "oštrina",
+            "van kontrole"
+          ],
+          "context": "Ne možete u potpunosti da utvrdite pojavu mentalne jasnoće u karijeri."
+        },
+        "position4": {
+          "upright": "Ace mačeva pokazuje jasnoću i odlučnost u svom radu, izražavajući svoje misli snažno.",
+          "reversed": "Obrnuti mačevi od mačeva, možda nećete moći da u potpunosti odražavate svoju energiju zbog neodlučnosti ili nejasne misli.",
+          "keywords": [
+            "oštrina",
+            "odluka",
+            "moć uma",
+            "trud",
+            "performanse"
+          ],
+          "context": "Vaš trud je ojačan vašom mentalnom jasnoćom i odlučnošću."
+        },
+        "position5": {
+          "upright": "Ace mačeva, možete da kreirate moćnu promenu u vašoj karijeri čišćenjem uma i davanje jasnijih odluka.",
+          "reversed": "Ace mačeva preokrenite pomaže vam da očistite konfuziju i organizujete svoje misli.",
+          "keywords": [
+            "oštrina",
+            "odluka",
+            "vizija",
+            "moć uma",
+            "promeniti"
+          ],
+          "context": "Za promenu u karijeri, morate jasnije da izrazite svoje misli."
+        },
+        "position6": {
+          "upright": "Ace mačeva, ne mogu da daju jasne odluke ili brane vaše ideje u prošlosti, možda su ometali vašu trenutnu karijeru.",
+          "reversed": "Invertirani as mačeva, zbrke i nesigurnost mogu biti prepreka prošlosti.",
+          "keywords": [
+            "odluka",
+            "oštrina",
+            "komunikacija",
+            "vizija",
+            "prošlost"
+          ],
+          "context": "Postojanje od jasnoće u prošlosti možda je danas uticalo na vašu karijeru."
+        },
+        "position7": {
+          "upright": "Ace mačeva ukazuje da će ishod vašeg putovanja u karijeri biti jasnoća, prave odluke i snažna vizija.",
+          "reversed": "Ace mačeva obrnuta mogu odložiti ishod konfuzijom ili nedostatkom komunikacije.",
+          "keywords": [
+            "oštrina",
+            "odluka",
+            "vizija",
+            "komunikacija",
+            "budućnost"
+          ],
+          "context": "Rezultat će se kretati naprijed sa jasnim odlukama i snažnom vizijom."
+        }
+      },
+      "twoofswords": {
+        "position1": {
+          "upright": "Dvoje mačeva simbolizuje poteškoće u donošenju odluka. Možda ćete biti rastrgani između dve staze u karijeri.",
+          "reversed": "Dva preokrenuta mačeva ukazuju na to da odlaganje odluke vas prisiljava i sada je vreme da se odlučite.",
+          "keywords": [
+            "odluka",
+            "dilema",
+            "ravnoteža",
+            "glasati",
+            "ambivalentan"
+          ],
+          "context": "Vaša stvarna karijera biće otkrivena kada podignete zavesu neodlučne."
+        },
+        "position2": {
+          "upright": "Dvoje mačeva sugeriraju da date jasnu odluku. Neodlučnost može da odloži razvoj.",
+          "reversed": "Dva obrnuta mačeva pokazuju da su odluke koje su odložene sada blokirale vaš put. Morate da vam napravite izbor.",
+          "keywords": [
+            "odluka",
+            "ravnoteža",
+            "dilema",
+            "hrabrost",
+            "oštrina"
+          ],
+          "context": "Ne treba se bojati odluka da poboljšate svoju karijeru."
+        },
+        "position3": {
+          "upright": "Dvoje mačeva, ne možete da kontrolišete kada vam opcije postanu jasne. Ponekad morate da sačekate uslove za zreljenje da donose odluku.",
+          "reversed": "Preokrećena dva mačeva ukazuje da konfuzija ili neodlučnost mogu biti posledica spoljnih faktora.",
+          "keywords": [
+            "odluka",
+            "dilema",
+            "ravnoteža",
+            "čekanje",
+            "van kontrole"
+          ],
+          "context": "Pojašnjenje opcija u vašoj karijeri može se razviti van vas."
+        },
+        "position4": {
+          "upright": "Dvoje mačeva ukazuju na to da pokušavate da izvršite uravnotežene odluke. Dajete sve od sebe, ali ponekad vas dileme mogu usporiti.",
+          "reversed": "Dvoje obrnute mačeve, neodlučnost ili odlaganja mogu sprečiti da se potrukuju da se pojave.",
+          "keywords": [
+            "odluka",
+            "ravnoteža",
+            "dilema",
+            "trud",
+            "performanse"
+          ],
+          "context": "Imate napor, ali vi ćete više sjati kada vam je jasno u procesima odluka."
+        },
+        "position5": {
+          "upright": "Dvoje mačeva, prelazeći naprijed rešavanjem nepristojnosti i jasnim izborima donosi korisne promene u vašoj karijeri.",
+          "reversed": "Okrećena dva mačeva, trebalo bi da ubrzate svoje odluke umesto da ih stalno odložite.",
+          "keywords": [
+            "odluka",
+            "ravnoteža",
+            "dilema",
+            "vizija",
+            "promeniti"
+          ],
+          "context": "Morate da olakšate jasne i smele odluke za promenu u vašoj karijeri."
+        },
+        "position6": {
+          "upright": "Dvoje mačeva, neodlučni i odlagajni izbori u prošlosti možda su stvorili prepreke u vašoj karijeri.",
+          "reversed": "Dvoje mačeva preokrenuli su se, a ne suočavaju se sa činjenicama, umesto da se zatvaraju oči, možda su vam u prošlosti otežali vaš put.",
+          "keywords": [
+            "nestabilnost",
+            "dilema",
+            "suspenzija",
+            "konfrontacija",
+            "prošlost"
+          ],
+          "context": "Prošle indiskrecije utiču na vašu trenutnu karijeru."
+        },
+        "position7": {
+          "upright": "Njih dvoje mačeva ukazuju da će ishod putovanja u karijeri biti dostigli uravnoteženu tačku pažljivim izborima.",
+          "reversed": "Dva mačeva obrnuta, neodlučnost ili odlaganja mogu negativno uticati na ishod.",
+          "keywords": [
+            "glasati",
+            "ravnoteža",
+            "odluka",
+            "dilema",
+            "budućnost"
+          ],
+          "context": "Rezultat će postići ravnotežu kroz pažljive izbore."
+        }
+      },
+      "threeofswords": {
+        "position1": {
+          "upright": "Tri mačeva simbolizuje razočaranje i srce. U vašoj karijeri mogu biti situacije koje vas uznemiri ili ne ispunjavaju vaša očekivanja.",
+          "reversed": "Preokrećena tri mačeva ukazuju na proces isceljenja i prepuštanja prošlih razočaranja.",
+          "keywords": [
+            "tuga",
+            "razočaranje",
+            "gubitak",
+            "izdaja",
+            "real"
+          ],
+          "context": "Vaša istinska karijera se pojavljuje kada učite i zacelite iz iskustava koja vas povređuju."
+        },
+        "position2": {
+          "upright": "Tri mačeva preporučuje da krenete napred učeći iz svojih razočaranja. Ova iskustva čine vas jačim.",
+          "reversed": "Preokrećena tri mačeva vam govore da je vreme da ostave stare rane iza i zaceli.",
+          "keywords": [
+            "lekcija",
+            "iskustvo",
+            "poboljšanje",
+            "svest",
+            "napredak"
+          ],
+          "context": "Da biste poboljšali svoju karijeru, morate da naučite od prošlih pritiska i krenite dalje."
+        },
+        "position3": {
+          "upright": "Tri mačeva, ne možete da kontrolišete razočarenja ili ogorčenosti. Ova iskustva su neizbežna.",
+          "reversed": "Pretvorena tri mačeva, proces zarastanja prošlih rana ponekad se javlja izvan vas.",
+          "keywords": [
+            "razočaranje",
+            "gubitak",
+            "ugao",
+            "iskustvo",
+            "van kontrole"
+          ],
+          "context": "Neke su uznemirenosti neizbežne u vašoj karijeri i ne možete ih promeniti."
+        },
+        "position4": {
+          "upright": "Tri mačeva pokazuju da on daje sve od sebe uprkos razočaravanju. Uložite napor u svoj rad čak i u teškim vremenima.",
+          "reversed": "Kada je preokret tri mačeva ne prepustite prošloj ogorčenosti, možda nećete moći da u potpunosti iskoristite svoju energiju.",
+          "keywords": [
+            "razočaranje",
+            "trud",
+            "izdržljivost",
+            "strpljenje",
+            "performanse"
+          ],
+          "context": "Vaš trud dobija vrednost kada nastavite uprkos poteškoćama."
+        },
+        "position5": {
+          "upright": "Tri mačeva, u karijeri možete da date pozitivne promene učeći iz prošlosti razočarenja i prepuštanju ogorčenosti i krećući se napred.",
+          "reversed": "Okolištena tri mačeva pomaže vam da napredujete naprijed lečenju emocionalnih rana.",
+          "keywords": [
+            "lekcija",
+            "poboljšanje",
+            "svest",
+            "strpljenje",
+            "promeniti"
+          ],
+          "context": "Da biste promenili karijeru, morate prepustiti prošlih orijentacija."
+        },
+        "position6": {
+          "upright": "Tri mačeva, razočarenja i ogorčenosti koje ste iskusili u prošlosti možda su ometali vašu trenutnu karijeru.",
+          "reversed": "Okrećena tri mačeva, neuspeh u zarastanju prošlih rana još uvek vas danas utiču na vas.",
+          "keywords": [
+            "razočaranje",
+            "razočaranje",
+            "ugao",
+            "rane",
+            "prošlost"
+          ],
+          "context": "Prošle ogorčene možda su ometale svoju trenutnu karijeru."
+        },
+        "position7": {
+          "upright": "Tri mačeva ukazuje da će ishod putovanja u karijeri učiti od nekog razočaranja i teškoća.",
+          "reversed": "Prekoročila tri mačeva može da proces otežam rezultat efekata prošlih rana.",
+          "keywords": [
+            "lekcija",
+            "poteškoće",
+            "razočaranje",
+            "učenje",
+            "budućnost"
+          ],
+          "context": "Rezultat će biti napredak u učenju iz izazova."
+        }
+      },
+      "fourofswords": {
+        "position1": {
+          "upright": "Četiri mačeva simbolizuje potrebu za odmor i oporavka. Možda bi trebalo da se odmorite od karijere i ponovo procenite svoj smer.",
+          "reversed": "Preokrećena četiri mačeva ukazuje na prekomerno umor ili zanemarivanje oporavka.",
+          "keywords": [
+            "odmor",
+            "poboljšanje",
+            "oporavak",
+            "okretanje prema unutra",
+            "regeneracija"
+          ],
+          "context": "Vaša istinska karijera je put koja vam omogućava da se mentalno i fizički podvrgavate."
+        },
+        "position2": {
+          "upright": "Četiri mačeva sugeriraju da se prikupi, odmarajući i planiranje. Da biste se poboljšali, morate da očistite svoj um.",
+          "reversed": "Prekorčano četvoro mačeva ukazuje na nemogućnost kretanja napred zbog stalnog umora i izgaranja.",
+          "keywords": [
+            "odmor",
+            "plan",
+            "regeneracija",
+            "priprema",
+            "ravnoteža"
+          ],
+          "context": "Da biste poboljšali svoju karijeru, morate da se odmorite i napravite strateški plan."
+        },
+        "position3": {
+          "upright": "Četiri mačeva ukazuje da su ponekad potrebni periodi odmora ili pauze. Ovi procesi su izvan vaše kontrole.",
+          "reversed": "Okrećena četiri mačeva, izgaranje ili prinudnih pauze su izvan vaše kontrole.",
+          "keywords": [
+            "odmor",
+            "prekršiti",
+            "poteškoće",
+            "čekanje",
+            "van kontrole"
+          ],
+          "context": "Neke pauze u vašoj karijeri se razvijaju izvan vas."
+        },
+        "position4": {
+          "upright": "Četiri mačeva ukazuju na to da se trudite da se oporavite i držite energiju uravnoteženo.",
+          "reversed": "Preveli četiri mačeva, prekomerno umor može umanjiti vidljivost napora.",
+          "keywords": [
+            "odmor",
+            "ravnoteža",
+            "priprema",
+            "trud",
+            "performanse"
+          ],
+          "context": "Vaš trud je jači kada takođe omogućava odmor i oporavak."
+        },
+        "position5": {
+          "upright": "Četiri mačeva, možete da date pozitivne promene u svom učinku osiguravajući redovan odmor i mentalni oporavak.",
+          "reversed": "Okrećeno četiri mačeva, trebalo bi da udarite ravnotežu umesto da previše odlažete.",
+          "keywords": [
+            "odmor",
+            "ravnoteža",
+            "priprema",
+            "zdravlje",
+            "promeniti"
+          ],
+          "context": "Za promenu u vašoj karijeri morate da napravite mesta za mentalno i fizičko odmor."
+        },
+        "position6": {
+          "upright": "Četiri mačeva, ne odmaraju se ili se dovoljno odmaraju u prošlosti, možda su stvorili slabost u vašoj karijeri.",
+          "reversed": "Ukrasana četiri mačeva, prekomerna odlaganja ili lenjost može biti prepreka iz prošlosti.",
+          "keywords": [
+            "odmor",
+            "suspenzija",
+            "zdravlje",
+            "priprema",
+            "prošlost"
+          ],
+          "context": "Nedovoljan odmor i odlaganja u prošlosti danas utiču na vašu karijeru."
+        },
+        "position7": {
+          "upright": "Četiri mačeva ukazuje da će ishod vašeg putovanja u karijeri biti oblikovan procesom odmora, oporavka i obnove.",
+          "reversed": "Ukrasana četiri mačeva, ekstremni umor ili odlaganja mogu odložiti rezultate.",
+          "keywords": [
+            "odmor",
+            "oporavak",
+            "regeneracija",
+            "ravnoteža",
+            "budućnost"
+          ],
+          "context": "Rezultat će se jačati kroz proces obnove i oporavka."
+        }
+      },
+      "fiveofswords": {
+        "position1": {
+          "upright": "Petorica mačeva simbolizuje sukob i gubitak tokom pobede. Nepotrebne borbe u vašoj karijeri mogu vas umoriti.",
+          "reversed": "Okrećeno pet mačeva govori nam da je vreme da ostavimo sukobe iza i sklopi mir.",
+          "keywords": [
+            "sukob",
+            "prihod",
+            "poraz",
+            "ego",
+            "borba"
+          ],
+          "context": "Vaša istinska karijera će se pojaviti kada steknete snagu od harmonije, a ne sukoba."
+        },
+        "position2": {
+          "upright": "Pet mačeva preporučuje da se držite podalje od nepotrebnih sukoba. Biće efikasnije napredovanje sa saradnjom za razvoj.",
+          "reversed": "Prekoračenje pet mačeva vam govori da biste trebali ostaviti stare borbe iza i potražiti pomirenje.",
+          "keywords": [
+            "sukob",
+            "kompromis",
+            "iskustvo",
+            "svest",
+            "ravnoteža"
+          ],
+          "context": "Da biste razvili svoju karijeru, morate se hraniti harmonijom, a ne egom."
+        },
+        "position3": {
+          "upright": "Pet mačeva, ne možete uvek da kontrolišete intenzitet argumenata i sukoba.",
+          "reversed": "Okrećeno pet mačeva, nesporazuma ili nepravde ponekad se razvijaju izvan vas.",
+          "keywords": [
+            "sukob",
+            "prihod",
+            "borba",
+            "nerazumevanje",
+            "van kontrole"
+          ],
+          "context": "Ne možete odrediti prirodu svih sukoba u karijeri."
+        },
+        "position4": {
+          "upright": "Petorica mačeva pokazuje da on daje sve od sebe čak i u borbenom okruženju. Otporni ste u izazovnim okruženjima.",
+          "reversed": "Petorica je obrnuta mačeva, nepotrebne sukobe mogu umanjiti vaše performanse.",
+          "keywords": [
+            "borba",
+            "otpornost",
+            "trud",
+            "sukob",
+            "performanse"
+          ],
+          "context": "Vaš trud je otkriven vašom upornošću u teškim uslovima."
+        },
+        "position5": {
+          "upright": "Petorica mačeva, boravši se od nepotrebnih argumenata i uspostavljanje konstruktivne komunikacije pružaju korisne promene u vašoj karijeri.",
+          "reversed": "Invertirano pet mačeva, fleksibilan i stavljanje ponosa je važan za razvoj.",
+          "keywords": [
+            "kompromis",
+            "komunikacija",
+            "ego",
+            "raport",
+            "promeniti"
+          ],
+          "context": "Za promenu u vašoj karijeri, želite da preferirate kompromise, a ne sukob."
+        },
+        "position6": {
+          "upright": "Petorica mačeva, sukoba ili gubitaka koje ste iskusili u prošlosti možda su stvorili prepreke u vašoj karijeri.",
+          "reversed": "Pet mačeva obrnuto, ponos i tvrdoglavost možda su natekli svoje odnose u prošlosti.",
+          "keywords": [
+            "sukob",
+            "izgubiti",
+            "tvrdoglavost",
+            "ego",
+            "prošlost"
+          ],
+          "context": "Sukobi i gubici u prošlosti danas utiču na vašu karijeru."
+        },
+        "position7": {
+          "upright": "Petorica mača ukazuje da će ishod putovanja u karijeri biti pobeda ili dobitak iskustva nakon nekih sukoba.",
+          "reversed": "Uokrećeno pet mačeva može napredovati težak kao rezultat nepotrebnih argumenata.",
+          "keywords": [
+            "sukob",
+            "pobeda",
+            "učenje",
+            "ego",
+            "budućnost"
+          ],
+          "context": "Rezultat će doći do jače tačke učeći iz sukoba."
+        }
+      },
+      "sixofswords": {
+        "position1": {
+          "upright": "Šest mačeva simbolizuje tranziciju i isceljivanje. U vašoj karijeri može doći do prelaznog perioda koji će vas dovesti do mira.",
+          "reversed": "Preokrećeno šest mačeva ukazuje na nemogućnost razbijanja od prošlih problema ili krenuti naprijed.",
+          "keywords": [
+            "prelaz",
+            "poboljšanje",
+            "napredak",
+            "putovanje",
+            "nadati se"
+          ],
+          "context": "Vaša istinska karijera biće obeležena tranzicijom koja vas kreće napred."
+        },
+        "position2": {
+          "upright": "Šest mačeva sugeriše da unesete prelazni period za razvoj. Novi poslovni model, novo okruženje ili drugačija metoda doneće vam mir.",
+          "reversed": "Prekoračili šest mačeva kaže da ne možete da krenete napred kada ste zaglavili u prošlosti.",
+          "keywords": [
+            "prelaz",
+            "napredak",
+            "putovanje",
+            "poboljšanje",
+            "prilika"
+          ],
+          "context": "Da biste poboljšali svoju karijeru, morate krenuti na novo putovanje koje će vas odvesti napred."
+        },
+        "position3": {
+          "upright": "Šest mačeva, ne možete da kontrolišete kada prelaz započne ili završava.",
+          "reversed": "Pretvara se šest mačeva, prinudna putovanja ili promene mogu se pojaviti izvan vas.",
+          "keywords": [
+            "prelaz",
+            "promeniti",
+            "poteškoće",
+            "putovanje",
+            "van kontrole"
+          ],
+          "context": "Neke prelaze i promene u vašoj karijeri su izvan vaše kontrole."
+        },
+        "position4": {
+          "upright": "Šest mačeva pokazuje da on upravlja prelaznim periodima u svom radu sa strpljenjem i naporom. Dajete sve od sebe.",
+          "reversed": "Invertirano šest mačeva može zasjeniti performanse neodlučnosti tokom tranzicijskih perioda.",
+          "keywords": [
+            "prelaz",
+            "strpljenje",
+            "putovanje",
+            "trud",
+            "performanse"
+          ],
+          "context": "CABAN je jači strpljivo upravljajući teškim vremenima."
+        },
+        "position5": {
+          "upright": "Šest mačeva, odseli se od izazovnog okruženja i kretanje prema mirnijem putu stvara snažnu promenu vaše karijere.",
+          "reversed": "Okrećeno šest mačeva, trebalo bi da pronađete nova rešenja umesto da se zaglave na istom mestu.",
+          "keywords": [
+            "prelaz",
+            "putovanje",
+            "napredak",
+            "rešenje",
+            "promeniti"
+          ],
+          "context": "Da biste promenili karijeru, morate da pređete na zdraviju sredinu."
+        },
+        "position6": {
+          "upright": "Šest mačeva, ne mogu da se odlaze od teške situacije u prošlosti, možda je danas otežala vašu karijeru.",
+          "reversed": "Okrećeno šest mačeva, boravak se zaglavio u prošlosti možda vas neće moći premestiti napred.",
+          "keywords": [
+            "prelaz",
+            "napredak",
+            "putovanje",
+            "ostati zaglavljen",
+            "prošlost"
+          ],
+          "context": "Ne mogu da pređete u prošlosti, možda je danas ometala vašu karijeru."
+        },
+        "position7": {
+          "upright": "Šest mačeva ukazuje da će ishod vašeg putovanja u karijeri biti ostaviti poteškoće iza i dostići smirenije vode.",
+          "reversed": "Okrećeno šest mačeva, držeći se prošlosti može odložiti ishod.",
+          "keywords": [
+            "napredak",
+            "prelaz",
+            "spokojstvo",
+            "putovanje",
+            "budućnost"
+          ],
+          "context": "Rezultat će biti ostaviti poteškoće izaći iza i preći u miran period."
+        }
+      },
+      "sevenofswords": {
+        "position1": {
+          "upright": "Sedam mačeva simbolizuje strategiju, oprez, a ponekad i prikriveno. Morate mudro da planirate u karijeri.",
+          "reversed": "Preokrećeno sedam mačeva ukazuje da vas nepošteno može ući u probleme.",
+          "keywords": [
+            "strategija",
+            "plan",
+            "sigurnost",
+            "budnost",
+            "račun"
+          ],
+          "context": "Vaša stvarna karijera je izgrađena sa poštenim strategijama i pametnim koracima."
+        },
+        "position2": {
+          "upright": "Sedam mačeva vas savetuje da se mudro i strateški ponašate za razvoj. Trebali biste pažljivo date svoje planove.",
+          "reversed": "Preokrećeno sedam mačeva ukazuje na to da će nečasni načini na duži rok ometati vaš razvoj.",
+          "keywords": [
+            "strategija",
+            "plan",
+            "budnost",
+            "pažnja",
+            "račun"
+          ],
+          "context": "Morate preuzeti strateške i transparentne korake da poboljšate svoju karijeru."
+        },
+        "position3": {
+          "upright": "Sedam mačeva, ne možete da kontrolišete da li će drugi biti iskreni ili ne. Trebali biste u skladu s tim da biste svoje strategije dali.",
+          "reversed": "Okrećeno sedam mačeva, vreme kada će biti otkriveno skrivene istine nisu u vašim rukama.",
+          "keywords": [
+            "strategija",
+            "iskrenost",
+            "sigurnost",
+            "plan",
+            "van kontrole"
+          ],
+          "context": "Ne možete promeniti iskrenost ili zadnji motivi drugih u vašoj karijeri."
+        },
+        "position4": {
+          "upright": "Sedam mačeva pokazuje da ste strateški i dajete najbolje koristeći svoju inteligenciju.",
+          "reversed": "Ograničeno sedam mačeva, nepažnje ili nedostatak jasne strategije može smanjiti performanse.",
+          "keywords": [
+            "strategija",
+            "obaveštajna služba",
+            "trud",
+            "planiranje",
+            "performanse"
+          ],
+          "context": "Vaš trud dolazi od vašeg strateškog razmišljanja."
+        },
+        "position5": {
+          "upright": "Sedam mačeva, razmišljati strateškije i pravljenje pametnih planova donosi pozitivne promene u vašoj karijeri.",
+          "reversed": "Okrećeno sedam mačeva, otvoren je i transparentan će vam donijeti više koristi.",
+          "keywords": [
+            "strategija",
+            "plan",
+            "obaveštajna služba",
+            "svest",
+            "promeniti"
+          ],
+          "context": "Za promenu u vašoj karijeri, morate biti strateškiji i transparentniji."
+        },
+        "position6": {
+          "upright": "Sedam mačeva, prošla obmana ili nedostatak strategije možda su ometali vašu karijeru.",
+          "reversed": "Okrećeno sedam mačeva, nedostatak otvorenosti i tajnosti može biti problem iz prošlosti.",
+          "keywords": [
+            "varati",
+            "sigurnost",
+            "strategija",
+            "varati",
+            "prošlost"
+          ],
+          "context": "Prošle probleme poverenja danas utiču na vašu karijeru."
+        },
+        "position7": {
+          "upright": "Sedam mačeva ukazuje da će ishod vašeg putovanja u karijeri prevladati prepreke strateški razmišljanjem.",
+          "reversed": "Okrećeno sedam mačeva, tajnosti ili nedostatak poštenosti može usporiti ishod.",
+          "keywords": [
+            "strategija",
+            "plan",
+            "pažnja",
+            "taktika",
+            "budućnost"
+          ],
+          "context": "Rezultat će postići uspeh sa strateškim koracima."
+        }
+      },
+      "eightofswords": {
+        "position1": {
+          "upright": "Osam mačeva simbolizuje osećaj ograničenja i zastoja. Možda ćete se osećati zaglavljeno u karijeri.",
+          "reversed": "Otkriveni osam mačeva ukazuje na početak da se oslobode ova ograničenja.",
+          "keywords": [
+            "Ograničenje"
+          ]
+        }
+      }
+    }
+  }
+}

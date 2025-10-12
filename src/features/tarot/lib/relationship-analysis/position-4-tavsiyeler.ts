@@ -1,3 +1,5 @@
+'use client';
+
 /*
 info:
 Bağlantılı dosyalar:
@@ -683,6 +685,191 @@ export const position4Meanings: RelationshipAnalysisPositionMeaning[] = [
     context:
       'Tavsiyen; aklı kalple dengelemek. İlkelerle birlikte şefkat güven yaratır.',
     group: 'Kılıçlar',
+  },
+
+  // PENTACLES (Tılsımlar)
+  // TILSIMLAR (14) — 4. Pozisyon: Tavsiyeler
+  {
+    id: 'ace_of_pentacles_ra_pos4',
+    card: 'Ace of Pentacles',
+    position: 4,
+    upright:
+      'Tılsım Ası, somut adımlarla güven inşa et der. Küçük ama sağlam başlangıçlar bağı büyütür.',
+    reversed:
+      'Ters Tılsım Ası, fırsatları görmeyi öğren ve ertelemeyi bırak der. Şimdi hareket zamanı.',
+    keywords: ['başlangıç', 'somutluk', 'güven', 'temel', 'fırsat'],
+    context:
+      'Tavsiyen; sözleri eylemle desteklemek. Küçük adımlar büyük güven yaratır.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'two_of_pentacles_ra_pos4',
+    card: 'Two of Pentacles',
+    position: 4,
+    upright:
+      'İki Tılsım, denge kur ve öncelikleri netleştir der. Esneklik bağı rahatlatır.',
+    reversed:
+      'Ters İki Tılsım, dağınıklığı sadelleştir ve zaman yönet der. Odak güç getirir.',
+    keywords: ['denge', 'öncelik', 'esneklik', 'yönetim', 'akış'],
+    context:
+      'Tavsiyen; hayatı sadeleştirmek. Denge içinde sevgi yeşerir, dağınıklıkta yorar.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'three_of_pentacles_ra_pos4',
+    card: 'Three of Pentacles',
+    position: 4,
+    upright:
+      'Üç Tılsım, işbirliği yap ve rolleri netleştir der. Ortak emek bağı güçlendirir.',
+    reversed:
+      'Ters Üç Tılsım, görev dağılımını yeniden kur ve takdir paylaş der. Adalet huzur getirir.',
+    keywords: ['işbirliği', 'rol', 'emek', 'takdir', 'kalite'],
+    context:
+      'Tavsiyen; ekip ruhuyla ilerlemek. Paylaşılan sorumluluk sevgiyi derinleştirir.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'four_of_pentacles_ra_pos4',
+    card: 'Four of Pentacles',
+    position: 4,
+    upright:
+      'Dört Tılsım, güvenliği koru ama paylaşmayı unut der. Denge içinde tut.',
+    reversed:
+      'Ters Dört Tılsım, kontrolü gevşet ve esnekliği artır der. Özgürlük alanı bırak.',
+    keywords: ['güvenlik', 'kontrol', 'paylaşım', 'denge', 'esneklik'],
+    context:
+      'Tavsiyen; korumak ile boğmak arasındaki fark. Güven içinde özgürlük bırak.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'five_of_pentacles_ra_pos4',
+    card: 'Five of Pentacles',
+    position: 4,
+    upright:
+      'Beş Tılsım, zor zamanda birlikte dur ve destek iste der. Dayanışma güçlendirir.',
+    reversed:
+      'Ters Beş Tılsım, yalnızlıktan çık ve yardımı kabul et der. Toparlanma birlikte daha kolay.',
+    keywords: ['dayanışma', 'destek', 'zorluk', 'birlik', 'iyileşme'],
+    context:
+      'Tavsiyen; zorda omuz omuza durmak. Paylaşılan yük hafif, bağ sağlam olur.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'six_of_pentacles_ra_pos4',
+    card: 'Six of Pentacles',
+    position: 4,
+    upright:
+      'Altı Tılsım, adil paylaş ve karşılıklılığı koru der. Denge güven yaratır.',
+    reversed:
+      'Ters Altı Tılsım, eşitsizliği düzelt ve güç dengesini kur der. Adalet huzur getirir.',
+    keywords: ['adalet', 'paylaşım', 'karşılıklılık', 'denge', 'güven'],
+    context:
+      'Tavsiyen; verme ve alma dengesini kurmak. Adil ilişki kalıcı olur.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'seven_of_pentacles_ra_pos4',
+    card: 'Seven of Pentacles',
+    position: 4,
+    upright:
+      'Yedi Tılsım, sabırlı ol ve değerlendir der. Emeğin meyvesi zamanda olgunlaşır.',
+    reversed:
+      'Ters Yedi Tılsım, sabırsızlığı bırak ve süreci gör der. Acele etme hata yaratır.',
+    keywords: ['sabır', 'değerlendirme', 'süreç', 'olgunlaşma', 'emek'],
+    context:
+      'Tavsiyen; sabırla yetiştirmek. Sevgi emekle büyür, aceleyle solmaz.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'eight_of_pentacles_ra_pos4',
+    card: 'Eight of Pentacles',
+    position: 4,
+    upright:
+      'Sekiz Tılsım, düzenli çalış ve kaliteyi artır der. Disiplin bağı sağlamlaştırır.',
+    reversed:
+      'Ters Sekiz Tılsım, özensizliği bırak ve emek ver der. Dikkat sevgiyi büyütür.',
+    keywords: ['disiplin', 'emek', 'kalite', 'öğrenme', 'düzen'],
+    context:
+      'Tavsiyen; günlük emeği ihmal etmemek. Düzenli ilgi sevgiyi canlı tutar.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'nine_of_pentacles_ra_pos4',
+    card: 'Nine of Pentacles',
+    position: 4,
+    upright:
+      'Dokuz Tılsım, bağımsızlığı koru ama paylaş der. Özgüven bağa güç katar.',
+    reversed:
+      'Ters Dokuz Tılsım, aşırı bağımsızlığı yumuşat ve yakınlaş der. Biz alanını büyüt.',
+    keywords: ['özgüven', 'bağımsızlık', 'paylaşım', 'denge', 'refah'],
+    context:
+      'Tavsiyen; bireyselliği koruyup birlikteliği büyütmek. İkisi de gerekli.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'ten_of_pentacles_ra_pos4',
+    card: 'Ten of Pentacles',
+    position: 4,
+    upright:
+      'On Tılsım, uzun vadeyi gör ve aile gibi ol der. İstikrar güven yaratır.',
+    reversed:
+      'Ters On Tılsım, aile baskısını dengele ve kendi yolunu bul der. Özgürlük ver.',
+    keywords: ['aile', 'istikrar', 'uzun vade', 'güven', 'miras'],
+    context:
+      'Tavsiyen; geleceği birlikte kurmak. Ortak vizyon bağı sağlamlaştırır.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'page_of_pentacles_ra_pos4',
+    card: 'Page of Pentacles',
+    position: 4,
+    upright:
+      'Tılsım Prensi, öğren ve somut adımlar at der. Küçük başlangıçlar büyük olur.',
+    reversed:
+      'Ters Tılsım Prensi, ertelemeyi bırak ve odaklan der. Disiplin güç getirir.',
+    keywords: ['öğrenme', 'başlangıç', 'odak', 'pratik', 'somutluk'],
+    context:
+      'Tavsiyen; adım adım ilerlemek. Her küçük çaba sevgiyi büyütür.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'knight_of_pentacles_ra_pos4',
+    card: 'Knight of Pentacles',
+    position: 4,
+    upright:
+      'Tılsım Şövalyesi, kararlı ol ve tutarlı git der. İstikrar güven yaratır.',
+    reversed:
+      'Ters Tılsım Şövalyesi, durağanlıktan çık ve yenile der. Esneklik can katar.',
+    keywords: ['kararlılık', 'tutarlılık', 'istikrar', 'güven', 'esneklik'],
+    context:
+      'Tavsiyen; emin adımlarla ilerlemek. Tutarlılık sevgiyi besler.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'queen_of_pentacles_ra_pos4',
+    card: 'Queen of Pentacles',
+    position: 4,
+    upright:
+      'Tılsım Kraliçesi, besle ve pratik ol der. Şefkatli düzen huzur yaratır.',
+    reversed:
+      'Ters Tılsım Kraliçesi, öz bakımı unut ve yükü paylaş der. Denge kurtar.',
+    keywords: ['besleyicilik', 'pratiklik', 'şefkat', 'düzen', 'denge'],
+    context:
+      'Tavsiyen; beslerken kendini unutmamak. Dengeli bakım sevgiyi yaşatır.',
+    group: 'Tılsımlar',
+  },
+  {
+    id: 'king_of_pentacles_ra_pos4',
+    card: 'King of Pentacles',
+    position: 4,
+    upright:
+      'Tılsım Kralı, stratejik düşün ve cömert paylaş der. Güçlü vizyon bağ kurar.',
+    reversed:
+      'Ters Tılsım Kralı, kontrolü bırak ve paylaş der. Güç paylaşımı sevgi büyütür.',
+    keywords: ['strateji', 'vizyon', 'paylaşım', 'güvence', 'liderlik'],
+    context:
+      'Tavsiyen; güçle birlikte cömertlik. Paylaşan liderlik sevgi yaratır.',
+    group: 'Tılsımlar',
   },
 
   // WANDS (Asalar)

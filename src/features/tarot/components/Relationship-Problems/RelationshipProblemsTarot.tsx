@@ -1,40 +1,50 @@
 'use client';
 
 import type { TarotCard } from '@/types/tarot';
+import { useTranslations } from '@/hooks/useTranslations';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createRelationshipProblemsConfig } from '@/features/tarot/shared/config';
-import { getRelationshipProblemsMeaningByCardAndPosition } from '@/features/tarot/lib/relationship-problems/position-meanings-index';
+import { getI18nRelationshipProblemsMeaningByCardAndPosition } from '@/features/tarot/lib/relationship-problems/position-meanings-index';
 
-const RelationshipProblemsReading = createTarotReadingComponent({
-  getConfig: () => createRelationshipProblemsConfig(),
-  interpretationEmoji: '💔',
-  readingType: 'RELATIONSHIP_PROBLEMS_DETAILED', // Relationship Problems için reading type belirt
-  getCardMeaning: (
-    card: TarotCard | null,
-    position: number,
-    isReversed: boolean
-  ) => {
-    if (!card) {
-      return '';
-    }
+export default function RelationshipProblemsReading(props: any) {
+  // i18n hook'unu component içinde kullan
+  const { t } = useTranslations();
 
-    const meaning = getRelationshipProblemsMeaningByCardAndPosition(
-      card,
-      position,
-      isReversed
-    );
+  // TarotComponent'i hook'ların içinde oluştur
+  const TarotComponent = createTarotReadingComponent({
+    getConfig: () => createRelationshipProblemsConfig(t),
+    interpretationEmoji: '💔',
+    readingType: 'RELATIONSHIP_PROBLEMS_DETAILED',
+    getCardMeaning: (
+      card: TarotCard | null,
+      position: number,
+      isReversed: boolean
+    ) => {
+      if (!card) {
+        return '';
+      }
 
-    if (!meaning) {
-      return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
-    }
+      // i18n destekli anlam al - t fonksiyonu closure ile erişilebilir!
+      const meaning = getI18nRelationshipProblemsMeaningByCardAndPosition(
+        card.name,
+        position,
+        t
+      );
 
-    // Context bilgisini de içeren obje döndür
-    return {
-      interpretation: isReversed ? meaning.reversed : meaning.upright,
-      context: meaning.context,
-      keywords: meaning.keywords || [],
-    };
-  },
-});
+      if (!meaning) {
+        // Fallback: kartın kendi Türkçe anlamını kullan
+        return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
+      }
 
-export default RelationshipProblemsReading;
+      // Context bilgisini döndür
+      const interpretation = isReversed ? meaning.reversed : meaning.upright;
+      return {
+        interpretation,
+        context: meaning.context || '',
+        keywords: meaning.keywords || [],
+      };
+    },
+  });
+
+  return <TarotComponent {...props} />;
+}

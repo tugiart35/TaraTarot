@@ -1,0 +1,826 @@
+{
+  "relationshipProblems": {
+    "form": {
+      "emailCommunication": "Email",
+      "emotionalQuestion": "How do you feel about these relationship problems right now?",
+      "firstName": "Your name",
+      "lastName": "Last name",
+      "personalInfo": "Your Personal Information",
+      "questions": "▪ Answers to Relationship Problems (I.E.D.)",
+      "saveAndOpen": "▪ Save and Open Cards",
+      "saving": "Saving...",
+      "understandingQuestion": "What do you want to understand with the analysis of these relationship problems?",
+      "whatsappCommunication": "WhatsApp"
+    },
+    "messeages": {
+      "readingSaveError": "An error occurred while saving reading.",
+      "readingSavedSuccess": "Your reading has been successfully recorded!",
+      "readingSavedSuccessfully": "Your reading has been successfully recorded!",
+      "redirectingToHome": "You're being forwarded to the main page...",
+      "savingReading": "Saving reading...",
+      "selectReadingTypeFirst": "Please select a reading type first.",
+      "simpleReadingCompleted": "Simple reading complete!"
+    },
+    "modals": {
+      "aboutSpread": "About Publicity",
+      "aboutSpreadText": "These nine-card openings are designed to delve deeper into the problems in your relationship, providing extensive information about the source of problems, solutions, and future predictions.",
+      "cancel": "Give it up.",
+      "cardCount": "Number of Cards",
+      "cardCountText": "Each card represents a different aspect of your relationship.",
+      "confirm": "Yes, I approve.",
+      "continue": "Continue",
+      "creditConfirm": "Credit Approval",
+      "creditConfirmMessage": "Do you want to continue this reading?",
+      "detailedReading": "Vocabulary Reading",
+      "detailedReadingText": "Voice reading offers a warm, detailed view of the nodes in your relationship, and with your questions and information shared, you will receive a completely specific comment.",
+      "infoTitle": "About the Opening of Relationship Problems",
+      "loveAttention": "After your reading has been recorded, your personal comment is usually delivered by email within two hundred and four hours. This work is for guidance; the final choices are always yours.",
+      "loveAttentionInfo": "A Kind Note",
+      "process": "Process",
+      "processing": "Processing...",
+      "redirecting": "▪ You are being forwarded to the main page...",
+      "saveReading": "Save Reading",
+      "savingReading": "Saving...",
+      "step1": "Fill in your personal information and questions",
+      "step2": "Select 9 cards in order",
+      "step3": "Read the meaning of the cards",
+      "step4": "Save your reading and receive it by email",
+      "successMessage": "Your relationship problems opening has been recorded and analyzed in detail. You can view your results from the user panel.",
+      "successTitle": "Reading Successfully Recorded!",
+      "writtenReading": "Written Reading",
+      "writtenReadingText": "The written reading is delivered as a detailed report that you can hide and return if you wish."
+    }
+  },
+  "seo": {
+    "description": "With the warm and professional guidance of Büsbückki, they read healing tarots and numerology for love, career and your way of life.",
+    "keywords": "tarot, reading, fate, love, career, health, guidance, cards",
+    "ogDescription": "Reliable and caring comments that are good for your heart, take guidance for love, career, health, and so on.",
+    "ogImage": "/images/og-image.webp",
+    "ogTitle": "Büsbüşkikki Tarot  (Healing Tarot Readings)",
+    "title": "Büsbüşkikki Tarot  (Healing Tarot Readings)"
+  },
+  "settings": {
+    "accountDeleteError": "Error while deleting account.",
+    "accountDeletedSuccess": "Your account has been successfully deleted.",
+    "accountSettings": "Account Settings",
+    "analyticsData": "Analytic Data",
+    "analyticsDataDesc": "Collect anonymous data to improve the quality of service",
+    "backToDashboard": "Return to Dashboard",
+    "cancel": "Cancel",
+    "changePassword": "Change Password",
+    "changePasswordDesc": "Update your password for account safety",
+    "confirmPassword": "New Password Again",
+    "confirmPasswordPlaceholder": "Reenter your new password",
+    "currentPassword": "Current Password",
+    "currentPasswordPlaceholder": "Enter your current password",
+    "dataExportError": "Error while downloading data.",
+    "dataExportedSuccess": "Your data has been successfully downloaded!",
+    "dataManagement": "Data Management",
+    "delete": "Delete",
+    "deleteAccount": "Delete Account",
+    "deleteAccountConfirm": "Are you sure you want to delete your account? This operation cannot be undone!",
+    "deleteAccountDesc": "Remove your account and all data permanently",
+    "download": "Download",
+    "downloadData": "Download Data",
+    "downloadDataDesc": "Download all your data in JSON format",
+    "loading": "Loading settings...",
+    "lowCreditWarning": "Low Credit Warning",
+    "lowCreditWarningDesc": "Get a notification when your credit balance is down",
+    "monthlyInsights": "Monthly Introductions",
+    "monthlyInsightsDesc": "Get your monthly numerology and tarot summary",
+    "newPassword": "New Password",
+    "newPasswordPlaceholder": "Enter your new password",
+    "notificationPreferences": "Notification Preferences",
+    "notifications": "Notifications",
+    "passwordManagement": "Password Management",
+    "passwordTooShort": "The new password must be at least six characters!",
+    "passwordUpdateError": "Error while updating password.",
+    "passwordUpdatedSuccess": "The password has been successfully updated!",
+    "passwordsDoNotMatch": "New codes don't match!",
+    "privacy": "Secrecy",
+    "privacySettings": "Secrecy Settings",
+    "profileInfo": "Profile Information",
+    "profileInfoDescription": "To edit your profile information, click on the profile card on the dashboard or click on the user avatar on the top menu.",
+    "profilePublic": "Profile Open to Everyone",
+    "profilePublicDesc": "Other users can see your profile.",
+    "promotionalOffers": "Promotion Offers",
+    "promotionalOffersDesc": "Be aware of special discounts and campaigns",
+    "readingCompleted": "Reading Completed",
+    "readingCompletedDesc": "Receive notification when your tarot or numerology reading is complete",
+    "readingHistoryVisible": "Reading History Viewed",
+    "readingHistoryVisibleDesc": "Other users can see your reading history",
+    "security": "Security",
+    "settingsDescription": "Manage your notification preferences, confidentiality settings and security options",
+    "statsVisible": "Statistics Seen",
+    "statsVisibleDesc": "Let other users see your statistics.",
+    "updatePassword": "Update Password",
+    "updating": "Updating..."
+  },
+  "situationAnalysis": {
+    "data": {
+      "badgeText": "DETECTIVE ANALISM",
+      "cardDirections": {
+        "reversed": "Reverse",
+        "upright": "Flat"
+      },
+      "defaultTitle": "State Analysis Explanation",
+      "detailedReadingTitle": "State Analyst - Details Personal Reading",
+      "detailedTitle": "State Analyst - Details Personal Reading",
+      "interpretationTitle": "Status Analysis Explanation Comment",
+      "readingFormats": {
+        "detailed": "Loud",
+        "simple": "Simple",
+        "written": "Written"
+      },
+      "simpleInterpretation": "Simple reading - just meter",
+      "simpleTitle": "Simple Reading",
+      "spreadName": "State Analysis Explanation",
+      "spreadTitle": "State Analysis Explanation"
+    },
+    "errors": {
+      "allCardsRequired": "You can't make a comment without choosing all the cards.",
+      "configNotFound": "No status analysis configuration found. Please check the tarotSpreads.ts file."
+    },
+    "form": {
+      "birthDate": "Date of Birth",
+      "clearAll": "Clean All",
+      "concernQuestion": "What situation would you like to analyze?",
+      "email": "Your email address",
+      "emailCommunication": "Email",
+      "emotionalQuestion": "How do you feel about that right now?",
+      "firstName": "Your name",
+      "lastName": "Last name",
+      "personalInfo": "Your Personal Information",
+      "phone": "Phone Number",
+      "phoneCommunication": "Telephone",
+      "phonePlaceholder": "+90 5XX XX XX XX XX",
+      "phoneRequired": "WhatsApp needs a phone number",
+      "questions": "▪ State Analysis Explanation Questions ▪",
+      "saveAndOpen": "▪ Save and Open Cards",
+      "saving": "Saving...",
+      "understandingQuestion": "What do you want to understand with this analysis?",
+      "whatsappCommunication": "WhatsApp"
+    },
+    "interpretation": {
+      "dearClient": "Dear counselor,",
+      "personalAnalysis": "Special analysis for status analysis \"{question}\":",
+      "title": "State Analysis Explanation"
+    },
+    "messages": {
+      "formNotSavedConfirm": "The form has been filled out, but it hasn't been recorded. Are you sure you want to leave?",
+      "readingSaveError": "An error occurred while saving reading.",
+      "readingSavedSuccess": "Your state-of-the-art opening has been successfully recorded!",
+      "readingSavedSuccessfully": "Your reading has been successfully recorded!",
+      "redirectingToHome": "You're being forwarded to the main page...",
+      "savingReading": "Saving reading...",
+      "selectReadingTypeFirst": "Please select a reading type first.",
+      "simpleReadingCompleted": "Simple reading complete!"
+    },
+    "modals": {
+      "aboutSpread": "About Publicity",
+      "aboutSpreadText": "These seven-card openings are designed to analyze the situation that you're experiencing in depth, and the past, now, provides extensive information about hidden factors and the future.",
+      "cancel": "Give it up.",
+      "cardCount": "Number of Cards",
+      "cardCountText": "Each card represents a different aspect of the situation.",
+      "confirm": "Yes, I approve.",
+      "continue": "Continue",
+      "creditConfirm": "Credit Approval",
+      "creditConfirmMessage": "Do you want to continue this reading?",
+      "detailedReading": "Vocabulary Reading",
+      "detailedReadingText": "Voice reading offers a warm, deep look at your situation with detailed interpretations of cards.",
+      "infoTitle": "About State Analysis Openation",
+      "loveAttention": "After your reading is recorded, I usually deliver your personal comment by email within two hundred and four hours. This work is for guidance; the final choices are always yours.",
+      "loveAttentionInfo": "A Kind Note",
+      "process": "Process",
+      "processing": "Processing...",
+      "redirecting": "▪ You are being forwarded to the main page...",
+      "saveReading": "Save Reading",
+      "savingReading": "Saving...",
+      "step1": "Enter personal information",
+      "step2": "Answer questions about the situation",
+      "step3": "Select 7 cards and see comments",
+      "step4": "Save reading and receive e-mail",
+      "successMessage": "Your status analysis expansion has been recorded and analyzed in detail. You can view your results from the user panel.",
+      "successTitle": "Reading Successfully Recorded!",
+      "writtenReading": "Written Reading",
+      "writtenReadingText": "The written reading is delivered as a detailed report that you can hide and return whenever you wish."
+    }
+  },
+  "spreads": {
+    "career": {
+      "description": "7 card special openings for career and business",
+      "name": "Career Development",
+      "positions": {
+        "1": {
+          "description": "Evaluate whether your current career is really what you want",
+          "title": "Is this really the career I want?"
+        },
+        "2": {
+          "description": "The concrete steps you can take to improve your career",
+          "title": "What steps can I take to improve my career?"
+        },
+        "3": {
+          "description": "Things in your career that you can't control or change.",
+          "title": "Is there any part of my career that I can't change?"
+        },
+        "4": {
+          "description": "The level of performance and effort you have shown in your current career",
+          "title": "Am I doing the best I can in my career?"
+        },
+        "5": {
+          "description": "Changes and improvements that will contribute positively to your career",
+          "title": "What changes can I make to help my career?"
+        },
+        "6": {
+          "description": "How your past experiences affect your current career",
+          "title": "What obstacles in my past affect my current career?"
+        },
+        "7": {
+          "description": "The overall result of your career journey and future predictions",
+          "title": "What will be the result?"
+        }
+      }
+    },
+    "love": {
+      "description": "Four-card special opening for love and relationships.",
+      "name": "The Opening of Love",
+      "positions": {
+        "1": {
+          "description": "The person you're asking about.",
+          "title": "The person you're asking about."
+        },
+        "2": {
+          "description": "Your physical and sexual connection",
+          "title": "Your physical and sexual connection"
+        },
+        "3": {
+          "description": "Your emotional and spiritual connection",
+          "title": "Your emotional and spiritual connection"
+        },
+        "4": {
+          "description": "The long-term result of the relationship",
+          "title": "The long-term result of the relationship"
+        }
+      }
+    },
+    "marriage": {
+      "description": "10 card special openings for marriage and marriage",
+      "name": "Marriage Statement",
+      "positions": {
+        "1": {
+          "description": "It shows the overall outcome of your marriage process and how it will proceed.",
+          "title": "What will be the result?"
+        },
+        "2": {
+          "description": "It shows you how to improve yourself until you find the right person.",
+          "title": "What am I supposed to do while I'm waiting for my wife?"
+        },
+        "3": {
+          "description": "In marriage, it shows your harmony and sharing in financial matters.",
+          "title": "Are we going to share our financial resources with each other?"
+        },
+        "4": {
+          "description": "It shows whether both sides are ready for marriage and the desire to commit.",
+          "title": "Are we both going to want to commit?"
+        },
+        "5": {
+          "description": "It shows your common values, your similarities, and your harmony.",
+          "title": "Will we have similar features?"
+        },
+        "6": {
+          "description": "It'll show you what family approval and family relationships will be like.",
+          "title": "Will this person's family accept me?"
+        },
+        "7": {
+          "description": "It shows you how to meet and meet the right person.",
+          "title": "How do we find each other?"
+        },
+        "8": {
+          "description": "It shows your communication harmony and your ability to understand each other.",
+          "title": "Can we make a deal?"
+        },
+        "9": {
+          "description": "It shows the qualities of your ideal mate and the person who will be compatible with you.",
+          "title": "What kind of wife is appropriate for me?"
+        },
+        "10": {
+          "description": "It shows your potential for marriage and your chance for marriage.",
+          "title": "Will I be able to get married?"
+        }
+      }
+    },
+    "money": {
+      "description": "Eight-card pyramid opening for financial situation and money issues",
+      "name": "Currency Open",
+      "positions": {
+        "1": {
+          "description": "Any concerns about the money?",
+          "title": "Concerning Money"
+        },
+        "2": {
+          "description": "Desire for financial security",
+          "title": "Financial Security Desire"
+        },
+        "3": {
+          "description": "How can I use money to make me happy?",
+          "title": "Use of Money"
+        },
+        "4": {
+          "description": "My past attitude toward money",
+          "title": "The Money of the Past"
+        },
+        "5": {
+          "description": "What are my responsibilities for a good financial life?",
+          "title": "Financial Responsibilities"
+        },
+        "6": {
+          "description": "New plans for my financial investments or savings",
+          "title": "New Financial Plans"
+        },
+        "7": {
+          "description": "My future plans for money",
+          "title": "Future Money Plans"
+        },
+        "8": {
+          "description": "What special skills do I have to make money with?",
+          "title": "Earning Skills"
+        }
+      }
+    },
+    "newLover": {
+      "description": "Six-card special opening for a new love affair.",
+      "name": "A New Lover's Statement",
+      "positions": {
+        "1": {
+          "description": "The future relationship shows your potential",
+          "title": "Am I going to have a new relationship soon?"
+        },
+        "2": {
+          "description": "Shows the astrological properties of your future partner",
+          "title": "Which horoscope will this person be from?"
+        },
+        "3": {
+          "description": "Shows compatibility and dissonance in your relationship",
+          "title": "Will we be in sync with each other?"
+        },
+        "4": {
+          "description": "Shows the continuity and depth of your relationship",
+          "title": "Is there going to be a long-term relationship?"
+        },
+        "5": {
+          "description": "Shows the potential for spiritual connection and deep love",
+          "title": "Could this person be my soul mate?"
+        },
+        "6": {
+          "description": "Love shows the possibility that your wish will come true",
+          "title": "Will my wish come true?"
+        }
+      }
+    },
+    "problemSolving": {
+      "data": {
+        "detailedTitle": "Problem Solving - Details Personal Reading"
+      },
+      "description": "Ten-card detailed expansion for problem analysis and solution",
+      "name": "Problem Solving Explanation",
+      "positions": {
+        "1": {
+          "description": "The main question or subject that constitutes the basis of the opening",
+          "title": "Question Asked"
+        },
+        "2": {
+          "description": "The main obstacle or challenge in front of the problem",
+          "title": "The Obstruction of the Problem"
+        },
+        "3": {
+          "description": "The origins of the subject's subconscious or the effects of the past",
+          "title": "The History of Consciousness"
+        },
+        "4": {
+          "description": "It's the best we can do for ourselves.",
+          "title": "Best Potential"
+        },
+        "5": {
+          "description": "Recent events or influences related to the issue",
+          "title": "Close History"
+        },
+        "6": {
+          "description": "Possible developments in the near future",
+          "title": "The Near Future"
+        },
+        "7": {
+          "description": "Our current situation, our current state of affairs.",
+          "title": "Current Status"
+        },
+        "8": {
+          "description": "External factors, environmental conditions that affect the subject",
+          "title": "External Effects"
+        },
+        "9": {
+          "description": "Our internal fears and concerns about the matter",
+          "title": "Fears and Concerns"
+        },
+        "10": {
+          "description": "The final outcome of the subject or event, the possible solution",
+          "title": "The Result of the Event"
+        }
+      }
+    },
+    "relationshipAnalysis": {
+      "data": {
+        "detailedTitle": "Relationship Analysis Explanation - Details Personal Reading"
+      },
+      "description": "7-card special opening for relationship analysis and evaluation",
+      "name": "Relationship Analysis Explanation",
+      "positions": {
+        "1": {
+          "description": "The current conditions of the relationship provide information about the situation and the atmosphere created by problems.",
+          "title": "Current Status"
+        },
+        "2": {
+          "description": "Your feelings, your thoughts, and your perspective on your partner reflect your emotional state in the relationship.",
+          "title": "Your Feelings"
+        },
+        "3": {
+          "description": "It shows your concerns, expectations, and dreams about your relationship or your situation.",
+          "title": "Your Expectations"
+        },
+        "4": {
+          "description": "It contains advice on the nature of your relationship's conduct, showing you how to behave.",
+          "title": "Advice"
+        },
+        "5": {
+          "description": "In this relationship or in the face of the existing problem, it guides you in your attitude and in what way you should take it.",
+          "title": "Path Map"
+        },
+        "6": {
+          "description": "It shows your partner's concerns, expectations, and dreams about your relationship or your situation.",
+          "title": "Your Partner's Expectations"
+        },
+        "7": {
+          "description": "It shows how your partner feels, how he thinks and how he looks at you, how he feels about the relationship.",
+          "title": "Your Partner's Feelings"
+        }
+      }
+    },
+    "relationshipProblems": {
+      "data": {
+        "detailedTitle": "The Opening of Relationship Problems - Details Personal Reading"
+      },
+      "description": "9-card special opening for relationship problems analysis and solution",
+      "name": "The Opening of Relationship Problems",
+      "positions": {
+        "1": {
+          "description": "It shows internal contradictions and conflicts in your relationship, and it helps you to understand what you disagree about and why you have conflict.",
+          "title": "What's the contradiction?"
+        },
+        "2": {
+          "description": "It reveals the main problem and the fundamental problem in your relationship, which is the biggest challenge.",
+          "title": "What's wrong?"
+        },
+        "3": {
+          "description": "It shows your share and responsibility in the source of the problem, helping you to understand how your own actions contribute to the problem.",
+          "title": "Did I create the problem?"
+        },
+        "4": {
+          "description": "It shows your position in accepting your own responsibility, revealing whether you're ignoring your own mistakes.",
+          "title": "Am I ignoring my share of the problem?"
+        },
+        "5": {
+          "description": "Your past experiences with your partner affect the present problems, helping you to understand how the past reflects today.",
+          "title": "My past experiences with the person I've been with"
+        },
+        "6": {
+          "description": "In your relationship, it shows mutual respect and healthy boundaries, how you affect each other and whether you harm them or not.",
+          "title": "Are we abusing each other?"
+        },
+        "7": {
+          "description": "It shows external factors and third parties that affect your relationship, and it helps you to understand how family, friends or other people affect your problem.",
+          "title": "Are there other people involved in our problem?"
+        },
+        "8": {
+          "description": "Money, work, financial situation, things that affect your relationship, it reveals how economic problems affect your relationship.",
+          "title": "Are there financial problems affecting our relationship?"
+        },
+        "9": {
+          "description": "It predicts the future of your relationship, informs whether the current problems will be resolved and whether the relationship will continue.",
+          "title": "Will this relationship last?"
+        }
+      }
+    },
+    "situationAnalysis": {
+      "description": "7-card special opening for status analysis and evaluation",
+      "name": "State Analysis Explanation",
+      "positions": {
+        "1": {
+          "description": "The reasons for the situation, why this is happening now, and all the mistakes that have been made, are on this card.",
+          "title": "History or Reasons"
+        },
+        "2": {
+          "description": "What is happening now is stated as to the issues on the agenda and what effect the past has on today.",
+          "title": "Current Status"
+        },
+        "3": {
+          "description": "Events that happen without a person's knowledge, behind their backs, hidden jobs, and unknown facts are hidden in this card.",
+          "title": "Hidden Ethics"
+        },
+        "4": {
+          "description": "It represents the center of the opening, the person at the center of the situation, or the most central area in your life.",
+          "title": "Central Card"
+        },
+        "5": {
+          "description": "It offers information from different sources and angles to the future, as well as foreign attacks and possible plots.",
+          "title": "Outcasters"
+        },
+        "6": {
+          "description": "It tells us what is the most appropriate course of action about the situation. It is stated that it can offer a solution or a way out.",
+          "title": "Advice"
+        },
+        "7": {
+          "description": "It shows where the current course of action will lead, possible obstacles or surprises. The future can change depending on decisions to be made.",
+          "title": "Possible Future - Result"
+        }
+      }
+    }
+  },
+  "statistics": {
+    "activeStreak": "Active series",
+    "average": "Average",
+    "backToDashboard": "Return to Dashboard",
+    "birthDate": "Date of Birth",
+    "birthdayNumber": "Birthday",
+    "calculating": "Calculating statistics...",
+    "creditCost": "Credit cost",
+    "dailyStreak": "Log Series",
+    "days": "days",
+    "expressionDestiny": "Statement/Date",
+    "fullNameRecommended": "Full last name is recommended for numerology calculations",
+    "insightsDesc": "Deep analysis of your numerological guidance and reading habits",
+    "insightsTitle": "Your Mystic Intuitions",
+    "lifePath": "The Path of Life",
+    "longest": "Longest",
+    "masterNumber": "Master Number",
+    "maturity": "Maturity",
+    "mostExpensiveReading": "Most Expensive Reading",
+    "name": "Name",
+    "notSpecified": "Unspecified",
+    "numerology": "Numerology",
+    "numerologyProfile": "Numerology Profile",
+    "overview": "General View",
+    "patterns": "Patterns",
+    "perReading": "reading",
+    "personality": "Personality",
+    "premiumReading": "Premium reading",
+    "refresh": "Refresh",
+    "soulUrge": "Spirit Desire",
+    "subtitle": "Follow your progress on your mystical journey.",
+    "surname": "Last name",
+    "thisMonth": "This month",
+    "title": "Statistics & Introductions",
+    "totalCreditsSpent": "Total Spended Loan",
+    "totalReadings": "Total Reading",
+    "vsLastMonth": "Blah, blah, blah. Last month."
+  },
+  "system": {
+    "comprehensive": "Comprehensive",
+    "locale": "tr-TR",
+    "nextLocale": "Next"
+  },
+  "tarot": {
+    "action": "Action",
+    "advice": "Advice",
+    "card": "Card",
+    "cards": "Cards",
+    "career": "Career",
+    "challenge": "Difficulty",
+    "deck": "Deck",
+    "draw": "Pull",
+    "fear": "Fear",
+    "future": "Future",
+    "guidance": "Guidance",
+    "health": "Health",
+    "hope": "Hope",
+    "inaction": "Inaction",
+    "influence": "Effect",
+    "interpretation": "Commentation",
+    "love": "Love",
+    "maybe": "Maybe.",
+    "meaning": "Meaning",
+    "no": "No.",
+    "obstacle": "Engel",
+    "opportunity": "Opportunity",
+    "outcome": "Result",
+    "page": {
+      "loadingSpread": "Loading opening...",
+      "selectSpread": "Select a tarot expansion",
+      "selectSpreadDescription": "Start reading by choosing one of the options above"
+    },
+    "past": "History",
+    "position": "Position",
+    "present": "Now.",
+    "problemSolving": {
+      "data": {
+        "detailedTitle": "Problem Solving - Details Personal Reading"
+      }
+    },
+    "reading": "Reading",
+    "relationshipAnalysis": {
+      "data": {
+        "detailedTitle": "Relationship Analysis Explanation - Details Personal Reading",
+        "messages": {
+          "detailedDescription": "Special voice comment for you",
+          "detailedSelected": "Voice reading selected",
+          "readingSavedSuccessfully": "Your reading has been successfully recorded!",
+          "simpleDescription": "Short-written comment",
+          "simpleSelected": "Simple reading selected",
+          "writtenDescription": "Details written comment",
+          "writtenSelected": "Written reading selected"
+        }
+      }
+    },
+    "relationshipProblems": {
+      "data": {
+        "detailedTitle": "The Opening of Relationship Problems - Details Personal Reading",
+        "messages": {
+          "detailedDescription": "Special voice comment for you",
+          "detailedSelected": "Voice reading selected",
+          "readingSaveError": "An error occurred while saving reading.",
+          "readingSavedSuccessfully": "Your reading has been successfully recorded!",
+          "simpleDescription": "Short-written comment",
+          "simpleSelected": "Simple reading selected",
+          "writtenDescription": "Details written comment",
+          "writtenSelected": "Written reading selected"
+        }
+      }
+    },
+    "selectCards": "Select Cards",
+    "shuffle": "Mix",
+    "situationAnalysis": {
+      "data": {
+        "detailedTitle": "State Analyst - Details Personal Reading"
+      }
+    },
+    "spirituality": "Spirituality",
+    "spread": "Open",
+    "strength": "Power",
+    "subtitle": "Find your destiny with love",
+    "title": "Tarot Cards",
+    "uncertain": "Vague",
+    "warning": "Warning",
+    "weakness": "Weakness",
+    "yes": "Yeah."
+  },
+  "tarotCards": {
+    "cups": {
+      "1": {
+        "keywords": {
+          "0": "love",
+          "1": "Feelings"
+        },
+        "meaning": {
+          "reversed": "Self-love, repressed emotions",
+          "upright": "New relationships, mercy"
+        },
+        "name": "The Ace of Glasses"
+      },
+      "2": {
+        "keywords": {
+          "0": "partnership",
+          "1": "love"
+        },
+        "meaning": {
+          "reversed": "Self-love, breakups",
+          "upright": "Partnership, mutual attraction"
+        },
+        "name": "The Duo of Glasses"
+      },
+      "3": {
+        "keywords": {
+          "0": "celebration",
+          "1": "friendship"
+        },
+        "meaning": {
+          "reversed": "Independence, creative blocks",
+          "upright": "Celebration, friendship"
+        },
+        "name": "The Three of Glasses"
+      },
+      "4": {
+        "keywords": {
+          "0": "meditation",
+          "1": "thought"
+        },
+        "meaning": {
+          "reversed": "Retreat, closure",
+          "upright": "Meditation, thought"
+        },
+        "name": "The Four of Glasses"
+      },
+      "5": {
+        "keywords": {
+          "0": "Regret",
+          "1": "Disappointment"
+        },
+        "meaning": {
+          "reversed": "Don't forgive yourself, don't advance",
+          "upright": "Regret, disappointment"
+        },
+        "name": "The Five of the Glasses"
+      },
+      "6": {
+        "keywords": {
+          "0": "nostalgia",
+          "1": "childhood"
+        },
+        "meaning": {
+          "reversed": "Living in the past, forgiving",
+          "upright": "Childhood memories, innocence"
+        },
+        "name": "The Six of Glasses"
+      },
+      "7": {
+        "keywords": {
+          "0": "opportunities",
+          "1": "elections"
+        },
+        "meaning": {
+          "reversed": "Personal values, depression",
+          "upright": "Opportunities, choices"
+        },
+        "name": "The Seven of Glasses"
+      },
+      "8": {
+        "keywords": {
+          "0": "Disappointment",
+          "1": "Don't leave"
+        },
+        "meaning": {
+          "reversed": "Don't try again, it's indecisive",
+          "upright": "Disappointment, abandonment"
+        },
+        "name": "The Eight of Glasses"
+      },
+      "9": {
+        "keywords": {
+          "0": "pleasure",
+          "1": "satisfaction"
+        },
+        "meaning": {
+          "reversed": "Inner happiness, dissatisfaction",
+          "upright": "Satisfaction, satisfaction"
+        },
+        "name": "The Nine of Glasses"
+      },
+      "10": {
+        "keywords": {
+          "0": "♪ divine love ♪",
+          "1": "compatibility"
+        },
+        "meaning": {
+          "reversed": "Abstract, difficult relationships",
+          "upright": "Divine love, harmony"
+        },
+        "name": "The Ten of Glasses"
+      },
+      "king": {
+        "keywords": {
+          "0": "emotional balance",
+          "1": "diplomacy"
+        },
+        "meaning": {
+          "reversed": "Self-pity, bad temper",
+          "upright": "Emotionally balanced, diplomatic"
+        },
+        "name": "The King of Glasses"
+      },
+      "knight": {
+        "keywords": {
+          "0": "romance",
+          "1": "Charm"
+        },
+        "meaning": {
+          "reversed": "Unrealistic, jealousy",
+          "upright": "Romance, charm, imagination"
+        },
+        "name": "Knight of the Glass"
+      },
+      "page": {
+        "keywords": {
+          "0": "creativity",
+          "1": "intuition"
+        },
+        "meaning": {
+          "reversed": "New ideas, intuition, doubt",
+          "upright": "Creative opportunities, intuition"
+        },
+        "name": "Prince of Glasses"
+      },
+      "queen": {
+        "keywords": {
+          "0": "mercy",
+          "1": "emotional determination"
+        }
+      }
+    }
+  }
+}

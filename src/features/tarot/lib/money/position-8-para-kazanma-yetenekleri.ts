@@ -18,7 +18,7 @@ Bağlı Dosyalar:
 
 import { TarotCard } from '@/types/tarot';
 
-export interface MoneyPosition8meaning {
+export interface MoneyPosition8Meaning {
   id: string;
   card: string;
   position: number;
@@ -30,7 +30,7 @@ export interface MoneyPosition8meaning {
 }
 
 // i18n destekli interface
-export interface I18nMoneyPosition8meaning {
+export interface I18nMoneyPosition8Meaning {
   id: string;
   card: string;
   position: number;
@@ -41,7 +41,7 @@ export interface I18nMoneyPosition8meaning {
   group: string;
 }
 
-export const position8meanings: MoneyPosition8meaning[] = [
+export const position8Meanings: MoneyPosition8Meaning[] = [
   // --- Majör Arkana Kartları ---
   {
     id: 'the_fool_ma_pos8',

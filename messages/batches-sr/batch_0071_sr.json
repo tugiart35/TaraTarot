@@ -1,0 +1,782 @@
+{
+  "relationship-analysis": {
+    "meanings": {
+      "thestar": {
+        "position6": {
+          "upright": "Vaš partner očekuje nadu, inspiraciju i transparentnu nameru od vas. Želi da ubacite veru i verujete u njega.",
+          "reversed": "Vaš partner očekuje da se odmaknete od pesimizma. Želi da delite njegovo svetlo sa malim radostima.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "transparentnost",
+            "poverenje",
+            "regeneracija"
+          ],
+          "context": "Vaš partner očekuje nadu i transparentnu inspiraciju."
+        },
+        "position7": {
+          "upright": "Postoji nada, isceljenje i obnavljanje u budućnosti odnosa. Zajednički snovi će nadahnuti obveznice.",
+          "reversed": "Očaj ili nedostatak samopouzdanja mogu da bacaju senku u budućnosti. Gubitak vere spušta energiju.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "regeneracija",
+            "inspiracija"
+          ],
+          "context": "Budućnost odnosa biće ojačana nadom i isceljenjem. Ali rizik od očaja ne sme biti zaboravljen."
+        }
+      },
+      "themoon": {
+        "position1": {
+          "upright": "Mesec nam govori da je veza trenutno oblikovana neizvesnošću, strahom i iluzijama. Magla se može biti gusta. Savet: Pretpostavke ispitivanja.",
+          "reversed": "Invertirani mesec označava da je magla počela da očisti, ali nesigurnost i dalje ostavlja oznaku. Simptom: Kontradiktorne znakove.",
+          "keywords": [
+            "neizvesnost",
+            "strah",
+            "iluzija",
+            "projekcija",
+            "poverenje"
+          ],
+          "context": "U trenutnoj situaciji postoji nedostatak jasnoće. Iluzije utiču na vašu obveznicu. Otvorena komunikacija će ukloniti dimni ekran."
+        },
+        "position2": {
+          "upright": "Mesec pokazuje da su neizvesnost, strah i iluzije efikasni u vašim osećajima. Magla okružuje tvoje srce.",
+          "reversed": "Reverse Moon nam govori da je magla počela da očisti, ali tragovi nesigurnosti ostaju. Simptom: Kontradiktorne znakove.",
+          "keywords": [
+            "neizvesnost",
+            "strah",
+            "iluzija",
+            "projekcija",
+            "poverenje"
+          ],
+          "context": "Vaša osećanja trenutno traže jasnoću. Otvorena komunikacija će ukloniti dimni ekran."
+        },
+        "position3": {
+          "upright": "Mesec vam govori da je vaše očekivanje jasnoća i poverenje. Želite da izađete iz maglovitog emocija. Otvorenost, transparentnost.",
+          "reversed": "Reverse Moon ukazuje da vaše očekivanje treba da bude slobodan od iluzija i tame. Stvarnost je za vas za lečenje. \\ N \\ nsimptom: želja za jasnoćom.",
+          "keywords": [
+            "oštrina",
+            "poverenje",
+            "real",
+            "otvorenost",
+            "svetao"
+          ],
+          "context": "Vaša očekivanja je jasnoća u obveznici. Tražite sigurnu stazu koju osvetljava mesečinom, a ne magla."
+        },
+        "position4": {
+          "upright": "Mesec, izaberite intuiciju zbog straha. Magla se pojasne sa sporim pitanjima ... \"Šta je moj dokaz?\" Kontrola.",
+          "reversed": "Vreoted Mesec, proverite pretpostavku, smanjite neizvesnost. Clariti raste poverenje. \\ N \\ nsimptom: Prvo se postavljajte 24-satni pravilo-pitajte, odlučite kasnije.",
+          "keywords": [
+            "intuicija",
+            "neizvesnost",
+            "strah",
+            "prosvetljenje",
+            "oštrina"
+          ],
+          "context": "Vaš savet; Da ne žure da presudimo u mraku. Pila pitanja donose pravu svetlost."
+        },
+        "position5": {
+          "upright": "Mesec kaže da vaš put leži u kretanju napred sa intuicijom. Magla će se očistiti pitanjima pacijenta.",
+          "reversed": "Reverse Moon vas podseća da pretpostavke daju stazu. Jasna pitanja će povećati poverenje.",
+          "keywords": [
+            "intuicija",
+            "neizvesnost",
+            "strah",
+            "prosvetljenje",
+            "oštrina"
+          ],
+          "context": "Vaša mapa puta; Ne žurite sa presudom. Nežna pitanja će upaliti svetlo."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje da slušate svoju intuiciju čak i u vreme neizvesnosti. Želi da mu date samopouzdanje umesto anksioznosti.",
+          "reversed": "Vaš partner želi da čuje jasna pitanja, a ne pretpostavke. Jasnoća rasprši neizvesnost.",
+          "keywords": [
+            "intuicija",
+            "neizvesnost",
+            "strah",
+            "prosvetljenje",
+            "poverenje"
+          ],
+          "context": "Vaš partner očekuje intuiciju, ali i otvorenost."
+        },
+        "position7": {
+          "upright": "Neizvesnost, intuicija i snovi doći će do izražaja u budućnosti odnosa. Istina će se pojaviti iza magle.",
+          "reversed": "Iluzije ili strahovi mogu u budućnosti moći da oblakne odnos. Lažne pretpostavke stvaraju nepoverenje.",
+          "keywords": [
+            "neizvesnost",
+            "intuicija",
+            "strah",
+            "refleksija"
+          ],
+          "context": "Budućnost komunikacije će se intuitivno razumeti. Kada se magla pročisti, pojaviće se jasnoća."
+        }
+      },
+      "thesun": {
+        "position1": {
+          "upright": "Sunce nam govori da je veza trenutno osvetljena toplinom, otvorenom i radošću. Radost jača vezu. Savet: Podelite autentičnu radost.",
+          "reversed": "Reverzno sunce pokazuje da veštačka sreća i površna pozitivnosti bacaju senku trenutne situacije. Simptom: Nedostatak iskrenosti.",
+          "keywords": [
+            "radost",
+            "otvorenost",
+            "autentičnost",
+            "nadati se",
+            "deljenje"
+          ],
+          "context": "Trenutno u vinogradu postoji svetlost i toplina. Međutim, ako nedostaje iskrenost, to može postati površno. Prava radost će stvoriti poverenje."
+        },
+        "position2": {
+          "upright": "Sunce ukazuje na toplinu, otvorenost i radost u vašim osećanjima. Vaše srce je u svetlu.",
+          "reversed": "Reverzno sunce vam govori da veštačka sreća i površna pozitivnosti zamuće vaša osećanja. Simptom: Nedostatak iskrenosti.",
+          "keywords": [
+            "radost",
+            "otvorenost",
+            "autentičnost",
+            "nadati se",
+            "deljenje"
+          ],
+          "context": "Trenutno je svetlo u vašim osećajima. Deljenje prave radosti stvoriće poverenje."
+        },
+        "position3": {
+          "upright": "Sunce vam govori da je vaša očekivanja radost, otvorenost i deljenje. Želiš zajedničku sreću. Autentična radost.",
+          "reversed": "Obrnuti sunce pokazuje da je vaše očekivanje da se držite podalje od veštačke sreće i površne harmonije. Prava radost vam je dragocena za vas. \\ N \\ nsimptom: Potražite iskrenost.",
+          "keywords": [
+            "radost",
+            "deljenje",
+            "autentičnost",
+            "svetlo",
+            "sreća"
+          ],
+          "context": "Vaša očekivanja je iskrena sreća u vinogradu. Tražite radost koja dolazi od srca, a ne površno."
+        },
+        "position4": {
+          "upright": "Sunce, delite svoju autentičnu radost. Topla vidljivost jača bliskost. Proslavite malu pobedu zajedno.",
+          "reversed": "Invertirano sunce, spustite se \"pretvarati se da ste u redu\" maska. Prava radost dolazi od prihvatanja stvarnosti. \\ N \\ nsimptom: iskrena hvala.",
+          "keywords": [
+            "radost",
+            "autentičnost",
+            "oštrina",
+            "deljenje",
+            "vidljivost"
+          ],
+          "context": "Vaš savet; da uvećaju šta je dobro, ali da ga ne ukine. Iskrenost je sunce poverenja."
+        },
+        "position5": {
+          "upright": "Sunce kaže da je vaš put kroz autentičnu radost. Sreća se dešava iskreno, uzgajaće vezu.",
+          "reversed": "Obrnuti sunce nam govori da vas pretvara da vas dobro gura. Prava radost će se pojaviti od autentičnosti.",
+          "keywords": [
+            "radost",
+            "autentičnost",
+            "oštrina",
+            "deljenje",
+            "vidljivost"
+          ],
+          "context": "Vaša mapa puta; da raste iskrenost. Autentična sreća će zagrejati samopouzdanje."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje autentičnu radost i vidljivost od vas. Iskreno deljenje ga približava.",
+          "reversed": "Vaš partner ne želi lažno optimizam. Želi da vidi pravu radost i iskrenost.",
+          "keywords": [
+            "radost",
+            "autentičnost",
+            "deljenje",
+            "vidljivost",
+            "iskrenost"
+          ],
+          "context": "Vaš partner očekuje istinsku radost i vidljivost."
+        },
+        "position7": {
+          "upright": "U budućnosti odnosa postoji radost, toplina i otvorena sreća. Autentično deljenje će dodati vitalnost obveznicama.",
+          "reversed": "Lažna radost ili površna harmonija može u budućnosti oštetiti poverenje. Odmaranje od stvarnosti je rizik.",
+          "keywords": [
+            "radost",
+            "sreća",
+            "autentičnost",
+            "svetao"
+          ],
+          "context": "Budućnost odnosa biće ojačana radošću i otvorenom otvorenom. Potrebno je da se ne prekine od stvarnosti."
+        }
+      },
+      "judgement": {
+        "position1": {
+          "upright": "Sud kaže da je odnos trenutno u procesu sukoba i ponovne procene. Otvorene su stare sveske. Savet: Naučite oprostiti.",
+          "reversed": "Preokrećeni sud ukazuje da nedostatak zatvaranja prošlosti i nedostatka samoodgovornosti soli su obveznica u trenutnoj situaciji. Simptom: Blame-odbrambeni ciklus.",
+          "keywords": [
+            "konfrontacija",
+            "odluka",
+            "regeneracija",
+            "oproštenje",
+            "prošlost"
+          ],
+          "context": "U trenutnoj situaciji, postoji računanje sa prošlošću. Ovo konfrontacija može da otvori put za obnovu. Oproštenje će zaceliti Bond."
+        },
+        "position2": {
+          "upright": "Sud, postoji energija konfrontacije i ponovne procene u vašim osećanjima. Učite iz prošlosti.",
+          "reversed": "Reversirani sud kaže da ne mogu da zatvori prošlost, vaša osećanja. Simptom: Blame-odbrana.",
+          "keywords": [
+            "konfrontacija",
+            "odluka",
+            "regeneracija",
+            "oproštenje",
+            "prošlost"
+          ],
+          "context": "Vaša osećanja se trenutno suočavaju sa prošlošću. Oproštenje će vam osvetliti srce."
+        },
+        "position3": {
+          "upright": "Sud kaže da je vaše očekivanje ponovno rođenje i pošteno sukob. Želite da se pomirite sa prošlošću i zakoračite u novo ... obnovu, buđenje.",
+          "reversed": "Obrnuti sud pokazuje da vaše očekivanje nije da se prebivate u prošlosti. Želite da se radujete. \\ N \\ nsimptom: Potreba za obnovom.",
+          "keywords": [
+            "buđenje",
+            "ponovno rođenje",
+            "računanje",
+            "oštrina",
+            "napredak"
+          ],
+          "context": "Vaše očekivanje je da se ponovo rodi nakon poštenog sukoba u vinogradu. Prepuštanje težine prošlosti će vas osloboditi."
+        },
+        "position4": {
+          "upright": "Sud se suočava sa prošlošću saosećanjem i odgovorite na poziv. Oproštaj otvara vrata .. \"Šta sam naučio iz ovoga?\"",
+          "reversed": "Obrnuti sud, ispustite prekomerno samo-prosuđivanje. Odgovornost + saosećanje = obnavljanje. \\ N \\ nsimptom: ublažavanje samooseljenost.",
+          "keywords": [
+            "konfrontacija",
+            "oproštenje",
+            "regeneracija",
+            "nazvati",
+            "oslobođenje"
+          ],
+          "context": "Vaš savet; zatvaranje datoteka i integrisanje onoga što je naučeno. Nova stranica zahteva čistu nameru."
+        },
+        "position5": {
+          "upright": "Sud kaže da put leži u suočavanju sa prošlosti i prihvatanje ga sa saosećanjem. Oproštenje će otvoriti nova vrata.",
+          "reversed": "Reverse Sud objašnjava da prekomerna samosudba sužava put. Saosećanje i odgovornost zajedno će doneti obnovu.",
+          "keywords": [
+            "konfrontacija",
+            "oproštenje",
+            "regeneracija",
+            "nazvati",
+            "oslobođenje"
+          ],
+          "context": "Vaša mapa puta; zatvaranje datoteka i pomeranje onoga što je naučeno. Nova stranica će zahtevati čiste namere."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje da se suprotstavi prošlosti i učite od toga. On traži oproštaj i da odgovorite na poziv.",
+          "reversed": "Vaš partner ne želi prekomerno samo-prosuđivanje. Stanje saosećanja i odgovornosti za njega je važan.",
+          "keywords": [
+            "konfrontacija",
+            "oproštenje",
+            "učenje",
+            "regeneracija",
+            "nazvati"
+          ],
+          "context": "Vaš partner traži otvorenost za oproštenje i obnovu."
+        },
+        "position7": {
+          "upright": "U budućnosti odnosa postoji trenutak sukoba sa prošlošću i novom odlukom. Nova stranica se može pretvoriti oproštenjem.",
+          "reversed": "Prekomerna presuda ili prebivalište u prošlosti može otežati napredak u budućnosti. Nerešena pitanja ometaju mir.",
+          "keywords": [
+            "konfrontacija",
+            "odluka",
+            "regeneracija",
+            "oproštenje"
+          ],
+          "context": "Budućnost odnosa biće oblikovana odlukom i oproštenjem. Biće vreme da pretvorite novu stranicu."
+        }
+      },
+      "theworld": {
+        "position1": {
+          "upright": "Svet nam govori da je odnos ispunjen energijom da dovrši trenutnu situaciju i uđe u novi prag. Ciklus se zatvara. Savet: Proslavite uspeh.",
+          "reversed": "Invertirana zemlja ukazuje da nepotpunost i nedovršeni procesi naprezaju obveznica u trenutnoj situaciji. Simptom: Odložene odluke.",
+          "keywords": [
+            "završetak",
+            "petlja",
+            "integritet",
+            "prag",
+            "novi početak"
+          ],
+          "context": "Trenutno se ciklus završava. Ono što nedostaje može zasjeniti mir. Završetak će pomerati obveznicu napred."
+        },
+        "position2": {
+          "upright": "Zemlja ukazuje na želju za završetkom i celovitom u vašim osećanjima. Spremni ste za novi prag.",
+          "reversed": "Ograničena zemlja pokazuje da vam je osećaj nepotpunosti zamućeno vaše srce. Simptom: Nepotpuni završetak.",
+          "keywords": [
+            "završetak",
+            "integritet",
+            "petlja",
+            "prag",
+            "uspeh"
+          ],
+          "context": "Tvoje srce sada želi celovitost. Poštovanje ciklusa će zasitiće vaša čula."
+        },
+        "position3": {
+          "upright": "Svet vam govori da je vaša očekivanja potpunost i celovitost. Želite da se ciklus završi i da pronađe ispunjenje u vašoj vezi. Celovitost, harmonija.",
+          "reversed": "Reversed Earth ukazuje da je vaše očekivanje da se zaštitite od osećaja da ste nepotpuni. Tražite završetak. \\ N \\ nsimptom: Strah od neprekidnog ciklusa.",
+          "keywords": [
+            "potpunost",
+            "završetak",
+            "raport",
+            "zadovoljstvo",
+            "ravnoteža"
+          ],
+          "context": "Vaše očekivanje je da budete celi u vinogradu. Tražite priču koja je završena, a ne ostavljena nedovršena."
+        },
+        "position4": {
+          "upright": "Svijet, zatvorite petlju i proslavite. Celovitost poziva na novu fazu. Napravite vidljive šta je završeno.",
+          "reversed": "Invertirani svet, povežite nedostajući kraj; Nepotpunost smanjuje energiju. Integracija je mir. \\ N \\ nsimptom: \"Šta nedostaje?\" Kontrolna lista.",
+          "keywords": [
+            "završetak",
+            "integritet",
+            "integracija",
+            "proslava",
+            "prag"
+          ],
+          "context": "Vaš savet; da završi ono što se radi i poštuje napor. Proslava podstiče kontinuitet."
+        },
+        "position5": {
+          "upright": "Svet kaže da se njen put otvara sa završetkom i proslavom. Zatvorite petlju, počastite svoje napore.",
+          "reversed": "Invertirani svet nam govori da vas nestali krajevi gumaju. Pronaći ćete mir kada završite nedovršene komade.",
+          "keywords": [
+            "završetak",
+            "integritet",
+            "integracija",
+            "proslava",
+            "prag"
+          ],
+          "context": "Vaša mapa puta; da završi i proslavi šta je gotovo. Integritet će otvoriti nova vrata."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje da ispunite cikluse i krenete naprijed sa integritetom. Želi da se preseli u novu fazu sa njom.",
+          "reversed": "Vaš partner ne želi da vidi nepotpunost. Povezivanje nedostataka i uspostavljanje integriteta je za njega mir.",
+          "keywords": [
+            "završetak",
+            "integritet",
+            "proslava",
+            "nova faza",
+            "integracija"
+          ],
+          "context": "Vaš partner očekuje dovršavanje i prelazak na novu fazu."
+        },
+        "position7": {
+          "upright": "Budućnost odnosa uključuje završetak, celokupnost i proslavu. Petlja se uspešno zatvara.",
+          "reversed": "Nedostaju koraci ili osećaj nepotpunosti može dovesti do nezadovoljstva u budućnosti. Potrebno je zatvoriti petlju.",
+          "keywords": [
+            "završetak",
+            "integritet",
+            "proslava",
+            "ravnoteža"
+          ],
+          "context": "Budućnost odnosa biće okrunjena završetkom i celovitošću. Ali nedostaci moraju biti zatvoreni."
+        }
+      },
+      "aceofcups": {
+        "position1": {
+          "upright": "Ace Cups vam govori da je vaš odnos sada ispunjen emotivnim početkom i izlivanjem ljubavi. Srca su spremna da se otvore. Savet: Protok Čista ljubav.",
+          "reversed": "ACE of Cups preokrenuti ukazuje da su emocije potisnuti ili nisu izražene u trenutnoj situaciji. Simptom: Zatvorena srca, tiha ljubav.",
+          "keywords": [
+            "početak",
+            "lov",
+            "ekspanzija",
+            "osećanje",
+            "čistoća"
+          ],
+          "context": "Nove emocije se kreću u trenutnoj situaciji. Ostanite otvoreni će rasti vezu. Zatvorena srca mogu stvoriti prepreke."
+        },
+        "position2": {
+          "upright": "ACE of Cups ukazuje na čistu ljubav i želju za obnovom u vašem srcu. Saosećanje koje preliva od vas je spreman da se deli.",
+          "reversed": "ACE of Cups preokrenuti su opisano stanje suzbijanja vaše ljubavi ili ne dozvoljavajući da to provede. Simptom: Blokirana osećanja.",
+          "keywords": [
+            "novi početak",
+            "lov",
+            "saosećanje",
+            "otvaranje",
+            "Emotivni tok"
+          ],
+          "context": "Vaše srce se trenutno otvara u nove emocije. Čista ljubav je spremna za obnovu obveznice."
+        },
+        "position3": {
+          "upright": "Ace šolja vam govori da je ono što očekujete je čista ljubav i emocionalna inicijacija. Vaše srce želi da se otvori za novi protok saosećanja. Otvoreno srce, nove emocije.",
+          "reversed": "ACE of Cups preokrenuti ukazuje da je vaše očekivanje da prevaziđete emocionalne blokade i ponovo otvorite svoje srce. Želite da oslobodite zatvorene osećaje. \\ N \\ nsimptom: unutrašnja želja za disocijanjem.",
+          "keywords": [
+            "lov",
+            "početak",
+            "ekspanzija",
+            "saosećanje",
+            "regeneracija"
+          ],
+          "context": "Vaše očekivanje je da se vaše srce obnavlja. Tražite vrata koja se otvara sa saosećanjem."
+        },
+        "position4": {
+          "upright": "ACE of Cups kaže da je lagano otvori vaše srce i pustite da vaše emocije protoče poput vode. Čak i mala gesta saosećanja pojašnjava jezero. Osjećaj stavite u konkretnu rečenicu.",
+          "reversed": "Reversirani ACE CUP-ova traži od vas da otkucate začepljenu slavinu nežne toplote. Prvo samosasećanje, a zatim spoljni tok. \\ N \\ nsimptom: \"Kako sam ja?\" Jednom dnevno. Prijavljivanje.",
+          "keywords": [
+            "otvaranje",
+            "saosećanje",
+            "izraz",
+            "protok",
+            "mekoća"
+          ],
+          "context": "Vaš savet; Učinite svoju krhkost vidljivu u sićušnom mestu. Sigurne rečenice Kreirajte prostor za srce. Jednom kada protok počne, intimnost raste."
+        },
+        "position5": {
+          "upright": "Vaša mapa puta počinje otvaranjem vašeg srca i puštajući da se vaše emocije slobodno protoče. Čista ljubav otvara vrata novom vezu ili obnovljenom stanju postojećeg odnosa.",
+          "reversed": "Vaša mapa puta može biti zamračena potiskanjem svojih emocija. Odbijanje da se otvori stisnim srce i zatvara vaše područve saosećanja.",
+          "keywords": [
+            "lov",
+            "početak",
+            "osećanja",
+            "ekspanzija",
+            "saosećanje"
+          ],
+          "context": "Otvori svoje srce. Nove emocije će vam osvetliti put."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje da otvorite čisti protok srca i emocije hrabro. Izrada vaše ljubavi koja će joj biti vidljiva će obnoviti odnos.",
+          "reversed": "Vaš partner želi da ne potiskujete svoja osećanja i sakrijte svoje deljenje. Otvorenost će vam povećati samopouzdanje.",
+          "keywords": [
+            "lov",
+            "početak",
+            "izraz",
+            "saosećanje",
+            "protok"
+          ],
+          "context": "Vaš partner želi da čuje čisti i otvoren protok vašeg srca."
+        },
+        "position7": {
+          "upright": "U budućnosti će biti emotivan početak vašeg odnosa i svežom tokom ljubavi. Otvaranje srca će započeti novi ciklus.",
+          "reversed": "Suzbijanje ili ne izražavanje emocija može ometati vezivanje u budućnosti. Sve dok srce ostane zatvoreno, zadovoljstvo se smanjuje.",
+          "keywords": [
+            "početak",
+            "lov",
+            "protok",
+            "ekspanzija"
+          ],
+          "context": "Budućnost odnosa biće ojačana emocionalnim otvaranjem. Ali ako se srca zatvaraju, udaljenost raste."
+        }
+      },
+      "twoofcups": {
+        "position1": {
+          "upright": "Dvoje šoljica pokazuju da je odnos trenutno oblikovan željom za obostranom harmonijom i jedinstvom. Bond postaje jači. Savet: Blagoslovi razmjenu ljubavi.",
+          "reversed": "Otkrivena dva šolja govori nam da je harmonija poremećena i nesporazumi su zatežavaju vezu u trenutnoj situaciji. Simptom: Mala nesuglasici eskaliraju.",
+          "keywords": [
+            "raport",
+            "partnerstvo",
+            "obveznica",
+            "jedinstvo",
+            "balansiranje"
+          ],
+          "context": "U trenutnoj situaciji, energija ljubavi i partnerstva je dominantna. Ali nesporazumi mogu podrivati Harmoniju. Otvorena komunikacija je obavezna."
+        },
+        "position2": {
+          "upright": "Dvoje šoljica pokazuju da vaša osećanja traže reciprocitet i harmoniju. Tvoje srce je privučeno na jednaku vezu. Savet: Učinite kontakt očima.",
+          "reversed": "Otkrivena dva šolja govori vam da nespojivost ili nesporazumi napreduju vaše emocije. Simptom: Udaljenost u bliskosti.",
+          "keywords": [
+            "raport",
+            "reciprocitet",
+            "obveznica",
+            "lova",
+            "partnerstvo"
+          ],
+          "context": "Vaše srce trenutno traži jednakost i harmoniju. Otvoreni deljenje će produbiti intimnost."
+        },
+        "position3": {
+          "upright": "Dvoje šoljica vam govore da je vaša očekivanja obostrana ljubav i jednako vezivanje. Tražite jednakost duše .. Uzabunik, harmonija.",
+          "reversed": "Dvojica preokrenuta šoljicama ukazuje da je vaše očekivanje da se odseli od nestabilnih veza. Nejednaki odnosi vas mogu umoriti. \\ N \\ nsimptom: Potražite ravnotežu.",
+          "keywords": [
+            "jednakost",
+            "raport",
+            "reciprocitet",
+            "lova",
+            "obveznica"
+          ],
+          "context": "Vaša očekivanja je da se vidi međusobnu vrednost. Vaše srce zahteva jednaku ljubav."
+        },
+        "position4": {
+          "upright": "Dvoje šoljica kaže da gradi most jednak srcu srcu. Izaberite \"Mi\" nameravamo umesto \"I\" i \"vas\" jezikom. Malo ritualno-malo nedeljnog imenovanja.",
+          "reversed": "Otkrivena dva šoljica štampa očekivanje čak i vage. Jasne granice ojačavaju toplu vezu. \\ N \\ nsimptom: jasno navedite potrebu.",
+          "keywords": [
+            "reciprocitet",
+            "raport",
+            "ritual",
+            "granica",
+            "poverenje"
+          ],
+          "context": "Vaš savet; Izrada nevidljivih sporazuma vidljiva. Jednako stanje napora za geste umiruje srce obveznice. Mali, ali dosledni sastanci su isceljujući."
+        },
+        "position5": {
+          "upright": "Vaša mapa puta treba da se zasniva na harmoničnom partnerstvu i međusobnoj podršci. Raidetna razmena jača most.",
+          "reversed": "Vaša mapa puta može biti blokirana nesporazumima i neuravnoteženim poslovima. Otvorena komunikacija i granice donose isceljivanje.",
+          "keywords": [
+            "raport",
+            "partnerstvo",
+            "ravnoteža",
+            "lova",
+            "komunikacija"
+          ],
+          "context": "To utisnim put za reciprocitet. Ravnoteža vas nosi napred."
+        },
+        "position6": {
+          "upright": "Vaš partner želi jednakost, reciprocitet i harmoniju od vas. Veoma je dragoceno da se oseća ravnotežu vinograda.",
+          "reversed": "Vaš partner ne želi da bude opterećen jednostrano. Očekivanje da održavate ravnotežu i otvoreno komunicirate.",
+          "keywords": [
+            "raport",
+            "partnerstvo",
+            "ravnoteža",
+            "obveznica",
+            "poverenje"
+          ],
+          "context": "Vaš partner želi da se poveže sa jednakošću i reciprocitetom."
+        },
+        "position7": {
+          "upright": "Međusobno razumevanje i harmonija će doći do izražaja u budućnosti. Most izgrađen zajedno ojačaće temelj obveznice.",
+          "reversed": "Nesporazumi ili neravnoteža mogu u budućnosti izazvati harmoniju. Ako se ne održava reciprocitet, poverenje će biti potkopano.",
+          "keywords": [
+            "raport",
+            "reciprocitet",
+            "lova",
+            "obveznica"
+          ],
+          "context": "Budućnost komunikacije raste sa jednakošću i harmonijom. Ali ako je ravnoteža izgubljena, mogu se pojaviti problemi."
+        }
+      },
+      "threeofcups": {
+        "position1": {
+          "upright": "Tri šolje pokazuju da je odnos trenutno podstaknut energijom proslave, prijateljstva i deljenja. Uživanje zajedno dolazi do izražaja. Savet: Proslavite zajedništvo.",
+          "reversed": "Tri trupa preokrenuta ukazuju na to da treće strane ili prekomerna društvena interakcija zasjenjuju vezu u trenutnoj situaciji. Simptom: Mešane energije.",
+          "keywords": [
+            "proslava",
+            "deljenje",
+            "prijateljstvo",
+            "zadovoljstvo",
+            "zajednica"
+          ],
+          "context": "U trenutnoj situaciji, zabava i deljenje dominiraju. Međutim, spoljni uticaji mogu opteretiti vezu. Granice će doneti ravnotežu."
+        },
+        "position2": {
+          "upright": "Tri šolje, radost, prijateljstvo i deljenje dolaze do izražaja u vašim osećanjima. Vaše srce je ispunjeno slavljenoj energijom. Savet: Podelite sreću.",
+          "reversed": "Pretvorena troje šoljica govore vam da je višak ili treće strane uticaja zamućiti vaše emocije. Simptom: Mešane energije.",
+          "keywords": [
+            "radost",
+            "proslava",
+            "deljenje",
+            "prijateljstvo",
+            "jedinstvo"
+          ],
+          "context": "Vaša osećanja su trenutno u režimu proslave. Ali spoljni uticaji mogu stvoriti senku."
+        },
+        "position3": {
+          "upright": "Tri šolje vam govore da vaše očekivanje deljenje, proslava i prijateljska podrška. Vaše srce se želi radujati zajedno. Proslava, jedinstvo.",
+          "reversed": "Tri trupa preokrenuta ukazuje da vaše očekivanje treba zaštititi od površnih društvenih veza. Tražite iskrenu deljenje. \\ N \\ nsimptom: Potreba za istinskom prijateljstvu.",
+          "keywords": [
+            "proslava",
+            "deljenje",
+            "podrška",
+            "prijateljstvo",
+            "radost"
+          ],
+          "context": "Vaša očekivanja je da podelite svoje srce prijateljskim krugom. Tražite duboke veze, ne površno."
+        },
+        "position4": {
+          "upright": "Tri šolje kaže da deli radost i negujte vezu sa mini proslavama. Prijateljska podrška je kiseonik ljubavi. \"Dobar trenutak nedelje\".",
+          "reversed": "Pretvorena troje šoljica savetuje da ne budem sam u gomili. Manje kvalitetnog razgovora je bolji od previše buke. \\ N \\ nsimptom: Svjesno prilagodite društvenu dozu.",
+          "keywords": [
+            "proslava",
+            "zajednica",
+            "radost",
+            "deljenje",
+            "podrška"
+          ],
+          "context": "Vaš savet; Smejati se zajedno i izražavaju zahvalnost. Selektivna društvenost čuva vašu energiju. Kvalitet zajedno vreme produbljuje intimnost."
+        },
+        "position5": {
+          "upright": "Vaša mapa puta će se proširiti sa prijateljstvom, proslavom i zajedničkom zajedničkom radošću. Pronalaženje podrške u zajednici olakšava vaše srce.",
+          "reversed": "Vaša mapa puta može biti zamućena površnim vezama. Važno je birati kvalitetne i duboke odnose.",
+          "keywords": [
+            "proslava",
+            "prijateljstvo",
+            "podrška",
+            "deljenje",
+            "radost"
+          ],
+          "context": "Proširiće put deljenja i prijateljstva."
+        },
+        "position6": {
+          "upright": "Vaš partner želi proslave zajedno, prijateljstvo i zajedničke radosti. Želi da ga učini da se oseća kao da ste tu za njega u zajednici.",
+          "reversed": "Vaš partner želi da se držite podalje od površnosti. Duboko i smisleno deljenje je njegovo očekivanje.",
+          "keywords": [
+            "proslava",
+            "prijateljstvo",
+            "deljenje",
+            "radost",
+            "podrška"
+          ],
+          "context": "Vaš partner očekuje prijateljstvo i radosno deljenje."
+        },
+        "position7": {
+          "upright": "Budućnost odnosa će uključivati proslave, prijateljsko okruženje i zajedničke radosti. Zajednička sreća će ojačati Bond.",
+          "reversed": "Uticaj trećih lica ili površnost može u budućnosti oslabiti energiju obveznice. Iskrenost mora biti sačuvana.",
+          "keywords": [
+            "proslava",
+            "prijateljstvo",
+            "deljenje",
+            "radost"
+          ],
+          "context": "Budućnost odnosa biće podstaknuta radošću i socijalnom podrškom. Ali postoji rizik od povrte."
+        }
+      },
+      "fourofcups": {
+        "position1": {
+          "upright": "Četiri šolje pokazuju da se odnos testira osećaj emocionalne stagnacije i nezadovoljstva u trenutnoj situaciji. Postoji energija ravnodušnosti. Savet: Primjetite šta vam je na vreme.",
+          "reversed": "Pretvorena četvoro šoljica ukazuje na želju da se otvori na nove mogućnosti u trenutnoj situaciji, ali i neodlučnost. Simptom: Neodlučnost, odsutnost.",
+          "keywords": [
+            "recesija",
+            "nezadovoljstvo",
+            "ravnodušnost",
+            "prilika",
+            "regeneracija"
+          ],
+          "context": "U trenutnoj situaciji, monotonija se ističe. Nove emocionalne mogućnosti moraju biti prepoznate. U suprotnom veza će usporiti."
+        },
+        "position2": {
+          "upright": "Četiri šolje ukazuju na osećaj nevoljnosti i nezadovoljstva u vašim osećanjima. Unutra je pauza. Savet: Primjetite šta je pred tvojim očima.",
+          "reversed": "Invertirana četvoro šoljica pokazuje obnovljene kamate i entuzijazam. Simptom: Buđenje srca.",
+          "keywords": [
+            "recesija",
+            "nespremnost",
+            "nezadovoljstvo",
+            "tražiti",
+            "buđenje"
+          ],
+          "context": "Tvoje srce je malo još uvek trenutno. Ponovna svest će doneti obnovu."
+        },
+        "position3": {
+          "upright": "Četiri šolje vam govore da je vaše očekivanje da se otvori na nove mogućnosti sa svešću. Vaše srce želi buđenje. Otvorene oči, nova šansa.",
+          "reversed": "Preokrećena četiri šolje pokazuje da je vaše očekivanje da se izloži od samozadovoljstva i ponovo nađete entuzijazam. Želite da prođete kroz veo nezadovoljstva. \\ N \\ nsimptom: Traženje pažnje.",
+          "keywords": [
+            "prilika",
+            "buđenje",
+            "entuzijazam",
+            "pažnja",
+            "otvorenost za novu"
+          ],
+          "context": "Vaša očekivanja je da se ožive vaše srce. Želite da uvećate emocionalno interesovanje."
+        },
+        "position4": {
+          "upright": "Četiri šolje kažu, primjećuju dobro pred sobom kada vam srce luta. Zahvalnost čisti maglu iz tup stakla .. 3 beleške o dnevnoj zahvalnosti.",
+          "reversed": "Pretvorena četvero šoljica pozivaju na vašu obnovu, kao da se budi iz sna. Sićušna \"da\" pokretačka motivacija. \\ N \\ nsimptom: jedna nova mikro-navika.",
+          "keywords": [
+            "svest",
+            "zahvalnost",
+            "buđenje",
+            "motivacija",
+            "fokus"
+          ],
+          "context": "Vaš savet; Prebacivanje fokusa od onoga što nedostaje ono što je dobro. Male realizacije podižu emocionalni ton. Srce teče vitalnošću."
+        },
+        "position5": {
+          "upright": "Vaša mapa puta napreduće sa suočavanjem sa nezadovoljstvom i buđenjem do novih prilika. Introspekcija će vas dovesti do svesti.",
+          "reversed": "Vaša mapa puta može se suziti odbijanjem prihvatanja. Praksa zahvalnosti će otvoriti put.",
+          "keywords": [
+            "nezadovoljstvo",
+            "buđenje",
+            "zahvalnost",
+            "prilika",
+            "svest"
+          ],
+          "context": "Zahvalnost će vam otvoriti srce. Prilike će vam pokazati put."
+        },
+        "position6": {
+          "upright": "Vaš partner želi da je pristupite s svesti i zahvalnosti. Čeka vas da vidite mogućnosti pred sobom.",
+          "reversed": "Vaš partner ne želi da vidi ravnodušnost. Očekuje da ćete ga zadržati i živ vezu.",
+          "keywords": [
+            "svest",
+            "zahvalnost",
+            "buđenje",
+            "kamate",
+            "obveznica"
+          ],
+          "context": "Vaš partner želi da oseti vašu svest i zahvalnost."
+        },
+        "position7": {
+          "upright": "U budućnosti mogu postojati razdoblje nezadovoljstva i introspekcije. Neprimećene mogućnosti će vam doći.",
+          "reversed": "Pojavaće se nova svest i srce će se otvoriti zahvalnošću. Nezadovoljstvo će se postepeno rasipati.",
+          "keywords": [
+            "nezadovoljstvo",
+            "svest",
+            "okretanje prema unutra",
+            "buđenje"
+          ],
+          "context": "Budućnost odnosa biće ožičena sa zahvalnošću. Prilike će postati vidljive."
+        }
+      },
+      "fiveofcups": {
+        "position1": {
+          "upright": "Petorica šoljica kaže da je odnos trenutno fokusiran na razočarenja i gubitke. Energija tuge preovlađuje. Savet: Pogledajte preostalu ljubav.",
+          "reversed": "Petorica obrnutog reversa ukazuje da je tuga počinje da ostane ostavljena i isceljujuća energija se otvara u trenutnoj situaciji. Simptom: Prihvatanje, Nova nada.",
+          "keywords": [
+            "gubitak",
+            "tuga",
+            "razočaranje",
+            "starost",
+            "prihvatanje"
+          ],
+          "context": "U trenutnoj situaciji, srce je fokusirano na gubitke. Ali ako se i dalje ljubav ostvari, dođe ravnoteža. Vrata oporavka su otvorena."
+        },
+        "position2": {
+          "upright": "Petorica šoljica ukazuje da postoji težina gubitka i žaljenja u vašim osećanjima. Vaše srce se može zaglaviti u prošlosti. Savet: Pogledajte pune šolje ispred sebe.",
+          "reversed": "Preokrećena pet šoljica govori vam da je tuga počinje da bledi i vaše srce je isceljenje. Simptom: Godinski nada.",
+          "keywords": [
+            "gubitak",
+            "žaliti",
+            "prošlost",
+            "tuga",
+            "regeneracija"
+          ],
+          "context": "Trenutno je vaše srce fokusirano na prošlost. Videći da će vas videti mogućnosti pred vama."
+        },
+        "position3": {
+          "upright": "Petorica šoljica govori da je vaše očekivanje da popravite gubitke i pronađete nade ponovo. Vaše srce želi da vidi izvan tuge ... oprost, oporavak.",
+          "reversed": "Otkriveni pet šoljica pokazuje da je vaše očekivanje da bude potpuno oslobođen prošlog razočaranja. Oči su vam u budućnosti. \\ N \\ nsimptom: Želja da se rodiše.",
+          "keywords": [
+            "popraviti",
+            "nadati se",
+            "oproštenje",
+            "oporavak",
+            "nastavak"
+          ],
+          "context": "Vaše očekivanje je da budete oslobođeni prošlosti. Vaše srce želi da se raduje."
+        },
+        "position4": {
+          "upright": "Petorica šoljica kaže da poštuje žalost i povratak na preostale dve šolje. Suze omekšavaju tlo .. \"Šta sam izgubio / šta je ostalo?\" Tekst.",
+          "reversed": "Preokrećeno pet šoljica kaže da pozovite oproštaj u malim koracima. Saosećanje, a ne krivica, zaceljuju. \\ N \\ nsimptom: nežna odšteta prema sebi.",
+          "keywords": [
+            "starost",
+            "prihvatanje",
+            "oproštenje",
+            "zarastanje",
+            "nadati se"
+          ],
+          "context": "Vaš savet; Poštovanje prošlosti, saosećanje za sadašnjost. Gledanje i zadržavanje onoga što je ostalo daje snagu u srce. Nada dolazi sa malim koracima."
+        },
+        "position5": {
+          "upright": "Vaša mapa puta je da počastite gubitke i ostvarite lepotu koja ostaje. Nada klice od tuge.",
+          "reversed": "Vaša mapa puta može biti zamračena zaglavljenom u prošlosti. Prihvatanje započinje novi ciklus.",
+          "keywords": [
+            "starost",
+            "gubitak",
+            "nadati se",
+            "prihvatanje",
+            "zarastanje"
+          ],
+          "context": "Pusti gubitke. Nadam se da će vam upaliti put."
+        },
+        "position6": {
+          "upright": "Vaš partner želi da se fokusirate na sadašnje blagoslove, a ne gubitke. Čeka vas da ga pogledate sa nadom očima.",
+          "reversed": "Vaš partner ne želi da budete zarobljeni u svojoj tuzi. Čeka vas da se oporavite i povećate nadu.",
+          "keywords": [
+            "nadati se",
+            "gubitak",
+            "prihvatanje"
+          ]
+        }
+      }
+    }
+  }
+}

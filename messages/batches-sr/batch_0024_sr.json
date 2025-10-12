@@ -1,0 +1,799 @@
+{
+  "marriage": {
+    "meanings": {
+      "threeofpentacles": {
+        "position3": {
+          "keywords": [
+            null,
+            null,
+            null,
+            "kvalitet"
+          ],
+          "context": "Ako je jasno ko radi šta, budžet će teći."
+        },
+        "position4": {
+          "upright": "Saradnja, jasnoća uloga i vidljivost zajedničkog napora ojačati lepljenje. Ponašanje poput \"ekipa\" uvlači put za dugoročnu posvećenost.",
+          "reversed": "Nevidljiva nevidljiva radna snaga stvaraju ogorčenost. Bond može ostati obustavljen dok se ne razjasni nekvalitetni i deljenje zadataka.",
+          "keywords": [
+            "partnerstvo",
+            "uloga",
+            "diskrecija",
+            "period",
+            "kvalitet"
+          ],
+          "context": "Prilog uspeva na jasnim dužnostima i fer priznanjem; Nesigurnost se istroši."
+        },
+        "position5": {
+          "upright": "Sličan pristup saradnji, jasnoću uloge i deljenje savladavanja. Kultura zahvalnosti je uobičajena.",
+          "reversed": "Nevidljivi rad može stvoriti ranjivost. Mapa odgovornosti treba da se ažurira.",
+          "keywords": [
+            "partnerstvo",
+            "uloga",
+            "standardni",
+            "diskrecija",
+            "period"
+          ],
+          "context": "Timski duh je čest. Vidljivi rad je neophodan."
+        },
+        "position6": {
+          "upright": "Porodica vas može proceniti kao kooperativnu i laganu osobu. Cene vas kada razjasnite svoju ulogu i pokažite svoj doprinos. Zajedničko radno vreme udruže put za prihvatanje.",
+          "reversed": "Percepcija sebičnosti ili nedostatka saradnje, a ne harmonije stvara distancu u porodici. Kada ne pokažete svoj doprinos, vrednost se može ispitivati. Veća saradnja je neophodna za prihvatanje.",
+          "keywords": [
+            "partnerstvo",
+            "doprinos",
+            "raport",
+            "rad",
+            "vrednost"
+          ],
+          "context": "Pokazivanje vašeg doprinosa i usaglašenosti olakšava prihvatanje porodice. Nepotpuna saradnja stvara sumnju."
+        },
+        "position7": {
+          "upright": "Tri pentaklova ukazuje na saradnju i sastanak tokom timskog rada. Zajednički projekat olakšava lepljenje.",
+          "reversed": "Tri povratka Pentaklova kažu da nejasnoća nejasnoća može da optereće obveznica. Jasnoća jača proces.",
+          "keywords": [
+            "partnerstvo",
+            "projekat",
+            "uloga",
+            "savladav"
+          ],
+          "context": "Vi se sastajete na zajedničkom projektu. To stvara obveznice jasnoće."
+        },
+        "position8": {
+          "upright": "Tri pentakla naglašava saradnju i zajednički napor u komunikaciji. Uobičajeni ciljevi Foster Harmonia.",
+          "reversed": "Tri preokrenuta Pentek-a ukazuju da uloga konfuzija može otežati razumevanje. Otvoreni deljenje zadataka osigurava harmoniju.",
+          "keywords": [
+            "partnerstvo",
+            "rad",
+            "zajednički cilj",
+            "raport"
+          ],
+          "context": "Zajednička radna snaga ojačava sporazum."
+        },
+        "position9": {
+          "upright": "Tri od tri PENTACLES-a, partnera koji je otvoren za saradnju i voli da zajedno grade, pogodno je za vas.",
+          "reversed": "Tri pentaklova preokrenula je, neko ko je nekooperativno i sebično nije pogodno za vas.",
+          "keywords": [
+            "partnerstvo",
+            "raport",
+            "izgradnja",
+            "deljenje"
+          ],
+          "context": "Pogodan je supružnik zadruga."
+        }
+      },
+      "fourofpentacles": {
+        "position1": {
+          "upright": "Zaključak; Finansijska i emocionalna sigurnost biće temelj vašeg braka.",
+          "reversed": "Prekomerna kontrola ili ubodnost može komplicirati ishod braka.",
+          "keywords": [
+            "sigurnost",
+            "stabilnost",
+            "kontrola",
+            "zaštita"
+          ],
+          "context": "Zaključak; siguran brak. Ali prekomerna kontrola može stvoriti stres u vezi."
+        },
+        "position10": {
+          "upright": "Četiri pentaklova ukazuje na mogućnost braka, sa željom za sigurnost i vlasništvo. Bond izgrađena na čvrstom temeljima može biti trajna.",
+          "reversed": "Prekomerna kontrola i odbijanje da se prepušta mogu da otežavaju proces braka. Fleksibilnost se mora naučiti.",
+          "keywords": [
+            "sigurnost",
+            "posesivnost",
+            "stabilnost",
+            "zaštita",
+            "kontrola"
+          ],
+          "context": "Sigurnost i fleksibilnost moraju biti uravnoteženi za brak."
+        },
+        "position2": {
+          "upright": "Osigurajte svoju finansijsku sigurnost, ali nemojte biti usebni. Dok čekate, naučite da delite.",
+          "reversed": "Prekomerna šljokica ili ekstravagancija otežava proces. Provoditi uravnotežen.",
+          "keywords": [
+            "sigurnost",
+            "fružlost",
+            "deljenje",
+            "ravnoteža"
+          ],
+          "context": "Bilo bi korisno uspostaviti finansijsku ravnotežu dok čekate."
+        },
+        "position3": {
+          "upright": "Potreba za sigurnošću uspostavlja fružan okvir. Prekomerno zadržavanje može da iskače rast.",
+          "reversed": "Kontrolni ekstravagantni ljuljački sojeli budžet; Fleksibilno deljenje mora se naučiti.",
+          "keywords": [
+            "sigurnost",
+            "kontrola",
+            "štedljiv",
+            "fleksibilnost"
+          ],
+          "context": "Treba ga potražiti ravnotežu poverenja + fleksibilnosti."
+        },
+        "position4": {
+          "upright": "Potreba za održavanjem sigurnosti je velika, pravljenje priloga opreznog, ali firmu. Kada je deljenje uravnoteženo, veza je dugotrajna.",
+          "reversed": "Pretpostavljanje, ljubomora ili kontrolna tendencija može ograničiti intimnost. Postaje teško povezati se bez zijevanja.",
+          "keywords": [
+            "sigurnost",
+            "kontrola",
+            "deljenje",
+            "zadrzati",
+            "granica"
+          ],
+          "context": "Osjećaj sigurnosti je neophodan za prilog; Prekomerna kontrola prekida protok."
+        },
+        "position5": {
+          "upright": "Slično oprezno u zaštiti i zaštiti resursa. Deljenje opuštanja granica.",
+          "reversed": "Vaše ekstremno zadržavanje / potrošnja može se razlikovati. Treba razviti fleksibilan budžetski jezik.",
+          "keywords": [
+            "sigurnost",
+            "kontrola",
+            "deljenje",
+            "štedljiv",
+            "fleksibilnost"
+          ],
+          "context": "Oprezno poverenje je uobičajeno. Fleksibilnost treba dozvoliti."
+        },
+        "position6": {
+          "upright": "Porodica vas može videti kao sigurna i štedljiva osoba. Za njih ste neko ko štiti vrednosti. Vaš posesivan stav može dati osećaj poverenja.",
+          "reversed": "Vaša porodica vas može doživljavati kao pretjerano konzervativne ili sebične. Vidljiv kao neko ko ne deli materijalno ili duhovno otežava prihvatanje. Previše kontrole stvara distancu.",
+          "keywords": [
+            "sigurnost",
+            "zaštita",
+            "posesivnost",
+            "konzervativizam",
+            "deljenje"
+          ],
+          "context": "Uvereni stavovi ubrzavaju prihvatanje. Prekomerni konzervativizam stvara distancu."
+        },
+        "position7": {
+          "upright": "Četiri pentaklova ukazuje na sastanak u potrazi za sigurnost. Kontrolisano okruženje gradi lepljenje.",
+          "reversed": "Prekoračenje četvoro pentakala kaže da preterana kontrola može da opterene obveznica. Fleksibilnost otvara proces.",
+          "keywords": [
+            "sigurnost",
+            "kontrola",
+            "zaštita",
+            "ravnoteža"
+          ],
+          "context": "Upoznate se u bezbednosno orijentisanom okruženju. Fleksibilnost jača vezu."
+        },
+        "position8": {
+          "upright": "Četiri pentaklova ukazuje na želju za održavanjem sigurnosti u komunikaciji. Otvoreni i deli stav donosi harmoniju.",
+          "reversed": "Četiri preokrenuta pentakla ukazuje da preterani konzervativizam može da oteža komunikaciju. Fleksibilnost jača vezu.",
+          "keywords": [
+            "sigurnost",
+            "kontrola",
+            "deljenje",
+            "fleksibilnost"
+          ],
+          "context": "Deljenje povećava harmoniju."
+        },
+        "position9": {
+          "upright": "Četiri pentaklama, veran supružnik koji vrijedi poverenje je pogodno za vas.",
+          "reversed": "Četiri pentaklova obrnuto, neko ko je previše konzervativan ili ne deli nije za vas.",
+          "keywords": [
+            "lojalnost",
+            "poverenje",
+            "stabilnost",
+            "deljenje"
+          ],
+          "context": "Pogodan je lojalan i pouzdan supružnik."
+        }
+      },
+      "fiveofpentacles": {
+        "position1": {
+          "upright": "Zaključak; U teškim vremenima, solidarnost i borba zajedno će doći do izražaja.",
+          "reversed": "Osjećaj nedostatka podrške ili usamljenosti mogu da napreduju ishod braka.",
+          "keywords": [
+            "borba",
+            "solidarnost",
+            "poteškoće",
+            "pomoći"
+          ],
+          "context": "Zaključak; Brak koji se međusobno podržava u teškim vremenima. Ali osećaj usamljenosti mora biti rešen."
+        },
+        "position10": {
+          "upright": "Pet pentakla ukazuje da finansijske ili duhovne poteškoće mogu stvoriti anksioznost na putu ka braku. Međutim, podrška i solidarnost su prevladali ovu prepreku.",
+          "reversed": "Proces oporavka i jačanja otvara vrata prema braku. Poteškoće su zaostale.",
+          "keywords": [
+            "poteškoće",
+            "anksioznost",
+            "podrška",
+            "solidarnost",
+            "poboljšanje"
+          ],
+          "context": "Poteškoće se mogu prevazići uz podršku braka."
+        },
+        "position2": {
+          "upright": "Povećajte svoju otpornost u lice poteškoća. Ne ustručavajte se pomoći dok čekate.",
+          "reversed": "Odbijanje pomoći ublažava proces. Prihvati podršku.",
+          "keywords": [
+            "izdržljivost",
+            "poteškoće",
+            "pomoći",
+            "podrška"
+          ],
+          "context": "Pomaže da imate izdržljivost i pomoć dok čekate."
+        },
+        "position3": {
+          "upright": "Percepcija oskudice i osećaj isključenosti oslabiti materijalnu solidarnost. Postaje teško zatražiti pomoć.",
+          "reversed": "Pojavljuju se znakovi oporavka; Pruža mrežnu podršku i providan otvor za razgovore.",
+          "keywords": [
+            "glad",
+            "podrška",
+            "oporavak",
+            "solidarnost"
+          ],
+          "context": "Hrabrost za rešavanje zajedno poboljšava budžet."
+        },
+        "position4": {
+          "upright": "Osjećaji uskraćivanja ili isključenosti mogu otežati reći \"da\". Međutim, kada se solidarnost pokaže zajedno, veza se produbljuje.",
+          "reversed": "Otvaraju se vrata oporavka; Usamljenost se smanjuje kada se traži podrška. Boravak prozirnog tokom celog povratka omogućava vezu.",
+          "keywords": [
+            "uskraćivanje",
+            "podrška",
+            "usamljenost",
+            "zarastanje",
+            "solidarnost"
+          ],
+          "context": "Vezivanje je ojačano kada stojimo rame za rame tokom teških dana."
+        },
+        "position5": {
+          "upright": "Vaša vrednost stojećeg ramena do ramena u teškim vremenima je slična. Učite zajedno da zatražite pomoć.",
+          "reversed": "Tvrdoglavost da se samostalo može biti snažna u jednom od vas. Mreža podrške treba da bude vidljiva.",
+          "keywords": [
+            "glad",
+            "podrška",
+            "solidarnost",
+            "moral",
+            "oporavak"
+          ],
+          "context": "Solidarnost je uobičajena. Neka poziv za pomoć postane normalan."
+        },
+        "position6": {
+          "upright": "Porodica vas u početku može proceniti na osnovu uskraćivanja ili nedostatka. Ali kada vide vašu otpornost i traženje podrške, oni mogu saosećati. Vaša spremnost da biste prošli kroz teška vremena zajedno povećava prihvatanje.",
+          "reversed": "Porodica vas može doživljavati kao teret. Kada materijalni ili moralni nedostaci postaju previše izraćeni, poverenje se može slomiti. Percepcija neadekvatnosti otežavaju proces prihvatanja.",
+          "keywords": [
+            "nedostatak",
+            "podrška",
+            "izdržljivost",
+            "empatija",
+            "uskraćivanje"
+          ],
+          "context": "Demonstriranje otpornosti, a ne nedostatkom olakšava prihvatanje. U suprotnom, događa se percepcija opterećenja."
+        },
+        "position7": {
+          "upright": "Pet pentakova ukazuje na sastanak sa poteškoćama ili traženjem podrške. Dolazite pored strane u teškim vremenima.",
+          "reversed": "Pet Pentaklova obrnuto kaže da će oporavak ubrzati obveznicu. Solidarnost otvara vrata.",
+          "keywords": [
+            "poteškoće",
+            "podrška",
+            "oporavak",
+            "solidarnost"
+          ],
+          "context": "Upoznate se u potrazi za podrškom. Saradnja jača vezu."
+        },
+        "position8": {
+          "upright": "Pet pentaka može da odražava osećaj usamljenosti ili isključenosti u komunikaciji. Davanje i primanje podrške obnavlja Harmoniju.",
+          "reversed": "Petorica preokrećenih pentakala ukazuje na energiju oporavka i ponovnog povezivanja. Mali koraci ojačavaju vezu.",
+          "keywords": [
+            "usamljenost",
+            "podrška",
+            "oporavak",
+            "jedinstvo"
+          ],
+          "context": "Davanje podrške jača sporazum."
+        },
+        "position9": {
+          "upright": "Petorica pentakala je pogodna za vas, kao što je supružnik koji vas stoji i podržava vas u teškim vremenima.",
+          "reversed": "Petorica pentakala je preokrenuta, neko ko vas ostavlja sama u krizama nije pogodno za vas.",
+          "keywords": [
+            "podrška",
+            "lojalnost",
+            "solidarnost",
+            "strpljenje"
+          ],
+          "context": "Pogodan je supružnik koji je tu za vas u teškim vremenima."
+        }
+      },
+      "sixofpentacles": {
+        "position1": {
+          "upright": "Zaključak; Pošteno deljenje, saradnja i ravnoteža biće važni u vašem braku.",
+          "reversed": "Neravnoteža moći ili jednostrani dav može procijediti ishod braka.",
+          "keywords": [
+            "deljenje",
+            "ravnoteža",
+            "pomoći",
+            "raport"
+          ],
+          "context": "Zaključak; Brak na osnovu jednake deljenja. Ali jednostristvo može biti prepreka."
+        },
+        "position10": {
+          "upright": "Šest stanovnika pokazuje da možete da izgradite snažnu uniju u braku putem pravednog deljenja i međusobne podrške.",
+          "reversed": "Neravnoteža snage ili uslovne razmene mogu otežati brak. Transparentnost je važna.",
+          "keywords": [
+            "deljenje",
+            "pravda",
+            "ravnoteža",
+            "podrška",
+            "transparentnost"
+          ],
+          "context": "Sajajni bilans je neophodan za brak."
+        },
+        "position2": {
+          "upright": "Naučite velikodušnost, znate kako da date i primite. Uravnotežite se dok čekate.",
+          "reversed": "Neuravnoteženo deljenje otežava proces. Budite fer.",
+          "keywords": [
+            "velikodušnost",
+            "deljenje",
+            "ravnoteža",
+            "pravda"
+          ],
+          "context": "Dok su čekali, velikodušnost i pravilno deljenje su korisne."
+        },
+        "position3": {
+          "upright": "Ako se uspostavi saldo prijemnog davanja, poverenje raste. Uslovi moraju biti transparentni.",
+          "reversed": "Osećanja zaduženosti i uslovna podrška podrivaju jednakost.",
+          "keywords": [
+            "pravda",
+            "deljenje",
+            "ravnoteža snage",
+            "poverenje"
+          ],
+          "context": "Transparentni sporazum uspostavlja korektnu ekonomiju."
+        },
+        "position4": {
+          "upright": "SAVRŠENA BALKOVI PRIJAVA PRIJAVA povećava želju za povezivanjem. Transparentni uslovi i reciprocitet grade poverenje.",
+          "reversed": "Uslovna pomoć, osećaj zaduženosti ili električne asimetrije podriva obveznicu. Bez uspostavljanja osećaja jednakosti, trajno obećanje postaje teško.",
+          "keywords": [
+            "pravda",
+            "deljenje",
+            "jednakost",
+            "poverenje",
+            "reciprocitet"
+          ],
+          "context": "Pričvršćivanje cveta kroz fer razmenu; Neravnoteža moći je prepreka."
+        },
+        "position5": {
+          "upright": "Slična osetljivost pod fer deljenjem i transparentnim stanjem. Reciprocitet raste poverenje.",
+          "reversed": "Vaš prag za uslovno odobravanje ili čuvanje rezultata može biti drugačiji. Sporazum mora biti transparentan.",
+          "keywords": [
+            "pravda",
+            "deljenje",
+            "reciprocitet",
+            "poverenje",
+            "transparentnost"
+          ],
+          "context": "Partner sa fer razmenom. Transparentni ugovor štiti."
+        },
+        "position6": {
+          "upright": "Porodica vas može videti kao fer i deljenje osobe. Održavanje ravnoteže davanja i prijem će im dati samopouzdanje. Vaš transparentan i uravnotežen stav ubrzava prihvatanje.",
+          "reversed": "Porodica vas može doživljavati kao nestabilan ili manipulativni. Neravnoteža snage ili uslovne akcije otežavaju proces prihvatanja. Nejasni stavovi Povećaju sumnju.",
+          "keywords": [
+            "deljenje",
+            "pravda",
+            "ravnoteža",
+            "transparentnost",
+            "poverenje"
+          ],
+          "context": "Biti fer i uravnoteženi udruženi put za prihvatanje. Percepcija neravnoteže ili interesa stvara distancu."
+        },
+        "position7": {
+          "upright": "Šest stanovnika ukazuje na sastanak u okruženju fer deljenja. Uspostavlja vezu poverenja i ravnoteže.",
+          "reversed": "Uokrećena šest pentakala kaže da neravnoteža moći može da opterene obveznica. Otvorenost olakšava proces.",
+          "keywords": [
+            "pravda",
+            "deljenje",
+            "ravnoteža",
+            "poverenje"
+          ],
+          "context": "Pokrenićete se u okruženju poštenog deljenja. Otvorena raste veza."
+        },
+        "position8": {
+          "upright": "Šest stanovnika simbolizuje pravdu i međusobnu razmenu u komunikaciji. Jednako deljenje osigurava ugovor.",
+          "reversed": "Šest preokreta Pentaklova ukazuje da neravnoteženi odnosi napajanja mogu naštetiti komunikaciji. Transparentnost povećava usklađenost.",
+          "keywords": [
+            "pravda",
+            "deljenje",
+            "jednakost",
+            "raport"
+          ],
+          "context": "Ravnopravnost olakšava sporazum."
+        },
+        "position9": {
+          "upright": "Šest pentakala je za vas pogodan za vas je pogodan pravedni deljenje, velikodušan i uravnotežen supružnik.",
+          "reversed": "Šest pentakila je preokrenulo, neko ko ne deli vlast ili je nepravedan nije pogodan za vas.",
+          "keywords": [
+            "pravda",
+            "deljenje",
+            "ravnoteža",
+            "velikodušnost"
+          ],
+          "context": "Pogodan je i velikodušan supružnik."
+        }
+      },
+      "sevenofpentacles": {
+        "position1": {
+          "upright": "Zaključak; Strpljenje, trud i dugoročna investicija će raznijeti vaš brak.",
+          "reversed": "Nestrpljivost ili neefikasnost može komplikovati ishod braka.",
+          "keywords": [
+            "strpljenje",
+            "rad",
+            "investicija",
+            "čekanje"
+          ],
+          "context": "Zaključak; Brak koji raste sa strpljenjem. Ali žurba se može na put."
+        },
+        "position10": {
+          "upright": "Sedam pentakala kaže da se sa strpljenjem i dugoročnim naporom može dogoditi brak. Kada se unese napori, postignuti su rezultati.",
+          "reversed": "Nestrpljenje i pogrešna investicija mogu otežati put ka braku. Potrebno je znati vrednost vremena.",
+          "keywords": [
+            "strpljenje",
+            "rad",
+            "investicija",
+            "čekanje",
+            "dugoročan"
+          ],
+          "context": "Za brak je potreban napor pacijenta."
+        },
+        "position2": {
+          "upright": "Strpljivo radi, razmislite dugoročno. Dok čekate, očekujte plodove vašeg rada.",
+          "reversed": "Nestrpljivost ili prerano odustajanje čini proces težak. Biti uporan.",
+          "keywords": [
+            "strpljenje",
+            "rad",
+            "dugoročan",
+            "čekati"
+          ],
+          "context": "Strpljenje i dugoročno razmišljanje su korisne dok čekaju."
+        },
+        "position3": {
+          "upright": "Procena i strpljenje povećavaju efikasnost. Mala poboljšanja stvaraju multiplikatorski efekat.",
+          "reversed": "Sunk troškovna tvrdoglavost ili prerano napuštanje rezultira gubicima. Potrebni su kriterijumi.",
+          "keywords": [
+            "procena",
+            "strpljenje",
+            "prinos",
+            "okretanje"
+          ],
+          "context": "Ciklus u učenju mere u učenju ojačava budžet."
+        },
+        "position4": {
+          "upright": "Period strpljenja i procena omogućava \"da\" da zreli. Efikasnost vinograda povećava se sa malim poboljšanjima.",
+          "reversed": "Potopljena troška tvrdoglavost ili nestrpljenje može dovesti do pogrešnih odluka. Povezivanje ne treba žuriti pre razjašnjenja kriterijuma.",
+          "keywords": [
+            "strpljenje",
+            "procena",
+            "prinos",
+            "vremenski vreme",
+            "merenje"
+          ],
+          "context": "Prilog postaje stalno sa zrelom odlukom i strpljenjem."
+        },
+        "position5": {
+          "upright": "Slična zrelost u proceni i strpljenja. Vaša ljubav prema malim poboljšanjima je deljena.",
+          "reversed": "Nestrpljivost / potopljeni trošak tvrdoglavost može biti dominantan u jednom od vas. Okretanje sa kriterijumima.",
+          "keywords": [
+            "strpljenje",
+            "prinos",
+            "procena",
+            "žetva",
+            "okretanje"
+          ],
+          "context": "Zreli partner za čekanje. Držite u sastavu kriterijuma."
+        },
+        "position6": {
+          "upright": "Porodica vas mogu videti kao pacijenta i planiranu osobu. Vaš trud i dosledan stav može ih ubediti. Proces napreduje polako, ali pozitivno.",
+          "reversed": "Ako porodica vidi nestrpljenje ili besplodne napore, poverenje se može oštetiti. Očekivanje bez napora otežava prihvatanje. Nestrpljivo delujući bez prikazivanja rezultata otuđiva porodicu.",
+          "keywords": [
+            "strpljenje",
+            "rad",
+            "plan",
+            "stabilnost",
+            "čekanje"
+          ],
+          "context": "Strpljenje i stalni napori olakšavaju prihvatanje. Besplodne napore otuđuju porodicu."
+        },
+        "position7": {
+          "upright": "Sedam pentakla ukazuje na sastanak u periodu strpljenja i procene. Uspostavlja dugoročnu misaonu vezu.",
+          "reversed": "Uokrećeno sedam stanovnika kaže da žurba može opteretiti vezu. Strpljenje olakšava proces.",
+          "keywords": [
+            "strpljenje",
+            "procena",
+            "žetva",
+            "čekanje"
+          ],
+          "context": "Sastaćete se sa strpljenjem u procesu. Evaluacija gradi vezu."
+        },
+        "position8": {
+          "upright": "Sedam stanovnika simbolizuje strpljenje i procenu u komunikaciji. Uzimanje vremena i slušanja povećava harmoniju.",
+          "reversed": "Reversed Sedam stanovnika ukazuje da nestrpljenje i brze presude mogu naštetiti komunikaciji. Vrijeme davanja jača vezu.",
+          "keywords": [
+            "strpljenje",
+            "procena",
+            "vreme",
+            "raport"
+          ],
+          "context": "Strpljenje jača komunikaciju."
+        },
+        "position9": {
+          "upright": "Sedam pentakala, partnera koji je strpljiv, teško je i ulagati u budućnost je pogodan za vas.",
+          "reversed": "Sedam pentakala je preokrenulo, neko ko je nestrpljiv i kratkoročan umu nije pogodan za vas.",
+          "keywords": [
+            "strpljenje",
+            "rad",
+            "investicija",
+            "stabilnost"
+          ],
+          "context": "Pogodan je pacijent i tvrdi supružnik."
+        }
+      },
+      "eightofpentacles": {
+        "position1": {
+          "upright": "Zaključak; Disciplina, napor i kontinuirano unapređenje će ojačati vaš brak.",
+          "reversed": "Ravnodušnost ili nepažljivost može potkopati ishod braka.",
+          "keywords": [
+            "trud",
+            "disciplina",
+            "razvoj",
+            "savladav"
+          ],
+          "context": "Zaključak; Brak koji raste sa naporom. Ali nepažnju treba izbegavati."
+        },
+        "position10": {
+          "upright": "Osam stanovnika pokazuje da je brak moguć sa stalnim naporom i negom. Kvalitetna veza je uspostavljena putem posla.",
+          "reversed": "Ravnodušnost ili nepažljivost slabiju put ka braku. Potreban je redovan napor.",
+          "keywords": [
+            "trud",
+            "rad",
+            "briga",
+            "učenje",
+            "savladav"
+          ],
+          "context": "Redovni rad je neophodan za brak."
+        },
+        "position2": {
+          "upright": "Hone svoje veštine, steknite majstorstvo. Educirajte se dok čekate.",
+          "reversed": "Perfekcionizam ili osećaj neadekvatnosti otežavaju proces. Usredsredite se na razvoj.",
+          "keywords": [
+            "savladav",
+            "veština",
+            "učenje",
+            "razvoj"
+          ],
+          "context": "Korisno je razviti veštine dok čekate."
+        },
+        "position3": {
+          "upright": "Zanatska disciplina i dosledan rad dodaju snagu zajedničkom budžetu. Standard kvaliteta raste.",
+          "reversed": "Nepažnja i želja za brze rezultate dovode do prerade i otpada.",
+          "keywords": [
+            "disciplina",
+            "kvalitet",
+            "praktičan",
+            "fokus"
+          ],
+          "context": "Redovna radna snaga postaje samopouzdanje."
+        },
+        "position4": {
+          "upright": "Redovna radna snaga, učenje i kvalitetna standardna podrška za podršku. Kako se navika prilagođavaju, poverenje se povećava.",
+          "reversed": "Nepažnja, površnost ili želja da se \"odmah učini\" otpušta obveznica. Bez discipline, trajne reči su prisiljene.",
+          "keywords": [
+            "rad",
+            "disciplina",
+            "učenje",
+            "kvalitet",
+            "navika"
+          ],
+          "context": "Vezivanje je ojačano redovnim naporom i kvalitetom."
+        },
+        "position5": {
+          "upright": "Slično insistiranje na zanatski disciplinu i formiranje navike. Kvalitet približava standard.",
+          "reversed": "Nepažnja / prag automatizacije može se razlikovati. Svesna praksa mora se obnoviti.",
+          "keywords": [
+            "savladav",
+            "praktičan",
+            "kvalitet",
+            "disciplina",
+            "fokus"
+          ],
+          "context": "Kultura rada je uobičajena. Držite standard živ."
+        },
+        "position6": {
+          "upright": "Porodica vas može procijeniti kao marljive, snalažne i posvećene osobe. Vaš redovni napor i disciplina će dati samopouzdanje. Stabilnost postavlja temelje za prihvatanje.",
+          "reversed": "Percepcija nevremenosti ili nedostatka napora uznemirava porodicu. Nedostatak napora trese samopouzdanje. Ne pokazujući da je studijska disciplina otežava proces prijema.",
+          "keywords": [
+            "razvodnik",
+            "veština",
+            "stabilnost",
+            "disciplina",
+            "rad"
+          ],
+          "context": "Disciplinovan napor stvara samopouzdanje. Nedostatak napora otežava prihvatanje."
+        },
+        "position7": {
+          "upright": "Osam stanovnika ukazuje na sastanak u disciplinovanom studiji i učenju. Zajednička radna snaga ubrzava vezu.",
+          "reversed": "Otkriveno osam stanovnika kaže da nepažnja može da opterene obveznica. Pažnja i napor olakšavaju sastanak.",
+          "keywords": [
+            "studija",
+            "učenje",
+            "disciplina",
+            "savladav"
+          ],
+          "context": "Upoznate se u radnom okruženju. Uspostavlja se radna veza."
+        },
+        "position8": {
+          "upright": "Osam stanovnika naglašava napor i kontinuirano učenje u komunikaciji. Uspostavljanje napora olakšava se slagati.",
+          "reversed": "Otkriveno osam stanovnika kaže da nepažnja ili ravnodušnost mogu otežati komunikaciju. Redovna pažnja jača vezu.",
+          "keywords": [
+            "rad",
+            "učenje",
+            "trud",
+            "raport"
+          ],
+          "context": "Stalni rad donosi harmoniju."
+        },
+        "position9": {
+          "upright": "Osam pentakla, tvrdokrvni, disciplinovani i supružnik koji vole posao je pogodan za vas.",
+          "reversed": "Osam preokrenenog pentakla, neko ko je neodgovoran i bezbrižan nije pogodan za vas.",
+          "keywords": [
+            "razvodnik",
+            "disciplina",
+            "odgovornost",
+            "briga"
+          ],
+          "context": "Pogodan je naporan i odgovoran supružnik."
+        }
+      },
+      "nineofpentacles": {
+        "position1": {
+          "upright": "Zaključak; To će biti uravnotežen brak sa samopouzdanjem, prosperitetom i nezavisnošću.",
+          "reversed": "Ovisnost ili ekstravagancija mogu da napreduju ishod braka.",
+          "keywords": [
+            "blagostanje",
+            "poverenje",
+            "nezavisnost",
+            "ravnoteža"
+          ],
+          "context": "Zaključak; Samouveren i uravnotežen brak. Ali zavisnost treba izbegavati."
+        },
+        "position10": {
+          "upright": "Devet stanovnika kaže da će individualna nezavisnost i osećaj sopstvene vrednosti ojačati brak. Čvrsti pojedinci formiraju snažne odnose.",
+          "reversed": "Prekomerna zavisnost ili ekstravagancija može oslabiti brak. Samodisciplina je potrebna.",
+          "keywords": [
+            "nezavisnost",
+            "samopouzdanje",
+            "blagostanje",
+            "poverenje",
+            "ravnoteža"
+          ],
+          "context": "Stanje nezavisnosti + deljenje je neophodno za brak."
+        },
+        "position2": {
+          "upright": "Razviti svoju nezavisnost i vrednost u vrednosti. Ojačati sebe dok čekate.",
+          "reversed": "Ovisnost ili nedostatak samo-vrednosti otežava proces. Steći samopouzdanje.",
+          "keywords": [
+            "nezavisnost",
+            "samopouzdanje",
+            "poverenje",
+            "zadovoljstvo"
+          ],
+          "context": "Nezavisnost i samo-vrednost su od pomoći tokom čekanja."
+        },
+        "position3": {
+          "upright": "Nezavisnost i samo-vredno podržavaju zajednički komfor. Granice štite prosperitet.",
+          "reversed": "Ekstremi ekstravagencija ili ekstremne štedosti stvaraju napetost.",
+          "keywords": [
+            "nezavisnost",
+            "udobnost",
+            "granica",
+            "samopouzdanje"
+          ],
+          "context": "Elegantna ravnoteža čini deljenje prelepo."
+        },
+        "position4": {
+          "upright": "Zdrava nezavisnost i samo-vrednost postavljaju temelje za odraslu osobu \"Da\". Dvoje ljudi koji stoje na vlastitim nogama formiraju uravnoteženiju vezu.",
+          "reversed": "Prekomerna nezavisnost ili naklonost u komforu može da otežam zajednički život. Smanjuje se \"mi\" odlaže vezivanje prostora.",
+          "keywords": [
+            "Eigenvalue",
+            "nezavisnost",
+            "udobnost",
+            "zrelost",
+            "granica"
+          ],
+          "context": "Prilog je ojačan od strane \"Mi\" koji se pojavljuje od zdrave individualnosti."
+        },
+        "position5": {
+          "upright": "Slično stavovanje u elegantnoj nezavisnosti i vrednosti. Znate kako ostati pojedinca čak i kada ste zajedno.",
+          "reversed": "Vaša ekstremna nezavisnost / ekstremi zavisnosti mogu biti različite. Mora se uspostaviti ravnoteža pogranične blizine.",
+          "keywords": [
+            "Eigenvalue",
+            "nezavisnost",
+            "udobnost",
+            "granica",
+            "milost"
+          ],
+          "context": "Zrela individualnost je uobičajena. Treba da se održava ravnoteža."
+        },
+        "position6": {
+          "upright": "Porodica vas može pregledati kao nezavisna, snažna i imati samo-vrednost. Vaš elegantan i uravnotežen stav daje im samopouzdanje. Možda ćete biti cenjeni kao osoba koja se zalaže za sebe.",
+          "reversed": "Porodica vas može videti kao preterano zavisnu ili rasipnu. Nedostatak sopstvene vrednosti ili nedostatka discipline otežava proces prihvatanja. Neravnoteža propada samopouzdanje.",
+          "keywords": [
+            "nezavisnost",
+            "samopouzdanje",
+            "milost",
+            "ravnoteža",
+            "poverenje"
+          ],
+          "context": "Nezavisnost i samo-vrednost ubrzavaju prihvatanje. Zavisnost i rasipanje stvaraju udaljenost."
+        },
+        "position7": {
+          "upright": "Devet stanovnika ukazuje na sastanak u vreme kada je nezavisnost i samopotrebna vrednost na čelu. Stojeći na svoju dva metra povećavaju atrakciju.",
+          "reversed": "Devet preokreta pentakala kaže da previsoka zavisnost može da oblakne obveznice. Samopouzdanje jača sastanak.",
+          "keywords": [
+            "samopouzdanje",
+            "nezavisnost",
+            "poverenje",
+            "mir"
+          ],
+          "context": "Upoznate nezavisnost. Samopouzdanje raste obveznica."
+        },
+        "position8": {
+          "upright": "Devet stanovnika promoviše sklad u komunikaciji, samopouzdanju i individualnom zadovoljstvu. Deljenje nezavisnosti povećava se sporazum.",
+          "reversed": "Devet preokretanih pentakala ukazuje da zavisnost ili udaljenost može da otežava komunikaciju. Omogućava uravnoteženu harmoniju deljenja.",
+          "keywords": [
+            "poverenje",
+            "nezavisnost",
+            "zadovoljstvo",
+            "deljenje"
+          ],
+          "context": "Izbalansirano samopouzdanje podstiče harmoniju."
+        },
+        "position9": {
+          "upright": "Devet Pentola je pogodno za vas kao partnera koji je nezavisan, samopouzdan i ima visoku vrednost.",
+          "reversed": "Devet preokreta Pentes-a nije pogodno za zavisnog ili ne reagujućeg partnera.",
+          "keywords": [
+            "poverenje",
+            "nezavisnost",
+            "samopouzdanje",
+            "stabilnost"
+          ],
+          "context": "Supružnik koji zna da je prikladan supružnik."
+        }
+      },
+      "tenofpentacles": {
+        "position1": {
+          "upright": "Zaključak; Biće to brak ojačan trajnom srećom, porodičnom podrškom i međugeneracijskim obveznicama.",
+          "reversed": "Porodična nesuglasica ili finansijski problemi mogu komplicirati ishod braka.",
+          "keywords": [
+            "porodica",
+            "stabilnost",
+            "baština",
+            "stalnost"
+          ],
+          "context": "Zaključak; Duboko ukorenjeni brak sa porodicom. Ali porodični problemi mogu ometati."
+        },
+        "position10": {
+          "upright": "Deset stanovnika ukazuje na mogućnost snažnog braka sa dugoročnom stabilnošću i porodičnim vezama. Trajna sreća je moguća.",
+          "reversed": "Porodični problemi ili finansijski sukobi mogu otežati brak. Može se rešiti otvorenom komunikacijom."
+        }
+      }
+    }
+  }
+}

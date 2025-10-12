@@ -1,0 +1,872 @@
+{
+  "blog": {
+    "cards": {
+      "the-moon": {
+        "meanings": {
+          "reversed": {
+            "love": "In relationships, there may be privacy, uncertainty, or misunderstandings, open communication and intuition.",
+            "career": "In a career, uncertainty or misdirection may pose a risk, so focus on clear information and reliable resources.",
+            "money": "Financial ambiguities and false predictions can be seen.",
+            "spiritual": "Spiritually, it may be about being trapped in internal guidance or being delusional, but notice your inner light and intuition."
+          }
+        },
+        "context": {
+          "mythology": "The Moon card is associated with Artemis/Diana and Hecate in mythology. The moon illuminates the night, represents the subconscious and intuition; it provides guidance in the dark.",
+          "celtic_cross": {
+            "future": "In the future, subconscious and intuitive awareness will guide you, emotions and internal messages can affect your decisions.",
+            "hidden_influences": "Secret fears, subconscious influences, and intuitive information shapes the progress of your life."
+          }
+        },
+        "story": {
+          "title": "The Mystery Journey of the Moon",
+          "description": "As the moon shines in the night sky, the moon rises between two dogs and a boar, the moonlight illuminates the hidden pathways and opens the doors to the subconscious, teaching the unknown to step into the unknown, to listen to intuition, and to notice the shadows.",
+          "historytitle": "Historical Origin: Night and Intuition",
+          "history_message": "The Moon Card was painted in Renaissance tarots as a subconscious, dream and intuition card, a guide in the dark.",
+          "mystic_title": "Spiritual Meaning - Guidance of Intuition",
+          "mystic_message": "The moon enhances spiritual awareness in the guidance of subconscious exploration, dreams and symbols, and with meditation and internal observation, intuition is strengthened.",
+          "cultural_title": "Modern Comment: Mystery and Internal Reconnaissance",
+          "cultural_message": "In the modern world, the Moon is associated with subconscious processes, emotional awareness and spiritual guidance.",
+          "lesson": "The moon teaches you to discover mystery, intuition, and subconsciousness, don't be afraid of the dark; follow the light and rely on your inner guidance."
+        },
+        "keywords": {
+          "keywords_title": "Moon Card Keywords",
+          "keywords_message": "the tarot meaning, the moon tarot, the subliminal, intuition, mystery, spiritual awareness, tarot dream",
+          "positive_title": "Positive Themes",
+          "positive_message": "Intuition, subconscious awareness, inner discovery, mysterious journey, spiritual guidance.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Avoid delusions, use intuition, and be balanced when facing the unknown.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Trust your internal guidance, follow your intuition, and notice the subliminal messages."
+        },
+        "associations": {
+          "title": "Cosmic Connections to the Moon Card",
+          "astrology": "Crab Burcu (Emotions, Intuition, Empathy)",
+          "numerology": "18 (Sense, Mystery, Introduction)",
+          "element": "Water (emotions, subconscious, flow)",
+          "chakra": "Third Eye & Sacril ▪ Intuition, Introspective View and Emotional Fluctuation"
+        },
+        "card_combinations": {
+          "title": "Combinations With the Moon",
+          "combinations": {
+            "0": {
+              "card": "Mother Superior (The High Priestess)",
+              "meaning": "Intuition and subconscious discovery are strengthened; notice classified information."
+            },
+            "1": {
+              "card": "Ermiş (The Hermit)",
+              "meaning": "Internal guidance and loneliness illuminate your subconscious."
+            },
+            "2": {
+              "card": "Star (The Star)",
+              "meaning": "Hope and inspiration combine with subconscious processes to heal."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Moon Card Approvement",
+          "affirmation_list": {
+            "0": "I trust my intuition and step into the unknown.",
+            "1": "I notice my internal messages and listen to them.",
+            "2": "I accept the light and guidance of my subconscious."
+          }
+        },
+        "cta": {
+          "main": "Follow your intuition and accept the guidance of your subconscious!",
+          "micro": "Save your dreams today or notice the internal messages through meditation."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Moon Card represent?",
+            "answer": "It represents subconscious, intuition, mystery, and inner guidance, a connection to light and intuition that guides in the dark."
+          },
+          "1": {
+            "question": "What does the Reverse Moon mean?",
+            "answer": "Reverse position means illusion, confusion or lack of intuition, so be careful for clarity and awareness."
+          },
+          "2": {
+            "question": "In what areas is the Moon card powerful?",
+            "answer": "Subliminal discovery is powerful in the fields of intuition, dream studies, spiritual guidance and emotional awareness."
+          }
+        },
+        "related_cards": {
+          "0": "the-high-priestess",
+          "1": "the-star",
+          "2": "the-hermit"
+        },
+        "imageUrl": "/cards/rws/XVIII-Moon.webp"
+      },
+      "the-sun": {
+        "name": "Sun Success, Joy and Enlightenment",
+        "short_description": "The sun's card represents the bright, shining moments of life and the joy of pure life, heralding success, clarity, and a warm inner healing.",
+        "meanings": {
+          "upright": {
+            "general": "The sun represents clarity and success after darkness. The challenges behind the curtain of its life now light up; the labors become visible. This period is a time when self-confidence will increase, creativity will be revealed, and their goals will become concrete results. The child's laughter, such as the movie scene, has a vivid, bright, rhythmic sense of happiness.",
+            "love": "In love, the Sun represents mutual joy, openness, and healthy sharing, and the relationship becomes a more clear, intimate form, celebrating life, and if you're single, you have a good chance of creating new ties with attractive, confident energy, and the sun sheds light on the daily rhythm of love.",
+            "career": "In a career, the Sun means success, recognition, and a flash of projects, a rich time for presentations, launches, or promotions, and your creative ideas will be appreciated, embodying the results while providing leadership and positive motivation within the team.",
+            "money": "In a material sense, the Sun is a sign of abundance and flow; the right steps, measured risks, and positive energy support financial stability. Your sources of income can be strengthened; celebrate the flow; but don't forget simplicity and wisdom in spending.",
+            "spiritual": "In the spiritual realm, the sun brings enlightenment, healing, and pure awareness, and you will act in harmony with your inner guide, which will make you feel more whole, and the solar energy that stimulates your inner healer, and helps you to accompany the rhythm of life with joy."
+          },
+          "reversed": {
+            "general": "The Reverse Sun can point to a temporary loss of hope, inner fears that cast a shadow of confidence or success. The outside light is not extinguished; clean your inner lens and start to shine again, noticing small victories.",
+            "love": "In a relationship, the opposite position, lack of communication, or expectation may create incompatibility. A little patience and transparency brings back solar energy.",
+            "career": "In a career, the reverse Sun can mean lack of appreciation or delayed rewards, re-establishing your strategy to make yourself visible; success can be permanent, even if it delays.",
+            "money": "Financially, the inverse situation may show misconsequential spending or lack of plans due to extreme optimism. Review your budget, use the light balanced.",
+            "spiritual": "Psychologically short-term fluctuations, it's normal to feel energy diminishing, rest, recharge, and recall your light with minor rituals."
+          }
+        },
+        "context": {
+          "mythology": "In ancient mythology, the sun is associated with the gods, such as Ra, Helios, or Mitra, who give days and days of life, the dawn of the sun, the glory after darkness, the brilliant memory of a hero on stage.",
+          "celtic_cross": {
+            "future": "In the near future, your efforts can bear fruit - visible success and social approval - opportunities to bring light to the stage.",
+            "hidden_influences": "Secret support, past investments or small steps may have prepared you for the present flash, your ability to reflect on the outside world."
+          }
+        },
+        "story": {
+          "title": "The Sun's Scene ▪ A Film Square",
+          "description": "In the middle of the spotlight, a figure runs with a smile in the golden light of a warm morning. In the background, children's laughter, a warm wind rising from the fields; in everyone's face, the camera slowly approaches and the simple, deep truth comes out: life exists to be celebrated. This is the scene where small victories are carried out like a big movie.",
+          "historytitle": "Historical Origin: Sun and Life - Giving",
+          "history_message": "Solar images are associated with life and celebration in ancient civilizations, with the number XIX tradition, enlightenment, childhood joy and fertility.",
+          "mystic_title": "Spiritual Meaning - The Healing of Light",
+          "mystic_message": "The sun raises the vibration of the soul, bringing healing, energy, and clarity, and the sun after darkness illuminates the inner shadows and offers a healing rhythm.",
+          "cultural_title": "Modern Comment: Success and Daily Joy",
+          "cultural_message": "Today, the Sun is a symbol of performance, appearance, positive brand and personal success, but the most valuable thing is to celebrate it with simple joy and gratitude.",
+          "lesson": "The sun reminds us of the simple truth: everything is ready for you to shine. Now smile, share, and scatter your light generously."
+        },
+        "keywords": {
+          "keywords_title": "Sun Card Keywords",
+          "keywords_message": "Sun tarot meaning, the sun tarot song, tarot success, tarot joy, tarot enlightenment, tarot inner healing, tarot glow",
+          "positive_title": "Positive Energy",
+          "positive_message": "Joy, success, clarity, confidence, creativity, healing, and abundance.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Avoid too much pride or pomp; humbly celebrate and share your success.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Accept your light, joy and healing flow out of your heart, and little happiness feeds your soul."
+        },
+        "associations": {
+          "title": "Cosmic Connections of the Sun Card",
+          "astrology": "The Sun (Leo) emphasizes self-expression, creativity and viability",
+          "numerology": "19 (Finished, Born of Light, Door to New Beginnings)",
+          "element": "Fire (Resuscitation, Passion, Creation)",
+          "chakra": "Solar Plexus & Heart ▪ Personal power, joy and love balance"
+        },
+        "card_combinations": {
+          "title": "Combinations With the Sun",
+          "combinations": {
+            "0": {
+              "card": "Crazy (The Fool)",
+              "meaning": "Combined with pure potential and new beginnings, the Sun crowns adventure with joy and success."
+            },
+            "1": {
+              "card": "Empress (The Empire)",
+              "meaning": "Creative and fertility find a bright expression, productive and nutritious achievements."
+            },
+            "2": {
+              "card": "Star (The Star)",
+              "meaning": "Bright success combined with inspiration and hope, the completion of the cycle of healing and enlightenment."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Sun Card Approved",
+          "affirmation_list": {
+            "0": "I accept the light in me and spread it freely to the world.",
+            "1": "Success and joy are my natural form; I shine a little more every day.",
+            "2": "My heart and will are one; I create, share, and heal."
+          }
+        },
+        "cta": {
+          "main": "Bring out your light, celebrate your success and share your joy!",
+          "micro": "Celebrate a little victory today: write a thank you, say a success out loud or go out in the sun and be aware for five minutes."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the sun card represent?",
+            "answer": "It represents a solar card, joy, success, clarity, creativity, and inner healing, where life shines and goals are visible."
+          },
+          "1": {
+            "question": "What does the Reverse Sun mean?",
+            "answer": "The reverse position can mean a temporary loss of confidence, delayed recognition, or clouding internal light, recognizing small victories and restoring energy is beneficial."
+          },
+          "2": {
+            "question": "In what circumstances does the sun card come out?",
+            "answer": "When a project is successful, there are positive and visible consequences, such as joy after a personal transformation, clarity in relationships and the emergence of bright opportunities."
+          }
+        },
+        "related_cards": {
+          "0": "the-fool",
+          "1": "the-star",
+          "2": "the-empress"
+        },
+        "imageUrl": "/cards/rws/XIX-Sun.webp"
+      },
+      "judgment": {
+        "name": "Apocalypse ▪ Awakening, Awareness and Rebirth",
+        "short_description": "The apocalypse is a symbol of spiritual awakening, of facing the past, of rebirth, of listening to your inner voice, and of a new era.",
+        "meanings": {
+          "upright": {
+            "general": "The apocalypse represents a moment of great awareness, a time to face the shadows of the past, to learn from mistakes and to rise to a new level of consciousness, which symbolizes a curtain that closes the cycle of life and the rebirth of the soul, and now you are free from the burdens of the past.",
+            "love": "In love, the Apocalypse brings the energy to reassess the relationship, to forgive or to turn over a new page. The old heart wounds heal; the relationship can be moved to a more conscious dimension.",
+            "career": "In your career, you've entered a period where past experiences guide you, where there's a new beginning or change of direction, and learning from mistakes will make you grow.",
+            "money": "It's time to learn from past financial mistakes and take responsibility, and you're getting clarity to come up with a new plan.",
+            "spiritual": "Spiritually, the Doomsday card represents a deep awakening, the dissolution of karma and the rise of consciousness, a call to leave behind your former identity and wake up to the truth."
+          },
+          "reversed": {
+            "general": "The reverse apocalypse can show you how to dwell in the past, regret and not forgive, the door to spiritual awakening is open, but you hesitate to step forward.",
+            "love": "In love, there may be a tendency for forgiveness or past resentments, and forgiveness brings inner freedom.",
+            "career": "When you don't learn from past mistakes in your career, similar cycles can be repeated.",
+            "money": "The weight of the financial past may still affect you, but it's time to restructure debts or old plans.",
+            "spiritual": "You may find it difficult to make peace with the past spiritually, accept rebirth with the practice of meditation and awareness."
+          }
+        },
+        "context": {
+          "mythology": "The apocalypse card is associated with the trumpet of the angel Gabriel, with the mythological scenes in which the human spirits are awakened, the spiritual awakening, forgiveness, and the power of a second chance.",
+          "celtic_cross": {
+            "future": "In the near future, great awareness or spiritual awakening awaits you, facing the past will set you free.",
+            "hidden_influences": "Mixed cycles and spiritual guidance are effective in your life, so listen to your inner voice, the direction is already whispered to you."
+          }
+        },
+        "story": {
+          "title": "The Call of the Apocalypse ▪ The Rebirth of the Spirit",
+          "description": "An angel plays his trumpet from the sky, and people rise from their graves. This scene is not the birth of death, but the birth of awareness. Spirits leave their past burdens behind and walk into the light. This card is the story of a new act of life. Like an inner film scene, the awakening begins in the heart of light.",
+          "historytitle": "Historical Origin: The Sound of Trumpet",
+          "history_message": "In medieval tarots, the Apocalypse is a symbol of divine judgment and rebirth, and the trumpet represents the call of truth and the sound of awareness.",
+          "mystic_title": "Spiritual Meaning: Awake!",
+          "mystic_message": "The apocalypse tells of reconciliation with the past and the rebirth of the soul, and hearing its inner voice opens the door to truth.",
+          "cultural_title": "Modern Comment: New Starts",
+          "cultural_message": "Today, the Apocalypse is associated with transformation, awareness, and personal reconstruction.",
+          "lesson": "The apocalypse card is the teaching of forgiving the past, being born again consciously, and choosing the direction of life consciously."
+        },
+        "keywords": {
+          "keywords_title": "Apocalypse Card Keywords",
+          "keywords_message": "The apocalypse is tarot, judgment tarot, tarot, awakening, rebirth, awareness, forgiveness.",
+          "positive_title": "Positive Themes",
+          "positive_message": "Dawning, forgiveness, rebirth, awareness, inner call, transformation.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Let go of the past and turn a new leaf with awareness, resistance, change will set you free.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "The spiritual rebirth begins, listen to your inner call and leave the past with love."
+        },
+        "associations": {
+          "title": "Cosmic Connections to the Doom Card",
+          "astrology": "Pluto (Change, Rebirth, Karmic Energy)",
+          "numerology": "20 (Different, Renewal, Mixed Cleaning)",
+          "element": "Fire & Air ▪ Consciousness and Spiritual Regeneration",
+          "chakra": "Crown & Heart ▪ Divine Connection and Forgiveness"
+        },
+        "card_combinations": {
+          "title": "Combinations With Doomsday",
+          "combinations": {
+            "0": {
+              "card": "Death",
+              "meaning": "Full transformation and spiritual rebirth, the old identity completely unraveled."
+            },
+            "1": {
+              "card": "Sun (The Sun)",
+              "meaning": "Success and the emergence of light after awakening and awareness."
+            },
+            "2": {
+              "card": "World (The World)",
+              "meaning": "Completion and transition to a new cycle, spiritual maturity."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Apocalypse Card Approved",
+          "affirmation_list": {
+            "0": "I leave the past with love and I'm reborn.",
+            "1": "I hear my inner call, I act consciously.",
+            "2": "My soul eases, my heart is open to new beginnings."
+          }
+        },
+        "cta": {
+          "main": "Forget the past, be reborn with awareness!",
+          "micro": "Today, forgive a regret or make a intention to restart yourself."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the apocalypse card represent?",
+            "answer": "It represents awakening, awareness, rebirth, and reconciliation with the past."
+          },
+          "1": {
+            "question": "What does reverse apocalypse mean?",
+            "answer": "Reverse position means being stuck in the past, not being able to forgive or act out of fear."
+          },
+          "2": {
+            "question": "In what areas is the apocalypse card powerful?",
+            "answer": "Spiritual awareness, internal awakening, forgiveness, new beginnings, and cognitive cleansing are powerful in areas."
+          }
+        },
+        "related_cards": {
+          "0": "death",
+          "1": "the-sun",
+          "2": "the-world"
+        },
+        "imageUrl": "/cards/rws/XX-Judgement.webp"
+      },
+      "the-world": {
+        "name": "World Complete, Fully and Universal Harmony",
+        "short_description": "The Earth Card represents a successful completion of a cycle, integrity, and spiritual harmony, a time to achieve a universal balance and to reap the fruits of the journey.",
+        "meanings": {
+          "upright": {
+            "general": "The world card represents the culmination of the journey, the completion of the processes you've been working on for so long, is crowned with inner peace and a sense of success, a symbol of both personal and spiritual balance, maturity and integrity, and now the wisdom of the journey is with you.",
+            "love": "In love, the world represents a complete bond, a soul mate, or a mature relationship, and if you're single, the past cycles close; your heart is ready for a new sleep.",
+            "career": "It's time to reap the fruit of your long-term efforts in your career, and projects that lead to recognition, promotion, or success, you can pass a new era consciously.",
+            "money": "Financial stability and long-term achievements, in a financial sense, and trust in the flow; it pays off their efforts.",
+            "spiritual": "Spiritually, the Earth is a symbol of completion, integrity and unity, and you've learned your spiritual lessons, and now you're in harmony with the universe."
+          },
+          "reversed": {
+            "general": "The Reverse World points to loose ends, unfinished cycles, or feelings of dissatisfaction, and to close the process, we need a final step of awareness.",
+            "love": "The opposite position in love can indicate the fact that you're under the influence of a past bond or that you can't complete the emotional cycle.",
+            "career": "One final step in the career or the project is waiting to be completed.",
+            "money": "You are financially close to the goal; a small arrangement or patient completion occurs.",
+            "spiritual": "Spiritually, the cycle is about to close; it is necessary to fully understand the lessons, to integrate awareness."
+          }
+        },
+        "context": {
+          "mythology": "The Earth Card is associated with the combination of the Ouroboros and the four elements that eat its own tail. This represents the infinite cycle, the integrity of life, and the universal balance of the soul.",
+          "celtic_cross": {
+            "future": "In the near future, the energy of completion and success will prevail, and you will receive the reward of your efforts, and you will step into a new cycle consciously.",
+            "hidden_influences": "You're in a time when the universe is working in harmony with you, and everything fits together as a whole."
+          }
+        },
+        "story": {
+          "title": "World Dance ▪ Universal Harmony",
+          "description": "A female figure dances in a circle in the middle of the sky. She holds two wands in her hand; four elements, four seasons and four directions are balanced around her. This scene represents the sacred moment when the journey is recognized, not the end of the journey, but the wholeness. The Earth card is a symbol of the unity and peace.",
+          "historytitle": "Historical Origin: Cosmic Completion",
+          "history_message": "The world is a symbol of universal harmony and spiritual maturity in Renaissance tarots, the closure of a cycle, the beginning of a new life.",
+          "mystic_title": "Spiritual Meaning - Unity and Unity",
+          "mystic_message": "The world tells of the harmony of the soul with the universe, and now you know the great cycle of life; what you start and what you end, you just exist.",
+          "cultural_title": "Modern Comment: Completion and Global Consciousness",
+          "cultural_message": "Today, the Earth card is associated with success, awareness, universal connection and global harmony, becoming the collective power of individual efforts.",
+          "lesson": "The world is the reward of travel: balance, integrity and peace, instead of fear of completion, step into the new cycle with gratitude."
+        },
+        "keywords": {
+          "keywords_title": "World Card Keywords",
+          "keywords_message": "The tarot meaning of the world is the world tarot, completeness, integrity, balance, harmony, success, spiritual maturity.",
+          "positive_title": "Positive Themes",
+          "positive_message": "Completion, balance, success, integrity, harmony, confidence, gratitude.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Don't go back until you've shut down a cycle; rely on the natural rhythm of processes.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "You are in universal balance, honor completion, and prepare with love for new beginnings."
+        },
+        "associations": {
+          "title": "Cosmic Connections to the World Card",
+          "astrology": "Saturn (Completion, Discipline, Wisdom)",
+          "numerology": "21 (Closement, Universal Balance, Consciousness)",
+          "element": "All Elements of Fire, Water, Air, Earth's Union",
+          "chakra": "Crown ▪ Universal Consciousness and Unity"
+        },
+        "card_combinations": {
+          "title": "Combinations With Earth",
+          "combinations": {
+            "0": {
+              "card": "Apocalypse (Judgment)",
+              "meaning": "Full awareness and spiritual maturity."
+            },
+            "1": {
+              "card": "Sun (The Sun)",
+              "meaning": "Full success and satisfaction, full experience of the bright side of life."
+            },
+            "2": {
+              "card": "Crazy (The Fool)",
+              "meaning": "A new cycle, a new beginning after completion."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Earth Card Approved",
+          "affirmation_list": {
+            "0": "Every step of my journey brought me to integrity.",
+            "1": "I'm in harmony with the universe, my cycle is complete.",
+            "2": "Now I'm turning over a new leaf of peace, balance, and love."
+          }
+        },
+        "cta": {
+          "main": "Celebrate completion, recognize integrity!",
+          "micro": "Honor a cycle that has passed today, thank you, leave it, and make room for a new one."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the world card represent?",
+            "answer": "Completion represents success, spiritual integrity and universal balance."
+          },
+          "1": {
+            "question": "What does the Reverse World mean?",
+            "answer": "The reverse position shows loose ends, dissatisfaction or incomplete processes, notice the process and allow it to be completed."
+          },
+          "2": {
+            "question": "In what areas is the world card powerful?",
+            "answer": "Completion, success, awareness, spiritual harmony, travel and life cycles are powerful."
+          }
+        },
+        "related_cards": {
+          "0": "judgment",
+          "1": "the-sun",
+          "2": "the-fool"
+        },
+        "imageUrl": "/cards/rws/XXI-World.webp"
+      },
+      "ace-of-wands": {
+        "name": "Asa's Ace ▪ Creative Beginnings and Inspiration",
+        "short_description": "The ace of the staff is a symbol of inspiration, creative energy and new beginnings, and with your internal healer guidance, explore your passion and make your potential concrete.",
+        "meanings": {
+          "upright": {
+            "general": "The wand represents the beginning of new ideas, projects and creative opportunities. Your energy is high, your motivation is strong; now it's time to act and turn your intentions into an epiphany. With your internal guidance, you transfer your passion and creativity into your life.",
+            "love": "In love, the Ace of the Wand represents exciting beginnings and passionate interactions, an inspired time to start a new relationship or to add life to the current relationship.",
+            "career": "There are opportunities for creative projects and initiatives in the field of careers, and it's a good time to take new steps with inspiration and courage, turn your ideas into action and organize your plans.",
+            "money": "Financially, Asa Asi means new income opportunities and creative solutions. When you take risks, trust your intuition; innovative approaches can bring profit.",
+            "spiritual": "Spiritually, the Ace of Asa represents the beginning of spiritual growth and awareness with inspiration and internal energy, activating your inner power with meditation and creative rituals."
+          },
+          "reversed": {
+            "general": "The Reverse Asa Ace shows a lack of motivation or a lack of motivation or a lack of ability to begin, refocusing your energy with patience and planning.",
+            "love": "Inverse position in love points to the risk of obstruction or a decrease in passion at the beginning of a relationship. It is important to establish open communication and intent.",
+            "career": "The Reverse Ace of the Career may not come to life, or there may be delays in projects, first form a strategy, then step forward.",
+            "money": "Financially, there's a risk of not seeing opportunities or hasty decisions.",
+            "spiritual": "The opposite position in a spiritual sense shows situations where energy and inspiration are undirected, reconnected with meditation and intentional studies."
+          }
+        },
+        "context": {
+          "mythology": "The wand is associated with the element of creativity and fire, which is associated with creative inspiration, new beginnings and the journeys of heroes, seen as inspirational figures, as guides to energy and passion.",
+          "celtic_cross": {
+            "future": "In the future, there will be new projects and creative opportunities, step forward with courage and direct your energy.",
+            "hidden_influences": "The hidden effects are from internal motivation and supportive environment."
+          }
+        },
+        "story": {
+          "title": "Asa's Ace ▪ The Birth of Inspiration and Creative Energy",
+          "description": "The wand represents fresh energy and inspiration, like a flame rising from the hand, which shows the time for invitation and creative potential to be activated for new beginnings, and with your internal healer guidance turn your passions into action.",
+          "historytitle": "Historical Origin",
+          "history_message": "In the history of Tarot, the wand has been portrayed as a new beginnings and creative energy card, representing potential and inspiration with a figure of flame or staff that has been released in Renaissance and Middle Ages cards.",
+          "mystic_title": "Spiritual Meaning - A Potential Act",
+          "mystic_message": "Spiritually, Asa's Ace represents inner inspiration, creative energy and beginnings, and through meditation and intent, transform your energy into concrete action.",
+          "cultural_title": "Modern Comment: Inspiration and Initiative",
+          "cultural_message": "In the modern world, the ace of staff represents creative initiatives, new projects, and the energy to stimulate passion, and the courage to step forward brings success.",
+          "lesson": "The wand teaches you to recognize new beginnings, inspiration and creative energy, direct your energy, reveal your passion and potential."
+        },
+        "keywords": {
+          "keywords_title": "Ace of Staff Keywords",
+          "keywords_message": "Asa ace tarot meaning, ace ofwands tarot, creative beginnings, inspiration, passion, energy, tarot opportunities",
+          "positive_title": "Positive Themes",
+          "positive_message": "Creativity, inspiration, passion, new beginnings, energy, opportunity, initiative.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Avoid hasty steps or unplanned beginnings; focus your energy.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Notice your inner inspiration and motivation, embody your potential."
+        },
+        "associations": {
+          "title": "Asa Ace Cosmic Connections",
+          "astrology": "Coach Burcu ▪ Energy, Passion, Initiative",
+          "numerology": "1 (Start, Potential, Leadership)",
+          "element": "Fire (Aggression, Energy, Creativity)",
+          "chakra": "Solar Plexus (Manipura) ▪ Willate and Motivation"
+        },
+        "card_combinations": {
+          "title": "Combinations With Asa's Ace",
+          "combinations": {
+            "0": {
+              "card": "Asa Two",
+              "meaning": "The opportunity to turn new ideas into planned action and the beginning of strategic steps."
+            },
+            "1": {
+              "card": "Wizard (The Magician)",
+              "meaning": "Inspiration and creative energy combine with skill and resources to allow projects to move quickly to life."
+            },
+            "2": {
+              "card": "Crazy (The Fool)",
+              "meaning": "A bold start and a new journey brings excitement and motivation."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Aces Approved",
+          "affirmation_list": {
+            "0": "I recognize my inner inspiration and turn it into action.",
+            "1": "I venture into new beginnings.",
+            "2": "I'm actively using my creative energy and potential."
+          }
+        },
+        "cta": {
+          "main": "Inspire your inspiration, create new beginnings and follow your passion!",
+          "micro": "Start a project today or start working on a creative idea."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the staff stand for?",
+            "answer": "Creative beginnings, inspiration, motivation, and the activation of potential... time to turn your passions into action."
+          },
+          "1": {
+            "question": "What does the Reverse Wand Ace mean?",
+            "answer": "It shows reverse position, lack of motivation, lack of inspiration, or unplanned beginnings, focus your energy and plan."
+          },
+          "2": {
+            "question": "In what ways is Asa's staff powerful?",
+            "answer": "New projects are powerful when you want to turn creative opportunities and passion into action. Your inspiration and motivation guides."
+          }
+        },
+        "related_cards": {
+          "0": "Two-of-wands",
+          "1": "ace-of-cups",
+          "2": "the-magician"
+        },
+        "imageUrl": "/cards/rws/Ace-Wands.webp"
+      },
+      "two-of-wands": {
+        "name": "Asa Two to Plan and Enlarge Potential",
+        "short_description": "Asa Two is the energy to explore vision, strategy, and new opportunities, and with your internal healer guidance, expand your creative potential and make your plans concrete.",
+        "meanings": {
+          "upright": {
+            "general": "Asa Two represent the time to expand your vision, make long-term plans and take strategic steps. You are in a good time to make decisions, assess options and optimize your potential. By relying on your internal guidance, take creative and logical steps.",
+            "love": "In love, Asa Two mean future plans in relationships, serious steps or choices, and use your intuition and communication to make mutual decisions and to take the relationship to a new level.",
+            "career": "In career, it's time for strategic planning, organizing projects and focusing on long-term goals, taking potential opportunities and taking steps consciously, your vision for the future is important.",
+            "money": "Financially, investments, budget planning and the right assessment of opportunities are prerequisite.",
+            "spiritual": "Spiritually, Asa Two represent progress through internal guidance and vision, expanding spiritual potential with meditation, vision studies and intentional actions."
+          },
+          "reversed": {
+            "general": "Two Reverse Asas point to the risk of uncertainty, uncertainty, or misapprehension of opportunity.",
+            "love": "In love, there may be reverse positions, confusion in relationship decisions, missteps, communication and open intent.",
+            "career": "Two of them in reverse careers mean lack of planning or delay in projects.",
+            "money": "Financially, there's a risk of wrong investment or rash decision.",
+            "spiritual": "It's a psychologically reversed position, vision, and a lack of guidance, re-establish internal focus."
+          }
+        },
+        "context": {
+          "mythology": "In mythology, the Asa Two represent the hero's path distinction and discovery energy in relation to new horizons and options, linked to the journey and the conscious decision-making archetype.",
+          "celtic_cross": {
+            "future": "In the future, important choices and plans will be on the agenda, so intuition and analysis must be used together.",
+            "hidden_influences": "Secret effects are potential opportunities and strategic support."
+          }
+        },
+        "story": {
+          "title": "Asa Two - Enlarge the horizons",
+          "description": "Asa Two is a symbol of the person holding a world map in one hand. This person examines the options ahead of him and makes plans for the future. The card represents looking at new opportunities, strategic thinking and turning creative potential into action. With internal healer guidance, you can make conscious and visionary decisions.",
+          "historytitle": "Historical Origin",
+          "history_message": "In the history of Tarot, the Asa Two were painted as a vision, decision-making card, and in Renaissance and medieval cards, a person thinks about the future and the options as he studies the horizon.",
+          "mystic_title": "Spiritual Meaning - Potential and Selection",
+          "mystic_message": "Spiritually, Asa Two teach you to explore your potential through internal guidance and vision, determine your intentions and take conscious steps.",
+          "cultural_title": "Modern Comment: Strategy and Vision",
+          "cultural_message": "In the modern world, Asa Two represent strategic thinking, planning, and choosing the most appropriate way to think about careers, relationships, and projects.",
+          "lesson": "The Asa Two teach you to expand your vision, to evaluate options, to make conscious decisions, to optimize your potential and rely on internal guidance."
+        },
+        "keywords": {
+          "keywords_title": "Asa Two Keywords",
+          "keywords_message": "Asa two are tarots, two ofwands are tarots, planning, vision, opportunities, options, potential, strategy.",
+          "positive_title": "Positive Themes",
+          "positive_message": "Planning, vision, new opportunities, strategic steps, decision-making, expansion of potential.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Avoid indecision or hasty decisions; go with analysis and intuition.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Enlarge your vision, explore your potential, and take conscious steps."
+        },
+        "associations": {
+          "title": "Asa Two Cosmic Connections",
+          "astrology": "Coach and Libra ▪ Initiative, Election, Co-operation",
+          "numerology": "2 (choice, balance, duality)",
+          "element": "Fire (Aggression and Energy) (Aggression and Energy) (Aggravation by strategy)",
+          "chakra": "Solar Plexus (Manipura) ▪ Decision and will"
+        },
+        "card_combinations": {
+          "title": "The Staff - Combinations With Two",
+          "combinations": {
+            "0": {
+              "card": "Ace of Staff",
+              "meaning": "Inspiration and creative energy combine with planning and strategy to make projects concrete."
+            },
+            "1": {
+              "card": "Triple Cup",
+              "meaning": "Creative plans and cooperation are strengthened by social and emotional support."
+            },
+            "2": {
+              "card": "Wizard (The Magician)",
+              "meaning": "Strategy and vision combine with skill and resources to ensure the success of projects."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Asa Two Approved",
+          "affirmation_list": {
+            "0": "I'm expanding my vision and making conscious decisions.",
+            "1": "I'm exploring my potential and embodying my plans.",
+            "2": "I'm taking strategic steps based on my internal guidance."
+          }
+        },
+        "cta": {
+          "main": "Enlarge your potential, explore your options and take strategic steps!",
+          "micro": "Make a plan for the future today or start considering your options."
+        },
+        "faq": {
+          "0": {
+            "question": "What do the two of them represent?",
+            "answer": "Planning is the card to evaluate options, to expand vision and potential, teaching you to make conscious decisions."
+          },
+          "1": {
+            "question": "What do the Reverse Asa two mean?",
+            "answer": "Inverse position, indecisiveness, misappropriation, or hasty decision risk, strategy and focus are important."
+          },
+          "2": {
+            "question": "In what circumstances are the two Asa strong?",
+            "answer": "New projects are strong in the process of creating moments of decision-making, vision-making and reviewing options. Planning and strategy guides."
+          }
+        },
+        "related_cards": {
+          "0": "ace-of-wands",
+          "1": "three-of-wands",
+          "2": "the-magician"
+        },
+        "imageUrl": "/cards/rws/II-Wands.webp"
+      },
+      "three-of-wands": {
+        "name": "The Three of the Asa (the Three) The Development and Enlargement of Opportunities",
+        "short_description": "The Three of Asa are a card to implement your vision, to expand long-term plans and explore opportunities, and with your internal healer guidance, move forward and strengthen your strategic steps.",
+        "meanings": {
+          "upright": {
+            "general": "The three of Asa represent the period when they see the fruit of their efforts, evaluate new opportunities, and consolidate their vision. When they take patient and conscious steps, their plans become a success. Think strategically about the future and clearly consider your options.",
+            "love": "In love, three Asas mean new horizons, long-term goals and common plans. Communication and vision are important to move forward your current relationship or to establish a new connection.",
+            "career": "In careers, projects come to the stage of growth and expansion, and it's an ideal time to see business opportunities, to strengthen their cooperation and to make strategic moves, and new responsibilities or leadership roles can come up.",
+            "money": "Financially, it's time to increase investments and resources, with planned steps and accurate analysis, to max out opportunities, with new revenue routes or co-operation, the financial situation can be strengthened.",
+            "spiritual": "Spiritually, the three of Asa represent the transformation of vision and intent into concrete results."
+          },
+          "reversed": {
+            "general": "The Reverse Asa three represent opportunities, lack of planning, or unexpected obstacles, so be patient, review your strategy, and don't make rash decisions.",
+            "love": "In love, the opposite position means lack of communication, false expectations, or a blockage of plans for the future, open communication and harmony are essential.",
+            "career": "In the career, the Reverse Asa Three indicate delays in projects, lack of opportunity or lack of co-operation. Reorganise plans.",
+            "money": "Financially, pay attention to misinvestments or unexpected losses.",
+            "spiritual": "Spiritually inverted position represents ignoring vision or guidance, regaining inner focus."
+          }
+        },
+        "context": {
+          "mythology": "The three of them are linked to the energy of travel, exploration and expansion in mythology, the hero's step into the new land, his discovery of opportunities, and his application of his vision.",
+          "celtic_cross": {
+            "future": "In the future, it will be possible to expand your plans, take new opportunities, and make strategic moves.",
+            "hidden_influences": "The hidden effects are resources and unexpected opportunities that support the consequences of current efforts."
+          }
+        },
+        "story": {
+          "title": "Three of the Asa (The Opportunities Beyond the horizon)",
+          "description": "One figure on the Asa card, and he looks at the sea and sees three staffs; he represents new horizons and opportunities. This person is ready to bring his vision to life. The card teaches him to think strategic thoughts, to evaluate patience and opportunities at the right time. With your internal healer guidance, it's time to make your dreams come true.",
+          "historytitle": "Historical Origin",
+          "history_message": "The three of them are seen as cards of progress, expansion and opportunity in Tarot's history. In the Renaissance deck, the figure is described as studying new lands and opportunities.",
+          "mystic_title": "Spiritual Meaning: Consistent Vision",
+          "mystic_message": "Spiritually, the three of Asa teach vision and intent to transform into concrete acts.",
+          "cultural_title": "Modern Comment: Enlargement and Leadership",
+          "cultural_message": "In the modern world, the three of Asa mean seeing opportunities in careers, projects and relationships, taking strategic steps and making long-term plans, and leadership and vision are important together.",
+          "lesson": "The three of Asa teach patience, strategy, and the ability to evaluate opportunities, embody your vision and expand your potential."
+        },
+        "keywords": {
+          "keywords_title": "Asa Three Keywords",
+          "keywords_message": "Asa three is tarot meaning, three ofwands tarots, opportunities, expansion, vision, planning, strategy, progress.",
+          "positive_title": "Positive Themes",
+          "positive_message": "Evaluation of opportunities, vision, strategic planning, progress, long-term goals.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "An impatient or hasty decision poses a risk. Analyze the opportunities carefully.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Make your vision concrete, take opportunities, and take conscious steps."
+        },
+        "associations": {
+          "title": "Asa Three Cosmic Connections",
+          "astrology": "Coach and Lion ▪ Initiative, Enlargement, Leadership",
+          "numerology": "3 (Enlargement, Creativity, Development)",
+          "element": "Returning Fire (Aggression and Energy) to Action",
+          "chakra": "Solar Plexus (Manipura), Decision, Will and Action"
+        },
+        "card_combinations": {
+          "title": "Combinations With the Three of the Wand",
+          "combinations": {
+            "0": {
+              "card": "Two of the wands.",
+              "meaning": "Planning and vision enable successful implementation of opportunities."
+            },
+            "1": {
+              "card": "The Four of Wands",
+              "meaning": "Celebrating expanding opportunities and vision brings success and confidence."
+            },
+            "2": {
+              "card": "Wizard (The Magician)",
+              "meaning": "When strategy and skill are combined, projects and opportunities become quickly and effectively concrete."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Approval of Staff Three",
+          "affirmation_list": {
+            "0": "I notice opportunities and take conscious steps.",
+            "1": "I'm expanding my vision and embodying my plans.",
+            "2": "With my internal guidance, I'm moving strategically."
+          }
+        },
+        "cta": {
+          "main": "Take opportunities, embody your vision, and take strategic steps!",
+          "micro": "Analyze an opportunity today and take the first step to bring it to life."
+        },
+        "faq": {
+          "0": {
+            "question": "What do the three of Asa represent?",
+            "answer": "The development of opportunities, the embodiment of vision, and the card of strategic steps teach you to expand potential."
+          },
+          "1": {
+            "question": "What does the Reverse Wand Three mean?",
+            "answer": "The opposite position shows opportunity loss, lack of planning, or unexpected obstacles, and be patient and strategic."
+          },
+          "2": {
+            "question": "In what circumstances is Asa Three powerful?",
+            "answer": "The growth of projects is strong in the process of reviewing long-term plans, collaborations and opportunities."
+          }
+        },
+        "related_cards": {
+          "0": "Two-of-wands",
+          "1": "Four-of-wands",
+          "2": "the-magician"
+        },
+        "imageUrl": "/cards/rws/III-Wands.webp"
+      },
+      "four-of-wands": {
+        "name": "Asa's Four (Celebrity, Success and Completion)",
+        "short_description": "The Four of Asa is a symbol of success, celebration, and safety, and with your intrinsic healer guidance, celebrate the fruit of your labor and make a stable progress.",
+        "meanings": {
+          "upright": {
+            "general": "The Asa quartet represents a period of completion of a goal, recognition of labor, and celebration of success. This card represents progress on safe foundations, stability in business and life projects. Celebration, peace and motivation are united.",
+            "love": "In love, the Four of Asa brings confidence, harmony and celebration in relationships, an ideal time to share common achievements and to highlight happiness in a relationship, marriage or serious commitments may come to the agenda.",
+            "career": "The completion of projects in the career represents the period of co-operation with appreciation and awards, a good time to get paid for work, celebrate team achievements, and boost motivation.",
+            "money": "Financial stability and confidence are important, investments bear fruit and budget control. Long-term security is achieved by the balanced management of profits and resources.",
+            "spiritual": "Spiritually, the Asa quartet brings in inner peace, trust and celebration energy, success and completion, spiritual growth, and a chance to recognize its own healing power."
+          },
+          "reversed": {
+            "general": "The Reverse Asa Four means that you can't appreciate the lack of plans, delays, or success, and it's time to postpone the celebrations and restore stability.",
+            "love": "In the opposite position of love, conflict, dissonance, or lack of celebration in a relationship, communication and appreciation are important.",
+            "career": "There's a risk in the career of delaying projects, incompatibility or failure to be noticed.",
+            "money": "Financially inverted position points to mismanagement, instability, or spending problems.",
+            "spiritual": "In a spiritual sense, a sense of completion is lacking, a lack of celebration or gratitude, restore inner peace."
+          }
+        },
+        "context": {
+          "mythology": "In mythology, the Asa Four are associated with celebration, community and safe habitats, and the symbol of victory and harmony represents the results of the hero's labor and social celebrations.",
+          "celtic_cross": {
+            "future": "In the future, the time for success and celebration is coming, and the reward of your labor will increase your motivation.",
+            "hidden_influences": "The hidden effects are about the strengthening environment and the strengthening of safe foundations."
+          }
+        },
+        "story": {
+          "title": "The Four of Asa, the Light of Victory and Celebration",
+          "description": "The card is filled with the atmosphere of celebration with flowers and colorful decorations that frame its four wands, and people share and celebrate the fruits of labor, and with your inner healer guidance, both appreciate success and take safe steps towards the future.",
+          "historytitle": "Historical Origin",
+          "history_message": "The Four of Asa, known in Tarot's history as a celebration, trust and stability card, was described in the Renaissance deck by community celebrations and success scenes.",
+          "mystic_title": "Spiritual Meaning - Know and Celebrate Success",
+          "mystic_message": "Spiritually, the Asa quartet is about realizing success and completion, celebrating and thanking, and success is the result of internal guidance and stable effort.",
+          "cultural_title": "Modern Comment: Community and Motivation",
+          "cultural_message": "In the modern world, the Asa Four means celebrating the successes of work, project, or relationship successes, integration and motivation with the community. Stability and celebration come together.",
+          "lesson": "The Four of Asa teaches to recognize success, to celebrate, and to move on to safe foundations. Motivation and gratitude are a source of strength for new opportunities."
+        },
+        "keywords": {
+          "keywords_title": "Asa Four Keywords",
+          "keywords_message": "Asa quartet meaning tarot, four ofwands tarot, celebration, success, completion, trust, stability, gratitude",
+          "positive_title": "Positive Themes",
+          "positive_message": "Success, celebration, trust, stability, community, motivation, peace.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Don't forget to appreciate the celebration and the success, focus on the stable basis.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Celebrate success, recognize its safe foundations and strengthen its inner peace."
+        },
+        "associations": {
+          "title": "Asa Quadruple Cosmic Connections",
+          "astrology": "Venus and Jupiter, plenty, Happiness, Enlargement",
+          "numerology": "4 (Ordinary, Stability, Basic)",
+          "element": "Fire (Emergency and Energy)  (Employing success)",
+          "chakra": "Sacral and Heart ▪ Celebration, Loyalty and Joy"
+        },
+        "card_combinations": {
+          "title": "Combinations That Step Up With the Staff Four",
+          "combinations": {
+            "0": {
+              "card": "The Three of the Wand",
+              "meaning": "Celebrate and appreciate the success of opportunity and vision."
+            },
+            "1": {
+              "card": "Asa Five",
+              "meaning": "The sense of success and stability that comes after difficulty comes first."
+            },
+            "2": {
+              "card": "Sun (The Sun)",
+              "meaning": "Celebration and positive results combined with the energy of happiness and success."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Cop Four Approved",
+          "affirmation_list": {
+            "0": "I realize and celebrate my accomplishments.",
+            "1": "I'm moving on safe ground and strengthening my motivation.",
+            "2": "I appreciate and thank you for my hard work."
+          }
+        },
+        "cta": {
+          "main": "Celebrate your achievements, proceed with your safe foundations and increase your motivation!",
+          "micro": "Notice a fruit of your labor today and have a little celebration."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Staff Four represent?",
+            "answer": "Success is a card of celebration, completion, and safe foundation, which teaches us to appreciate the cost of work."
+          },
+          "1": {
+            "question": "What does the Reverse Asa Four mean?",
+            "answer": "It means that you can't appreciate the reverse position, the delay, the lack of plans, or the success."
+          },
+          "2": {
+            "question": "In what circumstances is the Asa Four strong?",
+            "answer": "The completion of projects is strong in the processes associated with celebrations, success and safe foundations."
+          }
+        },
+        "related_cards": {
+          "0": "three-of-wands",
+          "1": "Five-of-wands",
+          "2": "the-sun"
+        },
+        "imageUrl": "/cards/rws/IV-Wands.webp"
+      },
+      "five-of-wands": {
+        "name": "Asa Five ▪ Fighting, Competition and Learning",
+        "short_description": "Asa Five is a symbol of conflict, competition, and differences of opinion, and by your internal healer's guidance, turn these challenges into learning opportunities and magic.",
+        "meanings": {
+          "upright": {
+            "general": "The Five of Asa represent a period of conflict, competition and challenges, and this card advises you to notice external or internal conflicts and to turn them into learning and development opportunities, and struggles test your skills and strategy.",
+            "love": "In love, Asa Five shows disagreements, small arguments or competition, communication and understanding are important to maintain balance in the relationship, which can strengthen dynamics in the relationship.",
+            "career": "In careers, the challenge of team competition, conflict of opinion, or projects comes up, you can achieve success with cooperation, strategy and flexibility.",
+            "money": "Financially, we need to make careful decisions in the environment of sharing resources or competition, and hasty and uncontrollable actions can lead to casualties.",
+            "spiritual": "In a spiritual sense, Asa Five allows you to recognize internal conflicts and different viewpoints, which offer opportunities for conflict, spiritual maturity, and inner strength."
+          },
+          "reversed": {
+            "general": "Reverse Asa Five demonstrates the growth of conflicts, the unresolved disputes, or passive behavior. It is important to find a constructive solution rather than ignore the struggles.",
+            "love": "The opposite position in love, the lack of communication, or the ongoing conflict that leads to tension in the relationship. Open communication is essential.",
+            "career": "The reverse Asa Five in the career points to the lack of co-operation, the failure of team problems or projects, and planning and compromise is necessary.",
+            "money": "Financially inverted position is a risk of not being able to manage resources properly or being lost.",
+            "spiritual": "Mentally reversed Asa Five represents suppressing internal disturbances or conflicts."
+          }
+        },
+        "context": {
+          "mythology": "The Asa Five are associated with challenges, competition and heroic tests in mythology, and the test, skill and strategy of heroes is the subject of testing, overcoming challenges.",
+          "celtic_cross": {
+            "future": "In the future, you're going to face challenges and test your skills, which offer challenges, development and learning opportunities.",
+            "hidden_influences": "There can be hidden influences, rivals, different perspectives, internal conflicts, and that awareness can make you stronger."
+          }
+        },
+        "story": {
+          "title": "Asa Five (The Battle and Learning Scene)",
+          "description": "Five figures fight each other with their wands on the card, and conflict represents the opportunity of learning and magic, not chaos, and with your internal healer guidance, solve every argument and obstacle with understanding and strategy.",
+          "historytitle": "Historical Origin",
+          "history_message": "In the history of Tarot, Asa Five is known as a conflict and competition card, described in Renaissance cards by the challenges of young men or warriors.",
+          "mystic_title": "Spiritual Meaning: Convert Fighting",
+          "mystic_message": "Mentally, the Five of Asa show that adversity and conflict have an opportunity to learn and mature, gain inner strength through strategy and understanding.",
+          "cultural_title": "Modern Comment: Competition and Development",
+          "cultural_message": "In the modern world, Asa Five represent competition in business and relationships, differences of opinion, and personal trials, and struggles should be viewed as an opportunity for experience and development.",
+          "lesson": "The Five of Asa teach to notice conflict, to learn and to grow by strategy, and competition and struggle are the source of maturity and inner strength."
+        },
+        "keywords": {
+          "keywords_title": "Asa Five Keywords",
+          "keywords_message": "Asa five is tarot meaning, five ofwands tarot, conflict, competition, conflict, difference of opinion, learning, development",
+          "positive_title": "Positive Themes",
+          "positive_message": "Fighting, learning, development, strategy, competition, inner power, experience."
+        }
+      }
+    }
+  }
+}

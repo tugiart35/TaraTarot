@@ -1,3 +1,5 @@
+'use client';
+
 /*
 info:
 Bağlantılı dosyalar:
@@ -480,6 +482,113 @@ export const getSituationAnalysisStatistics = () => {
   };
 };
 
+/**
+ * i18n destekli Situation Analysis anlam fonksiyonu
+ * @param cardName - Kart adı (örn: "The Fool")
+ * @param position - Pozisyon numarası (1-7)
+ * @param t - i18n translate fonksiyonu
+ * @returns i18n destekli anlam veya null
+ */
+export const getI18nSituationAnalysisMeaningByCardAndPosition = (
+  cardName: string,
+  position: number,
+  t: (_key: string) => string
+): SituationAnalysisPositionMeaning | null => {
+  // Orijinal anlamı al
+  let originalMeaning: SituationAnalysisPositionMeaning | null = null;
+
+  switch (position) {
+    case 1:
+      originalMeaning = getSituationAnalysisPosition1MeaningByCardName(cardName);
+      break;
+    case 2:
+      originalMeaning = getSituationAnalysisPosition2MeaningByCardName(cardName);
+      break;
+    case 3:
+      originalMeaning = getSituationAnalysisPosition3MeaningByCardName(cardName);
+      break;
+    case 4:
+      originalMeaning = getSituationAnalysisPosition4MeaningByCardName(cardName);
+      break;
+    case 5:
+      originalMeaning = getSituationAnalysisPosition5MeaningByCardName(cardName);
+      break;
+    case 6:
+      originalMeaning = getSituationAnalysisPosition6MeaningByCardName(cardName);
+      break;
+    case 7:
+      originalMeaning = getSituationAnalysisPosition7MeaningByCardName(cardName);
+      break;
+    default:
+      return null;
+  }
+
+  if (!originalMeaning) {
+    return null;
+  }
+
+  // i18n'den çevirileri al
+  const cardKey = cardName
+    .toLowerCase()
+    .replace(/\s+/g, '')
+    .replace(/[^a-z0-9]/g, '');
+
+  const i18nUpright = t(
+    `situation-analysis.meanings.${cardKey}.position${position}.upright`
+  );
+  const i18nReversed = t(
+    `situation-analysis.meanings.${cardKey}.position${position}.reversed`
+  );
+  const i18nKeywords = t(
+    `situation-analysis.meanings.${cardKey}.position${position}.keywords`
+  );
+  const i18nContext = t(
+    `situation-analysis.meanings.${cardKey}.position${position}.context`
+  );
+
+  // i18n çevirisi mevcut değilse orijinali kullan
+  const isI18nAvailable =
+    i18nUpright && !i18nUpright.startsWith('situation-analysis.meanings.');
+
+  return {
+    ...originalMeaning,
+    upright: isI18nAvailable ? i18nUpright : originalMeaning.upright,
+    reversed:
+      i18nReversed && !i18nReversed.startsWith('situation-analysis.meanings.')
+        ? i18nReversed
+        : originalMeaning.reversed,
+    keywords: (() => {
+      if (
+        !i18nKeywords ||
+        i18nKeywords.startsWith('situation-analysis.meanings.')
+      ) {
+        return originalMeaning.keywords;
+      }
+      // Keywords zaten array olabilir veya JSON string olabilir
+      if (Array.isArray(i18nKeywords)) {
+        return i18nKeywords;
+      }
+      try {
+        const parsed = JSON.parse(i18nKeywords);
+        if (Array.isArray(parsed)) {
+          return parsed;
+        }
+        return originalMeaning.keywords;
+      } catch (error) {
+        console.error(
+          `[Situation Analysis Position ${position}] Failed to parse keywords for ${cardName}:`,
+          error
+        );
+        return originalMeaning.keywords;
+      }
+    })(),
+    context:
+      i18nContext && !i18nContext.startsWith('situation-analysis.meanings.')
+        ? i18nContext
+        : originalMeaning.context,
+  };
+};
+
 // Varsayılan export
 const situationAnalysisExports = {
   getSituationAnalysisMeaningByCardAndPosition,
@@ -496,6 +605,8 @@ const situationAnalysisExports = {
   searchSituationAnalysisMeaningsByCardName,
   searchSituationAnalysisMeaningsByKeyword,
   getSituationAnalysisStatistics,
+  // i18n destekli fonksiyon
+  getI18nSituationAnalysisMeaningByCardAndPosition,
   // Tüm pozisyon özel fonksiyonları
   getSituationAnalysisPosition1Meaning,
   getSituationAnalysisPosition1MeaningByCardName,

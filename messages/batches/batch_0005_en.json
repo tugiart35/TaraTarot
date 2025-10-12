@@ -1,0 +1,936 @@
+{
+  "career": {
+    "meanings": {
+      "queenofwands": {
+        "position2": {
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "leadership",
+            "2": "Charisma",
+            "3": "Inspired",
+            "4": "power"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "Trust",
+            "1": "support",
+            "2": "leadership",
+            "3": "respect",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "leadership",
+            "2": "Charisma",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "leadership",
+            "2": "Charisma",
+            "3": "Courage",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "leadership",
+            "2": "visibility",
+            "3": "Charisma",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "leadership",
+            "2": "Charisma",
+            "3": "Courage",
+            "4": "future"
+          }
+        }
+      },
+      "kingofwands": {
+        "position1": {
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "Courage",
+            "3": "decision",
+            "4": "power"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "Courage",
+            "3": "decision",
+            "4": "Progress"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "leadership",
+            "1": "authority",
+            "2": "Vision",
+            "3": "power",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "effort",
+            "3": "determination",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "Inspired",
+            "3": "determination",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "control",
+            "3": "opportunity",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "authority",
+            "3": "Charisma",
+            "4": "future"
+          }
+        }
+      },
+      "aceofpentacles": {
+        "position1": {
+          "keywords": {
+            "0": "opportunity",
+            "1": "abundance",
+            "2": "start",
+            "3": "material trust",
+            "4": "potential"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "opportunity",
+            "1": "investment",
+            "2": "start",
+            "3": "abundance",
+            "4": "stability"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "opportunity",
+            "1": "material circumstances",
+            "2": "start",
+            "3": "Luck",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "start",
+            "1": "opportunity",
+            "2": "concrete step",
+            "3": "efficiency",
+            "4": "stability"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "start",
+            "1": "opportunity",
+            "2": "concrete step",
+            "3": "Trust",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "opportunity",
+            "1": "investment",
+            "2": "stability",
+            "3": "resource",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "opportunity",
+            "1": "financial security",
+            "2": "stability",
+            "3": "start",
+            "4": "future"
+          }
+        }
+      },
+      "twoofpentacles": {
+        "position1": {
+          "keywords": {
+            "0": "balance",
+            "1": "compatibility",
+            "2": "flexibility",
+            "3": "multiple tasks",
+            "4": "management"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "balance",
+            "1": "compatibility",
+            "2": "flexibility",
+            "3": "multiple tasks",
+            "4": "planning"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "balance",
+            "1": "density",
+            "2": "responsibilities",
+            "3": "flexibility",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "balance",
+            "1": "flexibility",
+            "2": "time management",
+            "3": "priority",
+            "4": "flow"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "balance",
+            "1": "time management",
+            "2": "resource",
+            "3": "priority",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "balance",
+            "1": "priority",
+            "2": "resource",
+            "3": "time",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "balance",
+            "1": "resource",
+            "2": "priority",
+            "3": "flexibility",
+            "4": "future"
+          }
+        }
+      },
+      "threeofpentacles": {
+        "position1": {
+          "keywords": {
+            "0": "co-operation",
+            "1": "mastery",
+            "2": "success",
+            "3": "teamwork",
+            "4": "learning"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "co-operation",
+            "1": "team",
+            "2": "mastery",
+            "3": "Progress",
+            "4": "learning"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "co-operation",
+            "1": "team",
+            "2": "support",
+            "3": "contribution",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "co-operation",
+            "1": "mastery",
+            "2": "standard",
+            "3": "feedback",
+            "4": "Development"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "co-operation",
+            "1": "skill",
+            "2": "learning",
+            "3": "mastery",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "co-operation",
+            "1": "Team",
+            "2": "support",
+            "3": "mastery",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "co-operation",
+            "1": "Team",
+            "2": "mastery",
+            "3": "support",
+            "4": "future"
+          }
+        }
+      },
+      "fourofpentacles": {
+        "position1": {
+          "keywords": {
+            "0": "Trust",
+            "1": "protection",
+            "2": "financial stability",
+            "3": "control",
+            "4": "ownership"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "Trust",
+            "1": "basic",
+            "2": "stability",
+            "3": "protection",
+            "4": "balance"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "security",
+            "1": "economy",
+            "2": "savings",
+            "3": "limit",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "stability",
+            "1": "discipline",
+            "2": "savings",
+            "3": "control",
+            "4": "Trust"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "security",
+            "1": "savings",
+            "2": "control",
+            "3": "balance",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "conservative",
+            "1": "security",
+            "2": "share",
+            "3": "risk",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "security",
+            "1": "stability",
+            "2": "control",
+            "3": "balance",
+            "4": "future"
+          }
+        }
+      },
+      "fiveofpentacles": {
+        "position1": {
+          "keywords": {
+            "0": "difficulty",
+            "1": "missing",
+            "2": "loneliness",
+            "3": "financial distress",
+            "4": "support"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "support",
+            "1": "difficulty",
+            "2": "help",
+            "3": "unity",
+            "4": "Recovery"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "missing",
+            "1": "material difficulty",
+            "2": "support",
+            "3": "external impact",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "endurance",
+            "1": "help",
+            "2": "Determination",
+            "3": "Recovery",
+            "4": "Patience"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "solidarity",
+            "1": "help",
+            "2": "support",
+            "3": "Patience",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "material difficulty",
+            "1": "support",
+            "2": "loneliness",
+            "3": "resource",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "solidarity",
+            "1": "support",
+            "2": "difficulty",
+            "3": "Recovery",
+            "4": "future"
+          }
+        }
+      },
+      "sixofpentacles": {
+        "position1": {
+          "keywords": {
+            "0": "generosity",
+            "1": "share",
+            "2": "help",
+            "3": "balance",
+            "4": "support"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "generosity",
+            "1": "share",
+            "2": "balance",
+            "3": "support",
+            "4": "justice"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "help",
+            "1": "share",
+            "2": "justice",
+            "3": "balance",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "share",
+            "1": "justice",
+            "2": "support",
+            "3": "balance",
+            "4": "appreciation"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "share",
+            "1": "balance",
+            "2": "justice",
+            "3": "support",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "justice",
+            "1": "share",
+            "2": "balance",
+            "3": "help",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "share",
+            "3": "help",
+            "4": "future"
+          }
+        }
+      },
+      "sevenofpentacles": {
+        "position1": {
+          "keywords": {
+            "0": "Patience",
+            "1": "labour",
+            "2": "investment",
+            "3": "waiting",
+            "4": "Progress"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "Patience",
+            "1": "investment",
+            "2": "Progress",
+            "3": "waiting",
+            "4": "result"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "Patience",
+            "1": "waiting",
+            "2": "result",
+            "3": "investment",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "Patience",
+            "1": "measurement",
+            "2": "assessment",
+            "3": "efficiency",
+            "4": "long term"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "Patience",
+            "1": "investment",
+            "2": "long term",
+            "3": "assessment",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "Patience",
+            "1": "investment",
+            "2": "process",
+            "3": "Hurry",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "Patience",
+            "1": "investment",
+            "2": "result",
+            "3": "waiting",
+            "4": "future"
+          }
+        }
+      },
+      "eightofpentacles": {
+        "position1": {
+          "keywords": {
+            "0": "mastery",
+            "1": "learning",
+            "2": "labour",
+            "3": "practice",
+            "4": "Development"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "work",
+            "1": "expertise",
+            "2": "learning",
+            "3": "labour",
+            "4": "Progress"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "work",
+            "1": "learning",
+            "2": "expertise",
+            "3": "density",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "mastery",
+            "1": "practice",
+            "2": "detail",
+            "3": "care",
+            "4": "continuity"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "skill",
+            "1": "discipline",
+            "2": "mastery",
+            "3": "learning",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "care",
+            "1": "skill",
+            "2": "mastery",
+            "3": "learning",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "mastery",
+            "1": "discipline",
+            "2": "learning",
+            "3": "labour",
+            "4": "future"
+          }
+        }
+      },
+      "nineofpentacles": {
+        "position1": {
+          "keywords": {
+            "0": "independence",
+            "1": "Self - confidence",
+            "2": "success",
+            "3": "material trust",
+            "4": "abundance"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "independence",
+            "1": "Self - confidence",
+            "2": "success",
+            "3": "satisfaction",
+            "4": "self-satisfactory"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "independence",
+            "1": "economy",
+            "2": "success",
+            "3": "abundance",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "self-satisfactory",
+            "1": "quality",
+            "2": "self - discipline",
+            "3": "grace",
+            "4": "self-confidence"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "independence",
+            "1": "self-confidence",
+            "2": "self - discipline",
+            "3": "quality",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "independence",
+            "1": "self-confidence",
+            "2": "self-satisfactory",
+            "3": "loneliness",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "independence",
+            "1": "self-satisfactory",
+            "2": "satisfaction",
+            "3": "Self - confidence",
+            "4": "future"
+          }
+        }
+      },
+      "tenofpentacles": {
+        "position1": {
+          "keywords": {
+            "0": "permanence",
+            "1": "success",
+            "2": "material trust",
+            "3": "inheritance",
+            "4": "stability"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "stability",
+            "1": "inheritance",
+            "2": "permanence",
+            "3": "success",
+            "4": "long term"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "inheritance",
+            "1": "family",
+            "2": "society",
+            "3": "radicality",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "permanence",
+            "1": "system",
+            "2": "inheritance",
+            "3": "long term",
+            "4": "value"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "permanence",
+            "1": "system",
+            "2": "inheritance",
+            "3": "stability",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "family",
+            "1": "stability",
+            "2": "pressure",
+            "3": "responsibilities",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "permanence",
+            "1": "stability",
+            "2": "inheritance",
+            "3": "guarantee",
+            "4": "future"
+          }
+        }
+      },
+      "pageofpentacles": {
+        "position1": {
+          "keywords": {
+            "0": "learning",
+            "1": "opportunity",
+            "2": "discovery",
+            "3": "hard work",
+            "4": "potential"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "learning",
+            "1": "skill",
+            "2": "discovery",
+            "3": "education",
+            "4": "potential"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "learning",
+            "1": "start",
+            "2": "opportunity",
+            "3": "education",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "learning",
+            "1": "Plan",
+            "2": "curiosity",
+            "3": "Basic skill",
+            "4": "focus"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "learning",
+            "1": "curiosity",
+            "2": "testing",
+            "3": "skill",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "learning",
+            "1": "curiosity",
+            "2": "opportunity",
+            "3": "discipline",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "learning",
+            "1": "discovery",
+            "2": "opportunity",
+            "3": "start",
+            "4": "future"
+          }
+        }
+      },
+      "knightofpentacles": {
+        "position1": {
+          "keywords": {
+            "0": "stability",
+            "1": "Patience",
+            "2": "discipline",
+            "3": "effort",
+            "4": "Trust"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "stability",
+            "1": "Patience",
+            "2": "hard work",
+            "3": "Planning",
+            "4": "determination"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "work",
+            "1": "rhythm",
+            "2": "process",
+            "3": "responsibilities",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "stability",
+            "1": "method",
+            "2": "Patience",
+            "3": "process",
+            "4": "credibility"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "Patience",
+            "1": "stability",
+            "2": "continuity",
+            "3": "Plan",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "slowness",
+            "1": "stability",
+            "2": "monotony",
+            "3": "risk",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "Patience",
+            "1": "stability",
+            "2": "discipline",
+            "3": "credibility",
+            "4": "future"
+          }
+        }
+      },
+      "queenofpentacles": {
+        "position1": {
+          "keywords": {
+            "0": "fertility",
+            "1": "Compassion",
+            "2": "practice",
+            "3": "productivity",
+            "4": "support"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "productivity",
+            "1": "fertility",
+            "2": "Compassion",
+            "3": "practice",
+            "4": "balance"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "support",
+            "1": "fertility",
+            "2": "society",
+            "3": "help",
+            "4": "Out of control"
+          }
+        }
+      }
+    }
+  }
+}

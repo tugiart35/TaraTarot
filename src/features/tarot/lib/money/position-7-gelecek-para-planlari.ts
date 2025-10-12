@@ -41,7 +41,7 @@ export interface I18nMoneyPosition7Meaning {
   group: string;
 }
 
-export const Position7Meanings: MoneyPosition7Meaning[] = [
+export const position7Meanings: MoneyPosition7Meaning[] = [
   // --- Majör Arkana Kartları ---//
   {
     id: 'the_fool_ma_pos7',

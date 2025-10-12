@@ -1,3 +1,5 @@
+'use client';
+
 import {
   TarotConfigSchema,
   TarotConfig,
@@ -8,7 +10,8 @@ import {
   CreditKeys,
 } from '../schemas/tarot-config.schema';
 import { PositionInfo, PositionLayout } from '../../../../types/tarot';
-// Position data will be defined inline to eliminate config file dependencies
+import { useTranslations } from '@/hooks/useTranslations';
+// Position data will be fetched from i18n
 
 const toCamelCase = (value: string): string => {
   return value
@@ -23,54 +26,33 @@ const toUpperSnakeCase = (value: string): string => {
     .toUpperCase();
 };
 
-// Career Spread Position Data
-const CAREER_POSITIONS_INFO: PositionInfo[] = [
-  {
-    id: 1,
-    title: 'Gerçekten istediğim kariyer bu mu?',
-    desc: 'Kariyer tercihlerinizi sorgulayın',
-    description:
-      'Mevcut kariyerinizin gerçekten istediğiniz kariyer olup olmadığını değerlendirin',
-  },
-  {
-    id: 2,
-    title: 'Kariyerimi geliştirmek için hangi adımları atabilirim?',
-    desc: 'Kariyer gelişim adımları',
-    description: 'Kariyerinizi ilerletmek için atabileceğiniz somut adımlar',
-  },
-  {
-    id: 3,
-    title: 'Kariyerimde değiştiremediğim taraflar var mı?',
-    desc: 'Değiştirilemeyen faktörler',
-    description:
-      'Kariyerinizde kontrol edemediğiniz veya değiştiremediğiniz unsurlar',
-  },
-  {
-    id: 4,
-    title: 'Kariyerimde elimden gelenin en iyisini yapıyor muyum?',
-    desc: 'Mevcut performans değerlendirmesi',
-    description:
-      'Şu anki kariyerinizde gösterdiğiniz performans ve çaba seviyesi',
-  },
-  {
-    id: 5,
-    title: 'Kariyerime yardımcı olacak ne gibi değişiklikler yapabilirim?',
-    desc: 'Kariyer gelişim önerileri',
-    description: 'Kariyerinizi ilerletmek için yapabileceğiniz değişiklikler',
-  },
-  {
-    id: 6,
-    title: 'Kariyerimde beklenmedik fırsatlar çıkabilir mi?',
-    desc: 'Beklenmedik fırsatlar',
-    description: 'Kariyerinizde karşılaşabileceğiniz beklenmedik fırsatlar',
-  },
-  {
-    id: 7,
-    title: 'Kariyerimde uzun vadeli hedeflerim neler?',
-    desc: 'Uzun vadeli hedefler',
-    description: 'Kariyerinizde uzun vadede ulaşmak istediğiniz hedefler',
-  },
-];
+/**
+ * Spread key'ine göre position bilgilerini i18n'den çeker
+ */
+export const getPositionsFromI18n = (
+  spreadKey: string,
+  positionCount: number,
+  t: (key: string) => string
+): PositionInfo[] => {
+  const positions: PositionInfo[] = [];
+  
+  for (let i = 1; i <= positionCount; i++) {
+    const title = t(`spreads.${spreadKey}.positions.${i}.title`);
+    const description = t(`spreads.${spreadKey}.positions.${i}.description`);
+    
+    positions.push({
+      id: i,
+      title,
+      desc: description,
+      description,
+    });
+  }
+  
+  return positions;
+};
+
+// Career Spread Layout Data (CSS positions only)
+// Position info now loaded from i18n via getPositionsFromI18n()
 
 const CAREER_POSITIONS_LAYOUT: PositionLayout[] = [
   {
@@ -110,33 +92,7 @@ const CAREER_POSITIONS_LAYOUT: PositionLayout[] = [
   },
 ];
 
-// Love Spread Position Data
-const LOVE_POSITIONS_INFO: PositionInfo[] = [
-  {
-    id: 1,
-    title: 'İlgi Duyduğun Kişi',
-    desc: 'Hakkında soru sorduğun kişi',
-    description: 'Hakkında soru sorduğun kişi',
-  },
-  {
-    id: 2,
-    title: 'Fiziksel/Cinsel Bağlantı',
-    desc: 'Fiziksel ve cinsel bağlantınız',
-    description: 'Fiziksel ve cinsel bağlantınız',
-  },
-  {
-    id: 3,
-    title: 'Duygusal/Ruhsal Bağlantı',
-    desc: 'Duygusal ve ruhsal bağlantınız',
-    description: 'Duygusal ve ruhsal bağlantınız',
-  },
-  {
-    id: 4,
-    title: 'Uzun Vadeli Sonuç',
-    desc: 'İlişkinin uzun vadeli sonucu',
-    description: 'İlişkinin uzun vadeli sonucu',
-  },
-];
+// Love Spread Layout Data (CSS positions only)
 
 const LOVE_POSITIONS_LAYOUT: PositionLayout[] = [
   {
@@ -161,57 +117,7 @@ const LOVE_POSITIONS_LAYOUT: PositionLayout[] = [
   },
 ];
 
-// Money Spread Position Data
-const MONEY_POSITIONS_INFO: PositionInfo[] = [
-  {
-    id: 1,
-    title: 'Parayla İlgili Kaygı',
-    desc: 'Parayla ilgili kaygı var mı?',
-    description: 'Parayla ilgili kaygı var mı?',
-  },
-  {
-    id: 2,
-    title: 'Finansal Güvenlik Arzusu',
-    desc: 'Finansal güvenliğe duyulan arzu',
-    description: 'Finansal güvenliğe duyulan arzu',
-  },
-  {
-    id: 3,
-    title: 'Para Kullanımı',
-    desc: 'Parayı beni mutlu edecek şekilde nasıl kullanabilirim?',
-    description: 'Parayı beni mutlu edecek şekilde nasıl kullanabilirim?',
-  },
-  {
-    id: 4,
-    title: 'Geçmişteki Para Tutumu',
-    desc: 'Parayla ilgili geçmişteki tutumum',
-    description: 'Parayla ilgili geçmişteki tutumum',
-  },
-  {
-    id: 5,
-    title: 'Mali Sorumluluklar',
-    desc: 'Mali açıdan iyi bir yaşam için sorumluluklarım nedir?',
-    description: 'Mali açıdan iyi bir yaşam için sorumluluklarım nedir?',
-  },
-  {
-    id: 6,
-    title: 'Yeni Mali Planlar',
-    desc: 'Mali yatırımlarım veya birikimlerimle ilgili yeni planlarım',
-    description: 'Mali yatırımlarım veya birikimlerimle ilgili yeni planlarım',
-  },
-  {
-    id: 7,
-    title: 'Gelecek Para Planları',
-    desc: 'Parayla ilgili gelecek planlarım',
-    description: 'Parayla ilgili gelecek planlarım',
-  },
-  {
-    id: 8,
-    title: 'Para Kazanma Yetenekleri',
-    desc: 'Para kazanmak için ne gibi özel yeteneklerim var?',
-    description: 'Para kazanmak için ne gibi özel yeteneklerim var?',
-  },
-];
+// Money Spread Layout Data (CSS positions only)
 
 const MONEY_POSITIONS_LAYOUT: PositionLayout[] = [
   {
@@ -256,69 +162,7 @@ const MONEY_POSITIONS_LAYOUT: PositionLayout[] = [
   },
 ];
 
-// Problem Solving Spread Position Data
-const PROBLEM_SOLVING_POSITIONS_INFO: PositionInfo[] = [
-  {
-    id: 1,
-    title: 'Sorulan Soru',
-    desc: 'Açılımın temelini oluşturan ana soru veya konu',
-    description: 'Açılımın temelini oluşturan ana soru veya konu',
-  },
-  {
-    id: 2,
-    title: 'Sorunun Engeli',
-    desc: 'Sorunun önündeki temel engel veya zorluk',
-    description: 'Sorunun önündeki temel engel veya zorluk',
-  },
-  {
-    id: 3,
-    title: 'Şuur Altı Konu Geçmişi',
-    desc: 'Konunun bilinçaltındaki kökenleri veya geçmiş etkileri',
-    description: 'Konunun bilinçaltındaki kökenleri veya geçmiş etkileri',
-  },
-  {
-    id: 4,
-    title: 'En İyi Potansiyel',
-    desc: 'Bu konuda kendimiz için ulaşabileceğimiz en iyi durum',
-    description: 'Bu konuda kendimiz için ulaşabileceğimiz en iyi durum',
-  },
-  {
-    id: 5,
-    title: 'Yakın Geçmiş',
-    desc: 'Konuyla ilgili yakın geçmişteki olaylar veya etkiler',
-    description: 'Konuyla ilgili yakın geçmişteki olaylar veya etkiler',
-  },
-  {
-    id: 6,
-    title: 'Yakın Gelecek',
-    desc: 'Konuyla ilgili yakın gelecekteki olası gelişmeler',
-    description: 'Konuyla ilgili yakın gelecekteki olası gelişmeler',
-  },
-  {
-    id: 7,
-    title: 'Mevcut Durum',
-    desc: 'Şu anki durumumuz, konuya dair mevcut halimiz',
-    description: 'Şu anki durumumuz, konuya dair mevcut halimiz',
-  },
-  {
-    id: 8,
-    title: 'Dış Etkiler',
-    desc: 'Konuyu etkileyen dış faktörler, çevresel koşullar',
-    description: 'Konuyu etkileyen dış faktörler, çevresel koşullar',
-  },
-  {
-    id: 9,
-    title: 'Korkular ve Endişeler',
-    desc: 'Konuyla ilgili içsel korkularımız ve endişelerimiz',
-    description: 'Konuyla ilgili içsel korkularımız ve endişelerimiz',
-  },
-  {
-    id: 10,
-    title: 'Olayın Sonucu',
-    desc: 'Konunun veya olayın nihai sonucu, olası çözümü',
-    description: 'Konunun veya olayın nihai sonucu, olası çözümü',
-  },
-];
+// Problem Solving Spread Layout Data (CSS positions only)
 
 const PROBLEM_SOLVING_POSITIONS_LAYOUT: PositionLayout[] = [
   {
@@ -373,76 +217,7 @@ const PROBLEM_SOLVING_POSITIONS_LAYOUT: PositionLayout[] = [
   },
 ];
 
-// Marriage Spread Position Data
-const MARRIAGE_POSITIONS_INFO: PositionInfo[] = [
-  {
-    id: 1,
-    title: 'Sonuç ne olacak?',
-    desc: 'Evlilik sürecinizin genelsss sonucunu ve nasıl ilerleyeceğini gösterir.',
-    description:
-      'Evlilik sürecinizin genelsss sonucunu ve nasıl ilerleyeceğini gösterir.',
-  },
-  {
-    id: 2,
-    title: 'Eşimi beklerken benim ne yapmam gerekiyor?',
-    desc: 'Doğru kişiyi bulana kadar kendinizi nasıl geliştirmeniz gerektiğini gösterir.',
-    description:
-      'Doğru kişiyi bulana kadar kendinizi nasıl geliştirmeniz gerektiğini gösterir.',
-  },
-  {
-    id: 3,
-    title: 'Mali kaynaklarımızı birbirimizle paylaşacak mıyız?',
-    desc: 'Evlilikte mali konularda uyumunuzu ve paylaşımınızı gösterir.',
-    description:
-      'Evlilikte mali konularda uyumunuzu ve paylaşımınızı gösterir.',
-  },
-  {
-    id: 4,
-    title: 'Her ikimiz de bağlanmak isteyecek miyiz?',
-    desc: 'Her iki tarafın da evliliğe hazır olup olmadığını ve bağlanma isteğini gösterir.',
-    description:
-      'Her iki tarafın da evliliğe hazır olup olmadığını ve bağlanma isteğini gösterir.',
-  },
-  {
-    id: 5,
-    title: 'Benzer yanlarımız olacak mı?',
-    desc: 'Ortak değerleriniz, benzerlikleriniz ve uyumunuzu gösterir.',
-    description: 'Ortak değerleriniz, benzerlikleriniz ve uyumunuzu gösterir.',
-  },
-  {
-    id: 6,
-    title: 'Bu kişinin ailesi beni kabul edecek mi?',
-    desc: 'Aile onayı ve aile ilişkilerinizin nasıl olacağını gösterir.',
-    description: 'Aile onayı ve aile ilişkilerinizin nasıl olacağını gösterir.',
-  },
-  {
-    id: 7,
-    title: 'Birbirimizi nasıl bulacağız?',
-    desc: 'Doğru kişiyle nasıl tanışacağınızı ve buluşacağınızı gösterir.',
-    description:
-      'Doğru kişiyle nasıl tanışacağınızı ve buluşacağınızı gösterir.',
-  },
-  {
-    id: 8,
-    title: 'Anlaşabilecek miyiz?',
-    desc: 'İletişim uyumunuzu ve birbirinizi anlama kapasitenizi gösterir.',
-    description:
-      'İletişim uyumunuzu ve birbirinizi anlama kapasitenizi gösterir.',
-  },
-  {
-    id: 9,
-    title: 'Benim için nasıl bir eş uygundur?',
-    desc: 'İdeal eşinizin özelliklerini ve sizinle uyumlu olacak kişiyi gösterir.',
-    description:
-      'İdeal eşinizin özelliklerini ve sizinle uyumlu olacak kişiyi gösterir.',
-  },
-  {
-    id: 10,
-    title: 'Evlenebilecek miyim?',
-    desc: 'Evlilik potansiyelinizi ve evlenme şansınızı gösterir.',
-    description: 'Evlilik potansiyelinizi ve evlenme şansınızı gösterir.',
-  },
-];
+// Marriage Spread Layout Data (CSS positions only)
 
 const MARRIAGE_POSITIONS_LAYOUT: PositionLayout[] = [
   // Üst sıra (10, 9, 8)
@@ -504,58 +279,7 @@ const MARRIAGE_POSITIONS_LAYOUT: PositionLayout[] = [
   }, // Sağ alt
 ];
 
-// Relationship Analysis Spread Position Data
-const RELATIONSHIP_ANALYSIS_POSITIONS_INFO: PositionInfo[] = [
-  {
-    id: 1,
-    title: 'Mevcut Durum',
-    desc: 'İlişkinin mevcut şartları, içinde bulunduğu durum ve varsa problemlerin yarattığı atmosfer hakkında bilgi verir.',
-    description:
-      'İlişkinin mevcut şartları, içinde bulunduğu durum ve varsa problemlerin yarattığı atmosfer hakkında bilgi verir.',
-  },
-  {
-    id: 2,
-    title: 'Sizin Hissleriniz',
-    desc: 'Sizin hisleriniz, düşünceleriniz ve partnerinize bakış açınızı gösterir. İlişkideki duygusal durumunuzu yansıtır.',
-    description:
-      'Sizin hisleriniz, düşünceleriniz ve partnerinize bakış açınızı gösterir. İlişkideki duygusal durumunuzu yansıtır.',
-  },
-  {
-    id: 3,
-    title: 'Sizin Beklentileriniz',
-    desc: 'Sizin ilişkiniz ya da içinde bulunduğunuz durum hakkında endişelerinizi, beklentilerinizi ve hayallerinizi gösterir.',
-    description:
-      'Sizin ilişkiniz ya da içinde bulunduğunuz durum hakkında endişelerinizi, beklentilerinizi ve hayallerinizi gösterir.',
-  },
-  {
-    id: 4,
-    title: 'Tavsiyeler',
-    desc: 'İlişkinizin gidişatı ile ilgili sergileyeceğiniz tutum ile ilgili tavsiyeleri içerir. Nasıl davranmanız gerektiğini gösterir.',
-    description:
-      'İlişkinizin gidişatı ile ilgili sergileyeceğiniz tutum ile ilgili tavsiyeleri içerir. Nasıl davranmanız gerektiğini gösterir.',
-  },
-  {
-    id: 5,
-    title: 'Yol Haritası',
-    desc: 'Bu ilişkide ya da var olan sorun karşısında takınmanız gereken tavır ve nasıl bir yol izlemeniz konusunda size yol gösterir.',
-    description:
-      'Bu ilişkide ya da var olan sorun karşısında takınmanız gereken tavır ve nasıl bir yol izlemeniz konusunda size yol gösterir.',
-  },
-  {
-    id: 6,
-    title: 'Partnerinizin Beklentileri',
-    desc: 'Partnerinizin ilişkiniz ya da içinde bulunduğunuz durum hakkında endişelerini, beklentilerini ve hayallerini gösterir.',
-    description:
-      'Partnerinizin ilişkiniz ya da içinde bulunduğunuz durum hakkında endişelerini, beklentilerini ve hayallerini gösterir.',
-  },
-  {
-    id: 7,
-    title: 'Partnerinizin Hissleri',
-    desc: 'Partnerinizin hislerini, düşüncelerini ve size bakış açısını gösterir. İlişkideki duygusal durumunu yansıtır.',
-    description:
-      'Partnerinizin hislerini, düşüncelerini ve size bakış açısını gösterir. İlişkideki duygusal durumunu yansıtır.',
-  },
-];
+// Relationship Analysis Spread Layout Data (CSS positions only)
 
 const RELATIONSHIP_ANALYSIS_POSITIONS_LAYOUT: PositionLayout[] = [
   {
@@ -595,72 +319,7 @@ const RELATIONSHIP_ANALYSIS_POSITIONS_LAYOUT: PositionLayout[] = [
   }, // Sol üst - Partnerinizin Hissleri
 ];
 
-// Relationship Problems Spread Position Data
-const RELATIONSHIP_PROBLEMS_POSITIONS_INFO: PositionInfo[] = [
-  {
-    id: 1,
-    title: 'Çelişki nedir?',
-    desc: 'İlişkinizdeki iç çelişkileri ve çatışmaları gösterir. Hangi konularda anlaşamadığınızı ve neden çelişki yaşadığınızı anlamanıza yardımcı olur.',
-    description:
-      'İlişkinizdeki iç çelişkileri ve çatışmaları gösterir. Hangi konularda anlaşamadığınızı ve neden çelişki yaşadığınızı anlamanıza yardımcı olur.',
-  },
-  {
-    id: 2,
-    title: 'Sorun nedir?',
-    desc: 'İlişkinizdeki ana problemi ve temel sorunu ortaya koyar. Hangi konunun en büyük zorluk yarattığını gösterir.',
-    description:
-      'İlişkinizdeki ana problemi ve temel sorunu ortaya koyar. Hangi konunun en büyük zorluk yarattığını gösterir.',
-  },
-  {
-    id: 3,
-    title: 'Sorunu ben mi yarattım?',
-    desc: 'Sorunun kaynağında sizin payınızı ve sorumluluğunuzu gösterir. Kendi davranışlarınızın soruna nasıl katkıda bulunduğunu anlamanıza yardımcı olur.',
-    description:
-      'Sorunun kaynağında sizin payınızı ve sorumluluğunuzu gösterir. Kendi davranışlarınızın soruna nasıl katkıda bulunduğunu anlamanıza yardımcı olur.',
-  },
-  {
-    id: 4,
-    title: 'Bu sorundaki payımı görmezden mi geliyorum?',
-    desc: 'Kendi sorumluluğunuzu kabul etme konusundaki durumunuzu gösterir. Kendi hatalarınızı görmezden gelip gelmediğinizi ortaya koyar.',
-    description:
-      'Kendi sorumluluğunuzu kabul etme konusundaki durumunuzu gösterir. Kendi hatalarınızı görmezden gelip gelmediğinizi ortaya koyar.',
-  },
-  {
-    id: 5,
-    title: 'Birlikte olduğum kişiyle geçmişteki deneyimlerim',
-    desc: 'Partnerinizle yaşadığınız geçmiş deneyimlerin mevcut sorunlara etkisini gösterir. Geçmişin bugüne nasıl yansıdığını anlamanıza yardımcı olur.',
-    description:
-      'Partnerinizle yaşadığınız geçmiş deneyimlerin mevcut sorunlara etkisini gösterir. Geçmişin bugüne nasıl yansıdığını anlamanıza yardımcı olur.',
-  },
-  {
-    id: 6,
-    title: 'Birbirimizi suistimal mi ediyoruz?',
-    desc: 'İlişkinizde karşılıklı saygı ve sağlıklı sınırların durumunu gösterir. Birbirinizi nasıl etkilediğinizi ve zarar verip vermediğinizi ortaya koyar.',
-    description:
-      'İlişkinizde karşılıklı saygı ve sağlıklı sınırların durumunu gösterir. Birbirinizi nasıl etkilediğinizi ve zarar verip vermediğinizi ortaya koyar.',
-  },
-  {
-    id: 7,
-    title: 'Sorunumuza karışan başka insanlar var mı?',
-    desc: 'İlişkinizi etkileyen dış faktörleri ve üçüncü kişileri gösterir. Aile, arkadaşlar veya diğer insanların sorununuza nasıl etki ettiğini anlamanıza yardımcı olur.',
-    description:
-      'İlişkinizi etkileyen dış faktörleri ve üçüncü kişileri gösterir. Aile, arkadaşlar veya diğer insanların sorununuza nasıl etki ettiğini anlamanıza yardımcı olur.',
-  },
-  {
-    id: 8,
-    title: 'İlişkimizi etkileyen maddi sorunlar var mı?',
-    desc: 'Para, iş, maddi durum gibi faktörlerin ilişkinize etkisini gösterir. Ekonomik sorunların ilişkinizi nasıl etkilediğini ortaya koyar.',
-    description:
-      'Para, iş, maddi durum gibi faktörlerin ilişkinize etkisini gösterir. Ekonomik sorunların ilişkinizi nasıl etkilediğini ortaya koyar.',
-  },
-  {
-    id: 9,
-    title: 'Bu ilişki sürecek mi?',
-    desc: 'İlişkinizin geleceği hakkında öngörü sunar. Mevcut sorunların çözülüp çözülmeyeceği ve ilişkinin devam edip etmeyeceği konusunda bilgi verir.',
-    description:
-      'İlişkinizin geleceği hakkında öngörü sunar. Mevcut sorunların çözülüp çözülmeyeceği ve ilişkinin devam edip etmeyeceği konusunda bilgi verir.',
-  },
-];
+// Relationship Problems Spread Layout Data (CSS positions only)
 
 const RELATIONSHIP_PROBLEMS_POSITIONS_LAYOUT: PositionLayout[] = [
   // Üst sıra (7, 8, 9)
@@ -717,51 +376,7 @@ const RELATIONSHIP_PROBLEMS_POSITIONS_LAYOUT: PositionLayout[] = [
   }, // Merkez üst
 ];
 
-// New Lover Spread Position Data
-const NEW_LOVER_POSITIONS_INFO: PositionInfo[] = [
-  {
-    id: 1,
-    title: 'Yakında yeni bir ilişki yaşayacak mıyım?',
-    desc: 'Gelecekteki ilişki potansiyelinizi gösterir',
-    description:
-      'Bu pozisyon, yakın gelecekte yeni bir ilişki yaşayıp yaşamayacağınızı ve bu ilişkinin nasıl başlayacağını gösterir.',
-  },
-  {
-    id: 2,
-    title: 'Bu kişi hangi burçtan olacak?',
-    desc: 'Gelecekteki partnerinizin astrolojik özelliklerini gösterir',
-    description:
-      'Bu pozisyon, gelecekteki partnerinizin burç özelliklerini ve kişilik yapısını ortaya koyar.',
-  },
-  {
-    id: 3,
-    title: 'Birbirimizle uyumlu olacak mıyız?',
-    desc: 'İlişkinizdeki uyum ve uyumsuzlukları gösterir',
-    description:
-      'Bu pozisyon, gelecekteki partnerinizle aranızdaki uyumu, ortak noktaları ve potansiyel zorlukları gösterir.',
-  },
-  {
-    id: 4,
-    title: 'Uzun süreli bir ilişki olacak mı?',
-    desc: 'İlişkinizin sürekliliğini ve derinliğini gösterir',
-    description:
-      'Bu pozisyon, gelecekteki ilişkinizin ne kadar süreceğini ve ne kadar derin olacağını gösterir.',
-  },
-  {
-    id: 5,
-    title: 'Bu kişi benim ruh eşim olabilir mi?',
-    desc: 'Ruhsal bağlantı ve derin aşk potansiyelini gösterir',
-    description:
-      'Bu pozisyon, gelecekteki partnerinizin ruh eşiniz olup olmadığını ve aranızdaki ruhsal bağı gösterir.',
-  },
-  {
-    id: 6,
-    title: 'Dileğim gerçekleşecek mi?',
-    desc: 'Aşk dileğinizin gerçekleşme olasılığını gösterir',
-    description:
-      'Bu pozisyon, aşk dileğinizin gerçekleşip gerçekleşmeyeceğini ve bunun için ne yapmanız gerektiğini gösterir.',
-  },
-];
+// New Lover Spread Layout Data (CSS positions only)
 
 const NEW_LOVER_POSITIONS_LAYOUT: PositionLayout[] = [
   {
@@ -796,58 +411,7 @@ const NEW_LOVER_POSITIONS_LAYOUT: PositionLayout[] = [
   }, // en sağ (hafif yana kayık)
 ];
 
-// Situation Analysis Spread Position Data
-const SITUATION_ANALYSIS_POSITIONS_INFO: PositionInfo[] = [
-  {
-    id: 1,
-    title: 'Geçmiş ya da Sebepler',
-    desc: 'Yaşanan durumun sebepleri, neden şu anda böyle bir durumun yaşandığı ve yapılan tüm hatalar bu kartta belirtilir. Geçmişin değiştirilemez olduğu vurgulanır.',
-    description:
-      'Yaşanan durumun sebepleri, neden şu anda böyle bir durumun yaşandığı ve yapılan tüm hatalar bu kartta belirtilir. Geçmişin değiştirilemez olduğu vurgulanır.',
-  },
-  {
-    id: 2,
-    title: 'Şu Anki Durum',
-    desc: 'Şu anda neler yaşandığı, gündemdeki konular ve geçmişin bugüne göre nasıl bir etkisi olduğu belirtilir.',
-    description:
-      'Şu anda neler yaşandığı, gündemdeki konular ve geçmişin bugüne göre nasıl bir etkisi olduğu belirtilir.',
-  },
-  {
-    id: 3,
-    title: 'Gizli Etkenler',
-    desc: 'Kişinin bilgisi dışında gelişen olaylar, arkasından konuşanlar, gizli işler ve bilinmeyen gerçekler bu kartta gizlidir.',
-    description:
-      'Kişinin bilgisi dışında gelişen olaylar, arkasından konuşanlar, gizli işler ve bilinmeyen gerçekler bu kartta gizlidir.',
-  },
-  {
-    id: 4,
-    title: 'Merkez Kart',
-    desc: 'Açılımın merkezini temsil eder. Durumun merkezindeki kişiyi veya hayatınızdaki en merkezi alanı ifade eder.',
-    description:
-      'Açılımın merkezini temsil eder. Durumun merkezindeki kişiyi veya hayatınızdaki en merkezi alanı ifade eder.',
-  },
-  {
-    id: 5,
-    title: 'Dış Etkenler',
-    desc: 'Farklı kaynaklardan gelecek bilgiler ve geleceğe dair açılar sunar. Dış saldırılar ve olası entrikalara da işaret edebilir.',
-    description:
-      'Farklı kaynaklardan gelecek bilgiler ve geleceğe dair açılar sunar. Dış saldırılar ve olası entrikalara da işaret edebilir.',
-  },
-  {
-    id: 6,
-    title: 'Tavsiye',
-    desc: 'Yaşanan durumla ilgili en uygun hareketlerin ne olduğu hakkında bilgi verir. Çözüm veya çıkış yolu sunabileceği belirtilir.',
-    description:
-      'Yaşanan durumla ilgili en uygun hareketlerin ne olduğu hakkında bilgi verir. Çözüm veya çıkış yolu sunabileceği belirtilir.',
-  },
-  {
-    id: 7,
-    title: 'Olası Gelecek - Sonuç',
-    desc: 'Mevcut gidişatın nereye varacağını, olası engelleri veya sürprizleri gösterir. Geleceğin, alınacak kararlara bağlı olarak değişebileceği belirtilir.',
-    description:
-      'Mevcut gidişatın nereye varacağını, olası engelleri veya sürprizleri gösterir. Geleceğin, alınacak kararlara bağlı olarak değişebileceği belirtilir.',
-  },
-];
+// Situation Analysis Spread Layout Data (CSS positions only)
 
 const SITUATION_ANALYSIS_POSITIONS_LAYOUT: PositionLayout[] = [
   {
@@ -955,10 +519,11 @@ const mergeI18nKeys = (
  */
 export interface CreateTarotConfigParams {
   spreadId: string;
+  spreadKey: string; // i18n key for spread (e.g., 'career', 'love', etc.)
+  cardCount: number; // Position sayısı
   translationNamespace?: string;
   summaryKey?: string;
   spreadName?: string;
-  positionsInfo: readonly PositionInfo[];
   positionsLayout: readonly PositionLayout[];
   theme: TarotTheme;
   icon: string;
@@ -970,6 +535,7 @@ export interface CreateTarotConfigParams {
   customCreditKeys?: Partial<CreditKeys>;
   backgroundImage?: string;
   backgroundAlt?: string;
+  t?: (key: string) => string; // i18n fonksiyonu (optional, fallback varsa)
 }
 
 /**
@@ -981,10 +547,11 @@ export function createTarotConfig(
 ): TarotConfig {
   const {
     spreadId,
+    spreadKey,
+    cardCount,
     translationNamespace,
     summaryKey,
     spreadName,
-    positionsInfo,
     positionsLayout,
     theme,
     icon,
@@ -996,6 +563,7 @@ export function createTarotConfig(
     customCreditKeys,
     backgroundImage,
     backgroundAlt,
+    t,
   } = params;
 
   const namespace = translationNamespace ?? toCamelCase(spreadId);
@@ -1004,6 +572,11 @@ export function createTarotConfig(
   const creditPrefix = creditKeyPrefix ?? toUpperSnakeCase(namespace);
 
   const formI18nKeys = createFormI18nKeys(namespace);
+
+  // Position bilgilerini i18n'den çek (eğer t fonksiyonu varsa)
+  const positionsInfo = t
+    ? getPositionsFromI18n(spreadKey, cardCount, t)
+    : [];
 
   const defaultCreditKeys: CreditKeys = {
     detailed: `${creditPrefix}_DETAILED`,
@@ -1089,7 +662,7 @@ export function createTarotConfig(
     translationNamespace: namespace,
     summaryKey: summaryKeyValue,
     spreadName: spreadName || `${namespace}.data.spreadName`,
-    cardCount: positionsInfo.length,
+    cardCount, // Parametre olarak alınan değeri kullan
     positionsInfo: positionsInfo as any,
     positionsLayout: positionsLayout as any,
     theme,
@@ -1109,164 +682,191 @@ export function createTarotConfig(
 
 /**
  * Career spread için özel konfigürasyon
+ * @param t - i18n translation function (optional)
  */
-export function createCareerConfig(): TarotConfig {
+export function createCareerConfig(t?: (key: string) => string): TarotConfig {
   return createTarotConfig({
     spreadId: 'career',
+    spreadKey: 'career',
+    cardCount: 7,
     translationNamespace: 'career',
     summaryKey: 'careerSpread',
-    positionsInfo: CAREER_POSITIONS_INFO,
     positionsLayout: CAREER_POSITIONS_LAYOUT as readonly PositionLayout[],
     theme: 'blue',
     icon: '💼',
     readingType: 'CAREER_SPREAD',
     supabaseReadingType: 'career', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'CAREER_SPREAD',
+    t,
   });
 }
 
 /**
  * Love spread için özel konfigürasyon
+ * @param t - i18n translation function (optional)
  */
-export function createLoveConfig(): TarotConfig {
+export function createLoveConfig(t?: (key: string) => string): TarotConfig {
   return createTarotConfig({
     spreadId: 'love',
+    spreadKey: 'love',
+    cardCount: 4,
     translationNamespace: 'love',
     summaryKey: 'loveSpread',
-    positionsInfo: LOVE_POSITIONS_INFO,
     positionsLayout: LOVE_POSITIONS_LAYOUT,
     theme: 'pink',
     icon: '💕',
     readingType: 'LOVE_SPREAD',
     supabaseReadingType: 'love', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'LOVE_SPREAD',
+    t,
   });
 }
 
 /**
  * Money spread için özel konfigürasyon
+ * @param t - i18n translation function (optional)
  */
-export function createMoneyConfig(): TarotConfig {
+export function createMoneyConfig(t?: (key: string) => string): TarotConfig {
   return createTarotConfig({
     spreadId: 'money',
+    spreadKey: 'money',
+    cardCount: 8,
     translationNamespace: 'money',
     summaryKey: 'moneySpread',
-    positionsInfo: MONEY_POSITIONS_INFO,
     positionsLayout: MONEY_POSITIONS_LAYOUT,
     theme: 'green',
     icon: '💰',
     readingType: 'MONEY_SPREAD',
     supabaseReadingType: 'money', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'MONEY_SPREAD',
+    t,
   });
 }
 
 /**
  * Problem Solving spread için özel konfigürasyon
+ * @param t - i18n translation function (optional)
  */
-export function createProblemSolvingConfig(): TarotConfig {
+export function createProblemSolvingConfig(t?: (key: string) => string): TarotConfig {
   return createTarotConfig({
     spreadId: 'problem-solving',
+    spreadKey: 'problemSolving',
+    cardCount: 10,
     spreadName: 'problemSolving',
     translationNamespace: 'problemSolving',
     summaryKey: 'problemSolvingSpread',
-    positionsInfo: PROBLEM_SOLVING_POSITIONS_INFO,
     positionsLayout: PROBLEM_SOLVING_POSITIONS_LAYOUT,
     theme: 'orange',
     icon: '🧩',
     readingType: 'PROBLEM_SOLVING_SPREAD',
     supabaseReadingType: 'problem-solving', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'PROBLEM_SOLVING',
+    t,
   });
 }
 
 /**
  * Marriage spread için özel konfigürasyon
+ * @param t - i18n translation function (optional)
  */
-export function createMarriageConfig(): TarotConfig {
+export function createMarriageConfig(t?: (key: string) => string): TarotConfig {
   return createTarotConfig({
     spreadId: 'marriage',
+    spreadKey: 'marriage',
+    cardCount: 10,
     translationNamespace: 'marriage',
     summaryKey: 'marriageSpread',
-    positionsInfo: MARRIAGE_POSITIONS_INFO,
     positionsLayout: MARRIAGE_POSITIONS_LAYOUT,
     theme: 'pink',
     icon: '💒',
     readingType: 'MARRIAGE_SPREAD',
     supabaseReadingType: 'marriage', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'MARRIAGE',
+    t,
   });
 }
 
 /**
  * Relationship Analysis spread için özel konfigürasyon
+ * @param t - i18n translation function (optional)
  */
-export function createRelationshipAnalysisConfig(): TarotConfig {
+export function createRelationshipAnalysisConfig(t?: (key: string) => string): TarotConfig {
   return createTarotConfig({
     spreadId: 'relationship-analysis',
+    spreadKey: 'relationshipAnalysis',
+    cardCount: 7,
     translationNamespace: 'relationshipAnalysis',
     summaryKey: 'relationshipAnalysisSpread',
-    positionsInfo: RELATIONSHIP_ANALYSIS_POSITIONS_INFO,
     positionsLayout: RELATIONSHIP_ANALYSIS_POSITIONS_LAYOUT,
     theme: 'blue',
     icon: '💙',
     readingType: 'RELATIONSHIP_ANALYSIS_SPREAD',
     supabaseReadingType: 'relationship-analysis', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'RELATIONSHIP_ANALYSIS',
+    t,
   });
 }
 
 /**
  * Relationship Problems spread için özel konfigürasyon
+ * @param t - i18n translation function (optional)
  */
-export function createRelationshipProblemsConfig(): TarotConfig {
+export function createRelationshipProblemsConfig(t?: (key: string) => string): TarotConfig {
   return createTarotConfig({
     spreadId: 'relationship-problems',
+    spreadKey: 'relationshipProblems',
+    cardCount: 9,
     translationNamespace: 'relationshipProblems',
     summaryKey: 'relationshipProblemsSpread',
-    positionsInfo: RELATIONSHIP_PROBLEMS_POSITIONS_INFO,
     positionsLayout: RELATIONSHIP_PROBLEMS_POSITIONS_LAYOUT,
     theme: 'red',
     icon: '💔',
     readingType: 'RELATIONSHIP_PROBLEMS_SPREAD',
     supabaseReadingType: 'relationship-problems', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'RELATIONSHIP_PROBLEMS',
+    t,
   });
 }
 
 /**
- * Situation Analysis spread için özel konfigürasyon
+ * New Lover spread için özel konfigürasyon
+ * @param t - i18n translation function (optional)
  */
-export function createNewLoverConfig(): TarotConfig {
+export function createNewLoverConfig(t?: (key: string) => string): TarotConfig {
   return createTarotConfig({
     spreadId: 'new-lover',
+    spreadKey: 'newLover',
+    cardCount: 6,
     translationNamespace: 'newLover',
     summaryKey: 'newLoverSpread',
-    positionsInfo: NEW_LOVER_POSITIONS_INFO,
     positionsLayout: NEW_LOVER_POSITIONS_LAYOUT,
     theme: 'pink',
     icon: '💕',
     readingType: 'NEW_LOVER_SPREAD',
     supabaseReadingType: 'new-lover', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'NEW_LOVER',
+    t,
   });
 }
 
 /**
  * Situation Analysis spread için özel konfigürasyon
+ * @param t - i18n translation function (optional)
  */
-export function createSituationAnalysisConfig(): TarotConfig {
+export function createSituationAnalysisConfig(t?: (key: string) => string): TarotConfig {
   return createTarotConfig({
     spreadId: 'situation-analysis',
+    spreadKey: 'situationAnalysis',
+    cardCount: 7,
     translationNamespace: 'situationAnalysis',
     summaryKey: 'situationAnalysisSpread',
     spreadName: 'situationAnalysis.data.spreadName',
-    positionsInfo: SITUATION_ANALYSIS_POSITIONS_INFO,
     positionsLayout: SITUATION_ANALYSIS_POSITIONS_LAYOUT,
     theme: 'purple',
     icon: '🔮',
     readingType: 'SITUATION_ANALYSIS_SPREAD',
     supabaseReadingType: 'situation-analysis', // Veritabanında mevcut enum değeri
     creditKeyPrefix: 'SITUATION_ANALYSIS',
+    t,
   });
 }

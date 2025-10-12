@@ -1,0 +1,882 @@
+{
+  "love": {
+    "meanings": {
+      "twoofwands": {
+        "position2": {
+          "keywords": {
+            "4": "gravity"
+          }
+        }
+      },
+      "threeofwands": {
+        "position2": {
+          "keywords": {
+            "0": "sexual expectation",
+            "1": "Reciprocity",
+            "2": "discovery",
+            "3": "Progress",
+            "4": "Reunion"
+          }
+        }
+      },
+      "fourofwands": {
+        "position2": {
+          "keywords": {
+            "0": "Passionate celebration",
+            "1": "sexual harmony",
+            "2": "joy",
+            "3": "honeymoon",
+            "4": "stability"
+          }
+        }
+      },
+      "fiveofwands": {
+        "position2": {
+          "keywords": {
+            "0": "sexual rivalry",
+            "1": "raw energy",
+            "2": "Passionate friction",
+            "3": "conflict",
+            "4": "different desires"
+          }
+        }
+      },
+      "sixofwands": {
+        "position2": {
+          "keywords": {
+            "0": "sexual triumph",
+            "1": "Self - confidence",
+            "2": "appreciation",
+            "3": "success",
+            "4": "satisfaction"
+          }
+        }
+      },
+      "sevenofwands": {
+        "position2": {
+          "keywords": {
+            "0": "sexual boundaries",
+            "1": "challenge",
+            "2": "defence",
+            "3": "resistance",
+            "4": "struggle"
+          }
+        }
+      },
+      "eightofwands": {
+        "position2": {
+          "keywords": {
+            "0": "fast passion",
+            "1": "Excitement",
+            "2": "Sexual communication",
+            "3": "high tempo",
+            "4": "desire"
+          }
+        }
+      },
+      "nineofwands": {
+        "position2": {
+          "keywords": {
+            "0": "sexual insecurity",
+            "1": "defence",
+            "2": "Conscientious",
+            "3": "Past wounds",
+            "4": "Wall-building"
+          }
+        }
+      },
+      "tenofwands": {
+        "position2": {
+          "keywords": {
+            "0": "sexual burden",
+            "1": "Stress",
+            "2": "extremism",
+            "3": "pressure",
+            "4": "Sex like duty"
+          }
+        }
+      },
+      "pageofwands": {
+        "position2": {
+          "keywords": {
+            "0": "Sexual adventure",
+            "1": "fad",
+            "2": "Flirting",
+            "3": "discovery",
+            "4": "It's a passionate start."
+          }
+        }
+      },
+      "knightofwands": {
+        "position2": {
+          "keywords": {
+            "0": "intense passion",
+            "1": "adventure",
+            "2": "Charisma",
+            "3": "sexual energy",
+            "4": "Courage"
+          }
+        }
+      },
+      "queenofwands": {
+        "position2": {
+          "keywords": {
+            "0": "Sexual self-esteem",
+            "1": "passion",
+            "2": "creativity",
+            "3": "Attraction",
+            "4": "freedom"
+          }
+        }
+      },
+      "kingofwands": {
+        "position2": {
+          "keywords": {
+            "0": "Sexual leadership",
+            "1": "experience",
+            "2": "intense passion",
+            "3": "Charisma",
+            "4": "power"
+          }
+        }
+      },
+      "aceofpentacles": {
+        "position2": {
+          "keywords": {
+            "0": "It's a solid start.",
+            "1": "Tensile compatibility",
+            "2": "Trust",
+            "3": "reality",
+            "4": "opportunity"
+          }
+        }
+      },
+      "twoofpentacles": {
+        "position2": {
+          "keywords": {
+            "0": "balance",
+            "1": "rhythm",
+            "2": "flexibility",
+            "3": "entertainment",
+            "4": "acting"
+          }
+        }
+      },
+      "threeofpentacles": {
+        "position2": {
+          "keywords": {
+            "0": "co-operation",
+            "1": "learning",
+            "2": "Tensile compatibility",
+            "3": "building",
+            "4": "It's a threesome."
+          }
+        }
+      },
+      "fourofpentacles": {
+        "position2": {
+          "keywords": {
+            "0": "Sexual conservativeity",
+            "1": "control",
+            "2": "limit",
+            "3": "routine",
+            "4": "Fear of losing"
+          }
+        }
+      },
+      "fiveofpentacles": {
+        "position2": {
+          "keywords": {
+            "0": "sexual deprivation",
+            "1": "coldness",
+            "2": "exclusion",
+            "3": "I'm not wanted.",
+            "4": "Lack of intimacy"
+          }
+        }
+      },
+      "sixofpentacles": {
+        "position2": {
+          "keywords": {
+            "0": "Sexual generosity",
+            "1": "absorption balance",
+            "2": "mutual pleasure",
+            "3": "balance of power",
+            "4": "share"
+          }
+        }
+      },
+      "sevenofpentacles": {
+        "position2": {
+          "keywords": {
+            "0": "assessment",
+            "1": "Patience",
+            "2": "sexual pause",
+            "3": "dissatisfaction",
+            "4": "waiting"
+          }
+        }
+      },
+      "eightofpentacles": {
+        "position2": {
+          "keywords": {
+            "0": "Sexual learning",
+            "1": "mastering",
+            "2": "care",
+            "3": "practice",
+            "4": "discovery"
+          }
+        }
+      },
+      "nineofpentacles": {
+        "position2": {
+          "keywords": {
+            "0": "sexual independence",
+            "1": "Don't be self-sufficient.",
+            "2": "pleasure",
+            "3": "luxury",
+            "4": "body exclusion"
+          }
+        }
+      },
+      "tenofpentacles": {
+        "position2": {
+          "keywords": {
+            "0": "Tensile compatibility",
+            "1": "stability",
+            "2": "Trust",
+            "3": "fertility",
+            "4": "physical satisfaction"
+          }
+        }
+      },
+      "pageofpentacles": {
+        "position2": {
+          "keywords": {
+            "0": "physical discovery",
+            "1": "Tensile curiosity",
+            "2": "learning",
+            "3": "It's a solid start.",
+            "4": "opportunity"
+          }
+        }
+      },
+      "knightofpentacles": {
+        "position2": {
+          "keywords": {
+            "0": "Lust",
+            "1": "Patience",
+            "2": "credibility",
+            "3": "Loyalty",
+            "4": "Slow sex"
+          }
+        }
+      },
+      "queenofpentacles": {
+        "position2": {
+          "keywords": {
+            "0": "sensory",
+            "1": "Lust",
+            "2": "Nutrition",
+            "3": "generosity",
+            "4": "Trust"
+          }
+        }
+      },
+      "kingofpentacles": {
+        "position2": {
+          "keywords": {
+            "0": "Lustful master",
+            "1": "generosity",
+            "2": "physical pleasure",
+            "3": "success",
+            "4": "satisfaction"
+          }
+        }
+      }
+    }
+  },
+  "marriage": {
+    "meanings": {
+      "thefool": {
+        "position1": {
+          "upright": "Your marriage will be shaped by a free start, and the result may be hope, adventure, and the opening of new paths.",
+          "reversed": "Unscheduledness or extreme purity can cloud the outcome of the marriage process, and hasty steps can lead to vulnerability.",
+          "keywords": {
+            "0": "start",
+            "1": "freedom",
+            "2": "hope",
+            "3": "Courage"
+          },
+          "context": "The result is the beginning of a new journey, but the lack of foundation is a risk."
+        },
+        "position10": {
+          "upright": "The madman points to a new beginning freely on the journey of marriage, which opens the door to marriage with courage and pure faith.",
+          "reversed": "Reverse Madman says that unplanning or careless steps can delay the path to marriage, and it needs a more conscious approach.",
+          "keywords": {
+            "0": "start",
+            "1": "Courage",
+            "2": "faith",
+            "3": "freedom",
+            "4": "new path"
+          },
+          "context": "There is a possibility of marriage, but it requires a conscious choice and intent."
+        },
+        "position2": {
+          "upright": "When you wait, be open to new experiences, live with lightness and curiosity, and your journey will give you freedom to approach the right one.",
+          "reversed": "Carelessness or irresponsible steps can make it difficult for you to prepare for the right person, so when you wait, focus on solid foundations instead of rootless.",
+          "keywords": {
+            "0": "innovation",
+            "1": "freedom",
+            "2": "experience",
+            "3": "lightness"
+          },
+          "context": "It's useful to explore life with curiosity while waiting, but instead of irresponsible steps, you need to secure the foundation."
+        },
+        "position3": {
+          "upright": "Crazy points to free and flexible sharing in financial matters, which may be a bold but impulsive tendency to take steps in joint spending.",
+          "reversed": "Reverse Crazy shows recklessness and unprepared behavior in financial matters, which can cause problems in sharing.",
+          "keywords": {
+            "0": "freedom",
+            "1": "risk",
+            "2": "Unplanned",
+            "3": "flexibility"
+          },
+          "context": "There's freedom in sharing, but disorientation can pose a risk, and it's important to find balance."
+        },
+        "position4": {
+          "upright": "It represents a fresh start in commitment and a free spirit, which means that a relationship can be tried without fear, and when you say yes from the heart, the bond will turn into a pleasant journey.",
+          "reversed": "Reverse-Crazy points to indecision and not being ready for commitment. If one of the parties is afraid to take responsibility, the bonding process can be postponed or left on the surface.",
+          "keywords": {
+            "0": "freedom",
+            "1": "start",
+            "2": "Courage",
+            "3": "responsibilities"
+          },
+          "context": "The desire to bond is born with courage, but it must be balanced with a sense of responsibility."
+        },
+        "position5": {
+          "upright": "The likeness of looking at the world with a pure, fresh soul is strong, and you both love spontaneousness and discovery; it's good for you to learn together.",
+          "reversed": "One may need more freedom, the other may need more security. If there is no balance of planlessness, the common rhythm is forced.",
+          "keywords": {
+            "0": "start",
+            "1": "freedom",
+            "2": "curiosity",
+            "3": "game",
+            "4": "Naiveness"
+          },
+          "context": "The love of discovery is a common area, and the need for tempo and security can vary, and when the balance is set, the harmony improves."
+        },
+        "position6": {
+          "upright": "The mad card shows that your family can meet you with a fresh and unprejudiced energy. You are a different and free spirit to them; your originality can make curiosity and acceptance easier. Your sincere and open attitude will open the doors for you.",
+          "reversed": "Reverse-Crazy indicates that your family may perceive you a little too irresponsible or hasty, and you may find it difficult to reassure you in the first place, and you can break that perception by showing a more serious and balanced approach.",
+          "keywords": {
+            "0": "start",
+            "1": "freedom",
+            "2": "curiosity",
+            "3": "prejudice",
+            "4": "balance"
+          },
+          "context": "Your family's approach to you can be released between curiosity and caution, which will speed up the acceptance process of intimacy."
+        },
+        "position7": {
+          "upright": "The madman says that your meeting will take place spontaneously and unexpectedly, and your naturality and your attitude towards flow will draw you together, and your encounter will come with surprise and light energy.",
+          "reversed": "Reverse Madman shows that your encounter may occur in a hasty or careless environment, a meeting that at first seems to be inconsequential can become meaningful in time, and it is important to approach without prejudice.",
+          "keywords": {
+            "0": "start",
+            "1": "Coincidence",
+            "2": "naturality",
+            "3": "lightness",
+            "4": "flow"
+          },
+          "context": "Your introduction can be surprising, light and flowing, and the first impression can deepen, even if it's hasty."
+        },
+        "position8": {
+          "upright": "Crazy shows that you can understand each other through openness and natural intimacy, without prejudice, preventing misunderstandings and strengthening the bond.",
+          "reversed": "The Reverse-Crazy says that talking carelessly and recklessly can make the deal difficult.",
+          "keywords": {
+            "0": "intimacy",
+            "1": "openness",
+            "2": "naturality",
+            "3": "Prejudice"
+          },
+          "context": "Natural clarity adapts; carelessness can lead to misunderstandings."
+        },
+        "position9": {
+          "upright": "Crazy is a man who welcomes the life of a suitable wife with lightness and joy, curious, brave and open to new experiences that keeps your bond fresh.",
+          "reversed": "A reverse crazy, impulsive, difficult wife to take responsibility for tells you that she's not right for you, and you need to avoid the hastyness of losing balance.",
+          "keywords": {
+            "0": "freedom",
+            "1": "fad",
+            "2": "curiosity",
+            "3": "Courage"
+          },
+          "context": "The ideal mate embraces life with lightness and is balanced in responsibility."
+        }
+      },
+      "themagician": {
+        "position1": {
+          "upright": "Your marriage will find a strong basis for the power of communication and willpower, resulting in a creative and compatible partnership.",
+          "reversed": "Miscommunication or manipulation can weaken the healthy ground of marriage, and the result may be a process that questions trust.",
+          "keywords": {
+            "0": "creation",
+            "1": "will",
+            "2": "communication",
+            "3": "power"
+          },
+          "context": "The result depends on the harmony of intent and action, transparency is essential."
+        },
+        "position10": {
+          "upright": "The wizard points to your ability to reach marriage, and you can create your own destiny by expressing your wishes clearly.",
+          "reversed": "The Reverse Wizard may be an obstacle to marriage due to deceptive words or manipulation.",
+          "keywords": {
+            "0": "creation",
+            "1": "expression",
+            "2": "power",
+            "3": "focus",
+            "4": "does not exist."
+          },
+          "context": "Marriage is in your hands; honesty and focus are essential."
+        },
+        "position2": {
+          "upright": "Build your own potential, activate your abilities, use the waiting process to strengthen your personal strength.",
+          "reversed": "It may slow you down to use disorganized energy or self-degradation, and proceed with clear intent and discipline.",
+          "keywords": {
+            "0": "power",
+            "1": "creation",
+            "2": "potential",
+            "3": "expression"
+          },
+          "context": "As you wait, improve your strength, stay focused, prepare you for the right person."
+        },
+        "position3": {
+          "upright": "The wizard represents skill and creativity in financial matters, and you have the potential to manage your joint resources wisely.",
+          "reversed": "The Reverse Wizard points to problems in sharing with manipulation or deception, but without transparency, trust is damaged.",
+          "keywords": {
+            "0": "skill",
+            "1": "creativity",
+            "2": "transparency",
+            "3": "Trust"
+          },
+          "context": "For sharing, intelligence and skill are strong, but if you deviate from honesty, trust is lost."
+        },
+        "position4": {
+          "upright": "The wizard shows that the parties can be strong in their wills and intentions to be joined together, and the right communication and determination creates a strong start to marriage.",
+          "reversed": "If there is a difference between what is said and what is done, it is not reassuring.",
+          "keywords": {
+            "0": "intent",
+            "1": "expression",
+            "2": "determination",
+            "3": "communication"
+          },
+          "context": "Clear intent and consistent steps strengthen commitment."
+        },
+        "position5": {
+          "upright": "There's a lot of energy in ulterior motive and binding words to action, and your communication powers are glowing.",
+          "reversed": "One of your styles of expression may remain magical, the other may remain suspicious, and extremism or silence will shift the common ground.",
+          "keywords": {
+            "0": "intent",
+            "1": "expression",
+            "2": "creation",
+            "3": "consistency",
+            "4": "communication"
+          },
+          "context": "Competitive, communication-based similarities are high, and if transparency is preserved, harmony deepens."
+        },
+        "position6": {
+          "upright": "The wizard shows you that through strong communication and persuasion, you can easily accept you, that the right words and sincere attitude will help you win the heart of your family, and you can bond quickly with your impressive and reassuring energy.",
+          "reversed": "The Reverse Wizard says that your family may be inclined to question your intentions or your words, and if you offer yourself too flashy, your sincerity can be questioned, and a calm and transparent approach will make it easier to accept.",
+          "keywords": {
+            "0": "communication",
+            "1": "convincing",
+            "2": "power",
+            "3": "intimacy",
+            "4": "transparency"
+          },
+          "context": "Your words and attitude will be decisive in the process of acceptance, and sincerity will strengthen confidence."
+        },
+        "position7": {
+          "upright": "The wizard shows that you will find each other through your power of communication and charm, your words and energy will make it special for you to meet, a conversation or a joint project can bring you closer together.",
+          "reversed": "The Reverse Wizard points to an introduction that begins with misunderstandings or deceptive energies, which may be lacking in clarity at first, but in time, real intentions arise, and patience and clarity will ease the process.",
+          "keywords": {
+            "0": "communication",
+            "1": "gravity",
+            "2": "project",
+            "3": "connection",
+            "4": "intimacy"
+          },
+          "context": "Meet will be through communication, openness and intimacy will strengthen the bond."
+        },
+        "position8": {
+          "upright": "The wizard shows that you have high communication power, and with clear intentions and clear words, mutual understanding becomes easier.",
+          "reversed": "The Reverse Wizard indicates that manipulative or exaggerated words can disrupt communication, and transparency and consistency can adapt.",
+          "keywords": {
+            "0": "communication",
+            "1": "clarity",
+            "2": "expressions",
+            "3": "intent"
+          },
+          "context": "Open intentions make the deal easier; games ruin communication."
+        },
+        "position9": {
+          "upright": "The sorcerer is a man of great communication, creative, and decisiveness, and a man who is in harmony with his word, he gives you confidence.",
+          "reversed": "A reverse wizard, manipulative, untrustworthy wife who lives in masks, shows that she is not fit for you, so avoid those who hide their true intentions.",
+          "keywords": {
+            "0": "communication",
+            "1": "creativity",
+            "2": "determination",
+            "3": "Trust"
+          },
+          "context": "The ideal mate is an honest and determined man who is in harmony with his word and action."
+        }
+      },
+      "thehighpriestess": {
+        "position1": {
+          "upright": "In your marriage, deep understanding, insight, and inner connection will emerge, and the result may be safe and spiritual intimacy.",
+          "reversed": "Hidden emotions or secrets can create insecurity as a result of marriage, a lack of clarity can produce distance.",
+          "keywords": {
+            "0": "intuition",
+            "1": "wisdom",
+            "2": "Secret",
+            "3": "spiritual bond"
+          },
+          "context": "The result is a bond based on inner harmony and intuition, but secrets can undermine confidence."
+        },
+        "position10": {
+          "upright": "Mother Superior shows that marriage can be made possible through insight and deep connection, patience and internal guidance are important.",
+          "reversed": "Reverse Mother Superior, secrecy or hidden truths can block the way to marriage.",
+          "keywords": {
+            "0": "intuition",
+            "1": "Secret",
+            "2": "wisdom",
+            "3": "Patience",
+            "4": "connection"
+          },
+          "context": "Marriage will be shaped by trusting intuitive intuition."
+        },
+        "position2": {
+          "upright": "Listen to your intuition and develop your inner self, and inner wisdom will prepare you for the right mate.",
+          "reversed": "Excessive passiveness or introvertibility can make the process difficult. Share intuition and balance open heart.",
+          "keywords": {
+            "0": "intuition",
+            "1": "wisdom",
+            "2": "internal guidance",
+            "3": "balance"
+          },
+          "context": "Intuition is useful while waiting, but instead of closing, there should be sharing."
+        },
+        "position3": {
+          "upright": "The Mother Superior carries the energy of intuition and secrecy in financial matters, deep thinking about resources and conscious elections are at the forefront.",
+          "reversed": "Reverse Mother Superior says secrecy and secrets can create mistrust in financial sharing, lack of clarity can cause problems.",
+          "keywords": {
+            "0": "intuition",
+            "1": "Secret",
+            "2": "wisdom",
+            "3": "openness"
+          },
+          "context": "Intuition and cognitive approach to sharing are useful."
+        },
+        "position4": {
+          "upright": "The High Priestess shows that the desire to be joined will be supported by inner wisdom, that by listening to the hearts of the parties, she can say yes with deep intuition.",
+          "reversed": "Inverted Mother Superior points to the presence of privacy and vague emotions in her desire to connect, and if not spoken clearly, the ground of the bond weakens.",
+          "keywords": {
+            "0": "intuition",
+            "1": "wisdom",
+            "2": "secrecy",
+            "3": "internal direction"
+          },
+          "context": "Connection becomes clear by hearing the sound of the heart."
+        },
+        "position5": {
+          "upright": "It's a similar frequency intuitive, inner-world and privacy, and you understand each other even when you're silent.",
+          "reversed": "One of you can open up and the other can keep a secret.",
+          "keywords": {
+            "0": "intuition",
+            "1": "Secret",
+            "2": "privacy",
+            "3": "Introduction",
+            "4": "Tranquillity"
+          },
+          "context": "A partnership in depth and intuition, if the tendency to keep secrets separates, it needs clarity."
+        },
+        "position6": {
+          "upright": "Mother Superior, it shows that at first your family can perceive you as a little distant but wise, and they will be interested in your intuitive confidence by not talking too much, and in time, your sincerity will be revealed.",
+          "reversed": "The upside-down Mother says that the family might find you introverted or mysterious, which may slow down the acceptance process, and openness and sharing will reduce the distance.",
+          "keywords": {
+            "0": "intuition",
+            "1": "Distance",
+            "2": "wisdom",
+            "3": "Secret",
+            "4": "share"
+          },
+          "context": "Although you may seem a little closed at first, the more you share, the more the family temperature will increase."
+        },
+        "position7": {
+          "upright": "The High Priestess says that your acquaintance may be based on a deep intuition or a spiritual bond, that you recognize each other with feelings, that you bond with more energy than words.",
+          "reversed": "Reverse Mother Superior, there may be secrecy or uncertainty in the introduction, and at first you may find it difficult to open up to each other fully, and in time, the bond deepens.",
+          "keywords": {
+            "0": "intuition",
+            "1": "spirit bond",
+            "2": "Secret",
+            "3": "feeling",
+            "4": "energy"
+          },
+          "context": "Meeting can happen with a strong inner intuition, and in time, openness will strengthen your bond."
+        },
+        "position8": {
+          "upright": "The Mother Superior shows that intuitive harmony is strong, understanding silence and recognizing internal signs makes the deal easier.",
+          "reversed": "Inverted Mother Superior states that extreme silence or secrets can make communication difficult, and safe openness increases harmony.",
+          "keywords": {
+            "0": "intuition",
+            "1": "compatibility",
+            "2": "Secret",
+            "3": "Introduction"
+          },
+          "context": "Silent understanding has high potential; concealment disrupts harmony."
+        },
+        "position9": {
+          "upright": "Abbess, for you, is a wife who is intuitive, deep-thinking, and knows how to keep secrets. Inner wisdom builds a bond in harmony.",
+          "reversed": "Inverted Mother Superior shows that you are unfit for a wife who is extremely mysterious, who hides her emotions, or who avoids communication.",
+          "keywords": {
+            "0": "intuition",
+            "1": "wisdom",
+            "2": "depth",
+            "3": "compatibility"
+          },
+          "context": "The ideal mate is the one who connects with intuitive, deep and reliable sharing."
+        }
+      },
+      "theempress": {
+        "position1": {
+          "upright": "Your marriage will be based on compassion, abundance, and productivity, and the result can be a life that grows in love.",
+          "reversed": "Excessive ownership or lack of self-care may reduce the peace of marriage, and the result may be an unstable bond.",
+          "keywords": {
+            "0": "abundance",
+            "1": "love",
+            "2": "Compassion",
+            "3": "fertility"
+          },
+          "context": "The result is a rich and compassionate bond, but the balance must be maintained."
+        },
+        "position10": {
+          "upright": "The Empress says that the desire to build abundance, love, and family strengthens the potential for marriage.",
+          "reversed": "Reverse Empress, extreme addiction or unstable love can make marriage difficult.",
+          "keywords": {
+            "0": "love",
+            "1": "abundance",
+            "2": "family",
+            "3": "Compassion",
+            "4": "creativity"
+          },
+          "context": "The possibility of marriage is strong; it must be fed with compassion and balance."
+        },
+        "position2": {
+          "upright": "Show compassion for yourself, develop a sense of abundance and fertility, and your self-care process is ready for the mate.",
+          "reversed": "Disregarding extreme addiction or self-worth will make the process difficult. Learn to feed yourself first.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "abundance",
+            "2": "self - care",
+            "3": "creativity"
+          },
+          "context": "Self - care and compassion are important while waiting. This prepares you for a compatible union."
+        },
+        "position3": {
+          "upright": "The Empress represents abundance and generosity, and there is a abundant and supportive energy in sharing financial resources.",
+          "reversed": "Reverse Empress talks about overexpensive spending or unstable sharing.",
+          "keywords": {
+            "0": "abundance",
+            "1": "generosity",
+            "2": "balance",
+            "3": "support"
+          },
+          "context": "There's plenty of energy in sharing, but wastefulness can break the balance."
+        },
+        "position4": {
+          "upright": "The Empress shows that commitment is based on love, compassion, and productivity, and the sides are willing to offer each other peace and security.",
+          "reversed": "Inverse Empress creates the risk of overclaiming or strangulation in the desire to bond, which could make it difficult to establish a permanent bond.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "Trust",
+            "2": "Peace",
+            "3": "fertility"
+          },
+          "context": "Healthy bonding grows in the balance of freedom and compassion."
+        },
+        "position5": {
+          "upright": "Similar tastes in maintenance, productivity, and aesthetics.",
+          "reversed": "Excessive ownership/impulse perception can disrupt the rhythm, and if the self-care balance is not set, satisfaction will fall.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "fertility",
+            "2": "care",
+            "3": "aesthetic",
+            "4": "body"
+          },
+          "context": "Feeding, sensory similarities are strong."
+        },
+        "position6": {
+          "upright": "The Empress says that your family will accept you quickly with your warm, tender and nutritious energy, and the way you embrace love can affect them, and you will be the one to make your family worthy in their eyes.",
+          "reversed": "Reverse Empress, it shows that your family can perceive you as too possessive or too dependent, that sometimes over-appropriate behavior can create a sense of pressure on the other side, and the balanced approach will easily make you accept.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "temperature",
+            "2": "feeding",
+            "3": "family",
+            "4": "balance"
+          },
+          "context": "Your kind and nutritious behavior can be quickly embraced by the family."
+        },
+        "position7": {
+          "upright": "The Empress says that you will meet in an environment of compassion, warmth, and nature, and an event related to family, friends, or nature can bring you together, feeding you an intimate atmosphere.",
+          "reversed": "Reverse Empress, there may be over-appreciation or expectation energy in the introduction, and at first too much emotion can force you to meet, and balance and calm make it easier to meet.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "temperature",
+            "2": "nature",
+            "3": "family",
+            "4": "Closeness"
+          },
+          "context": "Meeting can take place in a warm, intimate, nutritious environment, and the balance of emotions is important."
+        },
+        "position8": {
+          "upright": "The Empress shows that a compassionate and nutritious way of communicating will prevail.",
+          "reversed": "The Reverse Empress says that overclaiming or emotional imposition can cause trouble in communication.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "expression",
+            "2": "Nutrition",
+            "3": "balance"
+          },
+          "context": "Compassionate communication strengthens the agreement; extremism prevents it."
+        },
+        "position9": {
+          "upright": "The Empress is a caring, nutritious, productive wife for you, and her loving approach will give you peace.",
+          "reversed": "Reverse Empress, you're not cut out for someone who's over-addicted or jealous or neglects his own needs.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "feeding",
+            "2": "abundance",
+            "3": "Feminine energy"
+          },
+          "context": "The ideal mate is the loving one who knows how to share."
+        }
+      },
+      "theemperor": {
+        "position1": {
+          "upright": "Your marriage will gain trust, order, and a solid structure, and the result may be a stable union.",
+          "reversed": "Excessive control or rigid behavior can make marriage difficult, and the result may be a oppressive pattern.",
+          "keywords": {
+            "0": "Trust",
+            "1": "layout",
+            "2": "stability",
+            "3": "authority"
+          },
+          "context": "The result is a solid and secure foundation, but extreme rigor can be a problem."
+        },
+        "position10": {
+          "upright": "The Emperor supports the possibility of marriage with order, determination, and strong foundations.",
+          "reversed": "Reverse Emperor, control or rigor may interfere in the path of marriage.",
+          "keywords": {
+            "0": "layout",
+            "1": "Trust",
+            "2": "stability",
+            "3": "determination",
+            "4": "basic"
+          },
+          "context": "Marriage is carried out by safe structure and stability."
+        },
+        "position2": {
+          "upright": "Set proper boundaries for your life, and while you wait, the sense of responsibility will make you mature.",
+          "reversed": "Excessive rigor or control can make the process difficult, and learn flexibility.",
+          "keywords": {
+            "0": "layout",
+            "1": "responsibilities",
+            "2": "Trust",
+            "3": "stability"
+          },
+          "context": "It's useful to maintain order while waiting, but instead of rigidity, approach it in balance."
+        },
+        "position3": {
+          "upright": "The Emperor demonstrates the need for order and clear rules in financial sharing, with discipline and responsibility, and resources are safe.",
+          "reversed": "The Reverse Emperor says that solid control or pressure can make sharing difficult.",
+          "keywords": {
+            "0": "layout",
+            "1": "authority",
+            "2": "responsibilities",
+            "3": "security"
+          },
+          "context": "In sharing discipline and rules bring confidence, over control creates conflict."
+        },
+        "position4": {
+          "upright": "The Emperor points out that commitment can rise above discipline, stability and strong foundations, with a serious sense of responsibility, yes.",
+          "reversed": "The Reverse Emperor shows that the desire to connect can be clouded by extreme control or rigid approach, and one of the parties can feel pressured.",
+          "keywords": {
+            "0": "stability",
+            "1": "authority",
+            "2": "responsibilities",
+            "3": "Trust"
+          },
+          "context": "A solid bond is permanent with a fair balance."
+        },
+        "position5": {
+          "upright": "Your values of structure, order and responsibility are similar, and rules and boundaries are peaceful.",
+          "reversed": "The dose of control language affects proximity.",
+          "keywords": {
+            "0": "layout",
+            "1": "limit",
+            "2": "Trust",
+            "3": "sitting",
+            "4": "responsibilities"
+          },
+          "context": "The search for structure and trust is common, and the more flexible it is, the more adaptive it becomes."
+        },
+        "position6": {
+          "upright": "The Emperor says that your family will accept you with confidence and regularity, and it's a great advantage for them to be seen as a solid and responsible person, and your discipline and your seriousness will give them respect.",
+          "reversed": "The Reverse Emperor points out that the family can perceive you as too strict, stubborn, or controlling, which can create distance, which will speed up the process of acceptance by showing flexibility and softness.",
+          "keywords": {
+            "0": "Trust",
+            "1": "layout",
+            "2": "authority",
+            "3": "flexibility",
+            "4": "respect"
+          },
+          "context": "Your serious and reassuring attitude makes acceptance easier, but rigor can create distance."
+        },
+        "position7": {
+          "upright": "The Emperor says that you will meet in a serious, orderly environment, that work, education, or an official process can bring you together, and trust and stability will strengthen your acquaintance.",
+          "reversed": "Reverse Emperor, there may be a rigidity or a controlling air in your encounter, and at first it can create a formal distance, and you can make a bond that softens over time.",
+          "keywords": {
+            "0": "serious",
+            "1": "work",
+            "2": "layout",
+            "3": "stability",
+            "4": "formality"
+          },
+          "context": "Meeting can be a serious and orderly environment, and in time, intimacy increases."
+        },
+        "position8": {
+          "upright": "The Emperor shows that communication can be adapted to clear boundaries and order.",
+          "reversed": "The Reverse Emperor points out that a strict and bossy language will make the deal difficult, and flexibility increases harmony.",
+          "keywords": {
+            "0": "limit",
+            "1": "layout",
+            "2": "determination",
+            "3": "Trust"
+          },
+          "context": "Clear order strengthens communication; rigidity creates disconnection."
+        },
+        "position9": {
+          "upright": "The Emperor is a regular, protective, and reassuring wife for you, and it gives stability to the ability to take responsibility.",
+          "reversed": "Reverse Emperor, someone with strict rules, controlling, or not flexible is not fit for you.",
+          "keywords": {
+            "0": "Trust",
+            "1": "stability",
+            "2": "protection",
+            "3": "responsibilities"
+          }
+        }
+      }
+    }
+  }
+}

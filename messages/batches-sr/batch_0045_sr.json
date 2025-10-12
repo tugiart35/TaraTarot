@@ -1,0 +1,874 @@
+{
+  "blog": {
+    "cards": {
+      "knight-of-pentacles": {
+        "imageUrl": "/cards/rvs/Knight-piće.vebp"
+      },
+      "queen-of-pentacles": {
+        "name": "Kueen of Pentacles - obilje, saosećanje i siguran prostor",
+        "short_description": "Kraljica pentakla predstavlja plodnost, poverenje i saosećanje. Simbolizuje unutrašnju isceljujuću i negujući energiju koja balansira život i materijalno i duhovno.",
+        "meanings": {
+          "upright": {
+            "general": "Kraljica Pentacla predstavlja odgovornu, praktičnu i ljubavnu energiju. Održava život u ravnoteži i neguje i sebe i one oko njega. Obilje, poverenje i mir su njegovi simboli.",
+            "love": "Predstavlja saosećanje, lojalnost i poverenje u ljubav. Podrška i razumevanje su na čelu u vezama. Približava svom partneru sa pouzdanjem i obezbeđuje posvećenost.",
+            "career": "U pogledu karijere, odgovornosti i osobine osobine su na čelu. Donosi uspeh projektima sa praktičnim i kreativnim rešenjima. I on je i produktivna i podrška figura u radnom okruženju.",
+            "money": "Finansijski, pametne investicije, upravljanje budžetom i energijom obilja dolaze do izražaja. Uzimaju se ispravne korake za osiguranje finansijske sigurnosti i stabilnosti.",
+            "spiritual": "U duhovnom smislu, postoji unutrašnja isceljenje i zaštitna energija. Svoju energiju sa meditacijom, veza sa prirodom i svakodnevnim ritualima."
+          },
+          "reversed": {
+            "general": "Kraljica Pentacles-a obrnuta označava preterano -protektivnost, finansijsku zavisnost ili nedostatak odgovornosti. Gubitak ravnoteže može naštetiti i vama i onima oko vas.",
+            "love": "Zaljubljeni, obrnuti položaj može ukazivati na probleme zbog zavisnosti, ljubomore ili ravnodušnosti. Vratite emocionalnu ravnotežu.",
+            "career": "Neželjeni položaj u karijeri može stvoriti probleme sa nepažljivim na radu ili preterano kontrolirati stavove. Naučite da budete fleksibilni.",
+            "money": "Finansijski, može postojati ekstravagantnost ili ekstremni konzervativizam. Potrebno je da deluje na planirani i svestan način.",
+            "spiritual": "U duhovnom smislu, ne slušajući unutrašnje smernice ili ne upotrebljavanje energije pravilno stvara rizike. Rebalansiti se sami."
+          }
+        },
+        "context": {
+          "mythology": "Kraljica pentakala je povezana sa arhetipovima Demetera i GAIA. To je brojka koja neguje tlo, raste život i distribuira obilje.",
+          "celtic_cross": {
+            "future": "Siguran i produktivan period, i materijalno i duhovno, uskoro će početi. Nastavite sa odgovornošću i oprezom.",
+            "hidden_influences": "Skriveni uticaji su energija saosećanja i stabilnosti. Nakon unutrašnjih smernica je korisno."
+          }
+        },
+        "story": {
+          "title": "Kueen of Pentacles - priča o obilje i saosećanje",
+          "description": "Na kartici je kraljica u sredini prirode, držeći amulet u ruci, okruženi cvećem i plodovima. Zrači samopouzdanje i obilje; Neguje i sebe i one oko njega. Mirna snaga i saosećanje su njegovi alati.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Kraljica pentakala je prikazana u srednjovekovnim i renesansnim tarotima kao saosećajni zaštitnik zemlje i prirode. Simbolizuje obilje i poverenje.",
+          "mystic_title": "Duhovno značenje: saosećajni zaštitnik",
+          "mystic_message": "Duhovno, kraljica Pentekla nas uči da deluje sa ravnotežom i saosećanje. Priđite sebi i drugima sa odgovornošću i ljubavlju.",
+          "cultural_title": "Moderna interpretacija: obilje i praktičnost",
+          "cultural_message": "U savremenom svetu kraljica pentakala je povezana sa finansijskim acumanjima, stvarajući siguran prostor i podržavajuće rukovodstvo. Omogućava materijalnu i duhovno obilje.",
+          "lesson": "Naučite da uravnotežite život sa saosećanjem, odgovornošću i stabilnošću. Obilje raste sa strpljenjem i pažnjom."
+        },
+        "keywords": {
+          "keywords_title": "Ključna reč ključne reči pentacles",
+          "keywords_message": "Kraljica Pentacles Tarot Značenje, kraljica Pentacles Turski, obilje, saosećanje, poverenje, praktičnost, odgovornost, unutrašnji iscelitelj",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Obilje, saosećanje, poverenje, odgovornost, stabilnost, praktičnost, Podrškanost.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Izbegavajte prevladavanje ili ekstravaganciju. Pristupite i sebi i drugima sa ravnotežom.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Koristite svoju unutrašnju isceljujuću energiju; Rasporedite obilje i saosećanje u svoj život."
+        },
+        "associations": {
+          "title": "Kueen of Pentacles Cosmic Links",
+          "astrology": "Devica (praktičnost, odgovornost, usluga)",
+          "numerology": "13 (Obilje, harmonija, zrelost)",
+          "element": "Tlo - poverenje, stabilnost, obilje",
+          "chakra": "Srce (srce čakre) - ljubav i saosećanje"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa kraljicom pentakala",
+          "combinations": [
+            {
+              "card": "Vitez pentacla",
+              "meaning": "Strpljenje i odgovornost obezbeđuju sigurno i efikasno putovanje."
+            },
+            {
+              "card": "Kamat",
+              "meaning": "Kreativna i negovanja energija kombinuju; Materijal i duhovno obilje se povećava."
+            },
+            {
+              "card": "Temperatura",
+              "meaning": "Moguće je uspostaviti ravnotežu sa energijom obilja i saosećanja."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Kueen of Pentacles Affirmations",
+          "affirmation_list": [
+            "Pozivam obilje i verujem u svoj život.",
+            "Ponašam se sa saosećanjem i negujem i ja i druge.",
+            "Preduzimam korake sa odgovornošću i ravnotežom."
+          ]
+        },
+        "cta": {
+          "main": "Provjerite obilje i saosećanje i na sebe i onih koji danas danas!",
+          "micro": "Uzmi uravnotežen i pažljiv korak; Ojačati sigurnosno područje."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja kraljica pentaktila?",
+            "answer": "Predstavlja obilje, saosećanje, poverenje, odgovornost i unutrašnju zarastu energiju. To uči i materijalnu i duhovnu ravnotežu."
+          },
+          {
+            "question": "Šta znači kraljica pentacla-a?",
+            "answer": "Može ukazivati na prevladavanje, finansijsku zavisnost ili nedostatak odgovornosti. Vratite ravnotežu."
+          },
+          {
+            "question": "U kojim situacijama je kartica jaka?",
+            "answer": "Jak je u situacijama koje zahtevaju finansijsku sigurnost, odgovornost, negovanja i stabilnost."
+          }
+        ],
+        "related_cards": [
+          "vitez-pentacles",
+          "kampera",
+          "temperament"
+        ],
+        "imageUrl": "/cards/rvs/kueen-pentacles.vebp"
+      },
+      "king-of-pentacles": {
+        "name": "Kralj pentakla - obilje, rukovodstvo i odgovornost",
+        "short_description": "Kralj stanovnika simbolizuje energiju finansijske sigurnosti, liderstva i odgovornosti. Upravlja svojim životom na siguran, efikasan i uravnotežen način; Omogućava stabilnost i sama i okolini.",
+        "meanings": {
+          "upright": {
+            "general": "Kralj pentakla predstavlja disciplinovanu, pouzdanu i uspešnu cifru. Omogućava materijalnu i duhovnu sigurnost i jača i sebe i svoje okruženje sa svojim strateškim i praktičnim pristupom. Liderstvo, stabilnost i odgovornost su njegove glavne karakteristike.",
+            "love": "Simbolizuje poverenje, lojalnost i dugoročnu posvećenost u ljubavi. On preuzima odgovornost u odnosima i daje podršku i poverenje svom partneru. Može se uspostaviti dugotrajna i čvrsta obveznica.",
+            "career": "Strategija, menadžment i profesionalno rukovodstvo su na čelu u karijeri. Uspešni projekti pružaju planiranje zdravlja i finansijsku sigurnost. On je pouzdana i produktivna figura u radnom okruženju.",
+            "money": "Finansijski, on ulaganja u inteligenciju i iskustvo. Planirani i pažljivi koraci se uzimaju za postizanje obilja i sigurnosti. Finansijska stabilnost i upravljanje resursima su na čelu.",
+            "spiritual": "Duhovno postoji unutrašnja isceljenje i zaštitna energija. Vodi sebe i druge kroz ravnotežu, disciplinu i svesne izbore."
+          },
+          "reversed": {
+            "general": "Kralj pentaklova obrnut znači finansijska ili emocionalna zavisnost, preterano kontrolirati ponašanje ili nedostatak odgovornosti. Nedostatak planiranja i discipline mogu stvoriti rizike.",
+            "love": "Invertirani položaj u ljubavi može ukazivati na nedostatak poverenja, ljubomore ili neodgovorno ponašanje. Otvorena komunikacija i restauriranje ravnoteže je važno.",
+            "career": "Obrnuta pozicija u karijeri ukazuje na gubitak motivacije prekomernom vlašću, hijerarhijom ili finansijskim problemima. Naučite da budete fleksibilni.",
+            "money": "Može postojati finansijska rasipnost, loše upravljanje ili rizična ulaganja. Potrebno je da deluje na planirani i svestan način.",
+            "spiritual": "U duhovnom smislu, ne može da upotrebljavate sopstvenu moć pravilno ili izbegavanje odgovornosti stvara rizike. Rebalansirajte se."
+          }
+        },
+        "context": {
+          "mythology": "Kralj pentakala je povezan sa arhetipovima Plutona i Demetera. Simbolizuje snagu, obilje i liderstvo; Predstavlja poverenje u materijalne i duhovne oblasti.",
+          "celtic_cross": {
+            "future": "Čvrsti period će uskoro početi u finansijskim i profesionalnim sferama. Nastavite sa disciplinom i strategijom, uspeh i sigurnost su osigurani.",
+            "hidden_influences": "Skriveni uticaji su energija osiguranja koja dolazi iz liderske sposobnosti i iskustva. Nakon unutrašnjih smernica je korisno."
+          }
+        },
+        "story": {
+          "title": "Kralj Pentacles - priča o obilje i rukovodstvu",
+          "description": "Na kartici kralj sedi na bogatom prestolu; Ima talisman u ruci i simbolima obilja oko sebe. Odiši poverenje, disciplinu i liderstvo. Stvara stabilnost u materijalnom i duhovnom poljima; Neguje i sebe i svoje okruženje. Odgovornost i strategija su njegovi alati.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Kralj pentakla je prikazan u srednjem veku i renesansnim tarotima kao mudri kralj koji je odgovoran za zemlju i materijalnu snagu. Simbolizuje energiju liderstva i obilje.",
+          "mystic_title": "Duhovno značenje: poverenje i disciplina",
+          "mystic_message": "Duhovno, kralj Pentekla vas uči da deluje sa odgovornošću, strategijom i stabilnošću. Vodite i sebe i druge; Održavajte poverenje i obilje.",
+          "cultural_title": "Savremeni komentar: Finansijski i profesionalni vođa",
+          "cultural_message": "U modernom svetu kralj pentaklama predstavlja pouzdan vođa, finansijski strateg i odgovoran menadžer u poslovnom svetu. Omogućava materijalnu i moralnu sigurnost.",
+          "lesson": "Učite vođstvo u materijalnim i duhovnim oblastima kroz disciplinu, samopouzdanje i strategiju. Obilje i odgovornost idu ruku pod ruku."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči kralja pentakala",
+          "keywords_message": "Kralj Pentacles Tarot značenje, kralj pentakla na turskom, liderstvu, obilju, odgovornost, poverenje, praktičnost, unutrašnji iscelitelj",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Obilje, liderstvo, poverenje, odgovornost, strategija, disciplina, ravnoteža.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Izbegavajte prekomernu kontrolu ili nedostatak odgovornosti. Biti uravnotežen u materijalnim i duhovnim oblastima.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Koristite svoju unutrašnju isceljujuću i energiju lidera; Raširite obilje i samopouzdanje."
+        },
+        "associations": {
+          "title": "Talisman King Cosmic Linkovi",
+          "astrology": "Jarac (liderstvo, disciplina, uspeh)",
+          "numerology": "14 (liderstvo, odgovornost, poverenje)",
+          "element": "Zemlja - poverenje, stabilnost, obilje",
+          "chakra": "Koren (korenska čakra) - sigurnost i uzemljenje"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa kraljem stanovnika",
+          "combinations": [
+            {
+              "card": "Vitez pentacla",
+              "meaning": "Strategija i odredno se kombinuju kako bi stvorili snažan napredak."
+            },
+            {
+              "card": "Kueen of Pentacles",
+              "meaning": "Energija obilja i saosećanja podržavaju liderstvo i stabilnost."
+            },
+            {
+              "card": "Sunce",
+              "meaning": "Liderstvo u kombinaciji sa uspehom i poverenje donosi pozitivne rezultate."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Kralj potvrda pentakla",
+          "affirmation_list": [
+            "Sigurno vršim svoje vođstvo i odgovornost.",
+            "Pozivam materijalnu i duhovnu sigurnost u svoj život.",
+            "Prolazim napred sa disciplinom i strategijom i privučem obilje."
+          ]
+        },
+        "cta": {
+          "main": "Ojačati svoje vođstvo i samopouzdanje, upravljajte svojim životom u ravnoteži!",
+          "micro": "Danas donesu odluku i izgradite samopouzdanje i uspeh sprovođenjem vaše strategije."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja kralj pentaklama?",
+            "answer": "Predstavlja delujući strateški sa vođstvom, odgovornošću, materijalnom i moralnom sigurnošću."
+          },
+          {
+            "question": "Šta znači obrnuti kralj pentakla?",
+            "answer": "Invertirani položaj može ukazivati na pretjeranu kontrolu, nedostatak odgovornosti ili finansijskih rizika. Vratite ravnotežu."
+          },
+          {
+            "question": "U kojim situacijama je kartica jaka?",
+            "answer": "Jak je u situacijama koje zahtevaju finansijsku sigurnost, liderstvo, odgovornost i strategija."
+          }
+        ],
+        "related_cards": [
+          "kraljica-pentacles",
+          "temperament",
+          "car"
+        ],
+        "imageUrl": "/cards/rvs / king-piće.vebp"
+      },
+      "ace-of-cups": {
+        "name": "ACE CUPS - Novi emocionalni počeci",
+        "short_description": "ACE of CUPS predstavlja novi početak za emocionalnu obnovu, ljubav i duhovnu svest. Označava period kada se srce otvori i emocije pojačavaju.",
+        "meanings": {
+          "upright": {
+            "general": "Ace šolja donosi nova emocionalna iskustva, unutrašnji mir i ljubavni počeci. Pratite svoje srce i otvoreno izrazite svoja osećanja. Ova kartica je takođe poziv za duhovnu vezu i kreativnu energiju.",
+            "love": "Zaljubljeni, ACE of Cups znači nove odnose, romantične predloge ili emocionalnu obnovu u postojećem odnosu. To je period kada se povećanje ljubavi i razumevanja.",
+            "career": "Emocionalno zadovoljstvo i harmonija na poslu su na čelu u karijeri. Odnosi sa kolegama postaju jače, dobijate inspiraciju za kreativne projekte.",
+            "money": "U materijalnim pitanjima emocionalno zadovoljavajuće i skladne mogućnosti dolaze do izražaja. Odlučite sa intuicijom i pobedite kroz intimne odnose.",
+            "spiritual": "Duhovno, asa šoljica je idealno vreme za unutrašnju svest, meditaciju i duhovna putovanja. Otvorite svoje srce i pustite da toče energije."
+          },
+          "reversed": {
+            "general": "ACE of Cups preokrenuti ukazuje na rizik od emocionalnih blokada, isključenje u odnosima ili nedostatku ljubavi. Ne odlaže se izražavajući svoja osećanja, dozvoli unutrašnju obnovu.",
+            "love": "Obrnuta pozicija u ljubavi može stvoriti probleme u vezi zbog nedostatka komunikacije, emocionalne nestabilnosti ili efekta starih rana.",
+            "career": "U karijeri, možda postoji nedostatak emocionalne motivacije ili disharmonije u radnim odnosima. Budite oprezni i uravnoteženi.",
+            "money": "U finansijskim pitanjima postoji rizik da ne vidi mogućnosti ili pogrešne odluke zbog emocionalnih uticaja.",
+            "spiritual": "Duhovno, mogu biti emocionalne blokade ili unutrašnje zatvaranje. Meditirati da povećate svoju unutrašnju svest."
+          }
+        },
+        "context": {
+          "mythology": "ACE of Cups predstavlja emocionalnu obnovu i duhovno širenje energijom vodenog elementa. U drevnoj mitologiji povezana je sa svežim počecima u pričama o ljubavi, saosećanje i intuiciji.",
+          "celtic_cross": {
+            "future": "U budućnosti možete naići na nove emocionalne iskustva i intimne odnose. Kad vam je srce otvoreno, prilika vas pronalaze.",
+            "hidden_influences": "Occultni uticaji su povezani sa intuicijom, prošlim iskustvima i duhovnim pripremama. Ova svest podržava nove početke."
+          }
+        },
+        "story": {
+          "title": "ACE CUPS - Otvaranje srca",
+          "description": "Na kartici se ručica proširuje šolju sa neba; Vodeni preliv iz Cup-a i Lotus Cveće cvetaju oko njega. Ovo simbolizuje emocionalnu i duhovnu obnovu, otvaranje srca i ljubavi. To je poziv za nove odnose i emocionalnu svest.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "ACE of Cups smatra se početnom karticom Tarotove manje Arcane i simbol je emocionalnog i duhovnog potencijala. U srednjovekovnim i renesansnim palumima, duhovna obnova je opisana sa simbolima vode i kupa.",
+          "mystic_title": "Duhovno značenje: ljubav i inspiracija",
+          "mystic_message": "Duhovno je ACE CUPS-a uvodnik za otvaranje srca i pristupa inspiraciji i intuiciji. Možete osetiti energiju svog srca kroz meditaciju i svest.",
+          "cultural_title": "Moderna interpretacija: Emocionalno i duhovno obnovanje",
+          "cultural_message": "U savremenom svetu, ACE CUPS predstavlja sveže početke koje se odnose na nove emocionalne veze, intimne odnose i duhovnu svest. Slušajte svoje unutrašnje smernice i izrazite svoja osećanja.",
+          "lesson": "Otvorite svoje srce, izrazite svoja osećanja i ostavite nove početke. Obogatite svoj život sa ljubavlju i empatijom."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči Ace of Hearts",
+          "keywords_message": "Ace of Cups Tarot Značenje, Ace Cups Turski, emocionalni početak, nova ljubav, intuicija, duhovna svest",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Emocionalna obnova, ljubav, saosećanje, inspiracija, duhovna svest, novi počeci.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Budite strpljivi prilikom donošenja emocionalnih odluka; Verujte svojoj intuiciji i svom srcu.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Otvorite svoje srce, oslobodite svoje emocije i prigrlite duhovnu energiju."
+        },
+        "associations": {
+          "title": "ACE CUPS COSMIC CONNECTIONS",
+          "astrology": "Rak (emocionalna dubina, empatija, negovanja)",
+          "numerology": "1 (novi početak, potencijal, prilika)",
+          "element": "Voda - emocije, intuicija, empatija",
+          "chakra": "Srčana čakra - ljubav i veza"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa ACE of CUPS",
+          "combinations": [
+            {
+              "card": "Dvoje šoljica",
+              "meaning": "Ojačani su novi odnosi i obveznice, harmonija i ravnoteža se postižu."
+            },
+            {
+              "card": "Kralj šoljica",
+              "meaning": "Počeci su jači sa zrelim uputstvima i emocionalnom podrškom."
+            },
+            {
+              "card": "Stranica kupa",
+              "meaning": "Intuitivna svest raste sa novim emocionalnim porukama i inspiracijom."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Ace of Hearts Affirmacije",
+          "affirmation_list": [
+            "Otvorim svoje srce i oslobodim svoje emocije.",
+            "Spreman sam i otvoren za nove emocionalne i duhovne početke.",
+            "Obogaćujem svoj život ljubavlju, empatijom i inspiracijom."
+          ]
+        },
+        "cta": {
+          "main": "Otvorite svoje srce i prigrlite nove emocionalne početke!",
+          "micro": "Danas se izražavaju ljubav i empatijom; zakoračite u odnos ili unutrašnje putovanje."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja ACE of Hearts?",
+            "answer": "Simbolizuje svježe započinjanje emocionalne obnove, nove veze, ljubav i duhovnu svest."
+          },
+          {
+            "question": "Šta znači preokrenuti as šolje?",
+            "answer": "Invertirani položaj ukazuje na emocionalne blokade, uticaj starih rana ili rizik da ne mogu da vide nove mogućnosti."
+          },
+          {
+            "question": "U kojim situacijama je kartica jaka?",
+            "answer": "Snažno je u situacijama koje zahtevaju nove emocionalne iskustva, ljubav, intimne odnose i duhovnu svest."
+          }
+        ],
+        "related_cards": [
+          "dvoje čaša",
+          "kralj šoljica",
+          "Page-of-of Cups"
+        ],
+        "imageUrl": "/cards/rvs / toace-cups.vebp"
+      },
+      "two-of-cups": {
+        "name": "Dvoje šoljica - obveznice i partnerstva",
+        "short_description": "Dvoje šoljica predstavljaju okupljene dve duše i odnose zasnovane na ljubavi, sklada i obostranog razumevanja. Emocionalne obveznice postaju sve jače i partnerstva produbljuju.",
+        "meanings": {
+          "upright": {
+            "general": "Dve šolje simbolizuje međusobno poverenje, ljubav i harmoniju između dve osobe. Ova kartica pokazuje da su ojačane ravnotežu, razumevanje i iskrenost u odnosima. Nova partnerstva, prijateljstva ili romantične veze mogu se formirati.",
+            "love": "Zaljubljenost, harmonija, međusobna atrakcija i emocionalna posvećenost su na čelu. Odnos se može preći na novi nivo ili može početi nova romantična veza.",
+            "career": "U karijeri se ojačavaju poslovna partnerstva, timski rad i saradnja. Zajednički ciljevi i skladni odnosi donose uspeh.",
+            "money": "U finansijskim pitanjima, zajednička ulaganja ili saradnja zasnovana na poverenju dolazi do izražaja. Finansijska bilans se postiže.",
+            "spiritual": "Duhovno, veza, saosećanje i empatija se razvijaju od srca. Dve šolje predstavlja snažne veze sa srodnicima ili duhovnim prijateljima."
+          },
+          "reversed": {
+            "general": "Dve šolje obrnute znači nesporazumi, nedostatak komunikacije ili emocionalne nestabilnosti. Možda će biti potrebno uspostaviti ravnotežu i iskrenost u odnosima.",
+            "love": "Zaljubljena, obrnuta pozicija znači razdvajanje, emocionalno odvajanje ili neravnotežu. Važno je ojačati komunikaciju.",
+            "career": "Možda postoji nespojivost u karijeri, nerazumevanju ili nedostatku poverenja u partnerstvo. Problem je rešen iskrenom i otvorenom komunikacijom.",
+            "money": "Može doći do gubitka finansijskog poverenja ili nestabilnosti u saradnji. Dajte jasne sporazume.",
+            "spiritual": "Duhovno, može doći do pauze u emocionalnim obveznicama ili gubitkom unutrašnje ravnoteže. Okrenite se u svoju intuiciju i povežite se iz srca."
+          }
+        },
+        "context": {
+          "mythology": "Tvoje šolje je simbol jedinstva i ljubavi. U drevnoj mitologiji predstavlja svete sindikate u kojima se bogovi i heroji vezuju od srca.",
+          "celtic_cross": {
+            "future": "Novo partnerstvo, romantična veza ili prijateljstvo vas očekuje u budućnosti. Pristup sa harmonijom i ljubavlju.",
+            "hidden_influences": "Latentni efekti rezultat međusobnog razumevanja, poverenja i otvorene komunikacije. Ova energija neguje odnose."
+          }
+        },
+        "story": {
+          "title": "Dva šolja - jedinstvo srca",
+          "description": "Na kartici se dve figure drže za ruke i dele šolju između njih. Imaju lavovu glavu i krila na njima, pokazujući da ova unija sadrži i moć i svetost. Ova kartica je simbol ljubavi i harmonije.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Dvoje šoljica korišćeno je kao simbol braka, prijateljstva i svetog partnerstva od srednjeg veka. To je karta ljubavi jedinstva u istoriji Tarota.",
+          "mystic_title": "Duhovno značenje: jedinstvo iz srca",
+          "mystic_message": "Duhovno, njih dvoje šoljica predaje okupljene dve duše, međusobno razumevanje i bezuslovnu ljubav. Ovo je čisti ekspresija energije jedinstva.",
+          "cultural_title": "Moderana interpretacija: Partnerstvo i sklad",
+          "cultural_message": "U modernom svetu, dve šolje predstavljaju međusobno poverenje u romantične odnose, poslovna partnerstva ili prijateljstva. Održavajte ravnotežu i iskrenost u odnosima.",
+          "lesson": "Povežite se, slušajte sa empatijom i podelite sa ljubavlju. Pravi jedinstvo dolazi iz srca."
+        },
+        "keywords": {
+          "keywords_title": "Dvoje od ključnih reči šoljica",
+          "keywords_message": "Dvoje šoljica Tarot znači, dve šolje turske, ljubavi, partnerstva, harmonije, ravnoteže, veza",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Jedinstvo, harmonija, ljubav, partnerstvo, poverenje, međusobno poštovanje.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Prekomerna zavisnost ili očekivanje mogu stvoriti neravnotežu u vezi. Održavajte ravnotežu sa otvorenom komunikacijom.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Realize duhovne veze, prigrlite jedinstvo sa ljubavlju."
+        },
+        "associations": {
+          "title": "Dve čaše kosmičke veze",
+          "astrology": "Rak i Vaga (harmonija, ljubav, emocionalna veza)",
+          "numerology": "2 (jedinstvo, ravnoteža, partnerstvo)",
+          "element": "Voda - emocije, harmonija, veza",
+          "chakra": "Srčana čakra - ljubav i harmonija"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa dva srca",
+          "combinations": [
+            {
+              "card": "Ljubavnici",
+              "meaning": "Duboke emocionalne veze, odnos srodne duše ili snažno partnerstvo."
+            },
+            {
+              "card": "Ace srca",
+              "meaning": "Novi romantični počeci ili emocionalna obnavljanje u odnosima."
+            },
+            {
+              "card": "Svet",
+              "meaning": "Donosi završetak, harmonija i dugoročna obaveza."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Kup dvostruke potvrde",
+          "affirmation_list": [
+            "Ja formiram ljubavne obveznice i osećam harmoniju u svojim odnosima.",
+            "Komuniciram sa obostranim razumevanjem i empatijom.",
+            "Ja nosim pravo jedinstvo i ljubav u svom srcu."
+          ]
+        },
+        "cta": {
+          "main": "Povežite se s ljubavlju, ojačati harmoniju i međusobno razumevanje!",
+          "micro": "Otvoreno komunicirajte ili delite srdačno, hvala vam najmilijima danas."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavljaju dve šolje?",
+            "answer": "Predstavlja ljubav, ravnotežu, međusobno razumevanje i duhovno skladištenje. To je unija dve duše."
+          },
+          {
+            "question": "Šta znači obrnuti dve šolje?",
+            "answer": "Invertirani položaj ukazuje na nedostatak komunikacije, pitanja poverenja ili emocionalne neravnoteže. Govoreći otvoreno donosi rešenja."
+          },
+          {
+            "question": "U kojim situacijama je kartica jaka?",
+            "answer": "To je jak tokom perioda odnosa, partnerstva, saradnje i emocionalnog lepljenja."
+          }
+        ],
+        "related_cards": [
+          "Ace-Cups",
+          "ljubitelji",
+          "svet"
+        ],
+        "imageUrl": "/cards/rvs/ii-cups.vebp"
+      },
+      "three-of-cups": {
+        "name": "Tri šolje - proslava i zajedništvo",
+        "short_description": "Tri šolje predstavlja vreme proslave pune ljubavi, prijateljstva i deljenja. Zajednica je ispunjena energijom prijateljstva i jedinstva.",
+        "meanings": {
+          "upright": {
+            "general": "Tri šolje simbolizuje odnose pune proslave, prijateljstva i harmonije. To je period u kojem se deli uspeh, sreća i zajedništvo. Osvečene su vezu zajednice, proslave uobičajenih ciljeva i dijeljenje ljubavi.",
+            "love": "Zaljubljena, radosna zajedništvo, emocionalna harmonija i srećne veze su na čelu. Ako ste samci, u vašem društvenom krugu se može pojaviti romantična prilika.",
+            "career": "Energija timskog rada, proslave uspeha i saradnje dominira karijerom. Projekti snose plodom, uspeh se deli.",
+            "money": "Finansijski, predstavlja period u kojem se proslavljaju dobici, deljenje povećava se, a profit se izrađuje od saradnje.",
+            "spiritual": "Duhovno, to znači svest o zajednici, deljenje i ujedinjenje sa pozitivnom energijom. Duhovna ravnoteža se povećava sa meditacijama ili krugom prijatelja."
+          },
+          "reversed": {
+            "general": "Tri trupa preokrenuta ukazuju na nesporazume, napetost u prijateljstvu ili prekomernoj proslavi. Održavajte emocionalnu ravnotežu i otvorenost u odnosima.",
+            "love": "Zaljubljeni, obrnuti položaj može ukazivati na trokutastu dinamiku, konfuziju ili energiju ljubomore. Otvorena i iskrena komunikacija je važna.",
+            "career": "U karijeri, možda je disharmonija ili nedostatak komunikacije u timu. Osjećaj da uspeh nije deljeni može stvoriti nemire.",
+            "money": "Finansijski, prekomerna potrošnja ili nekontrolisana zabava može dovesti do neravnoteže. Obratite pažnju na uštede.",
+            "spiritual": "Duhovno, može postojati osećaj prekida veze ili gubitka unutrašnje ravnoteže. Vratite se sebi i ponovo pronađite svoj unutrašnji mir."
+          }
+        },
+        "context": {
+          "mythology": "Tri šolje je povezana sa plesom boginja i simbolom svetog sestrinstva u drevnim mitologijama. Predstavlja prijateljstvo, ženstvenu energiju i zajedničku sreću.",
+          "celtic_cross": {
+            "future": "Razvoj koji vas donosi proslave, uspeh ili sreću u vašem društvenom krugu očekuje vas u budućnosti.",
+            "hidden_influences": "Latentni uticaji su o obveznicama prijateljstva, podršci zajednice i pozitivnom energijom."
+          }
+        },
+        "story": {
+          "title": "Tri šolje - ples radosti",
+          "description": "Na kartici tri žene plešu sa šoljicama u rukama. Predstavlja energiju punu radosti, proslave i deljenja. Ovo je trijumf duha jedinstva i zajednice.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Tri šolje je simbol prijateljstva, jedinstva i ženstvene slavljene energije tokom istorije. U tarot palumima je uvek karta sreće i svesti zajednice.",
+          "mystic_title": "Duhovno značenje: Svest jedinstva",
+          "mystic_message": "Duhovno, tri šolje predstavlja svest jedinstva, deljenje ljubavi i veze iz srca. Biti zajedno sa drugima donosi izlečenje.",
+          "cultural_title": "Moderna interpretacija: Deljenje i prijateljstvo",
+          "cultural_message": "U modernom svetu, tri šolje označava društvene veze, prijateljstva i deljenje dostignuća. Stvaranje radosti zajedno u zajednici neguje dušu.",
+          "lesson": "Shvatite snagu proslave, deljenja i prijateljstva. Rast raste onako kako se deli."
+        },
+        "keywords": {
+          "keywords_title": "Tri ključne reči šalice",
+          "keywords_message": "Tri šolje Tarot znači, tri šolje turskog, prijateljstva, proslave, jedinstva, zajednice, sreća",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Prijateljstvo, jedinstvo, sreća, proslava, deljenje, uspeh, ljubav.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Prekomerna zabava ili površne veze mogu stvoriti neravnotežu. Održavajte iskrenost.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Podelite svoju radost, doživite prijateljstvo i svest o zajednici. Duša se zaceljuje kako deli."
+        },
+        "associations": {
+          "title": "Tri šolje kosmičkih veza",
+          "astrology": "Rak (porodica, jedinstvo, emocionalno poverenje)",
+          "numerology": "3 (jedinstvo, rast, proslava)",
+          "element": "Voda - emocije, ljubav, zajednica",
+          "chakra": "Srce (srce čakre) - ljubav i jedinstvo"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa troje šoljica",
+          "combinations": [
+            {
+              "card": "Sunce",
+              "meaning": "Energija proslave i sreće dostiže svoj vrhunac; Uspeh donosi veliku radost."
+            },
+            {
+              "card": "Devet srca",
+              "meaning": "Ispunjavanje želja se slavi sa prijateljima ili bliskim krugom."
+            },
+            {
+              "card": "Šest šoljica",
+              "meaning": "Ponovno unošenje starih prijateljstava ili proslavljanja veze iz prošlosti."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Tri šolje potvrde",
+          "affirmation_list": [
+            "Delim svoju sreću i uspeh sa ljubavlju.",
+            "Jakam svoje okruženje energijom prijateljstva i jedinstva.",
+            "Proslavljam lepote života i delimo svoju radost."
+          ]
+        },
+        "cta": {
+          "main": "Podelite svoju sreću, proslavite svoja prijateljstva i uzgajajte svoju radost!",
+          "micro": "Pošaljite ljubavnu poruku ili malo proslave prijatelju danas."
+        },
+        "faq": [
+          {
+            "question": "Šta tri šolje predstavljaju?",
+            "answer": "Tri šolje predstavlja prijateljstvo, jedinstvo, slavlje i deljenje ljubavi. Jača svest zajednice."
+          },
+          {
+            "question": "Šta znači obrnute tri šolje?",
+            "answer": "Invertirani položaj ukazuje na prekomernu proslavu, probleme sa komunikacijama ili nesporazumima. Važno je održavati ravnotežu."
+          },
+          {
+            "question": "U kojim situacijama je kartica jaka?",
+            "answer": "Jak je tokom perioda uspeha, društvenih događaja, prijateljstava i proslava."
+          }
+        ],
+        "related_cards": [
+          "šest šoljica",
+          "devet šoljica",
+          "sunce"
+        ],
+        "imageUrl": "/cards/rvs/ii-cups.vebp"
+      },
+      "four-of-cups": {
+        "name": "Četiri šolje - unutrašnji odraz i svest",
+        "short_description": "Četiri šolje predstavljaju introspekciju, emocionalnu mirnoću i potragu za svešću. Vreme je da ponovo slušate svoje srce i pronađite unutrašnje zadovoljstvo.",
+        "meanings": {
+          "upright": {
+            "general": "Četiri šolje ukazuju na period emocionalne stagnacije, dosade ili introspekcije. Možda ćete biti emocionalno zatvoreni, ne ostvarivanje mogućnosti da život može da ponudi. Ova kartica je poziv da otvorite svoje srce i deluje s svešću.",
+            "love": "Zaljubljeni, može postojati emocionalni odvajanje, ravnodušnost ili nezadovoljstvo. Vreme je da dovede u pitanje istinske potrebe vašeg srca.",
+            "career": "Možda ćete osećati nedostatak motivacije ili nezadovoljstva u vašoj karijeri. Budite otvoreni za nove mogućnosti, jer može doći neočekivana ponuda.",
+            "money": "Finansijski, vaša trenutna situacija možda nije dovoljno za vas. Ali mozda se primjećuje nova prilika.",
+            "spiritual": "Duhovno, možete osećati emocionalnu zatvaranje ili unutrašnju prazninu. Vežbanje i prakse razmišljanja vraćaju vas u ravnotežu."
+          },
+          "reversed": {
+            "general": "Pretvorena Četiri šolje znači povećanu svest i priznavanje novih prilika. Sada ste spremni da izađete iz svoje ljuske i ponovo se ponovo povežete.",
+            "love": "Zaljubljeni, vreme je da povrati interesovanje i energetiku i ožive emocionalne veze. Novi odnos takođe može doći do izražaja.",
+            "career": "To znači da postane svesna novih prilika u vašoj karijeri, pronalaženje inspiracije i preduzimanja akcije.",
+            "money": "Novi izvori i mogućnosti prihoda mogu nastati u finansijskim pitanjima. Uzmi svoju šansu.",
+            "spiritual": "To je proces duhovnog oživljavanja i početak da čuje uputstvo srca."
+          }
+        },
+        "context": {
+          "mythology": "Četiri šolje je simbol povezan sa meditacijom i pažnjom. U drevnim mističnim tradicijama predstavlja proces duše koja se nalazi u tišini.",
+          "celtic_cross": {
+            "future": "Uskoro ćete naići na priliku koja će vas probuditi i da vas duhovno oživljava.",
+            "hidden_influences": "Skriveni efekti mogu biti zbog toga što ne slušaju nečiji unutrašnji glas ili emocionalno zatvaranje."
+          }
+        },
+        "story": {
+          "title": "Četiri šolje - odgovor u tišini",
+          "description": "Na kartici je lik sedi pod drvetom, gledajući u tri šolje ispred njega, ali ne primećuje da se četvrta čaša proširila sa neba. Ovo opisuje unutrašnju nemir i nedostatak svesti. Morate da otvorite svoje srce da biste videli darovi da bi se život mogao ponuditi.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Četiri šolje je bila povezana sa duhovnom prazninom i potragom za smislom u srednjovekovnim mistikama. Ova kartica je poziv da se naučite ponovo primetiti.",
+          "mystic_title": "Duhovno značenje: emocionalni ronit",
+          "mystic_message": "Duhovno, ova kartica vas uči da nađete smernice u unutrašnjoj tišini. Slušanje vašeg srca i primećujući lepotu ovog trenutka oslobađa vas.",
+          "cultural_title": "Moderna interpretacija: svest i emocionalno stanje",
+          "cultural_message": "Kada se osećate izgubljeno u tempu modernog života, četvoro šalica vas podseća da se zaustavite, duboko dišete i primetite da će malo čuda biti da ponudi.",
+          "lesson": "Čak i u emocionalnom praznini, univerzum možda otvara nova vrata za vas. Otvorite svoje srce i primjetite."
+        },
+        "keywords": {
+          "keywords_title": "Četiri ključne reči u šoljima",
+          "keywords_message": "Četiri šolje Tarot znači, četiri šolje turskih, svesti, emocionalna stagnacija, okrećući se prema unutra, videći mogućnosti",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Svest, unutrašnji mir, reavaking, emocionalna ravnoteža.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Ne ignorišite šta život nudi; Otvorite svoje srce i ponovo povežite.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "U tišini je odgovor. Slušajte svoje srce, jer vas vaš unutrašnji vodič zove."
+        },
+        "associations": {
+          "title": "Četiri čaše kosmičke veze",
+          "astrology": "Rak (emocionalna dubina, unutrašnje poverenje)",
+          "numerology": "4 (ravnoteža, strpljenje, stabilnost)",
+          "element": "Voda - emocije, uvid, svest",
+          "chakra": "Srčana čakra - prihvatanje i saosećanje"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa četiri srca",
+          "combinations": [
+            {
+              "card": "Ace srca",
+              "meaning": "Počinju nova emocionalna svest i otvaranje srca."
+            },
+            {
+              "card": "Osam šoljica",
+              "meaning": "Vreme je da se odmaknete od emocionalnih situacija koje vas više ne zadovoljavaju."
+            },
+            {
+              "card": "Presuda",
+              "meaning": "Nova stranica se otvara duhovnim buđenjem i svešću."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Kup četiri potvrde",
+          "affirmation_list": [
+            "Otvoren sam da primećujem lepotu da život može da ponudi.",
+            "Slušam svoje srce u tišini i verujem svom unutrašnjem vodiču.",
+            "Svaka recesija je prilika za svest."
+          ]
+        },
+        "cta": {
+          "main": "Opet otvorite svoje srce, pronađite svoj put sa svetlom svesti!",
+          "micro": "Danas kreirajte miran trenutak, dišite i primjetite šta vas univerzum mora ponuditi."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavljaju četiri šolje?",
+            "answer": "Četiri šolje nas podseća na emocionalnu introspekciju, nedostatak svesti i potrebu da se prepoznaju nove mogućnosti."
+          },
+          {
+            "question": "Šta znači obrnuto četvoro pehara?",
+            "answer": "Invertirani položaj simbolizuje povećanu svest, ponovnu inspiraciju i emocionalno otvaranje."
+          },
+          {
+            "question": "U kojim situacijama je kartica jaka?",
+            "answer": "To je jak tokom perioda potrage za unutrašnju ravnotežu, vežbe svesti i emocionalne obnove."
+          }
+        ],
+        "related_cards": [
+          "Ace-Cups",
+          "osam šoljica",
+          "presuda"
+        ],
+        "imageUrl": "/cards/rvs/iv-cups.vebp"
+      },
+      "five-of-cups": {
+        "name": "Pet šoljica - gubitak, prihvatanje i isceljenje",
+        "short_description": "Petorica šoljica predstavlja emocionalni uticaj prošlih gubitaka i razočarenja. Ali to je takođe početak procesa isceljenja, oproštenja i nadate nade ponovo.",
+        "meanings": {
+          "upright": {
+            "general": "Petorica šoljica simbolizuje osećaj gubitka, tuge ili žaljenja. Ali ova kartica je poziv za primjetu dobrote koja ostaje, a ne samo bol. Pustite teret prošlosti i otvorite svoje srce da biste ponovo voleli.",
+            "love": "Zaljubljeni, prošli rane, razdvajanje ili ogorčenici mogu da se ponovi. Ali postupak isceljenja, opraštajući i usuđujući se ponovo i da poverenje ponovo počinje.",
+            "career": "U karijeri možete osetiti neuspeh ili razočaranje. Ali usredsredite se na mogućnosti koje ste ostavili, a ne na ono što ste izgubili. Svaki kraj je novo učenje.",
+            "money": "Finansijski gubici ili pogrešne investicije možda su vas uznemirile u prošlosti. Međutim, ovo iskustvo vam omogućava da u budućnosti donesete informisane odluke.",
+            "spiritual": "Duhovno, ova kartica vas podseća na emocionalno isceljivanje i prepuštanje prošlosti. Od bola dolazi mudrost; Ovo omogućava zrelovu dušu."
+          },
+          "reversed": {
+            "general": "Petorica preokrećenih šoljica znači oproštaj, isceljivanje i nadate se ponovo. Vreme je da izađete iz senke prošlosti i vratite se na svetlost.",
+            "love": "Zaljubljena, obrnuta pozicija ukazuje da je emocionalno zatvaranje gotovo i spreman ste da se ponovo povežete ili otvorite svoje srce.",
+            "career": "Počinje proces oporavka karijere, novi početak i povrati izgubljeni motivaciju.",
+            "money": "To znači da se prebacivanje finansijski i pretvori se na nove mogućnosti. Lekcije su naučene iz starih grešaka.",
+            "spiritual": "Duhovno, pocjenjuje proces praštanja prošlosti i postizanja unutrašnjeg mira. Otvaraju se vrata za isceljenje."
+          }
+        },
+        "context": {
+          "mythology": "Petorica šoljica simbolizuje nastavu gubitka. Baš kao i u drevnim mitologijama, heroji prolaze kroz mračnu dolinu i dostižu robe, ova kartica takođe opisuje transformaciju duše.",
+          "celtic_cross": {
+            "future": "Proces obnove nakon gubitka ubrzo može početi. Emocionalna ravnoteža i nada se vraćaju.",
+            "hidden_influences": "Držeći se prošlosti ili okrivljavanje sebe može biti nesvesno ometajući napredak."
+          }
+        },
+        "story": {
+          "title": "Pet šoljica - od tame do zore",
+          "description": "Na kartici je figura u crnom ogrtaču gleda na tri prevrnuta šolje dok dva netaknuta šolja stoje iza njega. Ovo simbolizuje da i posle gubitka još uvek postoji nada i ljubav. Most iza je put iz prošlosti do budućnosti.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Petorica šoljica viđena je kao simbol žalosti i unutrašnje transformacije u srednjem veku. Ova kartica nas podseća da je prihvatanje gubitka neophodan korak ka duhovnoj zrelosti.",
+          "mystic_title": "Duhovno značenje: oprostite i ponovo se roditi",
+          "mystic_message": "Duhovno, ova kartica nas uči da oprostimo da prošlost boli i otvori srce da se ponovo voli. Pravo isceljivanje dolazi od prihvatanja gubitka.",
+          "cultural_title": "Moderna interpretacija: isceljenje i svest",
+          "cultural_message": "U savremenom svetu pet šoljica predstavlja proces svesti i transformacije koji sledi emotivni gubitak. Bol vam priprema da se rodite.",
+          "lesson": "Fokusirajte se na ono što ste ostavili, a ne na ono što ste izgubili. Izlečenje počinje svešću i prihvatanjem."
+        },
+        "keywords": {
+          "keywords_title": "Pet polja ključnih reči",
+          "keywords_message": "Petorica čaše Tarot znači, pet šoljica Turski, gubitak, isceljivanje, oprost, ponovno rođenje, nada",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Prihvatanje, oproštenje, svest, obnovljena nada, emocionalna zrelost.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Ostanite zaglavljeni u prošlosti može da vas ometaju. Otvorite svoje srce da oprostite i počnete ispočetka.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Svaki gubitak je transformacija. Pronađite isceljivanje u čast prošlosti."
+        },
+        "associations": {
+          "title": "Petorica šoljica kosmičke veze",
+          "astrology": "Scorpio (transformacija, emocionalna dubina, isceljivanje)",
+          "numerology": "5 (promena, izazov, transformacija)",
+          "element": "Voda - emocije, isceljenje, regeneracija",
+          "chakra": "Srčana čakra - oprost i ljubav"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa pet šoljica",
+          "combinations": [
+            {
+              "card": "Smrt",
+              "meaning": "Počinje veliki proces transformacije i ponovnog rođenja. Stari bolovi se završavaju."
+            },
+            {
+              "card": "Šest šoljica",
+              "meaning": "Počinje proces sklapanja mira sa prošlošću i nostalgičnim isceljivanjem."
+            },
+            {
+              "card": "Sunce",
+              "meaning": "Posle mraka dolazi svetlo. Nadam se da se rodi."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Petorica CUPS potvrda",
+          "affirmation_list": [
+            "Prošlost ostavljam ljubavlju i otvorim svoje srce oproštenju.",
+            "Svaki gubitak mi je ponovo rodilo, jer se život neprestano transformiše.",
+            "Imam moć da vidim svetlost čak i u mraku."
+          ]
+        },
+        "cta": {
+          "main": "Poštujte prošlost, otvorite svoje srce da se izlečite i budete ponovo rođeni!",
+          "micro": "Danas oprostite svoje dosadašnje osećaje, priđite sebi sa ljubavlju i sećate se unutrašnjeg mira."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja pet šoljica?",
+            "answer": "Petorica šoljica predstavlja suočavanje sa gubitkom, žaljenjem i emocionalnim razočaranjem, praćeno lečenjem."
+          },
+          {
+            "question": "Šta znači obrnuti pet šoljica?",
+            "answer": "Invertirani položaj simbolizuje proces zarastanja, oproštaja i nadate se ponovo. Srce počinje da se otvara."
+          },
+          {
+            "question": "U kojim situacijama je kartica jaka?",
+            "answer": "Moćan je u lekovima post-gubici, emocionalnom transformaciji i procesima oproštenja."
+          }
+        ],
+        "related_cards": [
+          "smrt",
+          "šest šoljica",
+          "sunce"
+        ],
+        "imageUrl": "/cards/rvs/v-cups.vebp"
+      },
+      "six-of-cups": {
+        "name": "Šest šoljica - prošlost, nevinost i saosećanje",
+        "short_description": "Šest šoljica predstavlja uspomene u detinjstvu, nostalgiju i čistu ljubav. Ova kartica simbolizuje mir sa prošlošću, sećajući se nevinosti i saosećanja koje dolaze iz srca.",
+        "meanings": {
+          "upright": {
+            "general": "Šest šoljica predstavlja emocionalne veze, sećanja i stare prijateljstva iz prošlosti. Ova kartica kaže da bi ljubav, ljubaznost i deljenje trebalo da se setim. Nevinost, mir i veze iz srca su na čelu.",
+            "love": "Zaljubljeni, prošla veza ili bivši ljubavnik mogu ponovo doći do njega. Pored toga, čistiji, iskreni i razumejni period započinje u trenutnom odnosu.",
+            "career": "U karijeri, to znači učenje iz prethodnih iskustava, prevladavajući stare poslovne kontakte ili oživljavanje nostalgičnih projekata.",
+            "money": "Finansijski, može doći do povratka u prošlim ulaganjima ili starim mogućnostima. Zarada zasnovana na lojalnosti i poverenja dolazi do izražaja.",
+            "spiritual": "Duhovno, šest šoljica traži od vas da se ponovo povežete sa svojim unutrašnjim detetom i sećate se čiste ljubavi. Izlečite svoje srce ljubavnom stranom prošlosti."
+          },
+          "reversed": {
+            "general": "Šest šoljica preokrećeno je da prebiva previše u prošlosti ili se zaglavio u nostalgiji. Vreme je da napustite prošlost i vratite se na sadašnjost.",
+            "love": "Zaljubljeni, moguće je zasjeniti stare odnose ili imati emocionalne rane iz prošlosti da utiču na sadašnjost. Usredsredite se na sadašnji trenutak.",
+            "career": "Stanovanje na prošlih grešaka u vašoj karijeri neće vas premestiti napred. Primenite lekcije naučene za kreiranje novih vizija.",
+            "money": "Finansijski, može postojati tendencija da se dovede u pitanje prethodne odluke. Usredsredite se na današnje mogućnosti, a ne prošlost.",
+            "spiritual": "Duhovno, možda ste zanemarili svoje unutrašnje dete. Slušajte to sa ljubavlju, ali nemojte se izgubiti u prošlosti."
+          }
+        },
+        "context": {
+          "mythology": "Šest šoljica povezan je sa božanskim dečijim arhetipovima koji predstavljaju najčišći oblik ljubavi. Opisuje duhovnu snagu nevinosti i velikodušnost koji dolazi od srca.",
+          "celtic_cross": {
+            "future": "Uskoro možete naići na nekoga ili sećanje iz svoje prošlosti i iskusiti emocionalno isceljivanje kroz ovo iskustvo.",
+            "hidden_influences": "Emocionalne veze ili neriješene uspomene iz prošlosti mogu uticati na svoje odluke u sadašnjosti."
+          }
+        },
+        "story": {
+          "title": "Šest šoljica - sećanje na nevinost",
+          "description": "Na kartici, jedno dete rukama još jednu šolju; Okolina je puna cveća. Ova scena simbolizuje čistu ljubav, ljubaznost i toplu energiju prošlosti. Ova kartica vas traži da svoje srce ponovo izvučete na čistu ljubav prošlosti.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Šest šoljica je jedna od kartica u srednjovekovnim palubama koje predstavljaju nevinu stranu ljubavi, mir detinjstva i snagu prijateljstva.",
+          "mystic_title": "Duhovno značenje: Mir sa unutrašnjim detetom",
+          "mystic_message": "Duhovno, ova kartica vam kaže da biste se trebali setiti svog unutrašnjeg deteta i prihvatiti je ljubavlju. Čiste emocije su ključ duhovnog isceljenja.",
+          "cultural_title": "Moderna interpretacija: Nostalgija i emocionalno isceljivanje",
+          "cultural_message": "U haosu savremenog života, šest šoljica podseća nas na toplinu prošlosti i vrednost jednostavnih radosti. Ovo je kartica duše koja donosi mir sa prošlošću.",
+          "lesson": "Poštujte prošlost ljubavlju, ali ne ostanite tamo. Sećate se ponovo današnju nevinost."
+        },
+        "keywords": {
+          "keywords_title": "Šest ključnih reči u šoljima",
+          "keywords_message": "Šest šoljica Tarot znači, šest čaša turskih, nostalgija, prošlost, unutrašnje dete, saosećanje, pomirenje",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Nevinost, nostalgija, ljubav, pomirenje, saosećanje, unutrašnji mir.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Sećate se mira prošlosti, ali ne propustite današnje mogućnosti.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Prigrlite svoje unutrašnje dete, jer je ona izvor svetlosti u vašem srcu."
+        },
+        "associations": {
+          "title": "Šest šoljica kosmičkih veza",
+          "astrology": "Rak (porodica, emocionalno poverenje, prošlost)",
+          "numerology": "6 (harmonija, ljubav, ravnoteža)",
+          "element": "Voda - emocije, saosećanje, veza",
+          "chakra": "Srce (srce čakre) - ljubav i saosećanje"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa šest srca",
+          "combinations": [
+            {
+              "card": "Pet šoljica",
+              "meaning": "Počinje proces zarastanja i oproštenja iz prošlosti."
+            },
+            {
+              "card": "Sunce",
+              "meaning": "Radost iz detinjstva, nevina sreća i unutrašnji mir dolaze do izražaja."
+            },
+            {
+              "card": "Devet srca",
+              "meaning": "Duboko mir dolazi kao rezultat emocionalnog zadovoljstva i mir sa prošlošću."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Šest čeških potvrda",
+          "affirmation_list": [
+            "Poštujem svoju prošlost sa ljubavlju i krećem naprijed u budućnost sa mirom.",
+            "Ja sam u miru sa svojim unutrašnjim detetom; Zagrljavam svoju nevinost sa ljubavlju.",
+            "Nostalgija u mom srcu mi se ponovo nadam i inspiraciju."
+          ]
+        },
+        "cta": {
+          "main": "Sjećate se topline prošlosti, prigrlite svoje unutrašnje dete sa ljubavlju!",
+          "micro": "Danas se sećate sećanja dečijeg pamćenja koja vas je učinila srećnom i osmehom sa tim osećajem."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja šest čaše?",
+            "answer": "Šest šoljica predstavlja pomirenje sa prošlošću, nostalgijom, čistom ljubavlju i isceljenjem unutrašnjeg deteta."
+          },
+          {
+            "question": "Šta znači obrnuti šest šoljica?",
+            "answer": "Ponovna pozicija ukazuje da je zaglavljena u prošlosti ili starim emocionalnim prilozima koji utiču na sadašnjost. Pustite se i vratite se na sadašnjost."
+          },
+          {
+            "question": "U kojim situacijama je kartica jaka?",
+            "answer": "Moćan je tokom perioda suočavanja u prošlosti, praštanju i pronalaženje unutrašnjeg mira."
+          }
+        ],
+        "related_cards": [
+          "petorokopi",
+          "devet šoljica",
+          "sunce"
+        ],
+        "imageUrl": "/cards/rvs / vi-cups.vebp"
+      },
+      "seven-of-cups": {
+        "name": "Sedam šoljica - snovi, izbori i stvarnost",
+        "short_description": "Sedam šoljica predstavlja izgubljeno u izobilju, alugu mnogih opcija i potreba za razlikovanjem fantazije i stvarnosti. Ova kartica je simbol iluzije kao i inspiracija.",
+        "meanings": {
+          "upright": {
+            "general": "Sedam šoljica ukazuje da vas mnoge mogućnosti okružuju. Ali nije svaka opcija stvarna; Neki su snovi, neke su prilike. Ova kartica vas podseća da koristite svoju intuiciju i izaberite put koji odgovara vašem srcu.",
+            "love": "Više od jedne mogućnosti zaljubljene, zbrke ili idealizovane veze mogu doći do izražaja. Intuitivno prepoznaju pravu vezu.",
+            "career": "Mnogi projekti ili ideje u vašoj karijeri mogu vas uzbuditi. Međutim, fokusiranje na sve njih odjednom može stvoriti konfuziju; Podesite prioritet.",
+            "money": "Možda postoje različite finansijske mogućnosti, ali nisu svi pouzdani. Izaberite planove zasnovane na čvrstim temeljima, a ne snovima.",
+            "spiritual": "Duhovno, sedam šoljica predstavlja vreme za prolese iluzija i ostvarivanje istine. Slušajte svoje srce, raspršite oblake svog uma."
+          },
+          "reversed": {
+            "general": "Preokrećena sedmica šoljica ukazuje da je neizvesnost gotova i vreme je da date jasnu odluku. Snovi se počinju da se materijaliraju.",
+            "love": "Zaljubljena, konfuzija prestaje; Sada znate šta želite. Spremite se za pravu emocionalnu vezu.",
+            "career": "U karijeri se ciljevi postaju jasni i fokusirajte se. Donošenje odluka dovodi do uspeha.",
+            "money": "Finansijski, prave investicije pravite pažljivu analizu. Više nije vreme za snove, vreme je za akciju.",
+            "spiritual": "Duhovno se iluzije rastvaraju i povećava svesnost. Pronaći ćete prave smernice."
+          }
+        },
+        "context": {
+          "mythology": "Sedam šoljica je simbol heroja koji luta u svetu snova u mitologiji. Ova kartica prikazuje i snagu mašte i zamku iluzije; Potrebna je hrabrost da dođe do istine.",
+          "celtic_cross": {
+            "future": "Ubrzo ćete se suočiti sa mnogim opcijama za odlučivanje. Jasnoća će doći sa intuitivnom svešću.",
+            "hidden_influences": "Nesigurnost, strah ili sanjarina mogu zamagliti vaš pravi potencijal."
+          }
+        },
+        "story": {
+          "title": "Sedam šoljica - u dolini snova",
+          "description": "Na kartici se brojka gleda u sedam srca plutaju u vazduhu ispred njega. Svaka šolja ima simbol: zmija, blago, kruna, zmaj, srce ... Ova slika opisuje um zaglavljene između želja, strahova i snova.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Sedam šoljica naziva se \"iluzijam izbora\" i \"Put snova\" u srednjovekovnim tarotskim pakućima. Ova kartica simbolizuje kako ljudski um oscilira između želje i straha."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,796 @@
+{
+  "marriage": {
+    "meanings": {
+      "threeofwands": {
+        "position9": {
+          "keywords": [
+            null,
+            null,
+            "napredak",
+            "horizont"
+          ],
+          "context": "Pogodan je supružnik sa širokim horizontama."
+        },
+        "position4": {
+          "upright": "Tri štapića ukazuju na širenje u prilogu i otvorenosti novim mogućnostima. Proširivanje horizonta povećava želju da raste zajedno.",
+          "reversed": "Okolište Tri štapića mogu ukazivati na uski ugovornost u prilogu ili neuspehu da vide mogućnosti. Ograničena perspektiva slabi vezu.",
+          "keywords": [
+            "ekspanzija",
+            "prilika",
+            "horizont",
+            "napredak",
+            "vizija"
+          ],
+          "context": "Prilog uspeva na širokim horizontima i mogućnostima."
+        }
+      },
+      "fourofwands": {
+        "position1": {
+          "upright": "Zaključak; Biće proslave, stabilnost i siguran dom u braku.",
+          "reversed": "Mogu se primetiti privremena nepravilnost ili nedostatak bračnih rituala.",
+          "keywords": [
+            "proslava",
+            "stabilnost",
+            "gnezdo",
+            "poverenje"
+          ],
+          "context": "Zaključak; stabilan i srećan brak. Manje nepravilnosti moraju se prevazići."
+        },
+        "position10": {
+          "upright": "Četiri štapića pokazuju da je brak moguć uz energiju proslave i jedinstva. Postoji snažna kućna baza.",
+          "reversed": "Poremećaj ili nepotpunost mogu otežati bračne planove. Rituali i stabilnost podržavaju postupak.",
+          "keywords": [
+            "proslava",
+            "jedinstvo",
+            "gnezdo",
+            "stabilnost",
+            "osnova"
+          ],
+          "context": "Postoji čvrst dom i proslava energija za brak."
+        },
+        "position2": {
+          "upright": "Proslavite svoje uspehe, ojačati svoje društvene veze. Budite u zajednici dok čekate.",
+          "reversed": "Prekomerna društvenost ili usamljenost čini proces teškim. Pronađite ravnotežu.",
+          "keywords": [
+            "proslava",
+            "uspeh",
+            "zajednica",
+            "društvenost"
+          ],
+          "context": "Korisno je ojačati društvene veze dok čekate."
+        },
+        "position3": {
+          "upright": "Osnovana je zajednička struktura za pragu, kuću i troškove proslave. Fondacija je čvrsta.",
+          "reversed": "Nepotpunost i neorganizacija stvaraju napetost na ceremoniji / budžetu za domaćinstvo.",
+          "keywords": [
+            "osnova",
+            "prag",
+            "stabilnost",
+            "proslava"
+          ],
+          "context": "Prvo temelj, zatim ceremonija; Narudžba je važna."
+        },
+        "position5": {
+          "upright": "Vaša želja da pripadate, slavite i sastanete se na pragu slično je. Ako je temelj čvrsto, ceremonija dolazi naravno.",
+          "reversed": "Vaša percepcija rangiranja praga može biti drugačija. Polovina priprema dovodi do razočaranja.",
+          "keywords": [
+            "prag",
+            "proslava",
+            "osnova",
+            "pripadnik",
+            "kuću"
+          ],
+          "context": "Pragoli ritual uobičajeni. Rangiranje mora biti sačuvano."
+        },
+        "position6": {
+          "upright": "Porodica vas može videti kao nekoga ko donosi duh proslave i jedinstva. Vaš harmoničan i topli stav daje porodici osećaj pripadnosti. Vaša želja za druženje sa njima olakšava proces prihvatanja.",
+          "reversed": "Porodica vas može doživljavati kao daleke ili nedostaje osećaj pripadnosti. Nepoznata sa proslavama otežava prihvatanje. Ostaviti se pouzdano poverenje.",
+          "keywords": [
+            "proslava",
+            "pripadnik",
+            "raport",
+            "jedinstvo",
+            "fuzija"
+          ],
+          "context": "Harmonija i pripadaju olakšavanje prihvatanja. Percepcija udaljenosti stvara otpor u porodici."
+        },
+        "position7": {
+          "upright": "Četiri štapića ukazuju na sastanak u vreme proslave ili stabilnosti. Osnovno poverenje gradi obveznica.",
+          "reversed": "Preokrećena četvorica štapića sugeriše da neraspoloženje ili nepotpunost mogu da se sastaju sastanke. Rituali olakšavaju lepljenje.",
+          "keywords": [
+            "proslava",
+            "stabilnost",
+            "osnova",
+            "jedinstvo"
+          ],
+          "context": "Upoznate se u slavljenoj atmosferi. Stabilnost jača vezu."
+        },
+        "position8": {
+          "upright": "Četiri štapića ukazuje na proslavu, stabilnost i harmoniju u komunikaciji. Poverenje izgrađeno zajedno olakšava sporazum.",
+          "reversed": "Pretvoreni četvorici štapića ukazuje da privremeni nemiri mogu da napreduju komunikaciju. Male proslave ojačavaju vezu.",
+          "keywords": [
+            "stabilnost",
+            "proslava",
+            "poverenje",
+            "raport"
+          ],
+          "context": "Slavljenje zajedno produbljuje razumevanje."
+        },
+        "position9": {
+          "upright": "Četiri štapiće vam odgovara kao partnera koji ceni jedinstvo i deli slavlje i mir.",
+          "reversed": "Okrećeno četiri štampe, neko ko je bez harmonije ili nemirnosti nije pogodan za vas.",
+          "keywords": [
+            "jedinstvo",
+            "proslava",
+            "mir",
+            "solidarnost"
+          ],
+          "context": "Supružnik sa osećajem jedinstva je pogodan."
+        },
+        "position4": {
+          "upright": "Četiri štapića ukazuju na proslavu, mir i čvrste temelje u posvećenosti. Osjećaj jedinstva i stabilnosti olakšava se reći da.",
+          "reversed": "Preokrećena četiri štapića mogu ukazivati na privremenu nelagodu ili nedostatak temelja u prilogu. Disonanca otežava govor.",
+          "keywords": [
+            "proslava",
+            "jedinstvo",
+            "mir",
+            "stabilnost",
+            "osnova"
+          ],
+          "context": "Pričvršćivanje je ojačano mirovnim i čvrstim temeljima."
+        }
+      },
+      "fiveofwands": {
+        "position1": {
+          "upright": "Zaključak; Razlike u mišljenju i sitnih rivalstva će dodati dinamičnost u odnos.",
+          "reversed": "Prekomerni sukob može da napreduje ishod braka. Mora da postoje uobičajene tačke.",
+          "keywords": [
+            "sukob",
+            "rivalstvo",
+            "dinamičnost",
+            "rešenje"
+          ],
+          "context": "Zaključak; Brak je ojačan argumentima. Mora da ostane rešenje fokusirano."
+        },
+        "position10": {
+          "upright": "Petorica štapića ukazuje na manje sukobe i takmičenje na putu ka braku. Ovaj proces se može prevazići zdravim dijalogom.",
+          "reversed": "Suzbijena napetost može oštetiti brak. Treba tražiti rešenje otvorene komunikacije.",
+          "keywords": [
+            "sukob",
+            "rivalstvo",
+            "dijalog",
+            "prihod",
+            "razlika"
+          ],
+          "context": "Zdravo upravljanje sukobom je neophodno za brak."
+        },
+        "position2": {
+          "upright": "Konkurencija držite zdravom, rešavanje sukoba. Naučite harmonično takmičenje dok čekate.",
+          "reversed": "Prekomerna konkurencija ili sukob komplicira proces. Izaberite saradnju.",
+          "keywords": [
+            "rivalstvo",
+            "sukob",
+            "raport",
+            "rešenje"
+          ],
+          "context": "Dok čekate, korisno je naučiti zdravu konkurenciju."
+        },
+        "position3": {
+          "upright": "Vježbaju borbe i konkurencija ometaju od novca. Pravila bi trebalo da budu jasna.",
+          "reversed": "Strukturirani dijalog čini napetosti produktivnim.",
+          "keywords": [
+            "sukob",
+            "rivalstvo",
+            "vladavina",
+            "olakšavanje"
+          ],
+          "context": "Ako se shvate pravila igre, efikasnost se povećava."
+        },
+        "position5": {
+          "upright": "Slični ste u takmičenju na živahnu raspravu i igru. Ako postavljate pravila, energija kreativno teče.",
+          "reversed": "Nezakonit sukob može biti naporan. Bez olakšavanja, sličnost se pretvara u sukob.",
+          "keywords": [
+            "spor",
+            "igra",
+            "rivalstvo",
+            "vladavina",
+            "energija"
+          ],
+          "context": "Igralište se deli. Neka pravilo bude jasno."
+        },
+        "position6": {
+          "upright": "Porodica može da vas nađe energičnom, ali konkurentnim povremeno. Izražavanje zdravih diskusija pomoći će vam da budete prihvaćeni. Važno je zadržati konstruktivnu sukobu.",
+          "reversed": "Porodica vas može pregledati kao svađa ili pogrešno. Nepotrebna napetost otežava prihvatanje. Krutost podriva poverenje.",
+          "keywords": [
+            "energija",
+            "argument",
+            "rivalstvo",
+            "izraz",
+            "raport"
+          ],
+          "context": "Konstruktivni izraz povećava prihvatanje. Nepotrebne borbe otežavaju prihvatanje."
+        },
+        "position7": {
+          "upright": "Pet štapića ukazuje na sastanak u konkurentnom ili probijnom okruženju. Energetski sukob gradi obveznica.",
+          "reversed": "Reversed Pet štapića sugeriše da penzioni zatezanje može da opterene obveznice. Strukturirani dijalog otvara postupak.",
+          "keywords": [
+            "rivalstvo",
+            "proba",
+            "sukob",
+            "dijalog"
+          ],
+          "context": "Upoznaćete se u energetskom okruženju. Dijalog jača vezu."
+        },
+        "position8": {
+          "upright": "Petorica štapića ukazuje da sukobi ideja mogu doći do zaruka u komunikaciji. Zdrava diskusija ojačava harmoniju.",
+          "reversed": "Petorica štapića obrnuta ukazuje da potisnuti gnev može naštetiti komunikaciji. Otvoreni i konstruktivni razgovor olakšava razumevanje.",
+          "keywords": [
+            "sukob",
+            "argument",
+            "energija",
+            "komunikacija"
+          ],
+          "context": "Zdrava diskusija ojačava ugovor."
+        },
+        "position9": {
+          "upright": "Petorica štapića je pogodna za vas, partnera koji je konstruktivno konkurentno i prihvata razlike.",
+          "reversed": "Pet štapića preokrećeno: neko ko se stalno svađa ili je nespojiv nije pogodan za vas.",
+          "keywords": [
+            "rivalstvo",
+            "razlika",
+            "raport",
+            "konstruktivnost"
+          ],
+          "context": "Supružnik koji konstruktivno koristi razlike je pogodno."
+        },
+        "position4": {
+          "upright": "Pet štapića ukazuje na prihvatanje razlika i konstruktivnih diskusija u prilogu. Ako saradnja dođe do izražaja umesto konkurencije, veza postaje jača.",
+          "reversed": "Invertirano pet štapića, postoji stalan rizik od sukoba ili nesklada u prilogu. Borbe otežavaju reći da.",
+          "keywords": [
+            "razlika",
+            "rivalstvo",
+            "raport",
+            "konstruktivnost",
+            "sukob"
+          ],
+          "context": "Vezivanje je ojačano korišćenjem konstruktivnih razlika; Sukob slabi."
+        }
+      },
+      "sixofwands": {
+        "position1": {
+          "upright": "Zaključak; Uspeh, pobeda i obostrana ponosa ukrašće će vaš brak.",
+          "reversed": "Nedostatak uvažavanja može procijediti ishod braka. Treba proslaviti male uspehe.",
+          "keywords": [
+            "pobeda",
+            "uspeh",
+            "diskrecija",
+            "ponos"
+          ],
+          "context": "Zaključak; Brak je pun pobeda postignuti zajedno. Ali to bi trebalo da se ceni."
+        },
+        "position10": {
+          "upright": "Šest štapića pokazuje da je put ka braku otvoren energijom uspeha i prepoznavanja. Bićete nagrađeni za svoj trud.",
+          "reversed": "Nedostatak priznavanja ili uočene neadekvatnosti može otežati proces braka. Treba proslaviti male uspehe.",
+          "keywords": [
+            "uspeh",
+            "prepoznavanje",
+            "motivacija",
+            "pobeda",
+            "napredak"
+          ],
+          "context": "Energija uspeha i proslave je jaka za brak."
+        },
+        "position2": {
+          "upright": "Poštujte svoja dostignuća, steći poverenje. Smatrajte se dragocenim dok čekate.",
+          "reversed": "Prekomerni ponos ili strah od neuspeha čini proces težak. Budi ponizan.",
+          "keywords": [
+            "uspeh",
+            "poverenje",
+            "čast",
+            "vrednost"
+          ],
+          "context": "Pomoćno je poštovanju dostignuća dok čekate."
+        },
+        "position3": {
+          "upright": "Vidljivi uspeh i prepoznavanje povećavaju kolektivnu motivaciju. Pobeda množine kada se deli.",
+          "reversed": "Nevidljivi rad proizvodi ogorčenost; Transparentna diskrecija je od suštinskog značaja.",
+          "keywords": [
+            "pobeda",
+            "diskrecija",
+            "motivacija",
+            "vidljivost"
+          ],
+          "context": "Zapišite priču o uspehu zajedno."
+        },
+        "position5": {
+          "upright": "Slično srce u deljenju prepoznavanja i vidljivih uspeha. Zajedno slavite pobedu.",
+          "reversed": "Nevidljivi rad može stvoriti ogorčenost. Uspostaviti transparentan sistem procene.",
+          "keywords": [
+            "diskrecija",
+            "pobeda",
+            "vidljivost",
+            "motivacija",
+            "podrška"
+          ],
+          "context": "Zajednička radost je snažna. Neka rad ostane vidljiv."
+        },
+        "position6": {
+          "upright": "Porodica vas mogu videti kao uspešne i uvažene. Vaše pobede i vidljivi uspesi ubrzavaju vaše prihvatanje. Uspeh stvara ponos u porodici.",
+          "reversed": "Porodica vas može doživljavati kao preuveličana ili arogantna. Nedostatak zahvalnosti čini prihvatanje teško. Previše ponosa stvara distancu u porodici.",
+          "keywords": [
+            "uspeh",
+            "diskrecija",
+            "vidljivost",
+            "pobeda",
+            "ponos"
+          ],
+          "context": "Uspeh stvara poverenje u porodicu. Prekomerni ponos otežava prihvatanje."
+        },
+        "position7": {
+          "upright": "Šest štapića ukazuje na sastanak u vreme uspeha i prepoznavanja. Vidljiva pobeda raste obveznica.",
+          "reversed": "Prekoračenje šest štapića sugeriše da nedostatak uvažavanja može da oblakne obveznice. Otvoreni deljenje olakšava proces.",
+          "keywords": [
+            "uspeh",
+            "prepoznavanje",
+            "pobeda",
+            "vidljivost"
+          ],
+          "context": "Upoznate se u trenutku pobede. Prepoznavanje jača vezu."
+        },
+        "position8": {
+          "upright": "Šest štapića ukazuje na priznanje i prividni uspeh u komunikaciji. Međusobni odobrenje raste skladan.",
+          "reversed": "Šest štapića preokrećeno ukazuje da nedostatak uvažavanja može da se otežava. Male pohvale jačaju vezu.",
+          "keywords": [
+            "diskrecija",
+            "uspeh",
+            "odobrenje",
+            "komunikacija"
+          ],
+          "context": "Podeljenje zahvalnosti povećava usaglašenost."
+        },
+        "position9": {
+          "upright": "Šest štapića je pogodno za vas, supružnika koji deli vaše uspehe i s ponosom stoji pored vas.",
+          "reversed": "Šest štapića preokrenulo je, neko ko je ljubomoran i nepodržavan nije pogodan za vas.",
+          "keywords": [
+            "uspeh",
+            "ponos",
+            "podrška",
+            "deljenje"
+          ],
+          "context": "Supružnik koji deli vaš uspeh je pogodan."
+        },
+        "position4": {
+          "upright": "Šest štapića ukazuje na uspeh, uvažavanje i ponos u prilogu. Bond produbljuje kada stranke dele uspehe jedni drugima.",
+          "reversed": "Šest štapića obrnuto može ukazivati na nedostatak uvažavanja ili ljubomore u prilogu. Nedostatak podrške slabi Bond.",
+          "keywords": [
+            "uspeh",
+            "diskrecija",
+            "deljenje",
+            "ponos",
+            "podrška"
+          ],
+          "context": "Vezivanje je ojačano deljenjem uspeha."
+        }
+      },
+      "sevenofwands": {
+        "position1": {
+          "upright": "Zaključak; Pokazaćete odlučnost i zagovaranje da biste zaštitili svoj brak.",
+          "reversed": "Umor i ranjivost mogu komplicirati ishod braka.",
+          "keywords": [
+            "stabilnost",
+            "odbrana",
+            "borba",
+            "snaga"
+          ],
+          "context": "Zaključak; Brak zaštićen i branio. Ali umor mora da se upravlja."
+        },
+        "position10": {
+          "upright": "Sedam štapića ukazuje na potrebu održavanja vašeg položaja i borbe sa opredeljenjem prema braku. Upornost donosi uspeh.",
+          "reversed": "Umor ili odbrana može ometati bračni napredak. Dobijanje podrške je korisno.",
+          "keywords": [
+            "rezolucija",
+            "odbrana",
+            "stabilnost",
+            "borba",
+            "doslednost"
+          ],
+          "context": "Za brak potrebno je napredovati sa upornošću i odlučnošću."
+        },
+        "position2": {
+          "upright": "Odbranite svoj položaj, zaštitite svoja uverenja. Stanite snažno dok čekate.",
+          "reversed": "Prekomerna defanzivnost ili plahost otežava proces. Igrajte uravnoteženu odbranu.",
+          "keywords": [
+            "odbrana",
+            "položaj",
+            "verovanje",
+            "snaga"
+          ],
+          "context": "Pomoćno je braniti svoj položaj dok čekate."
+        },
+        "position3": {
+          "upright": "Možda će biti potrebno braniti položaj i postaviti granice. Pruža konzistentnost.",
+          "reversed": "Prekomerna odbrana je naporna; Delegacija i podrška daju ravnotežu.",
+          "keywords": [
+            "odbrana",
+            "granica",
+            "stabilnost",
+            "podrška"
+          ],
+          "context": "Jasne granice očuvaju pravdu."
+        },
+        "position5": {
+          "upright": "Slično određivanje granične zaštite i držanja. Doslednost daje samopouzdanje.",
+          "reversed": "Prekomerna odbrana može se izolovati. Trebalo bi da postoji prostor za fleksibilnost.",
+          "keywords": [
+            "granica",
+            "odbrana",
+            "doslednost",
+            "otpornost",
+            "fleksibilnost"
+          ],
+          "context": "Stav je uobičajen. Omekšati fleksibilnošću."
+        },
+        "position6": {
+          "upright": "Porodica vas može videti kao nekoga ko je određen i održava njegov stav. Vrijednosti koje vam branite olakšavaju vam da budete prihvaćeni. Doslednost daje samopouzdanje.",
+          "reversed": "Porodica vas može naći tvrdoglavi ili preterano odbrambeni. Nedostatak fleksibilnosti otežava proces prijema. Previše oštro stavovanje stvara otpor u porodici.",
+          "keywords": [
+            "stabilnost",
+            "odbrana",
+            "vrednosti",
+            "doslednost",
+            "poverenje"
+          ],
+          "context": "Određeni stav olakšava prihvatanje. Previše oštrine stvara distancu u porodici."
+        },
+        "position7": {
+          "upright": "Sedam štapića ukazuje na sastanak u okruženju u kojem su granice i doslednost istaknuti. Određivanje daje samopouzdanje.",
+          "reversed": "Preokrećeno sedam štapića kaže da umor može očvrsnuti odbranu. Fleksibilnost i podrška olakšavaju sastanak.",
+          "keywords": [
+            "odbrana",
+            "granica",
+            "stabilnost",
+            "otpornost"
+          ],
+          "context": "Upoznaćete se u stabilnom okruženju. Fleksibilnost povećava vezu."
+        },
+        "position8": {
+          "upright": "Sedam štapića pokazuje da brani sopstvene granice u komunikaciji. Dosledni stav osigurava ugovor.",
+          "reversed": "Preokrećeno sedam štapića ukazuje da odbrambeni stav može otežati komunikaciju. Fleksibilnost donosi harmoniju.",
+          "keywords": [
+            "odbrana",
+            "granica",
+            "stabilnost",
+            "komunikacija"
+          ],
+          "context": "Dosledne granice olakšavaju razumevanje."
+        },
+        "position9": {
+          "upright": "Sedam štapića je pogodno za vas, partneru koji održava vaše vrednosti i stojite vam.",
+          "reversed": "Okrećeno sedam štapića, neko ko stalno defanzivno ili preteće nije pogodno za vas.",
+          "keywords": [
+            "vrednost",
+            "zaštita",
+            "lojalnost",
+            "snaga"
+          ],
+          "context": "Supružnik koji drži svoje vrednosti je pogodno."
+        },
+        "position4": {
+          "upright": "Sedam štapića pokazuje vrednosti priviđenja i odanosti jedni drugima u prilogu. Jak stav jača vezu.",
+          "reversed": "Preokrećeno sedam štapića može ukazivati na pretjeranu odbranu ili opažanu pretnju u prilogu. Strah sprečava intimnost.",
+          "keywords": [
+            "vrednost",
+            "zaštita",
+            "lojalnost",
+            "odbrana",
+            "snaga"
+          ],
+          "context": "Prilog je ojačan očuvanjem vrednosti."
+        }
+      },
+      "eightofwands": {
+        "position1": {
+          "upright": "Zaključak; Vaš brak će se poboljšati brzim napretkom i tečnom komunikacijom.",
+          "reversed": "Kašnjenja ili pitanja komunikacije mogu osporiti proces.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "protok",
+            "napredak"
+          ],
+          "context": "Zaključak; brz i fluid brak. Ali kašnjenja se moraju izbegavati."
+        },
+        "position10": {
+          "upright": "Osam štapića ukazuje da brzi razvoj i vesti vode prema braku. Proces se ubrzava.",
+          "reversed": "Kašnjenja i nesporazumi mogu komplicirati put ka braku. Sortiranje treba da se uradi sa strpljenjem.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "vesti",
+            "razvoj",
+            "protok"
+          ],
+          "context": "Brzi razvoj su na vratima za brak."
+        },
+        "position2": {
+          "upright": "Brzo delujte, iskoristite mogućnosti. Održavajte zamah dok čekate.",
+          "reversed": "Žurba ili stagnacija otežava proces. Pronađite uravnoteženu brzinu.",
+          "keywords": [
+            "brzina",
+            "prilika",
+            "zamah",
+            "pokret"
+          ],
+          "context": "Pomaže da budem brz i presudan dok čekate."
+        },
+        "position3": {
+          "upright": "Brza komunikacija i blagovremene transakcije otvorite prozor mogućnosti. Protok ubrzava.",
+          "reversed": "Kašnjenja i konfuzija kanala dovodi do pogrešnih plaćanja.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "sinhronost",
+            "protok"
+          ],
+          "context": "Sekvenca i jasnoća uloga održavaju protok."
+        },
+        "position5": {
+          "upright": "Brza komunikacija i jasni signal Vaš jezik je sličan. Protok je snimljen pravovremenim porukama.",
+          "reversed": "Vaš prag za konfuziju kanala može biti drugačiji. Rangiranje treba da bude pojednostavljeno.",
+          "keywords": [
+            "brzina",
+            "signal",
+            "protok",
+            "sinhronost",
+            "komunikacija"
+          ],
+          "context": "Brzi partner za striming. Potrebno je redosled sortiranja."
+        },
+        "position6": {
+          "upright": "Porodica vas može videti kao nekoga ko se brzo prilagođava i otvorena je za komunikaciju. Idete s tokom, postavlja ih lako. Jasni i brzi odgovori stvaraju poverenje.",
+          "reversed": "Porodica vas može naći užurbano ili loše na komunikaciji. Zbrka i odlaganje komplikovati proces prijemstva. Neizvesnost čini porodicu nelagodnim.",
+          "keywords": [
+            "komunikacija",
+            "raport",
+            "brzina",
+            "oštrina",
+            "protok"
+          ],
+          "context": "Brza adaptacija i jasnoća povećavaju prihvatanje. Chaos postavlja opterećenje porodice."
+        },
+        "position7": {
+          "upright": "Osam štapića ukazuje na brz razvoj i poznanstvo u protoku komunikacije. Vesti, putovanja ili iznenadni sastanak vas upućuje.",
+          "reversed": "Otkriveni osam štapića govori nam da kašnjenje ili zbrka može da opterene obveznica. Jasno rangiranje olakšava upoznavanje.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "ubrzanje",
+            "protok"
+          ],
+          "context": "Upoznate u brzom razvoju. To stvara obveznice jasnoće."
+        },
+        "position8": {
+          "upright": "Osam štapića ukazuje na brzu i tečnu komunikaciju. Pravovremene poruke ojačavaju sporazum.",
+          "reversed": "Otkriveno osam štapića sugeriše da kašnjenja i nesporazumi mogu da napreduju sklad. Clariti štedi obveznica.",
+          "keywords": [
+            "brzina",
+            "protok",
+            "poručiti",
+            "komunikacija"
+          ],
+          "context": "Pravovremena komunikacija povećava usklađenost."
+        },
+        "position9": {
+          "upright": "Osam štapića vam odgovara kao partnera koji brzo, jasno komunicira i preduzima mere.",
+          "reversed": "Okoli su osam štapića, nekoga ko je komomisijav i Prokrastinator nije pogodan za vas.",
+          "keywords": [
+            "komunikacija",
+            "pokret",
+            "brzina",
+            "oštrina"
+          ],
+          "context": "Supružnik koji brzo i otvoreno komunicira je prikladno."
+        },
+        "position4": {
+          "upright": "Osam štapića ukazuje na brzi napredak u prilogu i otvorenoj komunikaciji. Brzina i jasnoća olakšavaju reći da.",
+          "reversed": "Otkriveni osam štapića može ukazivati na kašnjenje u prilogu ili nedostatku komunikacije. Sporost otežava lepljenje.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "napredak",
+            "oštrina",
+            "pokret"
+          ],
+          "context": "Prilog je ojačana brzom komunikacijom i jasnoćom."
+        }
+      },
+      "nineofwands": {
+        "position1": {
+          "upright": "Zaključak; Strpljenje, izdržljivost i snaga prikazana u poslednjoj fazi učiniće vaš brak trajnim.",
+          "reversed": "Izgaranje ili preovladanost mogu da opterećuju ishod braka.",
+          "keywords": [
+            "izdržljivost",
+            "strpljenje",
+            "snaga",
+            "zaštita"
+          ],
+          "context": "Zaključak; Brak je ojačan strpljenjem. Ali ekstremni umor može da se uđe na put."
+        },
+        "position10": {
+          "upright": "Devet štapića ukazuje na izdržljivost i približavanje završnoj fazi na putu ka braku. Oni koji strpljivo odupirete će postići uspeh.",
+          "reversed": "Izgaranje i sklonost odustajanja mogu oštetiti bračne planove. Potrebno je nastaviti sa podrškom.",
+          "keywords": [
+            "izdržljivost",
+            "strpljenje",
+            "zaštita",
+            "otpornost",
+            "završetak"
+          ],
+          "context": "To je poslednja faza za brak, potrebno je postati jači sa strpljenjem."
+        },
+        "position2": {
+          "upright": "Ispitajte svoju izdržljivost, stanite sa poslednjom snagom. Budite strpljivi dok čekate.",
+          "reversed": "Izgaranje ili prerano napuštanje čini proces težak. Održavajte snagu.",
+          "keywords": [
+            "izdržljivost",
+            "strpljenje",
+            "snaga",
+            "test"
+          ],
+          "context": "Pomaže da se pokaže izdržljivosti dok čekate."
+        },
+        "position3": {
+          "upright": "Izdržljivost je važna u završnom uglu; Održavana je budžetska disciplina. Mali pauze su obaveza.",
+          "reversed": "Hipervigilancija i umora spuštaju prag za diskusiju.",
+          "keywords": [
+            "izdržljivost",
+            "budan",
+            "prekršiti",
+            "kontinuitet"
+          ],
+          "context": "Sve dok se ne održava ritam, dolaze rezultati."
+        },
+        "position5": {
+          "upright": "Sličnosti u izdržljivosti i završnoj psihologiji. Snaga se održava malim pauzama.",
+          "reversed": "Vaše prag prekoračenja i umora može biti drugačiji. Izgradite mrežu za podršku.",
+          "keywords": [
+            "izdržljivost",
+            "budan",
+            "prekršiti",
+            "zaštita",
+            "kontinuitet"
+          ],
+          "context": "Otpornost je uobičajena. Kultura opuštanja je obavezna."
+        },
+        "position6": {
+          "upright": "Porodica vas može videti kao otporno i odlučno. Vaša otpornost protiv poteškoća postaje vredna u njihovim očima. Vaše strpljenje će vam olakšati prihvatanje.",
+          "reversed": "Porodica vas može videti previše umorno ili povučeno. Defanzivni stavovi otežavaju prihvatanje. Izgaranje smanjuje samopouzdanje.",
+          "keywords": [
+            "izdržljivost",
+            "rezolucija",
+            "strpljenje",
+            "otpornost",
+            "zaštita"
+          ],
+          "context": "Upornost povećava prihvatanje. Umor i zatvaranje stvaraju sumnju u porodicu."
+        },
+        "position7": {
+          "upright": "Devet štapića ukazuje na izdržljivost i poznanstvo u procesu održavanja granica. Sastanak na kraju teškog perioda donosi samopouzdanje.",
+          "reversed": "Okrećeno devet štapića sugeriše da izgaranje može da opterene obveznice. Mreža podrške olakšava sastanak.",
+          "keywords": [
+            "izdržljivost",
+            "zaštita",
+            "granica",
+            "poverenje"
+          ],
+          "context": "Upoznate se na procesu izdržljivosti. Podrška jača vezu."
+        },
+        "position8": {
+          "upright": "Devet štapića ukazuje na strpljenje i izdržljivost u komunikaciji. Ne odustajanje od jača harmoniju.",
+          "reversed": "Devet štapića preokrećeno ukazuje da umor može da oteža komunikaciju. Mali pauze održavaju vezu.",
+          "keywords": [
+            "strpljenje",
+            "izdržljivost",
+            "umor",
+            "komunikacija"
+          ],
+          "context": "Strpljenje jača harmoniju."
+        },
+        "position9": {
+          "upright": "Devet štapića, pacijent, otporni i borbeni partner je pogodan za vas.",
+          "reversed": "Devet štapića preokrećeno, neko ko je stalno umoran i odustaje nije pogodan za vas.",
+          "keywords": [
+            "strpljenje",
+            "otpornost",
+            "snaga",
+            "izdržljivost"
+          ],
+          "context": "Pogodan je supružnik sa borbom za borbu protiv čvrstoće."
+        },
+        "position4": {
+          "upright": "Devet štapića prikazuje otpornost, strpljenje i borbu protiv električne energije u prilogu. Reći da, uprkos poteškoćama jača vezu.",
+          "reversed": "Invertirani devet štapića, postoji rizik od umora ili odustajanja od prestanka. Kašnjenje izgaranja preduzimaju akcije.",
+          "keywords": [
+            "otpornost",
+            "strpljenje",
+            "borba",
+            "snaga",
+            "izdržljivost"
+          ],
+          "context": "Prilog je ojačan strpljenjem i otpornošću."
+        }
+      },
+      "tenofwands": {
+        "position1": {
+          "upright": "Zaključak; To će biti završetak intenzivnih odgovornosti. Vaš trud će se isplatiti.",
+          "reversed": "Preopterećenje može da naprestruje ishod braka. Odgovornost treba da se deli.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "završetak",
+            "trud"
+          ],
+          "context": "Zaključak; Brak oblikovan naporom. Ali terete se moraju deliti."
+        },
+        "position10": {
+          "upright": "Deset štapića pokazuje da je brak moguć uprkos težini odgovornosti. Ako se teret deli, dolazi uspeh.",
+          "reversed": "Preopterećen može teško da otežava brak. Pojednostavljenje i deljenje su od suštinskog značaja.",
+          "keywords": [
+            "odgovornost",
+            "opteretiti",
+            "završetak",
+            "izdržljivost",
+            "trud"
+          ],
+          "context": "Teretna deljenja je važna za brak."
+        },
+        "position2": {
+          "upright": "Organizujte svoje odgovornosti, zatražite pomoć. Podelite opterećenje dok čekate.",
+          "reversed": "Preopterećenje ili izbegavanje odgovornosti otežava proces. Uspostaviti ravnotežu.",
+          "keywords": [
+            "odgovornost",
+            "organizacija",
+            "deljenje",
+            "ravnoteža"
+          ],
+          "context": "Korisno je organizovati odgovornosti dok čekate."
+        },
+        "position3": {
+          "upright": "Prekomerno opterećenje i odgovornost smanjuju kvalitet budžeta. Potrebna je delegacija i prioritetizacija.",
+          "reversed": "Motivacija se smanjuje kao troškove i zadatke koji bi trebali biti napušteni.",
+          "keywords": [
+            "opteretiti",
+            "delegat",
+            "prioritet",
+            "završetak"
+          ],
+          "context": "Jednostavnost stvara finansijski prostor za disanje."
+        },
+        "position5": {
+          "upright": "Vaš apetit za odgovornost je sličan; Ako se opterećenje deli, snaga se povećava. Ljubav o završetku je uobičajena.",
+          "reversed": "Jedan od vas može imati tendenciju da koncentriše teret na jednom ramenu. Naučite da delegirate.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "završetak",
+            "delegat",
+            "jednostavnost"
+          ],
+          "context": "Kultura opterećenja je uobičajena. Deljenje mora biti vidljivo."
+        },
+        "position6": {
+          "upright": "Porodica vas može videti kao nekoga ko preuzima odgovornost i nosi teret. Vaš trud i žrtva ubrzaće vaše prihvatanje. Za njih možete biti pouzdana podrška.",
+          "reversed": "Porodica vas može videti kao nekoga ko je preplavljen preopterećenjem. Preuzimanje prevelike odgovornosti može stvoriti percepciju nemoći. To otežava prihvatanje.",
+          "keywords": [
+            "odgovornost",
+            "opteretiti",
+            "žrtvovati",
+            "trud",
+            "pouzdanost"
+          ],
+          "context": "Žrtva olakšava prihvatanje. Percepcija preopterećenja stvara distancu."
+        }
+      }
+    }
+  }
+}

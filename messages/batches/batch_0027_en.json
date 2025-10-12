@@ -1,0 +1,626 @@
+{
+  "numerology": {
+    "lifePathMeanings": {
+      "1": "The Way of Life 1 takes on life through leadership, independence and leading energy. They carry on the desire to draw their own path, to create new ideas and to guide people around them. They often have a bold, visionary nature. They often feel the need to take the lead and express their identity strongly in their lives. However, this energy can sometimes reflect as selfishness, impatience, or authority. When they are open to co-operation and know the leadership of others, they have great success and inspiring beginnings in their lives.",
+      "2": "The Two Ways of Life come to the world with harmony, diplomacy and precision. They have a strong ability to negotiate, bring different parties together and keep peace. They are generally perceived as gentle, compassionate and supportive energy in their environment. Relationships are very important to them and often pass through the center of life. However, oversensitiveness can sometimes turn into self-esteem or dependency. When they set balance, they become a real guide that brings peace and understanding to themselves and others.",
+      "3": "The way of life is brought to life by a creative, energetic, cheerful spirit. The expression, communication, and art are natural areas for them. They often inspire people around them with their speech, writing, or stage skills. The vitality they carry in them allows them to enjoy life and bring joy to others. However, this energy can also manifest as superficiality, disorder, or waste. When combined with discipline, it gives the light of creativity and joy both in their lives and in the lives of others.",
+      "4": "The Way of Life 4 lives on energy that brings order, discipline and structure. They are patient, hardworking and reliable individuals. They make long-term plans, lay firm foundations and play a strong role in creating lasting achievements. They know how to overcome challenges through their practical intelligence and stable attitude. However, these energy shadows can also use them as strict rules, flexibility, or stubbornness. When they adapt to change, they achieve both reliable and open success.",
+      "5": "The Five Ways of Life are representatives of freedom, adventure and change. They move throughout their lives in search of a constant discovery. Meeting new cultures, experiences, and people feeds their souls. They can easily adapt to change, so they can pioneer in implementing innovative ideas. At the same time, impatience, instability and instability are their shadow. When they learn to balance freedom with responsibility, it becomes an exciting journey for themselves and their environment.",
+      "6": "The 6 Way of Life is brought to life by responsibility, family and love energy. They have a strong desire to help others, adapt and create beauty. They are known as protective, supportive and reliable energy around them. Their aesthetic understanding and ability to create harmony may have a tendency to take on the problems of others. However, when they learn to consider their own needs, they become a healing force for themselves and others.",
+      "7": "The Seven Ways of Life feed on insight, research and spirituality. They search for the deep meanings of life, they question and guide the unseen with their intuition. Science, philosophy, spiritual areas or the depth of art attracts them. Silence and loneliness are areas that feed inner wisdom. However, they may have a tendency to be overly introverted or cold. When they make balanced connections to others, they become guides to their environment with wisdom.",
+      "8": "The Way of Life 8 comes into the world with the energy of power, success and governance. They have a natural skill in business, organization and leadership. They move forward decisively towards their goals and have the potential to achieve material success. When used correctly, they can create abundance and prosperity. However, greed, desire for control or authoritarian attitude may be shadowed. When they balance material and spiritual stability, they succeed as a righteous and powerful leader.",
+      "9": "The Nine Ways of Life act with compassion, idealism, and love for humanity. They want to make the world a better place and contribute to society with sacrifice. Their artistic aspects can be powerful and they can create projects that touch other people's lives. However, they can have extreme emotional, dream-like, or extreme self-sacrificing tendencies. When they protect their own borders and combine reality with idealism, they become human leaders that leave a lasting mark on the world.",
+      "11": "The 11 Way of Life carries the energy of high intuition, vision and inspiration. They have a natural spiritual awareness and are able to inspire people around them. They can guide people through their visions and contribute to the collective through their divine guidance. However, this intense energy can create anxiety, unrest or imbalance. When they balance themselves, they become both a beacon of light and a vision that heals their environment.",
+      "22": "The 22 Way of Life is known as master builders. They have the power to make great dreams come true. Through their practical, disciplined and visionary natures, they can create permanent projects in the world. They have the potential to create both material and spiritual success at the same time. However, this large energy can sometimes create heavy responsibility pressure. When they don't agree with small goals, they show the potential to leave a permanent legacy in the world.",
+      "33": "The 33 Way of Life carries the energy of unconditional love, compassion and service. They come to the world with a spirit that mediates and guides others to recovery and guides society. The teaching aspects, compassionate attitudes and high energy illuminate their environment. However, this intense energy can sometimes create the risk of extreme self - sacrifice or exhaustion. When they maintain their own limits and express their love in a balanced way, they become a powerful figure in the world that provides healing and guidance."
+    },
+    "maturityMeanings": {
+      "1": "In the second half of their lives, those with the number of maturitys feel more strongly about independence, leadership and the theme of drawing their own path. In this period, they find great opportunities to reveal their own potential, make new beginnings and lead. Their internal powers make them captains of their own lives. However, this energy can sometimes be shadowed as loneliness, authoritarian or impatient. When they learn to cooperate with others and balance their individuality with harmony, they become visionary leaders that inspire society.",
+      "2": "Those with 2 maturitys experience the themes of harmony, balance and co-operation later in their lives. In this period, diplomacy, partnerships and emotional ties take place. Their hearts tend to create peace and understanding. However, too much sensitivity or addiction to others can be the shadow side of this process. When they recognize their own values and maintain their limits, they become a guide of peace and love to their environment.",
+      "3": "For those with three maturitys, the second half of life is a period of creativity, expression and inspiration. Art, writing, communication, or a desire to step forward in social areas. They choose to live their lives in a more cheerful and energetic way. However, superficiality or disarray may be the shadow side of this process. When they develop discipline, they become inspirational individuals that touch the hearts of others with the power of expression.",
+      "4": "Those with four maturitys experience discipline, order and building themes in later years. In this period, creating stability, building permanent projects and proving their credibility. They gain lasting achievements by patiently working. However, the tendency to resist too hardness, change, or over-control can be shaded. When they develop flexibility, they build a strong structure that gives confidence both to themselves and others.",
+      "5": "For those with 5 maturity, the second half of life is filled with freedom, change and discoveries. New cultures, new experiences and adventures await them at this time. By their flexible structures, they easily embrace life's transformations. But impatientness or instability can be the shadow side of this process. When they balance freedom with responsibility, their lives become an inspiring journey for themselves and for others.",
+      "6": "In the second half of their lives, those with the number of adults live more intensely on family, love and responsibility themes. For them, this is a period of time to devote more time to their loved ones, to serve society and to create beauty. Aesthetics, harmony and compassion are the keys to this period. However, taking on too much sacrifice or the problems of others can tire them. When they learn to look after their own needs, they become a force that heals themselves and their environment.",
+      "7": "For those with the number of matures, the years go by in search of spiritual depth, research and wisdom. More introverts, learning and spiritual discoveries come to the agenda. Solitude is not a burden to them, but a source of wisdom. However, the tendency to close in too much or distance may be a shadow. When they share their wisdom with others, they become guides to their environment.",
+      "8": "In the second half of their lives, those with the number of maturitys face themes of power, governance and material success. They can be effective in business or communities at this time. They have the potential to create abundance and prosperity through their determination. However, too much ambition, desire for control or authoritarianism can be the shadow side of this process. When they balance financial success with spirituality, they become both powerful and righteous leaders.",
+      "9": "For those with the number of maturitys, the later years of life are shaped by compassion, idealism and themes of service to humanity. They care about touching other people's lives, leaving traces in the world and contributing to artistic/human projects. However, too much imagination or extreme sacrifice can be shadowed. When they combine reality with their idealism, they become an inspiring and healing figure to society.",
+      "11": "In the second half of their lives, those with the number of mature 11 feel the theme of intuition, vision and spiritual guidance, which is full of inspiring projects and opportunities to shed light on others, but intense energy can create anxiety or imbalance. When they balance themselves, they become a powerful figure that guides society and offers a high vision.",
+      "22": "For those with a number of 22 maturitys there will be a period of great projects and permanent heritage creation. They have the potential to make their dreams come true, to provide concrete contributions to society. Their disciplined and visionary structures are even stronger at this time. However, heavy responsibility pressure can be a shadow. When they are not content with small goals, they become an unforgettable figure by building permanent artifacts in the world.",
+      "33": "In the second half of their lives, the number of adults, 33, feel unconditional love, compassion, and healing. This period is full of opportunities to inspire, teach, and improve society. Excessive responsibility or fatigue can be a shadow direction. When they are balanced, they become a powerful healer, who gives light to their loved ones and to the community."
+    },
+    "meanings": {
+      "1": {
+        "description": "The number one represents leadership, independence and new beginnings.",
+        "title": "Leader and Pioneer"
+      },
+      "2": {
+        "description": "The number 2 represents cooperation, balance and harmony.",
+        "title": "Diplomat and Collaborator"
+      },
+      "3": {
+        "description": "The number 3 represents creativity, communication and socialism.",
+        "title": "Creative and Telecommunicator"
+      },
+      "4": {
+        "description": "The number 4 represents practicality, credibility and stability.",
+        "title": "Practice and Trustworthy"
+      },
+      "5": {
+        "description": "The number five represents freedom, adventure and change.",
+        "title": "Free Spirit and Adventurer"
+      },
+      "6": {
+        "description": "The number 6 represents compassion, protection, and responsibility.",
+        "title": "Protective and Compassionate"
+      },
+      "7": {
+        "description": "The number 7 represents wisdom, spirituality, and introvertibility.",
+        "title": "Wise and Spiritual"
+      },
+      "8": {
+        "description": "The number 8 represents leadership, organisation and financial success.",
+        "title": "Leader and Organiser"
+      },
+      "9": {
+        "description": "The number 9 represents universality, generosity, and spirituality.",
+        "title": "Universal and Generous"
+      },
+      "11": {
+        "description": "The number 11 represents spirituality, intuitive abilities and teaching.",
+        "title": "Spiritual Teacher"
+      },
+      "22": {
+        "description": "The number 22 represents the ability to make big dreams come true.",
+        "title": "Master Builder"
+      },
+      "33": {
+        "description": "The number 33 represents the highest level of teaching and universal service.",
+        "title": "Master Teacher"
+      }
+    },
+    "page": {
+      "calculate": "Calculate",
+      "calculating": "Calculating...",
+      "close": "Close",
+      "descriptions": {
+        "birthdayNumber": "Explore your natural gifts",
+        "compatibility": "Analyze the harmony between two people",
+        "expressionDestiny": "Learn your natural skills from your name",
+        "lifePath": "Explore your way of life from your birth date",
+        "maturity": "Learn 35+ themes from your age",
+        "personalCycles": "See your annual, monthly and daily energy calendar",
+        "personality": "Learn what you look like to the outside world.",
+        "pinnaclesChallenges": "Explore your life cycles and challenges",
+        "soulUrge": "Explore your inner motivations and your soul desires"
+      },
+      "errors": {
+        "calculationError": "Calculation error occurred",
+        "invalidDateFormat": "Invalid date format",
+        "invalidNameFormat": "Invalid name format",
+        "rateLimitExceeded": "You do a lot of calculations. Please wait a minute.",
+        "requiredFields": "Please fill in the necessary areas"
+      },
+      "form": {
+        "birthDate": "Date of Birth (YYYY-AAA-GG)",
+        "fullName": "Name Last Name",
+        "namePlaceholder": "Kön: Ahmet Yilmaz",
+        "namePlaceholder2": "For example: Ayşe Demir",
+        "person1": "1st Person",
+        "person2": "2nd Person",
+        "targetDate": "Target Date (TYY-AAA-GG)"
+      },
+      "loading": "Loading...",
+      "ok": "Okay.",
+      "results": {
+        "challenges": "Challenges",
+        "compatibility": "Harmony Analysis",
+        "compatibilityScore": "Harmony Score",
+        "day": "Day",
+        "description": "Description",
+        "masterNumber": "Master Number",
+        "month": "Month",
+        "personalCycles": "Personal Cycles",
+        "pinnacles": "Summits",
+        "subtitle": "Numerology Analysis",
+        "title": "Result",
+        "year": "Year"
+      },
+      "subtitle": "Travel in the mysterious world of numbers, discover the depth of your name and birth date and personality.",
+      "tabs": {
+        "birthdayNumber": "Birthday",
+        "compatibility": "Harmony Analysis",
+        "expressionDestiny": "Statement/Date",
+        "lifePath": "The Path of Life",
+        "maturity": "Maturity",
+        "personalCycles": "Personal Cycles",
+        "personality": "Personality",
+        "pinnaclesChallenges": "Summits/Hards",
+        "soulUrge": "Spirit Desire"
+      },
+      "title": "Numerology"
+    },
+    "personalYearMeanings": {
+      "1": "Personal year 1, when new beginnings, seeds are planted, and a new cycle of life begins. This year, a person can boldly enter into new projects, discover his individual strength, and seize opportunities to find his own way. This period, however, is strong in leadership, entrepreneurial and individual expression. In anticipation or loneliness may be the shadows of this year. When slow and conscious steps are taken, it allows a person to set firm foundations to shape the future of one person in a personal year.",
+      "2": "Personal year 2, which is known as the time of patience, co-operation and harmony. This year relationships, partnerships and emotional ties come first. A person goes through an appropriate period to receive support and to act with others. His diplomacy, understanding and compassion comes forward. However, extreme sensitivity or indecision may be the shadow side of this year. When he maintains his limits and progresss patiently, he brings lasting harmony in two personal relationships.",
+      "3": "The personal year 3 is a period of creativity, expression and joy. This year, a person can shine in social relations, or in art, writing, or communication. There is a flow of energy filled with joy, entertainment and inspiration. However, superficiality or disarray can be the shadow side of this year. With focus and discipline, this period can become a creative project that will bring lasting success in a person's life.",
+      "4": "The personal year 4 is the year to build work, discipline and structure. During this period, one works patiently, plans and lays down permanent foundations. The desire to create stability and provide security is in the forefront. However, extreme rigor or resistance to change can be the shadow side of this year. When working together with flexibility, the personal year 4 is the basis for major achievements in the future.",
+      "5": "Personal year 5 is the year of freedom, change and discovery. In this period, a person opens up to new experiences, meets different people and excites his life. Travel, innovation and radical transformations are the key to this year's work. But fear of impatientness, imbalance or commitment can be the shadow of this year. When you balance responsibility and freedom, personal year 5 opens to great opportunities.",
+      "6": "The personal year 6 is a time when family, responsibility and love themes rise. This year, one spends more time with his loved ones, and the desire to serve society increases, and the desire to create aesthetics is the key to this year. Harmony and compassion are the key to this year. However, the tendency to overexist or to take on the problems of others can be exhausting. When balance is established, the personal year 6 brings both peace and harmony.",
+      "7": "The personal year 7, internal depth, research and spiritual discovery period. This is an ideal time to return to yourself, listen to your intuition and question the meaning of life. Meditation, education and research are supported at this time. But extreme loneliness or skepticism can be the shadow of this year. When internal wisdom is shared with others, the personal year turns into an illuminating age of seven.",
+      "8": "The personal year 8, is a time when the energy of power, success and plenty comes forward. This year, a person can live up in business, obtain financial achievements and take leadership opportunities. Determination and discipline are the basis of this period. However, the desire for extreme ambition or control can be the shadow of this year. When he balances financial success with spiritual values, he brings about 8 permanent prosperitys in a personal year.",
+      "9": "Personal year 9, is the period of completion and release. This year, a person can break ties from the past, break old habits, and create a new cycle in his life. Compassion, idealism and service to humanity are the keys to this period. However, hyper-emotionality or dwelling in the past may be the shadow side of this year. When he learns to quit, 9 personal year brings a great transformation and internal freedom."
+    },
+    "personalityMeanings": {
+      "1": "People with a number of personalities are perceived as self-determinate, confident, and leader-like. When they speak, people view them as a strong, confident and courageous character. When they speak, they spread authority and naturally draw attention to themselves in their environment. But this energy can sometimes be perceived by others as authoritarian, arrogant, or over-sharing leadership. When they develop a soft and sharing attitude, they become a natural leader that inspires others.",
+      "2": "People with two personalities appear to be kind, adaptive and sensitive from the outside. They connect with others easily, spread a compassionate and understanding energy. They often display a warm, reassuring, and open image of co-operation in their environment. However, the search for more harmony can cause them to be perceived as passive or unstable by others. When they set their limits, they have both a gentle and strong stance.",
+      "3": "People with three personalities appear to be energetic, social and creative from the outside. They light up the mood with their cheerful attitude, bring joy to their environment with their witty personalities. People recognize communication as strong, fun and open-spoken. But it can sometimes be perceived as too disorganized, superficial, or careless. When they focus, they become a powerful figure that inspires joy and inspiration to the outside world.",
+      "4": "People who have four personalities are perceived as serious, disciplined and reliable from the outside. People recognize them as solid, determined, hardworking individuals. They often display a responsible, planned, regular character in the outside world. However, this energy can sometimes be seen as rigid, stubborn or overcompensating. When they are more flexible and adaptive, they become both reassuring and easy to communicate with.",
+      "5": "People with five personalities appear to be dynamic, free spirit, and energetic from the outside. They carry an aura that is innovative, mobile and adventurous. Humans recognize them as living, open to change, and like to explore. But this energy can sometimes be perceived as unstable, impatient, or unreliable. When they balance the desire for freedom with a sense of responsibility, they become a spirit of discovery that inspires the outside world.",
+      "6": "People with six personalities display a kind, elegant, supportive image from the outside. They are known as loving, aesthetic, high and adaptive individuals. People perceive them as a trusting, compassionate, balanced figure. But this energy can sometimes be reflected in too much interference, sacrifice, or critically. When they maintain their own borders, they become a strong person that gives peace and trust to others.",
+      "7": "People with seven personalities are perceived as mysterious, thoughtful and profound from the outside. They carry a quiet, intuitive and intellectual aura. People view them as wise, investigative and spiritual individuals. But this energy can sometimes be perceived as distant, cold, or withdrawn. When they open their hearts, they become a person that inspires their environment with their wisdom.",
+      "8": "People with eight personalities appear to be strong, authoritarian and charismatic from the outside. They pose an impressive stance in business or communities. People perceive them as a disciplined, determined, and able to govern. But this energy can sometimes create a very oppressive, ambitious, or distant image. When they balance power with justice, they become a powerful leader that inspires and inspires their environment.",
+      "9": "People with nine personalities appear to be compassionate, artistic and idealistic from the outside. They carry an energy that is willing, inspiring and sensitive to help people. They are often known as a humane, artistic and visionary figure in their environment. But this energy can sometimes be perceived as too imaginative, emotional or fragile. When they combine reality with idealism, they become a healing and inspiring personality in the outside world.",
+      "11": "People with 11 personalities seem charismatic, intuitive and inspiring from the outside. They carry a high energy frequency and light around them. People perceive them with a visionary, spiritual and different aura. But it can sometimes be seen by others as difficult, unstable, or too sensitive. When they are balanced, they offer strong inspiration and guidance to their environment.",
+      "22": "People who are 22 are perceived as an external visionary, determined and powerful founder. They carry an impressive aura in discipline, practical and community. People see them as reliable and visionary individuals who build solid projects. But this energy can sometimes be perceived by others as heavy, distant, or over-controllers. When they are balanced, they become a powerful figure that creates permanent values in society.",
+      "33": "People with 33 personalities display a tender, instructive, healing image from the outside. They carry around unconditional love, understanding, and trust. People see them as guides, supporters, and sources of wisdom. However, this energy can sometimes create an image that is self - sacrificing, or over-responsive, or over-responsive. When they are balanced, they become both a powerful person who heals their environment and inspires them."
+    },
+    "pinnaclesMeanings": {
+      "1": "Summit 1, shows that the theme of independence and leadership in a person's life is strong. In this period, a person makes new beginnings, takes bold steps to make his own way. The burning spark creates opportunities for individual achievements and initiative. However, there is a risk of being too self-centered or authoritarian. Learning to cooperate with others, expanding vision and balancing harmony with independence brings out the potential of this summit in the best possible way.",
+      "2": "Summit 2 shows that opportunities for harmony, partnerships and co-operation are increasing in one's life. This is an ideal time for deep ties, peace and diplomatic skills. However, in this process, extreme sensitivity, uncertainty or addiction may occur. When healthy boundaries are maintained, one achieves great success with others and becomes a force that brings peace to the environment.",
+      "3": "Summit 3, shows that creativity, expression, and social achievements in a person's life are prominent. In this period, one can come forward in the field of art, communication, writing, or scene. His energy is a high, cheerful and inspiring period. But in the process, superficiality or disarray can be preventive. When focused, creativity becomes both a personal and social light.",
+      "4": "Summit 4, shows that the theme of discipline, work and order in a person's life has come forward. This may be the time to lay firm foundations, to build permanent projects and to take responsibility. However, strict rules or resistance to change may be the shadow direction of this process. When flexibility is developed, the summit is the basis of 4 major stability and trust.",
+      "5": "Summit 5 shows that the energy of freedom, change and discovery is concentrated in one's life. This period offers powerful opportunities to gain new experiences, travel, or radical transformations. But impatientness and instability is the risks of this period. balancing the desire for freedom with a sense of responsibility brings out the potential of summit 5.",
+      "6": "Summit 6 shows that the theme of family, responsibility and love in a person's life is prominent. This may be the time to adapt, create aesthetics, and serve the community. However, it may be exhausting to take on too many sacrifices or other people's problems. Balance by caring for its own needs reveals the light of this period.",
+      "7": "Summit 7, shows that the theme of spirituality, research, and wisdom is strengthened in one's life. In this period, one returns more to the inner world, follows intuitively, and questions the meaning of life. However, over-indulgence or loneliness can be a shadow direction. Sharing wisdom with others can turn this summit into a bright period.",
+      "8": "Summit 8, shows that in a person's life, the theme of power, success and material prosperity has come forward. In this period, growth, leadership opportunities and financial achievements can lead to financial success. But extreme ambition, desire for control or authoritarian attitudes can be the shadow side of this process. When balanced by spirituality, the summit 8 opens the door to lasting achievements.",
+      "9": "Summit 9, in one person's life, the theme of compassion, service and idealism is intense. This may be the time to help others, to contribute to artistic studies and society, but extreme sacrifice or imagination can be a shadow direction. When combined with reality, the summit brings projects to the world that leave permanent traces.",
+      "11": "Summit 11 reveals the theme of inspiration, intuition and vision in a person's life. This is a period of time when spiritual awareness increases, inspiring projects come to the agenda, but intense energy can create anxiety and unrest. When it is balanced, the summit becomes a period of guidance that sheds light on the 11 environments.",
+      "22": "The summit 22 is a process where big projects, permanent heritage, and social contributions come forward in a person's life. This is a process in which visions become reality, where concrete achievements are achieved. However, the pressure of responsibility or the desire to control can be a shadow direction. When you use this energy in balance, one leaves unforgettable traces in the world.",
+      "33": "The summit 33 shows that unconditional love, compassion, and service themes are concentrated in one's life. This is a powerful opportunity to guide, heal, and teach, but there may be a risk of excessive responsibility or fatigue. When balanced, the summit offers a powerful healing period that inspires 33 communities."
+    },
+    "result": {
+      "calculationDetails": "Calculation Details",
+      "cardTitle": "{type}number",
+      "careerAdvice": "Career Proposals",
+      "challenges": "What Is Needed to Pay Attention",
+      "color": "Color",
+      "compatibilityNotes": "Compatibility notes",
+      "compatibilityScore": "Compatibility point",
+      "element": "Element",
+      "lifeGuidance": "Life Guidance",
+      "masterNumber": "Master Number",
+      "personalDay": "Personal day",
+      "personalMonth": "Personal moon",
+      "personalYear": "Personal year",
+      "pinnacles": "Summits",
+      "planet": "Planet",
+      "positiveTraits": "Your Strong Directions",
+      "relationshipAdvice": "Relationship Proposals",
+      "spiritualMessage": "Spiritual Message",
+      "title": "{type}"
+    },
+    "subtitle": "Find the name and date of birth and the direction of the number.",
+    "title": "Numerology",
+    "renk": "Color",
+    "element": "Element",
+    "gezegen": "Planet",
+    "ifade": "Statement"
+  },
+  "numerologyResult": {
+    "backButton": "Return",
+    "calculating": "Calculating...",
+    "calculationDetails": "Calculation Details",
+    "calculationError": "Could not calculate numerology.",
+    "challenges": "Challenges",
+    "compatibilityAnalysis": "Harmony Analysis",
+    "compatibilityScore": "Harmony Score",
+    "error": "Error",
+    "invalidType": "Invalid numerology type",
+    "loading": "Loading...",
+    "masterNumber": "Master Number",
+    "missingParams": "Missing parameters",
+    "newCalculation": "New Calculation",
+    "notes": "Notes:",
+    "personalCycles": "Personal Cycles",
+    "personalDay": "Personal Day",
+    "personalMonth": "Personal Moon",
+    "personalYear": "Personal Year",
+    "pinnacles": "Summits",
+    "print": "Print",
+    "resultNotFound": "No Results Found",
+    "typeLabels": {
+      "birthday-number": "Birthday",
+      "compatibility": "Harmony Analysis",
+      "expression-destiny": "Statement/Date",
+      "life-path": "The Path of Life",
+      "maturity": "Maturity",
+      "personal-cycles": "Personal Cycles",
+      "personality": "Personality",
+      "pinnacles-challenges": "Summits/Hards",
+      "soul-urge": "Spirit Desire"
+    },
+    "yourNumber": "Count"
+  },
+  "payment": {
+    "cancel": {
+      "description": "The payment has been cancelled. You can buy your credit package again.",
+      "goToDashboard": "Return to Dashboard",
+      "title": "Payment Canceled",
+      "viewPackages": "Credit Packages"
+    },
+    "error": {
+      "description": "Unable to complete payment",
+      "invalidOrderId": "Invalid order number",
+      "title": "Payment Error"
+    },
+    "success": {
+      "checkingStatus": "Checking payment status...",
+      "creditsAdded": "+{credits} Credit",
+      "creditsAddedDescription": "Credits added to your account",
+      "goToDashboard": "Go to Dashboard",
+      "packagePurchased": "{packageName} successfully purchased",
+      "title": "Payment Successful!"
+    }
+  },
+  "problemSolving": {
+    "data": {
+      "badgeText": "PROBLEM EXPERIMENT",
+      "cardDirections": {
+        "reversed": "Reverse",
+        "upright": "Flat"
+      },
+      "dearClient": "Dear counselor,",
+      "defaultTitle": "Problem Solving Explanation",
+      "detailedReadingTitle": "Problem Solving - Details Personal Reading",
+      "detailedTitle": "Problem Solving - Details Personal Reading",
+      "interpretationTitle": "Problem Solving Explanation",
+      "readingFormats": {
+        "detailed": "Loud",
+        "simple": "Simple",
+        "written": "Written"
+      },
+      "reversed": "Reverse",
+      "simpleInterpretation": "Simple reading - just meter",
+      "simpleReadingCounter": "Simple reading - just meter",
+      "simpleTitle": "Simple Reading",
+      "spreadName": "Problem-solving Expedition",
+      "spreadTitle": "Problem Solving Explanation",
+      "upright": "Flat"
+    },
+    "errors": {
+      "allCardsRequired": "You can't make a comment without choosing all the cards.",
+      "configNotFound": "No problem solving configuration found. Please check the tarotSpreads.ts file."
+    },
+    "form": {
+      "birthDate": "Date of Birth",
+      "clearAll": "Clear All",
+      "close": "Close",
+      "closeForm": "Close form (ESC)",
+      "communicationMethod": "Communication Method",
+      "concernQuestion": "What are you having problems with and looking for solutions?",
+      "email": "Your email address",
+      "emailCommunication": "Email",
+      "emotionalQuestion": "How do you feel about this problem right now?",
+      "firstName": "Your name",
+      "lastName": "Last name",
+      "personalInfo": "Your Personal Information",
+      "phone": "Phone Number",
+      "placeholders": {
+        "concernQuestion": "What are you having problems with and looking for solutions?",
+        "email": "Your emails.com",
+        "emotionalQuestion": "How do you feel about this problem right now?",
+        "firstName": "Your name",
+        "lastName": "Last name",
+        "understandingQuestion": "What do you want to understand with this problem-solving angle?"
+      },
+      "questions": "▪ Problem-resolving Questions ▪",
+      "saveAndOpen": "Save and Open",
+      "saving": "Saving...",
+      "understandingQuestion": "What do you want to understand with this problem-solving angle?",
+      "whatsappCommunication": "WhatsApp"
+    },
+    "messages": {
+      "configurationNotFound": "No problem solving configuration found. Please check the tarotSpreads.ts file.",
+      "formNotSavedConfirm": "The form has been filled out, but it hasn't been recorded. Are you sure you want to leave?",
+      "loginRequired": "You need to log in for this procedure.",
+      "readingSaveError": "An error occurred while saving reading.",
+      "readingSavedSuccessfully": "Your reading has been successfully recorded!",
+      "redirectingToHome": "You're being forwarded to the main page...",
+      "savingReading": "Saving reading...",
+      "selectReadingTypeFirst": "Please select a reading type first.",
+      "simpleReadingCompleted": "Simple reading complete!"
+    },
+    "modals": {
+      "aboutSpread": "About Publicity",
+      "aboutSpreadText": "These 10 cards clarify the problem, shed light on the root causes, obstacles and options, transforming insight into calm and practical steps.",
+      "cancel": "Give it up.",
+      "cardCountInfo": "Analysis Titles",
+      "cardCountText": "(1) Current Status (2) Problem Source (3) Obstructions (4) Past Experiences (6) Current Resources (6) External Factors (6) Internal Vision (8) Solution Path (8) Results (10) Lessons Learning.",
+      "confirm": "Yes, I approve.",
+      "continue": "Continue",
+      "creditConfirm": "Credit Approval",
+      "creditConfirmMessage": "The loan will be used for this problem-solving expansion. Are you sure you want to continue?",
+      "detailedReading": "Vocabulary Reading",
+      "detailedReadingText": "Voice reading offers a warm, detailed look at your case, and with questions and information you share, you will receive a complete and exclusive comment.",
+      "infoTitle": "About Problem Solving Explanation",
+      "loveAttention": "After your reading has been recorded, your personal comment is usually delivered by email within two hundred and four hours. This work is for guidance; the final choices are always yours.",
+      "loveAttentionInfo": "A Kind Note",
+      "process": "Process",
+      "processing": "Processing...",
+      "redirecting": "▪ You are routed to the main page...",
+      "saveReading": "Save Reading",
+      "savingReading": "Saving...",
+      "step1": "Enter personal information",
+      "step2": "Answer questions about the problem",
+      "step3": "Select 10 cards and determine positions",
+      "step4": "Save reading; send a detailed comment to your e-mail",
+      "successMessage": "The problem-solving angle has been recorded and analyzed. You can view the results from the panel.",
+      "successTitle": "Reading Saved",
+      "writtenReading": "Written Reading",
+      "writtenReadingText": "The written reading is delivered as a detailed report that you can hide and return if you wish."
+    },
+    "validation": {
+      "birthDateRequired": "Date of birth required",
+      "concernMinLength": "There must be at least 10 characters to worry about.",
+      "emailInvalid": "Enter a valid email address",
+      "emotionalMinLength": "Emotional status should be at least 10 characters.",
+      "formUnsavedWarning": "The form has been filled out, but it hasn't been recorded. Are you sure you want to leave?",
+      "nameMinLength": "Name should be at least three characters",
+      "surnameMinLength": "Last name should be at least three characters",
+      "understandingMinLength": "Understanding must be at least 10 characters"
+    }
+  },
+  "reading": {
+    "actions": {
+      "continueReading": "Continue Reading",
+      "interpretCards": "Comment Cards",
+      "newReading": "New Reading",
+      "revealCards": "Open Cards",
+      "saveReading": "Save Reading",
+      "selectCards": "Select Cards",
+      "shareReading": "Share Reading",
+      "shuffleCards": "Mix Cards",
+      "startReading": "Start Reading"
+    },
+    "messages": {
+      "adminRequired": "Insufficient credit for audio reading",
+      "buyCredits": "Buy Credit",
+      "cardsLocked": "The cards are locked.",
+      "creditsRequired": "loan required",
+      "detailedDescription": "Special voice comment for you",
+      "detailedSelected": "Voice reading selected",
+      "goToCredits": "Go to Credit Page",
+      "insufficientCredits": "Insufficient loan",
+      "noSelection": "Select a reading type",
+      "selectReadingTypeFirst": "To select cards, you must first select a reading type.",
+      "simpleDescription": "Short-written comment",
+      "simpleSelected": "Short reading selected",
+      "writtenDescription": "Details written comment",
+      "writtenRequired": "Insufficient credit for written reading",
+      "writtenSelected": "Written reading selected"
+    },
+    "positions": {
+      "action": "Action",
+      "advice": "Advice",
+      "future": "Future",
+      "obstacle": "Engel",
+      "outcome": "Result",
+      "partner": "Partner",
+      "past": "History",
+      "present": "Now.",
+      "relationship": "Relationship",
+      "situation": "Status",
+      "you": "You"
+    },
+    "prompts": {
+      "lockedStateDescription": "Save the form for audio or written reading; then the cards will open.",
+      "lockedStateTitle": "Complete formula",
+      "selectReadingDescription": "Select the type of reading to start opening.",
+      "selectReadingTitle": "Select the type of reading"
+    },
+    "types": {
+      "career": "Career",
+      "custom": "Custom",
+      "daily": "Log",
+      "detailed": "Loud",
+      "detailedShort": "Loud",
+      "love": "Love",
+      "monthly": "Monthly",
+      "simple": "Simple",
+      "simpleShort": "Simple",
+      "threeCard": "Three Cards",
+      "weekly": "Weekly",
+      "written": "Written",
+      "writtenShort": "Written",
+      "yearly": "Yearly"
+    }
+  },
+  "readingModal": {
+    "birthDate": "Date of Birth",
+    "cardspreadmeaning2": "4 card special openings for relationships and emotional ties",
+    "close": "Close",
+    "completed": "Completed",
+    "creditCost": "Credit Cost",
+    "downloadPdf": "Download PDF",
+    "email": "Email",
+    "filePrefix": "tarot-reading",
+    "firstName": "Name",
+    "generalSpread": "General Dispersion",
+    "interpretation": "Mystic Comment",
+    "interpretationDesc": "The meaning and guidance of tarot cards",
+    "lastName": "Last name",
+    "loveSpread": "The Opening of Love",
+    "loveSpreadName": "The Opening of Love",
+    "mysticNotes": "You can download the PDF of this reading to record your personal notes.",
+    "mysticReading": "Tarot Reading",
+    "noInterpretation": "The comment on this card hasn't been prepared yet.",
+    "pdfError": "An error occurred while creating PDF. Please try again.",
+    "pending": "Standing by",
+    "position": "Position",
+    "position1": "The One You Care About",
+    "position2": "Physical/Sexual Connection",
+    "position3": "Emotional/Soul Connection",
+    "position4": "Long-term Result",
+    "question": "Question",
+    "question1": "What concerns you most about your love life?",
+    "question2": "What do you want to understand by this expression of love?",
+    "question3": "How are you feeling emotionally right now?",
+    "questionsAnswers": "Questions and Answers",
+    "questionsDesc": "Questions for your mystical guidance",
+    "readingDate": "Reading Date",
+    "reversed": "Reverse",
+    "reviewed": "Analyzed",
+    "status": "Status",
+    "upright": "Flat"
+  },
+  "readings": {
+    "allExperiences": "All your mystical experiences",
+    "allTime": "All Times",
+    "allTypes": "All Species",
+    "careerReading": "Career Study",
+    "careerSpread": "Career Spreading",
+    "clearFilters": "Clear Filters",
+    "credits": "loan",
+    "firstExperience": "Are you ready to experience your first mystical experience?",
+    "format": {
+      "audio": "Vocabulary Reading",
+      "simple": "Simple Reading",
+      "written": "Written Reading"
+    },
+    "formatLabel": "Reading Format",
+    "generalReading": "General Reading",
+    "generalReadings": "General Readings",
+    "generalSpread": "General Dispersion",
+    "lastMonth": "Last 1 Month",
+    "lastWeek": "Last Week",
+    "lastYear": "Last 1 Year",
+    "loadMore": "Load More",
+    "loading": "Loading Readings",
+    "loveReading": "The Reading of Love",
+    "loveReadingDetailed": "Love Express - Voice Read",
+    "loveReadingSimple": "Love - Simple Reading",
+    "loveReadingWritten": "Love - Reading Written",
+    "loveReadings": "Love Readings",
+    "loveSpread": "Love Spreads",
+    "myReadings": "My readings",
+    "mysticReading": "Tarot Reading",
+    "mysticSpread": "Mystic Spreading",
+    "noReadings": "No Reading Yet",
+    "numerologyAnalysis": "Numerology Analysis",
+    "numerologyReading": "Numerology Reading",
+    "preparing": "Your mystical experience is being prepared...",
+    "problemSolvingReading": "Problem Solving Explanation",
+    "problemSolvingSpread": "Problem-solving Expedition",
+    "relationshipAnalysisReading": "Relationship Analysis Explanation",
+    "relationshipAnalysisSpread": "Relation Analysis Spread",
+    "searchPlaceholder": "Search for reading...",
+    "situationAnalysisReading": "State Analysis Explanation",
+    "situationAnalysisSpread": "Status Analysis Spread",
+    "startFirstReading": "Start First Reading",
+    "threeCardReading": "3 Card Reading",
+    "threeCardSpread": "3 Card Spreading",
+    "totalCredits": "Total Credit",
+    "totalReadings": "Total Reading",
+    "view": "View"
+  },
+  "relationshipAnalysis": {
+    "data": {
+      "badgeText": "RELATIONSHIP ANALIS",
+      "cardDirections": {
+        "reversed": "Reverse",
+        "upright": "Flat"
+      },
+      "defaultTitle": "Relationship Analysis Explanation",
+      "detailedReadingTitle": "Relationship Analysis Explanation - Details Personal Reading",
+      "detailedTitle": "Relationship Analysis Explanation - Details Personal Reading",
+      "interpretationTitle": "Relationship Analysis Explanation Comment",
+      "readingFormats": {
+        "detailed": "Loud",
+        "simple": "Simple",
+        "written": "Written"
+      },
+      "simpleInterpretation": "Simple reading - just meter",
+      "simpleTitle": "Simple Reading",
+      "spreadName": "Relationship Analysis Explanation",
+      "spreadTitle": "Relationship Analysis Explanation"
+    },
+    "form": {
+      "birthDate": "Date of Birth",
+      "clearAll": "Clean All",
+      "communicationMethod": "Communication Method",
+      "concernQuestion": "What relationship situation do you want to analyze?",
+      "email": "Your email address",
+      "emailCommunication": "Email",
+      "emotionalQuestion": "How do you feel about this relationship right now?",
+      "firstName": "Your name",
+      "lastName": "Last name",
+      "personalInfo": "Your Personal Information",
+      "questions": "▪ Explanation of Relationship Analyzing Questions ▪",
+      "saveAndOpen": "▪ Save and Open Cards",
+      "saving": "Saving...",
+      "understandingQuestion": "What do you want to understand with this relationship analysis?",
+      "whatsappCommunication": "WhatsApp"
+    },
+    "modals": {
+      "aboutSpread": "About Publicity",
+      "aboutSpreadText": "These seven-card openings are designed to analyze your relationship deeply. The current situation provides extensive information about your feelings, expectations, and recommendations.",
+      "cancel": "Give it up.",
+      "cardCount": "Number of Cards",
+      "cardCountText": "Each card represents a different aspect of the relationship.",
+      "communicationMethod": "Communication Method",
+      "confirm": "Yes, I approve.",
+      "continue": "Continue",
+      "creditConfirm": "Credit Approval",
+      "creditConfirmMessage": "Do you want to continue this reading?",
+      "detailedReading": "Vocabulary Reading",
+      "detailedReadingText": "Voice reading offers a warm, detailed view of all aspects of your relationship, and with questions and information you share, you will receive a complete and exclusive comment.",
+      "emailCommunication": "Email",
+      "infoTitle": "About the Opening of Relationship Analysis",
+      "loveAttention": "After your reading is recorded, I usually deliver your personal comment by email within two hundred and four hours. This work is for guidance; the final choices are always yours.",
+      "loveAttentionInfo": "A Kind Note",
+      "process": "Process",
+      "processing": "Processing...",
+      "redirecting": "▪ You are being forwarded to the main page...",
+      "saveReading": "Save Reading",
+      "savingReading": "Saving...",
+      "step1": "Fill in your personal information and questions",
+      "step2": "Select 7 cards in order",
+      "step3": "Read the meaning of the cards",
+      "step4": "Save your reading and receive it by email",
+      "successMessage": "Your relationship analysis expansion has been recorded and analyzed in detail. You can view your results from the user panel.",
+      "successTitle": "Reading Successfully Recorded!",
+      "whatsappCommunication": "WhatsApp",
+      "writtenReading": "Written Reading",
+      "writtenReadingText": "The written reading is delivered as a detailed report that you can hide and return whenever you wish."
+    }
+  },
+  "relationshipProblems": {
+    "data": {
+      "badgeText": "The card comments are intended to inform you, and your detailed reading will get you there.",
+      "cardDirections": {
+        "reversed": "Reverse",
+        "upright": "Flat"
+      },
+      "defaultTitle": "The Opening of Relationship Problems",
+      "detailedReadingTitle": "The Opening of Relationship Problems - Details Personal Reading",
+      "detailedTitle": "The Opening of Relationship Problems - Details Personal Reading",
+      "interpretationTitle": "The Opening of Relationship Problems",
+      "readingFormats": {
+        "detailed": "Loud",
+        "simple": "Simple",
+        "written": "Written"
+      },
+      "simpleInterpretation": "Simple reading - just meter",
+      "simpleTitle": "Simple Reading",
+      "spreadName": "The Opening of Relationship Problems",
+      "spreadTitle": "The Opening of Relationship Problems"
+    },
+    "form": {
+      "birthDate": "Date of Birth",
+      "clearAll": "Clean All",
+      "communicationMethod": "Communication Method",
+      "concernQuestion": "What relationship problem do you want to analyze?",
+      "email": "Your email address"
+    }
+  }
+}

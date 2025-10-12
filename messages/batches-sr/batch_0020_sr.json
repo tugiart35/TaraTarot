@@ -1,0 +1,795 @@
+{
+  "marriage": {
+    "meanings": {
+      "fourofswords": {
+        "position3": {
+          "keywords": [
+            null,
+            "strategija",
+            "spokojstvo",
+            "poboljšanje"
+          ],
+          "context": "Miran um proizvodi fer plan."
+        },
+        "position4": {
+          "upright": "Potreba za odmor, udaljenosti i mirno može usporiti lepljenje. Jedna strana možda želi da se povuče i razmišlja.",
+          "reversed": "Dugoročna tišina može dovesti do lomave veze. Potrebno je ponovo da preduzmete mere.",
+          "keywords": [
+            "odmor",
+            "rastojanje",
+            "spokojstvo",
+            "povlačenje",
+            "obveznica"
+          ],
+          "context": "Postoji želja za povezivanjem, ali tajming zavisi od potrebe da se odmara."
+        },
+        "position5": {
+          "upright": "Vaša kultura spokoja, odmora i koncentracije je slična. Jezik vremena omekšava sukob.",
+          "reversed": "Prekomerna tišina može stvoriti udaljenost. Trajanje povlačenja ne treba produžiti.",
+          "keywords": [
+            "odmor",
+            "spokojstvo",
+            "oporavak",
+            "ritam",
+            "oblast"
+          ],
+          "context": "Kultura razmaka je uobičajena. Trajanje / namera mora biti jasno."
+        },
+        "position6": {
+          "upright": "Trebaće vam vremena da vas porodica prihvati. U prvoj fazi postoji period tišine, udaljenosti i opreznog posmatranja. Budući da je strpljiv i čekajući da njihov ritam pozitivno utiče na proces.",
+          "reversed": "Možda će biti dugotrajne sumnje u porodici ili nedoumice iz prošlosti. Tišina može postati znak ne prihvatanja, već trajno razdaljine. Uprkos vašim naporima, zidovi mogu ostati tvrdoglavo na mestu.",
+          "keywords": [
+            "čekati",
+            "odmor",
+            "posmatranje",
+            "rastojanje",
+            "strpljenje"
+          ],
+          "context": "U početku može biti tišina i udaljenost. Ako vam date vreme, postupak prihvatanja porodice postaje lakši."
+        },
+        "position7": {
+          "upright": "Četiri mačeva ukazuju na sastanak tokom procesa odmora i unutrašnjeg oporavka. Sastanak koji dolazi nakon tišine je trajan.",
+          "reversed": "Preokrećena četvorka mačeva kaže da odlaganje može odložiti obveznicu. Mali koraci brže se sastaju.",
+          "keywords": [
+            "odmor",
+            "tišina",
+            "oporavak",
+            "strpljenje"
+          ],
+          "context": "Upoznate se nakon tišine. Mali koraci olakšavaju postupak."
+        },
+        "position8": {
+          "upright": "Četiri mačeva ukazuju na mirnoću u komunikaciji i prikupljanju misli. Tišina može olakšati razumevanje.",
+          "reversed": "Četiri preokrenuta mačeva sugerišu da izbegavanje komunikacije može otežati harmoniju. Mali, ali jasni koraci su od pomoći.",
+          "keywords": [
+            "spokojstvo",
+            "oporavak",
+            "odmor",
+            "komunikacija"
+          ],
+          "context": "Spokoj donosi harmoniju; Escape otežava razumevanje."
+        },
+        "position9": {
+          "upright": "Četiri mačeva, mirni supružnik koji daje mir sa njenim spokojem je pogodan za vas. Neko ko zna kako da se odmori u krizama donosi harmoniju.",
+          "reversed": "Četiri mačeva preokrenuta: neko ko ne daje mir i izaziva stalni haos nije pogodan za vas.",
+          "keywords": [
+            "spokoj",
+            "prekršiti",
+            "mir",
+            "ravnoteža"
+          ],
+          "context": "Smirni supružnik je pogodan."
+        }
+      },
+      "fiveofswords": {
+        "position1": {
+          "upright": "Zaključak; Možda postoje manji sukobi ili borbe za napajanje. Ali to se može prevazići odgovarajućom komunikacijom.",
+          "reversed": "Rešavanje tenzija i opraštanja će poboljšati ishod braka.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "argument",
+            "rešenje"
+          ],
+          "context": "Zaključak; Brak u kojem su i sukobi takođe poučno. Bond će postati jači sa popravkom."
+        },
+        "position10": {
+          "upright": "Petorica mačeva ukazuje da sukobi i ego bitke mogu oštetiti bračnu stazu. Potrebno je da se fokusirate na vezu, a ne pravednost.",
+          "reversed": "Način za brak je popločen popravkom i oproštenjem. Saradnja pobedi, a ne ego.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "legitimitet",
+            "popraviti",
+            "prihod"
+          ],
+          "context": "Očuvanje obveznice za brak je važnije od prave."
+        },
+        "position2": {
+          "upright": "Uzmite u svom egu. Naučite da se smestite dok čekate.",
+          "reversed": "Držeći prošli sukobi otežavaju proces. Izaberite putanju popravke.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "kompromis",
+            "popraviti"
+          ],
+          "context": "Korisno je naučiti da se kompromise dok čekate."
+        },
+        "position3": {
+          "upright": "Želja za pravom pretvara novac u borbi za napajanje. Čak i ako postoji pobeda, veza je oštećena.",
+          "reversed": "Rastvor za uštedu lica i izvinjenje mogu omogućiti finansijski mir.",
+          "keywords": [
+            "ego",
+            "sukob",
+            "trošak",
+            "konsenzus"
+          ],
+          "context": "Rešenje, ne ponižavajući jezik, donosi fokus."
+        },
+        "position4": {
+          "upright": "Želja za pobedom i Ego-om otežava da se poveže. Borbe i argumenti mogu zasjeniti želju za vezom.",
+          "reversed": "Nakon sukoba može nastati želja za pomirenjem. Ako je ego pusti, veza može postati jača.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "pobediti",
+            "pomirljivost",
+            "obveznica"
+          ],
+          "context": "Postoji želja za vezom, ali sukobi moraju biti uravnoteženi."
+        },
+        "position5": {
+          "upright": "Smatrate se u vrednosti očuvanja odnosa, a ne pravednosti. Vaša osetljivost na oštro jezik je slična.",
+          "reversed": "Vaš sarkazam / prag sarkazma može biti drugačiji. Treba izbegavati igre za uštedu lica.",
+          "keywords": [
+            "ego",
+            "legitimitet",
+            "poštovanje",
+            "popraviti",
+            "jezik"
+          ],
+          "context": "Sličnost zasnovana na poštovanju. Stilistička pažnja je važna."
+        },
+        "position6": {
+          "upright": "Sukobi ideja i borbe na vlasti u porodici mogu vas izazvati. Pokušaj da bude u pravu može odložiti proces prihvatanja. Međutim, ako napravite korak unazad dok očuvate mostove, može se naći srednja zemlja.",
+          "reversed": "Sukobi mogu dalje da eskaliraju, povećavajući rizik da vas ostave napolje. Možda ste meta porodičnih argumenata i naići na povrede reči. Tvrdoglave borbe umesto mira istrošeći proces.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "legitimitet",
+            "borba za napajanje",
+            "rastojanje"
+          ],
+          "context": "Sukobi mogu nastati u porodici. Pomirivački stav će biti ključan za prihvatanje."
+        },
+        "position7": {
+          "upright": "Petorica mačeva kaže da sastanak može nastati u okruženju diskusije ili neslaganja. Pravi izraz gradi novi most.",
+          "reversed": "Otkriveni pet mačeva ukazuje na fleksibilnost i ispunjavanje namere popravljanja. Empatija, ne ego, otvara vrata.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "empatija",
+            "dijalog"
+          ],
+          "context": "Upoznate se u okruženju neslaganja. Empatija jača vezu."
+        },
+        "position8": {
+          "upright": "Petorica mačeva pokazuje da želja da bude u pravu može da otežava komunikaciju. Empatija olakšava razumevanje.",
+          "reversed": "Petorica modra preokrenuta ukazuje da se komunikacija može ponovo uspostaviti sa namerom da se popravi. Kompromis jača vezu.",
+          "keywords": [
+            "sukob",
+            "legitimitet",
+            "empatija",
+            "popraviti"
+          ],
+          "context": "Empatija olakšava razumevanje; Ego stvara sukob."
+        },
+        "position9": {
+          "upright": "Petorica mačeva, fleksibilna osoba koja se brine više o njegovoj vezi nego što je dobila pogodna za vas. Supružnik koji se fokusira na pronalaženje rešenja, a ne da bude u pravu, daje duševni mir.",
+          "reversed": "Pet mačeva je preokrenulo: neko ko je uvek svađa i pokušava da bude u pravu nije pogodan za vas.",
+          "keywords": [
+            "rešenje",
+            "fleksibilnost",
+            "obveznica",
+            "kompromis"
+          ],
+          "context": "Supružnik orijentisan na rastvor i kompatibilan je pogodan."
+        }
+      },
+      "sixofswords": {
+        "position1": {
+          "upright": "Zaključak; Nakon teških vremena biće miroljubiva tranzicija. Vaš odnos će se kretati prema spokojstvu.",
+          "reversed": "Tragovi prošlosti mogu osporiti ishod braka. Oproštaj je neophodan.",
+          "keywords": [
+            "prelaz",
+            "mir",
+            "napredak",
+            "ravnoteža"
+          ],
+          "context": "Zaključak; mirna nakon oluje. Ako je prošlost puštena, veza postaje jača."
+        },
+        "position10": {
+          "upright": "Šest mačeva pokazuje prelazak na mirniji period prevazilaženje teškoća. Ovaj proces olakšava kretanje prema braku.",
+          "reversed": "Neuspjeh u potpunosti od propadanja prošlih veza može odložiti koraci braka. Dobijanje podrške je korisno.",
+          "keywords": [
+            "prelaz",
+            "spokojstvo",
+            "ruta",
+            "odmicali se",
+            "inovativnost"
+          ],
+          "context": "Brak; Moguće je sa mirnim prolazom i novom rutom."
+        },
+        "position2": {
+          "upright": "Ostavite prošlost iza sebe. Dok čekate, krenite prema mirnim vodama.",
+          "reversed": "Protekle veze vas mogu zadržati. Rešite ih.",
+          "keywords": [
+            "prelaz",
+            "miran",
+            "napredak",
+            "izdanje"
+          ],
+          "context": "Dok čekate, korisno je pustiti prošlost."
+        },
+        "position3": {
+          "upright": "Prelazak na mirne vode potreban je postepeni budžetski plan. Srednja rešenja pružaju olakšanje.",
+          "reversed": "Povratak na stare načine odgađa isceljenje. Dobijanje podrške je korisno.",
+          "keywords": [
+            "prelaz",
+            "plan",
+            "spokojstvo",
+            "adaptacija"
+          ],
+          "context": "Inkrementalna promena čuva deljenje."
+        },
+        "position4": {
+          "upright": "Prilog se može mirno izgraditi da bi se skloni od prošlih problema. Odnos može ući u mirniji period.",
+          "reversed": "Kada prošli teretni topite ne puštaju, lepljenje se odloži. Umesto da se radujemo, može se ostati zaglavljen u prošlosti.",
+          "keywords": [
+            "prelaz",
+            "mir",
+            "napredak",
+            "izdanje",
+            "obveznica"
+          ],
+          "context": "Postoji želja za povezivanjem, ostavljajući prošlost iza toga je od suštinskog značaja."
+        },
+        "position5": {
+          "upright": "Vaš planirani, postepeni pristup mirnoj vode je sličan. Iz krize se pojavljujete kao obrazovni.",
+          "reversed": "Tendencija povratka u prošlost može ostati dominantna u nekoj od vas. Tranzicijski plan mora biti jasan.",
+          "keywords": [
+            "prelaz",
+            "plan",
+            "spokojstvo",
+            "raport",
+            "napredak"
+          ],
+          "context": "Planirani oporavak je uobičajen. Stanovanje u prošlosti treba smanjiti."
+        },
+        "position6": {
+          "upright": "Porodica vas može premestiti u mirnije i više prihvaćenije mesto. Nakon teških vremena, postoji most za mir. Uobičajeni cilj ili putovanje mogu vas približiti bliže.",
+          "reversed": "Porodica može imati poteškoća da ostavljate prošle misaone obrasce iza. Oni mogu da deluju sa fiksnim presudama bez da vas poznaju. Proces prijema se stoga može odložiti ili bolno.",
+          "keywords": [
+            "prelaz",
+            "mir",
+            "raport",
+            "putovanje",
+            "prihvatanje"
+          ],
+          "context": "Vremenom, porodica može postati više prihvata. Možda će trebati vremena da izađu iz prošlosti."
+        },
+        "position7": {
+          "upright": "Šest mačeva ukazuje na sastanak tokom putovanja ili pomeranja. Tokom prelaznog perioda pojavljuju se nove obveznice.",
+          "reversed": "Ukrasano šest mačeva kaže da stare veze mogu odložiti proces. Prihvatanje tranzicije olakšava upoznavanje.",
+          "keywords": [
+            "putovanje",
+            "prelaz",
+            "promeniti",
+            "Nova veza"
+          ],
+          "context": "Upoznate se na putovanju. Proces tranzicije otvara vrata."
+        },
+        "position8": {
+          "upright": "Šest mačeva ukazuje na prelazak na smireniji i uravnoteženiji proces u komunikaciji. Razumevanje je lako kada su umovi u miru.",
+          "reversed": "Šest preokrene mačeva kaže da prošla pitanja mogu da otežavaju komunikaciju. Ostavljajući prošlost iza donosi Harmoniju.",
+          "keywords": [
+            "prelaz",
+            "ravnoteža",
+            "mir",
+            "spokojstvo"
+          ],
+          "context": "Miran odlomak osigurava ugovor; Sprečava vas da prebivate u prošlosti."
+        },
+        "position9": {
+          "upright": "Šest mačeva, nekoga ko stoji pored vaše strane u teškim vremenima i olakšava se prelazu zajedno je pogodno za vas.",
+          "reversed": "Šest mačeva preokrenulo je: neko ko je zaglavljen u prošlosti i ima poteškoća u kretanju napred nije pogodan za vas.",
+          "keywords": [
+            "prelaz",
+            "podrška",
+            "napredak",
+            "raport"
+          ],
+          "context": "Partner koji vam olakšava prelazak naprijed je pogodan."
+        }
+      },
+      "sevenofswords": {
+        "position1": {
+          "upright": "Zaključak; Sa pažljivim planiranjem i strategijom, vaš brak će napredovati. Tajnost treba izbegavati.",
+          "reversed": "Stvari koje nisu očigledne mogu doći na svetlost. Transparentnost je obavezna.",
+          "keywords": [
+            "strategija",
+            "plan",
+            "sigurnost",
+            "iskrenost"
+          ],
+          "context": "Zaključak; Brak ravnoteže strategije i otvorenosti. Privatnost se može oštetiti."
+        },
+        "position10": {
+          "upright": "Sedam mačeva naglašava potrebu za iskrenošću i jasnoćom u procesu braka. Postupanje sa jasnom namerom povećava poverenje.",
+          "reversed": "Polu istine ili samoobmana mogu otežati brak. Transparentnost je obavezna.",
+          "keywords": [
+            "strategija",
+            "iskrenost",
+            "sigurnost",
+            "poverenje",
+            "plan"
+          ],
+          "context": "Jasna namera i transparentnost su neophodni za brak."
+        },
+        "position2": {
+          "upright": "Razvijte svoju strategiju. Dok čekate, budite iskreni.",
+          "reversed": "Samoobmana čini proces težak. Budite otvoreni.",
+          "keywords": [
+            "strategija",
+            "iskrenost",
+            "plan",
+            "oštrina"
+          ],
+          "context": "Iskrena strategija dok je čekanja korisna."
+        },
+        "position3": {
+          "upright": "Potreban je strateški pristup; Međutim, doza poverljivosti treba pažljivo podesiti. Postoji test transparentnosti.",
+          "reversed": "Polu istine Erode Trust; Ispovest i poravnanje su od suštinskog značaja.",
+          "keywords": [
+            "strategija",
+            "tajna",
+            "iskrenost",
+            "poverenje"
+          ],
+          "context": "Razjasnite etičku liniju; Zatim napravite plan."
+        },
+        "position4": {
+          "upright": "Tajnost ili nepoštenost otežava vezu. Ako jedna od stranaka sakriva istinu, veza nije sigurna.",
+          "reversed": "Jednom kada se postigne otvorenost, veza se može sigurno ojačati. Povezivanje je moguće ako su skrivene situacije završene.",
+          "keywords": [
+            "sigurnost",
+            "iskrenost",
+            "strategija",
+            "poverenje",
+            "obveznica"
+          ],
+          "context": "Želja za povezivanje zavisi od osnivanja poverenja."
+        },
+        "position5": {
+          "upright": "Slična mera u strategiji i granicama privatnosti. Ako je namera čista, održava se minimalna poverljivost.",
+          "reversed": "Polu-istina tolerancija može varirati. Treba utvrditi standard transparentnosti.",
+          "keywords": [
+            "strategija",
+            "sigurnost",
+            "etika",
+            "otvorenost",
+            "poverenje"
+          ],
+          "context": "Etički strateški partner. Hajde da razgovaramo o transparentnoj traci."
+        },
+        "position6": {
+          "upright": "Možda će vam biti oprezan i sumnja u pristupu vašoj porodici. Možda ćete trebati testirati u njihovim očima. Pokazivanje vaše iskrenosti će povećati poverenje.",
+          "reversed": "Umesto da vas otvoreno odbacuje, porodica može da se protivi iza scene. Male igre ili skrivene nesigurnosti mogu da komplikuju proces. Nejasni stavovi stvaraju stalnu hladnoću.",
+          "keywords": [
+            "sumnja",
+            "sigurnost",
+            "strategija",
+            "poverenje",
+            "test"
+          ],
+          "context": "Porodica se može ponašati oprezno. Jasna iskrenost povećava poverenje i utiče na put za prihvatanje."
+        },
+        "position7": {
+          "upright": "Sedam mačeva kaže da će se sastanak dogoditi kroz strateške ili indirektne načine. Mala tajna ili skrivena prilika otvara vrata.",
+          "reversed": "Okrećeno sedam mačeva kaže da poluistine mogu otežati vezu. Otvorenika rađa poverenje.",
+          "keywords": [
+            "strategija",
+            "tajna",
+            "prilika",
+            "poverenje"
+          ],
+          "context": "Upoznajete se na indirektni način. Otvorenost jača vezu."
+        },
+        "position8": {
+          "upright": "Sedam mačeva ukazuje da komunikacija zahteva strategiju i pažnju. Iskrenost je ključ za dogovor.",
+          "reversed": "Uokrećeno sedam mačeva kaže da se harmonija može postići otkrivanjem onoga što je skriveno. Transparentnost jača ugovor.",
+          "keywords": [
+            "strategija",
+            "sigurnost",
+            "transparentnost",
+            "iskrenost"
+          ],
+          "context": "Transparentnost donosi harmoniju; Tajnost prekida sporazum."
+        },
+        "position9": {
+          "upright": "Sedam mačeva, neko ko ostaje strateški, ali iskren i ne potkopava poverenje je pogodno za vas.",
+          "reversed": "Sedam obrokovanih mačeva nije pogodno za vas, kao i neko ko je to jeverni i nepošten.",
+          "keywords": [
+            "iskrenost",
+            "poverenje",
+            "strategija",
+            "otvorenost"
+          ],
+          "context": "Pogodan je i pouzdan supružnik."
+        }
+      },
+      "eightofswords": {
+        "position1": {
+          "upright": "Zaključak; Mentalna ograničenja ili strahovi mogu da ograniče vaš brak. Potrebna je hrabrost da budete slobodni.",
+          "reversed": "Proces rešavanja ograničenja pretvoriće ishod braka u pozitivan.",
+          "keywords": [
+            "ograničenje",
+            "strah",
+            "sloboda",
+            "um"
+          ],
+          "context": "Zaključak; Bond je ojačala rastvaranje strahova. Moramo da krenemo napred sa hrabrošću."
+        },
+        "position10": {
+          "upright": "Osam mačeva ukazuje da ste zaglavili u sopstvenom obrascu misao u vezi sa brakom. Ispitivanje verovanja pruža oslobađanje.",
+          "reversed": "Odmrzavanje počinju; Koraci ka emancipaciji ojačavaju mogućnost braka.",
+          "keywords": [
+            "ograničenje",
+            "umazač",
+            "oslobođenje",
+            "strah",
+            "verovanje"
+          ],
+          "context": "Vreme je da se oslobodimo ograničenih uverenja za brak."
+        },
+        "position2": {
+          "upright": "Suočite se sa sopstvenim mentalnim blokovima. Otkrijte svoju slobodu dok čekate.",
+          "reversed": "Potrebno je prevazići sopstvene strahove. Hrabrost je korisna.",
+          "keywords": [
+            "prepreke",
+            "sloboda",
+            "strah",
+            "hrabrost"
+          ],
+          "context": "Korisno je prevazići strah dok čekate."
+        },
+        "position3": {
+          "upright": "Samoograničavanjem uverenja paralizuju finansijska akcija. Izlazna vrata su zapravo otvorena.",
+          "reversed": "Otapanje počinje; Mali dokazi pojačavaju samopouzdanje i budžet počinje da teče.",
+          "keywords": [
+            "samostalno ograničenje",
+            "strah",
+            "oslobođenje",
+            "dokaz"
+          ],
+          "context": "Uklanjanje okova na umu otvara prostor za deljenje."
+        },
+        "position4": {
+          "upright": "Jedan partner može oklevati da se obavezuje zbog svojih strahova i ograničenja. Mentalne invalidnosti suzbijaju želju za vezom.",
+          "reversed": "Rešavanje strahova se otvara put ka povezivanju. Oslobađanje omogućava mogućnost veze.",
+          "keywords": [
+            "Ograničenje",
+            "strah",
+            "sloboda",
+            "prepreka",
+            "obveznica"
+          ],
+          "context": "Postoji želja za povezivanjem, ali strahovi se moraju prevazići."
+        },
+        "position5": {
+          "upright": "Vaš pristup rešavanju straha sa dokazima je sličan. Lagano se oslobađate jedni drugima iz okova.",
+          "reversed": "Samo-ograničenje narativa može biti tvrdoglava u jednom od vas. Traženje podrške treba da postane praktična.",
+          "keywords": [
+            "ograničenje",
+            "strah",
+            "oslobođenje",
+            "dokaz",
+            "podrška"
+          ],
+          "context": "Oslobođeni partner zasnovan na dokazima. Poziv za pomoć mora se ojačati."
+        },
+        "position6": {
+          "upright": "Neki članovi porodice mogu se zaglaviti u svojim predrasudama. Možda imaju problema da vas vide. Moguće je promeniti ove percepcije sa strpljenjem i malim koracima.",
+          "reversed": "Predrasude se mogu postepeno zameniti fleksibilnošću. Ali ukoliko se stari obrasci misao potpuno ne rastopi, oni mogu da vas i dalje sprečavaju. Za pretvorbu je potrebno više napora.",
+          "keywords": [
+            "ograničenje",
+            "predrasude",
+            "percepcija",
+            "strpljenje",
+            "prepreke"
+          ],
+          "context": "Porodica može da deluje sa predrasudama. Mali koraci pacijenta mogu da promene svoju percepciju."
+        },
+        "position7": {
+          "upright": "Osam mačeva ukazuje da mentalna ograničenja mogu otežati sastanak. Malo hrabrosti razbija lanac.",
+          "reversed": "Otkriveni osam mačeva ukazuje da će oslobađanje ubrzati proces. Dobijanje podrške olakšava vezivanje.",
+          "keywords": [
+            "ograničenje",
+            "oslobođenje",
+            "hrabrost",
+            "um"
+          ],
+          "context": "Upoznate se kada se savladaju mentalne prepreke. Hrabrost uvlači put."
+        },
+        "position8": {
+          "upright": "Osam mačeva ukazuje da obrasci uma mogu ograničiti komunikaciju. Slobodna perspektiva olakšava razumevanje.",
+          "reversed": "Otkriveno osam mačeva ukazuje na proces rastvaranja i oslobađanja u komunikaciji. Odvažni izraz donosi Harmoniju.",
+          "keywords": [
+            "Ograničenje",
+            "umazač",
+            "sloboda",
+            "izraz"
+          ],
+          "context": "Besplatni izraz promoviše harmoniju; Obrasci ometaju harmoniju."
+        },
+        "position9": {
+          "upright": "Osam mačeva je pogodno za vas, partneru koji je ostvario svoja ograničenja i može ih prevazići.",
+          "reversed": "Osam preokrenenih mačeva, neko ko je zaglavljen u sopstvenim strahovima nije za vas.",
+          "keywords": [
+            "oslobođenje",
+            "hrabrost",
+            "svest",
+            "ravnoteža"
+          ],
+          "context": "Supružnik koji zna kako da premaši njegove granice je pogodno."
+        }
+      },
+      "nineofswords": {
+        "position1": {
+          "upright": "Zaključak; Ankete ili nesanica mogu da napregnu brak. Samo kroz ovu sukobu je moguće isceljenje.",
+          "reversed": "Mir će se vratiti dok se anksioznost smanjuje. Izlečenje će početi.",
+          "keywords": [
+            "anksioznost",
+            "anksioznost",
+            "um",
+            "zarastanje"
+          ],
+          "context": "Zaključak; Brak koji raste jači prevladavajućim brigama. Unutrašnji mir mora se steći."
+        },
+        "position10": {
+          "upright": "Devet mačeva nam govori da su zabrinutosti i zabrinjavajuća zasjenjenost mogućnošću braka. Suočavanje sa istinom donosi mir.",
+          "reversed": "Ankete počinju da se reše; Zida nade se ponovo pojavljuje.",
+          "keywords": [
+            "anksioznost",
+            "anksioznost",
+            "noćna mora",
+            "stvarnost",
+            "konfrontacija"
+          ],
+          "context": "Rešavanje zabrinutosti je obavezan za brak."
+        },
+        "position2": {
+          "upright": "Shvatite svoje brige i potražite rešenja. Smiri se dok čekaš.",
+          "reversed": "Katastrofaziranje komplicira proces. Fokusirajte se na činjenice.",
+          "keywords": [
+            "anksioznost",
+            "strah",
+            "um",
+            "stvarnost"
+          ],
+          "context": "Korisno je prevazilaženje anksioznosti dok čekate."
+        },
+        "position3": {
+          "upright": "Scenariji anksioznosti i katastrofa oslabiti finansijsko poverenje. Noć poremeti dan.",
+          "reversed": "Realnost provera i naručite nižu anksioznost; Poverenje se povećava u deljenju.",
+          "keywords": [
+            "anksioznost",
+            "zabluda",
+            "stvarnost",
+            "narediti"
+          ],
+          "context": "Higijena anksioznosti jača monetarnu uniju."
+        },
+        "position4": {
+          "upright": "Anksioznost, nesanica i brige mogu otežati da se poveže. Jedna od strana može imati straha od budućnosti.",
+          "reversed": "Kako se anksioznost smanjuje, lepljenje postaje lakše. Nada može zameniti loše scenarije.",
+          "keywords": [
+            "anksioznost",
+            "anksioznost",
+            "strah",
+            "nadati se",
+            "obveznica"
+          ],
+          "context": "Postoji želja za povezivanjem, ali strepnje se moraju rešiti."
+        },
+        "position5": {
+          "upright": "Jezik anksioznosti deluje na sličan način; Naučite da se regulišete jedni druge. Jutarnja jasnoća je dragocena.",
+          "reversed": "Vaši katastrofazni pragovi mogu biti različiti. Testiranje stvarnosti treba da bude uobičajena navika.",
+          "keywords": [
+            "anksioznost",
+            "spavati",
+            "stvarnost",
+            "regulacija",
+            "saosećanje"
+          ],
+          "context": "Empatija je uobičajena u anksioznosti. Podržava testiranje i ritual."
+        },
+        "position6": {
+          "upright": "Anksioznost i brige u porodici mogu im otežati da vas prihvate. Noći, strahovi i preterani scenariji mogu se pojaviti. Vremenom će se te probleme pokazati neosnovanim.",
+          "reversed": "Čak i ako se tiče pasti, dugotrajna sumnja ili nelagodnost može ostati. Porodica će vam možda teško u potpunosti da vas zagrli. Ova situacija može da baci senku na vezu.",
+          "keywords": [
+            "anksioznost",
+            "strah",
+            "sumnja",
+            "anksioznost",
+            "nesanica"
+          ],
+          "context": "Porodična zabrinutost mogu odložiti prihvatanje. Vremenom, ove zabrinutosti mogu postati pogrešno postavljene."
+        },
+        "position7": {
+          "upright": "Devet mačeva ukazuje na sastanak tokom nestrpljivog vremena. Govori o unutrašnjim strahovima bliže vezu.",
+          "reversed": "Okrećeno devet mačeva kaže da će jutarnja jasnoća ojačati vezu. Deljenje anksioznosti stvara poverenje.",
+          "keywords": [
+            "anksioznost",
+            "strah",
+            "komunikacija",
+            "poverenje"
+          ],
+          "context": "Upoznate se u anksioznom procesu. Deljenje gradi poverenje."
+        },
+        "position8": {
+          "upright": "Devet mačeva ukazuje da anksiteta mogu otežati komunikaciju. Deljenje zabrinutosti olakšava razumevanje.",
+          "reversed": "Reversed devet mačeva ukazuje na priliku za olakšanje od anksioznosti i otvorenije komunikacije.",
+          "keywords": [
+            "anksioznost",
+            "anksioznost",
+            "komunikacija",
+            "izraz"
+          ],
+          "context": "Deljenje zabrinutosti podstiče harmoniju; Suzbijanje sprečava."
+        },
+        "position9": {
+          "upright": "Devet mačeva, partnera koji može upravljati brigama i prevoziti nadu čak i u mrak je pogodan za vas.",
+          "reversed": "Devet mačeva preokrenulo je, neko ko stalno zrači anksioznošću i životima u očaju nije pogodan za vas.",
+          "keywords": [
+            "nadati se",
+            "ravnoteža",
+            "anksioznost",
+            "izdržljivost"
+          ],
+          "context": "Pogodan je supružnik koji može da prevaziđe zabrinutosti."
+        }
+      },
+      "tenofswords": {
+        "position1": {
+          "upright": "Zaključak; Biće novi početak u braku sa kraj teških perioda.",
+          "reversed": "Proces oporavka može se nadati da se obnovi ishod braka.",
+          "keywords": [
+            "završiti",
+            "regeneracija",
+            "ugao",
+            "zarastanje"
+          ],
+          "context": "Zaključak; Nova stranica rođena sa zatvaranjem teške ciklusa."
+        },
+        "position10": {
+          "upright": "Deset mačeva ukazuje da se ciklus završava i zemlja se priprema za novi početak. Zatvaranje otvara novi prostor za brak.",
+          "reversed": "Energija oporavka i ponovnog rođenja raste; Nova stranica se može otvoriti za brak.",
+          "keywords": [
+            "završiti",
+            "predaja",
+            "ponovno rođenje",
+            "zarastanje",
+            "zatvaranje"
+          ],
+          "context": "Za brak potrebno je zatvoriti stare cikluse."
+        },
+        "position2": {
+          "upright": "Zatvorite petlju. Dok čekate, pripremite se za nove početke.",
+          "reversed": "Pusti teret prošlosti. Obnavljanje je blizu.",
+          "keywords": [
+            "završiti",
+            "regeneracija",
+            "zatvaranje",
+            "početak"
+          ],
+          "context": "Korisno je prihvatiti završetke dok čekate."
+        },
+        "position3": {
+          "upright": "Završava se finansijska metoda; Novi početak je neizbežan. Zatvaranje je isceljenje.",
+          "reversed": "Tokom procesa oporavka, stari duhovi se mogu vratiti; Okvir treba da bude jasan.",
+          "keywords": [
+            "završiti",
+            "zatvaranje",
+            "ponovno rođenje",
+            "vladavina"
+          ],
+          "context": "Vreme je da počastite staro i napišete novi plan."
+        },
+        "position4": {
+          "upright": "Završna petlja može otežati da se poveže. Potrebno je vreme da se uspostavi nova veza nakon izdaje ili teškog kraja.",
+          "reversed": "Nakon bola, počinje proces oporavka. U ovom slučaju, vezanost se može preporod.",
+          "keywords": [
+            "završiti",
+            "izdaja",
+            "ugao",
+            "ponovno rođenje",
+            "obveznica"
+          ],
+          "context": "Postoji želja za povezivanjem, ali prošle rane moraju biti zaceljene."
+        },
+        "position5": {
+          "upright": "Slična hrabrost u prihvatanju završne cikluse i okretanje na novu stranicu. Objede zatvaranja se deli.",
+          "reversed": "Tendencija da se na pola puta prepusti na pola puta može ostati u jednom od vas. Treba da se uradi potpuno zatvaranje.",
+          "keywords": [
+            "završiti",
+            "zatvaranje",
+            "ponovno rođenje",
+            "prihvatanje",
+            "zarastanje"
+          ],
+          "context": "Zatvaranje etike je uobičajeno. Popunite to bez da je to nedovršeno."
+        },
+        "position6": {
+          "upright": "Može postojati definitivno odbacivanje ili raskid od porodice. Iako se ova situacija u početku može činiti teško, to tokom vremena može dovesti do otvaranja drugih vrata. Znajući da vas istina oslobodi.",
+          "reversed": "Oštar raspad sa porodicom može polako početi da zaceljuje. Međutim, proces se može postupati vrlo sporo za potpuno prihvatanje. Oporavak će potrajati vreme.",
+          "keywords": [
+            "zadnji",
+            "odbijanje",
+            "probijanje",
+            "oslobođenje",
+            "poboljšanje"
+          ],
+          "context": "Porodica može pokazati čvrsto odbijanje. Vremenom je moguće oporavak, iako polako."
+        },
+        "position7": {
+          "upright": "Deset mačeva ukazuje na sastanak posle završetka. Konačno zatvaranje otvara vrata na novi početak.",
+          "reversed": "Prekoračeni deset mačeva ukazuje na oporavak i ponovno rođenje. Reframing olakšava upoznavanje.",
+          "keywords": [
+            "završiti",
+            "ponovno rođenje",
+            "transformacija",
+            "zatvaranje"
+          ],
+          "context": "Sastaješ se nakon završetka. Transformacija otvara nova vrata."
+        },
+        "position8": {
+          "upright": "Deset mačeva ukazuje na kraj ciklusa u komunikaciji. Nakon teškog završetka, prilika se pojavljuje za novi sporazum.",
+          "reversed": "Prekoračeni deset mačeva ukazuje na postupak oporavka i ponovnog uspostavljanja komunikacije. Rebirth donosi harmoniju.",
+          "keywords": [
+            "završiti",
+            "regeneracija",
+            "petlja",
+            "izraz"
+          ],
+          "context": "Paljenje nakon završetka obezbeđuje harmoniju; To potkopava otpor."
+        },
+        "position9": {
+          "upright": "Deset mačeva, nekoga sa snagom ponovnog rođenja, nekoga ko počast okonča i otvara se do novog, pogodan je za vas.",
+          "reversed": "Deset mačeva je preokrenulo: neko ko stalno ostaje u ulozi žrtve ili ko odoleva novom nije pogodno za vas.",
+          "keywords": [
+            "ponovno rođenje",
+            "završiti",
+            "snaga",
+            "transformacija"
+          ],
+          "context": "Pogodan je supružnik koji je otvoren za obnovu."
+        }
+      },
+      "pageofswords": {
+        "position1": {
+          "upright": "Zaključak; Radoznalost, komunikacija i želja za učenjem zadržaće brak svežom.",
+          "reversed": "Nesporazumi ili tračevi mogu da isteku ishod braka.",
+          "keywords": [
+            "radoznalost",
+            "učenje",
+            "komunikacija",
+            "real"
+          ],
+          "context": "Zaključak; Brak je ojačan otvorenom komunikacijom. Dezinformacije treba uzeti u obzir."
+        }
+      }
+    }
+  }
+}

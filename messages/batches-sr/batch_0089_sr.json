@@ -1,0 +1,778 @@
+{
+  "situation-analysis": {
+    "meanings": {
+      "themagician": {
+        "position6": {
+          "reversed": "Savet: Izrežite nered, smanjite više zadataka. Identifikujte nestalu veštinu i dopunjuju ga mikrotrainom; Pojednostavite svoju poruku.",
+          "keywords": [
+            "fokus",
+            "izraz",
+            "izvor",
+            "akcija",
+            "poručiti"
+          ],
+          "context": "Preporuka: Povežite namjeru na jedan kanal."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: Trio namjene-fokusne akcije je poravnati; Manifestirate opipljiv uspeh sa svojim resursima. Efikasna komunikacija otvara ključna vrata.",
+          "reversed": "Moguća budućnost: raštrkani energetski i nedovršeni projekti smanjuju efikasnost. Preuveličana obećanja mogu potkopati poverenje; Potrebno je pojednostaviti poruku i zatvoriti praznine veština.",
+          "keywords": [
+            "manifestacija",
+            "fokus",
+            "komunikacija",
+            "izvor",
+            "uspeh"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "thehighpriestess": {
+        "position1": {
+          "upright": "Majka superiorna, odluke koje ste doneli u prošlosti oslanjaju na vašu intuiciju ili skrivene istine koje su pojavile mogu biti osnova vaše trenutne situacije.",
+          "reversed": "Obrnuto visoki sveštenici, ignorisanje intuicije ili zadržavanja poverljivih informacija u prošlosti možda su uticali na trenutne okolnosti.",
+          "keywords": [
+            "intuicija",
+            "mudrost",
+            "skriven",
+            "podsvestan",
+            "prošlost"
+          ],
+          "context": "Uticaj intuicije ili skrivenog znanja u prošlosti."
+        },
+        "position2": {
+          "upright": "Visoki sveštenici ukazuje da u trenutnoj situaciji morate da se obratite svojoj intuiciji, unutrašnje znanje i znakove od svoje podsvesti. Vaše unutrašnje smernice mogu biti snažne i usmeravaju vas u pravom smeru. \\ N \\ NTHIS Card naglašava važnost okretanja prema unutra i sticanje snage od tišine, umesto da u ovom trenutku razgovarate.",
+          "reversed": "Prekoračeni visoki sveštenici ukazuje da trenutno ignorišete svoju intuiciju, potiskujete svoje unutrašnje smernice ili izbegavajući suočavanje sa istinama u vašoj podsvesti. Informacije su dostupne, ali mogu biti teško pristupiti. \\ N \\ n \\ NThis kartica podseća vas da odbivanje vaše intuicije ili ignorisanja činjenica može povećati trenutne zagušenja.",
+          "keywords": [
+            "intuicija",
+            "mudrost",
+            "unutrašnje znanje",
+            "skriven",
+            "Sada"
+          ],
+          "context": "Uloga intuicije i unutrašnje mudrosti u trenutnoj situaciji."
+        },
+        "position3": {
+          "upright": "Visoki sveštenik ukazuje da vas intuitivno znanje i snovi vode iza kulisa. Neverbalni znakovi i unutrašnji glas su jači vodič nego što se pojavljuje.",
+          "reversed": "Ograničena visoka sveštenica naglašava suzbijanje intuicije, skriveno znanje i nepoverenje u unutrašnji glas. Ono što mislite da ne vidite je zapravo istina koju ignorišete.",
+          "keywords": [
+            "intuicija",
+            "tajna",
+            "podsvestan",
+            "snova",
+            "unutrašnji glas"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru su intuicija, unutrašnji znanje i smireno posmatranje. Duboko slušanje, a ne žuri da se osvetli o suštini situacije.",
+          "reversed": "U centru je potiskuje unutrašnji glas ili ignorisanje znakova. Spoljni šum može biti ometao od istinskog fokusa.",
+          "keywords": [
+            "intuicija",
+            "mudrost",
+            "tajna",
+            "okretanje prema unutra",
+            "spokojstvo"
+          ],
+          "context": "Centar: Glas unutrašnjeg smernice."
+        },
+        "position5": {
+          "upright": "Visoka sveštenica kaže da postoje skrivene informacije u spoljnom svetu, iza dinamike iza scene i znakova koji se moraju pročitati s intuicijom. Implicitni signali su odlučni kao zvanični podaci.",
+          "reversed": "Ukrasana visoka sveštenica ukazuje da tračevi, uskraćivanje informacija i neprozirnim procesima stvaraju neizvesnost spolja. Odluke iza zatvorenih vrata mogu indirektno uticati na vas.",
+          "keywords": [
+            "tajna",
+            "prećutno znanje",
+            "intuicija",
+            "transparentnost",
+            "tračevi"
+          ],
+          "context": "Nevidljivi deo informacija daje smeru koliko i očigledan deo."
+        },
+        "position6": {
+          "upright": "Savet: Isključite buku, slušajte unutrašnji glas. Držite časopis, pazite na znakove i negujete intuiciju, a ne u ishither odluke.",
+          "reversed": "Savet: Zaustavite prekomernu potrošnju informacija. Ne otkrivajte svoje tajne svima; Stvorite prostor tišine i postanite jasni.",
+          "keywords": [
+            "intuicija",
+            "tišina",
+            "okretanje prema unutra",
+            "posmatranje",
+            "oštrina"
+          ],
+          "context": "Preporuka: Podizanje unutrašnjih smernica."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: intuitivna jasnoća raste; Dinamika iza scena postaje vidljiva i u pravom trenutku hvatate prave informacije. Strpljenje donosi duboko razumevanje.",
+          "reversed": "Moguća budućnost: skrivene informacije i nejasne signale mogu produžiti postupak. Suzbijanje unutrašnjeg glasa može povećati konfuziju; Potrebno je otvoriti miran prostor.",
+          "keywords": [
+            "intuicija",
+            "tajna",
+            "mudrost",
+            "vremenski vreme",
+            "uvid"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "theempress": {
+        "position1": {
+          "upright": "CEMPRES, prošli obilje, kreativnost ili snažna podrška možda su formirali osnovu procesa.",
+          "reversed": "Pretvorena carica, prošli blokadu produktivnosti, emocionalne neravnoteže ili zavisnosti mogu biti uzrok ovog procesa.",
+          "keywords": [
+            "obilje",
+            "kreativnost",
+            "podrška",
+            "osećanje",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlosti produktivnosti ili zavisnosti."
+        },
+        "position2": {
+          "upright": "Carica simbolizuje obilje, kreativnost i snažnu vezu sa prirodom u trenutnoj situaciji. U ovom procesu, vaša produktivnost može povećati i vaši projekti mogu početi da podnose plodove. Takođe imate saosećajni stav. \\ N \\ NTHIS Card naglašava da vaš potencijal da stvori nove stvari u vašem životu i izrazite se trenutno je jako jak.",
+          "reversed": "Reversirana carica može ukazivati na to da je vaša kreativna energija trenutno blokirana, imate poteškoće sa produktivnošću ili se borite sa zavisnosti. Možda ćete zanemariti sebe ili izlagati prekomerno izoterno stav. \\ N \\ NTHIS kartica vam govori da vam je potrebno da rebalansirate energiju saosećanja.",
+          "keywords": [
+            "obilje",
+            "kreativnost",
+            "priroda",
+            "saosećanje",
+            "Sada"
+          ],
+          "context": "Energija kreativnosti i saosećanje u trenutnoj situaciji."
+        },
+        "position3": {
+          "upright": "Latentni uticaj carice uključuje potrebu za hranjivom, potragom za udobnošću i gladi za kreativnost. Energija saosećanja unutar poziva za produktivnost.",
+          "reversed": "Reversirana carica ukazuje na nedostatak samo-nege, zavisnosti od odobrenja ili tendencija da se pridržava zona komfora. Potraga za emocionalnom zadovoljstvom može potajno uticati na odluke.",
+          "keywords": [
+            "ishrana",
+            "kreativnost",
+            "udobnost",
+            "briga o sebi",
+            "Tajna potreba"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "Tema obilja, nege i produktivne kreativnosti je jaka u centru. Negujući i negovanja greju srce procesa.",
+          "reversed": "Nedostatak samo-nege, prekomerno posesivnost ili blokirana produktivnost može se pojaviti u centru. Hranjenje se što prvo naoštruje fokus.",
+          "keywords": [
+            "obilje",
+            "kreativnost",
+            "snabdevanje",
+            "saosećanje",
+            "proizvodnja"
+          ],
+          "context": "Centar: Fokus hranjive energije."
+        },
+        "position5": {
+          "upright": "Carica ukazuje da spoljni okruženje neguje, bogate resursima i podržavaju kreativnu proizvodnju. Zainteresovari i zajednice rast pogone.",
+          "reversed": "Reversed Campress kaže da preterano okruženje može dovesti do lenjosti ili zavisnosti. Udobnost može da troši inovacije.",
+          "keywords": [
+            "izvor",
+            "podrška",
+            "obilje",
+            "zona komfora",
+            "kreativnost"
+          ],
+          "context": "Obilje spoljnih resursa proširuje proizvodnju; Prekomerna udobnost može kočiti."
+        },
+        "position6": {
+          "upright": "Savet: Negujte svoju produktivnost. Organizujte svoje okruženje, ulagajte u negu tela i uzgajajte kreativno seme sa ljubavlju.",
+          "reversed": "Savet: prestanite da budete preterano posesivni. Podesite granice, skinite nepotrebne terete i prvo uravnotežite samo-negu.",
+          "keywords": [
+            "obilje",
+            "briga",
+            "kreativnost",
+            "granica",
+            "ravnoteža"
+          ],
+          "context": "Preporuka: Uspostavljanje ravnoteže ograničenja isporuke."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: obilje, rast i kreativni proizvodni voće medveda; Seme koje radite za postanite beton. Saosećajna nega stvara stabilnost.",
+          "reversed": "Moguća budućnost: Prekomerno posesivnost ili nedostatak samo-nege smanjuje produktivnost. Kreativni blok može biti privremen; Ciklus odmora bez ishrane je obnovljen.",
+          "keywords": [
+            "obilje",
+            "kreativnost",
+            "rast",
+            "saosećanje",
+            "proizvodnja"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "theemperor": {
+        "position1": {
+          "upright": "Car, naredba osnovana u prošlosti, figura organa ili preuzete su od odluka matične odluke mogle su utrgnuti put današnjoj situaciji.",
+          "reversed": "Uključen car, prošli ugnjetavanje, kruta pravila, ili gubitak kontrole, možda su bili osnovni uzroci trenutne situacije.",
+          "keywords": [
+            "narediti",
+            "vlast",
+            "snaga",
+            "kontrola",
+            "prošlost"
+          ],
+          "context": "Efekti prethodnog naloga ili ugnjetavanja."
+        },
+        "position2": {
+          "upright": "Car simbolizuje energiju uspostavljanja redosleda, autoriteta i strukture u ovom trenutku. Trudite se da svoj život usmerite određenom disciplinom i odlučnošću. Pouzdanost i odlučnost su na čelu. \\ N \\ NTHIS kartica pokazuje da trenutno pokazujete snažan stav rukovodstva ili da je takva brojka uticajna u vašem životu.",
+          "reversed": "Reverzni car ukazuje da trenutno doživljavate sukob sa ovlašćenjima, imate poteškoće sa održavanjem naloga ili preplaviti preterano krutim pravilima. Možda se osećate kao da gubite kontrolu. \\ N \\ NTHIS Card vas podseća da je potrebno da pronađete ravnotežu bez pretvaranja moći u ugnjetavanje.",
+          "keywords": [
+            "narediti",
+            "vlast",
+            "kontrola",
+            "stabilnost",
+            "Sada"
+          ],
+          "context": "Uloga autoriteta i naloga u trenutnoj situaciji."
+        },
+        "position3": {
+          "upright": "Car kaže da potreba za kontrolom i strukture reguliše proces iza scene. Potraga za sigurnost nevidljivo zatežava pravila.",
+          "reversed": "Reversirani car naglašava čvrstinu, latentni sukob sa ovlašćenjima ili strah od gubitka moći. Unutrašnji verovanje da \"moram zadržati sve\" ograničava fleksibilnost.",
+          "keywords": [
+            "kontrola",
+            "sigurnost",
+            "vlast",
+            "krutost",
+            "podsvesni uzorak"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "Postoji potreba za strukturom, narudžbom i strateškom rukovodstvom u centru. Jasne granice i pravila drže celu sliku.",
+          "reversed": "Tendencija prema rigidnosti ili prevelikoj metodi može prevladati u centru. Povećavanje fleksibilnosti čini sistem izdržljivijim.",
+          "keywords": [
+            "struktura",
+            "vlast",
+            "granica",
+            "strategija",
+            "stabilnost"
+          ],
+          "context": "Centar: Osovina koja uspostavlja nalog."
+        },
+        "position5": {
+          "upright": "Car pokazuje da su autoritet, red i jasna pravila presudni u spoljnim faktorima. Regulacija i institucije pružaju okvire i smanjite neizvesnost.",
+          "reversed": "Reversirani car može vršiti pritisak spolja, kao što je birokratija, kruta hijerarhija ili mikromanacija. Nefleksibilna pravila usporavaju tempo.",
+          "keywords": [
+            "vlast",
+            "vladavina",
+            "regulacija",
+            "birokratija",
+            "raskid"
+          ],
+          "context": "Institucionalni poredak zajedno donosi mogućnosti i ograničenja."
+        },
+        "position6": {
+          "upright": "Savet: Kreirajte jednostavna pravila, jasne uloge, nedeljni ritmovi. Struktura donosi slobodu.",
+          "reversed": "Savet: Opustite preteranu kontrolu. Delegat, Ažurirajte pravila i otvorite prozore fleksibilnosti.",
+          "keywords": [
+            "struktura",
+            "vladavina",
+            "uloga",
+            "delegat",
+            "fleksibilnost"
+          ],
+          "context": "Preporuka: Uspostaviti radni okvir."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: čvrste strukture i jasna pravila donose trajni uspeh; Vaš autoritet je prepoznat. Strategija organizuje haos.",
+          "reversed": "Moguća budućnost: otpornost na krutost i mikromanagement. Sistemi koji nisu fleksibilni mogu usporiti; Potrebne su delegate i ažuriranje.",
+          "keywords": [
+            "struktura",
+            "vlast",
+            "strategija",
+            "granica",
+            "stabilnost"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "thehierophant": {
+        "position1": {
+          "upright": "Sveti, prošli trening, tradicija ili smernice od figure vlasti možda su formirali osnovu današnjeg procesa.",
+          "reversed": "Okolišteni sveti, pogrešne smernice, pobuna protiv pravila ili lažnih učenja u prošlosti može biti razlozi za današnju situaciju.",
+          "keywords": [
+            "uputstvo",
+            "tradicija",
+            "doktrina",
+            "mudrost",
+            "prošlost"
+          ],
+          "context": "Uticaj prethodnih uputstava ili lažne učenja."
+        },
+        "position2": {
+          "upright": "Svetac simbolizuje vašu potrebu za konvencionalnom mudrošću, nastavnicima ili vodećim cifrom u ovom trenutku. Pravila, red i proces učenja mogu biti na čelu. \\ N \\ nThis kartica naglašava da trenutno tražite vođe ili steći snagu od onoga što ste naučili.",
+          "reversed": "Uokrećeni sveti može ukazivati na to da trenutno ispitujete pravila, idu protiv Konvencije ili suočite se sa lažnim uputstvom. Možete da ne prihvatate autoritet. \\ N \\ nThis kartica vas podseća da je vaša potreba da se povećate sopstveni put.",
+          "keywords": [
+            "doktrina",
+            "uputstvo",
+            "tradicija",
+            "mudrost",
+            "Sada"
+          ],
+          "context": "Sukob sa uputstvima ili ovlašćenjima u trenutnoj situaciji."
+        },
+        "position3": {
+          "upright": "Označava da nevidljive reference kao što su svetac, tradicija, porodične / kulturne norme i odobrenje vlasti utiču na vaše odluke. Ono što je poznato daje samopouzdanje.",
+          "reversed": "Prekoračeni svetac može biti reakcija na dogmu, tajnu pobunu protiv pravila ili tragova lažnih uputstava. Unutra se čuje poziv na \"Moj sopstveni način\".",
+          "keywords": [
+            "tradicija",
+            "odobrenje",
+            "doktrina",
+            "dogma",
+            "podrujan"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru su tradicija, doktrina i pouzdane smernice. Testirane metode mogu biti ključni sastojak u smanjenju neizvesnosti.",
+          "reversed": "U centru se može videti pridržavanje dogme ili reaktivne pobune. Potrebna je srednja zemlja između slepe usklađenosti i slepih odbacivanja.",
+          "keywords": [
+            "tradicija",
+            "uputstvo",
+            "ritual",
+            "organizacija",
+            "učenje"
+          ],
+          "context": "Centar: Trusterski okvir."
+        },
+        "position5": {
+          "upright": "Aziz naglašava snažan uticaj tradicionalnih struktura, mentora i industrijskih normi spolja. Mehanizmi odobrenja mogu otvoriti vrata za napredak.",
+          "reversed": "Ukrašeni svetac kaže da dogma, formulaičke procedure i institucije otporne na inovacije stvaraju spoljni trenje. Stara pravila mogu odložiti nova rešenja.",
+          "keywords": [
+            "tradicija",
+            "norma",
+            "mentor",
+            "odobrenje",
+            "otpornost"
+          ],
+          "context": "Industrijske norme donose i poverenje i ograničenja."
+        },
+        "position6": {
+          "upright": "Savet: Pronađite mentora, standardizujte dobre prakse. Prilagodite testirani način vašem sopstvenom kontekstu.",
+          "reversed": "Savet: Pitanje nerazumne tradicije. Napišite sopstvenu knjigu i izrežite suvišno.",
+          "keywords": [
+            "mentor",
+            "standardni",
+            "doktrina",
+            "adaptacija",
+            "inovativnost"
+          ],
+          "context": "Preporuka: Uspostavljanje ravnoteže između tradicije i inovacija."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: institucionalno odobrenje, sertifikacija ili prihvatanje tradicionalnim sredstvima. Podrška za mentora može otvoriti vrata.",
+          "reversed": "Moguća budućnost: Želja za slomom kalupa može stvoriti trenje; Originalna staza otvara alternativna vrata, ali proces će možda potrajati duže.",
+          "keywords": [
+            "tradicija",
+            "odobrenje",
+            "mentor",
+            "standardni",
+            "organizacija"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "thelovers": {
+        "position1": {
+          "upright": "Ljubitelji, srdačna odluka donesena u prošlosti, harmonija u odnosima ili partnerstvom možda je oblikovala trenutnu situaciju.",
+          "reversed": "Invertirani ljubavnici, pogrešni izbori ostvareni u prošlosti, nespojivi odnosi ili raskiri mogu biti u korenu procesa.",
+          "keywords": [
+            "odnos",
+            "odluka",
+            "raport",
+            "glasati",
+            "prošlost"
+          ],
+          "context": "Uticaj prethodnih izbora ili odnosa."
+        },
+        "position2": {
+          "upright": "Ljubitelji simbolizuju energiju važne odluke, odnosa ili partnerstva u trenutnoj situaciji. Slušanje vašeg srca i pravećim izborima može biti na čelu. Možda ćete doživeti proces obveznice ili prilagođavanja. \\ N \\ nThis kartica pokazuje da trenutno oblikuješ svoj život kroz ljubav i posvećenost.",
+          "reversed": "Ukrasani ljubitelji simbolizuju trenutne nekompatibilnosti, pogrešne odluke ili odvajanje. Možda ste ispratili svoje srce ili odselili od harmonije u trenutku odluke. \\ N \\ nThis kartica vas podseća da biste trebali ponovo proceniti posledice svojih odluka.",
+          "keywords": [
+            "odnos",
+            "odluka",
+            "raport",
+            "glasati",
+            "Sada"
+          ],
+          "context": "Uticaj odnosa i odluka u trenutnoj situaciji."
+        },
+        "position3": {
+          "upright": "Ljubitelji, na nevidljivom nivou vaše vrednosti i posvećenosti trebaju voditi vaše izbore. Želja za harmonijom stavlja nežan pritisak na odluke.",
+          "reversed": "Vreopoveni ljubitelji ukazuju na skrivene obrasce kao što su sukob vrednosti, strah od intimnosti ili dinamike trougla. Strategija izbegavanja može da oblakne izbore.",
+          "keywords": [
+            "vrednosti",
+            "glasati",
+            "obveznica",
+            "blizina",
+            "tajni sukob"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru je poravnavanje vrednosti i svesni izbor. Kad se srce i um sastaju na istoj liniji, cela slika toče.",
+          "reversed": "Sukob vrednosti ili neodlučnost u Centru može da ometa fokus. Razjašnjenje kriterijuma je osnovno rešenje.",
+          "keywords": [
+            "glasati",
+            "raport",
+            "vrednosti",
+            "obveznica",
+            "odluka"
+          ],
+          "context": "Centar: Izbor usklađen sa vrednostima."
+        },
+        "position5": {
+          "upright": "Ljubitelji pokazuju da su spoljni zainteresovani otvoreni za vreme poravnanja i transparentnih partnerstava. Strateški savez može stvoriti polugu.",
+          "reversed": "Invertirani ljubavnici kažu da sukobi interesa, fragmentirana očekivanja i nespojiva partnerstva stvaraju spoljnu napetost. Nezaličnost je skupa.",
+          "keywords": [
+            "partnerstvo",
+            "raport",
+            "kamate",
+            "poravnanje",
+            "odluka"
+          ],
+          "context": "Poravnanje spoljnih partnera množi uspjeh; Discord je naporan."
+        },
+        "position6": {
+          "upright": "Savet: Razjasnite svoje vrednosti i odlučite koji se usklađuju sa njima. Izgradite skladno partnerstvo.",
+          "reversed": "Preporuka: Pregledajte sve neusklađene veze. Ispustite ili pregovoriti neusklađene obaveze.",
+          "keywords": [
+            "vrednost",
+            "glasati",
+            "poravnanje",
+            "partnerstvo",
+            "oštrina"
+          ],
+          "context": "Preporuka: Odluka zasnovana na vrednosti."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: Izbor je napravljen u skladu sa vrednostima; Rođen je snažno partnerstvo ili fuzija. Odluka povećava unutrašnji mir.",
+          "reversed": "Moguća budućnost: neodlučnost ili sukob vrednosti mogu se razdvojiti načini. Ako se ne uspostave jasni kriterijumi, osećaji disonancije mogu da istraju.",
+          "keywords": [
+            "glasati",
+            "raport",
+            "partnerstvo",
+            "vrednost",
+            "odluka"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "thechariot": {
+        "position1": {
+          "upright": "Kočija može ukazivati na to da je utvrđivanje, uspeh ili snažan napredak u prošlosti mogao da formiraju osnovu za sadašnju situaciju.",
+          "reversed": "Obrnuto kočiju, prošli gubitak kontrole, neuspeh ili nedostatak smera možda su uticali na postojeće okolnosti.",
+          "keywords": [
+            "stabilnost",
+            "uspeh",
+            "kontrola",
+            "napredak",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih gubitka stabilnosti ili kontrole."
+        },
+        "position2": {
+          "upright": "Chariot simbolizuje određivanje, volju i kontrolu u trenutnoj situaciji. Imate snažnu motivaciju da biste se krenuli napred fokusiranjem na cilj. Izgledate spremnim da prevaziđete poteškoće. \\ N \\ nThis kartica vas podseća da se trenutno krećete ka uspehu koristeći svoju volju.",
+          "reversed": "Ukrašeni kolait može ukazivati na to da trenutno gubite kontrolu, iskusite nedostatak smera ili se krećete prema naprijed sa raštrkanom energijom. Možda imate poteškoća u postizanju svojih ciljeva. \\ N \\ NTHIS kartica naglašava da vam je potrebno da reprodukujete i odmah steknete kontrolu.",
+          "keywords": [
+            "stabilnost",
+            "uspeh",
+            "kontrola",
+            "volja",
+            "Sada"
+          ],
+          "context": "Uticaj kontrole i stabilnosti u trenutnoj situaciji."
+        },
+        "position3": {
+          "upright": "Kočija, potreba za održavanjem kontrole i pogon da bi pobedila podsticaj iza kulisa. Vaša sposobnost upravljanja suprotnosti je podsvesna aduta.",
+          "reversed": "Reversed Chariot ukazuje na skrivene okidače kao što su strah od dezorijentacije, raspadanja i izbegavanja neuspeha. Unutrašnja napetost može oslabiti kontrolu.",
+          "keywords": [
+            "kontrola",
+            "volja",
+            "pogon dostignuća",
+            "disperzija",
+            "skriveni okidač"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru je volja, disciplina i smer. Dovođenje suprotstavljenih snaga na isti cilj pokreće uspeh.",
+          "reversed": "Gubitak smera, tegljenje ili gubitak kontrole može se pojaviti u centru. Pojednostavljivanje rute vraća fokus.",
+          "keywords": [
+            "volja",
+            "kontrola",
+            "pravac",
+            "pobeda",
+            "disciplina"
+          ],
+          "context": "Centar: Pojedinačna fokusirana snaga."
+        },
+        "position5": {
+          "upright": "Charit pokazuje da je pritisak za konkurenciju i brzinu snažan. Nagrade na nagradu na tržište, smeće, smerni potezi.",
+          "reversed": "Reversed Coriot sugerira da su raštrkani dnevni red, sukobljeni zahtevi ili agresivni konkurencija stvori gubitak smera. Potrebna je konsolidacija.",
+          "keywords": [
+            "rivalstvo",
+            "ubrzanje",
+            "Nedelja",
+            "pravac",
+            "ugnjetavanje"
+          ],
+          "context": "Brzi spoljni tempo zahteva jasnu rutu."
+        },
+        "position6": {
+          "upright": "Savet: Izaberite jedinstveni cilj, nastavite sa dnevnom rutinom. Uslovi suprotstavljene sile u istom pravcu.",
+          "reversed": "Savet: Zaustavite više zadataka. Vratite upravljač, isključite odstupanja.",
+          "keywords": [
+            "pravac",
+            "disciplina",
+            "cilj",
+            "rutinski",
+            "fokus"
+          ],
+          "context": "Savet: Jedno odredište, jasna ruta."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: pobeda sa disciplinom i fokusom; Vozila se suprotstavljenih snaga na istoj meti, dobijate vidljivi napredak.",
+          "reversed": "Moguća budućnost: rizik od dezorijentacije i podizanja za podizanje; Razbacani ciljevi poremetite zamah. Postaje potrebno pojednostaviti rutu.",
+          "keywords": [
+            "pobeda",
+            "disciplina",
+            "pravac",
+            "stabilnost",
+            "ubrzanje"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "strength": {
+        "position1": {
+          "upright": "Snaga, strpljenje, hrabrost ili unutrašnja otpornosti prikazana u prošlosti mogu biti u korenu današnje situacije.",
+          "reversed": "Obrnuta snaga, nestrpljivost u prošlosti, problemi upravljanja ljutnjom ili gubitak samopouzdanja mogu biti razlozi procesa.",
+          "keywords": [
+            "hrabrost",
+            "strpljenje",
+            "izdržljivost",
+            "poverenje",
+            "prošlost"
+          ],
+          "context": "Uticaj prethodnih iskustava moći ili nemoći."
+        },
+        "position2": {
+          "upright": "Snaga simbolizuje strpljenje, hrabrost i unutrašnja izdržljivost u trenutnoj situaciji. Prevladavate poteškoće koristeći sopstvenu unutrašnju snagu. U ovom procesu se ističete sa svojom mirnom. \\ N \\ NTHIS kartica za sada naglašava važnost meke snage i samopouzdanja.",
+          "reversed": "Obrnuta snaga može ukazivati na to da trenutno doživljavate nestrpljenje, pitanja upravljanja ljutnjom ili nedostatkom samopouzdanja. Imate poteškoća sa sećanjem svoje unutrašnje snage. \\ N \\ nThis kartica vam govori da je potrebno da se pregrupišete i ojačate svoje samopouzdanje trenutno.",
+          "keywords": [
+            "hrabrost",
+            "izdržljivost",
+            "poverenje",
+            "strpljenje",
+            "Sada"
+          ],
+          "context": "Uticaj unutrašnje snage ili nestrpljenja u trenutnoj situaciji."
+        },
+        "position3": {
+          "upright": "Kaže vam da se krećete napred sa nevidljivom podrškom čvrstoće, smirivanja hrabrosti i samooseljenost. Otpornost u tiho balansira oluju.",
+          "reversed": "Ograničena snaga naglašava skrivene fluktuacije kao što su potisnuta gneva, koji lebde samopouzdanje ili nestrpljenje. Postoji potreba da se ublaži unutrašnju životinju.",
+          "keywords": [
+            "hrabrost",
+            "samooseljenost",
+            "ljutnja",
+            "poverenje",
+            "skriveni talas"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru su mirna hrabrost i saosećajna snaga. Meko ubeđivanje otvara vrata bolja od teške snage.",
+          "reversed": "Fluktuacija samopouzdanja ili nestrpljenja u centru može oštetiti sliku. Smirujući unutrašnji glas jača osovinu.",
+          "keywords": [
+            "hrabrost",
+            "saosećanje",
+            "poverenje",
+            "strpljenje",
+            "milost"
+          ],
+          "context": "Centar: ravnoteža sa mekom snagom."
+        },
+        "position5": {
+          "upright": "Snaga pokazuje da se u spoljnim uticajima ceni mirno liderstvo, strpljenje i izgradnja poverenja. Meka moć otvara vrata.",
+          "reversed": "Obrnuta snaga nam govori da je maltretiranje, ugnjetavanje ili nizak moral efikasan napolju. Oštri ton može prouzrokovati gubitak podrške.",
+          "keywords": [
+            "poverenje",
+            "reputacija",
+            "spokojstvo",
+            "moral",
+            "rukovodstvo"
+          ],
+          "context": "Smiri i konzistentni stanovišta podrška za nošenje napolju."
+        },
+        "position6": {
+          "upright": "Savet: Idite sa mekom snagom. Povećajte mikro doze ohrabrenja i održavati je strpljenjem.",
+          "reversed": "Savet: Imajte saosećanje za sebe, usporite ritam. Dobijte podršku tamo gde imate poteškoće.",
+          "keywords": [
+            "hrabrost",
+            "strpljenje",
+            "saosećanje",
+            "kontinuitet",
+            "podrška"
+          ],
+          "context": "Savet: Izgradnja saosećajne otpornosti."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: Prepreke se prevazilaze sa mirnom hrabrošću i saosećajne snage; Građevinsko poverenje daje trajne rezultate.",
+          "reversed": "Moguća budućnost: fluktuacija u samopouzdanju i nestrpljivosti može osporiti proces; Potrebno je smanjiti ritam i dobiti podršku.",
+          "keywords": [
+            "hrabrost",
+            "saosećanje",
+            "otpornost",
+            "poverenje",
+            "strpljenje"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "thehermit": {
+        "position1": {
+          "upright": "Sveti, unutrašnji put, usamljenost ili potraga u prošlosti možda su postavili temelj za današnju situaciju.",
+          "reversed": "Ograničeni sveti je možda prouzrokovao proces izolacijom, introversijom ili pogrešnim uputstvima u prošlosti.",
+          "keywords": [
+            "mudrost",
+            "potraga",
+            "usamljenost",
+            "uputstvo",
+            "prošlost"
+          ],
+          "context": "Tražeći prošlost ili efekte usamljenosti."
+        },
+        "position2": {
+          "upright": "Saint simbolizuje unutrašnje putovanje, usamljenost i introverziju u trenutnoj situaciji. Možda ste se povukli da razumete sebe i pronađete unutrašnje odgovore. \\ N \\ NTHIS kartica vas podseća da se sada fokusirate na unutrašnje smernice.",
+          "reversed": "Okolišteni svetac pokazuje da trenutno doživljavate ekstremnu izolaciju, usamljenost ili isključenje spoljnog sveta. Možda imate poteškoće u pristupu unutrašnjim smernicama. \\ N \\ nThis kartica naglašava da vam je potrebno da pronađete srednju zemlju između usamljenosti i spoljnog sveta da biste odmah pronašli ravnotežu.",
+          "keywords": [
+            "mudrost",
+            "potraga",
+            "usamljenost",
+            "okretanje prema unutra",
+            "Sada"
+          ],
+          "context": "Efekat unutrašnjeg putovanja ili izolacije u trenutnoj situaciji."
+        },
+        "position3": {
+          "upright": "Saint kaže da ga njegova unutrašnja potreba za mudrošću i samoće vodi iza kulisa. Introvertirana obrada poboljšava kvalitet odluke.",
+          "reversed": "Ograničeno sveti se označava nevidljivi obrazac bekstva, izolacije ili shiint-a od vidljiv. Prekomerna introverzija kontakt može biti efikasna.",
+          "keywords": [
+            "unutrašnja mudrost",
+            "usamljenost",
+            "izbegavanje",
+            "skrivanje",
+            "intuicija"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru je potreba za introspekcijom, mudrošću i samicom. Isključivanje buke centri je bitno svetlo.",
+          "reversed": "U centru se može dogoditi prekomerna izolacija ili introverzija. Selektivno deljenje pruža ravnotežu.",
+          "keywords": [
+            "ološenje",
+            "mudrost",
+            "uputstvo",
+            "okretanje prema unutra",
+            "oštrina"
+          ],
+          "context": "Centar: Uputstvo unutrašnjeg fenjera."
+        },
+        "position5": {
+          "upright": "Ermis kaže da je potražnja za stručnom mišljenjem, figure mislilaca i duboke analize visoko u spoljnom svetu. Ručno rukovodstvo se vrednuje.",
+          "reversed": "Ograničeni sveti pokazuje da izolacija, pokvarena komunikacija ili nedostatak povratnih informacija stvaraju spoljne prepreke. Zatvaranje umanjuje vidljivost.",
+          "keywords": [
+            "stručnost",
+            "analiza",
+            "mišljenje",
+            "izolacija",
+            "vidljivost"
+          ],
+          "context": "Tržište traži dubine i mudre smernice."
+        },
+        "position6": {
+          "upright": "Preporuka: Odredite blokove dubokog rada, obratite se kadulje / stručnjaku. Pratite unutrašnje svetionika.",
+          "reversed": "Preporuka: Smanjite izolaciju. Delite nacrte, uspostavite petlju za povratne informacije.",
+          "keywords": [
+            "duboko delo",
+            "stručnjak",
+            "okretanje prema unutra",
+            "deljenje",
+            "povratna informacija"
+          ],
+          "context": "Savet: tišina i selektivna vidljivost."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: mudriji pravac se određuje dubokim uvidom i rafiniranom strategijom; Radite sami snosi plod.",
+          "reversed": "Moguća budućnost: Prekomerna introverzija smanjuje vidljivost; Nedostatak povratnih informacija može usporiti napredak.",
+          "keywords": [
+            "mudrost",
+            "okretanje prema unutra",
+            "strategija",
+            "uputstvo",
+            "oštrina"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "thewheeloffortune": {
+        "position1": {
+          "upright": "Točak sudbine, srećne slučajnosti, promene ili ciklusi iskusni u prošlosti, možda su postavili temelj za današnju situaciju.",
+          "reversed": "Obrnuti točak sudbine, ponovljene nesreće ili loše vreme u prošlosti mogu biti u korenu procesa.",
+          "keywords": [
+            "sudbina",
+            "šansa",
+            "petlja",
+            "promeniti",
+            "prošlost"
+          ],
+          "context": "Efekat prošle sreće ili nesreće."
+        },
+        "position2": {
+          "upright": "Točak sudbine ukazuje da možda postoji značajna promena, ciklus sreće ili neočekivane mogućnosti u vašem životu trenutno. Energija promene je trenutno intenzivna. \\ N \\ NTHIS kartica podseća na važnost prilagođavanja mogućnostima koje vam je FA-a trenutno nudi odmah.",
+          "reversed": "Obrnuti točak sudbine može ukazivati na to da trenutno doživljavate nesreće, ponavljajući cikluse ili loše vreme. Možda ćete ponavljati iste greške. \\ N \\ NTHIS kartica naglašava da vam je potrebno da prekinete cikluse i odmah isprobate drugačiji put.",
+          "keywords": [
+            "sudbina",
+            "promeniti",
+            "šansa",
+            "petlja",
+            "Sada"
+          ],
+          "context": "Uticaj promena ili ciklusa trenutne situacije."
+        },
+        "position3": {
+          "upright": "Točak sudbine naglašava nevidljivi uticaj ciklusa i vremenskih uverenja. Ideja o \"u dogledno vreme\" oblikuje strpljenje i strategiju.",
+          "reversed": "Obrnuti točak sudbine ukazuje na ponavljajuće obrasce, strah od lošeg vremena i tendenciju prema fatalizmu. \"Ovo mi se uvek događa\" narativ može da radi potajno.",
+          "keywords": [
+            "petlja",
+            "vremenski vreme",
+            "šansa",
+            "fatalizam",
+            "tajno verovanje"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru je rotacija petlje i vremenski efekat. Ide sa protokom može biti glavni element.",
+          "reversed": "Osećaj ponavljanja obrazaca ili lošeg vremena prevladava u centru. Drugi izbor može da vrti točak.",
+          "keywords": [
+            "petlja",
+            "šansa",
+            "vremenski vreme",
+            "sudbina",
+            "promeniti"
+          ],
+          "context": "Centar: Krstoći protoka."
+        },
+        "position5": {
+          "upright": "Točak sudbine pokazuje da bi ciklusi varirali tamo i vreme je kritično. Pravi trenutak stvara multiplikatorski efekat.",
+          "reversed": "Uključeni točak sudbine govori nam da su loši vremenski, ponavljajući ciklusi i spoljni šokovi napregnuli na plan. Fleksibilni scenariji su obavezni.",
+          "keywords": [
+            "vremenski vreme",
+            "petlja",
+            "talasati"
+          ]
+        }
+      }
+    }
+  }
+}

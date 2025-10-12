@@ -1,0 +1,774 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "threeofwands": {
+        "position6": {
+          "context": "Vaša bliža budućnost će se oblikovati mogućnostima ili preprekama."
+        },
+        "position7": {
+          "upright": "Tri štapića, trenutno proširujete svoje horizonte, otvarajući se na nove mogućnosti i iskoristiti nagrade koraka koje preduzimate.",
+          "reversed": "Prekoračili su tri štampe, možda ćete trenutno doživeti odlaganja, prepreke ili poremećaje u planovima.",
+          "keywords": [
+            "napredak",
+            "prilika",
+            "vizija",
+            "horizont",
+            "plan"
+          ],
+          "context": "Vaša trenutna situacija je oblikovana napretkom ili odlaganjem."
+        },
+        "position8": {
+          "upright": "Tri štapića donosi period u kojem možete imati vetrove spoljnih uticaja, saradnje, daleke mogućnosti i proširenje na leđima.",
+          "reversed": "Pretvorena tri štapića, spoljni uticaji mogu stvoriti kašnjenja, iskrcavanje snabdevanja / komunikacije i sužavanje vida.",
+          "keywords": [
+            "ekspanzija",
+            "prilika",
+            "napredak",
+            "čekanje",
+            "partnerstvo"
+          ],
+          "context": "Spoljni faktori mogu otvoriti horizont ili suziti put."
+        },
+        "position9": {
+          "upright": "Tri štapića, možete se plašiti da nećete biti u stanju da vidite daleke mogućnosti, a ne mogu da se kreću naprijed ili propadanje u saradnji.",
+          "reversed": "Preokrećena tri štapića mogu ukazivati na strah od kašnjenja, neuspelih pokušaja ili razočaranja.",
+          "keywords": [
+            "napredak",
+            "prilika",
+            "vizija",
+            "čekanje",
+            "anksioznost"
+          ],
+          "context": "Fokusira se na vaše strahove, odlaganja ili gubitak vida."
+        }
+      },
+      "fourofwands": {
+        "position1": {
+          "upright": "Četiri štapića mogu biti želja za stabilnošću, saradnjom ili proslavom u srcu problema.",
+          "reversed": "Preokrećena četiri štapića mogu biti izvor problema, kao nemir, nedostatak podrške ili nedostatka fondacije.",
+          "keywords": [
+            "stabilnost",
+            "podrška",
+            "proslava",
+            "osnova",
+            "pitanje"
+          ],
+          "context": "U srcu problema je želja za stabilnom strukturom i skladne veze."
+        },
+        "position10": {
+          "upright": "Četiri štapića mogu biti proslave, uspeh i harmonija izgrađene na čvrstom temelju kao rezultat događaja.",
+          "reversed": "Invertirana Četiri štapića mogu rezultirati neskladom, porodičnim nemirima ili nestabilnošću kao rezultat događaja.",
+          "keywords": [
+            "proslava",
+            "osnova",
+            "raport",
+            "uspeh",
+            "stabilnost"
+          ],
+          "context": "Ishod može biti da se proslavi ili suoči sa disonancijom."
+        },
+        "position2": {
+          "upright": "Četiri štapića, gde prepreka može biti nemogućnost pronalaska stabilnosti, neosnovanih odnosa ili disharmonija. Bez čvrste temelje, postaje teško napredovati.",
+          "reversed": "Obrnuto četiri štapića, nemir, propuštene prilike za proslavu ili poremećaj kući / radna rutina može biti izvor prepreke.",
+          "keywords": [
+            "stabilnost",
+            "raport",
+            "osnova",
+            "nemir",
+            "prepreka"
+          ],
+          "context": "Prepreka nastaje iz nestabilnosti i nedostatka fondacije."
+        },
+        "position3": {
+          "upright": "Četiri štapića mogu podsvesno predstavljati prošla iskustva proslava, porodičnih veza ili izgradnje čvrste temelje.",
+          "reversed": "Pretvorena četvorica štapića, prošla nelagodnost, disharmonija ili neutemeljenje možda su se podmirile u podsvesti.",
+          "keywords": [
+            "osnova",
+            "proslava",
+            "raport",
+            "mir",
+            "podsvestan"
+          ],
+          "context": "Protekli porodičnih fondacija i problemi prilagođavanja mogu biti osnova za današnje probleme."
+        },
+        "position4": {
+          "upright": "Četiri štapića odnose se na deljenje proslava vašeg najboljeg potencijala, pronalaženja ravnoteže i izgradnje uspeha na stabilnim temeljima.",
+          "reversed": "Okrećeno četiri štampe, da otključate svoj potencijal, morate se osloboditi nesklada i ojačati osećaj pripadnosti.",
+          "keywords": [
+            "proslava",
+            "ravnoteža",
+            "stabilnost",
+            "pripadnik",
+            "uspeh"
+          ],
+          "context": "Vaš najbolji potencijal je uspostaviti skladne veze i neprestano se kretati napred."
+        },
+        "position5": {
+          "upright": "Četiri štampe, možda ste doživeli nedavnu proslavu, ravnotežu i harmoniju u svom domu ili radnom životu.",
+          "reversed": "Okrećeno četiri štampe, možda ste iskusili nemiri, disharmoni ili nepotpuni proces u nedavnoj prošlosti.",
+          "keywords": [
+            "proslava",
+            "raport",
+            "ravnoteža",
+            "mir",
+            "završetak"
+          ],
+          "context": "Vaša nedavna prošlost je možda oblikovana iskustvom harmonije ili nemire."
+        },
+        "position6": {
+          "upright": "Četiri štapića, proslave, miran period ili energija uspostavljanja čvrste temelje mogu doći do izražaja u bliskoj budućnosti.",
+          "reversed": "Pretvorena četvorica štapića, možda ćete iskusiti neslaganje i nemire u svom domu ili radnom životu u bliskoj budućnosti.",
+          "keywords": [
+            "proslava",
+            "osnova",
+            "raport",
+            "ravnoteža",
+            "mir"
+          ],
+          "context": "Vaša neposredna budućnost će biti oblikovana harmonom ili nemirom."
+        },
+        "position7": {
+          "upright": "Četiri štampe, možda ste raspoloženi za proslave, mir i građevinske čvrste temelje trenutno.",
+          "reversed": "Pretvoreno Četiri štapića, disharmonija i nemiri u vašem domu ili radnom životu možda vas trenutno utiču.",
+          "keywords": [
+            "proslava",
+            "mir",
+            "osnova",
+            "raport",
+            "ravnoteža"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je mirom ili disharmonijom."
+        },
+        "position8": {
+          "upright": "Četiri štapića mogu da se spoljni okoliš oseća kao sigurna osnova, nudeći slavlje, podršku i stabilnost.",
+          "reversed": "Pretvorena Četiri štapića, spoljni uticaji mogu stvoriti probleme sa disharmonijom, pomeranjem / nagodbom ili situacije koje oštećuju osećaj pripadnosti.",
+          "keywords": [
+            "proslava",
+            "osnova",
+            "raport",
+            "podrška",
+            "pripadnik"
+          ],
+          "context": "Spoljni uticaji mogu napraviti ili slomiti gnezdo."
+        },
+        "position9": {
+          "upright": "Četiri štapića, možete se plašiti da izgubite osećaj pripadnosti, ostavljajući se iz proslava ili nestabilnosti.",
+          "reversed": "Preokrećena četiri štapića mogu ukazivati na nesklad, porodične probleme ili premeštanje anksioznosti.",
+          "keywords": [
+            "pripadnik",
+            "proslava",
+            "raport",
+            "osnova",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi se fokusiraju na gubitak pripadnosti ili disharmoniji."
+        }
+      },
+      "fiveofwands": {
+        "position1": {
+          "upright": "Petorica štapića može se odnositi na konkurenciju, borbu ili sukob različitih stavova u srcu problema.",
+          "reversed": "Ograničeno pet štapića, nepotrebnih argumenata, disharmonija ili pasivnosti mogu biti izvor problema.",
+          "keywords": [
+            "rivalstvo",
+            "borba",
+            "sukob",
+            "razlika",
+            "pitanje"
+          ],
+          "context": "U srcu problema su borbe i sukobi ideja."
+        },
+        "position10": {
+          "upright": "Petorica štapića, ishod događaja može biti konkurencija, borba i dokazivanje sopstvene snage.",
+          "reversed": "Invertirano pet štapića može rezultirati prekid nepotrebnih sukoba, donošenje mira ili harmonije kao rezultat događaja.",
+          "keywords": [
+            "rivalstvo",
+            "borba",
+            "sukob",
+            "izdržljivost",
+            "mir"
+          ],
+          "context": "Rezultat može biti borba ili prilagođavanje."
+        },
+        "position2": {
+          "upright": "Pet štapića, prepreka može biti stalna konkurencija, sukob ili nedostatak saradnje. Borba za napajanje zatvara staze do rešenja.",
+          "reversed": "Preokrećeno pet štapića može biti prepreka pasivnosti, nemogućnost brane ili nepotrebnih argumenata.",
+          "keywords": [
+            "rivalstvo",
+            "sukob",
+            "nedostatak saradnje",
+            "borba",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje od stalne borbe i disharmonije."
+        },
+        "position3": {
+          "upright": "Petorica štapića može podsvesno imati prođene rivalstva, argumente ili borbe na vlasti.",
+          "reversed": "Okolišteno pet štapića može ukazivati na prošlu nespojivost, pasivnost ili nepotrebne argumente podsvesno.",
+          "keywords": [
+            "rivalstvo",
+            "borba",
+            "sukob",
+            "neusklađenost",
+            "podsvestan"
+          ],
+          "context": "Prošle sukobe i takmičarska iskustva mogu uticati na današnje probleme."
+        },
+        "position4": {
+          "upright": "Petorica štapića znači pretvarajući konkurenciju u priliku, razvijanje vašeg najboljeg potencijala i jači se od borbe.",
+          "reversed": "Invertirano pet štapića, kako bi otključali vaš potencijal, morate se držati podalje od nepotrebnih sukoba i usmeravati energiju na produktivne oblasti.",
+          "keywords": [
+            "rivalstvo",
+            "borba",
+            "razvoj",
+            "hrabrost",
+            "prilika"
+          ],
+          "context": "Vaš najbolji potencijal je da se borite u rastu."
+        },
+        "position5": {
+          "upright": "Pet štapića, možda ste iskusni konkurenciju, neslaganje ili neslaganje u nedavnoj prošlosti.",
+          "reversed": "Pet štapića preokrenulo je da ste nedavno rešili sukob, smanjenu konkurenciju ili premešteni prema saradnji.",
+          "keywords": [
+            "rivalstvo",
+            "sukob",
+            "borba",
+            "partnerstvo",
+            "prihod"
+          ],
+          "context": "Vaša nedavna prošlost je možda bila obeležena procesima borbe ili saradnje."
+        },
+        "position6": {
+          "upright": "Petorica štapića znači konkurencija, neslaganje ili borba može se pojaviti u bliskoj budućnosti.",
+          "reversed": "Invertirano pet štapića, možete se odmaknuti od sukoba i više se fokusirati na saradnju u bliskoj budućnosti.",
+          "keywords": [
+            "rivalstvo",
+            "sukob",
+            "borba",
+            "partnerstvo",
+            "prihod"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati konkurencijom ili saradnjom."
+        },
+        "position7": {
+          "upright": "Pet štapića, možda ćete biti u konkurenciji, neslaganju ili borbi.",
+          "reversed": "Invertirano pet štapića, trenutno ste u procesu udaljavanja od sukoba, krećete se prema saradnji ili smanjenje napetosti.",
+          "keywords": [
+            "rivalstvo",
+            "sukob",
+            "borba",
+            "prihod",
+            "partnerstvo"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je konkurencijom ili saradnjom."
+        },
+        "position8": {
+          "upright": "Pet štapića, spoljni uticaji mogu stvoriti okruženje konkurencije, sukob ideja i zdrave borbe.",
+          "reversed": "Invertirano pet štapića, spoljni faktori mogu stvoriti nepotreban trenje, haos ili pasivno-agresivno prepijanje.",
+          "keywords": [
+            "rivalstvo",
+            "sukob",
+            "borba",
+            "energija",
+            "razvoj"
+          ],
+          "context": "Spoljni uticaji mogu vas izoštriti ili da vas nose."
+        },
+        "position9": {
+          "upright": "Petorica štapića, možda ćete se plašiti gubitka konkurencije, argumenata ili pad u borbi.",
+          "reversed": "Preokrećeno pet štapića može ukazivati na strah od nepotrebnog sukoba, disharmonije ili stalnog trenja.",
+          "keywords": [
+            "rivalstvo",
+            "sukob",
+            "borba",
+            "neusklađenost",
+            "anksioznost"
+          ],
+          "context": "Vaš strahovi centar na takmičenju ili argumentima."
+        }
+      },
+      "sixofwands": {
+        "position1": {
+          "upright": "Šest štapića može se usredsrediti na želju za postizanjem uspeha, priznanja ili uvažavanja.",
+          "reversed": "Uokrenuo je šest štapića, preostali nevidljivi, ljubomora ili zasebljenje uspeha može biti izvor problema.",
+          "keywords": [
+            "uspeh",
+            "prepoznavanje",
+            "diskrecija",
+            "poverenje",
+            "pitanje"
+          ],
+          "context": "U srcu problema je želja za uspehom i priznanjem."
+        },
+        "position10": {
+          "upright": "Šest štapića može biti pobeda, prepoznavanje i dobro zasluženi uspeh kao rezultat događaja.",
+          "reversed": "Pretvoreno šest štapića, ishod događaja može biti ljubomora, nedostatak uvažavanja ili neuspeha.",
+          "keywords": [
+            "pobeda",
+            "uspeh",
+            "prepoznavanje",
+            "vidljivost",
+            "ponos"
+          ],
+          "context": "Rezultat može biti velika pobeda ili privremeni neuspeh."
+        },
+        "position2": {
+          "upright": "Šest štapića, prepreka se ne može uvažavati, preostala nevidljiva ili ne postizanje uspeha. Ne shvatajući da njegova vrednost otežava napredak.",
+          "reversed": "Okrećeno šest štapića, arogancije, strah od neuspeha, ili ljubomora može biti izvor prepreke.",
+          "keywords": [
+            "uspeh",
+            "diskrecija",
+            "vidljivost",
+            "arogancija",
+            "prepreka"
+          ],
+          "context": "Ostvari prepreku da se ne ceni i oseća se bezvrijedno."
+        },
+        "position3": {
+          "upright": "Šest štapića može podsvesno predstavljati prošla dostignuća, prepoznavanje ili izdvajanje.",
+          "reversed": "Invertirano šest štapića, ljubomora, strah od neuspeha ili nedostatka vrednosti možda je u prošlosti izmislio u podsvesti u prošlosti.",
+          "keywords": [
+            "uspeh",
+            "diskrecija",
+            "vidljivost",
+            "ljubomora",
+            "podsvestan"
+          ],
+          "context": "Prošle dostignuće ili nedostatak priznanja možda su oblikovali njegove trenutne probleme."
+        },
+        "position4": {
+          "upright": "Šest štapića govori o proslavi dostignuća vrhunskog potencijala, primanje priznanja i vođenje sa pouzdanjem.",
+          "reversed": "Pretvoreno šest štapića, da dostignete svoj potencijal, morate prestati da tražite odobrenje i interno cenite svoj sopstveni uspeh.",
+          "keywords": [
+            "uspeh",
+            "pobeda",
+            "diskrecija",
+            "poverenje",
+            "rukovodstvo"
+          ],
+          "context": "Vaš najbolji potencijal je da krenete naprijed svojim uspehom."
+        },
+        "position5": {
+          "upright": "Šest štapića, možda ste doživeli nedavnu pobedu, uspeh ili priznanje.",
+          "reversed": "Pretvoreno šest štapića, možda niste dobili vrednost koju zaslužujete u nedavnoj prošlosti, možda ste doživeli strah od neuspeha ili nedostatka samopouzdanja.",
+          "keywords": [
+            "pobeda",
+            "uspeh",
+            "diskrecija",
+            "poverenje",
+            "poverenje"
+          ],
+          "context": "Vaša nedavna prošlost možda je oblikovana vašim nedostatkom uspeha ili samopouzdanja."
+        },
+        "position6": {
+          "upright": "Šest štapića, energija uspeha, pobeda i uvažavanje onih oko vas čeka vas u bliskoj budućnosti.",
+          "reversed": "Pretvoreno šest štapića, možete da doživite podzalopanj, ometani uspeh ili nedostatak samopouzdanja u blisku budućnost.",
+          "keywords": [
+            "pobeda",
+            "uspeh",
+            "diskrecija",
+            "poverenje",
+            "rukovodstvo"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati pobedom ili razočaranjem."
+        },
+        "position7": {
+          "upright": "Šest štapića, trenutno ste u procesu uspeha, pobede i prepoznavanja od onih oko vas.",
+          "reversed": "Pretvoreno šest štapića, trenutno možete da doživite nedostatak samopouzdanja, zasenjanja uspeha ili nedostatak uvažavanja.",
+          "keywords": [
+            "pobeda",
+            "uspeh",
+            "diskrecija",
+            "poverenje",
+            "rukovodstvo"
+          ],
+          "context": "Vaša trenutna situacija je oblikovana uspehom ili razočaranjem."
+        },
+        "position8": {
+          "upright": "Šest štapića, spoljni okruženje može ponuditi mogućnosti koje promovišu priznanje, vidljivost i uspeh.",
+          "reversed": "Invertirano šest štapića, spoljni uticaji mogu se pojaviti u obliku ljubomore, odloženog aplauza ili potcenjenosti nečijeg napora.",
+          "keywords": [
+            "diskrecija",
+            "uspeh",
+            "pobeda",
+            "vidljivost",
+            "reputacija"
+          ],
+          "context": "Spoljni uticaji mogu da vas uzdese ili zasjenjuju."
+        },
+        "position9": {
+          "upright": "Šest štapića može ukazivati na strah od neuspeha, da ne bude vidljiv ili se ne ceni.",
+          "reversed": "Okrećeno šest štapića može prouzrokovati gubitak ponosa, anksioznost o tome da se zavidi ili potcenjuje za nečije napore.",
+          "keywords": [
+            "uspeh",
+            "diskrecija",
+            "vidljivost",
+            "ponos",
+            "anksioznost"
+          ],
+          "context": "Vaš strahovi centar za nedostatak uvažavanja ili neuspeha."
+        }
+      },
+      "sevenofwands": {
+        "position1": {
+          "upright": "Sedam štapića može biti o odbrani sebe, zaštite nečijih prava ili odupiranju u srcu problema.",
+          "reversed": "Okrećeno sedam štapića, slabost, nedostatak otpora ili povlačenja može biti izvor problema.",
+          "keywords": [
+            "odbrana",
+            "otpornost",
+            "u pravu",
+            "hrabrost",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba za odbranom sopstvenog stava."
+        },
+        "position10": {
+          "upright": "Sedam štapića može značiti da se odbrana, stojeći snažno i odlučnost u borbi kao rezultat događaja.",
+          "reversed": "Invertirani sedam štapića može značiti povlačenje, otpornost na probijanje ili odustajanje od događaja.",
+          "keywords": [
+            "odbrana",
+            "stabilnost",
+            "otpornost",
+            "borba",
+            "odustati"
+          ],
+          "context": "Rezultat može biti snažna odbrana ili povlačenje."
+        },
+        "position2": {
+          "upright": "Sedam štapića sugeriše da prepreka može biti nemogućnost odbrane sebe, nedostatka otpora ili davanja pritiska.",
+          "reversed": "Okrećeno sedam štapića može biti prepreka odustajanju, nesigurnosti ili odustajanja od borbe.",
+          "keywords": [
+            "otpornost",
+            "odbrana",
+            "hrabrost",
+            "nesigurnost",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje zbog nedostatka otpora i nemogućnosti odbrane."
+        },
+        "position3": {
+          "upright": "Sedam štapića može se podsvesno braniti u prošlosti, opirati se ili pokušavati da prežive u konkurenciji.",
+          "reversed": "Okrećeno sedam štapića možda je u prošlosti podsvesno prikriveno da se odrekne, nedostaje samopouzdanje ili odustajanje od borbe.",
+          "keywords": [
+            "odbrana",
+            "otpornost",
+            "nesigurnost",
+            "borba",
+            "podsvestan"
+          ],
+          "context": "Prošla odbrana i nesigurnosti možda su bile osnova za današnje probleme."
+        },
+        "position4": {
+          "upright": "Sedam štapića odnosi se na održavanje stava vašeg najboljeg potencijala, branite svoja uverenja i preživljavanje u konkurentnom okruženju.",
+          "reversed": "Okrećeno sedam štapića: Da biste postigli svoj potencijal, ne biste trebali da se odmaknete i branite svoje ograničenja određivanjem.",
+          "keywords": [
+            "odbrana",
+            "stabilnost",
+            "hrabrost",
+            "izdržljivost",
+            "borba"
+          ],
+          "context": "Vaš najbolji potencijal dolazi od odbrane granica."
+        },
+        "position5": {
+          "upright": "Sedam štapića, možda ste se branili u nedavnoj prošlosti, stali su svoje tlo ili odupirali se takmičenju.",
+          "reversed": "Okrećeno sedam štapića, možda ste bili bezbranjeni u nedavnoj prošlosti, umorni od borbe ili povučene.",
+          "keywords": [
+            "odbrana",
+            "borba",
+            "stabilnost",
+            "otpornost",
+            "hrabrost"
+          ],
+          "context": "Vaša nedavna prošlost je možda obeležena utvrđivanjem ili povlačenjem."
+        },
+        "position6": {
+          "upright": "Sedam štapića, u bliskoj budućnosti ćete braniti stav, zaštititi svoje granice i boriti se sa odlučnošću.",
+          "reversed": "Okrećeno sedam štapića, možda ćete imati poteškoća da se odupire bliskoj budućnosti i možda osećate potrebu da se odstupite.",
+          "keywords": [
+            "odbrana",
+            "borba",
+            "stabilnost",
+            "hrabrost",
+            "granica"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati otporom ili povlačenjem."
+        },
+        "position7": {
+          "upright": "Sedam štapića, trenutno branite svoje granice, štiteći svoja uverenja i bori se.",
+          "reversed": "Okrećeno sedam štapića, možda ćete biti u iskušenju da izgubite otpor, povucite se ili prepustite odmah.",
+          "keywords": [
+            "odbrana",
+            "stabilnost",
+            "hrabrost",
+            "granica",
+            "izdržljivost"
+          ],
+          "context": "Vaša trenutna situacija je oblikovana utvrđivanjem ili povlačenjem."
+        },
+        "position8": {
+          "upright": "Sedam štapića, spoljni uticaji mogu donijeti pritiske i testove koji zahtevaju da branite svoj stav.",
+          "reversed": "Invertirani sedam štapića, spoljni faktori mogu se zastrašiti, prisiliti se povlačenje ili oslabiti odbrambenu liniju.",
+          "keywords": [
+            "odbrana",
+            "ugnjetavanje",
+            "stabilnost",
+            "granica",
+            "otpornost"
+          ],
+          "context": "Spoljni uticaji vas mogu ili suzbiti ili ojačati."
+        },
+        "position9": {
+          "upright": "Sedam štapića, možete se plašiti da se ne možete braniti, davati pritisku ili gubitak položaja.",
+          "reversed": "Preokrećeno sedam štapića može ukazivati na strah od odustajanja od odustajanja, nesposobnosti da se opire ili se povlači.",
+          "keywords": [
+            "odbrana",
+            "ugnjetavanje",
+            "otpornost",
+            "odustati",
+            "anksioznost"
+          ],
+          "context": "Vaš strahovski centar za gubitak otpora ili davanje pritiska."
+        }
+      },
+      "eightofwands": {
+        "position1": {
+          "upright": "Osam štapića može biti u srcu problema, gde mogu lagati brzi razvoj, komunikacija ili potreba za promenom.",
+          "reversed": "Okoli su osam štapića, odlaganja, pogrešno komuniciranje ili zagušenja može biti izvor problema.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "promeniti",
+            "prilika",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba za brzom napretkom i komunikacijom."
+        },
+        "position10": {
+          "upright": "Osam štapića može ukazivati na brzi razvoj, vesti i prevazilaženje prepreka kao rezultat događaja.",
+          "reversed": "Invertirano osam štapića, mogu postojati odlaganja, problemi sa komunikacijama ili nesporazumi kao rezultat događaja.",
+          "keywords": [
+            "brzina",
+            "vesti",
+            "razvoj",
+            "komunikacija",
+            "prepreke"
+          ],
+          "context": "Rezultat može biti brz napredak ili odlaganje."
+        },
+        "position2": {
+          "upright": "Osam štapića, prepreka bi mogla biti odlaganja, problemi sa komunikacijama ili gubitak brzine. Sporo napredak procesa sprečava rešenje.",
+          "reversed": "Pretvoreno osam štapića, nesporazumima, blokade ili stalno odlaganja može biti izvor prepreke.",
+          "keywords": [
+            "komunikacija",
+            "kašnjenje",
+            "brzina",
+            "blokiranost",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje iz problema i usporavanja u komunikaciji."
+        },
+        "position3": {
+          "upright": "Osam štapića može ukazivati na brzi razvoj, komunikacioni saobraćaj ili nagle promene u prošlosti u podsvesti.",
+          "reversed": "Invertirano osam štapića, prošli nesporazumi, blokade ili kašnjenja mogu se srediti u podsvesti.",
+          "keywords": [
+            "komunikacija",
+            "brzina",
+            "promeniti",
+            "kašnjenje",
+            "podsvestan"
+          ],
+          "context": "Protekli problemi sa prošlih komunikacija i nagle promene mogu uticati na današnje probleme."
+        },
+        "position4": {
+          "upright": "Osam štapića sugeriše da je vaš najbolji potencijal da se brzo kreće, komunicira i da se blagovremeno iskoristi mogućnosti.",
+          "reversed": "Prevarala osam štapića, da dostignete svoj potencijal, morate prestati da odložite i preuzmete usredsređenu, jasnu radnju.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "napredak",
+            "prilika",
+            "fokus"
+          ],
+          "context": "Vaš najbolji potencijal je da delujete brzo i sa fokusom."
+        },
+        "position5": {
+          "upright": "Osam štapića, možda ste doživeli brzi razvoj, vesti ili nagle promene u nedavnoj prošlosti.",
+          "reversed": "Invertirano osam štapića, možda ste imali iskustva odlaganja, problemi sa komunikacijama ili nedostatak napretka u nedavnoj prošlosti.",
+          "keywords": [
+            "brzina",
+            "vesti",
+            "komunikacija",
+            "promeniti",
+            "napredak"
+          ],
+          "context": "Vaša nedavna prošlost može biti obeležena brzim razvojem ili odlaganjem."
+        },
+        "position6": {
+          "upright": "Osam štapića, možete da doživite brzi događaji, vesti ili nagle promene u bliskoj budućnosti.",
+          "reversed": "Uključeno osam štapića, mogu postojati odlaganja, problemi sa komunikacijama ili sporim napretkom u bliskoj budućnosti.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "vesti",
+            "napredak",
+            "promeniti"
+          ],
+          "context": "Vaša bliža budućnost će biti oblikovana brzim napretkom ili odlaganjem."
+        },
+        "position7": {
+          "upright": "Osam štapića, trenutno ste usred brzog razvoja, vesti i nagnutih promena.",
+          "reversed": "Uključeno osam štapića, mogu postojati odlaganja, problemi sa komunikacijama ili sporim napretkom u ovom trenutku.",
+          "keywords": [
+            "brzina",
+            "vesti",
+            "komunikacija",
+            "napredak",
+            "promeniti"
+          ],
+          "context": "Trenutna situacija je oblikovana brzim razvojem ili odlaganjem."
+        },
+        "position8": {
+          "upright": "Osam štapića, spoljni uticaji mogu ubrzati proces brze komunikacije, zamah i nagli prilike.",
+          "reversed": "Invertirano osam štapića, spoljni faktori mogu stvoriti odlaganja, pogrešno komuniciranje ili usmerene žurbe.",
+          "keywords": [
+            "brzina",
+            "vesti",
+            "ubrzanje",
+            "protok",
+            "napredak"
+          ],
+          "context": "Spoljni uticaji mogu ubrzati ili kočiti."
+        },
+        "position9": {
+          "upright": "Osam štapića: Možda se plašite kašnjenja, poruke koje idu po zlu ili ne mogu da kontrolišu razvoj događaja.",
+          "reversed": "Otkriveno osam štapića može ukazivati na zabrinutost zbog kvara komunikacije, nesporazumima ili odloženim mogućnostima.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "kašnjenje",
+            "prilika",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi se fokusiraju na poremećaje u komunikaciji ili odlaganju."
+        }
+      },
+      "nineofwands": {
+        "position1": {
+          "upright": "Devet štapića može biti otpornost, strpljenje ili probijanje testa u srcu problema.",
+          "reversed": "Okrećeno devet štapića, umora, sklonost odustajanja ili slabosti može biti izvor problema.",
+          "keywords": [
+            "otpornost",
+            "strpljenje",
+            "rezolucija",
+            "zaštita",
+            "pitanje"
+          ],
+          "context": "U srcu problema napreduje sa izdržljivošću i strpljenjem."
+        },
+        "position10": {
+          "upright": "Devet štapića može značiti uspeh kao rezultat događaja kroz strpljenje, upornost i konačnu borbu.",
+          "reversed": "Invertirani devet štapića može ukazivati na izgaranje, ranjivost ili gubitak otpornosti kao rezultat događaja.",
+          "keywords": [
+            "otpornost",
+            "strpljenje",
+            "borba",
+            "izdržljivost",
+            "stabilnost"
+          ],
+          "context": "Ishod može biti ili preživljavanje ili iscrpljenost."
+        },
+        "position2": {
+          "upright": "Devet štapića, prepreka bi mogla biti umor, neprestano je na odbrani, ili dolazi do tačke odustajanja.",
+          "reversed": "Okrećeno devet štapića, gubitak otpornosti, preveliki pritisak ili obeshrabrenje može biti izvor prepreke.",
+          "keywords": [
+            "umor",
+            "otpornost",
+            "odbrana",
+            "ugnjetavanje",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje iz iscrpljenosti i iscrpljivanja izdržljivosti."
+        },
+        "position3": {
+          "upright": "Devet štapića može podsvesno znači da se odupiru prošlosti, ne odustaje od ranjenika ili nastavljanje ranjenih.",
+          "reversed": "Obrnuti devet štapića, prošli obeshrabrenje, prevelik pritisak ili ranjivost se može podnijeti u podsvesti.",
+          "keywords": [
+            "otpornost",
+            "umor",
+            "odbrana",
+            "ugnjetavanje",
+            "podsvestan"
+          ],
+          "context": "Prošle umor i defanzivne situacije možda su oblikovale današnje probleme."
+        },
+        "position4": {
+          "upright": "Devet štapića znači da je vaš najbolji potencijal da se odupire poteškoćama, preživite strpljenje i pretvorite svoja iskustva u izvor snage.",
+          "reversed": "Pretvoreno devet štapića, da dostignete svoj potencijal, ne smete podlegnuti umor i nastaviti da istrajete.",
+          "keywords": [
+            "otpornost",
+            "strpljenje",
+            "iskustvo",
+            "zaštita",
+            "borba"
+          ],
+          "context": "Vaš najbolji potencijal je otpornost na pacijent."
+        },
+        "position5": {
+          "upright": "Devet štapića, možda ste se odupirali poteškoćama u nedavnoj prošlosti, strpljivo se borili ili održali vaše granice.",
+          "reversed": "Pretvoreno devet štapića, možda ste imali iskusnu umor, odbranu ili poteškoće u nedavnoj prošlosti.",
+          "keywords": [
+            "izdržljivost",
+            "borba",
+            "strpljenje",
+            "odbrana",
+            "zaštita"
+          ],
+          "context": "Vaša nedavna prošlost je možda oblikovana otporom ili umorom pacijenta."
+        },
+        "position6": {
+          "upright": "Devet štapića, možete naići na situacije koje u bliskoj budućnosti testiraju svoju izdržljivost i možete se oduprijeti strpljenju.",
+          "reversed": "Invertirani devet štapića može ukazivati na izgaranje, ranjivost ili poteškoće u bliskoj budućnosti.",
+          "keywords": [
+            "otpornost",
+            "strpljenje",
+            "zaštita",
+            "izdržljivost",
+            "borba"
+          ],
+          "context": "Vaša bliža budućnost će biti oblikovana otporom ili umorom pacijenta."
+        },
+        "position7": {
+          "upright": "Devet štapića, trenutno se odupiru poteškoćama i nastavljate da strpljivo preživite.",
+          "reversed": "Invertirani devet štapića, možda ćete doživeti izgaranje, umor ili tendenciju da se odmah odreknete.",
+          "keywords": [
+            "otpornost",
+            "strpljenje",
+            "zaštita",
+            "izdržljivost",
+            "borba"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je otporom ili umorom."
+        },
+        "position8": {
+          "upright": "Devet štapića, spoljni uticaji mogu stvoriti uslove koji zahtevaju ponovljene suđenja i izdržljivost; Dobro je držati čuvar.",
+          "reversed": "Invertirani devet štapića, spoljni faktori mogu povećati umor i aktiviranje sumnje i tendenciju da se povuku.",
+          "keywords": [
+            "izdržljivost",
+            "reekam",
+            "zaštita",
+            "strpljenje",
+            "paza"
+          ],
+          "context": "Spoljni uticaji vas mogu testirati ili zastrašiti."
+        },
+        "position9": {
+          "upright": "Devet štapića, možete se plašiti da izgubite svoju otpornost, podležite ponovljenim suđenjima ili puštanja čuvara.",
+          "reversed": "Invertirani devet štapića može ukazivati na izgaranje, sumnju ili strah od odustajanja.",
+          "keywords": [
+            "izdržljivost"
+          ]
+        }
+      }
+    }
+  }
+}

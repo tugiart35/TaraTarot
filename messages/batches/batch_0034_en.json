@@ -1,0 +1,880 @@
+{
+  "blog": {
+    "cards": {
+      "ace-of-pentacles": {
+        "cta": {
+          "main": "Notice new opportunities, step forward with confidence, and call upon your life to prosper!",
+          "micro": "Take a concrete step today for a goal or practice gratitude."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the amulet ace represent?",
+            "answer": "It represents new beginnings, abundance, financial opportunities, and a safe foundation."
+          },
+          "1": {
+            "question": "What does the reverse amulet ace mean?",
+            "answer": "Inverse position means delayed prosperity due to missed opportunities or lazyness. See opportunities and be determined."
+          },
+          "2": {
+            "question": "In what cases is the amulet ace powerful?",
+            "answer": "New work is strong in the beginnings of investment, health, or safe relationship, bringing success in grounding and patience."
+          }
+        },
+        "related_cards": {
+          "0": "three-of-penticles",
+          "1": "Nana-of-cups",
+          "2": "the-sun"
+        },
+        "imageUrl": "/cards/rws/Ace-Penticles.webp"
+      },
+      "two-of-pentacles": {
+        "name": "Talisman Duo ▪ Balance, Compatibility and Fluctuation",
+        "short_description": "The Talisman Duo is a card for managing the variable energies of life, maintaining balance and adapting to flow.",
+        "meanings": {
+          "upright": {
+            "general": "The Talisman Duo represents the time when to balance, to be flexible and to set priorities wisely between multiple responsibilities, to act in harmony with the ups and downs of life, to succeed and prosper.",
+            "love": "In love, relationships, balance and harmony arise, and when dealing with emotional fluctuations, you have to be flexible and understanding with a partner, and it's important to find balance in multiple relationships or moments of decision-making.",
+            "career": "In terms of careers, the ability to manage multiple tasks or projects is the key to organization, priority and flexible planning success.",
+            "money": "In financial matters, income-goer balance, investments and budget management is important, so be prepared for sudden changes and use your resources consciously.",
+            "spiritual": "On a spiritual level, it's important to adapt to change and flow, to maintain internal balance and to adapt to the rhythm of life, meditation and awareness help you stay in the flow."
+          },
+          "reversed": {
+            "general": "The Reverse Talisman Duo points to the risk of imbalance, indecisive or overburdening, review your priorities, get rid of unnecessary responsibilities.",
+            "love": "It can create inverse position in love, incompatibility, lack of communication, or indecisiveness.",
+            "career": "In the career, projects may fail due to overload or organisation.",
+            "money": "Financially, unstable expenditures or risky investments can lead to losses.",
+            "spiritual": "Spiritually, resisting flow increases stress and causes you to waste energy. Take the time to restore balance."
+          }
+        },
+        "context": {
+          "mythology": "In ancient mythology, the quest for flow and harmony shapes the hero's journey.",
+          "celtic_cross": {
+            "future": "There will be changes and new responsibilities in the near future, and staying flexible and balanced brings success.",
+            "hidden_influences": "Secret effects require balanced management of environmental changes and unexpected situations."
+          }
+        },
+        "story": {
+          "title": "Two of the Talismans ▪ The Cycle of Life and the Stream",
+          "description": "On the card, a figure is seen to rotate two talismans in the air; it represents the ups and downs of life and the constant movement of energy; be flexible, stay in the flow, and manage its resources consciously.",
+          "historytitle": "Historical Origin",
+          "history_message": "Two of Pentnacles was painted in Renaissance tarots as a card representing multiple tasks and the balanced governance of life.",
+          "mystic_title": "Spiritual Meaning - Flexibility and Harmony",
+          "mystic_message": "Spiritually, the Magical Duo teaches to adapt to variable energy and maintain internal balance, trust the flow and be patient.",
+          "cultural_title": "Modern Comment: Time and Resource Management",
+          "cultural_message": "In the modern world, the Talisman Two guides in matters of managing multitasking, business balance and flexible planning.",
+          "lesson": "The Talisman Two teaches to stay in the flow, to be flexible and to maintain balance, to adapt to life's fluctuations, to achieve success and peace."
+        },
+        "keywords": {
+          "keywords_title": "Talisman Duo Card Keywords",
+          "keywords_message": "Talisman duo tarot meaning, two of pentacles singing, balance, harmony, resource management, flow, financial balance",
+          "positive_title": "Positive Themes",
+          "positive_message": "Balance, flexibility, fluidity, harmony, managing multiple tasks, conscious planning.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Avoid instability and overload, prioritize and remain calm.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Compliance with life's ups and downs; stay in the flow and control your energy with consciousness."
+        },
+        "associations": {
+          "title": "Talisman Two Cosmic Connections",
+          "astrology": "Jupite and Mercury (Espense, Intelligence, Source Management)",
+          "numerology": "2 (Defense, Selection, Harmony)",
+          "element": "Earth ▪ Financial balance, Water ▪ Fluid and adaptation",
+          "chakra": "Sacrial ▪ Creativity and Flexibility"
+        },
+        "card_combinations": {
+          "title": "Combinations That Step Up With the Talisman Duo",
+          "combinations": {
+            "0": {
+              "card": "Talisman Five",
+              "meaning": "When it becomes difficult to maintain balance, new solutions and resource sharing are important."
+            },
+            "1": {
+              "card": "Talisman's Ace",
+              "meaning": "New material opportunities become maximum gain with flexible and conscious governance."
+            },
+            "2": {
+              "card": "Two of Hearts",
+              "meaning": "Consistent decisions are made by combining emotional and financial balance."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Talisman Two Approved",
+          "affirmation_list": {
+            "0": "I'm adapting to the course of life and keeping my balance.",
+            "1": "I manage my time and resources consciously.",
+            "2": "I blend in with the changes and stay flexible."
+          }
+        },
+        "cta": {
+          "main": "Stay in the flow, keep your balance and adapt to the rhythm of life!",
+          "micro": "Balance a responsibility today or plan a flexible plan."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Talisman Duo represent?",
+            "answer": "Balance, harmony, staying in the flow, and managing multiple responsibilities, advice to adapt to life's ups and downs."
+          },
+          "1": {
+            "question": "What does the Reverse Talisman Two mean?",
+            "answer": "It means instability, indecision, or overload, review your priorities and remain calm."
+          },
+          "2": {
+            "question": "In what circumstances are the two Talismans powerful?",
+            "answer": "When you need to balance more than one responsibility in your life, it's strong when you want to adapt to change and flow."
+          }
+        },
+        "related_cards": {
+          "0": "ace-of-pentacles",
+          "1": "Five-of-pentacles",
+          "2": "Two-of-cups"
+        },
+        "imageUrl": "/cards/rws/II-Penticles.webp"
+      },
+      "three-of-pentacles": {
+        "name": "The Talisman Trio ▪ Co-operation, Mastership and Creativity",
+        "short_description": "The charm trio represents the power of labor and co-work, share your skills, produce and mastery with the world.",
+        "meanings": {
+          "upright": {
+            "general": "The Talisman Trio is the card of teamwork, planning and masterful construction. Your work is visible and your skills are appreciated. Disciplined work and collective harmony brings success.",
+            "love": "In love, it's important to set common goals, to share the work in a relationship, and to grow in solidarity, and your relationship is strengthened by the spirit of the team.",
+            "career": "In terms of career, this card represents great progress in the process of co-operation and project development. Share your knowledge, assess feedback, and demonstrate your mastery.",
+            "money": "Financially, joint enterprises and co-optional work bring profit, strengthen financial security with co-operation.",
+            "spiritual": "Spiritually, the Talisman Trio carries collective consciousness and together the energy of creation, activate the spirit of sharing with others."
+          },
+          "reversed": {
+            "general": "The Reverse Talisman Trio shows that co-operation can be disbanded due to incompatibility, lack of communication, or lack of planability.",
+            "love": "In reverse position in love means unstable labor or miscommunication in a relationship, equal effort and mutual support must be balanced.",
+            "career": "In the career, a lack of team competition or coordination can weaken the project, so focus on the common goal.",
+            "money": "Financially, unplanned investments or partnership issues can be seen.",
+            "spiritual": "In a spiritual sense, focusing too much on individual progress can hurt collective harmony. Remember the healing of sharing."
+          }
+        },
+        "context": {
+          "mythology": "The Talisman Trio is a symbol of the craftsmans who built medieval cathedrals, and mastery, faith and collective production are at the heart of this card.",
+          "celtic_cross": {
+            "future": "In the near future, teamwork or a partnership will bring you great success.",
+            "hidden_influences": "Be aware of secret supporters and inspiring collaborations."
+          }
+        },
+        "story": {
+          "title": "Three of the Talismans, the Temple of Mastership",
+          "description": "In the card, when a master craftsman is working on the wall of the cathedral, two figures discuss plans. This scene is a symbol of creating a concrete work of common vision. When work is combined with patience and sharing, there is a sacred production.",
+          "historytitle": "Historical Origin",
+          "history_message": "Three of Pentnacles was a product of a period that considered human labor sacred, representing the combination of mastery, labor, and knowledge with society.",
+          "mystic_title": "Spiritual Meaning - Holy Co-operation",
+          "mystic_message": "On a spiritual level, this card bears the healing of production together, the universal wisdom multiplys by sharing.",
+          "cultural_title": "Modern Comment: Team Spirit and Mastership",
+          "cultural_message": "In the modern world, the Magic Three represents creative projects, collaboration, productivity and professional growth.",
+          "lesson": "The Magic Trinity teaches the importance of sharing, of working together and of building patiently, and true success is born from growing together."
+        },
+        "keywords": {
+          "keywords_title": "Talisman Three Card Keywords",
+          "keywords_message": "The charm trio stands for tarot, three of pentacles, singing, collaboration, teamwork, craftsmanship, productivity, discipline.",
+          "positive_title": "Positive Themes",
+          "positive_message": "Co-operation, mastery, productivity, success, vision, solidarity.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Instead of ego and arrogance, choose sharing, solidarity and patience.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Creating together increases the energy of the soul, share your knowledge, make your labor sacred."
+        },
+        "associations": {
+          "title": "Talisman Trio Cosmic Connections",
+          "astrology": "Capricorn (Disciplin, Mastership, Team Spirit)",
+          "numerology": "3 (Creation, Co-operation, Building)",
+          "element": "Earth's hard work, endurance, Solid Success",
+          "chakra": "Solar Plexus ▪ Personal Powers and Mastership"
+        },
+        "card_combinations": {
+          "title": "Combinations That Step Up With the Talisman Trio",
+          "combinations": {
+            "0": {
+              "card": "Talisman Eight",
+              "meaning": "It begins when mastery deepens and its labors bear fruit."
+            },
+            "1": {
+              "card": "The Six of the Wand",
+              "meaning": "Appreciation, team success and apparent victory."
+            },
+            "2": {
+              "card": "The Three of Hearts",
+              "meaning": "The harmony of creative teams is a combination of love and production."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Approval of the Talisman Trio",
+          "affirmation_list": {
+            "0": "I make them together, I grow together.",
+            "1": "My craftsmanship and my hard work make value.",
+            "2": "One step at a time with the team's spirit."
+          }
+        },
+        "cta": {
+          "main": "Share your knowledge, produce together, and turn your labor into a sacred cause!",
+          "micro": "Share an idea today or step up for a joint project."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Talisman Trio represent?",
+            "answer": "Teamwork represents skill, planning and cooperation, your work becomes visible and your success grows by sharing."
+          },
+          "1": {
+            "question": "What does the Reverse Talisman Trio mean?",
+            "answer": "It means incompatibility, lack of communication, or ego conflicts, remember the common goal and balance."
+          },
+          "2": {
+            "question": "In what circumstances is the Talisman Three powerful?",
+            "answer": "A new project is powerful when united for teamwork or common purpose."
+          }
+        },
+        "related_cards": {
+          "0": "eight-of-pentacles",
+          "1": "six-of-wands",
+          "2": "three-of-cups"
+        },
+        "imageUrl": "/cards/rws/III-Penticles.webp"
+      },
+      "four-of-pentacles": {
+        "name": "Talisman Four (Security, Control and Share Lesson)",
+        "short_description": "The Trophy Four represents material security and desire to possess, but true wealth comes when you remember to share and flow.",
+        "meanings": {
+          "upright": {
+            "general": "The string quartet represents the desire to maintain stability, savings, and material security. This card also describes the fear of sharing, as it strives to hold on to what it earns. True prosperity continues to remain in the flow.",
+            "love": "In love, there's a desire to protect or defend your feelings. Don't close your heart too tight; trust provides flow in relationships.",
+            "career": "In a career, there may be a desire to maintain stability and a very controlled attitude, and I won't improve until I'm out of safe harbors.",
+            "money": "Financially, it's time to save money, investment and savings, but money grows when it's used in the right flow, not just to be held.",
+            "spiritual": "Spiritually, the Talisman Four wants you to notice the areas where the flow of energy stops."
+          },
+          "reversed": {
+            "general": "The Reverse Talisman quartet shows that financial anxiety is extreme or that stingyness prevents development. Reboot the flow.",
+            "love": "In the opposite position of love, jealousy, possession, or control... free love.",
+            "career": "In a career, being closed to opportunity or afraid to take risks will lead to a stagnocism.",
+            "money": "The excessive attitude or unnecessary hoarding of material matters hinders abundance. Remember the energy of trust.",
+            "spiritual": "In a spiritual sense, your fears may be limiting you, sharing your knowledge and love, renewing your energy."
+          }
+        },
+        "context": {
+          "mythology": "The Talisman Quadrant is a stable state of soil energy, and in ancient myths, this energy is associated with the drying of the soil and the stopping of the fertility, and sharing brings reanimation.",
+          "celtic_cross": {
+            "future": "You're entering a time when you'll be able to maintain your financial security in the future, but remember to share it before you forget the balance.",
+            "hidden_influences": "The hidden effects are fear-based restraints, so notice the fear of losing and be free."
+          }
+        },
+        "story": {
+          "title": "The Trophy Four (The Price of Owning)",
+          "description": "On the card, a man sits tightly wrapped in his charms, with money on his feet, with money on his head, but his hands are busy, and his heart closed. Real riches are born again with the courage to share.",
+          "historytitle": "Historical Origin",
+          "history_message": "Four of Pentnacles represented the savings and security of medieval trade culture, but it has been taught that holding it more spiritually is a recession.",
+          "mystic_title": "Spiritual Meaning - Trust and Streaming",
+          "mystic_message": "Spiritually, this card reminds you of the awareness of abundance, not of financial security, but of inner trust.",
+          "cultural_title": "Modern Comment: Control and Release",
+          "cultural_message": "In modern times, the Magic Four represents the fear of giving up control in business, money, or relationships.",
+          "lesson": "This card teaches you the fine line between having and leaving, and the more you share, the bigger you get."
+        },
+        "keywords": {
+          "keywords_title": "Talisman Four Card Keywords",
+          "keywords_message": "The charm quartet is tarot meaning, four of pentacles, safety, money, sharing, control, holding, financial balance.",
+          "positive_title": "Positive Themes",
+          "positive_message": "Security, stability, financial balance, savings, solid foundations.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Too much holding on stops growing, reminiscing about the flow.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "True abundance begins when you're not afraid to share."
+        },
+        "associations": {
+          "title": "Talisman Four Cosmic Connections",
+          "astrology": "Capricorn (Control, Discipline, Security)",
+          "numerology": "4 (Defense, Border, Construction)",
+          "element": "Earth ▪ Financial Security and Persistence",
+          "chakra": "Root ▪ Rooting and Trust"
+        },
+        "card_combinations": {
+          "title": "Combinations Step Up With the Talisman Four",
+          "combinations": {
+            "0": {
+              "card": "Talisman Nine",
+              "meaning": "Your financial security increases, but don't forget freedom."
+            },
+            "1": {
+              "card": "The Six of Hearts",
+              "meaning": "Too much holding on to the past or its old values prevents progress."
+            },
+            "2": {
+              "card": "Tower",
+              "meaning": "Fear of losing control can be broken by a forced transformation."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Approval of the Talisman Four",
+          "affirmation_list": {
+            "0": "True trust begins with inner stability.",
+            "1": "Sharing increases the abundance, leaving my fears.",
+            "2": "I'm in financial and spiritual balance."
+          }
+        },
+        "cta": {
+          "main": "Remember the awareness of abundance: sharing doesn't diminish you, it grows you.",
+          "micro": "Today, share something freely or practice gratitude."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Talisman Four represent?",
+            "answer": "It represents the desire to maintain financial security, the effort to maintain control, and the importance of sharing."
+          },
+          "1": {
+            "question": "What does the Reverse Talisman Four mean?",
+            "answer": "Fear of losing means being stingy or controlling, and you have to re-remember the flow."
+          },
+          "2": {
+            "question": "In what circumstances is the Talisman Four powerful?",
+            "answer": "It is powerful when it comes to building financial structures, creating safe spaces, and maintaining long-term stability."
+          }
+        },
+        "related_cards": {
+          "0": "Nine-of-penticles",
+          "1": "six-of-cups",
+          "2": "the-tower"
+        },
+        "imageUrl": "/cards/rws/IV-Pentacles.webp"
+      },
+      "five-of-pentacles": {
+        "name": "Five of the Talisman (Strength), Famine of Resources, Faith and Compassional Healing",
+        "short_description": "The Five Talisman represents deprivation, exclusion, or temporary distress, but this card also reminds of the birth of solidarity, hope, and inner healing.",
+        "meanings": {
+          "upright": {
+            "general": "The Five Talisman represents a sense of difficulty, loss or loneliness, but it's a temporary period; notice the resources of support and compassion around you; real power is born from solidarity.",
+            "love": "In love, emotional separation, misunderstanding, or lack of support can be seen, but with honest communication and empathy, unity can be restored.",
+            "career": "In a career, temporary financial difficulties or job insecurity can happen, so don't be afraid to ask for help; solidarity will get you back on your feet.",
+            "money": "Financial losses or feelings of inadequacy may arise, but this is an opportunity for you to regain your awareness of abundance.",
+            "spiritual": "Spiritually, there may be loss of faith or internal fatigue, which is the gateway to spiritual rebirth."
+          },
+          "reversed": {
+            "general": "The Reverse Talisman Five points to the healing and recovery process, and the end of difficulties is coming, thank God and patiently move forward.",
+            "love": "The opposite position in love indicates emotional wounds are healing and the relationship is resuscitating.",
+            "career": "In careers, there is support, help, or new opportunities.",
+            "money": "Financial recovery, repayment of debts, or increase in income comes to the agenda.",
+            "spiritual": "Spiritually, faith is reborn, you begin to feel the support of the universe."
+          }
+        },
+        "context": {
+          "mythology": "The Five Talisman represents a warm search for light in the middle of winter, and in ancient stories, the healing of fallen heroes comes with solidarity and faith.",
+          "celtic_cross": {
+            "future": "In the near future, support and help will reach out, and the challenges will be overcome by solidarity.",
+            "hidden_influences": "Secret sources of support are all around you as long as you're open to asking for help."
+          }
+        },
+        "story": {
+          "title": "Five of the Talisman (Temple), Light in the Middle of Winter",
+          "description": "On the card, there are two poor figures walking under the snow, a window of a church that shines with light, and you have to step in, ask for help, and allow healing. This card reminds you of hope.",
+          "historytitle": "Historical Origin",
+          "history_message": "In the Middle Ages, Five of Pentnacles represented the theme of poverty and exclusion, but in Tarot, its real meaning is to be reborn in solidarity.",
+          "mystic_title": "Spiritual Meaning: From Famine to Healing",
+          "mystic_message": "Spiritually, this card represents the resurrection after the loss of faith.",
+          "cultural_title": "Modern Comment: Empathy and Recovery",
+          "cultural_message": "In the modern world, the Five Talisman represents economic or emotional crises, but in human relationships compassion heals all wounds.",
+          "lesson": "This card teaches the balance between 'calling for help' and 'help', and no difficulty remains heavy when shared."
+        },
+        "keywords": {
+          "keywords_title": "Talisman Five Card Keywords",
+          "keywords_message": "Talisman five means tarot, five of pentacles in the genre, deprivation, solidarity, hope, healing, faith, overcoming challenges.",
+          "positive_title": "Positive Themes",
+          "positive_message": "Solidarity, empathy, patience, inner power, healing, hope, rebirth.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Instead of being alone, ask for help and let the healing take place.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Even in the dark there is light; open your heart and remember your faith."
+        },
+        "associations": {
+          "title": "Talisman Five Cosmic Connections",
+          "astrology": "Bull and Capricorn (Maddi Balance and Resistance)",
+          "numerology": "5 (Change, Crisis, Transformation)",
+          "element": "Earth Growth in the Way of Challenges",
+          "chakra": "Heart ▪ Compassion and Bonding"
+        },
+        "card_combinations": {
+          "title": "Combinations Step Up With the Talisman Five",
+          "combinations": {
+            "0": {
+              "card": "The Talisman Trio",
+              "meaning": "With solidarity and teamwork, the challenges are overcome."
+            },
+            "1": {
+              "card": "Sun",
+              "meaning": "The period of rebirth and success begins after despair."
+            },
+            "2": {
+              "card": "The Six of Hearts",
+              "meaning": "The support of the past, or a friend, could be your light again."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Talisman Five Approved",
+          "affirmation_list": {
+            "0": "Difficulties strengthen me, and I give birth to my faith.",
+            "1": "Any kind of loving help enhances the energy of abundance.",
+            "2": "The light of the universe is always with me, not alone."
+          }
+        },
+        "cta": {
+          "main": "Remember, even in the deepest winter, there is always light. Ask for help, share the light.",
+          "micro": "Support someone today, or accept tender help."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Talisman Five represent?",
+            "answer": "It represents hardship, exclusion, or material hardship, but it is also a call for solidarity, faith, and healing."
+          },
+          "1": {
+            "question": "What does the Reverse Talisman Five mean?",
+            "answer": "It shows the period of healing, finding support, and getting back on your feet. The end of difficulties is near."
+          },
+          "2": {
+            "question": "In what circumstances is the Five Talisman strong?",
+            "answer": "It is powerful when it teaches to move forward through loss, loneliness, or rebirth, solidarity and empathy."
+          }
+        },
+        "related_cards": {
+          "0": "three-of-penticles",
+          "1": "the-sun",
+          "2": "six-of-cups"
+        },
+        "imageUrl": "/cards/rws/V-Pentacles.webp"
+      },
+      "six-of-pentacles": {
+        "name": "Talisman Six (Sharing, Balance, and Gratitude)",
+        "short_description": "The Six of the Talisman represents the sacred balance between giving and receiving. As the abundance is shared, it multiplys; and to give with compassion is spiritual wealth.",
+        "meanings": {
+          "upright": {
+            "general": "The Six of Talisman represents generosity, sharing and balance, which is the energy of cooperation and fair exchange, both giving and receiving is the natural cycle of abundance.",
+            "love": "In love, it represents a relationship where emotional exchange is balanced, shared by equal labor and love, and mutual support brings balance in a relationship.",
+            "career": "In a career, getting help or mentoring others, sharing your knowledge brings long-term blessings.",
+            "money": "Financially, it's time for sharing and generosity, and sharing money, information or time with others increases the abundance.",
+            "spiritual": "Spiritually, it's important to maintain the balance of giving and taking, and when you share with gratitude, the doors of universal abundance open."
+          },
+          "reversed": {
+            "general": "The Reverse Talisman Six can show an unstable trade, a lack of interest or gratitude, give it from the heart, accept it with gratitude.",
+            "love": "A reverse position in love, emotional inequality, or a part of you carrying a burden of sacrifice.",
+            "career": "In a career, there may be a lack of payback or unfair sharing, demand rights, but stay out of vanity.",
+            "money": "Financially, pay attention to the balance of lending and giving, financial sharing should be done with conscience.",
+            "spiritual": "In a spiritual sense, the balance of giving can lead to internal fatigue, remember the gratitude and open your heart."
+          }
+        },
+        "context": {
+          "mythology": "In ancient times, the Six of Talisman represented the principle of equitable measurement. The goddess of justice, Mawahat, held the scales in her hand to restore balance in the universe.",
+          "celtic_cross": {
+            "future": "In the near future, there's a share or support energy waiting for you, so either you get help or you give it.",
+            "hidden_influences": "The hidden effects are the energy of generosity from the heart."
+          }
+        },
+        "story": {
+          "title": "Talisman Six (The Changing Hand of plenty)",
+          "description": "On the card, a rich figure is seen handing out money to two poor people; he has scales; he represents justice and balance; this card reminds them that abundance is blessed by sharing. Real wealth is giving from the heart.",
+          "historytitle": "Historical Origin",
+          "history_message": "Six of Pentnacles represented alms and charity in the Middle Ages. In Tarot, fair sharing and energetic balance were evolved.",
+          "mystic_title": "Spiritual Meaning - The Balance of Giving and Taking",
+          "mystic_message": "On a spiritual level, this card bears the healing of giving from the heart, and the universe brings back more than anything given with love.",
+          "cultural_title": "Modern Comment: Equality and Fair Share",
+          "cultural_message": "In the modern world, the Magic Six represents social justice, philanthropy, and gratitude, and learn to take it.",
+          "lesson": "This card teaches the balance between 'giving' and 'taking', and the abundance increases as it is shared; acceptance with gratitude increases the spirit."
+        },
+        "keywords": {
+          "keywords_title": "Charm Six Card Keywords",
+          "keywords_message": "\"Magic Six\" meaning tarot, six of pentacles, singing, sharing, balance, abundance, generosity, gratitude, justice.",
+          "positive_title": "Positive Themes",
+          "positive_message": "Share, help, abundance, balance, generosity, gratitude, justice.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Give from the heart what you have given, and accept with gratitude what you have received.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Plenty grows when it's shared from the heart, give with gratitude, take with love."
+        },
+        "associations": {
+          "title": "Talisman Six Cosmic Connections",
+          "astrology": "Libra Burcu (justice, balance, harmony)",
+          "numerology": "6 (Subject, Service, Compassion)",
+          "element": "Earth (Sharing, Balance, Plenty)",
+          "chakra": "Heart ▪ Love, Generosity, Gratitude"
+        },
+        "card_combinations": {
+          "title": "Combinations Step Up With the Talisman Six",
+          "combinations": {
+            "0": {
+              "card": "The Talisman Trio",
+              "meaning": "In the team, generous sharing enhances success."
+            },
+            "1": {
+              "card": "The Six of Hearts",
+              "meaning": "Time to forgive and share with love in past relationships."
+            },
+            "2": {
+              "card": "Justice (Justice)",
+              "meaning": "Fair share restores mixed balance."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Talisman Six Approved",
+          "affirmation_list": {
+            "0": "I'm grateful for it and I'm grateful for it.",
+            "1": "I share my wealth with love.",
+            "2": "The generous flow of the universe is the unit."
+          }
+        },
+        "cta": {
+          "main": "Sharing is the key to abundance.",
+          "micro": "Give someone your time, love, or knowledge."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Talisman Six represent?",
+            "answer": "It represents sharing, helping, and fair trade, and the abundance increases as it is shared."
+          },
+          "1": {
+            "question": "What does the Reverse Talisman Six mean?",
+            "answer": "It shows that the given-take balance has been disturbed, that there is a lack of interest or gratitude, and restore balance."
+          },
+          "2": {
+            "question": "In what circumstances is the Six of the Talisman strong?",
+            "answer": "When it comes to financial, emotional, or spiritual sharing, it is powerful in the process of cooperation and balance."
+          }
+        },
+        "related_cards": {
+          "0": "three-of-penticles",
+          "1": "justice",
+          "2": "six-of-cups"
+        },
+        "imageUrl": "/cards/rws/VI-Penticles.webp"
+      },
+      "seven-of-pentacles": {
+        "name": "The Seven of the Talisman (Strength), Patience, Work, and Trust in the Future",
+        "short_description": "The Amulet Seven is a card to wait for the fruits of labor, to watch patiently grow, and to harvest at the right time. The seeds have been planted in the soil, and now it is time to wait with faith.",
+        "meanings": {
+          "upright": {
+            "general": "The Seven of Talisman represents the process of effort, patience, and evaluation, and progress may be slow, but the foundations are solid, reminding you to stand and breathe on the road to long-term success.",
+            "love": "In love, the energy of patience and permanence prevails. Your relationship deepens over time; emotional bonds are slowly but permanently strengthened.",
+            "career": "In careers, you may not be able to get your work's worth soon, so focus on the long-term plans; the reward for stable work will come soon.",
+            "money": "Financially, investments may take time to bear fruit.",
+            "spiritual": "Spiritually, you're in the process of development, and this card requires you to patiently watch your internal growth and rely on the process."
+          },
+          "reversed": {
+            "general": "The Reverse Talisman Seven means impatientness, loss of motivation or false investments, so go over your target and realize where you're running out of energy.",
+            "love": "It can be a reverse position in love, a blockage of progress in a relationship or a sense of despair, strengthen communication with patience.",
+            "career": "In a career, impatient or short-term ambition can weaken long-term potential.",
+            "money": "Financially, the effort to harvest early can lead to casualties.",
+            "spiritual": "Spiritually, you may think you're not progressing, but the seeds of development sprout quietly."
+          }
+        },
+        "context": {
+          "mythology": "The Seven of Talisman represents the cycle of nature and the patience of Gaia. The earth does not hurry; every seed grows on time.",
+          "celtic_cross": {
+            "future": "In the near future, you're going to get your work's worth, so be patient.",
+            "hidden_influences": "Secret effects teach you to rely on natural cycles, everything has its time."
+          }
+        },
+        "story": {
+          "title": "The Seven of the Talisman (Strength), the Silent Growth of the Seed",
+          "description": "On the card, a gardener follows the growth of talismans, based on a cane, which represents the moment when labor is patiently observed. The bond established with the soil is a symbol of trust.",
+          "historytitle": "Historical Origin",
+          "history_message": "Seven of Pentnacles was born in the Renaissance as a symbol of productivity and harvest cycle, reminding of the sanctity of time.",
+          "mystic_title": "Spiritual Meaning - Patience and Trust",
+          "mystic_message": "Spiritually, this card teaches the power of surrender and patience, trust in universal rhythm; everything matures in its own time.",
+          "cultural_title": "Modern Comment: Long-term Plan and Evaluation",
+          "cultural_message": "In the modern world, the Templar Seven represents strategic thinking in the process of labor, investment and production, not immediate results, but sustainable success.",
+          "lesson": "This card teaches that patience speeds up growth, stay calm in the areas where you work; the universe works."
+        },
+        "keywords": {
+          "keywords_title": "Talisman Seven Card Keywords",
+          "keywords_message": "Charm seven means tarot, lover of pentacles, patience, effort, evaluation, waiting, long-term success",
+          "positive_title": "Positive Themes",
+          "positive_message": "Patience, perseverance, planning, trust, strategic thinking, the natural cycle.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Patience delays success; trust as long as it lasts.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Time has its own sacred rhythm, feed its seeds with love and allow it to grow."
+        },
+        "associations": {
+          "title": "Talisman Seven Cosmic Connections",
+          "astrology": "Saturn (Time, Patience, Discipline)",
+          "numerology": "7 (Deep Thinking, Evaluation, Faith)",
+          "element": "Earth's Continuum, Growth, Nature's Cycle",
+          "chakra": "Solar Plexus ▪ The Power of Patience and Trust"
+        },
+        "card_combinations": {
+          "title": "Combinations Step Up With the Talisman Seven",
+          "combinations": {
+            "0": {
+              "card": "Talisman Eight",
+              "meaning": "The process of labor deepens; you gain mastery."
+            },
+            "1": {
+              "card": "Sun",
+              "meaning": "At the end of long labor, you achieve visible success."
+            },
+            "2": {
+              "card": "Seven of the Wands",
+              "meaning": "Victory is near at hand in matters which you have endured patiently."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Talisman Seven Approved",
+          "affirmation_list": {
+            "0": "I trust my work, everything matures in divine time.",
+            "1": "I allow myself to grow up patiently.",
+            "2": "I'm in harmony with the rhythm of the universe."
+          }
+        },
+        "cta": {
+          "main": "Patience is the secret magic of success.",
+          "micro": "Stop today, take a deep breath and trust the process."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Amulet Seven represent?",
+            "answer": "Labour represents patience and trust in the future, and it is time to wait for the fruit of their work."
+          },
+          "1": {
+            "question": "What does the Reverse Talisman Seven mean?",
+            "answer": "It means impatientness, misinvestment, or fatigue. Reassess the process."
+          },
+          "2": {
+            "question": "In what circumstances is the seven of the amulet powerful?",
+            "answer": "It is powerful in long-term projects, in investments that require patience, or in internal growth."
+          }
+        },
+        "related_cards": {
+          "0": "eight-of-pentacles",
+          "1": "the-sun",
+          "2": "Seven-of-wands"
+        },
+        "imageUrl": "/cards/rws/VII-Pentcases.webp"
+      },
+      "eight-of-pentacles": {
+        "name": "Talisman Eight (Strength, Focus and Development)",
+        "short_description": "The Amulet Eight represents the energy of progress, discipline, and continuous development. Each step is the work of the soul.",
+        "meanings": {
+          "upright": {
+            "general": "The Talisman Eight represents the process of perfecting work, learning, and skills, which shows the time of mastery with patience and self-preservation, and in every detail is the work of the heart.",
+            "love": "In love, carefully working on your relationship means working hard and developing emotional skills.",
+            "career": "In your career, you're in the process of training, skill development and mastering work, and every step of the way brings you closer to permanent success.",
+            "money": "Financially, disciplined work and planned investments are profitable.",
+            "spiritual": "On a spiritual level, you develop inner mastery and self-awareness."
+          },
+          "reversed": {
+            "general": "The Reverse Talisman Eight indicates loss of motivation, carelessness, or routines that stop development.",
+            "love": "In love, he can do reverse positions, indifference, or unilateral effort, and it takes a lot of co-operation to revitalize the relationship.",
+            "career": "In a career, not paying attention to details or being bored can weaken projects.",
+            "money": "Financially, carelessness or impatience can cause damage.",
+            "spiritual": "Spiritually, remember your inner intentions if progress has stopped, refocus the healing effort with love."
+          }
+        },
+        "context": {
+          "mythology": "The Amulet Eight carries the energy of the Blacksmith God Hephaistos. In every blow comes art, patience, and skill. The sanctity of work is the heart of this card.",
+          "celtic_cross": {
+            "future": "The results of your hard work will soon be visible.",
+            "hidden_influences": "The hidden influence is in the discipline of working with your heart that makes you a master."
+          }
+        },
+        "story": {
+          "title": "Talisman Eight (The Silent Dance of Mastering)",
+          "description": "In the card, one craftsman carefully performs eight talismans, each symbol of labor, discipline, and passion, and this scene is that the path to perfection has been built with patience.",
+          "historytitle": "Historical Origin",
+          "history_message": "Eight of Pentnacles is a symbol of medieval craftsman's guild, and by the work of hand, making a sacred production is the art of life.",
+          "mystic_title": "Spiritual Meaning - The Cure of Work",
+          "mystic_message": "This card is a symbol of inner mastery and healing labor. Every action is shaped by your intent; every work of love cleanses the soul.",
+          "cultural_title": "Modern Comment: Specialism and Focus",
+          "cultural_message": "In modern terms, the Talisman Eight represents the development of professional development, education, craft and personal skill.",
+          "lesson": "The Talisman Eight teaches you that the apple is a spiritual prayer, and everything you do is your inner art."
+        },
+        "keywords": {
+          "keywords_title": "Talisman Eight Card Keywords",
+          "keywords_message": "Talisman eight means tarot, eight of pentacles, genre, mastery, work, skill, development, discipline, learning.",
+          "positive_title": "Positive Themes",
+          "positive_message": "Skills, patience, discipline, productivity, focus, self-improvement.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Enjoy the process instead of the obsession with perfection.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Work is the prayer of the soul, and every time it brings you closer to the light."
+        },
+        "associations": {
+          "title": "Talisman Eight Cosmic Connections",
+          "astrology": "Virgo Burcu (Study, Service, Details)",
+          "numerology": "8 (Master, Discipline, Power)",
+          "element": "Earth, action, patience, productivity",
+          "chakra": "Solar Plexus ▪ Power and Focus"
+        },
+        "card_combinations": {
+          "title": "Combinations Step Up With the Talisman Eight",
+          "combinations": {
+            "0": {
+              "card": "The Talisman Trio",
+              "meaning": "Teamwork makes your personal skill shine."
+            },
+            "1": {
+              "card": "Eight of Wands",
+              "meaning": "The rush of hard work results quickly."
+            },
+            "2": {
+              "card": "Wizard (The Magician)",
+              "meaning": "Your abilities are becoming magic; your creative energy is increasing."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Talisman Eight Approved",
+          "affirmation_list": {
+            "0": "Every effort brings me closer to mastery.",
+            "1": "I work with love; my work is the expression of my soul.",
+            "2": "My discipline and focus lead me to success."
+          }
+        },
+        "cta": {
+          "main": "Turn your work into a holy art, and work carefully on something today.",
+          "micro": "Even a small detail can make a big difference."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Talisman Eight represent?",
+            "answer": "It represents mastery, learning, discipline, and the process of working."
+          },
+          "1": {
+            "question": "What does the Reverse Talisman Eight mean?",
+            "answer": "Loss of interest means lack of motivation or aimless work."
+          },
+          "2": {
+            "question": "In what circumstances is the Talisman Eight strong?",
+            "answer": "It is powerful in learning, skill development, or in focusing decisively on a goal."
+          }
+        },
+        "related_cards": {
+          "0": "three-of-penticles",
+          "1": "the-magician",
+          "2": "eight-of-wands"
+        },
+        "imageUrl": "/cards/rws/VIII-Pentcases.webp"
+      },
+      "nine-of-pentacles": {
+        "name": "The Nine of the Talisman (Strength), Self - Confidence, Luxury, and Internal Satisfaction",
+        "short_description": "The Nine of Talisman represents the fruits of his labor, self-esteem, grace, and peace earned on his own.",
+        "meanings": {
+          "upright": {
+            "general": "The charm nine represents independence, success and self-confidence, and you get the reward for a field you've worked so long for, and this card is not only a symbol of material, but also of spiritual wealth, so enjoy it.",
+            "love": "In love, self-awareness and independent love come forward, and the more you learn to be happy with yourself, the more you balance relationships.",
+            "career": "From a career point of view, the era of success, dignity, and professional satisfaction begins, and you're ready to get your work's worth.",
+            "money": "You get financial abundance, investment gain, or the fruit of a system of your own hard work, enjoy the luxury, but don't waste it.",
+            "spiritual": "On a spiritual level, the consciousness of inner peace and gratitude emerges, self-sustaining, harmony with universal power."
+          },
+          "reversed": {
+            "general": "The Reverse Talisman Nine means excessive addiction, lack of confidence, or lack of material satisfaction, and real wealth lies in internal balance.",
+            "love": "In love, the opposite position can create a fear of emotional addiction or loneliness.",
+            "career": "In a career, you can forget to work hard to achieve success and enjoy it.",
+            "money": "Financially, it could be misexpension or luxury consumption pressure.",
+            "spiritual": "In a spiritual sense, you may find it difficult to balance the soul with success, rebuild inner peace."
+          }
+        },
+        "context": {
+          "mythology": "The Nine of the Talisman bears the silent victory of Demeter, the goddess of fertility, and the abundance of the flesh becomes grace when it is combined with self - confidence.",
+          "celtic_cross": {
+            "future": "Soon, a time of success and peace begins, so enjoy your own hard work.",
+            "hidden_influences": "The hidden effect is the consciousness of self-worth, which increases the abundance of self-esteem."
+          }
+        },
+        "story": {
+          "title": "The Nine of the Talisman, the Silent Victory of Grace",
+          "description": "In the card, an elegant woman stands between vineyards, and the bird is put in peace on her shoulder. This scene speaks of the stillness of a soul that reaps the fruit of its labor. Here wealth is not only in money, but in wisdom.",
+          "historytitle": "Historical Origin",
+          "history_message": "The Nine of Pentnacles was a card that represented independent success and aesthetic lifestyle during the Renaissance, which was considered to be a symbol of expertly earned peace.",
+          "mystic_title": "Spiritual Meaning - Fullness and Gratitude",
+          "mystic_message": "Spiritually, this card is the energy of the abundance that comes with a sense of gratitude, and the universe vibrates with your hard work; peace is born not from having, but from having.",
+          "cultural_title": "Modern Comment: The Weakness of Success",
+          "cultural_message": "In modern terms, the Magic Nine represents a powerful individual standing on its own two feet, complete with success, self-esteem, and grace.",
+          "lesson": "The Nine of Talisman teaches you the purest way of knowing your self-worth, and your abundance walks hand in hand with your confidence."
+        },
+        "keywords": {
+          "keywords_title": "Talisman Nine Card Keywords",
+          "keywords_message": "Talisman nine meaning tarot, nana of pentacles, style of self-esteem, abundance, grace, success, peace, gratitude",
+          "positive_title": "Positive Themes",
+          "positive_message": "Independence, abundance, grace, self-worth, peace, gratitude.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Instead of getting stuck in luxury, celebrate the peace of your labor.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "True wealth is measured by your love and gratitude for yourself."
+        },
+        "associations": {
+          "title": "Talisman Nine Cosmic Connections",
+          "astrology": "Venus (Esthetic, Grace, Comfort)",
+          "numerology": "9 (Fullness, Maturity, Independence)",
+          "element": "Earth ▪ Solid Success, Balance, and Comfort",
+          "chakra": "Solar Plexus and Heart ▪ Power and Gratitude Balance"
+        },
+        "card_combinations": {
+          "title": "Combinations Step Up With the Nine of Talisman",
+          "combinations": {
+            "0": {
+              "card": "Talisman Ten",
+              "meaning": "The transition to family and social prosperity after personal success."
+            },
+            "1": {
+              "card": "Sun",
+              "meaning": "A period of absolute satisfaction, self-confidence and success."
+            },
+            "2": {
+              "card": "Empress (The Empire)",
+              "meaning": "Physical abundance, fertility, and the increase in creative production."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "\"Temple Nine Approved\"",
+          "affirmation_list": {
+            "0": "I accept the fruit of my labor with love.",
+            "1": "I trust myself; success is crowned with peace.",
+            "2": "I embrace life with gratitude, everything is enough."
+          }
+        },
+        "cta": {
+          "main": "Enjoy your work.",
+          "micro": "Celebrate your success today and thank yourself."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the charm nine represent?",
+            "answer": "It represents independence, abundance, self-esteem and inner satisfaction, and the reward of your labor will find you in peace."
+          },
+          "1": {
+            "question": "What does the Reverse Talisman Nine mean?",
+            "answer": "Excessive luxury means lack of confidence or dissatisfaction."
+          },
+          "2": {
+            "question": "In what circumstances is the charm nine strong?",
+            "answer": "When he receives the results of his labor, he is strong when he wants to recognize his own strength and experience inner satisfaction."
+          }
+        },
+        "related_cards": {
+          "0": "ten-of-pentacles",
+          "1": "the-empress",
+          "2": "the-sun"
+        },
+        "imageUrl": "/cards/rws/IX-Pentcases.webp"
+      },
+      "ten-of-pentacles": {
+        "name": "Talisman Ten, Permanent Success, Family and Heritage",
+        "short_description": "The Tenth of the Talisman is a symbol of permanent abundance, family unity, and intergenerational heritage, which describes a success that has been rooted both financially and spiritually.",
+        "meanings": {
+          "upright": {
+            "general": "The Tenth of Talisman represents stability, abundance and completion in all aspects of life, a period when long-term goals become fruit, where trust and peace prevail, which represents the permanence of both material and spiritual heritage.",
+            "love": "In love, starting a family carries the theme of long life and commitment in a relationship. The shared sense of trust is fundamental; it means walking together into the future.",
+            "career": "In careers, permanent success carries the energy of reliable business partnerships and the ability to build an inheritance system, and long-term work is crowned.",
+            "money": "In a financial sense, permanent investment is a symbol of prosperity that will last for generations, inheritance, real estate, or generational wealth.",
+            "spiritual": "On a spiritual level, it means rooting, healing the family karma, and making peace with the past, you're in harmony with the energy of the spirit race."
+          },
+          "reversed": {
+            "general": "Despite financial success, the Reverse Talisman Ten points to conflicts of spiritual space, family dispute, or inheritance. Remember the source of abundance: love and unity."
+          }
+        }
+      }
+    }
+  }
+}

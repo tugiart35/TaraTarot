@@ -4,39 +4,43 @@ import type { TarotCard } from '@/types/tarot';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createNewLoverConfig } from '@/features/tarot/shared/config';
 import newLoverExports from '@/features/tarot/lib/new-lover/position-meanings-index';
+import { useTranslations } from '@/hooks/useTranslations';
 
 const { getNewLoverMeaningByCardAndPosition } = newLoverExports;
 
-const NewLoverReading = createTarotReadingComponent({
-  getConfig: () => createNewLoverConfig(),
-  interpretationEmoji: '💕',
-  readingType: 'NEW_LOVER_DETAILED', // New Lover için reading type belirt
-  getCardMeaning: (
-    card: TarotCard | null,
-    position: number,
-    isReversed: boolean
-  ) => {
-    if (!card) {
-      return '';
-    }
+export default function NewLoverReading(props: any) {
+  const { t } = useTranslations();
 
-    const meaning = getNewLoverMeaningByCardAndPosition(
-      card,
-      position,
-      isReversed
-    );
+  const TarotComponent = createTarotReadingComponent({
+    getConfig: () => createNewLoverConfig(t),
+    interpretationEmoji: '💕',
+    readingType: 'NEW_LOVER_DETAILED',
+    getCardMeaning: (
+      card: TarotCard | null,
+      position: number,
+      isReversed: boolean
+    ) => {
+      if (!card) {
+        return '';
+      }
 
-    if (!meaning) {
-      return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
-    }
+      const meaning = getNewLoverMeaningByCardAndPosition(
+        card,
+        position,
+        isReversed
+      );
 
-    // Context bilgisini de içeren obje döndür
-    return {
-      interpretation: isReversed ? meaning.reversed : meaning.upright,
-      context: meaning.context,
-      keywords: meaning.keywords || [],
-    };
-  },
-});
+      if (!meaning) {
+        return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
+      }
 
-export default NewLoverReading;
+      return {
+        interpretation: isReversed ? meaning.reversed : meaning.upright,
+        context: meaning.context,
+        keywords: meaning.keywords || [],
+      };
+    },
+  });
+
+  return <TarotComponent {...props} />;
+}

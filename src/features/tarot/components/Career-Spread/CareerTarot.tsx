@@ -10,7 +10,7 @@ export default function CareerReading(props: any) {
   const { t } = useTranslations(); // Hook component içinde
 
   const TarotComponent = createTarotReadingComponent({
-    getConfig: () => createCareerConfig(),
+    getConfig: () => createCareerConfig(t),
     interpretationEmoji: '💼',
     readingType: 'CAREER_SPREAD_DETAILED',
     getCardMeaning: (

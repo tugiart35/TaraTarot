@@ -1,0 +1,870 @@
+{
+  "blog": {
+    "cards": {
+      "ace-of-swords": {
+        "card_combinations": {
+          "combinations": [
+            {
+              "card": "Pravda",
+              "meaning": "Pravda i istina su ojačane, donose se važne odluke."
+            },
+            {
+              "card": "Mađioničar",
+              "meaning": "Mentalna snaga i kreativnost kombinuju."
+            },
+            {
+              "card": "Kralj mačeva",
+              "meaning": "Uspeh se postiže zrelim vođstvom i oštrim odlukama."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Ace izjave mačeva",
+          "affirmation_list": [
+            "Istinu vidim sa mentalnom jasnoćom.",
+            "Donosim odluke sa pravičnošću i iskrenošću.",
+            "Otvoren sam za nove ideje sa oštrom inteligencijom."
+          ]
+        },
+        "cta": {
+          "main": "Otkriti",
+          "micro": "Saznajte više"
+        },
+        "faq": [
+          {
+            "question": "Šta znači Ace mačeva?",
+            "answer": "Ace mačeva predstavlja mentalnu jasnoću, nove ideje i moć da se upita stvarnost."
+          },
+          {
+            "question": "Šta znači ACE mačeva u ljubavi?",
+            "answer": "Otvorene komunikacije i iskrenost zaljubljena, a vi dobijate jasnoću u odnosima."
+          }
+        ],
+        "related_cards": [
+          "pravda",
+          "mađioničar",
+          "kralj mačeva"
+        ]
+      },
+      "two-of-swords": {
+        "name": "Dva mačeva - neodlučnost i ravnoteža",
+        "short_description": "Dvoje mačeva predstavljaju teške odluke, unutrašnji sukob i ravnotežu. Simbolizuje situaciju suzdržavanja od donošenja izbora ili preostalih neutralnih.",
+        "imageUrl": "/cards/rvs/ii-svords.vebp",
+        "meanings": {
+          "upright": {
+            "general": "Dvoje mačeva ukazuje da je rastrgano između dve opcije i imati poteškoće u odlučivanju. Važno je održavati unutrašnju ravnotežu.",
+            "love": "Neodlučnost ili neutralnost u ljubavi. Razjasnite svoja osećanja i odlučite se.",
+            "career": "Vreme je za teške odluke o karijeri ili biranje između dve staze. Napraviti detaljnu analizu.",
+            "money": "Oklevanje ili čekanje u finansijskim pitanjima. Budite strpljivi.",
+            "spiritual": "Duhovna potraga za unutrašnjom ravnotežom i mirom. Meditacija može pomoći."
+          },
+          "reversed": {
+            "general": "Preokrećena dva mačeva ukazuje na rizik od izbegavanja, potisnutih emocija ili pogrešnih odluka.",
+            "love": "Možda postoji nedostatak komunikacije ili emocionalnog zatvaranja u ljubavi.",
+            "career": "Izbegavanje odlučivanja u karijeri stvara probleme.",
+            "money": "Iracionalne odluke ili odlaganja u finansijskim pitanjima.",
+            "spiritual": "Unutrašnji sukobi moraju biti rešeni, potrebna je svest."
+          }
+        },
+        "context": {
+          "mythology": "Njih dvoje mačeva predstavlja napetost između ravnoteže i izbora. Simbol dve staze ili dualnosti često se pojavljuje u mitologiji.",
+          "celtic_cross": {
+            "future": "Možda ćete morati da date važne odluke u budućnosti. Ostanite uravnoteženi.",
+            "hidden_influences": "Skriveni strahovi ili potisnuti emocije mogu biti uticajni."
+          }
+        },
+        "story": {
+          "title": "Dvoje mačeva - trenutak izbora",
+          "description": "Na kartici je povezčana slika smanjuje dva mačeva i pokušava da održava ravnotežu. Ovo simbolizuje teški izbor i unutrašnji sukob.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Dvoje mačeva predstavlja neodlučnost i ravnotežu u tradiciji Tarot. U srednjem veku simbolizovali su dve strane, poput skale pravde.",
+          "mystic_title": "Duhovno značenje: unutrašnja ravnoteža",
+          "mystic_message": "Duhovno, dvoje mačeva zahteva unutrašnji mir i svest za uravnotežene odluke.",
+          "cultural_title": "Savremeni komentar: Teške odluke",
+          "cultural_message": "U savremenom svetu, njih dvoje mačeva predstavljaju teške izbore i preostali neutralan.",
+          "lesson": "Pažljivo razmotrite svoje odluke, održavajte unutrašnju ravnotežu."
+        },
+        "keywords": {
+          "keywords_title": "Dve ključne reči mačeva",
+          "keywords_message": "Dva mačeva Tarot znači, dvojica mačeva turskih, neodlučnost, ravnoteža, teški izbori",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Potraga za ravnotežom, objektivnošću, unutrašnjim mirom.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Izbegavanje donošenja odluka, suzbijanje emocija.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Održavajte unutrašnju ravnotežu i donosite svesne odluke."
+        },
+        "associations": {
+          "title": "Dve mačeve kosmičke veze",
+          "astrology": "Vaga (balans, pravda, harmonija)",
+          "numerology": "2 (dualnost, ravnoteža, izbor)",
+          "element": "Vazduh - misao, analiza, komunikacija",
+          "chakra": "Treće oko - intuicija i svest"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa dva mačeva",
+          "combinations": [
+            {
+              "card": "Pravda",
+              "meaning": "Pravedne odluke zahtevaju ravnotežu i jasnoću."
+            },
+            {
+              "card": "Ljubavnici",
+              "meaning": "Vreme je da se u odnosima i odlukama u odnosu napravimo emocionalne izbore i odluke."
+            },
+            {
+              "card": "Dvoje šoljica",
+              "meaning": "Traženje ravnoteže i harmonije u odnosima."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Dve izjave mačeva",
+          "affirmation_list": [
+            "Održavam unutrašnju ravnotežu i donosim svesne odluke.",
+            "Ja ostajem miran i miran u teškim izborima.",
+            "Otvaram sebe da vidim istinu."
+          ]
+        },
+        "cta": {
+          "main": "Otkriti",
+          "micro": "Saznajte više"
+        },
+        "faq": [
+          {
+            "question": "Šta to znači dva mačeva?",
+            "answer": "Dvoje mačeva predstavlja neodlučnost, teški izbori i unutrašnji bilans."
+          },
+          {
+            "question": "Šta dva mačeva znači zaljubljena?",
+            "answer": "Označava neodlučnost u ljubavi ili potrebu da se jasno bira u vezi."
+          }
+        ],
+        "related_cards": [
+          "pravda",
+          "ljubitelji",
+          "dvoje čaša"
+        ]
+      },
+      "three-of-swords": {
+        "name": "Tri mačeva - srce i bol",
+        "short_description": "Tri mačeva - Heartbreak i bol nudi smernice na srcu, boli, odvajanju, tugi. To je moćna karta za početak zarastanja, prihvatanje stvarnosti.",
+        "imageUrl": "/cards/rvs/ii-ssvords.vebp",
+        "meanings": {
+          "upright": {
+            "general": "Tri mačeva - Heartbreak i bol nosi važne poruke o srcu, boli, razdvajanju, tugi. U ovom periodu, početak oporavka i prihvatanje istine nalaze se na čelu.",
+            "love": "Teme srca, boli, odvajanja i tuge dolaze u ljubav. Početak isceljenja u odnosima je odgovarajuće vreme za prihvatanje stvarnosti.",
+            "career": "Postoje razvijanje u vezi sa srčanim rukama, bolom, razdvajanjem, tugom u karijeri. Uzmite prilike za početak isceljenja, prihvatiti stvarnost.",
+            "money": "U finansijskim pitanjima, trebalo bi uzeti u obzir srčana rukavica, bol, razdvajanje i tuga. Preduzeti korake za početak isceljenja, prihvatanje istine.",
+            "spiritual": "Duhovno se fokusirajte na srcu, bol, razdvajanje, tugu. Da li unutrašnji posao započne zaceljivanje, prihvatiti stvarnost."
+          },
+          "reversed": {
+            "general": "Tri mačeva u obrnutom položaju - srčani i bol ukazuju da mogu postojati poteškoće u srcu, boli, razdvajanju, tugi.",
+            "love": "Budite oprezni zaljubljeni, problemi koji se odnose na srcu, bol, odvajanje, tuga mogu nastati.",
+            "career": "Budite strpljivi i strateški u vašoj karijeri, izbegavajte brške odluke.",
+            "money": "Ponašajte pažljivo i planirano u finansijskim pitanjima.",
+            "spiritual": "Meditacija i pažljivost su neophodni za održavanje unutrašnje ravnoteže."
+          }
+        },
+        "context": {
+          "mythology": "Tri mačeva - Heartbreak i bol nude smernice kroz srce, bol, odvajanje, tugu kroz mentalnu snagu vazdušnog elementa.",
+          "celtic_cross": {
+            "future": "U budućnosti ćete pronaći mogućnosti za početak isceljenja i prihvatanje istine.",
+            "hidden_influences": "Latentni efekti mogu se odnositi na srce, bol, odvajanje, tugu."
+          }
+        },
+        "story": {
+          "title": "Tri mačeva - srce i bol - priča o kartici",
+          "description": "Tri mačeva - Heartbreak i bol je moćna karta koja nosi teme srčane, boli, odvajanja, tuge. Daje važne poruke za početak isceljenja i prihvatanje istine.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Tri mačeva - Heartbreak i bol je poznata u tradiciji Tarot kao simbol srca, boli, odvajanja, tuge.",
+          "mystic_title": "Duhovno značenje",
+          "mystic_message": "Duhovno, tri mačeva - srce i bol je početak isceljenja, prilika da prihvati stvarnost.",
+          "cultural_title": "Moderna interpretacija",
+          "cultural_message": "U savremenom svetu, tri mačeva - srčani i bol povezana je sa srčanim, bolom, odvajanjem, tugom i početkom isceljenja, prihvatanje stvarnosti.",
+          "lesson": "Preduzeti korake za početak isceljenja, prihvatiti stvarnost i imati na umu srce, boli, odvajanje, tuge."
+        },
+        "keywords": {
+          "keywords_title": "Tri mačeva - Ključne reči srca i boli",
+          "keywords_message": "Tri mačeva Tarot znači, srce, bol, odvajanje, tuga, početak isceljenja, prihvatanje stvarnosti",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Početak isceljenja, prihvatanje stvarnosti",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Imajte na umu i uravnoteženi o srcu, boli, odvajanju, tugi.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Koristite svoju unutrašnju snagu da biste započeli izlečenje, da prihvatite istinu."
+        },
+        "associations": {
+          "title": "Tri mačeva - kosmičke veze srca i boli",
+          "astrology": "Zračni znakovi (Blizanci, Vaga, Vodolija)",
+          "numerology": "3 (srce, bol, odvajanje, tuga)",
+          "element": "Vazduh - inteligencija, komunikacija, misli",
+          "chakra": "Grlo (grlo čakre)"
+        },
+        "card_combinations": {
+          "title": "Tri mačeva - označene kombinacije sa srčanim i bolom",
+          "combinations": [
+            {
+              "card": "Mađioničar",
+              "meaning": "Moćna energija i kreativnost kombinuju."
+            },
+            {
+              "card": "Budala",
+              "meaning": "Novi počeci i podebljani koraci."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Tri mačeva - afirmacije srca i bola",
+          "affirmation_list": [
+            "Jak sam i spreman za početak isceljenja, prihvatajući istinu.",
+            "Svestan sam i oprezan prema srcu, boli, razdvajanju, tugi.",
+            "Idem naprijed koristeći svoju unutrašnju snagu."
+          ]
+        },
+        "cta": {
+          "main": "Otkriti",
+          "micro": "Saznajte više"
+        },
+        "faq": [
+          {
+            "question": "Šta znači tri mačeva - srčani i bol?",
+            "answer": "Tri mačeva - Heartbreak i bol nude smernice na srcu, boli, odvajanju, tugi i početku zarastanja, prihvatanje stvarnosti."
+          }
+        ],
+        "related_cards": [
+          "mađioničar",
+          "budala",
+          "Ace-Of-Of-štapić"
+        ]
+      },
+      "four-of-swords": {
+        "name": "Četiri mačeva - odmor i oporavak",
+        "short_description": "Četiri mačeva - odmor i isceljivanje nudi smernice o mirovanju, oporavku, meditaciji, povlačenju. To je moćna karta za ponovno punjenje i pronalaženje mira.",
+        "imageUrl": "/cards/rvs/iv-ssvords.vebp",
+        "meanings": {
+          "upright": {
+            "general": "Četiri mačeva - odmor i isceljenje nosi važne poruke u vezi sa odmaranjem, oporavkama, meditacijom, povlačenjem. Tokom ovog perioda, punjenje i pronalaženje mira su na čelu.",
+            "love": "Zaljubljeni, teme odmora, oporavka, meditacije i povlačenja dolaze do izražaja. To je pogodno vreme za ponovno punjenje i pronalaženje mira u odnosima.",
+            "career": "U karijeri se u karijeri postoje razvijanje, oporavak, meditacija i povlačenje. Uzmite prilike za ponovno punjenje i pronalaženje mira.",
+            "money": "U finansijskim pitanjima treba uzeti u obzir odmor, oporavak, meditacija i povlačenje. Preduzete korake za ponovno punjenje i pronalaženje mira.",
+            "spiritual": "Usredsredite se na duhovni odmor, oporavak, meditaciju, povlačenje. Dostavljajte unutrašnji rad na ponovnom punjenju i pronalasku mira."
+          },
+          "reversed": {
+            "general": "Četiri mačeva u obrnutom položaju - odmor i oporavak pokazuju da mogu postojati poteškoće sa odmorom, oporavkom, meditacijom, povlačenjem.",
+            "love": "Budite oprezni zaljubljeni, problemi sa odmorom, oporavak, meditacija, mogu se pojaviti povlačenje.",
+            "career": "Budite strpljivi i strateški u vašoj karijeri, izbegavajte brške odluke.",
+            "money": "Ponašajte pažljivo i planirano u finansijskim pitanjima.",
+            "spiritual": "Meditacija i pažljivost su neophodni za održavanje unutrašnje ravnoteže."
+          }
+        },
+        "context": {
+          "mythology": "Četiri mačeva - odmor i isceljenje nudi smernice o mirovanju, oporavku, meditaciji, povlačeći se kroz mentalnu snagu vazdušnog elementa.",
+          "celtic_cross": {
+            "future": "Možete pronaći prilike da se napunite i pronađete mir u budućnosti.",
+            "hidden_influences": "Latentni efekti mogu biti povezani sa odmorom, oporavkom, meditacijom, povlačenjem."
+          }
+        },
+        "story": {
+          "title": "Četiri mačeva - odmor i oporavak - priča o kartici",
+          "description": "Četiri mačeva - odmor i isceljenje je moćna kartica koja nosi teme odmora, oporavka, meditacije, povlačenje. Daje važne poruke za ponovno punjenje i pronalaženje mira.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Četiri mačeva - odmor i isceljenje je poznata u tradiciji Tarot kao simbol odmora, oporavka, meditacije, povlačenjem.",
+          "mystic_title": "Duhovno značenje",
+          "mystic_message": "Duhovno, četiri mačeva - odmor i isceljivanje je prilika za ponovno punjenje, pronaći mir.",
+          "cultural_title": "Moderna interpretacija",
+          "cultural_message": "U modernom svetu, četiri mačeva - odmor i oporavak povezana je sa odmorom, oporavkom, meditacijom, povlačenjem i dopunjavanjem, pronalaženjem mira.",
+          "lesson": "Preduzete korake za ponovno punjenje, pronađite mir i budite namjerniji u odmaralištu, isceljujunju, meditiranju, povlačeći se."
+        },
+        "keywords": {
+          "keywords_title": "Četiri mačeva - ključne reči odmora i oporavka",
+          "keywords_message": "Četiri mačeva Tarot znači, odmor, isceljivanje, meditacija, povlačenje, dopunjavanje, pronalaženje mira",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Dopunite, pronađite mir",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Imajte na umu i uravnoteženi u mirovanju, oporavak, meditacija, povlačenje.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Koristite svoju unutrašnju snagu da biste se napunili i pronašli mir."
+        },
+        "associations": {
+          "title": "Četiri mačeva - kosmičke veze odmora i isceljenja",
+          "astrology": "Zračni znakovi (Blizanci, Vaga, Vodolija)",
+          "numerology": "4 (odmor, oporavak, meditacija, povlačenje)",
+          "element": "Vazduh - inteligencija, komunikacija, misli",
+          "chakra": "Grlo (grlo čakre)"
+        },
+        "card_combinations": {
+          "title": "Četiri mačeva - Istaknuti su kombinacije sa odmorom i oporavkom",
+          "combinations": [
+            {
+              "card": "Mađioničar",
+              "meaning": "Moćna energija i kreativnost kombinuju."
+            },
+            {
+              "card": "Budala",
+              "meaning": "Novi počeci i podebljani koraci."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Četiri mačeva - potvrda o ponovnom odmora i oporavka",
+          "affirmation_list": [
+            "Jaka sam i spremna da se napunim i pronađem mir.",
+            "Svestan sam i oprezan za odmor, oporavak, meditacija i povlačenje.",
+            "Idem naprijed koristeći svoju unutrašnju snagu."
+          ]
+        },
+        "cta": {
+          "main": "Otkriti",
+          "micro": "Saznajte više"
+        },
+        "faq": [
+          {
+            "question": "Četiri mačeva - Šta znači odmor i oporavak?",
+            "answer": "Četiri mačeva - odmor i isceljivanje nudi smernice za odmor, isceljenje, meditiranje, povlačenje i ponovno punjenje, pronalaženje mira."
+          }
+        ],
+        "related_cards": [
+          "mađioničar",
+          "budala",
+          "Ace-Of-Of-štapić"
+        ]
+      },
+      "five-of-swords": {
+        "name": "Petorica mačeva - sukob i gubitak",
+        "short_description": "Petorica mačeva - sukob i gubitak nudi smernice o sukobu, porazu, takmičenju, ego. To je moćna karta za učenje nastave i pomirenje.",
+        "imageUrl": "/cards/rvs/v-ssvords.vebp",
+        "meanings": {
+          "upright": {
+            "general": "Petorica mačeva - sukob i gubitak nosi važne poruke o sukobu, porazi, takmičenju, ego. Tokom ovog perioda lekcije i pomirenje učenja su na čelu.",
+            "love": "Zaljubljeni, sukob, poraz, konkurencija i ego teme dolaze do izražaja. Dobro je vreme za učenje lekcija i kompromisa u odnosima.",
+            "career": "U karijeri se pojavljuju sukob, poraz, konkurencija i razum koji se odnose na ego. Uzmite prilike za učenje lekcija i kompromisa.",
+            "money": "Sukob, poražen, takmičenje i ego treba uzeti u obzir u finansijskim pitanjima. Naučite časove, preduzimajte korake ka pomirenju.",
+            "spiritual": "Duhovno se fokusirajte na sukob, poraz, takmičenje, ego. Naučite lekcije, uradite unutrašnji rad na kompromisu."
+          },
+          "reversed": {
+            "general": "Petoricama mačeva u obrnutom položaju - sukob i gubitak ukazuje da mogu postojati poteškoće u sukobu, porazi, takmičenju, pitanjima ega.",
+            "love": "Budite oprezni zaljubljeni, sukob, poraz, takmičenje, mogu se pojaviti problemi u vezi sa ego.",
+            "career": "Budite strpljivi i strateški u vašoj karijeri, izbegavajte brške odluke.",
+            "money": "Ponašajte pažljivo i planirano u finansijskim pitanjima.",
+            "spiritual": "Meditacija i pažljivost su neophodni za održavanje unutrašnje ravnoteže."
+          }
+        },
+        "context": {
+          "mythology": "Petorica mačeva - sukob i gubitak nudi smernice o sukobu, porazi, takmičenju, ego kroz mentalnu snagu vazdušnog elementa.",
+          "celtic_cross": {
+            "future": "Možete pronaći prilike da u budućnosti uče lekcije i kompromise.",
+            "hidden_influences": "Latentni efekti mogu se odnositi na sukob, poraz, takmičenje, ego."
+          }
+        },
+        "story": {
+          "title": "Petorica mačeva - sukob i gubitak - priča o kartici",
+          "description": "Petorica mačeva - sukob i gubitak je moćna kartica koja nosi teme sukoba, poraz, takmičenja, ego. Daje važne poruke za učenje lekcija i pomirenje.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Petorica mačeva - sukob i gubitak poznato je u tradiciji Tarot kao simbol sukoba, poraza, takmičenja, ega.",
+          "mystic_title": "Duhovno značenje",
+          "mystic_message": "Duhovno, pet mačeva - sukob i gubitak prilika je za učenje lekcija, pomirenje.",
+          "cultural_title": "Moderna interpretacija",
+          "cultural_message": "U savremenom svetu, pet mačeva - sukob i gubitak povezan je sa sukobom, porazom, konkurencijom, ego i časovima učenja, kompromise.",
+          "lesson": "Naučite lekcije, preduzimajte korake ka pomirenju i budite svesni sukoba, poraza, takmičenja, ega."
+        },
+        "keywords": {
+          "keywords_title": "Petorica mačeva - ključne reči sukoba i gubitka",
+          "keywords_message": "Pet mačeva Tarot Značenje, sukob, poraz, takmičenje, ego, lekcije učenja, kompromis",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Lekcije učenja, kompromise",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Budite oprezni i uravnoteženi u pitanjima sukoba, poraza, takmičenja i ega.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Naučite lekcije, koristite svoju unutrašnju snagu da biste kompromise."
+        },
+        "associations": {
+          "title": "Petorica mačeva - kosmičke veze sukoba i gubitka",
+          "astrology": "Zračni znakovi (Blizanci, Vaga, Vodolija)",
+          "numerology": "5 (sukob, poraz, takmičenje, ego)",
+          "element": "Vazduh - inteligencija, komunikacija, misli",
+          "chakra": "Grlo (grlo čakre)"
+        },
+        "card_combinations": {
+          "title": "Petorica mačeva - sadrže kombinacije sa sukobom i gubitkom",
+          "combinations": [
+            {
+              "card": "Mađioničar",
+              "meaning": "Moćna energija i kreativnost kombinuju."
+            },
+            {
+              "card": "Budala",
+              "meaning": "Novi počeci i podebljani koraci."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Petorica mačeva - afirmacije sukoba i gubitka",
+          "affirmation_list": [
+            "Jak sam i spreman da naučim lekcije, da kompromise.",
+            "Svestan sam i oprezan prema sukobu, porazi, takmičenju i egu.",
+            "Idem naprijed koristeći svoju unutrašnju snagu."
+          ]
+        },
+        "cta": {
+          "main": "Otkriti",
+          "micro": "Saznajte više"
+        },
+        "faq": [
+          {
+            "question": "Pet mačeva - šta znači sukob i gubitak?",
+            "answer": "Petorica mačeva - sukob i gubitak nudi smernice o sukobu, porazu, takmičenju, ego i časovima učenja i kompromise."
+          }
+        ],
+        "related_cards": [
+          "mađioničar",
+          "budala",
+          "Ace-Of-Of-štapić"
+        ]
+      },
+      "six-of-swords": {
+        "name": "Šest mačeva - prolazi i kreće napred",
+        "short_description": "Šest mačeva - tranzicija i prelazak napred nudi smernice na tranziciji, putovanju, promenama, krećući se napred. To je moćna karta za nove početke i mirna tranzicija.",
+        "imageUrl": "/cards/rvs/vi-ssvords.vebp",
+        "meanings": {
+          "upright": {
+            "general": "Šest mačeva - tranzicija i kretanje napred nosi važne poruke o tranziciji, putovanju, promeni, krećući se napred. Tokom ovog perioda, novi počeci i mirna tranzicija nalaze se na čelu.",
+            "love": "Zaljubljena, teme tranzicije, putovanja, promene i kretanja naprijed dođite do izražaja. To je pogodno vreme za nove početke i mirno prelazak u odnosu.",
+            "career": "Postoje razvijanje u vezi sa tranzicijom, putovanjem, promenom i kretanjem napred u karijeri. Iskoristite mogućnosti za nove početke i mirna tranzicija.",
+            "money": "U finansijskim pitanjima, tranzicija, putovanje, promena, prelazak naprijed treba uzeti u obzir. Preduzeti korake za nove početke i mirnu tranziciju.",
+            "spiritual": "Usredsredite se na duhovnu tranziciju, putovanje, promenu, kreće se napred. Dostavljajte unutrašnji rad za nove početke i mirnu tranziciju."
+          },
+          "reversed": {
+            "general": "Šest mačeva u obrnutom položaju - tranzicija i kretanje naprijed ukazuje da možda postoje poteškoće u tranziciji, putovanju, promenama, krećući se napred.",
+            "love": "Budite oprezni zaljubljeni, problemi se mogu pojaviti u vezi tranzicije, putovanja, promene, krećući se napred.",
+            "career": "Budite strpljivi i strateški u vašoj karijeri, izbegavajte brške odluke.",
+            "money": "Ponašajte pažljivo i planirano u finansijskim pitanjima.",
+            "spiritual": "Meditacija i pažljivost su neophodni za održavanje unutrašnje ravnoteže."
+          }
+        },
+        "context": {
+          "mythology": "Šest mačeva - tranzicija i prelazak napred nudi smernice na tranziciji, putovanju, promeni, krećući se napred sa mentalnom snagom vazdušnog elementa.",
+          "celtic_cross": {
+            "future": "Možda ćete pronaći prilike za nove početke i mirne prelaze u budućnosti.",
+            "hidden_influences": "Latentni uticaji mogu biti povezani sa tranzicijom, putovanjem, promenom, kretanjem napred."
+          }
+        },
+        "story": {
+          "title": "Šest mačeva - prolazi i napred - priča o kartici",
+          "description": "Šest mačeva - tranzicija i kretanje napred je moćna kartica koja nosi teme tranzicije, putovanje, promene, kreće se napred. Daje važne poruke za nove početke i mirna tranzicija.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Šest mačeva - tranzicija i kretanje naprijed je poznat u tradiciji Tarot kao simbol tranzicije, putovanja, promene, kreće se napred.",
+          "mystic_title": "Duhovno značenje",
+          "mystic_message": "Duhovno, šest mačeva - tranzicija i kretanje naprijed je prilika za nove početke, mirnu tranziciju.",
+          "cultural_title": "Moderna interpretacija",
+          "cultural_message": "U savremenom svetu, šest mačeva - tranzicija i kretanje napred povezan je sa tranzicijom, putovanjem, promenom, prelaskom napred i novim počecima, mirnom tranzicijom.",
+          "lesson": "Preduzeti korake za nove početke, mirnu tranziciju i budite svesni tranzicije, putovanja, promene i napretka."
+        },
+        "keywords": {
+          "keywords_title": "Šest mačeva - prelaz i napretka ključnih reči",
+          "keywords_message": "Šest mačeva Tarot znači, tranzicija, putovanje, promena, kretanje napred, nove početke, mirna tranzicija",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Novi počeci, mirna tranzicija",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Budite oprezni i uravnoteženi u tranziciji, putovanju, promeni, krećući se napred.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Koristite svoju unutrašnju snagu za nove početke i mirna tranzicija."
+        },
+        "associations": {
+          "title": "Šest mačeva - tranzicija i napretka kosmičke veze",
+          "astrology": "Zračni znakovi (Blizanci, Vaga, Vodolija)",
+          "numerology": "6 (tranzicija, putovanje, promena, kretanje napred)",
+          "element": "Vazduh - inteligencija, komunikacija, misli",
+          "chakra": "Grlo (grlo čakre)"
+        },
+        "card_combinations": {
+          "title": "Šest mačeva - Istaknuti kombinacije sa prolazom i napred",
+          "combinations": [
+            {
+              "card": "Mađioničar",
+              "meaning": "Moćna energija i kreativnost kombinuju."
+            },
+            {
+              "card": "Budala",
+              "meaning": "Novi počeci i podebljani koraci."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Šest mačeva - tranzicija i prosleđene afirmacije",
+          "affirmation_list": [
+            "Jaka sam i spremna za nove početke i mirna tranzicija.",
+            "Svestan sam i oprezan na tranziciji, putovanju, promeni, krećući se napred.",
+            "Idem naprijed koristeći svoju unutrašnju snagu."
+          ]
+        },
+        "cta": {
+          "main": "Otkriti",
+          "micro": "Saznajte više"
+        },
+        "faq": [
+          {
+            "question": "Šta znači šest mačeva - prolazi i napred?",
+            "answer": "Šest mačeva - tranzicija i prelazak napred nudi smernice na tranziciji, putovanju, promeni, prelazeći napred i novim počecima, mirnom tranzicijom."
+          }
+        ],
+        "related_cards": [
+          "mađioničar",
+          "budala",
+          "Ace-Of-Of-štapić"
+        ]
+      },
+      "seven-of-swords": {
+        "name": "Sedam mačeva - Strategija i oprez",
+        "short_description": "Sedam mačeva - Strategija i OPREZ nudi smernice o strategiji, oprezu, prikrivenosti, planiranju. Pametna rešenja su moćna karta za strateško razmišljanje.",
+        "imageUrl": "/cards/rvs / vii-ssvords.vebp",
+        "meanings": {
+          "upright": {
+            "general": "Sedam mačeva - Strategija i OPREZ ima važne poruke o strategiji, pažnji, prikrivanju, planiranju. Tokom ovog perioda, inteligentna rešenja i strateško razmišljanje su na čelu.",
+            "love": "Teme strategije, pažnje, tajnosti i planiranja dolaze u ljubav. To je pogodno vreme za inteligentna rešenja i strateško razmišljanje u odnosima.",
+            "career": "U vašoj karijeri biće razumnja u pogledu strategije, pažnje, privatnosti i planiranja. Iskoristite mogućnosti za inteligentna rešenja i strateško razmišljanje.",
+            "money": "U finansijskim pitanjima, strategija, pažnja, poverljivost i planiranje treba uzeti u obzir. Preduzeti korake za inteligentna rešenja i strateško razmišljanje.",
+            "spiritual": "Duhovno se fokusirajte na strategiju, pažnju, prikrivanje, planiranje. Da li unutrašnji rad za inteligentna rešenja, strateško razmišljanje."
+          },
+          "reversed": {
+            "general": "Sedam mačeva u obrnutom položaju - Strategija i oprez ukazuju da mogu postojati poteškoće u strategiji, pažnji, prikrivanju, planiranju.",
+            "love": "Budite oprezni zaljubljeni, problemi sa strategijom, pažnjom, tajnosti, planiranje se može pojaviti.",
+            "career": "Budite strpljivi i strateški u vašoj karijeri, izbegavajte brške odluke.",
+            "money": "Ponašajte pažljivo i planirano u finansijskim pitanjima.",
+            "spiritual": "Meditacija i pažljivost su neophodni za održavanje unutrašnje ravnoteže."
+          }
+        },
+        "context": {
+          "mythology": "Sedam mačeva - Strategija i OPREZ nudi smernice o strategiji, pažnji, prikrivanju, planiranju mentalne snage vazdušnog elementa.",
+          "celtic_cross": {
+            "future": "Možete pronaći prilike za pametne rešenja i strateško razmišljanje u budućnosti.",
+            "hidden_influences": "Latentni efekti mogu se odnositi na strategiju, pažnju, prikrivanje, planiranje."
+          }
+        },
+        "story": {
+          "title": "Sedam mačeva - Strategija i oprez - priča o kartici",
+          "description": "Sedam mačeva - Strategija i oprez je moćna kartica koja nosi teme strategije, pažnje, prikrivenosti i planiranja. Inteligentna rešenja daju važne poruke za strateško razmišljanje.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Sedam mačeva - Strategija i oprez, poznat je u tradiciji Tarot kao simbol strategije, oprez, prikrivanja, planiranja.",
+          "mystic_title": "Duhovno značenje",
+          "mystic_message": "Duhovno, sedam mačeva - Strategija i oprez je prilika za inteligentna rešenja, strateško razmišljanje.",
+          "cultural_title": "Moderna interpretacija",
+          "cultural_message": "U savremenom svetu, sedam mačeva - Strategija i oprez povezan je sa strategijom, pažnjom, prikrivanjem, planiranjem i pametnim rešenjima, strateško razmišljanje.",
+          "lesson": "Uzmite korake za inteligentna rešenja, strateško razmišljanje i budite svesni strategije, pažnje, prikrivanja, planiranja."
+        },
+        "keywords": {
+          "keywords_title": "Sedam mačeva - strategija i ključne reči pažnje",
+          "keywords_message": "Sedam mačeva Tarot znači, strategija, pažnja, prikrivanje, planiranje, pametne rešenja, strateško razmišljanje",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Pametna rešenja, strateško razmišljanje",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Budite oprezni i uravnoteženi u pitanjima strategije, pažnje, prikrivanja i planiranja.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Koristite svoju unutrašnju snagu za inteligentna rešenja, strateško razmišljanje."
+        },
+        "associations": {
+          "title": "Sedam mačeva - kosmičke veze strategije i opreza",
+          "astrology": "Zračni znakovi (Blizanci, Vaga, Vodolija)",
+          "numerology": "7 (Strategija, oprez, prikrivanje, planiranje)",
+          "element": "Vazduh - inteligencija, komunikacija, misli",
+          "chakra": "Grlo (grlo čakre)"
+        },
+        "card_combinations": {
+          "title": "Sedam mačeva - kombinacije izvanredne sa strategijom i oprezom",
+          "combinations": [
+            {
+              "card": "Mađioničar",
+              "meaning": "Moćna energija i kreativnost kombinuju."
+            },
+            {
+              "card": "Budala",
+              "meaning": "Novi počeci i podebljani koraci."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Sedam mačeva - Strategija i izjave o razmišljanju",
+          "affirmation_list": [
+            "Jaka sam i spremna za inteligentna rešenja, strateško razmišljanje.",
+            "Ponašam svesno i pažljivo u stvarima strategije, pažnje, poverljivosti i planiranja.",
+            "Idem naprijed koristeći svoju unutrašnju snagu."
+          ]
+        },
+        "cta": {
+          "main": "Otkriti",
+          "micro": "Saznajte više"
+        },
+        "faq": [
+          {
+            "question": "Sedam mačeva - Šta znači strategija i oprez?",
+            "answer": "Sedam mačeva - Strategija i OPREZ nudi smernice o strategiji, pažnji, prikrivanju, planiranju i pametnim rešenjima, strateško razmišljanje."
+          }
+        ],
+        "related_cards": [
+          "mađioničar",
+          "budala",
+          "Ace-Of-Of-štapić"
+        ]
+      },
+      "eight-of-swords": {
+        "name": "Osam mačeva - ograničenja i strahovi",
+        "short_description": "Osam mačeva - ograničenje i strahovi nude smernice na ograničenjima, strahovima, mentalnim blokadama. To je moćna karta za oslobađanje i prevazilaženje strahova.",
+        "imageUrl": "/cards/rvs/viii-ssvords.vebp",
+        "meanings": {
+          "upright": {
+            "general": "Osam mačeva - ograničenja i strahovi nosi važne poruke u vezi sa ograničenjem, strahovima, mentalnim blokadama. U ovom periodu, oslobođenje i prevazilaženje strahova su na čelu.",
+            "love": "Teme ograničenja u ljubavi, strahovima i mentalnim blokadama dolaze do izražaja. To je pogodno vreme za oslobađanje u odnosima i prevazilaženje strahova.",
+            "career": "Postoje razvijanje u vezi sa ograničenjem u karijeri, strahovima i mentalnim blokadama. Iskoristite mogućnosti za oslobađanje i prevazilaženje strahova.",
+            "money": "Finansijska ograničenja, strahovi i mentalne blokade treba uzeti u obzir. Preduzeti korake za oslobađanje i prevazilaženje strahova.",
+            "spiritual": "Usredsredite se na duhovna ograničenja, strahove, mentalne blokade. Unutrašnji rad za oslobađanje i prevazilaženje strahova."
+          },
+          "reversed": {
+            "general": "Osam mačeva u obrnutom položaju - Ograničenje i strahovi ukazuju na to da mogu postojati poteškoće sa ograničenjima, strahovima, mentalnim blokadama.",
+            "love": "Budite oprezni za ljubav, problemi sa ograničenjima, strahovima, mogu se pojaviti mentalni blokovi.",
+            "career": "Budite strpljivi i strateški u vašoj karijeri, izbegavajte brške odluke.",
+            "money": "Ponašajte pažljivo i planirano u finansijskim pitanjima.",
+            "spiritual": "Meditacija i pažljivost su neophodni za održavanje unutrašnje ravnoteže."
+          }
+        },
+        "context": {
+          "mythology": "Osam mačeva - Ograničenje i strahovi nude smernice na ograničenjima, strahovima i mentalnim blokadama sa mentalnom snagom vazdušnog elementa.",
+          "celtic_cross": {
+            "future": "Možete pronaći prilike za oslobađanje i prevazilaženje straha u budućnosti.",
+            "hidden_influences": "Latentni efekti mogu biti povezani sa ograničenjima, strahovima i mentalnim blokovima."
+          }
+        },
+        "story": {
+          "title": "Osam mačeva - ograničenja i strahovi - priča o kartici",
+          "description": "Osam mačeva - ograničenje i strahovi je moćna kartica koja nosi teme ograničenja, strahove, mentalne blokade. Daje važne poruke za oslobađanje i prevazilaženje strahova.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Osam mačeva - ograničenje i strahovi, poznat je u tradiciji Tarot kao simbol ograničenja, strahova, mentalnih blokada.",
+          "mystic_title": "Duhovno značenje",
+          "mystic_message": "Duhovno, osam mačeva - ograničenja i strahovi je prilika za oslobađanje, prevazilaženje strahova.",
+          "cultural_title": "Moderna interpretacija",
+          "cultural_message": "U modernom svetu, osam mačeva - ograničenja i strahova povezano je sa ograničenjem, strahovima, mentalnim blokadama i oslobađanjem, prevazilaženje strahova.",
+          "lesson": "Preduzeti korake ka oslobođenja, prevazilaženje strahova i budite svesni ograničenja, strahove i mentalnih blokova."
+        },
+        "keywords": {
+          "keywords_title": "Osam mačeva - ograničenja i strahove ključne reči",
+          "keywords_message": "Osam mačeva Tarot znači, ograničenje, strahove, mentalne blokade, oslobađanje, prevazilaženje strahova",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Oslobođenje, prevazilaženje strahova",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Budite oprezni i uravnoteženi o ograničenjima, strahovima, mentalnim blokovima.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Koristite svoju unutrašnju snagu za oslobađanje i prevazilaženje strahova."
+        },
+        "associations": {
+          "title": "Osam mačeva - kosmičke veze ograničenja i strahova",
+          "astrology": "Zračni znakovi (Blizanci, Vaga, Vodolija)",
+          "numerology": "8 (ograničenje, strahovi, mentalni blokovi)",
+          "element": "Vazduh - inteligencija, komunikacija, misli",
+          "chakra": "Grlo (grlo čakre)"
+        },
+        "card_combinations": {
+          "title": "Osam mačeva - Istaknuti kombinacije sa ograničenjem i strahovima",
+          "combinations": [
+            {
+              "card": "Mađioničar",
+              "meaning": "Moćna energija i kreativnost kombinuju."
+            },
+            {
+              "card": "Budala",
+              "meaning": "Novi počeci i podebljani koraci."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Osam mačeva - Ograničenja i strahova afirmacije",
+          "affirmation_list": [
+            "Jak sam i spreman za oslobađanje, za prevazilaženje strahova.",
+            "Svestan sam i oprezan o ograničenjima, strahovima i mentalnim blokadama.",
+            "Idem naprijed koristeći svoju unutrašnju snagu."
+          ]
+        },
+        "cta": {
+          "main": "Otkriti",
+          "micro": "Saznajte više"
+        },
+        "faq": [
+          {
+            "question": "Šta znači osam mačeva - ograničenja i strahova?",
+            "answer": "Osam mačeva - ograničenja i strahovi nude smernice o ograničenju, strahovima, mentalnim blokadima i oslobađanju, prevazilaženje strahova."
+          }
+        ],
+        "related_cards": [
+          "mađioničar",
+          "budala",
+          "Ace-Of-Of-štapić"
+        ]
+      },
+      "nine-of-swords": {
+        "name": "Devet mačeva - anksioznost i anksioznost",
+        "short_description": "Devet mačeva - anksioznost i zabrinutost nudi smernice o anksioznosti, anksioznosti, noćni more, stres. Traženje podrške je moćna kartica za početak isceljenja.",
+        "imageUrl": "/cards/rvs/ik-ssvords.vebp",
+        "meanings": {
+          "upright": {
+            "general": "Devet mačeva - anksioznost i briga nosi važne poruke u vezi sa anksioznošću, anksioznošću, noćnim morama, stresom. Tokom ovog perioda traženje podrške i početka oporavka nalaze se na čelu.",
+            "love": "Teme anksioznosti, anksioznosti, noćne more i stresa dolaze u ljubav. Traženje podrške u odnosima je pravo vreme za početak isceljenja.",
+            "career": "Postoje razvijanje u vezi sa anksioznošću, brigom, noćnim morama i stresom u karijeri. Potražite podršku i uzimajte prilike za početak isceljenja.",
+            "money": "Anksioznost, anksioznost, noćne more i stres treba uzeti u obzir u vezi sa finansijskim pitanjima. Ne tražite podršku, preduzmite korake za početak isceljenja.",
+            "spiritual": "Duhovno se fokusirajte na anksioznost, anksioznost, noćne more, stres. Ne tražite podršku, radite unutrašnji rad da biste započeli izlečenje."
+          },
+          "reversed": {
+            "general": "Devet mačeva u obrnutom položaju - anksioznost i briga ukazuje da možda postoje poteškoće sa anksiozmom, anksioznošću, noćnim morama, stresom.",
+            "love": "Budite oprezni zaljubljeni, problemi sa anksioznošću, anksioznošću, noćnim morama, može se pojaviti stres.",
+            "career": "Budite strpljivi i strateški u vašoj karijeri, izbegavajte brške odluke.",
+            "money": "Ponašajte pažljivo i planirano u finansijskim pitanjima.",
+            "spiritual": "Meditacija i pažljivost su neophodni za održavanje unutrašnje ravnoteže."
+          }
+        },
+        "context": {
+          "mythology": "Devet mačeva - anksioznost i zabrinutost nudi smernice na anksioznosti, anksioznosti, noćnim morama, stresom kroz mentalnu snagu vazdušnog elementa.",
+          "celtic_cross": {
+            "future": "Možete pronaći prilike za traženje podrške i početi izlečenje u budućnosti.",
+            "hidden_influences": "Latentni efekti mogu biti povezani sa anksioznošću, brigom, noćnim morama, stresom."
+          }
+        },
+        "story": {
+          "title": "Devet mačeva - anksioznost i anksioznost - priča o kartici",
+          "description": "Devet mačeva - anksioznost i briga je moćna karta koja nosi teme anksioznosti, brige, noćne more, stres. Traženje podrške pruža važne poruke za početak oporavka.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Devet mačeva - Anksioznost i briga je poznata u tradiciji Tarot kao simbol anksioznosti, brige, noćne more, stresa.",
+          "mystic_title": "Duhovno značenje",
+          "mystic_message": "Duhovno, devet mačeva - anksioznost i anksioznost je prilika da potražite podršku, početak isceljenja.",
+          "cultural_title": "Moderna interpretacija",
+          "cultural_message": "U savremenom svetu, devet mačeva - anksioznost i zabrinutost povezan je sa anksioznošću, brigom, noćnim morama, stresom i traženjem podrške, početak oporavka.",
+          "lesson": "Potražite podršku, preduzmite korake za početak isceljenja i budite svesni anksioznosti, brige, noćne more, stresa."
+        },
+        "keywords": {
+          "keywords_title": "Devet mačeva - Ključne reči anksioznosti i anksioznosti",
+          "keywords_message": "Devet mačeva Tarot znači, anksioznost, briga, noćne more, stres, traženje podrške, početak isceljenja",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Traženje podrške, početak oporavka",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Budite oprezni i uravnoteženi u vezi sa anksioznošću, brigom, noćnim morama, stresom.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Ne tražite podršku, koristite svoju unutrašnju snagu da biste započeli izlečenje."
+        },
+        "associations": {
+          "title": "Devet mačeva - anksioznost i anksioznost kosmičke veze",
+          "astrology": "Zračni znakovi (Blizanci, Vaga, Vodolija)",
+          "numerology": "9 (anksioznost, briga, noćne more, stres)",
+          "element": "Vazduh - inteligencija, komunikacija, misli",
+          "chakra": "Grlo (grlo čakre)"
+        },
+        "card_combinations": {
+          "title": "Devet mačeva - kombinacije koje su označene anksioznošću i anksioznošću",
+          "combinations": [
+            {
+              "card": "Mađioničar",
+              "meaning": "Moćna energija i kreativnost kombinuju."
+            },
+            {
+              "card": "Budala",
+              "meaning": "Novi počeci i podebljani koraci."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Devet mačeva - anksioznost i potvrda zabrinutosti",
+          "affirmation_list": [
+            "Tražim podršku, jak sam i spreman za početak zarastanja.",
+            "Svestan sam i oprezan u vezi sa anksioznošću, brigom, noćnim morama i stresom.",
+            "Idem naprijed koristeći svoju unutrašnju snagu."
+          ]
+        },
+        "cta": {
+          "main": "Otkriti",
+          "micro": "Saznajte više"
+        },
+        "faq": [
+          {
+            "question": "Devet mačeva - Šta znači anksioznost i anksioznost?",
+            "answer": "Devet mačeva - anksioznost i briga nudi smernice na anksioznosti, anksioznosti, noćnim more, stres i traženju podrške, počevši oporavak."
+          }
+        ],
+        "related_cards": [
+          "mađioničar",
+          "budala",
+          "Ace-Of-Of-štapić"
+        ]
+      },
+      "ten-of-swords": {
+        "name": "Deset mačeva - kraj i novi početak",
+        "short_description": "Deset mačeva - kraj i novi početak nude smernice na kraju, poraz, odustajanje, završava. To je moćna karta za nove početke, nade i ponovno rođenje.",
+        "imageUrl": "/cards/rvs/k-svords.vebp",
+        "meanings": {
+          "upright": {
+            "general": "Deset mačeva - kraj i novi početak nosi važne poruke o kraju, poraza, odustajanja, završavajući. Tokom ovog perioda, novi početak, nada i ponovno rođenje nalaze se na čelu.",
+            "love": "Zaljubljena, teme o tome, poraz, odustajanje, završava se do izražaja. To je pogodno vreme za novi početak, nadu i ponovno rođenje u vezama.",
+            "career": "Postoje razvijanje vezani za kraj, poražen, odustajanje i završavanje u karijeri. Iskoristite mogućnosti za novi početak, nadu, ponovno rođenje.",
+            "money": "U finansijskim pitanjima, kraj, poraz, odustajanje, dorada treba uzeti u obzir. Uzmi korake za novi početak, nadu, ponovno rođenje.",
+            "spiritual": "Duhovno se fokusirajte na kraju, poraz, odustajanje, završavanje. Da li unutrašnji rad za novi početak, nadu, ponovno rođenje."
+          },
+          "reversed": {
+            "general": "Deset mačeva u obrnutom položaju - kraj i novi početak ukazuje da mogu postojati poteškoće u završetku, poraza, odustajanja, dovršetka.",
+            "love": "Budite oprezni zaljubljeni, problemi sa krajnjim, poraz, odustajanje, mogu se pojaviti završne obrade.",
+            "career": "Budite strpljivi i strateški u vašoj karijeri, izbegavajte brške odluke.",
+            "money": "Ponašajte pažljivo i planirano u finansijskim pitanjima.",
+            "spiritual": "Meditacija i pažljivost su neophodni za održavanje unutrašnje ravnoteže."
+          }
+        },
+        "context": {
+          "mythology": "Deset mačeva - kraj i novi početak nude smernice o završetku, porastu, odustajanju od mentalne snage vazdušnog elementa.",
+          "celtic_cross": {
+            "future": "Možete pronaći mogućnosti za novi početak, nadu i ponovno rođenje u budućnosti.",
+            "hidden_influences": "Skriveni efekti mogu biti povezani sa ciljem, poraza, odustajanje, završavajući."
+          }
+        },
+        "story": {
+          "title": "Deset mačeva - kraj i novi početak - priča o kartici",
+          "description": "Deset mačeva - kraj i novi početak je moćna karta koja nosi teme završetka, poraza, odustajanja, završetka. To daje važne poruke za novi početak, nadu i ponovno rođenje.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Deset mačeva - Kraj i novi početak je u tradiciji Tarot poznat kao simbol kraja, poraza, odustajanje, završavajući.",
+          "mystic_title": "Duhovno značenje",
+          "mystic_message": "Duhovno, deset mačeva - kraj i novi početak je prilika za novi početak, nadu, ponovno rođenje.",
+          "cultural_title": "Moderna interpretacija",
+          "cultural_message": "U modernom svetu, deset mačeva - kraj i novi početak povezan je sa kraj, poraz, odustajanje, završetak i novi početak, nada, ponovno rođenje.",
+          "lesson": "Preduzeti korake za novi početak, nadu, ponovno rođenje i budite svesni kraj, poraza, odustajanje, završavajući."
+        },
+        "keywords": {
+          "keywords_title": "Deset mačeva - kraj i nove početne ključne reči",
+          "keywords_message": "Deset mačeva Tarot znači, kraj, poraz, odustajanje, završava, novi početak, nada, ponovno rođenje",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Novi početak, nada, ponovno rođenje",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Budite oprezni i uravnoteženi o kraju, porazi, odustajanje, završavajući.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Koristite svoju unutrašnju snagu za novi početak, nadu, ponovno rođenje."
+        },
+        "associations": {
+          "title": "Deset mačeva - kraj i nova početna kosmička veza",
+          "astrology": "Zračni znakovi (Blizanci, Vaga, Vodolija)",
+          "numerology": "10 (kraj, poraz, odustajanje, završna obrada)",
+          "element": "Vazduh - inteligencija, komunikacija, misli",
+          "chakra": "Grlo (grlo čakre)"
+        },
+        "card_combinations": {
+          "title": "Deset mačeva - sastavljenih kombinacija sa krajnjim i novim početkom",
+          "combinations": [
+            {
+              "card": "Mađioničar",
+              "meaning": "Moćna energija i kreativnost kombinuju."
+            },
+            {
+              "card": "Budala",
+              "meaning": "Novi počeci i podebljani koraci."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Deset mačeva - krajnji i novo početne afirmacije",
+          "affirmation_list": [
+            "Jaka sam i spremna za novi početak, nadu, ponovno rođenje."
+          ]
+        }
+      }
+    }
+  }
+}

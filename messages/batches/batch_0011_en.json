@@ -1,0 +1,794 @@
+{
+  "marriage": {
+    "meanings": {
+      "fourofcups": {
+        "position4": {
+          "keywords": {
+            "1": "dissatisfaction",
+            "2": "Introduction",
+            "3": "connection",
+            "4": "Awakening"
+          },
+          "context": "The desire to connect can be invisible, strengthened with awareness."
+        },
+        "position5": {
+          "upright": "A similar view of inner observation and simple happiness strengthens the common area of the practice of thanksgiving.",
+          "reversed": "One can be re-opened while the other can be reluctant. To see the opportunity, the mind filter must be cleaned.",
+          "keywords": {
+            "0": "internal observation",
+            "1": "satisfaction",
+            "2": "Gratitude",
+            "3": "awareness",
+            "4": "simplicity"
+          },
+          "context": "He has a sense of calm satisfaction, partner, and the threshold for seeing opportunity can be different."
+        },
+        "position6": {
+          "upright": "The Four of Hearts says there may be a shyness or a distant attitude at first on the family side, but when they realize the opportunity ahead of them, they tend to accept you.",
+          "reversed": "The Reverse Cup Four tells you that by restoring your family's perspective, you can accept you faster, and the sign of small gratitude and sincerity makes a big difference.",
+          "keywords": {
+            "0": "shyness",
+            "1": "Distance",
+            "2": "opportunity",
+            "3": "Awakening",
+            "4": "Gratitude"
+          },
+          "context": "At first, they can be distant, and in time, the temperature grows with awareness."
+        },
+        "position7": {
+          "upright": "The Four Cups say that meeting comes with an undetected opportunity at an introverted time, and when you look at it with awareness, the bond emerges.",
+          "reversed": "The Reverse Four Cup indicates that his desire to be re-opened has become stronger, and the approach to gratitude speeds up the encounter.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "Introduction",
+            "2": "Awakening",
+            "3": "awareness"
+          },
+          "context": "You meet a small but precious opportunity where open eyes can see the door."
+        },
+        "position8": {
+          "upright": "The Four of Hearts says that communication can be seen in indifference or dissatisfaction.",
+          "reversed": "The Reverse Cup Four shows that with the increase of awareness, there will be a resuscitation in communication.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "awareness",
+            "2": "Don't listen.",
+            "3": "Gratitude"
+          },
+          "context": "Paying attention to emotions brings harmony; carelessness prevents it."
+        },
+        "position9": {
+          "upright": "The Four of Cups, a wife who has inner depth but also recognizes opportunities, is appropriate for you. A man who doesn't ignore his feelings gives him confidence.",
+          "reversed": "The Four of the Reverse Cups is not appropriate for you to have someone who is constantly unhappy or unhappy with nothing.",
+          "keywords": {
+            "0": "awareness",
+            "1": "Introduction",
+            "2": "satisfaction",
+            "3": "balance"
+          },
+          "context": "A person who is conscious and respectful of his feelings is appropriate."
+        }
+      },
+      "fiveofcups": {
+        "position1": {
+          "upright": "The result of marriage may be to accept loss and rebuild, but hope will be maintained, even if there are negativity.",
+          "reversed": "With grief left behind, hope will sprout again, and the result is a chance to turn over a new leaf.",
+          "keywords": {
+            "0": "missing",
+            "1": "mourning",
+            "2": "hope",
+            "3": "acceptance"
+          },
+          "context": "The result is a new beginning with lessons learned from loss."
+        },
+        "position10": {
+          "upright": "Five Cups tells us that the trail of past losses has clouded today, and the rest is returned to the good, and if forgiveness is chosen, the path of marriage will be illuminated again.",
+          "reversed": "With recovery and acceptance, hope flourishes; conscious steps followed by grief make marriage possible.",
+          "keywords": {
+            "0": "mourning",
+            "1": "missing",
+            "2": "Forgiveness",
+            "3": "hope",
+            "4": "Recovery"
+          },
+          "context": "Marriage is possible by freeing from the past."
+        },
+        "position2": {
+          "upright": "Learn from past losses, and while you wait, focus on what's left.",
+          "reversed": "It's time to return to hope, to heal your grief.",
+          "keywords": {
+            "0": "missing",
+            "1": "mourning",
+            "2": "It's a cure.",
+            "3": "hope"
+          },
+          "context": "It helps to accept the past and keep hope alive while we wait."
+        },
+        "position3": {
+          "upright": "The past financial disappointments cloud the present share, the lost and focused mind.",
+          "reversed": "Forgiveness and learned lessons allow the creation of a new order. The remaining possibilities are strengthened.",
+          "keywords": {
+            "0": "missing",
+            "1": "mourning",
+            "2": "learning",
+            "3": "Recovery"
+          },
+          "context": "It's hard to share justice without making peace with the past."
+        },
+        "position4": {
+          "upright": "Past losses and disappointments can cast a shadow on commitment, but focusing on the bond in the hand brings balance.",
+          "reversed": "When the grieving process is left behind, hope for commitment is born again, healing from negative emotions is important.",
+          "keywords": {
+            "0": "missing",
+            "1": "sadness",
+            "2": "connection",
+            "3": "It's a cure.",
+            "4": "hope"
+          },
+          "context": "The urge to connect can be strengthened by restoring past wounds."
+        },
+        "position5": {
+          "upright": "It's like an honorable relationship with grief and solidarity in loss, your ability to see what's left is common.",
+          "reversed": "Your levels of holding on to the past may be different. The time of forgiveness must be matched.",
+          "keywords": {
+            "0": "mourning",
+            "1": "missing",
+            "2": "Agreed",
+            "3": "consolation",
+            "4": "hope"
+          },
+          "context": "It's the same in mourning, it could be a different rate of release."
+        },
+        "position6": {
+          "upright": "The Five of Hearts tells us that the shadow of past losses or resentments in the family can make the process difficult, but focusing on what is available creates a new place of trust.",
+          "reversed": "The Five Reverse Hearts say that the energy of recovery and acceptance has risen, and regrowing hope can easily carry you to their acceptance.",
+          "keywords": {
+            "0": "missing",
+            "1": "mourning",
+            "2": "Agreed",
+            "3": "It's a cure.",
+            "4": "hope"
+          },
+          "context": "The past shadows can affect the process, focusing on hope opens the door."
+        },
+        "position7": {
+          "upright": "Five Cups says that meeting opens a new door after loss or disappointment.",
+          "reversed": "The Reverse Five Cup points to a new introduction to recovery and return to the future, a bond of hope followed by grief.",
+          "keywords": {
+            "0": "missing",
+            "1": "hope",
+            "2": "Recovery",
+            "3": "new beginning"
+          },
+          "context": "When you're free from the past, you'll meet, hope will guide you."
+        },
+        "position8": {
+          "upright": "The Five of Hearts states that past resentments in communication can make the deal difficult. Focus should be in the remaining bonds.",
+          "reversed": "The Reverse Heart Five shows that communication with forgiveness and acceptance can be restored.",
+          "keywords": {
+            "0": "Frustration",
+            "1": "Concern",
+            "2": "Agreed",
+            "3": "hope"
+          },
+          "context": "Giving up the past makes the deal easier; focal grief disrupts harmony."
+        },
+        "position9": {
+          "upright": "The Five of Hearts, a man who learns from loss, who knows how to look compassionately, is good for you. The grieving wife provides depth in the relationship.",
+          "reversed": "Five of the Reverse Cups, someone who's obsessed with the past or who's constantly negative, is not suitable for you. The wife who looks forward gives you confidence.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "learning",
+            "2": "acceptance",
+            "3": "hope"
+          },
+          "context": "A wife who learns from the past and looks ahead is appropriate."
+        }
+      },
+      "sixofcups": {
+        "position1": {
+          "upright": "The result will be a marriage built on the warmth and memories of the past that will strengthen the foundation of pure love.",
+          "reversed": "Excessive commitment to the past can limit the outcome of marriage.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "Innocence",
+            "2": "memory",
+            "3": "temperature"
+          },
+          "context": "The result is a bond that feeds on the compassion of the past, but it's important to stay forward."
+        },
+        "position10": {
+          "upright": "Six Cups says that an affair with innocent love, past connections, or childhood harmony can lead to marriage, a warm, secure bond in the forefront.",
+          "reversed": "Excession in the past may miss the present, honoring the memory and building the present will increase your chances of marriage.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "Innocence",
+            "2": "belonging",
+            "3": "past connection",
+            "4": "Trust"
+          },
+          "context": "Marriage can come with a warm and familiar bond; make room for it now."
+        },
+        "position2": {
+          "upright": "Connect with your inner child, revitalize innocence and joy while you wait.",
+          "reversed": "Staying in the past blocks the process, honor the memories and focus on today.",
+          "keywords": {
+            "0": "Drink up, kid.",
+            "1": "joy",
+            "2": "nostalgia",
+            "3": "Compassion"
+          },
+          "context": "It would soften the heart to honor the child while you wait."
+        },
+        "position3": {
+          "upright": "There's natural generosity and simplicity in sharing, past habits add heat to the budget.",
+          "reversed": "Hanging out with nostalgia covers the real needs, old patterns may not meet new goals.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "generosity",
+            "2": "habit",
+            "3": "simplicity"
+          },
+          "context": "There's a warm share, but it's essential to fit in with today's facts."
+        },
+        "position4": {
+          "upright": "It's possible to connect with pure, childish intimacy, a sense of trust from the past that feeds the bond.",
+          "reversed": "Excessive attachment to the past can prevent bonding, and the relationship needs to focus on today.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "intimacy",
+            "2": "Trust",
+            "3": "childhood",
+            "4": "connection"
+          },
+          "context": "The desire to commit is pure and sincere, but not in the past."
+        },
+        "position5": {
+          "upright": "It's like nostalgia and bonding with an inner child, warm memories are your common language.",
+          "reversed": "The tendency to stay in the past may be too much for one of you.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "Innocence",
+            "2": "memory",
+            "3": "Compassion",
+            "4": "simplicity"
+          },
+          "context": "It's important to meet now."
+        },
+        "position6": {
+          "upright": "Thanks to the Six of Hearts, nostalgia and sincerity, the family can connect you to past temperatures, making the bonds of compassion easier to accept.",
+          "reversed": "The Reverse Heart Six can delay acceptance or over-responsibility of the past, honoring the memory and focusing on the present builds confidence.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "Compassion",
+            "2": "history",
+            "3": "temperature",
+            "4": "memory"
+          },
+          "context": "Warm bonding with the past softens the family, balances the present."
+        },
+        "position7": {
+          "upright": "Six Cups says that meeting will be through past connections or a nostalgic bond, an old friend, a childhood bond that can reunite you.",
+          "reversed": "The Reverse Six Cup says that hanging on to the past can block the new bond, honoring the memory, but turning to today opens the door.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "history",
+            "2": "connection",
+            "3": "reunion"
+          },
+          "context": "You meet through an old bond, honoring the past makes today easier."
+        },
+        "position8": {
+          "upright": "The Six of Hearts points to nostalgia and warm communication, and the bond of trust from the past makes the deal easier.",
+          "reversed": "The reverse six of hearts says that being stuck in the past can make the deal difficult.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "Trust",
+            "2": "temperature",
+            "3": "memories"
+          },
+          "context": "The heat from the past supports harmony; it hurts to stay attached."
+        },
+        "position9": {
+          "upright": "The Six of Hearts, a strong, nostalgic, warm-hearted man in contact with the inner child suits you, strengthens your bond with his innocence.",
+          "reversed": "The Six of Reverse Cups, someone who's stuck in the past or who doesn't have the responsibility of an adult, isn't right for you.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "Innocence",
+            "2": "temperature",
+            "3": "Compassion"
+          },
+          "context": "An innocent heart and a warm one is appropriate."
+        }
+      },
+      "sevenofcups": {
+        "position1": {
+          "upright": "In your marriage, you will have many dreams and choices, and the result is that good choices and good looks can be mixed with wrongs.",
+          "reversed": "The marriage will move forward more firmly when the dream is removed and the realistic choices are made.",
+          "keywords": {
+            "0": "dream",
+            "1": "option",
+            "2": "decision",
+            "3": "opportunity"
+          },
+          "context": "The result is a marriage shaped by dreams, and reality will be decisive in choices."
+        },
+        "position10": {
+          "upright": "Seven Cups say that the abundance of options and the real blur of imagination may delay the decision. If clear criteria are set, the marriage path becomes clear.",
+          "reversed": "The fog spreads, the possibility of marriage by realistic choice.",
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "clarity",
+            "3": "decision",
+            "4": "Vision"
+          },
+          "context": "Set a clear choice and measurement for marriage."
+        },
+        "position2": {
+          "upright": "Make your dreams clear, make your choices conscious, determine your vision while waiting.",
+          "reversed": "Find the balance between fantasy and reality, avoid dispersion.",
+          "keywords": {
+            "0": "dream",
+            "1": "selection",
+            "2": "Vision",
+            "3": "reality"
+          },
+          "context": "It would be helpful to clarify your vision while you wait."
+        },
+        "position3": {
+          "upright": "The abundance of options confuses; the budget is distributed without target clarity; dreams should be reduced to realistic pens.",
+          "reversed": "Solution and clarity begin; priority sets make sharing easier; fog scatters.",
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "clarity",
+            "3": "priority"
+          },
+          "context": "Simplify lists. The clear criteria determine the fair share."
+        },
+        "position4": {
+          "upright": "Dreams and options can make it difficult to connect. If the decision becomes clear, the bond becomes stronger.",
+          "reversed": "When clarity is achieved, the desire to connect becomes concrete without dissolving, the transition from dream to reality is important.",
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "uncertainty",
+            "3": "connection",
+            "4": "decision"
+          },
+          "context": "For commitment, clarity and reality are essential."
+        },
+        "position5": {
+          "upright": "An open view of the imagination and options is similar, and when you set a clear criteria, harmony is bright.",
+          "reversed": "The blur threshold is different, and if the decision is postponed, the resemblance will be dissimilar.",
+          "keywords": {
+            "0": "dream",
+            "1": "option",
+            "2": "clarity",
+            "3": "Vision",
+            "4": "preference"
+          },
+          "context": "Creative vision partner, critical writing required."
+        },
+        "position6": {
+          "upright": "The Seven of Hearts shows that there are many options or ideas in the family, and you can gain their trust by setting clear criteria.",
+          "reversed": "The Inverse Seven of Hearts shows that the confusion in the family is beginning to unravel, and realistic approaches speed up acceptance.",
+          "keywords": {
+            "0": "indecisive",
+            "1": "dream",
+            "2": "clarity",
+            "3": "option",
+            "4": "Vision"
+          },
+          "context": "There may be confusion in the family, a realistic and clear attitude."
+        },
+        "position7": {
+          "upright": "The Seven Cups say that meeting comes when you make a clear choice between choices.",
+          "reversed": "The Inverse Seven Cups puts the confusion behind it and shows clarity, clear intent speeds up the introduction.",
+          "keywords": {
+            "0": "option",
+            "1": "clarity",
+            "2": "dream",
+            "3": "decision"
+          },
+          "context": "When you simplify the options, you'll meet them. The clarity opens the right door."
+        },
+        "position8": {
+          "upright": "The Seven of Hearts can show a lot of options or confusion in communication, making it clear makes the deal easier.",
+          "reversed": "The reverse seven of hearts simplifyes communication from a realistic point of view, increasing focus.",
+          "keywords": {
+            "0": "option",
+            "1": "confusion",
+            "2": "clarity",
+            "3": "focus"
+          },
+          "context": "The clarity strengthens the agreement; the confusion prevents it."
+        },
+        "position9": {
+          "upright": "Seven of Cups, rich in imagination, but in reality, a wife fits in with a vision and a balanced approach.",
+          "reversed": "Seven of the Reverse Cups, you're not cut out for someone who's always daydreaming but never taking a concrete step.",
+          "keywords": {
+            "0": "dream",
+            "1": "Vision",
+            "2": "balance",
+            "3": "selection"
+          },
+          "context": "A man with imagination but feet on the ground is appropriate."
+        }
+      },
+      "eightofcups": {
+        "position1": {
+          "upright": "The result will be the search for a deeper bond away from superficial things, a meaningful journey in your marriage.",
+          "reversed": "Absolution or dissolution may cloud the outcome of the marriage.",
+          "keywords": {
+            "0": "search",
+            "1": "meaning",
+            "2": "transformation",
+            "3": "decision"
+          },
+          "context": "The result is a marriage of deeper meanings, a risk of indecision."
+        },
+        "position10": {
+          "upright": "Eight Cups speak of leaving the missing cycle with honor and walking to a deeper truth, which opens the door to a marriage - worthy union.",
+          "reversed": "The gital dilemma can shake the marriage plan. The closing ritual and the clear direction make the right door visible.",
+          "keywords": {
+            "0": "search for meaning",
+            "1": "closure",
+            "2": "path",
+            "3": "Courage",
+            "4": "direction"
+          },
+          "context": "Marriage is possible with the courage to turn to the right place."
+        },
+        "position2": {
+          "upright": "Now, let go of what doesn't feed you, and while you're waiting, move on to what's meaningful.",
+          "reversed": "Solve the dilemma of leaving and staying, making bold decisions.",
+          "keywords": {
+            "0": "Departure",
+            "1": "meaning",
+            "2": "Courage",
+            "3": "new path"
+          },
+          "context": "It's useful to turn to the meaningful while you're waiting."
+        },
+        "position3": {
+          "upright": "It's time to stop spending habits that are no longer valuable, and the source of meaningful targets is shifted.",
+          "reversed": "The dilemma delays economic decisions, and incomplete intentions shake the budget.",
+          "keywords": {
+            "0": "Quit.",
+            "1": "meaning",
+            "2": "again direction",
+            "3": "The dilemma"
+          },
+          "context": "It's a relief to give up meaningless and return to value."
+        },
+        "position4": {
+          "upright": "One side can avoid commitment due to the current emotional dissatisfaction, a deeper search for meaning.",
+          "reversed": "The tendency to go may replace the desire to stay, and there may be a new reason for commitment.",
+          "keywords": {
+            "0": "Departure",
+            "1": "dissatisfaction",
+            "2": "search for meaning",
+            "3": "don't stay.",
+            "4": "connection"
+          },
+          "context": "The desire to connect may be questioned, but it can be reshaped."
+        },
+        "position5": {
+          "upright": "A resemblance to the need for meaning and depth - you like to leave the surface and walk to the truth.",
+          "reversed": "The caligit threshold may be different. Without the closing ritual, harmony is forced.",
+          "keywords": {
+            "0": "meaning",
+            "1": "Departure",
+            "2": "path",
+            "3": "maturity",
+            "4": "closure"
+          },
+          "context": "The depth is the common value, the transitions must be done with compassion."
+        },
+        "position6": {
+          "upright": "The Eight of Hearts can be seen first on the family side, or having difficulty getting to know you, but your mature posture helps to get closer with time.",
+          "reversed": "The Reverse Heart Eights say that the going-and-stay dilemma can make the family's acceptance difficult, and determination and stability bring confidence.",
+          "keywords": {
+            "0": "Distance",
+            "1": "search",
+            "2": "maturity",
+            "3": "determination",
+            "4": "Don't get close."
+          },
+          "context": "It may be a withdrawal in the first place, but with maturity, trust is important, determination is important."
+        },
+        "position7": {
+          "upright": "Eight Cups shows meeting at a time when you're looking for meaning, and a deeper journey brings you together.",
+          "reversed": "The Reverse Eight Cup points to being stuck in the going-and-stay dilemma, and the clear decision brings in the new introduction.",
+          "keywords": {
+            "0": "search",
+            "1": "journey",
+            "2": "meaning",
+            "3": "decision"
+          },
+          "context": "You meet on a meaningful journey, and decision-making makes it clear."
+        },
+        "position8": {
+          "upright": "The Eight of Hearts points away from superficial communication and seek a deeper understanding.",
+          "reversed": "The Reverse Heart Eights say that the tendency to escape can make communication difficult.",
+          "keywords": {
+            "0": "depth",
+            "1": "intimacy",
+            "2": "search",
+            "3": "Escape"
+          },
+          "context": "The search for depth enhances harmony; escape is a barrier."
+        },
+        "position9": {
+          "upright": "The Eight of Cups, a deep, open wife for a journey that seeks meaning, to feed her soul, adds depth to the inner search.",
+          "reversed": "The Eight of Reverse Cups is not appropriate for you to have someone who's always trying to escape or who's avoiding responsibility.",
+          "keywords": {
+            "0": "meaning",
+            "1": "depth",
+            "2": "search",
+            "3": "Courage"
+          },
+          "context": "A person with spiritual depth is suitable."
+        }
+      },
+      "nineofcups": {
+        "position1": {
+          "upright": "In your marriage, emotional satisfaction and happiness will be at the forefront, and the result is a state of peace, such as the fulfillment of wishes.",
+          "reversed": "Superficial satisfaction can prevent lasting satisfaction as a result of marriage, and a deeper bond must be sought.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "satisfaction",
+            "2": "Peace",
+            "3": "abundance"
+          },
+          "context": "The result is a peaceful bond that grants wishes, but shouldn't be superficial."
+        },
+        "position10": {
+          "upright": "The Nine Cups make the possibility of a marriage, with a heart of joy, that wishes come true, and when personal satisfaction is shared, it becomes a common celebration.",
+          "reversed": "Superficial pleasures or one-sided comfort can reduce the vision of marriage.",
+          "keywords": {
+            "0": "Wish",
+            "1": "satisfaction",
+            "2": "abundance",
+            "3": "Gratitude",
+            "4": "pleasure"
+          },
+          "context": "There's a good chance of marriage; there's a need to rely on value."
+        },
+        "position2": {
+          "upright": "Enlarge your own happiness and satisfaction, and while we wait, gratitude and pleasure are important.",
+          "reversed": "Focus on permanent happiness instead of superficial satisfaction.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "satisfaction",
+            "2": "Thank God.",
+            "3": "abundance"
+          },
+          "context": "It helps to make your own happiness while you wait."
+        },
+        "position3": {
+          "upright": "Personal satisfaction and small luxury are in the budget, and sharing is in good faith.",
+          "reversed": "Superficial pleasures prevent lasting satisfaction, and the self-centered spending creates conflict.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Pleasure",
+            "2": "balance",
+            "3": "Gratitude"
+          },
+          "context": "They can have pens of happiness; the sense of justice must be maintained."
+        },
+        "position4": {
+          "upright": "Emotional satisfaction and happiness give you the power to connect, both sides feel ready.",
+          "reversed": "Excessive expectations or selfishness make commitment difficult.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Happiness",
+            "2": "Pleasure",
+            "3": "share",
+            "4": "connection"
+          },
+          "context": "The desire to commit is high, but it's important to avoid selfishness."
+        },
+        "position5": {
+          "upright": "Your personal satisfaction and gratitude are similar.",
+          "reversed": "Your skin satisfaction scales can vary. You need to align them with value.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Gratitude",
+            "2": "satisfaction",
+            "3": "Comfort",
+            "4": "joy"
+          },
+          "context": "Compliance in simple joys, value level must be maintained."
+        },
+        "position6": {
+          "upright": "The Nine of Hearts says your family can see you as a source of peace and happiness, and sincere sharing increases satisfaction.",
+          "reversed": "The Reverse Cup Niner, the superficial sense of pleasure or dissatisfaction, can make it difficult to accept, and the realistic and value-oriented approach will break that perception.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "satisfaction",
+            "2": "intimacy",
+            "3": "Gratitude",
+            "4": "abundance"
+          },
+          "context": "Your warm, thankful attitude is acceptable, so stay away from superficiality."
+        },
+        "position7": {
+          "upright": "Nine Cups shows meeting during a period of satisfaction and gratitude, creating an inner space of peace.",
+          "reversed": "The Reverse Nine Cup says that the search for superficial satisfaction can cloud the essence of the bond.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Gratitude",
+            "2": "abundance",
+            "3": "Peace"
+          },
+          "context": "You meet inner peace, real satisfaction strengthens the bond."
+        },
+        "position8": {
+          "upright": "The Nine of Hearts shows satisfying and pleasant communication, and satisfaction and peace make the deal easier.",
+          "reversed": "The Reverse Cup Nine can be seen as dissatisfaction in communication due to selfishness or superficiality, and sharing brings harmony.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Peace",
+            "2": "share",
+            "3": "pleasure"
+          },
+          "context": "Shared satisfaction enhances harmony; selfishness breaks the bond."
+        },
+        "position9": {
+          "upright": "The Nine of Hearts, one who is content, satisfied, and willing to share with himself, is worthy of you. The wife who raised her happiness with you gives you confidence.",
+          "reversed": "The Nine of Reverse Cups is not appropriate for you to be constantly insatiable or addicted to external pleasures.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Happiness",
+            "2": "value",
+            "3": "share"
+          },
+          "context": "A wife who shares her own happiness is appropriate."
+        }
+      },
+      "tenofcups": {
+        "position1": {
+          "upright": "The result will be a family peace, a loving home, and lasting happiness, a complete picture of happiness.",
+          "reversed": "The incompatibility between dreams and reality can challenge the outcome of marriage.",
+          "keywords": {
+            "0": "family",
+            "1": "Happiness",
+            "2": "compatibility",
+            "3": "completion"
+          },
+          "context": "The result is a peaceful and loving family life, but the expectations have to balance the facts."
+        },
+        "position10": {
+          "upright": "Ten Cups says marriage with emotional harmony, family warmth and long-term happiness is a strong possibility.",
+          "reversed": "Ideally, pressure can weaken reality, and with realistic expectation and open communication, the marriage grounds are solidified.",
+          "keywords": {
+            "0": "family",
+            "1": "compatibility",
+            "2": "Happiness",
+            "3": "unity",
+            "4": "long term"
+          },
+          "context": "The potential of marriage is very strong; feed it truth."
+        },
+        "position2": {
+          "upright": "Feed on harmony with family and loved ones and develop a sense of unity while waiting.",
+          "reversed": "Excess idealism can be disappointing. Choose realistic harmony.",
+          "keywords": {
+            "0": "family",
+            "1": "compatibility",
+            "2": "unity",
+            "3": "Peace"
+          },
+          "context": "It helps to develop a sense of unity while waiting."
+        },
+        "position3": {
+          "upright": "A sense of family and unity makes financial decisions easier, a common goal of happiness combines the budget.",
+          "reversed": "Ideally, pressure covers the facts; unseen tension forces the budget.",
+          "keywords": {
+            "0": "family",
+            "1": "compatibility",
+            "2": "unity",
+            "3": "Realism"
+          },
+          "context": "The vision of unity is strong, but authenticity must not be lost."
+        },
+        "position4": {
+          "upright": "Family, unity, and lasting happiness come forward, and the desire to be joined together is at its strongest.",
+          "reversed": "There may be a difference between the dream of harmony and reality, and ideal expectations can force commitment.",
+          "keywords": {
+            "0": "family",
+            "1": "Happiness",
+            "2": "compatibility",
+            "3": "connection",
+            "4": "Peace"
+          },
+          "context": "He's got a high sense of commitment, but he's got to be realistic."
+        },
+        "position5": {
+          "upright": "Your ideal for family, unity and peace is similar, the shared dream of home brings you to the same roof.",
+          "reversed": "You may have a different threshold for ideal realism, and genuine dialogue balances the table.",
+          "keywords": {
+            "0": "family",
+            "1": "compatibility",
+            "2": "Peace",
+            "3": "unity",
+            "4": "ideal"
+          },
+          "context": "Family ideal, partner, real order."
+        },
+        "position6": {
+          "upright": "The Ten of Hearts shows that harmony and unity within the family are easy to develop, and you can make them feel like part of the whole.",
+          "reversed": "The Reverse Cup Ten may have a sense of the difference between the ideal and the truth, and the genuine and open dialogue restores family ties.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "family",
+            "2": "unity",
+            "3": "Peace",
+            "4": "reality"
+          },
+          "context": "Your energy of integrity affects the family, and truth strengthens trust."
+        },
+        "position7": {
+          "upright": "Ten Cups tells us to meet in an environment where family or community harmony is strong.",
+          "reversed": "The Reverse Ten Cup says that extreme expectations can cloud meeting, and the realistic approach feeds the relationship.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "family",
+            "2": "unity",
+            "3": "Peace"
+          },
+          "context": "You'll meet him in a place of unity and peace, and realism will strengthen the bond."
+        },
+        "position8": {
+          "upright": "The Ten of Hearts points to harmony and peaceful communication, and the bond that makes it feel like a family makes the deal permanent.",
+          "reversed": "The Ten of Reverse Hearts says that differences between expectation and reality can make communication difficult.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "Peace",
+            "2": "unity",
+            "3": "family"
+          },
+          "context": "A peaceful bond enhances harmony, and disappointment makes harmony difficult."
+        },
+        "position9": {
+          "upright": "Ten of Hearts, one who can build a family warmth, one who shares peace is good for you, and the wife who cares about the sense of unity gives you confidence.",
+          "reversed": "The Ten of the Reverse Cups is not suitable for you to be distant from the concept of family or to be constantly disturbing the peace.",
+          "keywords": {
+            "0": "family",
+            "1": "Peace",
+            "2": "unity",
+            "3": "love"
+          },
+          "context": "A wife who cares about the family, who shares the peace is appropriate."
+        }
+      },
+      "pageofcups": {
+        "position1": {
+          "upright": "The result is that innocence, romance, and creative emotions will shape your marriage, and the relationship will be colored with pure love.",
+          "reversed": "A lack of childishness or emotional maturity can force the outcome of marriage.",
+          "keywords": {
+            "0": "romance",
+            "1": "Innocence",
+            "2": "creativity",
+            "3": "Sensitivity"
+          },
+          "context": "The result is a marriage full of pure emotions, but it may require a balance of maturity."
+        },
+        "position10": {
+          "upright": "The Prince of Hearts brings to life the dream of marriage with a kind offer, romantic news and fresh feelings, creative, pure approach at the door.",
+          "reversed": "Excessive feisty or evasive behavior may leave the intentions of flu, which must be tied to mature, consistent expression.",
+          "keywords": {
+            "0": "proposal",
+            "1": "romance",
+            "2": "Innocence",
+            "3": "Inspired",
+            "4": "expression"
+          }
+        }
+      }
+    }
+  }
+}

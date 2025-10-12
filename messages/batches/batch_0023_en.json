@@ -1,0 +1,778 @@
+{
+  "money": {
+    "meanings": {
+      "knightofswords": {
+        "position8": {
+          "keywords": {
+            "4": "communication"
+          },
+          "context": "Your ability to make money is linked to speed or haste."
+        }
+      },
+      "queenofswords": {
+        "position1": {
+          "upright": "The Queen of the Sword points out to me that I can't be cool and that I'm concerned about clarity, and you might be afraid that emotions will cloud your financial judgment.",
+          "reversed": "The Reverse Sword Queen exposes the anxiety of extreme criticism, and you're worried about putting too much pressure on yourself and your environment.",
+          "keywords": {
+            "0": "Coolness",
+            "1": "clarity",
+            "2": "Concern",
+            "3": "criticism",
+            "4": "balance"
+          },
+          "context": "The anxiety comes from not being cool and being overly critical."
+        },
+        "position2": {
+          "upright": "The Queen of the Sword shows that she seeks security with clarity, honesty, and a sharp point of view.",
+          "reversed": "The Reverse Sword Queen points to coldness and extreme criticism, and the desire for safety is broken in lack of compassion.",
+          "keywords": {
+            "0": "clarity",
+            "1": "Honesty",
+            "2": "security",
+            "3": "real",
+            "4": "communication"
+          },
+          "context": "You find security to be honest and clear."
+        },
+        "position3": {
+          "upright": "The Sword Queen points to a logical, analytical and independent approach to financial matters.",
+          "reversed": "The Reverse Sword Queen points to extreme critical or cold financial decisions.",
+          "keywords": {
+            "0": "logic",
+            "1": "clarity",
+            "2": "independence",
+            "3": "Money",
+            "4": "analysis"
+          },
+          "context": "In use of money, logic and analysis are important."
+        },
+        "position4": {
+          "upright": "There may have been a reasonable, cold, strategic approach to financial matters in the past.",
+          "reversed": "The Reverse Sword Queen points to extreme critical or rigid financial decisions.",
+          "keywords": {
+            "0": "logic",
+            "1": "strategy",
+            "2": "Coolness",
+            "3": "Money",
+            "4": "justice"
+          },
+          "context": "In the past, financial matters have been dealt with rationally and strategicly."
+        },
+        "position5": {
+          "upright": "The Queen of the Sword represents logic, independence and clear communication in financial responsibilities, and the sense of justice makes the burdens easier.",
+          "reversed": "The Reverse Sword Queen points out that problems can grow due to extreme criticism, coldness, or numbness of financial responsibilities.",
+          "keywords": {
+            "0": "logic",
+            "1": "independence",
+            "2": "justice",
+            "3": "criticism",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, justice or criticism are decisive."
+        },
+        "position6": {
+          "upright": "The Queen of the Sword points to the power of objectiveness, analytic vision and clear decisions in financial plans.",
+          "reversed": "The Reverse Sword Queen points to extreme criticism, coldness or lack of communication in financial plans.",
+          "keywords": {
+            "0": "analysis",
+            "1": "clarity",
+            "2": "decision",
+            "3": "mind",
+            "4": "balance"
+          },
+          "context": "Objectivity or extreme criticism will be effective in new financial plans."
+        },
+        "position7": {
+          "upright": "The Queen of the Sword points out that future financial plans will bring clarity, independence, and logical strategies to the forefront.",
+          "reversed": "The Reverse Sword Queen shows that extreme criticism, coldness, or callous decisions can undermine relationships.",
+          "keywords": {
+            "0": "clarity",
+            "1": "independence",
+            "2": "logic",
+            "3": "leadership",
+            "4": "objectivity"
+          },
+          "context": "Logic or extreme criticism will be effective in future financial plans."
+        },
+        "position8": {
+          "upright": "The Queen of the Sword shows that clarity, objectiveness, and analytical thinking support the ability to make money.",
+          "reversed": "The Reverse Sword Queen points out that extreme criticism, coldness, or lack of understanding may limit her skills.",
+          "keywords": {
+            "0": "clarity",
+            "1": "analysis",
+            "2": "objectivity",
+            "3": "communication",
+            "4": "wisdom"
+          },
+          "context": "Your ability to make money is related to objectiveness or criticism."
+        }
+      },
+      "kingofswords": {
+        "position1": {
+          "upright": "The Sword King points out that I can't stay rational and lose control, and in the financial world, you might be afraid that you won't be fair and strategic.",
+          "reversed": "The Reverse Sword King shows concern for abuse of authority or total loss of control, and you worry about the pressures of financial decisions.",
+          "keywords": {
+            "0": "logic",
+            "1": "control",
+            "2": "Concern",
+            "3": "authority",
+            "4": "justice"
+          },
+          "context": "The anxiety comes from not being able to make a rational and fair decision."
+        },
+        "position2": {
+          "upright": "The King of the Sword shows that he seeks security with strategic thought and wisdom.",
+          "reversed": "The Reverse Sword King points to the anxiety of authoritarianism and hardness, the desire for security, the lack of empathy.",
+          "keywords": {
+            "0": "strategy",
+            "1": "wisdom",
+            "2": "security",
+            "3": "logic",
+            "4": "authority"
+          },
+          "context": "You find security wisely with strategy and logic."
+        },
+        "position3": {
+          "upright": "The Sword King points to a strategic, fair and disciplined approach to financial matters.",
+          "reversed": "The Reverse Sword King points to extreme, oppressive, or insensitive financial decisions.",
+          "keywords": {
+            "0": "strategy",
+            "1": "justice",
+            "2": "discipline",
+            "3": "Money",
+            "4": "Plan"
+          },
+          "context": "Disciplinary strategy is important in the use of money."
+        },
+        "position4": {
+          "upright": "In the past, there may have been disciplinary, strict, and fair decisions made in financial matters.",
+          "reversed": "The Reverse Sword King points to uncompromising or flexible fiscal approaches.",
+          "keywords": {
+            "0": "discipline",
+            "1": "authority",
+            "2": "rule",
+            "3": "Money",
+            "4": "justice"
+          },
+          "context": "In the past, financial matters have been conducted with discipline and rules."
+        },
+        "position5": {
+          "upright": "The Sword King points to discipline, strategy and fair leadership in financial responsibilities, and the rational approach is a success.",
+          "reversed": "The Reverse Sword King points to overbearing, strict, or lack of empathy in financial responsibilities.",
+          "keywords": {
+            "0": "discipline",
+            "1": "strategy",
+            "2": "justice",
+            "3": "authority",
+            "4": "responsibilities"
+          },
+          "context": "Discipline or rigor in financial responsibilities comes first."
+        },
+        "position6": {
+          "upright": "The Sword King shows strategic wisdom, authority and discipline in financial plans.",
+          "reversed": "The Reverse Sword King points to the risk of firmness, coldness, or manipulation of financial plans.",
+          "keywords": {
+            "0": "strategy",
+            "1": "authority",
+            "2": "mind",
+            "3": "discipline",
+            "4": "decision"
+          },
+          "context": "Disciplined strategy or firmness of new financial plans arises."
+        },
+        "position7": {
+          "upright": "The Sword King points to the powerful impact of ethical, primitive governance and strategic thinking in future financial plans.",
+          "reversed": "The Reverse Sword King shows that a rigid attitude, authoritarian approach, or lack of communication can force financial plans.",
+          "keywords": {
+            "0": "ethics",
+            "1": "logic",
+            "2": "authority",
+            "3": "strategy",
+            "4": "communication"
+          },
+          "context": "Ethical leadership or rigor will determine future financial plans."
+        },
+        "position8": {
+          "upright": "The Sword King shows that strategic thinking, leadership, and ethical rules strengthen their ability to make money.",
+          "reversed": "The Reverse Sword King points out that his skills can be weakened by rigid thought, coldness, or authoritarianity.",
+          "keywords": {
+            "0": "strategy",
+            "1": "leadership",
+            "2": "ethics",
+            "3": "authority",
+            "4": "mind"
+          },
+          "context": "Your ability to make money is linked to strategy or rigor."
+        }
+      },
+      "aceofwands": {
+        "position1": {
+          "upright": "The wand ace indicates that I can't take steps to new initiatives and that I'm worried about missing opportunities, and you might be worried about not being able to use your creativity.",
+          "reversed": "The Reverse Stick Ace reveals lack of inspiration and false initial anxiety, and you may be afraid that you won't find the right step.",
+          "keywords": {
+            "0": "start",
+            "1": "Inspired",
+            "2": "Concern",
+            "3": "opportunity",
+            "4": "initiative"
+          },
+          "context": "Concern comes from not being able to take advantage of opportunities and getting off on the wrong foot."
+        },
+        "position2": {
+          "upright": "The ace of the wand shows you seek security with new initiatives and creative beginnings, courage opens new doors for you.",
+          "reversed": "The Reverse Stick ace points to lack of motivation or delay of opportunities, and the desire for security weakens with indecisiveness.",
+          "keywords": {
+            "0": "start",
+            "1": "creativity",
+            "2": "Courage",
+            "3": "security",
+            "4": "opportunity"
+          },
+          "context": "You'll find security new initiatives and inspirations."
+        },
+        "position3": {
+          "upright": "The wand ace shows that new ideas and initiatives have emerged in the use of money. Creative projects can be invested in.",
+          "reversed": "The Reverse Wand Ace points to a source of unfinished projects that begin with enthusiasm.",
+          "keywords": {
+            "0": "creativity",
+            "1": "start",
+            "2": "initiative",
+            "3": "fad",
+            "4": "investment"
+          },
+          "context": "New and creative initiatives arise in the use of money."
+        },
+        "position4": {
+          "upright": "In the past, new opportunities and ways of earning inspired money may have been discovered, and creativity has led to financial initiatives.",
+          "reversed": "The Reverse Asa ace shows that material potential cannot be fully used due to unfinished enterprises and delayed projects.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "start",
+            "2": "Money",
+            "3": "creativity",
+            "4": "opportunity"
+          },
+          "context": "In the past, financial initiatives began with creativity, but may not always be complete."
+        },
+        "position5": {
+          "upright": "The ace of the wand shows new opportunity, inspiration and initiative in financial responsibilities, and taking bold steps can ease the obligations.",
+          "reversed": "The Reverse Stick Ace means lack of motivation in financial responsibilities, delays, or lack of opportunity.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "Inspired",
+            "2": "initiative",
+            "3": "Motivation",
+            "4": "responsibilities"
+          },
+          "context": "The lack of new inspiration or motivation in financial responsibilities is decisive."
+        },
+        "position6": {
+          "upright": "The ace of the wand shows a new initiative in financial plans, the beginning of inspiration and creativity, and a bold step brings blessings.",
+          "reversed": "The Reverse Stick Ace points to delayed opportunities, low motivation or misguided energy.",
+          "keywords": {
+            "0": "start",
+            "1": "Inspired",
+            "2": "Courage",
+            "3": "initiative",
+            "4": "creativity"
+          },
+          "context": "New financial plans will bring forth creative beginnings or delayed opportunities."
+        },
+        "position7": {
+          "upright": "The Ace of Asa shows the spirit of new opportunities, inspired beginnings, and entrepreneurial initiative in future financial plans, and a bold step can lead to great growth.",
+          "reversed": "The Reverse Ace points out that opportunities can be avoided due to loss of inspiration, delay or lack of motivation.",
+          "keywords": {
+            "0": "start",
+            "1": "Inspired",
+            "2": "initiative",
+            "3": "Courage",
+            "4": "energy"
+          },
+          "context": "There will be new beginnings or lack of inspiration in future financial plans."
+        },
+        "position8": {
+          "upright": "The ace of wands shows that creativity, inspiration, and initiative increase their ability to make money.",
+          "reversed": "The Reverse Stick ace points out that lack of motivation, delays or wrong beginnings may miss opportunities.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "start",
+            "2": "initiative",
+            "3": "Courage",
+            "4": "energy"
+          },
+          "context": "Your ability to earn money is linked to finding inspiration or losing motivation."
+        }
+      },
+      "twoofwands": {
+        "position1": {
+          "upright": "Two wands point to the anxiety of setting up future plans wrong, you might hesitate to take risks.",
+          "reversed": "Two Reverse Wands expose visionlessness and wrong choice anxiety, and you might be afraid of going the wrong way.",
+          "keywords": {
+            "0": "Plan",
+            "1": "Vision",
+            "2": "Concern",
+            "3": "risk",
+            "4": "selection"
+          },
+          "context": "The anxiety comes from misplanning the future."
+        },
+        "position2": {
+          "upright": "The Two Sticks show you're looking for security through planning and vision, and expanding your horizons gives you peace.",
+          "reversed": "The Reverse Wand Duo points to hesitation and small thinking anxiety, and the desire for safety is shaken by escape from risk.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "security",
+            "3": "Enlargement",
+            "4": "decision"
+          },
+          "context": "You'll find security with planned expansion and vision."
+        },
+        "position3": {
+          "upright": "Two wands point to future plans in the use of money and the desire to expand the horizon. Investments are strategic.",
+          "reversed": "The Reverse Two Wands show that opportunities have been missed due to lack of courage.",
+          "keywords": {
+            "0": "Plan",
+            "1": "horizon",
+            "2": "Vision",
+            "3": "Courage",
+            "4": "investment"
+          },
+          "context": "In the use of money, the vision of the future comes to light."
+        },
+        "position4": {
+          "upright": "In the past, planning and vision development for financial goals may have played an important role.",
+          "reversed": "Two Reverse Asas have failed to assess opportunities due to the delay of plans or lack of courage.",
+          "keywords": {
+            "0": "Vision",
+            "1": "planning",
+            "2": "Money",
+            "3": "horizon",
+            "4": "decision"
+          },
+          "context": "In the past, the vision and planning of money had come forward."
+        },
+        "position5": {
+          "upright": "Two wands point to planning financial responsibilities, considering forward vision and options.",
+          "reversed": "The Reverse Two Wands may show a lack of vision in financial responsibilities, avoid taking risks, or get stuck.",
+          "keywords": {
+            "0": "planning",
+            "1": "Vision",
+            "2": "risk",
+            "3": "decision",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, vision or compression is effective."
+        },
+        "position6": {
+          "upright": "Two wands show the process of developing vision, planning and expanding the horizon in financial plans.",
+          "reversed": "The Reverse Two Wands point to not making decisions, shrinking by fear or missing opportunities.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "horizon",
+            "3": "decision",
+            "4": "Enlargement"
+          },
+          "context": "The vision or lack of decision-making will be on the agenda in the new financial plans."
+        },
+        "position7": {
+          "upright": "Two Asas step forward in future financial plans, vision enhancement, horizon expansion, and planning new projects.",
+          "reversed": "Two Reverse Asas indicate that opportunities will be delayed due to indecisiveness, fears, or failure to leave the comfort zone.",
+          "keywords": {
+            "0": "Vision",
+            "1": "planning",
+            "2": "horizon",
+            "3": "projects",
+            "4": "decision"
+          },
+          "context": "Vision enhancement or indecisiveness will be effective in future financial plans."
+        },
+        "position8": {
+          "upright": "Two wands show that the ability to expand vision, planning and horizons increases financial potential.",
+          "reversed": "The Reverse Two Wands indicate that opportunities can be lost due to hesitation, narrow viewpoint, or avoid taking risks.",
+          "keywords": {
+            "0": "Vision",
+            "1": "planning",
+            "2": "Enlargement",
+            "3": "decision",
+            "4": "horizon"
+          },
+          "context": "Your ability to make money is linked to vision or hesitation."
+        }
+      },
+      "threeofwands": {
+        "position1": {
+          "upright": "Three wands point to the anxiety of missing opportunities for expansion and growth, and you may be afraid of failing to improve your horizons.",
+          "reversed": "The Reverse Three Wands show the anxiety of delays and failed co-operation, and you may be concerned that your expectations will be in vain.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "opportunity",
+            "2": "Concern",
+            "3": "growth",
+            "4": "Vision"
+          },
+          "context": "The anxiety comes from missing opportunities to grow up."
+        },
+        "position2": {
+          "upright": "The Three Sticks show you're looking for security through the horizon and cooperation, and new opportunities make you grow.",
+          "reversed": "The Reverse Stick Triad points to narrow-mindedness and postponing anxiety, and the desire for security, they are impatiently weak.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "co-operation",
+            "2": "security",
+            "3": "horizon",
+            "4": "opportunity"
+          },
+          "context": "You'll find security with a lot of cooperation that opens up the horizon."
+        },
+        "position3": {
+          "upright": "Three wands point to growth opportunities and co-operation in the use of money.",
+          "reversed": "The Reverse Three Wands show delays in expected financial gains.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "co-operation",
+            "2": "Vision",
+            "3": "expectation",
+            "4": "investment"
+          },
+          "context": "Co-operation and expansion in the use of money move forward."
+        },
+        "position4": {
+          "upright": "In the past, there may have been enlargement, co-operation, or new market search for financial development.",
+          "reversed": "The Inverse Three Asas are limited to progress due to short-sightedness or delays.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "co-operation",
+            "2": "Money",
+            "3": "Vision",
+            "4": "Progress"
+          },
+          "context": "In the past, financial development was supported by the search for expansion and co-operation."
+        },
+        "position5": {
+          "upright": "The Three Wands point to enlargement in financial responsibilities, the assessment of co-operation and long-term opportunities.",
+          "reversed": "The Reverse Three Wands show delays in financial responsibilities, narrow perspective or obstruction of progress.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "co-operation",
+            "2": "long-term plan",
+            "3": "Vision",
+            "4": "responsibilities"
+          },
+          "context": "Enlargement or delay in financial responsibilities comes first."
+        },
+        "position7": {
+          "upright": "The three Asas mark the opening of future financial plans for expansion, collaborations and long-term opportunities.",
+          "reversed": "The Inverse Three Asas show the risk of narrow thinking, delaying, or misappropriation of opportunities.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "co-operation",
+            "2": "opportunity",
+            "3": "horizon",
+            "4": "timing"
+          },
+          "context": "In future financial plans, expansion or loss of opportunity will step forward."
+        },
+        "position8": {
+          "upright": "The Three Wands show that enlargement, business initiatives and co-operation support their ability to make money.",
+          "reversed": "The Reverse Three Wands indicate that opportunities can be limited due to shortsightedness, lack of planning, or impatientness.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "co-operation",
+            "2": "opportunity",
+            "3": "trade",
+            "4": "Vision"
+          },
+          "context": "Your ability to make money is linked to enlargement or narrow vision."
+        },
+        "position6": {
+          "upright": "Three wands point to enlargement of financial plans, new co-operations and long-term opportunities for profit.",
+          "reversed": "The Reverse Three Wands show a blockage of delays, short-sightedness, or plans.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "co-operation",
+            "2": "long term",
+            "3": "Vision",
+            "4": "opportunity"
+          },
+          "context": "Enlargement or narrow-mindedness will be decisive in new financial plans."
+        }
+      },
+      "fourofwands": {
+        "position1": {
+          "upright": "Four Wands point to stability and anxiety about losing the celebration, and not feeling safe can cause anxiety.",
+          "reversed": "The Reverse Four Wands bring out the fear that the foundation is not strong, and you may fear that your labors will go to waste.",
+          "keywords": {
+            "0": "stability",
+            "1": "celebration",
+            "2": "Concern",
+            "3": "basic",
+            "4": "Trust"
+          },
+          "context": "It comes from anxiety, instability, and insecurities."
+        },
+        "position2": {
+          "upright": "The Four Wands show that they seek security in celebration, unity and stability, bringing solid fundamental peace.",
+          "reversed": "The Reverse Wand quartet indicates anxiety of disorder or belonging, and the desire for security is shaken by a temporary gap.",
+          "keywords": {
+            "0": "stability",
+            "1": "unity",
+            "2": "security",
+            "3": "celebration",
+            "4": "basic"
+          },
+          "context": "You'll find security in the moments of unity and celebration."
+        },
+        "position3": {
+          "upright": "Four Wands point to the use of money, the spending for the house or the family.",
+          "reversed": "The Reverse Four Wands show that unscheduled spending can disrupt order.",
+          "keywords": {
+            "0": "celebration",
+            "1": "security",
+            "2": "family",
+            "3": "home",
+            "4": "spending"
+          },
+          "context": "In the use of money, security and celebration themes highlight."
+        },
+        "position4": {
+          "upright": "In the past, financial matters may have been strengthened by celebrations, joint achievements, or family support.",
+          "reversed": "The Four Reverse Asas have had income fluctuations due to instability or lack of foundations.",
+          "keywords": {
+            "0": "celebration",
+            "1": "stability",
+            "2": "Money",
+            "3": "support",
+            "4": "family"
+          },
+          "context": "In the past, the financial situation was shaped by joint celebrations and support."
+        },
+        "position5": {
+          "upright": "Four Wands point to stability, celebration and fundamental strengthening of financial responsibilities.",
+          "reversed": "The Reverse Four Wands means temporary instability in financial responsibilities, disorder or loose ends.",
+          "keywords": {
+            "0": "stability",
+            "1": "basic",
+            "2": "celebration",
+            "3": "family",
+            "4": "responsibilities"
+          },
+          "context": "Stabilisation or disorder in financial responsibilities is a prerequisite."
+        },
+        "position6": {
+          "upright": "Four Wands point to stability in financial plans, celebration of joint achievements and solid foundations.",
+          "reversed": "The Reverse Four Wand shows temporary irregularities, incompatibility or incomplete projects.",
+          "keywords": {
+            "0": "stability",
+            "1": "celebration",
+            "2": "basic",
+            "3": "compatibility",
+            "4": "success"
+          },
+          "context": "A solid basis or dissonance may come up in new financial plans."
+        },
+        "position7": {
+          "upright": "Four Asas show that in the future, stability, celebration and cooperation in financial plans will be a solid basis.",
+          "reversed": "The Reverse Four Asas point to the risk of temporary irregularity, disquieting domestic or business relations.",
+          "keywords": {
+            "0": "stability",
+            "1": "celebration",
+            "2": "basic",
+            "3": "partnership",
+            "4": "compatibility"
+          },
+          "context": "In future financial plans, stability or unrest will be effective."
+        },
+        "position8": {
+          "upright": "The Four Wands show that solid foundations, celebrations, and secure areas improve their ability to earn money.",
+          "reversed": "The Reverse Four Wands indicate that irregularities, instability, or hasty planning can weaken opportunities.",
+          "keywords": {
+            "0": "basic",
+            "1": "stability",
+            "2": "celebration",
+            "3": "unity",
+            "4": "belonging"
+          },
+          "context": "Your ability to make money is linked to stability or disorder."
+        }
+      },
+      "fiveofwands": {
+        "position1": {
+          "upright": "Five wands point to the anxiety of competition and conflict, and you may be afraid of not being able to step forward in the material world.",
+          "reversed": "The Reverse Five Wands expose repressed tensions and unnecessary struggle anxiety, and you might be worried that the fighting will consume you.",
+          "keywords": {
+            "0": "competition",
+            "1": "conflict",
+            "2": "Concern",
+            "3": "struggle",
+            "4": "ego"
+          },
+          "context": "Concern arises from competition and conflict in the material world."
+        },
+        "position2": {
+          "upright": "The Five Sticks show you're looking for security through struggle and competition, and your effort will give you strength.",
+          "reversed": "The Reverse-Strength Five is a sign of hidden conflicts or motivation anxiety, a desire for security, a weakness in tension.",
+          "keywords": {
+            "0": "struggle",
+            "1": "competition",
+            "2": "security",
+            "3": "effort",
+            "4": "Motivation"
+          },
+          "context": "You'll find security with fighting force."
+        },
+        "position3": {
+          "upright": "Five Wands point to competition and disagreements in the use of money, and there may be frictions in common sources.",
+          "reversed": "The Reverse Five Wand shows that financial disputes are beginning to unravel.",
+          "keywords": {
+            "0": "competition",
+            "1": "disagreement",
+            "2": "Money",
+            "3": "conflict",
+            "4": "resource"
+          },
+          "context": "The use of money can lead to competition and conflict."
+        },
+        "position4": {
+          "upright": "In the past, there may have been rivalries, disputes, and rehearsal struggles in financial resources.",
+          "reversed": "The Reverse Five Asa points to unresolved conflicts limiting profits.",
+          "keywords": {
+            "0": "competition",
+            "1": "conflict",
+            "2": "Money",
+            "3": "struggle",
+            "4": "Development"
+          },
+          "context": "There's been a competitive situation in the past about money."
+        },
+        "position5": {
+          "upright": "Five Wands show competition, debate or differences in financial responsibilities.",
+          "reversed": "The Reverse Five Wand points to reconciliation in financial responsibilities, resolution of disputes and integration.",
+          "keywords": {
+            "0": "competition",
+            "1": "debate",
+            "2": "solution",
+            "3": "compatibility",
+            "4": "responsibilities"
+          },
+          "context": "A conflict or a solution can be effective in financial responsibilities."
+        },
+        "position6": {
+          "upright": "Five Wands point to competition, conflict of interest and differences in financial plans.",
+          "reversed": "The Reverse Five Wand shows conflict resolution, constructive co-operation or compromise.",
+          "keywords": {
+            "0": "competition",
+            "1": "conflict",
+            "2": "difference of opinion",
+            "3": "Compromise",
+            "4": "dynamism"
+          },
+          "context": "Competitive or compromise will be decisive in new financial plans."
+        },
+        "position7": {
+          "upright": "Five Asas, future financial plans will bring forward competition, conflict of opinion and productive struggles.",
+          "reversed": "The Reverse Five Asa shows that unproductive arguments, unnecessary competition, or repressed anger can make the plans difficult.",
+          "keywords": {
+            "0": "competition",
+            "1": "struggle",
+            "2": "conflict of opinion",
+            "3": "Development",
+            "4": "Tension"
+          },
+          "context": "The future financial plans will lead to competition or inefficient conflict."
+        },
+        "position8": {
+          "upright": "The Five Wands show that competition, practical skills, and fighting force increase their ability to make money.",
+          "reversed": "The Reverse Five Wands indicate that unnecessary conflicts, jealousy, or disorganized energy can limit opportunities.",
+          "keywords": {
+            "0": "competition",
+            "1": "struggle",
+            "2": "testing",
+            "3": "practice",
+            "4": "growth"
+          },
+          "context": "Your ability to make money is related to competition or conflict."
+        }
+      },
+      "sixofwands": {
+        "position1": {
+          "upright": "Six wands point to anxiety that I can't continue to succeed, and you might be afraid of losing recognition.",
+          "reversed": "The Reverse Six Wands expose the anxiety of failure and worthlessness, and you may be concerned that you will not be able to appreciate what you deserve.",
+          "keywords": {
+            "0": "success",
+            "1": "recognition",
+            "2": "Concern",
+            "3": "victory",
+            "4": "Motivation"
+          },
+          "context": "Concern arises from failing to succeed and not being recognized."
+        },
+        "position2": {
+          "upright": "The wand Six shows you're looking for security with success and appreciation, and the visibility brings you peace.",
+          "reversed": "The Reverse Stick Six points to a lack of appreciation, a desire for safety, a weakness of worthlessness.",
+          "keywords": {
+            "0": "success",
+            "1": "appreciation",
+            "2": "security",
+            "3": "victory",
+            "4": "Motivation"
+          },
+          "context": "You find security with success and recognition."
+        },
+        "position3": {
+          "upright": "Six Wands point to success, appearance and gain in the use of money, and spending is done with confidence.",
+          "reversed": "The Reverse Six Wand creates dissatisfaction over unappreciated efforts.",
+          "keywords": {
+            "0": "success",
+            "1": "appreciation",
+            "2": "gain",
+            "3": "Self - confidence",
+            "4": "Money"
+          },
+          "context": "Success and appreciation for the use of money come first."
+        },
+        "position4": {
+          "upright": "In the past, financial success and recognition may have been achieved, success has increased motivation.",
+          "reversed": "The Reverse Six Asa may have been clouded by lack of appreciation or misdirection.",
+          "keywords": {
+            "0": "success",
+            "1": "recognition",
+            "2": "Money",
+            "3": "Motivation",
+            "4": "victory"
+          },
+          "context": "In the past, financial success has provided visibility and motivation."
+        },
+        "position5": {
+          "upright": "Six Wands point to success, appreciation and visible progress in financial responsibilities.",
+          "reversed": "The Reverse Six Wand shows lack of appreciation for financial responsibilities, fear of failure, or invisible labor.",
+          "keywords": {
+            "0": "success",
+            "1": "appreciation",
+            "2": "Progress",
+            "3": "visibility",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, a sense of success or worthlessness emerges."
+        },
+        "position6": {
+          "upright": "Six Wands point to success, recognition, and the return of efforts in financial plans.",
+          "reversed": "The Reverse Six Wands point to my appreciation, temporary success, or excessive pride.",
+          "keywords": {
+            "0": "success",
+            "1": "recognition",
+            "2": "labour",
+            "3": "appreciation",
+            "4": "victory"
+          },
+          "context": "A lack of success or appreciation will arise in new financial plans."
+        },
+        "position7": {
+          "upright": "Six Asas, future financial plans will bring ahead success, recognition, and visible victories.",
+          "reversed": "The Reverse Six Asa points to the risk of recognition, contempt for success, or lack of appreciation."
+        }
+      }
+    }
+  }
+}

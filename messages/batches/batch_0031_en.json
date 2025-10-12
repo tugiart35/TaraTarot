@@ -1,0 +1,882 @@
+{
+  "blog": {
+    "cards": {
+      "the-hermit": {
+        "affirmations": {
+          "affirmation_list": {
+            "1": "I find deep wisdom in silence.",
+            "2": "Solitude brings me peace, maturity, and spiritual healing."
+          }
+        },
+        "cta": {
+          "main": "Trust your inner guidance and shine your own light!",
+          "micro": "Create a quiet moment today; contact inner wisdom with meditation or a lonely walk."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the melted card represent?",
+            "answer": "It represents inner wisdom, peace in solitude, searching for spirit, and trusting in its own guidance. It is time to use the power of silence."
+          },
+          "1": {
+            "question": "What does reverse melt mean?",
+            "answer": "Inverse position indicates extreme loneliness, introduction or lack of guidance. It is important to find balance and to receive support when necessary."
+          },
+          "2": {
+            "question": "In what circumstances does the melted card come out?",
+            "answer": "When you're looking for inner travel, self-discovery, loneliness, or spiritual guidance, this card comes out, and patience and inner silence are recommended."
+          }
+        },
+        "related_cards": {
+          "0": "the-high-priestess",
+          "1": "stretchth",
+          "2": "the-fool"
+        },
+        "imageUrl": "/cards/rws/IX-Hermit.webp"
+      },
+      "the-wheel-of-fortune": {
+        "name": "Wheel of Destiny (Changes and Cycles)",
+        "short_description": "The Wheel of Destiny represents the cycles of life, change and fate, the return of fortune, new opportunities and surrender to the flow of life.",
+        "imageUrl": "/cards/rws/X-WheelOfFortune.webp",
+        "meanings": {
+          "upright": {
+            "general": "The Wheel of Destiny represents the cyclical nature and change of life, and you're in a time when luck can turn and new opportunities can come, so let the flow and be open to change.",
+            "love": "Unforeseen developments in love and new opportunities, your destiny can lead you to a new relationship or transformation in the current relationship.",
+            "career": "Change in careers, new opportunities, positive developments, possible luck.",
+            "money": "Cycle changes in material matters, luck and opportunity are at hand, so be prepared.",
+            "spiritual": "Trust in the universe's plan and accept cycles."
+          },
+          "reversed": {
+            "general": "The Reverse Destiny Wheel is about fighting bad luck, resistance, or change, and resisting flow can be a problem.",
+            "love": "Unforeseen problems or cyclical difficulties in love, be patient and let it flow.",
+            "career": "Career delays or unexpected changes, adapt instead of resisting.",
+            "money": "Be careful with the financials, you may not get lucky right now.",
+            "spiritual": "You may be mentally resistant to flow, learn to surrender."
+          }
+        },
+        "context": {
+          "mythology": "In ancient mythology, the Wheel of Destiny represents the looming of the goddesses of fate and the cyclical nature of life. In Greek mythology, Moira ruled these cycles.",
+          "celtic_cross": {
+            "future": "In the future, you may experience significant changes and cyclical transformations.",
+            "hidden_influences": "It's about hidden influences, past loops and fate, the universe's plan that shapes you."
+          }
+        },
+        "story": {
+          "title": "Wheel of Destiny (Dance of Cycles)",
+          "description": "The card contains a wheel, sphinx, snake, and Anubis figure, which represents the cycles of life, the rise and fall, teaching to surrender to the course of fate and embrace change.",
+          "historytitle": "Historical Origin",
+          "history_message": "The Wheel of Destiny is one of Tarot's oldest symbols, depicting the cyclical nature of life in the Middle Ages with symbols of fate and luck.",
+          "mystic_title": "Spiritual Meaning - Surrendering to the Stream",
+          "mystic_message": "Spiritually, the Wheel of Destiny is to rely on the plan of the universe and surrender to the course of life, accept the cycles and be open to change.",
+          "cultural_title": "Modern Comment: Luck and Opportunities",
+          "cultural_message": "In the modern world, the Wheel of Destiny represents luck, opportunity, and unexpected changes.",
+          "lesson": "Accept the cycles of life, instead of resisting change, let it flow."
+        },
+        "keywords": {
+          "keywords_title": "The Wheel of Destiny Keywords",
+          "keywords_message": "The wheel of fate is tarot meaning, as we spin the wheel of fortune, change, cycles, luck, fate",
+          "positive_title": "Positive Themes",
+          "positive_message": "Luck, new opportunities, positive change, cyclical development.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Instead of resisting change, let it flow, be patient.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Trust in the universe's plan, fate is taking you to the right place."
+        },
+        "associations": {
+          "title": "Destiny Wheel Cosmic Connections",
+          "astrology": "Jupiter (Lucky, Enlargement, Opportunities)",
+          "numerology": "10 (Turn Completion, New Start)",
+          "element": "Fire ▪ Transformation and Energy",
+          "chakra": "Crown (Tac Chakra) ▪ Universal Connection"
+        },
+        "card_combinations": {
+          "title": "Combinations by the Wheel of Destiny",
+          "combinations": {
+            "0": {
+              "card": "The Fool",
+              "meaning": "New beginnings and luck unite, take bold steps."
+            },
+            "1": {
+              "card": "The Star",
+              "meaning": "Hope and luck unite, bright future awaits you."
+            },
+            "2": {
+              "card": "Temperance",
+              "meaning": "Balance and cycles in harmony, be patient."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "The Wheel of Destiny Approves",
+          "affirmation_list": {
+            "0": "I trust the course of life and surrender.",
+            "1": "I embrace change and open to new opportunities.",
+            "2": "I believe in luck and fate's plan."
+          }
+        },
+        "cta": {
+          "main": "Explore",
+          "micro": "Learn more."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Wheel of Destiny mean?",
+            "answer": "The Wheel of Destiny represents change, cycles and luck, teaching the flow of life to surrender."
+          },
+          "1": {
+            "question": "What does the Wheel of Destiny mean in love?",
+            "answer": "It brings unexpected developments in love and new opportunities, a time when fate can take you in a new direction."
+          }
+        },
+        "related_cards": {
+          "0": "the-fool",
+          "1": "the-star",
+          "2": "Temperance"
+        }
+      },
+      "justice": {
+        "name": "Justice, Balance, Truth and Complicated Accounting",
+        "short_description": "The justice card represents the power of honesty, balance, and universal laws. Every action produces a response; the divine balance is always restored in life.",
+        "meanings": {
+          "upright": {
+            "general": "The justice card says it's time to face the consequences of your decisions. See the facts, be honest, and take responsibility for your choices. A complex balance is about to be established. The universe is a fair and impartial scale; each action has an echo.",
+            "love": "In love, honesty and openness are the front line, facing real emotions is the balance of the relationship, and before you start a new relationship, you may need to free yourself from the ties of the past.",
+            "career": "It's important to stick to ethical values on the road to careers, where justice offers awards when making good decisions, and there may be improvements in business talks, contracts, or court processes.",
+            "money": "Financially, balanced spending and honest gains come first, avoid unfair gains, and the income you deserve will soon find you.",
+            "spiritual": "In a spiritual sense, justice represents a complex awakening, the results of your past steps are now balanced, the mental balance, the consciousness of self-responsibility."
+          },
+          "reversed": {
+            "general": "Reverse Justice, injustice, imbalance, or not being honest with yourself, not confronting reality, delays spiritual growth, needs to restore internal scales.",
+            "love": "In reverse positions in love, misunderstandings, unstable relationships, or emotional manipulation, suppressing the facts would undermine the trust of the relationship.",
+            "career": "In working life, there may be injustice, unethical behavior, or misapprehension, be patient and be honest; time brings justice.",
+            "money": "Be careful about financial matters; wrong investments or unfair gains can cause problems. Keep the money's energy clean.",
+            "spiritual": "Spiritually reverse justice is a sign of not being honest with yourself or others, rebalance the scales of conscience."
+          }
+        },
+        "context": {
+          "mythology": "Justice is identified with the goddesses of Themis and Maat in ancient mythology, and while Themis represents the divine laws, Maat is the voice of truth that maintains the order of the universe, and this card demands that you balance the laws of life with the scales of your heart.",
+          "celtic_cross": {
+            "future": "There's a process that will soon come true for you, and the truth will be revealed and the balance will be restored.",
+            "hidden_influences": "Mixed influences could be from the past, and now it's time to face honesty and learn your lesson."
+          }
+        },
+        "story": {
+          "title": "The Mirror of Justice",
+          "description": "The woman sitting on one throne holds the scales of the sword in one hand, and the sword in the other, and the truth and the sharp truth; and the scales represent the universal balance; and her eyes are open, because she is not afraid of the truth.",
+          "historytitle": "Historical Origin: Goddesses of Truth",
+          "history_message": "In Egypt, the heart, measured by the feather of Maat, determined the lightness of the spirit. In Rome, Themis maintained the divine order of human law. The card of justice combines these ancient symbols.",
+          "mystic_title": "Spiritual Meaning - The Power of Honesty",
+          "mystic_message": "The justice card teaches you to recognize spiritual responsibility, honesty is not just the word, it's the energy, it's the heart that is aligned with the truth.",
+          "cultural_title": "Modern Comment: Face Your Truth",
+          "cultural_message": "Today, this card represents accepting the consequences of personal choices and sticking to ethical values, and the truth sets you free.",
+          "lesson": "It teaches the importance of living with justice, honesty and inner balance, and every choice has an echo, and the universe brings that echo back fairly."
+        },
+        "keywords": {
+          "keywords_title": "Justice Card Keywords",
+          "keywords_message": "Justice tarot meaning, justice tarot, tarot balance, cognitive reckoning, divine order, truth, responsibility, tarot honesty",
+          "positive_title": "Positive Energy",
+          "positive_message": "Balance, honesty, divine justice, ethics, karma.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Be honest with yourself, suppressing the facts will shake the spiritual scales.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Notice the energy of your actions, the divine order that balances everything fairly."
+        },
+        "associations": {
+          "title": "Cosmic Connections to the Justice Card",
+          "astrology": "Libra (Venus), balance, relationships, aesthetic harmony",
+          "numerology": "11 (The Divine Balance, Truth, Responsibility)",
+          "element": "Air (Manic, Justice, Communication)",
+          "chakra": "Heart Chakra (Anahata) ▪ True Love and Balance"
+        },
+        "card_combinations": {
+          "title": "Combinations With Justice",
+          "combinations": {
+            "0": {
+              "card": "Wheel of Destiny (Wheel of Fortune)",
+              "meaning": "Complex cycles are closing, the universe is balancing past actions."
+            },
+            "1": {
+              "card": "Death",
+              "meaning": "A cycle ends, justice comes to pass, regeneration is inevitable."
+            },
+            "2": {
+              "card": "Star (The Star)",
+              "meaning": "After facing the truth, hope and healing await you."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Justice Card Approvement",
+          "affirmation_list": {
+            "0": "I see the truth bravely and learn from him.",
+            "1": "I support the divine balance with my actions.",
+            "2": "Justice begins inside me, echoes outside me."
+          }
+        },
+        "cta": {
+          "main": "See the truth, restore balance!",
+          "micro": "Listen to your inner voice today, and let your decisions be a guide of honesty and love."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the justice card represent?",
+            "answer": "The justice card represents honesty, responsibility, balance and coherence laws, and every action has consequences, and the universe restores balance."
+          },
+          "1": {
+            "question": "What does Reverse Justice mean?",
+            "answer": "Inverse position, imbalance, lying, injustice, or not being honest with yourself, it's time to rebuild the inner scale."
+          },
+          "2": {
+            "question": "In what circumstances does the justice card come out?",
+            "answer": "There are times when you have to face facts, when you realize the consequences of your choices, or when you have to focus on ethical values."
+          }
+        },
+        "related_cards": {
+          "0": "Wheel-of-fortune",
+          "1": "the-hanged-man",
+          "2": "the-star"
+        },
+        "imageUrl": "/cards/rws/XI-Justice.webp"
+      },
+      "the-hanged-man": {
+        "name": "Hanged Man ▪ Surrender, Awareness and New View",
+        "short_description": "The Hanged Man represents pauses, introverts, and looking at events from a different perspective, and sometimes the way to move forward is to stop and surrender.",
+        "meanings": {
+          "upright": {
+            "general": "The hanging Man's card points to a period of waiting or suspended time in your life, not to punish you, but to deepen your awareness, to give up control and to see things in a different light, a spiritual rebirth.",
+            "love": "In love, it's time to look at your relationship from a different perspective, learn to wait, open your heart and patiently listen to your intuition, bring acceptance and understanding instead of old patterns.",
+            "career": "There may be a temporary recession in the field of careers, but this process is an opportunity for you to find your new direction, stopping, reassessing, and making conscious choices will bring growth.",
+            "money": "Financially, patience and strategic waiting are important, so instead of acting right now, focus on getting insight.",
+            "spiritual": "The Man Hanged spiritually teaches ego surrender and trust in divine flow, and true enlightenment comes when he can give up control."
+          },
+          "reversed": {
+            "general": "The man who's hanging upside down shows resistance, stubbornness, or being closed to change, and if life stops you, maybe it's time you start thinking differently.",
+            "love": "A reverse position in love can indicate a time when sacrifice is one-sided or an energy blockage of a relationship.",
+            "career": "It's possible that there's been a cycle of disorientation or delay in the career, and moving forward without developing a new perspective will keep you in the same place.",
+            "money": "If the old methods don't work, go to the new strategy.",
+            "spiritual": "Spiritually, fear of surrender or insufferability can prevent inner peace, learn to trust the flow."
+          }
+        },
+        "context": {
+          "mythology": "The hanging Adam archetype is associated with Odin's learning the secret of runes by hanging himself to Yggdrasil, in Scandinavian mythology. True wisdom is born from the courage to transform pain into awareness.",
+          "celtic_cross": {
+            "future": "In the future, a process that requires a pause or a change of direction may be waiting for you, and the waiting will be the key to awareness.",
+            "hidden_influences": "The unseen factors lead you to surrender and acceptance, and the universe may have stopped you for internal growth."
+          }
+        },
+        "story": {
+          "title": "The Silent Wisdom of the Hanged Man",
+          "description": "A man hangs upside down from a tree, and the peaceful expression on his face tells him that surrender comes not from pain but from acceptance, to see the world upside down, to realize the truth from a new perspective.",
+          "historytitle": "Historical Origin: Enlightenment in the Tree of Wisdom",
+          "history_message": "In medieval tarots, this card meant voluntary pause, not sacrifice.",
+          "mystic_title": "Spiritual Meaning - The Power of Surrender",
+          "mystic_message": "The Hanged Man teaches that when he chooses to accept it instead of resistance, he can achieve inner peace, sometimes spiritual awakening is hidden in waiting.",
+          "cultural_title": "Modern Comment: Perspective Change",
+          "cultural_message": "Today, this card is related to personal awareness, conscious pause, and courage to leave old patterns.",
+          "lesson": "Stopping is not a weakness, but the preparation of rebirth, and sometimes doing nothing is the wisest act."
+        },
+        "keywords": {
+          "keywords_title": "The Hanged Man Card Keywords",
+          "keywords_message": "The hanging man means tarot, the hanged man, the derivative, tarot surrender, tarot awareness, tarot patience, tarot new perspective",
+          "positive_title": "Positive Energy",
+          "positive_message": "Surrender, awareness, inner peace, acceptance, intuitive wisdom.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Take pause not as punishment, but as a gift of awareness.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Inner surrender opens the gates of divine wisdom, and when you leave, you are free."
+        },
+        "associations": {
+          "title": "Cosmic Connections to Hanged Man Card",
+          "astrology": "Neptune (Dreams, Divine Surrender, Sublime)",
+          "numerology": "12 (Waiting, Awareness, Psychological Transformation)",
+          "element": "Water (Emotions, Fluid, Surrender)",
+          "chakra": "Crown (Tac chakra) ▪ Divine Connection and Enlightenment"
+        },
+        "card_combinations": {
+          "title": "Combinations With Hanged Man",
+          "combinations": {
+            "0": {
+              "card": "Death",
+              "meaning": "After surrender comes a radical transformation, the old self comes to an end, the new one is born."
+            },
+            "1": {
+              "card": "Ermiş (The Hermit)",
+              "meaning": "You find wisdom in inner silence, spiritual awareness deepens."
+            },
+            "2": {
+              "card": "Tower (The Tower)",
+              "meaning": "A challenging pause prepares you for a radical reconstruction."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Hanged Man Approved",
+          "affirmation_list": {
+            "0": "I surrender to the flow, life transforms me.",
+            "1": "I find meaning even in pause.",
+            "2": "The more I let go, the lighter I get."
+          }
+        },
+        "cta": {
+          "main": "Stop and realize that the real transformation is born in silence.",
+          "micro": "Take your time today, take it easy, take it easy, take it easy, take it easy, take it easy, take it easy."
+        },
+        "faq": {
+          "0": {
+            "question": "What does Hanged Man represent?",
+            "answer": "The Hanged Man represents the process of surrender, waiting, and looking at things from a different perspective."
+          },
+          "1": {
+            "question": "What does the Reverse Hanger Man mean?",
+            "answer": "Inverse position, resistance, stubbornness, or fear of change, leaving old patterns paves the way for transformation."
+          },
+          "2": {
+            "question": "In what circumstances does this card come out?",
+            "answer": "It comes when you're invited to observe internal silence, patience and awareness."
+          }
+        },
+        "related_cards": {
+          "0": "death",
+          "1": "the-hermit",
+          "2": "the-tower"
+        },
+        "imageUrl": "/cards/rws/XII-HangedMan.webp"
+      },
+      "death": {
+        "name": "Death ▪ Transformation, Regeneration and Rebirth",
+        "short_description": "The death card is not the end, but the door to transformation, the time to let go of the old, to free yourself from the chains of the past, and to be born into a new stage of life.",
+        "meanings": {
+          "upright": {
+            "general": "The death card represents an important turning point and a radical change in your life, and as an old era comes to an end, a new consciousness is born, rather than physical death, a spiritual transformation and rebirth energy, which calls for the courage to let go of things that no longer serve you.",
+            "love": "In love, a relationship or an emotional cycle may have to end or change, after what's over, a more authentic love can arise.",
+            "career": "It carries an important career closure, a change of mission, or a new beginning energy, and now your old business style or goals can change.",
+            "money": "Financially, it's the end of the old order, the time for restructuring, transforming your budget, or moving towards different revenue sources.",
+            "spiritual": "Spiritually, death is the dissolution of the ego and the rebirth of the essence, and in order to get close to your true self, you have to give up the old identities."
+          },
+          "reversed": {
+            "general": "The reverse death card shows resistance to change, resistance to the past, and the harder you resist, the harder my transformation becomes.",
+            "love": "In reverse position in love, it points to the inability to break, to cling to old emotions, or to reject transformation.",
+            "career": "Resistance to change in the field of careers can cause a blockage, and it's time to set a new course.",
+            "money": "In financial matters, maintaining old habits can cause financial instability.",
+            "spiritual": "Spiritually, not leaving the old patterns of faith prevents growth. The real transformation begins with surrender."
+          }
+        },
+        "context": {
+          "mythology": "The death card is related to the myths of Anubis, the deity god of transformation, whose souls carry to the other world, and also to be reborn from the ashes by burning, like the bird of Phoenix. Death is not the end, but the gate.",
+          "celtic_cross": {
+            "future": "Soon, a period of closure and spiritual renewal will begin, bearing the seed of a new beginning.",
+            "hidden_influences": "Universal energy is trying to rid you of old patterns, accept transformation instead of resistance."
+          }
+        },
+        "story": {
+          "title": "The Silent Transformation of Death",
+          "description": "As a black armoured figure moves on a horse, an old king falls on the ground, and the sun rising on the horizon is a harbinger of a new life, and each end brings the light of another beginning.",
+          "historytitle": "Historical Origin: Death and Rebirth Archetype",
+          "history_message": "In ancient times, death was a symbol of transition, and the dissolution of the old self leads to the evolution of the soul, which reminds of the inevitable law of the cycle of life.",
+          "mystic_title": "Spiritual Meaning - The Holyness of Transformation",
+          "mystic_message": "The death card is the teaching of surrender and rebirth, each loss opens up a space for purer energy, and your soul prepares for rebirth.",
+          "cultural_title": "Modern Comment: Power of Quitting",
+          "cultural_message": "In today's world, this card shows that it is time to give up old identities, relationships, or patterns of thought, and the void is the womb of rebirth.",
+          "lesson": "The real transformation begins when you can honor and release the past, and the end is only the door to another beginning."
+        },
+        "keywords": {
+          "keywords_title": "Death Card Keywords",
+          "keywords_message": "Death is tarot meaning, death is tarot, tarot is transformation, tarot is rebirth, tarot is end, tarot is leave",
+          "positive_title": "Positive Energy",
+          "positive_message": "Transformation, regeneration, awareness, cleansing, rebirth.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Don't be afraid of ending, every ending is part of a spiritual rebirth.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Your soul calls for regeneration and cleansing, surrender, be reborn."
+        },
+        "associations": {
+          "title": "Cosmic Connections to the Death Card",
+          "astrology": "Scorpion (Defense, Depth, Rebirth)",
+          "numerology": "13 (Finishment, Purge, Regeneration)",
+          "element": "Water (emotional flow, transformation, depth)",
+          "chakra": "Solar Plexus & Heart Chakra ▪ Power and Healing"
+        },
+        "card_combinations": {
+          "title": "Combinations With Death",
+          "combinations": {
+            "0": {
+              "card": "Hanged Man (The Hanged Man)",
+              "meaning": "After surrender comes transformation, the old self unravels, the new one is born."
+            },
+            "1": {
+              "card": "Tower (The Tower)",
+              "meaning": "A sudden end leads to a radical reconstruction, resisting, accepting rebirth."
+            },
+            "2": {
+              "card": "Star (The Star)",
+              "meaning": "After the end comes hope and light, healing with you."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Death Card Approvement",
+          "affirmation_list": {
+            "0": "I leave the past with love.",
+            "1": "Every ending brings me to a new beginning.",
+            "2": "I surrender to the energy of transformation."
+          }
+        },
+        "cta": {
+          "main": "Let go and return life calls on you to restore.",
+          "micro": "Today, leave a habit, thought, or bond in the past."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the death card represent?",
+            "answer": "The death card represents transformation, end and rebirth. The closure of an old cycle is the beginning of the new."
+          },
+          "1": {
+            "question": "What does the reverse death card mean?",
+            "answer": "The reverse position points to resistance to change, to hold on to the past, and giving up is the key to regeneration."
+          },
+          "2": {
+            "question": "Why does the death card look scary?",
+            "answer": "The symbolism of the card is not physical death, but spiritual transformation."
+          }
+        },
+        "related_cards": {
+          "0": "the-hanged-man",
+          "1": "the-tower",
+          "2": "the-star"
+        },
+        "imageUrl": "/cards/rws/XIII-Death.webp"
+      },
+      "temperance": {
+        "name": "Balance, Patience, and Inner Integration",
+        "short_description": "The balance card represents combining the different energies of life in harmony and finding inner peace, a guide to the journey of patience, measurement and healing.",
+        "meanings": {
+          "upright": {
+            "general": "The balance card is the call to find the harmony of internal and external energy, to surrender to the flow of life and to be patient, to avoid extremes, to take the middle path and trust in internal guidance. This card reminds of the importance of taking steps patiently and directing energy with consciousness.",
+            "love": "In love, it represents harmony, understanding, and mutual respect, the right time to find balance in a relationship, to use emotional and mental energy in harmony, and if you are single, there may be an opportunity for a balanced and mature relationship.",
+            "career": "In careers, business and projects, strategy, co-operation and moderate action are in the forefront, adapting in team work and balanced use of resources brings success.",
+            "money": "Financially, it's important to balance revenues and costs, planned investments and savings, avoid sudden spending and manage your budget consciously.",
+            "spiritual": "Spiritually, it teaches balance, meditation, energy studies, and inner harmony with rituals, choosing the middle path between the two ends, bringing spiritual integrity and healing."
+          },
+          "reversed": {
+            "general": "It's a warning about inverse balance, incompatibility, insufferability, or extremities, a risk of losing balance, hasty behavior, or not being in control.",
+            "love": "In reverse positions in love, conflict, unstable relationships or lack of communication, find common ground and be patient.",
+            "career": "In a career, the reverse balance, lack of co-operation, the risk of unplanned action or misuse of resources, strategy and measurement are essential.",
+            "money": "In financial matters, it's a warning of excessive spending or unplanned investment, to restore balance and to reschedule.",
+            "spiritual": "Spiritually, it shows reverse positions, internal unrest, lack of meditation, and energy blocks, which require awareness to restore balance."
+          }
+        },
+        "context": {
+          "mythology": "The balance card is associated with the symbols of Hermes/Mercury (hermes/Mercury) and Greek middle-way philosophy, which reminds of the universal laws of balance, balance, balance, and harmony in mythology.",
+          "celtic_cross": {
+            "future": "In the future, it will be important to maintain internal and external harmony, to take moderate and conscious steps in your decisions.",
+            "hidden_influences": "Your energies and past experiences support your finding a middle ground, so be patient and aware."
+          }
+        },
+        "story": {
+          "title": "The Silent Dance of the Balance Card",
+          "description": "An angel stands one foot in the water and passes liquid between two glasses. This represents the harmony and continuity of different energies. Every movement is conscious, every step is measured; patience and harmony guides.",
+          "historytitle": "Historical Origin: Moderation and Harmony",
+          "history_message": "The balance card represents the medium path, measurement, and inner harmony themes. In versions of Tarot's history, it represents the angel figure, the conscious balance, and the harmony of energy.",
+          "mystic_title": "Spiritual Meaning: Inner Harmony",
+          "mystic_message": "Balance teaches us to balance between two opposite energies, to be patient and to act with consciousness, to bring harmony and healing spiritually.",
+          "cultural_title": "Modern Comment: Moderate and Patience",
+          "cultural_message": "Today, the Balance represents being patient and measured in different areas of life, managing resources properly, and adapting energy.",
+          "lesson": "Patience and balance in the course of life are the key to long - term success and spiritual peace."
+        },
+        "keywords": {
+          "keywords_title": "Balance Card Keywords",
+          "keywords_message": "Balance tarot meaning, temperance tarot, tarot harmony, tarot patience, tarot measurement, tarot spiritual integrity",
+          "positive_title": "Positive Energy",
+          "positive_message": "Harmony, patience, measurement, conscious movement, spiritual healing, energy balance.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Avoid extremism and haste; manage their energy consciously.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Find inner harmony, move forward patiently and strengthen your spiritual integrity."
+        },
+        "associations": {
+          "title": "Cosmic Connections to Balance Card",
+          "astrology": "Sagittarius (Freedom, Journey, Spiritual Wisdom)",
+          "numerology": "14 (Middle Way, Harmony, Patience)",
+          "element": "Water & Fire ▪ Balance of emotional and mental energy",
+          "chakra": "Heart & Solar Plexus ▪ Energy balance and healing"
+        },
+        "card_combinations": {
+          "title": "Combinations With Balance",
+          "combinations": {
+            "0": {
+              "card": "Death",
+              "meaning": "Finding harmony after transformation shows the necessary steps to regain balance."
+            },
+            "1": {
+              "card": "Satan (The Devil)",
+              "meaning": "It signals freedom by balancing the energy of addiction and overkill."
+            },
+            "2": {
+              "card": "Star (The Star)",
+              "meaning": "When balance and hope are united, spiritual healing and inspiration arise."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Balance Card Approved",
+          "affirmation_list": {
+            "0": "I'm adapting my internal and external energies.",
+            "1": "I'm progressing patiently, taking moderate and conscious steps.",
+            "2": "My soul and body are balanced; harmony and healing are with me."
+          }
+        },
+        "cta": {
+          "main": "Find a middle course, balance your energy and embrace peace.",
+          "micro": "Be moderate in one area today; use energy and time balanced."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the balance card represent?",
+            "answer": "It represents balance cards, harmony, patience, measurement, and inner integrity, teaching us to find a middle course in the course of life."
+          },
+          "1": {
+            "question": "What does the reverse balance card mean?",
+            "answer": "Reverse position, incompatibility, extremism, or impatience warning, rebalance their energy and act with consciousness."
+          },
+          "2": {
+            "question": "In what areas is the balance card powerful?",
+            "answer": "Spiritual harmony is strong in the balance of relationships, financial planning and decision-making process."
+          }
+        },
+        "related_cards": {
+          "0": "death",
+          "1": "the-star",
+          "2": "the-sun"
+        },
+        "imageUrl": "/cards/rws/XIV-Temperance.webp"
+      },
+      "the-devil": {
+        "name": "Satan's addiction, Shadow and Freedom",
+        "short_description": "The Devil's Card reveals inner shadows, addictions, and restrictive energy in his life, a call for awareness and consciousness to be liberated.",
+        "meanings": {
+          "upright": {
+            "general": "The Devil's card represents confronting our shadowy parts, addictions and uncontrollable desires, which can limit your fears and habits; acting consciously and consciously will free you from your chains.",
+            "love": "In love, it's a warning about obsession, addiction, or controlling relationships, you have to manage emotional ties with awareness and set healthy boundaries.",
+            "career": "In the field of careers, attention to power struggles, manipulation or unethical behavior, instead of drifting, choose with consciousness and apply your own values.",
+            "money": "In financial matters, the risk of overexpension, addiction, or misuse of resources is to be planned and maintain financial freedom.",
+            "spiritual": "In a spiritual sense, it's an opportunity to explore the shadow side, to recognize addictions, and to free the self-restricting beliefs."
+          },
+          "reversed": {
+            "general": "The Reverse Devil shows that awareness is increasing, that addictions and shadows are beginning to unravel, and the process of getting rid of the chains and liberation is progressing.",
+            "love": "A chance to be free in relationships, to get away from addiction and obsession, to set up healthy boundaries.",
+            "career": "It's time to get away from manipulations in business and projects, make ethical and conscious decisions.",
+            "money": "It's a chance for financial liberalisation and a chance to use resources in charge, so stay away from overexpensive spending.",
+            "spiritual": "Psychologically, the process of confronting shadows and letting go of addictions is progressing, trusting internal guidance."
+          }
+        },
+        "context": {
+          "mythology": "The Devil's Card is associated with Baphomet and other esoteric figures, representing the shadow of human nature, desire and awareness of boundaries.",
+          "celtic_cross": {
+            "future": "In the future, you'll have the opportunity to face addictions or restrictive situations and be free.",
+            "hidden_influences": "Secret dependencies around you or within you are driving you unconsciously, consciously notice and take control."
+          }
+        },
+        "story": {
+          "title": "The Shadow Dance of the Devil's Card",
+          "description": "A figure dominates two people in chains; it binds them with dark and attractive energy; but chains are loose and freeing; this card is a symbol of recognizing shadows, releasing addictions, and freeing consciousness.",
+          "historytitle": "Historical Origin: Shadow and Addiction",
+          "history_message": "The Devil's Card represents desires, addictions and the dark side of human nature in medieval and Renaissance tarots, associated with Baphomet and other esoteric symbols.",
+          "mystic_title": "Spiritual Meaning - Face the Shadow",
+          "mystic_message": "Satan teaches us to face our shadow sides, to recognize addictions, and to be consciously liberated, so use your inner healing power and get rid of your chains.",
+          "cultural_title": "Modern Comment: Awareness and Freedom",
+          "cultural_message": "Today, Satan is associated with addiction, challenging behavior, and the need to cross borders. With awareness and consciousness, it is possible to break these chains.",
+          "lesson": "Dealing with addiction, fear, and shadow is the way to be free and truly strong."
+        },
+        "keywords": {
+          "keywords_title": "The Devil's Card Keywords",
+          "keywords_message": "The evil tarot means, the devil tarots, tarot addiction, tarot shadow, tarot liberation, tarot awareness",
+          "positive_title": "Positive Themes",
+          "positive_message": "Awareness, liberation, awareness of the shadow, conscious choice, overstepping the bounds.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Watch out for addictions, fears, extremes.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Notice the shadow, release the addictions and embrace your freedom."
+        },
+        "associations": {
+          "title": "Cosmic Connections to the Devil's Card",
+          "astrology": "Capricorn (Responsibility, Border, Shadows)",
+          "numerology": "15 (Restraint, Addiction, Transformation)",
+          "element": "Earth & Fire ▪ Physical and passionate energies",
+          "chakra": "Root & Solar Plexus ▪ Rooting, personal power and addictions"
+        },
+        "card_combinations": {
+          "title": "Combinations With Satan",
+          "combinations": {
+            "0": {
+              "card": "Balance (Temperance)",
+              "meaning": "Freeing and finding a middle path away from extremes and addictions."
+            },
+            "1": {
+              "card": "Death",
+              "meaning": "The end of old addictions and restrictive habits is new freedom and transformation."
+            },
+            "2": {
+              "card": "Star (The Star)",
+              "meaning": "With hope and conscious awareness, transforming the shadow and spiritual healing."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Demon Card Approvement",
+          "affirmation_list": {
+            "0": "I recognize addictions and boundaries, and I'm freeing myself.",
+            "1": "I'm breaking my chains with my own inner strength.",
+            "2": "I'm facing my shadow, and I'm progressing with consciousness."
+          }
+        },
+        "cta": {
+          "main": "Notice your shadows and choose your way of liberation!",
+          "micro": "Notice a habit of addiction or limiting today and take a small step."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the Devil's Card represent?",
+            "answer": "It represents addiction, shadowy sides, uncontrollable desires, and the call for liberation."
+          },
+          "1": {
+            "question": "What does the Reverse Devil mean?",
+            "answer": "The reverse position indicates that liberation has begun and addictions are beginning to unravel, awareness and conscious choice are in the forefront."
+          },
+          "2": {
+            "question": "In what areas is the Devil's card powerful?",
+            "answer": "Addicts are strong in the process of confronting shadow sides, limiting and conscious liberation."
+          }
+        },
+        "related_cards": {
+          "0": "Temperance",
+          "1": "death",
+          "2": "the-star"
+        },
+        "imageUrl": "/cards/rws/XV-Devil.webp"
+      },
+      "the-tower": {
+        "name": "Tower ▪ Demolition, Sudden Change and Facing Reality",
+        "short_description": "The tower card represents unexpected changes, destruction, and facing the realities of life, a time of sudden awareness and transformation.",
+        "meanings": {
+          "upright": {
+            "general": "The tower represents the sudden changes and unexpected events in its life, the collapse of old structures, the collapse of false beliefs and supposedly safe situations, which, painfully enough, bring freedom and real awareness in the long term.",
+            "love": "In love, the Tower means to be questioned by shocking developments or the basis of the relationship, revealing false trusts and flings in a relationship, which is an opportunity to see the truth and rebuild it if necessary.",
+            "career": "In the career, there may be sudden changes in projects, unexpected obstacles or plans to collapse, which calls for building stronger and more conscious structures.",
+            "money": "In financial matters, sudden losses or unexpected expenses can be seen, review financial planning, use your power to turn crises into opportunities.",
+            "spiritual": "In a spiritual sense, the Tower recommends confronting ego, illusions, and old beliefs, opening the door for destruction, new awareness, and spiritual transformation."
+          },
+          "reversed": {
+            "general": "The Reverse Tower shows that the effects of destruction can be eased or avoided. The awareness is increasing; it is possible to take precautions before protecting or destroying old structures.",
+            "love": "Avoiding sudden changes or crises in a relationship means strengthening communication and acting with awareness.",
+            "career": "In projects, it is possible to notice problems early and minimize the destructive effects. Planning and harmony are important.",
+            "money": "Be careful to anticipate financial crises and reduce the risks. It's possible to avoid unexpected changes.",
+            "spiritual": "In a spiritual sense, the process of transforming old beliefs eases or pre-recognising the crisis prevents the crisis."
+          }
+        },
+        "context": {
+          "mythology": "The tower is associated with the lightnings of Zeus, the legend of Babylon's Tower, and the mythological destruction, and divine intervention symbolizes the face of man's pride and false beliefs.",
+          "celtic_cross": {
+            "future": "In the future, unexpected events and changes await you; old structures will fall and new awareness will arise.",
+            "hidden_influences": "Insecurities and false beliefs around you or within you can trigger unexpected events."
+          }
+        },
+        "story": {
+          "title": "The Destruction and Enlightenment of the Tower",
+          "description": "The tower is torn apart by lightning; as people fall, lightning and light bursts in the sky. It represents destruction, chaos and fear, but it also opens the door to awareness and freedom. It serves to destroy egos and illusions, to reach the truth and the essence of the soul.",
+          "historytitle": "Historical Origin: Destruction and Awake!",
+          "history_message": "The tower card represents the destruction of pride and illusions in Renaissance tarots, depicting lightning, divine intervention and the shock of truth.",
+          "mystic_title": "Spiritual Meaning - Face Truth",
+          "mystic_message": "The tower is a call for spiritual awakening, to face illusions and to reconstitute with consciousness, which is necessary for painful destruction, new awareness and liberation.",
+          "cultural_title": "Modern Comment: Sudden Change and Awareness",
+          "cultural_message": "Today, the Tower is associated with sudden crises, unexpected losses, or life-shattering developments, and it is possible to come out of these processes with awareness and consciousness.",
+          "lesson": "Demolition, chaos, and unexpected change are inevitable parts of spiritual and personal development."
+        },
+        "keywords": {
+          "keywords_title": "Tower Card Keywords",
+          "keywords_message": "The tower is tarot meaning, the tower tarot, tarot destruction, tarot change, tarot crisis, tarot awareness",
+          "positive_title": "Positive Themes",
+          "positive_message": "Awareness, learning from the crisis, liberation, facing facts, transformation.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Prepare for sudden changes and crises; act consciously instead of panic.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Leave the old structures, see the facts and rebuild them with consciousness."
+        },
+        "associations": {
+          "title": "Cosmic Connections of the Tower Card",
+          "astrology": "Mars (Sudden Movement, Change, Energy)",
+          "numerology": "16 (Karma, Crisis, Transformation)",
+          "element": "Fire (Demolition, Energy, Sudden Awareness)",
+          "chakra": "Solar Plexus & Root ▪ Power, Rooting, and Chaos"
+        },
+        "card_combinations": {
+          "title": "Combinations With Towers",
+          "combinations": {
+            "0": {
+              "card": "Satan (The Devil)",
+              "meaning": "Facing addictions and shadowy sides strengthens the destruction of the Tower."
+            },
+            "1": {
+              "card": "Death",
+              "meaning": "The end of old structures and new beginnings speed up the transformation process."
+            },
+            "2": {
+              "card": "Star (The Star)",
+              "meaning": "After crisis and destruction, hope and spiritual recovery emerge."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Tower Card Approvement",
+          "affirmation_list": {
+            "0": "I accept and learn unexpected changes.",
+            "1": "I see the destruction of old buildings and I'm free.",
+            "2": "I'm rebuilding with my own light and awareness."
+          }
+        },
+        "cta": {
+          "main": "Notice the sudden change, be free and rebuild!",
+          "micro": "Let go of an old structure today or learn a lesson from the crisis."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the tower card represent?",
+            "answer": "Sudden destruction, unexpected changes, represents facing crisis and reality, a call for awareness and transformation."
+          },
+          "1": {
+            "question": "What does the Reverse Tower mean?",
+            "answer": "The reverse position indicates that the effects of destruction can be eased or prevented."
+          },
+          "2": {
+            "question": "In what areas is the tower card powerful?",
+            "answer": "The crisis is powerful in the fields of sudden change, awareness, confrontation with ancient structures, and spiritual transformation."
+          }
+        },
+        "related_cards": {
+          "0": "death",
+          "1": "the-devil",
+          "2": "the-star"
+        },
+        "imageUrl": "/cards/rws/XVI-Tower.webp"
+      },
+      "the-star": {
+        "name": "Star ▪ Hope, Inspiration and Spiritual Healing",
+        "short_description": "The star card is a symbol of hope, innovation and inspiration, which represents spiritual healing and a safe view of the future.",
+        "meanings": {
+          "upright": {
+            "general": "The star is a symbol of hope and inspiration followed by darkness, following the light of inner guidance, in the time of spiritual and personal renewal, discovering confidence in yourself and the universe, inner peace and balance.",
+            "love": "In love, the Star brings intimacy, transparency and hope, communication and trust come from the heart, and it's possible to heal in a new relationship or in the current bond.",
+            "career": "On its way to the career, Star shows that inspiration, creativity and vision are at the forefront, and there are opportunities in creative projects for success and the implementation of new ideas.",
+            "money": "Financial balance can be achieved in material matters, through hope and planning, and confidence and intuition of the future directs the right investments and steps.",
+            "spiritual": "In a spiritual sense, the Star represents healing, inner enlightenment, and universal connection, meditation, intentional work and intuition strengthen spiritual development."
+          },
+          "reversed": {
+            "general": "Reverse Star points to despair, disappointment, or loss of direction, rethink your hopes and focus on getting better with small steps.",
+            "love": "There may be a lack of trust or communication issues in the relationship, so balance it with patience and open communication.",
+            "career": "There may be a loss of motivation or lack of inspiration in the career.",
+            "money": "There is a risk of anxiety and uncertainty in material matters, and it is important to act planned and consciously.",
+            "spiritual": "It could be a sense of dissociativeness or a lack of healing, reconnect with meditation and awareness."
+          }
+        },
+        "context": {
+          "mythology": "The star card is associated with Venus and stars in mythology, with light of hope and guidance, known in ancient times as guiding light; it guides in the dark.",
+          "celtic_cross": {
+            "future": "In the future, hope, inspiration, and spiritual guidance await you.",
+            "hidden_influences": "The positive energy and intuition around you, or within you, guide your decisions and your development."
+          }
+        },
+        "story": {
+          "title": "Starlight and Regeneration",
+          "description": "A woman pours water into the water in the light of a shining star in the sky; it represents spiritual healing and regeneration. Light guides and carries hope in darkness. It reminds her of trust in the heart and soul; every drop carries energy and healing.",
+          "historytitle": "Historical Origin: Guidance of Light",
+          "history_message": "The star card is depicted as a symbol of hope and guidance in Renaissance tarots, and stars guide the future as a symbol of navigation and light.",
+          "mystic_title": "Spiritual Meaning - Hope and Inspiration",
+          "mystic_message": "The star is a call for access to spiritual healing, inspiration and universal guidance, to increase inner light with meditation and intent, to feel hope and balance.",
+          "cultural_title": "Modern Comment: Inspiration and Regeneration",
+          "cultural_message": "Today, the Star represents spiritual and personal development through motivation, hope, and inspiring projects, and notice your own light and guide others.",
+          "lesson": "The star teaches you to be reborn with hope, healing, and inspiration. Trust in yourself, follow your inner guidance, and find your light in the dark."
+        },
+        "keywords": {
+          "keywords_title": "Star Card Keywords",
+          "keywords_message": "stellar tarot meaning, the star tarot is a genre, hope, inspiration, spiritual healing, renewal, tarot guidance",
+          "positive_title": "Positive Themes",
+          "positive_message": "Hope, inspiration, healing, renewal, guidance, inner peace, spiritual balance.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "When you feel disappointment or despair, remember the light and guidance, step by step.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Follow your inner light, hope and accept spiritual healing."
+        },
+        "associations": {
+          "title": "Cosmic Connections of the Star Card",
+          "astrology": "Bucket Burcu (Freedom, Renewal, Inspiration)",
+          "numerology": "17 (Hope, Inspiration, Creative Regeneration)",
+          "element": "Air (Mind, Inspiration, Regeneration)",
+          "chakra": "Heart & Third Eye  (Hope, Intuition and Healing)"
+        },
+        "card_combinations": {
+          "title": "Combinations With Stars",
+          "combinations": {
+            "0": {
+              "card": "Tower (The Tower)",
+              "meaning": "After the destruction comes hope and healing, rebirth after the crisis."
+            },
+            "1": {
+              "card": "Sun (The Sun)",
+              "meaning": "It brings inspiration and joy, combined with positive energy and success."
+            },
+            "2": {
+              "card": "Ermiş (The Hermit)",
+              "meaning": "Internal guidance and silence strengthen hope and light."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Star Card Approves",
+          "affirmation_list": {
+            "0": "I see the light in me, and I move with hope.",
+            "1": "I accept spiritual healing and inspiration.",
+            "2": "I travel with confidence and balance every step of the way."
+          }
+        },
+        "cta": {
+          "main": "Follow hope and light, accept spiritual healing!",
+          "micro": "Create an inspiration today or notice its inner light."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the star card represent?",
+            "answer": "Hope represents inspiration, spiritual healing and regeneration, and it reminds of the light and trust of the post-depression."
+          },
+          "1": {
+            "question": "What does the Reverse Star mean?",
+            "answer": "The reverse position points to despair, loss of inspiration, lack of motivation, rebalance with small steps."
+          },
+          "2": {
+            "question": "In what areas is the star card powerful?",
+            "answer": "Hope is powerful in the fields of inspiration, spiritual healing, regeneration, motivation and creative projects."
+          }
+        },
+        "related_cards": {
+          "0": "the-tower",
+          "1": "the-sun",
+          "2": "the-hermit"
+        },
+        "imageUrl": "/cards/rws/XVII-Star.webp"
+      },
+      "the-moon": {
+        "name": "Moon, Subliminal, Intuitive and Mystery",
+        "short_description": "The Moon Card is a symbol of unknown, intuitive and mysterious energy, which points to awareness and internal guidance on spiritual journeys.",
+        "meanings": {
+          "upright": {
+            "general": "The moon is the card of subconscious, intuition and mysterious processes, facing invisible forces and emotional fluctuations, listen to your inner voice, trust your intuition, and don't be afraid to face the unknown.",
+            "love": "In love, the Moon represents emotional complexity and unknowns, and trust in your intuition, there may be hidden feelings or uncertainty in relationships.",
+            "career": "There may be uncertainty and hidden interactions in your career, so follow your clues carefully and use your intuition as a guide.",
+            "money": "Given the risks and unknown factors, act intuitively.",
+            "spiritual": "On the spiritual journey, the Moon is associated with subconscious exploration and dream studies, which increase meditation, symbols, and inner observation spiritual awareness."
+          },
+          "reversed": {
+            "general": "The Reverse Moon means delusions, confusion and lack of intuition, so be careful to see the facts clearly, stay alert to misleading situations."
+          }
+        }
+      }
+    }
+  }
+}

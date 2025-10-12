@@ -1,0 +1,776 @@
+{
+  "money": {
+    "meanings": {
+      "fourofpentacles": {
+        "position5": {
+          "keywords": [
+            "štedljiv",
+            "zaštita",
+            "uverenje",
+            "kontrola",
+            "odgovornost"
+          ],
+          "context": "Frugalni pristup ili pretjeranu kontrolu dolazi do izražaja finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Četiri pentaklova ukazuje na potrebu traženja bezbednosti u finansijskim planovima, da bi sačuvala i očuvala resurse.",
+          "reversed": "Uokrećena četiri pentakla ukazuje na prekomernu konzervativnost, škiljenost ili gubitak kontrole.",
+          "keywords": [
+            "sigurnost",
+            "akumulacija",
+            "zaštita",
+            "kontrola",
+            "štedljiv"
+          ],
+          "context": "Bezbednost ili ekstremni konzervativizam biće efikasan u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Četiri pentacles signalizira u buduće finansijske planove, tražeći sigurnost i želju da sačuvaju ono što je pri ruci.",
+          "reversed": "Preokrećena četvorica pentakla ukazuje da će preterana špica, gubitak kontrole ili nepotrebna potrošnja opteretiti finansijsko poverenje.",
+          "keywords": [
+            "štedljiv",
+            "zaštita",
+            "uverenje",
+            "kontrola",
+            "konzervativizam"
+          ],
+          "context": "Očuvanje ili višak biće istaknuti u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Četiri pentakla pokazuju da održavanje finansijske sigurnosti, što je štedljivo i sposobnost upravljanja vlasništvom podržavaju sposobnosti donošenja novca.",
+          "reversed": "Preokrećena četvorica pentakla ukazuje da se mogu propustiti mogućnosti za rast zbog pretjerane šljokice, pohlepe ili straha gubitka.",
+          "keywords": [
+            "sigurnost",
+            "zaštita",
+            "stav",
+            "upravljanje resursima",
+            "kontrola"
+          ],
+          "context": "Vaša sposobnost zarađivanja novca je povezana sa sigurnošću ili je ograničena."
+        }
+      },
+      "fiveofpentacles": {
+        "position1": {
+          "upright": "Pet pentakova ukazuje na anksioznost o lišenju i isključenju. Možda se plašite da budete finansijski sami.",
+          "reversed": "Pet Pentaklova obrnuta ukazuje na anksioznost da se ne može oporaviti i ostaviti bez pomoći. Možete se brinuti da ne pronalazite podršku u budućnosti.",
+          "keywords": [
+            "uskraćivanje",
+            "anksioznost",
+            "podrška",
+            "usamljenost",
+            "Finansijske poteškoće"
+          ],
+          "context": "Anksioznost nastaje od uskraćivanja i nedostatka podrške."
+        },
+        "position2": {
+          "upright": "Pet pentakova ukazuje da pokušavate da pronađete sigurnost okrenutom uskraćivanjem i traženjem podrške. Pomozite da vrata daju samopouzdanje.",
+          "reversed": "Pet Pentaklova obrnuta ukazuje na anksioznost da se ponovo gubi tokom procesa oporavka. Želja za sigurnost uzdrma se usamljenost.",
+          "keywords": [
+            "uskraćivanje",
+            "podrška",
+            "sigurnost",
+            "pomoći",
+            "oporavak"
+          ],
+          "context": "Nalazite sigurnost pozivom na podršku."
+        },
+        "position3": {
+          "upright": "Pet pentakova ukazuje na svest o oskudici i strahu od gubitka u upotrebi novca. Privremene poteškoće mogu prevladati.",
+          "reversed": "Invertirani Pet stanovnika ukazuje na postupak oporavka i pronalaženja podrške. Mogu se pojaviti novi resursi.",
+          "keywords": [
+            "glad",
+            "gubitak",
+            "anksioznost",
+            "podrška",
+            "novac"
+          ],
+          "context": "Osjećaj oskudice može dominirati upotrebom novca."
+        },
+        "position4": {
+          "upright": "Možda su bili finansijski gubici, uskraćivanje i teška vremena u prošlosti.",
+          "reversed": "Otkriveni pet pentakla ukazuje da ste u toku oporavka od finansijskih teškoća.",
+          "keywords": [
+            "uskraćivanje",
+            "gubitak",
+            "novac",
+            "težak period",
+            "oporavak"
+          ],
+          "context": "Bilo je teških vremena u vezi sa novcem u prošlosti."
+        },
+        "position5": {
+          "upright": "Pet pentaka predstavlja lišavanje, gubitak finansijskih odgovornosti ili potrebu za podrškom.",
+          "reversed": "Pet Pentaklova obrnuta ukazuje na postupak oporavka od finansijskih odgovornosti, pronalaženje novih mogućnosti ili podrške.",
+          "keywords": [
+            "uskraćivanje",
+            "podrška",
+            "izvor",
+            "oporavak",
+            "odgovornost"
+          ],
+          "context": "Gubitak ili oporavak je na čelu u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Pet pentaklama ukazuje na gubitak, odsustvo ili finansijske poteškoće u finansijskim planovima.",
+          "reversed": "Preokrećeno pet stanovnika ukazuje na oporavak, pronalaženje podrške i kretanja ka finansijskom oporavku.",
+          "keywords": [
+            "gubitak",
+            "problem",
+            "podrška",
+            "oporavak",
+            "poboljšanje"
+          ],
+          "context": "Gubitak ili oporavak dolazi do predloga novih finansijskih planova."
+        },
+        "position7": {
+          "upright": "Pet pentakala može ubuduće ubuduće moglo da postavi poteškoće, gubitak ili traženje podrške u finansijskim planovima. To ukazuje na privremenu nevolju.",
+          "reversed": "Pet Pentaklova obrnuta ukazuje na postupak oporavka, pronalaženje novih izvora podrške i finansijskog oporavka.",
+          "keywords": [
+            "gubitak",
+            "uskraćivanje",
+            "podrška",
+            "poboljšanje",
+            "izdržljivost"
+          ],
+          "context": "Poteškoće ili oporavak će odrediti buduće finansijske planove."
+        },
+        "position8": {
+          "upright": "Pet pentakova pokazuje da otpornost i lekcije naučene iz poteškoća poboljšavaju sposobnosti donošenja novca.",
+          "reversed": "Preokrećena pet pentakla pokazuje da se proces oporavka, pronalaženje podrške i vraćanja na veštine vaših stopala mogu poboljšati.",
+          "keywords": [
+            "poteškoće",
+            "izdržljivost",
+            "pomoći",
+            "oporavak",
+            "snaga"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa učenjem iz poteškoća ili gubitka nade."
+        }
+      },
+      "sixofpentacles": {
+        "position1": {
+          "upright": "Šest stanovnika ukazuje na anksioznost da ne prima pošteno udeo. Možete se bojati nejednake raspodjele resursa.",
+          "reversed": "Preokrećena šest pentakala otkriva anksioznost o tome da postane zavisna ili eksploatirana. Možda ćete se brinuti o nepravdi u finansijskim odnosima.",
+          "keywords": [
+            "deljenje",
+            "anksioznost",
+            "pravda",
+            "nejednakost",
+            "poverenje"
+          ],
+          "context": "Anksioznost proizilazi iz straha od nejednake deljenja i eksploatacije."
+        },
+        "position2": {
+          "upright": "Šest stanovnika ukazuje da se neko traži bezbednost putem pravednog deljenja i ravnoteže. Davanje i primanje donosi mir.",
+          "reversed": "Uokrećeno šest pentakla ukazuje na anksioznost zbog neuravnotežene kupovine. Želja za sigurnost oslabljena je nedostatkom pravde.",
+          "keywords": [
+            "deljenje",
+            "ravnoteža",
+            "sigurnost",
+            "pravda",
+            "pomoći"
+          ],
+          "context": "Pronalazite sigurnost u pravilnom delivanju."
+        },
+        "position3": {
+          "upright": "Šest stanovnika ukazuje na ravnotežu i pravednije deljenje u upotrebi novca. Davanje i primanje su u skladu.",
+          "reversed": "Uokrećena šest pentakala ukazuje na uslovne pomaganje ili neravnoteže napajanja.",
+          "keywords": [
+            "ravnoteža",
+            "deljenje",
+            "pomoći",
+            "pravda",
+            "izvor"
+          ],
+          "context": "Pošteno deljenje dolazi do izražaja u upotrebi novca."
+        },
+        "position4": {
+          "upright": "U prošlosti, finansijska pomoć, ravnoteža i deljenje možda su došli do izražaja.",
+          "reversed": "Uopšteno je šest pentakova, neuravnotežene pomoći ili neuzvraćena očekivanja.",
+          "keywords": [
+            "deljenje",
+            "pomoći",
+            "novac",
+            "ravnoteža",
+            "velikodušnost"
+          ],
+          "context": "U prošlosti su se finansijski resursi koristili sa fokusom koji dele."
+        },
+        "position5": {
+          "upright": "Šest pentakova označava ravnotežu, deljenje i međusobnu podršku u finansijskim odgovornostima. Jednakost je važna.",
+          "reversed": "Okolišta je šest pentakla, nejednakost u finansijskim odgovornostima, zavisni odnosi ili nepravda mogu prouzrokovati probleme.",
+          "keywords": [
+            "ravnoteža",
+            "deljenje",
+            "podrška",
+            "pravda",
+            "odgovornost"
+          ],
+          "context": "U finansijskim odgovornostima se vidi pravedni deljenje ili nejednakost."
+        },
+        "position6": {
+          "upright": "Šest stanovnika ukazuje na pravedno podele, davanje i primanje podrške i saradnje u finansijskim planovima.",
+          "reversed": "Invertirano šest talismana ukazuje na neuravnoteženu pomoć, neuzvraćenu pomoć ili odnos interesa.",
+          "keywords": [
+            "deljenje",
+            "pomoći",
+            "ravnoteža",
+            "podrška",
+            "pravda"
+          ],
+          "context": "Pošteno deljenje ili neravnoteža dolazi u predru u nove finansijske planove."
+        },
+        "position7": {
+          "upright": "Šest pentaklama naglašava ravnotežu, pravdu i međusobnu pomoć u finansijskim planovima u budućnosti. Zadržava se ravnoteža davanja i prijem.",
+          "reversed": "Prekoračenje šest pentakla ukazuje da neravnoteža, zavisnost ili uslovna pomoć može prouzrokovati probleme.",
+          "keywords": [
+            "ravnoteža",
+            "pomoći",
+            "pravda",
+            "jednakost",
+            "deljenje"
+          ],
+          "context": "Pošteno deljenje ili neravnoteža biće efikasni u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Šest pentakla ukazuje da je deljenje, velikodušnost i sposobnost da se povećaju finansijski potencijal.",
+          "reversed": "Prekoračenje šest pentakla ukazuje da neravnoteža moći, zavisnosti ili sukoba interesa može oslabiti njihove sposobnosti.",
+          "keywords": [
+            "deljenje",
+            "ravnoteža",
+            "pomoći",
+            "jednakost",
+            "velikodušnost"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa deljenjem ili neravnotežom."
+        }
+      },
+      "sevenofpentacles": {
+        "position1": {
+          "upright": "Sedam pentakla ukazuje na anksioznost da se ne nagradi za nečije napore. Možda ćete se plašiti da finansijska pojaka koju očekujete neće doći.",
+          "reversed": "Invertirani sedam pentakla ukazuje na zabrinutost zbog pogrešnih investicija i izgubljeno vreme. Možete se brinuti da će vaš trud biti izgubljen.",
+          "keywords": [
+            "rad",
+            "anksioznost",
+            "investicija",
+            "očekivanje",
+            "vreme"
+          ],
+          "context": "ANKSIETEST proizlazi da se ne nagrađuju za nečije napore."
+        },
+        "position2": {
+          "upright": "Sedam stanovnika ukazuje da tražite sigurnost kroz strpljenje i dugoročno planiranje. Čeka se donosi mir.",
+          "reversed": "Reversed Sedam stanovnika ukazuje na nestrpljenje i zabrinutost zbog gubitka vremena. Želja za sigurnost uzdrma se žurba.",
+          "keywords": [
+            "strpljenje",
+            "plan",
+            "sigurnost",
+            "čekati",
+            "investicija"
+          ],
+          "context": "Smatrate sigurnost sa strpljenjem i dugoročno planiranje."
+        },
+        "position3": {
+          "upright": "Sedam stanovnika ukazuje na strpljenje i dugoročno planiranje u upotrebi novca. Nagrada vaših napora dolazi s vremenom.",
+          "reversed": "Reversed Sedam stanovnika ukazuje na anksioznost koja je dovela nestrpljenje ili pogrešna ulaganja.",
+          "keywords": [
+            "strpljenje",
+            "investicija",
+            "čekati",
+            "rad",
+            "plan"
+          ],
+          "context": "Strpljenje i dugoročna vizija dolaze uruka prilikom korišćenja novca."
+        },
+        "position4": {
+          "upright": "Strpljenje, dugoročne investicije i evaluacije možda su došli do izražaja u prošlosti.",
+          "reversed": "Invertirani sedam pentakla, gubici su se dogodili zbog nestrpljenja i potrage za kratkoročnom dobitkom.",
+          "keywords": [
+            "strpljenje",
+            "investicija",
+            "novac",
+            "procena",
+            "čekanje"
+          ],
+          "context": "U prošlosti su finansijska pitanja oblikovana dugoročnim ulaganjima."
+        },
+        "position5": {
+          "upright": "Sedam pentakla ukazuje na strpljenje, dugoročno planiranje i procena u finansijskim odgovornostima.",
+          "reversed": "Reversed Sedam pentakla ukazuje na nestrpljenje sa finansijskim odgovornostima, očekujući ispričane rezultate ili pogrešne investicije.",
+          "keywords": [
+            "strpljenje",
+            "planiranje",
+            "procena",
+            "investicija",
+            "odgovornost"
+          ],
+          "context": "Strpljenje ili nestrpljenje je određivanje faktora finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Sedam stanovnika ukazuje na strpljenje, procena i dugoročna investiciona vizija u finansijskim planovima.",
+          "reversed": "Preokrećeno sedam pentakla ukazuje na nestrpljenje, gnojiti ili gubljenje vremena.",
+          "keywords": [
+            "strpljenje",
+            "investicija",
+            "dugoročan",
+            "procena",
+            "vizija"
+          ],
+          "context": "Strpljenje ili nestrpljenje će biti efikasno u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Sedam pentakla ukazuje na strpljenje u budućim finansijskim planovima, dugoročnim ulaganjima i procesom očekivanja nagrade za napor.",
+          "reversed": "Reversed Sedam stanovnika ukazuje na nestrpljenje, kratkoročno razmišljanje ili rizik pogrešnih investicija.",
+          "keywords": [
+            "strpljenje",
+            "investicija",
+            "procena",
+            "prinos",
+            "čekanje"
+          ],
+          "context": "Strpljenje ili nestrpljenje će doći do zaruka u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Sedam pentakla ukazuje da strpljenje, procena i sposobnost planiranja dugoročnog podrške sposobnostima donošenja novca.",
+          "reversed": "Reversed Sedam pentakla ukazuje na gubitke zbog nestrpljenja, kratkoročno razmišljanja ili pogrešnih investicija.",
+          "keywords": [
+            "strpljenje",
+            "planiranje",
+            "procena",
+            "investicija",
+            "čekati"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa strpljenjem ili nestrpljenjem."
+        }
+      },
+      "eightofpentacles": {
+        "position1": {
+          "upright": "Osam stanovnika ukazuje na anksioznost zbog nesposobnosti i neispravnosti. Možda ćete se plašiti da se vaši napori neće vrednuju.",
+          "reversed": "Oporačeni osam stanovnika ukazuje na zabrinutost za nepažnju i nepažnju. Možete se brinuti da ne razvijate dovoljno veština.",
+          "keywords": [
+            "savladav",
+            "anksioznost",
+            "veština",
+            "greška",
+            "trud"
+          ],
+          "context": "ANKSIETEST proizlazi da ne bude dovoljno stručno i pravljenje grešaka."
+        },
+        "position2": {
+          "upright": "Osam stanovnika ukazuje da neko traži sigurnost putem radnog i razvoja veština. Rad pruža mir.",
+          "reversed": "Otkriveno osam stanovnika ukazuje na zabrinutost zbog nepažnje i nespremnosti. Želja za sigurnost oslabljena je indisciplinom.",
+          "keywords": [
+            "studija",
+            "veština",
+            "sigurnost",
+            "učenje",
+            "rad"
+          ],
+          "context": "Nalazite sigurnost kroz marljivost i trud."
+        },
+        "position3": {
+          "upright": "Osam stanovnika ukazuje na poboljšanje disciplinovanom studijom i učenjem u upotrebi novca. Rashodi su za obuku i savladavanje.",
+          "reversed": "Otkriveno osam stanovnika ukazuje na gubitke zbog nepažnje ili nepažljivog finansijskog planiranja.",
+          "keywords": [
+            "disciplina",
+            "učenje",
+            "savladav",
+            "rad",
+            "novac"
+          ],
+          "context": "Disciplina i učenje dolaze na prvi plan u upotrebi novca."
+        },
+        "position4": {
+          "upright": "Disciplinovani rad, razvoj poslovanja i finansijski majstori možda su u prošlosti došli do izražaja.",
+          "reversed": "Invertirano osam stanovnika, uticali su do prihoda zbog nežiljke ili gubitka motivacije.",
+          "keywords": [
+            "studija",
+            "savladav",
+            "novac",
+            "trud",
+            "razvoj"
+          ],
+          "context": "U prošlosti je finansijska situacija oblikovala disciplinovani rad."
+        },
+        "position5": {
+          "upright": "Osam stanovnika predstavlja proces discipline, marljivosti i savladavanja finansijskih odgovornosti.",
+          "reversed": "Otkriveni osam pentakla stvara probleme sa nepažljima u finansijskim odgovornostima, nedovršenim poslovima ili nedostatkom motivacije.",
+          "keywords": [
+            "studija",
+            "disciplina",
+            "savladav",
+            "briga",
+            "odgovornost"
+          ],
+          "context": "Napor ili nepažljivost dolazi do izražaja finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Osam stanovnika ukazuje na disciplinu, rad, savladavanje finansijskih planova i redovne zarade.",
+          "reversed": "Otkriveno osam stanovnika ukazuje na nepropusnost, gubitak motivacije ili lošeg kvaliteta.",
+          "keywords": [
+            "disciplina",
+            "studija",
+            "savladav",
+            "zaraditi",
+            "narediti"
+          ],
+          "context": "Disciplina ili nedostatak nege biće određivani faktor u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Osam stanovnika ukazuje da će disciplina, napor i redovan rad u finansijskim planovima u budućnosti donijeti finansijsku sigurnost.",
+          "reversed": "Oporedila osam pentakla ukazuje da će nerazpnenost, gubitak motivacije ili neorganizovani rad dovesti do kvara.",
+          "keywords": [
+            "rad",
+            "studija",
+            "disciplina",
+            "učenje",
+            "uspeh"
+          ],
+          "context": "Disciplina ili neorganizacija biće efikasni u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Osam stanovnika pokazuje da disciplina, kontinuirano učenje i zanatstvo poboljšava finansijske veštine.",
+          "reversed": "Oporedila osam stanovnika ukazuje da vaše veštine mogu biti oslabljene nepažnjom, nepažnjom ili nepoštovanjem za vaš rad.",
+          "keywords": [
+            "učenje",
+            "izrada",
+            "disciplina",
+            "razvoj",
+            "savladav"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa disciplinom ili nepažnjom."
+        }
+      },
+      "nineofpentacles": {
+        "position1": {
+          "upright": "Devet stanovnika ukazuje na anksioznost da ne može da ostane nezavisna i gubitna sloboda. Možda se plašite da ne možete da stojite na sobe.",
+          "reversed": "Devet preokretanih pentakova ukazuje na anksioznost o zavisnosti i prekomernoj ekstravaranciji. Možete se brinuti zbog gubitka finansijske autonomije.",
+          "keywords": [
+            "nezavisnost",
+            "anksioznost",
+            "sloboda",
+            "autonomija",
+            "ukrštati"
+          ],
+          "context": "Anksioznost proizilazi iz gubitka slobode i nezavisnosti."
+        },
+        "position2": {
+          "upright": "Devet stanovnika pokazuje da tražite sigurnost nezavisnošću i sopstvenim naporima. Samopouzdanje daje mir.",
+          "reversed": "Devet preokreta pentakala ukazuje na anksioznost o zavisnosti i ekstravaranciji. Želja za nesigurnosti upadala u nedostatku samo-vrednog.",
+          "keywords": [
+            "nezavisnost",
+            "poverenje",
+            "sigurnost",
+            "udobnost",
+            "blagostanje"
+          ],
+          "context": "Nalazite sigurnost nezavisnim radom i samo-vrednošću."
+        },
+        "position3": {
+          "upright": "Devet stanovnika ukazuje na nezavisnost i lični prosperitet u upotrebi novca. Rashodi mogu biti za lično zadovoljstvo i udobnost.",
+          "reversed": "Devet preokretanih pentakala ukazuje na gubitak nezavisnosti zbog prevelike zavisnosti ili ekstravagancije.",
+          "keywords": [
+            "nezavisnost",
+            "blagostanje",
+            "udobnost",
+            "sloboda",
+            "novac"
+          ],
+          "context": "Lična nezavisnost dolazi u naruka u upotrebi novca."
+        },
+        "position4": {
+          "upright": "U prošlosti, finansijska nezavisnost, udobnost i nagrađeni za sopstveni rad možda su došli do izražaja.",
+          "reversed": "Devet preokreta Pentacles ukazuje na tendenciju prema zavisnosti ili ekstravaranciji, a ne nezavisnosti.",
+          "keywords": [
+            "nezavisnost",
+            "udobnost",
+            "novac",
+            "rad",
+            "poverenje"
+          ],
+          "context": "U prošlosti su finansijska pitanja zasnovana na nezavisnosti."
+        },
+        "position5": {
+          "upright": "Devet stanovnika označava nezavisnost, udobnost i lično zadovoljstvo finansijskih odgovornosti.",
+          "reversed": "Devet preokrećenih pentakova ukazuje na zavisnost, ekstravaganciju ili prekomernu potrošnju u finansijske odgovornosti.",
+          "keywords": [
+            "nezavisnost",
+            "udobnost",
+            "samopouzdanje",
+            "ukrštati",
+            "odgovornost"
+          ],
+          "context": "Nezavisnost ili zavisnost dolazi do zaruka u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Devet stanovnika ukazuje na nezavisnost, samopouzdanje i finansijsko blagostanje u finansijskim planovima.",
+          "reversed": "Devet preokretanih Pentera-a ukazuje na previsoku zavisnost, ekstravaganciju ili gubitak komfora.",
+          "keywords": [
+            "poverenje",
+            "blagostanje",
+            "nezavisnost",
+            "udobnost",
+            "samopouzdanje"
+          ],
+          "context": "Nezavisnost ili zavisnost doći će na prvi plan u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Devet stanovnika ukazuje na nezavisnost u finansijskim planovima, ličnom komforu i nagradu za napore u budućnosti.",
+          "reversed": "Devet preokretanih preokreta ukazuje da prekomerna zavisnost, ekstravaganost ili popustljivost u luksuzu mogu prouzrokovati probleme.",
+          "keywords": [
+            "nezavisnost",
+            "udobnost",
+            "rad",
+            "nagrada",
+            "poverenje"
+          ],
+          "context": "Nezavisnost ili zavisnost doći će do zaruka u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Devet stanovnika ukazuje da nezavisnost, samo-vredan i postizanje uspeha kroz sopstvene napore pojačavaju sposobnosti donošenja novca.",
+          "reversed": "Devet preokretanih pentakala ukazuje na to da je prevazilaženje, ekstravagance ili nedostatak samo-vrednosti može ograničiti mogućnosti.",
+          "keywords": [
+            "nezavisnost",
+            "samopouzdanje",
+            "uspeh",
+            "blagostanje",
+            "samoefikasnost"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa nezavisnošću ili zavisnošću."
+        }
+      },
+      "tenofpentacles": {
+        "position1": {
+          "upright": "Deset stanovnika ukazuje na tjeskobu da ne mogu uspostaviti stabilnost koja će biti prepuštena budućim generacijama. Možete se bojati da ne možete da stvorite finansijsku zaostavljivost.",
+          "reversed": "Invertirani deset stanovnika ukazuje na porodični finansijski sukob i anksioznost zbog gubitka. Možda ćete se brinuti zbog raspada zajedničkog bogatstva.",
+          "keywords": [
+            "baština",
+            "anksioznost",
+            "stabilnost",
+            "porodica",
+            "budućnost"
+          ],
+          "context": "Anksioznost proizilazi iz nasledstva i nemogućnosti da se uspostavi dugoročna stabilnost."
+        },
+        "position2": {
+          "upright": "Deset stanovnika ukazuje da tražite sigurnost putem porodice, nasledstva i dugoročne strukture. Donosi trajan osnovni mir.",
+          "reversed": "Reversed deset stanovnika ukazuje na anksioznost o porodičnoj ili finansijskoj nesigurnosti. Želja za bezbednošću slabi u nedostatku stalnosti.",
+          "keywords": [
+            "porodica",
+            "stalnost",
+            "sigurnost",
+            "baština",
+            "stabilnost"
+          ],
+          "context": "Vi sigurnosti smatrate dugoročnom porodičnom fondacijom i stabilnošću."
+        },
+        "position3": {
+          "upright": "Deset stanovnika ukazuje na porodicu, nasledstvo i dugoročnu sigurnost u upotrebi novca. Rashodi su usmereni na trajne vrednosti.",
+          "reversed": "Deset pentakova obrnuto može ukazivati na porodične finansijske sporove ili probleme na nasljeđivanju.",
+          "keywords": [
+            "porodica",
+            "baština",
+            "uverenje",
+            "dugoročan",
+            "novac"
+          ],
+          "context": "Porodična i dugoročna sigurnost dolaze u prednji plan kada koriste novac."
+        },
+        "position4": {
+          "upright": "U prošlosti, porodična podrška, nasleđivanje ili dugoročna ušteda možda su obezbedila finansijsku sigurnost.",
+          "reversed": "Deset pentakova obrnut ukazuje na porodične finansijske sporove ili probleme na nasljeđenju.",
+          "keywords": [
+            "porodica",
+            "baština",
+            "novac",
+            "akumulacija",
+            "poverenje"
+          ],
+          "context": "U prošlosti je finansijska sigurnost stigla od porodice ili nasledstva."
+        },
+        "position5": {
+          "upright": "Deset stanovnika predstavlja porodičnu, nasledstvo i dugoročnu sigurnost u finansijskim odgovornostima.",
+          "reversed": "Deset pentakovih obrnutih znači porodične sukobe, probleme nasledstva ili nestabilnost u finansijskim odgovornostima.",
+          "keywords": [
+            "porodica",
+            "baština",
+            "stabilnost",
+            "Dugoročni plan",
+            "odgovornost"
+          ],
+          "context": "Sigurnosni ili porodični problemi su efikasni u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Deset stanovnika ukazuje na trajno bogatstvo, porodično nasleđivanje i dugoročno obezbeđenje u finansijskim planovima.",
+          "reversed": "Deset pentakova obrnut ukazuje na finansijske nemire, porodičnog sukoba ili finansijskog nereda.",
+          "keywords": [
+            "bogatstvo",
+            "sigurnost",
+            "baština",
+            "stabilnost",
+            "porodica"
+          ],
+          "context": "Trajna sigurnost ili poremećaj se igraju u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Deset stanovnika, dugoročna stabilnost, porodična podrška i trajno prosperitet će u budućnosti imati u budućnosti.",
+          "reversed": "Reversed Deset stanovnika ukazuje na probleme nasledstva, finansijskim sporovima u porodici ili neodržive strukture.",
+          "keywords": [
+            "stabilnost",
+            "blagostanje",
+            "porodica",
+            "baština",
+            "kontinuitet"
+          ],
+          "context": "Stalno prosperitet ili porodično trenje će biti istaknuti u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Deset stanovnika ukazuje na dugoročnu sigurnost, porodičnu podršku i nasledstvo, unapređenje sposobnosti donošenja novca.",
+          "reversed": "Ograničeno deset stanovnika ukazuje da finansijsko trenje, porodični sukobi ili kratkoročno razmišljanje mogu smanjiti mogućnosti.",
+          "keywords": [
+            "stabilnost",
+            "porodica",
+            "sigurnost",
+            "dosta",
+            "stalnost"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa dugoročnim sigurnošću ili sukobom."
+        }
+      },
+      "pageofpentacles": {
+        "position1": {
+          "upright": "Princ Pentaklova ukazuje na anksioznost zbog toga što ne može da nauči i stekne nove veštine. Možda ćete se plašiti da nemaju sposobnost da iskoristite finansijske mogućnosti.",
+          "reversed": "Prenoćini princ pentacla otkriva anksioznost nepažnje i nedostatak fokusa. Možete se brinuti da će vaši napori biti raštrkani.",
+          "keywords": [
+            "učenje",
+            "anksioznost",
+            "veština",
+            "fokus",
+            "prilika"
+          ],
+          "context": "Anksioznost proizilazi iz nedostatka učenja i fokusa."
+        },
+        "position2": {
+          "upright": "Princ pentaklova ukazuje da tražite sigurnost kroz učenje i nove mogućnosti. Istraživanje daje duševni mir.",
+          "reversed": "Prekoračeni princ pentakla ukazuje na anksioznost o neorganizaciji i nedostatku motivacije. Želja za bezbednošću oslabljena je gubitkom golova.",
+          "keywords": [
+            "učenje",
+            "početak",
+            "sigurnost",
+            "cilj",
+            "praktičan"
+          ],
+          "context": "Nalazite sigurnost kroz učenje i nove mogućnosti."
+        },
+        "position3": {
+          "upright": "Princ Pentaklova ukazuje na želju za učenjem i iskorištavanjem malih mogućnosti upotrebe novca.",
+          "reversed": "Prenoćini princ Pentacla ukazuje na gubitak resursa zbog nežnog trošenja ili nedostatkom jasnoće ciljeva.",
+          "keywords": [
+            "učenje",
+            "prilika",
+            "cilj",
+            "početak",
+            "novac"
+          ],
+          "context": "Učenje i male mogućnosti dolaze na prvi plan u upotrebi novca."
+        },
+        "position4": {
+          "upright": "Učenje, nove veštine i mali finansijski počeci možda su bili istaknuti u prošlosti.",
+          "reversed": "Okolišteni princ pentakla, nedostaju se prilike zbog odugovlačenja i nepažnje.",
+          "keywords": [
+            "učenje",
+            "početak",
+            "novac",
+            "pokušati",
+            "trud"
+          ],
+          "context": "U prošlosti su u učenju i mali koraci o novcu bili na čelu."
+        },
+        "position5": {
+          "upright": "Princ Pentaklova ukazuje na učenje, novi razvoj veština i male ulaganja u finansijske odgovornosti.",
+          "reversed": "Princ Pentacles-a obrnut ukazuje na rasipnu energiju, odlaganju ili neznanje u preuzimanju finansijskih odgovornosti.",
+          "keywords": [
+            "učenje",
+            "početak",
+            "investicija",
+            "suspenzija",
+            "odgovornost"
+          ],
+          "context": "Učenje ili neorganizacija dolazi do zaruka u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Princ Pentaklova ukazuje na viziju učenja, novih mogućnosti i početaka u finansijskim planovima.",
+          "reversed": "Princ Pentacles obrnut ukazuje na neorganizaciju, odlaganju ili nepravilnu fokusu.",
+          "keywords": [
+            "učenje",
+            "početak",
+            "prilika",
+            "vizija",
+            "iskustvo"
+          ],
+          "context": "Učenje ili neorganizacija će biti efikasno u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Princ Pentaklova ukazuje na učenje, oduzimanje novih prilika i malih, ali stalnih koraka u finansijskim planovima u budućnosti.",
+          "reversed": "Prekontrolirani princ Pentacla ukazuje da će odlaganje, nepažnja ili kratkoročno razmišljanje ograničiti potencijal.",
+          "keywords": [
+            "učenje",
+            "prilika",
+            "početak",
+            "rezolucija",
+            "cilj"
+          ],
+          "context": "Učenje ili odlaganje će biti efikasno u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Princ Pentaklova ukazuje da je otvorenost za učenje, nove ideje i preduzetnički duh povećati sposobnosti donošenja novca.",
+          "reversed": "Prekoračeni princ Pentacles ukazuje da vaše veštine mogu biti oslabljene odlaganjem, nepažnjom ili podcjenjivanjem mogućnosti.",
+          "keywords": [
+            "učenje",
+            "pokušati",
+            "prilika",
+            "pokušati",
+            "početak"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa učenjem ili odlaganjem."
+        }
+      },
+      "knightofpentacles": {
+        "position1": {
+          "upright": "Vitez Pentaklova ukazuje na anksioznost o sporom napretku i nestrpljivima. Možda se plašite da se ne možete kretati brzinom koju želite.",
+          "reversed": "Vitez Pentacles obrnut ukazuje na anksioznost o stagnaciji i sužavanju. Možda ćete biti zabrinuti zbog finansijskih procesa koji ne napreduju.",
+          "keywords": [
+            "stabilnost",
+            "anksioznost",
+            "strpljenje",
+            "spornica",
+            "stabilnost"
+          ],
+          "context": "Anksioznost proizilazi iz sporog napretka i stagnacije."
+        },
+        "position2": {
+          "upright": "Vitez Pentacla označava da on traži sigurnost stalnim radom i strpljenjem. Polako, ali sigurno to donosi mir.",
+          "reversed": "Vitez Pentek-a obrnut ukazuje na anksioznost inercija i nevoljkost. Želja za sigurnost oslabljena je nedostatkom kretanja.",
+          "keywords": [
+            "stabilnost",
+            "strpljenje",
+            "sigurnost",
+            "studija",
+            "rad"
+          ],
+          "context": "Vi sigurnosti smatrate strpljenjem i stabilnošću."
+        },
+        "position3": {
+          "upright": "Vitez Pentaklova ukazuje na stabilnost u upotrebi novca, pažljive i planirane potrošnje.",
+          "reversed": "Vitez Pentacles-a obrnut ukazuje na nedostajuće mogućnosti zbog inercije ili preopterećenosti.",
+          "keywords": [
+            "stabilnost",
+            "plan",
+            "pažnja",
+            "novac"
+          ]
+        }
+      }
+    }
+  }
+}

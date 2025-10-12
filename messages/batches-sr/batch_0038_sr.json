@@ -1,0 +1,957 @@
+{
+  "situationAnalysis": {
+    "modals": {
+      "step3": "Izaberite 7 kartica i pogledajte komentare",
+      "step4": "Sačuvaj čitanje i dobijate e-poštu",
+      "successMessage": "Podjela analize vaše situacije beleže i detaljno analizira. Možete da vidite svoje rezultate sa korisničkog panela.",
+      "successTitle": "Čitanje je uspešno sačuvano!",
+      "writtenReading": "Pismeno čitanje",
+      "writtenReadingText": "Pismeno čitanje; Dostavlja se kao detaljan izveštaj da možete da se držite i vratite kad god želite."
+    }
+  },
+  "spreads": {
+    "career": {
+      "description": "Specijalna 7-kartica širi se za karijeru i poslovni život",
+      "name": "Širenje u karijeri",
+      "positions": [
+        null,
+        {
+          "description": "Procijenite da li je vaša trenutna karijera karijera koju stvarno želite",
+          "title": "Da li je to karijera koju stvarno želim?"
+        },
+        {
+          "description": "Konkretni koraci Možete da preduzmete da biste unapredili svoju karijeru",
+          "title": "Koje korake mogu preduzeti da bih poboljšao svoju karijeru?"
+        },
+        {
+          "description": "Elementi u vašoj karijeri koje ne možete da kontrolišete ili promenite",
+          "title": "Postoje li aspekti moje karijere koje se ne mogu promeniti?"
+        },
+        {
+          "description": "Vaš nivo performansi i truda u vašoj trenutnoj karijeri",
+          "title": "Da li radim najbolje što mogu u svojoj karijeri?"
+        },
+        {
+          "description": "Promjene i poboljšanja koja će pozitivno doprinijeti vašoj karijeri",
+          "title": "Koje promene mogu da učinim to će pomoći mojoj karijeri?"
+        },
+        {
+          "description": "Kako vaša prošla iskustva utiču na vašu trenutnu karijeru",
+          "title": "Koje prepreke u mojoj prošlosti utiču na moju trenutnu karijeru?"
+        },
+        {
+          "description": "Sveukupni ishod vašeg putovanja u karijeri i buduće predviđanja",
+          "title": "Šta će biti rezultat?"
+        }
+      ]
+    },
+    "love": {
+      "description": "Specijalna 4-kartica širi se za pitanja ljubavi i odnosa",
+      "name": "Ljubavna ekspanzija",
+      "positions": [
+        null,
+        {
+          "description": "Osoba o kojoj pitate",
+          "title": "Osoba o kojoj pitate"
+        },
+        {
+          "description": "Vaša fizička i seksualna veza",
+          "title": "Vaša fizička i seksualna veza"
+        },
+        {
+          "description": "Vaša emocionalna i duhovna veza",
+          "title": "Vaša emocionalna i duhovna veza"
+        },
+        {
+          "description": "Dugoročni ishod odnosa",
+          "title": "Dugoročni ishod odnosa"
+        }
+      ]
+    },
+    "marriage": {
+      "description": "Specijalna 10-kartica širi se za brak i pronalaženje supružnika",
+      "name": "Proširenje braka",
+      "positions": [
+        null,
+        {
+          "description": "To pokazuje opšti rezultat vašeg procesa braka i kako će to napredovati.",
+          "title": "Šta će biti rezultat?"
+        },
+        {
+          "description": "Pokazuje vam kako da se poboljšate dok ne pronađete pravu osobu.",
+          "title": "Šta da radim dok čekam supružnika?"
+        },
+        {
+          "description": "Pokazuje vašu harmoniju i deljenje u finansijskim pitanjima u braku.",
+          "title": "Da li ćemo da podelimo naša finansijska sredstva jedni sa drugima?"
+        },
+        {
+          "description": "Pokazuje da li su obe strane spremne za brak i žele da se obavežu.",
+          "title": "Da li ćemo oboje želeti da se obavežemo?"
+        },
+        {
+          "description": "Pokazuje vaše zajedničke vrednosti, sličnosti i kompatibilnost.",
+          "title": "Hoćemo li imati sličnosti?"
+        },
+        {
+          "description": "Pokazuje odobrenje porodice i kako će biti vaši porodični odnosi.",
+          "title": "Da li će me porodica ove osobe prihvatiti?"
+        },
+        {
+          "description": "Pokazuje vam kako da se upoznate i datum da se sastanete pravom osobom.",
+          "title": "Kako ćemo se naći?"
+        },
+        {
+          "description": "Pokazuje vašu kompatibilnost komunikacije i vaš kapacitet da se razumeju jedni druge.",
+          "title": "Hoćemo li se moći složiti?"
+        },
+        {
+          "description": "Pokazuje karakteristike vašeg idealnog partnera i osobe koja će biti kompatibilna sa vama.",
+          "title": "Kakav je partner pogodan za mene?"
+        },
+        {
+          "description": "Pokazuje vaš brak i vaše šanse da se venčate.",
+          "title": "Da li ću se moći venčati?"
+        }
+      ]
+    },
+    "money": {
+      "description": "Piramida sa 8 kartica širi se za finansijsku situaciju i novčana pitanja",
+      "name": "Proširenje valute",
+      "positions": [
+        null,
+        {
+          "description": "Da li se brineš zbog novca?",
+          "title": "Anksioznost novca"
+        },
+        {
+          "description": "Želja za finansijskom sigurnošću",
+          "title": "Želja za finansijskom sigurnošću"
+        },
+        {
+          "description": "Kako mogu da koristim novac na način koji me čini srećnom?",
+          "title": "Upotreba novca"
+        },
+        {
+          "description": "Moj prošli stav prema novcu",
+          "title": "Prošli novac"
+        },
+        {
+          "description": "Koje su moje odgovornosti za finansijski dobar život?",
+          "title": "Finansijske odgovornosti"
+        },
+        {
+          "description": "Moji novi planovi u vezi sa mojim finansijskim ulaganjima ili uštedom",
+          "title": "Novi finansijski planovi"
+        },
+        {
+          "description": "Moji budući planovi u vezi sa novcem",
+          "title": "Budući planovi novca"
+        },
+        {
+          "description": "Koje posebne veštine moram da zaradim novac?",
+          "title": "Novčane sposobnosti"
+        }
+      ]
+    },
+    "newLover": {
+      "description": "Specijalna 6-kartica širi se za novi ljubavni odnos",
+      "name": "Otvaranje novog ljubavnika",
+      "positions": [
+        null,
+        {
+          "description": "Pokazuje vaš budući odnosni potencijal",
+          "title": "Da li ću uskoro da imam novu vezu?"
+        },
+        {
+          "description": "Prikazuje astrološke karakteristike vašeg budućeg partnera",
+          "title": "Od kojih će horoskopski znak biti ta osoba?"
+        },
+        {
+          "description": "Pokazuje harmoniju i disharmoniju u vašoj vezi.",
+          "title": "Da li ćemo biti kompatibilni jedni sa drugima?"
+        },
+        {
+          "description": "Prikazuje kontinuitet i dubinu vaše veze",
+          "title": "Da li će to biti dugoročna veza?"
+        },
+        {
+          "description": "Pokazuje potencijal za duhovnu vezu i duboku ljubav",
+          "title": "Da li je ova osoba mogla da bude moja duša?"
+        },
+        {
+          "description": "Prikazuje verovatnoću da se vaša ljubavna želja ostvari",
+          "title": "Da li će se moja želja ostvariti?"
+        }
+      ]
+    },
+    "problemSolving": {
+      "data": {
+        "detailedTitle": "Proširenje za rešavanje problema - Detaljno lično čitanje"
+      },
+      "description": "Detaljna ekspanzija sa 10 kartica za analizu problema i rešenje",
+      "name": "Progrevanje problema",
+      "positions": [
+        null,
+        {
+          "description": "Glavno pitanje ili pitanje koje predstavlja osnovu širenja",
+          "title": "Postavljeno pitanje"
+        },
+        {
+          "description": "Glavna prepreka ili izazov na problem",
+          "title": "Prepreka problema"
+        },
+        {
+          "description": "Podsvesno poreklo ili prošli uticaji predmeta",
+          "title": "Istorija podsvesnih tema"
+        },
+        {
+          "description": "Najbolja situacija koju možemo postići za sebe u vezi s tim je",
+          "title": "Najbolji potencijal"
+        },
+        {
+          "description": "Nedavni događaji ili uticaji na temu",
+          "title": "Nedavna istorija"
+        },
+        {
+          "description": "Mogući razvoj predmeta u bliskoj budućnosti",
+          "title": "U blizini budućnosti"
+        },
+        {
+          "description": "Naša trenutna situacija, naša trenutna situacija na ovoj temi",
+          "title": "Trenutna situacija"
+        },
+        {
+          "description": "Spoljni faktori, uslovi životne sredine koji utiču na to pitanje",
+          "title": "Spoljni uticaji"
+        },
+        {
+          "description": "Naši unutrašnji strahovi i strepnje o tom pitanju",
+          "title": "Strahovi i strepnje"
+        },
+        {
+          "description": "Konačni ishod pitanja ili događaja, njegovo moguće rešenje",
+          "title": "Rezultat incidenta"
+        }
+      ]
+    },
+    "relationshipAnalysis": {
+      "data": {
+        "detailedTitle": "Ekspanzija analize odnosa - detaljno lično čitanje"
+      },
+      "description": "Specijalna 7-kartica širi se za analizu odnosa i procenu",
+      "name": "Ekspanzija analize odnosa",
+      "positions": [
+        null,
+        {
+          "description": "Pruža informacije o trenutnim uslovima odnosa, njegova trenutna situacija i atmosferu stvorene bilo kakvim problemima.",
+          "title": "Trenutna situacija"
+        },
+        {
+          "description": "Pokazuje vaša osećanja, misli i perspektivu na partneru. Odražava vaše emocionalne stanje u vezi.",
+          "title": "Vaša osećanja"
+        },
+        {
+          "description": "Pokazuje vaše zabrinutosti, očekivanja i snove o vašem odnosu ili situaciji u kojoj se nalazite.",
+          "title": "Vaša očekivanja"
+        },
+        {
+          "description": "To uključuje preporuke o vašem stavu prema kursu vašeg odnosa. Pokazuje vam kako biste trebali da se ponašate.",
+          "title": "Preporuke"
+        },
+        {
+          "description": "Vodi vas o stavu koji bi trebalo da usvojite u ovom odnosu ili postojećem problemu i kojim putem da sledi.",
+          "title": "Mapa puta"
+        },
+        {
+          "description": "Pokazuje zabrinutost vašeg partnera, očekivanja i snove o vašem odnosu ili situaciji u kojoj se nalazite.",
+          "title": "Očekivanja vašeg partnera"
+        },
+        {
+          "description": "Pokazuje osećanja vašeg partnera, misli i perspektivu. Odražava emocionalno stanje odnosa.",
+          "title": "Osećanja vašeg partnera"
+        }
+      ]
+    },
+    "relationshipProblems": {
+      "data": {
+        "detailedTitle": "Problemi sa vezama Objašnjenje - detaljno lično čitanje"
+      },
+      "description": "Specijalna 9-kartica širi se za analizu i rešenje problema odnosa",
+      "name": "Problemi sa vezama Objašnjenje",
+      "positions": [
+        null,
+        {
+          "description": "To ukazuje na unutrašnje kontradikcije i sukobe u vašem odnosu. Pomaže vam da shvatite koje probleme se ne slažete i zašto ste u sukobu.",
+          "title": "Šta je kontradikcija?"
+        },
+        {
+          "description": "To otkriva glavni problem i osnovni problem u vašem odnosu. Pokazuje koje emisija predstavlja najveće poteškoće.",
+          "title": "U čemu je problem?"
+        },
+        {
+          "description": "Pokazuje vaš udeo i odgovornost u izvoru problema. Pomaže vam da shvatite kako vaša ponašanja doprinose problemu.",
+          "title": "Da li sam stvorio problem?"
+        },
+        {
+          "description": "Pokazuje vašu sposobnost da prihvatite svoju odgovornost. Otkriva da li ignorišete svoje greške.",
+          "title": "Da li ignorišem svoj deo u ovom problemu?"
+        },
+        {
+          "description": "Pokazuje uticaj vaših prethodnih iskustava sa partnerom na trenutne probleme. Pomaže vam da shvatite kako se prošlost odražava na sadašnjost.",
+          "title": "Moja prošla iskustva sa osobom koju sam bila"
+        },
+        {
+          "description": "To ukazuje na stanje međusobnog poštovanja i zdravih granica u vašem odnosu. Otkriva kako vi utičete jedni na druge i da li nanosite štetu.",
+          "title": "Da li se zlostavljamo jedni o drugima?"
+        },
+        {
+          "description": "Pokazuje spoljne faktore i treće strane koje utiču na vaš odnos. Pomaže vam da razumete kako porodica, prijatelji ili drugi ljudi utiču na vaš problem.",
+          "title": "Postoje li drugi ljudi uključeni u naš problem?"
+        },
+        {
+          "description": "Pokazuje uticaj faktora kao što je novac, rad, finansijska situacija na vašem odnosu. To otkriva kako ekonomski problemi utiču na vaš odnos.",
+          "title": "Postoje li finansijski problemi koji utiču na našu vezu?"
+        },
+        {
+          "description": "Omogućava uvid u budućnost vašeg odnosa. Pruža informacije o tome da li će se trenutni problemi rešiti i da li će se odnos nastaviti.",
+          "title": "Da li će ova veza trajati?"
+        }
+      ]
+    },
+    "situationAnalysis": {
+      "description": "Specijalna 7-kartica širi se za analizu i procenu stanja",
+      "name": "Objašnjenje analize stanja",
+      "positions": [
+        null,
+        {
+          "description": "Razlozi za situaciju, zašto se ovakva situacija sada dešava, a sve greške su navedene na ovoj kartici.",
+          "title": "Istorija ili razlozi"
+        },
+        {
+          "description": "Navodi se šta se sada događa, aktuelna pitanja i kakav uticaj je prošlost na sadašnjosti.",
+          "title": "Trenutna situacija"
+        },
+        {
+          "description": "Događaji koji se javljaju bez znanja osobe, ljudi koji razgovaraju iza leđa, tajni poslovi i nepoznate činjenice skrivaju se na ovoj kartici.",
+          "title": "Skriveni faktori"
+        },
+        {
+          "description": "Predstavlja središte ekspanzije. Odnosi se na osobu u središtu situacije ili najviše centralnog područja u vašem životu.",
+          "title": "Centralna kartica"
+        },
+        {
+          "description": "Nudi buduće informacije i buduće perspektive iz različitih izvora. Takođe može ukazivati na spoljne napade i moguće spletke.",
+          "title": "Spoljni faktori"
+        },
+        {
+          "description": "Pruža informacije o najprikladnijim akcijama za situaciju. Navodi se da može ponuditi rešenje ili izlaz.",
+          "title": "Preporuka"
+        },
+        {
+          "description": "To pokazuje gde će trenutni kurs voditi i moguće prepreke ili iznenađenja. Navodi se da se budućnost može promeniti u zavisnosti od odluka koje će se izvršiti.",
+          "title": "Moguća budućnost - zaključak"
+        }
+      ]
+    }
+  },
+  "statistics": {
+    "activeStreak": "Aktivna serija",
+    "average": "Prosek",
+    "backToDashboard": "Povratak na kontrolnu tablu",
+    "birthDate": "Datum rođenja",
+    "birthdayNumber": "Rođendan",
+    "calculating": "Statistika se izračunava ...",
+    "creditCost": "Kreditni trošak",
+    "dailyStreak": "Dnevna serija",
+    "days": "dan",
+    "expressionDestiny": "Emote / Fate",
+    "fullNameRecommended": "Puno ime i prezime preporučuju se za računanje Numerologije",
+    "insightsDesc": "Dubinska analiza vaših numeričkih smernica i navika čitanja",
+    "insightsTitle": "Vaši mistični uvidi",
+    "lifePath": "Životni put",
+    "longest": "najduže",
+    "masterNumber": "Master problem",
+    "maturity": "Zrelost",
+    "mostExpensiveReading": "Najskuplje čitanje",
+    "name": "Naziv",
+    "notSpecified": "Neodređen",
+    "numerology": "Numerologija",
+    "numerologyProfile": "Numerološki profil",
+    "overview": "Pregled",
+    "patterns": "uzorak",
+    "perReading": "čitanje",
+    "personality": "Ličnost",
+    "premiumReading": "premium čitanje",
+    "refresh": "Osvežiti",
+    "soulUrge": "Duša",
+    "subtitle": "Pratite svoj napredak na svom mističnom putovanju",
+    "surname": "prezime",
+    "thisMonth": "ovog meseca",
+    "title": "Statistika i uvid",
+    "totalCreditsSpent": "Ukupni potrošeni krediti",
+    "totalReadings": "Totalno čitanje",
+    "vsLastMonth": "vs prošlog meseca"
+  },
+  "system": {
+    "comprehensive": "Sveobuhvatan",
+    "locale": "en-tr",
+    "nextLocale": "Nekt_locale"
+  },
+  "tarot": {
+    "action": "Akcija",
+    "advice": "Preporuka",
+    "card": "Karta",
+    "cards": "karte",
+    "career": "Karijera",
+    "challenge": "Poteškoće",
+    "deck": "paluba",
+    "draw": "Češki",
+    "fear": "Strah",
+    "future": "Budućnost",
+    "guidance": "Uputstvo",
+    "health": "Zdravlje",
+    "hope": "Nadati se",
+    "inaction": "Neaktivnost",
+    "influence": "Uticaj",
+    "interpretation": "Tumačenje",
+    "love": "Lov",
+    "maybe": "Možda",
+    "meaning": "Značenje",
+    "no": "Ne",
+    "obstacle": "Prepreka",
+    "opportunity": "Prilika",
+    "outcome": "Zaključak",
+    "page": {
+      "loadingSpread": "Otvaranje se učitava ...",
+      "selectSpread": "Izaberite tarot širenje",
+      "selectSpreadDescription": "Počnite čitati odabirom jedne od gore navedenih opcija"
+    },
+    "past": "Prošlost",
+    "position": "Položaj",
+    "present": "Sada",
+    "problemSolving": {
+      "data": {
+        "detailedTitle": "Proširenje za rešavanje problema - Detaljno lično čitanje"
+      }
+    },
+    "reading": "Čitanje",
+    "relationshipAnalysis": {
+      "data": {
+        "detailedTitle": "Ekspanzija analize odnosa - detaljno lično čitanje",
+        "messages": {
+          "detailedDescription": "Glasovno komentar Specijalno za vas",
+          "detailedSelected": "Pročitajte odabrano naglas",
+          "readingSavedSuccessfully": "Vaše čitanje je uspešno sačuvano!",
+          "simpleDescription": "Kratak pisani komentar",
+          "simpleSelected": "Jednostavno izabrano čitanje",
+          "writtenDescription": "Detaljan pisani komentar",
+          "writtenSelected": "Pismeno je izabrano čitanje"
+        }
+      }
+    },
+    "relationshipProblems": {
+      "data": {
+        "detailedTitle": "Problemi sa vezama Objašnjenje - detaljno lično čitanje",
+        "messages": {
+          "detailedDescription": "Glasovno komentar Specijalno za vas",
+          "detailedSelected": "Pročitajte odabrano naglas",
+          "readingSaveError": "Došlo je do greške prilikom čuvanja čitanja.",
+          "readingSavedSuccessfully": "Vaše čitanje je uspešno sačuvano!",
+          "simpleDescription": "Kratak pisani komentar",
+          "simpleSelected": "Jednostavno izabrano čitanje",
+          "writtenDescription": "Detaljan pisani komentar",
+          "writtenSelected": "Pismeno je izabrano čitanje"
+        }
+      }
+    },
+    "selectCards": "Izaberite kartice",
+    "shuffle": "mešati",
+    "situationAnalysis": {
+      "data": {
+        "detailedTitle": "Objašnjenje analize stanja - detaljno lično čitanje"
+      }
+    },
+    "spirituality": "duhovnost",
+    "spread": "ekspanzija",
+    "strength": "Snaga",
+    "subtitle": "Otkrijte svoju sudbinu sa ljubavlju",
+    "title": "Tarot kartice",
+    "uncertain": "Neizvestan",
+    "warning": "Upozorenje",
+    "weakness": "Slabost",
+    "yes": "Da"
+  },
+  "tarotCards": {
+    "cups": [
+      null,
+      {
+        "keywords": [
+          "lova",
+          "osećanja"
+        ],
+        "meaning": {
+          "reversed": "Samopouzdanje, potisnuti emocije",
+          "upright": "Novi odnosi, saosećanje"
+        },
+        "name": "Ace od peći"
+      },
+      {
+        "keywords": [
+          "partnerstvo",
+          "lova"
+        ],
+        "meaning": {
+          "reversed": "Samopouzdanje, razdvajanje",
+          "upright": "Partnerstvo, međusobna atrakcija"
+        },
+        "name": "Par goleta"
+      },
+      {
+        "keywords": [
+          "proslava",
+          "prijateljstvo"
+        ],
+        "meaning": {
+          "reversed": "Nezavisnost, kreativni blokovi",
+          "upright": "Proslava, prijateljstvo"
+        },
+        "name": "Trio Chalices"
+      },
+      {
+        "keywords": [
+          "meditacija",
+          "misao"
+        ],
+        "meaning": {
+          "reversed": "povlačenje, povlačenje",
+          "upright": "meditacija, misli"
+        },
+        "name": "Kvartet kalisa"
+      },
+      {
+        "keywords": [
+          "žaliti",
+          "razočaranje"
+        ],
+        "meaning": {
+          "reversed": "Samoprosičnost, napredak",
+          "upright": "žaljenje, razočaranje"
+        },
+        "name": "Kvintet kalisa"
+      },
+      {
+        "keywords": [
+          "nostalgija",
+          "detinjstvo"
+        ],
+        "meaning": {
+          "reversed": "Ne živite u prošlosti, oprostite",
+          "upright": "Sećanja u detinjstvu, nevinost"
+        },
+        "name": "Šest pećih"
+      },
+      {
+        "keywords": [
+          "prilika",
+          "izbori"
+        ],
+        "meaning": {
+          "reversed": "Lične vrednosti, preplavljena",
+          "upright": "Mogućnosti, izbori"
+        },
+        "name": "Sedam šoljica"
+      },
+      {
+        "keywords": [
+          "razočaranje",
+          "ne napuštajte"
+        ],
+        "meaning": {
+          "reversed": "Pokušaj ponovo, neodlučnost",
+          "upright": "razočaranje, napuštanje"
+        },
+        "name": "Osam šoljica"
+      },
+      {
+        "keywords": [
+          "zadovoljstvo",
+          "zadovoljstvo"
+        ],
+        "meaning": {
+          "reversed": "Unutrašnja sreća, nezadovoljstvo",
+          "upright": "zadovoljstvo, zadovoljstvo"
+        },
+        "name": "Devet šoljica"
+      },
+      {
+        "keywords": [
+          "božanska ljubav",
+          "raport"
+        ],
+        "meaning": {
+          "reversed": "Isključenje, teški odnosi",
+          "upright": "Božanska ljubav, harmonija"
+        },
+        "name": "Deset kaljaka"
+      }
+    ],
+    "majorArcana": [
+      {
+        "keywords": [
+          "Novi početnici",
+          "nevinost"
+        ],
+        "meaning": {
+          "reversed": "nepažnja, zloupotreba",
+          "upright": "Novi počeci, nevinost, spontanost"
+        },
+        "name": "Lud"
+      },
+      {
+        "keywords": [
+          "manifestacija",
+          "snaga"
+        ],
+        "meaning": {
+          "reversed": "Manipulacija, loše planiranje",
+          "upright": "Manifestacija, snalažljivost, snaga"
+        },
+        "name": "Čarobnjak"
+      },
+      {
+        "keywords": [
+          "intuicija",
+          "misterija"
+        ],
+        "meaning": {
+          "reversed": "Tajne, isključenje od intuicije",
+          "upright": "Intuicija, sveti znanje, božanska ženstvenost"
+        },
+        "name": "Visoki sveštenik"
+      },
+      {
+        "keywords": [
+          "ženstvenost",
+          "lepota"
+        ],
+        "meaning": {
+          "reversed": "Kreativni blok, ovisnost",
+          "upright": "Ženstvenost, lepota, priroda"
+        },
+        "name": "Kamat"
+      },
+      {
+        "keywords": [
+          "vlast",
+          "struktura"
+        ],
+        "meaning": {
+          "reversed": "Dominacija, prekomerna kontrola",
+          "upright": "Autoritet, institucionalizam, struktura"
+        },
+        "name": "Car"
+      },
+      {
+        "keywords": [
+          "tradicija",
+          "raport"
+        ],
+        "meaning": {
+          "reversed": "Lična uverenja, sloboda",
+          "upright": "Duhovna mudrost, verska uverenja"
+        },
+        "name": "Sveti"
+      },
+      {
+        "keywords": [
+          "lova",
+          "raport"
+        ],
+        "meaning": {
+          "reversed": "samoljublje, nesklad",
+          "upright": "Ljubav, harmonija, odnosi"
+        },
+        "name": "ljubavnici"
+      },
+      {
+        "keywords": [
+          "kontrola",
+          "volja"
+        ],
+        "meaning": {
+          "reversed": "Samodisciplina, opozicija",
+          "upright": "Kontrola, volja, uspeh"
+        },
+        "name": "Kočija"
+      },
+      {
+        "keywords": [
+          "snaga",
+          "hrabrost"
+        ],
+        "meaning": {
+          "reversed": "Samopouzdanje, nedostatak samopouzdanja",
+          "upright": "Snaga, hrabrost, uvjeravanje"
+        },
+        "name": "Snaga"
+      },
+      {
+        "keywords": [
+          "introspekcija",
+          "potraga"
+        ],
+        "meaning": {
+          "reversed": "Izolacija, usamljenost",
+          "upright": "Traženje duše, introspekcija"
+        },
+        "name": "Usamljen"
+      },
+      {
+        "keywords": [
+          "šansa",
+          "mešovit"
+        ],
+        "meaning": {
+          "reversed": "Loša sreća, nedostatak kontrole",
+          "upright": "Sretno, karme, životni ciklusi"
+        },
+        "name": "Točak sudbine"
+      },
+      {
+        "keywords": [
+          "pravda",
+          "kapital"
+        ],
+        "meaning": {
+          "reversed": "Nepravda, nedostatak odgovornosti",
+          "upright": "Pravda, pravičnost, istina"
+        },
+        "name": "Pravda"
+      },
+      {
+        "keywords": [
+          "predaja",
+          "žrtvovati"
+        ],
+        "meaning": {
+          "reversed": "Kašnjenja, otpornost, distrakcija",
+          "upright": "predaja, napuštanje, žrtva"
+        },
+        "name": "Vešeni čovek"
+      },
+      {
+        "keywords": [
+          "transformacija",
+          "završetak"
+        ],
+        "meaning": {
+          "reversed": "Otpornost na promenu, unutrašnje prečišćavanje",
+          "upright": "Završeci, transformacija, tranzicija"
+        },
+        "name": "Smrt"
+      },
+      {
+        "keywords": [
+          "ravnoteža",
+          "temperatura"
+        ],
+        "meaning": {
+          "reversed": "Neravnoteža, višak, samoizlečenje",
+          "upright": "Ravnoteža, umerenost, strpljenje"
+        },
+        "name": "Temperatura"
+      },
+      {
+        "keywords": [
+          "zavisnost",
+          "materijalizam"
+        ],
+        "meaning": {
+          "reversed": "Prepuštanje ograničavajućim uverenjima, odvajanje",
+          "upright": "Ovisnost, strast, materijalizam"
+        },
+        "name": "Vrag"
+      },
+      {
+        "keywords": [
+          "iznenadna promena",
+          "zbrka"
+        ],
+        "meaning": {
+          "reversed": "Lična transformacija, strah od promene",
+          "upright": "Iznenadna promena, konfuzija, haos"
+        },
+        "name": "Toranj"
+      },
+      {
+        "keywords": [
+          "nadati se",
+          "verovanje"
+        ],
+        "meaning": {
+          "reversed": "Nedostatak vere, očaja, isključenje",
+          "upright": "Nada, vera, svrha, obnavljanje"
+        },
+        "name": "Zvezda"
+      },
+      {
+        "keywords": [
+          "iluzija",
+          "strah"
+        ],
+        "meaning": {
+          "reversed": "Puštanje straha, potisnuta emocija",
+          "upright": "Iluzija, strah, anksioznost, podsvesni"
+        },
+        "name": "Mesec"
+      },
+      {
+        "keywords": [
+          "pozitivnost",
+          "zabava"
+        ],
+        "meaning": {
+          "reversed": "Unutrašnje dete, depresija",
+          "upright": "Pozitivnost, zabava, toplina, uspeh"
+        },
+        "name": "Sunce"
+      },
+      {
+        "keywords": [
+          "presuda",
+          "ponovno rođenje"
+        ],
+        "meaning": {
+          "reversed": "Samo-sumnja, unutrašnji kritičar",
+          "upright": "Presuda, ponovno rođenje, unutrašnji poziv"
+        },
+        "name": "Sud"
+      },
+      {
+        "keywords": [
+          "završetak",
+          "integracija"
+        ],
+        "meaning": {
+          "reversed": "Tražim lično zatvaranje, prečicu",
+          "upright": "Završetak, integracija, uspeh"
+        },
+        "name": "Svet"
+      }
+    ],
+    "pentacles": [
+      null,
+      {
+        "keywords": [
+          "prilika",
+          "manifestacija"
+        ],
+        "meaning": {
+          "reversed": "Propuštena prilika, nedostatak planiranja",
+          "upright": "Nova prilika, manifestacija"
+        },
+        "name": "Ace of Goldes"
+      },
+      {
+        "keywords": [
+          "prioriteti",
+          "raport"
+        ],
+        "meaning": {
+          "reversed": "Prepoznavanje, neorganizacija",
+          "upright": "Više prioriteta, harmonija"
+        },
+        "name": "Zlatni duo"
+      },
+      {
+        "keywords": [
+          "partnerstvo",
+          "učenje"
+        ],
+        "meaning": {
+          "reversed": "Nekompatibilnost, rad sama",
+          "upright": "Saradnja, učenje"
+        },
+        "name": "Zlatni trio"
+      },
+      {
+        "keywords": [
+          "akumulacija",
+          "sigurnost"
+        ],
+        "meaning": {
+          "reversed": "Prekomerna potrošnja, velikodušnost",
+          "upright": "Štedeći novac, sigurnost"
+        },
+        "name": "Zlatni kvartet"
+      },
+      {
+        "keywords": [
+          "gubitak",
+          "izolacija"
+        ],
+        "meaning": {
+          "reversed": "Oporavak od gubitka, duhovno siromaštvo",
+          "upright": "Finansijski gubitak, izolacija"
+        },
+        "name": "Zlatni kvintet"
+      },
+      {
+        "keywords": [
+          "ne daj",
+          "deljenje"
+        ],
+        "meaning": {
+          "reversed": "Samo-nega, neizmireni dugovi",
+          "upright": "Davanje, deljenje bogatstva"
+        },
+        "name": "Zlato šest"
+      },
+      {
+        "keywords": [
+          "upornost",
+          "investicija"
+        ],
+        "meaning": {
+          "reversed": "Nedostatak dugoročne vizije, nestrpljenje",
+          "upright": "Upornost, investicija"
+        },
+        "name": "Sedam zlata"
+      },
+      {
+        "keywords": [
+          "savladav",
+          "veština"
+        ],
+        "meaning": {
+          "reversed": "Perfekcionizam, nedostatak posvećenosti",
+          "upright": "Masteri, razvoj veština"
+        },
+        "name": "Zlatni osam"
+      },
+      {
+        "keywords": [
+          "dosta",
+          "nezavisnost"
+        ],
+        "meaning": {
+          "reversed": "Samo-vredno, pretešća",
+          "upright": "Obilje, finansijska nezavisnost"
+        },
+        "name": "Devet zlata"
+      },
+      {
+        "keywords": [
+          "bogatstvo",
+          "porodica"
+        ],
+        "meaning": {
+          "reversed": "Finansijski neuspeh, mračna strana bogatstva",
+          "upright": "Bogatstvo, porodica, dugoročni uspeh"
+        },
+        "name": "Deset zlata"
+      }
+    ]
+  }
+}

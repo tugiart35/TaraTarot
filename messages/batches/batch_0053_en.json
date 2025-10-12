@@ -1,0 +1,772 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "threeofswords": {
+        "position1": {
+          "keywords": {
+            "2": "history",
+            "3": "missing",
+            "4": "Question"
+          },
+          "context": "There's a painful experience at the center of the problem."
+        },
+        "position10": {
+          "upright": "The Three Swords may result in a separation, disappointment, or emotional pain.",
+          "reversed": "The Reverse Three Swords may be the result of forgiveness, healing, and closure of heart wounds.",
+          "keywords": {
+            "0": "separation",
+            "1": "Disappointment",
+            "2": "Pain",
+            "3": "Betrayal",
+            "4": "Recovery"
+          },
+          "context": "The result could be heartbreak or recovery."
+        },
+        "position2": {
+          "upright": "Three swords, heartbreaks of the obstacle, painful past experiences, or emotional scars that can cloud your judgment.",
+          "reversed": "The Inverse Three Swords may be a barrier to the suffering of the past or to carrying old wounds.",
+          "keywords": {
+            "0": "Pain",
+            "1": "Wounds",
+            "2": "missing",
+            "3": "history",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born from the fact that past wounds are still kicking in."
+        },
+        "position3": {
+          "upright": "Three swords, subconsciously, can be heartbreaks, betrayals, or emotional pain that you've experienced in the past.",
+          "reversed": "The Reverse Three Sword may have been in the subconscious of guilt or regret, not being able to heal the pain you've experienced in the past.",
+          "keywords": {
+            "0": "Heartbreak",
+            "1": "Betrayal",
+            "2": "Pain",
+            "3": "Regret",
+            "4": "subconscious"
+          },
+          "context": "Painful experiences in the past may have triggered today's problems."
+        },
+        "position4": {
+          "upright": "The Three Swords, your best potential is to learn from the pain of the past, to repair your heart, and to be strengthened by emotional wisdom.",
+          "reversed": "In order to achieve its potential, you must heal the heartbreak, release the guilt, and open up to forgiveness.",
+          "keywords": {
+            "0": "Recovery",
+            "1": "Forgiveness",
+            "2": "wisdom",
+            "3": "experience",
+            "4": "Compassion"
+          },
+          "context": "Your best potential is to turn pain into wisdom and power."
+        },
+        "position5": {
+          "upright": "The Three Swords indicate that he may have experienced a recent heartbreak, betrayal, or emotional pain.",
+          "reversed": "The Reverse Three Swords may have tried to put the old pain behind you in the recent past, and you may have been in the process of forgiveness or recovery.",
+          "keywords": {
+            "0": "Heartbreak",
+            "1": "Betrayal",
+            "2": "Pain",
+            "3": "Forgiveness",
+            "4": "Wounds"
+          },
+          "context": "Your recent past may have been shaped by painful experiences or healing processes."
+        },
+        "position6": {
+          "upright": "Three Swords, in the near future, you may experience an emotional break-up, separation, or disappointment.",
+          "reversed": "The Reverse Three Swords may have an opportunity to heal, forgive, or mend old wounds in the near future.",
+          "keywords": {
+            "0": "Heartbreak",
+            "1": "separation",
+            "2": "Pain",
+            "3": "It's a cure.",
+            "4": "Forgiveness"
+          },
+          "context": "Your near future will be shaped by breaking or healing."
+        },
+        "position7": {
+          "upright": "Three Swords, you may be experiencing heartbreak, separation, or emotional pain.",
+          "reversed": "Reverse Three Swords, you're in the process of healing old wounds, forgiveness, or letting go of pain.",
+          "keywords": {
+            "0": "Heartbreak",
+            "1": "separation",
+            "2": "Pain",
+            "3": "It's a cure.",
+            "4": "Forgiveness"
+          },
+          "context": "Your current condition is shaped by pain or healing."
+        },
+        "position8": {
+          "upright": "Three Swords, external effects can test you with emotional injuries, such as heartbreak, conflict, or separation.",
+          "reversed": "The Reverse Three Swords can help heal, make peace, or ease the pain.",
+          "keywords": {
+            "0": "Heartbreak",
+            "1": "Pain",
+            "2": "separation",
+            "3": "It's a cure.",
+            "4": "disagreement"
+          },
+          "context": "It affects you through external effects, pain or healing."
+        },
+        "position9": {
+          "upright": "The Three Swords may show a fear of heartbreak, betrayal, or emotional pain.",
+          "reversed": "The Reverse Three Swords show concern for the reopening of old wounds, the inability to forgive, or the growth of resentments.",
+          "keywords": {
+            "0": "Betrayal",
+            "1": "Pain",
+            "2": "separation",
+            "3": "Don't break it.",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on heartbreak or betrayal."
+        }
+      },
+      "fourofswords": {
+        "position1": {
+          "upright": "The Four Swords may be at the center of the problem, resting, packing, or delaying.",
+          "reversed": "The Reverse Four Swords may be the source of extreme fatigue, inability to recover, or the constant escape problem.",
+          "keywords": {
+            "0": "rest",
+            "1": "postponement",
+            "2": "Recovery",
+            "3": "Escape",
+            "4": "Question"
+          },
+          "context": "The problem needs recovery and inner rest at its center."
+        },
+        "position10": {
+          "upright": "The Four Swords may result in rest, recovery, and mental peace of mind.",
+          "reversed": "The Reverse Four Swords may result in a mandatory pause, exhaustion, or delay.",
+          "keywords": {
+            "0": "rest",
+            "1": "Recovery",
+            "2": "Peace",
+            "3": "mind",
+            "4": "pause"
+          },
+          "context": "The result could be peace or exhaustion."
+        },
+        "position2": {
+          "upright": "The Four Swords may be that the obstacle is not to act, to close down too much or to postpone, but the constant waiting takes away the solution.",
+          "reversed": "The Reverse Four Swords, extreme fatigue, fatigue, or the tendency to escape may be the source of the obstacle.",
+          "keywords": {
+            "0": "rest",
+            "1": "postponement",
+            "2": "Escape",
+            "3": "extremism",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born without action or delay."
+        },
+        "position3": {
+          "upright": "There may be four swords, a subconscious need for rest in the past, retreat, or mandatory waiting.",
+          "reversed": "The Reverse Four Swords may be embedded in the subconscious of past fatigue, fatigue, or escape tendencies.",
+          "keywords": {
+            "0": "rest",
+            "1": "waiting",
+            "2": "extremism",
+            "3": "Escape",
+            "4": "subconscious"
+          },
+          "context": "The pauses and the tendency to escape in the past may be beneath their present problems."
+        },
+        "position4": {
+          "upright": "Four Swords, your best potential is to regain strength with mental calm, conscious rest and inner peace.",
+          "reversed": "The Reverse Four Sword must stop delaying to reveal its potential, detect extreme fatigue, and move on to active recovery.",
+          "keywords": {
+            "0": "rest",
+            "1": "mind",
+            "2": "Recovery",
+            "3": "Tranquillity",
+            "4": "preparation"
+          },
+          "context": "Your best potential is to restore inner strength with conscious rest."
+        },
+        "position5": {
+          "upright": "You may have experienced four swords, a recent period of resting, retreat, or mental recovery.",
+          "reversed": "The Reverse Four Swords, in the recent past, you may have neglected extreme fatigue, fatigue, or recovery.",
+          "keywords": {
+            "0": "rest",
+            "1": "Recovery",
+            "2": "mind",
+            "3": "Recovery",
+            "4": "Abstract"
+          },
+          "context": "Your recent past may have been shaped by rest or exhaustion."
+        },
+        "position6": {
+          "upright": "Four swords, in the near future, rest, recovery and mental regeneration await you.",
+          "reversed": "The Reverse Four Swords may be exhausted, lack of rest, or delay recovery in the near future.",
+          "keywords": {
+            "0": "rest",
+            "1": "Recovery",
+            "2": "mind",
+            "3": "Regeneration",
+            "4": "Peace"
+          },
+          "context": "Your near future will be shaped by rest or weariness."
+        },
+        "position7": {
+          "upright": "Four Swords, you could be in the process of rest, recovery or mental regeneration right now.",
+          "reversed": "The Reverse Four Swords, the fact that you're exhausted right now or unable to make time for yourself may be challenging.",
+          "keywords": {
+            "0": "rest",
+            "1": "Recovery",
+            "2": "mind",
+            "3": "Peace",
+            "4": "Recovery"
+          },
+          "context": "Your current condition is shaped by regeneration or exhaustion."
+        },
+        "position8": {
+          "upright": "Four Swords, external effects may offer you a chance to rest, renovate, or recover.",
+          "reversed": "Reverse Four Swords, external effects can make you wear yourself out, unable to rest, or under stress.",
+          "keywords": {
+            "0": "rest",
+            "1": "Regeneration",
+            "2": "Peace",
+            "3": "Recovery",
+            "4": "relief"
+          },
+          "context": "It affects you through external effects, peace, or exhaustion."
+        },
+        "position9": {
+          "upright": "Four Swords, you may be afraid of not being able to rest, not being able to heal, or not having a chance to recover.",
+          "reversed": "The Reverse Four Swords may indicate weariness, forced rest, or fear of illness.",
+          "keywords": {
+            "0": "rest",
+            "1": "Recovery",
+            "2": "Peace",
+            "3": "Recovery",
+            "4": "anxiety"
+          },
+          "context": "It's about fear, not being able to rest, or being exhausted."
+        }
+      },
+      "fiveofswords": {
+        "position1": {
+          "upright": "Five Swords may have conflict, unfair competition, or ego warfare at the heart of the problem.",
+          "reversed": "The Reverse Five Swords may be the source of the problem, even if unnecessary arguments or wins.",
+          "keywords": {
+            "0": "conflict",
+            "1": "ego",
+            "2": "competition",
+            "3": "Losing",
+            "4": "Question"
+          },
+          "context": "There's conflict and ego warfare at the heart of the problem."
+        },
+        "position10": {
+          "upright": "The Five Swords may be the result of a conflict, but it does not bring lasting peace.",
+          "reversed": "The Reverse Five Swords may result in the end of reconciliation, reconciliation, or unnecessary fighting.",
+          "keywords": {
+            "0": "conflict",
+            "1": "victory",
+            "2": "Compromise",
+            "3": "pride",
+            "4": "Concern"
+          },
+          "context": "The result may be a temporary victory or reconciliation."
+        },
+        "position2": {
+          "upright": "Five Swords, your obstacle may be conflict, unnecessary debate, or pride, blocking the solution you've lost in order to win.",
+          "reversed": "The Reverse Five Swords, holding a grudge, refusing to accept the wrong fight or defeat could be the source of the obstacle.",
+          "keywords": {
+            "0": "conflict",
+            "1": "debate",
+            "2": "ego",
+            "3": "pride",
+            "4": "obstacle"
+          },
+          "context": "Obstruction is born out of unnecessary conflict."
+        },
+        "position3": {
+          "upright": "Five Swords, subconscious arguments in the past, loss or war of pride.",
+          "reversed": "The Reverse Five Swords may have been embedded in your subconscious, in the past, in unnecessary struggles, holding grudges, or not accepting defeat.",
+          "keywords": {
+            "0": "debate",
+            "1": "struggle",
+            "2": "pride",
+            "3": "missing",
+            "4": "subconscious"
+          },
+          "context": "The conflicts of the past and the wars of pride may be guiding your problems today."
+        },
+        "position4": {
+          "upright": "Five Swords, your best potential is to avoid unnecessary struggles, to abandon pride, and to triumph in constructive ways.",
+          "reversed": "The Reverse Five Swords, in order to reveal your potential, you have to put the fights behind you, repair resentments, and be open to cooperation.",
+          "keywords": {
+            "0": "Compromise",
+            "1": "co-operation",
+            "2": "maturity",
+            "3": "Peace",
+            "4": "Quit."
+          },
+          "context": "Your best potential is to turn the struggle into peace with wisdom."
+        },
+        "position5": {
+          "upright": "The Five Swords indicate that there may have been a conflict, a conflict, or a battle of pride in the recent past.",
+          "reversed": "The Reverse Five Swords may have been an effort to put the search for reconciliation, forgiveness, or conflict behind them in the recent past.",
+          "keywords": {
+            "0": "conflict",
+            "1": "pride",
+            "2": "missing",
+            "3": "Compromise",
+            "4": "Tension"
+          },
+          "context": "Your recent past may have been determined by conflicts or search for peace."
+        },
+        "position6": {
+          "upright": "Five Swords, in the near future, may be an argument, a conflict, or a struggle for pride.",
+          "reversed": "Inverse Five Swords, you may find an opportunity to put peace, reconciliation, or conflict behind you in the near future.",
+          "keywords": {
+            "0": "conflict",
+            "1": "pride",
+            "2": "missing",
+            "3": "Compromise",
+            "4": "Tension"
+          },
+          "context": "Your near future will be shaped by conflict or the search for peace."
+        },
+        "position7": {
+          "upright": "Five Swords, you may be engaged in a conflict, an argument, or a battle of pride.",
+          "reversed": "Reverse Five Swords, you may be in the process of seeking peace, reconciliation, or putting past conflicts behind you.",
+          "keywords": {
+            "0": "conflict",
+            "1": "debate",
+            "2": "pride",
+            "3": "Compromise",
+            "4": "Concern"
+          },
+          "context": "Your current situation is shaped by the need for conflict or reconciliation."
+        },
+        "position8": {
+          "upright": "Five Swords, external effects can lead you to conflicts, differences of opinion, or struggles of pride.",
+          "reversed": "Reverse Five Swords, external effects can lead you to peace, resolution of disputes, and reconciliation.",
+          "keywords": {
+            "0": "conflict",
+            "1": "debate",
+            "2": "Compromise",
+            "3": "pride",
+            "4": "difference of opinion"
+          },
+          "context": "It affects you through external effects, conflict or compromise."
+        },
+        "position9": {
+          "upright": "Five Swords, you may be afraid of losing, of being wronged, or of fighting for pride.",
+          "reversed": "The Reverse Five Swords may show concern that they will not be able to settle, compromise, or hold grudges.",
+          "keywords": {
+            "0": "conflict",
+            "1": "pride",
+            "2": "missing",
+            "3": "Incompatibility",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on loss or unresolved conflicts."
+        }
+      },
+      "sixofswords": {
+        "position1": {
+          "upright": "The Six Swords may need a transition process, a leftover or change at the center of the problem.",
+          "reversed": "The Reverse Six Swords can be the source of the problem, whether you stick to the past or have difficulty moving forward.",
+          "keywords": {
+            "0": "transition",
+            "1": "let go",
+            "2": "Progress",
+            "3": "change",
+            "4": "Question"
+          },
+          "context": "The problem needs to be left behind at its center."
+        },
+        "position10": {
+          "upright": "The Six Swords may be the result of a transition, a journey, or a distance from difficulties.",
+          "reversed": "The Reverse Six Sword could be the result of a comeback, a squeeze, or a failure to move forward.",
+          "keywords": {
+            "0": "transition",
+            "1": "journey",
+            "2": "Progress",
+            "3": "Escape",
+            "4": "Regeneration"
+          },
+          "context": "The result may be to move forward or to get stuck."
+        },
+        "position2": {
+          "upright": "Six Swords, your obstacle may be that you can't break from the past, you can't move on, or you can't go forward, old habits hold you back.",
+          "reversed": "The Reverse Six Sword may be an obstacle to constantly returning to the past, refusing to move forward, or mental blockage.",
+          "keywords": {
+            "0": "transition",
+            "1": "history",
+            "2": "Progress",
+            "3": "eclipse",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born from the past and from not being able to go forward."
+        },
+        "position3": {
+          "upright": "Six Swords can subconsciously be a process of transition in the past, of moving away from the past, or of trying to get away from the past.",
+          "reversed": "The Reverse Six Swords may have settled in your subconscious to not be able to move forward in the past, to stick to the past, or to keep coming back.",
+          "keywords": {
+            "0": "transition",
+            "1": "history",
+            "2": "Progress",
+            "3": "commitment",
+            "4": "subconscious"
+          },
+          "context": "Past transitional processes or commitment to the past may be the basis of today's problems."
+        },
+        "position4": {
+          "upright": "Six Swords, your best potential is to move away from the challenges and head for calm waters, accept the transition processes and open up to healing.",
+          "reversed": "In order to reach its potential, the Reverse Six Sword must stop being trapped in the past, boldly step forward and allow new journeys.",
+          "keywords": {
+            "0": "transition",
+            "1": "Progress",
+            "2": "It's a cure.",
+            "3": "acceptance",
+            "4": "journey"
+          },
+          "context": "Your best potential is to go forward free of the past."
+        },
+        "position5": {
+          "upright": "Six Swords, you may have had a journey in the recent past, or a journey, or an effort to move away from the past.",
+          "reversed": "Inverse Six Swords, you may have experienced a blockage in recent history, in the process of dwelling on the past, inability to move forward, or in transition.",
+          "keywords": {
+            "0": "transition",
+            "1": "journey",
+            "2": "Progress",
+            "3": "Escape",
+            "4": "history"
+          },
+          "context": "Your recent past may have been shaped by progress or commitment to the past."
+        },
+        "position6": {
+          "upright": "Six Swords, in the near future, you may experience a journey, a transition, or a distance from the past.",
+          "reversed": "The Reverse Six Swords may be a challenge to the future, to the past, or to the transition.",
+          "keywords": {
+            "0": "transition",
+            "1": "journey",
+            "2": "Progress",
+            "3": "Escape",
+            "4": "history"
+          },
+          "context": "Your near future will be shaped by progress or commitment to the past."
+        },
+        "position7": {
+          "upright": "Six Swords, you are now in a phase of transition, travel, or distance from the past.",
+          "reversed": "The Reverse Six Sword may now be a setback in the past, the inability to move forward, or the journeys.",
+          "keywords": {
+            "0": "transition",
+            "1": "Progress",
+            "2": "history",
+            "3": "journey",
+            "4": "Escape"
+          },
+          "context": "Your current condition is shaped by progress or perpetuation in the past."
+        },
+        "position8": {
+          "upright": "Six Swords, external effects can give you a chance to avoid transitional periods, progress, or problems.",
+          "reversed": "Reverse Six Swords, external effects can connect you to the past, make your progress difficult, or cause delays in journeys.",
+          "keywords": {
+            "0": "transition",
+            "1": "Progress",
+            "2": "Escape",
+            "3": "history",
+            "4": "journey"
+          },
+          "context": "It affects you through external effects, progress, or regression."
+        },
+        "position9": {
+          "upright": "Six Swords, you may fear that you will not be able to walk away from the past, that you will not be able to complete the transition, or that you will not find a new way.",
+          "reversed": "The Reverse Six Swords can show his anxiety about coming back, not moving forward, or being stuck.",
+          "keywords": {
+            "0": "transition",
+            "1": "Progress",
+            "2": "history",
+            "3": "Escape",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on not being able to move forward or being stuck in the past."
+        }
+      },
+      "sevenofswords": {
+        "position1": {
+          "upright": "The Seven Swords may be at the center of the problem of secrecy, strategy or dishonest behavior.",
+          "reversed": "The Reverse Seven Swords, fear of being caught, secrets revealed or failed plans could be the source of the problem.",
+          "keywords": {
+            "0": "strategy",
+            "1": "secrecy",
+            "2": "trick",
+            "3": "Plan",
+            "4": "Question"
+          },
+          "context": "There are facts or strategic moves hidden at the center of the problem."
+        },
+        "position10": {
+          "upright": "The Seven Swords may result in hidden plans, strategic moves, or careful progress.",
+          "reversed": "The Reverse Seven Sword may be the result of the discovery of secrets, capture or honesty.",
+          "keywords": {
+            "0": "strategy",
+            "1": "secrecy",
+            "2": "Plan",
+            "3": "Honesty",
+            "4": "Don't get caught."
+          },
+          "context": "The result may be strategic success or the revelation of secrets."
+        },
+        "position2": {
+          "upright": "Seven swords, your obstacle may be dishonest, privacy or strategic games, and avoiding the truth makes it difficult.",
+          "reversed": "The Reverse Seven Swords, the secrets revealed, the loss of trust or failed plans could be the source of the obstacle.",
+          "keywords": {
+            "0": "secrecy",
+            "1": "trick",
+            "2": "Trust",
+            "3": "Escape",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born out of secrecy and honesty."
+        },
+        "position3": {
+          "upright": "The Seven Swords may be subconsciously facing past secrecy, hidden truths or dishonest behavior.",
+          "reversed": "The Reverse Seven Swords, the secrets that have been revealed in the past, the loss of trust or the failure of plans may have settled in your subconscious.",
+          "keywords": {
+            "0": "secrecy",
+            "1": "trick",
+            "2": "Trust",
+            "3": "secret",
+            "4": "subconscious"
+          },
+          "context": "The past secrets and trust issues may be affecting your problems today."
+        },
+        "position4": {
+          "upright": "Seven Swords, your best potential is strategic thinking, using your intelligence to move at the right time and act with consciousness.",
+          "reversed": "The Reverse Seven Swords must be guided by honesty, free of deception, and follow a clear path in order to reveal your potential.",
+          "keywords": {
+            "0": "strategy",
+            "1": "intelligence",
+            "2": "Plan",
+            "3": "Honesty",
+            "4": "Awakeness"
+          },
+          "context": "Your best potential is to move forward by combining intelligence with honesty."
+        },
+        "position5": {
+          "upright": "The Seven Swords indicate that in the recent past he may have faced secrecy, hidden plans, or deceptive behavior.",
+          "reversed": "The Reverse Seven Swords, you may have recently experienced the revelation of secrets, honesty, or reckoning.",
+          "keywords": {
+            "0": "secrecy",
+            "1": "trick",
+            "2": "Secrets",
+            "3": "strategy",
+            "4": "Trust"
+          },
+          "context": "Your recent history may have been determined by hidden circumstances or the process of honesty."
+        },
+        "position6": {
+          "upright": "The Seven Swords, in the near future, may reveal secrecy, strategy, or hidden plans.",
+          "reversed": "The Reverse Seven Sword may be the possibility of secrets revealed, honesty or capture in the near future.",
+          "keywords": {
+            "0": "secrecy",
+            "1": "trick",
+            "2": "strategy",
+            "3": "Secrets",
+            "4": "account"
+          },
+          "context": "Your near future will be shaped by secrecy or honesty."
+        },
+        "position7": {
+          "upright": "Seven swords, you could be in secrecy, strategy, or hidden plans right now.",
+          "reversed": "The Reverse Seven Swords may be on the agenda right now, the need to reveal secrets, to be honest, or to be captured.",
+          "keywords": {
+            "0": "secrecy",
+            "1": "trick",
+            "2": "strategy",
+            "3": "Secrets",
+            "4": "Plan"
+          },
+          "context": "Your current situation is shaped by secrecy or honesty."
+        },
+        "position8": {
+          "upright": "Seven swords, external effects can lead you to strategize, reveal secrets, or be careful.",
+          "reversed": "Reverse Seven Swords, external effects can confront you with honesty or cause hidden plans to be revealed.",
+          "keywords": {
+            "0": "strategy",
+            "1": "trick",
+            "2": "secrecy",
+            "3": "Plan",
+            "4": "Secrets"
+          },
+          "context": "It affects you through external effects, privacy, or honesty."
+        },
+        "position9": {
+          "upright": "Seven Swords, you may be afraid of being deceived, turned around, or lost trust.",
+          "reversed": "The Reverse Seven Swords may show concern that they will be caught, that the secret will be revealed, or that the plans will be broken.",
+          "keywords": {
+            "0": "trick",
+            "1": "secrecy",
+            "2": "Don't cheat.",
+            "3": "Plan",
+            "4": "anxiety"
+          },
+          "context": "He's focusing on fear, deception, or the revelation of the secret."
+        }
+      },
+      "eightofswords": {
+        "position1": {
+          "upright": "Eight Swords may have mental barriers, feelings of desperation, or stuck at the center of the problem.",
+          "reversed": "Reverse Eight Swords, limiting yourself, surrendering to fear, or lack of confidence may be the source of the problem.",
+          "keywords": {
+            "0": "limit",
+            "1": "fear",
+            "2": "Self - confidence",
+            "3": "mind",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is that you can't get rid of mental barriers."
+        },
+        "position10": {
+          "upright": "The Eight Swords may be to feel limited by the result, to find freedom, or to face obstacles.",
+          "reversed": "The Reverse Eight Swords may be the result of liberation, getting rid of obstacles, and finding new ways.",
+          "keywords": {
+            "0": "freedom",
+            "1": "obstacle",
+            "2": "limit",
+            "3": "Escape",
+            "4": "solution"
+          },
+          "context": "The result could be a squeeze or a liberation."
+        },
+        "position2": {
+          "upright": "The Eight Swords may be the mental barrier to the obstacle, the sense of desperation, or the feeling of being trapped, and the lack of awareness of its freedom prevents you from seeing the solution.",
+          "reversed": "The Reverse Eight Swords may be the source of the problem if you can't get out of your own limitations or surrender to fear.",
+          "keywords": {
+            "0": "limit",
+            "1": "fear",
+            "2": "mind",
+            "3": "freedom",
+            "4": "obstacle"
+          },
+          "context": "The obstacle arises from mental barriers and the limitations of your own creation."
+        },
+        "position3": {
+          "upright": "Eight Swords can be subconsciously feeling helpless in the past, limited or oppressed.",
+          "reversed": "The Reverse Eight Swords, the fears of the past, the mental barriers, or the inability to see your freedom, may have been applied to your subconscious.",
+          "keywords": {
+            "0": "despair",
+            "1": "limit",
+            "2": "fear",
+            "3": "freedom",
+            "4": "subconscious"
+          },
+          "context": "The limitations and fears of the past may be beneath their present problems."
+        },
+        "position4": {
+          "upright": "Eight Swords, your best potential is to recognize and overcome mental boundaries, choose freedom, and replace fear with faith.",
+          "reversed": "In order to achieve its potential, the Reverse Eight Sword, you have to stop seeing yourself as a victim, develop a sense of freedom, and allow new possibilities.",
+          "keywords": {
+            "0": "freedom",
+            "1": "fear",
+            "2": "mind",
+            "3": "limitity",
+            "4": "faith"
+          },
+          "context": "Your best potential is to free yourself from mental chains and head for freedom."
+        },
+        "position5": {
+          "upright": "Eight Swords, you may have felt limited, helpless, or under pressure in the recent past.",
+          "reversed": "Inverse Eight Swords, you may have recently begun to free yourself from your mental chains or regained your freedom.",
+          "keywords": {
+            "0": "limit",
+            "1": "despair",
+            "2": "freedom",
+            "3": "mind",
+            "4": "fear"
+          },
+          "context": "Your recent past may have been shaped by despair or liberation."
+        },
+        "position6": {
+          "upright": "Eight Swords, in the near future, you may feel limited, helpless, or mentally challenged.",
+          "reversed": "Inverse Eight Swords, in the near future you may experience liberation, relief from restraints, or breaking mental chains.",
+          "keywords": {
+            "0": "limit",
+            "1": "despair",
+            "2": "freedom",
+            "3": "mind",
+            "4": "barriers"
+          },
+          "context": "Your near future will be shaped by restraint or liberation."
+        },
+        "position7": {
+          "upright": "Eight Swords, you may feel limited, helpless, or mentally challenged right now.",
+          "reversed": "Reverse Eight Swords, you're in the process of liberation, removing obstacles, or crossing your own borders.",
+          "keywords": {
+            "0": "limit",
+            "1": "despair",
+            "2": "freedom",
+            "3": "barriers",
+            "4": "mind"
+          },
+          "context": "Your current condition is shaped by restraint or liberation."
+        },
+        "position8": {
+          "upright": "Eight swords, external effects can make you feel limited, pressures from your environment can limit you.",
+          "reversed": "Reverse Eight Swords, external effects can free you, help lift obstacles.",
+          "keywords": {
+            "0": "limit",
+            "1": "freedom",
+            "2": "pressure",
+            "3": "barriers",
+            "4": "mind"
+          },
+          "context": "The external effects can limit or free you."
+        },
+        "position9": {
+          "upright": "Eight Swords, you may be afraid that you won't be able to be free, that you won't be able to get rid of environmental pressures, or that you'll be trapped in obstacles.",
+          "reversed": "The Reverse Eight Swords may show anxiety about being addicted, not being able to find a solution, or not being able to achieve freedom.",
+          "keywords": {
+            "0": "freedom",
+            "1": "barriers",
+            "2": "limit",
+            "3": "Escape",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on being stuck or addicted."
+        }
+      },
+      "nineofswords": {
+        "position1": {
+          "upright": "Nine Swords may have anxiety, insomnia, and stress at the heart of the problem.",
+          "reversed": "The Reverse Nine Swords may be the source of the problem if you can't overcome past fears or suppress anxiety.",
+          "keywords": {
+            "0": "Concern",
+            "1": "Stress",
+            "2": "fear",
+            "3": "anxiety",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is facing fears and concerns."
+        },
+        "position10": {
+          "upright": "The Nine Swords may result in intense anxiety, stress, or insomnia.",
+          "reversed": "The Reverse Nine Swords may be the end of anxiety, inner peace, or nightmares.",
+          "keywords": {
+            "0": "Concern",
+            "1": "Stress",
+            "2": "Peace",
+            "3": "mind",
+            "4": "anxiety"
+          },
+          "context": "The result may be to experience anxiety or to find peace."
+        },
+        "position2": {
+          "upright": "Nine Swords, your obstacle can be anxiety, insomnia or guilt, and when the mind is constantly filled with anxiety, the solution becomes blurry.",
+          "reversed": "The Reverse Nine Swords, the inability to face fears, can be the source of repressed guilt or extreme stress.",
+          "keywords": {
+            "0": "Concern",
+            "1": "Stress",
+            "2": "anxiety",
+            "3": "fear",
+            "4": "obstacle"
+          },
+          "context": "Obstacle arises from over-anxiety and stress."
+        }
+      }
+    }
+  }
+}

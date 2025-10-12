@@ -1,0 +1,780 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "thehighpriestess": {
+        "position6": {
+          "keywords": [
+            null,
+            null,
+            null,
+            null,
+            "svest"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati da li slušate svoju intuiciju ili ne."
+        },
+        "position7": {
+          "upright": "Velečasni majka, vaša intuicija je trenutno jaka. Vi ste u periodu kada morate da slušate svoj unutrašnji glas.",
+          "reversed": "Preokrećena visoka sveštenica možda trenutno ignoriše vašu intuiciju, ili čuvanje tajne vas stavlja u tešku situaciju.",
+          "keywords": [
+            "intuicija",
+            "mudrost",
+            "tajna",
+            "unutrašnja smernica",
+            "svest"
+          ],
+          "context": "Vaša trenutna situacija je oblikovana da li slušate svoju intuiciju ili ne."
+        },
+        "position8": {
+          "upright": "Visoka sveštenica može dodirivati vaš život sa spoljnim uticajima, tajno znanje, intuitivno uputstvo ili duboku mudrost.",
+          "reversed": "Ograničena velika sveštenica, spoljni uticaji mogu vas zavesti sa skrivenim istinama, tajnama ili lažnim intuicijama.",
+          "keywords": [
+            "intuicija",
+            "informacije",
+            "tajna",
+            "mudrost",
+            "uputstvo"
+          ],
+          "context": "Spoljni uticaji utiču na vas kroz intuiciju i skriveno znanje."
+        },
+        "position9": {
+          "upright": "Visoka sveštenica, možda ćete se natjerati strah od nepoznatih tajne koje se otkrivaju ili da ne mogu da verujete vašoj intuiciji.",
+          "reversed": "Otkrivena je visoka sveštenica, lažne intuicije, otkrivene tajne ili strah od zalutanja od istine vas mogu brinuti.",
+          "keywords": [
+            "tajna",
+            "informacije",
+            "intuicija",
+            "sigurnost",
+            "anksioznost"
+          ],
+          "context": "Fokusira se na strahove, skrivene informacije ili lažne intuicije."
+        }
+      },
+      "theempress": {
+        "position1": {
+          "upright": "Carica, potreba za manifestom kreativnosti, tema održavanja ili produktivnosti mogu biti u srcu problema.",
+          "reversed": "Invertirana carica, blokirana kreativnost, nedostatak inspiracije ili prekomerne zavisnosti može biti izvor problema.",
+          "keywords": [
+            "kreativnost",
+            "produktivnost",
+            "ishrana",
+            "inspiracija",
+            "pitanje"
+          ],
+          "context": "U srcu problema je upotreba ili suzbijanje nečije kreativne moći."
+        },
+        "position10": {
+          "upright": "Carica, možete da osetite obilje, produktivnost i emocionalno zadovoljstvo kao rezultat događaja.",
+          "reversed": "Invertirana carica, ishod događaja može biti gubitak produktivnosti, emocionalne nestabilnosti ili prekomerne zavisnosti.",
+          "keywords": [
+            "obilje",
+            "produktivnost",
+            "dosta",
+            "mir",
+            "zadovoljstvo"
+          ],
+          "context": "Rezultat može biti obilje i mir ili gubitak produktivnosti."
+        },
+        "position2": {
+          "upright": "Carica je možda da je prepreka nemogućnost izražavanja nečije kreativnosti, pretjerano zavisan ili ograničavanje nečije produktivnosti. Kada neko ne oslobodi sopstvenu spontanost, razvoj je takođe blokiran.",
+          "reversed": "Reversirana carica ukazuje na prepreku prekomerne površine, nedostatak produktivnosti ili prekomerne posvećenosti. Morate biti slobodni od obveznica koje ograničavaju vaš kreativni tok.",
+          "keywords": [
+            "kreativnost",
+            "produktivnost",
+            "zavisnost",
+            "Ograničenje",
+            "prepreka"
+          ],
+          "context": "Prepreka potiče od suzbijanja vaše kreativnosti i zavisnih odnosa."
+        },
+        "position3": {
+          "upright": "Carica se može podsvesno osećati ograničena u svojoj kreativnosti u prošlosti, doživljava zavisne odnose ili okolnosti koje su joj inhibirale njenu produktivnost.",
+          "reversed": "Obrnuta carica, previsok, zavisnost, zavisnost ili gubitak inspiracije možda su se preselili iz prošlosti do podsvesti.",
+          "keywords": [
+            "kreativnost",
+            "zavisnost",
+            "zaštita",
+            "inspiracija",
+            "podsvestan"
+          ],
+          "context": "Kreativnost i zavisni prilozi koji su u prošlosti bili ograničeni mogu biti zasjenjivanje današnjih problema."
+        },
+        "position4": {
+          "upright": "Carica kaže da njen potencijal leži u pozivanju produktivnosti, kreativnosti i obilja u njen život.",
+          "reversed": "Invertirana carica, morate se držati podalje od zavisnosti, nedostatka inspiracije i prekomerne želje za kontrolom da ne biste ograničili svoj potencijal.",
+          "keywords": [
+            "kreativnost",
+            "dosta",
+            "produktivnost",
+            "inspiracija",
+            "potencijal"
+          ],
+          "context": "Vaš najbolji potencijal je da vam pruže produktivnost i kreativnost slobodno protok."
+        },
+        "position5": {
+          "upright": "Carica je možda imala intenzivnu produktivnost, kreativnost i saosećanje u odnosu u nedavnoj prošlosti. Možda ste otvorili vrata obilja.",
+          "reversed": "Okrećena carica, možda ste imali nedavni kreativni blok, suparničke odnose ili zanemarili samo-negu.",
+          "keywords": [
+            "kreativnost",
+            "dosta",
+            "odnose",
+            "saosećanje",
+            "produktivnost"
+          ],
+          "context": "Vaša nedavna prošlost možda je oblikovana obiljem i produktivnošću ili blokadima."
+        },
+        "position6": {
+          "upright": "Carica, biće vam okružena energijom kreativnosti, obilja i saosećanja u bliskoj budućnosti.",
+          "reversed": "Invertirana carica, postoji rizik od blokade produktivnosti, zavisnosti ili zanemarivanja samo-nege u bliskoj budućnosti.",
+          "keywords": [
+            "dosta",
+            "kreativnost",
+            "saosećanje",
+            "odnose",
+            "produktivnost"
+          ],
+          "context": "Vaša bliska budućnost može se odrediti obiljem ili zastojem."
+        },
+        "position7": {
+          "upright": "Carica, trenutno možete biti u energiji obilja, produktivnosti i saosećanja. Vaša kreativnost je na čelu.",
+          "reversed": "Ukrašena carica, možda ćete doživljavati blok produktivnosti, zavisnost ili nedostatak samo-nege trenutno.",
+          "keywords": [
+            "kreativnost",
+            "dosta",
+            "saosećanje",
+            "odnos",
+            "proizvodnja"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je obiljem ili blokadom produktivnosti."
+        },
+        "position8": {
+          "upright": "Carica, spoljni uticaji donose vam obilje, podršku i kreativne mogućnosti.",
+          "reversed": "Invertirana carica, spoljni uticaji mogu stvoriti zavisnost, preteranopretektivnost ili blokadu u produktivnosti.",
+          "keywords": [
+            "dosta",
+            "podrška",
+            "produktivnost",
+            "saosećanje",
+            "kreativnost"
+          ],
+          "context": "Spoljni uticaji utiču na vas sa produktivnošću ili zavisnošću."
+        },
+        "position9": {
+          "upright": "Carice, možda ćete se brinuti da niste produktivni, gubitak obilja ili ne dobijate podršku.",
+          "reversed": "Invertirana carica, možete uticati strah da postanete zavisni, gubitak produktivnosti ili emocionalne neadekvatnosti.",
+          "keywords": [
+            "dosta",
+            "produktivnost",
+            "podrška",
+            "obilje",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi su u gubitku obilja ili postajanja zavisnosti."
+        }
+      },
+      "theemperor": {
+        "position1": {
+          "upright": "Koren problema može biti potreba za kontrolom, narudžbom ili sukobom sa figurama vlasti, rekao je car.",
+          "reversed": "Okrećeni car, prevelika kontrola, kruta pravila ili nedostatak discipline mogu biti u srcu problema.",
+          "keywords": [
+            "kontrola",
+            "vlast",
+            "narediti",
+            "pravila",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba za utvrđivanjem kontrole ili sukoba sa autoritetom."
+        },
+        "position10": {
+          "upright": "Car, kao rezultat događaja, možete da kreirate redosled, stabilnost i snažnu osnovu.",
+          "reversed": "Invertirani car, ishod događaja može biti autoritarni pritisak, krutost ili gubitak kontrole.",
+          "keywords": [
+            "narediti",
+            "stabilnost",
+            "vlast",
+            "snaga",
+            "kontrola"
+          ],
+          "context": "Rezultat može biti uspostavljanje solidnog reda ili da se testira pritiskom autoriteta."
+        },
+        "position2": {
+          "upright": "Nameštaj može biti preterani autoritet, pritisak pravila ili rigidnost discipline, rekao je car. Struktura koja previše kontroliše sprečava vas da slobodno delujete.",
+          "reversed": "Reversirani car može preterivati problem neplodina, neorganizacije ili sukoba sa ovlašćenjima. Preterano opresivni stavovi takođe vas nateraju da izgubite fleksibilnost.",
+          "keywords": [
+            "kontrola",
+            "vlast",
+            "pravila",
+            "krutost",
+            "prepreka"
+          ],
+          "context": "Prepreka dolazi od potrebe za krutim pravilima i kontrolom."
+        },
+        "position3": {
+          "upright": "Car može podsvesno doživeti ugnjetavajuće vlasti, stroga pravila ili osećaj pod kontrolom u prošlosti.",
+          "reversed": "Invertirani car, prošla iskustva gubitka reda, sukob sa ovlašćenjima ili nedostatak pravila možda su se podmirili u podsvesti.",
+          "keywords": [
+            "vlast",
+            "pravila",
+            "ugnjetavanje",
+            "kontrola",
+            "podsvestan"
+          ],
+          "context": "Prošle sukobe autoriteta i kontrolnih pitanja mogu oblikovati njenu trenutnu situaciju."
+        },
+        "position4": {
+          "upright": "Car pokazuje da njegov potencijal leži u uspostavljanju naloga, razvijajući disciplinu i izgradnja pouzdane strukture.",
+          "reversed": "Invertirani car, ne smete da padnete u rigidnost, dominaciju ili opsednutost kontrolom koja inhibira vaš potencijal.",
+          "keywords": [
+            "narediti",
+            "vlast",
+            "kontrola",
+            "poverenje",
+            "potencijal"
+          ],
+          "context": "Vaš najbolji potencijal dolazi od uspostavljanja čvrste strukture i discipline."
+        },
+        "position5": {
+          "upright": "Car, možda ste iskusili energiju uspostavljanja redosleda, osećajući autoritet ili izgradnju snažne strukture u nedavnoj prošlosti.",
+          "reversed": "Invertirani car, možda ste nedavno izgubili kontrolu, naišli na opresivnu figuru ili doživeli nedostatak pravila.",
+          "keywords": [
+            "vlast",
+            "narediti",
+            "kontrola",
+            "poverenje",
+            "struktura"
+          ],
+          "context": "Vaša nedavna prošlost možda je obeležila pretrage narudžbine ili sukoba sa autoritetom."
+        },
+        "position6": {
+          "upright": "Car, u bliskoj budućnosti ćete imati priliku da uspostavite nalog, izgradite snažnu strukturu i steknite autoritet.",
+          "reversed": "Reversed Car, možete da doživite prekomernog pritiska, gubitak kontrole ili sukob sa ovlašćenjima u bliskoj budućnosti.",
+          "keywords": [
+            "narediti",
+            "vlast",
+            "kontrola",
+            "stabilnost",
+            "poverenje"
+          ],
+          "context": "Vaša bliska budućnost će se oblikovati uspostavljanjem redosleda ili sukoba sa nalogom."
+        },
+        "position7": {
+          "upright": "Car, trenutno ste u procesu uspostavljanja redosleda, preuzimajući odgovornost i izgradnju snažne strukture.",
+          "reversed": "Prekoračen car, možda ćete biti u sukobu sa ovlašćenjima, pod opresivnim energijom ili u gubitku kontrole.",
+          "keywords": [
+            "narediti",
+            "vlast",
+            "kontrola",
+            "stabilnost",
+            "poverenje"
+          ],
+          "context": "Vaša trenutna situacija je oblikovana uspostavljanjem naloga ili sukoba sa nalogom."
+        },
+        "position8": {
+          "upright": "Car, spoljni uticaji mogu da vas podrže redosledom, autoritetom i jakim strukturama.",
+          "reversed": "Reversirani car može donijeti spoljne uticaje, opresivne cifre, krutih pravila ili sukobe sa ovlašćenjima.",
+          "keywords": [
+            "vlast",
+            "narediti",
+            "snaga",
+            "kontrola",
+            "zaštita"
+          ],
+          "context": "Spoljni uticaji mogu uspostaviti red ili stvoriti pritisak."
+        },
+        "position9": {
+          "upright": "Možete se plašiti cara, gubitka kontrole, nemoćne protiv autoriteta ili poremećaja naloga.",
+          "reversed": "Invertirani car, možete brinuti da se drobite pod pritiskom, zloupotrebom moći ili sukoba sa ovlašćenjima.",
+          "keywords": [
+            "vlast",
+            "narediti",
+            "kontrola",
+            "snaga",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi su povezani sa figurama organa ili gubitkom kontrole."
+        }
+      },
+      "thehierophant": {
+        "position1": {
+          "upright": "Koren problema može biti pridržavanje tradicije, očekivanja društva ili potreba za smernicama, rekao je Aziz.",
+          "reversed": "Pretvoreno Sveti, odbacujući pravila, prelazeći normu ili pobunjenost protiv autoriteta može biti izvor problema.",
+          "keywords": [
+            "tradicija",
+            "doktrina",
+            "vlast",
+            "očekivanja",
+            "pitanje"
+          ],
+          "context": "U srcu problema je želja da se u skladu sa društvenim normama i autoritetom."
+        },
+        "position10": {
+          "upright": "Svetac može da pristupi mudrosti, uputstvu i duhovnoj harmoniji kao rezultat događaja.",
+          "reversed": "Okrećeno Sveti, ishod događaja može biti lažna smernica, pobuna protiv tradicije ili lažnih učenja.",
+          "keywords": [
+            "mudrost",
+            "uputstvo",
+            "doktrina",
+            "tradicija",
+            "raport"
+          ],
+          "context": "Rezultat može biti da se postigne mudrost ili da bude zavedeno."
+        },
+        "position2": {
+          "upright": "Aziz, prepreka se može previše pridržavati tradicijama ili djelovati u skladu sa očekivanjima društva. Ova situacija vas sprečava da proizvodite originalna rešenja.",
+          "reversed": "Ograničeno sveti može biti prepreka neorganizaciji uzrokovanom odbacivanjem pravila, nedostatka smernica ili pobune.",
+          "keywords": [
+            "tradicija",
+            "vlast",
+            "očekivanje",
+            "uputstvo",
+            "prepreka"
+          ],
+          "context": "Prekidač se pojavljuje prepreka od prekomernog uticaja pravila i socijalnog pritiska."
+        },
+        "position3": {
+          "upright": "Aziz, možda ste bili podsvesno uticali očekivanja društva, tradicionalna pravila ili učenja u prošlosti.",
+          "reversed": "Uopterećen Svetom, odbacivanjem pravila, pobuna ili nedostatak smernica može se ugraditi u podsvesno u prošlosti.",
+          "keywords": [
+            "tradicija",
+            "vlast",
+            "uputstvo",
+            "buntovnost",
+            "podsvestan"
+          ],
+          "context": "Prošla iskustva u skladu sa ili odbačenjem društvenih normi mogu biti osnova za današnje probleme."
+        },
+        "position4": {
+          "upright": "Svetac kaže da je njegov potencijal da preneste mudrost, vodi druge i krene naprijed u skladu sa duhovnim vrednostima.",
+          "reversed": "Obrnuti sveti, da biste otkrili svoj potencijal, ne biste trebali slepo ne biste slijediti pravila drugih, ali pronađite svoj način.",
+          "keywords": [
+            "uputstvo",
+            "mudrost",
+            "doktrina",
+            "vrednosti",
+            "potencijal"
+          ],
+          "context": "Vaš najbolji potencijal je da podelite svoje znanje i iskustvo."
+        },
+        "position5": {
+          "upright": "Sveti, možda ste imali koristi od nastave u nedavnoj prošlosti, pronađene moralne podrške ili prilagođene Pravilima društva.",
+          "reversed": "Okolišeni Sveti, možda ste nedavno pobunili protiv Konvencije, odbacio pravila ili da ste bili od smerništa.",
+          "keywords": [
+            "doktrina",
+            "tradicija",
+            "duh",
+            "vlast",
+            "raport"
+          ],
+          "context": "Vaša nedavna prošlost možda je pretvorena oko prilagođavanja ili suprotstavljenim autoritetu."
+        },
+        "position6": {
+          "upright": "Saint, možete dobiti podršku od instruktivne slike, imati koristi od tradicionalnih vrednosti ili pronađite duhovne smernice u bliskoj budućnosti.",
+          "reversed": "Obrnuti Saint: U bliskoj budućnosti može biti odbacivanje pravila, pobuna protiv tradicija ili nedostatka smernica.",
+          "keywords": [
+            "doktrina",
+            "uputstvo",
+            "tradicija",
+            "duh",
+            "vlast"
+          ],
+          "context": "Vaša bliska budućnost može se oblikovati poštovanjem ili protivljenjem autoritetom."
+        },
+        "position7": {
+          "upright": "Sveti, možda ćete trenutno tražiti predanost tradiciji, učenju ili duhovnim uputstvima.",
+          "reversed": "Okrećeno Svetište, može se probiti pravila, probijajući se od tradicija ili da ostanu dalje od smernica u ovom trenutku.",
+          "keywords": [
+            "doktrina",
+            "tradicija",
+            "duh",
+            "uputstvo",
+            "vlast"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je da li prihvatate ili odbacite smernice."
+        },
+        "position8": {
+          "upright": "Sveti, spoljni uticaji mogu vas voditi kroz tradiciju, nastavnike ili vodeće cifre.",
+          "reversed": "Okolišteni sveti, spoljni uticaji mogu vas pokrenuti da prekršite pravila, odvojite se od tradicije ili primite pogrešne uputstva.",
+          "keywords": [
+            "tradicija",
+            "doktrina",
+            "uputstvo",
+            "vlast",
+            "duh"
+          ],
+          "context": "Spoljni uticaji utiču na vas u konvencionalne ili buntovne načine."
+        },
+        "position9": {
+          "upright": "Sveti, možete se plašiti da priminjete pogrešne smernice, a ne u skladu sa tradicijama ili ne prihvaćeni.",
+          "reversed": "Okolišteni sveti, lažne vlasti, lažna učenja ili anksioznost u gubitku slobode može uticati na vas.",
+          "keywords": [
+            "doktrina",
+            "vlast",
+            "uputstvo",
+            "tradicija",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi su u vezi sa zavedenom ili ne prihvaćenim."
+        }
+      },
+      "thelovers": {
+        "position1": {
+          "upright": "Ljubitelji, u srcu problema mogu biti važan izbor, sukob vrednosti ili potraga za harmonijom.",
+          "reversed": "Invertirani ljubitelji, neodlučnost, nespojivi odnosi ili pogrešni izbori mogu biti u srži problema.",
+          "keywords": [
+            "glasati",
+            "raport",
+            "odluka",
+            "odnos",
+            "pitanje"
+          ],
+          "context": "U srcu problema je izbor između vrednosti i harmonije."
+        },
+        "position10": {
+          "upright": "Ljubitelji mogu da donesu harmoničnu zajednicu, pravi izbor i vezu od srca kao rezultat događaja.",
+          "reversed": "Invertirani ljubavnici, ishod događaja može biti nespojivost, pogrešan izbor ili odvajanje.",
+          "keywords": [
+            "odnos",
+            "glasati",
+            "raport",
+            "obveznica",
+            "odluka"
+          ],
+          "context": "Ishod može biti da se uspostavi skladna veza ili da se suprotstavi neskladu."
+        },
+        "position2": {
+          "upright": "Za ljubitelje, prepreka može biti neodlučnost, sukob između vrednosti ili pogrešnih izbora. Dvostruki raskrsnici vas zaustavlja.",
+          "reversed": "Ukrajini ljubitelji ukazuju na prepreku koju je stvorila nespojivost, lažna partnerstva ili sukobi vrednosti.",
+          "keywords": [
+            "glasati",
+            "nestabilnost",
+            "sukob",
+            "odnos",
+            "prepreka"
+          ],
+          "context": "Prepreka nastaje od nemogućnosti da donese izbor ili uticaj pogrešnih izbora."
+        },
+        "position3": {
+          "upright": "Ljubitelji, možda ćete podsvesno iskusiti sukob vrednosti, teški izbori ili nespojive odnose u prošlosti.",
+          "reversed": "Obrnuti ljubitelji, možda ste podsvesno doživeli pogrešne izbore, vrijedne sukobe ili nespojive odnose u prošlosti.",
+          "keywords": [
+            "Sukobi vrednosti",
+            "Tvrdi izbor",
+            "Nekompatibilni odnosi",
+            "podsvestan"
+          ],
+          "context": "Sukobi vrednosti i teški izbori u prošlosti mogu se oblikovati današnji problemi."
+        },
+        "position4": {
+          "upright": "Ljubavnici pokazuju svoj potencijal u donošenju pravih izbora, stvarajući skladne odnose i povezivanje iz srca.",
+          "reversed": "Ukrasioci su zaljubljeni, trebalo bi da izbegavate neodlučnost i pogrešne izbore koji ometaju vaš potencijal.",
+          "keywords": [
+            "glasati",
+            "raport",
+            "odnos",
+            "odluka",
+            "potencijal"
+          ],
+          "context": "Vaš najbolji potencijal je da se odluči da se usklađuju sa srcem."
+        },
+        "position5": {
+          "upright": "Ljubitelji, možda ste nedavno napravili važan izbor, zakoračili u odnos koji je kompatibilan sa vašim srcem ili razjasnite svoje vrednosti.",
+          "reversed": "Obrnuti ljubitelji, možda ste iskusili pogrešne izbore, nespojive odnose ili neodlučnost u nedavnoj prošlosti.",
+          "keywords": [
+            "glasati",
+            "odnos",
+            "raport",
+            "odluka",
+            "vrednosti"
+          ],
+          "context": "Vaša nedavna prošlost je možda rešila oko izbora i veza."
+        },
+        "position6": {
+          "upright": "Ljubitelji, u bliskoj budućnosti ćete napraviti važan izbor, razjasnite svoje vrednosti ili produbiti u odnosu na vezu.",
+          "reversed": "Vreopoveni ljubitelji, možete se suočiti sa nespojivim odnosima, pogrešnim odlukama ili neodlučnošću u bliskoj budućnosti.",
+          "keywords": [
+            "odnos",
+            "glasati",
+            "raport",
+            "odluka",
+            "vrednosti"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati odnosom ili izborima."
+        },
+        "position7": {
+          "upright": "Ljubitelji, možda ćete biti u trenutku da trenutno napravite važan izbor ili doživljavate harmoniju u svojim odnosima.",
+          "reversed": "Ukrajili ljubitelji, nespojivost, pogrešne odluke ili neodlučnost mogu vas odmah izazivati.",
+          "keywords": [
+            "odnos",
+            "glasati",
+            "raport",
+            "odluka",
+            "vrednosti"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je potrebom za jasnoćom u odnosima ili izborima."
+        },
+        "position8": {
+          "upright": "Ljubitelji, spoljni uticaji vode vas kroz odnose, partnerstva ili važne izbore.",
+          "reversed": "Uopterećeni ljubavnici, spoljni uticaji mogu donijeti energiju nesklada, pogrešne izbore ili neodlučnost.",
+          "keywords": [
+            "odnos",
+            "partnerstvo",
+            "glasati",
+            "raport",
+            "odluka"
+          ],
+          "context": "Spoljni uticaji utiču na vas kroz izbor ili odnose."
+        },
+        "position9": {
+          "upright": "Ljubitelji, možda ćete se brinuti da napravite pogrešan izbor, ulazak u nekompatibilni odnos ili se plašite posvećenosti.",
+          "reversed": "Okolišteni ljubitelji, strah od razdvajanja, nespojivosti ili donošenja pogrešne odluke mogu uticati na vas.",
+          "keywords": [
+            "odnos",
+            "glasati",
+            "raport",
+            "obveznica",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi su povezani sa pogrešnim izborima ili nespojivim odnosima."
+        }
+      },
+      "thechariot": {
+        "position1": {
+          "upright": "Kočija može biti nedostatak navigacije, kontrole ili odlučnosti u srcu problema.",
+          "reversed": "Uključena kočija, neorganizacija, nedostatak kontrole ili nemogućnost fokusiranja na cilj može biti izvor problema.",
+          "keywords": [
+            "kontrola",
+            "volja",
+            "stabilnost",
+            "pravac",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba za održavanjem kontrole i postavljenog smera."
+        },
+        "position10": {
+          "upright": "Chariot ukazuje na presudan napredak, pobedu i kontrolu nad rezultatima događaja.",
+          "reversed": "Invertirani kolač, ishod događaja može biti gubitak smera, neuspeha ili nedostatka kontrole.",
+          "keywords": [
+            "pobeda",
+            "kontrola",
+            "napredak",
+            "uspeh",
+            "stabilnost"
+          ],
+          "context": "Ishod se može ili uspešno kretati unapred ili izgubiti kontrolu."
+        },
+        "position2": {
+          "upright": "Kočiju, prepreka bi mogla biti nedostatak smera, gubitak kontrole ili nedostatak odlučnosti. Kada se ne možete fokusirati na cilj, napredak zaustavlja se.",
+          "reversed": "Invertirani kolač može blokirati vaš put zbog haosa, prekomerne ambicije ili neorganizacije.",
+          "keywords": [
+            "kontrola",
+            "volja",
+            "pravac",
+            "haos",
+            "prepreka"
+          ],
+          "context": "Prepreka dolazi od nedostatka jasnog pravca i odlučnosti."
+        },
+        "position3": {
+          "upright": "Kočija može biti podsvesno natrpana prošli nedostatak smera, nedostatka kontrole ili previše ambicija.",
+          "reversed": "Invertirano kočija može ukazivati na prošlo neorganizaciju, gubitak kontrole ili ne mogu da pronađu nečiji način se namislio u podsvesno.",
+          "keywords": [
+            "kontrola",
+            "volja",
+            "pohlepa",
+            "smernište",
+            "podsvestan"
+          ],
+          "context": "Problemi sa dezorijentacijom i kontrolom u prošlosti su možda bili osnova za današnje probleme."
+        },
+        "position4": {
+          "upright": "Kočija vam govori da je vaš potencijal ojačati svoju volju, preuzmite kontrolu i krenite napred sa odlukom prema svojim ciljevima.",
+          "reversed": "Okrećena kočija, morate se držati podalje od smernog i neorganizacije da ne biste trošili trošak vašeg potencijala.",
+          "keywords": [
+            "volja",
+            "kontrola",
+            "stabilnost",
+            "cilj",
+            "potencijal"
+          ],
+          "context": "Vaš najbolji potencijal je da se fokusirate na svoje ciljeve sa VillPover-om."
+        },
+        "position5": {
+          "upright": "Kočija, možda ste ojačali svoju volju u nedavnoj prošlosti, fokusirali se na svoje ciljeve i prešli naprijed sa određivanjem.",
+          "reversed": "Ukrao je kočiju, možda ste iskusili dezorijentaciju, gubitak kontrole ili raštrkane energije u nedavnoj prošlosti.",
+          "keywords": [
+            "volja",
+            "cilj",
+            "stabilnost",
+            "kontrola",
+            "napredak"
+          ],
+          "context": "Vaša nedavna prošlost je možda razvila fokus ili nedostatak fokusa."
+        },
+        "position6": {
+          "upright": "Chariot, u bliskoj budućnosti ojačaćete svoju volju, fokusirati se na svoje ciljeve i krenite napred sa određivanjem.",
+          "reversed": "Ograničeno kočije, možete doživeti gubitak kontrole, dezorijentacije ili raštrkane energije u bliskoj budućnosti.",
+          "keywords": [
+            "volja",
+            "stabilnost",
+            "cilj",
+            "kontrola",
+            "napredak"
+          ],
+          "context": "Vaša bliska budućnost će zavisiti od ravnoteže volje i kontrole."
+        },
+        "position7": {
+          "upright": "Kočiju, sada se krećete odlučno prema svojim ciljevima, koristeći svoju volju.",
+          "reversed": "Ukrao je kočiju, možda ćete doživljavati dezorijentaciju, neorganizaciju ili gubitak kontrole trenutno.",
+          "keywords": [
+            "volja",
+            "stabilnost",
+            "kontrola",
+            "cilj",
+            "napredak"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je ravnotežom volje i kontrole."
+        },
+        "position8": {
+          "upright": "Kočija, spoljni uticaji mogu vas voziti prema napretku, fokusu i uspeh ciljeva.",
+          "reversed": "Ukrašeno kočije može da nosi energiju spoljnih uticaja, neorganizacije, dezorijentacije ili gubitka kontrole.",
+          "keywords": [
+            "napredak",
+            "cilj",
+            "volja",
+            "kontrola",
+            "uspeh"
+          ],
+          "context": "Spoljni uticaji mogu ili podržati ili usporiti vaš napredak."
+        },
+        "position9": {
+          "upright": "Kočija, možda ćete imati strah od gubitka kontrole, da niste u stanju da pronađete svoj smer ili da niste u stanju da se krećete napred.",
+          "reversed": "Reversed Chariot može stvoriti anksioznost zbog neuspeha, gubitka motivacije ili nedostatka smera.",
+          "keywords": [
+            "kontrola",
+            "napredak",
+            "pravac",
+            "uspeh",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi su u gubitku kontrole ili ne mogu da se kreću naprijed."
+        }
+      },
+      "strength": {
+        "position1": {
+          "upright": "Snaga može biti u srcu problema, strpljenja, samopouzdanja ili potreba da se suoči sa strahovima.",
+          "reversed": "Obrnuta snaga, nedostatak samopouzdanja, podležu strahovima ili nestrpljivima mogu biti izvor problema.",
+          "keywords": [
+            "snaga",
+            "hrabrost",
+            "poverenje",
+            "strpljenje",
+            "pitanje"
+          ],
+          "context": "U srcu problema je upotreba hrabrosti i suočavanje sa strahovima."
+        },
+        "position10": {
+          "upright": "Snaga pokazuje da se može prevazići probleme sa strpljenjem, hrabrošću i unutrašnjom izdržom kao rezultat događaja.",
+          "reversed": "Obrnuta snaga može rezultirati nestrpljenjem, gubitkom samopouzdanja ili pitanja upravljanja ljutnjama kao rezultat događaja.",
+          "keywords": [
+            "hrabrost",
+            "strpljenje",
+            "ravnoteža",
+            "izdržljivost",
+            "poverenje"
+          ],
+          "context": "Ishod može biti da stoji jak ili izgubiti strpljenje."
+        },
+        "position2": {
+          "upright": "Prepreka može biti nestrpljivost, nedostatak samopouzdanja ili unutrašnjih strahova. Kada ne koristite svoju hrabrost, problem raste.",
+          "reversed": "Suprotno moć, podležu strahovima, gubitak kontrole ili pad u ljutnji može biti izvor prepreke.",
+          "keywords": [
+            "hrabrost",
+            "poverenje",
+            "strah",
+            "strpljenje",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje iz uticaja unutrašnjih strahova i nedostatak samopouzdanja."
+        },
+        "position3": {
+          "upright": "Snaga se može podsvesno nesposobno da se ne može suočiti sa strahovima koje ste iskusili u prošlosti, pitanja samopouzdanja ili nestrpljenje.",
+          "reversed": "Obrnuta snaga, prošli gubitak hrabrosti, izlivi ljutnje ili gubitak kontrole mogu se ugraditi u podsvesno.",
+          "keywords": [
+            "hrabrost",
+            "poverenje",
+            "strah",
+            "nestrpljenje",
+            "podsvestan"
+          ],
+          "context": "Prošli strahovi i pitanja samopouzdanja mogu zamagliti vašu trenutnu situaciju."
+        },
+        "position4": {
+          "upright": "Snaga pokazuje da nečiji potencijal leži u prevazilaženju poteškoća sa strpljenjem, hrabrošću i unutrašnjim ravnotežom.",
+          "reversed": "Obrnuta snaga, morate izbeći nestrpljenje, ljutnju ili nepoverenje kada koristite svoj potencijal.",
+          "keywords": [
+            "hrabrost",
+            "strpljenje",
+            "ravnoteža",
+            "poverenje",
+            "potencijal"
+          ],
+          "context": "Vaš najbolji potencijal je da krenete naprijed sa strpljenjem i hrabrošću."
+        },
+        "position5": {
+          "upright": "Snaga, možda ste pokazali hrabrost u nedavnoj prošlosti, pomerite se napred sa strpljenjem i pronađene unutrašnje ravnoteže.",
+          "reversed": "Otkazana snaga, možda ste iskusni nesigurnost, gubitak besne kontrole ili obeshrabrene u nedavnoj prošlosti.",
+          "keywords": [
+            "hrabrost",
+            "ravnoteža",
+            "strpljenje",
+            "poverenje",
+            "volja"
+          ],
+          "context": "Vaša nedavna prošlost možda je obeležena iskustvima hrabrosti ili nesigurnosti."
+        },
+        "position6": {
+          "upright": "Snaga, u bliskoj budućnosti će vam pokazati hrabrost, krenuti naprijed sa strpljenjem i uticati na svoje okruženje sa unutrašnjom ravnotežom.",
+          "reversed": "Obrnuta snaga, možda ćete osetiti nesigurnost, ispadne ljutnje ili nedostatak strpljenja u bliskoj budućnosti.",
+          "keywords": [
+            "hrabrost",
+            "ravnoteža",
+            "strpljenje",
+            "poverenje",
+            "volja"
+          ],
+          "context": "Vaša bliska budućnost može se odrediti hrabrošću i strpljenjem ili nesigurnošću."
+        },
+        "position7": {
+          "upright": "Snaga, trenutno deluje sa hrabrošću, strpljenjem i unutrašnjim ravnotežom. Održavate svoje mirno čak i u teškim situacijama.",
+          "reversed": "Obrnuta snaga, u ovom trenutku možete osporiti nesigurnost, nestrpljivost ili ispadne ljutnje ljutnje.",
+          "keywords": [
+            "hrabrost",
+            "strpljenje",
+            "ravnoteža",
+            "poverenje",
+            "volja"
+          ],
+          "context": "Vaša trenutna situacija je oblikovana hrabrošću ili nesigurnošću."
+        },
+        "position8": {
+          "upright": "Snaga, spoljni uticaji mogu vas podstaći da vas hrabrosti, strpljenje i izdržljivost.",
+          "reversed": "Obrnuta snaga, spoljni uticaji mogu donijeti energiju nepoverenja, ljutnje ili nestrpljenja.",
+          "keywords": [
+            "hrabrost",
+            "strpljenje",
+            "izdržljivost",
+            "ravnoteža",
+            "poverenje"
+          ],
+          "context": "Spoljni uticaji utiču na vas kroz hrabrost ili nesigurnost."
+        },
+        "position9": {
+          "upright": "Možete da doživite strah od moći, nestrpljenja, pokazujući slabost ili ne možete da kontrolišete svoje emocije.",
+          "reversed": "Obrnuta snaga, nesigurnost, ispadi ljutnje ili nestrpljenje mogu uticati na vas.",
+          "keywords": [
+            "hrabrost"
+          ]
+        }
+      }
+    }
+  }
+}

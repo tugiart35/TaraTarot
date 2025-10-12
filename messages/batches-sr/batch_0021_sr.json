@@ -1,0 +1,792 @@
+{
+  "marriage": {
+    "meanings": {
+      "pageofswords": {
+        "position10": {
+          "upright": "Princ mačeva ukazuje da ste u fazi istraživanja mogućnosti braka kroz radoznalost i komunikaciju. Učenje i razgovor daju smer.",
+          "reversed": "Tračevi, dezinformacija ili užurbana presuda mogu da oblakuju stazu braka. Potrebno je da proverite izvore.",
+          "keywords": [
+            "radoznalost",
+            "učenje",
+            "komunikacija",
+            "posmatranje",
+            "istina"
+          ],
+          "context": "Brak; Ojačana je otvorenom komunikacijom i učenjem."
+        },
+        "position2": {
+          "upright": "Naučite nove stvari, nahranite svoju radoznalost. Dok čekate, znanje vam daje snagu.",
+          "reversed": "Tračevi ili raštrkane informacije usložnjavaju proces. Krenite na pravi izvor.",
+          "keywords": [
+            "učenje",
+            "radoznalost",
+            "informacije",
+            "posmatranje"
+          ],
+          "context": "Korisno je naučiti dok čekate."
+        },
+        "position3": {
+          "upright": "Radoznalost i prikupljanje podataka uspostavljaju pametno budžetiranje. Verifikovano znanje je moć.",
+          "reversed": "Tračevi i užurbane presude o otrovnoj kabini.",
+          "keywords": [
+            "radoznalost",
+            "podaci",
+            "verifikacija",
+            "učenje"
+          ],
+          "context": "Pošteno deljenje se vrši sa dokazanim informacijama."
+        },
+        "position4": {
+          "upright": "Radoznalost i posmatranje mogu povećati prilog. Ako jedna od strana pokušava da nauči i razume, veza postaje jača.",
+          "reversed": "Prekomerno ispitivanje ili tračevi slabi prilog. Sumnja može potkopati poverenje.",
+          "keywords": [
+            "radoznalost",
+            "učenje",
+            "upit",
+            "poverenje",
+            "obveznica"
+          ],
+          "context": "Želja za povezivanje je tu, ali prekomjerni upit može da je ometa."
+        },
+        "position5": {
+          "upright": "Vaša kultura radoznalosti, učenja i validacije je slična. Voliš da postavljaš pitanja.",
+          "reversed": "Vaši tračevi / žurba do presuda može biti drugačija. Kontrola izvora je obavezna.",
+          "keywords": [
+            "radoznalost",
+            "učenje",
+            "verifikacija",
+            "komunikacija",
+            "etika"
+          ],
+          "context": "Radioznost za učenje je uobičajeno. Održavajte disciplinu verifikacije."
+        },
+        "position6": {
+          "upright": "Porodica će želeti da vas posmatra više. Može postavljati pitanja i testirati vaše ponašanje. Iskreno i strpljivo ispunjava svoju radoznalost, a strpljivo olakšava prihvatanje.",
+          "reversed": "Prekomerna radoznalost, tračevi ili pogrešne interpretacije mogu otežati prihvatanje u porodici. Zabranjenosti se mogu pojaviti u vezi s vama. Komunikacija pacijenta može s vremenom ispraviti ove percepcije.",
+          "keywords": [
+            "posmatranje",
+            "radoznalost",
+            "pitanje",
+            "učenje",
+            "strpljenje"
+          ],
+          "context": "Porodica vas može testirati. Vaši iskreni odgovori ulaze na put za prihvatanje."
+        },
+        "position7": {
+          "upright": "Princ mačeva ukazuje na sastanak u procesu učenja i radoznalosti. Obrazovanje ili istraživanje ubrzavaju obveznice.",
+          "reversed": "Princ Reverse mačeva kaže da je užurbana presuda može da opterene obveznice. Posmatranje olakšava postupak.",
+          "keywords": [
+            "učenje",
+            "radoznalost",
+            "komunikacija",
+            "posmatranje"
+          ],
+          "context": "Upoznate se u okruženju učenja. Radoznalost stvara obveznice."
+        },
+        "position8": {
+          "upright": "Princ mačeva pokazuje da će komunikacija biti ojačana radoznalošću i pažljivim slušanjem. Želja za učenjem olakšava razumevanje.",
+          "reversed": "Reverse princ mačeva ukazuje da ishitrene presude mogu oštetiti komunikaciju. Otvorena pitanja donose harmoniju.",
+          "keywords": [
+            "radoznalost",
+            "učenje",
+            "komunikacija",
+            "slušanje"
+          ],
+          "context": "Radoznalost povećava harmoniju; Udarišna presuda stvara prepreke."
+        },
+        "position9": {
+          "upright": "Princ mačeva, supružnik koji je znatiželjan, otvoren za učenje i pošteno komunicira je pogodan za vas.",
+          "reversed": "Princ mačeva je preokrenuo, neko ko trasiips ili čini iskrivene presude nije pogodan za vas.",
+          "keywords": [
+            "radoznalost",
+            "učenje",
+            "komunikacija",
+            "iskrenost"
+          ],
+          "context": "Zanimljiva i iskrena supružnik je pogodna."
+        }
+      },
+      "knightofswords": {
+        "position1": {
+          "upright": "Zaključak; Brzi napredak, određivanje i jasni koraci oblikovat će vaš brak.",
+          "reversed": "Žužnja ili ljutnja može da oblakne ishod braka.",
+          "keywords": [
+            "stabilnost",
+            "brzina",
+            "akcija",
+            "um"
+          ],
+          "context": "Zaključak; Brak koji raste jači sa određenim koracima. Ali žurba treba izbegavati."
+        },
+        "position10": {
+          "upright": "Vitez mačeva stvara zamah prema braku sa brzim odlukama i podebljanim inicijativama. Ali strpljenje i strategija su od suštinskog značaja.",
+          "reversed": "Žurba i oštra ton može oštetiti brak. Potrebno je disati i omekšati postupak.",
+          "keywords": [
+            "brzina",
+            "napad",
+            "stabilnost",
+            "strategija",
+            "komunikacija"
+          ],
+          "context": "Brak zahteva ravnotežu brzine + strpljenja."
+        },
+        "position2": {
+          "upright": "Brzo se krećete ka svojim ciljevima. Dok čekate, preduzimajte korake sa odlučnošću.",
+          "reversed": "Požuda ili ljutnja otežava proces. Pronađite uravnoteženu brzinu.",
+          "keywords": [
+            "cilj",
+            "brzina",
+            "odluka",
+            "rezolucija"
+          ],
+          "context": "Određivanje je korisno dok čekate."
+        },
+        "position3": {
+          "upright": "Brza odluka i presudna komunikacija zajedno donose budžet. Brzina u kombinaciji sa strategijom donosi rezultate.",
+          "reversed": "Oštar stil žurbe gori kanale; OTPORA OTPORA",
+          "keywords": [
+            "brzina",
+            "stabilnost",
+            "strategija",
+            "komunikacija"
+          ],
+          "context": "Nije oštro, to daje jasnu brzinu."
+        },
+        "position4": {
+          "upright": "Brzi i stabilni koraci podržavaju povezivanje. Koraci snimljeni sa hrabrošću usmeravaju odnos.",
+          "reversed": "Užasnim ponašanjem ili ljutnjama može se ublažiti pričvršćivanje. Potrebno je da se smiriš.",
+          "keywords": [
+            "brzina",
+            "odluka",
+            "hrabrost",
+            "podsticaj",
+            "obveznica"
+          ],
+          "context": "Postoji želja za povezivanjem, ali tempo mora biti uravnotežen."
+        },
+        "position5": {
+          "upright": "Vaš stil brzog razmišljanja i jasnog zagovaranja je sličan. Grovezno govorite na pravom mestu.",
+          "reversed": "Vaš prag za žurbu / tvrdu ton je drugačiji. Ritam-prestanak sa prestajem daha održava harmoniju.",
+          "keywords": [
+            "brzina",
+            "hrabrost",
+            "strategija",
+            "izraz",
+            "ritam"
+          ],
+          "context": "Agile Mind partner. Doza izjednačenja brzine."
+        },
+        "position6": {
+          "upright": "Porodica može delovati brzim presudama i ishitrenim odlukama. Međutim, ako ostanete mirni i mereni, ova oluja može da se rasprši u kratkom roku. Vaše hrabrost, ali stav pacijenta može biti uvažen.",
+          "reversed": "Užurbani i agresivni stav porodice može vas ugroziti. Napetosti bi mogle da rastu, slabiju šanse za prihvatanje. U ovom trenutku možda je potrebno da se daljina.",
+          "keywords": [
+            "podsticaj",
+            "odluka",
+            "hrabrost",
+            "oluja",
+            "temperatura"
+          ],
+          "context": "Porodica može brze presude. Vaše mirno stajalište se može uvažiti."
+        },
+        "position7": {
+          "upright": "Vitez mačeva ukazuje na sastanak u brzoj i jasnom okruženju. Argument ili brzi razvoj će vas ujediniti.",
+          "reversed": "Učitavanje viteza mačeva kaže da je žurba može da opterećuje obveznice. Usporavanje ojača vezu.",
+          "keywords": [
+            "brzina",
+            "stabilnost",
+            "komunikacija",
+            "odbrana"
+          ],
+          "context": "Upoznate se u brzoj sredini. Jasnost neguje vezu."
+        },
+        "position8": {
+          "upright": "Vitez mačeva ukazuje na brzu i oštre komunikaciju. Jasne izjave osiguravaju sporazum.",
+          "reversed": "Vitez mačeva obrnut ukazuje da ishitrene reči mogu otežati komunikaciju. Usporavanje donose harmoniju.",
+          "keywords": [
+            "brzina",
+            "oštrina",
+            "oštrina",
+            "komunikacija"
+          ],
+          "context": "Jasnost donosi harmoniju; Žurba otežava vezu."
+        },
+        "position9": {
+          "upright": "Vitez mačeva, partner koji hrabro komunicira, i to brzo misli da je za vas pogodan.",
+          "reversed": "Vitez mačeva preokrenuo je, neko sa užurbanim i agresivnim stilom komunikacije nije pogodan za vas.",
+          "keywords": [
+            "hrabrost",
+            "stabilnost",
+            "komunikacija",
+            "oštrina"
+          ],
+          "context": "Pogodan je partner koji komunicira hrabro i odlučno."
+        }
+      },
+      "queenofswords": {
+        "position1": {
+          "upright": "Zaključak; Objektivni pogled, mudrost i jasna komunikacija učiniće da je brak zdrav.",
+          "reversed": "Hladnoća ili prekomerna kritika mogu komplicirati ishod braka.",
+          "keywords": [
+            "mudrost",
+            "komunikacija",
+            "pravda",
+            "oštrina"
+          ],
+          "context": "Zaključak; Brak je oblikovan mudrošću i jasnoćom. Ali saosećanje mora biti zaštićeno."
+        },
+        "position10": {
+          "upright": "Kraljica mačeva čini zdravo bračne odluke sa objektivnim pogledom, poštenja i granicama. Jasnoća raste poverenje.",
+          "reversed": "Prekomerna kritika ili hladnoća može otežati proces braka. Važno je skloniti ravnotežu sa saosećanjem.",
+          "keywords": [
+            "oštrina",
+            "granica",
+            "pravda",
+            "komunikacija",
+            "mudrost"
+          ],
+          "context": "Jasnoća i saosećajan izraz su neophodni za brak."
+        },
+        "position2": {
+          "upright": "Steći logiku i objektivnost. Jasnoća je važna tokom čekanja.",
+          "reversed": "Prekomerno kritika otežava proces. Uravnotežite ga sa saosećanjem.",
+          "keywords": [
+            "oštrina",
+            "logika",
+            "objektivnost",
+            "pravda"
+          ],
+          "context": "Pomaže da budem razumno dok čekate."
+        },
+        "position3": {
+          "upright": "Objektivnost i granice čine da dele sajam novca. Cool um je vodič.",
+          "reversed": "Prekomerna kritika i sarkazam razbijaju vezu; Potrebna je ravnoteža saosećanje.",
+          "keywords": [
+            "objektivnost",
+            "granica",
+            "pravda",
+            "komunikacija"
+          ],
+          "context": "Jasan, ali nežan okvir nadahnjuje poverenje."
+        },
+        "position4": {
+          "upright": "Logika i objektivnost mogu ojačati prilog. Otvoreni i fer stav daje samopouzdanje.",
+          "reversed": "Hladnoća ili prekomerna kritičnost slabi želju za vezom. Potrebno je napraviti prostor za emocije.",
+          "keywords": [
+            "logika",
+            "pravda",
+            "prehlađen",
+            "oštrina",
+            "obveznica"
+          ],
+          "context": "Postoji želja za vezom, ali apatija može biti senka."
+        },
+        "position5": {
+          "upright": "Objektivnost i sličnost na graničnom jeziku. Jasno, fer okviri su uvjerljivi.",
+          "reversed": "Percepcija prekomerne kritike / hladnoće može biti okidač za jednog od vas. Uljudan ton je obavezan.",
+          "keywords": [
+            "oštrina",
+            "granica",
+            "pravda",
+            "objektivnost",
+            "stil"
+          ],
+          "context": "Cool uma partner. Omekšati sa saosećanjem."
+        },
+        "position6": {
+          "upright": "Logična i hladna figura u porodici će vas proceniti. On deluje sa logikom, a ne njegovim emocijama. Iskreno i poštovanje prema njemu / nje ima ključnu ulogu u procesu prihvatanja.",
+          "reversed": "Ova cifra može biti preterano kritična i fokusirana na vaše mane. Može da se distancira sa stavom koji vas stalno testira. Previše hladno, pristup može da prihvati teško.",
+          "keywords": [
+            "logika",
+            "kritika",
+            "ohladiti",
+            "vlast",
+            "rastojanje"
+          ],
+          "context": "Razumna ličnost u porodici može vas testirati. Vaš poštovani stav olakšava prihvatanje."
+        },
+        "position7": {
+          "upright": "Kraljica mačeva ukazuje na sastanak u okruženju u kojem su jasnoća i iskrenost snažna. Uspostavlja verbalnu verbalnu verbalnu verbalnu verbalnu verbaciju.",
+          "reversed": "Kraljica mačeva obrnuta kaže da prevelika kritika može da opterene obveznica. Saosećajni jezik olakšava postupak.",
+          "keywords": [
+            "oštrina",
+            "iskrenost",
+            "granica",
+            "pravda"
+          ],
+          "context": "Sastajete se na osnovu iskrenosti. Otvorene reči uzgajaju vezu."
+        },
+        "position8": {
+          "upright": "Kraljica mačeva ukazuje na objektivnu i otvorenu komunikaciju. Iskrenost ojačava ugovor.",
+          "reversed": "Kraljica obronjenih mačeva ukazuje da prekomerna kritika može poremetiti harmoniju. Saosećajni jezik uspostavlja ravnotežu.",
+          "keywords": [
+            "iskrenost",
+            "objektivnost",
+            "kritika",
+            "saosećanje"
+          ],
+          "context": "Iskrenost podstiče harmoniju; Tvrdoća sprečava."
+        },
+        "position9": {
+          "upright": "Kraljica mačeva, neko ko je nezavisan, inteligentan i otvoren je pogodan za vas. Supružnik koji balansira logiku i ljubav donosi Harmoniju.",
+          "reversed": "Kraljica mačeva preokrenuta, neko ko je preterano kritičan ili udaljen nije za vas.",
+          "keywords": [
+            "obaveštajna služba",
+            "nezavisnost",
+            "oštrina",
+            "logika"
+          ],
+          "context": "Prikladan je inteligentan i jasan supružnik."
+        }
+      },
+      "kingofswords": {
+        "position1": {
+          "upright": "Zaključak; Strateško razmišljanje, iskrenost i pravičnost vodiće vaš brak.",
+          "reversed": "Krutost ili oštra osovina u komunikaciji može da isteku ishod braka.",
+          "keywords": [
+            "pravda",
+            "logika",
+            "iskrenost",
+            "vlast"
+          ],
+          "context": "Zaključak; Brak koji napreduje sa iskrenošću i strategijom. Ali pazite na krutost."
+        },
+        "position10": {
+          "upright": "Kralj mačeva pokazuje da se odluka o braku može čvrsto davati strateškim umom, pravdom i autoritetom. Logika i etika su snažne.",
+          "reversed": "Kruti stavovi ili dogmatski perspektive mogu otežati brak. Potrebno je uključiti empatiju.",
+          "keywords": [
+            "strategija",
+            "vlast",
+            "logika",
+            "pravda",
+            "empatija"
+          ],
+          "context": "Logika i etička harmonija su od suštinskog značaja za brak."
+        },
+        "position2": {
+          "upright": "Krenuti naprijed sa znanjem i strategijom. Dok čekate, djelujete sa svojim principima.",
+          "reversed": "Krute dogme otežavaju proces. Budite fleksibilni.",
+          "keywords": [
+            "informacije",
+            "strategija",
+            "princip",
+            "vlast"
+          ],
+          "context": "Korisno je povećati mudrost dok čekate."
+        },
+        "position3": {
+          "upright": "Jasna pravila zasnovana na principima i transparentno računovodstveno hraniteljstvo. Etičko rukovodstvo je od suštinskog značaja.",
+          "reversed": "Dogmatski ton i prehlada ukidaju zajednički budžet. Nedostatak empatije stvara probleme.",
+          "keywords": [
+            "princip",
+            "etika",
+            "vladavina",
+            "transparentnost"
+          ],
+          "context": "Pošteni okvir + empatija = Čvrsti model."
+        },
+        "position4": {
+          "upright": "Promišljene odluke i logičan pristup jačaju vezivanje. Autoritarni, ali fer stav stvara poverenje.",
+          "reversed": "Krusna pravila ili nedostatak emocija može ometati prilog. Empatija je važna.",
+          "keywords": [
+            "vlast",
+            "logika",
+            "pravda",
+            "prehlađen",
+            "obveznica"
+          ],
+          "context": "Postoji želja za vezom, ali se mora izbeći krutost."
+        },
+        "position5": {
+          "upright": "Slično stajalište u principu i strategiji. Etička logika je zajednička osnova.",
+          "reversed": "Prag dogme / rigidnosti može se razlikovati. Stanje sa empatijom je od suštinskog značaja.",
+          "keywords": [
+            "princip",
+            "strategija",
+            "etika",
+            "logika",
+            "empatija"
+          ],
+          "context": "Principijela mudrost zajednička. Treba dodati element fleksibilnosti."
+        },
+        "position6": {
+          "upright": "Neko u porodici koji je autoritarno i palice za njegove principe može da odluči za vas. Kada pokažete da ste iskreni, jasni i odgovorni, verovatno će prihvatiti. Važno je da postupate u skladu sa pravilima.",
+          "reversed": "Neko ko preterano strogi i palice za pravila vas može napustiti. Može da priđe samo logici umesto emocionalne blizine. Ovaj hladni stav otežava prihvatanje.",
+          "keywords": [
+            "vlast",
+            "vladavina",
+            "iskrenost",
+            "odgovornost",
+            "prehlađen"
+          ],
+          "context": "Autoritarna figura u porodici može donositi odluke. Vaš jasan i odgovoran stav osigurava prihvatanje."
+        },
+        "position7": {
+          "upright": "Kralj mačeva ukazuje na sastanak u okruženju u kojem su principi i logika na čelu. Strategija i pravda ojačavaju vezu.",
+          "reversed": "Ograničeni kralj mačeva kaže da rigidnost može zasjeniti Bond. Empatija olakšava sastanak.",
+          "keywords": [
+            "logika",
+            "pravda",
+            "strategija",
+            "vlast"
+          ],
+          "context": "Sastaćete se u atmosferi principa i pravde. Empatija bi uravnotežila vezu."
+        },
+        "position8": {
+          "upright": "Kralj mačeva ukazuje na logičku i fer komunikaciju. Strateško razmišljanje olakšava sporazum.",
+          "reversed": "Prekoračeni kralj mačeva kaže da oštar ili hladna komunikacija može poremetiti harmoniju. Empatija donosi ravnotežu.",
+          "keywords": [
+            "logika",
+            "pravda",
+            "strategija",
+            "empatija"
+          ],
+          "context": "Logika donosi Harmoniju; Krutost stvara prepreke."
+        },
+        "position9": {
+          "upright": "Kralj mačeva, fer, logičan i strateški podmazan supružnik je pogodan za vas.",
+          "reversed": "Kralj mačeva je preokrenuo, neko ko deluje oštro i neodređeno nije pogodno za vas.",
+          "keywords": [
+            "pravda",
+            "logika",
+            "strategija",
+            "ravnoteža"
+          ],
+          "context": "Pogodan je i strateški supružnik."
+        }
+      },
+      "aceofwands": {
+        "position1": {
+          "upright": "Zaključak; U vašem braku biće nova iskra energije, strasti i početaka. Vaš odnos će rasti sa vitalnošću.",
+          "reversed": "Odloženi početnici ili nedostatak motivacije mogu se uložiti ishod braka.",
+          "keywords": [
+            "početak",
+            "strast",
+            "energija",
+            "kreativnost"
+          ],
+          "context": "Zaključak; Živastni brak koji započinje strašću. Ali motivacija se mora održati."
+        },
+        "position10": {
+          "upright": "Ace štapiće donosi snažnu početnu energiju prema braku. Strast i želja u kombinaciji mogu otvoriti nova vrata.",
+          "reversed": "Nedostatak inspiracije ili neodlučnosti može odložiti početak braka. Jedan mali korak će upaliti vatru.",
+          "keywords": [
+            "početak",
+            "inspiracija",
+            "strast",
+            "prilika",
+            "pokret"
+          ],
+          "context": "Snažna želja za brakom i novi početak su na dnevnom redu."
+        },
+        "position2": {
+          "upright": "Pokrenite nove projekte, koristite svoju kreativnu energiju. Oživite svoju strast dok čekate.",
+          "reversed": "Niska energija ili nedostatak motivacije čini proces težak. Potražite inspiraciju.",
+          "keywords": [
+            "kreativnost",
+            "strast",
+            "početak",
+            "energija"
+          ],
+          "context": "Korisno je koristiti kreativnu energiju dok čekate."
+        },
+        "position3": {
+          "upright": "Uspon novih dohotka i preduzetnička groznica se dižu. Entuzijazam takođe podstiče deljenje.",
+          "reversed": "Inspiracijski blok i odlaganja dovode do propuštenih prilika.",
+          "keywords": [
+            "inspiracija",
+            "početak",
+            "energija",
+            "pokušati"
+          ],
+          "context": "Povezivanje iskra na plan povećava budžet."
+        },
+        "position5": {
+          "upright": "Slična vatra u entuzijazmu, iskra i inicijativu. Voliš prvi korak zajedno.",
+          "reversed": "Vaš prag kontinuiteta može biti drugačiji. Ako entuzijazam nije preveden u ritam, harmonija pada.",
+          "keywords": [
+            "iskra",
+            "entuzijazam",
+            "početak",
+            "hrabrost",
+            "ubrzanje"
+          ],
+          "context": "Vatra je slična. Neka se uspostavi održivost."
+        },
+        "position6": {
+          "upright": "Porodica vas može videti novom energijom i vitalnošću. Vaši hrabri koraci i iskrene namere olakšavaju se prihvatiti. Za njih možete doneti dah svježeg vazduha u porodicu.",
+          "reversed": "Porodica vas može doživljavati kao entuzijastičan, ali nedosledan. Ako se vaše korake nejasno izgledaju, poverenje se može oštetiti. Nestabilnost otežava proces prihvatanja.",
+          "keywords": [
+            "energija",
+            "početak",
+            "hrabrost",
+            "entuzijazam",
+            "život"
+          ],
+          "context": "Nova energija ubrzava prihvatanje. Nestabilnost stvara sumnju u porodicu."
+        },
+        "position7": {
+          "upright": "Ace od štapića ukazuje da će sastanak početi sa inspiracijom i energijom. Novi projekat ili iskra vas zajedno donosi zajedno.",
+          "reversed": "Obrnuti Ace Vinds kaže da će odlaganja ili blokade inspiracije odložiti sastanak. Jedan mali korak svetli vatru.",
+          "keywords": [
+            "inspiracija",
+            "početak",
+            "energija",
+            "hrabrost"
+          ],
+          "context": "Upoznate se u trenutku inspiracije. Mali korak ubrzava vezu."
+        },
+        "position8": {
+          "upright": "ACE of štapiće pokazuje novu iskra i vitalnost u komunikaciji. Strastveni pristup se sporazum o fosterima.",
+          "reversed": "Ace štapića obrnuta ukazuje da nedostatak motivacije može otežati komunikaciju. Mali koraci preuzimaju vatru.",
+          "keywords": [
+            "početak",
+            "iskra",
+            "motivacija",
+            "komunikacija"
+          ],
+          "context": "Strast i živahnost čine lakše."
+        },
+        "position9": {
+          "upright": "Ace od štapića, strastveni, kreativni i preduzetni supružnik odgovara vam. Dodaje uzbuđenje u odnosu.",
+          "reversed": "Ace Vindes Okrećene, neko ko je nemotiviran i nevoljan nije pogodan za vas.",
+          "keywords": [
+            "strast",
+            "kreativnost",
+            "pokušati",
+            "uzbuđenje"
+          ],
+          "context": "Pogodan je strastveni i kreativni supružnik."
+        },
+        "position4": {
+          "upright": "ACE of štapiće ukazuje na strastvenu inicijativu i kreativnu energiju koja žele da se povežu. Uzbuđenje i inspiracija olakšavaju obe strane da sve srce ne kažu.",
+          "reversed": "ACE of štapića obrnuta može ukazivati na nedostatak motivacije ili niske energije u prilogu. Gubitak odlaganja inspiracije koji preduzimaju akcije.",
+          "keywords": [
+            "strast",
+            "kreativnost",
+            "početak",
+            "inspiracija",
+            "energija"
+          ],
+          "context": "Prilog je ojačan strastvenim početkom; Nedostatak kašnjenja energije."
+        }
+      },
+      "twoofwands": {
+        "position1": {
+          "upright": "Zaključak; Zajednička vizija, planiranje i odlučnost za budućnost vodiće vaš brak.",
+          "reversed": "Nesigurnost ili nedostatak vizije mogu usporivati ishod braka.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "odluka",
+            "budućnost"
+          ],
+          "context": "Zaključak; Brak na osnovu zajedničkih planova. Nesigurnosti moraju biti rešene."
+        },
+        "position10": {
+          "upright": "Tvoje štapiće ukazuju na planiranje braka i vizije za budućnost. Odnos se može preuzeti na sledeći korak.",
+          "reversed": "Nemogućnost i nemogućnost napuštanja zone komfora može odložiti brak. Potrebno je proširiti viziju hrabrošću.",
+          "keywords": [
+            "vizija",
+            "planiranje",
+            "budućnost",
+            "odluka",
+            "hrabrost"
+          ],
+          "context": "Brak zahteva viziju i hrabro planiranje."
+        },
+        "position2": {
+          "upright": "Učinite svoje planove, fokusirajte se na budućnost. Proširite svoju viziju dok čekate.",
+          "reversed": "Neodlučnost ili strah čini proces težak. Imaju hrabrost.",
+          "keywords": [
+            "planiranje",
+            "vizija",
+            "hrabrost",
+            "budućnost"
+          ],
+          "context": "Korisno je pravljenje budućih planova dok čekate."
+        },
+        "position3": {
+          "upright": "Vizija i planiranje su ujedinjeni zajedničkim ciljevima. Vreme je da se preuzme kontrolisane rizike.",
+          "reversed": "Proširenje nezadovoljne i komforne zone.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "rizikovati",
+            "horizont"
+          ],
+          "context": "Mapa horizonta čini da je njen fer sortiran vidljiv."
+        },
+        "position5": {
+          "upright": "Zajednički pogled na horizont i viziju. Ako je apetit rizika uravnotežen, širenje je jednostavno.",
+          "reversed": "Vaša prag zone komfora može biti drugačija. Prvi betonski korak ne bi trebalo da se odloži.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "horizont",
+            "rizikovati",
+            "odluka"
+          ],
+          "context": "Postoji zajednički horizont. Potrebni su betonski koraci."
+        },
+        "position6": {
+          "upright": "Porodica vas može smatrati vizionarskom i planiranom osobom. Tvoji čvrsti planovi za budućnost će ih ubediti. Ako su vaši horizonti široki, prihvatanje postaje lakše.",
+          "reversed": "Porodica vas može videti kao neodlučan ili bez smernog. Nedostatak planiranja smanjuje samopouzdanje. Neizvesnost o budućnosti stvara distancu u porodici.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "budućnost",
+            "odluka",
+            "horizont"
+          ],
+          "context": "Budući planovi nadahnjuju samopouzdanje. Neizvesnost otežava prihvatanje."
+        },
+        "position7": {
+          "upright": "Tvoje štapiće ukazuju na sastanak u procesu vizivanja i planiranja. Potraga za novim horizontima upoređuje vas.",
+          "reversed": "Otkrivena dva štapića kaže da oklevanje može odložiti sastanak. Prvi korak ubrzava sastanak.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "horizont",
+            "odluka"
+          ],
+          "context": "Upoznate se u potrazi za horizontom. Prvi korak otvara proces."
+        },
+        "position8": {
+          "upright": "Tvoje štapiće ukazuju na vid i zajedničko planiranje u komunikaciji. Gledajući budućnost zajedno donosi Harmoniju.",
+          "reversed": "Obrnuti štapići, nesigurnost i nemogućnost odlučivanja mogu oštetiti komunikaciju. Postavljanje jasnog pravca olakšava sporazum.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "odluka",
+            "budućnost"
+          ],
+          "context": "Zajednička vizija povećava harmoniju komunikacije."
+        },
+        "position9": {
+          "upright": "Dvoje štapiće, vizionarski partner koji planira za budućnost je pogodan za vas.",
+          "reversed": "Okrećeno dvoje štapića, neko ko je neodlučan i besciljan nije pogodan za vas.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "budućnost",
+            "hrabrost"
+          ],
+          "context": "Pogodan je supružnik koji planira budućnost."
+        },
+        "position4": {
+          "upright": "Dvoje štapiće ukazuju na zajedničku viziju u vezi sa vezom i željom da zajedno gledaju u budućnost. Podešavanje planiranja i cilja jača vezu.",
+          "reversed": "Invertirano dvoje štapića mogu ukazivati na neodlučnost koja žele da se obavežu i nesigurnošću o budućnosti. Povlačenje u različitim pravcima otežava se reći da.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "budućnost",
+            "cilj",
+            "odluka"
+          ],
+          "context": "Vezivanje je ojačano zajedničkim vizijama i planovima."
+        }
+      },
+      "threeofwands": {
+        "position1": {
+          "upright": "Zaključak; Biće zajedno širenje, saradnja i rast. Na horizontu postoje nove mogućnosti.",
+          "reversed": "Nepoznati očekivanja može biti razočaravajuće. Strpljenje je potrebno.",
+          "keywords": [
+            "rast",
+            "partnerstvo",
+            "vizija",
+            "strpljenje"
+          ],
+          "context": "Zaključak; brak koji se širi zajedno. Ali očekivanja treba da budu realno."
+        },
+        "position10": {
+          "upright": "Triska štapića ukazuje da se vaši horizonti šire i mogućnosti za brak je pri ruci. Nakon čekanja, koraci ubrzavaju.",
+          "reversed": "Kašnjenja ili uska perspektiva mogu usporiti brak. Korisno je revidirati plan.",
+          "keywords": [
+            "horizont",
+            "prilika",
+            "ekspanzija",
+            "čekanje",
+            "vizija"
+          ],
+          "context": "Približavaju se mogućnostima braka, potrebno je da vizija bude široka."
+        },
+        "position2": {
+          "upright": "Razmislite široko, postavite daleke ciljeve. Budite strpljivi dok čekate.",
+          "reversed": "Nestrpljivost ili kratkovidnost čini proces težak. Uzmi široku perspektivu.",
+          "keywords": [
+            "širina",
+            "cilj",
+            "strpljenje",
+            "perspektivan"
+          ],
+          "context": "Korisno je razmišljati široko dok čekate."
+        },
+        "position3": {
+          "upright": "Proširenje i očekivani povratak su na horizontu. Koordinacija jača deljenje.",
+          "reversed": "Kašnjenja i kratkovidna moral donji budžet moral.",
+          "keywords": [
+            "ekspanzija",
+            "vremenski vreme",
+            "partnerstvo",
+            "horizont"
+          ],
+          "context": "Potrebno je dinamički ažurirati plan."
+        },
+        "position5": {
+          "upright": "Vaša sposobnost proširenja i koordinacije je slična. Gledajući horizont zajedno stvara obveznice.",
+          "reversed": "Ako je propuštena sinhronizacija vremena, motivacija se smanjuje. Revizija planiranja okuplja poštovanje.",
+          "keywords": [
+            "ekspanzija",
+            "sinhronost",
+            "priprema",
+            "horizont",
+            "vreme"
+          ],
+          "context": "Koordinacija je uobičajena. Pustite sinhrono osveženje."
+        },
+        "position6": {
+          "upright": "Porodica vas može povezati sa mogućnošću proširenja i napredovanja. Vaš otvoreni i kooperativni stav ih je zadovoljava. Širok horizont olakšava prihvatanje.",
+          "reversed": "Porodica vas može doživljavati kao uskogrudovani ili neprobusin. Nepoznati očekivanja odgađa prihvatanje prihvatanja. Nedostatak horizonta razbija poverenje.",
+          "keywords": [
+            "ekspanzija",
+            "napredak",
+            "partnerstvo",
+            "horizont",
+            "otvorenost"
+          ],
+          "context": "Široki prikaz povećava prihvatanje. Uska perspektiva može otuđiti porodicu."
+        },
+        "position7": {
+          "upright": "Tri štapića ukazuju na poznanstvo u procesu širenja i saradnje. Prilika koja se pojavljuje na horizontu vas dovodi zajedno.",
+          "reversed": "Tri štapića obrnuto sugerišu da kašnjenje ili kratkovidnost može da opterene obveznica. Revizija plana olakšava sastanak.",
+          "keywords": [
+            "ekspanzija",
+            "prilika",
+            "partnerstvo",
+            "horizont"
+          ],
+          "context": "Upoznate se tokom procesa proširenja. Horizon je uvećava vezu."
+        },
+        "position8": {
+          "upright": "Tri štapića ukazuju na potencijal za širenje u komunikaciji i međusobnoj podršci. Otvoreni horizonti ojačavaju sporazum.",
+          "reversed": "Tri štapića preokrenuta ukazuje da je uska sposobnost da otežava harmoniju. Imati otvoreni um osigurava ugovor.",
+          "keywords": [
+            "ekspanzija",
+            "podrška",
+            "horizont",
+            "komunikacija"
+          ],
+          "context": "Otvoreni horizonti čine dogovor veći."
+        },
+        "position9": {
+          "upright": "Tri štapića je pogodna za supružnika koji voli da proširi svoje horizonte i otvoren je za nove mogućnosti.",
+          "reversed": "Tri štapića preokrenuta: neko ko je zatvoren i slep za prilike nije pogodan za vas.",
+          "keywords": [
+            "prilika",
+            "vizija"
+          ]
+        }
+      }
+    }
+  }
+}

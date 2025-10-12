@@ -1,0 +1,796 @@
+{
+  "marriage": {
+    "meanings": {
+      "theemperor": {
+        "position9": {
+          "context": "The ideal mate is a regular, trusting, responsible person."
+        }
+      },
+      "thehierophant": {
+        "position1": {
+          "upright": "Your marriage will be supported by tradition, values, and common beliefs, and the result can be a long and reliable bond.",
+          "reversed": "Blind tradition or value conflicts can complicate the outcome of marriage, and differences can lead to tension.",
+          "keywords": {
+            "0": "tradition",
+            "1": "value",
+            "2": "compatibility",
+            "3": "commitment"
+          },
+          "context": "The result is a bond that is strengthened by common values, but strict rules can be shadow."
+        },
+        "position10": {
+          "upright": "The saint points to traditional ways of marriage, family approval, and a sacred bond.",
+          "reversed": "Reverse Saint, traditional rules resist or incompatibility may delay the marriage path.",
+          "keywords": {
+            "0": "tradition",
+            "1": "commitment",
+            "2": "family",
+            "3": "sanctity",
+            "4": "compatibility"
+          },
+          "context": "The possibility of marriage is strong; it will be supported in traditional ways."
+        },
+        "position2": {
+          "upright": "Strengthen your values and beliefs, and the right guidance and knowledge will guide you as you wait.",
+          "reversed": "Blind devotion to tradition can limit you, make your own values clear.",
+          "keywords": {
+            "0": "values",
+            "1": "faith",
+            "2": "guidance",
+            "3": "learning"
+          },
+          "context": "It's useful to clarify your values while you're waiting, which makes it easier for you to match."
+        },
+        "position3": {
+          "upright": "Aziz points to traditional methods of financial sharing, and common values and rules support harmony.",
+          "reversed": "Reverse Saint points to conflict of different beliefs and values in financial matters, which can't be adapted without flexibility.",
+          "keywords": {
+            "0": "values",
+            "1": "tradition",
+            "2": "compatibility",
+            "3": "rules"
+          },
+          "context": "Sharing is safe in traditional ways. Different values can cause problems."
+        },
+        "position4": {
+          "upright": "Aziz shows that commitment will be supported by traditional ways and values, family approval and spiritual bonds that strengthen the yes decision.",
+          "reversed": "Reverse Saint, value conflicts or different beliefs can be a problem in bonding, and unless it's adapted, the bond is weak.",
+          "keywords": {
+            "0": "values",
+            "1": "faith",
+            "2": "confirmation",
+            "3": "connection"
+          },
+          "context": "If commitment is supported by common values, it will be permanent."
+        },
+        "position5": {
+          "upright": "Value, ethics, and ritual are similar roots, and reconciliation in the family area is easy.",
+          "reversed": "One can be traditional, one can be liberal, blind rule or blind rebellion creates conflict.",
+          "keywords": {
+            "0": "value",
+            "1": "faith",
+            "2": "ritual",
+            "3": "confirmation",
+            "4": "compatibility"
+          },
+          "context": "There's a value-based resemblance."
+        },
+        "position6": {
+          "upright": "Aziz says that family can measure you with traditional values and that it would be easy for you to accept these values, that cultural or spiritual harmony may be important to them, and that showing respect in these areas can give you confidence.",
+          "reversed": "Reverse Aziz shows that your family can question you because of your different views or your unorthodox behavior, which can increase the distance and balance a respectful explanation and open communication acceptance process.",
+          "keywords": {
+            "0": "tradition",
+            "1": "compatibility",
+            "2": "confirmation",
+            "3": "faith",
+            "4": "respect"
+          },
+          "context": "Respecting family values may be the key to acceptance."
+        },
+        "position7": {
+          "upright": "Aziz points out that you will meet in a traditional or social context, a course, a religious or social organization can bring you closer together.",
+          "reversed": "Reverse Aziz, when you meet, different systems of belief or value may come forward, and although it may seem to be incompatible at first, these differences may draw you to each other.",
+          "keywords": {
+            "0": "tradition",
+            "1": "society",
+            "2": "teaching",
+            "3": "compatibility",
+            "4": "values"
+          },
+          "context": "Meeting can take place in a traditional or social context, and different values can test you, but they can bond."
+        },
+        "position8": {
+          "upright": "The saint shows that communication can be adapted through common values and traditions, and understanding feeds on similar perspectives.",
+          "reversed": "Reverse Saint says that strict rules or blind rebellion can disrupt communication.",
+          "keywords": {
+            "0": "values",
+            "1": "tradition",
+            "2": "compatibility",
+            "3": "guidance"
+          },
+          "context": "Common values facilitate communication; blind resistance makes it difficult."
+        },
+        "position9": {
+          "upright": "Aziz, for you, the worthy mate is strong, faithful, and respectful of tradition, and common faith and values strengthen harmony.",
+          "reversed": "Reverse Saint, blindly bound by the rules, or the contrary, the one who defies everything is not suitable for you.",
+          "keywords": {
+            "0": "value",
+            "1": "Loyalty",
+            "2": "faith",
+            "3": "tradition"
+          },
+          "context": "The ideal mate is a person of value and trust."
+        }
+      },
+      "thelovers": {
+        "position1": {
+          "upright": "Your marriage will be based on love, harmony, and mutual choice.",
+          "reversed": "Indecisive or value conflicts can complicate the outcome of marriage, and the result may be uncertainty and dilemma.",
+          "keywords": {
+            "0": "love",
+            "1": "compatibility",
+            "2": "decision",
+            "3": "connection"
+          },
+          "context": "The result is the unity that is rooted in a conscious choice, but the clarity of the decision is essential."
+        },
+        "position10": {
+          "upright": "Lovers say that marriage is possible with a strong bond of love and harmony, and the right choice leads you to marriage.",
+          "reversed": "Reverse lovers, indecisive or incompatibility can prevent marriage.",
+          "keywords": {
+            "0": "love",
+            "1": "compatibility",
+            "2": "connection",
+            "3": "decision",
+            "4": "unity"
+          },
+          "context": "Marriage will be carried out by a heart-to-heart choice."
+        },
+        "position2": {
+          "upright": "As you wait, consider your own choices and values, and when your heart is clear, the right person comes.",
+          "reversed": "Indecision and dilemma may prolong the process, so make your own choices first.",
+          "keywords": {
+            "0": "selection",
+            "1": "value",
+            "2": "compatibility",
+            "3": "decision"
+          },
+          "context": "Make your choices clear while you wait. This will prepare you for the right bond."
+        },
+        "position3": {
+          "upright": "Lovers show that harmony and common values are at the forefront of financial sharing. Elections are held together.",
+          "reversed": "Reverse lovers mean dissonance in financial matters and indecisiveness.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "partnership",
+            "2": "decision",
+            "3": "values"
+          },
+          "context": "There's harmony and common decision-making in sharing, and indecisiveness can lead to conflict."
+        },
+        "position4": {
+          "upright": "Lovers show that both sides are willing to commit from the heart, and that bond will grow stronger with common values and choices.",
+          "reversed": "Inverted lovers can be indecisive in the desire to connect or the attraction of different paths unless a clear choice is made, the bond will remain suspended.",
+          "keywords": {
+            "0": "selection",
+            "1": "connection",
+            "2": "compatibility",
+            "3": "love"
+          },
+          "context": "Connection is strengthened by clear choices."
+        },
+        "position5": {
+          "upright": "Strong alignment of basic values, choices, and goals of life. Your heart looks at the same thing, yes.",
+          "reversed": "Indecisive or prior conflict can break the line, and unless the clear choice is made, the sense of resemblance weakens.",
+          "keywords": {
+            "0": "value",
+            "1": "selection",
+            "2": "alignment",
+            "3": "love",
+            "4": "alliance"
+          },
+          "context": "The value is high, the clarity of the decision makes the resemblance permanent."
+        },
+        "position6": {
+          "upright": "The lover's card says it will make it easier for the family to accept the harmony and love in your relationship, and your common values increase their trust, and keep showing your love in a natural and balanced way.",
+          "reversed": "Inverted lovers point to the possibility that the family may question your relationship or tend to take sides, and differences can complicate the process of acceptance, and displaying your determination and harmony will create confidence.",
+          "keywords": {
+            "0": "love",
+            "1": "compatibility",
+            "2": "decision",
+            "3": "values",
+            "4": "Trust"
+          },
+          "context": "The integrity of your relationship plays an important role in convincing the family."
+        },
+        "position7": {
+          "upright": "Lovers say that you meet with a heart-to-heart choice, that you meet each other at the right time by choosing each other, and your common values bring you closer and closer.",
+          "reversed": "Reverse Lovers, indecision or third party may be effective when you meet, and unless a clear choice is made, your connection may be difficult to move forward.",
+          "keywords": {
+            "0": "selection",
+            "1": "values",
+            "2": "compatibility",
+            "3": "gravity",
+            "4": "Closeness"
+          },
+          "context": "Meeting comes with a heart-to-heart choice, which can complicate the process."
+        },
+        "position8": {
+          "upright": "Lovers show that honest talks from the heart will strengthen the agreement.",
+          "reversed": "Reverse lovers say that indecisiveness or double language can cause problems in communication.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "love",
+            "2": "selection",
+            "3": "openness"
+          },
+          "context": "Open elections provide a deal; a double tongue creates a disconnect."
+        },
+        "position9": {
+          "upright": "Lovers are the kind of man who cares about the value of a suitable wife, makes choices from the heart, and the bond with common decisions is strengthened.",
+          "reversed": "Reverse Lovers are not suitable for you to be indecisive, conflicting, or incompatible with values.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "selection",
+            "2": "value",
+            "3": "love"
+          },
+          "context": "The ideal mate is the one who shares common values and makes clear choices."
+        }
+      },
+      "thechariot": {
+        "position1": {
+          "upright": "Your marriage will move forward with focus, discipline, and co-ordination, and the result may be strong and aimed at the goal.",
+          "reversed": "Lack of aim or conflicting direction may obscure the outcome of the marriage, and progress may be disbanded.",
+          "keywords": {
+            "0": "focus",
+            "1": "direction",
+            "2": "discipline",
+            "3": "will"
+          },
+          "context": "The result is clear targets and a common route, but it has to be careful to swing."
+        },
+        "position10": {
+          "upright": "The Chariot shows that you can reach marriage with focus and determination.",
+          "reversed": "Reverse Chariot, disorientation or contradictions can slow down the marriage process.",
+          "keywords": {
+            "0": "decision",
+            "1": "focus",
+            "2": "will",
+            "3": "control",
+            "4": "direction"
+          },
+          "context": "Marriage will be possible with focused and conscious steps."
+        },
+        "position2": {
+          "upright": "Make your goals clear and proceed with determination. Discipline makes you strong.",
+          "reversed": "Aggression or disorientation will make the process difficult.",
+          "keywords": {
+            "0": "target",
+            "1": "control",
+            "2": "determination",
+            "3": "Progress"
+          },
+          "context": "It's useful to determine your goals while you're waiting, and determination will prepare you."
+        },
+        "position3": {
+          "upright": "The Chariot represents control and progress in financial matters, and together, success is possible by focusing on goals.",
+          "reversed": "The Reverse Chariot points to problems of fiscal harmony, disorientation and control, preventing the conflict from progressing.",
+          "keywords": {
+            "0": "control",
+            "1": "Progress",
+            "2": "focus",
+            "3": "success"
+          },
+          "context": "Focusing on the goal of sharing brings success, disorientation can lead to loss."
+        },
+        "position4": {
+          "upright": "The Chariot shows that a strong bond can be established if both sides show will for the same goal.",
+          "reversed": "The Reverse Chariot is a risk of being drawn in different directions or in a conflict of control, and if it's not adapted, the road becomes difficult.",
+          "keywords": {
+            "0": "will",
+            "1": "target",
+            "2": "discipline",
+            "3": "compatibility"
+          },
+          "context": "It's easier to make a common point than to connect."
+        },
+        "position5": {
+          "upright": "You're similar to the focus of progress, target and discipline, and the common course calls you to the same speed.",
+          "reversed": "The speed and method of difference stretch the rope, and the wheel fight disrupts the harmony.",
+          "keywords": {
+            "0": "direction",
+            "1": "acceleration",
+            "2": "discipline",
+            "3": "target",
+            "4": "determination"
+          },
+          "context": "There's a target-focused resemblance. Speed/tempo match required."
+        },
+        "position6": {
+          "upright": "The Chariot shows that your family will accept you because of your firm and strong stance, your clear goals and desire for progress are a reassuring sign, and your strong will can give them courage.",
+          "reversed": "The Reverse Chariot indicates that your family may perceive you as too hasty, overbearing, or undirected, and that perception can make the acceptance process difficult, and a moderate and calm stance will build confidence.",
+          "keywords": {
+            "0": "determination",
+            "1": "power",
+            "2": "Progress",
+            "3": "Stop",
+            "4": "balance"
+          },
+          "context": "Your firm but balanced attitude helps you gain the trust of your family."
+        },
+        "position7": {
+          "upright": "The Chariot shows that you will meet through movement and travel, moving, or a common goal can bring you together.",
+          "reversed": "The Reverse Chariot, there may be disorientation or opposition in your meeting, different targets can create distance in the beginning, but they can be overcome by harmony.",
+          "keywords": {
+            "0": "journey",
+            "1": "movement",
+            "2": "target",
+            "3": "union",
+            "4": "focus"
+          },
+          "context": "Acquaintances are connected to travel or movement, and adaptability makes the process easier."
+        },
+        "position8": {
+          "upright": "The Chariot shows that it's possible to negotiate with focused communication, and to move towards a common goal strengthens ties.",
+          "reversed": "The Reverse Chariot says that sloppy or oppressive style can disrupt communication.",
+          "keywords": {
+            "0": "focus",
+            "1": "target",
+            "2": "discipline",
+            "3": "direction"
+          },
+          "context": "Focused communication brings harmony; sloppyness makes the deal difficult."
+        },
+        "position9": {
+          "upright": "The Chariot is a determined, ambitious, target-oriented wife for you, and you're inspired by the desire to lead life.",
+          "reversed": "Reverse Chariot, undirected, sloppy, or over-pressive is not a good fit for you.",
+          "keywords": {
+            "0": "decision",
+            "1": "target",
+            "2": "will",
+            "3": "control"
+          },
+          "context": "The ideal mate is determined and faithful to his goals."
+        }
+      },
+      "strength": {
+        "position1": {
+          "upright": "Your marriage will be protected by patience, compassion, and inner strength, and the result can be a bond strengthened by love.",
+          "reversed": "Anger or pride can weaken the peace of marriage, and the result may be unstable power conflicts.",
+          "keywords": {
+            "0": "power",
+            "1": "Patience",
+            "2": "Compassion",
+            "3": "Courage"
+          },
+          "context": "The result is a marriage strengthened by compassion, but anger must be balanced."
+        },
+        "position10": {
+          "upright": "With power, patience, compassion, and inner balance, it shows that marriage can take place.",
+          "reversed": "Reverse Power, long - suffering, pride, or instability can block the way to marriage.",
+          "keywords": {
+            "0": "Patience",
+            "1": "Compassion",
+            "2": "balance",
+            "3": "Courage",
+            "4": "determination"
+          },
+          "context": "Marriage will be built with patience and compassion."
+        },
+        "position2": {
+          "upright": "Grow up with patience and compassion, and your inner strength will prepare you for your mate.",
+          "reversed": "Anger or impatience can make the process difficult. Choose the soft approach.",
+          "keywords": {
+            "0": "Patience",
+            "1": "Compassion",
+            "2": "internal power",
+            "3": "Courage"
+          },
+          "context": "When you wait, compassion and patience are important, and this process will make you mature."
+        },
+        "position3": {
+          "upright": "Power demonstrates patience and self - control in financial matters, and compassion and understanding balance in sharing.",
+          "reversed": "The Reverse Power points to impatient and oppressive behavior in financial disputes, which may lead to a lack of trust.",
+          "keywords": {
+            "0": "Patience",
+            "1": "Self - control",
+            "2": "Compassion",
+            "3": "Trust"
+          },
+          "context": "Patience and compassion are strong in sharing, oppression is a problem."
+        },
+        "position4": {
+          "upright": "Power signals that the desire to be joined will be fed by love, patience, and understanding.",
+          "reversed": "The Reverse Force, impatientness, pride, or lack of control of anger can be a problem, and without internal stability, commitment becomes difficult.",
+          "keywords": {
+            "0": "Patience",
+            "1": "love",
+            "2": "understanding",
+            "3": "determination"
+          },
+          "context": "The bond is strengthened by compassion and patience."
+        },
+        "position5": {
+          "upright": "A common vibration in the language of gentle courage, patience, and compassion.",
+          "reversed": "Envy or pride triggers can work differently, and if the threshold of patience is not compatible, tension increases.",
+          "keywords": {
+            "0": "Patience",
+            "1": "Compassion",
+            "2": "Courage",
+            "3": "Self-regular",
+            "4": "Trust"
+          },
+          "context": "Sympathy-based resemblance is strong, and triggers need gentle adjustments."
+        },
+        "position6": {
+          "upright": "The power card shows that your family will accept you on your patient, understanding, and compassionate side, and your kind approach will make it easier for you to gain their trust, and your calm power will inspire respect.",
+          "reversed": "The Reverse Power shows that your family can perceive you too impatient, jealous, or out of control, which can cause the temperature to decrease, and calmness and self-esteem strengthen the acceptance process.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "Patience",
+            "2": "kindness",
+            "3": "Self - confidence",
+            "4": "balance"
+          },
+          "context": "Your compassionate power will be your greatest supporter in winning your family's heart."
+        },
+        "position7": {
+          "upright": "The power says that you will meet with patience and gentle energy, and your soft approach wins the heart of the opposite.",
+          "reversed": "The Reverse Power, pride or rigor in your encounter, can slow the approach.",
+          "keywords": {
+            "0": "Patience",
+            "1": "kindness",
+            "2": "power",
+            "3": "gravity",
+            "4": "softness"
+          },
+          "context": "Meeting can happen with soft and patient energy, hardness creates distance."
+        },
+        "position8": {
+          "upright": "Power means that a patient and gentle manner will ensure an agreement, and soft courage bridges communication.",
+          "reversed": "The Reverse Power says that anger or stubbornness can disrupt communication.",
+          "keywords": {
+            "0": "Patience",
+            "1": "kindness",
+            "2": "Courage",
+            "3": "Compassion"
+          },
+          "context": "Gentle power enhances harmony; anger makes the deal difficult."
+        },
+        "position9": {
+          "upright": "Power is a patient, kind, compassionate wife for you, who gives you confidence with gentle courage.",
+          "reversed": "The reverse power, the impatient, the jealous, or the show of power, is not suitable for you.",
+          "keywords": {
+            "0": "Patience",
+            "1": "Compassion",
+            "2": "Courage",
+            "3": "Trust"
+          },
+          "context": "The ideal mate is the patient and kind one."
+        }
+      },
+      "thehermit": {
+        "position1": {
+          "upright": "In your marriage, inner wisdom, patience, and deep thoughts will emerge, and the result can be a mature and calm bond.",
+          "reversed": "Excessive closure or distance can make the outcome of marriage difficult.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "Patience",
+            "2": "Introduction",
+            "3": "maturity"
+          },
+          "context": "The result is a marriage supported by maturity, but extreme distance can be shade."
+        },
+        "position10": {
+          "upright": "He says that after the process of internal exploration and loneliness, the possibility of marriage will become stronger.",
+          "reversed": "Reverse Ermis can postpone the marriage path to over-reaching.",
+          "keywords": {
+            "0": "Introduction",
+            "1": "wisdom",
+            "2": "search",
+            "3": "loneliness",
+            "4": "Patience"
+          },
+          "context": "There is a possibility of marriage, but it will be after internal preparation."
+        },
+        "position2": {
+          "upright": "Go to your inner quest, get to know yourself, loneliness is a guide in this process.",
+          "reversed": "Excessive isolation makes the process difficult. It's important to find balance.",
+          "keywords": {
+            "0": "internal search",
+            "1": "loneliness",
+            "2": "wisdom",
+            "3": "guidance"
+          },
+          "context": "It's good to know yourself while you're waiting, but be careful not to get too lonely."
+        },
+        "position3": {
+          "upright": "The melt shows an introverted and careful approach to financial sharing, a cautious and lonely decision may come forward in spending.",
+          "reversed": "Reverse Ermish talks about his tendency to oversell and not share in financial matters, which could undermine confidence.",
+          "keywords": {
+            "0": "Introduction",
+            "1": "Conscientious",
+            "2": "sharing",
+            "3": "loneliness"
+          },
+          "context": "There's careful and cautious energy in sharing."
+        },
+        "position4": {
+          "upright": "It shows that the desire to bond will come with inner maturity and self-knowledge, and the one who knows the inner world is ready to say yes.",
+          "reversed": "Inversely, the urge to close down or to be alone can interfere with the bonding, and one of the parties may feel closed to bonding.",
+          "keywords": {
+            "0": "maturity",
+            "1": "Introduction",
+            "2": "preparation",
+            "3": "wisdom"
+          },
+          "context": "Maturity and internal preparedness make it possible to connect."
+        },
+        "position5": {
+          "upright": "You're similar to introverts, meditation, and quality loneliness, and even the shared silence builds closeness.",
+          "reversed": "When one of you likes loneliness and the other wants intimacy, the rhythm goes away, it creates extreme isolation.",
+          "keywords": {
+            "0": "Introduction",
+            "1": "wisdom",
+            "2": "field",
+            "3": "guidance",
+            "4": "Tranquillity"
+          },
+          "context": "The depth and space need are common, and the dosage is consistent."
+        },
+        "position6": {
+          "upright": "He tells you that your family can see you as a wise, calm, and introverted person, and that your silence can be found to be reassuring, and your thinking will speed up your acceptance.",
+          "reversed": "Inverted Ermis indicates that the family can perceive you too introverted or distant, which may cause intimacy to develop late, and a more shared attitude will reduce the distance.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "Silence",
+            "2": "Distance",
+            "3": "respect",
+            "4": "thought"
+          },
+          "context": "Your silent but wise attitude shows respect, but extreme distance acceptance slows it down."
+        },
+        "position7": {
+          "upright": "A workshop, a bookcase, a course, or a journey where you choose to be alone, your paths may cross; deep conversation brings you closer.",
+          "reversed": "Reverse Ermi says that too much indoor closure can delay the encounter, and when you soften the isolation and establish selective socialism, it opens up to the theme of fate.",
+          "keywords": {
+            "0": "Introduction",
+            "1": "wisdom",
+            "2": "calm",
+            "3": "Deep conversation"
+          },
+          "context": "You meet in a quiet and meaningful environment, and the depth attracts you, and relaxing isolation speeds up the meeting."
+        },
+        "position8": {
+          "upright": "It shows that you can adapt to communication through deep thought and insight, and the words that come after silence are precious.",
+          "reversed": "Inverted melts indicate that extreme introverts can make the deal difficult. Openness increases harmony.",
+          "keywords": {
+            "0": "Introduction",
+            "1": "wisdom",
+            "2": "depth",
+            "3": "simplicity"
+          },
+          "context": "The depth brings harmony; the over-reaching prevents the agreement."
+        },
+        "position9": {
+          "upright": "He is a man of great depth, wisdom, and guidance for you, and he can give you confidence even in silence.",
+          "reversed": "It's not appropriate for you to be inverted, introverted, cold, or distant.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "depth",
+            "2": "guidance",
+            "3": "Trust"
+          },
+          "context": "The ideal mate is the one who supports with depth and wisdom."
+        }
+      },
+      "thewheeloffortune": {
+        "position1": {
+          "upright": "Your marriage will be supported by the cycles of fate, and the result may be lucky turns and opportunities.",
+          "reversed": "Uncontrollability or repeated mistakes can cloud the outcome of the marriage.",
+          "keywords": {
+            "0": "Fate",
+            "1": "cycle",
+            "2": "change",
+            "3": "Luck"
+          },
+          "context": "The result is a marriage with the support of fate, but it's important to recognize the cycles."
+        },
+        "position10": {
+          "upright": "The Wheel of Destiny shows that the chances of marriage are high, that time works for you.",
+          "reversed": "Reverse Wheels, out-of-control obstacles or misfortune may delay the marriage process.",
+          "keywords": {
+            "0": "Fate",
+            "1": "Luck",
+            "2": "time",
+            "3": "change",
+            "4": "cycle"
+          },
+          "context": "There is a possibility of marriage; it will happen at the right time."
+        },
+        "position2": {
+          "upright": "Accept the cycles of life and be open to change and opportunity while waiting.",
+          "reversed": "Resistance to change can force you to trust the flow.",
+          "keywords": {
+            "0": "cycle",
+            "1": "change",
+            "2": "flow",
+            "3": "Agreed"
+          },
+          "context": "It's useful to adapt to the flow while you wait, and instead of resistance, you have to accept it."
+        },
+        "position3": {
+          "upright": "The Wheel of Destiny points to chance and cyclical changes in financial matters, and opportunities may arise in common resources.",
+          "reversed": "The Reverse Destiny Wheel shows unexpected losses or misfortunes in financial matters, and there may be ups and downs in sharing.",
+          "keywords": {
+            "0": "Luck",
+            "1": "cycle",
+            "2": "opportunity",
+            "3": "missing"
+          },
+          "context": "There may be change and opportunity in sharing, but there's also the risk of misfortune."
+        },
+        "position4": {
+          "upright": "The Wheel of Destiny indicates that the desire to bind will be shaped according to the conditions of the time, and the bond with harmony and the right timing will become stronger on its own.",
+          "reversed": "The Reverse Wheel shows that commitment can be forced by uncertain or uncontrollable changes, and one of the parties may find it difficult to rely on time.",
+          "keywords": {
+            "0": "transformation",
+            "1": "timing",
+            "2": "compatibility",
+            "3": "Fate"
+          },
+          "context": "Connection happens when the right time and conditions come together."
+        },
+        "position5": {
+          "upright": "Your ability to adapt to change and read opportunity is similar to your ability to flow along with cycles.",
+          "reversed": "One likes change, and the other wants to stay still, and if the timing readings conflict, then the match goes down.",
+          "keywords": {
+            "0": "cycle",
+            "1": "timing",
+            "2": "flexibility",
+            "3": "Luck",
+            "4": "flow"
+          },
+          "context": "It's openness to change, and time reading needs to be discussed."
+        },
+        "position6": {
+          "upright": "The Wheel of Destiny says that family acceptance can follow a waved, but generally positive course through time, and as conditions change, its perception of you may soften; its ability to adapt to the flow increases its chances.",
+          "reversed": "The Reverse Destiny Wheel tells us that family cycles can delay acceptance (formerities, old judgments) and instead of forcing change, it breaks the cycle to collect patient little good experiences.",
+          "keywords": {
+            "0": "timing",
+            "1": "cycle",
+            "2": "flow",
+            "3": "compatibility",
+            "4": "Luck"
+          },
+          "context": "The process of acceptance can change from time to time, turning the chances of harmony and patience in favor."
+        },
+        "position7": {
+          "upright": "The Wheel of Destiny says that meeting will be in a powerful window of time that seems to be a coincidence, an unplanned change, a move, or a journey will bring you together in a random way.",
+          "reversed": "Reverse Wheels tells us that wrong timing or missed opportunities can prolong the process, and instead of resisting flow, a little yes will align fate.",
+          "keywords": {
+            "0": "Fate",
+            "1": "timing",
+            "2": "Coincidence",
+            "3": "change"
+          },
+          "context": "When the time window opens, you'll meet it, it'll speed up the flow, it'll miss the opportunity to resist."
+        },
+        "position8": {
+          "upright": "The Wheel of Destiny shows that lucky encounters and natural flow in communication will facilitate the deal. It's important to adapt to the cycles.",
+          "reversed": "The Reverse Wheel says that resistance or control effort will make communication difficult, and trust in the flow brings harmony.",
+          "keywords": {
+            "0": "cycle",
+            "1": "Luck",
+            "2": "flow",
+            "3": "compatibility"
+          },
+          "context": "Trusting in the flow is the deal; resistance is the obstacle."
+        },
+        "position9": {
+          "upright": "The Wheel of Destiny is a man for you who is open to change, flexible, and capable of taking chances, and he'll be there for you in the cycles of life.",
+          "reversed": "The Reverse Destiny Wheel, the one who resists change, the one who's stuck or dependent on luck, is not suitable for you.",
+          "keywords": {
+            "0": "change",
+            "1": "flexibility",
+            "2": "opportunity",
+            "3": "flow"
+          },
+          "context": "The ideal mate is the one who adapts to the flow."
+        }
+      },
+      "justice": {
+        "position1": {
+          "upright": "Your marriage will be based on justice, balance and honesty, and the result may be a bond protected by equality and transparency.",
+          "reversed": "A double standard or injustice can damage the outcome of a marriage, and a lack of honesty is a problem.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "Honesty",
+            "3": "Equality"
+          },
+          "context": "The result is a fair and balanced marriage, but it could be a double standard shadow."
+        },
+        "position10": {
+          "upright": "Justice shows that the marriage decision will be a fair, balanced, and formal union.",
+          "reversed": "Reverse Justice, instability, or avoiding responsibility may interfere with the marriage path.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "decision",
+            "3": "responsibilities",
+            "4": "formality"
+          },
+          "context": "Marriage will be possible with a fair and balanced choice."
+        },
+        "position2": {
+          "upright": "Build your own sense of justice and honesty, and the right choices are important while waiting.",
+          "reversed": "A sense of injustice or internal contradiction may prolong the process.",
+          "keywords": {
+            "0": "justice",
+            "1": "Honesty",
+            "2": "balance",
+            "3": "selection"
+          },
+          "context": "Honesty and balance are important when you wait, which makes you more compatible."
+        },
+        "position3": {
+          "upright": "Justice represents equality and transparency in financial matters, balances open and fair sharing.",
+          "reversed": "Reverse Justice shows injustice and secrecy in financial matters, and inequality is a problem.",
+          "keywords": {
+            "0": "justice",
+            "1": "Equality",
+            "2": "transparency",
+            "3": "balance"
+          },
+          "context": "In sharing, equality and transparency bring confidence."
+        },
+        "position4": {
+          "upright": "Justice shows that commitment is built on honesty, equality, and mutual responsibility. When sides are open and transparent, the bond is strengthened.",
+          "reversed": "In reverse justice, in desire to commit, there may be injustice, hidden truths, or lack of honesty, which undermines the trust of the bond.",
+          "keywords": {
+            "0": "justice",
+            "1": "Honesty",
+            "2": "Equality",
+            "3": "balance"
+          },
+          "context": "Transparency and fair sharing are the basis of commitment."
+        },
+        "position5": {
+          "upright": "You meet in justice, transparency and equality, and the accountable language comforts you both.",
+          "reversed": "Double standard perception can be easily triggered, and if there's no amends and clarity, the sense of resemblance goes away.",
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "transparency",
+            "3": "responsibilities",
+            "4": "measure"
+          },
+          "context": "Fair share is common value, transparency must last."
+        },
+        "position6": {
+          "upright": "Justice raises the possibility of respect and acceptance from family by your consistent and honest manner, and the transparent communication and fair work department writes you into the house of trust.",
+          "reversed": "Reverse Justice, double standard perception, or incomplete explanations may raise doubts in the family - clarity, and when necessary, compensation restores balance.",
+          "keywords": {
+            "0": "Honesty",
+            "1": "balance",
+            "2": "transparency",
+            "3": "respect",
+            "4": "Trust"
+          },
+          "context": "Fair and clear is the key to acceptance."
+        },
+        "position7": {
+          "upright": "Justice says that meeting will happen through agreement, document, education, or legal process, and in a fair and transparent environment, mutual respect will happen quickly.",
+          "reversed": "Reverse Justice says that misunderstandings or unstable expectations can cloud the first contact. When clear and honest communication is established, the bond is on the right track.",
+          "keywords": {
+            "0": "balance",
+            "1": "transparency",
+            "2": "contract"
+          }
+        }
+      }
+    }
+  }
+}

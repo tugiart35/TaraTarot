@@ -1,0 +1,796 @@
+{
+  "marriage": {
+    "meanings": {
+      "thehierophant": {
+        "position3": {
+          "context": "Deljenje je sigurno kroz tradicionalna sredstva. Različite vrednosti mogu prouzrokovati probleme."
+        },
+        "position4": {
+          "upright": "Svetac pokazuje da će prilog biti podržan tradicionalnim načinima i vrednostima. Odobrenje porodice i duhovne veze ojačavaju ovu odluku da.",
+          "reversed": "U obrnutom Svetom, sukobi vrednosti ili različita uverenja mogu prouzrokovati probleme kada je u pitanju prilog. Ako se ne postigne harmonija, veza ostaje slaba.",
+          "keywords": [
+            "vrednosti",
+            "verovanje",
+            "odobrenje",
+            "obveznica"
+          ],
+          "context": "Vezivanje će biti trajno ako je podržan zajedničkim vrednostima."
+        },
+        "position5": {
+          "upright": "Slični koreni u vrednosti, etici i ritualu. Kompromise je lako u porodičnoj / tradiciona područja.",
+          "reversed": "Može se ostati tradicionalno, drugi libertarac. Slepo pravilo ili slepa pobuna stvara sukob.",
+          "keywords": [
+            "vrednost",
+            "verovanje",
+            "ritual",
+            "odobrenje",
+            "raport"
+          ],
+          "context": "Postoji sličnost zasnovana na vrednosti. Treba razgovarati o fleksibilnoj oblasti."
+        },
+        "position6": {
+          "upright": "Aziz kaže da vaša porodica može da vas meri tradicionalnim vrijednostima i da će prihvatanje biti lako zahvaljujući vašoj usaglašenosti sa ovim vrednostima. Kulturna ili duhovna harmonija mogu im biti važna. Imati poštovani stav u ovim oblastima pomaže vam da steknete samopouzdanje.",
+          "reversed": "Okolišteni svetac pokazuje da vas porodica može ispitivati za vaše različite stavove ili nekonvencionalne stavove. Ovo može povećati udaljenost. Poštujući objašnjenje i otvorena komunikacija može uravnotežiti proces prihvatanja.",
+          "keywords": [
+            "tradicija",
+            "raport",
+            "odobrenje",
+            "verovanje",
+            "poštovanje"
+          ],
+          "context": "Poštujući vrednosti porodice može biti ključ za prihvatanje."
+        },
+        "position7": {
+          "upright": "Svetac pokazuje da će vaš sastanak biti u tradicionalnom ili društvenom kontekstu. Kurs, religiozna ili društvena organizacija može vas približiti bliže.",
+          "reversed": "Ograničeni sveti, različito verovanje ili vrednosti vrednosti mogu doći do zaruka na vašem sastanku. Iako se u početku može izgledati kao nespojivost, ove razlike mogu vas privući jedni na druge.",
+          "keywords": [
+            "tradicija",
+            "društvo",
+            "doktrina",
+            "raport",
+            "vrednosti"
+          ],
+          "context": "Sastanak se može odvijati u tradicionalnom ili društvenom kontekstu. Različite vrednosti vas mogu testirati, ali mogu vas povezati."
+        },
+        "position8": {
+          "upright": "Svetac pokazuje da će se harmonija postići u komunikaciji kroz zajedničke vrednosti i tradicije. Razumevanje je hranjeno sličnim perspektivama.",
+          "reversed": "Okrećeni Sveti kaže da kruta pravila ili slepa pobuna mogu uništiti komunikaciju. Fleksibilno uklapanje uspostavlja ravnotežu.",
+          "keywords": [
+            "vrednosti",
+            "tradicija",
+            "raport",
+            "uputstvo"
+          ],
+          "context": "Zajedničke vrednosti olakšavaju komunikaciju; Slepo otpornost otežava."
+        },
+        "position9": {
+          "upright": "Aziz, pogodan supružnik za vas je neko ko ima snažne vrednosti, lojalna je i poštuje tradicije. Zajednička uverenja i vrednosti ojačavaju harmoniju.",
+          "reversed": "Okolištena svetaca, osoba koja slepo sledi pravila ili, naprotiv, pobunjenici protiv svega, nije pogodan za vas.",
+          "keywords": [
+            "vrednost",
+            "lojalnost",
+            "verovanje",
+            "tradicija"
+          ],
+          "context": "Idealan supružnik je neko ko je posvećen njihovim vrednostima i pouzdano."
+        }
+      },
+      "thelovers": {
+        "position1": {
+          "upright": "Vaš brak će biti izgrađen na ljubavi, harmoniji i obostranim izboru. Zaključak; Može postojati snažno jedinstvo srca.",
+          "reversed": "Neodlučna ili vrednost sukoba mogu komplicirati ishod braka. Zaključak; Možda postoji neizvesnost i dilema.",
+          "keywords": [
+            "lova",
+            "raport",
+            "odluka",
+            "obveznica"
+          ],
+          "context": "Zaključak; jedinstvo ukorenjeno u svesnom izboru. Ali jasnoća odluke je neophodna."
+        },
+        "position10": {
+          "upright": "Ljubitelji kažu da je brak moguć sa snažnom vezom ljubavi i harmonije. Pravi izbor će vas dovesti do braka.",
+          "reversed": "Invertirani ljubavnici, neodlučnost ili nespojivost mogu ometati brak.",
+          "keywords": [
+            "lov",
+            "raport",
+            "obveznica",
+            "odluka",
+            "jedinstvo"
+          ],
+          "context": "Brak će se odvijati sa izborom napravljenim od srca."
+        },
+        "position2": {
+          "upright": "Dok čekate, ispitajte svoje izbore i vrednosti. Kada je vaše srce jasno, doći će prava osoba.",
+          "reversed": "Neodlučnost i dilema mogu produžiti proces. Prvo, izaberite u sebi.",
+          "keywords": [
+            "glasati",
+            "vrednost",
+            "raport",
+            "odluka"
+          ],
+          "context": "Dok čekate, razjasnite svoje izbore. Ovo vas priprema za pravu vezu."
+        },
+        "position3": {
+          "upright": "Ljubitelji pokazuju da su harmonija i zajedničke vrednosti na čelu u finansijskim deljenjima. Izbori se prave zajedno.",
+          "reversed": "Ljubitelji obrnuto znači neslaganja i neodlučnost u finansijskim stvarima. Nedostatak zajedničke odluke stvara probleme.",
+          "keywords": [
+            "raport",
+            "partnerstvo",
+            "odluka",
+            "vrednosti"
+          ],
+          "context": "Postoje harmonija i zajednička moć donošenja odluka u deljenju. Neodlučnost može dovesti do sukoba."
+        },
+        "position4": {
+          "upright": "Ljubitelji pokazuju da su obe strane voljne da se povežu iz srca. Ova veza će se dalje ojačati zajedničkim vrednostima i izborima.",
+          "reversed": "Invertirani ljubitelji mogu biti ambivalentni u svojoj želji da se obavežu ili povuku na različite staze. Ako se ne napravi jasan izbor, obveznica ostaje suspendovana.",
+          "keywords": [
+            "glasati",
+            "obveznica",
+            "raport",
+            "lov"
+          ],
+          "context": "Prilog je ojačano jasnim izborom."
+        },
+        "position5": {
+          "upright": "Snažno usklađivanje u osnovnim vrednostima, izborima i životnim ciljevima. Tvoje srce traži isto \"da\".",
+          "reversed": "Neodlučna ili sukobljeni prioriteti mogu baciti poravnanje. Osim ako se ne napravi jasan izbor, osećaj sličnosti slabi.",
+          "keywords": [
+            "vrednost",
+            "glasati",
+            "poravnanje",
+            "lov",
+            "savezništvo"
+          ],
+          "context": "Kompatibilnost vrijednosti je velika. Jasnoća odluke čini stalnu sličnost."
+        },
+        "position6": {
+          "upright": "Kartica ljubavnika kaže da će vaša porodica videti harmoniju i ljubav u vašoj vezi i olakšati im da vas prihvati. Vaše zajedničke vrednosti povećavaju svoje poverenje. Nastavite da pokažete svoju ljubav na prirodan i uravnotežen način.",
+          "reversed": "Ljubitelji preokrenuti ukazuju na mogućnost da vaša porodica može da dovede u pitanje vaš odnos ili tendencija da uzmete strane. Razlike u mišljenju mogu zakomplikovati proces prijema. Izložba vaše odlučnosti i prilagodljivost stvoriće poverenje.",
+          "keywords": [
+            "lova",
+            "raport",
+            "odluka",
+            "vrednosti",
+            "poverenje"
+          ],
+          "context": "Snaga vašeg odnosa igra važnu ulogu u uvjerljivosti porodice."
+        },
+        "position7": {
+          "upright": "Ljubitelji kažu da će vaš sastanak biti kroz izbor od srca. Sastaćete se odabirom jedni druge u pravo vreme. Vaše zajedničke vrednosti će vas brzo približiti.",
+          "reversed": "Obrnuti ljubitelji, neodlučnost ili treća lica mogu biti uticajni na vašem sastanku. Osim ako se ne napravi jasan izbor, vaša veza se može teško kretati napred.",
+          "keywords": [
+            "glasati",
+            "vrednosti",
+            "raport",
+            "povući",
+            "blizina"
+          ],
+          "context": "Sastanak se dešava kroz izbor iz srca. Neodlučnost može otežati proces."
+        },
+        "position8": {
+          "upright": "Ljubitelji pokazuju da će iskreni razgovori iz srca ojačati razumevanje. Harmonija se postiže jasnim izborom.",
+          "reversed": "Ukrajini ljubavnici kažu da neodlučnost ili dvostruki jezik može prouzrokovati probleme u komunikaciji. Clariti štedi obveznica.",
+          "keywords": [
+            "raport",
+            "lov",
+            "glasati",
+            "otvorenost"
+          ],
+          "context": "Otvoreni izbori osiguravaju sporazum; Dvostruki jezik stvara prekid veze."
+        },
+        "position9": {
+          "upright": "Ljubitelji su neko kome je stalo o vrednosti harmoniji odgovarajućih partnera za vas i donosi izbore od srca. Bond je ojačan zajedničkim odlukama.",
+          "reversed": "Invertirani ljubavnici, neko ko je neodlučan, sukobljen ili nema nespojive vrednosti nisu u pravu za vas.",
+          "keywords": [
+            "raport",
+            "glasati",
+            "vrednost",
+            "lov"
+          ],
+          "context": "Idealan partner je onaj koji deli zajedničke vrednosti i daje jasne izbore."
+        }
+      },
+      "thechariot": {
+        "position1": {
+          "upright": "Vaš brak će napredovati sa fokusom, disciplinom i zajedničkom pravcu. Zaključak; To može biti snažna i ciljana veza.",
+          "reversed": "Nedostatak svrhe ili sukobljeni aspekti mogu da ispitani brak nesigurni. Napredak se može raspasti.",
+          "keywords": [
+            "fokus",
+            "pravac",
+            "disciplina",
+            "volja"
+          ],
+          "context": "Zaključak; Jasni ciljevi i obična ruta. Ali budite oprezni za podizanje."
+        },
+        "position10": {
+          "upright": "Charit pokazuje da sa fokusom i odlučnošću možete postići brak.",
+          "reversed": "Ukrašeno kočije, nedostatak smera ili kontradikcija može usporiti proces braka.",
+          "keywords": [
+            "odluka",
+            "fokus",
+            "volja",
+            "kontrola",
+            "pravac"
+          ],
+          "context": "Brak će biti moguć sa fokusiranim i svesnim koracima."
+        },
+        "position2": {
+          "upright": "Razjasnite svoje ciljeve i krenite naprijed sa odlučnošću. Disciplinovana orijentacija vas čini snažnim.",
+          "reversed": "Žurba ili nedostatak pravca otežava proces. Organizujte svoje prioritete.",
+          "keywords": [
+            "cilj",
+            "kontrola",
+            "stabilnost",
+            "napredak"
+          ],
+          "context": "Pomoćno je postaviti svoje ciljeve dok čekate. Određivanje vas priprema."
+        },
+        "position3": {
+          "upright": "Chariot simbolizuje kontrolu i napredak u finansijskim pitanjima. Uspeh je moguć fokusiranjem na ciljeve zajedno.",
+          "reversed": "Reversed Chariot ukazuje na nedostatak pravnih i kontrolnih pitanja u finansijskom prilagođavanju. Strife može da ometa napredak.",
+          "keywords": [
+            "kontrola",
+            "napredak",
+            "fokus",
+            "uspeh"
+          ],
+          "context": "Fokusiranje na cilj u deljenju donosi uspeh. Nedostatak smera može dovesti do gubitaka."
+        },
+        "position4": {
+          "upright": "Kolorit pokazuje da se može utvrditi snažna veza ako obe strane pokažu volju za isti cilj. Sa zajedničkim pravcem i disciplinom, napredak je postignut prema braku.",
+          "reversed": "Ukrao je kočija, postoji rizik da se u različito uputstva povuče u želji da se poveže ili sukob kontrole. Ako se harmonija ne postigne, put postaje težak.",
+          "keywords": [
+            "volja",
+            "cilj",
+            "disciplina",
+            "raport"
+          ],
+          "context": "Identifikacija zajedničkog osnova olakšava vezivanje."
+        },
+        "position5": {
+          "upright": "Slični ste u fokusu na napredak, ciljeve i disciplinu. Zajednička ruta vas poziva na istu brzinu.",
+          "reversed": "Razlike u brzini i metodi čine konop čvrsto. Borba protiv točka ometaju harmoniju.",
+          "keywords": [
+            "pravac",
+            "ubrzanje",
+            "disciplina",
+            "cilj",
+            "stabilnost"
+          ],
+          "context": "Postoji ciljno orijentisana sličnost. Uklapanje brzine / tema je obavezan."
+        },
+        "position6": {
+          "upright": "Kočija pokazuje da će vas porodica prihvatiti zahvaljujući vašem utvrđenom i snažnom stavu. Za njih su vaši jasni ciljevi i želja za napretkom uvjerljiv znak. Tvoja snažna će im dati hrabrost.",
+          "reversed": "Ukrašeno kočije pokazuje da vas porodica može doživljavati kao previše užurbane, dominirajuće ili smerne. Ova percepcija može otežati proces prihvatanja. Izmereno i mirno stajalište će izgraditi poverenje.",
+          "keywords": [
+            "stabilnost",
+            "snaga",
+            "napredak",
+            "stajati",
+            "ravnoteža"
+          ],
+          "context": "Vaše odlučno, ali uravnotežen stav pomoći će vam da steknete poverenje svoje porodice."
+        },
+        "position7": {
+          "upright": "Kočija pokazuje da će vaš sastanak biti kroz kretanje i putovanje. Putovanje, kretanje ili zajednički cilj može vas sastajati.",
+          "reversed": "Ukrašeno kočije, možda postoji nedostatak pravca ili opozicije na vašem sastanku. Različiti ciljevi u početku mogu u početku stvoriti udaljenost, ali mogu se prevazići sa harmonijom.",
+          "keywords": [
+            "putovanje",
+            "pokret",
+            "cilj",
+            "spajanje",
+            "fokus"
+          ],
+          "context": "Sastanak je povezan sa putovanjem ili kretanjem. Prilagođavanje olakšava postupak."
+        },
+        "position8": {
+          "upright": "Kočija pokazuje da je razumevanje moguće sa fokusiranom komunikacijom. Fokusiranje na zajednički cilj jača obveznice.",
+          "reversed": "Ukrašeno kočije govori nam da je neuredan ili opresivni ton mogao da poremeti komunikaciju. Uobičajeni smer pruža harmoniju.",
+          "keywords": [
+            "fokus",
+            "cilj",
+            "disciplina",
+            "pravac"
+          ],
+          "context": "Fokusirana komunikacija donosi harmoniju; Rasinkost otežava dogovor."
+        },
+        "position9": {
+          "upright": "Kočija, vaš odgovarajući partner je određen, ambiciozan i orijentisan na cilj. Želja za usmjeravanjem života će vas nadahnuti.",
+          "reversed": "Ukrašeno kočije, bez smernih, neuredan ili preterano dominirajući osoba nije pogodan za vas.",
+          "keywords": [
+            "odluka",
+            "cilj",
+            "volja",
+            "kontrola"
+          ],
+          "context": "Idealan supružnik je neko ko je određen i odan njihovim ciljevima."
+        }
+      },
+      "strength": {
+        "position1": {
+          "upright": "Vaš brak će se sačuvati strpljenje, saosećanje i unutrašnja snaga. Zaključak; To može biti veza koja je ojačala ljubav.",
+          "reversed": "Ljutnja ili ponos može potkopati mir braka. Zaključak; Možda postoje neuravnoteženi sukobi snage.",
+          "keywords": [
+            "snaga",
+            "strpljenje",
+            "saosećanje",
+            "hrabrost"
+          ],
+          "context": "Zaključak; Brak je ojačan saosećanjem. Ali gnev mora biti uravnotežen."
+        },
+        "position10": {
+          "upright": "Pokazuje da se brak može ostvariti snagom, strpljenjem, saosećanje i unutrašnjim ravnotežom.",
+          "reversed": "Obrnuta snaga, nestrpljivost, ponos ili neravnoteža mogu blokirati put ka braku.",
+          "keywords": [
+            "strpljenje",
+            "saosećanje",
+            "ravnoteža",
+            "hrabrost",
+            "stabilnost"
+          ],
+          "context": "Brak će biti izgrađen sa strpljenjem i saosećanjem."
+        },
+        "position2": {
+          "upright": "Poboljšajte se strpljenje i saosećanje. Vaša unutrašnja snaga će vas pripremiti za supružniku.",
+          "reversed": "Ljutnja ili nestrpljenje može otežati proces. Izaberite mekani pristup.",
+          "keywords": [
+            "strpljenje",
+            "saosećanje",
+            "unutrašnja snaga",
+            "hrabrost"
+          ],
+          "context": "Saosećanje i strpljenje su važni tokom čekanja. Ovaj proces vas dospije."
+        },
+        "position3": {
+          "upright": "Snaga ukazuje na strpljenje i samokontrolu u finansijskim pitanjima. Saosećanje i razumevanje pružaju ravnotežu u deljenju.",
+          "reversed": "Obrnuta snaga ukazuje na nestrpljenje i dominirajuće stavove u finansijskim sporovima. Može se pojaviti nedostatak poverenja.",
+          "keywords": [
+            "strpljenje",
+            "samokontrola",
+            "saosećanje",
+            "poverenje"
+          ],
+          "context": "Strpljenje i saosećanje su snažni u deljenju. Opasivost stvara probleme."
+        },
+        "position4": {
+          "upright": "Snaga ukazuje da će želja za vezom biti hranjiva ljubavlju, strpljenjem i razumevanjem. Strane su spremne da prihvate jedni druge.",
+          "reversed": "Obrnuta snaga, nestrpljivost sa prilogom, ponosom ili nedostatkom kontrole ljutnje može prouzrokovati probleme. Bez unutrašnje ravnoteže, vezanost postaje teška.",
+          "keywords": [
+            "strpljenje",
+            "lova",
+            "razumevanje",
+            "stabilnost"
+          ],
+          "context": "Bond je ojačan saosećanje i strpljenje."
+        },
+        "position5": {
+          "upright": "Zajednička vibracija na jeziku nežne hrabrosti, strpljenja i saosećanja. Podignite jedni druge sa mekom snagom.",
+          "reversed": "Ljubomori ili ponosni okidači mogu drugačije raditi. Ako prag strpljenja nije usklađen, napetost se povećava.",
+          "keywords": [
+            "strpljenje",
+            "saosećanje",
+            "hrabrost",
+            "samoregulacija",
+            "poverenje"
+          ],
+          "context": "Sličnost zasnovane na saosećanju je snažna. Pokretima je potrebno nežno prilagođavanje."
+        },
+        "position6": {
+          "upright": "Kartica jačine pokazuje da će vas porodica prihvatiti sa pacijentom, razumevanjem i saosećajne strane. Vaš nežni pristup olakšava vam da steknete njihovo poverenje. Vaša mirna čvrstoća zapovijeda.",
+          "reversed": "Obrnuta snaga pokazuje da vas porodica može doživljavati kao previše nestrpljive, ljubomorne ili izvan kontrole. To može dovesti do smanjenja temperature. Mirnoća i samopouzdanje ojačavaju proces prihvatanja.",
+          "keywords": [
+            "saosećanje",
+            "strpljenje",
+            "ljubaznost",
+            "poverenje",
+            "ravnoteža"
+          ],
+          "context": "Vaša saosećajna moć biće vaš najveći navijač u pobedi u srcu vaše porodice."
+        },
+        "position7": {
+          "upright": "Moć vam govori da će se vaš sastanak održati sa strpljenjem i nežnom energijom. Vaš meki pristup će osvojiti srce druge stranke.",
+          "reversed": "Obrnuta snaga, ponos ili gorčina mogu ometati vaš sastanak. Preterano dominantan stav može usporiti približavanje.",
+          "keywords": [
+            "strpljenje",
+            "ljubaznost",
+            "snaga",
+            "povući",
+            "mekoća"
+          ],
+          "context": "Sastanak se može odvijati nežno i energijom pacijenta. Tvrdoća stvara distancu."
+        },
+        "position8": {
+          "upright": "Snaga pokazuje da će pacijent i uljudan ton osigurati sporazum. Komunikacija sa mekim hrabrostima Komunikacija.",
+          "reversed": "Obrnuta snaga kaže da ljutnja ili tvrdoglavost mogu da poremete komunikaciju. Saosećanje pruža ravnotežu.",
+          "keywords": [
+            "strpljenje",
+            "ljubaznost",
+            "hrabrost",
+            "saosećanje"
+          ],
+          "context": "Nježna snaga uvećava harmoniju; Ljutnja otežava razumevanje."
+        },
+        "position9": {
+          "upright": "Snaga, vaš pogodan partner je strpljiv, ljubazan i saosećajan. To daje pouzdanje njenom nežnom hrabrošću.",
+          "reversed": "Okolištena snaga, neko ko je nestrpljiv, ljubomoran ili skloni prikazivanju moći nije pogodan za vas.",
+          "keywords": [
+            "strpljenje",
+            "saosećanje",
+            "hrabrost",
+            "poverenje"
+          ],
+          "context": "Idealan supružnik je neko ko je strpljiv i nežan i hrabar."
+        }
+      },
+      "thehermit": {
+        "position1": {
+          "upright": "Unutrašnja mudrost, strpljenje i duboke misli će doći do izražaja u vašem braku. Zaključak; To može biti zrela i mirna veza.",
+          "reversed": "Prekomerno povlačenje ili udaljenost može komplicirati ishod braka. Osjećaj usamljenosti može se povećati.",
+          "keywords": [
+            "mudrost",
+            "strpljenje",
+            "okretanje prema unutra",
+            "zrelost"
+          ],
+          "context": "Zaključak; Brak koji podržava zrelost. Ali ekstremna udaljenost može da baci senku."
+        },
+        "position10": {
+          "upright": "Saint kaže da će mogućnost braka postati jači nakon procesa unutrašnjeg otkrića i usamljenosti.",
+          "reversed": "Okolištena svetaca, prekomerna introverzija može odložiti put ka braku.",
+          "keywords": [
+            "okretanje prema unutra",
+            "mudrost",
+            "potraga",
+            "usamljenost",
+            "strpljenje"
+          ],
+          "context": "Postoji mogućnost braka, ali to će se desiti nakon unutrašnje pripreme."
+        },
+        "position2": {
+          "upright": "Okrenite se u svoju unutrašnju pretragu, upoznajte se. Usamljenost je vodič u ovom procesu.",
+          "reversed": "Prekomerna izolacija čini proces težak. Važno je pronaći ravnotežu.",
+          "keywords": [
+            "unutrašnja potraga",
+            "usamljenost",
+            "mudrost",
+            "uputstvo"
+          ],
+          "context": "Korisno je upoznati sebe dok čekate. Ali budite oprezni da ne postanete previše usamljeni."
+        },
+        "position3": {
+          "upright": "Svetac pokazuje introvertirani i pažljiv pristup finansijskom deljenju. OPREZ i donošenje odluka mogu doći na prednji plan u potrošnji.",
+          "reversed": "Okrećeni svetskim opisuje tendenciju da se izuzetno introvertira i ne deli u finansijskim pitanjima. To može oštetiti poverenje.",
+          "keywords": [
+            "okretanje prema unutra",
+            "paza",
+            "ne deli",
+            "usamljenost"
+          ],
+          "context": "Pažljiva i oprezna energija prevladava u deljenju. Prekomerno zatvaranje poremeti sklad."
+        },
+        "position4": {
+          "upright": "Saint pokazuje da želja za povezivanjem dolazi sa unutrašnjom zrelošću i samospoznajom. Osoba koja poznaje njegov unutrašnji svet spreman je da kaže da.",
+          "reversed": "Obrnuta svetaca, preterana introverzija ili želja za samoće može ometati prilog. Jedna strana može se osjećati zatvoreno sa veze.",
+          "keywords": [
+            "zrelost",
+            "okretanje prema unutra",
+            "priprema",
+            "mudrost"
+          ],
+          "context": "Zrelost i unutrašnja spremnost omogućavaju mogućnost veze."
+        },
+        "position5": {
+          "upright": "Slični ste u introspektivnoj, razmišljanju i kvalitetnoj samoći. Čak i zajednička tišina gradi intimnost.",
+          "reversed": "Ako neko od vas voli samoću, a drugi želi bliskost, ritam se zbunjuje. Prekomerna izolacija stvara distancu.",
+          "keywords": [
+            "okretanje prema unutra",
+            "mudrost",
+            "oblast",
+            "uputstvo",
+            "spokojstvo"
+          ],
+          "context": "Potreba za dubinom i prostorom je uobičajena. Prilagođavanje doziranja održava usklađenost."
+        },
+        "position6": {
+          "upright": "Saint objašnjava da vas porodica može videti kao mudro, mirno i introvertirane osobe koja se može poštovati. Vaša tišina se može naći uvjerljivo. Vaša promišljena strana ubrzava prihvatanje.",
+          "reversed": "Ograničeni svetac pokazuje da vas porodica može doživljavati kao previše povučene ili udaljene. To može prouzrokovati kasni razvoj intimnosti. Više stava deljenja će smanjiti udaljenost.",
+          "keywords": [
+            "mudrost",
+            "tišina",
+            "rastojanje",
+            "poštovanje",
+            "misao"
+          ],
+          "context": "Vaša tiha, ali mudra naređena naredno poštovanje, ali prekomerna odredba usporava prihvatanje."
+        },
+        "position7": {
+          "upright": "Ermis kaže da će se sastanak održati u mirnom i introvertom periodu. Vaši staze mogu da pređu u radionici, biblioteku, kurs ili na putu gde odlučite da budete sami; Duboko razgovor vas približava.",
+          "reversed": "Okrećena svetića objašnjava da je previše introvertirana može odložiti susret. Kada omekšate izolaciju i uspostavite selektivni socijalite, prostor se otvara za temu sudbine.",
+          "keywords": [
+            "okretanje prema unutra",
+            "mudrost",
+            "miran",
+            "duboko chat"
+          ],
+          "context": "Upoznate se u mirnom i smislenom okruženju. Dubina vas privlači. Labavljenje izolacije ubrzava sastanak."
+        },
+        "position8": {
+          "upright": "Saint pokazuje da se harmonija može postići u komunikaciji kroz duboku misao i uvid. Reči koje dolaze nakon tišine su vredne.",
+          "reversed": "Okolišteni svetac pokazuje da prekomerna introverzija može da se otežava. Otvorena povećava harmoniju.",
+          "keywords": [
+            "okretanje prema unutra",
+            "mudrost",
+            "dubina",
+            "jednostavnost"
+          ],
+          "context": "Dubina donosi Harmoniju; Prekomerno zatvaranje sprečava ugovor."
+        },
+        "position9": {
+          "upright": "Sveti, pogodan supružnik za vas je neko ko ima unutrašnju dubinu, mudro je i može da vodi. Može dati poverenje čak i u tišini.",
+          "reversed": "Osoba koja je obrnuta svetaca, preterano povučena, hladna ili povučena nije pogodna za vas.",
+          "keywords": [
+            "mudrost",
+            "dubina",
+            "uputstvo",
+            "poverenje"
+          ],
+          "context": "Idealan partner je neko ko podržava dubinu i mudrost."
+        }
+      },
+      "thewheeloffortune": {
+        "position1": {
+          "upright": "Vaš brak će podržati ciklusi sudbine. Zaključak; Možda postoje srećni predmeti i mogućnosti.",
+          "reversed": "Nedostatak kontrole ili ponovljenih grešaka može izvršiti ishod braka nesigurnog. Sreća se može okrenuti.",
+          "keywords": [
+            "sudbina",
+            "petlja",
+            "promeniti",
+            "šansa"
+          ],
+          "context": "Zaključak; Brak koji napreduje uz podršku sudbine. Ali važno je primetiti cikluse."
+        },
+        "position10": {
+          "upright": "Točak sudbine pokazuje da su šanse za brak visoki i vreme radi za vas.",
+          "reversed": "Reversed točak, nekontrolisane prepreke ili loša sreća mogu odložiti proces braka.",
+          "keywords": [
+            "sudbina",
+            "šansa",
+            "vreme",
+            "promeniti",
+            "petlja"
+          ],
+          "context": "Postoji mogućnost braka; To će se dogoditi u pravo vreme."
+        },
+        "position2": {
+          "upright": "Prihvatite cikluse života. Dok čekate, budite otvoreni za promenu i priliku.",
+          "reversed": "Oduprijeti se promenama može biti izazovno. Verujte toku.",
+          "keywords": [
+            "petlja",
+            "promeniti",
+            "protok",
+            "prihvatanje"
+          ],
+          "context": "Korisno je ići sa protokom dok čekate. Potrebno je prihvatiti umesto otpora."
+        },
+        "position3": {
+          "upright": "Točak sudbine ukazuje na sreću i cikličke promene u finansijskim pitanjima. Mogućnosti mogu nastati iz uobičajenih resursa.",
+          "reversed": "Obrnuti točak bogatstva ukazuje na neočekivane gubitke ili nesreću u finansijskim pitanjima. Može biti UPS i padova u deljenju.",
+          "keywords": [
+            "šansa",
+            "petlja",
+            "prilika",
+            "gubitak"
+          ],
+          "context": "Možda postoje promene i mogućnosti u deljenju. Ali postoji i rizik od loše sreće."
+        },
+        "position4": {
+          "upright": "Točak sudbine ukazuje da će se želja za povezivanjem oblikovati u skladu sa uslovima u periodu. Sa harmonijom i pravom vremenom, veza postaje jača sama.",
+          "reversed": "Obrnuti točak pokazuje da se želja za povezivanjem može osporiti neizvesnošću ili nekontrolisanom promenom. Jedna strana može imati poteškoće u vrijeme poverenja.",
+          "keywords": [
+            "transformacija",
+            "vremenski vreme",
+            "raport",
+            "sudbina"
+          ],
+          "context": "Prilog se događa kada se pravo vreme i okolnosti okupljaju."
+        },
+        "position5": {
+          "upright": "Vaša sposobnost prilagođavanja promenama i čitanju mogućnosti je slična. Možete teći sa ciklusima.",
+          "reversed": "Dok čovek može da se promeni, drugi možda želi da ostane konstantna. Ako se vreme čitanja čitanja, padne usaglašenosti.",
+          "keywords": [
+            "petlja",
+            "vremenski vreme",
+            "fleksibilnost",
+            "šansa",
+            "protok"
+          ],
+          "context": "Otvorenost za promenu je uobičajena. O vremenu čitanja treba da se raspravlja."
+        },
+        "position6": {
+          "upright": "Točak sudbine sugeriše da prihvatanje porodice može da sledi fluktuirajući, ali uglavnom pozitivan kurs tokom vremena. Kako se promjene okolnosti, njihove percepcije vas mogu omekšati; Idete sa protokom povećava vaše šanse.",
+          "reversed": "Pretvoreni točak sudbine objašnjava da porodični ciklusi (navike, stare presude) mogu odložiti prihvatanje. Umesto da prisiljavaju promene, strpljivo nakupljajući mala dobra iskustva prekida ovaj ciklus.",
+          "keywords": [
+            "vremenski vreme",
+            "petlja",
+            "protok",
+            "raport",
+            "šansa"
+          ],
+          "context": "Proces prijema se povremeno menja. Vaš harmoničan i pacijentni stav okreće sreću u vašu korist."
+        },
+        "position7": {
+          "upright": "Točak sudbine kaže da će se sastanak dogoditi u snažnom vremenu vremena koji izgleda kao slučajnost. Neplanirana promena, pomeranje ili putovanje vas spojiju slučajno.",
+          "reversed": "Točak naglavačke naglavačke označava da pogrešnim vremenskim ili propuštenim mogućnostima mogu produžiti proces. Umesto da se odupire protoku, malim da poravnava sudbina.",
+          "keywords": [
+            "sudbina",
+            "vremenski vreme",
+            "slučajnost",
+            "promeniti"
+          ],
+          "context": "Naići ćete na to kada se otvori vremenski prozor. Harmonija sa protokom daje brzinu. Otpor nedostaje prilika."
+        },
+        "position8": {
+          "upright": "Točak sudbine pokazuje da će sretni susreti i prirodni tok u komunikaciji olakšati razumevanje. Važno je prilagoditi ciklusima.",
+          "reversed": "Obrnuti točak govori nam da će napori otpora ili kontrole biti teške komunikacije. Verujući protoku donosi Harmoniju.",
+          "keywords": [
+            "petlja",
+            "šansa",
+            "protok",
+            "raport"
+          ],
+          "context": "Verujući protoku osigurava ugovor; Otpornost stvara prepreke."
+        },
+        "position9": {
+          "upright": "Točak sudbine, vaš pogodan partner je neko ko je otvoren za promenu, fleksibilnost i može da proceni mogućnosti. On je s vama tokom celog života ciklusa.",
+          "reversed": "Obrnuti točak sudbine, neko ko se odoli promeni, zaglavljen je ili je ovisan od sreće nije pogodan za vas.",
+          "keywords": [
+            "promeniti",
+            "fleksibilnost",
+            "prilika",
+            "protok"
+          ],
+          "context": "Idealan partner je neko ko ide sa tokom."
+        }
+      },
+      "justice": {
+        "position1": {
+          "upright": "Vaš brak će biti izgrađen na pravdi, ravnoteži i iskrenosti. Zaključak; To može biti veza koja će biti zaštićena jednakošću i transparentnošću.",
+          "reversed": "Dvostruki standardi ili nepravda mogu oštetiti ishod braka. Odstupanje od iskrenosti stvara probleme.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "iskrenost",
+            "jednakost"
+          ],
+          "context": "Zaključak; Pošteno i uravnoteženo brak. Ali može postojati senka dvostrukih standarda."
+        },
+        "position10": {
+          "upright": "Pravda pokazuje da će odluka o braku biti fer, uravnotežena i zvanična unija.",
+          "reversed": "Reverzija pravde, nestabilnost ili izbegavanje preuzimanja odgovornosti mogu ometati put ka braku.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "odluka",
+            "odgovornost",
+            "formalnost"
+          ],
+          "context": "Brak će biti moguće kroz pravičan i uravnotežen izbor."
+        },
+        "position2": {
+          "upright": "Razvijte svoj osećaj pravde i iskrenosti. Dok su čekali, važni su pravi izbori.",
+          "reversed": "Osećanja nepravde ili unutrašnje sukobe mogu produžiti proces. Budite nepristrasni.",
+          "keywords": [
+            "pravda",
+            "iskrenost",
+            "ravnoteža",
+            "glasati"
+          ],
+          "context": "Iskrenost i ravnoteža su važni tokom čekanja. To vas čini prilagodljivijim."
+        },
+        "position3": {
+          "upright": "Pravda simbolizuje jednakost i transparentnost u finansijskim pitanjima. Otvoreni i pravični deljenje bilansirala odnos.",
+          "reversed": "Reversed Judnjak ukazuje na nepravdu i tajnost u finansijskim pitanjima. Nejednakost stvara probleme.",
+          "keywords": [
+            "pravda",
+            "jednakost",
+            "transparentnost",
+            "ravnoteža"
+          ],
+          "context": "Ravnopravnost i transparentnost u deljenju donosi poverenje. Nepravda uništava harmoniju."
+        },
+        "position4": {
+          "upright": "Pravda ukazuje da će se obaveza uspostaviti iskrenošću, jednakošću i obostranom odgovornošću. Kada su stranke otvorene i transparentne, veza postaje jača.",
+          "reversed": "Obrnuta pravda može biti nepravednost, skrivene istine ili nedostatak iskrenosti u želji da se poveže. Ova situacija oštećuje poverenje vinograda.",
+          "keywords": [
+            "pravda",
+            "iskrenost",
+            "jednakost",
+            "ravnoteža"
+          ],
+          "context": "Transparentnost i pravilno deljenje su osnova veze."
+        },
+        "position5": {
+          "upright": "Vi se sastajete u pravdi, transparentnosti i jednakosti. Odgovornog jezika vas oboje postavljaju lako.",
+          "reversed": "Percepcija dvostrukih standarda može se lako pokrenuti. Ako se nadoknada i jasnoća nisu uspostavljena, osećaj sličnosti se gubi.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "transparentnost",
+            "odgovornost",
+            "merenje"
+          ],
+          "context": "Pošteno deljenje je uobičajena vrednost. Transparentnost se mora nastaviti."
+        },
+        "position6": {
+          "upright": "Pravda povećava mogućnost sticanja poštovanja i prihvatanja porodice sa vašim doslednim i iskrenim stavovima. Transparentna komunikacija i fer podjela rada stavljaju vas u kategoriju \"Pouzdana\".",
+          "reversed": "Nepovoljna pravda, percepcija dvostrukih standarda ili nepotpunih objašnjenja može stvoriti sumnju u porodici. Jasnoća i blagovremena nadoknada kada je potrebno da se bavno obnavlja ravnoteža.",
+          "keywords": [
+            "iskrenost",
+            "ravnoteža",
+            "transparentnost",
+            "poštovanje",
+            "poverenje"
+          ],
+          "context": "Pošteno i jasno stav je ključ prihvatanja. Brzo razjasnite nejasnoće."
+        },
+        "position7": {
+          "upright": "Pravda kaže da će poznanstvo biti kroz dogovor, dokument, obrazovanje ili pravni postupak. U fer i transparentnom okruženju brzo se uspostavlja međusobno poštovanje.",
+          "reversed": "Obrnuta pravičnost opisuje kako nerazumevanja ili neuravnotežena očekivanja mogu ublažiti inicijalni kontakt. Kada se uspostavi jasna i iskrena komunikacija, veza je na pravom putu.",
+          "keywords": [
+            "ravnoteža",
+            "transparentnost",
+            "sporazum",
+            "pravda"
+          ],
+          "context": "Upoznate se u formalnom / transparentnom kontekstu. Jasnoća poboljšava pucanje. Nejasnoće soječi proces."
+        },
+        "position8": {
+          "upright": "Pokazuje da će pravda, iskrenost i transparentnost ojačati harmoniju u komunikaciji. Jasnoća gradi poverenje.",
+          "reversed": "Revertra pravičnost ukazuje da dvostruki standardi ili nepravedni jezik mogu da prekrše dogovor. Transparentnost donosi ravnotežu.",
+          "keywords": [
+            "pravda",
+            "oštrina",
+            "transparentnost",
+            "ravnoteža"
+          ],
+          "context": "Iskreni jezik jača harmoniju; Nepravda stvara prekid veze."
+        },
+        "position9": {
+          "upright": "Pravda, vaš pogodan partner je neko ko je fer, uravnotežen i iskren. Njegova otvorena stvara poverenje u obveznicu.",
+          "reversed": "Obrnuto pravda, neko ko je nepravedan, nepošten ili ima dvostruki standardi nisu pogodni za vas.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "iskrenost",
+            "poverenje"
+          ],
+          "context": "Idealan supružnik je fer i poštena osoba."
+        }
+      },
+      "thehangedman": {
+        "position1": {
+          "upright": "Vaš brak će biti oblikovan žrtvovanjem, strpljenjem i različitim perspektivama. Zaključak; To može biti veza koja produbljuje razumevanjem.",
+          "reversed": "Uloga žrtve ili inercija može komplikovati ishod braka. Napredak se može suspendovati.",
+          "keywords": [
+            "žrtvovati",
+            "strpljenje",
+            "perspektivan",
+            "predaja"
+          ],
+          "context": "Zaključak; Brak je ojačan strpljenjem i različitim perspektivama. Ali postoji rizik od inercije."
+        },
+        "position10": {
+          "upright": "Obučeni čovek, kada promenite svoju perspektivu i krenite napred sa podnošenjem, vrata u braku se otvaraju.",
+          "reversed": "Muškarac naglavačke, neodlučnost ili tvrdoglavost može odložiti put ka braku.",
+          "keywords": [
+            "mišljenje",
+            "predaja",
+            "čekati",
+            "odluka"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,640 @@
+{
+  "dashboard": {
+    "errors": {
+      "statsLoadFailed": "Nije mogao da učita statistiku",
+      "creditRefreshFailed": "Kreditni bilans se ne može obnoviti",
+      "loadError": "Došlo je do greške prilikom učitavanja komponenti nadzorne table."
+    },
+    "sections": {
+      "welcome": "Dobrodošli",
+      "statistics": "Statistika",
+      "creditPackages": "Kreditni paketi",
+      "profileManagement": "Profil upravljanje profilom",
+      "recentActivity": "Najnovije aktivnosti"
+    },
+    "ariaLabel": {
+      "profileOptions": "Opcije upravljanja profilom"
+    },
+    "creditBalanceRefreshed": "Kreditni bilans se ne može obnoviti",
+    "time": {
+      "day": "dan",
+      "days": "dan",
+      "month": "mesec",
+      "months": "mesec",
+      "year": "godina",
+      "years": "godina"
+    },
+    "userLevels": {
+      "master": "Stručnjak",
+      "experienced": "Iskusan",
+      "intermediate": "U sredini",
+      "beginner": "Početak",
+      "new": "Nov"
+    },
+    "level": "Navođenje",
+    "creditPackages": "Kreditni paketi",
+    "kullanimlar": "Upotreba",
+    "iadeler": "Povraćaj novca",
+    "bonuslar": "Bonusi",
+    "kredi-gecmisi-yuklenirken": "Došlo je do greške prilikom učitavanja kreditne istorije",
+    "bonus": "Bonus",
+    "iade": "Vratiti se",
+    "kullanim": "Upotreba",
+    "tarih": "Istorija",
+    "miktar": "Iznos",
+    "aciklama": "Objašnjenje",
+    "dashboard": "komandna tabla",
+    "busbuskimki": "Busbuskimki",
+    "kisisel-dashboard-sayfasi": "Stranica za ličnu kontrolnu tablicu",
+    "personal-dashboard-page": "Stranica za ličnu kontrolnu tablicu",
+    "organization": "organizacija",
+    "audience": "Publika",
+    "numeroloji-analizi": "Analiza numerologije",
+    "ask-acilimi": "Ljubavna ekspanzija",
+    "kariyer-okumasi": "čitanje u karijeri",
+    "genel-okuma": "opšte čitanje",
+    "oncelikli-destek": "Prioritetna podrška",
+    "profil-bilgileri-yuklenemedi": "Neuspešno učitavanje informacija o profilu",
+    "tarot-okumalariniz-icin": "Kupite kreditne kredite koje su vam potrebne za očitanja Tarot",
+    "kredileriniz-hemen-hesabiniza": "Vaši krediti se odmah dodaju na vaš račun",
+    "buyuk-paketlerde-ekstra": "Zaradite dodatni kredit na velikim paketima",
+    "okumalarim": "Moja čitanja",
+    "tum-mistik-deneyimleriniz": "Sva vaša mistična iskustva",
+    "numeroloji": "Numerologija",
+    "goruntule": "Pregledan",
+    "profil-bilgilerinizi-duzenlemek": "Kontrolna tabla za uređivanje podataka o profilu",
+    "bildirimler": "Obaveštenja",
+    "gizlilik": "Sigurnost",
+    "guvenlik": "Sigurnost",
+    "tarot-veya-numeroloji": "Obaveštavajte se kada je vaša tarot ili brojčano čitanje numerologije završeno",
+    "kredi-bakiyeniz-dustugunde": "Budite obavešteni kada vaše kreditno stanje opadne",
+    "aylik-numeroloji-ve": "Dobijte mesečnu numerologiju i Tarot Digest",
+    "ozel-indirimler-ve": "Biti obavešten o posebnim popustima i kampanjama",
+    "profilinizi-diger-kullanicilar": "Neka drugi korisnici vide vaš profil",
+    "okuma-gecmisinizi-diger": "Neka drugi korisnici vide vašu istoriju čitanja",
+    "istatistiklerinizi-diger-kullanicilar": "Neka drugi korisnici vide vašu statistiku",
+    "hizmet-kalitesini-artirmak": "Prikupite anonimne podatke da biste poboljšali kvalitet usluge",
+    "hesap-guvenliginiz-icin": "Ažurirajte lozinku za sigurnost na vašem nalogu",
+    "mevcut-sifrenizi-girin": "Unesite trenutnu lozinku",
+    "yeni-sifrenizi-girin": "Unesite svoju novu lozinku",
+    "yeni-sifrenizi-tekrar": "Ponovo unesite svoju novu lozinku",
+    "iptal": "Otkazati",
+    "indir": "Preuzeti",
+    "hesabinizi-ve-tum": "Trajno izbrišite svoj račun i sve svoje podatke",
+    "henuz-yok": "još",
+    "bilinmeyen": "Nepoznat",
+    "pazartesi": "Ponedeljak",
+    "sali": "U utorak",
+    "carsamba": "Sreda",
+    "persembe": "U četvrtak",
+    "cuma": "Petak",
+    "cumartesi": "U subotu",
+    "pazar": "Nedelja",
+    "kullanici": "Korisnik",
+    "mistik-yolculugunuzda-ilerlemenizi": "Pratite svoj napredak na svom mističnom putovanju",
+    "yenile": "Osvežiti",
+    "numerolojik-rehberliginiz-ve": "Dubinska analiza vaših numeričkih smernica i navika čitanja",
+    "desenler": "uzorak",
+    "bu-ay": "ovog meseca",
+    "ortalama": "Prosek",
+    "en-uzun": "najduže",
+    "aktif-seri": "Aktivna serija",
+    "kredi-maliyeti": "Kreditni trošak",
+    "premium-okuma": "premium čitanje",
+    "artis": "Povećanje",
+    "azalis": "smanjiti se",
+    "yuksek": "Visoko",
+    "orta": "U sredini",
+    "dusuk": "Nizak",
+    "isim": "Naziv",
+    "belirtilmemis": "Neodređen",
+    "soyisim": "prezime",
+    "numeroloji-hesaplamalari-icin": "Puno ime i prezime preporučuju se za računanje Numerologije",
+    "kisilik": "Ličnost",
+    "olgunluk": "Zrelost",
+    "henuz-okuma-yapmadiniz": "Još niste pročitali",
+    "favori-diziliminiz-henuz": "Vaša omiljena linija još nije određena",
+    "gunluk-okuma-aliskanligi": "Usredsredite se na izgradnju svakodnevne navike za čitanje",
+    "bu-ay-daha": "Ciljeve možete da pređete čitajući više ovog meseca",
+    "daha-ekonomik-okuma": "Možete isprobati ekonomičnije tipove čitanja",
+    "kredi-kullaniminiz-verimli": "Vaša upotreba kredita izgleda efikasno",
+    "memberSince": "Postati član",
+    "readings": "Očitavanja",
+    "expert": "Stručnjak",
+    "intermediate": "U sredini",
+    "beginner": "Početak",
+    "signOut": "Odjaviti se"
+  },
+  "accessibility": {
+    "goToPage": "idi na stranicu",
+    "languageOptions": "Jezičke opcije",
+    "openLanguageMenu": "Meni za odabir na otvorenom jeziku",
+    "selectLanguage": "Izaberite jezik",
+    "skipToMain": "Preskočite na glavni sadržaj"
+  },
+  "admin": {
+    "errors": {
+      "packagePurchaseError": "Došlo je do greške prilikom kupovine paketa. Pokušajte ponovo.",
+      "positionRequired": "Morate dodati barem jednu poziciju",
+      "spreadSaveError": "Došlo je do greške prilikom čuvanja postavke"
+    },
+    "success": {
+      "profileUpdated": "Profil je uspešno ažuriran!"
+    }
+  },
+  "auth": {
+    "audit": {
+      "loginFailed": "Pokušaj prijave nije uspeo",
+      "loginSuccess": "Uspešna prijava",
+      "logout": "Odjavljeno",
+      "passwordChanged": "Lozinka je promenjena",
+      "paymentMethodAdded": "Dodato je način plaćanja",
+      "paymentMethodRemoved": "Način plaćanja je uklonjeno",
+      "profileUpdated": "Profil je ažuriran",
+      "securityAlert": "Upozorenje o bezbednosti",
+      "subscriptionCanceled": "Pretplata je otkazana",
+      "subscriptionCreated": "Stvorena pretplata",
+      "suspiciousActivity": "Otkrivena je sumnjiva aktivnost"
+    },
+    "errors": {
+      "allLanguagesRequired": "Unesite ime na svim jezicima",
+      "apiKeyCreateError": "Došlo je do greške prilikom kreiranja API ključa",
+      "apiKeyUpdateError": "Greška prilikom ažuriranja API ključa",
+      "loginRequired": "Molimo prijavite se",
+      "userSelectionRequired": "Izaberite korisnika"
+    },
+    "notice": {
+      "accountCreated": "Račun je uspešno kreiran",
+      "checkEmail": "Proverite svoju adresu e-pošte i potvrdite svoje članstvo",
+      "confirmationEmailSent": "Poslano potvrđivanje e-mail",
+      "confirmationFailed": "Potvrda e-pošte nije uspela",
+      "emailConfirmed": "Vaša adresa e-pošte je potvrđena! 100 kredita je dato kao poklon.",
+      "emailVerified": "Verifikovana adresa e-pošte",
+      "openEmailApp": "Otvorite aplikaciju za e-poštu",
+      "openGmail": "Otvoren u Gmail-u",
+      "openOutlook": "Otvoren u Outlook-u",
+      "openYahoo": "Otvoren u Iahoo Mail",
+      "passwordChanged": "Lozinka se uspešno promenila",
+      "passwordResetSent": "Poslano je link za resetovanje lozinke",
+      "profileUpdated": "Profil je ažuriran"
+    },
+    "page": {
+      "ageTooYoung": "Morate imati najmanje 13 godina",
+      "ageInvalid": "Unesite validno doba",
+      "backToLogin": "Povratak na stranicu za prijavu",
+      "birthDate": "Datum rođenja",
+      "birthDateMaxAge": "Unesite važeći datum rođenja",
+      "birthDateMinAge": "Korisnici pod 13 godina se ne mogu registrovati",
+      "birthDatePlaceholder": "Datum rođenja",
+      "birthDateRequired": "Datum rođenja",
+      "callbackFailed": "Prijava nije uspela. Pokušajte ponovo.",
+      "cancel": "Otkazati",
+      "checkingAuth": "🔍 Provera statusa prijave ...",
+      "checkingEmail": "📧 Provera e-pošte ...",
+      "confirmPassword": "Potvrda lozinke",
+      "confirmPasswordPlaceholder": "Ponovna lozinka",
+      "confirmPasswordRequired": "Potrebna potvrda lozinke",
+      "databaseError": "Došlo je do greške baze podataka",
+      "email": "E-mail",
+      "emailInvalid": "Unesite važeću adresu e-pošte",
+      "emailNotConfirmed": "Adresa e-pošte nije potvrđena",
+      "emailPlaceholder": "Vaša adresa e-pošte",
+      "emailRequired": "Potrebna adresa e-pošte",
+      "errorOccurred": "Došlo je do greške",
+      "facebookSignIn": "Prijavite se sa Facebook-om",
+      "facebookSignUp": "Prijavite se sa Facebook-om",
+      "female": "Žena",
+      "firstName": "Naziv",
+      "forgotPassword": "Zaboravio sam lozinku",
+      "gender": "Rod",
+      "genderFemale": "Žena",
+      "genderMale": "Muško",
+      "genderOther": "Drugi",
+      "genderPlaceholder": "Izaberite rod",
+      "genderPreferNotToSay": "Ne želim da preciziram",
+      "genderRequired": "Potreban je izbor polova",
+      "googleSignIn": "Prijavite se sa Google-om",
+      "googleSignUp": "Prijavite se sa Google-om",
+      "hasAccount": "Već imate nalog? Prijaviti se",
+      "invalidCredentials": "Nevažeća e-pošta ili lozinka",
+      "journeyStart": "Započnite putovanje",
+      "lastName": "Prezime",
+      "loggingIn": "🔐 Prijavljivanje ...",
+      "login": "Prijaviti se",
+      "loginSubtitle": "Prijavite se na svoj nalog",
+      "loginTitle": "Prijaviti se",
+      "male": "Muško",
+      "mysticalEntry": "Ulaz u mistični svet",
+      "nameMinLength": "Ime mora biti najmanje 2 znaka",
+      "namePlaceholder": "Naziv",
+      "nameRequired": "Potrebno je ime",
+      "noAccount": "Nemate račun? Prijaviti se",
+      "orContinueWith": "ili nastaviti sa",
+      "other": "Drugi",
+      "password": "Lozinka",
+      "passwordInvalid": "Lozinka je nevažeća",
+      "passwordMinLength": "Lozinka mora biti najmanje 6 znakova",
+      "passwordMismatch": "Lozinke se ne podudaraju",
+      "passwordPlaceholder": "Vaša lozinka",
+      "passwordRequired": "Potrebna lozinka",
+      "passwordsNotMatch": "Lozinke se ne podudaraju",
+      "passwordTooShort": "Lozinka mora biti najmanje 6 znakova",
+      "processing": "⏳ Obrada ...",
+      "redirecting": "Preusmeravanje na stranicu za prijavu ...",
+      "register": "Prijaviti se",
+      "registerSubtitle": "Kreirajte novi nalog",
+      "registerTitle": "Prijaviti se",
+      "registering": "📝 Registracija se stvara ...",
+      "rememberMe": "Zapamti me",
+      "resetPassword": "Resetujte lozinku",
+      "resetPasswordEmailSent": "Link za resetovanje lozinke poslato je na vašu adresu e-pošte",
+      "resetPasswordError": "Veza za resetovanje lozinke nije mogla biti poslata",
+      "resetPasswordSubtitle": "Unesite svoju adresu e-pošte i poslaćemo vam link za resetovanje lozinke",
+      "resetPasswordTitle": "Resetovanje lozinke",
+      "selectGender": "Izaberite rod",
+      "sendResetEmail": "Pošaljite resetovanje e-pošte",
+      "signIn": "🔮 Prijava",
+      "signUp": "✨ Prijavite se",
+      "successLogin": "Prijavite se uspešno! Preusmeravanje ...",
+      "successRegister": "Registracija uspešna! Proverite svoju e-poštu.",
+      "surnameMinLength": "Prezime mora biti najmanje 2 znaka",
+      "surnamePlaceholder": "Prezime",
+      "surnameRequired": "Potrebno je prezime",
+      "userAlreadyExists": "Ova adresa e-pošte je već registrovana",
+      "validating": "🔍 Provera ...",
+      "waiting": "⏳ Čekanje ..."
+    },
+    "permissions": {
+      "accessDenied": "Niste ovlašćeni da pristupite ovoj stranici",
+      "adminOnly": "Ova funkcija je samo za administratore",
+      "contactAdmin": "Kontaktirajte administratora",
+      "insufficientPermissions": "Nemate dovoljno dozvola za ovu operaciju",
+      "loginRequired": "Morate biti prijavljeni da biste pristupili ovoj stranici",
+      "premiumRequired": "Ova funkcija je za premium članove",
+      "subscriptionRequired": "Pretplata potrebna za ovu funkciju",
+      "upgradeAccount": "Nadogradite svoj račun"
+    },
+    "pwa": {
+      "backgroundSync": "Pozadinska sinhronizacija",
+      "enableNotifications": "Omogući obaveštenja",
+      "installButton": "Upload",
+      "installDescription": "Dodajte aplikaciju na početni ekran za brži pristup",
+      "installLater": "Kasnije",
+      "installPrompt": "Dodajte aplikaciju na početni ekran",
+      "notificationDenied": "Dozvola za obaveštavanje je odbijena",
+      "notificationPermission": "Potrebna dozvola za obaveštavanje",
+      "offlineMessage": "Nemate internetsku vezu. Neke karakteristike mogu biti ograničene.",
+      "offlineMode": "Offline režim",
+      "pushNotifications": "Obaveštenja",
+      "syncWhenOnline": "Sinkronitoraće se kada ste na mreži"
+    },
+    "roles": {
+      "accessDenied": "Niste ovlašćeni da pristupite ovoj stranici",
+      "admin": "Izvršni",
+      "contactAdmin": "Kontaktirajte administratora",
+      "guest": "Gost",
+      "insufficientPermissions": "Nemate dovoljno dozvola za ovu operaciju",
+      "premium": "Član premium",
+      "upgradeAccount": "Nadogradite svoj račun",
+      "user": "Korisnik"
+    },
+    "security": {
+      "accountLocked": "Vaš račun je privremeno zaključan. Pokušajte ponovo kasnije.",
+      "biometricAuth": "Biometrijska autentifikacija",
+      "biometricFailed": "Biometrijska autentifikacija nije uspela",
+      "biometricNotAvailable": "Biometrijska autentifikacija nije dostupna",
+      "faceIdAuth": "Prijavite se sa ID-om lica",
+      "fingerprintAuth": "Prijavite se sa otiskom prsta",
+      "rateLimitExceeded": "Bilo je mnogo pokušaja. Pokušajte ponovo kasnije.",
+      "sessionExpired": "Vaša sesija je istekla. Ponovo se prijavite.",
+      "suspiciousActivity": "Otkrivena je sumnjiva aktivnost. Vaš račun je zaključan za sigurnost.",
+      "twoFactorCode": "verifikacioni kod",
+      "twoFactorCodeExpired": "Kod verifikacije je istekao",
+      "twoFactorCodeInvalid": "Nevažeći verifikacioni kod",
+      "twoFactorCodePlaceholder": "Unesite 6-cifreni kod za verifikaciju",
+      "twoFactorCodeSent": "Verifikacioni kod poslan na vašu adresu e-pošte",
+      "twoFactorRequired": "Potrebna je dve faktorske autentifikacije"
+    },
+    "signIn": "Prijaviti se",
+    "signOut": "Odjaviti se"
+  },
+  "cardGroups": {
+    "cups": "trofeji",
+    "majorArcana": "Majore Arcana",
+    "pentacles": "talismani",
+    "swords": "mačevi",
+    "wands": "štapić"
+  },
+  "cards": {
+    "altText": "Tarot kartica",
+    "reversed": "Nasuprot",
+    "reversedMeaning": "Reverse značenje:",
+    "upright": "Ravno",
+    "uprightMeaning": "Oznaka:",
+    "errors": {
+      "notFound": "Kartica nije pronađena",
+      "notFoundDescription": "Tarot kartica koju ste tražili nije pronađena."
+    }
+  },
+  "career": {
+    "data": {
+      "badgeText": "Karijera",
+      "cardDirections": {
+        "reversed": "Nasuprot",
+        "upright": "Ravno"
+      },
+      "detailedTitle": "Proširenje u karijeri - Detaljno lično čitanje",
+      "interpretationTitle": "Komentar ekspanzije u karijeri",
+      "readingFormats": {
+        "detailed": "glas",
+        "simple": "Jednostavan",
+        "written": "Napisano"
+      },
+      "simpleInterpretation": "Jednostavno čitanje - samo metar",
+      "simpleTitle": "Jednostavno čitanje",
+      "spreadName": "Širenje u karijeri",
+      "spreadTitle": "Širenje u karijeri"
+    },
+    "form": {
+      "birthDate": "Datum rođenja",
+      "clearAll": "Očistite sve kartice",
+      "communicationMethod": "Metoda komunikacije",
+      "concernQuestion": "Šta se najviše brinete o karijeri?",
+      "email": "E-mail",
+      "emailCommunication": "E-mail",
+      "emotionalQuestion": "Koje emocionalne prepreke doživljavate kada je u pitanju karijera?",
+      "firstName": "Naziv",
+      "lastName": "Prezime",
+      "personalInfo": "Lične informacije",
+      "phone": "Telefonski broj",
+      "placeholders": {
+        "concernQuestion": "Da li me moj posao čini srećnim, da li sam na pravom putu? ...",
+        "email": "emanprimer@email.com",
+        "emotionalQuestion": "Strah od neuspeha, pomisao da nije dovoljno dobra ...",
+        "firstName": "Vaše ime",
+        "lastName": "vaše prezime",
+        "understandingQuestion": "Kreativniji posao, radeći u inostranstvu, pokretanje vlastitim poslovima ..."
+      },
+      "questions": "Vaša pitanja u karijeri",
+      "saveAndOpen": "Sačuvajte i otvorite kartice",
+      "saving": "Snimanje ...",
+      "understandingQuestion": "Koje oblasti želite da bolje razumete u svojoj karijeri?",
+      "whatsappCommunication": "Vhatsapp"
+    },
+    "messages": {
+      "allCardsRequired": "Komentari se ne mogu kreirati bez odabira svih kartica.",
+      "configurationNotFound": "Konfiguracija ekspanzije karijere nije pronađena. Proverite datoteku TarotsPreads.ts.",
+      "formUnsavedWarning": "Obrazac je ispunjen, ali nije sačuvan. Jeste li sigurni da želite da prestanete?",
+      "interpretationGreeting": "Poštovani klijent, posebno pripremljena analiza za vašu karijeru i pitanje u karijeri \"{Pitanje}\":",
+      "interpretationTitle": "Širenje u karijeri",
+      "loginRequired": "Morate se prijaviti da biste pročitali.",
+      "readingSaveError": "Došlo je do greške prilikom snimanja čitanja.",
+      "readingSavedSuccess": "Vaše čitanje je uspešno sačuvano!",
+      "selectReadingTypeFirst": "Prvo odaberite vrstu čitanja.",
+      "simpleReadingCompleted": "Jednostavno čitanje završeno!"
+    },
+    "modals": {
+      "aboutSpread": "O ekspanziji u karijeri",
+      "aboutSpreadText": "Ove 7 karte; To čini vidljivu vašu trenutnu situaciju, prednosti, prepreke i mogućnosti. Nudi mapu puta koja aktivira vaš unutrašnji potencijal - jasan i saosećajni most od danas do sutra.",
+      "cancel": "Otkazati",
+      "cardCountText": "Ukupno 7 kartica: (1) Trenutni status (2) Snage (3) Prepreke (4) Mogućnosti (5) Resursi / podrška (6) Mapa puta (7) Zaključak i preporuka.",
+      "cardCountTitle": "Broj karata",
+      "confirm": "Da, odobravam",
+      "continue": "Nastavljati",
+      "creditConfirm": "Odobrenje kredita",
+      "creditConfirmMessage": "Za ovu ekspanziju karijere koristiće se kredit. Jeste li sigurni da želite da nastavite?",
+      "detailedReading": "Čitanje naglas",
+      "detailedReadingText": "Snimite svoj komentar kao toplo glasovno snimanje. Posebno je pripremljen za vas; Možete preuzeti i slušati kad god želite.",
+      "infoTitle": "Širenje u karijeri",
+      "loveAttention": "Nakon snimanja čitanja, obično vam pošaljem vaš lični komentar u roku od 2-4 sata. Ova studija je samo za smernice samo; Konačni izbori su vaši.",
+      "loveAttentionInfo": "Ljubazna beleška",
+      "process": "Period",
+      "processing": "Obrada ...",
+      "redirecting": "💼 Preusmereni ste na početnu stranicu ...",
+      "saveReading": "Sačuvaj čitanje 💼",
+      "savingReading": "Snimanje ...",
+      "step1": "Unesite svoje lične podatke",
+      "step2": "Odgovorite na pitanja u karijeri",
+      "step3": "Izaberite i pregledajte 7 kartica",
+      "step4": "Sačuvaj čitanje; Dobijte rezultate na vašu e-poštu",
+      "successMessage": "Vaš put karijere je zabeleženo i analizirano. Možete da vidite svoje rezultate sa panela.",
+      "successTitle": "Čitanje sačuvane",
+      "writtenReading": "Pismeno čitanje",
+      "writtenReadingText": "Ako želite, biće isporučeno kao detaljan pisani izveštaj; Možete ga sačuvati i ponovo pročitati."
+    },
+    "validation": {
+      "birthDateRequired": "Datum rođenja je obavezan.",
+      "emailInvalid": "Molimo unesite važeću adresu e-pošte.",
+      "nameMinLength": "Ime mora biti najmanje 3 znaka.",
+      "questionMinLength": "Morate odgovoriti na ovo pitanje u najmanje 10 znakova.",
+      "surnameMinLength": "Prezime mora biti najmanje 3 znaka."
+    },
+    "meanings": {
+      "thefool": {
+        "position1": {
+          "upright": "JOKER kaže da je na ivici novog početka u svojoj karijernoj putu. Možete hrabro ući u područja koja vas uzbuđuje srce. Ako vas trenutni put ne zadovoljava, možda će biti vreme da se krećete u novom pravcu koji će vam hraniti slobodu.",
+          "reversed": "Invertirani šaljivdžija pokazuje da neplanirani koraci mogu doneti razočaranje. Možda vaša trenutna karijera nije u pravu za vas, ali ubrzano bira novi put samo za promenu je rizična.",
+          "keywords": [
+            "novi početak",
+            "hrabrost",
+            "sloboda",
+            "rizikovati",
+            "avantura"
+          ],
+          "context": "Vaša želja da pronađete slobodan prostor vaše srčane želje u vašoj karijeri je na čelu."
+        },
+        "position2": {
+          "upright": "JOKER vas savetuje da preuzmete hrabar korak ka razvoju. Pretvaranje novih projekata, različita polja ili metode koje nikada niste pokušali mogu vam dati veliki zamah u karijeri.",
+          "reversed": "Invertirani Joker vas podseća da su vas preduzeti koraci bez razmišljanja. Planiranje malo pre nego što krenete, korak će vas osnažiti.",
+          "keywords": [
+            "hrabrost",
+            "iskustvo",
+            "inovativnost",
+            "rizikovati",
+            "sloboda"
+          ],
+          "context": "Da biste razvili svoju karijeru, morate napraviti smeli, ali svesni početak."
+        },
+        "position3": {
+          "upright": "Džoker vas podseća da se neočekivana iznenađenja u kojoj naiđete na karijeru i spontani tok života nisu pod vašom kontrolom. Neke mogućnosti i rizici se razvijaju izvan vas.",
+          "reversed": "Okrećeni Joker vam kaže da ne možete u potpunosti da izbegnete nesigurnosti da vam život donosi. Nedostatak planiranja vas može naprezati.",
+          "keywords": [
+            "spontanost",
+            "rizikovati",
+            "neizvesnost",
+            "iznenađenje",
+            "sloboda"
+          ],
+          "context": "Ne možete sve da planirate u svojoj karijeri; Iznenađujuće kretanja će biti izvan vaše kontrole."
+        },
+        "position4": {
+          "upright": "JOKER pokazuje da on nastavlja sa svojim radom s iskrenošću i radoznalošću. Otvoreni ste za isprobavanje novih stvari i to čini vaše performanse jedinstvenim.",
+          "reversed": "Invertirani šaljivdžija pokazuje da ne izražavate svoju punu energiju zbog nepažnje ili neplanirane korake.",
+          "keywords": [
+            "hrabrost",
+            "originalnost",
+            "radoznalost",
+            "performanse",
+            "sloboda"
+          ],
+          "context": "Napredujete sa slobodnim duhom u vašoj trenutnoj karijeri, ali vaši napori će biti vredniji ako ste planiraniji."
+        },
+        "position5": {
+          "upright": "JOKER, možete da kreirate promenu u karijeri tako što ćete odvajati odvažni koraci i isprobavati nove stvari. Biti otvoren za rizike vodi vas napred.",
+          "reversed": "Invertirani šaljivdžija, treba da izbegavate korake osiromašenja. Promjena je korisna kada je planirana.",
+          "keywords": [
+            "inovativnost",
+            "hrabrost",
+            "rizikovati",
+            "početak",
+            "promeniti"
+          ],
+          "context": "Odvažna inovacija u vašoj karijeri pomoći će vam, ali treba da se držite dalje od nedostatka planiranja."
+        },
+        "position6": {
+          "upright": "JOKER: Vaši nepromišljeni ili neplanirani koraci u prošlosti može stvoriti nesigurnosti u vašem trenutnom putu karijere.",
+          "reversed": "Invertirani šaljivdžija, vaša tendencija da izbegavate rizike u prošlosti može vas sprečiti da danas iskoristite prednost mogućnosti.",
+          "keywords": [
+            "nedostatak planiranja",
+            "rizikovati",
+            "hrabrost",
+            "neizvesnost",
+            "prošlost"
+          ],
+          "context": "Nekontrolisani ili hrabri koraci u prošlosti utiču na vaš trenutni put karijere."
+        },
+        "position7": {
+          "upright": "Joker pokazuje da će ishod vašeg putovanja u karijeri biti oblikovan slobodom i novim počecima. Vaša budućnost će vam predstaviti uzbudljive mogućnosti.",
+          "reversed": "Invertirani JOKER može ukazivati na neuspeh u potpunosti iskorištavanje mogućnosti zbog nepažnje ili nedostatka planiranja.",
+          "keywords": [
+            "novi početak",
+            "sloboda",
+            "avantura",
+            "rizikovati",
+            "budućnost"
+          ],
+          "context": "Rezultat putovanja u karijeri biće pretvoriti novu stranicu i otkriti svoju slobodu."
+        }
+      },
+      "themagician": {
+        "position1": {
+          "upright": "Čarobnjak ukazuje na period u kojem možete otkriti svoj potencijal. Vaša kreativnost, komunikaciona moć i snaga Villpover mogu vas nositi do uspeha u vašoj karijeri. Ako vaš trenutni put podržava ovu energiju, nalazite se na pravom putu.",
+          "reversed": "Mađioničar za obrnuti može ukazivati na to da koristite svoje talente u pogrešnom smeru ili ste u poslu koji ograničava vaš potencijal. U ovom slučaju, vaša trenutna karijera vas može konzumirati.",
+          "keywords": [
+            "kreativnost",
+            "potencijal",
+            "komunikacija",
+            "vizija",
+            "snaga"
+          ],
+          "context": "Morate da ispitate da li koristite sopstvenu moć na pravom mestu."
+        },
+        "position2": {
+          "upright": "Čarobnjak kaže da morate aktivno koristiti veštine koje imate u vašoj karijeri. Učinjanje vaših talenata vidljivijim i jačanje vaših komunikacijskih veština ubrzaće vaše korake.",
+          "reversed": "Prekoračeni mađioničar pokazuje da će vas vratiti potcenjivanje ili zloupotrebu svojih sposobnosti. Da biste se poboljšali, prvo morate da verujete u sebe.",
+          "keywords": [
+            "kreativnost",
+            "veština",
+            "komunikacija",
+            "poverenje",
+            "potencijal"
+          ],
+          "context": "Da biste razvili svoju karijeru, morate koristiti resurse koje vešto imate."
+        },
+        "position3": {
+          "upright": "Mađioničar pokazuje da vreme prilike koje vam dolazi nije uvek u vašim rukama. Pravo okruženje ponekad zavisi od spoljnih faktora.",
+          "reversed": "Ukrašeni mađioničar, manipulacije ili pogrešno naređenje drugih su elementi koje ne možete da kontrolišete.",
+          "keywords": [
+            "prilika",
+            "kreativnost",
+            "komunikacija",
+            "vremenski vreme",
+            "spoljni uticaj"
+          ],
+          "context": "Ne možete uvek da odaberete trenutak u karijeri kada uzmete pozornicu; uslovi stupaju na snagu."
+        },
+        "position4": {
+          "upright": "Mađioničar pokazuje da on odražava svoj potencijal u svoj rad i efikasno koristi svoje resurse. Stvarno vam je najbolje.",
+          "reversed": "Oversed Mage, možete potceniti ili zloupotrebiti svoje sposobnosti. To uzrokuje da se njen učinak ne odražava u potpunosti.",
+          "keywords": [
+            "veština",
+            "potencijal",
+            "kreativnost",
+            "poverenje",
+            "performanse"
+          ],
+          "context": "Vaš trenutni napor postaje najbolji kada koristite veštine koje imate pravilno."
+        },
+        "position5": {
+          "upright": "Mađioničar pokazuje da on može da stvori promene tako što će svoje veštine vidljivijim i jačati njegovu komunikaciju.",
+          "reversed": "Obrnuti mađioničar, trebalo bi da povećate svoje performanse fokusiranjem umesto da koristite energiju.",
+          "keywords": [
+            "veština",
+            "kreativnost",
+            "komunikacija",
+            "fokus",
+            "promeniti"
+          ],
+          "context": "Da biste doprineli vašoj karijeri, morate da pokažete svoje veštine na fokusirani način."
+        },
+        "position6": {
+          "upright": "Čarobnjak, ne koristi vaš puni potencijal u prošlosti, možda je danas usporio vaš razvoj.",
+          "reversed": "Prekoračeni mađioničar, prošla manipulacija ili zlostavljanje mogu da ograničavaju vašu trenutnu karijeru.",
+          "keywords": [
+            "potencijal",
+            "manipulacija",
+            "kreativnost",
+            "snaga",
+            "prošlost"
+          ],
+          "context": "Ne mogu da iskoristite svoju moć u potpunosti ili se u prošlosti zavede u odnosu na to utiče na sadašnjost."
+        },
+        "position7": {
+          "upright": "Mađioničar pokazuje da će ishod vašeg putovanja u karijeri biti postići uspeh kroz veštinu upotrebe vaših veština.",
+          "reversed": "Kada je obrnuti mađioničar ne koristi svoj puni potencijal, rezultat može biti nepotpun ili pogrešan.",
+          "keywords": [
+            "potencijal",
+            "uspeh",
+            "kreativnost",
+            "veština",
+            "budućnost"
+          ],
+          "context": "Rezultat će biti postići snažan položaj u vašoj karijeri demonstriranjem vaše kreativnosti i veština."
+        }
+      },
+      "thehighpriestess": {
+        "position1": {
+          "upright": "Visoka sveštenica kaže da bi trebalo da slušate svoju intuiciju. Vaša trenutna karijera može biti zadovoljavanje vašeg uma, ali ako vam srce šapuće nešto drugo, odgovor je skriven u vašem unutrašnjem svetu.",
+          "reversed": "Preokrećena visoka sveštenica ukazuje da potiskuje njenu intuiciju i djeluje isključivo na spoljni očekivanja. Ovaj put je možda siguran, ali možda vas neće zadovoljiti.",
+          "keywords": [
+            "intuicija",
+            "mudrost",
+            "unutrašnja smernica",
+            "tajna",
+            "tišina"
+          ],
+          "context": "Pronaći ćete svoj pravi odgovor u karijeri gde vam srce šapuće."
+        },
+        "position2": {
+          "upright": "Visoki sveštenici preporučuju da slušate svoju intuiciju i produbljivanje vašeg znanja za vaš rast. Obrazovanje, istraživanje ili unutrašnje istraživanje vodi vas kroz ovaj proces.",
+          "reversed": "Obrnuti visoki sveštenici kaže da kada suzbijate svoj unutrašnji glas, možete zalutati. Obratite pažnju na svoju intuiciju da poboljšate svoju karijeru.",
+          "keywords": [
+            "intuicija",
+            "informacije",
+            "unutrašnja smernica",
+            "učenje",
+            "mudrost"
+          ],
+          "context": "Da biste unapredili svoju karijeru, morate da nastavite sa znanjem i intuicijom."
+        },
+        "position3": {
+          "upright": "Nevidljivi dinamika i procesi koji stoje iza svoje scene su izvan vaše kontrole, kaže visoki sveštenici. Postoje stvari koje ostaju tajne.",
+          "reversed": "Obrnuti visoki sveštenik, ne možete da odredite vreme otkrivenja neizvesnosti i tajnih informacija.",
+          "keywords": [
+            "Skriveni faktori"
+          ]
+        }
+      }
+    }
+  }
+}

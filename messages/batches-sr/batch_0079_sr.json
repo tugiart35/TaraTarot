@@ -1,0 +1,774 @@
+{
+  "relationship-problems": {
+    "meanings": {
+      "thehermit": {
+        "position9": {
+          "reversed": "Ograničena sveca, prekomerna izolacija i tišina zida na zid slabi obveznice. Ako se udaljenost povećava, postaje teško održavati.",
+          "keywords": [
+            "oblast",
+            "uvid",
+            "usamljenost",
+            "komunikacija",
+            "ravnoteža"
+          ],
+          "context": "Da biste poslednji put: planirani prostor + planirani ritam veze."
+        }
+      },
+      "thewheeloffortune": {
+        "position1": {
+          "upright": "Točak sudbine kaže da su ciklusi i vremenski izazvani up i padove pokrenuti sukob. Ako se poravnanje ne ažurira kao uloga i promjene okolnosti, trenje se povećava.",
+          "reversed": "Obrnuti točak sudbine pokazuje da se zaglavi u ponavljajućim obrascima i veruje da se na taj način dešava nada. Fatalizam hronično kontradikcija.",
+          "keywords": [
+            "petlja",
+            "vremenski vreme",
+            "navika",
+            "promeniti",
+            "fatalizam"
+          ],
+          "context": "Priroda sukoba u vezi: cikličkim obrascima i vremenom."
+        },
+        "position2": {
+          "upright": "Točak sudbine kaže da se problem smanjuje na petlje i vremenski prozori. Iste diskusije ponavljaju se u različitim danima. \\ N \\ n \\ nhint: Čitanja slučaja se vrše pogrešno, osećaj nedostajanja prilika. Problem je što odgovori uzoraka nisu slomljeni.",
+          "reversed": "Vjekoran točak sudbine ukazuje da fatalizam i ponavljajuće navike zaključavaju odnos. Čekanje na promjene i odlaganje akcije produžava problem. \\ N \\ nsimptom: Neregrađene lekcije, začarani krug. Problem raste u neuspehu da prepozna petlju.",
+          "keywords": [
+            "petlja",
+            "vremenski vreme",
+            "navika",
+            "promeniti",
+            "začarani krug"
+          ],
+          "context": "Problem sa korenom: ponavljajući obrasci. Područja koja utiče: Trenutak odluka, upravljanje krizama, fleksibilnost."
+        },
+        "position3": {
+          "upright": "Točak sudbine vam govori da se vaš udeo formira kada se vratite u isti ciklus argumenata, a da ga ne rešite. Scena se ponavlja ako se lekcija ne nauči.",
+          "reversed": "Pretvoreni točak sudbine vam govori da ste možda odrasli sa \"ovako to ide\". Fatalizam isparava odgovornost.",
+          "keywords": [
+            "petlja",
+            "vremenski vreme",
+            "navika",
+            "promeniti",
+            "začarani krug"
+          ],
+          "context": "Numerator: Ponavljani obrasci. Efekat: Nada, napredak. Predlog: napravite jednu malu razliku."
+        },
+        "position4": {
+          "upright": "Točak sudbine kaže da možete da označite obrasce ponavljanja kao \"lošu sreću\" i ignorišete svoj udeo. Osim ako ne naučimo lekciju, turneja će doći ponovo.",
+          "reversed": "Prekoračeni točak sudbine ukazuje na tendenciju da se povuče u fatalizam i negira promenljiv deo. Ako je odgovornost nevidljiva, promena je odložena.",
+          "keywords": [
+            "petlja",
+            "navika",
+            "vremenski vreme",
+            "promeniti",
+            "učenje"
+          ],
+          "context": "Šta ignorišem: moj deo ciklusa. Efekat: Nada i napredak su blokirani. DO: Napravite jednu malu razliku."
+        },
+        "position5": {
+          "upright": "Točak sudbine vam govori da u ciklusima veza i padova doživljavate uspone i padove. Imate mogućnost prilagođavanja promenama.",
+          "reversed": "Obrnuti točak sudbine opisuje isti argument koji se ponavlja u različito vreme. Lekcija neupitna može da curi u sadašnjost.",
+          "keywords": [
+            "petlja",
+            "vremenski vreme",
+            "navika",
+            "promeniti",
+            "učenje"
+          ],
+          "context": "Ponavljajuće obrasce. Ponekad se uklapa, ponekad ne. Sada je vreme da se svesno razlikuje."
+        },
+        "position6": {
+          "upright": "Točak sudbine skreće pažnju na ponavljajući cikluse gubitnika pobednika. Ako obrazac eksploatacije ne nezapaženo, ista se igra nastavlja.",
+          "reversed": "Obrnuti točak sudbine opisuje rizik od legitizirajućih zlostavljanja sa fatalizmom. Retorika \"Ovako to ide\" sabotaci se menjaju.",
+          "keywords": [
+            "petlja",
+            "navika",
+            "ravnoteža",
+            "svest",
+            "promeniti"
+          ],
+          "context": "Tema: Ponovljeni obrazac; Rizik: Normalizovana eksploatacija; DO: Pravilo koje pravi malu razliku."
+        },
+        "position7": {
+          "upright": "Točak sudbine nam govori da isti ljudi povremeno ponovo ulaze u pozornicu. Porodični ciklus, poslovni ciklus ili stari prijatelji okreću dnevni red.",
+          "reversed": "Uključeni točak sudbine ukazuje na rizik normalizacije spoljnog uticaja i uzimanje intervencije zdravo za gotovo rekavši \"Ovo je sudbina\".",
+          "keywords": [
+            "petlja",
+            "ponavljajući ljude",
+            "navika",
+            "vremenski vreme",
+            "prihvatanje"
+          ],
+          "context": "Uvek su isti glumci. Prekinuti ciklus s svesti i postavite novo pravilo."
+        },
+        "position8": {
+          "upright": "Točak sudbine pokazuje fluktuaciju u ciklusima troškova prihoda. Fleksibilni planovi i rezervne fondove su od suštinskog značaja.",
+          "reversed": "Obrnuti točak bogatstva ukazuje na ponavljajući dug, kasne isplate i finansijske greške pripisane \"poljupcu\".",
+          "keywords": [
+            "fluktuacija",
+            "jastuk",
+            "duga",
+            "navika",
+            "vremenski vreme"
+          ],
+          "context": "Neposredni fond za upravljanje talasima i ispravno ponavljajući obrasce."
+        },
+        "position9": {
+          "upright": "Točak sudbine kaže da parovi koji upravljaju UPS-om i padovima zajedno mogu dugoročno ostati. Fleksibilnost i prilagodljivost su ključni.",
+          "reversed": "Obrnuti točkić sudbine, ako se ne prekrše ponavljajuće toksične cikluse, veza će se istrošiti. Fatalizam sprečava promenu.",
+          "keywords": [
+            "petlja",
+            "fleksibilnost",
+            "raport",
+            "navika",
+            "promeniti"
+          ],
+          "context": "Da biste poslednji put: svest o ležištu + manji sistemski ažuriranja."
+        }
+      },
+      "justice": {
+        "position1": {
+          "upright": "Pravednost pokazuje da su nepravedna podela rada, dvostruki standardi ili ravnoteže odgovornosti glavni sukob. Potražnja za odgovornost je velika.",
+          "reversed": "Obrnuta pravda pokazuje da je ciklus krivice, pristrasnosti ili ignorisanja podrivati poverenje. Percepcija nepravde je korena kontradikcija.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "odgovornost",
+            "jednakost",
+            "odgovornost"
+          ],
+          "context": "Priroda sukoba u vezi: potraga za pravdom i ravnotežom."
+        },
+        "position2": {
+          "upright": "Pravda kaže da problem leži u nepravednoj podeli radne snage i dvostrukih standarda. Vage se ne osećaju jednakim. \\ N \\ n \\ nhint: potražnja za odgovornost, potreba za transparentnošću. Problem je u tome što se odgovornosti ne dele jasno.",
+          "reversed": "Obrnuta pravda opisuje kako pristranost i ignorisanje poverenja erode. Odloženo izvinjenje, nadoknada ne predstojeća. \\ N \\ nsimptom: ogorčena, nakupljanje ogorčenja i knjigovodstvo. Problem raste kada je oštećen osećaj pravde.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "odgovornost",
+            "transparentnost",
+            "nadoknada"
+          ],
+          "context": "Problem sa korenom: Pravilno deljenje i transparentnost GAP. Područja koja utiče: poverenje, konsenzus, podela dužnosti."
+        },
+        "position3": {
+          "upright": "Kaže da su kada pravda, dužnost i transparentnost poremećene, iskra mogu biti u vama. Ogorčeno raste kada se vaga ne osećaju jednakim.",
+          "reversed": "Obrnuta pravda kaže da povećava svoj udeo kroz jezik ignorisanje i izgovore. Kada se nadoknada odloži, poverenje se topi.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "odgovornost",
+            "transparentnost",
+            "nadoknada"
+          ],
+          "context": "Share: Fair Share Gap. Efekat: Poverenje, konsenzus. Preporuka: Otvori račun + naknada."
+        },
+        "position4": {
+          "upright": "Pravda normalizuje nepravednu podjelu rada rekavši \"Uradiću to ionako\" i kaže da možda neće videti njegov udeo. Ravnoteža se ne može utvrditi bez transparentnog računa.",
+          "reversed": "Obrnuta pravda naglašava tendenciju da vidi grešku i odloži nadoknadu ili ga brani sa izgovorima. Samo-uskraćivanje odgovornosti pasmina poricanje.",
+          "keywords": [
+            "pravda",
+            "transparentnost",
+            "račun",
+            "nadoknada",
+            "ravnoteža"
+          ],
+          "context": "Ono što ignorišem: moj udeo odgovornosti. UTICAJ: Poverenje je erodirano. DO: Otvori račun + blagovremena nadoknada."
+        },
+        "position5": {
+          "upright": "Fairkrenost kaže da je to pravično deljenje i otvoreno računovodstvo u prošlosti jača vaš odnos. Potraga za ravnotežom je očigledna.",
+          "reversed": "Obrnuta pravda opisuje kako percepcija nejednakosti i kasne nadoknade ostavljaju marku. Debate za kapital mogu da utiču danas.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "račun",
+            "nadoknada",
+            "transparentnost"
+          ],
+          "context": "Poštena naporna namera; poremećaji u praksi. Očigledna je potreba za otvorenim računovodstvom. Sada vam je potrebna kompenzacija i jasan okvir."
+        },
+        "position6": {
+          "upright": "Pravda zahteva otvoreno računovodstvo i uravnoteženo deljenje. Ako pravila i sankcije rade na jednoj strani, tačno se pretvara u sredstvo moći.",
+          "reversed": "Obrnuta pravda ukazuje na zloupotrebu kroz dvostruke standarde, selektivnu memoriju i kasnu nadoknadu. Osim ako se ne uspostavi ravnoteža, poverenje se topi.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "račun",
+            "nadoknada",
+            "transparentnost"
+          ],
+          "context": "Tema: Odgovornost; Rizik: Dvostruki standardi; DO: Jasne metrike i blagovremene nadoknade."
+        },
+        "position7": {
+          "upright": "Pravda kaže da pravne / institucionalne aktere (HR, posrednik, porodični staračici) mogu da uđu. Nepristojno oko može uspostaviti ravnotežu.",
+          "reversed": "Obrnuta pravda ukazuje na dvostruke standarde, porodični pritisak, nepravedno presude i selektivnu memoriju. Pristrasni sudija boli vezu.",
+          "keywords": [
+            "nepristrasnost",
+            "sudija",
+            "organizacija",
+            "dvostruki standard",
+            "ravnoteža"
+          ],
+          "context": "Potražite neutralan mehanizam. Izaberite transparentne pravila umesto vršnjačke dominacije."
+        },
+        "position8": {
+          "upright": "Naglašava pravdu, pravično deljenje, transparentno budžet i disciplinu snimanja. Jasnoća donosi mir.",
+          "reversed": "Obrnuta pravda kaže da dvostruki standardi, tajna potrošnja i kasna kompenzacija podrivaju poverenje.",
+          "keywords": [
+            "pravda",
+            "transparentnost",
+            "zapisnik",
+            "dvostruki standard",
+            "nadoknada"
+          ],
+          "context": "Rashodi prihoda otvorene knjige; Brza nadoknada za greške, jednaka pravila."
+        },
+        "position9": {
+          "upright": "Odnos se može održati pravdom, transparentnošću, jednakošću i blagovremenom nadoknadom. Otvoreni račun obnavlja poverenje.",
+          "reversed": "Obrnuta pravda, dvostruki standardi i kasno izvinjenje slabi vezu. Ako nepravda nije popravljena, njen nastavak je u riziku.",
+          "keywords": [
+            "jednakost",
+            "transparentnost",
+            "nadoknada",
+            "u pravu",
+            "poverenje"
+          ],
+          "context": "Da biste poslednji put: bistre metrike + brza popravka kulture."
+        }
+      },
+      "thehangedman": {
+        "position1": {
+          "upright": "Obučeni muškarac kaže da je jednostrana percepcija žrtve i donošenja odluka stvaranja sukoba. Promena perspektive je možda odložena.",
+          "reversed": "Okrušeni muškarac naopako ukazuje na psihologiju žrtava, odlaganju i pasivnost. Narativ \"Uvek dajem\" hrani kontradikciju.",
+          "keywords": [
+            "žrtvovati",
+            "suspenzija",
+            "perspektivan",
+            "suspenzija",
+            "žrtva"
+          ],
+          "context": "Priroda sukoba u vezi: percepcija jednostrane žrtve."
+        },
+        "position2": {
+          "upright": "Obučeni čovek kaže da se problem svodi na suspendovane odluke i percepciju jednostrane žrtve. Promjena perspektive je zakasnila. \\ N \\ n \\ nhint: Određenje, čeka i polusvetna posvećenost. Problem raste u neobjašnjivom čekanju.",
+          "reversed": "Obučeni čovek naopako objašnjava da žrtva pripovijest i pasivnost hrane svoj problem. Održava se gde bi trebalo da bude pušteno. \\ N \\ nsimptom: Kriviti ciklus tišine, inercija. Problem se produbljuje u zoni komfora koji opire kretanje.",
+          "keywords": [
+            "suspenzija",
+            "žrtvovati",
+            "perspektivan",
+            "suspenzija",
+            "inercija"
+          ],
+          "context": "Problem sa korenom: obustava odluke i viktimizacije. Područja koja utiče: napredak, nada, ravnoteža."
+        },
+        "position3": {
+          "upright": "Obučeni čovek kaže da imate udeo kada povećavate nesigurnost vođenjem odlukama u Abijinciji. Što duže \"videćemo kasnije\", to se više povećava sukob.",
+          "reversed": "Kada se naopako obješen muškarac utočište u pričati žrtve i odložio je akciju, možda ste nahranili požar. Nema napretka bez promene perspektive.",
+          "keywords": [
+            "suspenzija",
+            "žrtvovati",
+            "perspektivan",
+            "suspenzija",
+            "inercija"
+          ],
+          "context": "Share: Prokrastination-Inertia. Efekat: Nada, jasnoća. Preporuka: Mala / čista odluka."
+        },
+        "position4": {
+          "upright": "Obučeni čovek naziva odugovlačenjem \"ostavljajući ga na vreme\" i kaže da možete da omalovarite svoj doprinos. Ostatak suspendovan je takođe izbor.",
+          "reversed": "Obučeni čovek naglavačke ukazuje na tendenciju da negira nečije udeo tako što će sklopiti utočište u narativu žrtve i odbacujući akciju. Odgovornost je nevidljiva bez promene perspektive.",
+          "keywords": [
+            "suspenzija",
+            "perspektivan",
+            "inercija",
+            "žrtvovati",
+            "vešalica"
+          ],
+          "context": "Ono što ignorišem: Izbegavam odluku. EFEKT: Nada i jasnoća se rastvaraju. DO: Napravite malu / čistu odluku."
+        },
+        "position5": {
+          "upright": "Obučeni čovek kaže da suspenzija i čekaju da ponekad daju novu perspektivu. Strpljenje je donelo perspektivu.",
+          "reversed": "Obučeni čovek naopako objašnjava da odlaganje postaje hronično i stvara neizvesnost. Narativi žrtve možda su preneli današnji dan.",
+          "keywords": [
+            "čekati",
+            "perspektivan",
+            "suspenzija",
+            "žrtvovati",
+            "neizvesnost"
+          ],
+          "context": "Korisno stajalište + rizik od povlačenja. Jasne odluke su zakasnele. Sada je vreme da ga skinete sa vešalice."
+        },
+        "position6": {
+          "upright": "Obučeni čovek kaže da je žrtva poklon, ali kada postane hronična, može se pretvoriti u pasivno ugnjetavanje kroz samopožrtvovanje. Stalno govoreći \"dajem\" stvara osećaj duga.",
+          "reversed": "Obučeni čovek naopako povećava rizik da žrtva naravi alat snage. Suspenzija i odlaganja mogu biti načini da se kontroliše druge strane.",
+          "keywords": [
+            "žrtvovati",
+            "suspenzija",
+            "žrtveni",
+            "pasivno štampanje",
+            "ravnoteža"
+          ],
+          "context": "Tema: davanje ravnoteže; Rizik: Izrada žrtvovanja aduta; DO: Dobrovoljno ograničenje i trajanje definicija."
+        },
+        "position7": {
+          "upright": "Obučeni čovek kaže da vas stavljate na čekanje radi spoljnih očekivanja. Drugi pozivi \"Budite strpljivi još malo\", možda će vas ostaviti viseći.",
+          "reversed": "Okrušen muškarac naopako obješen na trećim stranama koji manipulira žrtvama žrtvama. Vaša empatija se može koristiti kao aduta.",
+          "keywords": [
+            "čekati",
+            "empatija",
+            "očekivanje",
+            "suspenzija",
+            "manipulacija"
+          ],
+          "context": "Spoljni glasovi kažu da \"čekaj\". Vi određujete trajanje i uslove, postavite bistre granice."
+        },
+        "position8": {
+          "upright": "Obučeni čovek opisuje kratkoročnu žrtvu, odlaganju i repriliranje. Suspenzija vam omogućava da dišete.",
+          "reversed": "Okrušen čovek je upozorio od kašnjenje isplate, \"videćemo kasnije\" ciklus i finansijsko odlaganje.",
+          "keywords": [
+            "žrtvovati",
+            "suspenzija",
+            "prioritet",
+            "vešalica",
+            "novčani tok"
+          ],
+          "context": "Privremeno ograničenje mora biti svesno i privremeno; Ne stvarajte trajno odlaganje."
+        },
+        "position9": {
+          "upright": "Obučeni čovek oporavlja odnos sa kratkoročnom žrtvom i promenom perspektive. Ako je suspenzija svesna, ona pruža kontinuitet.",
+          "reversed": "Obučeni čovek naopako, hronična prokrastinacija i narativa žrtve opovrgavaju odnos u vešalici.",
+          "keywords": [
+            "žrtvovati",
+            "perspektivan",
+            "suspenzija",
+            "vešalica",
+            "ravnoteža"
+          ],
+          "context": "Poslednji put: Vremenska žrtva + jasan datum povratka."
+        }
+      },
+      "death": {
+        "position1": {
+          "upright": "Kaže da postoji sukob oko smrti, potreba za transformacijom i kraj starog reda. Prepuštanje starih navika može donijeti obnovu.",
+          "reversed": "Obrnuta smrt ukazuje da je otpornost na promenu i prikupljanje prošlosti produžava krizu. Odbijanje sukoba hronike za zatvaranje.",
+          "keywords": [
+            "transformacija",
+            "završiti",
+            "izdanje",
+            "regeneracija",
+            "otpornost"
+          ],
+          "context": "Priroda sukoba u vezi: prag promene i puštanje."
+        },
+        "position2": {
+          "upright": "Smrt kaže da problem proizlazi iz produženja onoga što bi trebalo završiti i strah od transformacije. Stare školjke su previše utegnute. \\ N \\ nhint: Nemogućnost napuštanja navika, datoteka bez zatvaranja. Problem je što nema prostora za rođenje nove.",
+          "reversed": "Reverzna smrt objašnjava da je otpornost na promenu hronika krize. Pokušaj da se krene dalje bez da se zbogom zbogom naporno. \\ N \\ nsimptom: uvek isti argument, erozija nade. Problem raste tamo gde se kraj nije posvećeno.",
+          "keywords": [
+            "završiti",
+            "transformacija",
+            "izdanje",
+            "ponovno rođenje",
+            "otpornost"
+          ],
+          "context": "Problem sa korenom: nedostatak zatvaranja i transformacije. Područja koja utiče: navika, očekivanje, obnavljanje."
+        },
+        "position3": {
+          "upright": "Smrt kaže da kada produžava ono što treba da se okonča i drži za staru školjku, njegov udeo može biti visok. Kako se transformacija kasni, napetost postaje hronična.",
+          "reversed": "Reverzna smrt vam govori da odbijajući da se oprosti i noseći prošlost, uzgajate iskru. Novi koji neće doći bez pravljenja sobe.",
+          "keywords": [
+            "završiti",
+            "transformacija",
+            "izdanje",
+            "ponovno rođenje",
+            "otpornost"
+          ],
+          "context": "Share: Otpornost na promene. Efekat: Regeneracija, fleksibilnost. Preporuka: Svesno odustajanje."
+        },
+        "position4": {
+          "upright": "Smrt vam govori da možda mislite da je to produžavanje onoga što treba da završi je \"strpljenje\" i ignorišete svoj udeo. Dok stara školjka postaje uži, napetost raste.",
+          "reversed": "Obrnuta smrt ukazuje na tendenciju da se oprosti i negira promenu. Bez puštanja, novi se ne dolazi; Ovo je samogovornost.",
+          "keywords": [
+            "završiti",
+            "izdanje",
+            "transformacija",
+            "otpornost",
+            "regeneracija"
+          ],
+          "context": "Ono što ignorišem: Ono što moram da pustim. Efekat: Zagušenje, umor. DO: Svesno zatvaranje obreda."
+        },
+        "position5": {
+          "upright": "Smrt vam govori da prolazite kroz velike transformacije zajedno. Hrabrost da prepustite starosti je obnovio vašu vezu.",
+          "reversed": "Obrnuta smrt opisuje produženje ciklusa koji bi trebali završiti. Fondovi su možda danas povećali habanje.",
+          "keywords": [
+            "završiti",
+            "transformacija",
+            "regeneracija",
+            "otpornost",
+            "izdanje"
+          ],
+          "context": "Ima visoku sposobnost konverzije. Neke oproštavanja su davno zaostaju. Sada je svesno puštanje tost mora."
+        },
+        "position6": {
+          "upright": "Smrt kaže da produženja stvari koje treba da završi mogu dati moć jednoj od stranaka. Odlaganje zatvaranja stvara kontrolu kroz neodlučnost.",
+          "reversed": "Obrnuta smrt opisuje rizik od straha od promene da bi partner ostao na mestu i suzi opcije. Preti da će otići je takođe eksploatacija.",
+          "keywords": [
+            "završiti",
+            "promeniti",
+            "strah",
+            "kontrola",
+            "zatvaranje"
+          ],
+          "context": "Tema: Prag i oproštaj; Rizik: Ucena sa zatvaranjem; DO: Jasna odluka i siguran prolaz."
+        },
+        "position7": {
+          "upright": "Smrt ukazuje da su treće strane (bivši partner, porodične veze) na dnevnom redu u vezi sa završetkom veze / veze. Zdrava zatvaranje smanjuje spoljni uticaj.",
+          "reversed": "Obrnuta smrt ukazuje da su nezavršeni odnosi, nezavršeni oproštajni, a neprekinuta veza i dalje dolaze između vas.",
+          "keywords": [
+            "završiti",
+            "zatvaranje",
+            "Stari vinograd",
+            "oproštaj",
+            "lepak"
+          ],
+          "context": "Istorijske datoteke su otvorene. Čisto zatvaranje i granica smanjuje spoljni uticaj."
+        },
+        "position8": {
+          "upright": "Smrt priča da zatvori pretplate, dugove i neproduktivne navike koje je potrebno završiti. Pojednostavljenje je teško.",
+          "reversed": "Obrnuta smrt opisuje izbegavanje nepotrebnih troškova i gubitak novca zbog \"uobičajene\" udobnosti.",
+          "keywords": [
+            "završiti",
+            "čišćenje",
+            "navika",
+            "namirenje duga",
+            "pojednostavljivanje"
+          ],
+          "context": "Uradite finansijski detoks; Isključite nepotreban, otvoreni izvor."
+        },
+        "position9": {
+          "upright": "Smrt vam govori da ako prekinete stare uzorke, odnos se može nastaviti sa obnovom. Prečišćavanje omogućava sledeći nivo.",
+          "reversed": "Obrnuti smrt, otpornost na promenu i zadržavanje onoga što je preminulo da se kontinuitet još teži.",
+          "keywords": [
+            "transformacija",
+            "završiti",
+            "regeneracija",
+            "otpornost",
+            "prečišćavanje"
+          ],
+          "context": "Da biste poslednji put: pozdravili zbogom; Teško je nastaviti bez pravljenja prostora."
+        }
+      },
+      "temperance": {
+        "position1": {
+          "upright": "Kaže da je ravnoteža, krajnost i nemogućnost pronalaženja zajedničke mešavine dovodeći u sukob. TEMPO, stil i doziranje vrednosti zahtevaju prilagodljivost.",
+          "reversed": "Invertirana ravnoteža ukazuje da će ići u krajnje, neuravnoteženi ritam i nestrpljenje povećavaju napetost. Nedostatak kalibracione sojenja povezuje vezu.",
+          "keywords": [
+            "ravnoteža",
+            "u srednjem stanju",
+            "kalibracija",
+            "ekstremizam",
+            "strpljenje"
+          ],
+          "context": "Priroda sukoba u vezi: kalibracija mešanja i ritma."
+        },
+        "position2": {
+          "upright": "Ravnoteža kaže da se problem leži u krajnosti i neskladnoj smeši. Kada se doze ne odgovaraju, mir je uznemiren. \\ N \\ nHint: Nedostaje tempo, stil i vrednost. Problem je nedostatak kalibracije.",
+          "reversed": "Obrnuti balans nam govori da nestrpljiv i ekstremni stav povećava problem. Ritam se ne može održavati zajedno. \\ N \\ nsimptom: svi ili ništa niti ništa, sukob u sporiji brzine. Problem je ukorenjen u ne pronalaženju srednje zemlje.",
+          "keywords": [
+            "ravnoteža",
+            "merenje",
+            "sinteza",
+            "raport",
+            "strpljenje"
+          ],
+          "context": "Problem sa korenom: Mešavina i tempo kalibracija. Područja koja utiče: dnevni ritam, upravljanje sukobom."
+        },
+        "position3": {
+          "upright": "Bilans vam govori da ako propustite dozu i idite do krajnosti, možda ćete imati supozitorijumu. Kad nema srednjeg tla, male stvari postaju velike.",
+          "reversed": "Obrnuti ravnoteža vam govori da povećavate svoj udeo sa nestrpljenjem i nultom stotinom mentalitetom. Nedostatak guma za kalibraciju odnosa.",
+          "keywords": [
+            "ravnoteža",
+            "merenje",
+            "sinteza",
+            "raport",
+            "strpljenje"
+          ],
+          "context": "Numerator: Tempo / Tone Calibration. EFEKT: Mir, kontinuitet. Preporuka: Podesite dozu."
+        },
+        "position4": {
+          "upright": "Bilans vam govori da možete opravdati da idete u krajnosti rekavši \"ovo je ko sam\" i ignorišem vaš udeo. Nedostatak kalibracione pasmine sukoba.",
+          "reversed": "Reversed balans naglašava nestrpljivost i tendenciju da negira sve-ili-ništa stav. Poricanje srednjeg rola je nevidljiva nevidljiva samo-odgovornost.",
+          "keywords": [
+            "ravnoteža",
+            "merenje",
+            "sinteza",
+            "strpljenje",
+            "kalibracija"
+          ],
+          "context": "Ono što ignorišem: moje postavke doze-tempo. EFEKT: Mir se gubi. DO: Uspostavite srednji put, budite umereni."
+        },
+        "position5": {
+          "upright": "To vam govori da omekšate krize zajedno sa ravnotežom, harmonijom i sintezom. Često ste pronašli sredinu.",
+          "reversed": "Reverse ravnoteža nam govori da su prekomerni stavovi stvorili fluktuacije u prošlosti. Gubitak strpljenja se danas može pokrenuti.",
+          "keywords": [
+            "ravnoteža",
+            "sinteza",
+            "merenje",
+            "raport",
+            "strpljenje"
+          ],
+          "context": "Ima srednje kopnene veštine. Periodi ekstremizma napustili su svoju ocenu. Sada je potrebna kalibracija."
+        },
+        "position6": {
+          "upright": "Ravnoteža savetuje da se smeša učini pažljivo; Ali kada se granice tope, postaje nejasno ko očekuje ono što od koga. Ova magla stvara prostor za eksploataciju.",
+          "reversed": "Obrnuti balans čini odnos krhkom sa ekstremnim doziranjem i stavom sve ili ništa. Crecpi ritam može prisiliti jednu stranu da stalno nosi.",
+          "keywords": [
+            "ravnoteža",
+            "doziranje",
+            "granica",
+            "ritam",
+            "sinteza"
+          ],
+          "context": "Tema: Mješaj i granica; Rizik: Nevidljivi rad; DO: Kalibracija doze i uloga."
+        },
+        "position7": {
+          "upright": "Ravnoteža kaže da pomirljiva treća strana može biti terapeutska. Profesionalna podrška / međusobni prijatelj može da izgradi mostove.",
+          "reversed": "Invertirana ravnoteža ukazuje na \"svi koji razgovaraju\" haos, biranje strana i prekomernog medijacije.",
+          "keywords": [
+            "posrednik",
+            "kompromis",
+            "merenje",
+            "prikupljanje strana",
+            "zarastanje"
+          ],
+          "context": "Poboljšava nizak i kvalitetan zvuk. Izaberite posrednik sa jasnim ulogama i granicama."
+        },
+        "position8": {
+          "upright": "Zagovara ravnotežu budžetiranja srednjeg puta, metoda koverte i umerena potrošnja. Ako je smeša dobra, dolazi mir.",
+          "reversed": "Obrnuta ravnoteža odnosi se na ciklus sve ili ništa ne, prekidajući i zatim preplaviti.",
+          "keywords": [
+            "ravnoteža",
+            "merenje",
+            "budžet",
+            "stabilnost",
+            "obilje"
+          ],
+          "context": "Omekšati ritam; Mali stalni koraci su bolji od velikih skokova."
+        },
+        "position9": {
+          "upright": "Dugotrajna struktura se može uspostaviti sa ravnotežom, podešavanje doze, srednja zemlja i integracija. Fleksibilna sinteza nosi odnos.",
+          "reversed": "Obrnuti balans, plutajte do krajnosti i stavove sve ili ništa preti kontinuitetu obveznice.",
+          "keywords": [
+            "ravnoteža",
+            "sinteza",
+            "fleksibilnost",
+            "u srednjem stanju",
+            "stabilnost"
+          ],
+          "context": "Da biste poslednji put: RIHTM ugovor + malo redovno podešavanje."
+        }
+      },
+      "thedevil": {
+        "position1": {
+          "upright": "Sotona nam govori da je zavisnost, ljubomora, opsednutost ili toksični obrasci nahraniti osnovni sukob. Upravljačke igre oštećuju vezu.",
+          "reversed": "Prekoračeni đavo pokazuje da se borba sa neraskidivim vezama i ponavljajući počastne cikluse nastavlja. Pojavljuje se pokušaj otpuštanja lanca.",
+          "keywords": [
+            "zavisnost",
+            "opsesija",
+            "ljubomora",
+            "kontrola",
+            "toksičnost"
+          ],
+          "context": "Priroda sukoba u vezi: vezivanje senki i kontrola."
+        },
+        "position2": {
+          "upright": "Sotona kaže da je problem podstaknut zavisnošću, ljubomorom, opsesijom i toksičnim sporazumima. Sloboda vezanja za lepljenje. \\ N \\ n \\ nhint: Kontrolne igre, uklapanje ljubomore i tajnih zavisnosti. Problem je prekršaj graničnog ograničenja.",
+          "reversed": "Ograničen đavo pokazuje da se pokušava otpuštanja lanca prisiljavaju. Iako će se začarani krug uskoro pokvariti, okidači su jaki. \\ N \\ nsimptom: Ostavite oscilacije, krivice. Problem se ključa da se ne suočava sa senkom.",
+          "keywords": [
+            "zavisnost",
+            "opsesija",
+            "ljubomora",
+            "kontrola",
+            "toksičnost"
+          ],
+          "context": "Problem sa korenom: toksično pričvršćivanje i prekršaj granica. Područja koja utiče: samopouzdanje, sloboda, vrednost."
+        },
+        "position3": {
+          "upright": "Đavo kaže da ste možda pokrenuli iskru ljubomore, kontrolu ili zavisnike u igri. Lanac je bacio senku na ljubav.",
+          "reversed": "Reversed Đavo vam govori da iako želite da odete, povećavate svoj udeo tako što ćete hraniti okidač. Potrebna je hrabrost da otpustite lanac.",
+          "keywords": [
+            "zavisnost",
+            "opsesija",
+            "ljubomora",
+            "kontrola",
+            "toksičnost"
+          ],
+          "context": "Share: Tokic Triggers. Efekat: Poverenje, sloboda. Preporuka: Bornica + Podrška."
+        },
+        "position4": {
+          "upright": "Sotona objašnjava ljubomore / uzorke zavisnosti kao \"zato što volim\" i kaže da može ignorisati svoj udeo. Lanac se može prerušiti kao ljubav.",
+          "reversed": "Reversed Demon opisuje tendenciju da se minimizira okidači i negira prekršaj granice. Nema slobode bez sukoba.",
+          "keywords": [
+            "zavisnost",
+            "ljubomora",
+            "kontrola",
+            "granica",
+            "senka"
+          ],
+          "context": "Ono što ignorišem: moji toksični okidači. UTICAJ: Trust i sloboda se smanjuju. DO: Pitajte za granice i podršku."
+        },
+        "position5": {
+          "upright": "Sotona nam govori da se u prošlosti pojavljuju teme ljubomore, kontrole ili zavisnosti. Bond je snažan, ali ponekad se obavezuje.",
+          "reversed": "Reversed Đavo nam govori da je napor da se odvoji od toksičnih obrazaca nepotpuno. Gornji danas moraju biti regravn.",
+          "keywords": [
+            "zavisnost",
+            "ljubomora",
+            "kontrola",
+            "granica",
+            "senka"
+          ],
+          "context": "Snimanje + igrice sjene. Bilo je prekršaja granica. Sada su zdrave granice."
+        },
+        "position6": {
+          "upright": "Sotona otkriva klasična lica zavisnosti, ljubomore i zloupotrebe kontrole. Ljubav se ne bi trebala prerušiti kao lanac.",
+          "reversed": "Reversed Demon poziva na potrebu otpuštanja priloga i suočavanja okidača. Kako se lanci ignorišu, eksploatacija postaje normalna.",
+          "keywords": [
+            "zavisnost",
+            "ljubomora",
+            "kontrola",
+            "granica",
+            "oslobođenje"
+          ],
+          "context": "Tema: toksična veza; Rizik: Kontrola i ljubomora; Do: upravljanje okidačima i jasna granica."
+        },
+        "position7": {
+          "upright": "Sotona naglašava treće strane koje su ljubomorne, kontrole ili zarazne. Postoji rizik od trokulacije i opsesivne potrage.",
+          "reversed": "Reversed Demon govori o potrebi slobode od toksičnog pričvršćivanja. Dok ignorišete lance, spoljni uticaj postaje normalan.",
+          "keywords": [
+            "ljubomora",
+            "kontrola",
+            "triangulacija",
+            "opsesija",
+            "oslobođenje"
+          ],
+          "context": "Toksični akter je na snazi. Uspostavite strogu graničnu i ne-dupliku za komunikaciju."
+        },
+        "position8": {
+          "upright": "Sotona upozorava na zavisnost o potrošnji, kreditnom ciklusu, kockanju / trpi za kupovinu i statusnu potrošnju.",
+          "reversed": "Reversed Đavo opisuje odlučnost da razbije lanci i odmakne se od aktiviranja aplikacija / veb lokacija.",
+          "keywords": [
+            "duga",
+            "zavisnost",
+            "okidač",
+            "status",
+            "oslobođenje"
+          ],
+          "context": "Isključite okidači, fokusirajte se na rezanje veza sa planom duga i podrške."
+        },
+        "position9": {
+          "upright": "Ako đavo, zavisnost, ljubomora i kontrola nisu slomljeni, odnos će umoriti. Kada je lanac ološen, postoji šansa za stalnost.",
+          "reversed": "Ako postoji namera da se oslobodimo otrovnih veza, odnos se može nastaviti na novoj osnovi; U suprotnom, ruptura je neizbežna.",
+          "keywords": [
+            "zavisnost",
+            "ljubomora",
+            "kontrola",
+            "oslobođenje",
+            "granica"
+          ],
+          "context": "Da biste to učinili: okidač plan + granica + podrška (profesionalno ako je potrebno)."
+        }
+      },
+      "thetower": {
+        "position1": {
+          "upright": "Toranj ukazuje da je iznenadna istina, šokantna napomena ili neočekivani događaj uzdrmala dinamiku odnosa. Pukotine mogu biti vidljive i razvili su se u krizu.",
+          "reversed": "Invertirani toranj sugeriše da su akumulirane tenzije odgodile eksploziju, ali su ostali osnovni problemi. Postoji potreba za kontrolisanom rušenjem.",
+          "keywords": [
+            "kriza",
+            "šok",
+            "rušenje",
+            "real",
+            "probijanje"
+          ],
+          "context": "Priroda sukoba u vezi: šokantno buđenje i ruptura."
+        },
+        "position2": {
+          "upright": "Kule kaže da je problem u relativnoj strukturi koja se uzdiže na truli temelj. Iznenadna istina vas je možda šokirala. \\ N \\ n \\ nhint: neočekivano priznanje, šokantnu primedbu ili događaj. Problem je neukolidirani tlo.",
+          "reversed": "Invertirani toranj nam govori da je napetost koja je trebalo da eksplodiralo odložena je. Mali drhtavice ukazuju na veliki zemljotres. \\ N \\ nsimptom: Kontinuirani popravak pukotina, površna rešenja. Problem raste sa izbegavanjem radikalne popravke.",
+          "keywords": [
+            "kriza",
+            "rušenje",
+            "osnova",
+            "real",
+            "rekonstrukcija"
+          ],
+          "context": "Problem sa korenom: Slaba fondacija i odložena kriza. Područje pogođene: Poverenje, stabilnost, ponovno uspostavljanje."
+        },
+        "position3": {
+          "upright": "Toranj kaže da ste zapalili vatru eksplozijom kasne govorne istine ili sahranjene istine. Ako se pukotine ne poprave na vreme, šok je neizbežan.",
+          "reversed": "Pretvorena kula objašnjava da je povećala svoj udeo odlaskom krize i zanemarivanje malih šokova. Upravljanje uništenjem je takođe hrabrost.",
+          "keywords": [
+            "kriza",
+            "rušenje",
+            "osnova",
+            "real",
+            "rekonstrukcija"
+          ],
+          "context": "Share: Odložena istina. Efekat: Stabilnost, popravka. Preporuka: Radikalna iskrenost."
+        },
+        "position4": {
+          "upright": "Toranj kaže da neko može racionalizovati odloženu istinu rekavši \"to nije bilo vreme i zanemarilo svoj udeo. Pukotina zahteva rano popravljanje.",
+          "reversed": "Invertirani toranj naglašava tendenciju da uskraćuje vaš doprinos uništenju sa razmatranjem odlaganja krize kao veštinom. Bekstvo iz radikalne iskrenosti je poricanje.",
+          "keywords": [
+            "kriza",
+            "real",
+            "osnova",
+            "rušenje",
+            "popraviti"
+          ],
+          "context": "Ono što ignorišem: odložena tačnost. EFEKT: Poverenje se uzdrma. DO: Objasnite, rekonstruisati."
+        },
+        "position5": {
+          "upright": "Toranj nam govori da je kriza ili šokantna istina u prošlosti promenila sve. Možda je bilo pojednostavljenja nakon rušenja.",
+          "reversed": "Invertirani toranj govori da male pukotine nisu bile popravljene na vreme. Zakašnjenje sukoba se danas mogu odjeknuti.",
+          "keywords": [
+            "kriza",
+            "real",
+            "rušenje",
+            "popraviti",
+            "osnova"
+          ],
+          "context": "Šokantni prag. Brzina popravka je bila presudna. Sada je potrebna radikalna iskrenost."
+        },
+        "position6": {
+          "upright": "Toranj kaže da kriza i šok čine činjenice vidljive. Stvaranje haosa i zatim igranje uloge Spasitelja je oštar oblik zlostavljanja.",
+          "reversed": "Invertirani toranj opisuje rizik odlaganja eksplozije i korišćenja pukotina kao poluge. Kontrola ne treba uspostaviti klimom straha.",
+          "keywords": [
+            "kriza",
+            "strah",
+            "real",
+            "Spasitelj sindroma",
+            "rušenje"
+          ],
+          "context": "Tema: Kriza i snaga; Rizik: Kontrola kroz strah; DO: Radikalna iskrenost i plan popravke."
+        },
+        "position7": {
+          "upright": "Toranj kaže da otkrivenje, tračevi ili iznenadni događaj trećih lica trese ravnotežu. Neočekivana intervencija menja sliku.",
+          "reversed": "Invertirani toranj ukazuje na uvećanje malih pukotina od uha do uha. Nerazumljena glasina uvećava uništenje.",
+          "keywords": [
+            "obelodanjivanje",
+            "tračevi",
+            "kriza",
+            "protresti",
+            "popraviti"
+          ],
+          "context": "Ima glasine i efekat šoka. Radikalna jasnoća i brzi plan za popravak su od suštinskog značaja."
+        },
+        "position8": {
+          "upright": "Kula označava šokove kao što su iznenadni troškovi, pokvarena oprema, gubitak posla. Ako nema hitnih sredstava, odnos postaje napeti.",
+          "reversed": "Invertirani toranj pokazuje da se pukotine ignorišu; Kaže da mali kvar može pretvoriti u veliki račun.",
+          "keywords": [
+            "nagli trošak",
+            "hitni fond",
+            "kriza"
+          ]
+        }
+      }
+    }
+  }
+}

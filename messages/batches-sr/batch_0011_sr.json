@@ -1,0 +1,810 @@
+{
+  "love": {
+    "meanings": {
+      "theemperor": {
+        "position1": {
+          "context": "Ova osoba je lider koji želi da izgradi svoj život i odnose na čvrste temelje."
+        },
+        "position2": {
+          "upright": "U vašoj fizičkoj vezi postoji struktura, kontrola i strast. Doživela energija koja ima vođstvo i kontrolu u seksualnosti. To može biti moćan i zaštitni seksualni dinamika.",
+          "reversed": "Invertirani car ukazuje na preterano kontrolisanje, dominantno ili kruti stav u seksualnom životu. Možda postoji nedostatak emocionalnog izražavanja ili nedostatka seksualne želje. Može se pojaviti borba za napajanje.",
+          "keywords": [
+            "strast",
+            "kontrola",
+            "snaga",
+            "stabilnost",
+            "rukovodstvo"
+          ],
+          "context": "Vaša seksualna veza je dobro osnovana struktura u kojoj se spajaju strast i kontrola."
+        },
+        "position3": {
+          "upright": "Vaša emocionalna veza je izgrađena na čvrstim temeljima, stabilnosti i međusobnom poštovanju. Vi ste zaštitni i lojalni jedni drugima. Ovo je poverenje, strukturirano duhovno partnerstvo.",
+          "reversed": "Reverdirani car ukazuje da postoji emocionalna krutost, bitke za kontrolu ili nedostatak naklonosti između vas. Emocije nisu izražene, duhovna veza ostaje slaba.",
+          "keywords": "[\"Stabilnost\", \"Poverenje\", \"Zaštita\", \"Solid Fondacije\", \"lojalnost\"]",
+          "context": "Vaša emocionalna veza je dvorac izgrađen dovoljno jak da izdrži oluje."
+        },
+        "position4": {
+          "upright": "Dugoročni rezultat je izuzetno stabilan, siguran i trajan odnos. Ovo ukazuje na uspostavljanje čvrstih struktura kao što su brak ili dugoročno partnerstvo.",
+          "reversed": "Invertirani car ukazuje da će to dugoročno, veza postati zatvor zbog bitaka za kontrolu, emocionalnu rigidnost ili dominaciju jednog partnera.",
+          "keywords": "[\"Trajna veza\", \"Stabilnost\", \"Sigurnost\", \"brak\", \"čvrsta struktura\"]",
+          "context": "Dugoročna sudbina ove veze je izgradnja čvrstog carstva koja će podnijeti test vremena."
+        }
+      },
+      "thehierophant": {
+        "position1": {
+          "upright": "Osoba koju ste zainteresovane je neko ko se pridržava tradicija, ima velike moralne vrednosti i pridaje značaj socijalnim pravilima. On može tražiti ozbiljnost, posvećenost i tradicionalni put u odnosima.",
+          "reversed": "Ukrasan hierofant pokazuje da ova osoba može biti razbijanje pravila, buntovni, dogmatski ili uski ugovor. Možda oseća socijalni pritisak ili odbija tradicionalne načine.",
+          "keywords": "[\"Tradicija\", \"Sistemi verovanja\", \"Pravila\", \"Posvećenost\", \"Duhovnost\"]",
+          "context": "Ova osoba je neko ko živi ljubav i život sa određenim verovanjem ili sistemom vrednosti."
+        },
+        "position2": {
+          "upright": "Vaša fizička veza može se doživeti u okviru tradicionalnih i određenih očekivanja. Seksualnost se može posmatrati kao deo sveta veze ili braka. Nosi značenje rituala i predanosti, a ne strasti.",
+          "reversed": "Hierofant je preokrenut ukazuje na pobunu protiv seksualnog tabua ili tradicionalnog morala. Možda postoji potraga za seksualnom slobodom ili nekonvencionalna seksualna iskustva.",
+          "keywords": [
+            "Tradicionalna seksualnost",
+            "lojalnost",
+            "ritual",
+            "Tabuos",
+            "svetina veza"
+          ],
+          "context": "Vaš seksualni život živi u okviru oblikovan socijalnim ili ličnim uverenjima."
+        },
+        "position3": {
+          "upright": "Postoji duhovna veza između vas koja se zasniva na zajedničkim uverenjima, vrednostima i tradicijama. Ova veza ima više značenje za vas i vi ste duhovni učitelji jedni drugima.",
+          "reversed": "Prekoračeni hierofant pokazuje da doživljavate sukob na duhovnim ili moralnim pitanjima. Vaše vrednosti se ne usklađuju i to uzrokuje emocionalnu udaljenost.",
+          "keywords": "[\"Duhovno partnerstvo\", \"Zajedničko uverenje\", \"Vrednosti\", \"podučavanje\", \"Posvećenost\"]",
+          "context": "Vaša duhovna veza je poput druženja dva učenika ujedinjena u zajedničkom sistemu verovanja."
+        },
+        "position4": {
+          "upright": "Dugoročni ishod ovog odnosa je tradicionalna posvećenost, obično brak. Često vas očekuje poštovanje partnerstva zasnovano na uobičajenim verovima i društvenim vrednostima.",
+          "reversed": "Ograničeni hierofant pokazuje da će ovaj odnos biti težak da dugoročno učini rad zbog socijalnog pritiska ili različitih uverenja. Pobuna ili odlazak iz konvencije.",
+          "keywords": "[\"brak\", \"tradicionalna posvećenost\", \"zajednička uverenja\", \"Socijalno odobrenje\", \"Dugoročno partnerstvo\"]",
+          "context": "Krajnja sudbina ove obveznice je formalna unija, koju je društvo i tradicija posvećena."
+        }
+      },
+      "thelovers": {
+        "position1": {
+          "upright": "Ova osoba je na važnom mestu u pogledu odnosa i partnerstava. Neko ko deluje iz srca, voli je i otvoren je za stvaranje duboke veze sa partnerom. Možda će vam osećati snažnu duhovnu privlačnost.",
+          "reversed": "Ljubitelji preokrenuti ukazuju da je ta osoba neodlučna u odnosima, čineći pogrešne izbore ili u sukobu njihovog srca i uma. Možda postoje nespojivost i problemi sa komunikacijama.",
+          "keywords": "[\"Ljubav\", \"Izbor\", \"Harmoni\", \"Partnerstvo\", \"Duhovna veza\"]",
+          "context": "Ova osoba je neko ko traži put do svog srca i uoči je važne odluke o odnosu."
+        },
+        "position2": {
+          "upright": "Postoji duboka harmonija i savršena hemija između vas, duhovno i fizički. Seksualnost nije samo fizički čin, to je zajednica dve duše. Seksualna veza puna intenzivne ljubavi i strasti.",
+          "reversed": "Ljubitelji preokrenuti ukazuju na fizičku i emocionalnu disharmoniju, pogrešne odluke u seksualnim stvarima ili isključenjem. Čak i ako se kože podudara, može ukazivati na to da srca nisu na istoj frekvenciji.",
+          "keywords": [
+            "seksualna harmonija",
+            "srodna duša",
+            "strast",
+            "hemijski",
+            "duboko vezan"
+          ],
+          "context": "Vaša fizička veza predstavlja sveti unije, gde dve duše postaju jedno."
+        },
+        "position3": {
+          "upright": "Između vas postoji duboka duhovna i emocionalna harmonija. Ovo predstavlja srodnu dušu ili blizanku vezu, savršenu uniju srca i umova. Popunite jedni druge emocionalno.",
+          "reversed": "Ukrašeni ljubitelji pokazuju da postoji emocionalna disharmonija ili duhovno isključenje između vas. Vaše vrednosti ili srca mogu da gledaju u različitim pravcima. Pogrešan emotivni izbor.",
+          "keywords": "[\"SOULLE\", \"Emotivna kompatibilnost\", \"Dubina veza\", \"Izbor srca\", \"Union\"]",
+          "context": "Vaša emocionalna veza je sveta unija u kojoj se dve duše okupe da formiraju jedinstvenu celinu."
+        },
+        "position4": {
+          "upright": "Dugoročni rezultat je partnerstvo puno dubokog ljubavi, duhovnog jedinstva i harmonije. Ovo je najviši potencijal veze \"SOULLE\" i označava trajnu sreću.",
+          "reversed": "Ljubitelji preokrenuti ukazuju da je dugoročno napravljen pogrešan izbor i veza će se završiti zbog nekompatibilnosti. Odvajanje srca je neizbežno.",
+          "keywords": "[\"Soulmate\", \"Trajna ljubav\", \"Harmoning partnerstvo\", \"Sreća\", \"Pravi izbor\"]",
+          "context": "Sudbina ove veze je duboka i smislena ljubavna priča u kojoj dve duše postaju jedno."
+        }
+      },
+      "thechariot": {
+        "position1": {
+          "upright": "Osoba koju vas privlači ambiciozna je, snažna voljena i fokusirana na njihove ciljeve. Preuzeo je kontrolu nad svojim životom i brzo se kreće napred. Ako želi vezu, on će navesti ovaj cilj odlučnošću.",
+          "reversed": "Invertirano kočije ukazuje da ova osoba ima nekontrolisanu, besmislenu ili agresivnu energiju. Možda je izgubio kontrolu nad svojim životom ili je odustao od strane prepreka.",
+          "keywords": "[\"Vill\", \"Pobeda\", \"Kontrola\", \"Ambicija\", \"Akcija\"]",
+          "context": "Ova osoba je ratnik koji vozi automobil svog života odlučnošću prema svojim ciljevima."
+        },
+        "position2": {
+          "upright": "Imate snažnu volju, orijentaciju ciljeva i visoki libido u svom seksualnom životu. Strastveni i energični seksualni odnos. Jedna od stranaka zna šta žele seksualno i preduzima mere da ga dobiju.",
+          "reversed": "Invertirani kolatira ukazuje na nekontrolisanu ili agresivnu upotrebu seksualne energije. Možda postoji seksualna disharmonija, nestrpljivost ili neravnoteža libida.",
+          "keywords": [
+            "visoki libido",
+            "volja",
+            "strast",
+            "kontrola",
+            "energija"
+          ],
+          "context": "Vaša seksualna energija je moćna i strastvena sila koja se kreće ka svom cilju odlučnošću."
+        },
+        "position3": {
+          "upright": "Emotivno ste fiksirani na istoj meta. Duhovna veza između vas omogućava vam da krenete ka zajedničkom cilju. Ovo je snažan timski duh koji zajedno prevlada poteškoće.",
+          "reversed": "Inverted Chariot ukazuje da vaši emocionalni ciljevi idu u različitim pravcima ili postoji borba za napajanje između vas. Ne možete napredovati na istoj sobi duhovno.",
+          "keywords": "[\"Zajednički cilj\", \"Snažna volja\", \"Emotivno jedinstvo\", \"napredak\", \"Određivanje\"]",
+          "context": "Vaša emocionalna veza je snažna i odlučna kočija, putujući zajedno prema istom cilju."
+        },
+        "position4": {
+          "upright": "Dobićete svoje ciljeve prevazilaženjem teškoća zajedno. Dugoročni rezultat je pobeda osvojena zajedničkom voljom i uspešnom savezom.",
+          "reversed": "Reversed Chariot ukazuje da će se odnos dugoročno razvijati zbog borbe na snazi i različitog ciljeva. Gubitak kontrole i neuspeha.",
+          "keywords": "[\"Zajednička pobeda\", \"Uspeh\", \"Postizanje ciljeva\", \"snažno jedinstvo\", \"napredak\"]",
+          "context": "Budućnost ovog odnosa je deljena pobeda zbog nevolja."
+        }
+      },
+      "strength": {
+        "position1": {
+          "upright": "Ova osoba ima unutrašnju snagu, hrabrost i strpljenje. Prevladava poteškoće sa saosećanjem i razumevanjem, a ne grube sile. On je nežan, ali snažan lik koji može da kontroliše svoje divlje impulse.",
+          "reversed": "Obrnuta snaga ukazuje da je ta osoba nesigurna, kukavička ili vođena unutrašnjim impulsima. On možda nepravilno koristi svoju moć ili se oseća slabo.",
+          "keywords": "[\"unutrašnja snaga\", \"Hrabrost\", \"saosećanje\", \"Strpljenje\", \"Kontrola\"]",
+          "context": "Ova osoba je hrabro srce koje zna da istinska snaga leži u dobroti i strpljenju."
+        },
+        "position2": {
+          "upright": "Strast i naklonost su u savršenoj ravnoteži u vašoj fizičkoj vezi. Divlje želje se upravljaju blagim dodirom i strpljenjem. Seksualnost koja je jaka, ali istovremeno mekano i ljubavno.",
+          "reversed": "Invertirana snaga ukazuje na seksualnu nesigurnost ili nekontrolisani izraz sirovih želja. Ne postoji ravnoteža između strasti i saosećanja.",
+          "keywords": [
+            "uravnotežena strast",
+            "saosećanje",
+            "unutrašnja snaga",
+            "strpljenje",
+            "seksualno samopouzdanje"
+          ],
+          "context": "Vaša seksualnost je izraz unutrašnje moći koja nežno može da ukroti divlji lav."
+        },
+        "position3": {
+          "upright": "Vaša emocionalna veza je izgrađena na saosećanje, strpljenje i duboku unutrašnju snagu. Svoje prihvatate i smirite jedni drugima najdublji aspekti. To je veza koja zaceljuje dušu.",
+          "reversed": "Obrnuta snaga pokazuje da pokazujete emocionalnu nepoverenje ili slabost jedni prema drugima. Možda ćete se odvojiti duhovnu snagu jedni drugima.",
+          "keywords": "[\"saosećajna snaga\", \"Strpljenje\", \"Prihvatanje\", \"Duhovno isceljivanje\", \"unutrašnja snaga\"]",
+          "context": "Vaša emocionalna veza je isceljujući dodir koji govori čak i najteže emocije sa saosećanjem."
+        },
+        "position4": {
+          "upright": "Dugoročni rezultat je duboka, izdržljiva obveznica ojačana saosećanje i strpljenje. Prihvatanjem još najtežih aspekata jedni drugima sa ljubavlju, uspostavićete nepokolebljivo jedinstvo.",
+          "reversed": "Ukrašena čvrstoća ukazuje da će nesigurnosti i slabosti u dugoj vožnji provesti vezu. Strast između vas ne može biti uravnotežena sa saosećanje i veza je prekinuta.",
+          "keywords": "[\"Izdržljiva veza\", \"saosećanje\", \"Strpljenje\", \"Međusobni prihvat\", \"unutrašnja snaga\"]",
+          "context": "Dugoročni rezultat ovog odnosa je nepokolebljiva snaga koja odoleva oluje sa ljubavlju."
+        }
+      },
+      "thehermit": {
+        "position1": {
+          "upright": "Osoba koju vas privlači je neko ko je introvertiran, na duhovnu potragu i potrebna je samoća. Trenutno se može udaljiti od odnosa i tražiti svoje unutrašnje smernice.",
+          "reversed": "Invertirani pustinjak ukazuje da se ta osoba prisilno izolirala od društva, pati od straha od usamljenosti ili odbija da sluša savet drugih. Možda je izgubljen u izolaciji.",
+          "keywords": "[\"unutrašnja potraga\", \"usamljenost\", \"mudrost\", \"Uputstvo\", \"Introverzija\"]",
+          "context": "Ova osoba je mudra put koji traži odgovore u sebi, a ne napolju."
+        },
+        "position2": {
+          "upright": "Fizička veza i seksualnost trenutno nisu prioriteti. Jedna ili obe strane su u periodu seksualnog povlačenja, usamljenosti ili introverzije. Potrebno je vreme i strpljenje da uspostavi fizičku vezu.",
+          "reversed": "Invertirani pustinjak može navesti kraj perioda seksualne izolacije ili imati seksualni odnos iz straha od usamljenosti. Postoji napor za povezivanje, ali to može biti izazovno.",
+          "keywords": [
+            "seksualno povlačenje",
+            "nizak libido",
+            "usamljenost",
+            "introverzija",
+            "rastojanje"
+          ],
+          "context": "Fizička veza je sada sekundarna duša koja je na potrazi i okrenuta se prema unutra."
+        },
+        "position3": {
+          "upright": "Postoji emocionalna udaljenost između vas ili perioda u kojem se obe strane okreću prema unutra. Vaša veza se može zasnivati na poštovanju duhovnog putovanja jednih drugih. Duboka, ali tiha veza.",
+          "reversed": "Okrećeni svetac pokazuje da se neko ko se pridržava drugog ili prisilno izolirajući emocionalno iz straha od usamljenosti. Duhovna veza se ne može uspostaviti.",
+          "keywords": "[\"Emocionalna udaljenost\", \"Uključivanje unutrašnje\", \"duhovna potraga\", \"usamljenost\", \"Poštovanje\"]",
+          "context": "Vaša emocionalna veza je putovanje u kojem dvije duše koje daju jedni drugima prostor za svemiru za sopstvenu unutrašnju svetlost."
+        },
+        "position4": {
+          "upright": "Dugoročno, ovaj odnos može dovesti do raspada ili duhovne pretrage u kojoj obe strane idu posebne načine. Ovo nije nužno loše, to je korak ka ličnom rastu.",
+          "reversed": "Reversed Hestit ukazuje da će, dugoročno, osećaj usamljenosti i izolacije okončati odnos. Pre nego što možete da posegnete jedni druge, izgubit ćete se u odvojenim svetovima.",
+          "keywords": "[\"Odvajanje\", \"lično putovanje\", \"usamljenost\", \"okretanje prema unutra\", \"rast\"]",
+          "context": "Sudbina ovog odnosa je da obe duše idu odvojene načine da pronađu svoju svetlost."
+        }
+      },
+      "thewheeloffortune": {
+        "position1": {
+          "upright": "Ova osoba je na važnom prekretnju i ciklusu promene u njegovom životu. Vetrovi sudbine udaraju za njega. Takođe može biti najarna i neočekivana dešavanja u vašem životu.",
+          "reversed": "Vheel forTune obrnut ukazuje da ova osoba prolazi kroz nesretnu zakrpu, odupiru se promenama ili se oseća kao da gube kontrolu nad svojim životom. Stvari bi mogle pogriješiti za njega.",
+          "keywords": "[\"Sudbina\", \"Ciklusi\", \"Promena\", \"šansa\", \"prekretnička tačka\"]",
+          "context": "Ova osoba je u sredini života i padova, u tački gde se okreće točak sudbine."
+        },
+        "position2": {
+          "upright": "Postoje neočekivani događaji i ciklične promene u vašem seksualnom životu. Ponekad možete biti veoma strastveni, ponekad udaljeniji. Vreme kada vas sudbina fizički dovede zajedno ili vas razdvajaju.",
+          "reversed": "Obrnuti točak bogatstva ukazuje na stagnaciju, lošu sreću ili ponavljajući negativne cikluse u seksualnom životu. Seksualna rutina je možda postala dosadna.",
+          "keywords": [
+            "sudbina",
+            "petlje",
+            "Neočekivani razvoj",
+            "seksualna hemija",
+            "promeniti"
+          ],
+          "context": "Vaš seksualni život je pun uspona i padova i iznenađenja, poput okretanja točka sudbine."
+        },
+        "position3": {
+          "upright": "Ovo je karmička duhovna veza. Sudbina vas je okupila i ova veza igra važnu ulogu u vašoj duhovnoj evoluciji. Vaša veza je u stalnom promeni i rastu.",
+          "reversed": "Vheel forTune obrnut ukazuje da je odnos zaglavljen u duhovnom ciklusu ili ponavljate negativan karmički obrazac. Odupiraćete se promenama.",
+          "keywords": "[\"Karmička veza\", \"Sudbina\", \"Duhovni ciklus\", \"Promena\", \"Evolucija\"]",
+          "context": "Vaša duhovna veza je dve duše koju su povezane sa sudbinom i sa kim morate završiti ciklus."
+        },
+        "position4": {
+          "upright": "Dugotrajna sudbina ovog odnosa je sudbona prekretnice. Možete ući u novi i srećni ciklus zajedno. Sudbina će vas dovesti zajedno.",
+          "reversed": "Vjekotvoreni točak bogatstva ukazuje da će to dugoročno, loša sreća i ponovljeni negativni ciklusi uništiti odnos. Sudbina može da se razdvoji vaše načine.",
+          "keywords": "[\"Sudbina\", \"Prekretnička tačka\", \"šansa\", \"Novi ciklus\", \"Karmički ishod\"]",
+          "context": "Krajnji rezultat ove veze je da se točak sudbina pretvara u vašu korist ili protiv vas."
+        }
+      },
+      "justice": {
+        "position1": {
+          "upright": "Osoba koju vas privlači je fer, iskren, logičan i uravnotežen. On traži istinitost i transparentnost u svom životu i odnosima. Može se suočiti sa posledicama njegovih prošlih postupaka.",
+          "reversed": "Obrnuta pravda pokazuje da ova osoba nepravedno deluje, premijera odgovornost ili je pristrasna. U vašem životu može postojati neravnoteža ili nepravda.",
+          "keywords": "[\"Pravda\", \"ravnoteža\", \"pravičnost\", \"efekat uzroka\", \"Odluka\"]",
+          "context": "Ova osoba je duša koja veruje da bi život i ljubav trebali biti u sajmu."
+        },
+        "position2": {
+          "upright": "Bilans, pravičnost i iskrenost su važni u vašoj fizičkoj vezi. Posljedni seksualni odnos u kojima su ispunjeni potrebe i želje oba partnera. Seksualnost se zasniva na međusobnom poštovanju.",
+          "reversed": "Obrnuta pravda ukazuje na neravnotežu ili nepravdu u seksualnom životu. Želje jedne stranke dominiraju drugim, ili nedostaje iskrenosti u seksualnim stvarima.",
+          "keywords": [
+            "ravnoteža",
+            "pravda",
+            "iskrenost",
+            "reciprocitet",
+            "poštovanje"
+          ],
+          "context": "Vaša seksualnost se zasniva na fer transakciji u kojoj su obe strane zadovoljne."
+        },
+        "position3": {
+          "upright": "Vaša emocionalna veza zasniva se na iskrenosti, ravnotežnom i međusobnom razumevanju. Postoji otvorena komunikacija između vas i obe strane preuzimaju emocionalnu odgovornost. Ovo je pravi duhovni ugovor.",
+          "reversed": "Obrnuta pravda ukazuje na emocionalnu nepravdu ili neravnotežu. Jedna strana se oseća pogrešno ili greške prošlosti nisu oproštene.",
+          "keywords": "[\"Emocionalna pravda\", \"Iskrenost\", \"ravnoteža\", \"Odgovornost\", \"Otvorena komunikacija\"]",
+          "context": "Vaša emocionalna veza je poštena skala u kojoj obe duše dobijaju i daju ono što zaslužuju."
+        },
+        "position4": {
+          "upright": "Dugoročni rezultat je dobro zasluženi balans i pravda. Ovo može biti formalna posvećenost (brak, pravno partnerstvo) ili iskreno odvajanje. Svi će žeti ono što poseju.",
+          "reversed": "Obrnuta pravda pokazuje da će se odnos dugoročno završiti zbog nepravde, nepravednosti ili neriješenog sukoba. Karmički dug može ostati.",
+          "keywords": "[\"Pravda\", \"ravnoteža\", \"formalnost\", \"uzrok i posledica\", zasluženi rezultat \"]",
+          "context": "Sudbina ovog odnosa je pravi ishod u kojem će se manifestovati univerzalna pravda."
+        }
+      },
+      "thehangedman": {
+        "position1": {
+          "upright": "Ova osoba je u periodu pauziranja da bi se dobila drugačija perspektiva na stvarima. Možda će se zrnjeti ili čekati na nešto. Preferira da posmatra umesto da preduzme akcije.",
+          "reversed": "Invertirani obješen čovek pokazuje da se ova osoba uzalud žrtava zaglavila je u situaciji ili se odupiru promenama. Možda gubi vreme i energiju.",
+          "keywords": "[\"drugačija perspektiva\", \"Žrtva\", \"Pauza\", \"Predajte se\", \"Čekanje\"]",
+          "context": "Ovo je neko ko treba da se zaustavi i različito gleda na svijet da bi se krenuo napred."
+        },
+        "position2": {
+          "upright": "Period pauze, žrtve ili suspenzije u seksualnom životu. Umesto fizičkog unija, duhovna ili platonska veza može biti na čelu. Vreme je da pogledate seksualnost iz druge perspektive.",
+          "reversed": "Invertirani obješen čovek ukazuje na blokadu u seksualnom životu ili besmislenoj žrtvi. Jedna od stranaka nije seksualno zadovoljena, ali ne radi ništa da promeni ovu situaciju.",
+          "keywords": [
+            "pauza",
+            "žrtvovati",
+            "suspenzija",
+            "Platonic Bond",
+            "mišljenje"
+          ],
+          "context": "Vaša fizička veza se zaustavila za sada, čekajući da vide stvari iz druge perspektive."
+        },
+        "position3": {
+          "upright": "Vi ste u periodu emocionalne pauze ili žrtve. Ova veza vas uči da gledate stvari iz druge duhovne perspektive. Napredak će doći sa predajom.",
+          "reversed": "Invertirani obješen čovek pokazuje da ste u emocionalnom zastoj ili jedna stranka u uzaludnim. Ne možete da napredujete duhovno, zaglavili ste.",
+          "keywords": "[\"Duhovna perspektiva\", \"Predaja\", \"Žrtva\", \"Pauza\", \"Čekanje\"]",
+          "context": "Vaša emocionalna veza je suspendovani trenutak za postizanje dubljeg razumevanja."
+        },
+        "position4": {
+          "upright": "Dugoročno, ovaj odnos može ostati u Limbu ili ući u period stagnacije. Pre nego što zaključite, moraćete da pogledate stvari iz druge perspektive.",
+          "reversed": "Invertirani obješen čovek ukazuje da će se veza dugoročno završiti, sa jednom strankom koja pravi nepotrebne žrtve ili ne mogu da izađe iz ćorsokaka. Situacija žrtve.",
+          "keywords": "[\"Nesigurnost\", \"Pauza\", \"Žrtva\", \"Impasse\", \"Čeka\"]",
+          "context": "Dugoročna sudbina ovog odnosa je ostati suspendovana bez donošenja zaključka."
+        }
+      },
+      "death": {
+        "position1": {
+          "upright": "Ova osoba prolazi kroz glavnu procesu transformacije i završetka u svom životu. Sprema se da ostavi stari iza i napravi novi početak. To bi mogao biti kraj veze ili lične promene.",
+          "reversed": "Smrt obrnuto pokazuje da se ta osoba odupiru promenama, prikupljajući se za prošlost ili odlaženje neophodnog završetka. Ova situacija ometa njegov napredak.",
+          "keywords": "[\"Transformacija\", \"završeci\", \"Novi počeci\", \"Promenite\", \"Raskid\"]",
+          "context": "Ova osoba je Feniks koji ostavlja iza starog ja da se digne iz pepela."
+        },
+        "position2": {
+          "upright": "Velika transformacija se odvija u vašem seksualnom životu. Vaš stari seksualni identitet ili dinamika dolazi do kraja i ulazi potpuno novo seksualno razumevanje. Ovo bi moglo biti seksualno buđenje ili kraj ere.",
+          "reversed": "Smrt obrnuto pokazuje da se odupirite seksualnom promeni ili kraju. Držeći se nezdrave seksualne dinamike ili navike ometa napredak.",
+          "keywords": [
+            "Seksualna transformacija",
+            "završiti",
+            "ponovno rođenje",
+            "buđenje",
+            "prestanak"
+          ],
+          "context": "Vaša seksualnost je u radikalnoj transformaciji, poput zmije koju izbacuje svoju staru kožu i rodila je."
+        },
+        "position3": {
+          "upright": "Ova emocionalna veza prolazi u duboku transformaciju. Stara verzija odnosa umire i rodi se na potpuno novom duhovnom fondaciji. Ovo je neizbežna i isceljujuća promena.",
+          "reversed": "Smrt obrnuta ukazuje da se odupirite neophodnom emocionalnom zatvaranju ili promeni. Ova situacija uzrokuje da duhovno propadate.",
+          "keywords": "[\"Emocionalna transformacija\", \"Kraj i početak\", \"Rebirth\", \"Duhovno čišćenje\", \"Promena\"]",
+          "context": "Vaša emocionalna veza je usred radikalne transformacije, poput feniksa koja se diže iz pepela."
+        },
+        "position4": {
+          "upright": "Dugoročni rezultat je neizbežni kraj i radikalna transformacija. Ova veza se ne može nastaviti u svom trenutnom obliku. Ovaj kraj će dovesti do novih i zdravijih početaka za vas oboje.",
+          "reversed": "Obrnuta smrt ukazuje da će se odupirati neizbežni kraj nanijeti više boli obe strane u kojima je dugoročno. Kruža koja se ne može završiti.",
+          "keywords": "[\"neizbežni kraj\", \"Transformacija\", \"Završetak\", \"Rebirth\", \"Odricanje\"]",
+          "context": "Sudbina ove veze je potpuno okončati staro i započeti novi život."
+        }
+      },
+      "temperance": {
+        "position1": {
+          "upright": "Ova osoba je neko ko je u svom životu našao ravnotežu, harmoniju i umerenost. Stvara mirnu sintezu donošenjem različitih elemenata zajedno. Ima pacijenta, miran i pomirljiv stav u odnosima.",
+          "reversed": "Reverzna temperatura ukazuje da ova osoba doživljava neravnotežu, višak ili sukob u svom životu. Možda se ponaša nestrpljiv i gubi svoj unutrašnji mir.",
+          "keywords": "[\"ravnoteža\", \"Harmoni\", \"Moderacija\", \"Strpljenje\", \"sinteza\"]",
+          "context": "Ova osoba je alhemičar koji stvara svoju melodiju mira kombinujući različite beleške o životu."
+        },
+        "position2": {
+          "upright": "Postoji savršena ravnoteža i harmonija između fizičkih i emocionalnih energija. Seksualnost je mirna, saosećajna i poput alhemije koja ujedinjuje dve duše. Strast i ljubav su mešani.",
+          "reversed": "Reverzna temperatura ukazuje na neravnotežu, višak ili disharmonija u seksualnoj energiji. Strast i ljubav ne mogu da se okupe, što dovodi do nezadovoljstva.",
+          "keywords": [
+            "ravnoteža",
+            "raport",
+            "alhemija",
+            "temperatura",
+            "nežna strast"
+          ],
+          "context": "Vaša seksualnost je prikupljanje napitaka u kojoj se dve različite energije kombinuju u savršenom harmoniji."
+        },
+        "position3": {
+          "upright": "Postoji divna emocionalna i duhovna ravnoteža između vas. Savršeno se mešate i zacelite jedni druge energije. Ovo je mirna, mirna i harmonična veza.",
+          "reversed": "Reverzna temperatura ukazuje na emocionalnu neravnotežu ili sukob između vas. Vaše energije nisu kompatibilne jedni sa drugima, izazivajući duhovnu napetost.",
+          "keywords": "[\"Emotivna ravnoteža\", \"Harmoni\", \"Duhovno isceljivanje\", \"Mešanje\", \"Mir\"]",
+          "context": "Vaša emocionalna veza je isceljujuće i uravnoteženo Eliksir koji je stvorio Savez dve različite duše."
+        },
+        "position4": {
+          "upright": "Dugoročni rezultat je izuzetno uravnotežen, harmoničan i miran unija. Donošenje najboljih jedni u drugima, stvorićete mirno i ljubavno partnerstvo.",
+          "reversed": "Reverzna temperatura ukazuje da će disharmonija i sukobi u dugoročno proći vezu. Ravnoteža se ne može naći i staze se razlikuju.",
+          "keywords": "[\"ravnoteža\", \"harmonija\", \"mir\", \"dugoročno partnerstvo\", \"lečenje\"]",
+          "context": "Dugoročni potencijal ove veze je lekovita veza u kojoj se dve duše mešaju u savršenom harmoniji."
+        }
+      },
+      "thedevil": {
+        "position1": {
+          "upright": "Ova osoba može biti duboko posvećena materijalističkim zadovoljstvima, zavisinjima ili nezdravom dinamici odnosa. Iako ima intenzivnu strast, to može postati restriktivan ili toksičan.",
+          "reversed": "Okretni vrag ukazuje da se ova osoba oslobodila ovisnosti, slomila je lance ili postala svesna zamke. On uzima važan korak ka oslobađanju.",
+          "keywords": "[\"Ovisnost\", \"Ograničenje\", \"Materijalizam\", \"Strast\", \"Senka\"]",
+          "context": "Ova osoba je zatvorenik kaveza koji je stvorio ili je u tome, ili neko pokušava da pobegne iz tog kaveza."
+        },
+        "position2": {
+          "upright": "Postoji seksualna atrakcija između vas koja je neodoljiva, sirova i intenzivna. Ova kartica predstavlja tabui, seksualne fantazije i zavisni strast. Vaša fizička veza je izuzetno jaka i primalna.",
+          "reversed": "Reversed đavo označava želju da se oslobodi seksualne zavisnosti ili nezdrave dinamike. Lanci intenzivne, ali toksične atrakcije između vas se razbijaju. Seksualno oslobođenje.",
+          "keywords": [
+            "intenzivna strast",
+            "seksualna atrakcija",
+            "Tabuos",
+            "zavisnost",
+            "fantazija"
+          ],
+          "context": "Seksualna energija između vas je primitivna i moćna sila privlačenja koja vas veže jedni drugima."
+        },
+        "position3": {
+          "upright": "Postoji emocionalna veza između vas koja je intenzivna, strastvena i ovisnost. Ovo može biti karmička i izazovna duhovna lekcija koja vas prisiljava da se suočite sa svojim aspektima senki. Snažno ste povezani jedni sa drugima.",
+          "reversed": "Okretni vrag ukazuje da počinje da razbijate nezdrave emocionalne ili duhovne veze između vas. Sloboda od zavisnosti ili okončanja opsesije.",
+          "keywords": "[\"Intenzivna strast\", \"Ovisnost\", \"Karmička lekcija\", \"Aspekti senke\", \"Opsesija\"]",
+          "context": "Vaša duhovna veza je neizbežna sila privlačnosti koja vas veže jedni drugima sa nevidljivim lancima."
+        },
+        "position4": {
+          "upright": "Dugoročno, ovaj odnos se može pretvoriti u nezdravu zavisnost, opsednutost ili toksično dinamiku. Karmička i ubeđena veza koju ćete imati poteškoća da se razbije jedna od druge.",
+          "reversed": "Reversed đavo označava da ćete dugoročno probiti lance ove nezdrave veze i postati slobodni. Bolna, ali neophodna pauza.",
+          "keywords": "[\"toksična veza\", \"Ovisnost\", \"Opsesija\", \"Karmička veza\", \"Nemogućnost razbijanja\"]",
+          "context": "Dugoročna sudbina ovog odnosa je priča o dve duše koja se povređuju jedni druge, ali ne mogu se razdvojiti."
+        }
+      },
+      "thetower": {
+        "position1": {
+          "upright": "Ova osoba doživljava iznenadna, šokantna i neočekivana razaranje u svom životu. Fondacije koje veruje da se drhtaju i on vidi istinu nagli prosvetljenje. Iako je ovaj proces bolan, oslobađa se.",
+          "reversed": "Invertirani toranj ukazuje da ova osoba izbegava neophodno uništenje, pokušavajući da spreči katastrofu ili produžavajući krizu jer se odupiru promenama. Živi u strahu od uništenja.",
+          "keywords": "[\"iznenadno uništenje\", \"Promena razbijanja\", \"prosvetljenje\", \"Spasenje\", \"haos\"]",
+          "context": "Ova osoba je neko ko se suočava sa istinom kao kula svog života koju je mislio da je čvrst propao."
+        },
+        "position2": {
+          "upright": "Nagnuta i šokantna prosvetiteljska ili šokantni događaj mogu se pojaviti u vašem seksualnom životu. Ovo bi moglo biti otkrivenje tajne želje ili istine koja trese seksualnu dinamiku njihovoj jezgri. Neočekivana orgazmička energija.",
+          "reversed": "Invertirani toranj ukazuje da je odložena seksualna kriza ili sukob. Suzbijena seksualna energija preti da će dovesti do eksplozije. Napetost je iskusna sa strahom od uništenja.",
+          "keywords": [
+            "iznenadni prosvetljenje",
+            "seksualni šok",
+            "lomljenje tabua",
+            "šokantna istina",
+            "eksplozija"
+          ],
+          "context": "Vaša seksualna energija ima šokantni potencijal koji može da udari poput munje i uništava postojeće strukture."
+        },
+        "position3": {
+          "upright": "U vašoj emocionalnoj i duhovnoj vezi postoji iznenadno i šokantno prosvetljenje. Ovo je možda pojava istine koja trese temelj odnosa ili iznenadna ruptura. Ovo uništenje je neophodno za novu i pošteniju vezu.",
+          "reversed": "Invertirani toranj ukazuje na to da izbegavate neizbežno emocionalno sukob ili krizu. To bi moglo prouzrokovati da se opterećenja energija dovesti do veće eksplozije.",
+          "keywords": "[\"Nagli prosvetljenje\", \"emocionalna devastacija\", \"Konfrontacija\", \"Kriza\", \"Stresanje temelja\"]]",
+          "context": "Vaša emocionalna veza je iznenadna i šokantna, poput kolapsa kule izgrađene na lažnim fondacijama."
+        },
+        "position4": {
+          "upright": "Dugoročni rezultat je iznenadna i šokantna raskida ili epifanija koja uništava temelje odnosa. Trenutna struktura je neodrživa i će doći na neočekivani kraj.",
+          "reversed": "Invertirani toranj ukazuje da se ovaj proces produžava iz straha od neizbežne razbijanja ili krize. Dugoročno, to može dovesti do većeg emocionalnog sloma.",
+          "keywords": "[\"naglo razdvajanje\", \"uništavanje\", \"kriza\", \"neočekivani kraj\", \"konfrontacija\"]",
+          "context": "Dugoročna sudbina ovog odnosa je neizbežna uništavanja nestabilnih fondacija."
+        }
+      },
+      "thestar": {
+        "position1": {
+          "upright": "Ova osoba je puna nade, inspiracije i vere nakon teškog vremena. Ima pozitivnu izgled o budućnosti i je u procesu duhovnog oporavka. Njegovo srce je otvoreno i optimistično prema odnosima.",
+          "reversed": "Invertovana zvezda ukazuje da je ta osoba beznadežna, pesimistična ili isključena iz izvora inspiracije. Izgubio je veru u budućnost i oseća se izgubljeno.",
+          "keywords": "[\"nada\", \"vera\", \"inspiracija\", \"isceljivanje\", \"mir\"]",
+          "context": "Ova osoba je zvezda nade, sjaj i vodeći nakon mračne noći."
+        },
+        "position2": {
+          "upright": "Vaša fizička veza ima nadu, isceljujuće i duhovne kvalitete. Seksualnost se doživljava sa ljubavlju i otvorenom. Postoji osećaj obnove i nevinosti koja dolazi posle prošlih seksualnih trauma.",
+          "reversed": "Inverrovana zvezda ukazuje na nedostatak beznadežnosti, nevoljnosti ili inspiracije u seksualnom životu. Možda postoji hladnoća ili razočaranje fizičke veze.",
+          "keywords": [
+            "zarastanje",
+            "nadati se",
+            "seksualno obnovu",
+            "nevinost",
+            "duhovna seksualnost"
+          ],
+          "context": "Vaša fizička veza je poput zvezde koja sija posle mračne noći, donoseći isceljivanje i nadu."
+        },
+        "position3": {
+          "upright": "Postoji duhovna veza između vas koja se nada, nadahnuće i isceljujuće. Izvadite najbolje jedni na druge i delite nadu u budućnost. Ovo je veza blagoslovljena univerzumom.",
+          "reversed": "Invertovana zvezda pokazuje da ste umanjili nadu emotivno ili doživljavate duhovno isključenje. Izvor inspiracije između vas je možda osušio.",
+          "keywords": "[\"nada\", \"inspiracija\", \"duhovno isceljivanje\", \"vera\", \"blagoslovljena veza\"]",
+          "context": "Vaša duhovna veza je svetla zvezda koja vam svetli put čak i u najmračnijim vremenima."
+        },
+        "position4": {
+          "upright": "Dugoročni rezultat je budućnost puna nade, isceljenja i inspiracije. Ova veza je kao poklon nakon teških vremena i može vam doneti trajnu sreću i mir.",
+          "reversed": "Inverterovana zvezda ukazuje da će se nade ponestati i razočaranje će se dugoročno pojaviti. Odnos može izgubiti sjaj i postati običan.",
+          "keywords": "[\"nada budućnosti\", \"isceljivanje\", \"sreća\", \"inspiracija\", \"mir\"]",
+          "context": "Sudbina ove veze je svetla i nada da se zore posle mraka."
+        }
+      },
+      "themoon": {
+        "position1": {
+          "upright": "Ova osoba prolazi kroz period prepun nesigurnosti, strahova i iluzija. Iako je njegova intuicija jaka, možda će imati poteškoća da se razlikuje ono što je stvarno i šta je san. Ima emocionalno zbunjujuću energiju.",
+          "reversed": "Invertirani mesec ukazuje da se ta osoba suočila sa njihovim strahovima, izložena je obmana ili je zabuna okončana. Tajne su otkrivene i postaju jasne.",
+          "keywords": "[\"strahovi\", \"iluzije\", \"intuicija\", \"nesigurnost\", \"podsvesni\"]",
+          "context": "Ova osoba je intuitivna, ali anksiozna duša koja pokušava pronaći svoj put u svojoj unutrašnjoj tami."
+        },
+        "position2": {
+          "upright": "Vaša fizička veza je prepuna nesigurnosti, fantazija i tajnih želja. Seksualnost se doživljava u snu i misterioznom prostoru. Možda je nejasno šta je stvarno i ono što je zamišljeno. To je intenzivan, ali zbunjujući snimak.",
+          "reversed": "Invertirani mesec pokazuje da se otkrivaju skrivene seksualne želje ili obmane. Kruza na seksualnim pitanjima završava se i veća jasnoća se dobija.",
+          "keywords": [
+            "fantazija",
+            "Tajne želje",
+            "neizvesnost",
+            "zbrka",
+            "Dnoćnica seksualnost"
+          ],
+          "context": "Vaša seksualnost je misteriozna šuma meseca puna senki i fantazija."
+        },
+        "position3": {
+          "upright": "Vaša emocionalna veza je prepuna nesigurnosti, strahova i podsvesnih dinamika. Postoji snažna intuitivna atrakcija među vama, ali mogu postojati i stvari koje se krijete jedni od drugih ili nesporazuma.",
+          "reversed": "Invertirani mesec ukazuje da se emocionalne nesigurnosti i strahovi između vas počinju rasipati. Tajne su otkrivene i stečena je duhovna jasnoća.",
+          "keywords": "[\"Neizvesnost\", \"strahovi\", \"intuitivna atrakcija\", \"podsvesna\", \"iluzija\"]",
+          "context": "Vaša emocionalna veza je misteriozno putovanje jedrenje duboko u okean podsvesnog."
+        },
+        "position4": {
+          "upright": "Dugoročni ishod ove veze ostaće nejasan. Strahovi, iluzije ili skrivene situacije mogu neprestano uticati na budućnost veze. Teško je doći na jasan zaključak.",
+          "reversed": "Invertirani mesec ukazuje da će se odnos dugoročno završiti kada se otkriva obmana ili skrivena situacija. Nepoverenje u potpunosti uništava vezu.",
+          "keywords": "[\"neizvesna budućnost\", \"iluzija\", \"strahovi\", \"obmana\", \"nepoverenje\"]",
+          "context": "Dugotrajna sudbina ovog odnosa je neizvesna, poput broda izgubljenog u magli."
+        }
+      },
+      "thesun": {
+        "position1": {
+          "upright": "Ova osoba je prepuna radosti, vitalnosti, uspeha i pozitivne energije. On uživa u svom životu, samopouzdan je i sjaji svetlo oko njega. U odnosima je otvoren, iskren i srdačan.",
+          "reversed": "Invertirano sunce ukazuje da ova osoba doživljava privremenu nesreću, ima nisku energiju ili nije u stanju da pokaže svoj puni potencijal. Teško je ugledati uspeh i radost.",
+          "keywords": "[\"Joi\", \"Uspeh\", \"Vigor\", \"optimizam\", \"Jasnoća\"]",
+          "context": "Ova osoba je sjajno sunce koje širi toplinu i sreću oko njega."
+        },
+        "position2": {
+          "upright": "Vaša fizička veza je ispunjena radošću, vitalnošću i otvorenom otvorenom. Seksualnost se doživljava slobodno i sa zadovoljstvom, bez sramote. Postoji velika seksualna energija i zadovoljstvo.",
+          "reversed": "Obrnuti sunce označava privremeno smanjenje seksualne energije ili nemogućnosti uživanja u seksualnom životu. Postoji potencijal, ali oseća se u senci oblaka.",
+          "keywords": [
+            "radost",
+            "život",
+            "seksualna sloboda",
+            "zadovoljstvo",
+            "visoka energija"
+          ],
+          "context": "Vaš seksualni život je sunce prepuno radosti i vitalnosti, osvetljavajući i zagrevanje svega."
+        },
+        "position3": {
+          "upright": "Postoji divna emocionalna veza između vas, ispunjene radošću, toplinom i otvorenom. Osjećate se slobodno i srećno kad ste zajedno. Vaše duše su poput dvoje dece koja se igraju jedni sa drugima.",
+          "reversed": "Invertirano sunce ukazuje da je radost i toplina između vas privremeno ugrožena. Možda nećete moći da se u potpunosti ne vidite emocionalno.",
+          "keywords": "[\"Joi\", \"Sreća\", \"Jasnoća\", \"toplina\", \"duhovna vitalnost\"]",
+          "context": "Vaša emocionalna veza je topla i živahna sunčeva svetlost koja svetli svu tamu."
+        },
+        "position4": {
+          "upright": "Dugoročni rezultat je velika sreća, radost, uspeh i jasnoća. To je najavio izuzetno pozitivan, svetli i zadovoljavajući unija.",
+          "reversed": "Okorođeno sunce pokazuje da potencijal za sreću možda neće biti u potpunosti realizovan dugoročno. Čak i ako se odnosi nastavlja, može ostati senka ili osećaj nepotpunosti.",
+          "keywords": "[\"Velika sreća\", \"uspeh\", \"radost\", \"jasnoća\", \"zadovoljavajuća budućnost\"]",
+          "context": "Sudbina ove veze je toplo i jarko sunce koje svakodnevno svetli."
+        }
+      },
+      "judgement": {
+        "position1": {
+          "upright": "Ova osoba je u važnom periodu računa i ponovnog rođenja u njegovom životu. Procjenjuje prošlost, oprašta i budi se i budi se na višom svrhu. Možda postoji druga šansa ili važna odluka u odnosima.",
+          "reversed": "Revertra presuda ukazuje da ova osoba sudi sebe ili druge, a ne učenje iz prošlih grešaka ili izbegavajući važnu odluku. Može biti veoma kritičan prema sebi.",
+          "keywords": "[\"Reconing\", \"Rebirth\", \"Buđenje\", \"Oproštenje\", \"Odluka\"]",
+          "context": "Ovo je neko ko oseća poziv da se suoči sa svojom prošlošću i pretvori novu stranicu u svom životu."
+        },
+        "position2": {
+          "upright": "Se javlja seksualno buđenje ili ponovno rođenje. Prošle seksualne iskustva i presude ostaju su zaostali i postiže se veća seksualna svest. Ovo je 'druga šansa' ili seksualna žalba.",
+          "reversed": "Reverse presuda ukazuje da sudi sebe ili svog partnera u seksualnim stvarima i prebivalište na prošlim greškama. Možda postoje osećaji seksualne krivice ili sramote.",
+          "keywords": [
+            "seksualno buđenje",
+            "ponovno rođenje",
+            "nazvati",
+            "računanje",
+            "oproštenje"
+          ],
+          "context": "Vaša seksualnost je poput roga buđenja, nazivajući vas dubljem razumevanjem i prihvatanjem."
+        },
+        "position3": {
+          "upright": "Ovo je veza buđenja i računanja. Vaša veza deluje kao katalizator, nazivajući vas većoj duhovnoj svesti. Vreme je da oprostite prošlost i zajedno se rodite.",
+          "reversed": "Reverse presuda ukazuje da jedni druge sudete ili sami za svoje prošli greške. Postoji nemogućnost oproštenja što vas sprečava da se duhovno krećete prema naprijed.",
+          "keywords": "[\"Duhovno buđenje\", \"Reconing\", \"Oproštenje\", \"Rebirth\", \"Poziv\"]",
+          "context": "Vaša duhovna veza je transformativna sila koja vas poziva na autentičnije postojanje."
+        },
+        "position4": {
+          "upright": "Dugoročno, ovaj odnos će doživeti buđenje. To može značiti oproštenje, pomirenje i davanje odnosa druge šanse. Karmički preskočivanje i ponovno rođenje.",
+          "reversed": "Revertra presuda ukazuje da će se odnos dugoročno završiti zbog nemogućnosti oprosti prošlih grešaka ili stalno sudeći jedni drugima. Neće biti još jedna šansa.",
+          "keywords": "[\"Druga šansa\", \"Buđenje\", \"oproštaj\", \"Reconing\", \"Rebirth\"]",
+          "context": "Krajnja sudbina ovog odnosa je suočiti se sa svojom prošlošću i biti rođena ili da bude srušena presuda."
+        }
+      },
+      "theworld": {
+        "position1": {
+          "upright": "Ova osoba je uspešno završila ciklus u svom životu i postigla je celovitost. On je u miru sa sobom, zadovoljan i spreman da pređe na novu fazu. Takođe traži osećaj završenosti i zadovoljstva veza.",
+          "reversed": "Invertirani svet ukazuje da ova osoba ne može da završi projekat ili ciklus, nije u mogućnosti da postigne svoje ciljeve i oseća se kao da nešto nedostaje. Možda se neće moći da zatvori.",
+          "keywords": "[\"Završetak\", \"celovitost\", \"Uspeh\", \"Zadovoljstvo\", \"Putovanje\"]",
+          "context": "Ovo je neko ko je uspešno završio važnu fazu u svom životnom putu i ​​oseća se na vrhu sveta."
+        },
+        "position2": {
+          "upright": "Postoji osećaj celovitosti, završetka i duboko zadovoljstvo u vašoj fizičkoj vezi. Vaš seksualni život je zadovoljavajući i uspešno je završio svoj ciklus. Savršeno seksualna harmonija.",
+          "reversed": "Invertirani svet ukazuje na osećaj da nešto nedostaje u seksualnom životu, nemogućnost ispunjavanja ili zaglavljenja u rutini. Nemogućnost da se zatvori ili seksualno nezadovoljstvo.",
+          "keywords": [
+            "završetak",
+            "seksualno zadovoljstvo",
+            "integritet",
+            "uspeh",
+            "raport"
+          ],
+          "context": "Vaša fizička veza je ples ispunjenja i celovitosti koja se postiže na kraju putovanja."
+        },
+        "position3": {
+          "upright": "Osjećaj završetka i celovitosti, emocionalno i duhovno. Uspešno ste završili važan ciklus zajedno. Ovo je zrela duhovna veza dubokog zadovoljstva i harmonije.",
+          "reversed": "Svetski svet naglavačke pokazuje da nešto nedostaje emocionalno ili da ne možete da pronađete zatvaranje. Osećaj da se ne može duhovno okupljati duhovno, nepotpunosti.",
+          "keywords": "[\"Završetak\", \"Integritet\", \"Emocionalno zadovoljstvo\", \"Uspeh\", \"Duhovna harmonija\"]",
+          "context": "Vaša emocionalna veza je ples ispunjenja i celovitosti koja se postiže na kraju dugog puta."
+        },
+        "position4": {
+          "upright": "Dugoročni ishod ove veze je osećaj ispunjenja, celovitosti i duboke sreće. Uspešno ćete završiti ciklus zajedno i pronaći sve što tražite u ovom vinogradu. Krajnji uspeh.",
+          "reversed": "Invertirana zemlja ukazuje da će dugoročno nestati nešto i postojaće osećaj nepotpunosti. Ovaj ciklus odnosa može se zatvoriti pre nego što postignete svoje ciljeve.",
+          "keywords": "[\"Završetak\", \"Uspeh\", \"Sreća\", \"celovitost\", \"kraj ciklusa\"]",
+          "context": "Dugoročno, ovaj odnos je srećan završetak putovanja pun zadovoljstva i uspeha."
+        }
+      },
+      "aceofcups": {
+        "position1": {
+          "upright": "Ova osoba je emocionalno spremna za novi početak. Njegovo srce je potpuno otvoreno za ljubav, saosećanje i novi odnos. Možda će početi da ima čiste i intenzivne osećaje prema vama.",
+          "reversed": "ACE of Cups preokrenuti ukazuje da ova osoba potiskuje svoje emocije, zatvara se od ljubavi ili doživljava emocionalno razočaranje. Srce mu se sada može zatvoriti.",
+          "keywords": "[\"Nova ljubav\", \"Emotivni početak\", \"naklonost\", \"saosećanje\", \"Intuicija\"]",
+          "context": "Srce ove osobe je spremno i otvoreno za novu ljubav da cveta."
+        },
+        "position2": {
+          "upright": "Vaša fizička veza počinje ljubavlju, naklonošću i dubokom emocionalnom priključkom. Seksualnost je izraz emocija. Novi romantični i senzualni početak. Potencijal plodnosti.",
+          "reversed": "ACE of Cups preokrenuti ukazuje na izbegavanje seksualne intimnosti, emocionalnog zatvaranja ili nedostatka seksualne želje. Fizička intimnost se ne može utvrditi bez emocionalne veze.",
+          "keywords": [
+            "Emocionalna seksualnost",
+            "lova",
+            "saosećanje",
+            "novi početak",
+            "plodnost"
+          ],
+          "context": "Vaša seksualnost je hranjena preplavljenim fontanom ljubavi i saosećanja."
+        },
+        "position3": {
+          "upright": "Nova ljubav, saosećanje i emocionalno otvoreno procveta između vas. Ovo je početak čiste i bezuslovne ljubavi. Vaša srca se teku jedni na druge.",
+          "reversed": "ACE of Cups preokrenuti ukazuje na emocionalno zatvaranje ili represiju. Jedna strana nije spremna da prihvati ili daje ljubav. Duhovni izvor je blokiran.",
+          "keywords": "[\"Nova ljubav\", \"Emotivni početak\", \"saosećanje\", \"Otvori srca\", \"Duhovni tok\"]",
+          "context": "Vaša emocionalna veza je prva kapljika ljubavne šolje spremna za prelivanje."
+        },
+        "position4": {
+          "upright": "Dugoročni rezultat je početak duboke i prave ljubavi. Ovo je najavio vezu koja je izuzetno emocionalno zadovoljavajuća, voli i ima visok potencijal.",
+          "reversed": "ACE of CUPS preokrenuti znači dugoročno emocionalno razočaranje ili neuspeh u povratku ljubavi. Emotivni potencijal bledi pre nego što se realizuje.",
+          "keywords": "[\"Prava ljubav\", \"Emotivni početak\", \"Sreća\", \"naklonost\", \"Nova veza\"]",
+          "context": "Budućnost ovog odnosa je prelivanje fontane ljubavi i sreće."
+        }
+      },
+      "twoofcups": {
+        "position1": {
+          "upright": "Ova osoba oseća snažnu međusobnu atrakciju i emocionalnu povezanost sa vama. Tražim partnerstvo, srodne srodne veze ili duboko razumevanje. Ekvivalentnost i harmonija u vezi su mu veoma važni.",
+          "reversed": "Invertirana dva šolja ukazuje da je veza između vas slaba i nedostatak harmonije ili komunikacije. To bi mogla biti jednostrana atrakcija ili spor.",
+          "keywords": "[\"Međusobna atrakcija\", \"Partnerstvo\", \"Ljubav\", \"Kompatibilnost\", \"Soulmate\"]",
+          "context": "Ova osoba je partner koji teži duhovnom i emocionalnom odrazom ogledala sa vama."
+        },
+        "position2": {
+          "upright": "Imate neverovatnu hemiju i obostranu atrakciju. Vi ste u savršenom harmoniji fizički i emocionalno. Seksualnost je unija dve duše i tela sa ljubavlju.",
+          "reversed": "Dvoje šoljicama obrnuto ukazuje da iako postoji fizička atrakcija, postoji emocionalno isključenje ili seksualnu nespojivost. Nerazumevanje ili hladnoća jedni prema drugima.",
+          "keywords": [
+            "Savršena hemija",
+            "međusobna atrakcija",
+            "senzualna harmonija",
+            "romantična seksualnost",
+            "srodna duša"
+          ],
+          "context": "Vaša fizička intimnost je čarobni trenutak u kojem dve osobe postaju jedno."
+        },
+        "position3": {
+          "upright": "Postoji međusobna, uravnotežena i ljubljiva emocionalna veza između vas. Razumete osećanja jednih drugih i duhovno negujući jedni druge. Sastanak srca.",
+          "reversed": "Dvoje Cup-ova obrnuta ukazuju na emocionalnu isključenje, nerazumevanje ili neuzvraćenu ljubav. Duhovna harmonija može biti oštećena ili se možda uopšte nije dogodila.",
+          "keywords": "[\"Emocionalna veza\", \"Međusobna ljubav\", \"duhovna harmonija\", \"Empatija\", \"Jedinstvo\"]",
+          "context": "Vaša emocionalna veza je poput reke u kojoj dva srca teku sa ljubavlju i razumevanjem jedni prema drugima."
+        },
+        "position4": {
+          "upright": "Dugoročni rezultat je veoma skladno partnerstvo zasnovano na snažnoj i obostranoj ljubavi. Ovo je srodna veza koja može rezultirati brakom ili dubokom posvećenošću.",
+          "reversed": "Dvoje šoljicama obrnuto ukazuje da će dugoročno biti raskida zbog nekompatibilnosti ili emocionalnog prekida veze. Veza se oslabi na vreme.",
+          "keywords": "[\"Harmonius partnerstvo\", \"brak\", \"srodna duša\", \"obostrana ljubav\", \"posvećenost\"]",
+          "context": "Sudbina ovog odnosa je stalna unija, gde su dva srca tukla u savršenom harmoniji."
+        }
+      },
+      "threeofcups": {
+        "position1": {
+          "upright": "Ova osoba je socijalna, prijateljska i voli da proslavi. Trenutno može biti u prijatnom periodu svog života. Možda će želeti da izgradi odnos prema prijateljstvu i zabavi.",
+          "reversed": "Tri trupa preokrenuta ukazuje da je ta osoba doživljava probleme u svom društvenom krugu, uključena je u tračeve ili se oseća izostavljenim. Takođe može biti uplitanje treće osobe u vezi.",
+          "keywords": "[\"Proslava\", \"Prijateljstvo\", \"Zajednica\", \"Radost\", \"Socijalnost\"]",
+          "context": "Ova osoba je društveni leptir koji voli da proslavi život i ljubav sa svojim prijateljima."
+        },
+        "position2": {
+          "upright": "Vaša fizička veza je zabavna, socijalna i bezbrižna. Ovo može ukazivati na situaciju \"Prijatelji sa prednostima ili grupnim fantazijama. Seksualnost je izvor proslave i radosti.",
+          "reversed": "Tri trostruko preokrenuta mogu ukazivati na seksualnu eskapadu, neverstvo ili treću stranu ometaju vašu vezu. Zabava je gotova, zamenjena tračevima i haosom.",
+          "keywords": [
+            "zabavna seksualnost",
+            "sloboda od nege",
+            "proslava",
+            "flert",
+            "treća osoba"
+          ],
+          "context": "Vaš seksualni život nosi socijalnu i laganu energiju, gde su prijateljstvo i radost na čelu."
+        },
+        "position3": {
+          "upright": "Vaša emocionalna veza je radosna, slavljenička i harmonija. Zabavite se zajedno i podići duhove jedni drugima. To je srećna veza zasnovana na prijateljstvu.",
+          "reversed": "Tri trupa preokrenuta ukazuje da emocionalna površnost ili treća osoba šteti vezu između vas. Tračevi ili nepoverenje ometaju duhovnu harmoniju.",
+          "keywords": "[\"radosna veza\", \"Proslava\", \"Prijateljstvo\", \"Emotivna harmonija\", \"zajednica\"]",
+          "context": "Vaša emocionalna veza je radosna proslava u kojoj dve duše plešu zajedno."
+        },
+        "position4": {
+          "upright": "Dugoročni rezultat je srećna, socijalna i slavna unija. To bi moglo značiti angažman, brak ili proslavu srećnog događaja. Jaka ljubav na osnovu prijateljstva.",
+          "reversed": "Tri trupa preokrenuta ukazuje da će treća strana (ili varanje) okončati odnos dugoročno. Radost ustupa smeštaju i boli.",
+          "keywords": "[\"Srećna proslava\", \"brak\", \"angažman\", \"socijalna harmonija\", \"prijateljska ljubav\"]",
+          "context": "Budućnost ovog odnosa je radosni događaj koji će se slaviti sa vašim najmilijima."
+        }
+      },
+      "fourofcups": {
+        "position1": {
+          "upright": "Ova osoba je trenutno emocionalno nezadovoljna i povučena. On možda ne vidi mogućnosti (ili možda vas) koji je došao njegov put. Dosadno životom ili odnosima i ne zanima ništa novo.",
+          "reversed": "Četiri šolje obrnuto pokazuje da ova osoba izlazi iz perioda stagnacije, otvara se na nove mogućnosti i dobijanje obnovljenog interesa u životu. Njegova introverzija se završava kraju.",
+          "keywords": "[\"Nezadovoljstvo\", \"apatija\", \"Introverzija\", \"Nedostajuće mogućnosti\", \"Stagnacija\"]",
+          "context": "Ova osoba je neko ko ne voli naočare u ruci i ignoriše novu čašu koja mu je ponuđena."
+        },
+        "position2": {
+          "upright": "Postoji dosada, apatija ili nezadovoljstvo seksualnom životu. Seksualni napredak partnera može se odbiti. Postoji nizak libido i nedostatak seksualnog nevoljstva.",
+          "reversed": "Četiri šolje preokrećene ukazuju na to da izlazite iz perioda seksualne stagnacije i otvoreni su za nova iskustva. Oživjeti su seksualni interes.",
+          "keywords": [
+            "seksualna apatija",
+            "nezadovoljstvo",
+            "nizak libido",
+            "dosada",
+            "odbijanje"
+          ],
+          "context": "Vaša fizička veza je u stanju nezainteresovanosti i povlačenja iz predstavljenih seksualnih mogućnosti."
+        },
+        "position3": {
+          "upright": "Period emocionalne stagnacije ili nezadovoljstva. Jedna strana može ignorisati ljubav ili pažnju koju je drugi ponudio. Postoji duhovno povlačenje.",
+          "reversed": "Četvoro čekova obrnuta ukazuju na to da izlazite iz emocionalnog uspavanja i ponovo se zanimaju. Duhovno buđenje i nova svest.",
+          "keywords": "[\"Emocionalna stagnacija\", \"nezadovoljstvo\", \"apatija\", \"povlačenje\", \"nedostajuće mogućnosti\"]",
+          "context": "Vaša emocionalna veza je stanje uma koji se apsorbuje sama po sebi, ne videvši ponuđenu šolju ljubavi."
+        },
+        "position4": {
+          "upright": "Dugoročno, ovaj odnos može dovesti do stagnacije ili nezadovoljstva. Ravnodušnost ili dosada u delu jedne stranke može dovesti do kraja veze.",
+          "reversed": "Četvoro čekova preokrećeno ukazuju na to da ćete nakon stagnacije nakon stagnacije dati ovu vezu novu šansu i ponovo otkrijte njegov potencijal.",
+          "keywords": "[\"Stagnacija\", \"Nezadovoljstvo\", \"apatija\", \"propuštena prilika\", \"Potencijal prekida\"]",
+          "context": "Dugoročna sudbina ovog odnosa je ravnodušnost i odred od ponuđene ljubavi."
+        }
+      },
+      "fiveofcups": {
+        "position1": {
+          "upright": "Ova osoba je fokusirana na prethodni gubitak ili razočaranje. Oseća se žaljenje i teško je videti pozitivne stvari. On ili ona mogu biti emocionalno tuga i u procesu žalosti.",
+          "reversed": "Petorica preokrećenih čaša ukazuje da je ta osoba počela da stavlja prošlost iza njih, prihvatila je njihove gubitke i na putu ka oproštaju. Postoje znakovi oporavka i nade.",
+          "keywords": "[\"GUBITAK\", \"Žaljenje\", \"tuga\", \"razočaranje\", \"žalosno\"]",
+          "context": "Ova osoba je neko ko ne primećuje pune čaše iza njega dok plače preko prolivenog mleka."
+        },
+        "position2": {
+          "upright": "Loše seksualno iskustvo ili srčano u prošlosti negativno utiče na vaš trenutni seksualni život. Tuga ili žaljenje se mogu osećati tokom seksualne intimnosti. Poteškoće sa fokusiranjem na zadovoljstvo.",
+          "reversed": "Petorica preokrećenih čaša ukazuje da su prevladale prošle seksualne traume i proces isceljenja je počeo. Približavajući se seksualnosti sa nadom i otvorenom otvorenom.",
+          "keywords": [
+            "seksualno žalovanje",
+            "žaliti",
+            "Prošla trauma",
+            "razočaranje",
+            "tuga"
+          ],
+          "context": "Vaš seksualni život je zasjenjen duhovima prošlosti, fokusiran je više na tugu nego zadovoljstvo."
+        },
+        "position3": {
+          "upright": "Vaša emocionalna veza je zasjenjena prošlom gubitkom ili razočaranjem. Među vama je tuga ili žaljenje. Međutim, ova bol nosi potencijal za duhovno oproštenje i isceljenje.",
+          "reversed": "Petorica preokrećenih čaša ukazuje da počinje da opraštate i pustite prošlih emocionalnih boli. Duhovno isceljivanje i nada se klija.",
+          "keywords": "[\"Gubitak\", \"tuga\", \"žaljenje\", \"emocionalna bol\", \"oproštaj\"]",
+          "context": "Dok vaše emocionalne veze plače zbog onoga što je prolilo, teško je videti potencijal za ljubav koja je i dalje puna."
+        },
+        "position4": {
+          "upright": "Dugoročni rezultat je gubitak, žaljenje i tuga. Ovaj odnos se može završiti u razočaranju i mogu ostati samo gorko sećanja.",
+          "reversed": "Petorica u obrnutog trupa ukazuje da ćete, dugoročno, moći da oprostite bol u prošlosti i krenite dalje. Prihvatanje koje dolazi nakon teške procesa isceljenja.",
+          "keywords": "[\"Gubitak\", \"žaljenje\", \"tuga\", \"razočaranje\", \"tužno se završava\"]",
+          "context": "Budućnost ovog odnosa fokusira se na gubitke prošlosti i da ne vidi sreću ispred vas."
+        }
+      },
+      "sixofcups": {
+        "position1": {
+          "upright": "Ova osoba ima nostalgičnu i nevinu dušu koja čezne za prošlost. To bi mogao biti neko iz vaše prošlosti ili možda imaju djetinjaste, naivne osećaje prema vama. Daje vam poznati i siguran osećaj.",
+          "reversed": "Šest šoljica preokrećeno ukazuje da je ova osoba zaglavila u prošlosti, odbija da zreli ili nosi teret prošlih događaja. Teško je gledati u budućnost.",
+          "keywords": "[\"Nostalgija\", \"prošlost\", \"nevinost\", \"sećanja u detinjstvu\", \"Poklon\"]",
+          "context": "Ova osoba je nevina duša čije je srce puno slatkih sećanja na prošlost."
+        },
+        "position2": {
+          "upright": "Vaša fizička veza se oseća nevinim, slatkim i nostalgičnim. Seksualnost se doživljava sa saosećajnim i gotovo zbrinjavanjem nalik na djelu. Takođe može da ukaže na zaređenu strast sa bivšim ljubavnikom.",
+          "reversed": "Šest šoljica preokrećeno ukazuje na pridržavanje prošlih seksualnih iskustava ili nedostatak seksualne zrelosti. Seksualnost se doživljava sa nerealnim, retrospektivnim očekivanjima.",
+          "keywords": [
+            "nevinost",
+            "saosećanje",
+            "nostalgija",
+            "slatkoća",
+            "stari plamen"
+          ],
+          "context": "Vaša fizička blizina je sigurno i saosećajno utočište koje vraća slatke uspomene u prošlost."
+        },
+        "position3": {
+          "upright": "Postoji duhovna veza između vas, iz prošlosti, poznatog i nevinog. To bi mogla biti ljubav detinjstva ili prošla životna veza. Sigurno i brižno emotivno okruženje.",
+          "reversed": "Šest čekova obrnuto, ukazuje da prebivalište u prošlosti negativno utiče na vašu emocionalnu vezu. Nezreo duhovna dinamika koja odbija rast.",
+          "keywords": "[\"Prošli životnu vezu\", \"Nostalgija\", \"nevinost\", \"Trust\", \"Poznati duh\"]",
+          "context": "Vaša duhovna veza je poznati i topli osećaj koji je hranio slatkim sećanjima u prošlost."
+        },
+        "position4": {
+          "upright": "Dugoročni rezultat je da je ožive veza iz prošlosti i nastavlja se srećom. Ovo obećava nevino, slatko i sigurno okruženje ljubavi.",
+          "reversed": "Šest revernih šoljica ukazuje da će, dugoročno, pridržavati prošlosti ili da se ne zreli, okončaće odnos. Senke prošlosti potamne budućnost.",
+          "keywords": "[\"Oživljavanje prošlosti\", \"Srećna sećanja\", \"sigurna ljubav\", \"nevinost\", \"Trajna veza\"]",
+          "context": "Sudbina ovog odnosa je mirna budućnost, izgrađena na slatkoće i nevinosti prošlosti."
+        }
+      },
+      "sevenofcups": {
+        "position1": {
+          "upright": "Ova osoba je neko ko živi u svetu snova i ima mnogo opcija, ali ima poteškoća da odluči. Njihova očekivanja u vezi sa ljubavlju možda neće biti realno. Takođe može imati nejasan, sanjiv stav prema vama.",
+          "reversed": "Okrećeno sedam šoljica pokazuje da je ta osoba izašla iz sveta snova i suočio se sa stvarnošću, suzila njegove mogućnosti i dala jasnu odluku. Zbunja se završava.",
+          "keywords": "[\"DREAMS\", \"Opcije\", \"zbrka\", \"Iluzija\", \"Neodlučnost\"]",
+          "context": "Ova osoba je neko ko je izgubljen u oblaku opcija i snova i ne zna koja čaša za izbor."
+        },
+        "position2": {
+          "upright": "U vašem seksualnom životu postoji toliko maštarija, snova i opcija. Međutim, to može dovesti do življenja u svetu fantazije, a ne stvarno fizička veza. Seksualna konfuzija ili varljive situacije.",
+          "reversed": "Preokrećeno sedam šoljica pokazuje da je izrađena razlika između seksualnih fantazija i stvarnosti. Zbunjenje se završava i pojavljuje se jasna seksualna želja ili odluka.",
+          "keywords": [
+            "seksualna fantazija",
+            "zbrka",
+            "opcije",
+            "iluzija",
+            "snjati"
+          ],
+          "context": "Vaša seksualnost se doživljava u oblaku snova sa bezbrojnim opcijama, a ne stvarnošću."
+        },
+        "position3": {
+          "upright": "Postoji konfuzija ili nerealno očekivanja u vašoj emocionalnoj vezi. Duhovna veza između vas može se zasnivati na iluziji ili fantaziji. Potrebna je jasnoća.",
+          "reversed": "Preokrećeno sedam šoljica ukazuje da su emocionalne iluzije rassile i istina se pojavila. Duhovno dostižete jasnije razumevanje.",
+          "keywords": "[\"Iluzija\", \"zbrka\", \"Nerealno očekivanja\", \"Fantazija\", \"Opcije\"]",
+          "context": "Vaša emocionalna veza lebdi na oblaku snovanja i mogućnosti, a ne pravi fondacije."
+        },
+        "position4": {
+          "upright": "Dugoročno, ovaj odnos će ostati u zbrci i neodlučnosti. Previše opcija ili nerealna očekivanja sprečavaju postizanje konkretnog ishoda.",
+          "reversed": "Prekoračeni sedam šoljica ukazuje da će dugoročno dostići zaključak nastankom iluzije ili jasne odluke. To bi se takođe moglo razdvojiti.",
+          "keywords": "[\"Neodlučnost\", \"Konfuzija\", \"iluzija\", \"Opcije\", \"neizvesni ishod\"]",
+          "context": "Budućnost ove veze je san izgubljen u opcijama, lišeni jasnog pravca."
+        }
+      },
+      "eightofcups": {
+        "position1": {
+          "upright": "Ova osoba je odlučila da izađe iza situacije ili veze koja ih ne zadovoljava emocionalno. On je na novom putu u potrazi za dubljem značenjem i duhovnošću. Trenutno je u potrazi.",
+          "reversed": "Osam revernih šoljica ukazuje da je ta osoba rastrgana između napuštanja situacije i boravka, boji se ili ne zna gde da ide. 'Da li radim nešto pogrešno?' Možda bi se ispitivao.",
+          "keywords": "[\"Napuštanje\", \"Kuest\", \"Emotivno putovanje\", \"Nezadovoljstvo\", \"Novi put\"]"
+        }
+      }
+    }
+  }
+}

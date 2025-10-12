@@ -116,7 +116,7 @@ function generateEmailTemplate(
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
             <h2 style="color: #8B5CF6;">🌟 Hoş Geldiniz!</h2>
             <p>Merhaba ${data.displayName},</p>
-            <p>Tarot uygulamasına kaydolduğunuz için teşekkürler! Size ${data.initialCredits} ücretsiz kredi hediye ettik.</p>
+            <p>BüşbüşkimkiTarot uygulamasına kaydolduğunuz için teşekkürler! Size ${data.initialCredits} ücretsiz kredi hediye ettik.</p>
             <div style="background-color: #F3F4F6; padding: 20px; border-radius: 8px; margin: 20px 0;">
               <h3 style="color: #374151;">Başlamak için:</h3>
               <ol>

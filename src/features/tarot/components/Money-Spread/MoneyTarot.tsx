@@ -4,37 +4,41 @@ import type { TarotCard } from '@/types/tarot';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createMoneyConfig } from '@/features/tarot/shared/config';
 import { getMoneyMeaningByCardAndPosition } from '@/features/tarot/lib/money/position-meanings-index';
+import { useTranslations } from '@/hooks/useTranslations';
 
-const MoneyReading = createTarotReadingComponent({
-  getConfig: () => createMoneyConfig(),
-  interpretationEmoji: '💰',
-  readingType: 'MONEY_SPREAD', // Money Spread için reading type belirt
-  getCardMeaning: (
-    card: TarotCard | null,
-    position: number,
-    isReversed: boolean
-  ) => {
-    if (!card) {
-      return '';
-    }
+export default function MoneyReading(props: any) {
+  const { t } = useTranslations();
 
-    const meaning = getMoneyMeaningByCardAndPosition(
-      card,
-      position,
-      isReversed
-    );
+  const TarotComponent = createTarotReadingComponent({
+    getConfig: () => createMoneyConfig(t),
+    interpretationEmoji: '💰',
+    readingType: 'MONEY_SPREAD',
+    getCardMeaning: (
+      card: TarotCard | null,
+      position: number,
+      isReversed: boolean
+    ) => {
+      if (!card) {
+        return '';
+      }
 
-    if (!meaning) {
-      return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
-    }
+      const meaning = getMoneyMeaningByCardAndPosition(
+        card,
+        position,
+        isReversed
+      );
 
-    // Context bilgisini de içeren obje döndür
-    return {
-      interpretation: isReversed ? meaning.reversed : meaning.upright,
-      context: meaning.context,
-      keywords: meaning.keywords || [],
-    };
-  },
-});
+      if (!meaning) {
+        return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
+      }
 
-export default MoneyReading;
+      return {
+        interpretation: isReversed ? meaning.reversed : meaning.upright,
+        context: meaning.context,
+        keywords: meaning.keywords || [],
+      };
+    },
+  });
+
+  return <TarotComponent {...props} />;
+}

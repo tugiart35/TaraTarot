@@ -1,0 +1,774 @@
+{
+  "relationship-problems": {
+    "meanings": {
+      "twoofswords": {
+        "position7": {
+          "reversed": "Dvojica obronjenih mačeva ukazuju na vašu odluku oblikovati tajne saveze i pasivni pritisak.",
+          "keywords": [
+            "dilema",
+            "nepristrasnost",
+            "savezništvo",
+            "ugnjetavanje",
+            "suspenzija"
+          ],
+          "context": "Izaberite čiji glas je važan. Vi odlučujete, postavite vreme."
+        },
+        "position8": {
+          "upright": "Njih dvoje mačeva upozoravaju troškove izbegavanja odluka i odlaganje budžetskog sastanka.",
+          "reversed": "Ukrasana dva mačeva govore da će preuzete strane bez gledanja podataka i ostajući u \"Ne znam\" povećaće dug.",
+          "keywords": [
+            "nestabilnost",
+            "suspenzija",
+            "podaci",
+            "duga",
+            "konfrontacija"
+          ],
+          "context": "Napravite mali, ali jasan izbor; Popravite datum sastanka."
+        },
+        "position9": {
+          "upright": "Dvoje mačeva, ako se nastavlja izbegavanje odluka, odnos će ostati suspendovan; Ako dođe u sukob, to će uspeti.",
+          "reversed": "Okrećena dva mačeva, hronična odlaganja povećava verovatnoću da se ruši.",
+          "keywords": [
+            "nestabilnost",
+            "vešalica",
+            "konfrontacija",
+            "glasati",
+            "oštrina"
+          ],
+          "context": "Poslednji: Mali jasan izbor + istorija."
+        }
+      },
+      "threeofswords": {
+        "position1": {
+          "upright": "Tri mačeva sugerišu da su bolne reči, uočene izdaje, ili suočene sa oštrim stvarnostima okidačkim sukobom.",
+          "reversed": "Preokrećena tri mačeva ukazuje da neizraženi bol i dalje curi i razgovor za popravak je odložen.",
+          "keywords": [
+            "razočaranje",
+            "Percepcija izdaje",
+            "konfrontacija",
+            "ugao",
+            "popraviti"
+          ],
+          "context": "Mentalni koren kontradikcije: štetna istina i nedostatak izražavanja."
+        },
+        "position2": {
+          "upright": "Tri mačeva kaže da problem leži u povredjnim rečima, uočena izdaja ili kontakt sa oštrim stvarnostima. Srce se može osjećati prepuno rupa. \\ N \\ n \\ nhint: Registrovane povrede, nezarazljeđene rane. Problem je nedostatak razgovora o popravljanju.",
+          "reversed": "Preokrećena tri mačeva ukazuje da je zaceljivanje namenjeno, ali emocionalni nokti nisu uklonjeni. Tišina produžava bol. \\ N \\ nsimptom: curenje boli, aktiviranje sećanja. Problem je nedostatak saosećajne konfrontacije.",
+          "keywords": [
+            "razočaranje",
+            "Percepcija izdaje",
+            "ugao",
+            "popraviti",
+            "izraz"
+          ],
+          "context": "Problem sa korenom: Slomljeno srčano i popravak deficita. Područja koja utiče: poverenje, transparentnost, oproštaj."
+        },
+        "position3": {
+          "upright": "Tri mačeva kaže da možete imati udeo sa povređenim rečima i oštrim humorom. Oštrija istina zahteva blag ton.",
+          "reversed": "Pretvoreni tri mačeva objašnjavaju da propuštanjem bola bez da govorite, pravite vatru. Poziv za popravak je zakasnjen.",
+          "keywords": [
+            "razočaranje",
+            "izdaja",
+            "ugao",
+            "popraviti",
+            "izraz"
+          ],
+          "context": "Share: Greška u stilu / ekspresiji. Efekat: Poverenje, saosećanje. Preporuka: Izvinjenje + plan popravke."
+        },
+        "position4": {
+          "upright": "Tri mačeva kaže da može opravdati svoj oštar ton kao \"iskrenost\" i ignoriše svoj udeo. Istina je isceljenje kada je to ljubazno.",
+          "reversed": "Tri reverzija mačeva pokazuju tendenciju da se sakriju odgovornost izbegavajući govorenje o boli i procuriti ga.",
+          "keywords": [
+            "razočaranje",
+            "ugao",
+            "stil",
+            "popraviti",
+            "iskrenost"
+          ],
+          "context": "Ignorisan: pristojan izraz. UTICAJ: Poverenje je povređeno. Do: izvinjenje + plan popravke."
+        },
+        "position5": {
+          "upright": "Tri mačeva peva temu ogorčenosti / izdaje u prošlosti. Reči su možda postale oštrije.",
+          "reversed": "Preokrenuta tri mačeva opisuje bol koji je ostavljen neizgovoren. Poziv za popravak nastavlja se danas.",
+          "keywords": [
+            "razočaranje",
+            "izdaja",
+            "ugao",
+            "popraviti",
+            "izvinjenje"
+          ],
+          "context": "To je razarajuće vreme. Stil i verovanje rane. Sada je potreban izvinjenje + plan popravke."
+        },
+        "position6": {
+          "upright": "Tri mačeva kaže da oštar ton i sarkastična iskrenost mogu krvariti odnos. Disciplina sa bolom je eksploatacija.",
+          "reversed": "Visoko tri mačeva naglašava rizik od jezika koji postaje alat za napajanje jer nas podseća na emocionalne rane i distribuira krivicu.",
+          "keywords": [
+            "ugao",
+            "stil",
+            "igla",
+            "krivica",
+            "popraviti"
+          ],
+          "context": "Tema: Istina bez povrede; Rizik: Poravnavanje sa bolom; DO: Nježno izražavanje i popravak."
+        },
+        "position7": {
+          "upright": "Tri mačeva govore da su bolni komentari i oštra jezička treća osoba probijaju srca.",
+          "reversed": "Pretvara se tri mačeva ukazuju na ogrebotine starih bolova spolja i ponovno otvaranje rana.",
+          "keywords": [
+            "razočaranje",
+            "oštre reči",
+            "rane",
+            "grebanje",
+            "ugao"
+          ],
+          "context": "Odmorite se od povređenih razgovora. Uspostaviti zaštitni okvir komunikacije."
+        },
+        "position8": {
+          "upright": "Tri mača pokazuju ranu povređenih reči i oštre kritike zbog novca.",
+          "reversed": "Tri prevaranta koji se obrnuto sugerišu da će prelazak na jezik popravke, a ne okriviti obveznicu, kao i budžet.",
+          "keywords": [
+            "razočaranje",
+            "kritika",
+            "popraviti",
+            "kriviti",
+            "jezik"
+          ],
+          "context": "Omekšati svoj ton; Ne ciljajte osobu, a ne broj."
+        },
+        "position9": {
+          "upright": "Tri mačeva, prelazeći je da je sa bolno iskreno i izlečenje popravka; Inače će rana krvariti.",
+          "reversed": "Pretvorena tri mačeva, stalno krvari rane mogu dovesti do raspada u vezi.",
+          "keywords": [
+            "ugao",
+            "popraviti",
+            "iskrenost",
+            "rane",
+            "zatvaranje"
+          ],
+          "context": "Da biste poslednji put: Jezik popravke + obreda za zatvaranje."
+        }
+      },
+      "fourofswords": {
+        "position1": {
+          "upright": "Četiri mačeva nam govore da se zdravi razgovori odgađaju zbog prekomernog umor i mentalne buke.",
+          "reversed": "Preokrećena četvorka mačeva ukazuje da se napetost povećava kada je potreba za odmor i udaljenosti odbijena.",
+          "keywords": [
+            "prekršiti",
+            "mentalni umor",
+            "rastojanje",
+            "tišina",
+            "poboljšanje"
+          ],
+          "context": "Mentalni koren kontradikcije: potreba za odmor i prostorom."
+        },
+        "position2": {
+          "upright": "Četiri mačeva kaže da je problem u mentalnom umor i nedostatak odmora. Umorni mozak ne govori dobro. \\ N \\ n \\ nhint: iscrpljenost, prazno zurenje. Problem je raspored ritma i pauze.",
+          "reversed": "Preokrećena četiri mačeva objašnjava da je zahtev za pauzu odbačen i mali sukobi eskaliraju. Telo govori, um negira. \\ N \\ nsimptom: Uzimanje pauze zbog bolesti, isključene odgovore. Problem je nedostatak odmora za odmor.",
+          "keywords": [
+            "odmor",
+            "oporavak",
+            "spokojstvo",
+            "ritam",
+            "energija"
+          ],
+          "context": "Problem sa korenom: Upravljanje energijom. Područja koja utiče na: kvalitet komunikacije, strpljenje, razumevanje."
+        },
+        "position3": {
+          "upright": "Četiri mačeva kažu da razgovarate bez odmora i povećavate svoj udeo sa umornošću. Ako nema pauze, nema kvaliteta.",
+          "reversed": "Pretvorena četiri mačeva objašnjava da se odole na \"prekid\", uvećavate malu krizu. Telo želi pauzu.",
+          "keywords": [
+            "odmor",
+            "oporavak",
+            "spokojstvo",
+            "ritam",
+            "energija"
+          ],
+          "context": "Share: Nedostatak pauze. Efekat: ton, tolerancija. Predlog: Razgovarajte kasnije."
+        },
+        "position4": {
+          "upright": "Četiri mačeva kaže da može sakriti svoj udeo tako što ignoriše umor i insistira na \"Hajde da razgovaramo\". Pauza je odgovornost.",
+          "reversed": "Preokrećena četiri mačeva naglašava tendenciju da uvećaju napetost poricanjem potrebe za odmorom.",
+          "keywords": [
+            "prekršiti",
+            "spokojstvo",
+            "energija",
+            "ritam",
+            "oporavak"
+          ],
+          "context": "Ignorisano: potreba za palom. EFEKT: TONE HARDS. DO: Razgovarajte kasnije."
+        },
+        "position5": {
+          "upright": "Četiri mačeva vam govore da vaša navika uzimanja pauze i smiruju se radi. Preuzimajući prekid sačuvane komunikacije.",
+          "reversed": "Preokrećena četiri mačeva ukazuje na to da odmorite odmor i umorite diskusije.",
+          "keywords": [
+            "prekršiti",
+            "spokojstvo",
+            "odmor",
+            "ritam",
+            "poboljšanje"
+          ],
+          "context": "Postoje korisno zaustavljanje. Ponekad zanemareni. Sada sistematizirajte pauzu."
+        },
+        "position6": {
+          "upright": "Četiri mačeva kaže da je odsljeđivanje isceljenje; Ali namerno odgađanje povratka može se koristiti za vršenje za vršenje partnera.",
+          "reversed": "Preokrećena četiri mačeva ukazuje na rizik da se razgovor očuva na neodređeno vreme u nedoumično pod izgovorom odmora i građevinske moći kroz nesigurnost.",
+          "keywords": [
+            "prekršiti",
+            "spokojstvo",
+            "kašnjenje",
+            "neizvesnost",
+            "vratiti se"
+          ],
+          "context": "Tema: Planirani odmor; Rizik: Indefinitna žeđ; DO: Odredite vreme povratka."
+        },
+        "position7": {
+          "upright": "Četiri mačeva vam govore da treba da smanjite spoljnu buku i odmorite se. Miran prostor smanjuje spoljni uticaj.",
+          "reversed": "Preokrećena četvorka mačeva ukazuje na spoljne poruke koje sabotiraju pauzu, prevladavaju ga.",
+          "keywords": [
+            "prekršiti",
+            "tišina",
+            "bučan",
+            "regeneracija",
+            "sabotaža"
+          ],
+          "context": "Postavite ograničenja na spoljnim kanalima. Uspostavite protokol odmora."
+        },
+        "position8": {
+          "upright": "Četiri mačeva preporučuje pauze potrošnje, danima bez trošenja i tihim refleksijama.",
+          "reversed": "Ukrasana četvorka mača nam govori da preterano čekanje i neaktivnost mogu pretvoriti u gubitak mogućnosti.",
+          "keywords": [
+            "prekršiti",
+            "bez trošenja",
+            "spokojstvo",
+            "prilika",
+            "procena"
+          ],
+          "context": "Planirane pauze su dobre; Ali potrebno je utvrditi trajanje i cilj."
+        },
+        "position9": {
+          "upright": "Četiri mačeva, predah i mirna odraz mogu zaštititi odnos; Naslovljen um nastavlja.",
+          "reversed": "Preokrećena četvorka mačeva otpušta obveznice pretjerane žeđ i izbegavanje.",
+          "keywords": [
+            "prekršiti",
+            "poboljšanje",
+            "spokojstvo",
+            "izbegavanje",
+            "ritam"
+          ],
+          "context": "Da biste poslednji put: planirani prekid + datum povratka."
+        }
+      },
+      "fiveofswords": {
+        "position1": {
+          "upright": "Petorica mačeva kaže da je tendencija da se opekotila odnosa zbog pobede i ratove pravednosti su osnovni sukob.",
+          "reversed": "Preokrećena pet mačeva ukazuje da ponižavanje i sarkastična jezika ostavljaju stalnu oznaku i rešenja za uštedu lica odložena su.",
+          "keywords": [
+            "legitimitet",
+            "ego",
+            "sukob",
+            "trošak",
+            "konsenzus"
+          ],
+          "context": "Mentalni koren suprotstavljanja: želja da budem u pravu."
+        },
+        "position2": {
+          "upright": "Petorica mačeva kaže da je problem želja da bude prava i želja za pobedom na štetu odnosa. Pobeda je, ali izgubljeno. \\ N \\ n \\ NHINT: sarkazam, prezir i sarkazam. Problem je degradirani jezik jezika.",
+          "reversed": "Okrećena pet mačeva govori da se rešenje za uštedu lica otporan i popravka je odložena. Pride Burns mostovi. \\ N \\ nsimptom: Ponovno oproštaj, hladni rat. Problem je u tome što je prozor za kompromis zatvoren.",
+          "keywords": [
+            "ego",
+            "pobeda",
+            "trošak",
+            "konsenzus",
+            "čast"
+          ],
+          "context": "Problem sa korenom: ego bitke. Područja koja utiče: poštovanje, poverenje, pregovore."
+        },
+        "position3": {
+          "upright": "Pet mačeva kaže da se njegov udeo raste sa njegovom ambicijom da bude u pravu. Pobeda je stečena, veza se gubi.",
+          "reversed": "Reversed Pet mačeva objašnjava da vatru postane rast paljenjem mostova sa sarkazmom / sarkazmom. Spremanje kašnjenja lica popravka.",
+          "keywords": [
+            "ego",
+            "pobeda",
+            "trošak",
+            "konsenzus",
+            "čast"
+          ],
+          "context": "Share: Ego Battle. EFEKT: Poštovanje, konsenzus. Preporuka: Pogledajte troškove - odmaknite se."
+        },
+        "position4": {
+          "upright": "Petorica mačeva kaže da možete razmotriti da budete u pravu kao uspeh i ignorišete svoj udeo. Pobeda je skupa po ceni odnosa.",
+          "reversed": "Petorica preokrenuta mačeva pokazuje tendenciju da se prenose uskraćivanje pakovanjem sarkazma i sarkazma kao humora.",
+          "keywords": [
+            "ego",
+            "pobeda",
+            "trošak",
+            "konsenzus",
+            "poštovanje"
+          ],
+          "context": "Ignorisano: koštati odnos. Efekat: Poštujte topite. Do: Odstupite, slušajte."
+        },
+        "position5": {
+          "upright": "Pet mačeva kaže da postoje ratovi opravdanja. Pobeda je bila skupa.",
+          "reversed": "Okrećeno pet mačeva govori nam da sarkazam sakuplja mostove. Reflek za uštedu lica možda je ostavio trag.",
+          "keywords": [
+            "ego",
+            "pobeda",
+            "trošak",
+            "konsenzus",
+            "poštovanje"
+          ],
+          "context": "Ego sukobi. Poštovanje je istrošeno. Sada nam je potreban kompromis i hrabrost da se povučemo."
+        },
+        "position6": {
+          "upright": "Petorica mačeva kaže da se prepirka usredsređenih na pobedu uzrokuje da se odnos izgubi. Pobeda može otvoriti vrata eksploataciji.",
+          "reversed": "Preokrećeno pet mačeva ukazuje na rizik od sarkazma, prezira i sarkazma koji se koriste kao tiho nasilje.",
+          "keywords": [
+            "ego",
+            "pobeda",
+            "prezirati",
+            "sarkazam",
+            "poštovanje"
+          ],
+          "context": "Tema: slaganje, ne pobedi; Rizik: Pritisak sa sarkazmom; Do: odstupite i slušajte."
+        },
+        "position7": {
+          "upright": "Petorica mačeva kaže da cinični / konkurentni autsari gori se na jeziku \"postane pravi\".",
+          "reversed": "Preokrećeno pet mačeva ukazuje da su pritisak linča / tribine i osvajani okvir zabranjeni u odnosu na vezu.",
+          "keywords": [
+            "rivalstvo",
+            "pukovnik",
+            "tribina",
+            "pobednički",
+            "gubitnik"
+          ],
+          "context": "Tribina mora biti ušutkana. Cilj bi trebao biti postignut dogovor, a ne da pobedi."
+        },
+        "position8": {
+          "upright": "Pet mačeva objašnjava da bi bitka bila \"opravdana\" zaključala monetarna rešenja.",
+          "reversed": "Preokrećeno pet mačeva poziv je da napustite sarkazam i sarkazam i vratite se na vin-vin rastvor.",
+          "keywords": [
+            "ego",
+            "sukob",
+            "poštovanje",
+            "konsenzus",
+            "rešenje"
+          ],
+          "context": "Cilj je da se složi; Promenite jezik od nabavke na razumevanje."
+        },
+        "position9": {
+          "upright": "Petorica mačeva, ako je um koji pokušava da pobedi napušten i traže kompromise, veza će raditi.",
+          "reversed": "Okrećeno pet mačeva, ako se i nastavlja da se ismevanje / prezir, ruptura će dugoročno doći.",
+          "keywords": [
+            "ego",
+            "konsenzus",
+            "poštovanje",
+            "pukovnik",
+            "pobeda"
+          ],
+          "context": "Za to je trajalo: cilj je postići dogovor, a ne da pobedi."
+        }
+      },
+      "sixofswords": {
+        "position1": {
+          "upright": "Šest mačeva kaže da je potreba za intelektualnom tranzicijom i razlika u metodi stvara napetost. Prelazak na smirenosti vode zahteva plan.",
+          "reversed": "Prekoračenje šest mačeva ukazuje da se vraćanje u stare obrasce argumenata odlaže rešenje.",
+          "keywords": [
+            "prelaz",
+            "plan",
+            "metod",
+            "miran",
+            "uzorak"
+          ],
+          "context": "Mentalni koren kontradikcije: Strategija metode i tranzicije."
+        },
+        "position2": {
+          "upright": "Šest mačeva kaže da problem leži u nedostatku tranzicionog plana i diskusije o metodi. Mirno vode zahtevaju most. \\ N \\ NHINT: Nepravilan transport, srednja rešenja. Problem je nedostatak postepenog plana.",
+          "reversed": "Pretvoreni šest mačeva objašnjava da se tendencija povratka na staru obalu odgađa rešenje. Da li je to navika ili potreba? \\ N \\ nsimptom: Nazad koraci, nedovršena promena. Problem je slabost mišića adaptacije.",
+          "keywords": [
+            "prelaz",
+            "plan",
+            "metod",
+            "adaptacija",
+            "miran"
+          ],
+          "context": "Problem sa korenom: Upravljanje tranzicijom i metodom. Područja koja utiče na projekat, životni dogovor, kreće se."
+        },
+        "position3": {
+          "upright": "Šest mačeva kaže da imate udeo kada promenite smer bez razgovora o tranzicionom planu. Obala se ne menja bez izgradnje mosta.",
+          "reversed": "Preokrećeno šest mačeva objašnjava da se vraćate na stari obrazac i odložite rastvor, čineći vatru veću. Adaptacija je neophodna.",
+          "keywords": [
+            "prelaz",
+            "plan",
+            "metod",
+            "adaptacija",
+            "miran"
+          ],
+          "context": "Share: Nedostatak metode. Uticaj: Proces, nada. Preporuka: Korak po planu koraka."
+        },
+        "position4": {
+          "upright": "Šest mačeva kaže da može da ignoriše svoj udeo, s obzirom na to da je \"praktično\" promenilo smer bez rasprave o tranzicionom planu.",
+          "reversed": "Ukinuta šest mačeva opisuje vašu tendenciju da uskraćuje vaš doprinos, misleći da je povratak na staru obalu slučajnost.",
+          "keywords": [
+            "prelaz",
+            "plan",
+            "metod",
+            "adaptacija",
+            "miran"
+          ],
+          "context": "Ignorisan: korak po korak plana. Efekat: Poverenje u nepoverenje. DO: Izgradite most."
+        },
+        "position5": {
+          "upright": "Šest mačeva vam govori da se krećete od teških voda do smirenije vode zajedno. Planirane prelaze su radile.",
+          "reversed": "Obrnuti šest mačeva govori o povratku na stare uzorke. Adaptacija je možda bila nepotpuna.",
+          "keywords": [
+            "prelaz",
+            "plan",
+            "miran",
+            "adaptacija",
+            "metod"
+          ],
+          "context": "Uspešne prelaze + prinose. Razgovori o metodi su obavezni. Napravite sada plan mosta."
+        },
+        "position6": {
+          "upright": "Šest mačeva savetuje da prelazi treba da budu napravljeni sa planom; Međutim, promena smera bez prethodne najave može staviti partnera u slabu položaj.",
+          "reversed": "Ukidani šest mačeva ukazuje na rizik uspostavljanja kontrole pretivši da će se vratiti na staru obalu.",
+          "keywords": [
+            "prelaz",
+            "plan",
+            "nenajavljen",
+            "preteći",
+            "adaptacija"
+          ],
+          "context": "Tema: Transparentna tranzicija; Rizik: Nagli promena rute; Uradite to: Deljenje korak po korak plan."
+        },
+        "position7": {
+          "upright": "Šest mačeva kaže da profesionalno uputstvo ili neutralni most može da vas nose u smirenije vode.",
+          "reversed": "Prekoračenje šest mačeva ukazuje na glasove koji vas vraćaju nazad u staro okruženje, sabotirajući vaš napredak.",
+          "keywords": [
+            "prelaz",
+            "direktorijum",
+            "nepristrasan",
+            "sabotaža",
+            "napredak"
+          ],
+          "context": "Pronađite neutralni most. Uljudno uklonite one koji se povlače do stare obale."
+        },
+        "position8": {
+          "upright": "Šest mačeva ukazuje na plan da se izvuče iz duga, restrukturiranja i tranzicije na smirenije vode.",
+          "reversed": "Preokrećeno šest mačeva upozorava na rizik da se vrate u stare navike i bacaju plan.",
+          "keywords": [
+            "prelaz",
+            "konfiguracija",
+            "plan",
+            "stabilnost",
+            "praćenje"
+          ],
+          "context": "Napišite plan, ostanite na putu sa mesečnom prijavom."
+        },
+        "position9": {
+          "upright": "Sa šest mačeva, tranzicionog planiranja i strukturiranog popravke, odnos se kreće u smirenije vode.",
+          "reversed": "Obrnuto šest mačeva, koji se vraća na staru obalu podriva kontinuitet.",
+          "keywords": [
+            "prelaz",
+            "plan",
+            "popraviti",
+            "stabilnost",
+            "praćenje"
+          ],
+          "context": "Poslednji: Pismeni koraci prelaza + kontrola."
+        }
+      },
+      "sevenofswords": {
+        "position1": {
+          "upright": "Sedam mačeva kaže da je skriveni dnevni red, nepotpuni izraz i strateška tišina podrivaju poverenje.",
+          "reversed": "Preokrećeno sedam mačeva ukazuje na to da curenje, strah od uhvate i odlaganja priznanja povećavaju napetost.",
+          "keywords": [
+            "sigurnost",
+            "iskrenost",
+            "strategija",
+            "poverenje",
+            "skladištenje"
+          ],
+          "context": "Mentalni koren kontradikcije: problem transparentnosti i poverenja."
+        },
+        "position2": {
+          "upright": "Iedi mačevi kažu da problem leži u nedostatku transparentnosti i strateškog prikrivanja. Istina se ne otkriva, poverenje je erodirano. \\ N \\ NHINT: Nepotpuna pripovest, skrivena poruka. Problem je zamućenje etičkih linija.",
+          "reversed": "Ograničeni sedam mačeva opisuje energiju koja se približava ispovest, ali barijere sramote. Istina je teško doći. \\ N \\ nsimptom: Istina u komadima, izbegavajući odgovor. Problem je gubitak poverenja u iskrenost.",
+          "keywords": [
+            "transparentnost",
+            "iskrenost",
+            "strategija",
+            "poverenje",
+            "skladištenje"
+          ],
+          "context": "Problem sa korenom: Skriveni dnevni red. Područja koja utiče na: poverenje, komunikacija, etičke granice."
+        },
+        "position3": {
+          "upright": "Sedam mačeva kaže da se vaš udeo povećava sa prikrivanjem i nepotpuno objašnjenje. Ako nema transparentnosti, nema poverenja.",
+          "reversed": "Okrećeno sedam mačeva opisuje odlaganje priznanja i pravljenje požara raste sa komadnom istinom. Barijera sramote mora biti spuštena.",
+          "keywords": [
+            "transparentnost",
+            "iskrenost",
+            "strategija",
+            "poverenje",
+            "skladištenje"
+          ],
+          "context": "Share: Skrivena agenda. UTICAJ: Poverenje, etika. Preporuka: Popunite i blagovremene informacije."
+        },
+        "position4": {
+          "upright": "Iedi Kılıc kaže da se davanje nepotpunih informacija može smatrati \"detaljima\" i ignorisati svoj udeo. Transparentnost je odgovornost.",
+          "reversed": "Preokrećeno sedam mačeva naglašava tendenciju da priznanje doneta i produže negiranje.",
+          "keywords": [
+            "transparentnost",
+            "iskrenost",
+            "skladištenje",
+            "poverenje",
+            "etika"
+          ],
+          "context": "Zanemareni: kompletne i pravovremene informacije. Efekat: Poverenje je pokvareno. DO: Objasnite - izložite."
+        },
+        "position5": {
+          "upright": "Sedam mačeva kaže da postoje teme nestalih informacija ili skrivanja. Transparentnost je testirana.",
+          "reversed": "Reversed Sedam mačeva objašnjava da priznanje kasne. Dnevne istine mogu da se pouzdaju u obzir.",
+          "keywords": [
+            "transparentnost",
+            "skladištenje",
+            "poverenje",
+            "ulaz",
+            "etika"
+          ],
+          "context": "Loše razumevanje transparentnosti informacija. Bilo je polomljenih poverenja. Sada je potrebno kompletno i blagovremeno deljenje."
+        },
+        "position6": {
+          "upright": "Sedam mačeva kažu da se nekompletno znanje i skrivanje može koristiti za generisanje moći. Transparentnost ne slabi, ojačava poverenje.",
+          "reversed": "Preokrećeno sedam mačeva naglašava rizik odvlačenja partnera i kontrola dnevnog reda davanjem celokupnog dela po komadu.",
+          "keywords": [
+            "skladištenje",
+            "transparentnost",
+            "poverenje",
+            "orijentacija",
+            "etika"
+          ],
+          "context": "Tema: Kompletne i blagovremene informacije; Rizik: Manipulacija informacijama; DO: Pravilo za deljenje otvorene deljenja."
+        },
+        "position7": {
+          "upright": "Sedam mačeva ukazuje na smetnje sa skrivenim porukama, iza ekrana i nepotpunih informacija.",
+          "reversed": "Preokrećeno sedam mačeva pokazuje treću stranu koja vrši menadžment percepcije sa fragmentarnim priznanjima / polu istinama.",
+          "keywords": [
+            "skriven",
+            "zadnji kanal",
+            "nedostajuće informacije",
+            "percepcija",
+            "ulaz"
+          ],
+          "context": "Zatvoreni zatvoreni krugovi. Neka sve postove vidljive."
+        },
+        "position8": {
+          "upright": "Sedam mačeva upozorava na ilegalnu potrošnju, tajne račune i \"nenajavljene\" finansijske odluke.",
+          "reversed": "Preokrećeno sedam mačeva donosi priznanje, transparentnost i priliku da obnovu poverenje.",
+          "keywords": [
+            "tajna potrošnja",
+            "ulaz",
+            "transparentnost",
+            "poverenje",
+            "etika"
+          ],
+          "context": "Otvorena knjige; Pravila o potrošnji iznenađenja."
+        },
+        "position9": {
+          "upright": "Sedam mačeva, ako se postigne transparentnost, poverenje se popravlja i traje; Skladištenje se završava.",
+          "reversed": "Okrećeno sedam mačeva, ako se skriveni dnevni red nastavlja, veza će se rastopiti.",
+          "keywords": [
+            "transparentnost",
+            "tajna",
+            "poverenje",
+            "ulaz",
+            "etika"
+          ],
+          "context": "Da biste poslednji put: pravilo otvorene knjige."
+        }
+      },
+      "eightofswords": {
+        "position1": {
+          "upright": "Osam mačeva nam govori da samoograničavajuća verovanja i razmišljanje zasnovano na strahu ograničavaju obim akcije.",
+          "reversed": "Osetili su osam mačeva ukazuje da kada mentalne zamke nisu prepoznate, isti ciklus se ponovo unosi.",
+          "keywords": [
+            "strah",
+            "verovanje",
+            "zamka",
+            "ograničenje",
+            "oslobođenje"
+          ],
+          "context": "Mentalni koren disonanca: strah i samoograničavajući vjerovanja."
+        },
+        "position2": {
+          "upright": "Osam mačeva kaže da problem leži u samoograničavajućim verovanju i pričama straha. Kada su vrata otvorena, smatra se da je zatvorena. \\ N \\ nhint: samosabotaža, paraliza. Problem je proročanstva bez dokaza.",
+          "reversed": "Osetilih osam mačeva opisuje povratak i nazad između čvorova koji počinju da se otkriju i sumnja koja i dalje postoji. Oslobađanje je fragmentirano. \\ N \\ nsimptom: napred-nazad, oklijevajući da zatraži pomoć. Problem odlaže poziv za pomoć.",
+          "keywords": [
+            "samostalno ograničenje",
+            "strah",
+            "verovanje",
+            "oslobođenje",
+            "pomoći"
+          ],
+          "context": "Problem sa korenom: mentalne okove. Područja koja utiče: Raspon akcije, komunikaciona hrabrost."
+        },
+        "position3": {
+          "upright": "Osam mačeva kaže da suzite svoje polje i povećate svoj udeo kroz nedokazani strahovi. Možda ste mislili da su vrata zatvorena kada je bilo otvorene.",
+          "reversed": "Osetila osam mačeva nam govori da važa veće ne tražite pomoć. Mentalne okove žele da budu pušteni.",
+          "keywords": [
+            "samostalno ograničenje",
+            "strah",
+            "verovanje",
+            "oslobođenje",
+            "pomoći"
+          ],
+          "context": "Share: Horror Stories. Efekat: Pokret, komunikacija. PREPORUKA: Provera stvarnosti."
+        },
+        "position4": {
+          "upright": "Osam mačeva vam govori da možete ignorisati svoj udeo uverenja o samo-ograničavanju, misleći da su \"stvarni\". Vrata mogu biti otvorena.",
+          "reversed": "Osetila osam mačeva opisuje tendenciju da podstiče negiranje razmatrajući to ponos da ne traži pomoć.",
+          "keywords": [
+            "strah",
+            "samostalno ograničenje",
+            "pomoći",
+            "verovanje",
+            "oslobođenje"
+          ],
+          "context": "Zanemareno: Poziv za pomoć. Učinak: Raspon kretanja se smanjuje. DO: potražiti dokaze - tražiti podršku."
+        },
+        "position5": {
+          "upright": "Osam mačeva kaže da mentalna straha uska komunikacija. Smatralo se da su vrata zatvorena kada je bila otvorena.",
+          "reversed": "Osvećeno osam mačeva opisuje obrazac ne traže pomoć. Verovanja mogu da prestignu stvarnost.",
+          "keywords": [
+            "strah",
+            "samostalno ograničenje",
+            "pomoći",
+            "stvarnost",
+            "oslobođenje"
+          ],
+          "context": "Periodi vožnje od straha. Bilo je malo stvarnosti. Sada su dokazi i podrška od suštinskog značaja."
+        },
+        "position6": {
+          "upright": "Osam mačeva kaže da se strah narativ može stvoriti ciklus samoizrosti i krivičnog lica. Vrata su često otvorena.",
+          "reversed": "Otkriveno osam mačeva ukazuje na rizik od odbijanja zahteva za pomoć i korišćenje očaja kao aduta.",
+          "keywords": [
+            "strah",
+            "očajavati",
+            "verovanje",
+            "pomoći",
+            "oslobođenje"
+          ],
+          "context": "Tema: Provera stvarnosti; Rizik: Menadžment očajem; DO: Zatražite podršku i pogledajte dokaze."
+        },
+        "position7": {
+          "upright": "Osam mačeva kaže da vas strahopljaš izvan glasova osećate bespomoćno. Jezik pokreta paničnog svetla.",
+          "reversed": "Invertirano osam mačeva, zaglaznost i dalje postoji kada ne filtrirate okolinu koja prostire strah umesto pomoć.",
+          "keywords": [
+            "strah",
+            "očajavati",
+            "panični jezik",
+            "filter",
+            "oslobođenje"
+          ],
+          "context": "Isključite pumpe straha. Izgraditi okruženje usmereno na dokaze i podršku."
+        },
+        "position8": {
+          "upright": "Osam mačeva opisuje osećaj bespomoćnosti u lice duga i računima. Vrata su često otvorena.",
+          "reversed": "Otkriveni osam mačeva vam govori da je izlaz moguće tražeći podršku, savetovanje i poduzimanje malih koraka.",
+          "keywords": [
+            "očajavati",
+            "duga",
+            "podrška",
+            "mali korak",
+            "oslobođenje"
+          ],
+          "context": "Izvadite pravu sliku; Pokušajte da pomognete i pregovarate."
+        },
+        "position9": {
+          "upright": "Ako je osam mačeva, bespomoćnost narativa je napuštena i da je primljena pomoć, nastavak je moguć.",
+          "reversed": "Okoli su osam mačeva, insistiranje na žrtvi zaključava odnos.",
+          "keywords": [
+            "očajavati",
+            "pomoći",
+            "verovanje",
+            "zaključati",
+            "oslobođenje"
+          ],
+          "context": "Da biste to učinili: Zatražite podršku + deljenje odgovornosti."
+        }
+      },
+      "nineofswords": {
+        "position1": {
+          "upright": "Devet mačeva kaže da je scenarija anksioznosti i katastrofe otrovna komunikacija i besane noći iskrivljene percepcije.",
+          "reversed": "Prekoračeni devet mačeva pokazuje da se duboko smeštaju zabrinutosti pretvori u izobličena značenja, osim ako ih ne dele.",
+          "keywords": [
+            "anksioznost",
+            "zabluda",
+            "nesanica",
+            "preterivanje",
+            "deljenje"
+          ],
+          "context": "Mentalni koren sukoba: dominacija jezika anksioznosti."
+        },
+        "position2": {
+          "upright": "Devet mačeva kaže da je problem da je u vezi s scenarijama anksioznosti i katastrofa u vezi. Noći besane noći pokvari dan. \\ N \\ n \\ nhint: Pretezanje, precenjenost. Problem je što ne postoji testiranje stvarnosti.",
+          "reversed": "Pretvoreni devet mačeva objašnjava da noćna mora polako odstupi u stvarnost, ali preostala anksioznost se nastavlja. Uredba je nepotpuna. \\ N \\ nsimptom: jutarnji umor, DIJALOGAJSKI DIJALOG. Problem je higijenski jaz anksioznosti.",
+          "keywords": [
+            "anksioznost",
+            "zabluda",
+            "stvarnost",
+            "spavati",
+            "regulacija"
+          ],
+          "context": "Problem sa korenom: jezik anksioznosti. Područja koja utiče: komunikacijski ton, kvalitet odluka."
+        },
+        "position3": {
+          "upright": "Dokuz Kılıc kaže da povećava scenarije i povećava svoj udeo sa jezikom anksioznosti. Slepi uma nepravda da voli.",
+          "reversed": "Reversed devet mačeva objašnjava da donesete neregulisanu anksioznost u odnos, čineći da vatra raste. Share, osvetliti.",
+          "keywords": [
+            "anksioznost",
+            "zabluda",
+            "stvarnost",
+            "spavati",
+            "regulacija"
+          ],
+          "context": "Share: Higiene anksioznosti. Efekat: ton, odluka. Predlog: Razgovarajte sa dokazima."
+        },
+        "position4": {
+          "upright": "Devet mačeva kaže da možete nositi anksioznost kao stvarni i ignorisati njen udeo. Zabluda je magla poricanja.",
+          "reversed": "Devet mačeva obrnuto naglašava tendenciju legitimizacije neregulisane anksioznosti rekavši \"to je upravo onako kako jesam.\"",
+          "keywords": [
+            "anksioznost",
+            "zabluda",
+            "spavati",
+            "test stvarnosti",
+            "regulacija"
+          ],
+          "context": "Zanemareno: Provera dokaza. EFEKT: TONE HARDS. DO: Podaci - zatim interpretirajte."
+        },
+        "position5": {
+          "upright": "Devet mačeva govori o besanskim noćima i jeziku anksioznosti. Scenariji uma prolijete se u odnos.",
+          "reversed": "Pretvoreni devet mačeva govori nam da je danas unela neregulisana anksioznost. Neuglašeni strahovi se mogu nakupiti.",
+          "keywords": [
+            "anksioznost",
+            "zabluda",
+            "regulacija",
+            "deljenje",
+            "real"
+          ],
+          "context": "Visoka anksioznost. Ima veliki uticaj na komunikaciju. Sada moramo da vežbamo da razgovaramo sa dokazima i smirujući se."
+        },
+        "position6": {
+          "upright": "Devet mačeva skreće pažnju na tendenciju da koristi anksioznost da bi pritisak stavio na partnera. Stalna briga može monopolizovati dnevni red odnosa.",
+          "reversed": "Invertirani devet mačeva ukazuje na rizik od prenošenja odgovornosti korišćenjem nesanice i zablude kao izgovor.",
+          "keywords": [
+            "anksioznost",
+            "zabluda",
+            "ugnjetavanje"
+          ]
+        }
+      }
+    }
+  }
+}

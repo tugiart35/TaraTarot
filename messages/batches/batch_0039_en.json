@@ -1,0 +1,744 @@
+{
+  "blog": {
+    "cards": {
+      "king-of-wands": {
+        "faq": {
+          "0": {
+            "answer": "King of Asa gives guidance on vision and leadership, vision, leadership, initiative, courage and strong leadership, success."
+          }
+        },
+        "related_cards": {
+          "0": "the-magician",
+          "1": "the-fool",
+          "2": "ace-of-wands"
+        }
+      }
+    },
+    "categories": {
+      "major_arcana": {
+        "title": "Major Arkina",
+        "description": "22 cards representing the great cycles of life and the spiritual journey."
+      },
+      "minor_arcana": {
+        "title": "Minor Back",
+        "description": "56 cards showing the details and practical conditions of everyday life."
+      }
+    },
+    "reading_guides": {
+      "love": {
+        "title": "The Guide to the Opening of Love",
+        "description": "The meaning of love in cards to understand the dynamics in your relationships."
+      },
+      "career": {
+        "title": "Career Guidance",
+        "description": "Card reviews for your professional development and opportunities in your working life."
+      },
+      "money": {
+        "title": "Money and Finance",
+        "description": "Card guidance for your finances and financial decisions."
+      },
+      "spiritual": {
+        "title": "Spiritual Development",
+        "description": "Cards for your inner journey and your spiritual development."
+      }
+    },
+    "footer": {
+      "about": {
+        "title": "About Us",
+        "description": "As a psychologist, we offer professional tarot reading and numerology analysis services, where you can receive guidance in all aspects of your life through love guidance, career guidance, daily guidance and detailed numerology analysis."
+      },
+      "quickAccess": {
+        "title": "Quick Access",
+        "tarotReading": "Tarot Angle",
+        "numerology": "Numerology Analysis",
+        "loveReading": "The Opening of Love",
+        "careerReading": "Career Development"
+      },
+      "legal": {
+        "title": "Legal",
+        "privacyPolicy": "Secrecy Policy",
+        "termsOfUse": "Conditions of Use",
+        "kvkkDisclosure": "KVKK Enlightenment",
+        "cookiePolicy": "Cookie Policy",
+        "disclaimer": "Responsibility Rejected",
+        "refundPolicy": "Payback Policy",
+        "accessibility": "Accessibility Policy",
+        "childPrivacy": "Children's Stealth Policy",
+        "copyrightPolicy": "Copyright Policy",
+        "paymentTerms": "Payment Conditions",
+        "securityPolicy": "Security Policy",
+        "about": "About Us",
+        "contact": "Communication"
+      },
+      "legalPages": {
+        "accessibility": {
+          "title": "Accessibility Policy",
+          "subtitle": "A commitment to accessibility for disabled users",
+          "content": "The Tarot-Numerology platform pledges to comply with accessibility standards so that all users can receive equal service. Our website is supported by features such as web site, screen reader compatibility, high contrast and keyboards.",
+          "contact": "You can deliver your proposals and complaints regarding accessibility to the address {email}."
+        },
+        "childPrivacy": {
+          "title": "Children's Stealth Policy",
+          "subtitle": "Under 13-year-old users' privacy",
+          "content": "The Tarot-Numerology platform does not deliberately collect personal data from children under 13 years of age. Parents' permission is required to use our services. Parents can request that their children's data be deleted.",
+          "contact": "If you think a child has been collected without permission, please refer to the address {email}. The data will be deleted after the examination."
+        },
+        "refundPolicy": {
+          "title": "Payback Policy",
+          "subtitle": "Return conditions for digital services",
+          "content": "The digital services offered on the Tarot-Numerology platform (analysis, counselling, credit, etc.) are immediately available and personal content. Therefore, no refunds are paid after service is offered.",
+          "contact": "However, in cases such as a technical error, the service cannot be presented at all or accidentally paid, you can apply for extradition by applying to the address {email}. Each request is examined individually and appropriate returns are carried out within seven working days.",
+          "policyTitle": "Payback Policy",
+          "noRefund": "Unrefundable",
+          "refundPossible": "Returnable",
+          "processingTimes": "Processes",
+          "processingContent": "Refundable returns are carried out within seven work days, each request is examined individually.",
+          "exceptions": "Exceptions",
+          "exception1": "No return is made due to user error or dissatisfaction.",
+          "exception2": "It is possible to return the service in case it is not available or in case of technical failure."
+        },
+        "cookiePolicy": {
+          "title": "Cookie Policy",
+          "subtitle": "Cookie use and preferences",
+          "content": "This website uses snacks to develop user experience and analyze site performance. Cookies are divided into two categories, including technical cookies and functional snacks that remember user preferences, which are needed to function properly on the website.",
+          "whatIsCookie": "What's Nuts?",
+          "types": "Nuts",
+          "technical": "Technical Cookies: The site is mandatory for functionality",
+          "functional": "Functional Cookies: Remembers user preferences",
+          "analytics": "Analytic Cookies: Analytic analyzes site use",
+          "preferences": "Cookie Preferences",
+          "manage": "You can use your browser settings to manage your cookie preferences."
+        },
+        "copyrightPolicy": {
+          "title": "Copyright Policy",
+          "subtitle": "Rights and use of intellectual property",
+          "content": "All content on this website is protected by copyright (the text, visual, graphic, code, design, etc.). The content can only be used for personal, non-commercial purposes.",
+          "rights": "Copyright Owner",
+          "owner": "All content belongs to the Shredder platform.",
+          "usage": "Use Conditions",
+          "personal": "The content is only allowed for personal use",
+          "commercial": "A written permit for commercial use is required",
+          "attribution": "Sources are required to be specified"
+        },
+        "disclaimer": {
+          "title": "Responsibility Rejected",
+          "subtitle": "Service coverage and restrictions",
+          "content": "The tarot and numerology services presented on this platform are for entertainment and do not replace real life advice. Our services do not provide professional medical, legal or financial advice.",
+          "serviceScope": "Service Containment",
+          "limitations": "Limits",
+          "entertainment": "Services are for entertainment",
+          "notAdvice": "It's not real-life advice.",
+          "personal": "It shouldn't affect your personal decisions",
+          "professional": "Professional counseling does not apply."
+        },
+        "kvkkDisclosure": {
+          "title": "KVKK Lighting Text",
+          "subtitle": "Protection of personal data",
+          "content": "This illumination text is prepared under the Protection of Personal Data Act 6698 (KVKK). Your personal data is processed only within the specified objectives and legal limits.",
+          "dataProtection": "Data Protection",
+          "dataController": "Data Manager",
+          "controller": "Advantage platform",
+          "purposes": "Purposes for Processing",
+          "purpose1": "Service presentation and customer relations",
+          "purpose2": "Compliance of legal obligations",
+          "purpose3": "Communication and information",
+          "rights": "Your rights",
+          "right1": "Access to your personal data",
+          "right2": "Correction and delete",
+          "right3": "Objection to action",
+          "right4": "Data transport"
+        },
+        "paymentTerms": {
+          "title": "Payment Conditions",
+          "subtitle": "Payment methods and conditions",
+          "content": "On our platform, safe payment methods are used. All payments are covered by SSL encryption and run through third party payment providers.",
+          "methods": "Payment Methods",
+          "creditCard": "Credit Card",
+          "debitCard": "Bank Card",
+          "digitalWallet": "Digital Wallet",
+          "security": "Security",
+          "ssl": "Protected by SSL encryption",
+          "pci": "Fitting PCI DSS standards",
+          "secure": "Safe payment infrastructure"
+        },
+        "securityPolicy": {
+          "title": "Security Policy",
+          "subtitle": "Data security and protection measures",
+          "content": "Our platform applies the highest security standards to ensure the safety of user data. All data is encrypted and stored in secure servers.",
+          "measures": "Security Precautions",
+          "encryption": "Data encryption",
+          "access": "Access check",
+          "monitoring": "Constant monitoring",
+          "backup": "Regular backup",
+          "compliance": "Legal compatibility"
+        },
+        "privacyPolicy": {
+          "title": "Secrecy Policy",
+          "subtitle": "The preservation of your personal data is a priority for us, which explains how your data is collected, processed and protected.",
+          "lastUpdated": "Last Update: July 8, 2025",
+          "montenegroCompliant": "Montenegro PDPL Compatible",
+          "sections": {
+            "introduction": {
+              "title": "Entrance 1",
+              "content": "It is referred to as \"Platform,\" \"Tarot and Numerology services,\" www.busbuskimki.com.com. It explains our personal data processing practices in accordance with Law on Personal Data Protection (PDPL) provisions in Montenegro."
+            },
+            "scope": {
+              "title": "Application Containment 2.",
+              "content": "PDPL is applied to all domestic and foreign organisations operating in Montenegro, companies collecting data through electronic or manual data processing systems."
+            },
+            "dataCollection": {
+              "title": "Third Gathered Data & Sensitive Categories",
+              "personalData": {
+                "title": "Personal Data",
+                "content": "Name, last name, email, IP address, snack data, etc."
+              },
+              "sensitiveData": {
+                "title": "Sensitive Data",
+                "content": "The birth date is special categories, such as health care, and the processing of these categories is only possible with open consent or legal exceptions."
+              }
+            },
+            "processingConditions": {
+              "title": "Process 4 Conditions",
+              "content": "Our data processing activities are based on:",
+              "conditions": "The fulfillment of enlightened open consent, contract or legal obligations is carried out on no basis other than the legal purpose of life interests.",
+              "additionalSecurity": "Additional Security: We also closely follow the principles of data minimization, purpose limiting, data accuracy and storage time limiting."
+            },
+            "dataController": {
+              "title": "Data Responsibility Record 5 & DPO",
+              "registration": "The platform is registered as data manager for the Montenegrin Data Protection Agency (AZLP); separate applications have been made for our databases.",
+              "dpo": "When our number of employees is 10 and more, the DPO will be appointed. In the current case, the appointment is scheduled to be in accordance with our obligations."
+            },
+            "security": {
+              "title": "6th Technical and Organised Security",
+              "encryption": {
+                "title": "Decrypt",
+                "content": "Access control and system log"
+              },
+              "training": {
+                "title": "Education",
+                "content": "Working education and confidentiality policies"
+              },
+              "audit": {
+                "title": "Control",
+                "content": "Regular internal audits are being implemented"
+              }
+            },
+            "dataBreach": {
+              "title": "7th Data Disintegration Protocol (Breach)",
+              "seventyTwoHour": {
+                "title": "72 Hours Rule",
+                "content": "In case of any data breach, we're reporting to AZLP within 72 hours."
+              },
+              "userNotification": {
+                "title": "User Information",
+                "content": "If the breach affects the rights of user data, the relevant users will be notified immediately."
+              }
+            },
+            "userRights": {
+              "title": "User Rights 8",
+              "content": "Under the scope of the Montenegrin PDPL, users have the following rights:",
+              "basicRights": {
+                "title": "Basic Rights",
+                "rights": "Access to personal data, correction and delete, processing objection"
+              },
+              "advancedRights": {
+                "title": "Advanced Rights",
+                "rights": "Request for restrictions on processing, objection to auto-determination processes, transport of data"
+              },
+              "application": "Application: You can submit your applications to info@tarotnumerology.com with confirmation documents."
+            },
+            "internationalTransfers": {
+              "title": "9 International Data Transfers",
+              "azlpApproval": {
+                "title": "AZLP Approved",
+                "content": "AZLP approval is being approved before data transfer from outside Montenegro."
+              },
+              "exceptions": {
+                "title": "Exceptions",
+                "content": "EU/AEA countries, third countries, considered sufficient by the EU, are the user's explicit consent."
+              }
+            },
+            "dataRetention": {
+              "title": "Data Hide Time and Extermination",
+              "content": "Personal data is stored only for the duration of its purposes; when the time is over, it is anonymously or safely destroyed."
+            },
+            "cookies": {
+              "title": "11 Cookies and Direct Marketing",
+              "cookiePreferences": {
+                "title": "Cookie Preferences",
+                "content": "Users' snack preferences are considered."
+              },
+              "information": {
+                "title": "Information",
+                "content": "Clear information on the use of snacks is provided, and the right to appeal is granted."
+              }
+            },
+            "changes": {
+              "title": "12th Changes",
+              "content": "This policy is periodically updated in terms of regulatory or functional requirements. The most recent version will always be published at www.tarotumerology.com."
+            },
+            "contact": {
+              "title": "13 Communication Information",
+              "email": {
+                "title": "Email",
+                "address": "@busbusbuskimki.com"
+              },
+              "address": {
+                "title": "Address",
+                "location": "Podgorica, Montenegro"
+              },
+              "dataController": {
+                "title": "Data Manager",
+                "name": "BUSBUSKI CONSULTANCY AND DIGITAL AGENCY DOO",
+                "registration": "Recording: AZLP"
+              }
+            }
+          }
+        },
+        "termsOfUse": {
+          "title": "Conditions of Use",
+          "subtitle": "These conditions explain the rules and rights you must follow when you use our platform.",
+          "lastUpdated": "Last Update: July 8, 2025",
+          "montenegroCompliant": "Montenegro PDPL Compatible",
+          "sections": {
+            "general": {
+              "title": "1st General",
+              "content": "The content on www.busbuskimki.com (\"Site\") regulates the use of services and applications. You have accepted these conditions using Site."
+            },
+            "serviceDescription": {
+              "title": "Servicescription 2",
+              "content": "The site provides professional content in areas such as tarot and numerology reading services, individual analysis and counselling. All services are conducted in accordance with Montenegro legislation and PDPL."
+            },
+            "usageConditions": {
+              "title": "3rd Use Conditions and Harmony",
+              "usagePurpose": {
+                "title": "Purpose of Use",
+                "content": "The content of the site can only be used for personal, commercial, and legal purposes."
+              },
+              "intellectualProperty": {
+                "title": "Fiction Property",
+                "content": "All relevant intellectual property rights (text, visual, graphic, code) belong to Site."
+              },
+              "usageRules": {
+                "title": "Rules of Use",
+                "content": "The user agrees to use the site in a civilized, honest and legal manner."
+              }
+            },
+            "registration": {
+              "title": "Log 4, Account Safety and Data Processing",
+              "accountSecurity": {
+                "title": "Account Safety",
+                "content": "Some services may need to create records and accounts. Account information must be kept confidential."
+              },
+              "dataProcessing": {
+                "title": "Data Processing",
+                "content": "Your personal data is processed and preserved in accordance with PDPL provisions."
+              }
+            },
+            "disclaimer": {
+              "title": "Responsibility 5 Reddi and Restrictions",
+              "content": "The site provides tarot and numerology services for entertainment, which do not replace real-life advice and provide professional medical, legal or financial advice."
+            },
+            "contact": {
+              "title": "Communication 6",
+              "content": "For your questions, you can contact us at info@busbusbuskimki.com."
+            }
+          }
+        }
+      },
+      "contact": {
+        "title": "Communication",
+        "email": "@busbusbuskimki.com",
+        "phone": "+382 (67) 010176",
+        "address": "Podgorica, Montenegro"
+      },
+      "payment": {
+        "title": "Payment Methods",
+        "securePayment": "Safe payment"
+      },
+      "social": {
+        "title": "Social Media"
+      },
+      "copyright": {
+        "text": "All rights reserved.",
+        "disclaimer": "This site is entertainment and does not replace real life advice."
+      }
+    },
+    "common": {
+      "cups": "Cups",
+      "pentacles": "Pentacles",
+      "swords": "Swords",
+      "wands": "Wands",
+      "three": "Three",
+      "four": "Four",
+      "five": "Five",
+      "seven": "Seven",
+      "eight": "Eight",
+      "nine": "Grandma",
+      "page": "Page",
+      "knight": "Knight",
+      "queen": "Queen",
+      "king": "King",
+      "kupalar": "Cups",
+      "tilsimlar": "Charms",
+      "kiliclar": "Swords",
+      "asalar": "Wands",
+      "kupovi": "Kupovi",
+      "pentakli": "Pentakli",
+      "ucretsiz-tarot-okumasi": "Draw your own cards with free tarot readings",
+      "draw-your-own": "Draw your own cards with free tarot reading",
+      "kisilik": "Personality",
+      "olgunluk": "Maturity",
+      "personality": "Personality",
+      "maturity": "Maturity",
+      "compatibility": "Compatibility",
+      "zrelost": "Zrelost",
+      "kompatibilnost": "Compatibilnost",
+      "busbuskimki": "♪ I'm in love with you ♪",
+      "article": "Article",
+      "person": "Person",
+      "organization": "Organization",
+      "home": "Home",
+      "numeroloji": "Numerology",
+      "numerology": "Numerology",
+      "numerologija": "Numerologija",
+      "thing": "Thing",
+      "yakinda": "Soon.",
+      "secim-yapin": "Choose",
+      "hizmetlerimiz": "Our services",
+      "ozelliklerimiz": "Properties",
+      "istatistiklerimiz": "Statistics",
+      "panel": "Panel",
+      "giris": "Introduction",
+      "email-confirmation-callback": "Email confirmation callback",
+      "email-confirmation-successful": "Email confirmation success",
+      "email-confirmation-error": "Email confirmation error",
+      "email-confirmation-exception": "Email confirmation exception",
+      "guvenli-giris-yapin": "Make safe entry or create new account",
+      "sifreler-eslesmiyor": "Passwords don't match.",
+      "sifre-guncelleme-hatasi": "Password update error",
+      "sifre-sifirlama-hatasi": "Password reset error",
+      "yeni-sifrenizi-girin": "Enter your new password",
+      "sifrenizi-tekrar-girin": "Reenter your password",
+      "dashboard": "Dashboard",
+      "okuma-verisi": "Reading data",
+      "kullanici-email-adresi": "User email address",
+      "email-basariyla-gonderildi": "Email sent successfully",
+      "email-gonderimi-basarisiz": "Email sending failed",
+      "bilinmeyen-hata": "Unknown error",
+      "gecerli-bir-email": "Enter a valid email address",
+      "email-gonderilemedi": "Could not send email",
+      "rate-limit-exceeded": "Rate limit Exceeded",
+      "cache": "Cashe",
+      "fallback": "Fallback",
+      "internal-server-error": "Internet server error",
+      "doviz-kuru-alinirken": "Error retrieving exchange rate",
+      "para-birimi-donusumunde": "Error in currency transformation",
+      "unknown": "Unknown",
+      "security-check-failed": "Security check failed",
+      "missing-signature": "Missing signature",
+      "bilinmiyor": "Unknown",
+      "payment-failure-notification": "Payment failed",
+      "payment-not-successful": "Payment not successful",
+      "payment-already-processed": "Payment already processed",
+      "package-not-found": "Package not found",
+      "user-profile-not": "User profile not found",
+      "failed-to-update": "Failed to update credit ballance",
+      "payment-notification-email": "Payment notification e-mail sent successfully",
+      "payment-processed-successfully": "Payment processd successfully",
+      "no-meaning": "No meaning",
+      "sesli": "Loud",
+      "yazili": "Written",
+      "basit": "Simple",
+      "strength": "Strength",
+      "justice": "Justice",
+      "death": "Death",
+      "temperance": "Temperance",
+      "judgement": "Judgement",
+      "kariyerimde-degistiremedigim-taraflar": "Parts of my career I can't change",
+      "kariyerimde-yardimci-olacak": "What changes will help my career",
+      "gecmisimdeki-hangi-engeller": "What obstacles in my past",
+      "sonuc-ne-olacak": "What will be the result?",
+      "dilek-karti": "Wishcard",
+      "beyaz-atli-prens": "Prince Charming",
+      "cinsel-dileklerin-gerceklesmesi": "The fulfillment of sexual wishes",
+      "kirli-konusma": "Dirty talk.",
+      "tek-gecelik-iliski": "A one-night stand.",
+      "hakkinda-soru-sordugun": "The person you're asking about.",
+      "fiziksel-ve-cinsel": "Your physical and sexual connection",
+      "duygusal-ve-ruhsal": "Your emotional and spiritual connection",
+      "iliskinin-uzun-vadeli": "The long-term result of the relationship",
+      "temel-anlam": "Basic meaning",
+      "ters-anlam": "Inverse meaning",
+      "close": "Close",
+      "edit": "Edit",
+      "cancel": "Cancel",
+      "save": "Save",
+      "saving": "Saving..."
+    },
+    "legal": {
+      "misyonumuz": "Our mission",
+      "vizyonumuz": "Our vision",
+      "busbuskimki": "♪ I'm in love with you ♪",
+      "uyumluluk-ve-destek": "Harmony and support",
+      "tam-klavye-destegi": "Full keyboard support",
+      "iletisim": "Communication",
+      "mesajiniz": "Message"
+    },
+    "maintenance": {
+      "su-anki-zaman": "Current time",
+      "yenile": "Refresh",
+      "sistem-guncellemesi": "System update",
+      "performans-iyilestirmesi": "Performance improvement",
+      "guvenlik-guncellemesi": "Security update"
+    },
+    "shared": {
+      "dashboard": "Dashboard",
+      "pakize": "Pakize",
+      "profil": "Profile",
+      "ana-navigasyon-menusu": "Main navigation menu",
+      "hakkimizda": "About Us",
+      "yasal": "Legal",
+      "iletisim": "Communication",
+      "guvenli-odeme": "Safe payment",
+      "turkish": "English",
+      "turkce": "Turkish",
+      "english": "English",
+      "srpski": "Srpski",
+      "dil-sec": "Select language",
+      "kapat": "Close",
+      "ters": "Reverse",
+      "tum-pozisyonlar-dolu": "All positions are loaded.",
+      "karistir": "Mix",
+      "kaydirarak-tum-kartlari": "Slide all the cards and see",
+      "kart-destesi-bos": "Card deck is empty.",
+      "kart": "Card",
+      "guvenli-olmayan-resim": "Unsafe image",
+      "basit-okuma-secildi": "Simple reading selected",
+      "giris-yapin": "Log in.",
+      "loading": "Loating",
+      "inter": "Inter",
+      "sesli": "Loud",
+      "audio": "Audio",
+      "yazili": "Written",
+      "written": "Written",
+      "kartlarin-rehberligi": "The guidance of the cards",
+      "uyari-mesajini-kapat": "Close alarm message"
+    }
+  },
+  "new-lover": {
+    "meanings": {
+      "thefool": {
+        "position1": {
+          "upright": "Crazy whispers to you that you're on the verge of a new beginning, and soon you'll have a fresh energy and a surprise introduction to your life.",
+          "reversed": "Reverse Crazy shows that careless steps can lead to a short-term relationship.",
+          "keywords": {
+            "0": "start",
+            "1": "surprise",
+            "2": "freedom",
+            "3": "experience"
+          },
+          "context": "There's a high probability of a new relationship, but it needs attention and balance."
+        },
+        "position2": {
+          "upright": "Crazy means that this person's sign can carry variable energy, not constant, and it can be one of the free spirit, open signs, such as the Twins, the Sagittarius, or the Bucket.",
+          "reversed": "The Reverse-Crazy tells us that this person can shift to an unstable appearance because of his quest for freedom, and the Bucket or Twins may have difficulty bonding in the shadow.",
+          "keywords": {
+            "0": "freedom",
+            "1": "variable",
+            "2": "innovation",
+            "3": "independence"
+          },
+          "context": "The sign could be one of the variable elements that comes out with a free spirit."
+        },
+        "position3": {
+          "upright": "Crazy shows that you can have a fresh harmony in your relationship, and when you can free each other light, spontaneous and free each other, it's easy to adapt to a natural flow.",
+          "reversed": "Reverse Crazy shows that rash decisions and rash steps will force harmony, and the uncertainty of expectations can create instability.",
+          "keywords": {
+            "0": "freedom",
+            "1": "start",
+            "2": "compatibility",
+            "3": "lightness",
+            "4": "balance"
+          },
+          "context": "In order to adapt, you have to share freedom, too much haste, too much balance."
+        },
+        "position4": {
+          "upright": "Crazy means that a relationship starts with freedom and freshness, and the sense of responsibility must be added in order for it to last a long time.",
+          "reversed": "Reverse Crazy, unplanning and insensitivity make the long term difficult. It's important to find balance.",
+          "keywords": {
+            "0": "freedom",
+            "1": "start",
+            "2": "responsibilities",
+            "3": "balance",
+            "4": "long term"
+          },
+          "context": "Freshness feeds the long term, the bond of irresponsibility is short."
+        },
+        "position5": {
+          "upright": "Crazy, you have a connection with this person with innocence and a new beginning energy, and the possibility of a soul mate is strengthened by your daring ability to explore together.",
+          "reversed": "Reverse-Crazy, the shift of bond to superficiality can weaken the potential of a soul mate, and escape from depth can become a short-lived adventure rather than a soul mate.",
+          "keywords": {
+            "0": "start",
+            "1": "Innocence",
+            "2": "discovery",
+            "3": "Courage",
+            "4": "soul mate"
+          },
+          "context": "A new beginning feeds the possibility of a soul mate, testing the bond of superficiality."
+        },
+        "position6": {
+          "upright": "The madman shows you that your wish has promised you a new beginning and bold steps, and with unexpected opportunity, the door to your dreams can be opened.",
+          "reversed": "Reverse Crazy says that rash behavior can make your wish difficult, and unprepared steps can turn into disappointment.",
+          "keywords": {
+            "0": "start",
+            "1": "Courage",
+            "2": "opportunity",
+            "3": "risk",
+            "4": "new path"
+          },
+          "context": "Brave and conscious steps can make your wish come true."
+        }
+      },
+      "themagician": {
+        "position1": {
+          "upright": "The wizard shows that you can summon a new relationship with charisma and intent, and soon there will be a chance to draw attention and form a strong bond.",
+          "reversed": "The Reverse Wizard says to keep your eyes open so you don't get disappointed.",
+          "keywords": {
+            "0": "gravity",
+            "1": "start",
+            "2": "will",
+            "3": "connection"
+          },
+          "context": "The possibility of a relationship is strong, your intentions need to be clear."
+        },
+        "position2": {
+          "upright": "The wizard says that this person may belong to a Mercury-dominated burka, the twin or Virgo energy is dominant, its communication is strong.",
+          "reversed": "The reverse wizard, the Twins, may appear manipulative or overcalculous in the shadow of the head, and his word may be abundant, but his heart may be weak.",
+          "keywords": {
+            "0": "communication",
+            "1": "intelligence",
+            "2": "creation",
+            "3": "expression"
+          },
+          "context": "Mercury is an effective sign: Twins or Virgo accent is strong."
+        },
+        "position3": {
+          "upright": "The wizard says that your power of communication and mutual expression supports harmony, and your words are magic to reveal each other's potential.",
+          "reversed": "Reverse Wizard, misunderstandings or manipulative attitudes can make it difficult to fit in, and the breach of trust weakens the bridge of communication.",
+          "keywords": {
+            "0": "expression",
+            "1": "communication",
+            "2": "potential",
+            "3": "compatibility",
+            "4": "Trust"
+          },
+          "context": "The key to harmony is open communication. Illusions destroy bridges."
+        },
+        "position4": {
+          "upright": "The wizard shows a powerful potential for a long-term relationship, providing continuity of communication skills.",
+          "reversed": "Reverse Wizard, manipulative or dishonest behavior destroys the long term.",
+          "keywords": {
+            "0": "creation",
+            "1": "potential",
+            "2": "communication",
+            "3": "Honesty",
+            "4": "long term"
+          },
+          "context": "Clear intent feeds the long term, games wear out the bond."
+        },
+        "position5": {
+          "upright": "The wizard shows that the energy of the soul mate comes with a strong pull and intent, and communication and mutual intentions feed the spiritual depth of this bond.",
+          "reversed": "Reverse Wizard, miscommunication or manipulation tends to damage the spirit mate connection, and word and intention imbalance can superficialize the bond.",
+          "keywords": {
+            "0": "intent",
+            "1": "gravity",
+            "2": "expression",
+            "3": "connection",
+            "4": "soul mate"
+          },
+          "context": "Intentional compatibility increases the potential for soul mates, manipulation casts a shadow."
+        },
+        "position6": {
+          "upright": "The wizard shows that you have all the tools to make your wish come true, and if you make your intentions clear and act, your dreams will become concrete.",
+          "reversed": "The Reverse Wizard points out that you can misuse your ability to grant your wish, or that you can miss opportunities because of the disorganized focus.",
+          "keywords": {
+            "0": "intent",
+            "1": "creation",
+            "2": "focus",
+            "3": "power",
+            "4": "success"
+          },
+          "context": "Clear intent and decisive action make your wish come true."
+        }
+      },
+      "thehighpriestess": {
+        "position1": {
+          "upright": "The High Priestess informs you that an unseen relationship is at the door, and you may be surprised by an introduction in silence.",
+          "reversed": "Reverse Mother Superior, if you suppress your intuition, you may not notice the opportunity, you need to open your heart.",
+          "keywords": {
+            "0": "intuition",
+            "1": "secret",
+            "2": "opportunity",
+            "3": "waiting"
+          },
+          "context": "There's a relationship nearby, but patience and intuition are essential."
+        },
+        "position2": {
+          "upright": "The Mother Superior shows that this person may be one of the water-group constellations, with a high sense of crab, scorpion, or fish.",
+          "reversed": "Inverted Mother Superior describes the shadow side of the water horoscopes: it may be too mysterious, introverted, or emotionally confused.",
+          "keywords": {
+            "0": "intuition",
+            "1": "It's a water sign.",
+            "2": "depth",
+            "3": "mystery"
+          },
+          "context": "Water group energy: crab, scorpion, fish."
+        },
+        "position3": {
+          "upright": "The Mother Superior says that harmony with intuitive connection and deep understanding can be quietly established, so you don't have to talk too much to understand each other.",
+          "reversed": "Reverse Mother Superior, extreme secrecy, or introvertity, shadows harmony, secrets that don't open can create distance.",
+          "keywords": {
+            "0": "intuition",
+            "1": "connection",
+            "2": "understanding",
+            "3": "Silence",
+            "4": "compatibility"
+          },
+          "context": "Silent bond strengthens harmony, privacy creates distance."
+        },
+        "position4": {
+          "upright": "Mother Superior, the relationship can move with deep insight and understanding, a strong foundation for long-term bonding.",
+          "reversed": "Inverted Mother Superior, extreme secrecy or incarceration is a long-term problem.",
+          "keywords": {
+            "0": "intuition",
+            "1": "understanding",
+            "2": "Secret",
+            "3": "depth",
+            "4": "long term"
+          },
+          "context": "Deep intuition strengthens the long term, extreme secrecy weakens the bond."
+        },
+        "position5": {
+          "upright": "The Mother Superior shows that her soul mate connection is intertwined with deep insights and invisible bonds, and an inner sense of recognition can be powerful in this person.",
+          "reversed": "Reverse Mother Superior, secrets and extreme secrecy can put a barrier in front of the soul mate bond, creating distance instead of spiritual intimacy.",
+          "keywords": {
+            "0": "intuition",
+            "1": "mystery",
+            "2": "spiritual bond",
+            "3": "internal recognition",
+            "4": "soul mate"
+          },
+          "context": "Intuitive attachments indicate soul mates, privacy creates distance."
+        },
+        "position6": {
+          "upright": "The High Priestess says that the fulfillment of your wish is beyond trusting your inner instincts, and you can listen to your inner world and find the right time and the right way.",
+          "reversed": "Reverse Mother Superior shows that it is your intuitiveness that prevents your wish from coming true, and suppressing your inner voice makes it difficult to move forward.",
+          "keywords": {
+            "0": "intuition"
+          }
+        }
+      }
+    }
+  }
+}

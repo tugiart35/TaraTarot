@@ -1,0 +1,784 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "knightofpentacles": {
+        "position5": {
+          "keywords": {
+            "2": "stability",
+            "3": "hard work",
+            "4": "discipline"
+          },
+          "context": "Your recent history may have been determined by determination or stability."
+        },
+        "position6": {
+          "upright": "Knight of the Talisman, in the near future, you will move towards your goals with patience, discipline and determination.",
+          "reversed": "In the near future, the reverse Knight of the Talisman can be static, lazy, or very slow progress.",
+          "keywords": {
+            "0": "Patience",
+            "1": "stability",
+            "2": "work",
+            "3": "discipline",
+            "4": "Determination"
+          },
+          "context": "Your near future will be shaped by discipline or stability."
+        },
+        "position7": {
+          "upright": "Knight of the Talisman, you are now proceeding with discipline, patience, and order.",
+          "reversed": "Knight of the Reverse Talisman, right now you may be forced to be lazy, stable, or slow.",
+          "keywords": {
+            "0": "Patience",
+            "1": "stability",
+            "2": "work",
+            "3": "discipline",
+            "4": "Determination"
+          },
+          "context": "Your current condition is shaped by discipline or stability."
+        },
+        "position8": {
+          "upright": "Knight of the Talisman, the outside effects may encourage you to be disciplined, patient, and to move forward with stability.",
+          "reversed": "The reverse Knight of the Talisman, the external effects can create stability, lazyness, or slow progress.",
+          "keywords": {
+            "0": "Patience",
+            "1": "stability",
+            "2": "work",
+            "3": "discipline",
+            "4": "Determination"
+          },
+          "context": "The external effects may bring stability or may lead to lazyness."
+        },
+        "position9": {
+          "upright": "Knight of the Talisman, you may be afraid that you won't be able to move forward, that you'll be stationary or that your efforts will go to waste.",
+          "reversed": "The Knight of the Inverted Talisman may show the fear of laxness, reluctance, or failure to complete tasks.",
+          "keywords": {
+            "0": "effort",
+            "1": "stability",
+            "2": "responsibilities",
+            "3": "stasis",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on not being able to move forward or complete the tasks."
+        }
+      },
+      "queenofpentacles": {
+        "position1": {
+          "upright": "The Queen of the Talisman may be at the center of the problem of balance, productivity, or efficient use of resources.",
+          "reversed": "Reverse Talisman Queen may be the source of the problem of disorganisation, lack of self-care, or mismanagement of resources.",
+          "keywords": {
+            "0": "balance",
+            "1": "productivity",
+            "2": "resource",
+            "3": "practice",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is a desire to maintain productivity and balance."
+        },
+        "position10": {
+          "upright": "The queen of the amulet may result in abundance, compassion, support, and financial security.",
+          "reversed": "The reverse amulet queen may result in a lack of self-care, insecurity, or extreme addiction.",
+          "keywords": {
+            "0": "abundance",
+            "1": "Compassion",
+            "2": "security",
+            "3": "support",
+            "4": "material power"
+          },
+          "context": "The result may be abundance and security or addiction."
+        },
+        "position2": {
+          "upright": "The Queen of Talisman, the obstacle may be a lack of self-care, overresponsibility, or disarray, self-evaluation is blocking the solutions.",
+          "reversed": "The Reverse Talisman Queen may be the source of the obstacle of extravagance, indifference, or poor management of resources.",
+          "keywords": {
+            "0": "self - care",
+            "1": "responsibilities",
+            "2": "resource",
+            "3": "imbalance",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born from neglect and poor management of resources."
+        },
+        "position3": {
+          "upright": "The Queen of the Talisman, in her subconscious, may have experiences of self-care, productivity, or family responsibility.",
+          "reversed": "The Reverse Talisman Queen may have been involved in her subconscious, in the past, in the wastefulness, carelessness, or poor management of resources.",
+          "keywords": {
+            "0": "self - care",
+            "1": "responsibilities",
+            "2": "resource",
+            "3": "productivity",
+            "4": "subconscious"
+          },
+          "context": "The experience of self-care or resource management in the past may have shaped today's problems."
+        },
+        "position4": {
+          "upright": "The Queen of the Talisman is the tender creation of the best potential, the abundant management of its resources, and the sharing of prosperity with balance.",
+          "reversed": "In order to achieve its potential, you must not neglect self-care, avoid wastefulness.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "abundance",
+            "2": "productivity",
+            "3": "resource management",
+            "4": "balance"
+          },
+          "context": "Your best potential is to manage your resources with compassion and share the blessing."
+        },
+        "position5": {
+          "upright": "The Queen of the Talisman may have been prominent in recent times - productivity, compassion, or family responsibilities.",
+          "reversed": "The reverse amulet queen, in the recent past, you may have had a hard time dealing with extravagance, self-care, or resource management.",
+          "keywords": {
+            "0": "productivity",
+            "1": "Compassion",
+            "2": "resource management",
+            "3": "family",
+            "4": "responsibilities"
+          },
+          "context": "Your recent history may have been shaped by productivity or lack of self-care."
+        },
+        "position6": {
+          "upright": "The Queen of the Talisman, in the near future, you will be led by the energy of abundance, compassion, and efficient governance of your resources.",
+          "reversed": "In the near future, the reverse amulet queen may be a lack of self-care, wasteful or unstable resource use.",
+          "keywords": {
+            "0": "abundance",
+            "1": "Compassion",
+            "2": "resource management",
+            "3": "balance",
+            "4": "productivity"
+          },
+          "context": "Your near future will be shaped by abundance or wastefulness."
+        },
+        "position7": {
+          "upright": "The Queen of the Talisman, you are now in the process of efficient management of abundance, compassion, and resources.",
+          "reversed": "Reverse Talisman Queen, right now, you may be affected by extravagance, lack of self-care, or unstable resource use.",
+          "keywords": {
+            "0": "abundance",
+            "1": "Compassion",
+            "2": "resource management",
+            "3": "balance",
+            "4": "productivity"
+          },
+          "context": "Your current situation is shaped by abundance or wastefulness."
+        },
+        "position8": {
+          "upright": "The Queen of the Talisman, the outside effects can give you compassion, abundance, and practical support.",
+          "reversed": "Reverse Talisman Queen, external effects can lead to a lack of self-care, wastefulness, or extreme addiction.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "abundance",
+            "2": "practical support",
+            "3": "balance",
+            "4": "resource"
+          },
+          "context": "The external effects can bring abundance or imbalance."
+        },
+        "position9": {
+          "upright": "The Queen of the Talisman, you may be afraid that you will not be able to see support, that you will not be able to fulfill material insecurity, or that you will not be able to fulfill your care responsibilities.",
+          "reversed": "The Reverse Talisman Queen may show a lack of self-care, a fear of addiction or wastefulness.",
+          "keywords": {
+            "0": "security",
+            "1": "support",
+            "2": "self - care",
+            "3": "responsibilities",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on loss of trust or addiction."
+        }
+      },
+      "kingofpentacles": {
+        "position1": {
+          "upright": "The amulet king may have credibility, leadership, or financial stability at the center of the problem.",
+          "reversed": "The reverse amulet king may be the source of the problem of overcontrol, ambitious behavior or financial imbalance.",
+          "keywords": {
+            "0": "leadership",
+            "1": "stability",
+            "2": "guarantee",
+            "3": "control",
+            "4": "Question"
+          },
+          "context": "There's a strong search for leadership and security at the center of the problem."
+        },
+        "position10": {
+          "upright": "The amulet king may result in great success, authority, and material security.",
+          "reversed": "The reverse amulet king may result in authoritarianism, excessive ambition, or loss.",
+          "keywords": {
+            "0": "success",
+            "1": "authority",
+            "2": "abundance",
+            "3": "security",
+            "4": "leadership"
+          },
+          "context": "The result may be permanent success or pressure from authority."
+        },
+        "position2": {
+          "upright": "The amulet king may be dependent on overcontrol, ambition, or material security, but being financially focused prevents spiritual solutions.",
+          "reversed": "The reverse amulet king may be the source of financial anxiety, oppression, or dissatisfaction.",
+          "keywords": {
+            "0": "control",
+            "1": "ambition",
+            "2": "material trust",
+            "3": "dissatisfaction",
+            "4": "obstacle"
+          },
+          "context": "Obstacle arises from financial anxiety and desire for extreme control."
+        },
+        "position3": {
+          "upright": "The King of the Talisman, in his subconscious, can have experiences of success, financial security or leadership in the past.",
+          "reversed": "In the past, the reverse Talisman may have settled into the subconscious of greed, oppression, or dissatisfaction.",
+          "keywords": {
+            "0": "success",
+            "1": "leadership",
+            "2": "material trust",
+            "3": "ambition",
+            "4": "subconscious"
+          },
+          "context": "Successes or dissatisfactions in the past may affect today's problems."
+        },
+        "position4": {
+          "upright": "King of the Talisman, your best potential is to establish a safe order, to make success permanent, and to guide others through your wisdom.",
+          "reversed": "In order to reveal your potential, the reverse Talisman, you must not be overly concerned about material concerns and flex the need for control.",
+          "keywords": {
+            "0": "success",
+            "1": "Trust",
+            "2": "abundance",
+            "3": "guidance",
+            "4": "stability"
+          },
+          "context": "Your best potential is to build a permanent order with trust and abundance."
+        },
+        "position5": {
+          "upright": "King of the Talisman, in the recent past, you may have demonstrated material success, strong order, or leadership.",
+          "reversed": "In the recent past, you may have experienced ambition, authority, or dissatisfaction.",
+          "keywords": {
+            "0": "success",
+            "1": "layout",
+            "2": "abundance",
+            "3": "leadership",
+            "4": "ambition"
+          },
+          "context": "Your recent past may have been shaped by experiences of success or dissatisfaction."
+        },
+        "position6": {
+          "upright": "In the near future, the King of the Talisman can establish a strong order, achieve success, and give you confidence in your surroundings.",
+          "reversed": "In the near future, the reverse Talisman King may come to the attention of ambition, oppression, or lack of stability.",
+          "keywords": {
+            "0": "success",
+            "1": "stability",
+            "2": "Trust",
+            "3": "leadership",
+            "4": "abundance"
+          },
+          "context": "Your near future will be shaped by success or instability."
+        },
+        "position7": {
+          "upright": "Talisman King, you are now in a strong, stable, reassuring state of energy.",
+          "reversed": "Reverse Talisman King, right now, the lack of ambition, oppression, or stability may challenge you.",
+          "keywords": {
+            "0": "success",
+            "1": "stability",
+            "2": "leadership",
+            "3": "Trust",
+            "4": "abundance"
+          },
+          "context": "Your current situation is shaped by success or instability."
+        },
+        "position8": {
+          "upright": "Talisman King, the outside effects can give you strong support, leadership, and material security.",
+          "reversed": "Reverse Talisman King, external effects can lead to oppressive figures, ambition, or extreme control.",
+          "keywords": {
+            "0": "leadership",
+            "1": "success",
+            "2": "stability",
+            "3": "abundance",
+            "4": "Trust"
+          },
+          "context": "The external effects can give you confidence or pressure."
+        },
+        "position9": {
+          "upright": "The amulet king may show fear of failure, loss of authority, or lack of financial security.",
+          "reversed": "The reverse Talisman can cause the anxiety of oppressive figures, ambition, or loss of control.",
+          "keywords": {
+            "0": "success",
+            "1": "authority",
+            "2": "abundance",
+            "3": "control",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on failure or loss of authority."
+        }
+      }
+    }
+  },
+  "relationship-analysis": {
+    "meanings": {
+      "thefool": {
+        "position1": {
+          "upright": "The madman says that your relationship now carries fresh energy and unknownness, that steps may be bold but undirected.",
+          "reversed": "Reverse-Crazy shows that in the present situation the bond is clouded by indecisiveness and responsibilities. The uncertainty prevails. The symptom is: unthinking promises, delayed decisions.",
+          "keywords": {
+            "0": "innovation",
+            "1": "freedom",
+            "2": "uncertainty",
+            "3": "adventure",
+            "4": "start"
+          },
+          "context": "In the current situation, the bond is full of new beginnings and discoveries, but lack of direction creates instability, a clear compass will bring peace in the relationship."
+        },
+        "position2": {
+          "upright": "Crazy shows your heart's desire for freedom and a new leaf, and you have pure energy for adventure.",
+          "reversed": "Reverse Madman says that fear of commitment and indecisiveness are throwing away your feelings, that there may be a fear of loss of freedom inside, that there's uncertainty, that there's ups and downs and downs.",
+          "keywords": {
+            "0": "freedom",
+            "1": "fad",
+            "2": "uncertainty",
+            "3": "adventure",
+            "4": "indecisive"
+          },
+          "context": "Right now, your emotions are opening up, and you're having a conflict between a desire for freedom and a desire for bond, and that duality is branding your feelings."
+        },
+        "position3": {
+          "upright": "Crazy says your expectations are a fresh start and a free space, and deep down you want the bond to lead you to exploration and new experiences... courage, openness, innocence.",
+          "reversed": "Reverse-Crazy shows that your expectations are to be protected from uncertainty and the possibility of being lost. You want safe boundaries when you open to a new one.",
+          "keywords": {
+            "0": "freedom",
+            "1": "start",
+            "2": "experience",
+            "3": "Courage",
+            "4": "field"
+          },
+          "context": "Your expectation is to open up, but it's in a safe frame, and you don't want to feel rootless when you're experiencing adventure."
+        },
+        "position4": {
+          "upright": "Take a brave, brave, but conscious first step, with your curiosity as your guide, even a little movement can lead to the flow when innovation meets with courage.",
+          "reversed": "The Reverse-Crazy says the hasty decisions will wear out your heart. First, clarify your intentions, then step forward.",
+          "keywords": {
+            "0": "Courage",
+            "1": "innovation",
+            "2": "curiosity",
+            "3": "flow",
+            "4": "balance"
+          },
+          "context": "Your advice is to re-open, but to hold on to self-responsibility, and small and sustainable steps can restore confidence, so move on with curiosity, honor your limits."
+        },
+        "position5": {
+          "upright": "The madman whispers that his path opens with a fresh start, make a compass of his curiosity, a brave little step will open the door to a new adventure.",
+          "reversed": "Reverse Madman reminds you that rushing steps will wear your heart out, first clear your direction, clear your intentions, then move.",
+          "keywords": {
+            "0": "innovation",
+            "1": "Courage",
+            "2": "curiosity",
+            "3": "flow",
+            "4": "balance"
+          },
+          "context": "Your road map is to move with fresh steps and curiosity, and courage will grow with small moves."
+        },
+        "position6": {
+          "upright": "Your partner expects you to have a pure beginning, a risk-taking energy, a free flow with the child inside you, to go out on new roads with him.",
+          "reversed": "He expects you to calm your partner's anxiety, not to take too irresponsible steps, even though he likes freedom, a secure frame is important to him.",
+          "keywords": {
+            "0": "freedom",
+            "1": "start",
+            "2": "curiosity",
+            "3": "Courage",
+            "4": "Trust"
+          },
+          "context": "Your partner wants a fresh start, both light and reassuring."
+        },
+        "position7": {
+          "upright": "In the future of communication, there are fresh beginnings and freeing energy, and a new cycle can be set in motion with a brave and pure heart.",
+          "reversed": "In the future, ambiguities and hasty decisions can pose a risk, disorientation can create disarray in the bond.",
+          "keywords": {
+            "0": "start",
+            "1": "freedom",
+            "2": "new cycle",
+            "3": "curiosity"
+          },
+          "context": "The future of communication will open up like a new adventure, but the rootless must be avoided."
+        }
+      },
+      "themagician": {
+        "position1": {
+          "upright": "The wizard shows that your relationship is now based on the power of communication and intent. Your words direct the energy of the bond. Tip: Net communication creates magic.",
+          "reversed": "The Reverse Wizard shows that the relationship is affected by unfinished words and misunderstandings in the current situation. There is an open energy for manipulation. The symptom is inconsistencies and fuzzy messages.",
+          "keywords": {
+            "0": "communication",
+            "1": "intent",
+            "2": "gravity",
+            "3": "creativity",
+            "4": "expression"
+          },
+          "context": "Communication plays a key role in the current situation. Netness and transparency will strengthen your bond. The harmony of the word is now very important."
+        },
+        "position2": {
+          "upright": "The wizard shows that you have strong intentions and attraction in your senses, and you feel intense enough to guide your partner.",
+          "reversed": "The Reverse Wizard tells us that your intentions are clouded by inconsistencies and inconsistencies.",
+          "keywords": {
+            "0": "gravity",
+            "1": "intent",
+            "2": "expression",
+            "3": "power",
+            "4": "communication"
+          },
+          "context": "There's a lot in your heart right now, but there may be difficulty in transmission, clarity and clarity that will ease your feelings."
+        },
+        "position3": {
+          "upright": "The wizard says your expectation is to express your feelings clearly and to communicate strongly in the bond. You want to use your words as magic... open expression, creativity.",
+          "reversed": "The Reverse Wizard says your expectations are to avoid manipulation and half words. Honesty is the greatest need for you.",
+          "keywords": {
+            "0": "communication",
+            "1": "Honesty",
+            "2": "intent",
+            "3": "expression",
+            "4": "transparency"
+          },
+          "context": "Your expectations are strong and clear communication, and you're relieved to be openly shared by mutual transparency and intentions."
+        },
+        "position4": {
+          "upright": "Wizard, write down your intentions and bridge with your word, and when you line up the doors with what you say, it's easy to open the doors... clear sentence, clear reality.",
+          "reversed": "Reverse Wizard, drop the masks and stay away from the perception games. The transformative force works with transparency.",
+          "keywords": {
+            "0": "intent",
+            "1": "expression",
+            "2": "creation",
+            "3": "clarity",
+            "4": "Trust"
+          },
+          "context": "Your advice is to make your intentions visible and stabilize them with small actions, and the clear word, clear step, and gentle rhythm will bring life to your relationship."
+        },
+        "position5": {
+          "upright": "Sorcerer tells you that the way is to clear your intentions, and when you align your actions with your word, new doors will be opened before you.",
+          "reversed": "The Reverse Wizard reminds me that vague promises or masked approaches are in the way, and when you move on with transparency, the transformation will begin.",
+          "keywords": {
+            "0": "intent",
+            "1": "expression",
+            "2": "creation",
+            "3": "clarity",
+            "4": "Trust"
+          },
+          "context": "Your road map, open intentions and small concrete steps will strengthen your clarity."
+        },
+        "position6": {
+          "upright": "Your partner expects you to be there for him with clear words, consistent steps and creativity, an energy that does what he says and makes his intentions visible.",
+          "reversed": "Your partner is waiting for a stand free from masks and ambiguity, where transparency, instead of perception games, will comfort him.",
+          "keywords": {
+            "0": "intent",
+            "1": "creation",
+            "2": "expression",
+            "3": "transparency",
+            "4": "consistency"
+          },
+          "context": "The partner's word and actions are one, waiting for integrity."
+        },
+        "position7": {
+          "upright": "There's creation and power in the future of communication, and together, new projects, new life patterns.",
+          "reversed": "In the future, lack of communication or manipulation can limit the potential of the bond, and incomplete words can be disappointing.",
+          "keywords": {
+            "0": "creation",
+            "1": "communication",
+            "2": "power",
+            "3": "co-operation"
+          },
+          "context": "The future of communication is open to creating together. The clarity of expression will be the key."
+        }
+      },
+      "thehighpriestess": {
+        "position1": {
+          "upright": "The Mother Superior says that the relationship is in the present situation, in secret emotions and intuition. Everything may not have been spoken clearly. Hint: Listen to your inner voice.",
+          "reversed": "Reverse Mother Superior shows that silence and repressed emotions create distances in the current energy. Discretion creates doubt. Symptoms: half sentences, introduction.",
+          "keywords": {
+            "0": "intuition",
+            "1": "Secret",
+            "2": "inner world",
+            "3": "Distance",
+            "4": "Silence"
+          },
+          "context": "In the current case, the language of secrecy and suggestion is dominant, and the field of clarity and trust will bring balance in the relationship, and you need to turn your inner voice into a clear expression."
+        },
+        "position2": {
+          "upright": "The High Priestess says that you hide your feelings deep down, that you're intuitive, but shy to share.",
+          "reversed": "Inverted Mother Superior shows that repressed emotions turn to silence. This creates distance in proximity. The symptom is silence and doubt.",
+          "keywords": {
+            "0": "intuition",
+            "1": "Secret",
+            "2": "inner world",
+            "3": "Silence",
+            "4": "Distance"
+          },
+          "context": "You're feeling a lot right now, but you're sharing a little."
+        },
+        "position3": {
+          "upright": "The High Priestess says your expectations are to open up your inner confidence and intuition, and you want your feelings to be listened to with respect... safe secret, worth the intuition.",
+          "reversed": "Inverted Mother Superior, your expectation is to protect yourself from the distance created by silence and secrets. The clarity is healing for you.",
+          "keywords": {
+            "0": "intuition",
+            "1": "Trust",
+            "2": "openness",
+            "3": "inner world",
+            "4": "sensitivity"
+          },
+          "context": "Your expectations are that your feelings can be shared safely, not hidden, but visible."
+        },
+        "position4": {
+          "upright": "Mother Superior, lean on your intuition, and listen to your inner wisdom, and softly share in the proper ground, and listen to the signs of silence.",
+          "reversed": "Reverse Mother Superior sets up a wall of extreme concealment. Choose a safe space and gradually open its contents.",
+          "keywords": {
+            "0": "intuition",
+            "1": "wisdom",
+            "2": "Secret",
+            "3": "share",
+            "4": "Tranquillity"
+          },
+          "context": "Your advice is to keep the bridge of communication alive while honoring your inner compass."
+        },
+        "position5": {
+          "upright": "Mother Superior advises you to make a compass of your intuition, trust the signs of silence, and when the time comes, kindly share them.",
+          "reversed": "Reverse Mother Superior says that overhiding can trap you from wall to wall, choosing safe spaces with your heart, creating gradual openings.",
+          "keywords": {
+            "0": "intuition",
+            "1": "wisdom",
+            "2": "Secret",
+            "3": "share",
+            "4": "balance"
+          },
+          "context": "Your road map is to build a bridge honoring your inner voice, where silence and clarity will meet in balance."
+        },
+        "position6": {
+          "upright": "Your partner wants to rely on your insight, your deep wisdom and your calm strength, and knowing that you will keep his secrets safe gives him peace.",
+          "reversed": "He expects you not to raise your partner's walls too high, to open your inner world to him from time to time, to build confidence in the relationship.",
+          "keywords": {
+            "0": "intuition",
+            "1": "wisdom",
+            "2": "Secret",
+            "3": "Trust",
+            "4": "Tranquillity"
+          },
+          "context": "Your partner wants to lean on your intuition, but he also wants to see clarity."
+        },
+        "position7": {
+          "upright": "In the future of communication, intuition and depth can develop a more spiritual, more internal bond.",
+          "reversed": "Excessive silence or hidden emotions can create distances in the future, reducing the temperature of closure.",
+          "keywords": {
+            "0": "intuition",
+            "1": "depth",
+            "2": "Secret",
+            "3": "spirituality"
+          },
+          "context": "The future of communication will be strengthened by intuitive bonds, but if the secret is too much, the wall can be built."
+        }
+      },
+      "theempress": {
+        "position1": {
+          "upright": "The Empress says that in the present situation, the relationship feeds on the energy of love, care, and fertility.",
+          "reversed": "The Reverse Empress shows that over-claiming or lack of care upsets the balance in the present situation. The symptom is exhausted compassion, the shadow of jealousy.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "abundance",
+            "2": "feeding",
+            "3": "Feminine energy",
+            "4": "compatibility"
+          },
+          "context": "In the present situation, the flow of love is strong, but if self-care fails, the bond weakens, the balanced compassion will nourish your relationship."
+        },
+        "position2": {
+          "upright": "The Empress says in your heart the desire to give love and feed is dominant, and it's natural for you to touch with compassion.",
+          "reversed": "The Reverse Empress says that overclaiming or lack of self-care forces your feelings.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "feeding",
+            "2": "abundance",
+            "3": "Feminine energy",
+            "4": "compatibility"
+          },
+          "context": "Right now, your desire to give love is moving forward, but keeping an eye on your own needs will keep the balance."
+        },
+        "position3": {
+          "upright": "The Empress says your expectation is loving care, compassion, and abundance, and your desire to grow and feed in your vineyard is strong... abundance, trust, warmth.",
+          "reversed": "Reverse Empress, your expectations are to avoid extreme addiction or overwhelming possession. You seek free compassion. You seek balance, need for self-care.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "abundance",
+            "2": "feeding",
+            "3": "freedom",
+            "4": "balance"
+          },
+          "context": "Your expectation is a bond that feeds on love but can also breathe free air, and it's very important for you to have compassion and freedom together."
+        },
+        "position4": {
+          "upright": "Empress, first feed yourself, then freely share your love, compassion gives root, take your time, self-care is the fuel of love.",
+          "reversed": "Reverse Empress points out over-owning and exhausted. Keep sharing balanced, breathe.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "abundance",
+            "2": "self - care",
+            "3": "feeding",
+            "4": "rooting"
+          },
+          "context": "Your advice is not to forget to fill up when giving love, and gentle rituals and routines that are good for your body make the warmth of the relationship permanent."
+        },
+        "position5": {
+          "upright": "The Empress recommends that you first feed yourself and open fields of love, where compassion and self-care will fill your path with plenty.",
+          "reversed": "Reverse Empress says you've blocked the path to overclaiming or extinction, balance the sharing, breathe and come back to you.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "abundance",
+            "2": "self - care",
+            "3": "feeding",
+            "4": "balance"
+          },
+          "context": "Your road map is to remember self-care, and as your heart fills, your share will grow stronger."
+        },
+        "position6": {
+          "upright": "Your partner expects you to raise an area of compassion, nutrition, and love, asking for warmth and support.",
+          "reversed": "Your partner doesn't want to see over-claiming or consuming energy, he expects you to leave him space with balanced compassion and self-care.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "abundance",
+            "2": "feeding",
+            "3": "self - care",
+            "4": "field"
+          },
+          "context": "Your partner is expecting generous but balanced compassion."
+        },
+        "position7": {
+          "upright": "In the future of communication, there is love, fertility, and nutritious energy, and the common habitat grows and the temperature increases.",
+          "reversed": "Excessive dependency or lack of self-care can lead to extinction in the future.",
+          "keywords": {
+            "0": "fertility",
+            "1": "Compassion",
+            "2": "abundance",
+            "3": "feeding"
+          },
+          "context": "The future of communication will be built on growth and nutrition, but self-care is essential."
+        }
+      },
+      "theemperor": {
+        "position1": {
+          "upright": "The Emperor shows that the relationship is shaped in the present situation by the need for security and order, the search for integrity is dominant, the clue is that boundaries must be drawn with love.",
+          "reversed": "The Reverse Emperor says that rigor and control can cast a shadow on the current energy, and flexibility can disappear, and the symptom is stubbornness and coldness.",
+          "keywords": {
+            "0": "Trust",
+            "1": "layout",
+            "2": "authority",
+            "3": "limit",
+            "4": "stability"
+          },
+          "context": "In the present situation, the search for trust is moving forward, and extreme rigor can make intimacy difficult, and flexibility will create room for love."
+        },
+        "position2": {
+          "upright": "The Emperor shows in your senses a desire for order, trust and integrity, and your heart wants to find peace with stability.",
+          "reversed": "The Reverse Emperor says that hugging strict rules makes your emotions hard.",
+          "keywords": {
+            "0": "Trust",
+            "1": "limit",
+            "2": "layout",
+            "3": "control",
+            "4": "authority"
+          },
+          "context": "You're looking for confidence and stability right now, and flexibility will soften your heart."
+        },
+        "position3": {
+          "upright": "The Emperor says your expectations are secure structure and determination, and you want to establish a stable bond... order, clear border, integrity.",
+          "reversed": "The Reverse Emperor shows that your expectations are to create a space outside of extreme control and strict rules. You seek flexibility.",
+          "keywords": {
+            "0": "Trust",
+            "1": "stability",
+            "2": "layout",
+            "3": "authority",
+            "4": "flexibility"
+          },
+          "context": "Your expectation is to proceed on a secure basis, but you seek a gentle order without being driven into rigor."
+        },
+        "position4": {
+          "upright": "The Emperor wants you to build clear boundaries and soft structures, order feeds your sense of trust, not rules, but deals.",
+          "reversed": "The Reverse Emperor reminds you to loosen rigor. Flexibility expands proximity.",
+          "keywords": {
+            "0": "limit",
+            "1": "layout",
+            "2": "Trust",
+            "3": "stability",
+            "4": "flexibility"
+          },
+          "context": "Your advice is not to close the heart when setting a frame, the fair work department and the open calendar reduce friction."
+        },
+        "position5": {
+          "upright": "The Emperor says his path will be opened to a secure line and a balanced arrangement.",
+          "reversed": "The Reverse Emperor whispers that too much rigor is clouding the heat, and with flexibility and softness, the road will be more fluid.",
+          "keywords": {
+            "0": "limit",
+            "1": "layout",
+            "2": "Trust",
+            "3": "stability",
+            "4": "flexibility"
+          },
+          "context": "Your road map, open borders and fair labor, trust will flow with flexibility."
+        },
+        "position6": {
+          "upright": "Your partner expects order, trust, and clear boundaries, and he wants to see a structure and stability that supports him.",
+          "reversed": "Your partner expects more flexibility than strict rules, and a strong but understanding leadership is precious to him.",
+          "keywords": {
+            "0": "layout",
+            "1": "Trust",
+            "2": "limit",
+            "3": "stability",
+            "4": "leadership"
+          },
+          "context": "Your partner is looking for a pattern that gives confidence but doesn't close the heart."
+        },
+        "position7": {
+          "upright": "In the future of communication, there's order, security, and a solid structure, and the foundations are getting stronger.",
+          "reversed": "Excessive rigor or control can make intimacy difficult in the future.",
+          "keywords": {
+            "0": "layout",
+            "1": "Trust",
+            "2": "stability",
+            "3": "authority"
+          },
+          "context": "The future of communication will sit on solid ground, but flexibility must be maintained."
+        }
+      },
+      "thehierophant": {
+        "position1": {
+          "upright": "Aziz shows that the relationship is tested in the current situation by values and traditions. The search for approval and acceptance is felt. Tip: review common values.",
+          "reversed": "The Reverse Saint says that traditional patterns or riots force harmony in the present situation. The symptom is patterned roles, internal conflict.",
+          "keywords": {
+            "0": "value",
+            "1": "tradition",
+            "2": "confirmation",
+            "3": "compatibility",
+            "4": "ritual"
+          },
+          "context": "The subject of values in the current situation is in the forefront, the common compass is required to adapt, and maintain your own unique path."
+        },
+        "position2": {
+          "upright": "Aziz, it shows that your feelings seek harmony with values and customs, and your desire to be approved may be strong.",
+          "reversed": "The Reverse Saint shows that stuck to the molds or the blind rebel has left your feelings conflicted.",
+          "keywords": {
+            "0": "value",
+            "1": "faith",
+            "2": "ritual",
+            "3": "compatibility",
+            "4": "confirmation"
+          },
+          "context": "You're in search of belonging right now, but your originality is making a sound, and following the inner compass will heal."
+        },
+        "position3": {
+          "upright": "Aziz says that your expectations are tradition, values, and holy unity, and you want your bond to sit on serious, deep ground... approval, value harmony.",
+          "reversed": "Reverse Saint says your expectations are to stay away from blind traditions and compulsions. Your soul seeks a unique unity.",
+          "keywords": {
+            "0": "value",
+            "1": "ritual",
+            "2": "compatibility",
+            "3": "Originality",
+            "4": "belonging"
+          },
+          "context": "Your expectations are a bond based on values, but it's important for you to live in originality without being trapped in patterns."
+        },
+        "position4": {
+          "upright": "Aziz, set up little rituals in harmony with your values, balance the need for approval with your inner guide... simplicity is sacred.",
+          "reversed": "Stop the reverse Saint, or blind tradition, or blind rebellion, and find the measure of the one that suits you.",
+          "keywords": {
+            "0": "value",
+            "1": "ritual",
+            "2": "compatibility"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1044 @@
+{
+  "career": {
+    "meanings": {
+      "queenofpentacles": {
+        "position4": {
+          "keywords": {
+            "0": "productivity",
+            "1": "practice",
+            "2": "resource management",
+            "3": "Compassion",
+            "4": "balance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "practice",
+            "1": "resource management",
+            "2": "balance",
+            "3": "productivity",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "resource",
+            "1": "practice",
+            "2": "productivity",
+            "3": "balance",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "resource management",
+            "1": "productivity",
+            "2": "balance",
+            "3": "practice",
+            "4": "future"
+          }
+        }
+      },
+      "kingofpentacles": {
+        "position1": {
+          "keywords": {
+            "0": "abundance",
+            "1": "leadership",
+            "2": "Trust",
+            "3": "material success",
+            "4": "stability"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "leadership",
+            "1": "abundance",
+            "2": "Trust",
+            "3": "stability",
+            "4": "success"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "leadership",
+            "1": "economy",
+            "2": "authority",
+            "3": "system",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "strategy",
+            "1": "result",
+            "2": "leadership",
+            "3": "Trust",
+            "4": "efficiency"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "strategy",
+            "1": "leadership",
+            "2": "Trust",
+            "3": "Vision",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "control",
+            "1": "Vision",
+            "2": "responsibilities",
+            "3": "guarantee",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "leadership",
+            "1": "stability",
+            "2": "financial security",
+            "3": "Vision",
+            "4": "future"
+          }
+        }
+      },
+      "aceofcups": {
+        "position2": {
+          "keywords": {
+            "0": "Inspired",
+            "1": "emotion",
+            "2": "start",
+            "3": "creativity",
+            "4": "Compassion"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "Inspired",
+            "1": "emotion",
+            "2": "start",
+            "3": "intuition",
+            "4": "flow"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "intimacy",
+            "1": "Inspired",
+            "2": "emotion",
+            "3": "start",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "Inspired",
+            "1": "intimacy",
+            "2": "emotion",
+            "3": "start",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "emotion",
+            "1": "expression",
+            "2": "Inspired",
+            "3": "Disappointment",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "Inspired",
+            "1": "start",
+            "2": "satisfaction",
+            "3": "emotion",
+            "4": "future"
+          }
+        },
+        "position1": {
+          "keywords": {
+            "0": "emotional satisfaction",
+            "1": "passion",
+            "2": "The sound of the heart",
+            "3": "inner happiness"
+          }
+        }
+      },
+      "twoofcups": {
+        "position2": {
+          "keywords": {
+            "0": "partnership",
+            "1": "co-operation",
+            "2": "compatibility",
+            "3": "balance",
+            "4": "connection"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "partnership",
+            "1": "compatibility",
+            "2": "balance",
+            "3": "Relationships",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "compatibility",
+            "1": "partnership",
+            "2": "co-operation",
+            "3": "balance",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "co-operation",
+            "1": "compatibility",
+            "2": "relationship",
+            "3": "balance",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "relationship",
+            "1": "compatibility",
+            "2": "partnership",
+            "3": "Trust",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "co-operation",
+            "1": "compatibility",
+            "2": "Trust",
+            "3": "partnership",
+            "4": "future"
+          }
+        },
+        "position1": {
+          "keywords": {
+            "0": "co-operation",
+            "1": "balance",
+            "2": "compatibility",
+            "3": "partnership"
+          }
+        }
+      },
+      "threeofcups": {
+        "position2": {
+          "keywords": {
+            "0": "celebration",
+            "1": "support",
+            "2": "friendship",
+            "3": "share",
+            "4": "connection"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "Community",
+            "1": "support",
+            "2": "celebration",
+            "3": "relationship",
+            "4": "connection"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "support",
+            "1": "Team",
+            "2": "share",
+            "3": "celebration",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "Team",
+            "1": "celebration",
+            "2": "support",
+            "3": "share",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "support",
+            "1": "Community",
+            "2": "social connection",
+            "3": "Isolation",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "celebration",
+            "1": "support",
+            "2": "Community",
+            "3": "success",
+            "4": "future"
+          }
+        },
+        "position1": {
+          "keywords": {
+            "0": "social interaction",
+            "1": "Community",
+            "2": "celebration",
+            "3": "Team spirit"
+          }
+        }
+      },
+      "fourofcups": {
+        "position2": {
+          "keywords": {
+            "0": "opportunity",
+            "1": "awareness",
+            "2": "Awakening",
+            "3": "option",
+            "4": "angle"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "opportunity",
+            "1": "timing",
+            "2": "cycle",
+            "3": "awareness",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "satisfaction",
+            "1": "awareness",
+            "2": "Motivation",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "awareness",
+            "1": "opportunity",
+            "2": "Motivation",
+            "3": "innovation",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "opportunity",
+            "1": "Motivation",
+            "2": "Recklessness",
+            "3": "awareness",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "satisfaction",
+            "1": "awareness",
+            "2": "search",
+            "3": "Don't think.",
+            "4": "future"
+          }
+        },
+        "position1": {
+          "keywords": {
+            "0": "opportunities",
+            "1": "dissatisfaction",
+            "2": "Introspection",
+            "3": "new perspective"
+          }
+        }
+      },
+      "fiveofcups": {
+        "position2": {
+          "keywords": {
+            "0": "lesson",
+            "1": "opportunity",
+            "2": "Don't get over the loss.",
+            "3": "Progress",
+            "4": "new direction"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "missing",
+            "1": "Disappointment",
+            "2": "history",
+            "3": "lesson",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "missing",
+            "1": "effort",
+            "2": "Patience",
+            "3": "balance",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "lesson",
+            "1": "focus",
+            "2": "Luck",
+            "3": "awareness",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "missing",
+            "1": "Regret",
+            "2": "focus",
+            "3": "lesson",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "lesson",
+            "1": "missing",
+            "2": "focus",
+            "3": "Enforcement",
+            "4": "future"
+          }
+        },
+        "position1": {
+          "keywords": {
+            "0": "Disappointment",
+            "1": "Losses",
+            "2": "Recovery",
+            "3": "new beginning"
+          }
+        }
+      }
+    }
+  },
+  "home": {
+    "services": {
+      "numerology": {
+        "features": {
+          "0": "The Path of Life",
+          "1": "Number of Strings",
+          "2": "Spiritual Desire",
+          "3": "Log Number"
+        }
+      },
+      "tarot": {
+        "features": {
+          "0": "The Opening of Love",
+          "1": "Career Guidance",
+          "2": "Daily Guidance",
+          "3": "Details Comment"
+        }
+      }
+    }
+  },
+  "homepage": {
+    "services": {
+      "numerology": {
+        "features": {
+          "0": "The Path of Life",
+          "1": "Number of Strings",
+          "2": "Spiritual Desire",
+          "3": "Log Number"
+        }
+      },
+      "tarot": {
+        "features": {
+          "0": "The Opening of Love",
+          "1": "Career Guidance",
+          "2": "Daily Guidance",
+          "3": "Details Comment"
+        }
+      }
+    }
+  },
+  "love": {
+    "meanings": {
+      "thefool": {
+        "position2": {
+          "keywords": {
+            "0": "discovery",
+            "1": "== sync, corrected by elderman == @elder_man",
+            "2": "lack of experience",
+            "3": "entertainment",
+            "4": "freedom"
+          }
+        }
+      },
+      "themagician": {
+        "position2": {
+          "keywords": {
+            "0": "Sexual skills",
+            "1": "Attraction",
+            "2": "creativity",
+            "3": "manifesto",
+            "4": "strong desire"
+          }
+        }
+      },
+      "thehighpriestess": {
+        "position2": {
+          "keywords": {
+            "0": "Intuitive attraction",
+            "1": "mystery",
+            "2": "Unspoken desires",
+            "3": "Suppressed sex",
+            "4": "spiritual bond"
+          }
+        }
+      },
+      "theempress": {
+        "position2": {
+          "keywords": {
+            "0": "Lust",
+            "1": "fertility",
+            "2": "sensory",
+            "3": "fertility",
+            "4": "pleasure"
+          }
+        }
+      },
+      "theemperor": {
+        "position2": {
+          "keywords": {
+            "0": "passion",
+            "1": "control",
+            "2": "power",
+            "3": "stability",
+            "4": "leadership"
+          }
+        }
+      },
+      "thehierophant": {
+        "position2": {
+          "keywords": {
+            "0": "traditional sex",
+            "1": "commitment",
+            "2": "ritual",
+            "3": "taboos",
+            "4": "holy bond"
+          }
+        }
+      },
+      "thelovers": {
+        "position2": {
+          "keywords": {
+            "0": "sexual harmony",
+            "1": "soul mate",
+            "2": "passion",
+            "3": "Chemistry",
+            "4": "Deep bond"
+          }
+        }
+      },
+      "thechariot": {
+        "position2": {
+          "keywords": {
+            "0": "high libido",
+            "1": "will",
+            "2": "passion",
+            "3": "control",
+            "4": "energy"
+          }
+        }
+      },
+      "strength": {
+        "position2": {
+          "keywords": {
+            "0": "Balanced passion",
+            "1": "Compassion",
+            "2": "internal power",
+            "3": "Patience",
+            "4": "sexual trust"
+          }
+        }
+      },
+      "thehermit": {
+        "position2": {
+          "keywords": {
+            "0": "Sexual withdrawal",
+            "1": "Low libido",
+            "2": "loneliness",
+            "3": "Introversion",
+            "4": "Distance"
+          }
+        }
+      },
+      "thewheeloffortune": {
+        "position2": {
+          "keywords": {
+            "0": "Fate",
+            "1": "cycles",
+            "2": "unexpected development",
+            "3": "Sexual chemistry",
+            "4": "change"
+          }
+        }
+      },
+      "justice": {
+        "position2": {
+          "keywords": {
+            "0": "balance",
+            "1": "justice",
+            "2": "Honesty",
+            "3": "reciprocity",
+            "4": "respect"
+          }
+        }
+      },
+      "thehangedman": {
+        "position2": {
+          "keywords": {
+            "0": "pause",
+            "1": "sacrifice",
+            "2": "Do not suspend",
+            "3": "Platonic bond",
+            "4": "From a point of view"
+          }
+        }
+      },
+      "death": {
+        "position2": {
+          "keywords": {
+            "0": "sexual transformation",
+            "1": "end",
+            "2": "Rebirth",
+            "3": "Awakening",
+            "4": "ending"
+          }
+        }
+      },
+      "temperance": {
+        "position2": {
+          "keywords": {
+            "0": "balance",
+            "1": "compatibility",
+            "2": "Alchemistry",
+            "3": "measurance",
+            "4": "Compassionate passion"
+          }
+        }
+      },
+      "thedevil": {
+        "position2": {
+          "keywords": {
+            "0": "intense passion",
+            "1": "Sexual attraction",
+            "2": "taboos",
+            "3": "addiction",
+            "4": "fantasy"
+          }
+        }
+      },
+      "thetower": {
+        "position2": {
+          "keywords": {
+            "0": "Sudden enlightenment",
+            "1": "Sexual shock",
+            "2": "The fall of taboos",
+            "3": "Shocking truth",
+            "4": "explosion"
+          }
+        }
+      },
+      "thestar": {
+        "position2": {
+          "keywords": {
+            "0": "It's a cure.",
+            "1": "hope",
+            "2": "Sexual regeneration",
+            "3": "Innocence",
+            "4": "spiritual sex"
+          }
+        }
+      },
+      "themoon": {
+        "position2": {
+          "keywords": {
+            "0": "fantasy",
+            "1": "secret desires",
+            "2": "uncertainty",
+            "3": "Confusion",
+            "4": "Sex like a dream"
+          }
+        }
+      },
+      "thesun": {
+        "position2": {
+          "keywords": {
+            "0": "joy",
+            "1": "Enliversity",
+            "2": "Sexual freedom",
+            "3": "satisfaction",
+            "4": "high energy"
+          }
+        }
+      },
+      "judgement": {
+        "position2": {
+          "keywords": {
+            "0": "Sexual awakening",
+            "1": "Rebirth",
+            "2": "call",
+            "3": "reckoning",
+            "4": "Forgiveness"
+          }
+        }
+      },
+      "theworld": {
+        "position2": {
+          "keywords": {
+            "0": "completion",
+            "1": "Sexual satisfaction",
+            "2": "integrity",
+            "3": "success",
+            "4": "compatibility"
+          }
+        }
+      },
+      "aceofcups": {
+        "position2": {
+          "keywords": {
+            "0": "emotional sex",
+            "1": "love",
+            "2": "Compassion",
+            "3": "new beginning",
+            "4": "fertility"
+          }
+        }
+      },
+      "twoofcups": {
+        "position2": {
+          "keywords": {
+            "0": "perfect chemistry",
+            "1": "mutual attraction",
+            "2": "Tensile compatibility",
+            "3": "Romantic sex",
+            "4": "soul mate"
+          }
+        }
+      },
+      "threeofcups": {
+        "position2": {
+          "keywords": {
+            "0": "Fun sex",
+            "1": "Irresponsibility",
+            "2": "celebration",
+            "3": "Flirting",
+            "4": "Third person"
+          }
+        }
+      },
+      "fourofcups": {
+        "position2": {
+          "keywords": {
+            "0": "Sexual disinterest",
+            "1": "dissatisfaction",
+            "2": "Low libido",
+            "3": "Boredom",
+            "4": "Don't turn it down."
+          }
+        }
+      },
+      "fiveofcups": {
+        "position2": {
+          "keywords": {
+            "0": "sexual mourning",
+            "1": "Regret",
+            "2": "Past trauma",
+            "3": "Disappointment",
+            "4": "grief"
+          }
+        }
+      },
+      "sixofcups": {
+        "position2": {
+          "keywords": {
+            "0": "Innocence",
+            "1": "Compassion",
+            "2": "nostalgia",
+            "3": "Sweetness",
+            "4": "Ex-boyfriend"
+          }
+        }
+      },
+      "sevenofcups": {
+        "position2": {
+          "keywords": {
+            "0": "sexual fantasy",
+            "1": "Confusion",
+            "2": "options",
+            "3": "illusion",
+            "4": "Imagination"
+          }
+        }
+      },
+      "eightofcups": {
+        "position2": {
+          "keywords": {
+            "0": "Sexual dissatisfaction",
+            "1": "search",
+            "2": "Don't go away",
+            "3": "deep meaning",
+            "4": "journey"
+          }
+        }
+      },
+      "nineofcups": {
+        "position2": {
+          "keywords": {
+            "0": "Sexual satisfaction",
+            "1": "pleasure",
+            "2": "Lust",
+            "3": "satisfaction",
+            "4": "generosity"
+          }
+        }
+      },
+      "tenofcups": {
+        "position2": {
+          "keywords": {
+            "0": "emotional security",
+            "1": "love - filled sex",
+            "2": "compatibility",
+            "3": "permanent bond",
+            "4": "family"
+          }
+        }
+      },
+      "pageofcups": {
+        "position2": {
+          "keywords": {
+            "0": "Flirting",
+            "1": "It's a romantic start.",
+            "2": "sensitivity",
+            "3": "Sexual curiosity",
+            "4": "proposal"
+          }
+        }
+      },
+      "knightofcups": {
+        "position2": {
+          "keywords": {
+            "0": "romance",
+            "1": "Temptation",
+            "2": "Idealistic love",
+            "3": "Sensitivity",
+            "4": "Passionate offer"
+          }
+        }
+      },
+      "queenofcups": {
+        "position2": {
+          "keywords": {
+            "0": "Empathic sex",
+            "1": "Compassion",
+            "2": "Intuitive connection",
+            "3": "emotional depth",
+            "4": "Nutrition"
+          }
+        }
+      },
+      "kingofcups": {
+        "position2": {
+          "keywords": {
+            "0": "emotional maturity",
+            "1": "Balanced passion",
+            "2": "Compassion",
+            "3": "control",
+            "4": "wisdom"
+          }
+        }
+      },
+      "aceofswords": {
+        "position2": {
+          "keywords": {
+            "0": "Mental stimulation",
+            "1": "net desire",
+            "2": "Honest communication",
+            "3": "sharp pull",
+            "4": "decision"
+          }
+        }
+      },
+      "twoofswords": {
+        "position2": {
+          "keywords": {
+            "0": "sexual indecisive",
+            "1": "defence",
+            "2": "Wall-building",
+            "3": "Tension",
+            "4": "avoidance"
+          }
+        }
+      },
+      "threeofswords": {
+        "position2": {
+          "keywords": {
+            "0": "Sexual frustration",
+            "1": "Don't cheat.",
+            "2": "Pain",
+            "3": "Heartbreak",
+            "4": "grief"
+          }
+        }
+      },
+      "fourofswords": {
+        "position2": {
+          "keywords": {
+            "0": "sexual break",
+            "1": "Perpetuation",
+            "2": "rest",
+            "3": "Recovery",
+            "4": "Low libido"
+          }
+        }
+      },
+      "fiveofswords": {
+        "position2": {
+          "keywords": {
+            "0": "sexual conflict",
+            "1": "selfishness",
+            "2": "Power struggle",
+            "3": "Aggression",
+            "4": "defeat"
+          }
+        }
+      },
+      "sixofswords": {
+        "position2": {
+          "keywords": {
+            "0": "Sexual recovery",
+            "1": "transition",
+            "2": "Peace",
+            "3": "Don't let go of the past",
+            "4": "Don't calm down."
+          }
+        }
+      },
+      "sevenofswords": {
+        "position2": {
+          "keywords": {
+            "0": "Don't cheat.",
+            "1": "secrecy",
+            "2": "Abstract",
+            "3": "It's dishonest behavior.",
+            "4": "Secrets"
+          }
+        }
+      },
+      "eightofswords": {
+        "position2": {
+          "keywords": {
+            "0": "Sexual discretion",
+            "1": "fear",
+            "2": "mental disability",
+            "3": "Insecurity",
+            "4": "limitation"
+          }
+        }
+      },
+      "nineofswords": {
+        "position2": {
+          "keywords": {
+            "0": "Sexual anxiety",
+            "1": "fear",
+            "2": "Guilt",
+            "3": "shame",
+            "4": "performance anxiety"
+          }
+        }
+      },
+      "tenofswords": {
+        "position2": {
+          "keywords": {
+            "0": "The bitter end",
+            "1": "Betrayal",
+            "2": "sexual extinction",
+            "3": "Bottom spot",
+            "4": "The pain of betrayal"
+          }
+        }
+      },
+      "pageofswords": {
+        "position2": {
+          "keywords": {
+            "0": "Sexual curiosity",
+            "1": "communication",
+            "2": "dirty talk",
+            "3": "questioning",
+            "4": "lack of experience"
+          }
+        }
+      },
+      "knightofswords": {
+        "position2": {
+          "keywords": {
+            "0": "Fast sex",
+            "1": "It's reckless.",
+            "2": "Conquest",
+            "3": "It's a one-night stand.",
+            "4": "In a hurry."
+          }
+        }
+      },
+      "queenofswords": {
+        "position2": {
+          "keywords": {
+            "0": "sexual intelligence",
+            "1": "experience",
+            "2": "clarity",
+            "3": "Distance",
+            "4": "independence"
+          }
+        }
+      },
+      "kingofswords": {
+        "position2": {
+          "keywords": {
+            "0": "intellectual sex",
+            "1": "control",
+            "2": "authority",
+            "3": "Honesty",
+            "4": "Distance"
+          }
+        }
+      },
+      "aceofwands": {
+        "position2": {
+          "keywords": {
+            "0": "sexual spark",
+            "1": "passion",
+            "2": "desire",
+            "3": "physical energy",
+            "4": "new beginning"
+          }
+        }
+      },
+      "twoofwands": {
+        "position2": {
+          "keywords": {
+            "0": "Sexual desire",
+            "1": "potential",
+            "2": "planning",
+            "3": "discovery"
+          }
+        }
+      }
+    }
+  }
+}

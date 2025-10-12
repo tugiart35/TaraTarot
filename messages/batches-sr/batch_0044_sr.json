@@ -1,0 +1,886 @@
+{
+  "blog": {
+    "cards": {
+      "four-of-pentacles": {
+        "card_combinations": {
+          "combinations": [
+            {
+              "meaning": "Vaša finansijska sigurnost se povećava, ali ne zaboravite slobodu."
+            },
+            {
+              "card": "Šest šoljica",
+              "meaning": "Zadržavanje previše na prošlosti ili starim vrednostima ometa napredak."
+            },
+            {
+              "card": "Toranj",
+              "meaning": "Strah od gubitka kontrole može se razbiti kroz prisilnu transformaciju."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Četiri izjave pentaklama",
+          "affirmation_list": [
+            "Pravo poverenje počinje unutrašnjim ravnotežom.",
+            "Deljenje povećava obilje, pustio sam strahove.",
+            "Ja sam u materijalnoj i duhovnoj ravnoteži."
+          ]
+        },
+        "cta": {
+          "main": "Zapamtite svest o obilje: Deljenje vas ne umanjuje, to vas uvećava.",
+          "micro": "Podelite nešto iz srca ili danas praktikujte zahvalnost."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavljaju četiri pentakla?",
+            "answer": "Predstavlja želju za održavanjem finansijske sigurnosti, nalažu da održi kontrolu i važnost deljenja."
+          },
+          {
+            "question": "Šta znači obrnuti četiri pentakla?",
+            "answer": "To znači strah od gubitka, uteškoće ili opsesije sa kontrolom. Ponovo morate da se setite protoka."
+          },
+          {
+            "question": "U kojim situacijama je četiri pentaklama snažna?",
+            "answer": "Moćno je kada je u pitanju uspostavljanje finansijske strukture, stvarajući siguran prostor i pružanje dugoročne stabilnosti."
+          }
+        ],
+        "related_cards": [
+          "devet stanovnika",
+          "šest šoljica",
+          "toranj"
+        ],
+        "imageUrl": "/cards/rvs/iv-pentacles.vebp"
+      },
+      "five-of-pentacles": {
+        "name": "Pet stanovnika - oskudica resursa, isceljujuće verom i saosećanjem",
+        "short_description": "Pet pentaka simbolizuje lišavanje, isključenje ili privremeno nevolje. Ali ova kartica nas takođe podseća na pojavu solidarnosti, nade i unutrašnjeg isceljenja.",
+        "meanings": {
+          "upright": {
+            "general": "Pet stanovnika predstavlja osećaj poteškoća, gubitka ili usamljenosti. Međutim, ovo je privremeni period; Primjetite izvore podrške i saosećanja oko vas. Prava vlast proizilazi iz solidarnosti.",
+            "love": "Zaljubljena, može se pojaviti emocionalna udaljenost, nerazumevanje ili nedostatak podrške. Ali sa iskrenom komunikacijom i empatijom, jedinstvo se može obnoviti.",
+            "career": "U karijeri mogu se dogoditi privremene finansijske poteškoće ili nesigurnost na posao. Ne bojte se zatražiti pomoć; Solidarnost će vas vratiti na noge.",
+            "money": "Finansijski gubici ili osećaji neadekvatnosti mogu doći do izražaja. Ali ovo je prilika da povratite svoju svest o obilje.",
+            "spiritual": "Duhovno se može doživeti gubitak vere ili unutrašnje umora. Ovaj period su vrata duhovnom robitu."
+          },
+          "reversed": {
+            "general": "Pet Pentaklova obrnuta ukazuje na proces zarastanja i oporavka. Kraj poteškoća se približava; Krenite naprijed sa zahvalnošću i strpljenjem.",
+            "love": "Zaljubljeni, obrnuti položaj ukazuje na isceljenje emocionalnih rana i oživljavanje odnosa.",
+            "career": "U karijeri, moguće je primiti podršku, pomoć ili nove mogućnosti.",
+            "money": "Finansijski oporavak, isplaćivanje dugova ili povećanja prihoda dolazi do izražaja.",
+            "spiritual": "Duhovno, vaša vera se rodila. Počinjete da osećate podršku univerzuma."
+          }
+        },
+        "context": {
+          "mythology": "Pet pentakova simbolizuje potragu za toplom svetlom usred zime. U drevnim pričama, viktimizovani junaci su zaceljeni solidarnošću i verom.",
+          "celtic_cross": {
+            "future": "U bliskoj budućnosti će biti podrška i pomaganje ruku. Poteškoće se prevazilaze solidarnošću.",
+            "hidden_influences": "Skriveni izvori podrške su oko vas; Samo budite otvoreni za traženje pomoći."
+          }
+        },
+        "story": {
+          "title": "Pet pentakala - svetlo usred zime",
+          "description": "Na kartici su dve loše figure koje hodaju pod snegom. Crkveni prozor prolazi, blistavo svetlošću. Potrebno je ući u pomoć, zatražiti pomoć i dozvoliti isceljenje. Ova kartica vas podseća na nadu.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Pet stanovnika je predstavljalo temu siromaštva i isključenosti u srednjem veku. Međutim, njegovo pravo značenje u Tarotu je rođenje solidarnošću.",
+          "mystic_title": "Duhovno značenje: od gladi da isceljuju",
+          "mystic_message": "Duhovno, ova kartica simbolizuje ponovno rođenje nakon gubitka vere. Prihvatite isceljenje.",
+          "cultural_title": "Moderna interpretacija: Empatija i oporavak",
+          "cultural_message": "U savremenom svetu pet pentaka predstavlja ekonomske ili emocionalne krize. Međutim, u ljudskim odnosima saosećanje se zaceljuje sve rane.",
+          "lesson": "Ova kartica predaje ravnotežu između \"traženja pomoći\" i \"davanje pomoći\". Nema poteškoća da ostane teška kada se deli."
+        },
+        "keywords": {
+          "keywords_title": "Pet ključnih reči od pentacles kartica",
+          "keywords_message": "Pet Pentacles Tarot znači, pet pentakovih turskih, lišavanje, solidarnosti, nade, isceljenja, vere, prevazilaženja poteškoća",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Solidarnost, empatija, strpljenje, unutrašnja snaga, isceljivanje, nada, ponovno rođenje.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Zatražite podršku umesto da budete sami; Dozvolite isceljivanje.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Čak i u tami postoji svetlost; Otvori svoje srce i zapamti svoju veru."
+        },
+        "associations": {
+          "title": "Pet od kosmičkih veza Pentacles",
+          "astrology": "Bik i Jarac (finansijska ravnoteža i otpornost)",
+          "numerology": "5 (promena, kriza, transformacija)",
+          "element": "Tlo - rast kroz nevolja",
+          "chakra": "Srce - saosećanje i lepljenje"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa pet pentaka",
+          "combinations": [
+            {
+              "card": "Tri pentakla",
+              "meaning": "Poteškoće se prevazilaze solidarnošću i timskim radom."
+            },
+            {
+              "card": "Sunce",
+              "meaning": "Nakon očaja, počinje period ponovnog rođenja i uspeha."
+            },
+            {
+              "card": "Šest šoljica",
+              "meaning": "Prošla podrška ili prijatelj ponovo može biti svetlo za vas."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Pet potvrda pentakova",
+          "affirmation_list": [
+            "Izazovi me čine jačim, ponovio sam svoju veru.",
+            "Svaka pomoć koja je data sa saosećanjem povećava energiju obilja.",
+            "Svetlost univerzuma je uvek sa mnom, nisam sam."
+          ]
+        },
+        "cta": {
+          "main": "Zapamtite: čak i u najdublje zimi uvek postoji svetlost. Zatražite pomoć, podelite svetlo.",
+          "micro": "Podržati nekoga ili danas prihvati saosećajne pomoć."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja pet pentakala?",
+            "answer": "Predstavlja poteškoće, isključenje ili finansijske poteškoće. Ali to je takođe poziv za solidarnost, veru i isceljenje."
+          },
+          {
+            "question": "Šta znači preokrenuti petorica pentakla?",
+            "answer": "To ukazuje na period isceljenja, pronalaženje podrške i vraćanja na noge. Kraj poteškoća je blizu."
+          },
+          {
+            "question": "U kojim situacijama je pet pentakova moćnih?",
+            "answer": "U vreme gubitka, usamljenosti ili ponovnog rođenja; Moćno je kada nas uči da krenemo naprijed solidarnosti i empatije."
+          }
+        ],
+        "related_cards": [
+          "troje pentakla",
+          "sunce",
+          "šest šoljica"
+        ],
+        "imageUrl": "/cards/rvs/v-pentacles.vebp"
+      },
+      "six-of-pentacles": {
+        "name": "Šest pentakova - deljenja, ravnoteža i zahvalnost",
+        "short_description": "Šest stanovnika predstavlja sveta ravnoteža između davanja i primanja. Obilje se povećava kako se deli; Davanje saosećanja je duhovno bogatstvo.",
+        "meanings": {
+          "upright": {
+            "general": "Šest pentakla predstavlja velikodušnost, deljenje i ravnoteža. Ova kartica je energija saradnje i poštene bavljenje. I davanje i primanje stvaranja prirodnog ciklusa obilja.",
+            "love": "Zaljubljeni, simbolizuje vezu u kojoj je emocionalna razmena uravnotežena i jednak napor i ljubav se deli. Međusobna podrška donosi ravnotežu u vezi.",
+            "career": "U karijeri, dobijanje pomoći ili mentorstva i drugih je istaknuti. Deljenje vašeg znanja donosi dugoročne blagoslove.",
+            "money": "Finansijski je vreme za deljenje i velikodušnost. Deljenje novca, znanja ili vremena sa drugima povećava obilje.",
+            "spiritual": "Duhovno je važno da se davanje i primanje uravnoteže. Kada podelite sa zahvalnošću, vrata univerzalnog obilja otvorene su."
+          },
+          "reversed": {
+            "general": "Šest obrnutih preokreta može ukazivati na neuravnotežene poslove, samo-interes ili nedostatak zahvalnosti. Dajte ono što vam dajete svesrdno i prihvatite ono što dobijate sa zahvalnošću.",
+            "love": "Zaljubljeni, obrnuti položaj može ukazivati na emocionalnu nejednakost ili da jedna stranka nosi teret žrtve. Uspostaviti emocionalnu ravnotežu.",
+            "career": "U vašoj karijeri možda neće biti nagrađen za vaše napore ili nepravedno deljenje. Napravite zahteve, ali držite se dalje od bahatosti.",
+            "money": "Finansijski obratite pažnju na ravnotežu zaduživanja i pozajmljivanja. Finansijsko deljenje treba da se uradi sa savešću.",
+            "spiritual": "Duhovno, poremećajući ravnotežu davanja može dovesti do unutrašnjeg umora. Zapamtite zahvalnost i otvorite svoje srce."
+          }
+        },
+        "context": {
+          "mythology": "Šest stanovnika simboliziralo je princip 'jednaka mera' u davnim vremenima. Ma'at, boginja pravde, držala je skale u ruci da održavaju ravnotežu u univerzumu.",
+          "celtic_cross": {
+            "future": "Energija deljenja ili podrške očekuje vas u bliskoj budućnosti. Ili dobijate pomoć ili ga date.",
+            "hidden_influences": "Skriveni uticaji su energija velikodušnosti koja dolazi iz srca. Davanje vas oslobađam."
+          }
+        },
+        "story": {
+          "title": "Šest pentakala - transformacija obilja",
+          "description": "Kartica pokazuje bogatu figuru koja distribuira novac dva siromašna narod. Ima vage u ruci; Simbolizuje pravdu i ravnotežu. Ova kartica nas podseća da je obilje blagoslovljeno deljenjem. Pravo bogatstvo daje od srca.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Šest pentakila je predstavljalo dobročinstvo i saradnju u srednjem veku. U Tarotu se razvio da znači fer deljenje i energetsku ravnotežu.",
+          "mystic_title": "Duhovno značenje: ravnoteža davanja i primanje",
+          "mystic_message": "Na duhovnom nivou, ova kartica nosi izlečenje davanja od srca. Univerzum se vraća više nego bilo šta dato sa ljubavlju.",
+          "cultural_title": "Moderna interpretacija: jednakost i pravednije deljenje",
+          "cultural_message": "U savremenom svetu, šest pentaklama simbolizuje svest o socijalnoj pravdi, dobročinstvu i zahvalnosti. Naučite da primate dok dajete.",
+          "lesson": "Ova kartica predaje ravnotežu između \"davanja\" i \"prijem\". Obilje se povećava kako se deli; Prihvatanje sa zahvalnošću raste dušu."
+        },
+        "keywords": {
+          "keywords_title": "Šest ključnih reči sa kartama pentacles kartica",
+          "keywords_message": "Šest pentaklova Tarot znači, šest pentakovih turskih, deljenja, ravnoteža, obilja, velikodušnost, zahvalnost, pravda",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Deljenje, pomaganje, obilje, ravnoteža, velikodušnost, zahvalnost, pravda.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Dajte ono što vam dajete svesrdno i prihvatite ono što dobijate sa zahvalnošću.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Obilje raste kada se deli iz srca. Dajte sa zahvalnošću, primite sa ljubavlju."
+        },
+        "associations": {
+          "title": "Šest pentaklovih kosmičkih veza",
+          "astrology": "Vaga (pravda, ravnoteža, harmonija)",
+          "numerology": "6 (Harmoni, usluga, saosećanje)",
+          "element": "Dijeljenje tla, ravnoteža, obilje",
+          "chakra": "Srce - ljubav, velikodušnost, zahvalnost"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa šest pentakala",
+          "combinations": [
+            {
+              "card": "Tri pentakla",
+              "meaning": "Velikodušno deljenje u okviru tima uvećava uspeh."
+            },
+            {
+              "card": "Šest šoljica",
+              "meaning": "Vreme je da podelite sa oproštajem i ljubavlju u prošlim vezama."
+            },
+            {
+              "card": "Pravda",
+              "meaning": "Pošteno deljenje obnavlja balans karme."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Šest potvrda pentahlova",
+          "affirmation_list": [
+            "Zahvalan sam i kada dam i kada primim.",
+            "Svojim obiljem delim ljubavlju.",
+            "Jedan sa velikodušni protok univerzuma."
+          ]
+        },
+        "cta": {
+          "main": "Deljenje je ključ za obilje. Danas uradite iskrenu ljubaznost.",
+          "micro": "Dajte nekome svoje vreme, svoju ljubav ili svoje znanje."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja šest pentaklama?",
+            "answer": "Predstavlja dijeljenje, pomaganje i pošteno bavljenje. Obilje se povećava kako se deli."
+          },
+          {
+            "question": "Šta znači preokrenuti šest pentaklova?",
+            "answer": "To ukazuje da je ravnoteža davanja i prijema uznemirena, odnosni interes ili nedostatak zahvalnosti. Vratite ravnotežu."
+          },
+          {
+            "question": "U kojim situacijama je šest pentakova moćan?",
+            "answer": "Kada je potrebno materijal, emocionalna ili duhovna deljenja; Jak je u procesima saradnje i ravnoteže."
+          }
+        ],
+        "related_cards": [
+          "troje pentakla",
+          "pravda",
+          "šest šoljica"
+        ],
+        "imageUrl": "/cards/rvs / vi-pentacles.vebp"
+      },
+      "seven-of-pentacles": {
+        "name": "Sedam pentakla - strpljenja, napora i poverenja u budućnost",
+        "short_description": "Sedam pentakala je kartica čekanja ploda rada, strpljivo nadgledajući rast i berbu u pravo vreme. Seme je posađeno u zemlji; Sada je vreme da čekate u veri.",
+        "meanings": {
+          "upright": {
+            "general": "Sedam pentaklama predstavlja napor, strpljenje i proces evaluacije. Napredak je možda spor u nečemu što ste naporno radili, ali temelji su čvrste. Ova kartica vas podseća da zaustavite i dišete svoj put do dugoročnog uspeha.",
+            "love": "Zaljubljena, prevladava energija strpljenja i kontinuiteta. Vaš odnos se tokom vremena produbljuje; Emocionalne veze se ojačavaju polako, ali trajno.",
+            "career": "U vašoj karijeri možda nećete odmah videti nagradu svojih napora. Usredsrediti se na dugoročne planove; Uskoro dolazi nagrada stalnog rada.",
+            "money": "Finansijski, ulaganja može potrajati vreme da podnesu plod. Zakon planirano, održavanje samopouzdanja.",
+            "spiritual": "Duhovno ste u procesu razvoja. Ova kartica vas pita strpljivo da pazite na svoj unutrašnji rast i poverite postupak."
+          },
+          "reversed": {
+            "general": "Reversed Sedam stanovnika znači nestrpljenje, gubitak motivacije ili pogrešnih investicija. Pregledajte svoj cilj i primetite gde trošite energiju.",
+            "love": "Obučena pozicija u ljubavi može ukazivati na blokiranje napretka u vezi ili osećaj beznađe. Ojačati komunikaciju sa strpljenjem.",
+            "career": "U karijeri, nestrpljenje ili pohlepa za kratkotrajno dobitak može podrivati dugoročni potencijal. Reevalialirajte svoje planove.",
+            "money": "Finansijski, pokušaj ranog berbe može dovesti do gubitaka. Vreme je važno.",
+            "spiritual": "Duhovno, možda mislite da ne napredujete; Ali seme razvoja tiho klijaju. Ostanite strpljivi."
+          }
+        },
+        "context": {
+          "mythology": "Sedam stanovnika predstavlja ciklus prirode i strpljenja Gaje. Majka Zemlja ne žuri; Svako seme klije u svoje vreme.",
+          "celtic_cross": {
+            "future": "Počećete da iskoriste nagrade vaših napora u bliskoj budućnosti. Budite strpljivi.",
+            "hidden_influences": "Skriveni uticaji nas podučavaju da verujemo prirodnim ciklusima. Sve ima svoje vreme."
+          }
+        },
+        "story": {
+          "title": "Sedam pentakala - tihi rast semena",
+          "description": "Na kartici je baštovan oslanjao na palicu za hodanje i posmatra kako talismani rastu. Ova scena predstavlja trenutak kada je rad strpljivo primećen. Bond osnovana sa tlom je simbol poverenja.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Sedam pentakila rođeno je tokom renesanse kao simbola ciklusa plodnosti i žetve. Podseća nas na svetost vremena.",
+          "mystic_title": "Duhovno značenje: Strpljenje i poverenje",
+          "mystic_message": "Duhovno, ova kartica predaje moć predaje i strpljenja. Poverenje u univerzalni ritam; Sve sazreva u svoje vreme.",
+          "cultural_title": "Savremeni komentar: Dugoročno planiranje i procena",
+          "cultural_message": "U modernom svetu, sedam stanovnika simbolizuje strateško razmišljanje u radnoj, investicionim i proizvodnim procesima. Važan je održivi uspeh, a ne instant rezultati.",
+          "lesson": "Ova kartica predaje da strpljenje ubrzava rast. Budite mirni u oblastima na kojima radite; Univerzum radi."
+        },
+        "keywords": {
+          "keywords_title": "Sedam ključnih reči od strane pentacles kartica",
+          "keywords_message": "Sedam pentakova Tarot znači, sedam pentacla turskih, strpljenja, napora, evaluacija, čekanja, dugoročnog uspeha",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Strpljenje, upornost, planiranje, poverenje, strateško razmišljanje, prirodni ciklus.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Nestrpljenje odlaže uspeh; Verujte postupku.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Vreme ima svoj sveti ritam. Negujte seme sa ljubavlju i dozvolite im da rastu."
+        },
+        "associations": {
+          "title": "Sedam pentaklova kosmičkih veza",
+          "astrology": "Saturn (vreme, strpljenje, disciplina)",
+          "numerology": "7 (kontemplacija, evaluacija, verovanje)",
+          "element": "Zemlja - kontinuitet, rast, ciklus prirode",
+          "chakra": "Solarni pleksus - moć strpljenja i poverenja"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa sedam pentakla",
+          "combinations": [
+            {
+              "card": "Osam stanovnika",
+              "meaning": "Proces rada produbljuje; Dobivate majstorstvo."
+            },
+            {
+              "card": "Sunce",
+              "meaning": "Nakon dugih napora, postići ćete vidljivi uspeh."
+            },
+            {
+              "card": "Sedam štapića",
+              "meaning": "Pobeda je u blizini pitanja koju ste strpljivo oduprete."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Sedam potvrda pentakala",
+          "affirmation_list": [
+            "Verujem u svoju radu, sve sazreva u božanskom vremenu.",
+            "Dopuštam sebi strpljivo.",
+            "Ja sam u skladu sa ritmom univerzuma."
+          ]
+        },
+        "cta": {
+          "main": "Strpljenje je tajna magija uspeha. Neka vaša radna rast raste.",
+          "micro": "Zaustavite se danas, duboko udahnite i verujte postupku."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja sedam pentaklama?",
+            "answer": "Predstavlja rad, strpljenje i poverenje u budućnost. Vreme je da sačekate plodove vašeg rada."
+          },
+          {
+            "question": "Šta znači preokrenuti sedam pentakla?",
+            "answer": "To znači nestrpljivost, gnojivost ili umor. Ponovo proceniti postupak."
+          },
+          {
+            "question": "U kojim situacijama je sedam pentaklama moćno?",
+            "answer": "Jak je u dugoročnim projektima, ulaganjima koja zahtevaju strpljenje ili periode internog rasta."
+          }
+        ],
+        "related_cards": [
+          "osamdeset pentakla",
+          "sunce",
+          "sedam štapića"
+        ],
+        "imageUrl": "/cards/rvs / vii-pentacles.vebp"
+      },
+      "eight-of-pentacles": {
+        "name": "Osam stanovnika - majstorstvo, fokus i razvoj",
+        "short_description": "Osam stanovnika predstavlja energiju transformacije rada u majstorstvo, napreduje sa disciplinom i kontinuiranim razvojem. Svaki korak je izrada duše.",
+        "meanings": {
+          "upright": {
+            "general": "Osam stanovnika predstavlja proces rada, učenja i usavršavanja nečijih sposobnosti. Ova kartica ukazuje na vreme da se postigne savladavanje kroz strpljenje i posvećenost. Srčani napor ulazi u svaki detalj.",
+            "love": "Zaljubljen, to znači marljivo raditi na vašem odnosu, uložiti napor i poboljšati vaše emocionalne veštine. Bond je ojačan kroz zdravu komunikaciju.",
+            "career": "U vašoj karijeri ste u procesu treninga, u razvoju veština i savladavajući posao. Svaki korak vas približava trajnom uspehu.",
+            "money": "U finansijskim uslovima, disciplinovani rad i planirane investicije donose profit. Nakupljajte strpljenje i upravljati mudrošću.",
+            "spiritual": "Na duhovnom nivou razvijate unutrašnju majstorstvo i samosvesti. Ponovljene prakse pružaju duhovnu transformaciju."
+          },
+          "reversed": {
+            "general": "Osam preokretanih pentakala ukazuje na gubitak motivacije, apatije ili rutine koje je razvijen razvoj. Vratite svoje srce na posao.",
+            "love": "Zaljubljena, obrnuta pozicija može ukazivati na nezainteresovanost ili jednostrani napor. Za zajednički napor je potreban za revitalizaciju odnosa.",
+            "career": "U karijeri, ne obraćajući pažnju na detalje ili dosadno da bi se donelo podriva projekata. Sećate se svoje svrhe.",
+            "money": "Finansijski, bezbrižnost ili nestrpljivost mogu dovesti do gubitaka. Preuredite svoje planove.",
+            "spiritual": "Duhovno, ako je napredak zaustavio, zapamtite svoju unutrašnju nameru. Odobreno zanošenje porođaja na ljubav."
+          }
+        },
+        "context": {
+          "mythology": "Osam stanovnika ima energiju kovača Boga Hefaestesa. Umetnost, strpljenje i majstorstvo su rođeni u svakom udaru. Svetost rada je srce ove kartice.",
+          "celtic_cross": {
+            "future": "Ubrzo će rezultati vašeg rada biti vidljivi. Nastavite da poboljšate svoje veštine.",
+            "hidden_influences": "Tajni efekat je u moći disciplinovanog rada. Rad sa vašim srcem čini vas gospodarom."
+          }
+        },
+        "story": {
+          "title": "Osam pentakova - tihi ples majstorstva",
+          "description": "Na kartici, zanatlija pažljivo zaniže osam talismana. Svaka od njih je simbol rada, discipline i strastvenog rada. Ova prizora govori da je put do savršenstva izgrađen sa strpljenjem.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Osam stanovnika je simbol srednjovekovnih izvođačkih cehova. Stvaranje svete proizvodnje sa ručnim radom je transformacija života u umetnost.",
+          "mystic_title": "Duhovno značenje: zaceljivanje rada",
+          "mystic_message": "Ova kartica je simbol unutrašnjeg majstorstva i lečenja radne snage. Svaka akcija je oblikovana vašom namerom; Svaki posao sa ljubavlju pročišćava dušu.",
+          "cultural_title": "Moderna interpretacija: stručnost i fokus",
+          "cultural_message": "U savremenim uslovima, osam stanovnika predstavlja profesionalni razvoj, obrazovanje, zanat i razvoj lične veštine. Nastavite sa strpljenjem.",
+          "lesson": "Osam pentakla uči da je \"rad duhovna molitva\". Sve što radite je vaša unutrašnja umetnost."
+        },
+        "keywords": {
+          "keywords_title": "Osam ključnih reči od pentacles kartica",
+          "keywords_message": "Osam stanovnika Tarota značenje, osam pentacla turskih, majstorskih, studija, veština, razvoja, discipline, učenje",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Savladavanje, strpljenje, disciplina, produktivnost, fokus, lični razvoj.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Uživajte u procesu umesto opsesiranja savršenstva.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Rad je molitva duše. Svako ponavljanje vas približava svetlosti."
+        },
+        "associations": {
+          "title": "Osam kosmičkih veza Pentacles",
+          "astrology": "Djevica (marljivost, usluga, detaljni)",
+          "numerology": "8 (majstorstvo, disciplina, snaga)",
+          "element": "Tlo - akcija, strpljenje, produktivnost",
+          "chakra": "Solarni pleksus - snaga i fokus"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa osam pentaka",
+          "combinations": [
+            {
+              "card": "Tri pentakla",
+              "meaning": "Teamvork Poličići lično majstorstvo."
+            },
+            {
+              "card": "Osam štapića",
+              "meaning": "Intenzivno delo tempo donosi brze rezultate."
+            },
+            {
+              "card": "Mađioničar",
+              "meaning": "Vaše sposobnosti postaju magija; Vaša kreativna energija raste."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Osam afirmacija Pentacles-a",
+          "affirmation_list": [
+            "Svaki napor me približava majstoriju.",
+            "Radim sa ljubavlju; Moj rad je izraz moje duše.",
+            "Moja disciplina i fokus me nose do uspeha."
+          ]
+        },
+        "cta": {
+          "main": "Pretvorite svoj rad u svetu umetnost. Radite marljivo na nešto danas.",
+          "micro": "Čak i mali detalj može da napravi veliku razliku."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja osam pentakla?",
+            "answer": "Masteri predstavlja proces učenja, discipline i studije. Svaki korak vas čini da rastete."
+          },
+          {
+            "question": "Šta znači preokretanje osam pentakla?",
+            "answer": "To znači gubitak interesovanja, nedostatak motivacije ili bez cilja. Vratite svoje srce na posao."
+          },
+          {
+            "question": "U kojim situacijama je osam pentaklama snažno?",
+            "answer": "Jak je u procesima učenja, u razvoju veština ili se fokusiralo odlučno na cilj."
+          }
+        ],
+        "related_cards": [
+          "troje pentakla",
+          "mađioničar",
+          "osam štapića"
+        ],
+        "imageUrl": "/cards/rvs / viii-pentacles.vebp"
+      },
+      "nine-of-pentacles": {
+        "name": "Devet stanovnika - samopouzdanje, luksuzno i unutrašnje zadovoljstvo",
+        "short_description": "Devet stanovnika predstavlja plodove nečijeg rada, samopouzdanja, elegancije i samo-zasluženog mira. Obilje nije stanje samog, ali stanje potpunosti.",
+        "meanings": {
+          "upright": {
+            "general": "Devet stanovnika simbolizuje nezavisnost, uspeh i samopouzdanje. Dobićete nagradu polja u kojem ste dugo naporno radili. Ova kartica je simbol ne samo materijala, već i duhovnog bogatstva. Uživajte u sa zahvalnošću.",
+            "love": "Zaljubljena, tema samo-vrednog svesti i nezavisne ljubavi dolazi do izražaja. Dok naučite da budete zadovoljni sobom, balans se postiže u odnosima.",
+            "career": "U pogledu karijere, počinje period uspeha, prestiž i profesionalno zadovoljstvo. Spremni ste da primite nagradu svog rada.",
+            "money": "Dobićete finansijsko obilje, investicione dobitke ili plod sistema koji ste uspostavili sa sopstvenim radom. Uživajte u luksuzu, ali ne trošite novac.",
+            "spiritual": "Na duhovnom nivou, u unutrašnjem miru i svijesti zahvalnosti dođu do izražaja. Biti samozadobren znači usklađivanje sa univerzalnom napajanjem."
+          },
+          "reversed": {
+            "general": "Devet preokretanih pentakova znači prevelika zavisnost, nedostatak samopouzdanja ili finansijskog nezadovoljstva. Pravo bogatstvo leži u unutrašnjoj ravnoteži.",
+            "love": "Invertirani položaj u ljubavi može stvoriti emocionalnu zavisnost ili strah od usamljenosti. Setite se sopstvenog integriteta.",
+            "career": "U vašoj karijeri možete previše naporno raditi da biste postigli uspeh i zaboravite da uživate u tome. Povratak u ravnotežu.",
+            "money": "Finansijski, može postojati pritisak da pogrešno provedete ili konzumiraju luksuz. Zapamtite zahvalnost.",
+            "spiritual": "Duhovno, možda ćete imati problema sa uravnoteženjem uspeha i duha. Obnovite unutrašnji mir."
+          }
+        },
+        "context": {
+          "mythology": "Devet stanovnika nosi tihu pobedu Demetera, boginje plodnosti. Obilje koje dolazi sa naporima pretvara se u eleganciju u kombinaciji sa samopouzdanjem.",
+          "celtic_cross": {
+            "future": "Uskoro će početi period uspeha i mira. Uživajte u sopstvenom naporu.",
+            "hidden_influences": "Skriveni efekat je svest o sebi vrednosti. Verovanje u sebe raste obilje."
+          }
+        },
+        "story": {
+          "title": "Devet stanovnika - tiho trijumf elegancije",
+          "description": "Na kartici, elegantna žena stoji među vinogradima; Ptica je mirno sjeckano na ramenu. Ova scena prikazuje spokoj duše koja će iskoristiti plod sopstvenog rada. Bogatstvo ovde nije samo u novcu nego u mudrosti.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Devet pentakala je bila kartica koja simbolizuje samostalni uspeh i estetski način života tokom renesanse. Smatralo se simbolom veštog stečenog mira.",
+          "mystic_title": "Duhovno značenje: celokupnost i zahvalnost",
+          "mystic_message": "Duhovno, ova kartica je energija obilja koja dolazi sa zahvalnošću. Univerzum vibrira vaš rad; Mir dolazi od postojanja, a ne da ima.",
+          "cultural_title": "Moderna interpretacija: Elegancija uspeha",
+          "cultural_message": "U savremenim uslovima, devet stanovnika simbolizuje snažan pojedinac koji stoji na vlastitoj dva metra. Uspeh je upotpunjen samopoštovanjem i milošću.",
+          "lesson": "Devet stanovnika uči najčišći oblik samo-vrednosti. Obilje ide ruku pod ruku sa samopouzdanjem."
+        },
+        "keywords": {
+          "keywords_title": "Devet ključnih reči sa pentacles karticama",
+          "keywords_message": "Devet pentakova Tarot znači, devet pentacla turskih, samopouzdanja, obilja, milost, uspeha, mir, zahvalnost",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Nezavisnost, obilje, milost, samo-vrednost, mir, zahvalnost.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Proslavite mir svog rada umesto da se zaglavite u luksuzu.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Pravo bogatstvo meri se ljubavlju i zahvalnošću koju osećate prema sebi."
+        },
+        "associations": {
+          "title": "Devet kosmičkih veza Pentacles",
+          "astrology": "Venera (estetika, elegancija, udobnost)",
+          "numerology": "9 (kompletnost, zrelost, nezavisnost)",
+          "element": "Zemlja - opipljiv uspeh, ravnoteža i udobnost",
+          "chakra": "Solarni pleksus i srce - ravnoteža snage i zahvalnosti"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa devet stanovnika",
+          "combinations": [
+            {
+              "card": "Deset stanovnika",
+              "meaning": "Prelazak iz ličnog uspeha u porodično i socijalno obilje."
+            },
+            {
+              "card": "Sunce",
+              "meaning": "Period apsolutnog zadovoljstva, samopouzdanja i uspeha."
+            },
+            {
+              "card": "Carica",
+              "meaning": "Povećana fizička obilja, plodnost i kreativna produkcija."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Devet afirmacija pentaklama",
+          "affirmation_list": [
+            "Prihvatam plod svog rada sa ljubavlju.",
+            "Samopouzdan sam; Uspeh je okrunjen mojim mirom.",
+            "Zagrljajem život zahvalnošću, sve je dovoljno."
+          ]
+        },
+        "cta": {
+          "main": "Uživajte u svojim naporima. Obilje je s vama, živite sa zahvalnošću.",
+          "micro": "Proslavite svoje uspehe i zahvalite se danas."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja devet stanovnika?",
+            "answer": "Predstavlja nezavisnost, obilje, samopouzdanje i unutrašnje zadovoljstvo. Nagrada vašeg rada naći će vas u miru."
+          },
+          {
+            "question": "Šta znači obrnuti devet pentakla?",
+            "answer": "To znači preterano popuštanje u luksuzu, nedostatak samopouzdanja ili nezadovoljstva. Ponovo pronađite unutrašnju ravnotežu."
+          },
+          {
+            "question": "U kojim situacijama je devet stanovnika snažan?",
+            "answer": "Jak je kad želi da shvati svoju snagu i iskusi u unutrašnje zadovoljstvo dok je realizovao rezultate svog rada."
+          }
+        ],
+        "related_cards": [
+          "deset stanovnika",
+          "kampera",
+          "sunce"
+        ],
+        "imageUrl": "/cards/rvs/ik-pentacles.vebp"
+      },
+      "ten-of-pentacles": {
+        "name": "Deset pentakala - trajan uspeh, porodica i zaostavština",
+        "short_description": "Deset stanovnika je simbol trajnog obilja, porodičnog jedinstva i međugeneracijskog nasleđa. Ova kartica opisuje duboko ukorenjeni uspeh, i materijalno i duhovno.",
+        "meanings": {
+          "upright": {
+            "general": "Deset stanovnika predstavlja stabilnost, obilje i završetak u svim oblastima života. To je period kada dugoročni ciljevi dolaze u prevladavanje voća i poverenja i mira. Ova kartica simbolizuje stalnost materijalnog i duhovnog nasleđa.",
+            "love": "Nosi temu ljubavi, porodične zgrade, dugovečnosti i posvećenosti u odnosima. Zajednički osećaj poverenja je duboko ukorenjen; To znači da zajedno ulaze u budućnost.",
+            "career": "U karijeri, nosi energiju uspostavljanja stalnog uspeha, pouzdanih poslovnih partnerstava i nasleđenog sistema. Dugoročni rad je okrunjen.",
+            "money": "U finansijskim uslovima to je simbol stalnog ulaganja, nasledstva, nekretnina ili prosperiteta koji će trajati generacije. To je poziv da podelite nečije bogatstvo.",
+            "spiritual": "Na duhovnom nivou, to znači da se ukorijenjeni, isceljujuću porodicu karmu i sklopite mir sa prošlošću. Vi ste u skladu sa energijom vaše duše."
+          },
+          "reversed": {
+            "general": "Prekoračeni deset stanovnika ukazuje na duhovnu prazninu, porodičnu neslomak ili sukobe u vezi sa naslednim uprkos materijalnom uspehu. Zapamtite izvor obilja: ljubav i jedinstvo.",
+            "love": "Obučena pozicija u ljubavi može ukazivati na porodični pritisak, nesigurnost ili materijalno zasnovane veze. ISTINA DEVOTION dolazi od srca.",
+            "career": "U karijeri to može značiti gubitak nasledstva ili pogrešne investicije. Kratkoročni interesi mogu naštetiti dugoročnom miru.",
+            "money": "Finansijski, može postojati otpad, loša investicija ili spor u nasleđivanju. Održavajte ravnotežu.",
+            "spiritual": "Duhovno nas podseća na potrebu da sklopimo mir sa prošli generacijama. Pretvorite svoju porodičnu energiju sa ljubavlju."
+          }
+        },
+        "context": {
+          "mythology": "Deset stanovnika predstavlja plodnost potomaka GAIA, majke Zemlje. Ova kartica je energija ne samo pojedinaca već i kolektivnog blagostanja.",
+          "celtic_cross": {
+            "future": "Uskoro vas očekuje period stabilnog uspeha i porodičnog mira.",
+            "hidden_influences": "Podrška i zaštitna energija vaših predaka je sa vama. Vaši koreni vas nose."
+          }
+        },
+        "story": {
+          "title": "Deset stanovnika - obilje korena",
+          "description": "Na kartici je mudar starac sedi usred obilja sa porodicom oko njega. Psi u pozadini predstavljaju lojalnost, a talismani na njegovom pojasu predstavljaju nasleđe. Ova scena opisuje trajni mir koji rad teče kroz generacije.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Deset stanovnika bio je simbol 'porodičnog i socijalnog prosperiteta' u srednjovekovnim verskim nalozima. Bogatstvo je smatrano da je deljenje mudrosti, a ne samo robom.",
+          "mystic_title": "Duhovno značenje: ukorenjevanje i zaostavština",
+          "mystic_message": "Ova kartica simbolizuje usaglašavanje sa konopnom energijom i poštujući mudrost iz prošlosti. To je na podršci predaka.",
+          "cultural_title": "Savremeni komentar: Dugoročno poverenje",
+          "cultural_message": "U savremenom svetu, deset stanovnika predstavlja finansijsku stabilnost, porodično lepljenje i izgradnja održivih sistema. To je formula trajnosti.",
+          "lesson": "Ova kartica uči da je trajni uspeh vođen ljubavlju i posvećenošću, a ne samo novac."
+        },
+        "keywords": {
+          "keywords_title": "Ten od ključnih reči sa kartama pentacles kartica",
+          "keywords_message": "Deset pentaklova Tarot znači, deset stanovnika na turskom, porodičnoj, zaostavštini, obilje, stabilnosti, korijene, stalnost",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Porodica, poverenje, nasleđivanje, stalnost, mir, obilje.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Fokusirajte se ne samo na materijalnu dobitku, već i na duhovno nasleđe.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Vaši koreni su sveti. Svetlost vaših predaka šeta s vama."
+        },
+        "associations": {
+          "title": "Deset pentaklova kosmičkih veza",
+          "astrology": "Merkur i sunce - Komunikacija, nasleđivanje, deljenje mudrosti",
+          "numerology": "10 (završetak, stalnost, novi ciklus)",
+          "element": "Tlo - poverenje, obilje, kontinuitet",
+          "chakra": "Korenska čakra - ukorijenjenost i poverenje"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa deset stanovnika",
+          "combinations": [
+            {
+              "card": "Devet stanovnika",
+              "meaning": "Nakon ličnog uspeha dolazi u porodično obilje."
+            },
+            {
+              "card": "Car",
+              "meaning": "Povećanja ovlašćenja i stalne energije u porodičnom sistemu."
+            },
+            {
+              "card": "Mesec",
+              "meaning": "Nesvesni obrasci iz porodične istorije mogu se na površini."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Deset afirmacija Pentacles-a",
+          "affirmation_list": [
+            "Moji koreni mi daju snagu; Odrastam sa ljubavlju.",
+            "Postavljam se dok delim svoj obilje.",
+            "Poštujem svoju prošlost i ulazim u budućnost sa pouzdanjem."
+          ]
+        },
+        "cta": {
+          "main": "Najbolji oblik obilja je obilje koje delite. Ojačati svoju vezu sa porodicom.",
+          "micro": "Dobijte snagu iz korena, izgradite svoju budućnost."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja deset stanovnika?",
+            "answer": "Predstavlja porodicu, nasleđivanje, stalnost i obilje. Ona je dugoročni uspeh."
+          },
+          {
+            "question": "Šta znači obrnuti deset stanovnika?",
+            "answer": "Može ukazivati na porodične sukobe, finansijsko nezadovoljstvo ili naslednim sporovima."
+          },
+          {
+            "question": "U kojim situacijama je Ten Pentacles jaki?",
+            "answer": "Snažno je u procesu jačanja porodičnih veza, ulaganja ulaganja ili uspostavljanje dobro utvrđenog sistema."
+          }
+        ],
+        "related_cards": [
+          "devet stanovnika",
+          "car",
+          "mesec"
+        ],
+        "imageUrl": "/cards/rvs/k-pentacles.vebp"
+      },
+      "page-of-pentacles": {
+        "name": "Princ Pentacles - Učenje, potencijal i nove mogućnosti",
+        "short_description": "Princ Pentacles znači želju za učenjem, novim prilikama i realizacijom potencijala. Mali, ali stalni koraci su temelj velikog uspeha.",
+        "meanings": {
+          "upright": {
+            "general": "Princ pentaklama simbolizuje otvoreni um, nove početke i razvoj praktičnih veština. Ova kartica pokazuje da ideja ili projekat u pozornici semena počinje da raste. Ako nastavite sa strpljenjem i disciplinom, stalni uspeh vas očekuje.",
+            "love": "Zaljubljen, on donosi iskren, lojalan i voljan da nauči pristup. Može se pojaviti novi odnos ili se može izgraditi postojeći odnos na čvršćem fondaciji.",
+            "career": "U karijeri se pojavljuje novi posao, stažiranje, obuka ili finansijska prilika. Nastavite da učite sa radoznalošću.",
+            "money": "U finansijskim uslovima pojavljuju se nove ideje o investiranju ili mogućnostima zarade. Pažljivo gaziti; Potencijal rasta je visok.",
+            "spiritual": "Duhovno ste u pozornici konkretinnjanja znanja. Vreme je da primenite ono što ste naučili u svoj život."
+          },
+          "reversed": {
+            "general": "Princ Pentacles-a preokrenuo je lenjost, nedostatak fokusa ili neuspeha da iskoristi mogućnosti. Remociranje tako da ne trošite svoj potencijal.",
+            "love": "Zaljubljeni, obrnuti položaj može ukazivati na apatiju ili emocionalnu nezrelost. Rebalansirajte svoje srce.",
+            "career": "U vašoj karijeri, nedostatak motivacije ili nepažnje može vam prouzrokovati da propustite nove mogućnosti. Budite planirani.",
+            "money": "Finansijski, neplanirana potrošnja ili kratkoročno razmišljanje mogu stvoriti greške. Razmislite strateški.",
+            "spiritual": "Duhovno, ne primenjivanje vaših unutrašnjih znanja usporava vaš rast. Živite ono što naučite, ne znate samo."
+          }
+        },
+        "context": {
+          "mythology": "Princ Pentaklova nosi mladalačku energiju Hermesa - povezane sa snagom da učenje, otkrije i pretvori znanje u delo.",
+          "celtic_cross": {
+            "future": "Nova prilika će vas uskoro naći. Biti spreman i otvoren.",
+            "hidden_influences": "Skriveni uticaj je vaša želja za učenjem. Ova energija vas nosi na pravi put."
+          }
+        },
+        "story": {
+          "title": "Princ pentacles - prva iskra potencijala",
+          "description": "Na kartici se mladi princ pažljivo brine u amuletu koju drži u ruci. Ova scena ilustruje važnost približavanja idejama sa verom dok su u semenu. Energija Zemlje predstavlja strpljenje, a omladinska energija predstavlja radoznalost.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Stranica pentakala bila je simbol naukovanja i učenja u srednjem veku. To je viđeno kao prvi korak ka mudrosti koja dolazi sa iskustvom.",
+          "mystic_title": "Duhovno značenje: Buđenje potencijala",
+          "mystic_message": "Ova kartica nosi energiju \"studentskog duha\". Vaša duša ulazi u svetlost znanja; Svako iskustvo vas čini mudrijim.",
+          "cultural_title": "Moderna interpretacija: Novi početak i primena",
+          "cultural_message": "U modernom svetu ova se kartica odnosi na lični razvoj, obrazovanje, nove mogućnosti za posao ili praktične projekte. Ne bojte se učeći.",
+          "lesson": "Princ Pentacles uči da moć znanja raste kada se kombinuje sa akcijom. Razmislite, ali i primjeni."
+        },
+        "keywords": {
+          "keywords_title": "Knedeljke ključnih reči kneka pentacles",
+          "keywords_message": "Princ Talisman Tarot Značenje, stranica pentakala na turskom, učenju, priliku, novom početku, potencijalu, radoznalosti, razvoju",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Učenje, disciplina, inovacija, otkriće, prilika, odlučnost.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Čak i ako polako napreduje, nastavljajte strpljivo; Svaki mali korak je smislen.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Svako znanje je seme; Kad se posejete sa ljubavlju, to cveta kao mudrost."
+        },
+        "associations": {
+          "title": "Princ of Pentacles Cosmic Links",
+          "astrology": "Jarac (disciplina, odgovornost, realizam)",
+          "numerology": "1 (početno, učenje, potencijal)",
+          "element": "Zemlja - stvarnost, opipljivost, praktičnost",
+          "chakra": "Korenska čakra - poverenje i otvorenost za učenje"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa princom pentakala",
+          "combinations": [
+            {
+              "card": "ACE OF PENTACLES",
+              "meaning": "Nova finansijska prilika može brzo rasti."
+            },
+            {
+              "card": "Tri štapića",
+              "meaning": "Vreme je da se preuzme novi korak za projekat koji ste planirali."
+            },
+            {
+              "card": "Pustinjak",
+              "meaning": "Internalizirati znanje i strpljivo ga primeniti."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Princ Affirmacije pentaklama",
+          "affirmation_list": [
+            "Otvoren sam za učenje, svako iskustvo me čini da rastem.",
+            "Shvaćam svoj potencijal i razvijam ga sa ljubavlju.",
+            "Mali koraci su početak velikih promena."
+          ]
+        },
+        "cta": {
+          "main": "Savršeno je vreme da naučite nešto novo. Mali koraci dovode do velikih transformacija.",
+          "micro": "Danas preduzimajte akciju na ideju."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja princ pentacla?",
+            "answer": "Predstavlja učenje, potencijalnu, praktičnu primenu i pojavu novih mogućnosti."
+          },
+          {
+            "question": "Šta znači obrnuti princ pentaklama?",
+            "answer": "Može ukazivati na nedostatak fokusa, lenjosti ili neuspeha da prizna mogućnosti."
+          },
+          {
+            "question": "U kojim situacijama je princ pentacla moćan?",
+            "answer": "Moćno je kada započinje novo obrazovanje, poslovni ili proces ličnog razvoja."
+          }
+        ],
+        "related_cards": [
+          "ace-of-pentacles",
+          "pustinjak",
+          "trojke"
+        ],
+        "imageUrl": "/cards/rvs / page-pentacles.vebp"
+      },
+      "knight-of-pentacles": {
+        "name": "Knight of Pentacles - Odgovornost, disciplina i lojalnost",
+        "short_description": "Vitez pentaklama simbolizuje pouzdanost, disciplinu i stalni napredak ka trajnom uspehu. Svaki korak strpljivo je deo velike gradnje.",
+        "meanings": {
+          "upright": {
+            "general": "Vitez Pentacles predstavlja tešku, pouzdanu i odgovornu energiju. Ova kartica je simbol strpljivo izvršenih planova i trajnih rezultata. Stabilnost je vrednija od brzine.",
+            "love": "Zaljubljeni, nosi energiju odanosti, odlučnosti i pouzdanog partnera. Emocije se razvijaju sporo, ali su duboko ukorijenjene.",
+            "career": "U polju karijere disciplinovani i metodični rad će vas dovesti do uspeha. Napravite dugoročne planove i krenite napred korak po korak.",
+            "money": "Finansijski je period pažljivog investiranja, uštede i odgovorne potrošnje. Djelovati strpljenjem; Stabilna zarada je na vratima.",
+            "spiritual": "Duhovno, pojačavate svoju unutrašnju snagu kroz stabilnost i dnevne rituale. U toku ste sporo, ali sigurna transformacija."
+          },
+          "reversed": {
+            "general": "Vitez Pentaklova obrnut znači stagnaciju, gubitak motivacije ili prekomernog opreza. Oduprijeti se promenama može vas usporiti.",
+            "love": "Zaljubljeni, obrnuti položaj ukazuje na emocionalnu stagnaciju ili vezu koja je pala u prekomernu rutinu. Ponovo napravite prostor za romantiku.",
+            "career": "Budite otvoreni za inovacije u vašoj karijeri umesto da napredujete sa istim navikama. Prekomerna potraga za sigurnost može ometati razvoj.",
+            "money": "Finansijski, mogu se nedostajati mogućnosti ili finansijska lenjost. Ažurirajte svoje planove.",
+            "spiritual": "Duhovno, može postojati nedostatak inspiracije ili stagnacije. Ponovo aktivirajte svoje srce."
+          }
+        },
+        "context": {
+          "mythology": "Vitez pentakala nosi energiju Kronos, Bog strpljenja. To je duh koji veruje ciklusima vremena i zna o svemilosti rada.",
+          "celtic_cross": {
+            "future": "Proces koji strpljivo sledite uskoro će doneti rezultate. Ostanite dosledni.",
+            "hidden_influences": "Tajni uticaj je upornost i pouzdanost. Narudžba vam donosi mir."
+          }
+        },
+        "story": {
+          "title": "Knight of Pentacles - Putovanje sporog snagom",
+          "description": "Na kartici vitez sedi na crnom konju, noseći amulet u ruci i strpljivo izgleda u horizontu. Nije ni žurio niti se vraća. Ova scena opisuje snagu odlučnosti i upornosti.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Knight of Pentecles nosi zakletvu srednjovekovnih vitezova: lojalnost, strpljenje i osećaj dužnosti. Svaki korak je snimljen sa svetom namerom.",
+          "mystic_title": "Duhovno značenje: isceljivanje stabilnosti",
+          "mystic_message": "Ova kartica je podučavanje dubine, a ne brzine. Duša se širi stabilnošću. Svaki korak pacijenta je predaja božanskog plana.",
+          "cultural_title": "Moderna interpretacija: disciplinovan uspeh",
+          "cultural_message": "U modernom svetu vitez pentacla je simbol radne discipline, pouzdanosti i stalnog napretka. Doslednost je ključ uspeha.",
+          "lesson": "Pravi rast je zbir malih koraka sa strpljenjem. Proces vas sazreva."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči viteza pentacles kartica",
+          "keywords_message": "Knight of Pentacles Tarot Značenje, vitez Pentacles Turski, stabilnost, strpljenje, poverenje, disciplina, lojalnost, rad",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Lojalnost, strpljenje, poverenje, marljivost, odlučnost, izdržljivost.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Prekomernost može ugušiti inovacije. Održavajte ravnotežu.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Svaki korak koji strpljivo uzimate je put do duhovne zrelosti."
+        },
+        "associations": {
+          "title": "Knight of Pentacles Cosmic Links",
+          "astrology": "Bik (lojalnost, izdržljivost, strpljenje)",
+          "numerology": "12 (balans, majstorstvo, kontinuitet)",
+          "element": "Tlo - poverenje, praktičnost, izdržljivost",
+          "chakra": "Korenska čakra - poverenje i stabilnost"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa vitezom od pentakala",
+          "combinations": [
+            {
+              "card": "Osam štapića",
+              "meaning": "Spor proces dobija zamah; Protok energije ponovo počinje."
+            },
+            {
+              "card": "Tri pentakla",
+              "meaning": "Stabilnost u timskom radu donosi uspeh."
+            },
+            {
+              "card": "Temperatura",
+              "meaning": "Strpljenje i harmonija dovešće vas do dugoročnog mira."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Vitez afirmacija pentakala",
+          "affirmation_list": [
+            "Nastavljam sa strpljenjem; Svaki korak me približava svom cilju.",
+            "Stabilnost je moja snaga, poverenje je moj kompas.",
+            "Ja sam u skladu sa vremenima; Korak sa univerzumom."
+          ]
+        },
+        "cta": {
+          "main": "Polako je, ali stabilno danas. Svaki mali korak čini da rastete.",
+          "micro": "Disciplina je tihi oblik čuda."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja vitez Pentacles?",
+            "answer": "Predstavlja strpljenje, stabilnost, pouzdanost i disciplinovani rad. Naglašava snagu kontinuiteta."
+          },
+          {
+            "question": "Šta znači vitez pentaklova?",
+            "answer": "To može ukazivati na nedostatak motivacije, stagnacije ili prekomerne potrebe za kontrolom."
+          },
+          {
+            "question": "U kojim situacijama je vitez pentakla moćan?",
+            "answer": "Jak je u dugoročnim planovima, razvoju poslovanja ili procesima koji zahtevaju odgovornost."
+          }
+        ],
+        "related_cards": [
+          "troje pentakla",
+          "temperament",
+          "osam štapića"
+        ]
+      }
+    }
+  }
+}

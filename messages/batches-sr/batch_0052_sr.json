@@ -1,0 +1,792 @@
+{
+  "new-lover": {
+    "meanings": {
+      "sevenofcups": {
+        "position3": {
+          "reversed": "Uokrenuo je sedam šoljica, razočaranja ili neorganizacije podriva harmoniju. Moraju se izvršiti realne izbore.",
+          "keywords": [
+            "sanjati",
+            "glasati",
+            "vizija",
+            "raport",
+            "stvarnost"
+          ],
+          "context": "Izbori određuju harmoniju. Nered napregne obveznice."
+        },
+        "position4": {
+          "upright": "Sedam šoljica, obilje snova i opcija zahteva jasan izbor dugoročno. Neizvesnost može protresti ravnotežu obveznice.",
+          "reversed": "Uokrenuo je sedam čaša, jasnoća i realističnog pristupa dugoročno podržavaju dugoročno.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "oštrina",
+            "realizam",
+            "dugoročan"
+          ],
+          "context": "Jasan izbor neguje dugoročno, nesigurnost testira obveznica."
+        },
+        "position5": {
+          "upright": "Sedam šoljica ukazuje da snove o srodno srodno srodni srodnik se povećavaju i mora se izvršiti izbor između mnogih mogućnosti.",
+          "reversed": "Invertirani sedam šoljica, potencijal srodne duše može postati jasan kao zabuna. Realistični izbor jača ovu obveznicu.",
+          "keywords": [
+            "sanjati",
+            "izbor",
+            "vizija",
+            "oštrina",
+            "srodna duša"
+          ],
+          "context": "Snovi uvećavaju matesništvo duše, jasnoće utvrđuje temelje veze."
+        },
+        "position6": {
+          "upright": "SENDES označava da ćete imati mnogo opcija da se vaša želja ostvari. Pojašnjenje čini beton vaše želje.",
+          "reversed": "Pretvoreno Sedam znači da ako se probudite iz svojih snova i napravite realne izbore, vaša želja se može ostvariti.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "oštrina",
+            "vizija",
+            "glasati"
+          ],
+          "context": "Jasan izbor donosi vašu želju stvarnosti."
+        }
+      },
+      "eightofcups": {
+        "position1": {
+          "upright": "Osam šoljica ukazuje da ćete se odmaknuti od veza koje više ne služi i kreću se prema novoj ljubavi.",
+          "reversed": "Osetila osam šoljica kaže da ima poteškoća da prepuštate prošlosti odlaže novu vezu.",
+          "keywords": [
+            "odvajanje",
+            "napredak",
+            "nov način",
+            "promeniti"
+          ],
+          "context": "Za novi odnos morate ostaviti stari iza sebe."
+        },
+        "position2": {
+          "upright": "Osam šoljica označava Ribe ili Škorpion koji traže duhovnu dubinu. Ova osoba traži značenje u svom životu.",
+          "reversed": "Okolište Osam šoljica može ukazivati na neodlučnost ili tendencije leta u senci Pisces-Scorpio.",
+          "keywords": [
+            "Riba",
+            "Škorpion",
+            "potraga",
+            "dubina"
+          ],
+          "context": "Pisces ili akcenat Scorpio je jak."
+        },
+        "position3": {
+          "upright": "Osam šoljica sugerira da se harmonija može ojačati kroz emocionalno sazrevanje i potragu za značenjem. Otpuštanje nepotrebnih tereta briše vašu vezu.",
+          "reversed": "Osam preokretanih šoljica otežava harmoniju kada ste zaglavili između odlaska i boravka. Neodlučnost stvara udaljenost u odnosima.",
+          "keywords": [
+            "Potražite značenje",
+            "zrelost",
+            "izdanje",
+            "raport",
+            "ravnoteža"
+          ],
+          "context": "Zrelost donosi harmoniju. Neodlučnost napregne vezu."
+        },
+        "position4": {
+          "upright": "Osam šoljica, potraga za dubljem značenjem može tražiti transformaciju dugoročno. Zdrave odluke osiguravaju kontinuitet.",
+          "reversed": "Pretvoreno osam šoljica, neodlučnosti ili dilema za boravak dugoročno otežava.",
+          "keywords": [
+            "potraga",
+            "transformacija",
+            "odluka",
+            "ići",
+            "dugoročan"
+          ],
+          "context": "Potraga za značenjem jača dugoročno, neodlučnost testira obveznica."
+        },
+        "position5": {
+          "upright": "Osam šoljica ukazuje na potrebu da ostave stare veze za pronalaženje srodne duše. Postoji tendencija dublje istine.",
+          "reversed": "Osam šoljica je preokrenulo, dilemu da li će ići ili ostati, može ometati dušu vezu. Jasna odluka otkriva ovu vezu.",
+          "keywords": [
+            "odlazak",
+            "putovanje",
+            "istina",
+            "odluka",
+            "srodna duša"
+          ],
+          "context": "Potraga za novom istinom čini srodnu dušu vidljivu."
+        },
+        "position6": {
+          "upright": "Osam označava da trebate ostaviti neke stvari iza kako bi se vaša želja ostvarila. Pretvaranje prema novom aparatu na putu za vaše želje.",
+          "reversed": "Invertirana osam znači da će se vaša želja možda ostaviti vešanje kada ste rastrgani između odlaska i boravka. Potrebna je jasna odluka.",
+          "keywords": [
+            "odlazak",
+            "nov način",
+            "hrabrost",
+            "značenje",
+            "odluka"
+          ],
+          "context": "Puštanje ući će da napravi mesta za vašu želju."
+        }
+      },
+      "nineofcups": {
+        "position1": {
+          "upright": "Devet šoljica kaže da će se vaša želja ostvariti i uskoro ćete pronaći vezu koja zadovoljava vaše srce.",
+          "reversed": "Devet šoljica preokrećeno upozorava da površno zadovoljstvo može ometati pravu sreću.",
+          "keywords": [
+            "želja",
+            "zadovoljstvo",
+            "zadovoljstvo",
+            "sreća"
+          ],
+          "context": "Vaša želja za novom vezom može se ostvariti."
+        },
+        "position2": {
+          "upright": "Devet šoljica označava rak ili ribe, kompatibilno sa uticajem Venere. Ova osoba brine o emocionalnom zadovoljstvu.",
+          "reversed": "Devet rasprostranjenih šoljica može pokazati površnost ili nesezbilnost u senci vaterskih znakova.",
+          "keywords": [
+            "vodni znak",
+            "zadovoljstvo",
+            "osećanje",
+            "empatija"
+          ],
+          "context": "Uticaji od raka i ribe dolaze do izražaja."
+        },
+        "position3": {
+          "upright": "Devet šoljica pokazuje da zadovoljstvo i sreća mogu biti prirodni ishod harmonije. Vaš unutrašnji mir se takođe odražava na vinogradu.",
+          "reversed": "Devet šoljica je obrnuto, potraga za površnim zadovoljstvima slabi sklad. Mora se tražiti istinsko zadovoljstvo.",
+          "keywords": [
+            "sreća",
+            "zadovoljstvo",
+            "raport",
+            "zadovoljstvo",
+            "mir"
+          ],
+          "context": "Zadovoljstvo podstiče harmoniju. Površnost zatamnjuje vezu."
+        },
+        "position4": {
+          "upright": "Devet šoljica jača dugoročnu vezu ličnog zadovoljstva i sreće. Zajedničko zadovoljstvo osigurava kontinuitet.",
+          "reversed": "Obrnuti devet šoljica, sebičnosti ili površno zadovoljstvo podriva dugoročno.",
+          "keywords": [
+            "zadovoljstvo",
+            "sreća",
+            "deljenje",
+            "zadovoljstvo",
+            "dugoročan"
+          ],
+          "context": "Zajednička sreća neguje dugoročno, sebičnost testira vezu."
+        },
+        "position5": {
+          "upright": "Devet šoljica ukazuje da lično ispunjenje i sreća povećavaju snagu privlačenja srodne duše. Zadovoljna srce je otvorena za vezu srodne duše.",
+          "reversed": "Devet šoljica je obrnuto, potraga za površnim zadovoljstvima može se ometati u vezi sa dušem.",
+          "keywords": [
+            "zadovoljstvo",
+            "zadovoljstvo",
+            "sreća",
+            "zadovoljstvo",
+            "srodna duša"
+          ],
+          "context": "Zadovoljstvo privlači srodnu dušu, površnost stvara senku."
+        },
+        "position6": {
+          "upright": "Nine pokazuju da će se vaša želja vrlo verovatno ostvariti. Rezultat koji će zadovoljiti vaše srce je na putu.",
+          "reversed": "Invertirani devet ukazuje da površno zadovoljstvo može ometati suštinu vaše želje. Trebali biste se fokusirati na duboke potrebe.",
+          "keywords": [
+            "zadovoljstvo",
+            "zadovoljstvo",
+            "sreća",
+            "dosta",
+            "hvala"
+          ],
+          "context": "Pravo zadovoljstvo čini vašu želju vidljivim."
+        }
+      },
+      "tenofcups": {
+        "position1": {
+          "upright": "Deset šoljica ukazuje na mogućnost srećne i mirne veze. Uskoro ćete upoznati nekoga ko će vam učiniti da se vaše srce oseća kao kod kuće.",
+          "reversed": "Deset pukotina obrnuta ukazuje da mogu postojati razlike između očekivanja i stvarnosti.",
+          "keywords": [
+            "sreća",
+            "raport",
+            "porodica",
+            "mir"
+          ],
+          "context": "Uskoro je moguć harmoničan i mirnu vezu."
+        },
+        "position2": {
+          "upright": "Deset šoljica označava porodično orijentisan na rak raka. Ova osoba brine o temi kuće i pripadnosti.",
+          "reversed": "Invertirani deset šoljica, pod senkom karcinoma, možda postoje poteškoće zbog očekivanja porodice.",
+          "keywords": [
+            "Rak",
+            "porodica",
+            "osećanje",
+            "pripadnik"
+          ],
+          "context": "Energija raka je dominantna."
+        },
+        "position3": {
+          "upright": "Deset šoljica ukazuje na potencijal porodične harmonije i trajne sreće. Moguće je mirna budućnost.",
+          "reversed": "Invertirani deset šoljica, preterano idealizacija očekivanja može poremetiti harmoniju. Realistični dijalog je važan.",
+          "keywords": [
+            "sreća",
+            "porodica",
+            "mir",
+            "raport",
+            "budućnost"
+          ],
+          "context": "Jedinstvo donosi harmoniju. Idealizam prisiljava vezu."
+        },
+        "position4": {
+          "upright": "Deset šoljica ukazuje na porodičnu harmoniju i mir u dugoročnoj vezi. Osećaj jedinstva podstiče kontinuitet.",
+          "reversed": "Okrećeno deset šoljica, sukob očekivanja - sukob otežava dugoročno.",
+          "keywords": [
+            "porodica",
+            "raport",
+            "mir",
+            "jedinstvo",
+            "dugoročan"
+          ],
+          "context": "Jedinstvo neguje dugoročno, sukob testira vezu."
+        },
+        "position5": {
+          "upright": "Deset šoljica jedan je od najjačih pokazatelja srodne veze. Porodica, jedinstvo i trajna sreća moguća su u ovoj obveznici.",
+          "reversed": "Okrećeno deset šoljica, razlika između ideala i stvarnosti može da opterene srodnu vezu. Međutim, autentičnost čuva snagu obveznice.",
+          "keywords": [
+            "sreća",
+            "porodica",
+            "jedinstvo",
+            "raport",
+            "srodna duša"
+          ],
+          "context": "Jedinstvo i harmonija ukazuju na matesništvo duše."
+        },
+        "position6": {
+          "upright": "Deset pokazuje da će ispunjenje vaše želje donijeti trajnu sreću i harmoniju. Označeno je okruženje puno porodičnog mira i ljubavi.",
+          "reversed": "Invertirani deset, ako je idealna očekivanja u sukobu sa stvarnošću, možda je teško da se vaša želja u potpunosti ostvari.",
+          "keywords": [
+            "sreća",
+            "raport",
+            "porodica",
+            "lov",
+            "mir"
+          ],
+          "context": "Ljubavno okruženje podržava vašu želju."
+        }
+      },
+      "pageofcups": {
+        "position1": {
+          "upright": "Princ Cupsa najavio je romantično i iznenađujuće početak. Nevina ljubav može da vas uskoro nađe.",
+          "reversed": "Princ of Cups preokrenuo kaže da se novi odnos može kratkotrajati zbog nedostatka emocionalne zrelosti.",
+          "keywords": [
+            "romantika",
+            "nevinost",
+            "iznenađenje",
+            "senzibilitet"
+          ],
+          "context": "Romantična veza se uskoro može pojaviti."
+        },
+        "position2": {
+          "upright": "Princ čaša ukazuje na mlade i sanjive energiju. Ova osoba može biti nevina, romantična i intuitivna.",
+          "reversed": "Princ Cup-ova obrnuta može biti pretjerano osetljiva ili bježati u senci Ribe.",
+          "keywords": [
+            "Riba",
+            "romantika",
+            "intuicija",
+            "nevinost"
+          ],
+          "context": "Digita za energiju Ribe."
+        },
+        "position3": {
+          "upright": "Princ čaše, čiste emocije i radoznalost ojačaju harmoniju. Mala gesta oživljavaju odnos.",
+          "reversed": "Princ Cup-ova preokrenuo je, preterana osetljivost ili sanjara otežavamo harmoniju. Možda će biti potreban realan pristup.",
+          "keywords": [
+            "nevinost",
+            "radoznalost",
+            "geste",
+            "raport",
+            "izraz"
+          ],
+          "context": "Čiste emocije uvećavaju harmoniju. Višak sojeva veze."
+        },
+        "position4": {
+          "upright": "Princ čaša, emocionalna otvorenost i nevinost dodaju svežinu dugoročnim odnosima. Radoznalost održava vezu živu.",
+          "reversed": "Obrnuti princ čaše, preterana osetljivost ili nezrelost dugoročno je teško.",
+          "keywords": [
+            "radoznalost",
+            "nevinost",
+            "otvorenost",
+            "sazrevanje",
+            "dugoročan"
+          ],
+          "context": "Otvorenost podstiče dugoročno, nezrelost testira obveznice."
+        },
+        "position5": {
+          "upright": "Princ čaša može biti prva iskra nevinih osećanja i nadahnjujuće početne srodne veze.",
+          "reversed": "Princ Cup-ova obrnut, preterana sanjarina može otežati vezu srodne duše. Potrebno je uravnotežiti emocije.",
+          "keywords": [
+            "nevinost",
+            "inspiracija",
+            "početak",
+            "sanjati",
+            "srodna duša"
+          ],
+          "context": "Nevinost povećava verovatnoću srodne duše."
+        },
+        "position6": {
+          "upright": "Princ ukazuje da će biti malih iznenađenja i kreativnih početaka u tome da se vaša želja ostvari. Neočekivane vesti mogu da pozovu vašu želju.",
+          "reversed": "Prestolježeni princ može da komplikuje vašu želju prevelike sanja. Potreban je realan pristup.",
+          "keywords": [
+            "inspiracija",
+            "kreativnost",
+            "početak",
+            "radoznalost",
+            "nadati se"
+          ],
+          "context": "Malo iznenađenje može ispuniti vašu želju."
+        }
+      },
+      "knightofcups": {
+        "position1": {
+          "upright": "Vitez čaše kaže da će romantični predlog ili ljubavna osoba ući u vaš život.",
+          "reversed": "Vitez Cup-a obrnut ukazuje da može postojati rizik od nedoslednosti ili razočaranja.",
+          "keywords": [
+            "romantika",
+            "ponuditi",
+            "povući",
+            "vizija"
+          ],
+          "context": "Uskoro možete dobiti romantični predlog."
+        },
+        "position2": {
+          "upright": "Knight of Cups ukazuje na romantični znak Riba ili Škorpiona. Ova osoba je idealistička i izražajna.",
+          "reversed": "Učitavanje viteza šoljica može biti previše sanjiv ili nedosledan u senci Pisces-Scorpio.",
+          "keywords": [
+            "Riba",
+            "Škorpion",
+            "romantika",
+            "idealan"
+          ],
+          "context": "Pisces ili akcenat Scorpio je jak."
+        },
+        "position3": {
+          "upright": "Knight of Cups kaže da će romantika i elegancija podsticati harmoniju. Ponuda od srca jača vašu obveznicu.",
+          "reversed": "Ograničeni vitez čaše, previsoka romantizacija ili nedoslednost može da poremeti sklad. Potrebna je jasnoća i kontinuitet.",
+          "keywords": [
+            "romantika",
+            "milost",
+            "ponuditi",
+            "raport",
+            "vizija"
+          ],
+          "context": "Romantika podstiče Harmonija. Nedoslednost slabi vezu."
+        },
+        "position4": {
+          "upright": "Vitez čaše, romantike i elegancije podržavaju dugoročne odnose. Koraci iz srca pružaju kontinuitet.",
+          "reversed": "Ukrasan vitez čaše, nedosledna obećanja boli dugoročno.",
+          "keywords": [
+            "romantika",
+            "milost",
+            "ponuditi",
+            "osećanje",
+            "dugoročan"
+          ],
+          "context": "Romantika neguje dugoročno, nedoslednost testira vezu."
+        },
+        "position5": {
+          "upright": "Knight of Cups ukazuje na romantični i srčani predlog srodne duše veze. Ova osoba može izraziti svoje emocije milosti.",
+          "reversed": "Ograničeni vitez čaše, preterano-top romantika ili nedosledna obećanja mogu da oblakne dušem.",
+          "keywords": [
+            "romantika",
+            "ponuditi",
+            "vizija",
+            "osećanje",
+            "srodna duša"
+          ],
+          "context": "Romantični pristup ukazuje na matesništvo duše."
+        },
+        "position6": {
+          "upright": "Vitez vam govori da će romantični predlog ili emotivni razvoj doneti vašu želju u stvarnost.",
+          "reversed": "Vreoki vitez, maštovito obećanja ili nedosledni koraci mogu da postave želju u probleme.",
+          "keywords": [
+            "romantika",
+            "ponuditi",
+            "vizija",
+            "moje ime",
+            "osećanje"
+          ],
+          "context": "Dosledan romantični korak omogućava vašu želju."
+        }
+      },
+      "queenofcups": {
+        "position1": {
+          "upright": "Kraljica šoljica ukazuje na partnera koji je empatično, voli i ima duboka osećanja. Uskoro možete naići na takvu osobu.",
+          "reversed": "Kraljica CUP-ova preokrenuta opisuje rizik od emocionalne nestabilnosti ili prekomernostitljivosti.",
+          "keywords": [
+            "empatija",
+            "lov",
+            "senzibilitet",
+            "dubina"
+          ],
+          "context": "Emotivno jaki kandidat za supružnika može uskoro stići."
+        },
+        "position2": {
+          "upright": "Kraljica šoljica označava intuitivni i saosećajni znak raka. Ova osoba ima emocionalnu zrelost.",
+          "reversed": "Kraljica Cup-ova obrnuta može pokazati preveliku osetljivost ili zavisnost u senci raka.",
+          "keywords": [
+            "Rak",
+            "intuicija",
+            "saosećanje",
+            "zrelost"
+          ],
+          "context": "Energija raka je dominantna."
+        },
+        "position3": {
+          "upright": "Kraljica šoljica pokazuje da će empatija i duboka emocionalnost ojačati harmoniju. Siguran prostor raste vaš obveznica.",
+          "reversed": "Invertirana kraljica šoljica, gubitak granica ili prekomerne osetljivosti Mars Harmonija. Samoregulacija je obavezna.",
+          "keywords": [
+            "empatija",
+            "saosećanje",
+            "raport",
+            "senzualnost",
+            "poverenje"
+          ],
+          "context": "Empatija podstiče harmoniju. Neravnoteža je sojena obveznica."
+        },
+        "position4": {
+          "upright": "Kueen of Cups, empatija i emocionalna zrelost postaju osnova za dugotrajno lepljenje. Pruža kontinuitet sigurne površine.",
+          "reversed": "Invertirana kraljica šoljica, prekomerna emotivnost ili nedostatak granica dugoročno čine dugoročno.",
+          "keywords": [
+            "empatija",
+            "zrelost",
+            "poverenje",
+            "osećanje",
+            "dugoročan"
+          ],
+          "context": "Empatija podržava dugoročno, nedostatak granica testira obveznice."
+        },
+        "position5": {
+          "upright": "Kraljica šoljica, duboka empatija i saosećanje formiraju srce srodne veze. Ova veza je izgrađena na emocionalnom zrelosti.",
+          "reversed": "Kraljica CUP-ova preokrenuta, emocionalna zavisnost ili granična pitanja može otežati čvrst srodne duše.",
+          "keywords": [
+            "empatija",
+            "saosećanje",
+            "zrelost",
+            "granica",
+            "srodna duša"
+          ],
+          "context": "Saosećanje neguje matesništvo duše, zavisnost testira obveznica."
+        },
+        "position6": {
+          "upright": "Kraljica pokazuje da će intuicija i saosećajna podrška igrati važnu ulogu u tome da se vaša želja ostvari.",
+          "reversed": "Reversed kraljica, emocionalna nestabilnost ili preterano osetljivost može vam otežati vašu želju.",
+          "keywords": [
+            "intuicija",
+            "saosećanje",
+            "podrška",
+            "empatija",
+            "mudrost"
+          ],
+          "context": "Intuitivna podrška jača vašu želju."
+        }
+      },
+      "kingofcups": {
+        "position1": {
+          "upright": "Kralj šoljica kaže da će zreo, uravnotežen i emocionalno pouzdan partner ući u vaš život.",
+          "reversed": "Preokrećen kralj Cupa upozorava da se možete susresti sa osobom koja potiskuje vaše emocije ili je manipulativna.",
+          "keywords": [
+            "zrelost",
+            "ravnoteža",
+            "lov",
+            "poverenje"
+          ],
+          "context": "Odnos sa emocionalno zrelom osobom može uskoro početi."
+        },
+        "position2": {
+          "upright": "Kralj šoljica označava zrele ribe ili škorpion. Ova osoba je neko ko može da upravlja svojim emocijama i razume.",
+          "reversed": "Prekoračeni kralj šoljica može ukazivati na manipulaciju ili potisnuti gnev u senci Scorpio-Riba.",
+          "keywords": [
+            "Riba",
+            "Škorpion",
+            "zrelost",
+            "osećanje"
+          ],
+          "context": "Ribe ili Škorpion dolazi do izražaja."
+        },
+        "position3": {
+          "upright": "Kralj šoljica pokazuje da će ojačati harmoniju sa emocionalnim zrelošću i mirno vođstvo. Održavanje ravnoteže u doba krize donosi mir vinogradu.",
+          "reversed": "Invertirani kralj šoljica, suzbijanje emocija ili pasivne agresije otežava harmoniju. Potreban je jasan izraz.",
+          "keywords": [
+            "zrelost",
+            "ravnoteža",
+            "raport",
+            "spokojstvo",
+            "rukovodstvo"
+          ],
+          "context": "Zrelost donosi harmoniju. Kompresija je sočila ligament."
+        },
+        "position4": {
+          "upright": "Kralj šoljica, emocionalna ravnoteža i zrelo rukovodstvo podržavaju dugoročnu vezu. Spokojstvo čini Bond stalnu.",
+          "reversed": "Invertirani kralj šoljica, potisnuti emocije ili pasivno-agresivni stavovi otežavaju dugoročno.",
+          "keywords": [
+            "ravnoteža",
+            "rukovodstvo",
+            "zrelost",
+            "osećanje",
+            "dugoročan"
+          ],
+          "context": "Zrelost goriva dugoročno, potisnuta emocija testiraju vezu."
+        },
+        "position5": {
+          "upright": "Kralj šoljica signalizira srodnu vezu srodne duše u emocionalnom zrelosti i mirno vođstvo. Čak i u olujnim vremenima ova osoba nadahnjuje samopouzdanje.",
+          "reversed": "Ograničeni kralj šoljica, suzbijanje emocija ili pasivnog agresivnog stava može da oblakne vezu s duhovima.",
+          "keywords": [
+            "zrelost",
+            "poverenje",
+            "rukovodstvo",
+            "ravnoteža",
+            "srodna duša"
+          ],
+          "context": "Zrelost ukazuje na materi u dušema, potisnuta emocija testiraju vezu."
+        },
+        "position6": {
+          "upright": "Kralj šoljica vam govori da se vaša želja može ostvariti na zreli način. Emocionalna ravnoteža je ključ vaše želje.",
+          "reversed": "Kralj obrnuto, potisnute emocije ili pasivnost mogu da postanu na putu vaše želje.",
+          "keywords": [
+            "ravnoteža",
+            "zrelost",
+            "poverenje",
+            "mir",
+            "rukovodstvo"
+          ],
+          "context": "Emocionalna zrelost omogućava vašu želju."
+        }
+      },
+      "aceofswords": {
+        "position1": {
+          "upright": "Ace mačeva je znak jasnoće i poštenih početaka koji se smanjuju kroz magla uma. Otvoreni razgovor ili sastanak uskoro može otvoriti vrata novom odnosu sa oštrom jasnoćom.",
+          "reversed": "ACE of Mačevi obrnuti ukazuju na to da nejasne poruke i poluistine mogu da oblakuju priliku. Postoji potencijal za novi odnos, ali ako se ne obezbedi jasnoća, početak se može odložiti.",
+          "keywords": [
+            "oštrina",
+            "real",
+            "neposrednost",
+            "početak"
+          ],
+          "context": "Jasne reči i jasne namere pozivaju na novi odnos; Dvosmisleni kašnjenje jezika."
+        },
+        "position2": {
+          "upright": "Ace mačeva snažno naglašava uticaj na vazdušni znak. Blizanci, Vaga ili Vodolija; Inteligencija je definisana jasnoćom i oštrom razmišljanjem.",
+          "reversed": "Ace mačeva obrnuta ukazuje da ta osoba može pokazati konfuziju ili neodlučnost u komunikaciji. Mentalna konfuzija koja je senka vazdušnih znakova može postati očigledna.",
+          "keywords": [
+            "zračni znak",
+            "obaveštajna služba",
+            "oštrina",
+            "odluka"
+          ],
+          "context": "Označava energiju Blizanca, Vaga ili Vodolije."
+        },
+        "position3": {
+          "upright": "Ace mačeva kaže da će otvorena komunikacija i iskrenost formirati osnovu harmonije. Pojašnjenje činjenica dodaje ravnotežu prema vezi.",
+          "reversed": "Obrnuta asa mačeva, nesporazuma ili zbrke podrivaju harmoniju. Komunikacija zahteva jasnoću, a ne oštrinu.",
+          "keywords": [
+            "oštrina",
+            "istina",
+            "raport",
+            "komunikacija",
+            "istina"
+          ],
+          "context": "Otvoreni govor podstiče harmoniju. Blur sojevi veže."
+        },
+        "position4": {
+          "upright": "Ace mačeva, jasnoća i iskrenosti su kamen temeljac dugoročnih odnosa. Otvorena komunikacija ojačava budućnost.",
+          "reversed": "Ace mačeva preokrenuti: nesporazumi ili pogrešno komuniciranje mogu oštetiti dugoročnu vezu.",
+          "keywords": [
+            "oštrina",
+            "iskrenost",
+            "komunikacija",
+            "istina",
+            "dugoročan"
+          ],
+          "context": "Jasnoća jača dugoročno, isključenje testira obveznice."
+        },
+        "position5": {
+          "upright": "Ace mačeva kaže da se veza sa srodnom dušem može izgraditi na jasnoći i istini. Iskrenost i otvorena komunikacija su najveća snaga u ovoj obveznici.",
+          "reversed": "Ace mačeva obrnuti, nesporazumi ili nepoštenost može da oblakne vezan za srodnu dušu. Istina ne bi trebalo da bude sakrivena.",
+          "keywords": [
+            "istina",
+            "oštrina",
+            "iskrenost",
+            "obveznica",
+            "srodna duša"
+          ],
+          "context": "Istina jača matesništvo duše, nesporazumi testiraju vezu."
+        },
+        "position6": {
+          "upright": "Ace omogućava da se vaša želja ostvari sa jasnom svešću i pravom odlukom. Kada hrabro izrazite istinu, vaša želja postaje jasna.",
+          "reversed": "Invertirani ACE, konfuzija ili zamagljena komunikacija mogu sprečiti vašu želju da se ostvari. Prvo je potrebna jasnoća uma.",
+          "keywords": [
+            "oštrina",
+            "real",
+            "odluka",
+            "početak",
+            "um"
+          ],
+          "context": "Keen svest čini vašu želju vidljivom."
+        }
+      },
+      "twoofswords": {
+        "position1": {
+          "upright": "Njih dvoje mačeva kaže da je iako je vaše srce otvoreno za novo, vaše odluke su zaključane. Prilika za vezu može uskoro da nastane; Da biste uklonili povez sa očima, morate da izmenite svoje unutrašnje glas i činjenice zajedno.",
+          "reversed": "Dva preokrenuta mačeva ukazuju na to da će se suočiti da će se izbeći kraj i izbora će biti prisiljen. Jednom kada se donese odluka, nova staza odnosa postaje jasna.",
+          "keywords": [
+            "dilema",
+            "odluka",
+            "konfrontacija",
+            "ravnoteža"
+          ],
+          "context": "Kada je neizvesnost rešena, otvoriće se nova vrata; Odlaganja izbegavanja."
+        },
+        "position2": {
+          "upright": "Dvoje mačeva predstavlja neodlučnu, ali fer stranicu Vage. Ova osoba je poznata po traženju ravnoteže.",
+          "reversed": "Pretvoreno dvoje mačeva, u senci Vage, izbegavanje ili poteškoće u donošenju odluka dolazi do izražaja.",
+          "keywords": [
+            "Skala",
+            "ravnoteža",
+            "odluka",
+            "dilema"
+          ],
+          "context": "Uticaj Vage može biti dominantan."
+        },
+        "position3": {
+          "upright": "Dvoje mačeva pokazuju važnost uravnoteženih odluka za harmoniju. Neutralnost održava ravnotežu.",
+          "reversed": "Dva mačeva obrnuta, izbegavanje i neodlučnost ometaju harmoniju. Potrebni su jasni izbori, a ne ignorisanje.",
+          "keywords": [
+            "odluka",
+            "ravnoteža",
+            "dilema",
+            "raport",
+            "glasati"
+          ],
+          "context": "Jasna odluka donosi harmoniju. Izbegavanje razbija obveznica."
+        },
+        "position4": {
+          "upright": "Dvoje mačeva, odluke od odlaganja mogu zadržati dugoročnu vezu u Abistanci. Otvoreni izbori pružaju kontinuitet.",
+          "reversed": "Dvoje mačeva obrnuto, odluka je suočena određuje sudbinu dugoročne veze.",
+          "keywords": [
+            "odluka",
+            "dilema",
+            "konfrontacija",
+            "ravnoteža",
+            "dugoročan"
+          ],
+          "context": "Jasnoća odluka neguje dugoročno, dilema je sojena obveznica."
+        },
+        "position5": {
+          "upright": "Njih dvoje mačeva ukazuje na potrebu da donesu odluku između srca i uma kako bi prihvatili srodnu dušu.",
+          "reversed": "Druga dva mačeva, kao što se ne indicizonska završava, jasnoća se pojavljuje o vezi sa dušem.",
+          "keywords": [
+            "odluka",
+            "ravnoteža",
+            "dilema",
+            "glasati",
+            "srodna duša"
+          ],
+          "context": "Donošenje odluke pojašnjava matesništvo duše."
+        },
+        "position6": {
+          "upright": "DUO pokazuje da ispunjenje vaše želje zavisi od dilemmatične tačke odluke. Morate otvoriti oči i napraviti izbor.",
+          "reversed": "Invertirani binarni, izbegavanja mogu da stave vašu želju na čekanje. Odlaganje odluke oduzima vašu želju.",
+          "keywords": [
+            "dilema",
+            "odluka",
+            "ravnoteža",
+            "izbegavanje",
+            "oštrina"
+          ],
+          "context": "Izbori se premeštaju vašu želju napred."
+        }
+      },
+      "threeofswords": {
+        "position1": {
+          "upright": "Tri mačeva šapuće da sveže rane stvaraju udaljenost od nove veze. Kako se popravljaju tuga i ogorčenost, početak čistije se pojavljuje pre vas.",
+          "reversed": "Okrećena tri mačeva nam govore da je zaceljivanje počelo i srce se ponovo priprema za ljubav. Poznavanje podstaknuto emocionalnom otvorenom uskoro može doći do izražaja.",
+          "keywords": [
+            "razočaranje",
+            "poboljšanje",
+            "popraviti",
+            "otvorenost"
+          ],
+          "context": "Popravka bola uvlači put za novu vezu; Proces isceljenja se ubrzava."
+        },
+        "position2": {
+          "upright": "Tri mačeva ukazuje na senku Blizanca. Ova osoba može imati oštre reči ili štetnu iskrenost u komunikaciji.",
+          "reversed": "U senci obrnuto tri mačeva, Blizanci, zbrke ili nesporazumi mogu biti na čelu.",
+          "keywords": [
+            "Blizanci",
+            "komunikacija",
+            "odvajanje",
+            "tvrdoća"
+          ],
+          "context": "Naglašava se energija Blizanci."
+        },
+        "position3": {
+          "upright": "Tri mačeva kaže da srčane ili oštre stvarnosti mogu izazvati harmoniju. Otvorite konfrontaciju donosi ravnotežu.",
+          "reversed": "Preokrećena tri mačeva ukazuje da se harmonija može ponovo uspostaviti kroz proces isceljenja. Saosećajni jezik zaceljuje rane.",
+          "keywords": [
+            "slomljeno srce",
+            "real",
+            "konfrontacija",
+            "raport",
+            "zarastanje"
+          ],
+          "context": "Konfrontacija obnavlja Harmoniju. Pritisni gume Ligamenti."
+        },
+        "position4": {
+          "upright": "Tri mačeva, srce može biti test dugoročne veze. Otvoreni procesi za isceljivanje podržavaju kontinuitet.",
+          "reversed": "Tri mačeva obrnuta, dugoročna veza mogu se ponovo uspostaviti ako se unese proces isceljenja.",
+          "keywords": [
+            "srp",
+            "ugao",
+            "poboljšanje",
+            "stvarnost",
+            "dugoročan"
+          ],
+          "context": "Izlečenje jača dugoročno, bol testira vezu."
+        },
+        "position5": {
+          "upright": "Tri mačeva kaže da se veza srodne duše može izlečiti nakon ishranivanja srca.",
+          "reversed": "Preokrećena tri mačeva uvlači put za lekovitim srodnom srodnom snagom nakon boli.",
+          "keywords": [
+            "srp",
+            "poboljšanje",
+            "lova",
+            "iskustvo",
+            "srodna duša"
+          ],
+          "context": "Heartbreak otvara druženje sa dušema kroz isceljivanje."
+        },
+        "position6": {
+          "upright": "Trio vam govori da možete iskusiti razočaranje ili srce na putu ka vašoj želji koja se ostvari. Samo sa ovom svesti dolazi izlečenje.",
+          "reversed": "Invertirana Triada povećava verovatnoću da će se vaša želja zaceliti rane. Transformacija bola otvara se putem.",
+          "keywords": [
+            "razočaranje",
+            "real",
+            "poboljšanje",
+            "starost",
+            "svest"
+          ],
+          "context": "Može otvoriti vrata vaše želje za isceljenjem."
+        }
+      },
+      "fourofswords": {
+        "position1": {
+          "upright": "Četiri mačeva opisuje kratak fazu odmora i oporavka. Kada udahnete, univerzum vas može složiti sa mirnim i jednostavnim početkom.",
+          "reversed": "Pretvorena četvorka mačeva kaže da je to trčanje bez pravilnih guma odmora srca. Kada usporite ritam, mogućnost nove veze otkriva sebe.",
+          "keywords": [
+            "odmor",
+            "oporavak",
+            "spokojstvo",
+            "regeneracija"
+          ],
+          "context": "Vreme i mentalno čišćenje podržavaju zdravo rođenje nove veze."
+        },
+        "position2": {
+          "upright": "Četiri mačeva pokazuju bočnu stranu Vodolije koja vrednuje unutrašnji odmor. Ova osoba može da ceni mentalne pauze.",
+          "reversed": "Četiri obrnuta mačeva mogu ukazivati na preveliku distancu ili odrediš u akvarijskoj senci."
+        }
+      }
+    }
+  }
+}

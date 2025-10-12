@@ -1,0 +1,791 @@
+{
+  "relationship-analysis": {
+    "meanings": {
+      "nineofwands": {
+        "position5": {
+          "keywords": [
+            null,
+            null,
+            null,
+            "zaštita"
+          ],
+          "context": "Vaša mapa puta; Strpljenje na krajnjem delu. Odmor će upaliti vaš put."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje izdržljivost i stalnost u odnosu od vas. Želi da ga oseti da neće odustati.",
+          "reversed": "Vaš partner ne želi da stalno budete na straži. Ugodnija i sigurna erigodacija.",
+          "keywords": [
+            "izdržljivost",
+            "stabilnost",
+            "zaštita",
+            "kontinuitet",
+            "poverenje"
+          ],
+          "context": "Vaš partner očekuje posvećenost koja se ne odriče."
+        },
+        "position7": {
+          "upright": "Budućnost komunikacije će biti otprilike otpornost i energiju poslednje milje. Upornost će osigurati očuvanje obveznice.",
+          "reversed": "Izgaranje ili hipervigilancija mogu ugostiti vezu u budućnosti. Dobijanje podrške će biti od suštinskog značaja.",
+          "keywords": [
+            "izdržljivost",
+            "zaštita",
+            "rezolucija",
+            "period"
+          ],
+          "context": "Budućnost komunikacije biće zaštićena strpljenjem i otpornošću. Ali postoji rizik od izgaranja."
+        }
+      },
+      "tenofwands": {
+        "position1": {
+          "upright": "Deset štapića ukazuje da opterećenja i odgovornosti postaju teži u trenutnoj situaciji. Neko bi mogao da nosi previše težine. Savet: Osvetlite se deljenjem.",
+          "reversed": "Invertirani deset štapića ukazuje na iscrpljenost i zadržavanje opterećenja koje je potrebno pustiti. Simptom: Ciklus nastavka žalbe.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "ugnjetavanje",
+            "izgorevanje",
+            "deljenje"
+          ],
+          "context": "Trenutno je veza pod preopterećenjem. Zajednička deljenja će biti utešno."
+        },
+        "position2": {
+          "upright": "Deset štapića, u vašim osećanjima postoji pritisak da nose opterećenja i odgovornost. Vaše srce može biti umorno. Savet: Podelite svoje opterećenje.",
+          "reversed": "Preokrećeno deset štapića govori o potrebi da se prepusti viška. Simptom: Izgaranje.",
+          "keywords": [
+            "odgovornost",
+            "opteretiti",
+            "umor",
+            "izdržljivost",
+            "deljenje"
+          ],
+          "context": "Tvoje srce je trenutno pod opterećenjem. Traženje podrške će olakšati vaša osećanja."
+        },
+        "position3": {
+          "upright": "Deset štapića kaže da je vaše očekivanje da se terete da se dele terete. Vaše srce želi da se osvetli. Deljenje, podrška.",
+          "reversed": "Pretvoreni deset štapića ukazuje da vaše očekivanje treba da bude slobodan od nepotrebnih tereta. Vaše srce traži olakšanje. \\ N \\ nsimptom: Želja da smanjimo odgovornost.",
+          "keywords": [
+            "opteretiti",
+            "deljenje",
+            "podrška",
+            "odgovornost",
+            "ublažavanje"
+          ],
+          "context": "Vaša očekivanja je uravnotežena deljenje opterećenja. Vaše srce želi podršku."
+        },
+        "position4": {
+          "upright": "Deset štapića kaže da vas osvetljava opterećenje i očistite svoje prioritete. Delegacija je ljubav.",
+          "reversed": "Reversed deset štapića kaže da prestani da se nosi oko onoga što treba da se završi. Jednostavnost je dah.",
+          "keywords": [
+            "opteretiti",
+            "prioritet",
+            "delegat",
+            "jednostavnost",
+            "završetak"
+          ],
+          "context": "Vaš savet; da se skine nepotrebne stvari sa leđa. Malo, ali više povećava kvalitet. Oslobođeni prostor uvećava bliskost."
+        },
+        "position5": {
+          "upright": "Vaš put je da uravnotežite teret. Prioritizacija će vas osloboditi.",
+          "reversed": "Put vas traži da pustite višak. Jednostavnost će povećati kvalitet.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "završetak",
+            "ravnoteža"
+          ],
+          "context": "Vaša mapa puta; Pojednostavljivanje tereta. Deljenje će doneti slobodu."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje da delite odgovornosti. Želi da olakšate njegovo opterećenje.",
+          "reversed": "Vaš partner ne želi da budete preopterećeni. Očekivanje uravnotežene deljenja.",
+          "keywords": [
+            "odgovornost",
+            "deljenje",
+            "ravnoteža",
+            "opteretiti",
+            "partnerstvo"
+          ],
+          "context": "Vaš partner očekuje uravnoteženu deljenje odgovornosti."
+        },
+        "position7": {
+          "upright": "U budućnosti komunikacije mogu biti povećane opterećenja i intenziviranje odgovornosti. Deljenje će osvetliti opterećenje.",
+          "reversed": "Prekomerno odgovornosti ili ne prepustite opterećenjama može da opterećuju vezu u budućnosti. Potrebno je pojednostaviti.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "završetak",
+            "izdržljivost"
+          ],
+          "context": "Budućnost komunikacije biće testirana sa odgovornostima. Ali deljenje će biti rešenje."
+        }
+      },
+      "pageofwands": {
+        "position1": {
+          "upright": "Princ štapiće, radoznalost i istraživačka energija prevladava u trenutnoj situaciji. Postoji entuzijazam za nove korake. Savet: Budite razigrani.",
+          "reversed": "Princ Vands Invertiran kaže da su napuštene ambicije štete poverenje. Simptom: Pola projekata.",
+          "keywords": [
+            "entuzijazam",
+            "otkriće",
+            "radoznalost",
+            "početak",
+            "energija"
+          ],
+          "context": "U trenutnoj situaciji, veza je hranjena radoznalošću. Doslednost će povećati poverenje."
+        },
+        "position2": {
+          "upright": "Princ of Vands, postoji radoznalost i želja za avanturom u vašim osećanjima. Vaše srce je gladno za otkriće. Savet: Korak hrabro.",
+          "reversed": "Princ Vands Reversed-a ukazuje da neravnoteža i nestrpljenje bacaju vaša osećanja. Simptom: Stvari su počele i ostavljene nedovršene.",
+          "keywords": [
+            "radoznalost",
+            "avantura",
+            "entuzijazam",
+            "otkriće",
+            "entuzijazam"
+          ],
+          "context": "Tvoje srce trenutno traži otkriće. Bilans će hraniti ovu energiju."
+        },
+        "position3": {
+          "upright": "Princ Vands kaže da je vaše očekivanje otkriće i entuzijazam. Vaše srce je gladno za novu avanturu .. entuzijazam, učenje.",
+          "reversed": "Princ Vands Reversed-a ukazuje da je vaše očekivanje da se oslobodite nedovršenih ambicija. Vaše srce želi pravu motivaciju. \\ N \\ nsimptom: Želja za pravu strast.",
+          "keywords": [
+            "entuzijazam",
+            "otkriće",
+            "učenje",
+            "strast",
+            "energija"
+          ],
+          "context": "Ono što očekujete je duh avanture. Vaše srce želi da istražuje."
+        },
+        "position4": {
+          "upright": "Princ Vands kaže da pretvori radoznalost u eksperimentisanje. Mala otkrića Otvori velike horizonte.",
+          "reversed": "Princ štapiće preokrenut govore vam da ispunite stvari koje ste ostavili nedovršene mini sprintom. Završna obrada stvara samopouzdanje.",
+          "keywords": [
+            "otkriće",
+            "entuzijazam",
+            "učenje",
+            "fokus",
+            "završnjak"
+          ],
+          "context": "Vaš savet; Probajte to kao igru i podelite ono što učite. Pazite na jedinicu iskrena iskra, pazite na plamen. Završna obrada je najslađa motivacija."
+        },
+        "position5": {
+          "upright": "Vaš put je napredovati kroz radoznalost i eksperimentisanje. Mala otkrića otvoriće velika vrata.",
+          "reversed": "Put vas traži da usredsredite svoju raštrkanu pažnju. Mikro ciljevi će vas uskladiti.",
+          "keywords": [
+            "radoznalost",
+            "otkriće",
+            "iskustvo",
+            "fokus"
+          ],
+          "context": "Vaša mapa puta; nestrpljivost za učenje. Mali koraci će dati smer."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje radoznalost, razigranost i nove ideje od vas. Želi da ga pozovete na male avanture.",
+          "reversed": "Vaš partner ne želi da entuzijazam brzo bledi. Stabilnija energija čeka.",
+          "keywords": [
+            "radoznalost",
+            "igra",
+            "entuzijazam",
+            "iskustvo",
+            "inspiracija"
+          ],
+          "context": "Vaš partner očekuje znatiželjnu i razigranu energiju."
+        },
+        "position7": {
+          "upright": "U budućnosti komunikacije, radoznalost i otkriće energije će doći do izražaja. Mali koraci će nahraniti vezu sa uzbuđenjem.",
+          "reversed": "Ometana pažnja ili je lako dosadilo lako može donijeti nestabilnost u budućnosti. Važno je fokusirati.",
+          "keywords": [
+            "radoznalost",
+            "otkriće",
+            "entuzijazam",
+            "iskustvo"
+          ],
+          "context": "Budućnost komunikacije biće podstaknuta otkrivanjem. Ali nered može biti problem."
+        }
+      },
+      "knightofwands": {
+        "position1": {
+          "upright": "Vitez štapiće, postoji energija brzine i strasti u trenutnoj situaciji. Akcija je velika. Savet: Nastavite hrabro, ali sa SOIS-om.",
+          "reversed": "Vitez štapića obrnut kaže da rasipno i brzo napuštanje bacaju senku trenutne situacije. Simptom: nedosledna energija.",
+          "keywords": [
+            "strast",
+            "brzina",
+            "akcija",
+            "hrabrost",
+            "ubrzanje"
+          ],
+          "context": "Trenutno vinogradar se kreće sa strastvenim zamahom. Uravnotežena brzina će dati samopouzdanje."
+        },
+        "position2": {
+          "upright": "Vitez štapića, u vašim osećanjima postoji strast i želju za brzom akcijom. Vaše srce želi da požuri napred. Savet: Nahranite vatru strpljenjem.",
+          "reversed": "Prekoračeni vitez štapića kaže da nestrpljenje i ispadi ljutnje napreduju vaša čula. Simptom: Užasne odluke.",
+          "keywords": [
+            "strast",
+            "brzina",
+            "pokret",
+            "hrabrost",
+            "entuzijazam"
+          ],
+          "context": "Tvoje srce trenutno trka. Uzimanje koraka sa strpljenjem će ojačati Bond."
+        },
+        "position3": {
+          "upright": "Vitez štapiće kaže da je ono što očekujete je entuzijastična akcija i strastvena veza. Vaše srce želi vatru ... strast, hrabrost.",
+          "reversed": "Vraćeni vitez štapiće ukazuje da je vaše očekivanje zaštićeno od požbirenosti. Vaše srce želi uravnoteženo kretanje. \\ N \\ nsimptom: umerena želja za energijom.",
+          "keywords": [
+            "strast",
+            "hrabrost",
+            "pokret",
+            "entuzijazam",
+            "vatra"
+          ],
+          "context": "Ono što očekujete je strastveni koraci. Tvoje srce je vruće, ali želi da se krene napred na uravnotežen način."
+        },
+        "position4": {
+          "upright": "Vitez štapića kaže da se oženi hrabrošću sa strategijom. Ako brzina ima smer, biće poverenja.",
+          "reversed": "Vitez štapića Reverse kaže da će se u rasipnom plamenu voditi sa arhitekturom posvećenosti.",
+          "keywords": [
+            "brzina",
+            "asertivnost",
+            "posvećenost",
+            "strategija",
+            "ubrzanje"
+          ],
+          "context": "Vaš savet; Usmeravanje spontane energije sa planom. To je težina reči koja vodi zamah. Hrabrost + struktura = samopouzdanje."
+        },
+        "position5": {
+          "upright": "Vaša staza leži u napredovanju straljnim, ali strateškim. Korak snimljen sa hrabrošću ubrzaće stazu.",
+          "reversed": "Put želi da prestanete da budete rasipni. Organizovanje vaših obaveza doneće napredak.",
+          "keywords": [
+            "strast",
+            "hrabrost",
+            "brzina",
+            "strategija"
+          ],
+          "context": "Vaša mapa puta; balansiranje požara. Strateška strast će otvoriti put."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje strastveni i hrabar pristup od vas. Želi da dođete kod njega sa inicijativama iz srca.",
+          "reversed": "Vaš partner ne želi da bude rasipljen. Očekuje da su njegovi koraci dosledni.",
+          "keywords": [
+            "strast",
+            "hrabrost",
+            "pokret",
+            "pokušati",
+            "stabilnost"
+          ],
+          "context": "Vaš partner očekuje strastvene, ali dosledne korake."
+        },
+        "position7": {
+          "upright": "U budućnosti komunikacije, strasti, brzine i podebljani koraci će doći do izražaja. Asertivnost će uzbuditi vezu.",
+          "reversed": "Impulsivni potezi ili nepažljivost mogu dovesti do razočaranja u budućnosti. Lojalnost obaveza je obaveza.",
+          "keywords": [
+            "hrabrost",
+            "strast",
+            "brzina",
+            "premestiti"
+          ],
+          "context": "Budućnost komunikacije kreće se napred sa strastvenim koracima. Ali biti bezobzirni rizici."
+        }
+      },
+      "queenofwands": {
+        "position1": {
+          "upright": "Kraljica štapića, harizme, samopouzdanje i toplina energije dolaze u trenutnu situaciju. Vinograd sjaji šarmom. Savet: Podelite svoje svetlo.",
+          "reversed": "Kraljica štapića obrnuta kaže da je ljubomora i potreba za odobrenjem daju senku. Simptom: Nesigurnost.",
+          "keywords": [
+            "karizma",
+            "poverenje",
+            "čarolija",
+            "toplota",
+            "iskra"
+          ],
+          "context": "U trenutnoj situaciji, veza sija snagom atrakcije. Iskrenost će učvrstiti ovu energiju."
+        },
+        "position2": {
+          "upright": "Kraljica štapića, u vašim osećanjima postoji energija samopouzdanja i topline. Vaše srce želi da zasja svetlo. Savet: Podelite svoju atrakciju.",
+          "reversed": "Kraljica štapića preokrenula vam govori da ljubomora ili prekomjerni ponos napreduje vaša osećanja. Simptom: Vhimsi.",
+          "keywords": [
+            "poverenje",
+            "toplota",
+            "čarolija",
+            "strast",
+            "rukovodstvo"
+          ],
+          "context": "Tvoje srce trenutno sija. Iskrenost će povećati ovo svetlo."
+        },
+        "position3": {
+          "upright": "Kraljica štapića kaže da je vaše očekivanje samopouzdanje i radost. Vaše srce želi da deli svoju svetlost. Šarm, toplina.",
+          "reversed": "Kraljica štapića obrnuta ukazuje da vaše očekivanje treba zaštititi od senki ljubomore. Vaše srce žudi originalnoj toplini. \\ N \\ nsimptom: potražnja za čistom energijom.",
+          "keywords": [
+            "poverenje",
+            "fascinacija",
+            "toplota",
+            "iskra",
+            "snaga"
+          ],
+          "context": "Vaše očekivanje je da se vaše svetlo vidi. Vaše srce želi da sija sa radošću."
+        },
+        "position4": {
+          "upright": "Kraljica štapića kaže da ne sakrivaš svoju svetlost i vidi je stav samopouzdanja. Charisma zahteva podršku, a ne poređenje.",
+          "reversed": "Kraljica štapića preokrenuta je ukorijenjena u samo-vredno, a ne eksternom odobrenju. Otopite ljubomornu senku sa saosećanjem.",
+          "keywords": [
+            "poverenje",
+            "vidljivost",
+            "karizma",
+            "Eigenvalue",
+            "inspiracija"
+          ],
+          "context": "Vaš savet; ostati ponizan dok deliš svoje svetlo. Toplina samopouzdanja takođe greje druge. Unutrašnji odobrenje je najjači sunce."
+        },
+        "position5": {
+          "upright": "Vaš put je da odražavate svoju harizmu i samopouzdanje. Topli rukovodstvo će vam proširiti krug.",
+          "reversed": "Put vas traži da pustite senku ljubomore. Naslonjenost u vašu vrednost, učiniće vas blistanjem.",
+          "keywords": [
+            "karizma",
+            "poverenje",
+            "rukovodstvo",
+            "inspiracija"
+          ],
+          "context": "Vaša mapa puta; što odražava unutrašnje svetlo. Samo-vrednost će dati samopouzdanje."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje poverenje, toplinu i karizmu od vas. Želi da ga inspirišete.",
+          "reversed": "Vaš partner ne želi da vidi ljubomoru ili nesigurnost. Uravnotežena energija veštaka čeka.",
+          "keywords": [
+            "poverenje",
+            "karizma",
+            "inspiracija",
+            "toplota",
+            "Eigenvalue"
+          ],
+          "context": "Vaš partner očekuje toplu i pouzdanu energiju."
+        },
+        "position7": {
+          "upright": "U budućnosti odnosa, atrakcija, toplina i poverenja će doći do izražaja. Karizmatična energija će ojačati Bond.",
+          "reversed": "Ljubomora ili nedostatak samopouzdanja mogu ubuduće baciti senku. Samo-vrednost će biti ključ za vezu.",
+          "keywords": [
+            "povući",
+            "poverenje",
+            "toplota",
+            "rukovodstvo"
+          ],
+          "context": "Budućnost komunikacije će rasti sa harizmatičnom energijom. Ali postoji rizik od ljubomore."
+        }
+      },
+      "kingofwands": {
+        "position1": {
+          "upright": "Kralj štapića, energija liderstva, vizije i određivanja prevladava u trenutnoj situaciji. Postoji želja za premeštanjem odnosa napred. Savet: Nosite viziju sa sobom.",
+          "reversed": "Prekoračeni kralj štapova kaže da autoritarizam i jednostrana vizija stvaraju napetost u trenutnoj situaciji. Simptom: Ego sukobi.",
+          "keywords": [
+            "rukovodstvo",
+            "vizija",
+            "stabilnost",
+            "vatra",
+            "snaga"
+          ],
+          "context": "Trenutno vinograd napreduje sa vizionarskom energijom. Zajedničko vođstvo će povećati koheziju."
+        },
+        "position2": {
+          "upright": "Kralj štapića, postoji snažna želja za vođstvom i pravcem u vašim osećanjima. Vaše srce želi strastveno viziju. Savet: Vodite sa inspiracijom.",
+          "reversed": "Preokrećeni kralj štapića ukazuje da autoritarizam ili prekomjerni pritisak naprezaju vaša osećanja. Simptom: kruti stav.",
+          "keywords": [
+            "rukovodstvo",
+            "vizija",
+            "strast",
+            "karizma",
+            "inspiracija"
+          ],
+          "context": "Vaše srce je trenutno puno snažnih osećanja. Vodeći sa saosećanjem će rasti vezu."
+        },
+        "position3": {
+          "upright": "Kralj štapića kaže da je vaše očekivanje vođstvo i vizija. Vaše srce želi vodeću vezu ... snaga, vizija.",
+          "reversed": "Kralj štapića preokrenuo je da će vaše očekivanje biti zaštićeno od autoritarnih stavova. Vaše srce želi vezu regulisanu inspiracijom. \\ N \\ nsimptom: Potreba za inspiracijom.",
+          "keywords": [
+            "rukovodstvo",
+            "vizija",
+            "inspiracija",
+            "snaga",
+            "karizma"
+          ],
+          "context": "Vaša očekivanja je vizionarska veza. Vaše srce želi inspirativno partnerstvo."
+        },
+        "position4": {
+          "upright": "Kralj štapića kaže da podrži svoju viziju strategijom i deljenje odgovornosti. Liderstvo raste sa skalom.",
+          "reversed": "Kralj štapića obrnut kaže da prepozna rizik da postane autoritarna i ojača vaš mišić slušanja.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "odgovornost",
+            "strategija",
+            "slušanje"
+          ],
+          "context": "Vaš savet; Ne gubite empatiju dok deli snažnu viziju. Lider koji sluša gradi poverenje. Strategija + srce = integritet."
+        },
+        "position5": {
+          "upright": "Vaš put vodi kroz vizionarno rukovodstvo. Odvažne strategije će vas odvesti napred.",
+          "reversed": "Put vas traži da se držite podalje od autoritarizma. Veštine slušanja će vam osvetliti put.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "hrabrost",
+            "slušanje"
+          ],
+          "context": "Vaša mapa puta; Upravljanje vizijom. Hrabrost i empatija uspostaviće ravnotežu."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje vizionarno rukovodstvo i smeli smer od vas. Želi da gradite snažnu rutu da se pomeri napred.",
+          "reversed": "Vaš partner ne želi da vidi autoritarizam. Liderstvo koje sluša i akcije čeka.",
+          "keywords": [
+            "rukovodstvo",
+            "vizija",
+            "hrabrost",
+            "ruta",
+            "deljenje"
+          ],
+          "context": "Vaš partner očekuje vizionar, ali deljenje liderstva."
+        },
+        "position7": {
+          "upright": "U budućnosti komunikacija, vizionarno rukovodstvo i strateška energija će doći do izražaja. Hrabre odluke usmjeriće vinograd.",
+          "reversed": "Autoritarizam ili prekomerni ego mogu stvoriti napetost u budućnosti. Moć slušanja uspostavljaće ravnotežu.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "hrabrost",
+            "strategija"
+          ],
+          "context": "Budućnost komunikacije će se kretati naprijed sa snažnim vođstvom. Ali postoji rizik ega."
+        }
+      }
+    }
+  },
+  "relationship-problems": {
+    "meanings": {
+      "thefool": {
+        "position1": {
+          "upright": "Joker pokazuje da je osnovni sukob u vašoj vezi oscilira između slobode i posvećenosti. Jedan je privučen u istraživanje i spontano protok, dok ostala žudnja uvjeravanja i planiranja; Ova tempo razlika stvara trenje.",
+          "reversed": "Invertirani šaljivdžija, koren problema može biti nesmotrenost, obećava obećanja ili izbegavanje odgovornosti. Neizvesnost i nedosledno ponašanje erodiraju osećaj poverenja i uvećanja sukoba.",
+          "keywords": [
+            "kontradikcija",
+            "sloboda",
+            "lojalnost",
+            "neizvesnost",
+            "tempo razlika"
+          ],
+          "context": "Priroda kontradikcije u vezi: napetost slobode i sigurnosti."
+        },
+        "position2": {
+          "upright": "Joker šapuće da je suština problema usmerene početke i impulsivni koraci. Od želje za slobodom i potrebom poverenja sukoba u vezi, obećanja su napravljena brzo, ali nisu fiksne. \\ N \\ n \\ n \\ n \\ n \\ Nhint: Nedovršeni razgovori i tendencija da stalno skoče u novo. Problem raste kada se uobičajeni ruta ne izvuče.",
+          "reversed": "Okretni Joker nam govori da se problem podstiče bezobzirnim bekstvom, odgovornošću za pregivu i strah od posvećenosti. Impulsivne odluke kasnije se pretvore u žaljenje. \\ N \\ nsimptom: Stalno odlaganja, pravljenje izgovora i izbegavajući definisanje odnosa. Problem se produbljuje kako nesigurnost postane hronična.",
+          "keywords": [
+            "početak",
+            "nedostatak planiranja",
+            "sloboda",
+            "koji se povezuje",
+            "neizvesnost"
+          ],
+          "context": "Problem sa korenom: neplanirani pokušaji i anksioznost vezanosti. Područja koja utiče: poverenje, upravljanje očekivanjem, definicija odnosa."
+        },
+        "position3": {
+          "upright": "Joker šapuće da njegov udeo može doći od naglog početka i nedostatak jasnoće sa režimom \"Hajde da vidi\". Sloboda je lepo, ali kada je ostalo bez okvira, možda ste na drugoj strani na akumulirali nepoverenje.",
+          "reversed": "Okrećeni Joker vam govori da i vi dodate gorivo na vatru svojim strahom da izbegavate odgovornost, ostavljajući obećanja davanje u vazduhu i strah od posvećenosti. Vaša normalizacija nesigurnosti možda je hrotirala sukob.",
+          "keywords": [
+            "početak",
+            "nedostatak planiranja",
+            "sloboda",
+            "koji se povezuje",
+            "neizvesnost"
+          ],
+          "context": "PLAĆA: Ne preduzimajte mere bez razgovora o planu i odložite definisanje odnosa. Uticaj: Poverenje, Upravljanje očekivanjem. PREPORUKA: Jasna namera + jednostavno putovanje."
+        },
+        "position4": {
+          "upright": "JOKER šapuće da bi mogao biti u iskušenju da podcenjuje njegov udeo i ignoriše posledice koraka sa oduševljenjem. Jasna namera i mali plan olakšavaju vam reći: \"I ja imam u njemu.\"",
+          "reversed": "Reverse Joker nam govori da je tendencija da ostavi odgovornost na slučajnost i protok i projekat krivice spolja mogu postati jači. Ako ne prihvatite slepo mesto, isti ciklus će se ponoviti.",
+          "keywords": [
+            "slepo mesto",
+            "nedostatak planiranja",
+            "poricanje",
+            "samostalnost",
+            "početak"
+          ],
+          "context": "Šta ignorišem: uticaj svojih neplaniranih koraka. Uticaj na vezu: Poverenje i očekivanja su zamagljeni. Šta da uradite: Namjera piši, napravite malu posvećenost, sledite."
+        },
+        "position5": {
+          "upright": "JOKER kaže da na početku vaše veze postoji mnogo spontanih i neplaniranih koraka. Ova svežaja je možda brzo povećala blizinu, ali granice su možda ostale nejasne.",
+          "reversed": "Reverse Joker nam govori da su koraci preduzeti bez razmišljanja u prošlosti levo krhkog tla. Stav \"Videćemo\" možda je danas pokrenuo nepoverenje.",
+          "keywords": [
+            "početak",
+            "spontan",
+            "sloboda",
+            "neizvesnost",
+            "granica"
+          ],
+          "context": "Tema ranog entuzijazma i nedostatka planiranja. Granike su razgovarane na kasno. Danas postoji potreba za jasnoćom i okvirom."
+        },
+        "position6": {
+          "upright": "JOKER kaže da se granice mogu naivno zanemariti i dobre namere ostave otvorene za eksploataciju. Dok neko odiše svoju slobodu, drugi može pretpostaviti odgovornost.",
+          "reversed": "Obrnuti šaljivdžija objašnjava da nesmotrenost i koraci preduzeti bez razmišljanja utrljavaju put da druga strana iskoriste svoje napore i emocije. Nevinost se može pretvoriti u oblik širnja koji stavlja troškove na nekog drugog.",
+          "keywords": [
+            "granica",
+            "naivnost",
+            "odgovornost",
+            "sloboda",
+            "zviždanje"
+          ],
+          "context": "Tema: Zloupotreba dobre volje; Rizik: Kršenje granice i jednostrani teret; DO: Jasni okvir i ravnoteža sa malim obavezama."
+        },
+        "position7": {
+          "upright": "JOKER vam kaže da krug prijatelja ili spontanih uticaja ometaju vaš odnos. Dobro namjereni, ali nepromišljeni smernice mogu zamagliti vaše granice.",
+          "reversed": "Obrnuti Joker naglašava rizično ponašanje i nepotrebno ohrabrivanje podstaknuto nepromišljenim trećim licima. \"Nema veze\" odnosa drugih možda se suočio sa vama.",
+          "keywords": [
+            "uticaj prijatelja",
+            "spontan",
+            "granica",
+            "indiskrecija",
+            "orijentacija"
+          ],
+          "context": "\"Samo napred i uradi to\" energija koja dolazi spolja utiče na vaše odluke. Razjasnite granice i odredite zajednički stav kao par."
+        },
+        "position8": {
+          "upright": "JOKER označava nove početke u finansijskoj oblasti, hrabrost da rizikuju i eksperimentiše. Ako se upravlja pravilno, prilika; Ako je neplanirano, to stvara stres u budžetu za odnose.",
+          "reversed": "Ograničen Joker objašnjava da impulsivna potrošnja, bezobzirna zaduživanje i \"vidimo kasnije\", \"vidimo kasnije\", poremeti zajedničku naredbu. Neiscjena sloboda podriva zajedničko poverenje.",
+          "keywords": [
+            "rizikovati",
+            "početak",
+            "nesmotrenost",
+            "sloboda",
+            "budžet"
+          ],
+          "context": "Neplanirane inicijative u finansijskom polju utiču na ravnotežu odnosa; Treba razgovarati o rizicima i treba da budu crtane granice."
+        },
+        "position9": {
+          "upright": "JOKER donosi dah svježeg vazduha u odnos i hrabrost da se započne. Ako usvojite fleksibilan, istraživački i ne-opterećen pristup, verovatno će trajati.",
+          "reversed": "Obrnuti šaljivdžija, nesmotrene odluke, izbegavanje posvećenosti i \"videćemo\" stav gumaju odnos. Ako se ne obezbede smer i okvir, kontinuitet je oslabljen.",
+          "keywords": [
+            "početak",
+            "slobodan duh",
+            "fleksibilnost",
+            "koji se povezuje",
+            "pravac"
+          ],
+          "context": "Da biste to postavili: jasna namera + male, ali konzistentne korake; Ne ostavljajte to slučajnosti."
+        }
+      },
+      "themagician": {
+        "position1": {
+          "upright": "Osnovna kontradikcija, kaže mađioničar, leži na način izražavaju se komunikacija i namere. Reči imaju veliku moć; Iako tačan izraz donosi približavanje, nepotpun ili preterani izraz stvara nerazumevanje.",
+          "reversed": "Prekoračeni mađioničar pokazuje da je kontradikcija podstaknuta manipulativnim komunikacijama, ubedjivanjem igricama ili nesposobnošću reči. Upravljanje percepcijom oštećuje poverenje i prebacuje zajedničku zemlju.",
+          "keywords": [
+            "komunikacija",
+            "namera",
+            "doslednost",
+            "poverenje",
+            "percepcija"
+          ],
+          "context": "Priroda sukoba u odnosu: izraz i upravljanje namerom."
+        },
+        "position2": {
+          "upright": "Čarobnjak objašnjava da je u srcu problema oblik komunikacije i izraz namere. Reči su moćne, ali ponekad mogu biti manipulativne ili nepotpune. \\ N \\ nHint: neusklađenost reči-akcije, preuveličana obećanja i marketinški jezik. Problem je ukorijenjen u nedostatku transparentne namere.",
+          "reversed": "Reverse mađioničar kaže da je problem podstaknut manipulativnom komunikacijom, maskiranjem i upravljanjem percepcijama. Kako se kaže da boli onoliko koliko je ono što se kaže. \\ N \\ nsimptom: implicitne poruke, ambivalentni stav i erozija poverenja. Problem raste kada se nagnete na pretenziju, a ne na jasnoću.",
+          "keywords": [
+            "komunikacija",
+            "namera",
+            "manifestacija",
+            "doslednost",
+            "poverenje"
+          ],
+          "context": "Problem sa korenom: neprozirno formulacija i nedosledno izvršenje. Područja koja utiče: poverenje, granice, donošenje odluka."
+        },
+        "position3": {
+          "upright": "Čarobnjak kaže da ste zapalili iskru kada vaše moćne narativne pripovijesti prekriva disonancu reč-akcije. Ako se ton \"ubeđivanja\" nalazi na putu transparentne namere, vaš udeo može biti veliki.",
+          "reversed": "Reverse mađioničar vam govori da ste možda povećali vatru kroz maskiranje, preuveličavanje ili pokušaje upravljanja percepcijama. Poverenje se topi kada se jasnoća zameni lukavstvom.",
+          "keywords": [
+            "komunikacija",
+            "namera",
+            "doslednost",
+            "poverenje",
+            "percepcija"
+          ],
+          "context": "Podelite: neprozirna ekonomija izražavanja i obećanja. Efekat: Poverenje, granica. PREPORUKA: Obični jezik + demonsintni koraci."
+        },
+        "position4": {
+          "upright": "Čarobnjak kaže da on može da omalovažava nespojivost reči-akcije i sakri se iza štita \"Moje namere su bile dobre.\" Kada vaša moć izražavanja zasjeni istinu, postaje teško videti vaš udeo.",
+          "reversed": "Reverse mađioničar objašnjava da se refleks izbegavanja samo-odgovornosti može povećati sa upravljanjem percepcijama i maštovitim rečima. Pretvaranje, a ne bistrin pasmine poricanje.",
+          "keywords": [
+            "komunikacija",
+            "doslednost",
+            "samopouzdanje",
+            "percepcija",
+            "iskrenost"
+          ],
+          "context": "Šta ignorišem: jaz između diskursa i performansi. Efekat: Poverenje se topi, sumnja se povećava. DO: Govorite jednostavno, preuzmite demonstrirajuće akcije."
+        },
+        "position5": {
+          "upright": "Čarobnjak kaže da snažna komunikacija i privlačnost uspostavljaju vaš odnos u ranim danima. Motivirali ste se i sanjali jedni druge.",
+          "reversed": "Reverse mađioničar objašnjava da se u prošlosti nesposobnosti u reč akcije zasijavaju. Pretežena obećanja možda su se danas možda pretvorile u sumnju.",
+          "keywords": [
+            "komunikacija",
+            "povući",
+            "obećanje",
+            "doslednost",
+            "poverenje"
+          ],
+          "context": "Svetli počeci; tokom vremena konzistentno test. Percepcija-stvarnost razlike uticala je na poverenje. Sada su potrebni jednostavni i provjerni koraci."
+        },
+        "position6": {
+          "upright": "Čarobnjak šapuće da moć ubeđivanja može da hrani kada se koristi u korist odnosa, ali može da klizne u manipulaciju kada pređe granicu. Ako svetle reči nisu podržane akcijom, postoji rizik od eksploatacije.",
+          "reversed": "Vetrovići mađioničar podiže mogućnost savijanja stvarnosti, gasarstva i manipulacije nevidljivim žicama. Naredba osnovana bez želje, odobrenja i saglasnosti ometa ravnotežu moći.",
+          "keywords": [
+            "manipulacija",
+            "ubeđivanje",
+            "snaga",
+            "saglasnost",
+            "percepcija"
+          ],
+          "context": "Tema: linija manipulacije sa ubeđivanjem; Rizik: makaze reči-akcije; DO: Pravilo saglasnosti i transparentnosti."
+        },
+        "position7": {
+          "upright": "Mađioničar kaže da harizmatična osoba usmerava dinamiku odnosa sa svojim idejama. Neko ko dobro objašnjava i ubedji može oblikovati dnevni red.",
+          "reversed": "Preokrećeni mađioničar rizikuje manipulativne savete, iskrivljene narative i gasa svetlosti. Treća strana može savijati percepciju u svoju korist.",
+          "keywords": [
+            "karizma",
+            "ubeđivanje",
+            "narativ",
+            "manipulacija",
+            "uticaj"
+          ],
+          "context": "Među vama dolazi \"majstor reči\". Provera izvora i zajednička naracija kao par su obavezna."
+        },
+        "position8": {
+          "upright": "Magičar naglašava sposobnost stvaranja prihoda inteligentnim kombinovanjem talenata i resursa. Pravilna komunikacija i fokus može povećati budžet.",
+          "reversed": "Prekoračeni mađioničar upozorava na naduvane obećanja, varljive ponude i priče o \"jednostavnim novcem\". Perceptionske igre je u riziku stavila zajedničku kuću.",
+          "keywords": [
+            "veština",
+            "izvor",
+            "prihod",
+            "manipulacija",
+            "fokus"
+          ],
+          "context": "Koristite talente sa transparentnim planom za protok novca; Držite se podalje od čudo obećanja."
+        },
+        "position9": {
+          "upright": "Čarobnjak kaže da se odnos može nastaviti sa odgovarajućom komunikacijom, jasnim namerama i mudrim upotrebom resursa. \"Šta želimo?\" Zajednički odgovor na pitanje stvara održivost.",
+          "reversed": "Reverse mađioničar, neusporedivanje i percepcije reči i percepcije sabotiraju dugoročno. Ako je poverenje erodirano, proces se raspada.",
+          "keywords": [
+            "namera",
+            "komunikacija",
+            "doslednost",
+            "poverenje",
+            "izvor"
+          ],
+          "context": "Da biste to postavili: Jasan cilj, napisani mini plan i redovne provere."
+        }
+      },
+      "thehighpriestess": {
+        "position1": {
+          "upright": "Visoka sveštenica vidi kontradikciju nevidljivih slojeva; To nam govori da se nakupljaju intuicija, tajne i neizgovorene stvari. Nemogućnost čitanja unutrašnjih sveta povećava sumnju i udaljenost.",
+          "reversed": "Preokrećena visoka sveštenica ukazuje da su potisnuti emocije i polusvjedske istine stvaraju zbrku. Previše tajnosti hrani ciklus nepoverenja.",
+          "keywords": [
+            "tajna",
+            "intuicija",
+            "Skrivene emocije",
+            "nesigurnost",
+            "rastojanje"
+          ],
+          "context": "Priroda sukoba u vezi: skrivene agende i intuitivna napetost."
+        },
+        "position2": {
+          "upright": "Visoka sveštenica kaže da problem nije u vidljivom, već u nevidljivom sloju. Tajne, intuicije i stvari koje se ne redaju, ali drže se unutar stvaraju jaz. \\ N \\ NHINT: Implikativni jezik, nezavršene rečenice i zatvoreni dnevni red. Problem je što emocije ne mogu da pronađu siguran kanal izražavanja.",
+          "reversed": "Preokrećena visoka sveštenica ukazuje da pokušavate da se krećete sa blatnjavim vodama potisnutih emocija i skrivenih istina. Postoji intuicija, bez deljenja. \\ N \\ nsimptom: ciklus sumnje, povlačenja i odreda. Problem je ukorijenjen tamo gde su podsvesni strahovi ostavljeni neizgovoreni.",
+          "keywords": [
+            "tajna",
+            "intuicija",
+            "tajna",
+            "unutrašnji svet",
+            "rastojanje"
+          ],
+          "context": "Problem sa korenom: Skrivena agenda i neizražene emocije. Područja koja utiče: bliskost, poverenje, otvorenost."
+        },
+        "position3": {
+          "upright": "Visoki sveštenici kaže da njen udeo može doći da skriva svoje emocije i govore na sugestivnom jeziku. Održavanje vašeg unutrašnjeg samozatvorenika možda je stvorio percepciju \"tajne mene\" sa druge strane.",
+          "reversed": "Obrnuti visoki sveštenici govore vam da se stvari koje potiskujete da se vrate sa pasivnim agresivnim curenjem. Udeo; Istina leži da to ne otkriva dovoljno na vreme.",
+          "keywords": [
+            "tajna",
+            "intuicija",
+            "tajna",
+            "rastojanje",
+            "unutrašnji svet"
+          ],
+          "context": "Share: Neizkrašene emocije i polovine rečenica. Efekat: Bliskost, poverenje. PREPORUKA: RIHTM RIHTSKA OTVORENA."
+        },
+        "position4": {
+          "upright": "Visoka sveštenica mu govori da možete sakriti svoja osećanja i ignorisati svoj udeo u nadi da će \"razumeti\". Jezik insinuacije zatamnjuje vaš vlastiti doprinos.",
+          "reversed": "Reverzna visoka sveštenica objašnjava da tendencija da se odgovornost ne može nevidljivo preostalo i zatezati i tiho može postati jači. Sve što je skriveno hranilo poricanje.",
+          "keywords": [
+            "tajna",
+            "pogled",
+            "nedostatak izraza",
+            "jasnoća",
+            "intuicija"
+          ],
+          "context": "Ono što ignorišem: teret neizgovorenog. Efekat: Rapport se prekida, sumnja raste. Do: izraziti emociju jasno i blagovremeno."
+        },
+        "position5": {
+          "upright": "Visoki sveštenici vam govori da u vašoj prošlosti postoji snažna intuicija i neizgovorena sporazum. Tišina ponekad stvara siguran prostor.",
+          "reversed": "Obrnuta visoka svećenica objašnjava da se ono što se ne govori akumulira i stvara pogrešne reči. Tajne se mogu danas moći plutati poput senki.",
+          "keywords": [
+            "intuicija",
+            "tajna",
+            "tišina",
+            "privatnost",
+            "ne razumem pogrešno"
+          ],
+          "context": "Neobjavljeni emocije i podrazumevani jezik. Postoji poverenje, ali nedostaje transparentnost. Danas je potreban jasan izraz."
+        },
+        "position6": {
+          "upright": "Visoka sveštenica kaže da će jezik tajnosti i insinuacije biti zaštitni kada je to potrebno, ali da se sistematska tajnost može koristiti za uspostavljanje moći. Kao pristup informacijama je ograničen, bilans je poremećen.",
+          "reversed": "Uokrećena visoka sveštenica ukazuje na cikluse emocionalnog povlačenja i kazne sa tišinom. Isključivanje komunikacije može postati sredstvo za kontrolu.",
+          "keywords": [
+            "tajna",
+            "tišina",
+            "pristupiti",
+            "moć znanja",
+            "osećanje"
+          ],
+          "context": "Tema: pristup informacijama i emocijama; Rizik: Kontrola tišine; DO: Obriši granice deljenja."
+        },
+        "position7": {
+          "upright": "Visoka sveštenica sugeriše da postoje skriveni uticaji, poverljivi broj ili nevidljive veze. Tihi savjeti kanali mogu uticati na odluke.",
+          "reversed": "Prekoračeni visoki sveštenici ukazuje na skrivene poruke, tajne razgovore i insinuacije koje podstiču sumnju. Nepoznata treća strana Erodira poverenje.",
+          "keywords": [
+            "podrujan",
+            "tajna",
+            "intuicija",
+            "zadnji kanal",
+            "poverenje"
+          ],
+          "context": "Postoji nevidljiva telefonska linija. Magla se mora otpustiti kroz transparentnost i otvorenu komunikaciju."
+        },
+        "position8": {
+          "upright": "Visoka sveštenica ukazuje na nevidljive troškove i intuitivna briga. Tišina o novcu ponekad štiti, ali skrivanje pasmina nepoverenje.",
+          "reversed": "Prekoračeni visoki sveštenici govore nam da skrivanje računa, tajnih dugova ili neposrednost finansijske odluke iscrpljuju odnos iznutra.",
+          "keywords": [
+            "skriveni trošak",
+            "intuicija",
+            "transparentnost",
+            "duga",
+            "poverenje"
+          ],
+          "context": "U finansijskim pitanjima, merena otvorenost i jasni zapisi su potrebni umesto tajnosti."
+        },
+        "position9": {
+          "upright": "Visoki sveštenici kaže da je sa intuitivnim harmonijom i poštovanjem, odnos se može produbiti. Mirna snaga i privatnost dodajte dugovečnost na Bond.",
+          "reversed": "Obrnuti visoki sveštenici, tajnost i insinuaciju urođene poverenje. Ako je ono što je ostalo neizgovoreno raste, postaje teško nastaviti.",
+          "keywords": [
+            "intuicija",
+            "privatnost",
+            "poverenje"
+          ]
+        }
+      }
+    }
+  }
+}

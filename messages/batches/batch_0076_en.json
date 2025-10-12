@@ -1,0 +1,774 @@
+{
+  "relationship-problems": {
+    "meanings": {
+      "sevenofwands": {
+        "position2": {
+          "keywords": {
+            "0": "defence",
+            "1": "limit",
+            "2": "resistance",
+            "3": "support",
+            "4": "load"
+          },
+          "context": "The root problem is the defensive reflex. It affects areas: cooperation, empathy, fatigue."
+        },
+        "position3": {
+          "upright": "Seven wands say you're always on the defensive, increasing your share, living in position will kill the dialogue.",
+          "reversed": "The Reverse Seven Wands tells us that by choosing to fight alone, you've grown fire by rejecting support.",
+          "keywords": {
+            "0": "defence",
+            "1": "limit",
+            "2": "resistance",
+            "3": "support",
+            "4": "load"
+          },
+          "context": "Pay: excessive defence. Effect: collaboration, empathy."
+        },
+        "position4": {
+          "upright": "The Seven Wands say that you can ignore the defense as security, that you can ignore your share of it, that the constant position kills the dialogue.",
+          "reversed": "The Reverse Seven Wands tend to feed denial by considering it difficult not to ask for help.",
+          "keywords": {
+            "0": "defence",
+            "1": "limit",
+            "2": "resistance",
+            "3": "support",
+            "4": "load"
+          },
+          "context": "Ignored: soft defense. Effect: co-operation decreases. Do it: request support."
+        },
+        "position5": {
+          "upright": "Seven Wands tell me you're building a line of defense against external pressures, looking out for each other.",
+          "reversed": "The Reverse Seven Wands tells us that the defense is causing tension inside, and the help may have left a trail.",
+          "keywords": {
+            "0": "defence",
+            "1": "limit",
+            "2": "pressure",
+            "3": "support",
+            "4": "resistance"
+          },
+          "context": "Together, it's power against the outside, it's fatigued inside, now it's all about soft defense and support."
+        },
+        "position6": {
+          "upright": "The Seven Wands speak of border defense, but standing in constant positions can suppress the partner's right to say so.",
+          "reversed": "The Reverse Seven Wands consider the request for help to be weak and risk putting the burden on the other side and managing it with defense.",
+          "keywords": {
+            "0": "defence",
+            "1": "limit",
+            "2": "support",
+            "3": "load",
+            "4": "resistance"
+          },
+          "context": "Theme: flexible limit; risk: defensive silence; do it: common defence language."
+        },
+        "position7": {
+          "upright": "The Seven Wands tell the common defense against external pressures, which requires a stance against the environment.",
+          "reversed": "The Reverse Seven Wands point to the environment that provokes constant defensiveness.",
+          "keywords": {
+            "0": "defence",
+            "1": "pressure",
+            "2": "Stop",
+            "3": "limit",
+            "4": "resistance"
+          },
+          "context": "Be one voice together, use the defense strategically."
+        },
+        "position8": {
+          "upright": "The Seven Wands talk about defending the budget against foreign financial pressures.",
+          "reversed": "The Reverse Seven Wands say that constant defensiveness prevents opportunity.",
+          "keywords": {
+            "0": "defence",
+            "1": "limit",
+            "2": "pressure",
+            "3": "opportunity",
+            "4": "balance"
+          },
+          "context": "Set a limit, but don't go blind; look at the window of opportunity."
+        },
+        "position9": {
+          "upright": "The Seven Wands together, the border defense, maintains and maintains the relationship.",
+          "reversed": "The Reverse Seven Wands force eternal defence and stubbornness to perpetuate permanence.",
+          "keywords": {
+            "0": "limit",
+            "1": "defence",
+            "2": "unity",
+            "3": "stubborn",
+            "4": "flexibility"
+          },
+          "context": "To drive: flexible boundary + common front."
+        }
+      },
+      "eightofwands": {
+        "position1": {
+          "upright": "Eight wands say there's a discrepancy in the speed of communication and the priority order, while one wants a quick response, the other can flow slowly.",
+          "reversed": "The Reverse Eight Wands show that message confusion and delay increase misunderstandings.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "priority",
+            "3": "sync",
+            "4": "delay"
+          },
+          "context": "Actional root of contradiction: the pace of communication."
+        },
+        "position2": {
+          "upright": "Eight wands say the problem is in the communication speed and channel crowd. Messages fly, meaning falls. A lot of channels, a little clarity. The problem is the lack of sync.",
+          "reversed": "The Reverse Eight Wands tells us that delays and confusion make a big deal of misunderstanding. Speed is either very or nothing.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "sync",
+            "3": "row",
+            "4": "flow"
+          },
+          "context": "The root problem: the flow of communication. The areas that it affects: the ranking, the expectation management."
+        },
+        "position3": {
+          "upright": "Eight wands say it doesn't manage the speed of message and the number of channels, it increases its share.",
+          "reversed": "The Reverse Eight Wands tells us that it normalizes delay/conflict and expands fire.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "sync",
+            "3": "row",
+            "4": "flow"
+          },
+          "context": "Pay: communication flow chaos. Effect: misunderstanding. Proposition: one channel:net row."
+        },
+        "position4": {
+          "upright": "Eight wands tell you you can ignore a crowd of speed/messages and ignore their share. Many messages, little meaning.",
+          "reversed": "The Reverse Eight Wands emphasize its tendency to maintain denial by using delay as an excuse.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "sync",
+            "3": "row",
+            "4": "flow"
+          },
+          "context": "Ignored: flow design. Effect: increase misunderstanding. Do: Single channel + row."
+        },
+        "position5": {
+          "upright": "Eight wands say fast communication and quick decision-making times, and the message stream was intense.",
+          "reversed": "The Reverse Eight Wands tells us that complex channels and delays lead to misunderstandings.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "flow",
+            "3": "row",
+            "4": "sync"
+          },
+          "context": "Quick flow, low order, left a trail of confusion, now we need one channel and a clear line."
+        },
+        "position6": {
+          "upright": "Eight wands praise fast communication, but it's exploitive to drown and force a partner to make decisions through a flood of messages.",
+          "reversed": "The Reverse Eight Wands point to the risk of deliberately delaying and delaying the agenda.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "delay",
+            "3": "Don't push it.",
+            "4": "flow"
+          },
+          "context": "Theme: flow design; Risk: message pressure; Do: one channel and row."
+        },
+        "position7": {
+          "upright": "Eight wands show rapid message/DM rain and rapidly spreading news.",
+          "reversed": "The Reverse Eight Canes point to external channels that are holding the agenda hostage by conscious delay or a flood of messages.",
+          "keywords": {
+            "0": "Message",
+            "1": "speed",
+            "2": "prevalence",
+            "3": "delay",
+            "4": "agenda"
+          },
+          "context": "Select one channel, set a speed rule. Limit notifications."
+        },
+        "position8": {
+          "upright": "Eight wands represent fast-flowing business/payment/promotion traffic. Speed is a win if directed correctly.",
+          "reversed": "Reverse Eight Wands warn the risk of rapid approval, faulty transfer and confusion in communication.",
+          "keywords": {
+            "0": "speed",
+            "1": "traffic",
+            "2": "confirmation",
+            "3": "transfer",
+            "4": "confusion"
+          },
+          "context": "Secure your speed with one channel and checklist."
+        },
+        "position9": {
+          "upright": "Eight wands stay alive with fast, open communication and flow.",
+          "reversed": "The Reverse Eight Wands damage communication chaos and delay ties.",
+          "keywords": {
+            "0": "speed",
+            "1": "flow",
+            "2": "communication",
+            "3": "delay",
+            "4": "clarity"
+          },
+          "context": "To drive: one channel + response rhythm."
+        }
+      },
+      "nineofwands": {
+        "position1": {
+          "upright": "Nine wands say fatigue and alertness overreacting to the smallest signal.",
+          "reversed": "The Reverse Nine Wands indicate that looking at the past wounds now weakens confidence.",
+          "keywords": {
+            "0": "Tired.",
+            "1": "Don't be vigilant.",
+            "2": "protection",
+            "3": "tolerance",
+            "4": "history"
+          },
+          "context": "Actional root of contradiction: tired defense."
+        },
+        "position2": {
+          "upright": "Nine wands say the problem is fatigue and alertness. Small spark turns to fire.",
+          "reversed": "The Reverse Nine Wand tells of the removal of past wounds by now and the rising of defence walls. Tolerance drops.",
+          "keywords": {
+            "0": "endurance",
+            "1": "Tired.",
+            "2": "Don't be vigilant.",
+            "3": "timeout",
+            "4": "protection"
+          },
+          "context": "The root problem is energy and tolerance threshold. It affects areas: combat threshold, break culture."
+        },
+        "position3": {
+          "upright": "Nine wands say you stay on guard while you're tired and over-compensate to the little signal, and without rest, there's no war.",
+          "reversed": "The Reverse Nine Wands tells us that by now you've increased the fire by carrying the old wound, renewing the tolerance threshold.",
+          "keywords": {
+            "0": "endurance",
+            "1": "Tired.",
+            "2": "Don't be vigilant.",
+            "3": "timeout",
+            "4": "protection"
+          },
+          "context": "Pay: tired defense. Effect: combat threshold. Proposal: break rule."
+        },
+        "position4": {
+          "upright": "Nine wands say that you can ignore tired alertness and ignore your share. The rest is denial.",
+          "reversed": "The Reverse Nine Wand tends to deny the role of carrying the old wound by now.",
+          "keywords": {
+            "0": "Tired.",
+            "1": "Don't be vigilant.",
+            "2": "timeout",
+            "3": "endurance",
+            "4": "threshold"
+          },
+          "context": "Ignored: break rule. The effect: the blast threshold drops. Do it: pause and turn."
+        },
+        "position5": {
+          "upright": "Nine wands tell you that you don't give up whether you're tired or tired.",
+          "reversed": "The Reverse Nine Wands tells us that living on guard is wearing off, and the old wounds may have been moved by now.",
+          "keywords": {
+            "0": "endurance",
+            "1": "Tired.",
+            "2": "trigger",
+            "3": "timeout",
+            "4": "protection"
+          },
+          "context": "The resistance is strong, the trigger is always open, and now we need a break rule."
+        },
+        "position6": {
+          "upright": "Nine wands praise endurance, but it can turn into exploitation by shielding fatigue and expecting constant understanding from the partner.",
+          "reversed": "The Reverse Nine Wand is the risk of taking old wounds today and running their partner cautiously.",
+          "keywords": {
+            "0": "endurance",
+            "1": "Tired.",
+            "2": "understanding",
+            "3": "trigger",
+            "4": "timeout"
+          },
+          "context": "Theme: rested power; risk: constant demand for tolerance; do: planned break and work."
+        },
+        "position7": {
+          "upright": "Nine Wands say you're on alert because of past foreign attacks, and the crowd can trigger it.",
+          "reversed": "The Reverse Nine Wand points to the harsh environment that poses a threat to every criticism.",
+          "keywords": {
+            "0": "trigger",
+            "1": "defence",
+            "2": "criticism",
+            "3": "threat perception",
+            "4": "timeout"
+          },
+          "context": "Set up a safety zone and a time-out plan."
+        },
+        "position8": {
+          "upright": "Nine Wands represent endurance that does not give up despite economic difficulties.",
+          "reversed": "The Reverse Nine Wands say that living on guard can lead to extinction and financial blindness.",
+          "keywords": {
+            "0": "endurance",
+            "1": "trigger",
+            "2": "Expired",
+            "3": "protection",
+            "4": "timeout"
+          },
+          "context": "Maintain power with pause and delegates, prevent extinction."
+        },
+        "position9": {
+          "upright": "Nine wands carry the relationship, whether you're tired or tired, to not give up and to repair borders.",
+          "reversed": "The Reverse Nine Wands, chronic alertness and doubt corrode permanence.",
+          "keywords": {
+            "0": "resistance",
+            "1": "Tired.",
+            "2": "repair",
+            "3": "trigger",
+            "4": "Trust"
+          },
+          "context": "To drive: rest plan + trust construction."
+        }
+      },
+      "tenofwands": {
+        "position1": {
+          "upright": "Ten Wands say that injustice in the balance of burden sharing and responsibility creates tension.",
+          "reversed": "The Reverse Ten Wands indicate that all of the points of taking over or letting go of everything are expanding the conflict.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "justice",
+            "3": "delegates",
+            "4": "balance"
+          },
+          "context": "Actional root of contradiction: sharing burdens and responsibility."
+        },
+        "position2": {
+          "upright": "Ten Wands say the problem is a load and responsibility imbalance. A shoulder collapses.",
+          "reversed": "The Reverse Ten Wand tells us that the accumulation of the load breaks the motivation and the need to be left is carried. The mess increases. The delays, the complaint loop. The problem is not to clean up the priority.",
+          "keywords": {
+            "0": "load",
+            "1": "delegates",
+            "2": "priority",
+            "3": "responsibilities",
+            "4": "simplicity"
+          },
+          "context": "The root problem is burden management. The areas it affects are work balance, relationship labor."
+        },
+        "position3": {
+          "upright": "Ten Wands say they take over everything and then build up their share by reproaching it. There is no justice of burden without a delegation.",
+          "reversed": "The Reverse Ten Wands tells us that by continuing to carry what needs to be dropped, you're expanding the fire.",
+          "keywords": {
+            "0": "load",
+            "1": "delegates",
+            "2": "priority",
+            "3": "responsibilities",
+            "4": "simplicity"
+          },
+          "context": "Pay: load management error. Effect: weariness, patience. Proposal: let it go."
+        },
+        "position4": {
+          "upright": "The Ten Wands say that you can take responsibility for everything and ignore your share of the share of the burden.",
+          "reversed": "The Reverse Ten Wands may think that carrying what needs to be left is responsible, and increase denial.",
+          "keywords": {
+            "0": "load",
+            "1": "delegates",
+            "2": "priority",
+            "3": "responsibilities",
+            "4": "simplicity"
+          },
+          "context": "Ignored: release/delete. Effect: extinction. Do it: map the load."
+        },
+        "position5": {
+          "upright": "Ten Wands says you're carrying too much weight and moving forward.",
+          "reversed": "The Reverse Ten Wands tells us that the lack of delegates and the extinction leave a mark.",
+          "keywords": {
+            "0": "load",
+            "1": "delegates",
+            "2": "Expired",
+            "3": "responsibilities",
+            "4": "simplicity"
+          },
+          "context": "The heavy loads have been carried, the fatigue is piling up, and now it's time to let go and share."
+        },
+        "position6": {
+          "upright": "Ten Wands say that overload can create invisible exploitation.",
+          "reversed": "The Reverse Ten Wands discuss the risk of managing the other by insisting on carrying out abandonable jobs.",
+          "keywords": {
+            "0": "load",
+            "1": "delegates",
+            "2": "debt",
+            "3": "simplicity",
+            "4": "responsibilities"
+          },
+          "context": "Theme: load map; Risk: load management; Do: delegates and prioritization."
+        },
+        "position7": {
+          "upright": "Ten Wands say you bear the burden of external demands, and everyone wants something from you.",
+          "reversed": "The Reverse Ten Wands indicate that the environment imposes the burdens you don't have to carry.",
+          "keywords": {
+            "0": "load",
+            "1": "demand",
+            "2": "Don't push it.",
+            "3": "simplicity",
+            "4": "delegates"
+          },
+          "context": "Draw a load map. Learn to say no together."
+        },
+        "position8": {
+          "upright": "The Ten Wands tells of excess burdens and the financial responsibilities collected in one person.",
+          "reversed": "The Reverse Ten Seconds, the commissioner, recommends sharing the load with automation and simplification.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "delegates",
+            "3": "simplifying",
+            "4": "vending machine"
+          },
+          "context": "Distribute the mission and the bills; ease the flow of work."
+        },
+        "position9": {
+          "upright": "Ten wands, if the burden is distributed fairly, the relationship works; it takes one person to carry it.",
+          "reversed": "Reverse Ten Wands, if the charges aren't divided, the risk of disconnection increases.",
+          "keywords": {
+            "0": "load",
+            "1": "delegates",
+            "2": "responsibilities",
+            "3": "simplicity",
+            "4": "balance"
+          },
+          "context": "To drive: work/feeling load map."
+        }
+      },
+      "pageofwands": {
+        "position1": {
+          "upright": "The prince of the wand says the difference between curiosity and the need for stability creates tension.",
+          "reversed": "The Reverse Wand Prince shows that the lack of enthusiasm and the dissolution of focus undermine confidence.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "discovery",
+            "2": "focus",
+            "3": "stability",
+            "4": "fad"
+          },
+          "context": "Actional root of contradiction: the balance of discovery and stability."
+        },
+        "position2": {
+          "upright": "The Prince of the Wand says the problem can't be tied to enthusiasm. The discovery is good, the lack of direction.",
+          "reversed": "The Reverse Stick Prince says that the interruption and distraction wear off the trust. The beginnings, they don't stop.",
+          "keywords": {
+            "0": "discovery",
+            "1": "fad",
+            "2": "focus",
+            "3": "finish-up",
+            "4": "pilot"
+          },
+          "context": "The root problem is the Hevesίodak balance. It affects areas: habit, project, motivation."
+        },
+        "position3": {
+          "upright": "The Prince of the Wand says you're not focused on enthusiasm, you're increasing your share.",
+          "reversed": "The Reverse Stick Prince says he's growing fire with half-projects and distractions.",
+          "keywords": {
+            "0": "discovery",
+            "1": "fad",
+            "2": "focus",
+            "3": "finish-up",
+            "4": "pilot"
+          },
+          "context": "Pay: completion deficit. Effect: trust, speed. Tip: mini sprint."
+        },
+        "position4": {
+          "upright": "The Prince of the Wand says that he can mix enthusiasm with lack of focus and ignore his share. It's good to start, it's a responsibility to finish.",
+          "reversed": "The Reverse Stick Prince tends to feed denial by counting half-projects as fate.",
+          "keywords": {
+            "0": "fad",
+            "1": "focus",
+            "2": "finish-up",
+            "3": "pilot",
+            "4": "rhythm"
+          },
+          "context": "Ignored: mini deadline. Influence: confidence decreases. Do it: small sprints."
+        },
+        "position5": {
+          "upright": "The Prince of the Wand says there are many times of discovery and enthusiasm, and you've tried new things together.",
+          "reversed": "The Prince of the Inverted Wand tells us that unfinished projects wear down trust.",
+          "keywords": {
+            "0": "discovery",
+            "1": "fad",
+            "2": "focus",
+            "3": "finish-up",
+            "4": "testing"
+          },
+          "context": "Creative beginnings, low end rate, now we need mini sprints."
+        },
+        "position6": {
+          "upright": "The Prince of the Wand loves enthusiasm, but with lack of focus, waiting for the partner to complete can turn into exploitation.",
+          "reversed": "The Reverse Wand Prince increases the risk of leaving and disappearing and pushing the other into the surrogate role.",
+          "keywords": {
+            "0": "fad",
+            "1": "focus",
+            "2": "complete",
+            "3": "stability",
+            "4": "responsibilities"
+          },
+          "context": "Theme: completion; Risk: completion of the other; Do: mini sprint and surrender."
+        },
+        "position7": {
+          "upright": "The Prince of the Wand says that an adventurous friend interferes with new ideas, and there's inspiration, but we need focus.",
+          "reversed": "The Reverse Wand Prince points to an external actor who pokes without thinking, then disappears.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "impulse",
+            "2": "focus",
+            "3": "consistency",
+            "4": "fad"
+          },
+          "context": "Take inspiration, filter your speed, and you'll be in charge of surrender."
+        },
+        "position8": {
+          "upright": "The Prince of Wand, with a low budget, brings creative solutions and microproject ideas.",
+          "reversed": "The Reverse Stick Prince says a focusless spark can produce half a job and cost.",
+          "keywords": {
+            "0": "creativity",
+            "1": "microproject",
+            "2": "focus",
+            "3": "cost",
+            "4": "testing"
+          },
+          "context": "Make small tests with a clear target and time."
+        },
+        "position9": {
+          "upright": "The prince of the wand, the spirit of curiosity and adventure, keeps the relationship fresh; the potential to drive increases.",
+          "reversed": "The Reverse Wand Prince, the lack of focus and half-department damage to permanence.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "adventure",
+            "2": "focus",
+            "3": "complete",
+            "4": "fad"
+          },
+          "context": "To drive: mini-projects + finish celebration."
+        }
+      },
+      "knightofwands": {
+        "position1": {
+          "upright": "The Knight of the Wand says that the partner of rashness and swift decision creates conflict by catching off guard.",
+          "reversed": "The Reverse Wand Knight shows that the flow of energy and disorganized energy creates trust erosion.",
+          "keywords": {
+            "0": "Dareness",
+            "1": "speed",
+            "2": "stability",
+            "3": "A commitment.",
+            "4": "acceleration"
+          },
+          "context": "Actional root of contradiction: speed and commitment consistency."
+        },
+        "position2": {
+          "upright": "The Knight of the Wand says the problem is lack of brakes in speed and initiative. Fire is good, stove is necessary.",
+          "reversed": "The Reverse-Word Knight talks about the insecurities of loose energy and insecurities. The flame quickly fades.",
+          "keywords": {
+            "0": "speed",
+            "1": "Dareness",
+            "2": "risk",
+            "3": "A commitment.",
+            "4": "acceleration"
+          },
+          "context": "The root problem is speed/tahhtacht calibration. It affects areas: decision, trust, continuity."
+        },
+        "position3": {
+          "upright": "The Knight of the Wand says he's caught off guard by speed and increased his share.",
+          "reversed": "The Reverse Wand Knight says he's growing fire by interruptions and erratic acceleration.",
+          "keywords": {
+            "0": "speed",
+            "1": "Dareness",
+            "2": "risk",
+            "3": "A commitment.",
+            "4": "acceleration"
+          },
+          "context": "Pay: speed/data commitment deficit. Effect: trust, continuity. Proposal: rhythm/result contract."
+        },
+        "position4": {
+          "upright": "The Knight of the Wand says he can ignore the share of the unprepared and thinks it's brave.",
+          "reversed": "The Reverse Wand Knight emphasizes his tendency to deny an unstable momentum by calling it natural.",
+          "keywords": {
+            "0": "speed",
+            "1": "Dareness",
+            "2": "risk",
+            "3": "A commitment.",
+            "4": "acceleration"
+          },
+          "context": "Ignored: commitment architecture. Effect: continuity weakens. Do it: rhythm contract."
+        },
+        "position5": {
+          "upright": "The Knight of the Wand speaks of the brave moves and the spirit of adventure, and the energy is high.",
+          "reversed": "The Reverse Wand Knight tells us that unstable momentum and interruptions leave a mark.",
+          "keywords": {
+            "0": "Courage",
+            "1": "speed",
+            "2": "acceleration",
+            "3": "risk",
+            "4": "continuity"
+          },
+          "context": "Attack energy, rhythm is erratic, commitment architecture is incomplete, and now we need a rhythm contract."
+        },
+        "position6": {
+          "upright": "The Knight of the Wand brings forth courage, but it risks putting out the partner, starting with audaciousness.",
+          "reversed": "The Reverse Wand Knight tends to keep his partner in limbo with unstable acceleration and sudden retreat.",
+          "keywords": {
+            "0": "Courage",
+            "1": "acceleration",
+            "2": "Don't pull back.",
+            "3": "balance",
+            "4": "A commitment."
+          },
+          "context": "Theme: consistent acceleration; risk: quick burn; do: tempo contract."
+        },
+        "position7": {
+          "upright": "The Knight of the Wand says you've been accelerated by an aggressive man, but the energy is good, but the balance is necessary.",
+          "reversed": "The Reverse Wand Knight points to an instigator who gives gas and disappears.",
+          "keywords": {
+            "0": "Attack",
+            "1": "gas",
+            "2": "balance",
+            "3": "provocation",
+            "4": "continuity"
+          },
+          "context": "Make a Tempo contract, measure the gas."
+        },
+        "position8": {
+          "upright": "The Knight of the Wand shows the opportunity to move forward and come fast at work.",
+          "reversed": "The Reverse Wand Knight says that unstable pace and unfinished business can burn money.",
+          "keywords": {
+            "0": "Attack",
+            "1": "commission",
+            "2": "speed",
+            "3": "unstable",
+            "4": "complete"
+          },
+          "context": "Plan the fast boiler, secure the delivery."
+        },
+        "position9": {
+          "upright": "The Knight of the Wand moves forward with bold steps and rhythm.",
+          "reversed": "Reverse-Stitch Knight, unstable speed and momentary rage disrupt the continuum.",
+          "keywords": {
+            "0": "Courage",
+            "1": "rhythm",
+            "2": "balance",
+            "3": "Anger",
+            "4": "stability"
+          },
+          "context": "To drive: tempo contract plus anger break."
+        }
+      },
+      "queenofwands": {
+        "position1": {
+          "upright": "The Stick Queen says there's tension between the need for appearance and charisma and the partner's security field.",
+          "reversed": "The Reverse Stick Queen shows that the anxiety of comparison and visibility triggers jealousy.",
+          "keywords": {
+            "0": "visibility",
+            "1": "Self - confidence",
+            "2": "Comparison",
+            "3": "Jealousy",
+            "4": "Charisma"
+          },
+          "context": "Actional root of contradiction: visibility and the shadow of comparison."
+        },
+        "position2": {
+          "upright": "The Stick Queen says the problem is that the need for appearance and charisma meets the shadows of jealousy. The light grows, so does the shadow.",
+          "reversed": "The Reverse Wand Queen says that in her heart, the search for insecurity and approval exhausts the relationship. External approval becomes an addiction.",
+          "keywords": {
+            "0": "visibility",
+            "1": "Charisma",
+            "2": "Comparison",
+            "3": "Self - confidence",
+            "4": "confirmation"
+          },
+          "context": "The root problem: the balance of self-value and visibility. It affects areas: jealousy, sharing, support."
+        },
+        "position3": {
+          "upright": "The Stick Queen says she's increasing her share by not sharing appearances and triggering comparisons, and as the light grows, think about the shadow.",
+          "reversed": "The reverse cane queen tells me that she's growing fire by demanding approval from the relationship, making it stronger from the inside.",
+          "keywords": {
+            "0": "visibility",
+            "1": "Charisma",
+            "2": "Comparison",
+            "3": "Self - confidence",
+            "4": "confirmation"
+          },
+          "context": "Part: the shadow of approval/visibility. The effect: jealousy, support. Suggest: share success."
+        },
+        "position4": {
+          "upright": "The Stick Queen says she can ignore the fact that she's shining and triggering the comparison without sharing appearances.",
+          "reversed": "The Reverse Wand Queen tends to deny her share by presenting the search for approval as a need.",
+          "keywords": {
+            "0": "visibility",
+            "1": "Charisma",
+            "2": "Comparison",
+            "3": "Self - confidence",
+            "4": "confirmation"
+          },
+          "context": "Ignored: common scene. Influence: jealousy increases. Do: divide success."
+        },
+        "position5": {
+          "upright": "The Stick Queen says charisma and warm leadership stimulate the relationship.",
+          "reversed": "The Reverse Wand Queen tells of the occasional tension of visible/special shadows.",
+          "keywords": {
+            "0": "Charisma",
+            "1": "Inspired",
+            "2": "visibility",
+            "3": "Comparison",
+            "4": "Self - confidence"
+          },
+          "context": "Inspirational times, proportional triggers, and now you have to share the success."
+        },
+        "position6": {
+          "upright": "The Stick Queen shines charisma and visibleness, but monopolizing the scene can outshine her partner.",
+          "reversed": "The Reverse Wand Queen describes the risk of feeding the search for approval through the relationship and coercing it in comparison.",
+          "keywords": {
+            "0": "Charisma",
+            "1": "visibility",
+            "2": "Comparison",
+            "3": "confirmation",
+            "4": "share"
+          },
+          "context": "Theme: the common scene; risk: the monopoly of light; do it: sharing visibility."
+        },
+        "position7": {
+          "upright": "The Stick Queen shows the support of an inspiring charismatic woman.",
+          "reversed": "The Reverse Stick Queen points to the external figure competing with the pressure of comparison and visibility.",
+          "keywords": {
+            "0": "Charisma",
+            "1": "Inspired",
+            "2": "Comparison",
+            "3": "visibility",
+            "4": "competition"
+          },
+          "context": "Share the inspiration, close the comparison, share the scene."
+        },
+        "position8": {
+          "upright": "The Stick Queen tells of entrepreneurial self-esteem, the network and the power of persuasion to increase income.",
+          "reversed": "The Reverse Wand Queen is a warning of unnecessary expense and peer pressure for appearance.",
+          "keywords": {
+            "0": "initiative",
+            "1": "Self - confidence",
+            "2": "network",
+            "3": "visibility",
+            "4": "Comparison"
+          },
+          "context": "Manage visibility strategically; produce value, not image."
+        },
+        "position9": {
+          "upright": "The Queen of wands, the warm charisma and mutual admiration, make the relationship long-term.",
+          "reversed": "The reverse cane queen, the battle of comparison and visibility, harms the bond.",
+          "keywords": {
+            "0": "Charisma",
+            "1": "I'm amazed.",
+            "2": "temperature",
+            "3": "Comparison",
+            "4": "share"
+          },
+          "context": "To drive: the common scene + do not close the comparison."
+        }
+      },
+      "kingofwands": {
+        "position1": {
+          "upright": "The King of the Wand says there is tension between the desire for visionary leadership and the culture of common decision.",
+          "reversed": "The Reverse Wand King shows that authoritarian tones and ego friction are disrupting the dialogue.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "ego",
+            "3": "authority"
+          }
+        }
+      }
+    }
+  }
+}

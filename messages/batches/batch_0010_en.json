@@ -1,0 +1,798 @@
+{
+  "marriage": {
+    "meanings": {
+      "themoon": {
+        "position6": {
+          "keywords": {
+            "0": "uncertainty",
+            "1": "fear",
+            "2": "projection",
+            "3": "clarity",
+            "4": "Trust"
+          },
+          "context": "Choose confirmation instead of conjecture, and as clarity increases, acceptance becomes easier."
+        },
+        "position7": {
+          "upright": "The moon says that intuitive insights will guide a period of uncertainty, and dreams, art, night events, or places close to the inner world, are meant to be a guide.",
+          "reversed": "The Reverse Moon tells us that assumptions and fears can disrupt signals.",
+          "keywords": {
+            "0": "intuition",
+            "1": "uncertainty",
+            "2": "dream",
+            "3": "inner world"
+          },
+          "context": "You know, you meet intuitive tracks, the clarity illuminates the process, the flow of fear darkens."
+        },
+        "position8": {
+          "upright": "The moon points to an intuitive but not clear form of communication, and uncertainty is overcome by asking questions and adapting.",
+          "reversed": "The Reverse Moon says misunderstandings and delusions can disrupt communication, and open questions strengthen harmony.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "intuition",
+            "2": "Question",
+            "3": "enlightenment"
+          },
+          "context": "The uncertainty is solved by the question, and the delusion distorts the harmony."
+        },
+        "position9": {
+          "upright": "The moon is a man who is capable of being intuitive, empathic, and connected with his emotions.",
+          "reversed": "The Reverse Moon, the one who creates uncertainty, manipulative, or surrenders to your fears, is not suitable for you.",
+          "keywords": {
+            "0": "intuition",
+            "1": "empathy",
+            "2": "emotion",
+            "3": "compatibility"
+          },
+          "context": "The ideal mate is the one who inspires confidence in his intuition."
+        }
+      },
+      "thesun": {
+        "position1": {
+          "upright": "Your marriage will shine with joy, openness and warmth, and the result can be a happy and bright union.",
+          "reversed": "False happiness or superficial harmony can weaken the outcome of marriage.",
+          "keywords": {
+            "0": "joy",
+            "1": "Happiness",
+            "2": "openness",
+            "3": "light"
+          },
+          "context": "The result is a cheerful and warm bond, but it must avoid superficiality."
+        },
+        "position10": {
+          "upright": "The sun, happiness, harmony, and a bright future show that marriage is absolutely possible.",
+          "reversed": "Reverse Sun, superficial happiness or false joy can cloud the marriage process.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "hope",
+            "2": "compatibility",
+            "3": "future",
+            "4": "family"
+          },
+          "context": "The potential for marriage is very high; it is happily supported."
+        },
+        "position2": {
+          "upright": "Enjoy life while you're waiting, enhance your joy, and positive energy will draw you to a mate.",
+          "reversed": "Excessive pessimism or false joy makes the process difficult.",
+          "keywords": {
+            "0": "joy",
+            "1": "Happiness",
+            "2": "positivity",
+            "3": "light"
+          },
+          "context": "It's useful to be cheerful while waiting, and positive energy brings you closer to your mate."
+        },
+        "position3": {
+          "upright": "The sun shows abundance and clarity in financial sharing, and a clear and happy union strengthens resources.",
+          "reversed": "The Reverse Sun points to false security and superficial optimism in financial sharing, and facts should not be ignored.",
+          "keywords": {
+            "0": "abundance",
+            "1": "clarity",
+            "2": "Happiness",
+            "3": "openness"
+          },
+          "context": "In sharing happiness and abundance are strong, false optimism poses a risk."
+        },
+        "position4": {
+          "upright": "The sun shows that the desire for commitment will come to pass in a clear, cheerful and sincere way, and both sides are ready to say yes from the heart.",
+          "reversed": "The reverse sun may be superficial happiness or extreme optimism in the bonding process, but if it's not realistic, the bond becomes fragile.",
+          "keywords": {
+            "0": "joy",
+            "1": "intimacy",
+            "2": "openness",
+            "3": "Trust"
+          },
+          "context": "Sincerity and happiness are the basis of commitment."
+        },
+        "position5": {
+          "upright": "Joy, authenticity and appearance, you like to polish each other.",
+          "reversed": "Artificial positivity covers the resemblance.",
+          "keywords": {
+            "0": "joy",
+            "1": "Authenticity",
+            "2": "visibility",
+            "3": "clarity",
+            "4": "share"
+          },
+          "context": "Happy, genuine common ground, keep the joy real."
+        },
+        "position6": {
+          "upright": "The sun says that with your inner joy and open character, you will receive a warm welcome in the family, authentic achievements and from the heart, thanks to you, it strengthens the bond.",
+          "reversed": "Inverted Sun, superficial positivity, as if it were good, can cloud the truth, and authentic joy and open communication restore confidence.",
+          "keywords": {
+            "0": "joy",
+            "1": "Authenticity",
+            "2": "clarity",
+            "3": "temperature",
+            "4": "appreciation"
+          },
+          "context": "Share your true light, it's not improvisation, it's sincerity that convinces the family."
+        },
+        "position7": {
+          "upright": "The sun tells you to meet in a warm and cheerful environment, a holiday, celebration, open air, or success-themed event that makes you visible and zooms in fast.",
+          "reversed": "The Reverse Sun tells us that artificial joy or comparison can cloud the naturality, and with authentic sharing, the real glow emerges.",
+          "keywords": {
+            "0": "joy",
+            "1": "visibility",
+            "2": "celebration",
+            "3": "Authenticity"
+          },
+          "context": "You meet on a light ground, authenticity strengthens the bond, artificiality reduces the glow."
+        },
+        "position8": {
+          "upright": "The sun shows that open, clear, and joyful communication will facilitate harmony, and the shared happiness strengthens the bond.",
+          "reversed": "The Reverse Sun says that over-optimistic masks can damage communication.",
+          "keywords": {
+            "0": "openness",
+            "1": "clarity",
+            "2": "joy",
+            "3": "sincerity"
+          },
+          "context": "Clarity and sincerity bring harmony; masks break the bond."
+        },
+        "position9": {
+          "upright": "The sun is a cheerful, sincere, open-hearted wife for you, whose warm energy strengthens harmony.",
+          "reversed": "The Reverse Sun is not suitable for you to show false joy or lack sincerity.",
+          "keywords": {
+            "0": "joy",
+            "1": "intimacy",
+            "2": "openness",
+            "3": "energy"
+          },
+          "context": "The ideal wife is the one who brings joy with her sincerity."
+        }
+      },
+      "judgement": {
+        "position1": {
+          "upright": "Your marriage will be renewed by the lessons of the past, and the result may be forgiveness and a new chapter.",
+          "reversed": "Being stuck in the past or over-judgment can make the outcome of marriage difficult. Regeneration may be delayed.",
+          "keywords": {
+            "0": "Regeneration",
+            "1": "Don't face it.",
+            "2": "Forgiveness",
+            "3": "decision"
+          },
+          "context": "The result is a renewed bond from the past, but there's a risk of being trapped in the past."
+        },
+        "position10": {
+          "upright": "The court says it's possible to re-born after past classes.",
+          "reversed": "Reverse Court, self-criticism or lingering in the past may interfere with the marriage path.",
+          "keywords": {
+            "0": "Rebirth",
+            "1": "decision",
+            "2": "Don't face it.",
+            "3": "call",
+            "4": "Freedom"
+          },
+          "context": "There is a possibility of marriage; leaving the past behind is essential."
+        },
+        "position2": {
+          "upright": "Face the past, learn your lessons, it's important to renew yourself while you wait.",
+          "reversed": "Rejecting your own mistakes makes the process difficult, so proceed with acceptance and forgiveness.",
+          "keywords": {
+            "0": "Don't face it.",
+            "1": "Regeneration",
+            "2": "Forgiveness",
+            "3": "decision"
+          },
+          "context": "It's useful to learn from the past while waiting. Forgiveness eases you."
+        },
+        "position3": {
+          "upright": "The court shows accountability and regeneration of financial matters, and new decisions can be made in joint sources.",
+          "reversed": "The Reverse Court points to avoiding financial responsibilities or repeating mistakes.",
+          "keywords": {
+            "0": "reckoning",
+            "1": "Regeneration",
+            "2": "responsibilities",
+            "3": "decision"
+          },
+          "context": "It's time for the division to settle down and regenerate, and it's a problem to avoid responsibility."
+        },
+        "position4": {
+          "upright": "The court shows that commitment can be strengthened by facing the past and turning over a new leaf, and by learning from past experiences, the sides can say yes.",
+          "reversed": "The reverse court may be over-judgmented in the desire to commit, or caught in the past, which prevents the bond from progressing.",
+          "keywords": {
+            "0": "Don't face it.",
+            "1": "Regeneration",
+            "2": "decision",
+            "3": "Freedom"
+          },
+          "context": "Leaving the past behind makes it easier to connect."
+        },
+        "position5": {
+          "upright": "Like the call of confrontation and rebirth, you know how to close the past fairly.",
+          "reversed": "Excessive self-judgment/no responsibilities can be different from your ends. The level of forgiveness affects harmony.",
+          "keywords": {
+            "0": "Don't face it.",
+            "1": "Regeneration",
+            "2": "Forgiveness",
+            "3": "call",
+            "4": "account"
+          },
+          "context": "Fair accounting is the common value, mercy is the balance."
+        },
+        "position6": {
+          "upright": "The court says that past judgments can be closed with a fair assessment and that a new call/ start can be born with the family. To express the lessons with maturity increases respect.",
+          "reversed": "The Reverse Court can make it difficult to accept the tendency to take no too much defense or responsibility, compassionate confrontation and moderate apology, to reopen the doors.",
+          "keywords": {
+            "0": "Don't face it.",
+            "1": "Regeneration",
+            "2": "Forgiveness",
+            "3": "decision",
+            "4": "respect"
+          },
+          "context": "Close past files with compassion, mature posture is the basis of acceptance."
+        },
+        "position7": {
+          "upright": "The court tells you to meet when you face the past and start a clean slate, and a call, an announcement, a meeting organization, or a reconnection brings you together.",
+          "reversed": "The Inverted Court says that hanging out in extreme self-judgment or old notebooks will delay the new encounter, forgiveness and closure will cross paths.",
+          "keywords": {
+            "0": "Regeneration",
+            "1": "call",
+            "2": "Don't face it.",
+            "3": "Forgiveness"
+          },
+          "context": "You meet a call after closing, regeneration creates attraction, and the trial slows down."
+        },
+        "position8": {
+          "upright": "The court shows that public discussion of the past and learning will strengthen the agreement, and the transparency bond of confrontation expands.",
+          "reversed": "The Reverse Court indicates that extreme judgment can disrupt communication, and the compassionate language brings harmony.",
+          "keywords": {
+            "0": "Don't face it.",
+            "1": "openness",
+            "2": "lesson",
+            "3": "Regeneration"
+          },
+          "context": "Speaking with compassion in the past helps to adapt; judgment undermines it."
+        },
+        "position9": {
+          "upright": "The court is a man who has faced his wife's past for you, learned forgiveness, and transformed himself.",
+          "reversed": "The reverse court is not suitable for you to be the one who can't drop the burdens of the past or who's always judging.",
+          "keywords": {
+            "0": "Regeneration",
+            "1": "Forgiveness",
+            "2": "awareness",
+            "3": "Freedom"
+          },
+          "context": "The ideal mate is the one who learned from the past and was renovated."
+        }
+      },
+      "theworld": {
+        "position1": {
+          "upright": "Your marriage will result in integrity, completion, and celebration, and the result can be success and lasting peace.",
+          "reversed": "The missing steps or incompleteness may weaken the outcome of the marriage, and if the cycle does not close, unrest may continue.",
+          "keywords": {
+            "0": "completion",
+            "1": "integrity",
+            "2": "celebration",
+            "3": "balance"
+          },
+          "context": "The result is a complete and powerful union, but the missing must be completed."
+        },
+        "position10": {
+          "upright": "The world shows that a marriage to completion, success and integrity is a sure possibility.",
+          "reversed": "The Reverse World, incompleteness or unfinished work may delay the marriage process.",
+          "keywords": {
+            "0": "completion",
+            "1": "integrity",
+            "2": "success",
+            "3": "cycle",
+            "4": "celebration"
+          },
+          "context": "The potential of marriage is very high; the energy of completion prevails."
+        },
+        "position2": {
+          "upright": "Finish the unfinished business while you wait, and closing the cycles will prepare you for a new phase.",
+          "reversed": "What's missing makes the process difficult. Focus on completion.",
+          "keywords": {
+            "0": "completion",
+            "1": "integrity",
+            "2": "cycle",
+            "3": "success"
+          },
+          "context": "It's useful to close the loops while you wait."
+        },
+        "position3": {
+          "upright": "The world represents integrity and success in financial sharing, completeness and harmony in common resources.",
+          "reversed": "The Reverse World points to things that are incomplete or incomplete in financial sharing.",
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "compatibility",
+            "3": "balance"
+          },
+          "context": "There's integrity and success in sharing, and if the missing don't complete, harmony will be delayed."
+        },
+        "position4": {
+          "upright": "The world shows that commitment is built with a sense of completeness and integrity, and both sides can say yes to marriage from the heart.",
+          "reversed": "The Reverse World may be incomplete loops or unfinished cycles during the binding process, but the bond cannot be complete until it's complete.",
+          "keywords": {
+            "0": "completion",
+            "1": "integrity",
+            "2": "Integration",
+            "3": "celebration"
+          },
+          "context": "Connection is permanent with a complete cycle."
+        },
+        "position5": {
+          "upright": "Completion, integration, and the same look in the big picture, you tend to close the cycles together.",
+          "reversed": "If the missing ends don't close, the sense of integrity shakes.",
+          "keywords": {
+            "0": "integrity",
+            "1": "complete",
+            "2": "Integration",
+            "3": "threshold",
+            "4": "system"
+          },
+          "context": "There's harmony in the big picture, focus on unfinished business."
+        },
+        "position6": {
+          "upright": "The world shows its potential to integrate with the family and complete the cycle successfully, and your mature, stable, and inclusive attitude naturally integrates you into the family system.",
+          "reversed": "The Reverse World tells us that small missing ends (half talks, uncertain roles) can delay a sense of integrity. To complete integration, an open framework is sufficient.",
+          "keywords": {
+            "0": "integrity",
+            "1": "Integration",
+            "2": "complete",
+            "3": "belonging",
+            "4": "stability"
+          },
+          "context": "Close the missing headgears, the completed circle will be considered permanent."
+        },
+        "position7": {
+          "upright": "The world tells you to meet when you complete a major cycle or in an international/rape cultured context, which combines you with the sense of completeness of graduation, end of the project or travel.",
+          "reversed": "The Reverse World tells you that loose ends can distract you from meeting, and when you close the gaps and celebrate, the right simultaneous knocks on the door.",
+          "keywords": {
+            "0": "completion",
+            "1": "threshold",
+            "2": "travel",
+            "3": "integrity"
+          },
+          "context": "You meet on the verge of completion and celebration, the integrity increases the gravity, the half-work delays the flow."
+        },
+        "position8": {
+          "upright": "The world shows that a complete and open communication will complete the deal, and the common cycle closes and a new balance begins.",
+          "reversed": "The Reverse World says that incomplete conversations or incomplete dialogues will make it difficult to fit in. Completive clarity makes the deal easier.",
+          "keywords": {
+            "0": "integrity",
+            "1": "completion",
+            "2": "openness",
+            "3": "balance"
+          },
+          "context": "Completed communication brings harmony; leaving incomplete damage."
+        },
+        "position9": {
+          "upright": "The world is a mature and complete man who gives you the right sense of integrity, ready to complete the cycle together.",
+          "reversed": "The Reverse World is not suitable for you to feel incomplete, incomplete, or unable to close its cycle.",
+          "keywords": {
+            "0": "integrity",
+            "1": "completion",
+            "2": "maturity",
+            "3": "unity"
+          },
+          "context": "The ideal mate is the one who brings integrity and maturity."
+        }
+      },
+      "aceofcups": {
+        "position1": {
+          "upright": "The result of your marriage will be an emotional beginning, a complete opening of the heart, plenty and pure love will flow in a relationship.",
+          "reversed": "Repressed emotions or emotional blockage can cloud the outcome of the marriage, and lack of expression can reduce the power of the bond.",
+          "keywords": {
+            "0": "start",
+            "1": "love",
+            "2": "angle",
+            "3": "Compassion"
+          },
+          "context": "The result is a new flow of love born from the heart, but when emotions are suppressed, it can be difficult."
+        },
+        "position10": {
+          "upright": "The Ace of Hearts says that the doors of the heart can be opened and a new, pure love can sprout. The beginning of emotional flow supports the intention of marriage; the offer and the energy of celebration is high.",
+          "reversed": "Repressed emotions or resentments in need of healing can aggravate the marriage door, first purifying the heart, then opening a new vineyard.",
+          "keywords": {
+            "0": "New love",
+            "1": "emotional opening",
+            "2": "It's a cure.",
+            "3": "Closeness",
+            "4": "celebration"
+          },
+          "context": "The chances of marriage are strong; your heart must be open, your flow must be clear."
+        },
+        "position2": {
+          "upright": "As you wait, open your heart, express your feelings, and the flow of inner love prepares you for your mate.",
+          "reversed": "Repressed emotions or fears make the process difficult.",
+          "keywords": {
+            "0": "love",
+            "1": "start",
+            "2": "emotion",
+            "3": "expression"
+          },
+          "context": "It would be helpful to open your heart and express feelings while waiting."
+        },
+        "position3": {
+          "upright": "Emotional confidence and goodwill open a soft door to the sharing of money, making it easier for us to establish a budget together.",
+          "reversed": "The suppression of emotions or resentment reduces generosity, not the heart of sharing, but the obligation.",
+          "keywords": {
+            "0": "generosity",
+            "1": "feeling confidence",
+            "2": "start",
+            "3": "flow"
+          },
+          "context": "When the heart is open, the sharing flows, and if there is resentment, the tap is cut, and first repair the emotional climate."
+        },
+        "position4": {
+          "upright": "A new emotional beginning, the desire to open hearts and connect together, fosters pure love and emotional flow, and the proper ground for bonding.",
+          "reversed": "When emotions are suppressed or fears come forward, the bond can be delayed. If one of the parties conceals its feelings, the bond stays on the surface without deepening.",
+          "keywords": {
+            "0": "angle",
+            "1": "love",
+            "2": "connection",
+            "3": "emotion",
+            "4": "new beginning"
+          },
+          "context": "The desire to bond is fresh and strong, but emotions are not supposed to be hidden."
+        },
+        "position5": {
+          "upright": "It's like a pure flow of open heart and emotion, and the language of compassion makes your common bond grow.",
+          "reversed": "Your threshold for emotion may be different, clouding the shyness of sharing.",
+          "keywords": {
+            "0": "heart",
+            "1": "angle",
+            "2": "Compassion",
+            "3": "Closeness",
+            "4": "flow"
+          },
+          "context": "The emotional flow is the common area."
+        },
+        "position6": {
+          "upright": "The Ace of Cups says it's possible for a strong emotional opening to accept you from the heart, to approach you with sincerity and pure love, the foundation of emotional bond.",
+          "reversed": "The Ace of Reverse Cups can lead to misunderstandings in the family if the heart is not expressed or the heart is closed, and sharing your feelings in a safe way opens the door.",
+          "keywords": {
+            "0": "new beginning",
+            "1": "emotion",
+            "2": "angle",
+            "3": "intimacy",
+            "4": "connection"
+          },
+          "context": "A heart and a transparent start can easily make you accept, pure love is the most powerful key."
+        },
+        "position7": {
+          "upright": "The Asa Cup shows that meeting will be an emotional start, and an event with an invitation, a celebration, or emotional intensity compares you.",
+          "reversed": "The Reverse Wand Cup says that the closed heart can delay the introduction, and when it opens the internal flow, the bond is born on its own.",
+          "keywords": {
+            "0": "start",
+            "1": "emotion",
+            "2": "Don't get close.",
+            "3": "flow"
+          },
+          "context": "You meet in an environment of emotional intensity, open heart makes it easier to meet."
+        },
+        "position8": {
+          "upright": "The Ace of Hearts represents an emotionally open beginning to understand each other, where compassion and intimacy are at the forefront of communication.",
+          "reversed": "The Reverse Cup Ace shows that the agreement can be difficult because of the suppression or lack of expression of emotion, and the opening of sincerity strengthens the bond.",
+          "keywords": {
+            "0": "emotion",
+            "1": "start",
+            "2": "intimacy",
+            "3": "Compassion"
+          },
+          "context": "Emotional openness creates harmony; suppression creates disconnection."
+        },
+        "position9": {
+          "upright": "The Ace of Cups, a man whose heart is open, whose feelings are transparent, is fitting for you, and brings comfort to a loving wife who feeds her soul.",
+          "reversed": "The Ace of the Reverse Cups, someone who hides his emotions or has difficulty bonding with you, makes it difficult to match the lack of emotional clarity.",
+          "keywords": {
+            "0": "love",
+            "1": "openness",
+            "2": "intimacy",
+            "3": "nourishing"
+          },
+          "context": "A wife who opens her heart and shares love generously is fitting for you."
+        }
+      },
+      "twoofcups": {
+        "position1": {
+          "upright": "The result will be a marriage of mutual love, equal bond and harmony, and the relationship will be strengthened by the union of two hearts.",
+          "reversed": "Misunderstandings or unstable sharing can force the outcome of a marriage.",
+          "keywords": {
+            "0": "unity",
+            "1": "compatibility",
+            "2": "partnership",
+            "3": "reciprocity"
+          },
+          "context": "The result is an equal and balanced bond, but small communication mistakes can take risks."
+        },
+        "position10": {
+          "upright": "The two Cups show a very suitable union for marriage with mutual attraction and equal exchange, and if the intention meets, it can easily evolve into a word union and an official bond.",
+          "reversed": "A small imbalance or misunderstanding can reduce the speed of marriage, clear boundaries and open conversations bring the balance back.",
+          "keywords": {
+            "0": "reciprocity",
+            "1": "compatibility",
+            "2": "connection",
+            "3": "Promise",
+            "4": "balance"
+          },
+          "context": "Marriage potential is essential, equality and clear intent."
+        },
+        "position2": {
+          "upright": "Find balance within yourself and be open to compatible bonds and improve your relationship skills while waiting.",
+          "reversed": "Incompatible bonds or addictions slow down the process. Choose equal relationships.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "balance",
+            "2": "connection",
+            "3": "Equality"
+          },
+          "context": "It's important to have a healthy connection while waiting."
+        },
+        "position3": {
+          "upright": "Reciprocity and equality also create natural balance in the matter of money.",
+          "reversed": "Small resentments and misunderstandings upset the balance of equal sharing.",
+          "keywords": {
+            "0": "reciprocity",
+            "1": "Equality",
+            "2": "compatibility",
+            "3": "connection"
+          },
+          "context": "Fair sharing is possible on the proper ground, before microfractures grow."
+        },
+        "position4": {
+          "upright": "The mutual love and balance come out, and the willingness of both sides to commit gives the relationship a strong partnership energy.",
+          "reversed": "One of the parties can distance themselves, or there may be a discrepancy in expectations, in which case even if it's intent to connect, the match remains unstable.",
+          "keywords": {
+            "0": "reciprocity",
+            "1": "compatibility",
+            "2": "relationship",
+            "3": "connection",
+            "4": "balance"
+          },
+          "context": "The desire for commitment may be mutual, but maintaining harmony is essential."
+        },
+        "position5": {
+          "upright": "Reciprocity, kindness, and equal exchange match, you catch each other's tongues easily.",
+          "reversed": "There may be temporal deviations in the yielding field balance, and small compensations remain similar.",
+          "keywords": {
+            "0": "reciprocity",
+            "1": "compatibility",
+            "2": "Equality",
+            "3": "connection",
+            "4": "kindness"
+          },
+          "context": "Al/ver balance is a common value. Compensation rhythm is important."
+        },
+        "position6": {
+          "upright": "The Duo of Hearts indicates that it can establish a bond of mutual harmony and respect with the family, and sincere sharing quickly strengthens the bridges.",
+          "reversed": "The Reverse Cup Duo shows the possibility of misunderstandings or loss of balance with the family, open borders and honest dialogue will cover that gap.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "respect",
+            "2": "Equality",
+            "3": "reciprocity",
+            "4": "Trust"
+          },
+          "context": "Mutual respect and net communication speed up the acceptance process. Dialogue is the key."
+        },
+        "position7": {
+          "upright": "The two Cups say that the introduction will be directly in the atmosphere of mutual attraction and harmony. A small meeting or joint project bond can quickly begin.",
+          "reversed": "Two Reverse Cups can cloud meeting unstable bonds or false expectations, clear open communication pathways.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "gravity",
+            "2": "partnership",
+            "3": "balance"
+          },
+          "context": "You meet in an environment of mutual attraction, and clarity speeds up the relationship."
+        },
+        "position8": {
+          "upright": "The Two of Hearts shows mutual harmony and equal exchange, and balance and empathy in communication makes the deal easier.",
+          "reversed": "The Reverse Cup Duo indicates that misunderstandings or unstable bonds can make communication difficult, and open boundaries bring harmony.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "Equality",
+            "2": "empathy",
+            "3": "balance"
+          },
+          "context": "Equal bonds strengthen the agreement; imbalance destroys it."
+        },
+        "position9": {
+          "upright": "The Duo of Hearts, a man who is in harmony with his soul mate, who is in equal sharing and balance, is good for you, and relationships that bind to the heart feed you.",
+          "reversed": "Two of the Reverse Cups, unstable bonds or unilateral efforts are not appropriate for you, mutual respect and sharing should be the basis.",
+          "keywords": {
+            "0": "soul mate",
+            "1": "compatibility",
+            "2": "balance",
+            "3": "share"
+          },
+          "context": "It is appropriate to have an equal bond with one's heart."
+        }
+      },
+      "threeofcups": {
+        "position1": {
+          "upright": "Your marriage will continue with joy, celebration, and strong social support, and the result will be happiness and unity.",
+          "reversed": "Excessive social pressure or external interference can cloud the outcome of the marriage.",
+          "keywords": {
+            "0": "celebration",
+            "1": "friendship",
+            "2": "joy",
+            "3": "solidarity"
+          },
+          "context": "The result is a marriage full of celebration and support, but the external effects must be taken care of."
+        },
+        "position10": {
+          "upright": "The Three Cups strengthens the marriage agenda with celebration, support of the nearby environment, and joyful gatherings.",
+          "reversed": "Excessive socialism, the opinion of third people, or superficiality, can break the focus of marriage, and it has to go back to the essence of the relationship.",
+          "keywords": {
+            "0": "celebration",
+            "1": "support",
+            "2": "Community",
+            "3": "joy",
+            "4": "ritual"
+          },
+          "context": "The marriage path is clear; it accelerates with the right environment and simple focus."
+        },
+        "position2": {
+          "upright": "Cherish your friendships, feed your social environment, and while you wait, this area of support will strengthen you.",
+          "reversed": "Excessive superficiality or social fatigue makes the process difficult.",
+          "keywords": {
+            "0": "Friendship",
+            "1": "celebration",
+            "2": "share",
+            "3": "Community"
+          },
+          "context": "As you wait, feeding your friendships prepares you."
+        },
+        "position3": {
+          "upright": "Funding together for celebrations and joint activities increases joy. Social expenditures can be shared.",
+          "reversed": "Social environmental impacts and sporadic spending confuse the budget, and overextended entertainment breeds conflict.",
+          "keywords": {
+            "0": "celebration",
+            "1": "share",
+            "2": "Community",
+            "3": "entertainment"
+          },
+          "context": "It's fun to spend together; there'll be no problem if the boundaries are discussed."
+        },
+        "position4": {
+          "upright": "The energy of sharing and celebration opens up to bonding, social support and friendly environment strengthen the bond of the relationship.",
+          "reversed": "The outside effects or the third person's intervention can make it difficult to connect. The sides need to focus on their own bond.",
+          "keywords": {
+            "0": "celebration",
+            "1": "share",
+            "2": "Community",
+            "3": "connection",
+            "4": "joy"
+          },
+          "context": "The desire to be connected feeds on joy, but the third must be taken care of."
+        },
+        "position5": {
+          "upright": "Your culture of sociality, friendship and celebration is similar, and you shine together in the crowd.",
+          "reversed": "Your social energy dose may be different, avoiding superficiality maintains harmony.",
+          "keywords": {
+            "0": "celebration",
+            "1": "friendship",
+            "2": "share",
+            "3": "ritual",
+            "4": "joy"
+          },
+          "context": "Consistent with social rhythm, talk about dosage and privacy."
+        },
+        "position6": {
+          "upright": "The Three of Hearts tells you that your family can accept you with celebration, joy, and unity energy.",
+          "reversed": "The Reverse Cup Triad indicates that it can be distanced from a superficial union or a jealous theme, and focusing on deeper bonds increases confidence.",
+          "keywords": {
+            "0": "celebration",
+            "1": "unity",
+            "2": "friendship",
+            "3": "share",
+            "4": "support"
+          },
+          "context": "Warm and cheerful sharings make acceptance easier to avoid superficiality."
+        },
+        "position7": {
+          "upright": "Three Cups says that meeting will take place in a friendly environment, a celebration or a collective event, and joy and sharing will be the first base of the bond.",
+          "reversed": "The Inverse Three Cups says that superficial or extreme social environments can weaken the bond, allowing small intimate groups to meet more permanently.",
+          "keywords": {
+            "0": "celebration",
+            "1": "Friendship",
+            "2": "Community",
+            "3": "share"
+          },
+          "context": "You meet in a cheerful community, and intimacy strengthens the bond."
+        },
+        "position8": {
+          "upright": "The Three of Hearts shows that cheerful and supportive communication can easily be established, and joint shares deepen the bond.",
+          "reversed": "The Reverse Cup Triad says that superficial communication or external factors can make harmony difficult, and when intimacy is maintained, the agreement remains permanent.",
+          "keywords": {
+            "0": "share",
+            "1": "joy",
+            "2": "support",
+            "3": "intimacy"
+          },
+          "context": "Intimacy enhances harmony; superficiality breaks the bond."
+        },
+        "position9": {
+          "upright": "The Three of Cups, one who knows how to celebrate life, one who is strong in friendship, one who is in harmony with his surroundings, is a good match for you, and sharing joy strengthens the bond.",
+          "reversed": "The Trilateral of the Reverse Cups can exhaust your relationship with superficial bonds or social imbalances, and it's more accurate with someone who's sincere and deep.",
+          "keywords": {
+            "0": "joy",
+            "1": "Friendship",
+            "2": "celebration",
+            "3": "share"
+          },
+          "context": "The cheerful spirit that knows how to share life suits you."
+        }
+      },
+      "fourofcups": {
+        "position1": {
+          "upright": "The result is that even though there is satisfaction and peace in marriage, there's a possibility of monotony over time, and with awareness, the bond can stay alive.",
+          "reversed": "Resolving internal problems can bring life to a marriage, and the search for innovation brings breath to the bond.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "recession",
+            "2": "awareness",
+            "3": "Regeneration"
+          },
+          "context": "The result is a peaceful but monotony period, innovation must be maintained."
+        },
+        "position10": {
+          "upright": "Four Cups say that an opportunity can be passed by due to emotional dissatisfaction or absent-mindedness, and if gratitude and awareness are increased, the marriage option becomes visible.",
+          "reversed": "Awakening and new openness increase; if the past disappointments are resolved, the marriage door will reappear.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "opportunity",
+            "2": "awareness",
+            "3": "Gratitude",
+            "4": "Regeneration"
+          },
+          "context": "Marriage is possible; you have to see the opportunity and revive the heart."
+        },
+        "position2": {
+          "upright": "Review your own feelings, recognize your dissatisfaction, and while you wait, be thankful that you develop consciousness.",
+          "reversed": "Opening up to new opportunities will bring you back to life.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "awareness",
+            "2": "Thank God.",
+            "3": "Regeneration"
+          },
+          "context": "And while we're waiting, thankfully, openness of consciousness and innovation helps."
+        },
+        "position3": {
+          "upright": "Dissatisfaction and indifference may reduce accession to the budget plan, and opportunities may be overlooked.",
+          "reversed": "When gratitude and awareness rise, there's a new desire for fair sharing, renewed motivation boosts the budget.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "opportunity",
+            "2": "Gratitude",
+            "3": "awareness"
+          },
+          "context": "Increase interest gives you momentum to share, so start hearing new proposals."
+        },
+        "position4": {
+          "upright": "A person may seem emotionally closed or indifferent, and even though he has a desire to be connected, there is an opportunity to be recognized.",
+          "reversed": "If the closure is resolved, a new emotional awakening sets the stage for commitment. It's important to get out of internal dissatisfaction.",
+          "keywords": {
+            "0": "Recklessness"
+          }
+        }
+      }
+    }
+  }
+}

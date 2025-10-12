@@ -1,0 +1,772 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "kingofwands": {
+        "position1": {
+          "keywords": {
+            "2": "control",
+            "3": "Charisma",
+            "4": "Question"
+          },
+          "context": "The problem needs a powerful vision and direction at its center."
+        },
+        "position10": {
+          "upright": "The king of the wand may result in visionary leadership, success, and strong manipulation.",
+          "reversed": "The Reverse Stick King may result in authoritarianity, loss of direction, or arrogance.",
+          "keywords": {
+            "0": "leadership",
+            "1": "Vision",
+            "2": "success",
+            "3": "authority",
+            "4": "power"
+          },
+          "context": "The result could be visionary success or disorientation."
+        },
+        "position2": {
+          "upright": "King of Asa, the obstacle may be lack of vision, control problems or directionlessness, suppressing leadership's potential makes the solution difficult.",
+          "reversed": "The reverse king of Asa, oppression, impatience, or lack of vision, may be the source of the obstacle.",
+          "keywords": {
+            "0": "Vision",
+            "1": "control",
+            "2": "leadership",
+            "3": "direction",
+            "4": "obstacle"
+          },
+          "context": "Obstruction comes from lack of vision and control issues."
+        },
+        "position3": {
+          "upright": "King of Asa, in his subconscious, could be a vision of the past, a leadership, or a direction.",
+          "reversed": "The reverse king of Asa may have settled in the subconscious of his past lack of vision, oppression, or disorientation.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "direction",
+            "3": "pressure",
+            "4": "subconscious"
+          },
+          "context": "The experience of vision and leadership in the past may be affecting your problems today."
+        },
+        "position4": {
+          "upright": "The King of the Wand is to show the vision of the best potential, to be a determined leader, and to inspire your environment.",
+          "reversed": "In order to achieve its potential, the Reverse Stick King, you must abandon the need for extreme control and share your vision.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "Inspired",
+            "3": "determination",
+            "4": "Courage"
+          },
+          "context": "Your best potential comes from leading with vision."
+        },
+        "position5": {
+          "upright": "The King of the Wand may have shown leadership in recent times, demonstrated his vision, or inspired your surroundings.",
+          "reversed": "In the recent past, you may have experienced excessive oppression, control, or lack of vision.",
+          "keywords": {
+            "0": "leadership",
+            "1": "Vision",
+            "2": "Inspired",
+            "3": "control",
+            "4": "Charisma"
+          },
+          "context": "Your recent history may have been determined by your obsession with leadership or control."
+        },
+        "position6": {
+          "upright": "The King of the Wand can lead, show his vision, and inspire your surroundings in the near future.",
+          "reversed": "In the near future, the reverse wand king may be subject to oppression, a desire to control, or a lack of vision.",
+          "keywords": {
+            "0": "leadership",
+            "1": "Vision",
+            "2": "Inspired",
+            "3": "Charisma",
+            "4": "Courage"
+          },
+          "context": "Your near future will be shaped by vision or control."
+        },
+        "position7": {
+          "upright": "King of the wand, you are now in a state of vision, determination, and leadership.",
+          "reversed": "Reverse Stick King, right now you can be forced to control, suppression or lack of vision.",
+          "keywords": {
+            "0": "leadership",
+            "1": "Vision",
+            "2": "Inspired",
+            "3": "Charisma",
+            "4": "Courage"
+          },
+          "context": "Your current condition is shaped by the need for vision or control."
+        },
+        "position8": {
+          "upright": "The King of the Wand can support the focus of visionary leadership, mentorship and the big picture of the outside effects.",
+          "reversed": "Reverse Stick King, external factors can bring authoritarian pressure, desire for control, or unvisioned direction.",
+          "keywords": {
+            "0": "leadership",
+            "1": "Vision",
+            "2": "effect",
+            "3": "strategy",
+            "4": "build"
+          },
+          "context": "The external effects can enhance the vision or narrow it down with pressure."
+        },
+        "position9": {
+          "upright": "King of the Wand, you may be afraid of not being able to lead, lose your vision, or be inadequate to authority.",
+          "reversed": "The Reverse Wand King may show concern for oppressive figures, misdirection, or visionlessness.",
+          "keywords": {
+            "0": "leadership",
+            "1": "Vision",
+            "2": "authority",
+            "3": "pressure",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on failing in leadership or losing direction."
+        }
+      },
+      "aceofpentacles": {
+        "position1": {
+          "upright": "The amulet ace may have a desire to build a new opportunity, financial security, or a solid foundation at the heart of the problem.",
+          "reversed": "Reverse Talisman, kidnapped opportunities, instability, or material insecurity may be the source of the problem.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "material trust",
+            "2": "basic",
+            "3": "start",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is the search for concrete opportunity or security."
+        },
+        "position10": {
+          "upright": "As a result, the Amulet can be a foundation of new material opportunities, a safe start, and abundance.",
+          "reversed": "The Reverse Talisman, as a result of the incident, may be missed opportunities, false investments, or an insecure foundation.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "abundance",
+            "2": "security",
+            "3": "start",
+            "4": "investment"
+          },
+          "context": "The result may be new material gains or missed opportunities."
+        },
+        "position2": {
+          "upright": "The amulet ace may be that the obstacle is not to see new opportunities, not to find the basis for material insecurity or for starting, and when there is no solid ground, it becomes difficult to move forward.",
+          "reversed": "The Reverse Talisman, kidnapped opportunities, instability or false investments may be the source of the obstacle.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "material trust",
+            "2": "basic",
+            "3": "investment",
+            "4": "obstacle"
+          },
+          "context": "The obstacle arises from the lack of opportunity and security."
+        },
+        "position3": {
+          "upright": "The amulet ace may be a new opportunity in your subconscious, a material beginning, or a solid foundation search for your problems today.",
+          "reversed": "The Reverse Talisman could have been embedded in the subconscious of past missed opportunities, misinvestments or instability.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "start",
+            "2": "material trust",
+            "3": "investment",
+            "4": "subconscious"
+          },
+          "context": "Opportunities or material foundations in the past may have shaped today's problems."
+        },
+        "position4": {
+          "upright": "The amulet ace is the best potential to build new opportunities on solid foundations, to create abundance, and to make a concrete start.",
+          "reversed": "In order to achieve its potential, the Reverse Talisman, you have to give up the fear of kidnapping, take steps with confidence, and choose stability.",
+          "keywords": {
+            "0": "start",
+            "1": "abundance",
+            "2": "stability",
+            "3": "guarantee",
+            "4": "opportunity"
+          },
+          "context": "Your best potential is to secure new material opportunities."
+        },
+        "position5": {
+          "upright": "The amulet ace may have recently come to the attention of a new opportunity, a job, or a material start, and you have the energy to throw strong foundations.",
+          "reversed": "The Reverse Talisman, you may have experienced an opportunity that had recently been hijacked, a false investment, or a lack of stability.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "start",
+            "2": "abundance",
+            "3": "investment",
+            "4": "stability"
+          },
+          "context": "Your recent past may have been shaped by the use of material opportunities or by kidnapping."
+        },
+        "position6": {
+          "upright": "In the near future, the amulet ace may bring up a new material opportunity, a start of work, or the energy to build a strong foundation.",
+          "reversed": "The Inverted Charm could be a problem for me to miss opportunities, misinvest or maintain stability in the near future.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "start",
+            "2": "abundance",
+            "3": "investment",
+            "4": "basic"
+          },
+          "context": "Your near future will be shaped by building solid foundations or missing opportunities."
+        },
+        "position7": {
+          "upright": "There is now a new material opportunity in your life, a solid beginning, or a powerful foundation.",
+          "reversed": "The Reverse Talisman, right now, you may find it difficult to take advantage of opportunities, misinvestments or lack of stability.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "start",
+            "2": "abundance",
+            "3": "investment",
+            "4": "basic"
+          },
+          "context": "Your current situation is shaped by opportunities or instability."
+        },
+        "position8": {
+          "upright": "The amulet ace can offer you a new material opportunity, a solid start, or stability.",
+          "reversed": "The Reverse Talisman, the external effects can lead you into an environment of missed opportunities, wrong investments, or insecurity.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "start",
+            "2": "abundance",
+            "3": "investment",
+            "4": "basic"
+          },
+          "context": "The external effects may offer opportunities or cause instability."
+        },
+        "position9": {
+          "upright": "You may be afraid of missing opportunities, of failing to provide financial security, or of building solid foundations.",
+          "reversed": "The Reverse Talisman can show the anxiety of false investment, insecurity, or failure of beginnings.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "guarantee",
+            "2": "start",
+            "3": "investment",
+            "4": "anxiety"
+          },
+          "context": "Your fears focus on not being able to assess material opportunities or to maintain stability."
+        }
+      },
+      "twoofpentacles": {
+        "position1": {
+          "upright": "Two amulets may be the center of the problem, the search for balance, multiple responsibilities, or prioritization.",
+          "reversed": "Two reverse amulets, imbalance, lack of control or poor management of resources may be the source of the problem.",
+          "keywords": {
+            "0": "balance",
+            "1": "priority",
+            "2": "responsibilities",
+            "3": "flexibility",
+            "4": "Question"
+          },
+          "context": "At the center of the problem, it needs to balance resources."
+        },
+        "position10": {
+          "upright": "Two amulets may result in a balanced management, flexibility, and balance of responsibilities.",
+          "reversed": "Two reverse amulets may result in imbalance, crushing or incompatibility under responsibilities.",
+          "keywords": {
+            "0": "balance",
+            "1": "responsibilities",
+            "2": "flexibility",
+            "3": "compatibility",
+            "4": "decision"
+          },
+          "context": "The result may be finding balance or being forced by responsibilities."
+        },
+        "position2": {
+          "upright": "Two Talismans may be unable to balance the obstacle, to adjust the excessive responsibility or priorities of the barrier, taking too much loads makes progress difficult.",
+          "reversed": "Two reverse amulets can be the source of insurmountableness, mismanagement of resources, or constant indecision.",
+          "keywords": {
+            "0": "balance",
+            "1": "priority",
+            "2": "responsibilities",
+            "3": "control",
+            "4": "obstacle"
+          },
+          "context": "Obstruction is born from lack of instability and priorities."
+        },
+        "position3": {
+          "upright": "Two amulets can subconsciously search for balance in the past, multiple responsibilities, or efforts to adapt.",
+          "reversed": "The Reverse Two Charms may have settled in the subconscious of the past, insubordinateness, constant indecision, or mismanagement of resources.",
+          "keywords": {
+            "0": "balance",
+            "1": "responsibilities",
+            "2": "control",
+            "3": "decision",
+            "4": "subconscious"
+          },
+          "context": "In the past, efforts to balance or imbalance may be affecting your problems today."
+        },
+        "position4": {
+          "upright": "Two amulets are to develop flexibility of the best potential, to manage more than one responsibility with balance and to move forward with harmony.",
+          "reversed": "Two reverse amulets, in order to reach your potential, you have to give up indecisiveness, simplify the issues that dissipate your energy.",
+          "keywords": {
+            "0": "balance",
+            "1": "flexibility",
+            "2": "compatibility",
+            "3": "responsibilities",
+            "4": "focus"
+          },
+          "context": "Your best potential comes from balance management of your responsibilities."
+        },
+        "position5": {
+          "upright": "Two amulets, you may have tried to balance more than one job, responsibility or process in the recent past.",
+          "reversed": "Two reverse amulets, you may have recently been trapped in your responsibilities, unstable, or confused with priorities.",
+          "keywords": {
+            "0": "balance",
+            "1": "responsibilities",
+            "2": "flexibility",
+            "3": "priority",
+            "4": "density"
+          },
+          "context": "Your recent past may or may not have been shaped by balancing the balance."
+        },
+        "position6": {
+          "upright": "Two amulets, in the near future, you may experience a process of balancing your responsibilities, clarifying your priorities and gaining flexibility.",
+          "reversed": "Two reverse amulets may be unstable, overloaded or unable to make decisions in the near future.",
+          "keywords": {
+            "0": "balance",
+            "1": "responsibilities",
+            "2": "priority",
+            "3": "flexibility",
+            "4": "density"
+          },
+          "context": "Your near future will be shaped by balance or imbalance."
+        },
+        "position7": {
+          "upright": "Two amulets, right now, you're trying to balance your responsibilities, prioritize, and stay flexible.",
+          "reversed": "Two reverse amulets, you may be in a state of instability, overload, or inability to make a decision.",
+          "keywords": {
+            "0": "balance",
+            "1": "responsibilities",
+            "2": "priority",
+            "3": "density",
+            "4": "flexibility"
+          },
+          "context": "Your current condition is shaped by finding or losing balance."
+        },
+        "position8": {
+          "upright": "Two amulets, external effects can bring you multiple responsibilities or conditions that require you to adjust.",
+          "reversed": "The Inverse Two Talisms can disrupt the balance, create overload or indecisiveness.",
+          "keywords": {
+            "0": "balance",
+            "1": "responsibilities",
+            "2": "flexibility",
+            "3": "decision",
+            "4": "priority"
+          },
+          "context": "The external effects can help or disrupt your balance."
+        },
+        "position9": {
+          "upright": "Two amulets, you may be afraid of not balancing your responsibilities, taking too much weight, or being incompatible.",
+          "reversed": "Two reverse amulets can show concern for instability, indecisiveness, or failure to manage priorities.",
+          "keywords": {
+            "0": "balance",
+            "1": "responsibilities",
+            "2": "priority",
+            "3": "decision",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on instability or failure to handle responsibilities."
+        }
+      },
+      "threeofpentacles": {
+        "position1": {
+          "upright": "The three amulets may be at the center of the problem of cooperation, teamwork, or the desire to build a project.",
+          "reversed": "The Reverse Three charms, incompatibility, lack of support, or working alone can be the source of the problem.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "Team",
+            "2": "build",
+            "3": "support",
+            "4": "Question"
+          },
+          "context": "It needs cooperation and support at the center of the problem."
+        },
+        "position10": {
+          "upright": "Three amulets can result in cooperation, appreciation, and success on a solid basis.",
+          "reversed": "The Inverse Three charms may result in a lack of incompatibility, insufficient co-operation, or support.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "success",
+            "2": "appreciation",
+            "3": "Team",
+            "4": "basic"
+          },
+          "context": "The result may be success or incompatibility with cooperation."
+        },
+        "position2": {
+          "upright": "Three amulets may be the lack of co-operation, incompatibility or support of the obstacle, but progress alone limits you.",
+          "reversed": "The Reverse Three charms, bad teamwork, miscommunication, or isolation may be the source of the obstacle.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "support",
+            "2": "compatibility",
+            "3": "Team",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born from lack of co-operation and lack of support."
+        },
+        "position3": {
+          "upright": "Three amulets, subconsciously, may have been co-operation, co-operation, or attempts to master.",
+          "reversed": "The inverse three amulets, incompatibility, team problems, or lack of support may have been embedded in your subconscious.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "Team",
+            "2": "mastery",
+            "3": "compatibility",
+            "4": "subconscious"
+          },
+          "context": "His past co-operation or dissonance experiences may have shaped his present problems."
+        },
+        "position4": {
+          "upright": "The three amulets are the co-operation of the best potential, sharing success by combining their knowledge and skills with harmony.",
+          "reversed": "To open up your potential, you must take support and be open to teamwork instead of standing alone.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "share",
+            "2": "skill",
+            "3": "compatibility",
+            "4": "success"
+          },
+          "context": "Your best potential is to build concrete success with cooperation."
+        },
+        "position5": {
+          "upright": "Three amulets, you may have recently experienced co-operation, teamwork, or joint projects.",
+          "reversed": "The Inverse Three amulets may have been involved in recent history of incompatibility, domestic disputes, or lack of support.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "compatibility",
+            "2": "success",
+            "3": "Team",
+            "4": "partnership"
+          },
+          "context": "It may have been shaped by recent experiences of co-operation or incompatibility."
+        },
+        "position6": {
+          "upright": "Three amulets may bring about success in co-operation, teamwork or joint projects in the near future.",
+          "reversed": "The Inverse Three charms may be incompatible in the near future, conflict or lack of support within the team.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "Team",
+            "2": "success",
+            "3": "share",
+            "4": "compatibility"
+          },
+          "context": "Your near future will be shaped by cooperation or incompatibility."
+        },
+        "position7": {
+          "upright": "Three amulets, you could be in the spirit of cooperation, teamwork and success in joint projects right now.",
+          "reversed": "The Inverse Three charms may now be a condition of incompatibility, lack of support, or failure to cooperate.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "Team",
+            "2": "success",
+            "3": "share",
+            "4": "compatibility"
+          },
+          "context": "Your current situation is shaped by cooperation or incompatibility."
+        },
+        "position8": {
+          "upright": "Three Talisms can bring projects to develop external influence co-operation, team support or skills.",
+          "reversed": "The Inverse Three Talisms, external effects can create incompatibility, lack of support, or communication problems.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "Team",
+            "2": "success",
+            "3": "share",
+            "4": "compatibility"
+          },
+          "context": "It affects you through external effects, cooperation, or incompatibility."
+        },
+        "position9": {
+          "upright": "Three amulets, you may be afraid of not being cooperative, not being appreciated enough, or not showing off your abilities.",
+          "reversed": "The Inverse Three amulets can show incompatibility, lack of support, or fear of failure in partnership.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "appreciation",
+            "2": "Team",
+            "3": "success",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on lack of co-operation or inadequacy."
+        }
+      },
+      "fourofpentacles": {
+        "position1": {
+          "upright": "The four amulets may have a desire to have security, ownership, or possession at the heart of the problem.",
+          "reversed": "Reverse four amulets, overcontrol, stingyness or not sharing can be the source of the problem.",
+          "keywords": {
+            "0": "security",
+            "1": "control",
+            "2": "share",
+            "3": "ownership",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is the need for assurance and the desire to keep it."
+        },
+        "position10": {
+          "upright": "The four amulets may result in the protection of security, financial stability, or strengthening of what they have.",
+          "reversed": "The reverse four amulets may result in being stingy, out of control, or addicted.",
+          "keywords": {
+            "0": "security",
+            "1": "stability",
+            "2": "protection",
+            "3": "control",
+            "4": "material power"
+          },
+          "context": "The result may be protecting or losing security."
+        },
+        "position2": {
+          "upright": "Four amulets, the barrier could be overcontrol, unsharing, or security obsession, and the things you hold on to keep you in the same place.",
+          "reversed": "The Reverse Four charms, the stinginess, the fear of losing, or over-claiming may be the source of the obstacle.",
+          "keywords": {
+            "0": "security",
+            "1": "control",
+            "2": "not sharing",
+            "3": "fear",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born from an excessive lack of control and sharing."
+        },
+        "position3": {
+          "upright": "The Four Talisms may be subconsciously seeking security in the past, trying to protect what they have, or avoiding sharing.",
+          "reversed": "The Reverse Four Talisman may have settled in the subconscious of the past, the fear of being stingy, or the fear of losing, or over-control.",
+          "keywords": {
+            "0": "guarantee",
+            "1": "control",
+            "2": "fear",
+            "3": "share",
+            "4": "subconscious"
+          },
+          "context": "The search for security or fears in the past may be affecting your problems today."
+        },
+        "position4": {
+          "upright": "Four amulets are to ensure the safety of the best potential, to maintain its resources consciously, and to advance on solid foundations.",
+          "reversed": "To achieve its potential, you need to give up over control, share, and learn flexibility.",
+          "keywords": {
+            "0": "guarantee",
+            "1": "protection",
+            "2": "stability",
+            "3": "control",
+            "4": "resource"
+          },
+          "context": "Your best potential is to build on solid and secure foundations."
+        },
+        "position5": {
+          "upright": "Four amulets, you may have been inclined to maintain what you had recently, seek security, or act in a controlled manner.",
+          "reversed": "The Reverse Four Talisman, you may have had a fear of over-resistantness, stingyness, or loss in recent times.",
+          "keywords": {
+            "0": "guarantee",
+            "1": "control",
+            "2": "conservative",
+            "3": "fear",
+            "4": "protection"
+          },
+          "context": "The recent past may have been determined by search for security or extreme control."
+        },
+        "position6": {
+          "upright": "The Four Talisms will be a front for the search for security, protection of what they have, and financial stability in the near future.",
+          "reversed": "In reverse four amulets, in the near future, may come to an agenda of stinginess, fear of loss, or extreme control.",
+          "keywords": {
+            "0": "security",
+            "1": "stability",
+            "2": "control",
+            "3": "protection",
+            "4": "Fear of losing"
+          },
+          "context": "Your near future will be shaped with assurance or extreme restraint."
+        },
+        "position7": {
+          "upright": "Four amulets, you may be looking for security right now, focusing on maintaining and maintaining what you have.",
+          "reversed": "The Reverse Four charms, the fear of losing right now, the tendency to control too much or to be stingy, can force you.",
+          "keywords": {
+            "0": "security",
+            "1": "stability",
+            "2": "protection",
+            "3": "control",
+            "4": "Fear of losing"
+          },
+          "context": "The current situation is shaped by the search for security or extreme conservativeity."
+        },
+        "position8": {
+          "upright": "Four amulets, external effects can pressure you to maintain security, stability, or what you have.",
+          "reversed": "Reverse Four Talisms, external effects can trigger the fear of overcontrol, stingyness, or loss.",
+          "keywords": {
+            "0": "security",
+            "1": "stability",
+            "2": "protection",
+            "3": "control",
+            "4": "fear"
+          },
+          "context": "It affects you through external effects, feeling of trust, or anxiety."
+        },
+        "position9": {
+          "upright": "Four amulets, you may be afraid of losing, you may not be able to protect what you have, or you may be afraid of losing your security field.",
+          "reversed": "The Reverse Four charms can show the anxiety of being stingy, losing control, or becoming addicted.",
+          "keywords": {
+            "0": "security",
+            "1": "Don't lose it.",
+            "2": "control",
+            "3": "protection",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on loss of security or loss of control."
+        }
+      },
+      "fiveofpentacles": {
+        "position1": {
+          "upright": "Five amulets may have financial difficulties, loneliness, or lack of support at the heart of the problem.",
+          "reversed": "The Reverse Five charms, not asking for help, feeling left out, or losing trust, could be the source of the problem.",
+          "keywords": {
+            "0": "material difficulty",
+            "1": "loneliness",
+            "2": "support",
+            "3": "Concern",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is the search for financial or emotional support."
+        },
+        "position10": {
+          "upright": "Five amulets may result in financial difficulties, loneliness, or a search for support.",
+          "reversed": "The Inverse Five Charms may result in recovery, support, or relief from financial distress.",
+          "keywords": {
+            "0": "difficulty",
+            "1": "loneliness",
+            "2": "support",
+            "3": "material loss",
+            "4": "Recovery"
+          },
+          "context": "The result may be a difficult period or recovery."
+        },
+        "position2": {
+          "upright": "Five amulets may be that the obstacle is not being able to see financial difficulties, loneliness, or support, but lack of resources is making progress difficult.",
+          "reversed": "The Reverse Five charms may be the source of the obstacle to rejection, isolation, or loss of self - confidence.",
+          "keywords": {
+            "0": "material difficulty",
+            "1": "loneliness",
+            "2": "support",
+            "3": "Trust",
+            "4": "obstacle"
+          },
+          "context": "The obstacle comes from lack of resources and loneliness."
+        },
+        "position3": {
+          "upright": "Five amulets may be subconsciously lacking in financial difficulties, loneliness, or support.",
+          "reversed": "The Reverse Five Talisman may have been involved in the subconscious, in the past, in refusing help, being excluded, or insecurities.",
+          "keywords": {
+            "0": "financial distress",
+            "1": "loneliness",
+            "2": "support",
+            "3": "Trust",
+            "4": "subconscious"
+          },
+          "context": "Troubles and loneliness in the past may be at the root of today's problems."
+        },
+        "position4": {
+          "upright": "Five amulets may be the best potential to learn from the challenges, to develop endurance, to be strengthened by support systems.",
+          "reversed": "In order to achieve its potential, you must abandon the faith of inadequacy, accept help, and renew your sense of trust.",
+          "keywords": {
+            "0": "endurance",
+            "1": "support",
+            "2": "difficulty",
+            "3": "It's a cure.",
+            "4": "Trust"
+          },
+          "context": "Your best potential is to overcome challenges with endurance."
+        },
+        "position5": {
+          "upright": "Five amulets, you may have recently experienced financial difficulties, loneliness, or lack of support.",
+          "reversed": "You may have received support recently, found a way out of financial distress, or renewed your trust.",
+          "keywords": {
+            "0": "difficulty",
+            "1": "loneliness",
+            "2": "financial distress",
+            "3": "support",
+            "4": "Trust"
+          },
+          "context": "Your recent history may have been shaped by getting out of difficulties or finding support."
+        },
+        "position6": {
+          "upright": "Five amulets may come to the attention of financial difficulties, loneliness, or lack of support in the near future.",
+          "reversed": "The Reverse Five charms may have an opportunity to help, find support, and overcome difficulties in the near future.",
+          "keywords": {
+            "0": "difficulty",
+            "1": "loneliness",
+            "2": "support",
+            "3": "financial distress",
+            "4": "endurance"
+          },
+          "context": "Your near future will be shaped with difficulty or support."
+        },
+        "position7": {
+          "upright": "Five amulets, you may be experiencing loneliness, financial distress, or lack of support.",
+          "reversed": "Reverse Five charms, you're in the process of finding help, getting support, or overcoming difficulties.",
+          "keywords": {
+            "0": "difficulty",
+            "1": "support",
+            "2": "loneliness",
+            "3": "financial distress",
+            "4": "solidarity"
+          },
+          "context": "Your current situation is shaped by difficulty or support."
+        },
+        "position8": {
+          "upright": "Five amulets, external effects can manifest themselves as loneliness, financial difficulties, or lack of support.",
+          "reversed": "Reverse Five amulets, external effects can bring help, support, or recovery opportunities.",
+          "keywords": {
+            "0": "difficulty",
+            "1": "loneliness",
+            "2": "support",
+            "3": "resource",
+            "4": "missing"
+          },
+          "context": "The external effects can test you with difficulty or bring support."
+        },
+        "position9": {
+          "upright": "Five amulets, you may be afraid of being alone, of material difficulties, or of being left out.",
+          "reversed": "The Reverse Five charms may show fear of not being able to find support, not being able to recover, or even more difficult.",
+          "keywords": {
+            "0": "loneliness",
+            "1": "difficulty",
+            "2": "support",
+            "3": "missing",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on being left out or not finding support."
+        }
+      },
+      "sixofpentacles": {
+        "position1": {
+          "upright": "Six amulets may be the center of the problem of justice, help or giving, mutual balance.",
+          "reversed": "The Reverse Six charms may be the source of the problem of injustice, addiction, or unstable trade.",
+          "keywords": {
+            "0": "help",
+            "1": "balance",
+            "2": "justice",
+            "3": "share",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is a fair balance and a desire to share."
+        },
+        "position10": {
+          "upright": "Six amulets may result in balance, help, or support of others.",
+          "reversed": "The Inverse Six Charms may result in injustice, addiction, or unstable relationships.",
+          "keywords": {
+            "0": "help",
+            "1": "balance",
+            "2": "share",
+            "3": "justice",
+            "4": "support"
+          },
+          "context": "The result could be fair sharing or imbalance."
+        },
+        "position2": {
+          "upright": "Six amulets may be that the obstacle is not being able to see unstable trade, injustice, or mutual support. The lack of sharing delays the solution.",
+          "reversed": "The Reverse Six charms may be the source of abuse, addiction, or injustice.",
+          "keywords": {
+            "0": "balance",
+            "1": "justice",
+            "2": "share",
+            "3": "addiction",
+            "4": "obstacle"
+          },
+          "context": "Obstacle is born from unstable shopping and injustice."
+        }
+      }
+    }
+  }
+}

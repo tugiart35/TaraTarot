@@ -1,0 +1,783 @@
+{
+  "situation-analysis": {
+    "meanings": {
+      "thewheeloffortune": {
+        "position5": {
+          "keywords": [
+            null,
+            null,
+            null,
+            "šansa",
+            "adaptacija"
+          ],
+          "context": "Harmonija sa makro ritam pruža prednost u konkurenciji."
+        },
+        "position6": {
+          "upright": "Savet: Skenirajte vreme, pripremite plan B za najverovatnije scenarije. Idi sa tokom.",
+          "reversed": "Savet: razbiti ponavljajući ciklus. Napravite mali, ali drugačiji izbor.",
+          "keywords": [
+            "vremenski vreme",
+            "scenarij",
+            "adaptacija",
+            "petlja",
+            "prilika"
+          ],
+          "context": "Savet: Pomerite se prema ritmu."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: točak se uključuje u vašu korist; Pravi vreme stvara mnoštvo i ciklus se kreće u novu fazu.",
+          "reversed": "Moguća budućnost: Ponavljati obrasci i loše vreme može vam prouzrokovati propuštanje Vindovs-a; Potrebna je korekcija kursa.",
+          "keywords": [
+            "vremenski vreme",
+            "petlja",
+            "promeniti",
+            "šansa",
+            "adaptacija"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "justice": {
+        "position1": {
+          "upright": "Pravda, fer odluke donete u prošlosti ili odobrenom pravima mogu biti na osnovu sadašnje situacije.",
+          "reversed": "Obrnuta pravda, prošli nepravde, pogrešne odluke ili utaja odgovornosti mogu biti razlozi za proces.",
+          "keywords": [
+            "pravda",
+            "odluka",
+            "ravnoteža",
+            "real",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih fer ili nepravedno odluka."
+        },
+        "position2": {
+          "upright": "Pravda, iskrenost, fer odluke i svest o odgovornosti nalaze se na čelu u trenutnoj situaciji. Trenutno ste u procesu suočavanja sa činjenicama i izradi uravnotežene odluke. \\ N \\ NTHIS kartica trenutno naglašava važnost objektivnosti i pravde.",
+          "reversed": "Ukrašena pravda ukazuje na to da se u ovom trenutku nepravilno, pogrešne odluke ili utaje odgovornosti mogu pojaviti. Možda ignorišete činjenice. \\ N \\ nThis kartica vas podseća da se trenutno ne stidiš od poštenih konfrontacija.",
+          "keywords": [
+            "pravda",
+            "odluka",
+            "ravnoteža",
+            "real",
+            "Sada"
+          ],
+          "context": "Uticaj pravde ili nepravde u trenutnoj situaciji."
+        },
+        "position3": {
+          "upright": "Pravda kaže da je snažan unutrašnji osećaj pravde i potreba za odgovornost nevidljivo utiču na ljudske odluke. Potraga za kapitalom pruža smer.",
+          "reversed": "Obrnuta pravda ukazuje na skrivene neravnoteže poput krivice, samosude ili pristrasnog pogleda. Potreba da \"budem u pravu\" može poremetiti jasnoću.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "krivica",
+            "pristrasnost",
+            "skriveni motiv"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru su pravda, ravnoteža i svest o razlogu i posledici. Transparentnost i odgovornost Držite sistem na vodi.",
+          "reversed": "Pristrasan pogled na sredinu ili izbegnuta odgovornost može poremetiti ravnotežu. Kompenzacija ispravlja skali.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "istina",
+            "odluka",
+            "odgovornost"
+          ],
+          "context": "Centar: Podešavanje skale."
+        },
+        "position5": {
+          "upright": "Pravda ukazuje na pravičnost, harmoniju i transparentnu kontrolu u spoljnom ekosistemu. Pravni / regulatorni okvir posluje na uravnotežen način.",
+          "reversed": "Revertra Fairness kaže da su pristrasne odluke, sive zone ili nedosledne prakse stvaraju spoljne rizike. Sporovi se mogu povećati.",
+          "keywords": [
+            "zakon",
+            "raport",
+            "transparentnost",
+            "pristrasnost",
+            "rizikovati"
+          ],
+          "context": "Nivo upravljanja utvrđuje priliku ili rizik."
+        },
+        "position6": {
+          "upright": "Savet: Mera, budite transparentni i uspostavite sajamsku razmenu. Osnovne odluke o podacima.",
+          "reversed": "Savet: Priznajte svoju grešku, napravite plan kompenzacije i prilagodite ravnotežu.",
+          "keywords": [
+            "pravda",
+            "merenje",
+            "transparentnost",
+            "nadoknada",
+            "ravnoteža"
+          ],
+          "context": "Savet: Ispravljanje skale."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: Postignut je pošteni i uravnotežen ishod; Linija za uzroku je transparentna i odluka je zadovoljavajuća.",
+          "reversed": "Moguća budućnost: percipirana nepravda ili neravnoteža mogu dovesti do potrebe za prigovorom / žalbom.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "odluka",
+            "odgovornost",
+            "transparentnost"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "thehangedman": {
+        "position1": {
+          "upright": "Obešten čovek, sticanje drugačije perspektive u prošlosti, čineći žrtvu ili doživljavanje pauze može biti na osnovu ovog procesa.",
+          "reversed": "Okrušeni muškarac naopačke, prošli izgubljene žrtve, ili nerado stagnacije možda su oblikovali trenutnu situaciju.",
+          "keywords": [
+            "mišljenje",
+            "žrtvovati",
+            "pauza",
+            "predaja",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih žrtava ili pauze."
+        },
+        "position2": {
+          "upright": "Obesio je čoveka, u procesu ste sticanje drugačije perspektive o trenutnoj situaciji, predaju i strpljivi. Ova kartica vam omogućava da vidite stvari iz druge perspektive. \\ N \\ NIT podseća vas da pauziranje u trenutku donosi vam novu svest.",
+          "reversed": "Okrušeni muškarac naopako simbolizuje nepotrebne žrtve, stagnacije ili osećaj da se trenutno ne mogu napredovati. Možda se držite stvarima koje trebate da pustite. \\ N \\ nThis kartica označava da trenutno morate biti fleksibilni i dozvolite obnovu odmah.",
+          "keywords": [
+            "mišljenje",
+            "predaja",
+            "žrtvovati",
+            "pauza",
+            "Sada"
+          ],
+          "context": "Efekat ostavke ili stagnacije u trenutnoj situaciji."
+        },
+        "position3": {
+          "upright": "Obučeni čovek kaže da tema perspektivne promene i predaje ima dospeli efekat iza kulisa. Suspenzija proizvodi značenje unutar.",
+          "reversed": "Okrušen muškarac naglavačke obješene naglašava obrazac uzaludne žrtve, odlaganja ili pridržavanja. Nemogućnost puštanja potajno odvodi energiju.",
+          "keywords": [
+            "perspektivan",
+            "predaja",
+            "žrtvovati",
+            "suspenzija",
+            "tajnoj vezi"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru je prelazak perspektive i svesna pauza. Predaja omekšava bravu.",
+          "reversed": "U centru se može videti nepotrebna suspenzija ili neproduktivna žrtva. Rezanje veza osvežava fokus.",
+          "keywords": [
+            "perspektivan",
+            "predaja",
+            "pauza",
+            "žrtvovati",
+            "prosvetljenje"
+          ],
+          "context": "Centar: raskrsnica nove perspektive."
+        },
+        "position5": {
+          "upright": "Obučeni čovek ukazuje da postoji poziv za procese, potvrde i promenu perspektive koji zahtevaju čekaju vani. Strpljenje je plodno.",
+          "reversed": "Okrušeni muškarac naopačke kaže da su neodlučni zainteresovani, donosili odluke i nepotrebna odlaganja stvaraju Gridlock spolja.",
+          "keywords": [
+            "čekati",
+            "odobrenje",
+            "perspektivan",
+            "viseći",
+            "strpljenje"
+          ],
+          "context": "Spoljni procesi zahtevaju vreme; Plan treba da se utvrdi u skladu s tim."
+        },
+        "position6": {
+          "upright": "Savet: Promenite perspektivu, uzmite svesnu pauzu i osvežite pogled.",
+          "reversed": "Savet: Zaustavite žrtvovanje i nepotrebnu žrtvu. Odlučite i započnite protok.",
+          "keywords": [
+            "perspektivan",
+            "prestati",
+            "dostava",
+            "odluka",
+            "regeneracija"
+          ],
+          "context": "Savet: Obrnuti pogled i otvorite protok."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: Kratak period suspenzije donosi svježu perspektivu i kreativni okret; Kašnjenje proizvodi značenje.",
+          "reversed": "Moguća budućnost: neproduktivna čekanje i neodlučna žrtva može isušiti energiju; Potrebna je jasna odluka.",
+          "keywords": [
+            "perspektivan",
+            "viseći",
+            "okretanje",
+            "dostava",
+            "prosvetljenje"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "death": {
+        "position1": {
+          "upright": "Smrt, zatvoreni ciklus u prošlosti, kraj ili moćna transformacija mogu biti u korenu današnjih uslova.",
+          "reversed": "Obrnuti smrt, otpornost na promene, nerešeni procesi ili izazovni završeci u prošlosti možda su uticali na trenutnu situaciju.",
+          "keywords": [
+            "transformacija",
+            "završiti",
+            "regeneracija",
+            "promeniti",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih transformacija ili otpora."
+        },
+        "position2": {
+          "upright": "Vi ste u procesu smrti, moćne transformacije u vašoj trenutnoj situaciji, završetku i ponovnom roniziji. Možda je vreme da se prepusti starog i dobrodošlicu novu. \\ N \\ nThis kartica podseća vas da biste trebali prigrliti promene umesto da se sada odupirete sada.",
+          "reversed": "Obrnuta smrt ukazuje da trenutno izbegavate zatvaranje, odupirući se promenama ili iscrpljuju nerazložen proces. Napredak se može odložiti jer ne puštate starog. \\ N \\ NTHIS Card naglašava da se trenutno morate predati prirodnom toku transformacije.",
+          "keywords": [
+            "transformacija",
+            "završiti",
+            "regeneracija",
+            "promeniti",
+            "Sada"
+          ],
+          "context": "Efekat transformacije ili otpora u trenutnoj situaciji."
+        },
+        "position3": {
+          "upright": "Smrt ukazuje da je želja za transformacijom i pozivom da se prepusti starog porasta iznutra. Ne držite se onoga što je gotovo otvara nevidljive vrata oslobođenja.",
+          "reversed": "Ukrašena smrt ukazuje na skrivene priloge kao što su otpornost na promene, otpočene petlje i izbegavanje oproštajnih. Strah odlaže novo.",
+          "keywords": [
+            "transformacija",
+            "završiti",
+            "izdanje",
+            "otpornost",
+            "Tajne veze"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "Postoji potreba za snažnom transformacijom i zatvaranjem u centru. Kada se prostor otvori, rodi se novi.",
+          "reversed": "Tendencija da se izbegne i drži za završetak u centru može da ometa fokus. Zbogom zbogom čini srce lakšim.",
+          "keywords": [
+            "transformacija",
+            "završiti",
+            "ponovno rođenje",
+            "izdanje",
+            "promeniti"
+          ],
+          "context": "Centar: vrata za puštanje."
+        },
+        "position5": {
+          "upright": "Smrt ukazuje na radikalnu transformaciju u spoljnom okruženju, promeni sektora i zatvaranje starog reda. Otvara se prozor za osvežavanje.",
+          "reversed": "Obrnuta smrt kaže da su dominantni spoljni otpor, prikupljanje starijih i struktura koje odloži tranziciju. Povećava rizik ukoliko se stare školjke ne odbacuju.",
+          "keywords": [
+            "transformacija",
+            "prelaz",
+            "regeneracija",
+            "otpornost",
+            "sektor"
+          ],
+          "context": "Makro promena je na putu; Adaptacija je neophodna."
+        },
+        "position6": {
+          "upright": "Savet: Počasti šta je gotovo i zatvori. Kada se otvori prostor, nova klice klice.",
+          "reversed": "Savet: Ostavite stare školjke da se držite. Uradite malo oproštajni ritual.",
+          "keywords": [
+            "završiti",
+            "transformacija",
+            "izdanje",
+            "ponovno rođenje",
+            "čišćenje"
+          ],
+          "context": "Savet: Reljef sa zatvaranjem."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: dolazi do značajnog zatvaranja; Kada se otvori prostor, počinje nova era i dolazi lakoća.",
+          "reversed": "Moguća budućnost: Prelaz je produžen; Držeći se starim odlaganjem dolaska novog. Odustajanje je neizbežno.",
+          "keywords": [
+            "završiti",
+            "transformacija",
+            "ponovno rođenje",
+            "izdanje",
+            "prelaz"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "temperance": {
+        "position1": {
+          "upright": "Ravnoteža, harmonija u prošlosti, strpljenja ili uravnotežene odluke mogu biti na osnovu ovog procesa.",
+          "reversed": "Inverzna ravnoteža, prošla disharmonija, viškovi ili neravnoteže su možda stvorile sadašnje uslove.",
+          "keywords": [
+            "ravnoteža",
+            "raport",
+            "strpljenje",
+            "ravnoteža",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih bilansa ili neravnoteže."
+        },
+        "position2": {
+          "upright": "Simbolizuje energiju ravnoteže, sklada, strpljenja i umerenosti u trenutnoj situaciji. Trenutno pokušavate da pronađete srednji tlo i uravnotežite svoj život. \\ N \\ nThis kartica vas podseća da morate biti strpljivi i činiti skladno u trenutnom procesu.",
+          "reversed": "Obrnuti saldo pokazuje da trenutno doživljavate višak, disharmoniju ili nestrpljivost. Možda imate problema sa pronalaženjem ravnoteže. \\ N \\ nThis kartica naglašava da trenutno morate da uravnotežite viškove u vašem životu.",
+          "keywords": [
+            "ravnoteža",
+            "raport",
+            "strpljenje",
+            "temperatura",
+            "Sada"
+          ],
+          "context": "Efekat ravnoteže ili disonancije u trenutnoj situaciji."
+        },
+        "position3": {
+          "upright": "Ravnoteža, umerenost i mogućnost da dobijete mešove pravo gladi postupak iza scene, kaže on. Zivodni ritam radi unutra.",
+          "reversed": "Reverzna ravnoteža ukazuje da je višak, nestrpljivost i nespojive smeše stvaraju skriveni stres. Predoziranje zatamnjuje jasnoću.",
+          "keywords": [
+            "merenje",
+            "raport",
+            "zarastanje",
+            "ekstremizam",
+            "skrivena napetost"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru je spoj umerenosti, sinteze i isceljenja. Srednji put održava sistem u harmoniji.",
+          "reversed": "Višak ili neskladna smeša u centru može poremetiti ravnotežu. Potrebno je podešavanje doziranja.",
+          "keywords": [
+            "ravnoteža",
+            "sinteza",
+            "zarastanje",
+            "strpljenje",
+            "raport"
+          ],
+          "context": "Centar: pravilan udeo smeše."
+        },
+        "position5": {
+          "upright": "Ravnoteža ukazuje da je moguća harmonija, integracija i razuman srednji tlo između spoljnih zainteresovanih strana. Može se proizvesti sinergija.",
+          "reversed": "Invertirana ravnoteža kaže da su fragmentirani timovi, nespojivi metodi i viškovi stvaraju spoljni trenje. Potrebna kalibracija.",
+          "keywords": [
+            "integracija",
+            "raport",
+            "sinteza",
+            "ekstremizam",
+            "kalibracija"
+          ],
+          "context": "Protok započinje kada je saradnja ekosistema uravnotežena."
+        },
+        "position6": {
+          "upright": "Savet: Pronađite pravu mešavinu. Postepeno podesite doze, izbegavajte krajnosti.",
+          "reversed": "Preporuka: Smanjite nespojive elemente. Pojednostavite i tempo.",
+          "keywords": [
+            "ravnoteža",
+            "sinteza",
+            "merenje",
+            "ritam",
+            "raport"
+          ],
+          "context": "Preporuka: Kalibracija smeše."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: osnovana je harmonična sinteza; Iznenađuju se održivi ravnoteža i isceljenje.",
+          "reversed": "Moguća budućnost: višak i nespojivih mešavina stvaraju nestabilnost; potrebna kalibracija.",
+          "keywords": [
+            "ravnoteža",
+            "sinteza",
+            "zarastanje",
+            "merenje",
+            "održivost"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "thedevil": {
+        "position1": {
+          "upright": "Sotona, prošla zavisnosti, ograničenja ili snažne želje mogu biti uzroci današnjeg procesa.",
+          "reversed": "Invertirani demon, prošli napori da se oslobode zavisnosti ili lanaca odmora možda su doveli do trenutne situacije.",
+          "keywords": [
+            "zavisnost",
+            "ropstvo",
+            "želja",
+            "oslobođenje",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih iskustava zavisnosti ili oslobođenja."
+        },
+        "position2": {
+          "upright": "Sotona, zavisnosti, želje ili kontrolni prilozi mogu biti na čelu u trenutnoj situaciji. Jaka strast ili zavisnost mogu vas uticati na vas. \\ N \\ NTHIS kartica trenutno naglašava vašu potrebu za oslobađanjem.",
+          "reversed": "Okrećeni đavo simbolizuje da trenutno pokušavate da se rešite zavisnosti ili preduzimate korake ka oslobolaciji. Energija lomljenja lanaca je snažna. \\ N \\ NTHIS Card vas podseća da je sada prilika da se skloni od zavisnosti.",
+          "keywords": [
+            "zavisnost",
+            "želja",
+            "kontrola",
+            "sloboda",
+            "Sada"
+          ],
+          "context": "Uticaj zavisnosti ili proces oslobađanja u trenutnu situaciju."
+        },
+        "position3": {
+          "upright": "Sotona naglašava nevidljivi uticaj zavisnosti, želje za senki i kontrolu sporazuma. Kratkoročni komfor potajno povlači žice.",
+          "reversed": "Reversed Demon pokazuje veze koje žele biti rastvorene, obrasci koji su spremni da budu pušteni i potrebu za oslobađanjem. Svest ojača labava lanac.",
+          "keywords": [
+            "zavisnost",
+            "senka",
+            "želja",
+            "kontrola",
+            "Želja za oslobađanjem"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru su obavezujuće želje, zavisnosti ili restriktivne sporazume. Kratkoročna udobnost može uzeti svoju putarinu.",
+          "reversed": "Želja za raspuštanjem i oslobađanjem pojavljuje se u Centru. Lanac se prekida iz prve veze.",
+          "keywords": [
+            "lojalnost",
+            "senka",
+            "želja",
+            "kontrola",
+            "oslobođenje"
+          ],
+          "context": "Centar: čvor unite."
+        },
+        "position5": {
+          "upright": "Sotona se odnosi na domen spoljnih sporazuma, zavisnih zaliha ili toksičnih odnosa. Kratkoročna korist može stvoriti dugoročne troškove.",
+          "reversed": "Okretni vrag nam govori da se prilika za otpuštanje veza, pregovaraju i razgraditi toksične strukture.",
+          "keywords": [
+            "lojalnost",
+            "sporazum",
+            "zavisnost",
+            "toksičnost",
+            "pregovaranje"
+          ],
+          "context": "Zaključane ponude mogu da ograniče strategiju."
+        },
+        "position6": {
+          "upright": "Savet: Kontrolne zavisnosti i skupe navike. Pregled sporazuma.",
+          "reversed": "Savet: Napravite plan da izađete iz toksične veze. Preduzeti male korake oslobođenja.",
+          "keywords": [
+            "zavisnost",
+            "sporazum",
+            "senka",
+            "sloboda",
+            "kontrola"
+          ],
+          "context": "PREPORUKA: Odvezite veze i napravite prostor."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: obavezujuće ugovore, navike ili želje ostaju na snazi; Potrebno je postaviti ograničenja.",
+          "reversed": "Moguća budućnost: lanac lanac; Prilika za izlazak iz toksičnih ciklusa i ponovno pregovaranje.",
+          "keywords": [
+            "lojalnost",
+            "senka",
+            "sporazum",
+            "granica",
+            "oslobođenje"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "thetower": {
+        "position1": {
+          "upright": "Toranj je možda formirao osnovu iznenadne krize, neočekivane šok ili radikalne promene u prošlosti.",
+          "reversed": "Invertirana kula, potisnuta kriza ili odložena uništavanja u prošlosti možda su uticala na trenutnu situaciju.",
+          "keywords": [
+            "kriza",
+            "promeniti",
+            "rušenje",
+            "protresti",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih kriza ili poremećaja."
+        },
+        "position2": {
+          "upright": "Kula simbolizuje nagle šokove, neočekivane promene i kolaps stare strukture u trenutnoj situaciji. Sve što stoji na nesigurnim fondacijama može se razmotriti. Iako se ovaj proces može izgledati uznemirujuće, otkriva istinu i otvara prostor za obnovu za obnovu. \\ N \\ nThis kartica podseća na to da je šok koji sada doživljava, ima potencijal da vas dugoročno prebaci na jači razjam.",
+          "reversed": "Invertirani toranj može ukazivati na to da trenutno odlažete predstojeću šoku, odlaganje potrebne promene ili podcjenjivanje krize. Iako nije moguće u potpunosti sprečiti uništenje, možete smanjiti štetu kontroliranom transformacijom. \\ N \\ NTHIS kartica naglašava da se otpornost produžava proces i da možete da pobedite istezanje.",
+          "keywords": [
+            "kriza",
+            "promeniti",
+            "rušenje",
+            "real",
+            "Sada"
+          ],
+          "context": "Šokantno, ali promena čišćenja u trenutnoj situaciji."
+        },
+        "position3": {
+          "upright": "Toranj nam govori da pukotine u Fondaciji i pretpostavkama koje su u suprotnosti sa stvarnošću stvaraju tajne drhtanje. Strah od uništenja može se odlagati promena.",
+          "reversed": "Invertirani toranj ukazuje na akumulaciju koja se manifestuje u odloženoj krizi, potisnuta ljutnja i malim eksplozijama. Potrebna je svesna evakuacija.",
+          "keywords": [
+            "kriza",
+            "rušenje",
+            "pukotina",
+            "odlaganje",
+            "latentni pritisak"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru postoji neizbežna ruptura i otkrivenje istine. Iako je trula fondacija srušena, gradi se čvrsta supstanca.",
+          "reversed": "U centru se može videti odložena kriza ili potisnuta eksplozija. Svesno uništenje smanjuje štetu.",
+          "keywords": [
+            "kriza",
+            "rušenje",
+            "real",
+            "prečišćavanje",
+            "obnovljivanje"
+          ],
+          "context": "Centar: Pročišćavanje jolt."
+        },
+        "position5": {
+          "upright": "Toranj pokazuje uticaj spoljnih šokova, iznenadne promene politike / tržišta i šokantne vesti. Stare pretpostavke se mogu uništiti.",
+          "reversed": "Invertirani toranj kaže da se odložene / implicitne krize nakupljaju i nose rizik od pucanja. Kontrolisano uništenje smanjuje štetu.",
+          "keywords": [
+            "šok",
+            "kriza",
+            "rušenje",
+            "obnovljivanje",
+            "hipoteza"
+          ],
+          "context": "ARHITEKTORA Otpornost na spoljne pauze je obavezna."
+        },
+        "position6": {
+          "upright": "Savet: Iskreno identifikovati i ojačati krhke temelje. Napišite krizni scenarij.",
+          "reversed": "Savet: Izvršite kontrolisano rušenje. Svesno demontirajte ono što više nije korisno.",
+          "keywords": [
+            "kriza",
+            "rizikovati",
+            "osnova",
+            "jačanje",
+            "obnovljivanje"
+          ],
+          "context": "Preporuka: Proaktivno otvrdnjavanje."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: šokantno, ali ruptura za čišćenje uništava trulu fondaciju; Istina postaje vidljiva i započinje rekonstrukcija.",
+          "reversed": "Moguća budućnost: kontrolisano uništenje smanjuje štetu; Ipak, radikalna promena je neizbežna.",
+          "keywords": [
+            "kriza",
+            "rušenje",
+            "buđenje",
+            "prečišćavanje",
+            "obnovljivanje"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "thestar": {
+        "position1": {
+          "upright": "Zvezda, nada, potraga za isceljenjem ili nadahnjujući razvoj u prošlosti može biti u korenu današnjeg procesa.",
+          "reversed": "Invertirana zvezda, beznađa, gubitak vere ili pesimizma u prošlosti je u prošlosti oblikovao trenutnu situaciju.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "inspiracija",
+            "budućnost",
+            "prošlost"
+          ],
+          "context": "Uticaj prethodnih iskustava nade ili očaja."
+        },
+        "position2": {
+          "upright": "Zvezda simbolizuje da su nada, isceljivanje i inspiracija očigledno u vašem životu. Nakon teških perioda, osećaj unutrašnjeg spokojstva i cvjeta pouzdanosti ponovo. Možete da krenete napred sa intuitivnim smernicama dok vaš put postane jasan. \\ N \\ NTHIS kartica naglašava važnost nežnog oporavka i samooseljenja u ovom trenutku.",
+          "reversed": "Invertovana zvezda može ukazivati na očaj, nedostatak inspiracije ili oslabljenja vere u to vreme. Vaša energija se može razbacati i možda ćete imati poteškoća da vidite svetlu sliku budućnosti. \\ N \\ nThis kartica vas podseća da možete da se pozabavite svojim svetlošću malim, ali doslednim koracima samo-nege.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "inspiracija",
+            "spokoj",
+            "Sada"
+          ],
+          "context": "Potraga za nadom i isceljenjem u trenutnoj situaciji."
+        },
+        "position3": {
+          "upright": "Zvezda pokazuje nevidljivi efekat isceljenja unutrašnje iskra nade i spremnost da se omogući ranjivost. Čista namera svetli svetlo.",
+          "reversed": "Invertirana zvezda naglašava istoriju očaja, izgaranja i obrasca samoodređevanja. Magla koja zatamnjuje svetlo je proizvedena interno.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "ranjivost",
+            "izgorevanje",
+            "skriveno svetlo"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru je nada, isceljenje i pojednostavljenje. Transparentnost množi inspiraciju.",
+          "reversed": "U centru se može naći u centru očaja ili iscrpljenosti. Mali rituali pozivaju svetlo.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "inspiracija",
+            "jednostavnost",
+            "regeneracija"
+          ],
+          "context": "Centar: Izvor mira."
+        },
+        "position5": {
+          "upright": "Zvezda pokazuje da su poverenje, dobra podrška za dobru volju i zajednicu visoki napolju. Efekti transparentnosti i inspiracije su snažni.",
+          "reversed": "Invertovana zvezda pokazuje da retorika očaja, negativni PR ili erozija poverenja odjekuje spolja. Ugledu je potreban posao.",
+          "keywords": [
+            "reputacija",
+            "poverenje",
+            "zajednica",
+            "inspiracija",
+            "P.r."
+          ],
+          "context": "Spoljna percepcija svetli ili bledi sa transparentnom komunikacijom."
+        },
+        "position6": {
+          "upright": "Savet: Pojednostavite, komunicirajte transparentno i stvorite male rituale koji podstiču nadu.",
+          "reversed": "Savet: Odmor, napunite svoje resurse. Podesite mini ciljeve koji će se nadati živom.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "jednostavnost",
+            "transparentnost",
+            "ritual"
+          ],
+          "context": "Savet: Sistematski uvećajte svetlo."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: Put je osvetljen izlečenjem, nadom i pojednostavljenjem; Povjerenje je obnovljeno i inspiracija se povećava.",
+          "reversed": "Moguća budućnost: Potrebno je vremena za izgradnju zamaha; Neophodno je nadopuniti resurse i popraviti poverenje.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "inspiracija",
+            "jednostavnost",
+            "regeneracija"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "themoon": {
+        "position1": {
+          "upright": "Mesec, neizvesnost, iluzije ili intuitivni uticaji u prošlosti mogu biti u korenu današnjih uslova.",
+          "reversed": "Invertirani mesec, prošli iluzije, strahovi ili skrivene istine možda su uticali na trenutnu situaciju.",
+          "keywords": [
+            "neizvesnost",
+            "intuicija",
+            "iluzija",
+            "tajna",
+            "prošlost"
+          ],
+          "context": "Uticaj neizvesnosti ili iluzija u prošlosti."
+        },
+        "position2": {
+          "upright": "Mesec pokazuje da su u ovom trenutku nesigurnost, intuitivni signali i zasjenjeni problemi na snazi efikasni. Nejasne informacije i promene emocija mogu osporiti vaše procese donošenja odluka. \\ N \\ nThis kartica naglašava važnost poverenja vaše intuicije, krećući se napred bez žurbe i oprezan dok se magla ne pojavi.",
+          "reversed": "Invertirani mesec može ukazivati na to da se sada otkrivaju iluzije, strahovi se počinju rastvarati ili skrivene istine postaju vidljive. Talasi ekstremne sumnje, paranoja ili konfuzija i dalje mogu doći. \\ N \\ nThis kartica vas savetuje da čvrsto držite noge na zemlji kako se pojavi jasnoća.",
+          "keywords": [
+            "neizvesnost",
+            "intuicija",
+            "tajna",
+            "iluzija",
+            "Sada"
+          ],
+          "context": "U trenutnoj situaciji to je maglovito, ali razrešeni proces."
+        },
+        "position3": {
+          "upright": "Mesec nam govori da strahovi, projekcije i neizvesnost dolaze u talasima podsvesnih. Vodič za simbole; Hrosti presuda stvara maglu.",
+          "reversed": "Invertirani mesec označava prag buđenja iz iluzije, latentni pritisak da vidi koren anksioznosti i očisti magla. Istina je blizu.",
+          "keywords": [
+            "strah",
+            "iluzija",
+            "neizvesnost",
+            "projekcija",
+            "skriven"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru je neizvesnost, intuitivna dubina i simbolička smernica. SIS ne voli da žuri.",
+          "reversed": "U centru se pojavljuje buđenje iz iluzije ili suočavanja strahova. Polako otvoreno povećava poverenje.",
+          "keywords": [
+            "neizvesnost",
+            "intuicija",
+            "strah",
+            "iluzija",
+            "uvid"
+          ],
+          "context": "Centar: kompas u magli."
+        },
+        "position5": {
+          "upright": "Mesec označava da su glasine, nejasne poruke i dvostruko značenje signala zbunjujući napolju. Pojašnjenje je neophodno.",
+          "reversed": "Reverse Moon nam govori da će se magla rasipati, istina će biti otkrivena, a verifikacija informacija će se uspostaviti napolju.",
+          "keywords": [
+            "neizvesnost",
+            "glasina",
+            "percepcija",
+            "pojašnjenje",
+            "rizikovati"
+          ],
+          "context": "Jasnost komunikacije smanjuje troškove neizvesnosti."
+        },
+        "position6": {
+          "upright": "Savet: Ispitni hipoteze, razjasnite nejasne oblasti malim eksperimentima.",
+          "reversed": "Savet: Uradite proveru stvarnosti. Ravnoteža straha sa podacima.",
+          "keywords": [
+            "neizvesnost",
+            "hipoteza",
+            "test",
+            "strah",
+            "verifikacija"
+          ],
+          "context": "Savet: Osvetljenje malih fenjera u magli."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: neizvesnost traje neko vreme; Potrebno je nastaviti sa intuicijom i pročitajte znakove.",
+          "reversed": "Moguća budućnost: magla čisti; Iluzije su rastvorene i jedna ima mir sa stvarnošću.",
+          "keywords": [
+            "neizvesnost",
+            "intuicija",
+            "strah",
+            "iluzija",
+            "otkrivanje"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "thesun": {
+        "position1": {
+          "upright": "Sunce, prošli uspeh, sreća i svetla energije mogu biti osnova današnje situacije.",
+          "reversed": "Reverzno sunce, privremeni pesimizam, gubitak samopouzdanja ili senke koje su doživeli u prošlosti mogu biti u korenu ovog procesa.",
+          "keywords": [
+            "uspeh",
+            "sreća",
+            "prosvetljenje",
+            "poverenje",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih uspeha ili senki."
+        },
+        "position2": {
+          "upright": "Sunce simbolizuje otvorenost, uspeh i vitalnost u ovom trenutku. Samopouzdanje, radost i jasnoća olakšavaju stvari; Vaša povećanja vidljivosti i putevi se otvaraju. \\ N \\ nThis kartica vam govori da je vreme da održite svoj optimizam i preduzmete jednostavne i efikasne korake.",
+          "reversed": "Obrnuti sunce može ukazivati na privremeni pesimizam, smanjenu motivaciju ili smanjenu vidljivost u to vreme. Vaš potencijal je netaknut, samo su oblaci privremeno prikriveni Sunce. \\ N \\ NTHIS kartica preporučuje da se ponovo napadnete slavom malim uspehom.",
+          "keywords": [
+            "uspeh",
+            "radost",
+            "prosvetljenje",
+            "poverenje",
+            "Sada"
+          ],
+          "context": "Visoka vitalnost ili privremene senke u trenutnoj situaciji."
+        },
+        "position3": {
+          "upright": "Sunce nam govori da je unutrašnja potreba za radošću, igranjem i samoizražanjem potajno daje snagu. Unutrašnje dete traži sjaj.",
+          "reversed": "Obrnuti sunce pokazuje obrasce straha da će biti vidljivi, strah da ne bude voljen i privremeni pesimizam. Postoji svetlost; Kad ga povučete, to čini zavesu.",
+          "keywords": [
+            "radost",
+            "poverenje",
+            "vidljivost",
+            "unutrašnji dete",
+            "Tajno rezervacija"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru je jasnoća, radost i vidljivi uspeh. Energija je velika, samopouzdanje je zarazno.",
+          "reversed": "Može postojati privremeni pesimizam ili nedostatak vidljivosti u centru. Proslava malih pobeda čini svetlo veću.",
+          "keywords": [
+            "uspeh",
+            "radost",
+            "svetao",
+            "poverenje",
+            "život"
+          ],
+          "context": "Centar: tačka paljenja."
+        },
+        "position5": {
+          "upright": "Sunce pokazuje da je uticaj pozitivne vidljivosti, priče o uspehu i podržavajuće izložbe jake. Povećava moral i prihvatanje."
+        }
+      }
+    }
+  }
+}

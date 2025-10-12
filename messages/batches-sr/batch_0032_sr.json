@@ -1,0 +1,780 @@
+{
+  "money": {
+    "meanings": {
+      "nineofswords": {
+        "position1": {
+          "keywords": [
+            null,
+            null,
+            null,
+            null,
+            "mračna misao"
+          ],
+          "context": "Anksioznost proizilazi iz mentalnog pritiska finansijskog stresa."
+        },
+        "position2": {
+          "upright": "Devet mačeva ukazuje da neko traži sigurnost smirivanjem strepnje. Suočavanje sa činjenicama daje mir.",
+          "reversed": "Reversed devet mačeva ukazuje na anksioznost, noćne more i prekomerne strah. Želja za bezbednošću je prekinuta mentalnim nemirima.",
+          "keywords": [
+            "anksioznost",
+            "strah",
+            "sigurnost",
+            "real",
+            "um"
+          ],
+          "context": "Nalazite sigurnost balansiranjem zabrinutosti."
+        },
+        "position3": {
+          "upright": "Devet mačeva ukazuje na finansijske brige, strepnje i besane noći. Upravljanje anksioznošću je važno.",
+          "reversed": "Preokrećeno devet mačeva ukazuje na proces olakšanja i olakšanja od finansijskih briga.",
+          "keywords": [
+            "anksioznost",
+            "anksioznost",
+            "novac",
+            "noćna mora",
+            "stres"
+          ],
+          "context": "Anksioznost i stres dolaze u prvi plan kada koriste novac."
+        },
+        "position4": {
+          "upright": "Možda ste iskusili finansijske brige i besane noći u prošlosti.",
+          "reversed": "Reversed devet mačeva ukazuje na postepeno oslobađanje od finansijskih briga.",
+          "keywords": [
+            "anksioznost",
+            "anksioznost",
+            "novac",
+            "noćni",
+            "stres"
+          ],
+          "context": "U prošlosti je bilo intenzivnih briga o novcu."
+        },
+        "position5": {
+          "upright": "Devet mačeva znači intenzivnu anksioznost, stres i nesanicu u vezi sa finansijskim odgovornostima. Brine se mogu umoriti u um.",
+          "reversed": "Reversed devet mačeva ukazuje na ublažavanje zabrinutosti i sticanje racionalnija pristupa finansijskim odgovornostima.",
+          "keywords": [
+            "anksioznost",
+            "stres",
+            "anksioznost",
+            "ublažavanje",
+            "odgovornost"
+          ],
+          "context": "Anksioznost ili smirenost dolazi do zaruka u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Devet mačeva ukazuje na anksioznost, stres i intenzivna briga o budućnosti u finansijskim planovima.",
+          "reversed": "Invertirani devet mačeva ukazuje na oporavak finansijskih planova, smanjenje zabrinutosti i pojave zraka nade.",
+          "keywords": [
+            "anksioznost",
+            "anksioznost",
+            "stres",
+            "oporavak",
+            "nadati se"
+          ],
+          "context": "Anksioznost ili olakšanje će odrediti nove finansijske planove."
+        },
+        "position7": {
+          "upright": "Devet mačeva ukazuje da anksioznost, nesanica i zabrinutost mogu se intenzivirati u finansijskim planovima u budućnosti.",
+          "reversed": "Ograničeno devet mačeva pokazuje proces postavljanja ovih strepnja, jasnije da vidimo činjenice i povećavajući unutrašnji mir.",
+          "keywords": [
+            "anksioznost",
+            "anksioznost",
+            "stvarnost",
+            "oslobođenje",
+            "noćna mora"
+          ],
+          "context": "Anksioznost ili mir uma utvrdiće buduće finansijske planove."
+        },
+        "position8": {
+          "upright": "Devet mačeva ukazuje da brine i nesanica mogu zamagliti njihovu sposobnost da zarade novac.",
+          "reversed": "Preokrećeno devet mačeva ukazuje da se vaše veštine mogu poboljšati rešavanjem briga i donošenje zdravijih odluka sa jutarnjom jasnoćom.",
+          "keywords": [
+            "anksioznost",
+            "nesanica",
+            "strah",
+            "misao",
+            "ravnoteža"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa anksioznošću ili jasnoćom."
+        }
+      },
+      "tenofswords": {
+        "position1": {
+          "upright": "Deset mačeva ukazuje na anksioznost o potpunom kolapsu materijalnog ciklusa. Strah da će se sve završiti i nećete moći da se oporavite možete da vas umorite.",
+          "reversed": "Preokrećeno deset mačeva ukazuje da čak i mogućnost početka može izazvati anksioznost. Možda postoji zabrinutost zbog toga što se ne može vratiti na noge nakon finansijskih teškoća.",
+          "keywords": [
+            "završiti",
+            "urušiti se",
+            "anksioznost",
+            "ponovno rođenje",
+            "rušenje"
+          ],
+          "context": "Anksioznost se pojavljuje iz straha od finansijskog kolapsa i počevši od završetka."
+        },
+        "position2": {
+          "upright": "Deset mačeva pokazuje da tražite sigurnost prihvatanjem krajeva. Završeni poziv za mir.",
+          "reversed": "Pretvoreni deset mačeva ukazuje na anksioznost da se ponovo gubi tokom procesa oporavka. Želja za sigurnost uzdrma se strah od zatvaranja.",
+          "keywords": [
+            "završiti",
+            "ponovno rođenje",
+            "sigurnost",
+            "prihvatanje",
+            "transformacija"
+          ],
+          "context": "Nalazite sigurnost prihvatanjem završetka i ponovo se rodili."
+        },
+        "position3": {
+          "upright": "Deset mačeva obeležava kraj finansijskog ciklusa i gubitaka. Možda će biti potrebno početi ispočetka.",
+          "reversed": "Invertirani deset mačeva ukazuje na restrukturiranje oporavka i finansiranja.",
+          "keywords": [
+            "zadnji",
+            "gubitak",
+            "regeneracija",
+            "novac",
+            "završiti"
+          ],
+          "context": "U upotrebi novca, prestanka i ponovno rođenje dođe do izražaja."
+        },
+        "position4": {
+          "upright": "To ukazuje na bolni kraj finansijskog ciklusa u prošlosti.",
+          "reversed": "Pretvoreni deset mačeva ukazuje na oporavak finansijske krize i novi početak.",
+          "keywords": [
+            "završiti",
+            "kriza",
+            "novac",
+            "ponovno rođenje",
+            "oporavak"
+          ],
+          "context": "U prošlosti je završio finansijski ciklus."
+        },
+        "position5": {
+          "upright": "Deset mačeva signalizira kraj velikog tereta finansijskih odgovornosti ili zatvaranje teških ciklusa.",
+          "reversed": "Preokrećeni deset mačeva ukazuje na postupak oporavka od finansijskih odgovornosti, vraćajući se na noge i pravljenje svežeg početka.",
+          "keywords": [
+            "zadnji",
+            "završiti",
+            "regeneracija",
+            "oporavak",
+            "odgovornost"
+          ],
+          "context": "Kraj ili ponovno rođenje dolazi do izražaja finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Deset mačeva obeležava kraj teškog perioda u finansijskim planovima, zatvaranju i ponovnom ronilaciji.",
+          "reversed": "Invertirani deset mačeva ukazuje na proces oporavka, obnove i energiju za oporavak u finansijskim planovima.",
+          "keywords": [
+            "završiti",
+            "ponovno rođenje",
+            "zatvaranje",
+            "poboljšanje",
+            "rešenje"
+          ],
+          "context": "Proces okončanja ili obnove biće efikasan u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Deset mačeva ukazuje da će se finansijski ciklus završiti u budućnosti, a novi početak nakon završetka.",
+          "reversed": "Invertirani deset mačeva ukazuje na proces oporavka i moć da se okrenu novim mogućnostima nakon onoga što je gotovo.",
+          "keywords": [
+            "završiti",
+            "ponovno rođenje",
+            "dostava",
+            "prilika",
+            "oporavak"
+          ],
+          "context": "Završetak ili oporavak će doći do zaruka u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Deset mačeva ukazuje da sa kraj teških ciklusa možete napraviti novi početak u svojim sposobnostima donošenja novca.",
+          "reversed": "Preokrećeno deset mačeva ukazuje da se vaše veštine mogu ojačati ostavljajući stare rane iza i obnovljene.",
+          "keywords": [
+            "završiti",
+            "regeneracija",
+            "poteškoće",
+            "ravnoteža",
+            "početak"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa završetkom ili restrukturiranjem."
+        }
+      },
+      "pageofswords": {
+        "position1": {
+          "upright": "Princ mačeva ukazuje na finansijsko neiskustvo i stalno nadgledanje anksioznosti. Neprestano istražuju, ali ne mogu da verujete da vas može umoriti.",
+          "reversed": "Preokrećeni princ mačeva ukazuje da će anksioznost povećati dezinformacije i tračeve. Možda se plašite da niste u stanju da zasnivaju svoje finansijske odluke o čvrstim informacijama.",
+          "keywords": [
+            "radoznalost",
+            "informacije",
+            "anksioznost",
+            "neiskustvo",
+            "dezinformacija"
+          ],
+          "context": "Anksioznost nastaje od dezinformacija i neiskustva."
+        },
+        "position2": {
+          "upright": "Princ mačeva pokazuje da on traži sigurnost radoznalošću i znanjem. Učenje donosi mir.",
+          "reversed": "Okolišteni princ mačeva ukazuje na zabrinutost zbog dezinformacija ili tračeva. Želja za bezbednošću slabi se kada se izgubi integritet.",
+          "keywords": [
+            "radoznalost",
+            "učenje",
+            "sigurnost",
+            "informacije",
+            "komunikacija"
+          ],
+          "context": "Smatrate sigurnost učeći i tačnošću."
+        },
+        "position3": {
+          "upright": "Princ mačeva ukazuje na tendenciju ka znatiželjima i istraživanju finansijskih pitanja. Važno je prikupiti informacije pre nego što potrošite.",
+          "reversed": "Prenoćini princ mačeva ukazuje na nežne potrošnje ili oslanjanje na lažne informacije.",
+          "keywords": [
+            "radoznalost",
+            "istraživanje",
+            "informacije",
+            "novac",
+            "učenje"
+          ],
+          "context": "Istraživanje i prikupljanje informacija dođu u prvi plan u upotrebi novca."
+        },
+        "position4": {
+          "upright": "Možda ste imali radoznali i istražniji stav prema finansijskim stvarima u prošlosti.",
+          "reversed": "Okolišteni princ mačeva ukazuje na neispravne finansijske odluke donesene površnim znanjem.",
+          "keywords": [
+            "radoznalost",
+            "informacije",
+            "istraživanje",
+            "novac",
+            "učenje"
+          ],
+          "context": "U prošlosti je postojala spremnost za učenje u finansijskim stavovima."
+        },
+        "position5": {
+          "upright": "Princ mačeva ukazuje na radoznalost, želju da nauči i pažljivo posmatranje u finansijskim odgovornostima.",
+          "reversed": "Preokrećeni princ mačeva ukazuje na površnost finansijskim odgovornostima, odlukama na osnovu tračeva ili delujući sa neadekvatnim informacijama.",
+          "keywords": [
+            "učenje",
+            "radoznalost",
+            "posmatranje",
+            "površnost",
+            "odgovornost"
+          ],
+          "context": "Efekat učenja ili površnosti dolazi do izražaja finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Princ mačeva pokazuje energiju radoznalosti, učenja i pažljivog posmatranja u finansijskim planovima.",
+          "reversed": "Preokrećeni princ mačeva ukazuje na dezinformacije, tračeve ili ishitrene presude u finansijskim planovima.",
+          "keywords": [
+            "radoznalost",
+            "učenje",
+            "pažnja",
+            "posmatranje",
+            "informacije"
+          ],
+          "context": "Radoznalost ili dezinformacija mogu doći do zaruka u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Princ mačeva ukazuje na učenje, istraživanje i otvoren za nove informacije u finansijskim planovima u budućnosti.",
+          "reversed": "Preokrećeni princ mačeva ukazuje na pogrešnost zbog površnih znanja, iskrivnih odluka ili tračeva.",
+          "keywords": [
+            "učenje",
+            "radoznalost",
+            "informacije",
+            "posmatranje",
+            "verifikacija"
+          ],
+          "context": "Učenje ili površnost će biti efikasno u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Princ mačeva ukazuje da želja za učenjem, posmatranjem i radoznalošću poboljšavaju sposobnosti donošenja novca.",
+          "reversed": "Preokrećeni princ mačeva ukazuje da vaše veštine mogu biti oslabljene nepažnje, dezinformacije ili ishitrene odluke.",
+          "keywords": [
+            "učenje",
+            "radoznalost",
+            "posmatranje",
+            "obaveštajna služba",
+            "komunikacija"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa učenjem ili gužvom."
+        }
+      },
+      "knightofswords": {
+        "position1": {
+          "upright": "Vitez mačeva ukazuje na anksioznost iskrivnih odluka i naglih pokreta. Pritisak da se brzo preduzme u finansijskim pitanjima može vas umoriti.",
+          "reversed": "Vraćanje viteza mačeva otkriva anksioznost koja će žurba stvoriti haos. Možda ćete se plašiti da će pogrešne poteze uzrokovati veliku štetu.",
+          "keywords": [
+            "žuriti",
+            "odluka",
+            "anksioznost",
+            "brzina",
+            "haos"
+          ],
+          "context": "Anksioznost proizilazi iz iskrivnih odluka i pritiska da se brzo ponašaju."
+        },
+        "position2": {
+          "upright": "Vitez mačeva ukazuje da on traži bezbednost brzom odlukom i hrabrošću. Određivanje daje mir.",
+          "reversed": "Vreoporno vitez mačeva ukazuje na anksioznost o žurbi i oštrom. Želja za sigurnost oslabljena je impulsivnim delovanjem.",
+          "keywords": [
+            "hrabrost",
+            "brzina",
+            "sigurnost",
+            "odluka",
+            "um"
+          ],
+          "context": "Nalazite sigurnost brzim, ali svesnim koracima."
+        },
+        "position3": {
+          "upright": "Vitez mačeva ukazuje na iznenadne i brze odluke potrošnje. Moguće je rizikovati.",
+          "reversed": "Vraćeni vitez mačeva ukazuje da su ishitlovili koraci mogu dovesti do finansijskog gubitka.",
+          "keywords": [
+            "brzina",
+            "rizikovati",
+            "novac",
+            "iznenadna odluka",
+            "hrabrost"
+          ],
+          "context": "Užasne odluke prilikom korišćenja novca mogu doći do izražaja."
+        },
+        "position4": {
+          "upright": "Moguće je u pogledu finansijskih pitanja u prošlosti.",
+          "reversed": "Vitez mačeva obrnut ukazuje na štetu finansijskih koraka preduzeti bez razmišljanja.",
+          "keywords": [
+            "žuriti",
+            "hrabrost",
+            "odluka",
+            "novac",
+            "rizikovati"
+          ],
+          "context": "U prošlosti su ugledne finansijske odluke bile istaknute."
+        },
+        "position5": {
+          "upright": "Vitez mačeva ukazuje na pristup finansijskim odgovornostima brzo i odlučno. Napredak je podebljano hrabro.",
+          "reversed": "Vreokov vitez mačeva ukazuje na užurbane, agresivne ili neplanirane odluke u vezi sa finansijskim odgovornostima.",
+          "keywords": [
+            "brzina",
+            "stabilnost",
+            "hrabrost",
+            "podsticaj",
+            "odgovornost"
+          ],
+          "context": "Hrabrost ili žurba dolaze na prednji plan u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Vitez mačeva ukazuje na brzu akciju, odlučnost i podebljane inicijative u finansijskim planovima.",
+          "reversed": "Vitez mačeva obrnut skreće pažnju na rizik od žurbe, nestrpljenja ili predodređenja u finansijskim planovima.",
+          "keywords": [
+            "brzina",
+            "stabilnost",
+            "hrabrost",
+            "žuriti",
+            "rizikovati"
+          ],
+          "context": "Brzina ili žurba će biti presudni u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Vitez mačeva ukazuje da će se u budućnosti biti postignuti brze odluke, smele inicijative i strateški proboji.",
+          "reversed": "Prekoračen vitez mačeva ukazuje da je požurivanje, nestrpljenje i gluma i ne razmišljanje može doneti štetu.",
+          "keywords": [
+            "brzina",
+            "strategija",
+            "odluka",
+            "hrabrost",
+            "skok"
+          ],
+          "context": "Hrabrost ili užurbanost će biti presudni u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Vitez mačeva ukazuje da brzo razmišljanje, odlučnost i inicijativa ojačavaju sposobnosti donošenja novca.",
+          "reversed": "Vitez mačeva obrnut ukazuje da je žurba, nestrpljivost ili oštra komunikacija mogla podrivati mogućnosti.",
+          "keywords": [
+            "brzina",
+            "stabilnost",
+            "inicijativa",
+            "strategija",
+            "komunikacija"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa brzinom ili impom."
+        }
+      },
+      "queenofswords": {
+        "position1": {
+          "upright": "Kraljica mačeva ukazuje na nedostatak smirenosti i zabrinutost za jasnoću. Možete se bojati da će emocije ublažiti vaše finansijske odluke.",
+          "reversed": "Kraljica reverse mačeva otkriva anksioznost preteranog kritičkog pristupa. Brineš se zbog previse pritiska na sebe i one oko sebe.",
+          "keywords": [
+            "ohladiti",
+            "oštrina",
+            "anksioznost",
+            "kritika",
+            "ravnoteža"
+          ],
+          "context": "Anksioznost se pojavljuje da ne bude u stanju da ostane mirna i preterano kritična."
+        },
+        "position2": {
+          "upright": "Kraljica mačeva ukazuje da traži sigurnost kroz jasnoću, iskrenost i oštar perspektivu. Istina daje mir.",
+          "reversed": "Kraljica obronjenih mačeva ukazuje na anksioznost o hladnoći i prekomernom kritiku. Želja za bezbednošću se prekida u nedostatku saosećanja.",
+          "keywords": [
+            "oštrina",
+            "iskrenost",
+            "sigurnost",
+            "real",
+            "komunikacija"
+          ],
+          "context": "Nalazite sigurnost u iskrenosti i jasnoći."
+        },
+        "position3": {
+          "upright": "Kraljica mačeva ukazuje na logičan, analitički i nezavisan pristup finansijskim pitanjima. Jasnoća je na čelu.",
+          "reversed": "Kraljica mačeva preokrenuta ukazuje na preterano kritične ili hladne finansijske odluke.",
+          "keywords": [
+            "logika",
+            "oštrina",
+            "nezavisnost",
+            "novac",
+            "analiza"
+          ],
+          "context": "Logika i analiza su važne u korištenju novca."
+        },
+        "position4": {
+          "upright": "U prošlosti je možda preuzet logičan, miran i strateški pristup finansijskim pitanjima.",
+          "reversed": "Kraljica mačeva obrnuta ukazuje na preterano kritične ili oštre finansijske odluke.",
+          "keywords": [
+            "logika",
+            "strategija",
+            "ohladiti",
+            "novac",
+            "pravda"
+          ],
+          "context": "U prošlosti su finansijska pitanja rukovala logično i strateški."
+        },
+        "position5": {
+          "upright": "Kraljica mačeva predstavlja logiku, nezavisnost i jasnu komunikaciju u pogledu finansijskih odgovornosti. Osećaj pravde olakšava teret.",
+          "reversed": "Kraljica mačeva obrnuta ukazuje da problemi mogu eskalirati zbog prevelikih kritika, hladnoće ili bezobraznije u pogledu finansijskih odgovornosti.",
+          "keywords": [
+            "logika",
+            "nezavisnost",
+            "pravda",
+            "kritika",
+            "odgovornost"
+          ],
+          "context": "Pravda ili kritika je presudna u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Kraljica mačeva ukazuje na snagu objektivnosti, analitičke perspektive i jasnih odluka u finansijskim planovima.",
+          "reversed": "Kraljica mačeva preokrenuta ukazuje na prekomernu kritiku, hladnoću ili nedostatak komunikacije u finansijskim planovima.",
+          "keywords": [
+            "analiza",
+            "oštrina",
+            "odluka",
+            "um",
+            "ravnoteža"
+          ],
+          "context": "Objektivnost ili ekstremna kritika biće efikasna u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Kraljica mačeva ukazuje da će jasnoća, nezavisnost i logičke strategije doći do finansijskih planova u budućnosti.",
+          "reversed": "Kraljica mačeva obrnuta ukazuje da prevelika kritika, hladnoća ili bezobrazna odluka može oštetiti odnose.",
+          "keywords": [
+            "oštrina",
+            "nezavisnost",
+            "logika",
+            "rukovodstvo",
+            "objektivnost"
+          ],
+          "context": "Logika ili ekstremna kritika biće efikasna u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Kraljica mačeva ukazuje da je to jasnoća, objektivnost i analitičko razmišljanje podržavaju sposobnosti donošenja novca.",
+          "reversed": "Kraljica mačeva obrnuta ukazuje da su prevelika kritika, hladnoća ili nedostatak razumevanja mogu ograničiti vaše sposobnosti.",
+          "keywords": [
+            "oštrina",
+            "analiza",
+            "objektivnost",
+            "komunikacija",
+            "mudrost"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa objektivnošću ili kritikom."
+        }
+      },
+      "kingofswords": {
+        "position1": {
+          "upright": "Kralj mačeva ukazuje na anksioznost da ne može da ostane racionalna i gubitnička kontrola. Možete se bojati da niste fer i strateški u finansijskom svetu.",
+          "reversed": "Prekoračeni kralj mačeva ukazuje na anksioznost o zloupotrebi ovlašćenja ili potpuni gubitak kontrole. Brinete se o finansijskim odlukama koje stvaraju pritisak.",
+          "keywords": [
+            "logika",
+            "kontrola",
+            "anksioznost",
+            "vlast",
+            "pravda"
+          ],
+          "context": "Anksioznost se pojavljuje da ne mogu da prave logičke i fer odluke."
+        },
+        "position2": {
+          "upright": "Kralj mačeva pokazuje da on traži bezbednost kroz strateško razmišljanje i mudrost. Logično rukovodstvo daje samopouzdanje.",
+          "reversed": "Prekoračeni kralj mačeva ukazuje na anksioznost o autoritarizmu i oštrini. Želja za sigurnost oslabljena je nedostatkom empatije.",
+          "keywords": [
+            "strategija",
+            "mudrost",
+            "sigurnost",
+            "logika",
+            "vlast"
+          ],
+          "context": "Nalazite sigurnost kroz mudnu strategiju i logiku."
+        },
+        "position3": {
+          "upright": "Kralj mačeva ukazuje na strateški, pravičan i disciplinovani pristup finansijskim pitanjima. Dugoročno planiranje dolazi do izražaja.",
+          "reversed": "Prekoračeni kralj mačeva ukazuje na preterano krute, opresivne ili bezobrazne finansijske odluke.",
+          "keywords": [
+            "strategija",
+            "pravda",
+            "disciplina",
+            "novac",
+            "plan"
+          ],
+          "context": "Disciplinovana strategija je važna u korištenju novca."
+        },
+        "position4": {
+          "upright": "Disciplinovane, uredne i fer odluke mogu se postići na finansijskim pitanjima u prošlosti.",
+          "reversed": "Preokrećeni kralj mačeva ukazuje na autoritarne ili nefleksibilne finansijske pristupe.",
+          "keywords": [
+            "disciplina",
+            "vlast",
+            "vladavina",
+            "novac",
+            "pravda"
+          ],
+          "context": "U prošlosti su finansijska pitanja rukovala disciplinovani i regulisani način."
+        },
+        "position5": {
+          "upright": "Kralj mačeva ukazuje na disciplinu, strategiju i pravično rukovodstvo u finansijskim odgovornostima. Racionalni pristup donosi uspeh.",
+          "reversed": "Preokrećeni kralj mačeva ukazuje na preterano autoritarne, krute ili nedostatak empatija pristupa finansijskim odgovornostima.",
+          "keywords": [
+            "disciplina",
+            "strategija",
+            "pravda",
+            "vlast",
+            "odgovornost"
+          ],
+          "context": "Disciplina ili strogost dolazi do zaruka u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Kralj mačeva ukazuje na stratešku mudrost, autoritet i disciplinovane odluke u finansijskim planovima.",
+          "reversed": "Preokrećeni kralj mačeva ukazuje na krutost, hladnoću ili rizik od manipulacije u finansijskim planovima.",
+          "keywords": [
+            "strategija",
+            "vlast",
+            "um",
+            "disciplina",
+            "odluka"
+          ],
+          "context": "Disciplinovana strategija ili strogi stav dolazi do predloga novih finansijskih planova."
+        },
+        "position7": {
+          "upright": "Kralj mačeva ukazuje na snažan uticaj etike, principijelnog upravljanja i strateško razmišljanje u finansijskim planovima u budućnosti.",
+          "reversed": "Prekoračeni kralj mačeva ukazuje da je čvrst stav, autoritarni pristup ili nedostatak komunikacije da napregnu na finansijske planove.",
+          "keywords": [
+            "etika",
+            "logika",
+            "vlast",
+            "strategija",
+            "komunikacija"
+          ],
+          "context": "Etičko rukovodstvo ili rigidnost će odrediti buduće finansijske planove."
+        },
+        "position8": {
+          "upright": "Kralj mačeva ukazuje da strateško razmišljanje, liderstvo i pridržavanje etike ojačaju sposobnosti donošenja novca.",
+          "reversed": "Prekoračeni kralj mačeva ukazuje da vaše veštine mogu biti oslabljene krutom razmišljanjem, hladnoće ili autoritarizmom.",
+          "keywords": [
+            "strategija",
+            "rukovodstvo",
+            "etika",
+            "vlast",
+            "um"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa strategijom ili rigidnosti."
+        }
+      },
+      "aceofwands": {
+        "position1": {
+          "upright": "Ace of Vinds ukazuje na anksioznost da ne mogu da preuzmu nove inicijative i nedostajuće mogućnosti. Ne mogu da koristite svoju kreativnost, možda vas brine.",
+          "reversed": "ACE of štapića obrnuta otkriva anksioznost zbog nedostatka inspiracije i lažnog starta. Možda se plašite da ne pronađete pravi korak.",
+          "keywords": [
+            "početak",
+            "inspiracija",
+            "anksioznost",
+            "prilika",
+            "pokušati"
+          ],
+          "context": "Anksioznost se pojavljuje da ne mogu da iskoriste mogućnosti i pogrešnim početkom."
+        },
+        "position2": {
+          "upright": "Ace štapiće ukazuje da tražite sigurnost kroz nove poduhvate i kreativni počeci. Hrabrost otvara nova vrata za vas.",
+          "reversed": "ACE of štapića obrnuta ukazuje na nedostatak motivacije ili odlaganja mogućnosti. Želja za bezbednošću oslabljena je neodlučnošću.",
+          "keywords": [
+            "početak",
+            "kreativnost",
+            "hrabrost",
+            "sigurnost",
+            "prilika"
+          ],
+          "context": "Nalazite sigurnost kroz novu inicijativu i inspiraciju."
+        },
+        "position3": {
+          "upright": "Ace od štapića ukazuje na pojavu novih ideja i inicijativa u korištenju novca. Ulaganja se mogu izvršiti u kreativnim projektima.",
+          "reversed": "ACE of Vinds Reversed označava da se resursi troše na projektima koji su započeli sa entuzijazmom, ali ostali su nedovršeni.",
+          "keywords": [
+            "kreativnost",
+            "početak",
+            "pokušati",
+            "entuzijazam",
+            "investicija"
+          ],
+          "context": "Nove i kreativne inicijative dolaze na prvi plan u upotrebi novca."
+        },
+        "position4": {
+          "upright": "Nove mogućnosti i načine zarade novca možda su u prošlosti otkriveni u prošlosti sa inspiracijom. Kreativnost je pokrenula finansijske poduhvate.",
+          "reversed": "Reverse Ace of Vinds ukazuje da finansijski potencijal nije u potpunosti korišten zbog nedovršenih inicijativa i odloženih projekata.",
+          "keywords": [
+            "inspiracija",
+            "početak",
+            "novac",
+            "kreativnost",
+            "prilika"
+          ],
+          "context": "U prošlosti su finansijski poduhvati možda započeli kreativnost, ali nisu uvek završene."
+        },
+        "position5": {
+          "upright": "ACE of štapića ukazuje na novu priliku, inspiraciju i preduzetničku energiju u finansijskim odgovornostima. Podela podebljane korake mogu ublažiti obaveze.",
+          "reversed": "ACE of Vinds Reversed ukazuje na nedostatak motivacije, odlaganja ili neuspeha da iskoriste finansijske odgovornosti.",
+          "keywords": [
+            "prilika",
+            "inspiracija",
+            "pokušati",
+            "motivacija",
+            "odgovornost"
+          ],
+          "context": "Nedostatak nove inspiracije ili motivacije je presudan u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Ace štapiće ukazuje na početak nove inicijative, inspiracije i kreativnosti u finansijskim planovima. Korak snimljen hrabrošću donosi obilje.",
+          "reversed": "ACE of Vinds Reversed označava odložene mogućnosti, nisku motivaciju ili pogrešno usmerenu energiju.",
+          "keywords": [
+            "početak",
+            "inspiracija",
+            "hrabrost",
+            "pokušati",
+            "kreativnost"
+          ],
+          "context": "Kreativni počeci ili odložene mogućnosti će doći do predloga na nove finansijske planove."
+        },
+        "position7": {
+          "upright": "ACE of Vinds ukazuje na nove mogućnosti, inspirisane početke i preduzetnički duh u finansijskim planovima u budućnosti. Jedan odvažni korak može da pokrene glavni rast.",
+          "reversed": "ACE of Vinds Reversed je ukazuje da se mogu propustiti prilici zbog gubitka inspiracije, odlaganja ili nedostatka motivacije.",
+          "keywords": [
+            "početak",
+            "inspiracija",
+            "pokušati",
+            "hrabrost",
+            "energija"
+          ],
+          "context": "Novi počeci ili nedostatak inspiracije utvrdiće buduće finansijske planove."
+        },
+        "position8": {
+          "upright": "ACE of Vinds ukazuje da kreativnost, inspiracija i preduzetništvo povećavaju sposobnosti donošenja novca.",
+          "reversed": "ACE of Vinds Reversed označava da nedostatak motivacije, odlaganja ili lažnih započinja može dovesti do propuštenih mogućnosti.",
+          "keywords": [
+            "inspiracija",
+            "početak",
+            "pokušati",
+            "hrabrost",
+            "energija"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa pronalaženjem inspiracije ili nedostatka motivacije."
+        }
+      },
+      "twoofwands": {
+        "position1": {
+          "upright": "Dvoje štapiće ukazuju na anksioznost u vezi sa netačnim budućim planovima. Možda ćete oklevati da rizikujete.",
+          "reversed": "Okrećena dva štapića otkriva anksioznost zbog nedostatka vida i pogrešnih izbora. Možda se plašite kretanja u pogrešnom smeru.",
+          "keywords": [
+            "plan",
+            "vizija",
+            "anksioznost",
+            "rizikovati",
+            "glasati"
+          ],
+          "context": "Anksioznost se pojavljuje od nepravilno planiranja budućnosti."
+        },
+        "position2": {
+          "upright": "Tvoje štampe pokazuju da tražite sigurnost kroz planiranje i viziju. Proširenje vaših horizonta će vam pružiti mir.",
+          "reversed": "Dvojica štapića obrnuta ukazuju na oklevanje i malu udubučnost. Želja za bezbednošću je potkopavana averzija rizika.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "sigurnost",
+            "ekspanzija",
+            "odluka"
+          ],
+          "context": "Nalazite sigurnost kroz planiranu ekspanziju i viziju."
+        },
+        "position3": {
+          "upright": "Dvoje štapiće ukazuju na buduće planove i želju da prošire horizonte u korištenju novca. Investicije se prave strateški.",
+          "reversed": "Dva osvežena štapića ukazuju na to da su propuštene mogućnosti zbog nedostatka hrabrosti.",
+          "keywords": [
+            "plan",
+            "horizont",
+            "vizija",
+            "hrabrost",
+            "investicija"
+          ],
+          "context": "Vizija budućnosti dolazi do zanošenja novca u upotrebi novca."
+        },
+        "position4": {
+          "upright": "Planiranje i viziranje finansijskih ciljeva možda su igrali važnu ulogu u prošlosti.",
+          "reversed": "Dvoje štapiće preokrenuli su: Prilike nisu iskorišćene zbog odlaganja planova ili nedostatka hrabrosti.",
+          "keywords": [
+            "vizija",
+            "planiranje",
+            "novac",
+            "horizont",
+            "odluka"
+          ],
+          "context": "U prošlosti su vizija i planiranje došli u prednji plan u novcu."
+        },
+        "position5": {
+          "upright": "Dvoje štapića ukazuju na planiranje, prosleđivanje vida i ocenjivanje opcija u finansijskim odgovornostima.",
+          "reversed": "Invertirana dva štapića mogu ukazivati na nedostatak vizije, izbegavanje rizika ili zategnuće u finansijskim odgovornostima.",
+          "keywords": [
+            "planiranje",
+            "vizija",
+            "rizikovati",
+            "odluka",
+            "odgovornost"
+          ],
+          "context": "Vizija ili nepropusnost je efikasan u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Najveći štapići pokazuju proces razvoja vizije, pravljenje planova i širenje horizonta u finansijskim planovima.",
+          "reversed": "Dva osvajanja štapića ukazuju na nemogućnost donošenja odluka, smanjujući se zbog strahova ili nedostajućih prilika.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "horizont",
+            "odluka",
+            "ekspanzija"
+          ],
+          "context": "Nedostatak vizije ili odlučivanja biće na dnevnom redu novih finansijskih planova."
+        },
+        "position7": {
+          "upright": "Dvoje štapiće, razvijanje vizije, širenje horizonta i planiranje novih projekata dolaze u finansijskim planovima u budućnosti.",
+          "reversed": "Dvojica štapića obrnuta ukazuju na to da će se mogućnosti odložiti zbog neodlučnosti, strahova ili nemogućnosti da izađu iz zone komfora.",
+          "keywords": [
+            "vizija",
+            "planiranje",
+            "horizont",
+            "projekti",
+            "odluka"
+          ],
+          "context": "Razvoj vizije ili neodlučna biće efikasna u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Dvoje štapića ukazuju na to da vizija, planiranje i sposobnost proširenja horizonta povećavaju finansijski potencijal.",
+          "reversed": "Preokrećena dva štapića ukazuje da se mogućnosti mogu izgubiti zbog oklevanja, uske perspektive ili averzije rizika."
+        }
+      }
+    }
+  }
+}

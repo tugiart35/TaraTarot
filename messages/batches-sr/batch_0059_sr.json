@@ -1,0 +1,774 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "thedevil": {
+        "position10": {
+          "context": "Rezultat može biti zavisnost ili oslobađanje."
+        },
+        "position2": {
+          "upright": "Sotona, prepreka može biti zavisnosti, strahovi ili gubitak kontrole. Ne možete da krenete naprijed ako se ne oslobodite svojih lanaca.",
+          "reversed": "Reversed Demon može da ometa da se ne može osloboditi slobodnim, podnošenjem ograničenja ili preostalih zavisnim.",
+          "keywords": [
+            "zavisnost",
+            "strah",
+            "Ograničenje",
+            "sloboda",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje iz navika i strahova o kojima ste ovisni."
+        },
+        "position3": {
+          "upright": "Đavo može biti podsvesno prošlo zavisnosti, ograničenja ili strahovi. Ne mogu se rešiti lanaca možda pokreće današnje probleme.",
+          "reversed": "Reverse demon je možda sređen u podsvijesti da zavisi od prošlosti, a ne može se oslobađati bez ikakvog davati kontrolu nekom drugom.",
+          "keywords": [
+            "zavisnost",
+            "strah",
+            "Ograničenje",
+            "sloboda",
+            "podsvestan"
+          ],
+          "context": "Protekle zavisnosti i ograničenja mogu biti zasjenjivanje današnjih problema."
+        },
+        "position4": {
+          "upright": "Sotona pokazuje da kroz svest svog potencijala može da prekrši svoje lance, postane bez zavisnosti i povrati svoju vlastitu moć.",
+          "reversed": "Reversed Demon može imati zavisnosti, strahove ili gubitak kontrole koji ograničavaju nečiji potencijal.",
+          "keywords": [
+            "sloboda",
+            "svest",
+            "snaga",
+            "strah",
+            "potencijal"
+          ],
+          "context": "Vaš najbolji potencijal je da se rešite ovisnosti i steknete slobodu."
+        },
+        "position5": {
+          "upright": "Sotona, možda ste bili pod uticajem zavisnosti, strahove ili restriktivnih situacija u nedavnoj prošlosti.",
+          "reversed": "Reversed Demon, možda ste se nedavno oslobodili vaših lanaca, stekli svoju slobodu ili se oslobodili zavisnosti.",
+          "keywords": [
+            "zavisnost",
+            "strah",
+            "sloboda",
+            "Ograničenje",
+            "svest"
+          ],
+          "context": "Vaša nedavna prošlost je možda razvila zavisnosti ili oslobađanja."
+        },
+        "position6": {
+          "upright": "Sotona, možda ćete morati da se suočite sa zavisnostima, strahovima ili restriktivnim situacijama u bliskoj budućnosti.",
+          "reversed": "Okrećeno vraga, možda ćete imati priliku da se oslobodite svojih lanaca, postanite slobodni i prevladajte svoje strahove u bliskoj budućnosti.",
+          "keywords": [
+            "zavisnost",
+            "Ograničenje",
+            "sloboda",
+            "strah",
+            "senka"
+          ],
+          "context": "Vaša bliža budućnost će biti oblikovana zavisnosti ili oslobađanjem."
+        },
+        "position7": {
+          "upright": "Sotona, možda ste pod uticajem zavisnosti, strahove ili obveznica koje vas trenutno ograničavaju.",
+          "reversed": "Invertirani demon, proces razbijanja lanaca, postajući slobodan i prevazilaženje strahova vas sada očekuje.",
+          "keywords": [
+            "zavisnost",
+            "Ograničenje",
+            "sloboda",
+            "strah",
+            "senka"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je zavisnosti ili oslobađanjem."
+        },
+        "position8": {
+          "upright": "Sotona, spoljni uticaji mogu vas voditi u zavisnosti, restriktivne priloge ili strahove.",
+          "reversed": "Reversed Demon, spoljni uticaji mogu vas dovesti da se oslobodite, slomite lance ili se oslobodite ograničenja.",
+          "keywords": [
+            "zavisnost",
+            "Ograničenje",
+            "sloboda",
+            "strah",
+            "senka"
+          ],
+          "context": "Spoljni uticaji mogu vas ili testirati sa zavisnošću ili vas osloboditi."
+        },
+        "position9": {
+          "upright": "Možete doživeti strah od đavola, zavisnosti, ropstva ili gubitka kontrole.",
+          "reversed": "Reversed Demon može stvoriti anksioznost da se ne može oslobađati besplatno, biti ograničen ili ne može da probije veze.",
+          "keywords": [
+            "zavisnost",
+            "ropstvo",
+            "strah",
+            "Ograničenje",
+            "sloboda"
+          ],
+          "context": "Vaš strahovski centar na preostalom zavisinju ili nije slobodan."
+        }
+      },
+      "thetower": {
+        "position1": {
+          "upright": "Kula je u središtu problema, mogu postojati nagle promene, krize ili neočekivano uništenje.",
+          "reversed": "Invertirana kula, odupiranje promenama ili odlaganjem krize može biti izvor problema.",
+          "keywords": [
+            "kriza",
+            "promeniti",
+            "rušenje",
+            "regeneracija",
+            "pitanje"
+          ],
+          "context": "U srcu problema su nagle promene i krize."
+        },
+        "position10": {
+          "upright": "Toranj može biti iznenadna kriza, neočekivana uništavanja ili radikalna promena kao rezultat događaja.",
+          "reversed": "Invertirana kula može biti odložena kriza, potisnuta promena ili traumatični procesi kao rezultat događaja.",
+          "keywords": [
+            "kriza",
+            "promeniti",
+            "rušenje",
+            "protresti",
+            "regeneracija"
+          ],
+          "context": "Rezultat može biti iznenadna razaranje ili oslobađanje potisnutih kriza."
+        },
+        "position2": {
+          "upright": "Toranj, prepreka može biti nagle promene, krize ili razarajuće događaje. Neočekivani udarci su vas možda uhvatili van straže.",
+          "reversed": "U obrnutom kuli ignorišući krize, odlaganje promene ili suzbijanje haosa mogu biti prepreka.",
+          "keywords": [
+            "kriza",
+            "promeniti",
+            "rušenje",
+            "haos",
+            "prepreka"
+          ],
+          "context": "Aprestracite se pojavljuje da se ne suočavaju sa iznenadnim uništavanjem i krizama."
+        },
+        "position3": {
+          "upright": "Toranj može predstavljati nagle promene, krize ili uništavanje u prošlosti u podsvesti. Ove traume su možda dovele do današnjih problema.",
+          "reversed": "Inverterovatna kula može biti podsvesno zagonetna u suzbijanju krize, a ne okrenutim kosasu ili odbacujući promjene.",
+          "keywords": [
+            "kriza",
+            "rušenje",
+            "promeniti",
+            "trauma",
+            "podsvestan"
+          ],
+          "context": "Protekle krize i devastacije mogu se oblikovati današnji problemi."
+        },
+        "position4": {
+          "upright": "Toranj pokazuje da je njegov potencijal da se pojavi jači od naglih promena i kriza i obnovu.",
+          "reversed": "Invertirani kula može biti strah od krize i otpornosti na promenu, slabljenje njegovog potencijala.",
+          "keywords": [
+            "promeniti",
+            "rušenje",
+            "ponovno rođenje",
+            "kriza",
+            "potencijal"
+          ],
+          "context": "Vaš najbolji potencijal je obnoviti nakon uništenja."
+        },
+        "position5": {
+          "upright": "Toranj, možda ste doživeli iznenadnu krizu, uništavanje ili neočekivanu promenu u nedavnoj prošlosti. Ovo vas je možda gurnulo da tražiš novi pravac.",
+          "reversed": "Inverterovatna kula, možda ste izbegavali krize u nedavnoj prošlosti, odloženo uništavanje ili odbačeno promjene.",
+          "keywords": [
+            "kriza",
+            "rušenje",
+            "promeniti",
+            "transformacija",
+            "šok"
+          ],
+          "context": "Vaša nedavna prošlost je možda oblikovana krizama ili bekstvom iz krize."
+        },
+        "position6": {
+          "upright": "Toranj, iznenadna promena, kriza ili šokantni događaj mogu doći do izražaja u bliskoj budućnosti.",
+          "reversed": "Invertirani kula može ukazivati na eksploziju krize koju ste odložili u bliskoj budućnosti ili tendenciji da ne biste izbegli promene.",
+          "keywords": [
+            "kriza",
+            "rušenje",
+            "promeniti",
+            "transformacija",
+            "šok"
+          ],
+          "context": "Vaša bliska budućnost će se oblikovati krizom ili bekstvo od krize."
+        },
+        "position7": {
+          "upright": "Toranj u ovom trenutku može ukazivati na iznenadna promena, kriza ili šokantan događaj u vašem životu u vašem životu.",
+          "reversed": "Invertirana kula, kriza koju trenutno odlažete može eksplodirati ili ćete možda izbegavati promenu.",
+          "keywords": [
+            "kriza",
+            "rušenje",
+            "promeniti",
+            "transformacija",
+            "šok"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je krizom ili bekstvo od krize."
+        },
+        "position8": {
+          "upright": "Toranj, spoljni uticaji mogu uticati na vaš život naglih promena, kriza ili šokantnim događajima.",
+          "reversed": "Invertirana kula, spoljni uticaji mogu odložiti krize ili nositi energiju da bi se izbeglo promene.",
+          "keywords": [
+            "kriza",
+            "promeniti",
+            "rušenje",
+            "šok",
+            "transformacija"
+          ],
+          "context": "Spoljni uticaji utiču na iznenadne krize ili odlaganja."
+        },
+        "position9": {
+          "upright": "Možete doživeti strah od kula, naglih promena, kriza ili destruktivnih događaja.",
+          "reversed": "Inverterovatna kula može biti sklonost ignorisanju traumatičnih događaja, izbegavati promene ili se boji neočekivane krize.",
+          "keywords": [
+            "kriza",
+            "promeniti",
+            "rušenje",
+            "šok",
+            "anksioznost"
+          ],
+          "context": "Fokusira se na strahove, krize ili nagle promene."
+        }
+      },
+      "thestar": {
+        "position1": {
+          "upright": "Zvezda može biti potreba za nadom, inspiracijom i vođstvom vizije u srcu problema.",
+          "reversed": "Invertirana zvezda, očaj, nedostatak inspiracije ili pesimizma mogu biti izvor problema.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "vizija",
+            "svest",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potraga za nadom i inspiracijom."
+        },
+        "position10": {
+          "upright": "Zvezda može biti proces obnove, pune nade, isceljenja i inspiracije kao rezultat događaja.",
+          "reversed": "Inverrovana zvezda može rezultirati očajem, gubitkom vere ili pesimizma kao rezultat događaja.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "zarastanje",
+            "budućnost",
+            "prosvetljenje"
+          ],
+          "context": "Rezultat može biti nade obnavljanje ili pesimizam."
+        },
+        "position2": {
+          "upright": "Zvezda ukazuje da prepreka može biti očaja, gubitak inspiracije ili nedostatak vida. Gubitak svetlosti koja će vam osvetliti put otežava.",
+          "reversed": "Invertirana zvezda, pesimizam, gubitak poverenja ili nedostatak smernica može biti izvor prepreke.",
+          "keywords": [
+            "nadati se",
+            "vizija",
+            "inspiracija",
+            "pesimizam",
+            "prepreka"
+          ],
+          "context": "Prepreka se postavlja od gubitka nade i pesimističkog izgleda."
+        },
+        "position3": {
+          "upright": "Zvezda može podsvesno podsvesno ukazati na prošli gubitak nade, nedostatak inspiracije ili nesigurnosti.",
+          "reversed": "Inverterovana zvezda, pesimizam, nedostatak smernica ili nedostatak samopouzdanja možda su se smestili u podsvesti.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "vizija",
+            "pesimizam",
+            "podsvestan"
+          ],
+          "context": "Beznadnost i gubitak poverenja u prošlost mogu uticati na današnje probleme."
+        },
+        "position4": {
+          "upright": "Zvezda pokazuje da vaš potencijal sjaji nadom, inspiracijom i duhovnom obnovom.",
+          "reversed": "Ograničena zvezda može ukazivati na pesimizam, nesigurnost i nedostatak inspiracije, ograničavajući nečiji potencijal.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "regeneracija",
+            "poverenje",
+            "potencijal"
+          ],
+          "context": "Vaš najbolji potencijal je da unesete nadu i inspiraciju u svoj život."
+        },
+        "position5": {
+          "upright": "Zvezda, možda ste obnovili nade, naljali inspiraciju ili doživeli duhovnu obnovu u nedavnoj prošlosti.",
+          "reversed": "Inverterovana zvezda, možda ste iskusni očaj, nesigurnost ili gubitak inspiracije u nedavnoj prošlosti.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "regeneracija",
+            "duša",
+            "poverenje"
+          ],
+          "context": "Vaša nedavna prošlost može se odrediti nadom ili očajem."
+        },
+        "position6": {
+          "upright": "Zvezda, nada, inspiracija i duhovna obnavljanja čekat će vas u bliskoj budućnosti.",
+          "reversed": "Inverterovana zvezda, možete doživeti očaj, gubitak inspiracije ili nesigurnosti u bliskoj budućnosti.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "regeneracija",
+            "duša",
+            "poverenje"
+          ],
+          "context": "Vaša bliža budućnost će biti oblikovana nadom ili očajem."
+        },
+        "position7": {
+          "upright": "Iıldız, možda ste u energiji nade, inspiracije i duhovne obnove trenutno.",
+          "reversed": "Invertirana zvezda, očaj, gubitak samopouzdanja ili nedostatak inspiracije možda vas odmah odmeri.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "regeneracija",
+            "duša",
+            "poverenje"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je nadom ili očaju."
+        },
+        "position8": {
+          "upright": "Zvezda, spoljni uticaji mogu vam doneti nadu, inspiraciju i duhovnu obnovu.",
+          "reversed": "Invertirana zvezda, spoljni uticaji mogu stvoriti očaj, gubitak poverenja ili nedostatak inspiracije.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "regeneracija",
+            "poverenje",
+            "svetlo"
+          ],
+          "context": "Spoljni uticaji utiču na vas kroz nadu ili očaj."
+        },
+        "position9": {
+          "upright": "Iıldız, možete iskusiti strah od gubitka nade, nedostatak poverenja u budućnost ili gubitak inspiracije.",
+          "reversed": "Invertirana zvezda, anksioznost, očaj, gubitak vere ili pesimizma može uticati na vas.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "poverenje",
+            "budućnost",
+            "anksioznost"
+          ],
+          "context": "Fokusira se na strahove, gubitak nade ili pesimizma."
+        }
+      },
+      "tenofcups": {
+        "position1": {
+          "upright": "Deset šoljica može biti usredsređen na želju za mirovnim, skladnim odnosima i emocionalnom ravnotežom.",
+          "reversed": "Invertirani deset šoljica, disharmonija, nemira ili porodičnih problema može biti izvor problema.",
+          "keywords": [
+            "raport",
+            "porodica",
+            "ravnoteža",
+            "mir",
+            "pitanje"
+          ],
+          "context": "U srcu problema je želja za uspostavljanjem mirnih i uravnoteženih odnosa."
+        },
+        "position10": {
+          "upright": "Deset šoljica može biti porodična sreća, harmonija i trajan mir kao rezultat događaja.",
+          "reversed": "Invertirani deset šoljica može rezultirati porodičnim neskladom, nemirima ili trajnim gubitkom sreće kao rezultat događaja.",
+          "keywords": [
+            "porodica",
+            "sreća",
+            "raport",
+            "mir",
+            "odnos"
+          ],
+          "context": "Rezultat može trajati mir ili porodični nesklad."
+        },
+        "position2": {
+          "upright": "Deset šoljica, prepreka može biti porodični problemi, nemiri ili disharmonija. Ne mogu da pronađu emocionalnu ravnotežu otežava da se krene napred.",
+          "reversed": "Invertirani deset šoljica, isključenje, nepoverenje ili sukob može biti izvor prepreke.",
+          "keywords": [
+            "porodica",
+            "raport",
+            "mir",
+            "ravnoteža",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje od nelagodne odnosa i nedostatka harmonije."
+        },
+        "position3": {
+          "upright": "Deset šoljica može biti mirne porodične veze, skladne veze ili snovi koje ste u prošlosti doživeli doživeli u prošlosti.",
+          "reversed": "Okolišteni deset šoljica, isključenje, porodične nemire ili disharmonija možda su ostavile marku na podsvesti.",
+          "keywords": [
+            "porodica",
+            "raport",
+            "mir",
+            "odnos",
+            "podsvestan"
+          ],
+          "context": "Dosadašnja porodična dinamika i problemi sa adaptacijom možda su osnova za današnje probleme."
+        },
+        "position4": {
+          "upright": "Deset šoljica ukazuje da je njen najbolji potencijal izgraditi emocionalnu harmoniju, mir u porodici / timu i osećaj pripadnosti; Mirovni rađa uspeh.",
+          "reversed": "Invertirani deset šoljica, kako bi se postigao vaš potencijal, morate da izvršite očekivanja o odnosu realno, ojačati komunikaciju i sastati se na zajedničkim vrednostima.",
+          "keywords": [
+            "raport",
+            "pripadnik",
+            "mir",
+            "Porodica / Tim",
+            "jedinstvo"
+          ],
+          "context": "Najbolji potencijal je izgradnja trajne emocionalne harmonije oko zajedničkih vrednosti."
+        },
+        "position5": {
+          "upright": "Deset šoljica, možda ste doživeli mirnu harmoniju u porodici, prijateljstvu ili odnosima u nedavnoj prošlosti.",
+          "reversed": "Invertirani deset šoljica, možda ste iskusili nemire porodice, disharmoniju ili razočaranje u odnosu u nedavnoj prošlosti.",
+          "keywords": [
+            "porodica",
+            "raport",
+            "sreća",
+            "odnos",
+            "mir"
+          ],
+          "context": "Vaša nedavna prošlost možda je obeležena iskustvima harmonije ili disharmonije."
+        },
+        "position6": {
+          "upright": "Deset šoljica, miran i srećan period vas čeka u porodici, prijateljstvu ili odnosima u bliskoj budućnosti.",
+          "reversed": "Invertirani deset šoljica, možete da doživite porodične nemire, disharmoniju ili razočaranje u bliskoj budućnosti.",
+          "keywords": [
+            "porodica",
+            "sreća",
+            "mir",
+            "odnos",
+            "raport"
+          ],
+          "context": "Vaša bliža budućnost će biti oblikovana iskustvom harmonije ili disharmonije."
+        },
+        "position7": {
+          "upright": "Deset šoljica, možda ćete doživljavati miran i skladan period u vašoj porodici, prijateljskim broju ili odnosima trenutno.",
+          "reversed": "Invertirani deset šoljica, porodične nemire, disharmonija ili razočaranje možda vas trenutno izazivaju.",
+          "keywords": [
+            "porodica",
+            "sreća",
+            "raport",
+            "mir",
+            "odnos"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je harmonijom ili nemirima."
+        },
+        "position8": {
+          "upright": "Deset šoljica, spoljni uticaji mogu vam doneti porodičnu sreću, mir i harmoniju.",
+          "reversed": "Invertirani deset šoljica, spoljni uticaji mogu stvoriti porodične probleme, disharmoniju ili emocionalno razočaranje.",
+          "keywords": [
+            "porodica",
+            "sreća",
+            "raport",
+            "mir",
+            "obveznica"
+          ],
+          "context": "Spoljni uticaji utiču na vas kroz mir ili disharmoniju."
+        },
+        "position9": {
+          "upright": "Deset šoljica može ukazivati na strah od gubitka porodičnih veza, doživljavanje nemira ili gubitka harmonije.",
+          "reversed": "Pretvoreni deset šoljica može stvoriti zabrinutost zbog porodičnih problema, disharmonija ili poremećaja trajne sreće.",
+          "keywords": [
+            "porodica",
+            "sreća",
+            "raport",
+            "mir",
+            "anksioznost"
+          ],
+          "context": "Vaš strahovi centar na porodičnim nemirima ili gubitkom harmonije."
+        }
+      },
+      "themoon": {
+        "position1": {
+          "upright": "Mesec može staviti neizvesnost, strahove ili iluzije u srcu problema.",
+          "reversed": "Invertirani mesec, ne može da vidi činjenice, prevarene ili uhvaćene u strahu mogu biti izvor problema.",
+          "keywords": [
+            "neizvesnost",
+            "strah",
+            "iluzija",
+            "intuicija",
+            "pitanje"
+          ],
+          "context": "U srcu problema su nesigurnosti i iluzije."
+        },
+        "position10": {
+          "upright": "Mesec može prouzrokovati neizvesnost kao rezultat događaja, otkrivene su intuicije koje dolaze na prednost ili skrivene istine.",
+          "reversed": "Invertirani mesec može rezultirati iluzijama, varljivim situacijama ili rast unutrašnjih strahova kao rezultat događaja.",
+          "keywords": [
+            "neizvesnost",
+            "intuicija",
+            "iluzija",
+            "tajna",
+            "prosvetljenje"
+          ],
+          "context": "Rezultat može biti intuitivna svest ili suočavanje sa iluzijama."
+        },
+        "position2": {
+          "upright": "Mesec, prepreka može biti neizvesnosti, strahovi ili pogrešne situacije. Kada se ne vidite jasno, teško je pronaći pravo rešenje.",
+          "reversed": "Obrnuti mesec može biti prepreka da se predaje iluzijama, nesporazumima ili strahovima.",
+          "keywords": [
+            "neizvesnost",
+            "strah",
+            "iluzija",
+            "Nemojte biti prevareni",
+            "prepreka"
+          ],
+          "context": "Aprestracite se pojavljuje da ne može da vidi činjenice i uhvate se u strahovima."
+        },
+        "position3": {
+          "upright": "Mesec može podsvesno davati nesigurnosti, strahove ili iluzije u prošlosti. Nejasne situacije su možda dovele do današnjih problema.",
+          "reversed": "Invertirani mesec, prošli nesporazumi, prevareni ili ignorišući nečiju intuiciju možda su se sredili u nečijem podsvesti.",
+          "keywords": [
+            "neizvesnost",
+            "strah",
+            "iluzija",
+            "Nemojte biti prevareni",
+            "podsvestan"
+          ],
+          "context": "Prošli strahovi i iluzije mogu biti u korenu današnjih problema."
+        },
+        "position4": {
+          "upright": "Mesec pokazuje da nečiji potencijal leži u razvoju nečije intuicije, suočavanje sa nesigurnostima i prevazilaženjem iluzija.",
+          "reversed": "Preokrećeni mesec može imati strahove, iluzije i nesigurnosti koji ometaju njegov potencijal.",
+          "keywords": [
+            "intuicija",
+            "neizvesnost",
+            "strah",
+            "iluzija",
+            "potencijal"
+          ],
+          "context": "Vaš najbolji potencijal je da ojačate svoju intuiciju i prevaziđete svoje strahove."
+        },
+        "position5": {
+          "upright": "Mesec, možda ste iskusni nesigurnost, strahove ili pogrešne situacije u nedavnoj prošlosti.",
+          "reversed": "Obrnuti mesec, možda ste se suočili sa nesporazumima, obmanom ili iluzijama u nedavnoj prošlosti.",
+          "keywords": [
+            "neizvesnost",
+            "strah",
+            "iluzija",
+            "intuicija",
+            "zbrka"
+          ],
+          "context": "Vaše nedavne prošlosti mogu oblikovati nesigurnosti i iluzije."
+        },
+        "position6": {
+          "upright": "Moon, možete naići na neizvesnost, iluzije ili skrivene strahove u bliskoj budućnosti.",
+          "reversed": "Obrnuti mesec, možete iskusiti otkrivanje tajne, sticanje jasnoće ili se osloboditi iluzija u bliskoj budućnosti.",
+          "keywords": [
+            "neizvesnost",
+            "iluzija",
+            "intuicija",
+            "strah",
+            "skriven"
+          ],
+          "context": "Vaša bliža budućnost će biti određena neizvesnošću ili procesima davanja jasnoće."
+        },
+        "position7": {
+          "upright": "Mesec, možda ćete se sada suočiti sa nesigurnostima, iluzijama ili intuitivnim strahovima.",
+          "reversed": "Invertirani mesec može postojati proces otkrivanja tajne, sticanje jasnoće ili se osloboditi iluzija.",
+          "keywords": [
+            "neizvesnost",
+            "iluzija",
+            "intuicija",
+            "strah",
+            "skriven"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je neizvesnošću ili jasnoćom."
+        },
+        "position8": {
+          "upright": "Mesec vam može dodirivati vaš život sa spoljnim uticajima, neizvesnošću, iluzijama ili intuitivnim strahovima.",
+          "reversed": "Obrnuti mesec, spoljni uticaji mogu uticati na Otkrivenje tajne, sticanje jasnoće ili odmotavajući obmane.",
+          "keywords": [
+            "neizvesnost",
+            "iluzija",
+            "strah",
+            "intuicija",
+            "tajna"
+          ],
+          "context": "Spoljni uticaji utiču na vas putem neizvesnosti ili jasnoće."
+        },
+        "position9": {
+          "upright": "Mesec, možda ćete se brinuti zbog nesigurnosti, obmane ili suočavanja sa strahovima.",
+          "reversed": "Obrnuti mesec može stvoriti anksioznost u vezi sa tajnama koje su otkrivene, zablude ili unutrašnje strahove rastu.",
+          "keywords": [
+            "neizvesnost",
+            "strah",
+            "iluzija",
+            "intuicija",
+            "anksioznost"
+          ],
+          "context": "Fokusira se na strahove, nesigurnost i iluzije."
+        }
+      },
+      "thesun": {
+        "position1": {
+          "upright": "Sunce može biti u srcu problema, potraga za uspehom, srećom ili potrebom za vidljivošću.",
+          "reversed": "Obrnuti sunce, pesimizam, nedostatak samopouzdanja ili ometani uspeh može biti izvor problema.",
+          "keywords": [
+            "uspeh",
+            "poverenje",
+            "svetao",
+            "nadati se",
+            "pitanje"
+          ],
+          "context": "U srcu problema je želja za uspehom i vidljivošću."
+        },
+        "position10": {
+          "upright": "Sunce, možete postići uspeh, sreću i prosvetljenje kao rezultat događaja.",
+          "reversed": "Obrnuti sunce može rezultirati privremenim pesimizmom, gubitkom samopouzdanja ili smanjene vidljivosti kao rezultat događaja.",
+          "keywords": [
+            "uspeh",
+            "sreća",
+            "prosvetljenje",
+            "poverenje",
+            "pobeda"
+          ],
+          "context": "Rezultat može biti blistav sreća ili privremene senke."
+        },
+        "position2": {
+          "upright": "Sunce pokazuje da prepreka može biti preterano optimizam, ignorisanje činjenica ili prekomernih očekivanja. Biti nerealno čini rešenje teško.",
+          "reversed": "Obrnuti sunce može biti prepreka zbog nedostatka samopouzdanja, uspješna uspeha ili pesimizma.",
+          "keywords": [
+            "optimizam",
+            "uspeh",
+            "poverenje",
+            "realizam",
+            "prepreka"
+          ],
+          "context": "Prekidanja se pojavljuje prepreka od prekomernih očekivanja ili nedostatka samopouzdanja."
+        },
+        "position3": {
+          "upright": "Sunce može podsvesno ukazati na prošli nedostatak sreće, uspeha ili samopouzdanje. Gubitak svetlih vremena možda vas utiče u vašu trenutnu situaciju.",
+          "reversed": "Obrnuti sunce, pesimizam, ometani uspeh ili gubitak samopouzdanja mogu se rešiti u podsvesti.",
+          "keywords": [
+            "uspeh",
+            "poverenje",
+            "nadati se",
+            "pesimizam",
+            "podsvestan"
+          ],
+          "context": "Osjećaj poverenja i uspeha izgubljen u prošlosti može se odraziti u današnjim problemima."
+        },
+        "position4": {
+          "upright": "Sunce vam govori da je vaš potencijal da vam uljepša život sa srećom, uspehom i prosvetljenjem.",
+          "reversed": "Obrnuti sunce može biti pesimizam, strah od neuspeha ili nedostatak samopouzdanja koji ometa nečiji potencijal.",
+          "keywords": [
+            "sreća",
+            "uspeh",
+            "prosvetljenje",
+            "poverenje",
+            "potencijal"
+          ],
+          "context": "Vaš najbolji potencijal je da ispunite svoj život radošću i svetlošću."
+        },
+        "position5": {
+          "upright": "Sunce, možda ste iskusili energiju sreće, uspeha i prosvetljenja u nedavnoj prošlosti.",
+          "reversed": "Obrnuti sunce, možda ste iskusili pesimizam, frustraciju uspehom ili nedostatkom samopouzdanja u nedavnoj prošlosti.",
+          "keywords": [
+            "sreća",
+            "uspeh",
+            "poverenje",
+            "prosvetljenje",
+            "radost"
+          ],
+          "context": "Vaša nedavna prošlost je možda obeležila sreća ili pesimizam."
+        },
+        "position6": {
+          "upright": "Sunce, sreća, uspeh i unutrašnji prosvetljenje čekaće vas u bliskoj budućnosti.",
+          "reversed": "Obrnuti sunce: Možda postoji pesimizam, nedostatak samopouzdanja ili inhibicije uspeha u bliskoj budućnosti.",
+          "keywords": [
+            "sreća",
+            "uspeh",
+            "poverenje",
+            "prosvetljenje",
+            "radost"
+          ],
+          "context": "Vaša bliža budućnost će biti oblikovana srećom ili pesimizmom."
+        },
+        "position7": {
+          "upright": "Sunce, energija sreće, uspeha i unutrašnje prosvetljenje vas trenutno podržava.",
+          "reversed": "Obrnuti sunce, trenutno može biti pesimizam, nedostatak samopouzdanja ili kašnjenja u dostignućima.",
+          "keywords": [
+            "sreća",
+            "uspeh",
+            "prosvetljenje",
+            "poverenje",
+            "radost"
+          ],
+          "context": "Vaša trenutna situacija je oblikovana prosvetljenjem ili pesimizmom."
+        },
+        "position8": {
+          "upright": "Sunce i spoljni uticaji mogu vam doneti sreću, uspeh i energiju prosvetljenja.",
+          "reversed": "Obrnuti sunce, spoljni uticaji mogu vas izazvati nedostatkom samopouzdanja, pesimizma ili kašnjenja u uspehu.",
+          "keywords": [
+            "sreća",
+            "uspeh",
+            "prosvetljenje",
+            "poverenje",
+            "radost"
+          ],
+          "context": "Spoljni uticaji utiču na vas kroz sreću ili pesimizam."
+        },
+        "position9": {
+          "upright": "Sunce može stvoriti anksioznost zbog gubitka sreće, neuspeha ili straha od vidljivosti.",
+          "reversed": "Obrnuti sunce može ukazivati na nedostatak samopouzdanja, strah da je zasjenjen ili imati nečija dostignuća olakšana.",
+          "keywords": [
+            "sreća",
+            "uspeh",
+            "poverenje",
+            "prosvetljenje",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi se fokusiraju na gubitak uspeha ili nisu vidljivi."
+        }
+      },
+      "judgement": {
+        "position1": {
+          "upright": "U srcu problema može biti potreba da se suoči sa prošlošću, ponovnom rođenjem ili velikom odlukom, sud je čuo.",
+          "reversed": "Reversed Sud, izbegavajući prošlost, ne preuzimanje odgovornosti ili samoobmana može biti izvor problema.",
+          "keywords": [
+            "ponovno rođenje",
+            "odluka",
+            "konfrontacija",
+            "svest",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba da se suoči sa prošlošću i ponovo se prenosite."
+        },
+        "position10": {
+          "upright": "Ishod događaja može biti ponovno rođenje, oproštenje i oslobađanje iz prošlosti, sud je čuo.",
+          "reversed": "Obrnuti sud može rezultirati propuštenim mogućnostima, utajama odgovornosti ili nemogućnosti da oprosti kao rezultat događaja.",
+          "keywords": [
+            "ponovno rođenje",
+            "odluka",
+            "oslobođenje",
+            "prošlost",
+            "računanje"
+          ],
+          "context": "Rezultat može biti ponovno rođenje ili propuštene mogućnosti."
+        },
+        "position2": {
+          "upright": "Prepreka se možda neće moći suočiti sa prošlošću, izbegavajući odgovornosti ili imati poteškoće u donošenju odluka, rekao je sud. Osim ako stare rane nisu zatvorene, rešenje će se odložiti.",
+          "reversed": "Invertirani sud, izbegavajući samoevaluaciju, samoobmanu ili negiranje prošlosti može da ometa.",
+          "keywords": [
+            "odluka",
+            "prošlost",
+            "odgovornost",
+            "konfrontacija",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje da se ne suočava sa prošlošću i izbegavanje odgovornosti."
+        },
+        "position3": {
+          "upright": "Sud se može podsvesno suočiti sa prethodnim odlukama, odloženim odgovornostima ili teretom prošlosti.",
+          "reversed": "Obrnuti sud je možda uselio u podsvesno, gde se može dogoditi samoobmana, uskraćivanje prošlosti ili utaja odgovornosti.",
+          "keywords": [
+            "odluka",
+            "prošlost",
+            "odgovornost",
+            "konfrontacija",
+            "podsvestan"
+          ],
+          "context": "Odluke i odgovornosti koje nisu uzete u prošlosti mogu biti u korenu današnjih problema."
+        },
+        "position4": {
+          "upright": "Sud pokazuje da nečiji potencijal leži u suočavanju sa prošlošću, stičeći novu svest i prenositi se.",
+          "reversed": "Reverdirani sud može biti jedan od poricanja, žaljenja i izbegavanja odgovornosti, što ograničava nečiji potencijal.",
+          "keywords": [
+            "svest"
+          ]
+        }
+      }
+    }
+  }
+}

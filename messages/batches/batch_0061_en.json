@@ -1,0 +1,782 @@
+{
+  "relationship-analysis": {
+    "meanings": {
+      "temperance": {
+        "position5": {
+          "keywords": {
+            "0": "balance",
+            "1": "measure",
+            "2": "synthesis",
+            "3": "Patience",
+            "4": "It's a cure."
+          },
+          "context": "Your road map is to match your speed to your heart, and the middle road will solve the conflict."
+        },
+        "position6": {
+          "upright": "Your partner expects you to have a balance, patience, and a moderate rhythm, and he wants you to act in harmony.",
+          "reversed": "Your partner doesn't want you bouncing off the edges, he's looking for a consistent, soft beat.",
+          "keywords": {
+            "0": "balance",
+            "1": "Patience",
+            "2": "compatibility",
+            "3": "measure",
+            "4": "It's a cure."
+          },
+          "context": "Your partner is waiting for a patient and compatible rhythm."
+        },
+        "position7": {
+          "upright": "In the future of communication, harmony, measurement and patience emerge, and the middle road will create a safe space.",
+          "reversed": "Extremities or impatience may upset the balance in the future.",
+          "keywords": {
+            "0": "balance",
+            "1": "compatibility",
+            "2": "Patience",
+            "3": "middle path"
+          },
+          "context": "The future of communication will be based on measurement and harmony, but the ends can be dangerous."
+        }
+      },
+      "thedevil": {
+        "position1": {
+          "upright": "Satan says that the relationship is tested in the present situation by the energy of addiction, jealousy, and control. The chains can be invisible. Tip: Honor the boundaries.",
+          "reversed": "The Reverse Devil says that his desire to break the chains has come forward in the present situation, but the shadows are still strong. The sign is: Let go back.",
+          "keywords": {
+            "0": "addiction",
+            "1": "obsession",
+            "2": "Jealousy",
+            "3": "control",
+            "4": "freedom"
+          },
+          "context": "In the current case, control and addiction themes emerge in the bond, and the effort to be free is important, and the clear boundaries will heal."
+        },
+        "position2": {
+          "upright": "In your senses, Satan shows that addiction, jealousy, or control energy are dominant.",
+          "reversed": "Reverse Satan, the desire to break the chains comes out in your senses, but the shadows are still strong. The sign is: Let go of the cycle.",
+          "keywords": {
+            "0": "addiction",
+            "1": "obsession",
+            "2": "Jealousy",
+            "3": "control",
+            "4": "freedom"
+          },
+          "context": "Right now, you have control and addiction themes in your bond, and freedom will ease your heart."
+        },
+        "position3": {
+          "upright": "Satan says your expectation is to stay away from freedom and toxic bonds, looking for light in your vineyard... freeing from addiction.",
+          "reversed": "Reverse Satan shows that your expectation is to get rid of the chains. Freedom from the restrictions is a priority for you.",
+          "keywords": {
+            "0": "freedom",
+            "1": "independence",
+            "2": "limit",
+            "3": "light",
+            "4": "value"
+          },
+          "context": "Your expectation is a healthy freedom in the bond, not a chain, you want wings."
+        },
+        "position4": {
+          "upright": "Demon, name your trigger and limit your free will, your greatest drug... keep a trigger log.",
+          "reversed": "Dissolve the chain from the ring. A small no is a great freedom.",
+          "keywords": {
+            "0": "limit",
+            "1": "freedom",
+            "2": "shadow",
+            "3": "trigger",
+            "4": "awareness"
+          },
+          "context": "Your advice is to withdraw from control games and establish a transparent agreement, and light melts the shadow."
+        },
+        "position5": {
+          "upright": "The devil says he's gone through his path to clarify his limits, unchain him, remember his free will.",
+          "reversed": "The Reverse Devil counsels you to withdraw from addiction and games, a small no, a great freedom.",
+          "keywords": {
+            "0": "limit",
+            "1": "freedom",
+            "2": "shadow",
+            "3": "trigger",
+            "4": "awareness"
+          },
+          "context": "Your road map is to withdraw from the control games, and transparency will melt the shadows."
+        },
+        "position6": {
+          "upright": "Your partner expects you to respect open boundaries and free will, looking for a space away from control games.",
+          "reversed": "Your partner wants you to untie the chains, even a small no is freedom for him.",
+          "keywords": {
+            "0": "limit",
+            "1": "freedom",
+            "2": "control",
+            "3": "will",
+            "4": "respect"
+          },
+          "context": "Your partner is waiting for a bond of freedom and respect."
+        },
+        "position7": {
+          "upright": "In the future of communication, there's a strong passion, commitment, and sometimes a restrictive attraction, and also a risk of addiction.",
+          "reversed": "In the future, the desire to break the chains will become stronger, and when the addiction breaks, the bond will be free.",
+          "keywords": {
+            "0": "passion",
+            "1": "commitment",
+            "2": "addiction",
+            "3": "Freedom"
+          },
+          "context": "The future of communication will be weaved with intense passion, but the need for freedom will grow."
+        }
+      },
+      "thetower": {
+        "position1": {
+          "upright": "The tower says the relationship has changed in the current case of a sudden concussion or the emergence of the truth. The basics are being tested. The clue is to fix the faller, build the new one.",
+          "reversed": "The Reverse Tower shows that postponing crises and superficial solutions wear off the bond in the present situation. The symptoms are small fractures, the big earthquake sign.",
+          "keywords": {
+            "0": "crisis",
+            "1": "destruction",
+            "2": "real",
+            "3": "rebuild",
+            "4": "basic"
+          },
+          "context": "In the present situation, crisis energy is felt, and if the foundations are weak, destruction can happen, and acceptance of the truth is essential to rebuilding."
+        },
+        "position2": {
+          "upright": "The tower shows that there are sudden sensations and traumatic emotions in your feelings, and the old beliefs are falling apart.",
+          "reversed": "The Reverse Tower says delayed crises make your feelings tense.",
+          "keywords": {
+            "0": "crisis",
+            "1": "destruction",
+            "2": "real",
+            "3": "rebuild",
+            "4": "basic"
+          },
+          "context": "Your heart is now experiencing a awakening, and the collapse of the structure will open up to new emotions."
+        },
+        "position3": {
+          "upright": "The tower says that your expectations are a solid-based bond, that you want to avoid cracks... the truth, the net foundation.",
+          "reversed": "The Reverse Tower shows that your expectations are to stay away from devastating crises and delayed explosions. You're not looking for a concussion, you're looking for repairs.",
+          "keywords": {
+            "0": "basic",
+            "1": "real",
+            "2": "stability",
+            "3": "repair",
+            "4": "Trust"
+          },
+          "context": "Your expectations are a solid and honest foundation, looking for trust in the place of vulnerability."
+        },
+        "position4": {
+          "upright": "The tower, pull out the rotten stone and honor the truth. The destruction is cleansing. What is the truth now? The question is what?",
+          "reversed": "Reverse Tower, empty the delayed explosion consciously. Reboot the tier.",
+          "keywords": {
+            "0": "Truth",
+            "1": "destruction",
+            "2": "Purge",
+            "3": "basic",
+            "4": "rebuild"
+          },
+          "context": "Your advice is to see the tremor, not the enemy, but the opportunity, and then set up a simple, solid ground."
+        },
+        "position5": {
+          "upright": "The tower says its way is to pull out rotten stones, honor the truth, rebuild will give you strength.",
+          "reversed": "The Reverse Tower advises you to consciously release delayed explosions, dismantling the tier and rebuilding the bond.",
+          "keywords": {
+            "0": "Truth",
+            "1": "destruction",
+            "2": "Purge",
+            "3": "basic",
+            "4": "rebuild"
+          },
+          "context": "Your road map is an opportunity to see the tremor, to rebuild it will bring permanence."
+        },
+        "position6": {
+          "upright": "Your partner expects you to honor the truth and destroy the rotten structures if necessary, and he wants you to be open to reconstruction.",
+          "reversed": "Your partner doesn't want you to hide the crises, so clearly the conscious director is waiting for the destruction.",
+          "keywords": {
+            "0": "Truth",
+            "1": "destruction",
+            "2": "rebuild",
+            "3": "basic",
+            "4": "Purge"
+          },
+          "context": "Your partner is waiting for an opening for honesty and reconstruction."
+        },
+        "position7": {
+          "upright": "There are sudden awarenesss and strong changes in the future of communication, old foundations can be broken down and new spaces can be opened.",
+          "reversed": "Postponed confrontations can turn into explosions, a delayed crisis that can cause even greater shocks.",
+          "keywords": {
+            "0": "crisis",
+            "1": "destruction",
+            "2": "awareness",
+            "3": "rebuild"
+          },
+          "context": "The future of communication will be reshaped by traumatic changes, and the ground will be solid after the destruction."
+        }
+      },
+      "thestar": {
+        "position1": {
+          "upright": "The star says that in the current situation of the relationship, there is hope and healing light. The healing process may have begun. Tip: Allow patience to regenerate.",
+          "reversed": "The Reverse Star shows that the loss of hopelessness and motivation creates a shadow in the present situation. The symptom is the language of giving up.",
+          "keywords": {
+            "0": "hope",
+            "1": "It's a cure.",
+            "2": "Regeneration",
+            "3": "simplicity",
+            "4": "Patience"
+          },
+          "context": "In the present situation, the healing light is on, but hope of impatientness can cloud, and small steps will restore your bond."
+        },
+        "position2": {
+          "upright": "The star shows that there is hope and healing light in your senses, and your heart is shining again.",
+          "reversed": "The Reverse Star says that despair and insecurity force your feelings.",
+          "keywords": {
+            "0": "hope",
+            "1": "It's a cure.",
+            "2": "Regeneration",
+            "3": "simplicity",
+            "4": "Patience"
+          },
+          "context": "The light is on in your senses right now, and to move forward with patience will heal your heart."
+        },
+        "position3": {
+          "upright": "The star says your expectations are hope and healing, your heart wants healing and glowing... hope, optimism.",
+          "reversed": "The Reverse Star says your expectations are to avoid the loss of hopelessness and motivation. You want to maintain hope.",
+          "keywords": {
+            "0": "hope",
+            "1": "It's a cure.",
+            "2": "Regeneration",
+            "3": "Recovery",
+            "4": "light"
+          },
+          "context": "Your expectation is that the bond goes on a path of hope, and the healing energy is precious to you."
+        },
+        "position4": {
+          "upright": "Star, feed hope and be simplified.",
+          "reversed": "Reverse Star, solve exhaustion with little joy. Call for light with ritual: one healing moment a day.",
+          "keywords": {
+            "0": "hope",
+            "1": "It's a cure.",
+            "2": "simplicity",
+            "3": "Inspired",
+            "4": "Regeneration"
+          },
+          "context": "Your advice is to increase what's less but good, and hope is strengthened by gentle repetitions."
+        },
+        "position5": {
+          "upright": "The star says his path is opened with hope and simplicity, and a transparent intent will give his heart comfort.",
+          "reversed": "The Reverse Star reminds you that you're shaded by exhaustion, and the little joys will call back the light.",
+          "keywords": {
+            "0": "hope",
+            "1": "It's a cure.",
+            "2": "simplicity",
+            "3": "Inspired",
+            "4": "Regeneration"
+          },
+          "context": "Your road map is to grow small but genuine goodness, and hope will be strengthened by gentle repetitions."
+        },
+        "position6": {
+          "upright": "Your partner expects you to give him hope, inspiration, and translucent intent, and he wants you to instill faith and trust in him.",
+          "reversed": "Your partner expects you to step away from your pessimism, share your light with him in small joys.",
+          "keywords": {
+            "0": "hope",
+            "1": "Inspired",
+            "2": "transparency",
+            "3": "Trust",
+            "4": "Regeneration"
+          },
+          "context": "Your partner expects hope and translucent inspiration."
+        },
+        "position7": {
+          "upright": "There's hope and healing and renewal in the future of communication, and shared dreams will inspire the bond.",
+          "reversed": "Desperation or lack of trust can cast a shadow in the future, loss of faith lowers energy.",
+          "keywords": {
+            "0": "hope",
+            "1": "It's a cure.",
+            "2": "Regeneration",
+            "3": "Inspired"
+          },
+          "context": "The future of communication will be strengthened by hope and healing, but the risk of despair must not be forgotten."
+        }
+      },
+      "themoon": {
+        "position1": {
+          "upright": "The moon says that in the present situation, the relationship is shaped by uncertainty, fear, and illusions. The fog can be intense. Tip: test the assumptions.",
+          "reversed": "The Reverse Moon shows that the fog is starting to break, but insecurity is still leaving a mark.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "fear",
+            "2": "illusion",
+            "3": "projection",
+            "4": "Trust"
+          },
+          "context": "There's a lack of clarity in the current situation, and delusions are affecting your bond, and open communication will lift the fog."
+        },
+        "position2": {
+          "upright": "The moon shows that uncertainty, fear, and illusions are effective in your senses, and the fog surrounds your heart.",
+          "reversed": "The Reverse Moon says that the fog is starting to break, but there are traces of insecurities.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "fear",
+            "2": "illusion",
+            "3": "projection",
+            "4": "Trust"
+          },
+          "context": "Your emotions are looking for clarity, open communication will lift the fog."
+        },
+        "position3": {
+          "upright": "The moon says your expectations are clarity and trust, you want to get out of misty emotions, clarity, transparency.",
+          "reversed": "The Reverse Moon shows that your expectation is to be free of illusions and darkness. Reality is a cure for you.",
+          "keywords": {
+            "0": "clarity",
+            "1": "Trust",
+            "2": "real",
+            "3": "openness",
+            "4": "light"
+          },
+          "context": "You're not looking for fog, you're looking for a safe path to the moonlight."
+        },
+        "position4": {
+          "upright": "The moon, instead of fear, choose intuition. The fog scatters with slow questions. What is my proof? control.",
+          "reversed": "Reverse Moon, confirm conjecture, reduce uncertainty, increase clarity confidence.",
+          "keywords": {
+            "0": "intuition",
+            "1": "uncertainty",
+            "2": "fear",
+            "3": "enlightenment",
+            "4": "clarity"
+          },
+          "context": "Your advice is not to jump to conclusions in the dark, gentle questions bring the right light."
+        },
+        "position5": {
+          "upright": "The moon says its path has gone by intuitively, and the fog will scatter with patient questions.",
+          "reversed": "The Reverse Moon reminds me that the assumptions have gone dark, and the clear questions will increase confidence.",
+          "keywords": {
+            "0": "intuition",
+            "1": "uncertainty",
+            "2": "fear",
+            "3": "enlightenment",
+            "4": "clarity"
+          },
+          "context": "Your road map is not to jump to conclusions."
+        },
+        "position6": {
+          "upright": "Your partner expects you to listen to your intuition, even in uncertainty, to reassure him instead of worrying.",
+          "reversed": "Your partner wants to hear clear questions instead of assumptions.",
+          "keywords": {
+            "0": "intuition",
+            "1": "uncertainty",
+            "2": "fear",
+            "3": "enlightenment",
+            "4": "Trust"
+          },
+          "context": "Your partner is intuitive, but he's also waiting for clarity."
+        },
+        "position7": {
+          "upright": "In the future of communication, uncertainty, intuition, and dreams will emerge, and the truth will emerge after the fog.",
+          "reversed": "Delusions or fears may cloud the relationship in the future, and false assumptions create insecurity.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "intuition",
+            "2": "fear",
+            "3": "Reflection"
+          },
+          "context": "The future of communication will be intuitively understood, and when the fog breaks, clarity will come."
+        }
+      },
+      "thesun": {
+        "position1": {
+          "upright": "The sun says that in the present situation, the relationship is lit with warmth, openness, and joy. Joy strengthens the bond. Hint: Share authentic joy.",
+          "reversed": "The Reverse Sun shows that artificial happiness and superficial positivity create a shadow in the present situation.",
+          "keywords": {
+            "0": "joy",
+            "1": "openness",
+            "2": "Authenticity",
+            "3": "hope",
+            "4": "share"
+          },
+          "context": "In the current case, there is light and warmth in the bond, but if the sincerity is lacking, it can be superficial, and true joy will create confidence."
+        },
+        "position2": {
+          "upright": "The sun shows that you have warmth, openness and joy in your senses, and your heart is in the light.",
+          "reversed": "The Reverse Sun says that artificial happiness and superficial positivity cloud your senses.",
+          "keywords": {
+            "0": "joy",
+            "1": "openness",
+            "2": "Authenticity",
+            "3": "hope",
+            "4": "share"
+          },
+          "context": "There's light in your senses right now, and sharing true joy will give you confidence."
+        },
+        "position3": {
+          "upright": "The sun says your expectations are joy, clarity and sharing, you want mutual happiness... authentic joy.",
+          "reversed": "The Reverse Sun shows that your expectations are to avoid artificial happiness and superficial harmony. True joy is precious to you.",
+          "keywords": {
+            "0": "joy",
+            "1": "share",
+            "2": "Authenticity",
+            "3": "light",
+            "4": "Happiness"
+          },
+          "context": "You're looking for happiness from the heart, not the surface."
+        },
+        "position4": {
+          "upright": "The sun, share in its authentic joy, the warmth of sight strengthens the intimacy, and celebrate together the small victory.",
+          "reversed": "Let go of the mask of the reverse sun, as if it were good. The true joy is born from acceptance.",
+          "keywords": {
+            "0": "joy",
+            "1": "Authenticity",
+            "2": "clarity",
+            "3": "share",
+            "4": "visibility"
+          },
+          "context": "Your advice is to grow what's good, but not to decorate, and sincerity is the sun of trust."
+        },
+        "position5": {
+          "upright": "The sun says that its way is through authentic joy, and it will grow the bond of inner happiness.",
+          "reversed": "The Inverted Sun tells you that looking good drives you away. The true joy will rise from truth.",
+          "keywords": {
+            "0": "joy",
+            "1": "Authenticity",
+            "2": "clarity",
+            "3": "share",
+            "4": "visibility"
+          },
+          "context": "Your road map is to expand intimacy, and true happiness will warm the confidence."
+        },
+        "position6": {
+          "upright": "Your partner expects authentic joy and visibleness from you, and the sincereness of your heart brings him closer.",
+          "reversed": "Your partner doesn't want false optimism, he wants to see true joy, sincerity.",
+          "keywords": {
+            "0": "joy",
+            "1": "Authenticity",
+            "2": "share",
+            "3": "visibility",
+            "4": "sincerity"
+          },
+          "context": "Your partner expects inner joy and visibleness."
+        },
+        "position7": {
+          "upright": "In the future of communication, there is joy, warmth, and open happiness, and authentic sharing will bring life to the bond.",
+          "reversed": "False joy or superficial harmony may undermine confidence in the future, and breaking from reality is a risk.",
+          "keywords": {
+            "0": "joy",
+            "1": "Happiness",
+            "2": "Authenticity",
+            "3": "light"
+          },
+          "context": "The future of communication will be strengthened with joy and clarity, and it is imperative that we remain in reality."
+        }
+      },
+      "judgement": {
+        "position1": {
+          "upright": "The court says that the relationship is in the process of confrontation and reevaluation in the current situation. The old notebooks are opening. Tip: Learn forgiveness.",
+          "reversed": "The reverse court indicates that the past does not close, and the lack of self-responsibility forces the bond in the present situation.",
+          "keywords": {
+            "0": "Don't face it.",
+            "1": "decision",
+            "2": "Regeneration",
+            "3": "Forgiveness",
+            "4": "history"
+          },
+          "context": "In the present situation, there is a reckoning with the past, and this confrontation can set the stage for regeneration, and forgiveness will heal the bond."
+        },
+        "position2": {
+          "upright": "The court has the energy to confront and reassess your feelings, and you're learning from the past.",
+          "reversed": "The reverse court says that not being able to close the past has clouded your feelings.",
+          "keywords": {
+            "0": "Don't face it.",
+            "1": "decision",
+            "2": "Regeneration",
+            "3": "Forgiveness",
+            "4": "history"
+          },
+          "context": "Right now, your feelings are facing the past, and forgiveness will ease your heart."
+        },
+        "position3": {
+          "upright": "The court says your expectations are rebirth and honest confrontation, you want to deal with the past and step into the new... regeneration, awakening.",
+          "reversed": "The Reverse Court shows that your expectations are not to dwell on the past. You want to look ahead.",
+          "keywords": {
+            "0": "Awakening",
+            "1": "Rebirth",
+            "2": "reckoning",
+            "3": "clarity",
+            "4": "Progress"
+          },
+          "context": "You're expected to be born again after an honest confrontation in the bond, leaving the weight of the past will set you free."
+        },
+        "position4": {
+          "upright": "What have I learned from this?",
+          "reversed": "Reverse Court, drop the extreme self-judgment. Responsibility + mercy = renewal.",
+          "keywords": {
+            "0": "Don't face it.",
+            "1": "Forgiveness",
+            "2": "Regeneration",
+            "3": "call",
+            "4": "Freedom"
+          },
+          "context": "Your advice is to close the files and integrate the learned, the new page requires pure intent."
+        },
+        "position5": {
+          "upright": "The court says he's faced with the past and accepted it with compassion, and forgiveness will open a new door.",
+          "reversed": "The reverse court says that extreme self-judgment has narrowed its path, and compassion and responsibility together will bring regeneration.",
+          "keywords": {
+            "0": "Don't face it.",
+            "1": "Forgiveness",
+            "2": "Regeneration",
+            "3": "call",
+            "4": "Freedom"
+          },
+          "context": "Your road map is to close the files and move the learned, and the new page will require pure intent."
+        },
+        "position6": {
+          "upright": "Your partner expects you to face the past and see your studies and ask for forgiveness and an answer to the call.",
+          "reversed": "Your partner doesn't want extreme self-judgment, and the balance of compassion and responsibility is important to him.",
+          "keywords": {
+            "0": "Don't face it.",
+            "1": "Forgiveness",
+            "2": "learning",
+            "3": "Regeneration",
+            "4": "call"
+          },
+          "context": "Your partner is waiting for an opening for forgiveness and regeneration."
+        },
+        "position7": {
+          "upright": "There's a moment in the future of communication where there's a face to the past and a new moment of decision, and with forgiveness, a new chapter can be opened.",
+          "reversed": "Excessive judgment or obsession with the past can make progress difficult in the future.",
+          "keywords": {
+            "0": "Don't face it.",
+            "1": "decision",
+            "2": "Regeneration",
+            "3": "Forgiveness"
+          },
+          "context": "The future of communication will be shaped by decision and forgiveness, and it will be time to turn over a new leaf."
+        }
+      },
+      "theworld": {
+        "position1": {
+          "upright": "The world says the relationship is full of energy to complete in the current situation and to step on the new threshold. The cycle is closing. Tip: Celebrate success.",
+          "reversed": "The Reverse World shows that incomplete and incomplete processes are pushing the bond in the present situation. The symptom is delayed decisions.",
+          "keywords": {
+            "0": "complete",
+            "1": "cycle",
+            "2": "integrity",
+            "3": "threshold",
+            "4": "new beginning"
+          },
+          "context": "In the current case, a cycle is being completed, and the missing ones can cloud the peace, and the completion bond will move forward."
+        },
+        "position2": {
+          "upright": "The world shows your desire for completeness and integrity in your senses, ready for a new threshold.",
+          "reversed": "The Reverse World shows that the sense of unfinishedness is clouding your heart.",
+          "keywords": {
+            "0": "completion",
+            "1": "integrity",
+            "2": "cycle",
+            "3": "threshold",
+            "4": "success"
+          },
+          "context": "Right now, your heart wants integrity, honoring the cycle will satisfy your feelings."
+        },
+        "position3": {
+          "upright": "The world says your expectations are completeness and integrity, and you want to complete the cycle and find satisfaction in your bond... integrity, harmony.",
+          "reversed": "The Reverse World shows that your expectations are to be protected from a sense of unfinishedness. You are looking for completion.",
+          "keywords": {
+            "0": "full",
+            "1": "completion",
+            "2": "compatibility",
+            "3": "satisfaction",
+            "4": "balance"
+          },
+          "context": "You're not looking for a loose end, you're looking for a complete story."
+        },
+        "position4": {
+          "upright": "Earth, close the cycle and celebrate, integrity invites the new phase, make the complete visible.",
+          "reversed": "The Reverse World, connect the missing end, reduces incomplete energy. Integration is peace.",
+          "keywords": {
+            "0": "completion",
+            "1": "integrity",
+            "2": "Integration",
+            "3": "celebration",
+            "4": "threshold"
+          },
+          "context": "Your advice is to finish what's going on and honor the effort."
+        },
+        "position5": {
+          "upright": "The world says its path is opened with completion and celebration, close the cycle, honor its labor.",
+          "reversed": "The Reverse World says you're tired of missing ends, and when you've finished the loose ends, you'll find peace.",
+          "keywords": {
+            "0": "completion",
+            "1": "integrity",
+            "2": "Integration",
+            "3": "celebration",
+            "4": "threshold"
+          },
+          "context": "Your road map is to finish what's going on and celebrate, and integrity will open new doors."
+        },
+        "position6": {
+          "upright": "Your partner expects you to complete the cycles and move forward with integrity, and he wants to take it to a new level.",
+          "reversed": "Your partner doesn't want to see any loose ends, so it's peace for him to tie up what's missing and build integrity.",
+          "keywords": {
+            "0": "completion",
+            "1": "integrity",
+            "2": "celebration",
+            "3": "new phase",
+            "4": "Integration"
+          },
+          "context": "Your partner is awaiting completion and transition to the next phase."
+        },
+        "position7": {
+          "upright": "There's completion, integrity and celebration in the future of communication.",
+          "reversed": "The missing steps or incomplete feelings can cause dissatisfaction in the future.",
+          "keywords": {
+            "0": "completion",
+            "1": "integrity",
+            "2": "celebration",
+            "3": "balance"
+          },
+          "context": "The future of communication will be crowned with completion and integrity, but the gaps must be closed."
+        }
+      },
+      "aceofcups": {
+        "position1": {
+          "upright": "The Ace of Hearts says that your relationship is now full of emotional beginnings and love.",
+          "reversed": "The Reverse Cup Ace shows whether emotions are suppressed or not expressed in the present situation. The symptom is closed hearts, silent love.",
+          "keywords": {
+            "0": "start",
+            "1": "love",
+            "2": "angle",
+            "3": "emotion",
+            "4": "purity"
+          },
+          "context": "In the present situation, new emotions are sprouting, staying open will expand the bond, closed hearts can create obstacles."
+        },
+        "position2": {
+          "upright": "The Ace of Hearts shows your heart's desire for pure love and refreshment, ready to be shared with you.",
+          "reversed": "The Reverse Cup Ace tells you whether to suppress your love or not to allow flow.",
+          "keywords": {
+            "0": "new beginning",
+            "1": "love",
+            "2": "Compassion",
+            "3": "opening",
+            "4": "emotional flow"
+          },
+          "context": "Right now, your heart is opening to new emotions, ready to renew the bond of pure love."
+        },
+        "position3": {
+          "upright": "The Ace of Hearts says your expectations are pure love and emotional beginnings, and your heart wants to open up to a new flow of compassion... open heart, new feelings.",
+          "reversed": "The Reverse Cup Ace shows that your expectations are to overcome emotional blockages and reopen your heart. You want to release closed feelings.",
+          "keywords": {
+            "0": "love",
+            "1": "start",
+            "2": "angle",
+            "3": "Compassion",
+            "4": "Regeneration"
+          },
+          "context": "You're expecting a refresher of your heart, and you're looking for a door that opens with compassion."
+        },
+        "position4": {
+          "upright": "The Ace of Hearts says gently open your heart and pour your heart out like water, and even a little gesture of compassion clears the lake, and put the emotion into a concrete sentence.",
+          "reversed": "The Reverse Cup Ace wants you to turn the clogged tap on with a soft heat. First you feel compassion, then you flow out.",
+          "keywords": {
+            "0": "opening",
+            "1": "Compassion",
+            "2": "expression",
+            "3": "flow",
+            "4": "softness"
+          },
+          "context": "Your advice is to make your vulnerability visible in a tiny split, safe sentences open a space in the heart, and when the flow starts, closeness grows."
+        },
+        "position5": {
+          "upright": "Your road map begins by opening your heart and pouring out your emotions freely, opening the door for pure love, a new bond, or a renewed relationship.",
+          "reversed": "Your road map can be clouded by suppressing your emotions, refusing to open itself, compressing your heart, closing your areas of compassion.",
+          "keywords": {
+            "0": "love",
+            "1": "start",
+            "2": "Feelings",
+            "3": "angle",
+            "4": "Compassion"
+          },
+          "context": "Open your heart, new feelings will light your way."
+        },
+        "position6": {
+          "upright": "Your partner expects you to open up your heart's pure flow and emotions with courage, to make your love visible to him, to renew the relationship.",
+          "reversed": "Your partner wants you not to suppress your feelings or hide your share of openness.",
+          "keywords": {
+            "0": "love",
+            "1": "start",
+            "2": "expression",
+            "3": "Compassion",
+            "4": "flow"
+          },
+          "context": "Your partner wants to hear the pure and open flow of your heart."
+        },
+        "position7": {
+          "upright": "In the future, your relationship will have an emotional beginning and a fresh flow of love, opening hearts will start a new cycle.",
+          "reversed": "Repression or inability to express feelings may block the bond in the future, and the longer the heart stays closed, the less satisfied it becomes.",
+          "keywords": {
+            "0": "start",
+            "1": "love",
+            "2": "flow",
+            "3": "angle"
+          },
+          "context": "The future of communication will be strengthened by an emotional opening, but if the hearts close, the distance will grow."
+        }
+      },
+      "twoofcups": {
+        "position1": {
+          "upright": "The Two of Hearts shows that the relationship is shaped in the present situation by the desire for harmony and unity. The bond is strengthened. Tip: Bless the exchange of love.",
+          "reversed": "The Reverse Cup Duo says the harmony is broken and the misunderstandings are pushing the bond in the present situation. Its symptom is that small disagreements are growing.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "partnership",
+            "2": "connection",
+            "3": "unity",
+            "4": "balancing"
+          },
+          "context": "In the present situation, the energy of love and partnership is dominant, but misunderstandings can damage harmony, open communication is essential."
+        },
+        "position2": {
+          "upright": "Two Cups shows that your feelings want reciprocity and harmony, and your heart moves towards an equal bond.",
+          "reversed": "The Inverse Two Cups tells you that incompatibility or misunderstandings force your emotions.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "reciprocity",
+            "2": "connection",
+            "3": "love",
+            "4": "Partnership"
+          },
+          "context": "Right now, your heart is looking for equality and harmony, which will deepen open-sharing intimacy."
+        },
+        "position3": {
+          "upright": "Two Cups says that your expectations are mutual love and equal bond, and you're looking for soul equality... mutual harmony, harmony.",
+          "reversed": "The Reverse Two Cup shows that your expectations are to get away from unstable bonds. Inequal relationships may have exhausted you.",
+          "keywords": {
+            "0": "Equality",
+            "1": "compatibility",
+            "2": "reciprocity",
+            "3": "love",
+            "4": "connection"
+          },
+          "context": "Your expectation is mutual value, your heart demands equal love."
+        },
+        "position4": {
+          "upright": "Two Cups tells the heart to build a bridge equal to the heart.",
+          "reversed": "The Inverse Two Cups print the expectation to even the scales. The net boundary strengthens the warm bond.",
+          "keywords": {
+            "0": "reciprocity",
+            "1": "compatibility",
+            "2": "ritual",
+            "3": "limit",
+            "4": "Trust"
+          },
+          "context": "Your advice is to make invisible agreements visible. The balance of equal gestures relaxes the heart of the bond. Small but consistent meetings are healing."
+        },
+        "position5": {
+          "upright": "Your road map should be built on compatible partnerships and mutual support.",
+          "reversed": "Your road map can be blocked by misunderstandings and unstable shopping, and open communication and boundaries bring healing.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "partnership",
+            "2": "balance",
+            "3": "love",
+            "4": "communication"
+          }
+        }
+      }
+    }
+  }
+}

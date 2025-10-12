@@ -1,0 +1,732 @@
+{
+  "marriage": {
+    "meanings": {
+      "tenofpentacles": {
+        "position10": {
+          "keywords": [
+            "stabilnost",
+            "porodica",
+            "baština",
+            "tradicija",
+            "dugoročan"
+          ],
+          "context": "Stalna struktura braka je na dnevnom redu."
+        },
+        "position2": {
+          "upright": "Ojačati svoje porodične i baštine. Negujte svoje korijene dok čekate.",
+          "reversed": "Finansijske probleme ili porodični problemi otežavaju proces. Postići harmoniju.",
+          "keywords": [
+            "porodica",
+            "baština",
+            "ukorijenjenost",
+            "sigurnost"
+          ],
+          "context": "Korisno je ojačati porodične veze dok čekaju."
+        },
+        "position3": {
+          "upright": "Teme porodičnog sistema, nasledstva i dugoročne bezbednosti dolaze na prednji deo. Institucionalni pogled donosi stabilnost.",
+          "reversed": "Sukobi Kin-Estate i zamagljena pravila ometaju harmoniju.",
+          "keywords": [
+            "porodica",
+            "baština",
+            "sistem",
+            "stabilnost"
+          ],
+          "context": "Transparentno podešavanje pravila pruža mir uma."
+        },
+        "position4": {
+          "upright": "Teme porodice, zaostavštine i dugoročne sigurnosti otežavaju pričvršćivanje. Namera uspostavljanja zajedničkog sistema i naloga je velika.",
+          "reversed": "Porodični pritisak, sporovi za imovinu ili sukob sistema mogu izazvati prilog. Bez jasnih pravila, trajno obećanje ostaje krhko.",
+          "keywords": [
+            "porodica",
+            "uverenje",
+            "sistem",
+            "dugoročan",
+            "narediti"
+          ],
+          "context": "Prilog je trajan kroz zajednički red i porodičnu integraciju."
+        },
+        "position5": {
+          "upright": "Slična vizija za dugoročno, porodično i sistemsko izgradnju. Vaša želja za stalnom strukturom je ista.",
+          "reversed": "Postavljanje vaše porodice / pravila bogatstva mogu sukobiti. Potrebna je postupak i jasnoća uloga.",
+          "keywords": [
+            "porodica",
+            "sistem",
+            "uverenje",
+            "vlasništvo",
+            "uloga"
+          ],
+          "context": "Stalni red uobičajen. Neka pravila postanu transparentna."
+        },
+        "position6": {
+          "upright": "Porodica vas može videti kao nekoga ko može pružiti dugoročnu stabilnost. Poštivanje tradicionalnih vrednosti olakšava prihvatanje. Vaš potencijal za formiranje jake porodične veze je uvažen.",
+          "reversed": "Porodica vas može doživljavati kao nekoga ko je nespojiv sa njihovim tradicijama ili nepouzdanim. Materijalne ili kulturne razlike čine proces prihvatanja. Sukob sa porodičnim vrednostima stvara distancu.",
+          "keywords": [
+            "porodica",
+            "stabilnost",
+            "tradicija",
+            "dugoročan",
+            "raport"
+          ],
+          "context": "Poštivanje porodičnih vrednosti olakšava prihvatanje. Neslaganje stvara distancu."
+        },
+        "position7": {
+          "upright": "Deset stanovnika ukazuje na dugoročnu stabilnost i poznanstvo u porodičnom okruženju. Trajne vrednosti postavljaju temelj obveznice.",
+          "reversed": "Deset pentakova obrnuto kaže da nasleđivanje ili sistemska napetost mogu da opterene obveznica. Transparentnost olakšava proces.",
+          "keywords": [
+            "stabilnost",
+            "porodica",
+            "stalnost",
+            "sistem"
+          ],
+          "context": "Sastaćete se u okruženju trajnih vrednosti. Otvorenost jača vezu."
+        },
+        "position8": {
+          "upright": "Deset stanovnika nosi energiju porodične i dugoročne stabilnosti u komunikaciji. Uobičajene vrednosti podstiču harmoniju.",
+          "reversed": "Reversed deset stanovnika ukazuje da porodični pritisak ili različita očekivanja mogu da otežavaju komunikaciju. Pronalaženje zajedničke zemlje donosi Harmoniju.",
+          "keywords": [
+            "porodica",
+            "stabilnost",
+            "vrednosti",
+            "raport"
+          ],
+          "context": "Zajedničke vrednosti olakšavaju razumevanje."
+        },
+        "position9": {
+          "upright": "Deset stanovnika, supružnika koji se brine o porodičnim vezama i može uspostaviti trajnu strukturu pogodna je za vas.",
+          "reversed": "Deset stanovnika je preokrenulo: neko ko nema porodične odgovornosti ili je nestabilan nije pogodan za vas.",
+          "keywords": [
+            "porodica",
+            "stabilnost",
+            "stalnost",
+            "odgovornost"
+          ],
+          "context": "Supružnik koji je briga o porodici je pogodan."
+        }
+      },
+      "pageofpentacles": {
+        "position1": {
+          "upright": "Zaključak; Vaš brak će biti oblikovan učenjem, razvojem i novim fondacijama.",
+          "reversed": "Nevoljkost ili odlaganja mogu usporiti ishod braka.",
+          "keywords": [
+            "učenje",
+            "razvoj",
+            "početak",
+            "osnova"
+          ],
+          "context": "Zaključak; Brak koji raste učenjem. Ali treba izbegavati odlaganja."
+        },
+        "position10": {
+          "upright": "Princ Pentacles pokazuje proces učenja i isprobavanja novih prilika na putu ka braku. Mali koraci stvaraju velike početke.",
+          "reversed": "Raštrkana energija ili odlaganja može odložiti potez prema braku. Konkretni koraci su od suštinskog značaja.",
+          "keywords": [
+            "učenje",
+            "prilika",
+            "početak",
+            "pokušati",
+            "moje ime"
+          ],
+          "context": "Učenje + konkretni koraci su potrebni za brak."
+        },
+        "position2": {
+          "upright": "Iskoristite nove mogućnosti i preduzmite praktične korake. Budite otvoreni za učenje dok čekate.",
+          "reversed": "Odlaganja ili neorganizacija otežava proces. Fokus.",
+          "keywords": [
+            "prilika",
+            "praktičnost",
+            "učenje",
+            "početak"
+          ],
+          "context": "Dok će čekati, bilo bi korisno proceniti nove mogućnosti."
+        },
+        "position3": {
+          "upright": "Učenje i mali konkretni koraci iniciraju budžetsku disciplinu. Pisanje cilja je važno.",
+          "reversed": "Prokorastika i raštrkane mogućnosti fokusiranja propuste.",
+          "keywords": [
+            "učenje",
+            "cilj",
+            "disciplina",
+            "početak"
+          ],
+          "context": "Mini ciljevi distribuiraju u akciju pošteno."
+        },
+        "position4": {
+          "upright": "Fokusiranje na konkretan cilj i apetit za učenje unose spremnost na obveznice. Mali koraci postaju osnova velikog obećanja u budućnosti.",
+          "reversed": "Odlaganja, raštrkani fokus ili nedostatak motivacije produžava proces. Posvećenost zahteva disciplinovanje planiranja.",
+          "keywords": [
+            "cilj",
+            "učenje",
+            "početak",
+            "praktičan",
+            "betonski korak"
+          ],
+          "context": "Prilažni prilozi u malim, ali utvrđenim koracima."
+        },
+        "position5": {
+          "upright": "Sličan entuzijazam za učenje i postavljanje konkretnih ciljeva. Vaši mali koraci stvaraju multiplikatorski efekat.",
+          "reversed": "Odreženje / raštrkani fokus može biti dominantan u nekoj od vas. Mini golovi su obavezni.",
+          "keywords": [
+            "učenje",
+            "cilj",
+            "početak",
+            "praktičan",
+            "beton"
+          ],
+          "context": "Goal fokus je uobičajen. Neka mikro koraci rade."
+        },
+        "position6": {
+          "upright": "Porodica vas može videti kao nekoga ko je otvoren za učenje, spremno da se poboljša i odgovorno. Vaši mali, ali odlučni koraci nadahnjuju samopouzdanje. Vaša ozbiljnost podržava proces prihvatanja.",
+          "reversed": "Porodica vas može doživljavati kao neorganizovana, bezbrižna ili lenja. Besniji stavovi otežavaju proces prihvatanja. Ravnodušnost prekida poverenje.",
+          "keywords": [
+            "učenje",
+            "cilj",
+            "odgovornost",
+            "razvoj",
+            "ozbiljnost"
+          ],
+          "context": "Želja za učenjem i poboljšanjem povećanja prihvatanja. Arisnatnost stvara distancu."
+        },
+        "position7": {
+          "upright": "Princ Pentaklova ukazuje na poznanstvo u procesu učenja i konkretnih ciljeva. Malo iskustva stvara obveznice.",
+          "reversed": "Princ Pentacles Reversed kaže da odlaganje može odložiti obveznice. Mali koraci olakšavaju upoznavanje.",
+          "keywords": [
+            "učenje",
+            "cilj",
+            "početak",
+            "praktičan"
+          ],
+          "context": "Upoznate se u procesu učenja. Mali korak ubrzava vezu."
+        },
+        "position8": {
+          "upright": "Princ Pentacla simbolizuje želju za učenjem i željom da preduzme konkretne korake u komunikaciji. Male geste ojačavaju razumevanje.",
+          "reversed": "Okolišteni princ Pentacle označava da se neraspoloženje ili odlaganja može otežati komunikaciju. Fokus donosi harmoniju.",
+          "keywords": [
+            "učenje",
+            "gest",
+            "fokus",
+            "moje ime"
+          ],
+          "context": "Male geste olakšavaju razumevanje."
+        },
+        "position9": {
+          "upright": "Princ Pentacles, partner koji je otvoren za učenje i orijentisano u razvoju je pogodan za vas.",
+          "reversed": "Princ obrnutog pentakala, nekoga ko deluje bez cilja i neodgovorno nije pogodan za vas.",
+          "keywords": [
+            "učenje",
+            "razvoj",
+            "cilj",
+            "odgovornost"
+          ],
+          "context": "Pogodan je supružnik koji je otvoren za učenje."
+        }
+      },
+      "knightofpentacles": {
+        "position1": {
+          "upright": "Zaključak; Biće to brak koji napreduje sa strpljenjem, stabilnošću i sigurnim koracima.",
+          "reversed": "Stagnacija ili tvrdoglavost mogu komplicirati ishod braka.",
+          "keywords": [
+            "stabilnost",
+            "strpljenje",
+            "poverenje",
+            "kontinuitet"
+          ],
+          "context": "Zaključak; pacijent i siguran brak. Ali stabilnost treba uzeti u obzir."
+        },
+        "position10": {
+          "upright": "Vitez Pentekla pokazuje da se brak može dogoditi sa strpljenjem i stalnim koracima. Polako, ali sigurni da napredak donosi uspeh.",
+          "reversed": "Prekomerna stabilnost ili tvrdoglavost može otežati put ka braku. Potrebno je dodati fleksibilnost.",
+          "keywords": [
+            "stabilnost",
+            "strpljenje",
+            "rad",
+            "pouzdanost",
+            "kontinuitet"
+          ],
+          "context": "Pacijent i stabilan put je neophodan za brak."
+        },
+        "position2": {
+          "upright": "Krenite naprijed sa odlučnošću i strpljenjem. Izgradite verodostojnost dok čekate.",
+          "reversed": "Inertnost ili prekomerna sporost otežava proces. Pomerite se.",
+          "keywords": [
+            "stabilnost",
+            "pouzdanost",
+            "strpljenje",
+            "odgovornost"
+          ],
+          "context": "Stabilnost i pouzdanost su korisni tokom čekanja."
+        },
+        "position3": {
+          "upright": "Sporo, ali siguran napredak daje samopouzdanje. Rutina i doslednost dodaju stabilnost za deljenje.",
+          "reversed": "Stagnacija i nedostatak fleksibilnosti smanjuju motivaciju.",
+          "keywords": [
+            "rutinski",
+            "stabilnost",
+            "doslednost",
+            "samodisciplina"
+          ],
+          "context": "Pouzdana brzina znači budžetski mir."
+        },
+        "position4": {
+          "upright": "Sporo, ali dosledan napredak daje poverenje. Rutina i stabilnost prirodno sazrevaju odluku o izvršenju.",
+          "reversed": "Prekomerna stabilnost ili nedostatak fleksibilnosti mogu da se odnose odnos monotono. Bez malih inovacija, zahtev \"da\" ostaje dosadan.",
+          "keywords": [
+            "stabilnost",
+            "doslednost",
+            "rutinski",
+            "poverenje",
+            "strpljenje"
+          ],
+          "context": "Pričvršćivanje raste stalno i stalno; ima poteškoće u stacionarnosti."
+        },
+        "position5": {
+          "upright": "Sličan mir u doslednosti i stabilan napredak. Polako, ali sigurno je vaš korak harmoničan.",
+          "reversed": "Monotonija tolerancija može biti drugačija. Treba dodati male inovacije.",
+          "keywords": [
+            "stabilnost",
+            "doslednost",
+            "rutinski",
+            "poverenje",
+            "strpljenje"
+          ],
+          "context": "Pouzdan ritam partner. Potrebna je osvežavajuća doze."
+        },
+        "position6": {
+          "upright": "Porodica vas može proceniti kao pouzdano, teško radno i stabilno. Vaša spora, ali sigurni koraci olakšavaju prihvatanje. Prema njima, možete biti pouzdan kandidat za supružnika.",
+          "reversed": "Vaša porodica vas može doživljavati kao statički, zatvoren za inovacije ili neko ko ne preuzme odgovornost. Prekomeran oprez otežava prihvatanje. Neuspjeh u rasuti napredak sumnje.",
+          "keywords": [
+            "stabilnost",
+            "razvodnik",
+            "pouzdanost",
+            "strpljenje",
+            "rad"
+          ],
+          "context": "Pouzdani i marljivi stavovi dovode do prihvatanja. Stanje stagnacije ili nevoljkosti sumnje sumnje."
+        },
+        "position7": {
+          "upright": "Vitez Pentaklova ukazuje na sastanak sa strpljenjem i doslednošću tokom određenog vremena. Polako, ali sigurni koraci grade obveznice.",
+          "reversed": "Vitez Pentaklova obrnuto kaže da se Stasis može opteretiti obveznica. Male inovacije olakšavaju proces.",
+          "keywords": [
+            "doslednost",
+            "strpljenje",
+            "stabilnost",
+            "poverenje"
+          ],
+          "context": "Sastaćete se sa doslednim koracima. Strpljenje jača vezu."
+        },
+        "position8": {
+          "upright": "Vitez Pentaklova ukazuje na strpljenje i odlučnost u komunikaciji. Doslednost promoviše harmoniju.",
+          "reversed": "Vitez pentaklova obrnut ukazuje da stasis ili tvrdoglavost mogu da otežavaju komunikaciju. Fleksibilnost jača vezu.",
+          "keywords": [
+            "strpljenje",
+            "stabilnost",
+            "doslednost",
+            "komunikacija"
+          ],
+          "context": "Doslednost donosi Harmoniju."
+        },
+        "position9": {
+          "upright": "Vitez Pentacles, stabilan, pouzdan i spor, ali siguran partner je pogodan za vas.",
+          "reversed": "Vitez pentakala je obrnuo, neko ko je statički i preterano tvrdoglav nije pogodan za vas.",
+          "keywords": [
+            "stabilnost",
+            "poverenje",
+            "strpljenje",
+            "odgovornost"
+          ],
+          "context": "Pogodan je pouzdan i pacijentski supružnik."
+        }
+      },
+      "queenofpentacles": {
+        "position1": {
+          "upright": "Zaključak; Vaš brak će biti ojačan sa saosećanjem, obiljem i praktičnom podrškom.",
+          "reversed": "Preopterećenje ili nedostatak samopovrede mogu otežati brak.",
+          "keywords": [
+            "saosećanje",
+            "obilje",
+            "praktičnost",
+            "podrška"
+          ],
+          "context": "Zaključak; Brak koji uspeva sa saosećanjem. Ali samopovreda ne treba zaboraviti."
+        },
+        "position10": {
+          "upright": "Kraljica Pentekla pokazuje da se sa saosećanjem, odgovornošću i praktičnošću brak može stvoriti topli dom.",
+          "reversed": "Preopterećenje ili nedostatak samo-nege mogu prouzrokovati probleme u braku. Potrebna je ravnoteža.",
+          "keywords": [
+            "saosećanje",
+            "odgovornost",
+            "praktičnost",
+            "gnezdo",
+            "ravnoteža"
+          ],
+          "context": "Saosećanje i praktičnost moraju se kombinovati za brak."
+        },
+        "position2": {
+          "upright": "Pokazuju praktično saosećanje i negovanje. Kreirajte i materijalno i duhovno bogatstvo dok čekate.",
+          "reversed": "Prekomerna anksioznost ili materijalizam otežava proces. Budite uravnoteženi.",
+          "keywords": [
+            "saosećanje",
+            "praktičnost",
+            "ishrana",
+            "bogatstvo"
+          ],
+          "context": "Pomaže da se pokaže praktično saosećanje dok čekate."
+        },
+        "position3": {
+          "upright": "Negujući praktičnost i upravljanje resursima su snažni. Nevidljivi rad mora biti vidljiv.",
+          "reversed": "Deficit preopterećenja i samo-nege čine deljenje napornog; Delegat.",
+          "keywords": [
+            "briga",
+            "izvor",
+            "praktičnost",
+            "ravnoteža"
+          ],
+          "context": "Saosećanje + praktični okvir uravnotežuje budžet."
+        },
+        "position4": {
+          "upright": "Negujući praktičnost, domovanje energije i upravljanje resursima ojačajte vezu. Stvoren je sef, topli topli pod.",
+          "reversed": "Preopterećenje i nedostatak guma za negu veze. Neuglašeni teretnici mogu odložiti rekavši \"da\".",
+          "keywords": [
+            "briga",
+            "praktičnost",
+            "kuću",
+            "izvor",
+            "poverenje"
+          ],
+          "context": "Prilog postaje trajno sa hranjivim redosledom i negom."
+        },
+        "position5": {
+          "upright": "Negujući praktičnost i vrednovanje samo-nege su slični. Uspostavite toplinu svog doma zajedno.",
+          "reversed": "Tendencija preopterećenja / zanemarivanja može biti očigledna u nekoj od vas. Traženje podrške treba da postane normalno.",
+          "keywords": [
+            "briga",
+            "praktičan",
+            "nega",
+            "izvor",
+            "ravnoteža"
+          ],
+          "context": "Redosled koji je neguje je uobičajeno. Deljenje opterećenja je važno."
+        },
+        "position6": {
+          "upright": "Porodica može da vas vidi kao brige, praktične i podržavajuće. I vaše upravljanje resursima i vaš topli pristup nadahnjuju poverenje. Vaš fokus na dom i porodici biće uvažen.",
+          "reversed": "Porodica vas može doživljavati kao preopterećeno ili odvraćanje. Poteškoća ili nedostatak interesovanja za upravljanje resursima otežava prihvatanje. Previše hladnoće stvara distancu u porodici.",
+          "keywords": [
+            "saosećanje",
+            "praktičnost",
+            "upravljanje resursima",
+            "poverenje",
+            "podrška"
+          ],
+          "context": "Saosećajni i praktični stav olakšava prihvatanje. Apatija ili poteškoća stvara distancu."
+        },
+        "position7": {
+          "upright": "Kraljica Pentakova ukazuje na sastanak u okruženju praktičnosti i saosećanja. Upravljanje resursima i nega ojačajte obveznice.",
+          "reversed": "Kraljica preokretanog Reversed-a kaže da preopterećenje može opteretiti vezu. Samo-nega olakšava postupak.",
+          "keywords": [
+            "saosećanje",
+            "praktičnost",
+            "izvor",
+            "briga"
+          ],
+          "context": "Skrenite se u praktičnom i saosećajnom okruženju. Samo-nega ojačava vezu."
+        },
+        "position8": {
+          "upright": "Kraljica pentakala pokazuje saosećanje i praktičnu podršku u komunikaciji. Pristup razumevanja povećava sporazum.",
+          "reversed": "Kraljica Pentacles Reversed-a kaže da preterana samopožrtvovanja može da uznemiri ravnotežu u komunikaciji. Samo-nege održava harmoniju.",
+          "keywords": [
+            "saosećanje",
+            "praktičan",
+            "podrška",
+            "raport"
+          ],
+          "context": "Saosećajni pristup olakšava razumevanje."
+        },
+        "position9": {
+          "upright": "Kueen of Pentacles, saosećajni, praktični i snalazni partner je pogodan za vas.",
+          "reversed": "Kraljica pentakala je preokrenuta, neko ko zanemaruje samo-negu ili preuzme previše nije pogodan za vas.",
+          "keywords": [
+            "saosećanje",
+            "praktičnost",
+            "ravnoteža",
+            "izvor"
+          ],
+          "context": "Karivna i praktična supružnik je pogodna."
+        }
+      },
+      "kingofpentacles": {
+        "position1": {
+          "upright": "Zaključak; Vaš brak će biti čvrst sa snažnim vođstvom, finansijskom sigurnošću i stalnošću.",
+          "reversed": "Prekomerna autoritet ili finansijski pritisak mogu komplicirati ishod braka.",
+          "keywords": [
+            "rukovodstvo",
+            "poverenje",
+            "Finansijska stabilnost",
+            "stalnost"
+          ],
+          "context": "Zaključak; Brak je podržan sigurnošću. Ali autoritet mora biti uravnotežen."
+        },
+        "position10": {
+          "upright": "Kralj pentaklama ukazuje da je brak snažno moguć sa sigurnošću, stabilnošću i odgovornošću. Čvrsti temelji donose uspeh.",
+          "reversed": "Prekomerna kontrola ili statusni fokus može nagnuti put ka braku. Potrebna je ravnoteža deljenja.",
+          "keywords": [
+            "sigurnost",
+            "stabilnost",
+            "rukovodstvo",
+            "odgovornost",
+            "deljenje"
+          ],
+          "context": "Postoji snažna i sigurna osnova za brak."
+        },
+        "position2": {
+          "upright": "Pružiti finansijsku stabilnost i pouzdanost. Izgradite čvrste temelje dok čekate.",
+          "reversed": "Prekomerni konzervativizam ili uboda čini proces težak. Budite fleksibilni.",
+          "keywords": [
+            "stabilnost",
+            "pouzdanost",
+            "rukovodstvo",
+            "Finansijska sigurnost"
+          ],
+          "context": "Korisno je uspostaviti finansijsku stabilnost dok čekate."
+        },
+        "position3": {
+          "upright": "Dominantna je strateška stabilna i dugotrajna vizija. Sistem i mentorstvo čine uspeh trajno.",
+          "reversed": "Mikromanagement i status Fokus Skraćenice poverenja i deljenje.",
+          "keywords": [
+            "robusnost",
+            "rukovodstvo",
+            "sistem",
+            "vizija"
+          ],
+          "context": "Pover-Love Balance uspostavljaju fer ekonomiju."
+        },
+        "position4": {
+          "upright": "Strateška zvučnost, velikodušnost i dugoročna podrška za podršku viziji. Zaštitni ali deljenje stav olakšava \"da\".",
+          "reversed": "Prekomerna kontrola, fokus statusa ili kruta pravila mogu da se ohladi intimnost. Tamo gde napajanje nije deljeno, trajno obećanje postaje teško.",
+          "keywords": [
+            "robusnost",
+            "vizija",
+            "deljenje",
+            "zaštita",
+            "uverenje"
+          ],
+          "context": "Vezivanje je ojačano zajedničkom i dugoročnom vizijom."
+        },
+        "position5": {
+          "upright": "Čvrstina, velikodušnost i sličnost u dugoročnoj viziji. Zajednički sistem daje mir uma.",
+          "reversed": "Sjena statusa / organa može biti dominantna u jednom od vas. Deljenje vlasti održava harmoniju.",
+          "keywords": [
+            "robusnost",
+            "rukovodstvo",
+            "velikodušnost",
+            "vizija",
+            "sistem"
+          ],
+          "context": "Izdržljiva vizija se deli. Deljenje napajanja je obavezna."
+        },
+        "position6": {
+          "upright": "Porodica vas može videti snažnim, pouzdanim i sa osobinama liderstva. Vaša materijalna i moralna stabilnost olakšava proces prihvatanja. Vaša autoritet i stalnost naredno poštovanje.",
+          "reversed": "Porodica vas može videti kao preterano kontrolisati, orijentisana na status ili sebično. Akcenat na materijalsku superiornost otežava prihvatanje. Previše stroga stvara otpornost u porodici.",
+          "keywords": [
+            "poverenje",
+            "stabilnost",
+            "rukovodstvo",
+            "vlast",
+            "poštovanje"
+          ],
+          "context": "Pouzdan i autoritativni stav povećava prihvatanje. Prekomerna kontrola stvara distancu."
+        },
+        "position7": {
+          "upright": "Kralj pentaklova ukazuje na sastanak u okruženju materijalne bezbednosti i čvrstine. Sistematski pristup čini Bond stalnu.",
+          "reversed": "Prekoračeni kralj stanovnika upozorava da prekomerna kontrola može zasjeniti Bond. Fleksibilnost olakšava upoznavanje.",
+          "keywords": [
+            "robusnost",
+            "poverenje",
+            "sistem",
+            "vizija"
+          ],
+          "context": "Upoznaćete se u sigurnom okruženju. Fleksibilnost povećava vezu."
+        },
+        "position9": {
+          "upright": "Kralj Talismana, odgovoran, pouzdan i materijalni i moralni supružnik je pogodan za vas.",
+          "reversed": "Kralj pentakila je preokrenuo, neko ko preterano kontroliše ili Stingi nije za vas.",
+          "keywords": [
+            "odgovornost",
+            "poverenje",
+            "stabilnost",
+            "podrška"
+          ],
+          "context": "Odgovorni i podržani supružnik je pogodan."
+        },
+        "position8": {
+          "upright": "Kralj pentaklova nudi stabilnost, poverenje i praktična rešenja u komunikaciji. Zreli pristup olakšava sporazum.",
+          "reversed": "Prekoračeni kralj pentakala, prekomerna kontrolisanost ili krutost u komunikaciji otežava se. Fleksibilnost donosi harmoniju.",
+          "keywords": [
+            "stabilnost",
+            "poverenje",
+            "praktičnost",
+            "zrelost"
+          ],
+          "context": "Pruža stabilnu i pouzdanu harmoniju komunikacije."
+        }
+      }
+    }
+  },
+  "meanings": {
+    "theFool": {
+      "position1": {
+        "context": "Ova osoba je avanturista koji je spreman ili se boji da pretvori novu stranicu u svom ljubavnom životu.",
+        "keywords": [
+          "Novi početnici",
+          "nevinost",
+          "spontanost",
+          "rizikovati",
+          "slobodan duh"
+        ],
+        "reversed": "Budala u obrnutoj toku pokazuje da je ta osoba možda bezobzirna, neodgovorna ili bojati da započne vezu. On ili ona mogu ignorisati potencijalne opasnosti i izbegavanje vezanosti.",
+        "upright": "Osoba koju vas privlači puna je radoznalosti dječijeg i uzbuđenja o životu. On ima avanturistički duh, otvoren za nove početke, ali to ponekad može prouzrokovati da se neplanira i neplanira. Približava odnosu sa ovim slobodnim duhom."
+      }
+    }
+  },
+  "messages": {
+    "accessibility": {
+      "skipToMain": "Preskočite na glavni sadržaj"
+    },
+    "common": {
+      "back": "Nazad",
+      "buy": "Kupiti",
+      "cancel": "Otkazati",
+      "clear": "čist",
+      "close": "Zatvoriti",
+      "confirm": "Potvrditi",
+      "continue": "Nastavljati",
+      "copy": "kopija",
+      "credits": "kredit",
+      "delete": "Izbrisati",
+      "download": "Preuzeti",
+      "edit": "Urediti",
+      "error": "Greška",
+      "filter": "Filter",
+      "finish": "završiti",
+      "free": "Slobodan",
+      "immediateAccess": "Trenutni pristup",
+      "info": "Informacije",
+      "loading": "Učitavanje ...",
+      "locale": "en-tr",
+      "new": "Nov",
+      "next": "Napred",
+      "no": "Ne",
+      "ok": "U redu",
+      "open": "Gladan",
+      "pause": "pauza",
+      "popular": "Popularan",
+      "previous": "Bivši",
+      "processing": "Obrada ...",
+      "progress": "Napredak",
+      "refresh": "Osvežiti",
+      "reset": "resetovati",
+      "resume": "Nastavljati",
+      "reversed": "Nasuprot",
+      "save": "Sačuvati",
+      "search": "Tražiti",
+      "select": "Odabrati",
+      "selectAll": "Izaberite sve",
+      "share": "Udeo",
+      "sort": "Sortirati",
+      "start": "početi",
+      "stop": "prestati",
+      "submit": "Pošalji",
+      "success": "Uspešan",
+      "today": "Danas",
+      "upload": "Upload",
+      "upright": "Ravno",
+      "view": "Pregledan",
+      "viewAll": "Pogledajte sve",
+      "warning": "Upozorenje",
+      "yes": "Da"
+    },
+    "dashboard": {
+      "accountSettings": "Podešavanja naloga",
+      "admin": "administrator",
+      "backToDashboard": "Povratak na kontrolnu tablu",
+      "beginner": "Početak",
+      "buy": "Kupiti",
+      "buyCredits": "Kupite kredite",
+      "cancel": "Otkazati",
+      "completedReadings": "čitanje završeno",
+      "creditAlert": "Nizak kreditni bilans",
+      "creditAlertMessage": "Kupite kredite za čitanje više",
+      "creditBalance": "Kreditni bilans",
+      "creditHistory": {
+        "allTime": "Sva vremena",
+        "allTransactions": "Sve transakcije",
+        "bonus": "Bonus",
+        "bonuses": "Bonusi",
+        "buyCredits": "Kupite kredite",
+        "completed": "završen",
+        "credits": "kredit",
+        "csvAmount": "Iznos",
+        "csvDate": "Istorija",
+        "csvDescription": "Objašnjenje",
+        "csvType": "Lek",
+        "currentBalance": "Trenutni balans",
+        "description": "Pratite svoju kreditnu knjigu, istoriju upotrebe i transakcije",
+        "downloadCSV": "Preuzmi CSV",
+        "error": "Došlo je do greške prilikom učitavanja kreditne istorije",
+        "last1Year": "Poslednja 1 godina",
+        "last30Days": "Poslednjih 30 dana",
+        "last7Days": "Poslednjih 7 dana",
+        "loading": "🔮 Učitavanje kreditne istorije ...",
+        "noTransactions": "Još nema transakcija",
+        "purchase": "Kupovina",
+        "purchases": "Akvizicije",
+        "refund": "Vratiti se",
+        "refunds": "Povraćaj novca",
+        "startWithFirstPurchase": "Započnite davanjem prvog kreditnog kupovine",
+        "title": "Kreditna istorija",
+        "totalPurchased": "Ukupno kupljeno",
+        "totalRefunded": "Ukupno povraćaja novca",
+        "totalUsed": "Ukupno korišćeno",
+        "transactionsFound": "{count} işlem bulundu",
+        "usage": "Upotreba"
+      },
+      "creditPackages": "Kreditni paketi",
+      "detailedStatistics": "Detaljna statistika",
+      "discoverLevel": "Ponesite prvo čitanje i otkrijte svoj nivo!",
+      "displayName": "Prikaz ime",
+      "downloadReading": "Preuzmite čitanje",
+      "editProfile": "Edit Profile",
+      "email": "E-mail",
+      "expert": "Stručnjak",
+      "free": "Slobodan",
+      "immediateAccess": "Trenutni pristup",
+      "intermediate": "U sredini",
+      "keepGoing": "Odlično vam ide! Samo napred!",
+      "last30Days": "Poslednjih 30 dana",
+      "memberSince": "Datum članstva",
+      "membershipDuration": "Trajanje članstva",
+      "moreReadings": "Ima više čitanja",
+      "mysticJourney": "Napredujete na svom mističnom putovanju!",
+      "mysticLevel": "Mistični nivo",
+      "new": "Nov",
+      "noReadingsYet": "Još nema čitanje. Započnite čitanje da biste imali svoje prvo mistično iskustvo i otkrili tajne svoje sudbine.",
+      "packages": {
+        "addedToAccount": "dodato na vaš nalog.",
+        "bonus": "bonus",
+        "bonusCredits": "Bonus krediti",
+        "bonusCreditsDesc": "Zaradite dodatni kredit na velikim paketima",
+        "buyNow": "Kupiti",
+        "credits": "kredit",
+        "currentBalance": "Vaš trenutni balans",
+        "description": "Kupite kreditne kredite koje su vam potrebne za očitanja Tarot",
+        "faq": "Često postavljana pitanja",
+        "faq1Answer": "Vaši krediti važe za godinu dana od dana kupovine.",
+        "faq1Question": "Koliko dugo su zajmovi validni?",
+        "faq2Answer": "Možete dobiti povrat novca za neiskorišćene kredite u roku od 7 dana.",
+        "faq2Question": "Šta je politika povratka?",
+        "faq3Answer": "Prihvaćene su kreditne kartice, debitne kartice i digitalni novčanici.",
+        "faq3Question": "Koji su načini plaćanja prihvaćeni?",
+        "faq4Answer": "10% bonus kredit dat je u popularnom paketu i 20% bonus kredita u premium paketu.",
+        "faq4Question": "Kako se izračunavaju bonus krediti?"
+      }
+    }
+  }
+}

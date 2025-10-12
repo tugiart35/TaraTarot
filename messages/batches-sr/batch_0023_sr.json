@@ -1,0 +1,794 @@
+{
+  "marriage": {
+    "meanings": {
+      "tenofwands": {
+        "position7": {
+          "upright": "Deset štapića ukazuje na sastanak pod teretom odgovornosti. Deljenje rasprši teret i povećava blizinu.",
+          "reversed": "Deset štapića obrnut kaže da preopterećenje može da opterene obveznice. Jednostavnost i ravnoteža olakšavaju upoznavanje.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "deljenje",
+            "ravnoteža"
+          ],
+          "context": "Upoznate se kada se teret deli. Ostavlja vezu ravnoteže."
+        },
+        "position8": {
+          "upright": "Deset štapića pokazuje deljenje tereta u komunikaciji. Zajednička odgovornost olakšava harmoniju.",
+          "reversed": "Prekoračeni deset štapića ukazuje da preopterećenje može da poremeti komunikaciju. Deljenje stvara razumevanje.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "deljenje",
+            "komunikacija"
+          ],
+          "context": "Deljenje opterećenja povećava usaglašavanje."
+        },
+        "position9": {
+          "upright": "Deset štapića, supružnika koji deli odgovornosti i osvetljava teret je pogodan za vas.",
+          "reversed": "Okrenuo je deset štapića, nekoga ko se prenosi svoje odgovornosti nekom drugom nije pogodno za vas.",
+          "keywords": [
+            "odgovornost",
+            "solidarnost",
+            "rad",
+            "deljenje"
+          ],
+          "context": "Odgovorni supružnik je pogodan."
+        },
+        "position4": {
+          "upright": "Deset štapića ukazuje na spremnost da se deli odgovornost i osvetljava teret u prilogu. Zajedničko nošenje jača vezu.",
+          "reversed": "Invertirani deset štapića može ukazivati na preopterećenje vezanosti ili izbegavanje odgovornosti. Neuravnoteženo opterećenje otežava lepljenje.",
+          "keywords": [
+            "odgovornost",
+            "deljenje",
+            "opteretiti",
+            "rad",
+            "solidarnost"
+          ],
+          "context": "Vezivanje je ojačano podelom odgovornosti."
+        }
+      },
+      "pageofwands": {
+        "position1": {
+          "upright": "Zaključak; Duh radoznalosti, otkriće i avantura će obojiti vaš brak.",
+          "reversed": "Nepažnja ili nedostatak smera može komplicirati ishod braka.",
+          "keywords": [
+            "otkriće",
+            "radoznalost",
+            "avantura",
+            "entuzijazam"
+          ],
+          "context": "Zaključak; Brak koji ostaje živ sa otkrićem. Ali nedostatak smera može da se nađe na putu."
+        },
+        "position10": {
+          "upright": "Princ Vands pokazuje da su novi koraci u braku blizu energije radoznalosti i otkrića. Moraju se preduzeti podebljani koraci.",
+          "reversed": "Neraspoređivanje ili neodlučnost može otežati put ka braku. Morate se fokusirati na metu.",
+          "keywords": [
+            "otkriće",
+            "radoznalost",
+            "hrabrost",
+            "moje ime",
+            "učenje"
+          ],
+          "context": "Vreme je za podebljane korake i istraživanje za brak."
+        },
+        "position2": {
+          "upright": "Razviti nove ideje, nahraniti radoznalost. Budite otvoreni za učenje dok čekate.",
+          "reversed": "Nered ili nedostatak motivacije čini proces težak. Fokus.",
+          "keywords": [
+            "učenje",
+            "radoznalost",
+            "ideja",
+            "inovativnost"
+          ],
+          "context": "Korisno je naučiti nove stvari dok čekate."
+        },
+        "position3": {
+          "upright": "Entuzijazam za otkrivanje i eksperimentiranje stvara dodatne prihode i ideje uštede. Pilot koraci su korisni.",
+          "reversed": "Rasprostranjena pažnja i napuštanje podriva finansijsko poverenje.",
+          "keywords": [
+            "otkriće",
+            "entuzijazam",
+            "pilot",
+            "fokus"
+          ],
+          "context": "Mali ciklus test-učenja čini budžet veći."
+        },
+        "position5": {
+          "upright": "Slična iskra u entuzijazmu za otkrivanje i eksperimentiranje. Pretvorite putovanje učenje u igru.",
+          "reversed": "Vaš prag za distrakciju može biti drugačiji. Fokusira se na mikro golove.",
+          "keywords": [
+            "otkriće",
+            "entuzijazam",
+            "eksperiment",
+            "fokus",
+            "učenje"
+          ],
+          "context": "Discoveri Partner. Neka se osnivaju žarišni okvir."
+        },
+        "position6": {
+          "upright": "Vaša porodica vas može videti kao znatiželjni, entuzijastični i otvoreni za učenje. Vaša otvorenost za nove ideje im impresionira. Olakšava vaš prihvatanje živosti.",
+          "reversed": "Porodica vas može doživljavati kao neorganizovana ili djetinjasta. Previše nestabilnosti podriva samopouzdanje. Brzo bledenje entuzijazma otežava prihvatanje.",
+          "keywords": [
+            "radoznalost",
+            "entuzijazam",
+            "učenje",
+            "život",
+            "otvorenost"
+          ],
+          "context": "Entuzijazam i radoznalost ubrzavaju prihvatanje. Nered smanjuje poverenje u porodicu."
+        },
+        "position7": {
+          "upright": "Princ štapiće ukazuje na sastanak u trenutku otkrivanja i radoznalosti. Novo iskustvo ili putovanje otvara vrata.",
+          "reversed": "Okolici princa štapića kaže da će razbacana pažnja ili odlaganja odložiti sastanak. Mali ciljevi olakšavaju lepljenje.",
+          "keywords": [
+            "otkriće",
+            "radoznalost",
+            "eksperiment",
+            "putovanje"
+          ],
+          "context": "Upoznate se tokom procesa otkrića. Mali koraci čine veću obveznicu."
+        },
+        "position8": {
+          "upright": "Princ štapiće donosi energiju otkrivanja i radoznalosti u komunikaciji. Novi pristupi ojačavaju sporazum.",
+          "reversed": "Princ of Vinds Reversed kaže da je neorganizovana komunikacija otežala harmoniju. Fokus olakšava razumevanje.",
+          "keywords": [
+            "radoznalost",
+            "otkriće",
+            "energija",
+            "komunikacija"
+          ],
+          "context": "Radoznalost jača harmoniju."
+        },
+        "position9": {
+          "upright": "Princ Vands, uzbudljiv, istraživački i preduzetni supružnik je pogodan za vas.",
+          "reversed": "Okolišteni princa štapiće, neko beskorisan i neorganizovan nije pogodan za vas.",
+          "keywords": [
+            "uzbuđenje",
+            "otkriće",
+            "pokušati",
+            "energija"
+          ],
+          "context": "Pogodan je supružnik koji je uzbuđen."
+        },
+        "position4": {
+          "upright": "Princ štapiće ukazuje na uzbuđenje, istraživanje i želju za novitetom u prilogu. Asertivnost olakšava reći da.",
+          "reversed": "Okrećeni princ štapiće može biti besciljan ili neorganizovan u prilogu. Nedoslednost slabi vezu.",
+          "keywords": [
+            "uzbuđenje",
+            "otkriće",
+            "pokušati",
+            "inovativnost",
+            "energija"
+          ],
+          "context": "Prilog je ojačan uzbuđenjem i otkrivanjem."
+        }
+      },
+      "knightofwands": {
+        "position1": {
+          "upright": "Zaključak; Biće to brak pun strasti, hrabrosti i brzi koraci.",
+          "reversed": "Žurba ili nestrpljenje mogu se naći ishod braka.",
+          "keywords": [
+            "hrabrost",
+            "strast",
+            "brzina",
+            "pokret"
+          ],
+          "context": "Zaključak; Strastveni i hrabri brak. Ali takođe je potrebno strpljenje."
+        },
+        "position10": {
+          "upright": "Sa strašću i hrabrošću, vitez štapiće može brzo napredovati prema braku. Energija je veoma velika.",
+          "reversed": "Ekstravagancija ili žurba može otežati brak. Neophodno je postojati postojano.",
+          "keywords": [
+            "hrabrost",
+            "strast",
+            "brzina",
+            "stabilnost",
+            "skok"
+          ],
+          "context": "Brak je potreban strastveni i uravnotežen napredak."
+        },
+        "position2": {
+          "upright": "Djelujte sa hrabrošću, budite otvoreni za avanturu. Kanalirajte energiju dok čekate.",
+          "reversed": "Žurba ili impulsivnost otežava proces. Ponašati se zamišljeno.",
+          "keywords": [
+            "hrabrost",
+            "avantura",
+            "energija",
+            "pokret"
+          ],
+          "context": "Pomaže da budete hrabri dok čekate."
+        },
+        "position3": {
+          "upright": "Posetnost i brzina povećavaju mogućnosti prihoda; Arhitektura posvećenosti je neophodna.",
+          "reversed": "Rasipajna energija i napuštanje uništavaju poverenje i tok novca.",
+          "keywords": [
+            "brzina",
+            "asertivnost",
+            "rizikovati",
+            "posvećenost"
+          ],
+          "context": "Hrabrost + plan = održivost."
+        },
+        "position5": {
+          "upright": "Slična vatra u asertivnosti i strastvenom potisku. Harmonija sija u kombinaciji sa strategijom.",
+          "reversed": "Sjajno ubrzanje / nepotpunost može biti očigledno u jednom od vas. Potrebna je arhitektura posvećenosti.",
+          "keywords": [
+            "asertivnost",
+            "strast",
+            "ubrzanje",
+            "strategija",
+            "posvećenost"
+          ],
+          "context": "Vatreni partner. Jednom kada se doda struktura, postaje trajno."
+        },
+        "position6": {
+          "upright": "Porodica vas može videti kao energetski, hrabri i preduzetni. Vaša strast ubrzava vaše prihvatanje. Za njih ste lik koji život dovodi u život.",
+          "reversed": "Porodica vas može pronaći nestrpljivim ili praznim hodom. Nedostatak konzistencije podriva poverenje. Previše žurbe otežava proces prijema.",
+          "keywords": [
+            "hrabrost",
+            "energija",
+            "strast",
+            "skok",
+            "život"
+          ],
+          "context": "Hrabarska energija povećava prihvatanje. Žurba stvara sumnju u porodicu."
+        },
+        "position7": {
+          "upright": "Vitez štapiće ukazuje na sastanak u trenutku strasti i hrabrosti. Energetski potez će preći vaše staze.",
+          "reversed": "Vraćeni vitez na štapiće kaže da žurba ili nestabilnost može da opterene vezu. Posvećenost jača uvod.",
+          "keywords": [
+            "hrabrost",
+            "strast",
+            "energija",
+            "posvećenost"
+          ],
+          "context": "Upoznate se u strastvenom okruženju. Posvećenost raste veza."
+        },
+        "position8": {
+          "upright": "Vitez štapiće ukazuje na strastvenu i asertivnu komunikaciju. Slade izjave ojačati harmoniju.",
+          "reversed": "Prekoračeni vitez štapiće ukazuje da je užurbana i nepromišljena komunikacija da optereće obveznica. Bilans donosi harmoniju.",
+          "keywords": [
+            "strast",
+            "hrabrost",
+            "asertivnost",
+            "komunikacija"
+          ],
+          "context": "Odvažni izraz povećava harmoniju."
+        },
+        "position9": {
+          "upright": "Vitez štapića, strastveni, hrabar i aktivni partner vam odgovara.",
+          "reversed": "Okrećeno vitez štapiće, neko ko je nestabilan ili preterano bezobrazan nije pogodan za vas.",
+          "keywords": [
+            "strast",
+            "hrabrost",
+            "pokret",
+            "energija"
+          ],
+          "context": "Strastveni i hrabri supružnik je pogodan."
+        },
+        "position4": {
+          "upright": "Vitez štapića ukazuje na strast, hrabrost i brzu akciju u posvećenosti. Asertivnost olakšava reći da.",
+          "reversed": "Vitez štapića preokrenuo je, postoji rizik od požurivanja ili neravnoteže u posvećenosti. Prekomerna brzina čini vezu tešku.",
+          "keywords": [
+            "strast",
+            "hrabrost",
+            "brzina",
+            "pokret",
+            "asertivnost"
+          ],
+          "context": "Prilog je ojačana hrabrošću i strašću."
+        }
+      },
+      "queenofwands": {
+        "position1": {
+          "upright": "Zaključak; Samopouzdanje, harizma i toplina će vaš brak hraniti.",
+          "reversed": "Ljubomora ili nesigurnost mogu da napreduju ishod braka.",
+          "keywords": [
+            "poverenje",
+            "karizma",
+            "toplota",
+            "rukovodstvo"
+          ],
+          "context": "Zaključak; Brak koji raste sa poverenjem i toplinom. Ali ljubomora može da se nađe na put."
+        },
+        "position10": {
+          "upright": "Kraljica štapića pokazuje da je brak moguć sa harizmom i toplom energijom. Voditelj i poverenje ojačajte brak.",
+          "reversed": "Ljubomora ili nesigurnost mogu zamagliti vaš brak put. Samopouzdanje je obavezna.",
+          "keywords": [
+            "karizma",
+            "poverenje",
+            "rukovodstvo",
+            "strast",
+            "ravnoteža"
+          ],
+          "context": "Poverenje i toplu energiju su važni za brak."
+        },
+        "position2": {
+          "upright": "Povećajte samopouzdanje, vodite liderstvo. Izrazite se dok čekate.",
+          "reversed": "Prekomerna dominacija ili nedostatak poverenja otežava proces. Prikaži uravnoteženu snagu.",
+          "keywords": [
+            "poverenje",
+            "rukovodstvo",
+            "izraz",
+            "snaga"
+          ],
+          "context": "Korisno je povećati samopouzdanje dok čekate."
+        },
+        "position3": {
+          "upright": "Karizma i poverenje mogu privući resurse u zajedničkim projektima. Vidljivost povećava povrat novca.",
+          "reversed": "Traženje odobrenja i senka ljubomore budžeta za budžet.",
+          "keywords": [
+            "karizma",
+            "rukovodstvo",
+            "poverenje",
+            "vidljivost"
+          ],
+          "context": "Vidljivost usklađena vrednost donosi obilje."
+        },
+        "position5": {
+          "upright": "Napravite jedni druge sjaj u harizmu i vidljivosti. Autentično samopouzdanje je vaša ličnost.",
+          "reversed": "Poređenje / nepoverenje senka se može pokrenuti u jednom od vas. Poravnajte sa Eigenvalue.",
+          "keywords": [
+            "karizma",
+            "poverenje",
+            "vidljivost",
+            "inspiracija",
+            "deljenje"
+          ],
+          "context": "Energija koja sjaji je deljena. Jezik poređenja treba da bude napušten."
+        },
+        "position6": {
+          "upright": "Porodica vas može pregledati kao harizmatična, topla i atraktivna. Vaše socijalne veštine i poverenje olakšava prihvatanje. Vaše nadahnjujuće stav se ceni.",
+          "reversed": "Porodica vas može doživljavati kao previše dominantno ili ljubomorne. Kontroliranje stavova otežava prihvatanje. Prekomerna pažnja smanjuje samopouzdanje.",
+          "keywords": [
+            "karizma",
+            "toplota",
+            "čarolija",
+            "poverenje",
+            "inspiracija"
+          ],
+          "context": "Toplina i karizma olakšavaju prihvatanje. Previše dominacije postavlja opterećenje porodice."
+        },
+        "position7": {
+          "upright": "Kraljica štapića ukazuje na sastanak u okruženju ispunjenom harizmom i samopouzdanjem. Topla energija povećava atrakciju.",
+          "reversed": "Reversed Kueen of Vands kaže da ljubomora ili nepoverenje mogu da oblak sastanak. Samo-vrednost olakšava lepljenje.",
+          "keywords": [
+            "karizma",
+            "poverenje",
+            "povući",
+            "rukovodstvo"
+          ],
+          "context": "Upoznate se u harizmatično okruženje. Samo-vrednost jača vezu."
+        },
+        "position8": {
+          "upright": "Kraljica štapića ukazuje na toplu i harizmatičnu komunikaciju. Iskrenost raste Harmoni.",
+          "reversed": "Kraljica štapića obrnuta ukazuje da senka ljubomore ili nesigurnosti može otežati komunikaciju. Samo-vrednost donosi harmoniju.",
+          "keywords": [
+            "karizma",
+            "iskrenost",
+            "poverenje",
+            "komunikacija"
+          ],
+          "context": "Iskrenost raste Harmoni."
+        },
+        "position9": {
+          "upright": "Kraljica štapića, samouvereni, veseli i živahni supružnik je pogodan za vas.",
+          "reversed": "Kraljica štapića preokrenula je, neko ko preterano dominira ili ljubomoran nije pogodan za vas.",
+          "keywords": [
+            "poverenje",
+            "radost",
+            "energija",
+            "rukovodstvo"
+          ],
+          "context": "Pogodan je samopouzdan i veseli supružnik."
+        },
+        "position4": {
+          "upright": "Kraljica štapića ukazuje na samopouzdanje, radost i život u prilogu. Karizma i energija olakšavaju reći da.",
+          "reversed": "Kraljica štapića obrnuta je mozda dominirala ili ljubomorna u prilogu. Nepoverenje slabi vezu.",
+          "keywords": [
+            "poverenje",
+            "radost",
+            "energija",
+            "karizma",
+            "rukovodstvo"
+          ],
+          "context": "Prilog je ojačan samopouzdanje i radošću."
+        }
+      },
+      "kingofwands": {
+        "position1": {
+          "upright": "Zaključak; Sa vizionarskim rukovodstvom, strategijom i hrabrošću, vaš brak će trajati.",
+          "reversed": "Prekomerna autoritarizam ili ego može komplikovati ishod braka.",
+          "keywords": [
+            "rukovodstvo",
+            "vizija",
+            "hrabrost",
+            "strategija"
+          ],
+          "context": "Zaključak; Brak koji je pokrenut snažnom vizijom. Ali ego se mora upravljati."
+        },
+        "position10": {
+          "upright": "Kralj štapića pokazuje da se sa vizijom i odlučnošću, brak se može dogoditi. Snažno rukovodstvo gradi čvrstu osnovu.",
+          "reversed": "Prekomerna autoritarizam ili ego može otežati proces braka. Potrebno je slušati i deliti.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "stabilnost",
+            "strast",
+            "snaga"
+          ],
+          "context": "Brak je potrebna vizija i snažna odlučnost."
+        },
+        "position2": {
+          "upright": "Demonstrirajte vizionarno vođstvo, mislite da je veliko. Biti inspirisan dok čekate.",
+          "reversed": "Prekomerna autoritarizam ili stagnacija otežava proces. Biti nadahnuti.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "inspiracija",
+            "velika ideja"
+          ],
+          "context": "Korisno je pokazati vizionarno rukovodstvo dok čekate."
+        },
+        "position3": {
+          "upright": "Vizionarno rukovodstvo i strateška hrabrost uzgajaju kolektivni kapital. Delegacija pruža skali.",
+          "reversed": "EGO i autoritarna tona za suštinu i deljenje kolaboracije.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "hrabrost",
+            "skala"
+          ],
+          "context": "Zajednička vizija stvara fer i veliki budžet."
+        },
+        "position5": {
+          "upright": "Slična hrabrost u vizionarskom liderstvu. Organ za deljenje, vaša inspiracija uvećava zajednički cilj.",
+          "reversed": "Postoji rizik od sukoba ega / autoriteta. Mišići slušanja mora biti sinhronizovan.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "inspiracija",
+            "učestvovanje",
+            "pravac"
+          ],
+          "context": "Vizija je uobičajena. Participativno rukovodstvo održava harmoniju."
+        },
+        "position6": {
+          "upright": "Vaša porodica vas može videti kao vizionarske, jake i lidene osobe. Vaš hrabri stav i samouvereni stav olakšavaju proces prihvatanja. Za njih ste vodeća figura.",
+          "reversed": "Porodica vas može doživljavati kao autoritarni ili ego-centrirani. Previše dominacije otežava prihvatanje. Nedostatak ravnoteže stvara distancu u porodici.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "hrabrost",
+            "snaga",
+            "vlast"
+          ],
+          "context": "Liderstvo povećava prihvatanje. Previše autoritarizma otežava porodicu."
+        },
+        "position7": {
+          "upright": "Kralj štapića ukazuje na sastanak u vizionarskom i strateškom okruženju. Voditelj i hrabrost čine se poslednje obveznice.",
+          "reversed": "Ograničeni kralj štapića kaže da autoritarizam ili ego trenja može da opterene vezu. Mišići slušanja olakšava proces.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "hrabrost",
+            "strategija"
+          ],
+          "context": "Upoznate se u strateškom okruženju. Slušanje bilansa Bond."
+        },
+        "position8": {
+          "upright": "Kralj štapića ukazuje na vizionarsku i vodeću komunikaciju. Jasno usmjeravanje osigurava usaglašavanje.",
+          "reversed": "Preokrećeni kralj štapića ukazuje da stav o dominaciji može da oteža komunikaciju. Slušanje jača vezu.",
+          "keywords": [
+            "rukovodstvo",
+            "vizija",
+            "slušanje",
+            "komunikacija"
+          ],
+          "context": "Liderstvo i slušanje donose harmoniju."
+        },
+        "position9": {
+          "upright": "Kralj štapića, vizionarski, nadahnjujući i moćni partner vam odgovara.",
+          "reversed": "Preokrenuo je kralja štapića, neko ko je dominering ili smerloško nije za vas.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "snaga",
+            "inspiracija"
+          ],
+          "context": "Vizionar i jak supružnik je pogodan."
+        },
+        "position4": {
+          "upright": "Kralj štapića ukazuje na vid, liderstvo i inspiraciju u posvećenosti. Jaka energija olakšava reći da.",
+          "reversed": "Ograničeni kralj štapića može biti dominirajući ili smerni u prilogu. Autoritarni stav otežava vezu.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "inspiracija",
+            "snaga",
+            "energija"
+          ],
+          "context": "Ojačana je vezom, vizijom i vođstvom."
+        }
+      },
+      "aceofpentacles": {
+        "position1": {
+          "upright": "Zaključak; U vašem braku biće čvrsti početak, finansijska sigurnost i trajne mogućnosti u vašem braku.",
+          "reversed": "Propuštene prilike ili finansijska nesigurnost mogu da napregnu ishod braka.",
+          "keywords": [
+            "početak",
+            "prilika",
+            "Finansijska sigurnost",
+            "stabilnost"
+          ],
+          "context": "Zaključak; siguran i stabilan brak. Ali ako se ne iskoriste mogućnosti, to je možda teško."
+        },
+        "position10": {
+          "upright": "Ace Pentacles pokazuje potencijal da se brak bude izgrađen na snažnom i čvrstom temeljima. Vrata prilika i obilje se otvaraju za novi početak.",
+          "reversed": "Nedostajuće mogućnosti ili nesigurnosti mogu otežati put ka braku. Moraju se preduzeti pažljivi koraci za uspostavljanje stabilnosti.",
+          "keywords": [
+            "početak",
+            "prilika",
+            "sigurnost",
+            "dosta",
+            "osnova"
+          ],
+          "context": "Konkretne mogućnosti se pojavljuju za brak, potrebni su čvrsti koraci."
+        },
+        "position2": {
+          "upright": "Iskoristite finansijske mogućnosti. Izgradite čvrstu fondaciju dok čekate.",
+          "reversed": "Propuštene mogućnosti usporavaju postupak. Budite fokusirani.",
+          "keywords": [
+            "prilika",
+            "osnova",
+            "Finansijska sigurnost",
+            "početak"
+          ],
+          "context": "Korisno je izgradnja temelja dok čekate."
+        },
+        "position3": {
+          "upright": "Konkretna prilika i čvrsti fondacija daju snažan početak zajedničkog budžeta. Mala semenka raste.",
+          "reversed": "Mentalitet za oskudica i strah od nedostajućih mogućnosti da odložite akciju.",
+          "keywords": [
+            "prilika",
+            "osnova",
+            "uverenje",
+            "početak"
+          ],
+          "context": "Deljenje se koren sa konkretnim planom."
+        },
+        "position4": {
+          "upright": "Želja za betonskim početkom, sigurnošću i stabilnošću jača prilog. Odnos se koren kada obe strane budu spremne da ulože u zajedničku osnovu.",
+          "reversed": "Finansijske probleme ili nedostatak sigurnosti mogu odložiti posvećenost. Srca ostaju neodlučno da kažu \"da\" dok betonski planovi ne budu jasni.",
+          "keywords": [
+            "početak",
+            "uverenje",
+            "opipljivost",
+            "investicija",
+            "stabilnost"
+          ],
+          "context": "Prilog se olakšava konkretnim koracima i uveravanjem; Neizvesnost može odlagati."
+        },
+        "position5": {
+          "upright": "Slična želja za uspostavljanjem konkretnog početka, osiguranja i temelja. Uzimate male korake i rastite zajedno.",
+          "reversed": "Vaš prag za oskudni mentalitet može biti drugačiji. Ako ne postoji konkretan plan, sličnost postaje dosadna.",
+          "keywords": [
+            "osnova",
+            "prilika",
+            "uverenje",
+            "seme",
+            "opipljivost"
+          ],
+          "context": "Sigurni osnovni partner. Držite plan vidljivim."
+        },
+        "position6": {
+          "upright": "Porodica može da vas u početku pogleda kao prilika. Solidnost, pouzdanost i materijalna stabilnost pružiće im samopouzdanje. Vaši konkretni koraci i ozbiljna namera mogu ubrzati proces prihvatanja.",
+          "reversed": "Porodica vas može doživljavati kao oportunistička ili nesigurna. Finansijske brige ili buduće zabrinutosti mogu otežati prihvatanje. Sumnja se povećava kada nedostaju konkretni dokazi.",
+          "keywords": [
+            "prilika",
+            "poverenje",
+            "početak",
+            "stabilnost",
+            "opipljivost"
+          ],
+          "context": "Porodica traži poverenje. Vaši konkretni koraci utrljavaju način za prihvatanje, nedostatak stvara nepoverenje."
+        },
+        "position7": {
+          "upright": "Ace Talisman kaže da će se sastanak dogoditi konkretnim mogućnostima. Novi posao, projekat ili finansijska prilika prelaze staze.",
+          "reversed": "Invertirani ACE of Talisman kaže da će ignorisanje mogućnosti odložiti sastanak. Realizacije vrednosti olakšava vezivanje.",
+          "keywords": [
+            "prilika",
+            "osnova",
+            "projekat",
+            "rast"
+          ],
+          "context": "Upoznaćete se na konkretnoj mogućnosti. Videti vrijednost otvara Bond."
+        },
+        "position8": {
+          "upright": "ACE PENTACLES simbolizuje siguran i čvrst početak u komunikaciji. Materijalna i moralna stabilnost olakšava sporazum.",
+          "reversed": "ACE Of Pentacles je preokrenuo, propuštene mogućnosti ili nesigurna fondacija može da otežava komunikaciju. Jasnost i konkretne akcije ojačavaju vezu.",
+          "keywords": [
+            "početak",
+            "poverenje",
+            "stabilnost",
+            "opipljivost"
+          ],
+          "context": "Podržava čvrstu fondacionu komunikaciju."
+        },
+        "position9": {
+          "upright": "ACE OF PENTACLES, partner koji gradi sigurna i čvrste temelje je pogodna za vas. Neko ko preduzima konkretne korake donosi mir.",
+          "reversed": "Ace of Pentacles se preokrenuo, neko ko pokazuje nestabilno i nesigurno ponašanje nije pogodan za vas.",
+          "keywords": [
+            "poverenje",
+            "osnova",
+            "stabilnost",
+            "rast"
+          ],
+          "context": "Supružnik koji uspostavlja sigurne temelje je pogodan."
+        }
+      },
+      "twoofpentacles": {
+        "position1": {
+          "upright": "Zaključak; Vaš brak će napredovati sa ravnotežom, harmonijom i fleksibilnošću.",
+          "reversed": "Neravnoteža i nemogućnost donošenja odluka mogu komplicirati ishod braka.",
+          "keywords": [
+            "ravnoteža",
+            "fleksibilnost",
+            "raport",
+            "odluka"
+          ],
+          "context": "Zaključak; Fleksibilan i uravnotežen brak. Ali odluke moraju biti jasne."
+        },
+        "position10": {
+          "upright": "Dva pentaklama naglašava potragu za ravnotežom i harmonije u bračnom procesu. Balansirajuće odgovornosti omogućava brak.",
+          "reversed": "Neravnoteža i odlaganja mogu odložiti bračni napredak. Postavljanje jasnih prioriteta je od suštinskog značaja.",
+          "keywords": [
+            "ravnoteža",
+            "raport",
+            "odgovornost",
+            "fleksibilnost",
+            "prioritet"
+          ],
+          "context": "Stanje odgovornosti je presudno za brak."
+        },
+        "position2": {
+          "upright": "Naučite vreme i upravljanje energijom. Ostanite fleksibilni dok čekate.",
+          "reversed": "Prekomerno nered otežava proces. Prioritet.",
+          "keywords": [
+            "ravnoteža",
+            "vreme",
+            "fleksibilnost",
+            "prioritet"
+          ],
+          "context": "Pomaže da budete uravnoteženi dok čekate."
+        },
+        "position3": {
+          "upright": "Fleksibilno stanje i pametni žongliranje upravljaju promenljivim troškovima. Postavka prioriteta je obavezna.",
+          "reversed": "Nered i odlaganja ometaju isplate; Stanje je uznemiren.",
+          "keywords": [
+            "ravnoteža",
+            "fleksibilnost",
+            "prioritet",
+            "protok"
+          ],
+          "context": "Uspostavljanje ritma održava sajamske deljenja."
+        },
+        "position4": {
+          "upright": "Vreme balansiranja, energije i resursa omogućava mogućnost veze. Kada se uspostavi fleksibilan ritam, odnos napreduje bez opterećenja.",
+          "reversed": "Prekomerna žurba i zbrke prioriteta mogu doneti odluku o teškim. Osim ako programi usavršavaju, srca ne mogu istovremeno da kažu \"da\".",
+          "keywords": [
+            "ravnoteža",
+            "fleksibilnost",
+            "vremenski vreme",
+            "raport",
+            "prioritet"
+          ],
+          "context": "Ritam i prioriteti moraju biti usklađeni za lepljenje; Nered sprečava."
+        },
+        "position5": {
+          "upright": "Fleksibilna ravnoteža, slična inteligencija u upravljanju vremenskim energijom. Radite žongler zajedno.",
+          "reversed": "Prag za nered i odlaganja može se razlikovati. Prioritetna matrica održava harmoniju.",
+          "keywords": [
+            "ravnoteža",
+            "fleksibilnost",
+            "ritam",
+            "prioritet",
+            "protok"
+          ],
+          "context": "Fleksibilni ritam uobičajen. Jasnost prioriteta je obavezna."
+        },
+        "position6": {
+          "upright": "Porodica pokušava da vas vidi u ravnoteži. Biće vredna u njihovim očima koje skladno nosite različite odgovornosti. Vaša fleksibilnost i prilagodljivost olakšavaju proces prijema.",
+          "reversed": "Možete ostaviti sliku da ne možete da upravljaju odgovornostima ili neodlučnošću u očima vaše porodice. Pošto ova situacija ne daje samopouzdanje, proces prihvatanja može trajati duže. Previše nereda stvara sumnju.",
+          "keywords": [
+            "ravnoteža",
+            "fleksibilnost",
+            "odgovornost",
+            "raport",
+            "odluka"
+          ],
+          "context": "Odgovornosti na izbalansiran način olakšava prihvatanje. Nered može stvoriti nepoverenje."
+        },
+        "position7": {
+          "upright": "Dva pentaklama kaže da će sastanak tražiti intenzitet i ravnotežu. Upravljanje vremenom može dovesti u pravu osobu.",
+          "reversed": "Dvojica obrnutog Reversed-a kaže da neravnoteža može da opterene obveznice. Prioriteti postavljanja olakšava sastanak.",
+          "keywords": [
+            "ravnoteža",
+            "vreme",
+            "prioritet",
+            "raport"
+          ],
+          "context": "Upoznate tokom zaposlenog perioda. Prioritet ubrzava vezu."
+        },
+        "position8": {
+          "upright": "Dva pentaklova ukazuje na fleksibilnost i ravnotežu u komunikaciji. Upravljanje tempom svakodnevnog života skladno osigurava ugovor.",
+          "reversed": "Reverse Dvoje talismana kaže da neravnoteža i zbrka mogu da otežavaju komunikaciju. Pojednostavljivanje prioriteta povećava usklađenost.",
+          "keywords": [
+            "ravnoteža",
+            "fleksibilnost",
+            "prioritet",
+            "raport"
+          ],
+          "context": "Bilans i fleksibilnost čine lakše."
+        },
+        "position9": {
+          "upright": "Dva pentaklama, fleksibilan, uravnotežen i prilagodljiv partner je pogodan za vas.",
+          "reversed": "Dva pentakova preokrenuta, neko ko je stalno neuravnotežen i neodlučan nije pogodan za vas.",
+          "keywords": [
+            "ravnoteža",
+            "fleksibilnost",
+            "raport",
+            "praktičnost"
+          ],
+          "context": "Pogodan je uravnotežen i harmoničan supružnik."
+        }
+      },
+      "threeofpentacles": {
+        "position1": {
+          "upright": "Zaključak; Biće saradnja, radeći zajedno i postizanje uobičajenih ciljeva.",
+          "reversed": "Nekompatibilnost ili nedostatak saradnje mogu potkopati ishod braka.",
+          "keywords": [
+            "partnerstvo",
+            "cilj",
+            "raport",
+            "rad"
+          ],
+          "context": "Zaključak; Brak koji raste kroz zajedničke napore. Ali saradnja je neophodna."
+        },
+        "position10": {
+          "upright": "Tri Pentekla ukazuje da će saradnja i zajednički napori doneti uspeh u braku. Bond izgrađena na zajedničkim vrednostima postaje jači.",
+          "reversed": "Nekompatibilnost i nedostatak saradnje mogu otežati brak. Važno je razjasniti uloge.",
+          "keywords": [
+            "partnerstvo",
+            "partnerstvo",
+            "vrednosti",
+            "izgradnja",
+            "uspeh"
+          ],
+          "context": "Saradnja i zajedničke vrednosti su neophodne za brak."
+        },
+        "position2": {
+          "upright": "Poboljšajte svoje odnose sa saradnjom i bliskim krugovima. Usredsredite se na svoje projekte dok čekate.",
+          "reversed": "Ekstremna usamljenost čini proces teškim. Usredsredite se na ljudske odnose.",
+          "keywords": [
+            "partnerstvo",
+            "neposredna okolina",
+            "projekti",
+            "odnose"
+          ],
+          "context": "Dok je čekalo, korisno je poboljšati saradnju i odnose."
+        },
+        "position3": {
+          "upright": "Saradnja, jasnoća uloga i proces; Poboljšava finansijski kvalitet. Vidljiva radna snaga povećava uvažavanje.",
+          "reversed": "Uloga nejasnoća i nedostatak koordinacije dovode do dvostrukog rada i otpada.",
+          "keywords": [
+            "partnerstvo",
+            "uloga",
+            "period"
+          ]
+        }
+      }
+    }
+  }
+}

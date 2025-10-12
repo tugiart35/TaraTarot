@@ -1,0 +1,780 @@
+{
+  "situation-analysis": {
+    "meanings": {
+      "thetower": {
+        "position4": {
+          "keywords": {
+            "4": "rebuild"
+          },
+          "context": "Center: decontamination tremor."
+        },
+        "position5": {
+          "upright": "The tower, external shocks, sudden policy/market changes and shocking news can be affected by old assumptions.",
+          "reversed": "The Reverse Tower says that delayed/retarded crises are at risk of building up and cracking, and controlled destruction reduces the damage.",
+          "keywords": {
+            "0": "Shock",
+            "1": "crisis",
+            "2": "destruction",
+            "3": "rebuild",
+            "4": "conjecture"
+          },
+          "context": "Outbreak-resistant architecture is essential."
+        },
+        "position6": {
+          "upright": "Advice: Find and strengthen vulnerable foundations honestly. Write crisis scenarios.",
+          "reversed": "Advice: Do controlled destruction, consciously remove what no longer works.",
+          "keywords": {
+            "0": "crisis",
+            "1": "risk",
+            "2": "basic",
+            "3": "Enforcement",
+            "4": "rebuild"
+          },
+          "context": "Advice: Proactive reinforcement."
+        },
+        "position7": {
+          "upright": "Possible future: A traumatic but cleansing fracture destroys the rotten foundation; it becomes real visible and the reconstruction begins.",
+          "reversed": "Possible future: Controlled destruction reduces damage; yet a radical change is inevitable.",
+          "keywords": {
+            "0": "crisis",
+            "1": "destruction",
+            "2": "Awakening",
+            "3": "Purge",
+            "4": "rebuild"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "thestar": {
+        "position1": {
+          "upright": "The star, the hope of the past, the search for healing, or an inspiring development may be at the root of today's process.",
+          "reversed": "Reverse Star, hopelessness, loss of faith, or pessimism in the past may have led to the present situation.",
+          "keywords": {
+            "0": "hope",
+            "1": "It's a cure.",
+            "2": "Inspired",
+            "3": "future",
+            "4": "history"
+          },
+          "context": "The effect of past experiences of hope or despair."
+        },
+        "position2": {
+          "upright": "The star represents that hope, healing and inspiration are manifesting in your life right now. After difficult times, inner calm and confidence are sprouting again. As your path becomes clear, you can move forward with intuitive guidance. This card emphasizes the importance of recovery and compassion to yourself.",
+          "reversed": "Reverse Star can now show that despair, lack of inspiration, or lack of faith, you may have a hard time seeing the bright picture of the future. This card reminds you that you can turn your light back on in small but consistent self-care steps.",
+          "keywords": {
+            "0": "hope",
+            "1": "It's a cure.",
+            "2": "Inspired",
+            "3": "Tranquillity",
+            "4": "Now."
+          },
+          "context": "In this case, the search for hope and healing."
+        },
+        "position3": {
+          "upright": "The star shows the invisible healing effect of its desire to allow sparks of hope and vulnerability, and pure intent lights up the light.",
+          "reversed": "The Reverse Star accentuates the story of despair, weariness and self-deprecation, the fog, which cloaks the light, was created inside.",
+          "keywords": {
+            "0": "hope",
+            "1": "It's a cure.",
+            "2": "Invulnerability",
+            "3": "extremism",
+            "4": "hidden light"
+          },
+          "context": "Subliminal and hidden factors"
+        },
+        "position4": {
+          "upright": "There's hope, healing and simplification at the center.",
+          "reversed": "There may be a shadow of despair or exhaustion at the center, and small rituals call back the light.",
+          "keywords": {
+            "0": "hope",
+            "1": "It's a cure.",
+            "2": "Inspired",
+            "3": "simplicity",
+            "4": "Regeneration"
+          },
+          "context": "Center: the source of peace."
+        },
+        "position5": {
+          "upright": "The star shows that there is a high level of trust, goodwill, and community support outside, and the influence of transparency and inspiration is strong.",
+          "reversed": "The Reverse Star says that the rhetoric of despair, negative PR, or trust erosion, is echoing outside.",
+          "keywords": {
+            "0": "Dignity",
+            "1": "Trust",
+            "2": "Community",
+            "3": "Inspired",
+            "4": "PR"
+          },
+          "context": "The external perception glows or fades with translucent communication."
+        },
+        "position6": {
+          "upright": "Advice: Simplify, communicate transparently, and create small rituals that support hope.",
+          "reversed": "Advice: Rest, fill your resources, set mini-targets that will keep hope alive.",
+          "keywords": {
+            "0": "hope",
+            "1": "It's a cure.",
+            "2": "simplicity",
+            "3": "transparency",
+            "4": "ritual"
+          },
+          "context": "Advice: Systemic growth of light."
+        },
+        "position7": {
+          "upright": "Possible future: with healing, hope, and simplification, the path is lit up; confidence is renewed and inspired.",
+          "reversed": "Possible future: it takes time to gather momentum; it takes time to fill resources and restore trust.",
+          "keywords": {
+            "0": "hope",
+            "1": "It's a cure.",
+            "2": "Inspired",
+            "3": "simplicity",
+            "4": "Regeneration"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "themoon": {
+        "position1": {
+          "upright": "The Moon may be at the root of today's conditions - uncertainty, illusions, or intuitive effects in the past.",
+          "reversed": "Reverse Moon, past illusions, fears, or hidden truths may have affected today's situation.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "intuition",
+            "2": "illusion",
+            "3": "Secret",
+            "4": "history"
+          },
+          "context": "The effects of uncertainty or illusions in the past."
+        },
+        "position2": {
+          "upright": "The Moon now shows that uncertainty, intuitive signals, and issues that remain in the shadows can be effective. Unequivocal information and variable emotions can challenge your decision process. This card emphasizes the importance of moving forward, without haste, until the fog scatters.",
+          "reversed": "The Reverse Moon can show that illusions are now revealed, that fears are beginning to unravel, or that hidden truths are visible. However, the waves of extreme doubt, paranoia or confusion may come. This card advises you to place your feet firmly on the ground as clarity emerges.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "intuition",
+            "2": "Secret",
+            "3": "illusion",
+            "4": "Now."
+          },
+          "context": "In this case, it's foggy, but it's a process that's unraveling."
+        },
+        "position3": {
+          "upright": "The moon says that fears, projections, and uncertainty come from the subconscious wave of waves.",
+          "reversed": "The reverse moon shows a hidden impulse to see the origins of anxiety and dispersion of fog, the truth is close.",
+          "keywords": {
+            "0": "fear",
+            "1": "illusion",
+            "2": "uncertainty",
+            "3": "projection",
+            "4": "hidden"
+          },
+          "context": "Subliminal and hidden factors"
+        },
+        "position4": {
+          "upright": "The center has uncertainty, intuitive depth and symbolic guidance.",
+          "reversed": "At the center, it appears to be waking up from delusions or facing fears, slow openness increases confidence.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "intuition",
+            "2": "fear",
+            "3": "illusion",
+            "4": "Introduction"
+          },
+          "context": "Center: compass in fog."
+        },
+        "position5": {
+          "upright": "The moon shows that rumors, vague messages, and double meaning signals are confusing outside.",
+          "reversed": "The Reverse Moon says that the fog disbands, that the truth is revealed, and that confirmation of information is in order out there.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "Rumor",
+            "2": "perception",
+            "3": "clarity",
+            "4": "risk"
+          },
+          "context": "Communication clarity lowers the cost of uncertainty."
+        },
+        "position6": {
+          "upright": "Advice: Test the assumptions, shed light on the uncertain areas with small experiments.",
+          "reversed": "Advice: Do a reality check, balance the fear with the yield.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "conjecture",
+            "2": "test",
+            "3": "fear",
+            "4": "Verification"
+          },
+          "context": "Advice: light little lanterns in the fog."
+        },
+        "position7": {
+          "upright": "Possible future: The uncertainty lasts a while; it needs to go ahead intuitively and read the signs.",
+          "reversed": "Possible future: Fog scatters; illusion dissolves, and reality reconciles.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "intuition",
+            "2": "fear",
+            "3": "illusion",
+            "4": "Abstract"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "thesun": {
+        "position1": {
+          "upright": "Sun, success in the past, happiness and light energy can be the basis of today's situation.",
+          "reversed": "The Reverse Sun, the temporary pessimism of the past, the loss of confidence, or the shadows may be at the root of the process.",
+          "keywords": {
+            "0": "success",
+            "1": "Happiness",
+            "2": "enlightenment",
+            "3": "Self - confidence",
+            "4": "history"
+          },
+          "context": "The success of the past or the influence of shadows."
+        },
+        "position2": {
+          "upright": "The sun represents that openness, success and viability are high right now. Trust, joy and clarity make things easier; your appearance increases and roads open. This card says that it is time to take simple and effective steps by maintaining your optimism.",
+          "reversed": "The Reverse Sun may now point to temporary pessimism, motivation or decline in appearance. Your potential is in place, the clouds have temporarily cloaked the sun. This card suggests that you raise your energy by celebrating small achievements.",
+          "keywords": {
+            "0": "success",
+            "1": "joy",
+            "2": "enlightenment",
+            "3": "Self - confidence",
+            "4": "Now."
+          },
+          "context": "In the present case, high spirits or temporary shadows."
+        },
+        "position3": {
+          "upright": "The sun says that the inner joy, the game, and the need to express itself are secretly giving power, and the inner child is looking for brightness.",
+          "reversed": "The Reverse Sun points to the fear of being seen, the fear of not being loved, and the temporary pessimism.",
+          "keywords": {
+            "0": "joy",
+            "1": "Self - confidence",
+            "2": "visibility",
+            "3": "Drink up, kid.",
+            "4": "When you're in hiding"
+          },
+          "context": "Subliminal and hidden factors"
+        },
+        "position4": {
+          "upright": "There's openness, joy and visible success at the center, energy high, trust contagious.",
+          "reversed": "There may be temporary pessimism or a recession at the center, and celebrating small victories makes the light bigger.",
+          "keywords": {
+            "0": "success",
+            "1": "joy",
+            "2": "light",
+            "3": "Self - confidence",
+            "4": "Enliversity"
+          },
+          "context": "Center: flash point."
+        },
+        "position5": {
+          "upright": "The sun, positive appearance, success stories, and supportive window effect are powerful outside, boosting morale and acceptance.",
+          "reversed": "The Reverse Sun says that exaggerated promises, shadowy details, or jealous glances can cause problems outside.",
+          "keywords": {
+            "0": "visibility",
+            "1": "success",
+            "2": "Morality",
+            "3": "brightness",
+            "4": "perception"
+          },
+          "context": "Bright window offers opportunity; reality must be controlled."
+        },
+        "position6": {
+          "upright": "Advice: Make the gains visible, celebrate and expand their cooperation.",
+          "reversed": "Advice: Document minor victories, establish routines that support positive acceleration.",
+          "keywords": {
+            "0": "success",
+            "1": "visibility",
+            "2": "celebration",
+            "3": "co-operation",
+            "4": "acceleration"
+          },
+          "context": "Advice: to multiply by sharing light."
+        },
+        "position7": {
+          "upright": "Possible future: net success, visibleness, and joy; energy increases and trust improves.",
+          "reversed": "Possible future: Partial success and lack of detail can be seen; small corrections increase brightness.",
+          "keywords": {
+            "0": "success",
+            "1": "clarity",
+            "2": "joy",
+            "3": "visibility",
+            "4": "Self - confidence"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "judgement": {
+        "position1": {
+          "upright": "The court may have laid the foundation for a past awakening, forgiveness, or rebirth.",
+          "reversed": "The Inverted Court may have shaped the situation in the past, where opportunities have been missed, forgiven, or relieved of responsibility.",
+          "keywords": {
+            "0": "Awakening",
+            "1": "decision",
+            "2": "Freedom",
+            "3": "reckoning",
+            "4": "history"
+          },
+          "context": "The wake-up in the past or the impact of missed opportunities."
+        },
+        "position2": {
+          "upright": "The court shows that you are now in a time of awakening, accounting and change of direction. By considering the past and forgiving yourself, you are on the verge of responding to a clearer call. This card emphasizes that you are ready to take your internal call seriously and move on to a new phase.",
+          "reversed": "The Inverse Court can show that you're delaying opportunities right now, ignoring the call, or hanging out in self-judgment. Not forgiving yourself slows down progress. This card reminds you that a soft confrontation and responsibility will open the doors.",
+          "keywords": {
+            "0": "Awakening",
+            "1": "reckoning",
+            "2": "decision",
+            "3": "Rebirth",
+            "4": "Now."
+          },
+          "context": "In this case, internal call and decision-making threshold."
+        },
+        "position3": {
+          "upright": "The court says that the urge to call in, to forgive, and to be reborn is poking you from behind the curtain, and the desire to leave the old story is getting stronger.",
+          "reversed": "The Reverse Court emphasizes self-judgment, fear of error, and delaying the call.",
+          "keywords": {
+            "0": "Awakening",
+            "1": "Forgiveness",
+            "2": "call",
+            "3": "Self-judgment",
+            "4": "secret resistance"
+          },
+          "context": "Subliminal and hidden factors"
+        },
+        "position4": {
+          "upright": "There's a wake-up, a response to the call, a purge of the past, a reckoning that triggers a new birth.",
+          "reversed": "He could be handing out self-judgment or postponement at the center, and compassionate acceptance opens the door.",
+          "keywords": {
+            "0": "Awakening",
+            "1": "decision",
+            "2": "Forgiveness",
+            "3": "Regeneration",
+            "4": "call"
+          },
+          "context": "Central: Central of the call."
+        },
+        "position5": {
+          "upright": "The court shows that audits, evaluations and recall processes are active outside, and objective measures speed up progress.",
+          "reversed": "The Inverse Court says that unjust judgments, prejudice, or severe bureaucracy are delaying decisions outside.",
+          "keywords": {
+            "0": "assessment",
+            "1": "control",
+            "2": "feedback",
+            "3": "judgment",
+            "4": "criteria"
+          },
+          "context": "The external assessment determines the playing field."
+        },
+        "position6": {
+          "upright": "Advice: treat the past objectively and respond to the call. Release the old loads.",
+          "reversed": "Advice: Ease the self-judgment. Forgiveness and a clear decision will open the new page.",
+          "keywords": {
+            "0": "assessment",
+            "1": "call",
+            "2": "Forgiveness",
+            "3": "decision",
+            "4": "Regeneration"
+          },
+          "context": "Advice: reckoning and leaping."
+        },
+        "position7": {
+          "upright": "Possible future: The answer to Awakening and calling is to drop the past loads and switch to the new page.",
+          "reversed": "Possible future: acceptance may be delayed; self-judgment slows progress. Forgiveness opens the door.",
+          "keywords": {
+            "0": "Awakening",
+            "1": "decision",
+            "2": "Forgiveness",
+            "3": "Regeneration",
+            "4": "closure"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "theworld": {
+        "position1": {
+          "upright": "The world may have been the basis of today's process, a cycle that has been completed in the past, successes or a sense of integrity.",
+          "reversed": "The Reverse World may have affected the current conditions of unfinished business, shortcomings or failures in the past.",
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "integrity",
+            "3": "cycle",
+            "4": "history"
+          },
+          "context": "The effect of past completion or shortcomings."
+        },
+        "position2": {
+          "upright": "The world now represents a successful completion of a cycle, a sense of integrity, and a transition to a new phase. You're getting your work's worth and you're getting a wider perspective. This card advises you to prepare for a new beginning with celebration and gratitude.",
+          "reversed": "The Reverse World shows the incomplete processes, missing rings, or avoiding the end. A little touch or closure ritual can help you close the cycle. This card reminds you that the path will be opened if you gently complete the missing.",
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "integrity",
+            "3": "cycle",
+            "4": "Now."
+          },
+          "context": "In this case, closing and preparing for a new cycle."
+        },
+        "position3": {
+          "upright": "The world says its desire to complete and its need for integration provides invisible motivation, and the desire to gracefully close the cycle grows from the inside.",
+          "reversed": "The Reverse World points to unfinished business, fear of closure, and lack of integration patterns.",
+          "keywords": {
+            "0": "completion",
+            "1": "integrity",
+            "2": "Integration",
+            "3": "closure",
+            "4": "hidden theme"
+          },
+          "context": "Subliminal and hidden factors"
+        },
+        "position4": {
+          "upright": "There's completion, integrity, and cycle closure at the center. Integration strengthens the new phase.",
+          "reversed": "There may be unfinishedness at the center, or a tendency to reboot before finishing.",
+          "keywords": {
+            "0": "completion",
+            "1": "integrity",
+            "2": "Integration",
+            "3": "cycle",
+            "4": "success"
+          },
+          "context": "Center: crown of closure."
+        },
+        "position5": {
+          "upright": "The world shows global access, wide networks, and completed cycles out there taking advantage of international doors.",
+          "reversed": "The Reverse World says that missing integration, regional constraints or logistical barriers narrow the frame outside.",
+          "keywords": {
+            "0": "global",
+            "1": "network",
+            "2": "Integration",
+            "3": "access",
+            "4": "logistics"
+          },
+          "context": "Global bonds increase the scale; you have to cover the gaps."
+        },
+        "position6": {
+          "upright": "Advice: Complete, document and scale file. Systemize success.",
+          "reversed": "Advice: Close missing ends. Don't replace them until you've finished.",
+          "keywords": {
+            "0": "complete",
+            "1": "system",
+            "2": "scale",
+            "3": "Integration",
+            "4": "success"
+          },
+          "context": "Advice: scaling after closing."
+        },
+        "position7": {
+          "upright": "The possible future: the cycle is complete; you will rise to a new level with integration and a new level of impotence.",
+          "reversed": "Possible future: Missing ends delay closure; unfinished regeneration creates disarray.",
+          "keywords": {
+            "0": "completion",
+            "1": "Integration",
+            "2": "success",
+            "3": "integrity",
+            "4": "graduation"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "aceofcups": {
+        "position1": {
+          "upright": "The Ace of Hearts represents an emotional beginning in the past, intense love or opening of the heart. This can be a relationship, friendship, or an experience that deeply affects you. This loving step may have played an important role in the basis of your present circumstances. This card shows that this emotional beginning in the past still leaves a mark on your spiritual journey.",
+          "reversed": "The Reverse Cup Ace points to repressed feelings in the past, unexplainable love, or incomplete emotional beginnings. Perhaps you were not ready to open your heart, so the opportunity ran away or your emotions didn't exactly flow. This card still reminds you of the emotional state of being blocked by love in the past.",
+          "keywords": {
+            "0": "love",
+            "1": "start",
+            "2": "emotion",
+            "3": "Compassion",
+            "4": "history"
+          },
+          "context": "The effect of past emotional beginnings or blocked love."
+        },
+        "position2": {
+          "upright": "The Ace of Hearts is now an emotional opening, which shows that you are facing the flow of love and love. The exchange of love, compassion and empathy is increasing; the possibility of spiritual satisfaction is increasing. This card emphasizes that expressing emotions and keeping your heart open will now be healing in relationships and creative processes.",
+          "reversed": "The Reverse Cup Ace shows that emotions can be suppressed, expression difficulties, or emotional blockage. Your inner container may be full, but you may not be allowed to flow. Now self-control is critical for naming emotions, and safe sharings are critical for solving congestion.",
+          "keywords": {
+            "0": "emotional start",
+            "1": "Compassion",
+            "2": "expression",
+            "3": "flow",
+            "4": "Now."
+          },
+          "context": "An emotional opening or emotional blockage threshold."
+        },
+        "position3": {
+          "upright": "The Ace of Hearts shows that there is a strong desire in your subconscious for love to flow, to be emotionally renewed and to open the heart, and the need for unexplained emotions and compassion may be invisibly guiding your decisions.",
+          "reversed": "The Reverse Cup Ace says that repressed feelings work behind the scenes of vulnerability and emotional congestion. The side of your heart that wants to get hurt may be withdrawing itself from fear of getting hurt.",
+          "keywords": {
+            "0": "emotion",
+            "1": "Compassion",
+            "2": "opening",
+            "3": "hidden",
+            "4": "subconscious"
+          },
+          "context": "Subliminal and hidden factors"
+        },
+        "position4": {
+          "upright": "There's emotional opening at the center, compassion, and heart flow, and the emotion expressed is the source that feeds all relationships.",
+          "reversed": "There could be emotional blockage or suppression at the center, safe expression, reopening the heart.",
+          "keywords": {
+            "0": "angle",
+            "1": "Compassion",
+            "2": "expression",
+            "3": "flow",
+            "4": "Recovery"
+          },
+          "context": "Center: the fountain of the heart."
+        },
+        "position5": {
+          "upright": "The Ace of Hearts shows that there are open doors for intimate support, empathy, and new relationships in the outside world.",
+          "reversed": "The Reverse Cup ace says there may be emotional coldness, resentment, or trust issues outside, and distance weakens co-operation.",
+          "keywords": {
+            "0": "support",
+            "1": "empathy",
+            "2": "Closeness",
+            "3": "Trust",
+            "4": "relationship"
+          },
+          "context": "Community/group temperature affects co-operation."
+        },
+        "position6": {
+          "upright": "Advice: Gently express your feelings, open a field of compassion, and say yes to a new emotional bond.",
+          "reversed": "Advice: repair the broken heart, open the flow with self-love rituals and safe expression.",
+          "keywords": {
+            "0": "expression",
+            "1": "Compassion",
+            "2": "Closeness",
+            "3": "Self-love",
+            "4": "flow"
+          },
+          "context": "Advice: open the heart gently."
+        },
+        "position7": {
+          "upright": "Possible future: an emotional refreshment and a beginning in the heart build up closeness and compassion.",
+          "reversed": "Possible future: The new page is difficult to open before the emotional blockage is resolved; safe expression is needed.",
+          "keywords": {
+            "0": "new emotion",
+            "1": "Compassion",
+            "2": "expression",
+            "3": "angle",
+            "4": "Closeness"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "twoofcups": {
+        "position1": {
+          "upright": "Two Cups represent a compatible relationship in the past, a partnership, or a strong bond. This bond may have been the basis for your present conditions. A romantic or friendly union has shaped you. This card reminds you that this past harmony still gives you strength.",
+          "reversed": "The Inverse Two Cups point to dissonance, dissolution, or unstable relationships in the past. These experiences may be at the root of today's conditions. This card shows that the loss of harmony or differences in the past continue to affect you today.",
+          "keywords": {
+            "0": "relationship",
+            "1": "compatibility",
+            "2": "connection",
+            "3": "partnership",
+            "4": "history"
+          },
+          "context": "The effect of past compatible or incompatible relationships."
+        },
+        "position2": {
+          "upright": "The Two Cups say that a compatible bond, mutual understanding, and partnership are at the center now. The Verme-Alma balance can be strengthened, dialogues are healing. The bridges founded from the heart deepen confidence and support growth together.",
+          "reversed": "The Inverse Two Cups is the key to fixing bridges.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "partnership",
+            "2": "Balanced bond",
+            "3": "communication",
+            "4": "Now."
+          },
+          "context": "The bonding and all that, fixing the imbalances in the bond."
+        },
+        "position3": {
+          "upright": "The two Cups show that the need for reciprocity, harmony, and sight is a powerful theme inside.",
+          "reversed": "The Inverse Two Cups says that secret imbalances, approval addiction, or inequality-taking patterns outstrip the relationship field, which may be feeding on intrinsically dissatisfaction, unspoken expectations.",
+          "keywords": {
+            "0": "reciprocity",
+            "1": "compatibility",
+            "2": "confirmation",
+            "3": "imbalance",
+            "4": "hidden"
+          },
+          "context": "Subliminal and hidden factors"
+        },
+        "position4": {
+          "upright": "The center has a balance of reciprocity, harmony and partnership, which strengthens the even trade bridge.",
+          "reversed": "There may be unstable attachments or misunderstandings at the center, clear boundaries and net needs to balance the balance.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "connection",
+            "2": "Equality",
+            "3": "dialogue",
+            "4": "Trust"
+          },
+          "context": "Center: the heart of the vineyard."
+        },
+        "position5": {
+          "upright": "The two Cups show that there's a high probability of reciprocity and harmony with external partners.",
+          "reversed": "The Reverse Two Cup says that unstable bonds, misunderstandings or fragile alliances can create problems outside.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "reciprocity",
+            "2": "alliance",
+            "3": "dialogue",
+            "4": "balance"
+          },
+          "context": "An equal relationship determines the quality of external support."
+        },
+        "position6": {
+          "upright": "Advice: Strengthen reciprocity; establish an equal bond with clear expectations and borders.",
+          "reversed": "Advice: Renegotiate or distance from unstable transactions.",
+          "keywords": {
+            "0": "reciprocity",
+            "1": "limit",
+            "2": "dialogue",
+            "3": "compatibility",
+            "4": "balance"
+          },
+          "context": "Advice: Reconstruction of equality."
+        },
+        "position7": {
+          "upright": "Possible future: mutual bond is strengthened; a fair and warm partnership is established.",
+          "reversed": "Possible future: Harmony can be broken; misunderstandings cause the bond to cool.",
+          "keywords": {
+            "0": "partnership",
+            "1": "compatibility",
+            "2": "reciprocity",
+            "3": "transparency",
+            "4": "Trust"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "threeofcups": {
+        "position1": {
+          "upright": "The three Cups represent past celebrations, friendship bonds, or joyful times. These experiences may have supported you and laid the foundation for your present situation. This card shows that past friendships still inspire you.",
+          "reversed": "The Reverse Three Cup points to dissolutions in the past, disappointments in friendships, or a lack of pleasant moments. These experiences may have cast a shadow on your emotional state today. This card tells us that ties that have been broken in the past have been extended to this day.",
+          "keywords": {
+            "0": "celebration",
+            "1": "Friendship",
+            "2": "unity",
+            "3": "support",
+            "4": "history"
+          },
+          "context": "The effect of past friendships or disconnects."
+        },
+        "position2": {
+          "upright": "The three Cups now bring out the energy of community, friendship and celebration. Sharing with the supportive environment increases joy, inspires co-operation. Creating and celebrating success refreshes emotional reserves.",
+          "reversed": "The Reverse Three Cups show that social fatigue, exclusion, or superficial connections can be corrosive right now. Too much dispersion can consume self-source.",
+          "keywords": {
+            "0": "celebration",
+            "1": "friendship",
+            "2": "support",
+            "3": "share",
+            "4": "Now."
+          },
+          "context": "Replicating social support or balancing excesses."
+        },
+        "position3": {
+          "upright": "The three Cups describe the need for community support, friendship and sharing as motivation behind the scenes. They want to increase the desire, the joy, and the inspiration to be together.",
+          "reversed": "The Inverse Three Cups says that fear of exclusion, superficial bonds, or a sense of comparison, create hidden tensions, which can result from the absence of the real needs of social fatigue.",
+          "keywords": {
+            "0": "Community",
+            "1": "friendship",
+            "2": "share",
+            "3": "Comparison",
+            "4": "hidden"
+          },
+          "context": "Subliminal and hidden factors"
+        },
+        "position4": {
+          "upright": "The center has the energy of community, friendship and celebration, and sharing increases joy.",
+          "reversed": "There may be social fatigue or superficiality at the center, opening up space for quality bonds.",
+          "keywords": {
+            "0": "Community",
+            "1": "friendship",
+            "2": "celebration",
+            "3": "share",
+            "4": "support"
+          },
+          "context": "Center: the joy of being together."
+        },
+        "position5": {
+          "upright": "Three Cups shows that community celebration outside, supportive networks and sharing culture are strong.",
+          "reversed": "The Reverse Three Cup says that jealousy, isolation, or superficiality may appear in the outside world.",
+          "keywords": {
+            "0": "Community",
+            "1": "celebration",
+            "2": "support",
+            "3": "Jealousy",
+            "4": "culture"
+          },
+          "context": "Social climate can strengthen or shade motivation."
+        },
+        "position6": {
+          "upright": "Advice: Activate your community, call for backup and plan small celebrations.",
+          "reversed": "Advice: Apply a social diet, prioritize deep ties.",
+          "keywords": {
+            "0": "Community",
+            "1": "support",
+            "2": "celebration",
+            "3": "priority",
+            "4": "connection"
+          },
+          "context": "Advice: to use social energy consciously."
+        },
+        "position7": {
+          "upright": "Possible future: celebration, community support and sharing joy; success grows together.",
+          "reversed": "Possible future: social friction or postponing may demoralize; close public focus is useful.",
+          "keywords": {
+            "0": "celebration",
+            "1": "friendship",
+            "2": "share",
+            "3": "Community",
+            "4": "Morality"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "fourofcups": {
+        "position1": {
+          "upright": "The Four Cups represent the emotional dissatisfaction of the past, the lack of opportunity, or the reluctance of the past. This attitude may be the basis of your present circumstances. This card shows that this disinterest or dissatisfaction in the past still affects you today.",
+          "reversed": "The Reverse Four Cup points to noticing past opportunities, awakening, or a new emotional beginning. This term may have laid the groundwork for your present conditions. This card shows that this awareness of the past or escapes still affect your mood today.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "opportunity",
+            "2": "emotion",
+            "3": "Recklessness",
+            "4": "history"
+          },
+          "context": "The effect of past dissatisfactions or awareness."
+        },
+        "position2": {
+          "upright": "The Four Cup shows the search for disinterest, dissatisfaction, or emotional dissatisfaction right now. The opportunities in front of you may be overlooked.",
+          "reversed": "The Reverse Four Cup points to waking up now, raising awareness and new emotional interest. Acceptance and gratitude disperse the blur.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "Introduction",
+            "2": "awareness",
+            "3": "opportunity",
+            "4": "Now."
+          },
+          "context": "Determining dissatisfaction and re-opening."
+        },
+        "position3": {
+          "upright": "The Four Cups show that deep down a dissatisfaction, emotional numbness, or the tendency to underestimate what life offers.",
+          "reversed": "The Reverse Four Cups tells us that the urge to wake up and reconnect with gratitude has sprouted inside, but the distance formed by habit may delay recalling life.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "Recklessness",
+            "2": "awareness",
+            "3": "Gratitude",
+            "4": "hidden"
+          },
+          "context": "Subliminal and hidden factors"
+        },
+        "position4": {
+          "upright": "The center has a tendency to dissatisfaction and internal observation, and the opportunity is waiting to be noticed.",
+          "reversed": "The potential for awakening and gratitude in the center is increasing, the focus needs to be renewed."
+        }
+      }
+    }
+  }
+}

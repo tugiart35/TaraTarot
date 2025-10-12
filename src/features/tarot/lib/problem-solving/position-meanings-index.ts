@@ -17,6 +17,7 @@ Bağlı Dosyalar:
 ---
 
 */
+'use client';
 
 import { TarotCard } from '@/types/tarot';
 import {
@@ -438,6 +439,122 @@ export const getStatistics = () => {
   };
 };
 
+/**
+ * i18n destekli Problem Solving anlam fonksiyonu
+ * @param cardName - Kart adı (örn: "The Fool")
+ * @param position - Pozisyon numarası (1-10)
+ * @param t - i18n translate fonksiyonu
+ * @returns i18n destekli anlam veya null
+ */
+export const getI18nProblemSolvingMeaningByCardAndPosition = (
+  cardName: string,
+  position: number,
+  t: (_key: string) => string
+): ProblemSolvingPositionMeaning | null => {
+  // Orijinal anlamı al
+  let originalMeaning: ProblemSolvingPositionMeaning | null = null;
+
+  switch (position) {
+    case 1:
+      originalMeaning = getProblemSolvingPosition1MeaningByCardName(cardName);
+      break;
+    case 2:
+      originalMeaning = getProblemSolvingPosition2MeaningByCardName(cardName);
+      break;
+    case 3:
+      originalMeaning = getProblemSolvingPosition3MeaningByCardName(cardName);
+      break;
+    case 4:
+      originalMeaning = getProblemSolvingPosition4MeaningByCardName(cardName);
+      break;
+    case 5:
+      originalMeaning = getProblemSolvingPosition5MeaningByCardName(cardName);
+      break;
+    case 6:
+      originalMeaning = getProblemSolvingPosition6MeaningByCardName(cardName);
+      break;
+    case 7:
+      originalMeaning = getProblemSolvingPosition7MeaningByCardName(cardName);
+      break;
+    case 8:
+      originalMeaning = getProblemSolvingPosition8MeaningByCardName(cardName);
+      break;
+    case 9:
+      originalMeaning = getProblemSolvingPosition9MeaningByCardName(cardName);
+      break;
+    case 10:
+      originalMeaning = getProblemSolvingPosition10MeaningByCardName(cardName);
+      break;
+    default:
+      return null;
+  }
+
+  if (!originalMeaning) {
+    return null;
+  }
+
+  // i18n'den çevirileri al
+  const cardKey = cardName
+    .toLowerCase()
+    .replace(/\s+/g, '')
+    .replace(/[^a-z0-9]/g, '');
+
+  const i18nUpright = t(
+    `problem-solving.meanings.${cardKey}.position${position}.upright`
+  );
+  const i18nReversed = t(
+    `problem-solving.meanings.${cardKey}.position${position}.reversed`
+  );
+  const i18nKeywords = t(
+    `problem-solving.meanings.${cardKey}.position${position}.keywords`
+  );
+  const i18nContext = t(
+    `problem-solving.meanings.${cardKey}.position${position}.context`
+  );
+
+  // i18n çevirisi mevcut değilse orijinali kullan
+  const isI18nAvailable =
+    i18nUpright && !i18nUpright.startsWith('problem-solving.meanings.');
+
+  return {
+    ...originalMeaning,
+    upright: isI18nAvailable ? i18nUpright : originalMeaning.upright,
+    reversed:
+      i18nReversed && !i18nReversed.startsWith('problem-solving.meanings.')
+        ? i18nReversed
+        : originalMeaning.reversed,
+    keywords: (() => {
+      if (
+        !i18nKeywords ||
+        i18nKeywords.startsWith('problem-solving.meanings.')
+      ) {
+        return originalMeaning.keywords;
+      }
+      // Keywords zaten array olabilir veya JSON string olabilir
+      if (Array.isArray(i18nKeywords)) {
+        return i18nKeywords;
+      }
+      try {
+        const parsed = JSON.parse(i18nKeywords);
+        if (Array.isArray(parsed)) {
+          return parsed;
+        }
+        return originalMeaning.keywords;
+      } catch (error) {
+        console.error(
+          `[Problem Solving Position ${position}] Failed to parse keywords for ${cardName}:`,
+          error
+        );
+        return originalMeaning.keywords;
+      }
+    })(),
+    context:
+      i18nContext && !i18nContext.startsWith('problem-solving.meanings.')
+        ? i18nContext
+        : originalMeaning.context,
+  };
+};
+
 // Varsayılan export
 const problemSolvingExports = {
   getProblemSolvingMeaningByCardAndPosition,
@@ -452,6 +569,8 @@ const problemSolvingExports = {
   searchMeaningsByCardName,
   searchMeaningsByKeyword,
   getStatistics,
+  // i18n destekli fonksiyon
+  getI18nProblemSolvingMeaningByCardAndPosition,
   // Tüm pozisyon özel fonksiyonları
   getProblemSolvingPosition1Meaning,
   getProblemSolvingPosition1MeaningByCardName,

@@ -15,6 +15,7 @@ Bağlı Dosyalar:
 ---
 
 */
+'use client';
 
 import { TarotCard } from '@/types/tarot';
 import { getCardNameMappingSync } from '@/features/tarot/lib/love/card-name-mapping';

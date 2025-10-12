@@ -1,3 +1,5 @@
+'use client';
+
 /*
 info:
 Bağlantılı dosyalar:
@@ -389,6 +391,122 @@ export const getRelationshipAnalysisStatistics = () => {
   };
 };
 
+/**
+ * i18n destekli Relationship Analysis anlam fonksiyonu
+ * @param cardName - Kart adı (örn: "The Fool")
+ * @param position - Pozisyon numarası (1-7)
+ * @param t - i18n translate fonksiyonu
+ * @returns i18n destekli anlam veya null
+ */
+export const getI18nRelationshipAnalysisMeaningByCardAndPosition = (
+  cardName: string,
+  position: number,
+  t: (_key: string) => string
+): RelationshipAnalysisPositionMeaning | null => {
+  // Orijinal anlamı al
+  let originalMeaning: RelationshipAnalysisPositionMeaning | null = null;
+
+  switch (position) {
+    case 1:
+      originalMeaning =
+        getRelationshipAnalysisPosition1MeaningByCardName(cardName);
+      break;
+    case 2:
+      originalMeaning =
+        getRelationshipAnalysisPosition2MeaningByCardName(cardName);
+      break;
+    case 3:
+      originalMeaning =
+        getRelationshipAnalysisPosition3MeaningByCardName(cardName);
+      break;
+    case 4:
+      originalMeaning =
+        getRelationshipAnalysisPosition4MeaningByCardName(cardName);
+      break;
+    case 5:
+      originalMeaning =
+        getRelationshipAnalysisPosition5MeaningByCardName(cardName);
+      break;
+    case 6:
+      originalMeaning =
+        getRelationshipAnalysisPosition6MeaningByCardName(cardName);
+      break;
+    case 7:
+      originalMeaning =
+        getRelationshipAnalysisPosition7MeaningByCardName(cardName);
+      break;
+    default:
+      return null;
+  }
+
+  if (!originalMeaning) {
+    return null;
+  }
+
+  // i18n'den çevirileri al
+  const cardKey = cardName
+    .toLowerCase()
+    .replace(/\s+/g, '')
+    .replace(/[^a-z0-9]/g, '');
+
+  const i18nUpright = t(
+    `relationship-analysis.meanings.${cardKey}.position${position}.upright`
+  );
+  const i18nReversed = t(
+    `relationship-analysis.meanings.${cardKey}.position${position}.reversed`
+  );
+  const i18nKeywords = t(
+    `relationship-analysis.meanings.${cardKey}.position${position}.keywords`
+  );
+  const i18nContext = t(
+    `relationship-analysis.meanings.${cardKey}.position${position}.context`
+  );
+
+  // i18n çevirisi mevcut değilse orijinali kullan
+  const isI18nAvailable =
+    i18nUpright && !i18nUpright.startsWith('relationship-analysis.meanings.');
+
+  return {
+    ...originalMeaning,
+    upright: isI18nAvailable ? i18nUpright : originalMeaning.upright,
+    reversed:
+      i18nReversed &&
+      !i18nReversed.startsWith('relationship-analysis.meanings.')
+        ? i18nReversed
+        : originalMeaning.reversed,
+    keywords: (() => {
+      if (
+        !i18nKeywords ||
+        i18nKeywords.startsWith('relationship-analysis.meanings.')
+      ) {
+        return originalMeaning.keywords;
+      }
+      // Keywords zaten array olabilir veya JSON string olabilir
+      if (Array.isArray(i18nKeywords)) {
+        return i18nKeywords;
+      }
+      try {
+        const parsed = JSON.parse(i18nKeywords);
+        if (Array.isArray(parsed)) {
+          return parsed;
+        }
+        return originalMeaning.keywords;
+      } catch (error) {
+        console.error(
+          `[Relationship Analysis Position ${position}] Failed to parse keywords for ${cardName}:`,
+          error
+        );
+        return originalMeaning.keywords;
+      }
+    })(),
+    context:
+      i18nContext &&
+      !i18nContext.startsWith('relationship-analysis.meanings.')
+        ? i18nContext
+        : originalMeaning.context,
+  };
+};
+
 // Varsayılan export
 const relationshipAnalysisExports = {
   getRelationshipAnalysisMeaningByCardAndPosition,
@@ -405,6 +523,8 @@ const relationshipAnalysisExports = {
   searchRelationshipAnalysisMeaningsByCardName,
   searchRelationshipAnalysisMeaningsByKeyword,
   getRelationshipAnalysisStatistics,
+  // i18n destekli fonksiyon
+  getI18nRelationshipAnalysisMeaningByCardAndPosition,
   // Tüm pozisyon özel fonksiyonları
   getRelationshipAnalysisPosition1Meaning,
   getRelationshipAnalysisPosition1MeaningByCardName,

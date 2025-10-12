@@ -1,0 +1,774 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "fiveofswords": {
+        "position10": {
+          "context": "Rezultat može biti privremena pobeda ili pomirenje."
+        },
+        "position2": {
+          "upright": "Petorica mačeva, prepreka može biti sukobi, nepotrebni argumenti ili ponos. Ono što izgubite u ime pobede ometa rešenje.",
+          "reversed": "Preokrenuo je pet mačeva, držeći se zamerke, pogrešne borbe ili nemogućnost prihvatanja poraz može biti izvor prepreke.",
+          "keywords": [
+            "sukob",
+            "argument",
+            "ego",
+            "ponos",
+            "prepreka"
+          ],
+          "context": "Prepreka se postavlja zaglavljene u nepotrebnim sukobima."
+        },
+        "position3": {
+          "upright": "Petorica mačeva može podsvesno predstavljati prošle argumente, gubitke ili bitke ponosa.",
+          "reversed": "Ukratko, pet mačeva može ukazivati na nepotrebne borbe u prošlosti, držeći se zamerke ili ne mogu da prihvati porast, možda je utisnut u podsvijesti.",
+          "keywords": [
+            "argument",
+            "borba",
+            "ponos",
+            "gubitak",
+            "podsvestan"
+          ],
+          "context": "Prošli sukobi i bitke ponosa mogu oblikovati današnje probleme."
+        },
+        "position4": {
+          "upright": "Petorica mačeva, vaš najbolji potencijal je da se držite podalje od nepotrebnih borbi, pustite ponos i postići pobedu konstruktivnim sredstvima.",
+          "reversed": "Okrećeno pet mačeva, da otključate svoj potencijal, morate ostaviti borbe iza, popraviti ogorčenosti i biti otvoreni za saradnju.",
+          "keywords": [
+            "kompromis",
+            "partnerstvo",
+            "zrelost",
+            "mir",
+            "odlazak"
+          ],
+          "context": "Vaš najbolji potencijal je transformisanje borbe u mir sa mudrošću."
+        },
+        "position5": {
+          "upright": "Petorica mačeva ukazuje da ste možda imali argument, sukob ili bitku na ponos u nedavnoj prošlosti.",
+          "reversed": "Uokrećeno pet mačeva možda je nedavno bilo potraga za pomirenjem, oproštenjem ili pokušajem da se sukobi postave.",
+          "keywords": [
+            "sukob",
+            "ponos",
+            "gubitak",
+            "kompromis",
+            "prihod"
+          ],
+          "context": "Vaša nedavna prošlost možda je obeležena sukobom ili potragom za mirom."
+        },
+        "position6": {
+          "upright": "Petorica mačeva, argument, sukob ili borba za ponos mogu se pojaviti u bliskoj budućnosti.",
+          "reversed": "Okrećeno pet mačeva, možete pronaći priliku da napravite mir, kompromise ili ostavite sukobe iza skolike budućnosti.",
+          "keywords": [
+            "sukob",
+            "ponos",
+            "gubitak",
+            "kompromis",
+            "prihod"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati sukobom ili potragom za mirom."
+        },
+        "position7": {
+          "upright": "Petorica mačeva, možda ćete biti u sukobu, argumentu ili borbi za ponos.",
+          "reversed": "Okrećeno pet mačeva, trenutno možete biti u procesu traženja mira, pomirenja ili ostavljanja prošlih sukoba iza sebe.",
+          "keywords": [
+            "sukob",
+            "argument",
+            "ponos",
+            "kompromis",
+            "anksioznost"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je sukobom ili potrebom za pomirenjem."
+        },
+        "position8": {
+          "upright": "Petorica mačeva, spoljni uticaji mogu vas dovesti u sukobe, neslaganja ili borbe za ponos.",
+          "reversed": "Uokrenuo je pet mačeva, spoljni uticaji mogu vas dovesti do mira, rešavanje sukoba i kompromisa.",
+          "keywords": [
+            "sukob",
+            "argument",
+            "kompromis",
+            "ponos",
+            "neslaganje"
+          ],
+          "context": "Spoljni uticaji utiču na vas kroz sukob ili kompromis."
+        },
+        "position9": {
+          "upright": "Petorica mačeva, možda ćete se plašiti gubitka, tretirajući se nepravedno ili se borite za ponos.",
+          "reversed": "Uokrećeno pet mačeva može ukazivati na zabrinutost zbog toga što nije u stanju da reši argumente, kompromise ili drže se zakrbljenje.",
+          "keywords": [
+            "sukob",
+            "ponos",
+            "gubitak",
+            "nepopustljivost",
+            "anksioznost"
+          ],
+          "context": "Fokusira se na strahove, gubitke ili nerešeni sukobi."
+        }
+      },
+      "sixofswords": {
+        "position1": {
+          "upright": "Šest mačeva može biti u srcu problema, period tranzicije, potreba da se ostavi ili promeni.",
+          "reversed": "Okrećeno šest mačeva, držeći se za prošlost ili je poteškoća u kretanju napred može biti izvor problema.",
+          "keywords": [
+            "prelaz",
+            "da odete",
+            "napredak",
+            "promeniti",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba da ostave stvari iza."
+        },
+        "position10": {
+          "upright": "Šest mačeva može biti tranzicija, putovanje ili odsecanje od teškoća kao rezultat događaja.",
+          "reversed": "Invertirani šest mačeva može rezultirati preokretom, zategnutošću ili nemogućnosti da napreduju kao rezultat događaja.",
+          "keywords": [
+            "prelaz",
+            "putovanje",
+            "napredak",
+            "pobjeći",
+            "regeneracija"
+          ],
+          "context": "Rezultat se može kretati napred ili se zaglaviti."
+        },
+        "position2": {
+          "upright": "Šest mačeva, prepreka se možda neće moći razbiti od prošlosti, teško se kretati ili da se ne može kretati napred. Stare navike vas zadržavaju.",
+          "reversed": "Ukidani šest mačeva može da ometa stalno se vraćajući u prošlost, odbijajući da se kreće napred ili mentalno blokadu.",
+          "keywords": [
+            "prelaz",
+            "prošlost",
+            "napredak",
+            "pomračenje",
+            "prepreka"
+          ],
+          "context": "Aprestracite se pojavljuje da se ne može razbiti od prošlosti i kretati se napred."
+        },
+        "position3": {
+          "upright": "Šest mačeva može biti podsvesna prelaska u prošlost, potez ili pokušaj da se odseli iz prošlosti.",
+          "reversed": "Invertirano šest mačeva, nemogućnost napredovanja u prošlosti, pridržavajući se prošlosti ili se neprestano vraćati možda su se u podsvijenom podučavali.",
+          "keywords": [
+            "prelaz",
+            "prošlost",
+            "napredak",
+            "lojalnost",
+            "podsvestan"
+          ],
+          "context": "Prošle prelazne procese ili prilog u prošlost mogu biti u korenu današnjih problema."
+        },
+        "position4": {
+          "upright": "Šest mačeva, vaš najbolji potencijal je da se odseli od poteškoća i prema mirnim vodama, prihvatite prelazne procese i napravite prostor za isceljenje.",
+          "reversed": "Okrećeno šest mačeva, da dostignete svoj potencijal, morate prestati da se zaglavi u prošlosti, koračajte napred i dopustite nova putovanja.",
+          "keywords": [
+            "prelaz",
+            "napredak",
+            "zarastanje",
+            "prihvatanje",
+            "putovanje"
+          ],
+          "context": "Vaš najbolji potencijal je da se krenete naprijed se rešavanjem prošlosti."
+        },
+        "position5": {
+          "upright": "Šest mačeva, možda ste nedavno otišli ​​na putovanje, pomerali se ili pokušali da se sklonite od prošlosti.",
+          "reversed": "Okrećeno šest mačeva, možda ste nedavno iskusili da se pridržavate prošlosti, a ne možete da krenete napred ili zaglavili u procesu tranzicije.",
+          "keywords": [
+            "prelaz",
+            "putovanje",
+            "napredak",
+            "pobjeći",
+            "prošlost"
+          ],
+          "context": "Vaša nedavna prošlost je možda oblikovana napretkom ili prilogom u prošlost."
+        },
+        "position6": {
+          "upright": "Šest mačeva, možete doživeti putovanje, tranziciju ili se odseliti iz prošlosti u bliskoj budućnosti.",
+          "reversed": "Prekoračenje šest mačeva može ukazivati na nemogućnost napredovanja u bliskoj budućnosti, pridržavajući se prošlosti ili teškim tranzicijom.",
+          "keywords": [
+            "prelaz",
+            "putovanje",
+            "napredak",
+            "pobjeći",
+            "prošlost"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati napretkom ili prilogom u prošlost."
+        },
+        "position7": {
+          "upright": "Šest mačeva, trenutno ste u periodu tranzicije, putovanja ili se odseli od prošlosti.",
+          "reversed": "Invertirano šest mačeva, trenutno može doći do privrženosti u prošlosti, nemogućnost napredovanja ili poremećaja u putovanjima.",
+          "keywords": [
+            "prelaz",
+            "napredak",
+            "prošlost",
+            "putovanje",
+            "pobjeći"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je napretkom ili se zaglavila u prošlosti."
+        },
+        "position8": {
+          "upright": "Šest mačeva, spoljni uticaji mogu vam doneti period tranzicije, prilika da se krene napred ili se udaljite od problema.",
+          "reversed": "Okrećeno šest mačeva, spoljni uticaji vas mogu vezati u prošlost, otežati vaš napredak ili izazvati poremećaje u putovanjima.",
+          "keywords": [
+            "prelaz",
+            "napredak",
+            "pobjeći",
+            "prošlost",
+            "putovanje"
+          ],
+          "context": "Spoljni uticaji utiču na vas, bilo napredovanjem ili stagniranjem unazad."
+        },
+        "position9": {
+          "upright": "Šest mačeva, možete se plašiti da nećete da pređete iz prošlosti, dovršite tranziciju ili pronađite novi put.",
+          "reversed": "Prekoračeni šest mačeva može ukazivati na anksioznost o povratku, a ne može da se kreće napred ili je zaglavljen.",
+          "keywords": [
+            "prelaz",
+            "napredak",
+            "prošlost",
+            "pobjeći",
+            "anksioznost"
+          ],
+          "context": "Tvoj strahovski centar okolo ne može da se kreće napred ili se zaglavio u prošlosti."
+        }
+      },
+      "sevenofswords": {
+        "position1": {
+          "upright": "Sedam mačeva, tajnosti, strategije ili nepoštenog ponašanja može biti u srcu problema.",
+          "reversed": "Preokrećeno sedam mačeva, strah od uhvate, otkrivenih tajnosti ili neuspelih planova može biti izvor problema.",
+          "keywords": [
+            "strategija",
+            "sigurnost",
+            "varati",
+            "plan",
+            "pitanje"
+          ],
+          "context": "Postoje skrivene činjenice ili strateške poteze u centru problema."
+        },
+        "position10": {
+          "upright": "Sedam mačeva, ishod događaja može da uključuje tajne planove, strateške poteze ili pažljiv napredak.",
+          "reversed": "Ograničeno sedam mačeva može rezultirati otkrivanjem tajne, uhvaćeno, ili iskrenost dobijaju značaj kao rezultat događaja.",
+          "keywords": [
+            "strategija",
+            "sigurnost",
+            "plan",
+            "iskrenost",
+            "Ne uhvate se"
+          ],
+          "context": "Rezultat može biti strateški uspeh ili otkrivenje tajne."
+        },
+        "position2": {
+          "upright": "Sedam mačeva, vaša prepreka može biti nepoštena, prikrivena ili strateške igre. Pobjezanje od stvarnosti čini rešenje teško.",
+          "reversed": "Preokrećeno sedam mačeva, otkrivene tajne, gubitak poverenja ili neuspelih planova može biti izvor prepreke.",
+          "keywords": [
+            "sigurnost",
+            "varati",
+            "poverenje",
+            "pobjeći",
+            "prepreka"
+          ],
+          "context": "Prepreka se postavlja od odstupanja od poverljivosti i poštenja."
+        },
+        "position3": {
+          "upright": "Sedam mačeva može biti podsvesni susret sa prošlim tajnosti, uskraćenim istinama ili nepoštenim ponašanjem.",
+          "reversed": "Pretvoreno sedam mačeva, tajne otkrivene u prošlosti, gubitak poverenja ili neuspelih planova mogu se rešiti u podsvesti.",
+          "keywords": [
+            "sigurnost",
+            "varati",
+            "poverenje",
+            "tajna",
+            "podsvestan"
+          ],
+          "context": "Poverljivost i pitanja poverenja u prošlosti mogu uticati na današnje probleme."
+        },
+        "position4": {
+          "upright": "Sedam mačeva, vaš najbolji potencijal je da strateški razmišljati, koristite svoju inteligenciju da biste napravili poteze u pravo vreme i djeluju svesno.",
+          "reversed": "Okrećeno sedam mačeva, da otkrije vaš potencijal, morate da razgovarate kao svoj vodič, rešite se obmane i sledite jasan put.",
+          "keywords": [
+            "strategija",
+            "obaveštajna služba",
+            "plan",
+            "iskrenost",
+            "budnost"
+          ],
+          "context": "Vaš najbolji potencijal je da se krećete napred kombinovanjem inteligencije sa iskrenošću."
+        },
+        "position5": {
+          "upright": "Sedam mačeva ukazuje da vam je nedavno naišla na tajnost, skrivene planove ili varljivo ponašanje.",
+          "reversed": "Okrećeno sedam mačeva, možda ste doživeli proces otkrivanja tajne, iskrenosti ili se računa u nedavnoj prošlosti.",
+          "keywords": [
+            "sigurnost",
+            "varati",
+            "tajne",
+            "strategija",
+            "poverenje"
+          ],
+          "context": "Vaša nedavna prošlost je možda određena tajnim situacijama ili poštenim procesima."
+        },
+        "position6": {
+          "upright": "Sedam mačeva, tajnosti, strategije ili skrivenih planova može doći do izražaja u bliskoj budućnosti.",
+          "reversed": "Ograničeno sedam mačeva može ukazivati na mogućnost otkrivanja tajne, postajući iskren ili uhvaćen u bliskoj budućnosti.",
+          "keywords": [
+            "sigurnost",
+            "varati",
+            "strategija",
+            "tajne",
+            "račun"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati tajna ili iskrenost."
+        },
+        "position7": {
+          "upright": "Sedam mačeva, trenutno možete biti u prikrivanju, strategiji ili tajnim planovima.",
+          "reversed": "Okrećeno sedam mačeva, otkrivajući tajne, potrebu za iskrenošću ili uhvaštenom možda je trenutno na dnevnom redu.",
+          "keywords": [
+            "sigurnost",
+            "varati",
+            "strategija",
+            "tajne",
+            "plan"
+          ],
+          "context": "Vaša trenutna situacija je oblikovana tajnom ili iskrenošću."
+        },
+        "position8": {
+          "upright": "Sedam mačeva, spoljni uticaji mogu vas dovesti do razvoja strategije, otkrivene tajne ili biti oprezni.",
+          "reversed": "Okrećeno sedam mačeva, spoljni uticaji mogu se suočiti sa iskrenim ili uzrokovati otkrivanje skrivenih planova.",
+          "keywords": [
+            "strategija",
+            "varati",
+            "sigurnost",
+            "plan",
+            "tajne"
+          ],
+          "context": "Spoljni uticaji utiču na vas kroz tajnu ili iskrenost."
+        },
+        "position9": {
+          "upright": "Sedam mačeva, možda ćete se plašiti prevare, manipulirati ili izgubiti poverenje.",
+          "reversed": "Uokrećeno sedam mačeva može ukazivati na anksioznost o uhvaćenju, to je tajna otkrivena ili planira da se poremeti.",
+          "keywords": [
+            "varati",
+            "sigurnost",
+            "varati",
+            "plan",
+            "anksioznost"
+          ],
+          "context": "Fokusira se na vaše strahove od prevare ili otkrivanja vaše tajne."
+        }
+      },
+      "eightofswords": {
+        "position1": {
+          "upright": "Osam mačeva može biti mentalni blokovi, osećaj bespomoćnosti ili zategnuće u srcu problema.",
+          "reversed": "Pretvoreno osam mačeva, samostalno ograničenje, prepuštanje strahovima ili nedostatak samopouzdanja može biti izvor problema.",
+          "keywords": [
+            "ograničenje",
+            "strah",
+            "poverenje",
+            "um",
+            "pitanje"
+          ],
+          "context": "U srcu problema se ne može rešiti mentalnih prepreka."
+        },
+        "position10": {
+          "upright": "Osam mačeva može značiti da se osećate ograničeno, ne može da pronađe slobodu ili suočavaju se sa preprekama kao rezultat događaja.",
+          "reversed": "Invertirano osam mačeva, ishod događaja može biti oslobađanje, postavljanje prepreka i pronalaženje novih staza.",
+          "keywords": [
+            "sloboda",
+            "prepreka",
+            "ograničenje",
+            "pobjeći",
+            "rešenje"
+          ],
+          "context": "Rezultat se može zaglaviti ili besplatno."
+        },
+        "position2": {
+          "upright": "Osam mačeva ukazuje da prepreka može biti mentalne prepreke, osećaj bespomoćnosti ili zaglavljene. Ne shvatajući da vas sloboda sprečava da vidite rešenje.",
+          "reversed": "Osvećeno osam mačeva može biti izvor problema, nemogućnost da se izbije od samostalnih ograničenja ili predaje strahovima.",
+          "keywords": [
+            "ograničenje",
+            "strah",
+            "um",
+            "sloboda",
+            "prepreka"
+          ],
+          "context": "Prepreka se postavlja iz mentalnih barijera i samostalne ograničenja."
+        },
+        "position3": {
+          "upright": "Osam mačeva može podsvesno znači osećaj bespomoćne, ograničeno ili potlačeno u prošlosti.",
+          "reversed": "Osetilo osam mačeva može se ugraditi u podsvesni um zbog prošlih strahova, mentalnih prepreka ili nemoguće da vidi svoju slobodu.",
+          "keywords": [
+            "očajavati",
+            "ograničenje",
+            "strah",
+            "sloboda",
+            "podsvestan"
+          ],
+          "context": "Prošli ograničenja i strahovi mogu da podležu današnjim problemima."
+        },
+        "position4": {
+          "upright": "Osam mačeva govori o realizaciji i prevazilaženju mentalnih ograničenja vašeg najboljeg potencijala, odabirom slobode i zamjene strahova sa verom.",
+          "reversed": "Okrećeno osam mačeva, da dostignete svoj potencijal, morate prestati da vidite sebe kao žrtvu, razvijte svest o slobodi i omogućiti nove mogućnosti.",
+          "keywords": [
+            "sloboda",
+            "strah",
+            "um",
+            "beskonačnost",
+            "verovanje"
+          ],
+          "context": "Vaš najbolji potencijal je da se oslobodite mentalnih lanaca i krećete se prema slobodi."
+        },
+        "position5": {
+          "upright": "Osam mačeva, možda ste se osećali ograničenim, bespomoćnim ili potlačenim u nedavnoj prošlosti.",
+          "reversed": "Okrenuo je osam mačeva, možda ste nedavno počeli da prolijete svoje mentalne lance ili ste povratili slobodu.",
+          "keywords": [
+            "ograničenje",
+            "očajavati",
+            "sloboda",
+            "um",
+            "strah"
+          ],
+          "context": "Vaša nedavna prošlost je možda oblikovana procesima očaja ili oslobođenja."
+        },
+        "position6": {
+          "upright": "Osam mačeva, možda ćete se osećati ograničenim, bespomoćnim ili mentalno blokirati u bliskoj budućnosti.",
+          "reversed": "Oslobodio je osam mačeva, možete da doživite oslobađanje, slobodu od ograničenja ili razbijate mentalne lance u bliskoj budućnosti.",
+          "keywords": [
+            "ograničenje",
+            "očajavati",
+            "sloboda",
+            "um",
+            "prepreke"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati ograničenjem ili oslobađanjem."
+        },
+        "position7": {
+          "upright": "Osam mačeva, možda ćete se osećati ograničeno, bespomoćno ili mentalno blokirano odmah.",
+          "reversed": "Odrastao je osam mačeva, trenutno ste u procesu oslobađanja, uklanjajući prepreke ili prevazići sopstvena ograničenja.",
+          "keywords": [
+            "ograničenje",
+            "očajavati",
+            "sloboda",
+            "prepreke",
+            "um"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je ograničenjem ili oslobađanjem."
+        },
+        "position8": {
+          "upright": "Osam mačeva, spoljni uticaji mogu da se osećate ograničenim, pritisci iz vašeg okruženja mogu vas ograničiti.",
+          "reversed": "Invertirano osam mačeva, spoljni uticaji mogu vas osloboditi i pomoći u uklanjanju prepreka.",
+          "keywords": [
+            "ograničenje",
+            "sloboda",
+            "ugnjetavanje",
+            "prepreke",
+            "um"
+          ],
+          "context": "Spoljni uticaji vas mogu ograničiti ili osloboditi."
+        },
+        "position9": {
+          "upright": "Osam mačeva, možete se plašiti da se ne mogu osloboditi, izbeći pritiske o životnoj sredini ili se zaglavi u preprekama.",
+          "reversed": "Osetljena osam mačeva može ukazivati na anksioznost u vezi sa zavisnim, ne pronalaženjem rešenja ili ne mogu da postignu slobodu.",
+          "keywords": [
+            "sloboda",
+            "prepreke",
+            "ograničenje",
+            "pobjeći",
+            "anksioznost"
+          ],
+          "context": "Vaš strahovski centar za zaglavljene ili zavise."
+        }
+      },
+      "nineofswords": {
+        "position1": {
+          "upright": "Devet mačeva, strepnje, nesanice i stres mogu biti u srcu problema.",
+          "reversed": "Pretvoreno devet mačeva, neuspeh u prevazilaženju prošlih strahova ili potiskivanja strepnje može biti izvor problema.",
+          "keywords": [
+            "anksioznost",
+            "stres",
+            "strah",
+            "anksioznost",
+            "pitanje"
+          ],
+          "context": "U srcu problema se suočava sa strahovima i strepnjim."
+        },
+        "position10": {
+          "upright": "Devet mačeva, može doći do intenzivne anksioznosti, stresa ili nesanice kao rezultat događaja.",
+          "reversed": "Invertirani devet mačeva, ishod događaja može biti ublažavanje strepnja, unutrašnjim mirom ili kraj noćnih mora.",
+          "keywords": [
+            "anksioznost",
+            "stres",
+            "mir",
+            "um",
+            "anksioznost"
+          ],
+          "context": "Rezultat može da doživljava anksioznost ili pronalaženje mira."
+        },
+        "position2": {
+          "upright": "Devet mačeva, prepreka može biti strepnja, nesanica ili krivica. Kada je um stalno ispunjen brigom, rastvor postaje zamagljen.",
+          "reversed": "Invertirani devet mačeva, nemogućnost suočavanja straha, potisnuta krivica ili prekomernog stresa može biti izvor prepreke.",
+          "keywords": [
+            "anksioznost",
+            "stres",
+            "anksioznost",
+            "strah",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje od preokupacije prekomernom anksioznošću i stresom."
+        },
+        "position3": {
+          "upright": "Devet mačeva može ukazivati na intenzivne strepnje, besane noći ili osećanja krivice koje ste u prošlosti doživeli podsvesno iskusni.",
+          "reversed": "Pretvoreni devet mačeva može biti posledica nemogućnosti suočavanja straha, potisnuta krivica ili prekomernog stresa u prošlosti koja se podmirila u podsvest.",
+          "keywords": [
+            "anksioznost",
+            "stres",
+            "strah",
+            "krivica",
+            "podsvestan"
+          ],
+          "context": "Anksioznost i stres doživljava u prošlosti, možda su oblikovali današnje probleme."
+        },
+        "position4": {
+          "upright": "Devet mačeva, vaš najbolji potencijal može se suočiti sa vašim strahovima, svesno upravljati svojim strepnjama i povratiti mentalni mir.",
+          "reversed": "Devet mačeva preokrećeno: Da biste otključali svoj potencijal, morate pustiti stalne brige, dobiti podršku i usvojiti se izgled nade.",
+          "keywords": [
+            "konfrontacija",
+            "strah",
+            "mir",
+            "nadati se",
+            "um"
+          ],
+          "context": "Vaš najbolji potencijal je suočiti se sa strahom i vratiti mentalnu ravnotežu."
+        },
+        "position5": {
+          "upright": "Devet mačeva, možda ste iskusili intenzivnu anksioznost, besane noći ili osećanja krivice u nedavnoj prošlosti.",
+          "reversed": "Okrećeno devet mačeva, možda ste se nedavno suočili sa anksioznošću, počeli da ostavljate noćne more iza sebe ili tražili podršku.",
+          "keywords": [
+            "anksioznost",
+            "stres",
+            "noćna mora",
+            "krivica",
+            "konfrontacija"
+          ],
+          "context": "Vaša nedavna prošlost je možda oblikovana anksioznošću ili konfrontacijskim iskustvima."
+        },
+        "position6": {
+          "upright": "Devet mačeva, intenzivna anksioznost, stres ili nesanica mogu doći do izražaja u bliskoj budućnosti.",
+          "reversed": "Pretvoreno devet mačeva, možda postoji prilika da se oslobodite briga, opustite ili pronađete podršku u bliskoj budućnosti.",
+          "keywords": [
+            "anksioznost",
+            "stres",
+            "noćna mora",
+            "anksioznost",
+            "podrška"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati zabrinutosti ili isceljenje."
+        },
+        "position7": {
+          "upright": "Devet mačeva, možda ćete doživljavati intenzivnu anksioznost, stres ili nesanicu trenutno.",
+          "reversed": "Okrećeno devet mačeva, možda ćete doživljavati olakšanje od anksioznosti, olakšanja ili pronalaska podrške odmah.",
+          "keywords": [
+            "anksioznost",
+            "stres",
+            "anksioznost",
+            "noćna mora",
+            "opuštanje"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je zabrinutosti ili isceljenjem."
+        },
+        "position8": {
+          "upright": "Devet mačeva, spoljni uticaji mogu vas dovesti do intenzivnih briga kao što su stres, anksioznost i nesanica.",
+          "reversed": "Invertirani devet mačeva, spoljni uticaji mogu vas osloboditi ovih strepnja i doneti podršku i olakšanje.",
+          "keywords": [
+            "anksioznost",
+            "stres",
+            "anksioznost",
+            "opuštanje",
+            "noćna mora"
+          ],
+          "context": "Spoljni uticaji utiču na vas kroz anksioznost ili isceljenje."
+        },
+        "position9": {
+          "upright": "Devet mačeva može ukazivati na nesanicu, intenzivnu anksioznost i strah od doživljavanja stresa.",
+          "reversed": "Preokrećeno devet mačeva može ukazivati na noćne more, rastući anksioznost ili strah od gubitka nečijeg zdravlja.",
+          "keywords": [
+            "anksioznost",
+            "stres",
+            "noćna mora",
+            "nesanica",
+            "anksioznost"
+          ],
+          "context": "Fokusira se na vaše strahove, mentalne pritiske i strepnje."
+        }
+      },
+      "tenofswords": {
+        "position1": {
+          "upright": "Deset mačeva može biti završetak, izdaja ili pogubljiv kraj u srcu problema.",
+          "reversed": "Invertirani deset mačeva, a ne mogu se oporaviti, ne mogu da zaceli stare rane ili produženje procesa može biti izvor problema.",
+          "keywords": [
+            "završiti",
+            "izdaja",
+            "ugao",
+            "regeneracija",
+            "pitanje"
+          ],
+          "context": "U srcu problema je bolno završavanje ili zatvaranje."
+        },
+        "position10": {
+          "upright": "Deset mačeva može biti završetak, veliki kraj ili gorak zatvaranje kao rezultat događaja.",
+          "reversed": "Invertirani deset mačeva može značiti oporavak, vraćanje na noge ili novi početak kao rezultat događaja.",
+          "keywords": [
+            "završiti",
+            "ugao",
+            "izdaja",
+            "ponovno rođenje",
+            "zadnji"
+          ],
+          "context": "Ishod se može završiti ili ponovo roditi."
+        },
+        "position2": {
+          "upright": "Deset mačeva, prepreka možda ne prihvata kraj, a ne može da zaceli rane izdaje ili izbegavaju obnovu.",
+          "reversed": "Invertirani deset mačeva, stalno otvaranje starih rana ili odupiranju zatvaranju može biti izvor prepreke.",
+          "keywords": [
+            "završiti",
+            "izdaja",
+            "regeneracija",
+            "prošlost",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje da ne prihvata kraj."
+        },
+        "position3": {
+          "upright": "Deset mačeva može predstavljati završetke, izdaje ili porazi koje ste iskusili u prošlosti u svojoj podsvesti.",
+          "reversed": "Invertirani deset mačeva može se ukorijeniti u podsvijesti da ne mogu da zatvore prošlih trauma, odbijajući da se zatvaraju ili neprestano otvaraju stare rane.",
+          "keywords": [
+            "završiti",
+            "izdaja",
+            "trauma",
+            "poraz",
+            "podsvestan"
+          ],
+          "context": "Prošle završetke i izdaje mogu uticati na vaše trenutne probleme."
+        },
+        "position4": {
+          "upright": "Deset mačeva, vaš najbolji potencijal je da prihvatite teško završetak, rodite se i prepustite se starim teretima i napravite novi početak.",
+          "reversed": "Prekoračio deset mačeva, kako bi se oslobodio vaš potencijal, ne bi trebalo da pobegnete od zatvarača, prihvatite završetke mudrošću i izaberite isceljivanje.",
+          "keywords": [
+            "završiti",
+            "ponovno rođenje",
+            "zarastanje",
+            "prihvatanje",
+            "sloboda"
+          ],
+          "context": "Vaš najbolji potencijal je da pretvorite završetke u mogućnosti i počnite ispočetka."
+        },
+        "position5": {
+          "upright": "Deset mačeva ukazuje da ste možda iskusili kraj, izdaja ili pogubljenje iskustva u nedavnoj prošlosti.",
+          "reversed": "Okrećeno deset mačeva, možda ste se nedavno počeli oporavljati i unijeli proces napuštanja trauma iza sebe ili se roditi.",
+          "keywords": [
+            "završiti",
+            "izdaja",
+            "ponovno rođenje",
+            "gubitak",
+            "trauma"
+          ],
+          "context": "Vaša nedavna prošlost je možda oblikovana završetkom ili ponovnim rođenjem procesa."
+        },
+        "position6": {
+          "upright": "Deset mačeva, završetka, izdaja ili bolno zatvaranje može se pojaviti u bliskoj budućnosti.",
+          "reversed": "Invertirani deset mačeva, možda postoji prilika za oporavak, ponovno rođenje ili traume iza sebe u bliskoj budućnosti.",
+          "keywords": [
+            "završiti",
+            "izdaja",
+            "ponovno rođenje",
+            "gubitak",
+            "ugao"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati kraju ili ponovno rođenje."
+        },
+        "position7": {
+          "upright": "Deset mačeva, možda ćete doživljavati bolni osećaj zatvaranja, izdaje ili izgaranja trenutno.",
+          "reversed": "Okrećeno deset mačeva, trenutno ste u procesu ponovnog rođenja, oporavka i ostavljajući tamne periode iza.",
+          "keywords": [
+            "završiti",
+            "izdaja",
+            "ponovno rođenje",
+            "ugao",
+            "trauma"
+          ],
+          "context": "Vaša trenutna situacija je oblikovana krajnjem ili ponovnom rogodom."
+        },
+        "position8": {
+          "upright": "Deset mačeva, spoljni uticaji mogu vas gurnuti prema izazovnim završecima, izdaji ili bolno zatvaranje.",
+          "reversed": "Obrnuti deset mačeva, spoljni uticaji mogu vas dovesti do oporavka, ponovnog rođenja i ostavljanja teških vremena iza.",
+          "keywords": [
+            "završiti",
+            "izdaja",
+            "ponovno rođenje",
+            "ugao",
+            "trauma"
+          ],
+          "context": "Spoljni uticaji utiču na vas kroz završetak ili ponovno rođenje."
+        },
+        "position9": {
+          "upright": "Deset mačeva, možete se bojati izdaje, završiti ili doživljavati velike gubitke.",
+          "reversed": "Prekoračeni deset mačeva može ukazivati na anksioznost da se ne može oporaviti, a ne da se započne pre nego što se započne ili rane koje neće zaceliti.",
+          "keywords": [
+            "izdaja",
+            "završiti",
+            "ugao",
+            "ponovno rođenje",
+            "anksioznost"
+          ],
+          "context": "Fokusira se na strahove, izdaje ili nepovratne završetke."
+        }
+      },
+      "pageofswords": {
+        "position1": {
+          "upright": "Princ mačeva, radoznalost, nove ideje ili nepažnju mogu biti u srcu problema.",
+          "reversed": "Okolišteni princ mačeva, površnost, tračevi ili nepažljivi rad može biti izvor problema.",
+          "keywords": [
+            "radoznalost",
+            "ideja",
+            "učenje",
+            "pažnja",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potraga za znanjem i željom da nauče."
+        },
+        "position10": {
+          "upright": "Princ mačeva, mogu postojati prilike za sticanje novih informacija, napretka sa radoznalošću ili komunikacijom kao rezultat događaja.",
+          "reversed": "Invertirani princ mačeva, ishod događaja može biti dezinformacija, tračevi ili nepažnju.",
+          "keywords": [
+            "informacije",
+            "komunikacija",
+            "radoznalost",
+            "učenje",
+            "pažnja"
+          ],
+          "context": "Rezultat može dobiti nove informacije ili je pogrešno shvaćen."
+        },
+        "position2": {
+          "upright": "Princ mačeva, prepreka može biti bezbrižnost, površnost ili pogrešna želja za učenjem.",
+          "reversed": "Princ mačeva je preokrenuo, tračevi, prikupljanje dezinformacija ili nemogućnost fokusiranja može biti izvor prepreke.",
+          "keywords": [
+            "pažnja",
+            "radoznalost",
+            "učenje",
+            "informacije",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje od nepažnje i površnosti."
+        },
+        "position3": {
+          "upright": "Princ mačeva može biti podsvesna želja za učenjem, radoznalošću ili nepažljivim ponašanjem u prošlosti.",
+          "reversed": "Invertirani princ mačeva, tračeva, prikupljanje lažnih informacija ili boravka površnosti možda su se preselili iz prošlosti do podsvesti.",
+          "keywords": [
+            "učenje",
+            "radoznalost",
+            "informacije",
+            "nepažnja",
+            "podsvestan"
+          ],
+          "context": "Dosadašnja iskustva u učenju i nepažljivost mogu dovesti do današnjih problema."
+        },
+        "position4": {
+          "upright": "Princ mačeva, vaš najbolji potencijal je da njegujete svoju radoznalost, naučite novo znanje i kreativno razvijajte svoju inteligenciju.",
+          "reversed": "Princ mačeva se preokrenuo, otključao vaš potencijal, morate da izbegavate nepažnju, površnost i prepuštanje tračevima.",
+          "keywords": [
+            "učenje"
+          ]
+        }
+      }
+    }
+  }
+}

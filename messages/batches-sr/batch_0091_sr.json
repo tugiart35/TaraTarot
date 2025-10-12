@@ -1,0 +1,778 @@
+{
+  "situation-analysis": {
+    "meanings": {
+      "thesun": {
+        "position5": {
+          "reversed": "Reverse sunce nam govori da su preterani obećanja, zasjenjeni detalji ili ljubomorni pogledi mogu izazvati probleme napolju.",
+          "keywords": [
+            "vidljivost",
+            "uspeh",
+            "moral",
+            "svetlina",
+            "percepcija"
+          ],
+          "context": "Svetli slučaj prikaza nudi priliku; Potrebna je provera stvarnosti."
+        },
+        "position6": {
+          "upright": "Savet: Učinite pobjede vidljive, slavite i uzgajati saradnju.",
+          "reversed": "Savet: Dokumentirajte male pobede. Uspostaviti rutine koje podstiču pozitivan zamah.",
+          "keywords": [
+            "uspeh",
+            "vidljivost",
+            "proslava",
+            "partnerstvo",
+            "ubrzanje"
+          ],
+          "context": "Savet: Pomnožiti svetlost deljenjem."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: jasan uspeh, vidljivost i radost; Povećanje energije i poverenje je ojačano.",
+          "reversed": "Moguća budućnost: mogu se dogoditi delimični uspeh i nedostatak detalja; Osvetljenost raste sa manjim korekcijama.",
+          "keywords": [
+            "uspeh",
+            "oštrina",
+            "radost",
+            "vidljivost",
+            "poverenje"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "judgement": {
+        "position1": {
+          "upright": "Proces buđenja, oproštenja ili ponovnog rođenja u prošlosti je možda postavio temelje za sadašnju situaciju, rekao je sud.",
+          "reversed": "Invertirani sud, prošli propuštene mogućnosti, nemogućnost oprosti ili utaja odgovornosti možda je oblikovala trenutnu situaciju.",
+          "keywords": [
+            "buđenje",
+            "odluka",
+            "oslobođenje",
+            "računanje",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih buđenja ili propuštenih mogućnosti."
+        },
+        "position2": {
+          "upright": "Sud ukazuje da ste sada u vreme buđenja, računovodstva i promeni smera. Vi ste na ivici da odgovorite na jasniji poziv ocenjivanjem prošlosti i oprostite sebi. \\ N \\ NTHIS Card naglašava da ste spremni da ozbiljno shvatite svoj unutrašnji poziv i pređite na novu fazu.",
+          "reversed": "Okolišteni sud može ukazivati na to da trenutno stavljate prilike, ignorišite poziv ili zaglavili u samo-prosuđivanju. Ne opraštate da se usporava napredak. \\ N \\ nThis kartica vas podseća da će vam nežno sukob i preuzeti odgovornost otvoriti vrata.",
+          "keywords": [
+            "buđenje",
+            "računanje",
+            "odluka",
+            "ponovno rođenje",
+            "Sada"
+          ],
+          "context": "Interna prag poziva i odluka u trenutnoj situaciji."
+        },
+        "position3": {
+          "upright": "Unutrašnji poziv, želja za oproštenjem i ponovnom rođenjem, nalaze vas iza kulisa, kaže sud. Želja da se stara stara priča postaje jači.",
+          "reversed": "Invertirani sud naglašava obrasce samospropusnosti, strah od greške i odlaganja. \"Šta ako kasnim?\" Vera zatvara vrata.",
+          "keywords": [
+            "buđenje",
+            "oproštenje",
+            "nazvati",
+            "presuda za samosuđivanje",
+            "skriveni otpor"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru se budi, odgovaranje na poziv i čišćenje iz prošlosti. Recoviranje pokreće novo rođenje.",
+          "reversed": "Samostupanje ili odlaganje u centru može da ometa fokus. Saosećajno prihvatanje otvara vrata.",
+          "keywords": [
+            "buđenje",
+            "odluka",
+            "oproštenje",
+            "regeneracija",
+            "nazvati"
+          ],
+          "context": "Centar: Centar poziva."
+        },
+        "position5": {
+          "upright": "Sud pokazuje da su procesi inspekcije, evaluacije i opoziva na radu napolju. Objektivne mere ubrzavaju napredak.",
+          "reversed": "Reverse Sud kaže da nepravedne presude, pristranosti ili opterećujuće birokratije odgađaju spoljne odluke.",
+          "keywords": [
+            "procena",
+            "kontrola",
+            "povratna informacija",
+            "presuda",
+            "kriterijum"
+          ],
+          "context": "Vanjska evaluacija postavlja polje za reprodukciju."
+        },
+        "position6": {
+          "upright": "Savet: Procijenite prošlost objektivno i odgovorite na poziv. Pusti stare teret.",
+          "reversed": "Savet: Ton Dovn Dovn SOUPTHER. Oproštaj i jasna odluka Pretvorite novu stranicu.",
+          "keywords": [
+            "procena",
+            "nazvati",
+            "oproštenje",
+            "odluka",
+            "regeneracija"
+          ],
+          "context": "Savet: Shovdovn and Leap."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: Buđenje i odgovaranje na poziv; Ostavite prošlo opterećenje i pređite na novu stranicu.",
+          "reversed": "Moguća budućnost: Prijem se može odložiti; Samo-prosuđivanje usporava napredak. Oproštaj otvara vrata.",
+          "keywords": [
+            "buđenje",
+            "odluka",
+            "oproštenje",
+            "regeneracija",
+            "zatvaranje"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "theworld": {
+        "position1": {
+          "upright": "Svet je možda bio ispunjen ciklus u prošlosti, postignute dostignuća ili osećaj celovitosti su možda formirali osnovu današnjeg procesa.",
+          "reversed": "Invertirana zemlja, prošla nedovršena poslovna, nedostatka ili neuspeli ciklusi možda su uticali na trenutne uslove.",
+          "keywords": [
+            "završetak",
+            "uspeh",
+            "integritet",
+            "petlja",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih završetaka ili propusta."
+        },
+        "position2": {
+          "upright": "Eardantna prisutna simbolizuje uspešan završetak ciklusa, osećaja celovitosti i prelazak na novu fazu. Nagrađujete se za svoje napore i steknite širu perspektivu. \\ N \\ NTHIS kartica savetuje vam da se pripremite za novi početak proslave i zahvalnosti.",
+          "reversed": "Reversed Earth ukazuje na procese koji se trenutno ne mogu završiti, nedostaju linkovi ili strah od završetka. Mali dodir ili ritual zatvaranja može vam pomoći da zatvorite petlju. \\ N \\ nThis kartica podseća da ako lagano popunite praznine, put će se otvoriti.",
+          "keywords": [
+            "završetak",
+            "uspeh",
+            "integritet",
+            "petlja",
+            "Sada"
+          ],
+          "context": "Zatvaranje u trenutnoj situaciji i pripremi za novi ciklus."
+        },
+        "position3": {
+          "upright": "Svet kaže da je želja za završetkom i potrebom kompletnosti daju nevidljivu motivaciju. Želja za zatvaranjem petlje sa milošću raste iznutra.",
+          "reversed": "Okretni svet ukazuje na obrasce nedovršenog poslovanja, straha od zatvaranja i nepotpune integracije. Prelazak na novo bez završne obrade stvara unutrašnje nemire.",
+          "keywords": [
+            "završetak",
+            "integritet",
+            "integracija",
+            "zatvaranje",
+            "skrivena tema"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru je završetak, celovitost i zatvaranje ciklusa. Integracija jača novu fazu.",
+          "reversed": "U centru može postojati nepotpunost ili tendencija da pređe na novo bez dovršavanja. Potrebno je zatvoriti praznine.",
+          "keywords": [
+            "završetak",
+            "integritet",
+            "integracija",
+            "petlja",
+            "uspeh"
+          ],
+          "context": "Centar: kruna zatvaranja."
+        },
+        "position5": {
+          "upright": "Svet pokazuje da globalni domet, ogromne mreže i završeni ciklusi pružaju prednosti napolju. Međunarodna vrata su otvorena.",
+          "reversed": "Invertirani svet kaže da je nepotpuna integracija, regionalna ograničenja ili logistička prepreka uskati okvir napolju.",
+          "keywords": [
+            "sferni",
+            "mreža",
+            "integracija",
+            "pristupiti",
+            "logistika"
+          ],
+          "context": "Globalne veze povećavaju skali; Potrebno je zatvoriti praznine."
+        },
+        "position6": {
+          "upright": "Preporuka: Popunite datoteku, dokument i skali. Sistematizirajte uspeh.",
+          "reversed": "Savet: Poklopac nedostaju nedostaju. Ne prelazite na novu pre nego što je završite.",
+          "keywords": [
+            "završetak",
+            "sistem",
+            "skala",
+            "integracija",
+            "uspeh"
+          ],
+          "context": "Preporuka: Skaliranje nakon zatvaranja."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: ciklus je završen; Sa integracijom i \"diplomiranjem\" prelazite na novi nivo.",
+          "reversed": "Moguća budućnost: Nedostaje zatvaranje završnih kašnjenja; Prelazak na novo bez završne dorade Stvori nered.",
+          "keywords": [
+            "završetak",
+            "integracija",
+            "uspeh",
+            "integritet",
+            "diplomiranje"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "aceofcups": {
+        "position1": {
+          "upright": "ACE of Cups simbolizuje emocionalni početak od prošlosti, intenzivne ljubavi ili otvaranja srca. To bi mogla biti veza, prijateljstvo ili iskustvo koje vas je duboko dodirnulo. Ovaj utakmitelj je možda odigrao važnu ulogu u osnivanju vaših sadašnjih okolnosti. \\ N \\ NTHIS kartica pokazuje da ovaj emocionalni početak u prošlosti i dalje ostavlja svoju traku na vašem duhovnom putovanju.",
+          "reversed": "ACE of CUPS preokrenuti ukazuje na prošle potisnute emocije, neizražene ljubavi ili nedovršene emocionalne početke. Možda su propuštene prilike jer niste bili spremni da otvorite svoje srce, ili vaše emocije nisu u potpunosti protopile. \\ N \\ NTHIS Card vas podseća da vam blokira ljubav u prošlosti i danas ne utiče na vaše emocionalno stanje.",
+          "keywords": [
+            "lov",
+            "početak",
+            "osećanje",
+            "saosećanje",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih emocionalnih početaka ili naklonosti."
+        },
+        "position2": {
+          "upright": "ACE CUP-ova označava da trenutno doživljavate emocionalno otvor, omekšavanje srca i odliv ljubavi. Energija razmene ljubavi, saosećanja i empatije raste; Mogućnost duhovnog ispunjenja povećava se. \\ N \\ nThis kartica naglašava da će ekspresiranje emocija i održavanje otvorenog srca biti izlečenje u odnosima i kreativnim procesima.",
+          "reversed": "ACE of Cups preokrenuti ukazuje da može postojati suzbijanje emocija, u trenutku da se u trenutku izražavaju ili emocionalnu blokadu. Vaš unutrašnji brod može biti pun, ali nije dozvoljeno da teče. \\ N \\ nnov samooseljenost, imenovanje emocija i sigurno deljenje su presudno za rešavanje blokade.",
+          "keywords": [
+            "Emotivni početak",
+            "saosećanje",
+            "izraz",
+            "protok",
+            "Sada"
+          ],
+          "context": "Emocionalni otvaranje ili emocionalni prag blokade."
+        },
+        "position3": {
+          "upright": "ACE CUPS-a ukazuje na snažnu podsvesnu želju za ljubavlju da teče, za emocionalnu obnovu i za otvaranje srca. Neizkraljene emocije i potreba za naklonošću mogu nevidljivo voditi vaše odluke.",
+          "reversed": "ACE of Cups preokrenuti opisuje potisnute osećaje, izbegavanje ranjivosti i emocionalne blokade koji rade iza scene. Deo vašeg srca koji želi da \"teče\" može se zadržati zbog straha da se povredi.",
+          "keywords": [
+            "osećanje",
+            "saosećanje",
+            "otvaranje",
+            "skriven",
+            "podsvestan"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru je emocionalno otvaranje, saosećanje i protok srca. Emotion je izražen glavni izvor koji neguje sve odnose.",
+          "reversed": "U centru može biti emocionalne blokade ili represija. Siguran izraz ponovo otvori srce.",
+          "keywords": [
+            "ekspanzija",
+            "saosećanje",
+            "izraz",
+            "protok",
+            "poboljšanje"
+          ],
+          "context": "Centar: fontana srca."
+        },
+        "position5": {
+          "upright": "ACE CUP-a ukazuje da postoji istinska podrška, empatija i otvorena vrata za nove veze u spoljnom okruženju. Emocionalna klima se neguje.",
+          "reversed": "Reversirani ACE CUP-a ukazuje da može biti emocionalna hladnoća, ogorčenost ili problemi sa poverenjem spolja. Udaljenost slabila je saradnju.",
+          "keywords": [
+            "podrška",
+            "empatija",
+            "blizina",
+            "poverenje",
+            "odnos"
+          ],
+          "context": "Toplina u zajednici / timu utiče na saradnju."
+        },
+        "position6": {
+          "upright": "Savet: Nježno izrazite svoja osećanja, napravite prostor za saosećanje i recite da na novu emocionalnu vezu.",
+          "reversed": "Savet: popravite slomljeno srce. Otvorite protok sa ritualima za samoljublje i siguran izraz.",
+          "keywords": [
+            "izraz",
+            "saosećanje",
+            "blizina",
+            "samoljublje",
+            "protok"
+          ],
+          "context": "Savet: Nežno otvaranje srca."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: nastaju emocionalna obnova i početak od srca; Povećanje bliskosti i naklonosti.",
+          "reversed": "Moguća budućnost: Teško je otvoriti novu stranicu bez rešavanja emocionalne blokade; Potreban je siguran izraz.",
+          "keywords": [
+            "novi osećaj",
+            "saosećanje",
+            "izraz",
+            "ekspanzija",
+            "blizina"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "twoofcups": {
+        "position1": {
+          "upright": "Njih dvoje šoljica simbolizuje harmoničnu vezu, partnerstvo ili jaku vezu u prošlosti. Ova veza je možda formirana osnova za vaše trenutne okolnosti. Romantični ili prijateljski odnos vas je oblikovao. \\ N \\ nThis kartica vas podseća da vam je ova prošlost harmonija još uvek daje snagu.",
+          "reversed": "Dvoje šoljica obrnuto pokazuje da je prošla disharmonija, razdvajanje ili neuravnoteženih odnosa. Ova iskustva mogu biti u korenu današnjih uslova. \\ N \\ NTHIS kartica pokazuje da se harmonija izgubljena ili razdvajanje doživljava u prošlosti još uvek ima uticaja na vas danas.",
+          "keywords": [
+            "odnos",
+            "raport",
+            "obveznica",
+            "partnerstvo",
+            "prošlost"
+          ],
+          "context": "Uticaj harmoničnih ili nespojivih odnosa u prošlosti."
+        },
+        "position2": {
+          "upright": "Dvoje šoljicama nam govore da su u sredini trenutno u sredini u sredini. Može se ojačati ravnoteža davanja i prijem, dijalozi su isceljujući. \\ N \\ Nbridges izgrađen od srca produbljuju poverenje i podržavaju rast.",
+          "reversed": "Preokrećena dva šolja pokazuje da trenutno neuravnotežene razmene, odvojenosti ili nesporazumi mogu naprezanje na područje odnosa. Očekivanja su možda rasle neizgovorene. \\ N \\ n \\ n \\ nritikulirajuće granice i potrebe su ključ za popravljanje mostova.",
+          "keywords": [
+            "raport",
+            "partnerstvo",
+            "uravnotežena veza",
+            "komunikacija",
+            "Sada"
+          ],
+          "context": "Vezivanje itd. Popravka neravnoteže u obveznici."
+        },
+        "position3": {
+          "upright": "Dvoje šoljica pokazuju da je potreba za reciprocitetom, harmonijom i da se vidi snažna tema unutar. Želja za \"jednakom vezom\" može odrediti vaše izbore i ton komunikacije bez da je to ostvari.",
+          "reversed": "Dvoje reverdirane šoljice govore nam da su skrivene neravnoteže, zavisnost odobrenja ili nejednakim uzorcima koji su primili davanje zasjenjenja odnosa sfere. Diskontno je duboko sjedeće moguće podstakne neizgovorenim očekivanjima.",
+          "keywords": [
+            "reciprocitet",
+            "raport",
+            "odobrenje",
+            "neravnoteža",
+            "skriven"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru je ravnoteža reciprociteta, sklada i partnerstva. Raidetna razmena jača most.",
+          "reversed": "Možda postoje neuravnotežene veze ili nesporazumi u centru. Otvorene granice i jasne potrebe uspostavljaju ravnotežu.",
+          "keywords": [
+            "raport",
+            "obveznica",
+            "jednakost",
+            "dijalog",
+            "poverenje"
+          ],
+          "context": "Centar: Srce vinograda."
+        },
+        "position5": {
+          "upright": "Dvoje šoljica ukazuju na visoku verovatnoću reciprociteta i harmonije sa spoljnim zainteresovanim stranama. Jednaka razmena gradi mostove.",
+          "reversed": "Prekoračenje dve šolje pokazuju da nestabilne veze, nesporazumi ili krhki savezi mogu stvoriti probleme napolju.",
+          "keywords": [
+            "raport",
+            "reciprocitet",
+            "savezništvo",
+            "dijalog",
+            "ravnoteža"
+          ],
+          "context": "Jednaki odnos određuje kvalitet spoljne podrške."
+        },
+        "position6": {
+          "upright": "Preporuka: ojačati reciprocitet; Bond podjednako sa jasnim očekivanjima i granicama.",
+          "reversed": "Savet: Ponovno pregovaranje neuravnotežene transakcije ili zadržati svoju udaljenost.",
+          "keywords": [
+            "reciprocitet",
+            "granica",
+            "dijalog",
+            "raport",
+            "ravnoteža"
+          ],
+          "context": "Preporuka: Strukturiranje jednačine."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: međusobna veza postaje jača; Osnovana je fer i toplo partnerstvo.",
+          "reversed": "Moguća budućnost: harmonija se može poremetiti; Nesporazumi stvaraju hlađenje u obveznici.",
+          "keywords": [
+            "partnerstvo",
+            "raport",
+            "reciprocitet",
+            "transparentnost",
+            "poverenje"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "threeofcups": {
+        "position1": {
+          "upright": "Tri šolje simboliziraju prošle proslave, obveznice prijateljstva ili radosnih vremena. Ova iskustva su vas možda podržavala i položila temelje za mesto gde ste danas. \\ N \\ NTHIS kartica pokazuje da vas prethodna prijateljstva i dalje nadahnjuju vas.",
+          "reversed": "Pretvorena tri šolje ukazuje na prošle rupture, razočarenja u prijateljstva ili radosni trenuci koji su ostavljeni nedovršeni. Ova iskustva su danas možda bacila senku na vašu emocionalnu državu danas. \\ N \\ NTHIS kartica objašnjava da su slomljene veze u prošlosti nastavljaju do danas.",
+          "keywords": [
+            "proslava",
+            "prijateljstvo",
+            "jedinstvo",
+            "podrška",
+            "prošlost"
+          ],
+          "context": "Uticaj prethodnih prijateljstava ili pauze."
+        },
+        "position2": {
+          "upright": "Tri šolje ističu energiju zajednice, prijateljstva i proslave u ovom trenutku. Deljenje sa podržavajućim okruženjem povećava radost, saradnju nadahnjuju. \\ N \\ n \\ n \\ Nproduciranje zajedno i proslavi uspesi nadopunjuju emocionalne rezerve.",
+          "reversed": "Tri trupa preokrenuta ukazuju na to da se u ovom trenutku ne ispliva na socijalni umor, osećajući se izostalo ili površne veze. Prekomerna distrakcija može iscrpiti kapital. \\ N \\ n \\ nmaking prostor za kvalitetne odnose i povlačenje sa nezdravih veza vraća ravnotežu.",
+          "keywords": [
+            "proslava",
+            "prijateljstvo",
+            "podrška",
+            "deljenje",
+            "Sada"
+          ],
+          "context": "Povećanje društvene podrške ili ekstremizam balansiranja."
+        },
+        "position3": {
+          "upright": "Tri šolje opisuju kako potreba za podrškom, prijateljstvom i deljenjem u zajednici pruža motivaciju iza kulisa. Želja da \"bude sa\" unutar nastoji da poveća radost i inspiraciju.",
+          "reversed": "Pretvorena tri šolje govori nam da strah od isključenja, površnih priloga ili osećanja poređenja stvaraju latentnu napetost. Socijalni umor može da proizlazi da ne imenovati stvarne potrebe.",
+          "keywords": [
+            "zajednica",
+            "prijateljstvo",
+            "deljenje",
+            "poređenje",
+            "skriven"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru je energija zajednice, prijateljstva i proslave. Deljenje povećava radost.",
+          "reversed": "U centru može doći do socijalnog umora ili površnosti. Potrebno je napraviti mesta za kvalitetne vinograde.",
+          "keywords": [
+            "zajednica",
+            "prijateljstvo",
+            "proslava",
+            "deljenje",
+            "podrška"
+          ],
+          "context": "Centar: Radost da budemo zajedno."
+        },
+        "position5": {
+          "upright": "Tri troje šoljica pokazuju snažnu kulturu proslave zajednice, podržavajuće mreže i deljenje napolju. Moral se diže.",
+          "reversed": "Tri trupa preokrenuta ukazuje na to da je ljubomora, osećaj isključenosti ili površna može se pojaviti u spoljnom okruženju.",
+          "keywords": [
+            "zajednica",
+            "proslava",
+            "podrška",
+            "ljubomora",
+            "kultura"
+          ],
+          "context": "Socijalna klima može ojačati ili oblačiti motivaciju."
+        },
+        "position6": {
+          "upright": "Savet: Aktivirajte svoju zajednicu, zatražite podršku i planirajte male proslave.",
+          "reversed": "Savet: Pratite društvenu ishranu. Prioritete dubokim vezama.",
+          "keywords": [
+            "zajednica",
+            "podrška",
+            "proslava",
+            "prioritet",
+            "obveznica"
+          ],
+          "context": "Savet: Svesno korišćenje socijalne energije."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: Proslava, podrška zajednice i deljenje radosti; Uspeh se povećava zajedno.",
+          "reversed": "Moguća budućnost: socijalno trenje ili odlaganje mogu niži moral; Blizu fokusa zvona je korisna.",
+          "keywords": [
+            "proslava",
+            "prijateljstvo",
+            "deljenje",
+            "zajednica",
+            "moral"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "fourofcups": {
+        "position1": {
+          "upright": "Četiri šolje simbolizuje prošlost emocionalnog nezadovoljstva, ignorisanjem ili nevoljkošću mogućnostima. Takav stav može biti u korenu vaših sadašnjih okolnosti. \\ N \\ NTHIS kartica pokazuje da ova prošla apatija ili nezadovoljstvo i danas danas utiče na vas.",
+          "reversed": "Preokrećena četiri šolje pokazuje realizaciju prošlih propuštenih prilika, buđenja ili novog emocionalnog početka. Ovaj period je mogao da utrkuje put vašim trenutnim okolnostima. \\ N \\ nThis kartica vam govori da se ova svest ili propuštene prilike u prošlosti još uvek utiču na vaše raspoloženje danas.",
+          "keywords": [
+            "nezadovoljstvo",
+            "prilika",
+            "osećanje",
+            "ravnodušnost",
+            "prošlost"
+          ],
+          "context": "Uticaj prethodnog nezadovoljstva ili svesti."
+        },
+        "position2": {
+          "upright": "Četiri šolje ukazuju na apatiju, nezadovoljstvo ili traženje emocionalnog ispunjenja u sadašnjosti. Mogućnosti pred vama se mogu previdjeti. \\ N \\ n \\ n \\ n \\ n",
+          "reversed": "Preokrećena četiri šolje ukazuje na buđenje, povećanu svest i novi emocionalni interes za sada. Prihvatanje i zahvalnost Raspršite burliciju. \\ N \\ n \\ nsmall Steps i radoznalost otvaraju vrata za oživljavanje.",
+          "keywords": [
+            "nezadovoljstvo",
+            "okretanje prema unutra",
+            "svest",
+            "prilika",
+            "Sada"
+          ],
+          "context": "SMANjENjE ZEMLjE ZA NEZAVISNO I OTVRĐENjE NA NOVOM."
+        },
+        "position3": {
+          "upright": "Četiri šolje pokazuju da postoji osnovna sklonost nezadovoljstvu, emotivnoj ukočenosti ili preziru zbog onoga što život može da ponudi. Pažnja se može fokusirati na ono što nedostaje, a ne ono što je dostupno.",
+          "reversed": "Pretvorena četvero šoljica govori nam da se želja da se probudi i poziv da se ponovo poveže sa zahvalnošću klimiraju unutra. Ali uobičajeno utvrđena udaljenost može odložiti opoziv vitalnosti.",
+          "keywords": [
+            "nezadovoljstvo",
+            "ravnodušnost",
+            "svest",
+            "zahvalnost",
+            "skriven"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru postoji tendencija prema nezadovoljstvu i introspektivi. Prilika ispred vas čeka da se realizuje.",
+          "reversed": "Potencijal za buđenje i revitalizaciju sa zahvalnošću raste u centru. Fokus se mora obnoviti.",
+          "keywords": [
+            "nezadovoljstvo",
+            "okretanje prema unutra",
+            "prilika",
+            "svest",
+            "zahvalnost"
+          ],
+          "context": "Centar: jezgro potrage za značenjem."
+        },
+        "position5": {
+          "upright": "Četiri šolje pokazuju da spoljne ponude ne mogu biti od interesa ili se mogućnosti ne priznaju. Spoljni šum se može odvratiti.",
+          "reversed": "Invertirana četvoro šoljica sugerira da će nova spoljna prilika podstaći interesovanje. Buđenje je na vratima.",
+          "keywords": [
+            "ravnodušnost",
+            "prilika",
+            "pažnja",
+            "buđenje",
+            "fokus"
+          ],
+          "context": "Vrednost dolaznih ponuda treba preispitati."
+        },
+        "position6": {
+          "upright": "Savet: Zahvalnost praktikujte, isprobajte malu inovaciju i obnavljate pažljivost.",
+          "reversed": "Savet: Napravite prostor za novu priliku koja dolazi; Uradi bar jedan pokušaj.",
+          "keywords": [
+            "zahvalnost",
+            "prilika",
+            "inovativnost",
+            "pažnja",
+            "pokušati"
+          ],
+          "context": "Preporuka: Osveži zasićenost."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: Nezadovoljstvo može ustupiti način svesti; Nova ponuda vas može zanimati.",
+          "reversed": "Moguća budućnost: prilika se može propustiti ako apatija i dalje postoji; Praksa zahvalnosti otvara horizont.",
+          "keywords": [
+            "nezadovoljstvo",
+            "prilika",
+            "buđenje",
+            "fokus",
+            "zahvalnost"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "fiveofcups": {
+        "position1": {
+          "upright": "Petorica šoljica simbolizuje prošle gubitke, žaljenje i razočarenja. Ove patnje mogu biti u korenu današnjih uslova. Ne mogu da vide mogućnosti koje su bile pre nego što su vaše oči u prošlosti takođe mogli oblikovati ovaj proces. \\ N \\ NTHIS kartica pokazuje da prethodni gubici i dalje utiču na vašu trenutnu perspektivu.",
+          "reversed": "Preokrećena pet šoljica ukazuje na oporavak, povraćajući nadu i isceljenje nakon gubitaka iskusnih u prošlosti. Međutim, ovaj proces možda nije bio lak, a tragovi i danas mogu biti vidljivi. \\ N \\ nThis kartica podseća vas da prošli žaljenje ostavljaju marku na vašem trenutnom raspoloženju.",
+          "keywords": [
+            "gubitak",
+            "žaliti",
+            "razočaranje",
+            "ugao",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih gubitaka ili povraćaja."
+        },
+        "position2": {
+          "upright": "Petorica šoljica ukazuje da osećanja gubitka, žaljenja ili žalosti u ovom trenutku mogu biti preovlađujuće. Pažnja je fokusirana na ono što je izgubljeno. \\ N \\ n \\ n \\ n \\ n \\ n \\ n \\ neviđeno je, šta je još uvek na raspolaganju, prvi korak do oporavka.",
+          "reversed": "Preokrećeno pet šoljica opisuje povratak oporavka, prihvatanja i nade u sadašnjosti. Snaga kroz tugu nudi novu perspektivu. \\ N \\ n \\ nseeking samooseljenost i podrška povećavaju emocionalnu otpornost.",
+          "keywords": [
+            "gubitak",
+            "starost",
+            "žaliti",
+            "prihvatanje",
+            "Sada"
+          ],
+          "context": "Ne ostanite u žalovanju ili ponovnim prizorom nada."
+        },
+        "position3": {
+          "upright": "Petorica šoljica pokazuje da su sirovi narativi tuge, žaljenje i gubitka boje boje sa iza kulisa. Prošlo razočaranje mogu da oblakne mogućnosti.",
+          "reversed": "Okrećena pet šoljica nam govori da želja za oporavkom i prihvatanjem stiče snagu unutar. Međutim, držeći se na \"šta ako\" može usporiti isceljivanje.",
+          "keywords": [
+            "starost",
+            "gubitak",
+            "žaliti",
+            "prihvatanje",
+            "skriven"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "Tema gubitka i žalosti se ističe u centru. Gledajući ono što je pri ruci, ne iza, uspostavlja ravnotežu.",
+          "reversed": "Closom za oporavak i prihvatanje u centru. Nada se nada je ključ.",
+          "keywords": [
+            "gubitak",
+            "starost",
+            "prihvatanje",
+            "zarastanje",
+            "nadati se"
+          ],
+          "context": "Centar: Transformativna tačka tuge."
+        },
+        "position5": {
+          "upright": "Petorica šoljica pokazuje da se spoljna razočarenja ili otkazi mogu demoratizirati. Međutim, ono što se ostaje može koristiti.",
+          "reversed": "Otkazana pet šoljica govori nam da su ojačane mogućnosti za nadoknadu i popravku u spoljnom okruženju. Mostovi se mogu obnoviti.",
+          "keywords": [
+            "gubitak",
+            "nadoknada",
+            "moral",
+            "popraviti",
+            "šansa"
+          ],
+          "context": "Ima prostora za oporavak nakon spoljnih pauze."
+        },
+        "position6": {
+          "upright": "Savet: Dajte prostor svojoj tuzi, fokusirajte se na mogućnosti koje ste ostavili i oporavite korak po korak.",
+          "reversed": "Savet: praktično oproštenje, postavite mali cilj za budućnost.",
+          "keywords": [
+            "starost",
+            "prihvatanje",
+            "oporavak",
+            "oproštenje",
+            "napredak"
+          ],
+          "context": "Savet: Pronalaženje pravca nakon gubitka."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: gubitak je prihvaćen i nastaje moć da proceni šta ostaje; oporavak počinje.",
+          "reversed": "Moguća budućnost: Proces popravke i oproštenja stvara nadu; Korak napred postaje lakše.",
+          "keywords": [
+            "gubitak",
+            "prihvatanje",
+            "popraviti",
+            "nadati se",
+            "napredak"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "sixofcups": {
+        "position1": {
+          "upright": "Šest šoljica simbolizuje prošle uspomene, nostalgiju i iskustva iz detinjstva. Ove prelepa sećanja možda je danas oblikovala vašu perspektivu. Bond ili sećanje iz prošlosti mogu biti u korenu današnjih uslova. \\ N \\ NTHIS kartica pokazuje da vas ove obveznice iz prošlosti još uvek neguju emocionalno.",
+          "reversed": "Invertirani šesto šoljica simbolizuje da je preterano pričvršćeno na prošlost, utapanje u nostalgiji ili ne može da napreduje. Ne mogu da prepustite prošlost, možda je oslabila vaše trenutne okolnosti. \\ N \\ nThis kartica vam govori da je zaglavljen u prošlosti ometa vaš napredak danas.",
+          "keywords": [
+            "nostalgija",
+            "detinjstvo",
+            "moment",
+            "obveznica",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih sećanja ili zavisnosti."
+        },
+        "position2": {
+          "upright": "Šest šoljica, sada je vreme za nostalgiju, toplu sećanja i kontaktirajte sa unutrašnjim detetom. Osjećaj nevinosti omekšava srce. \\ N \\ n \\ n \\ nCompassion iz prošlosti može da neguje sadašnjost; Ali budite oprezni da ne ostanete zaglavljeni u prošlosti.",
+          "reversed": "Šest čekova preokrenuti ukazuje na osećaj da se zaglavio u prošlosti, idealizujući ili ne može da napreduje u sadašnjosti. Nostalgija se može pretvoriti u bekstvo. \\ N \\ n \\ n \\ Nhororing sećanja i pomeranje fokusa na sadašnjost pruža ravnotežu.",
+          "keywords": [
+            "nostalgija",
+            "unutrašnji dete",
+            "saosećanje",
+            "moment",
+            "Sada"
+          ],
+          "context": "Lekovite memoriju itd. Ostanite u prošlosti."
+        },
+        "position3": {
+          "upright": "Šest šoljica govori o nostalgiji, unutrašnjim dečijim temama i potrebno je utočište u sigurnim sećanjima kao nevidljivo sidro. Prošle topline mogu da opune današnje odluke.",
+          "reversed": "Invertirani šest šoljica pokazuje da je želja da se drži prošlosti, idealizuje ili \"neka bude ista kao i pre\" zatamnjene napredak. Dok su sećanja inspiracija, u ovom trenutku se nalazi smer.",
+          "keywords": [
+            "nostalgija",
+            "unutrašnji dete",
+            "moment",
+            "zadrzati",
+            "skriven"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U centru je nostalgija i kontakt sa unutrašnjim detetom. Toplina prošlosti omekšava poklon.",
+          "reversed": "U centru, držeći se prošlosti može ometati napredak. Poštujte sećanje, donesite fokus na sadašnjost.",
+          "keywords": [
+            "nostalgija",
+            "unutrašnji dete",
+            "moment",
+            "saosećanje",
+            "regeneracija"
+          ],
+          "context": "Centar: zaceljivanje pamćenja."
+        },
+        "position5": {
+          "upright": "Šest šoljica pokazuje da nostalgija i stari kontakti mogu pružiti podršku u spoljnom svetu. Protekle veze mogu biti oživele.",
+          "reversed": "Visoko šest šoljica kaže da se odnosi zaglavili u prošlosti mogu usporiti napredak.",
+          "keywords": [
+            "prošlost",
+            "mreža",
+            "memorija",
+            "ponovo povezati",
+            "podrška"
+          ],
+          "context": "Stare veze mogu otvoriti nova vrata; Postoji opasnost od spoja."
+        },
+        "position6": {
+          "upright": "Savet: Ponovno povezivanje sa jakim starim vezama; Pokažite saosećanje svom unutrašnjem detetu.",
+          "reversed": "Savet: Poštujte prošlost, ali ulagajte u sadašnjost.",
+          "keywords": [
+            "nostalgija",
+            "obveznica",
+            "saosećanje",
+            "Danas",
+            "podrška"
+          ],
+          "context": "Savet: Uzmite snagu od prošlosti i protočite u sadašnjost."
+        },
+        "position7": {
+          "upright": "Moguća je moguća budućnost: toplo pomirenje ili slatko ponovno okupljanje sa prošlih veza.",
+          "reversed": "Moguća budućnost: prebivalište u prošlosti može zasjeniti sadašnjost; Potrebno je uspostaviti ravnotežu.",
+          "keywords": [
+            "nostalgija",
+            "kompromis",
+            "unutrašnji dete",
+            "saosećanje",
+            "ravnoteža"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "sevenofcups": {
+        "position1": {
+          "upright": "Sedam šoljica simbolizuje prošle snove, izbore ili nesigurnosti. Sanjari se previše ili se izgubilo među opcijama može biti u korenu današnje situacije. \\ N \\ NTHIS kartica podseća na to da je nerealno očekivanja u prošlosti utiču na današnje uslove.",
+          "reversed": "Uokrećeno sedam šoljica ukazuje na prevladavanje zbrke u prošlosti, čineći jasnu odluku ili buđenje iz snova. Ovaj proces je možda oblikovao vašu trenutnu situaciju. \\ N \\ NTHIS kartica vam govori da su odluke donete u prošlosti još uvek uticati danas.",
+          "keywords": [
+            "sanjati",
+            "izbor",
+            "zbrka",
+            "očekivanje",
+            "prošlost"
+          ],
+          "context": "Uticaj prethodnih snova ili jasnih odluka."
+        },
+        "position2": {
+          "upright": "Sedam šoljica opisuje žalbu snova, opcija i mogućnosti u sadašnjosti. Um je zamućen; Potrebni su kriterijumi za jasnoću. \\ N \\ n \\ n \\ npriliranje i stvarnost ispitivanja sprečavaju odvraćanje pažnje.",
+          "reversed": "Pretvorenih sedam šoljica ukazuje na povratak u trezveću, jasnu odluku i realne ciljeve u sadašnjosti. Magla se pojasne, izrađen je izbor. \\ N \\ n \\ nsmall i merljivi koraci pretvaraju snove u praksi.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "neizvesnost",
+            "oštrina",
+            "Sada"
+          ],
+          "context": "Obilje opcija itd. Fokusiran izbor."
+        },
+        "position3": {
+          "upright": "Sedam šoljica kaže da san i obrasci bekstva povećavaju rizik od raspada u lice obilja opcija. Fantazije mogu da pokrivaju stvarne potrebe.",
+          "reversed": "Invertirani sedmi čaše ukazuje da je želja za jasnoćom i pozivom da se oslobode iluzija jačaju unutra. Jasne metrike čine stazu kroz maglu.",
+          "keywords": [
+            "sanjati",
+            "pobjeći",
+            "izbor",
+            "oštrina",
+            "skriven"
+          ],
+          "context": "Podsvesni i skriveni faktori"
+        },
+        "position4": {
+          "upright": "U sredini postoji obilje opcija i mašte. Jasne metrike sprečavaju disperziju.",
+          "reversed": "Proces sortiranja i razjašnjenja počinje u centru. Realizam jača fokus.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "oštrina"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,794 @@
+{
+  "new-lover": {
+    "meanings": {
+      "fourofswords": {
+        "position2": {
+          "keywords": [
+            "Akuarius",
+            "odmor",
+            "rastojanje",
+            "um"
+          ],
+          "context": "Uticaj Vodolije dolazi do izražaja."
+        },
+        "position3": {
+          "upright": "Četiri mačeva kaže da su odmori i smireni neophodni za harmoniju. Mentalna jasnoća pruža ravnotežu u odnosima.",
+          "reversed": "Prevela četiri mačeva, prekomerna napetost može da poremeti sklad. Kretanje napred bez pauze soli su ligamente.",
+          "keywords": [
+            "odmor",
+            "ravnoteža",
+            "spokojstvo",
+            "raport",
+            "mentalna udobnost"
+          ],
+          "context": "Spokoj donosi harmoniju. Napetost troši obveznice."
+        },
+        "position4": {
+          "upright": "Četiri procesa mačeva odmora i mirno čuvaju dugoročnu vezu. Mirnoća daje snagu odnosu.",
+          "reversed": "Okolišteno četiri mačeva, umora i nedostatak pauze mnogo teškoće teško.",
+          "keywords": [
+            "odmor",
+            "spokojstvo",
+            "oporavak",
+            "ravnoteža",
+            "dugoročan"
+          ],
+          "context": "Odmarajte dugoročno dugoročno, iscrpljenost testira obveznice."
+        },
+        "position5": {
+          "upright": "Četiri mačeva, proces odmora i povlačenja mogu pripremiti vezu srodne duše.",
+          "reversed": "Četiri mačeva obrnuto, previše povučena mogu otežati vezu srodne duše. Ravnoteža je obavezna.",
+          "keywords": [
+            "odmor",
+            "okretanje prema unutra",
+            "priprema",
+            "ravnoteža",
+            "srodna duša"
+          ],
+          "context": "Uključivanje prema unutra pruža pripremu za druženje duše."
+        },
+        "position6": {
+          "upright": "Usluge kandiduju potrebu za odmor i strateškim čekanjem da se vaša želja ostvari. Pauza pacijenta može donijeti rezultate.",
+          "reversed": "Obrnuti kvadri, ekstremni umor ili ne uzimaju pauze mogu odložiti vašu želju. Obnavljanje je obavezna.",
+          "keywords": [
+            "odmor",
+            "strpljenje",
+            "strategija",
+            "čekati",
+            "zarastanje"
+          ],
+          "context": "Kratka pauza je možda neophodna za vašu želju."
+        }
+      },
+      "fiveofswords": {
+        "position1": {
+          "upright": "Petorica mačeva vas podseća da bi se bitke za opravdanje blokiraju vaše srce. Kada se ovaj obrazac otpusti, vrata mirnog sastanka otvaraju se.",
+          "reversed": "Preokrećena pet mačeva donosi korak od napetosti i namera da se popravi. Kada zamenite ego sa radoznalošću, mogućnost nove veze postaje jači.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "popraviti",
+            "mir"
+          ],
+          "context": "Prepuštanje oštrom stilu otvara prostor za novo; Mekoća stvara atrakciju."
+        },
+        "position2": {
+          "upright": "Petorica mačeva ukazuje na izazovnu stranu Vodolije. Ova osoba može biti konkurentna.",
+          "reversed": "Petorica preokrenuta mačeva može pokazati tvrdoglavost ili nepotrebne argumente pod senkom Vodolije.",
+          "keywords": [
+            "Akuarius",
+            "rivalstvo",
+            "tvrdoglavost",
+            "um"
+          ],
+          "context": "Vodolija se ističe sa stranim senkima."
+        },
+        "position3": {
+          "upright": "Petorica mačeva pokazuje da sukobi ego-a mogu izazvati harmoniju. Važno je izgraditi mostove, a ne žele da budu u pravu.",
+          "reversed": "Invertirano pet mačeva, harmonija se može roditi kroz oproštenje i pomirenje. Puštanje napetosti donosi mir.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "legitimitet",
+            "raport",
+            "kompromis"
+          ],
+          "context": "Građevinski mostovi podstiču harmoniju. Ego prekida veze."
+        },
+        "position4": {
+          "upright": "Petorica mačeva, eskalirajući sukobi za dobitke mogu oštetiti dugoročnu vezu. Važno je zaštititi mostove.",
+          "reversed": "Invertirano pet mačeva, namera da se popravi omogućava dugoročnu vezu da ponovo procveta.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "popraviti",
+            "rivalstvo",
+            "dugoročan"
+          ],
+          "context": "Popravka neguje dugoročno i testira ego Bond."
+        },
+        "position5": {
+          "upright": "Petorica mačeva pokazuje da ego bitke mogu zasjeniti dušu vezu. Prava veza se rodi od razumevanja, a ne pobede.",
+          "reversed": "Invertirano pet mačeva, potencijal srodne duše može se pojaviti kao sukobi završiti.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "mir",
+            "učenje",
+            "srodna duša"
+          ],
+          "context": "Ego stvara senku, mir otvara druženje duše."
+        },
+        "position6": {
+          "upright": "Fives pokazuju da morate da se držite podalje od sukoba kako biste se želeli ostvariti. To dovodi do Harmonija, a ne želje da bude u pravu.",
+          "reversed": "Obrnuti pentakle, vaša želja se može ostvariti kako se tenzije odlučno odluči. Popravka utiče na put za vašu želju.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "legitimitet",
+            "popraviti",
+            "ravnoteža"
+          ],
+          "context": "Povećava energiju vaše želje za harmoniju."
+        }
+      },
+      "sixofswords": {
+        "position1": {
+          "upright": "Šest mačeva simbolizuje prelazak iz voda prošlosti do smirenije obale. Ova nežna migracija može se uskoro poklapati sa mirnim početkom.",
+          "reversed": "Ukidani šest mačeva kaže da je tendencija da se vrate na staru obalu usporavaju napredak. Jednom kada je tranzicija završena, nova veza postaje vidljiva.",
+          "keywords": [
+            "prelaz",
+            "spokojstvo",
+            "napredak",
+            "zarastanje"
+          ],
+          "context": "Siguran odlazak iz prošlosti omogućava novu vezu."
+        },
+        "position2": {
+          "upright": "Šest mačeva naglašava analitičku stranu vazdušnih znakova. Donosi temu odvajanja i mentalne jasnoće sa uticajem Blizanca ili Vodolije.",
+          "reversed": "Učitavanje šest mačeva može pokazati nemogućnost da se odseli ili ostane zaglavljen u senci vazdušnih znakova.",
+          "keywords": [
+            "Blizanci",
+            "Akuarius",
+            "rastojanje",
+            "analiza"
+          ],
+          "context": "GEMINI ILI AKUARIUS ENERGIJSKA JE DOIMANjA."
+        },
+        "position3": {
+          "upright": "Šest mačeva kaže da je potrebno da se odseli od poteškoća da bi se postigla harmonija. Prelazak na mirne vode zajedno donosi mir u vezi.",
+          "reversed": "Šest mačeva preokrenulo je: zaglavljen u prošlosti sprečava harmoniju. Putovanje zahteva hrabrost.",
+          "keywords": [
+            "prelaz",
+            "raport",
+            "mir",
+            "napredak",
+            "ravnoteža"
+          ],
+          "context": "Tranzicija pruža harmoniju. Pričvršćivanje je sojeno obveznica."
+        },
+        "position4": {
+          "upright": "Šest mačeva, prelazak na mirne vode nakon teških perioda jača dugoročnu vezu.",
+          "reversed": "Obrnuto šest mačeva, a ne mogu da se odmanjuju od prošlosti može dugoročno otežati dugoročno.",
+          "keywords": [
+            "prelaz",
+            "poboljšanje",
+            "ruta",
+            "napredak",
+            "dugoročan"
+          ],
+          "context": "Tranzicija neguje dugoročno; Ako je veza zaglavljena u prošlosti, to će biti teško."
+        },
+        "position5": {
+          "upright": "Šest mačeva pokazuje da se sa dušem može naći kroz mirno putovanje nakon teških vremena.",
+          "reversed": "Šest mačeva obrnuto, držeći se prošlosti može ometati dušu vezu.",
+          "keywords": [
+            "putovanje",
+            "prelaz",
+            "zarastanje",
+            "napredak",
+            "srodna duša"
+          ],
+          "context": "Mirna tranzicija podstiče matesništvo duše."
+        },
+        "position6": {
+          "upright": "Šest pokazuje da će se vaša želja ostvariti putem sigurne tranzicije ili se odseliti.",
+          "reversed": "Invertirani sektet može odložiti želju da držite stare veze. Potrebno je prihvatiti tranziciju.",
+          "keywords": [
+            "prelaz",
+            "putovanje",
+            "spokojstvo",
+            "poboljšanje",
+            "odmicali se"
+          ],
+          "context": "Proces tranzicije olakšava vašu želju da se ostvari."
+        }
+      },
+      "sevenofswords": {
+        "position1": {
+          "upright": "Sedam mačeva upozorava da nevidljivi dnevni red ili plašna strategija mogu prisiliti neposredne početke. Jasna namera naziva pravu osobu.",
+          "reversed": "Preokrećeno sedam mačeva učvršćuje put za iskreni razgovor i iskreno priznanje. Kako postajete transparentniji, šanse za novu vezu povećanje.",
+          "keywords": [
+            "transparentnost",
+            "strategija",
+            "poverenje",
+            "iskrenost"
+          ],
+          "context": "Jasna namera, a ne poluistine, ubrzava novi početak."
+        },
+        "position2": {
+          "upright": "Sedam mačeva pokazuje stratešku i ponekad tajnu stranu Blizanca. On je neko ko napreduje sa svojom inteligencijom.",
+          "reversed": "Prevara sedam mačeva, pod senkom Blizanca, mogu biti pitanja iskrene ili testirane sa polu istinama.",
+          "keywords": [
+            "Blizanci",
+            "strategija",
+            "obaveštajna služba",
+            "sigurnost"
+          ],
+          "context": "Blizanci energija je snažna."
+        },
+        "position3": {
+          "upright": "Sedam mačeva pokazuje da je strategija i mereno ponašanje važno za harmoniju. Jasna namera povećava poverenje.",
+          "reversed": "Sedam mačeva obrnuto, tajne ili poluistine potkopavaju harmoniju. Transparentnost je potrebna.",
+          "keywords": [
+            "strategija",
+            "iskrenost",
+            "raport",
+            "poverenje",
+            "otvorenost"
+          ],
+          "context": "Transparentnost uvećava harmoniju. Secreci Erodes Obveznice."
+        },
+        "position4": {
+          "upright": "Sedam mačeva, tajne ili strateško ponašanje može testirati dugoročnu vezu. Transparentnost jača kontinuitet.",
+          "reversed": "Okrećeno sedam mačeva, suočavanje sa iskrenosti obnovljuje osnovu dugoročne veze.",
+          "keywords": [
+            "sigurnost",
+            "strategija",
+            "iskrenost",
+            "poverenje",
+            "dugoročan"
+          ],
+          "context": "Transparentnost neguje dugoročno, poverljivost testira vezu."
+        },
+        "position5": {
+          "upright": "Sedam mačeva, tajnosti ili poluistina može otežati vezu srodne duše. Transparentnost je osnovno stanje.",
+          "reversed": "Invertirano sedmoro mačeva, temelj srodne duše veze može se ojačati nastankom istine.",
+          "keywords": [
+            "sigurnost",
+            "real",
+            "iskrenost",
+            "obveznica",
+            "srodna duša"
+          ],
+          "context": "Transparentnost je neophodna za srodnu dušu."
+        },
+        "position6": {
+          "upright": "Sedam vam kaže da trebate strateški da delujete da biste ostvarili svoju želju. Candor povećava poverenje.",
+          "reversed": "Pretvorena sedme, tajnost ili poluistine mogu otežati da se vaša želja ostvari. Transparentnost je od suštinskog značaja.",
+          "keywords": [
+            "strategija",
+            "sigurnost",
+            "iskrenost",
+            "plan",
+            "oštrina"
+          ],
+          "context": "Podržava vašu želju za transparentnošću."
+        }
+      },
+      "eightofswords": {
+        "position1": {
+          "upright": "Osam mačeva kaže da mentalne okove pišu \"nemoguću\" priču. Jedan mali dokaz i jedan korak će pokazati da su vrata u stvari otvorena.",
+          "reversed": "Osmrtono je osam mačeva najavio čvorove straha koji počinju da se odvijaju i područje povećanja slobode. Uz ovo olakšanje, uskoro možete započeti vezu.",
+          "keywords": [
+            "uverenje u ograničenje",
+            "strah",
+            "oslobođenje",
+            "hrabrost"
+          ],
+          "context": "Kako se otvorila mentalna brava, nova veza postaje vidljiva."
+        },
+        "position2": {
+          "upright": "Osam mačeva, u senci Vage, ukazuje na neodlučnost i mentalne prepreke. Ova osoba može trebati vremena da povrati samopouzdanje.",
+          "reversed": "Osetila osam mačeva otkriva orijentaciju Vage-a prema pronalaženju ravnoteže. Postoji tendencija da se oslobodimo neodlučnosti.",
+          "keywords": [
+            "Skala",
+            "nestabilnost",
+            "prepreka",
+            "ravnoteža"
+          ],
+          "context": "Vaga dolazi do izražaja."
+        },
+        "position3": {
+          "upright": "Osam mačeva kaže da mentalne prepreke mogu da ograniče harmoniju. Prevladavanje obrazaca verovanja donosi slobodu.",
+          "reversed": "Osvećeno osam mačeva pokazuje da se harmonija može obnoviti željom za oslobađanje. Neophodno je prevazići ograničenja.",
+          "keywords": [
+            "ograničenje",
+            "verovanje",
+            "sloboda",
+            "raport",
+            "suspendovan"
+          ],
+          "context": "Sloboda donosi Harmoniju. Obrada ograničavaju obveznice."
+        },
+        "position4": {
+          "upright": "Osam mačeva, mentalna ograničenja mogu suziti dugoročnu vezu. Prevladavanje obrazaca verovanja donosi slobodu.",
+          "reversed": "Osvećeno osam mačeva, oslobađanja i svesti podržava dugoročno.",
+          "keywords": [
+            "ograničenje",
+            "um",
+            "sloboda",
+            "svest",
+            "dugoročan"
+          ],
+          "context": "Oslobađanje neguje dugoročno, ograničenje testira vezu."
+        },
+        "position5": {
+          "upright": "Osam mačeva ukazuje da vas vaši strahovi mogu sprečiti da vidite srodnu vezu.",
+          "reversed": "Sa preokretom osam mačeva, duševna veza postaje vidljiva kroz oslobađanje i svest.",
+          "keywords": [
+            "strah",
+            "sloboda",
+            "svest",
+            "prepreka",
+            "srodna duša"
+          ],
+          "context": "Strahovi stvaraju senke, svest otvara Bond."
+        },
+        "position6": {
+          "upright": "Osam, najveća stvar sprečava vašu želju da se ostvari vaša sopstvena mentalna ograničenja. Primjetite lance.",
+          "reversed": "Invertirano osam otvara put vašim željama, uzimajući male korake prema oslobađanju.",
+          "keywords": [
+            "samostalno ograničenje",
+            "um",
+            "strah",
+            "oslobođenje",
+            "svest"
+          ],
+          "context": "Kada se uklone mentalne prepreke, vaša želja može da teče."
+        }
+      },
+      "nineofswords": {
+        "position1": {
+          "upright": "Devet mačeva nam govori da anksioznost zasjenjuje nadu sa ponoćnim pričama. Sa stvarnošću testiranja i samoosnicom, ova magla čisti; UVOD može da sledi.",
+          "reversed": "Okrećeno devet mačeva, noćna mora ujutro ujutro na jutarnje jasnoće. Kako se anksioznost smanjuje, srce se lakše otvara novom odnosu.",
+          "keywords": [
+            "anksioznost",
+            "stvarnost",
+            "saosećanje",
+            "oštrina"
+          ],
+          "context": "Kada se postigne higijena anksioznosti, osnova za novi početak postaje jači."
+        },
+        "position2": {
+          "upright": "Devet mačeva predstavlja mentalno preopterećenje Blizanca. Može biti skloni anksioznosti.",
+          "reversed": "Devet preokrenenih mačeva može ukazivati na nekoga da pokuša da se oslobodi straha u senci Blizanca.",
+          "keywords": [
+            "Blizanci",
+            "anksioznost",
+            "um",
+            "strah"
+          ],
+          "context": "Gemini Energi je očigledno."
+        },
+        "position3": {
+          "upright": "Devet mačeva ukazuje da anksioznost i anksioznost mogu izazvati harmoniju. Suočavanje sa stvarnošću donosi ravnotežu.",
+          "reversed": "Ukratko devet mačeva kaže da se harmonija može obnoviti desavanjem noćnih mora. Unutrašnji mir je važan.",
+          "keywords": [
+            "anksioznost",
+            "anksioznost",
+            "real",
+            "raport",
+            "mir"
+          ],
+          "context": "Suočavanje sa stvarnošću donosi Harmoniju. Vezanje anksioznih ventilatora."
+        },
+        "position4": {
+          "upright": "Devet mačeva, strepnje i strahovi mogu oslabiti dugoročnu vezu. Realna perspektiva štiti vezu.",
+          "reversed": "Pretvoreni devet mačeva, buđenje i jasnoće iz noćnih mora može da ojača dugoročno.",
+          "keywords": [
+            "anksioznost",
+            "strah",
+            "realizam",
+            "oštrina",
+            "dugoročan"
+          ],
+          "context": "Realizam podržava dugoročno, anksioznost testira vezu."
+        },
+        "position5": {
+          "upright": "Devet mačeva kaže da anksioznost i briga mogu da oblakne dušem.",
+          "reversed": "Devet mačeva preokrenulo je, postavljanje briga stvara prostor za vezu srodne duše.",
+          "keywords": [
+            "anksioznost",
+            "anksioznost",
+            "zarastanje",
+            "nadati se",
+            "srodna duša"
+          ],
+          "context": "Anksioznost izaziva duševni mafić, nada se jača obveznica."
+        },
+        "position6": {
+          "upright": "Devet vam govori da anksioznost i strahovi otežavaju da se vaša želja ostvari. Prestani katastrofaziranje.",
+          "reversed": "Sa obrnutim devetom, vaša želja može postati bliža sa jutarnjom jasnoćom i unutrašnjim mirom.",
+          "keywords": [
+            "anksioznost",
+            "strah",
+            "nesanica",
+            "sumnja",
+            "mir"
+          ],
+          "context": "Vaši strahovi mogu odložiti vašu želju."
+        }
+      },
+      "tenofswords": {
+        "position1": {
+          "upright": "Deset mačeva ukazuje na definitivni kraj ciklusa i više ne ide na naprijed na stari način. Ovo prihvatanje ubrzo otvara vrata svežom i iskrenom odnosu.",
+          "reversed": "Invertirani deset mačeva govori o usponu iz pepela i oporavka. Kako je postupak isceljenja završen, na horizontu se pojavljuje novi početak.",
+          "keywords": [
+            "završiti",
+            "prihvatanje",
+            "ponovno rođenje",
+            "zarastanje"
+          ],
+          "context": "Jasno zatvaranje daje novu vezu najjači temelj."
+        },
+        "position2": {
+          "upright": "Deset mačeva predstavlja transformativnu stranu Vodolije. Možda traži obnovu da se izvuče iz krize.",
+          "reversed": "Pretvoreni deset mačeva, u senci Vodolija, može ukazivati na poteškoće u razbijanju iz prošlosti ili tvrdih pauza.",
+          "keywords": [
+            "Akuarius",
+            "transformacija",
+            "regeneracija",
+            "kriza"
+          ],
+          "context": "Akvarijska energija je dominantna."
+        },
+        "position3": {
+          "upright": "Deset mačeva kaže da ogorčen kraj može napraviti prostor za harmoniju. Završetak je potrebno za ponovno rođenje.",
+          "reversed": "Invertirani deset mačeva, harmonija se može ponovo uspostaviti kao oporavak i zaceljivanje počinje.",
+          "keywords": [
+            "završiti",
+            "regeneracija",
+            "raport",
+            "zarastanje",
+            "transformacija"
+          ],
+          "context": "Završetak Otvara harmoniju. Izlečenje jača vezu."
+        },
+        "position4": {
+          "upright": "Deset mačeva, ponovno rođenje nakon završetka u dugoročnoj vezi može otvoriti novu stranicu.",
+          "reversed": "Invertirani deset mačeva podržava dugoročni proces oporavka, ali zahteva strpljenje.",
+          "keywords": [
+            "završiti",
+            "ponovno rođenje",
+            "predaja",
+            "regeneracija",
+            "dugoročan"
+          ],
+          "context": "Inovacija rođena sa kraja podržava dugoročno."
+        },
+        "position5": {
+          "upright": "Deset mačeva kaže da se srodna duša mogla nastati nakon ciklusa ciklusa. Završetak je novi početak.",
+          "reversed": "Okrećeno deset mačeva, proces oporavka može otkriti srodnu vezu.",
+          "keywords": [
+            "završiti",
+            "ponovno rođenje",
+            "zarastanje",
+            "početak",
+            "srodna duša"
+          ],
+          "context": "Završeci stvaraju prostor za druženje duše."
+        },
+        "position6": {
+          "upright": "Deset pokazuje da se vaša želja može ostvariti nakon završetka trenutnog ciklusa. Završni pozivi za novi početak.",
+          "reversed": "Invertirani deset jača ispunjenje vaše želje za oporavkom i ponovnom rođenjem.",
+          "keywords": [
+            "završiti",
+            "ponovno rođenje",
+            "dostava",
+            "transformacija",
+            "nadati se"
+          ],
+          "context": "Postupak završetka može započeti vašu želju."
+        }
+      },
+      "pageofswords": {
+        "position1": {
+          "upright": "Princ mačeva je iskra radoznalosti i komunikacije. Odnos koji započinje razgovorima, sa tonom učenja i otkrića, uskoro se pojavljuje.",
+          "reversed": "Invertirani mač upozorava princa protiv senke ugroženih presuda i tračeva. Prilika će zasjati kada se uspostavi jasna komunikacija.",
+          "keywords": [
+            "radoznalost",
+            "komunikacija",
+            "učenje",
+            "početak"
+          ],
+          "context": "Otvorena i ljubazna komunikacija pretvara novi poznanstvo u odnos."
+        },
+        "position2": {
+          "upright": "Princ mačeva snažno ukazuje na Blizanci. Sastavlja znatiželjnu i mladu energiju koja je otvorena za učenje.",
+          "reversed": "Okolišteni princ mačeva može pokazati raštrkane znanje ili površnost u senci Blizanci.",
+          "keywords": [
+            "Blizanci",
+            "radoznalost",
+            "učenje",
+            "um"
+          ],
+          "context": "Uticaj Blizanca je vrlo jasan."
+        },
+        "position3": {
+          "upright": "Princ mačeva ukazuje da će radoznalost i želja za učenjem promovisati harmoniju. Otvoreni dijalog obveznice obveznice.",
+          "reversed": "Okolišteni princ mačeva, tračeva ili dezinformacija može poremetiti harmoniju. Potrebno je proveriti informacije.",
+          "keywords": [
+            "radoznalost",
+            "komunikacija",
+            "raport",
+            "učenje",
+            "istina"
+          ],
+          "context": "Jasno znanje podstiče harmoniju. Greška guma obveznice."
+        },
+        "position4": {
+          "upright": "Princ mačeva, radoznalost i iskrena komunikacija drži dugoročnu vezu živu.",
+          "reversed": "Obrnuti princ mačeva, tračevi ili površnost slabi dugoročnu vezu.",
+          "keywords": [
+            "radoznalost",
+            "komunikacija",
+            "iskrenost",
+            "učenje",
+            "dugoročan"
+          ],
+          "context": "Iskrena komunikacija neguje dugoročno, površnost testira obveznice."
+        },
+        "position5": {
+          "upright": "Princ mačeva, radoznalost i želja za učenjem može vam pomoći da prepoznate svoju srodnu vezu.",
+          "reversed": "Ograničeni princ mačeva, tračeva ili dezinformacija može da oblakne srodnu vezu.",
+          "keywords": [
+            "radoznalost",
+            "učenje",
+            "komunikacija",
+            "real",
+            "srodna duša"
+          ],
+          "context": "Radoznalost jača Bond, dezinformacije stvara senku."
+        },
+        "position6": {
+          "upright": "Princ kaže da će ispunjenje vaše želje biti podržano istraživanjem i posmatranjem. Radoznalost je vodič.",
+          "reversed": "Obrnuti princ, tračevi ili ishitavaju presude mogu komplicirati vašu želju. Usredsredite se na činjenične informacije.",
+          "keywords": [
+            "radoznalost",
+            "posmatranje",
+            "učenje",
+            "istina",
+            "komunikacija"
+          ],
+          "context": "Istraživanje mogu voditi vašu želju."
+        }
+      },
+      "knightofswords": {
+        "position1": {
+          "upright": "Vitez mačeva opisuje brzo pokretne poruke i jasan pristup. Uskoro presudan korak može započeti novi odnos pre nego što se očekivalo.",
+          "reversed": "Vitez mačeva obrnut kaže da žurba i oštra ton mogu sagoreti mostove. Kada omekšate ritam, povećavaju se šanse.",
+          "keywords": [
+            "brzina",
+            "stabilnost",
+            "poručiti",
+            "stil"
+          ],
+          "context": "Brzina je korisna, ali nežno je ton od suštinskog značaja; Tako početak postaje jači."
+        },
+        "position2": {
+          "upright": "Vitez mačeva opisuje brzu, određenu i oštru stranu Vodolije. Hrabar je i direktan.",
+          "reversed": "Vitez mačeva obrnut može pokazati žurbu ili nestrpljenje u senci Vodolije.",
+          "keywords": [
+            "Akuarius",
+            "hrabrost",
+            "brzina",
+            "oštrina"
+          ],
+          "context": "Akvarijska energija je dominantna."
+        },
+        "position3": {
+          "upright": "Vitez mačeva pokazuje da brza komunikacija i jasan stavovi mogu promovisati harmoniju. Cilj fokus stvara zamah u vezi.",
+          "reversed": "Vraćeni vitez mačeva, iskrivljene reči mogu da poremete harmoniju. Delujući bez razmišljanja oštećuje obveznice.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "raport",
+            "oštrina",
+            "stabilnost"
+          ],
+          "context": "Jasnoća donosi Harmoniju. Požurivaće živahne sobe."
+        },
+        "position4": {
+          "upright": "Vitez mačeva, brza akcija i jasnoća dodatno dodaju zamah. Određeni stav podržava kontinuitet.",
+          "reversed": "Obrnuti vitez mačeva, žurba i oštrog tona dugoročno čine dugoročno.",
+          "keywords": [
+            "brzina",
+            "stabilnost",
+            "oštrina",
+            "strategija",
+            "dugoročan"
+          ],
+          "context": "Određivanje podržava dugoročno, užurbanost testira obveznica."
+        },
+        "position5": {
+          "upright": "Vitez mačeva, smela komunikacija može da izađe na srodnu vezu.",
+          "reversed": "Okolišteni vitez mačeva, osirone akcije mogu opteretiti dušu vezu.",
+          "keywords": [
+            "hrabrost",
+            "komunikacija",
+            "brzina",
+            "iskrenost",
+            "srodna duša"
+          ],
+          "context": "Hrabrost otvara matesi u dušema, žurba stvara senke."
+        },
+        "position6": {
+          "upright": "Knight, možda je potreban brz i hrabar korak da se vaša želja ostvari. Kretanje napred sa određivanjem zahteva rezultate.",
+          "reversed": "Vreoki vitez može da postavi vašu želju za žurbu u riziku. Strpljenje i strategija su važni.",
+          "keywords": [
+            "hrabrost",
+            "brzina",
+            "odluka",
+            "moje ime",
+            "strategija"
+          ],
+          "context": "Brza odluka omogućava vašu želju."
+        }
+      },
+      "queenofswords": {
+        "position1": {
+          "upright": "Kraljica mačeva ukazuje na vezu koja će biti osnovana sa jasnim granicama i zrelom komunikacijom. Iskrenost i selektivnost uskoro će privući pravu osobu.",
+          "reversed": "Kraljica mačeva preokrenula je da je preterano kritični ton umanjiti temperaturu. Saosećajna jasnoća omogućava vezu.",
+          "keywords": [
+            "oštrina",
+            "granica",
+            "zrelost",
+            "komunikacija"
+          ],
+          "context": "Ljubazna i jasna komunikacija naziva pravom utakmicom."
+        },
+        "position2": {
+          "upright": "Kraljica mačeva ukazuje na Vaga. Pravi je, jasan i logičan.",
+          "reversed": "Reverzija kraljica mačeva može biti preterano kritična ili udaljena u senci Vaga.",
+          "keywords": [
+            "Skala",
+            "pravda",
+            "logika",
+            "ravnoteža"
+          ],
+          "context": "Energija Vaga dolazi do izražaja."
+        },
+        "position3": {
+          "upright": "Kraljica mačeva ukazuje da će logika i objektivnost ojačati harmoniju. Jasne granice donose jasnoću obveznice.",
+          "reversed": "Okolištena kraljica mačeva, prekomerna kritika ili hladnoća podriva harmoniju. Potrebno je pristupiti sa saosećanjem.",
+          "keywords": [
+            "logika",
+            "oštrina",
+            "raport",
+            "granica",
+            "objektivnost"
+          ],
+          "context": "Objektivnost podstiče harmoniju. Hladnoća nosi obveznice."
+        },
+        "position4": {
+          "upright": "Kraljica mačeva, objektivnosti i pravde pruža ravnotežu u dugoročnoj vezi. Jasnoća podstiče kontinuitet.",
+          "reversed": "Prekoračenje kraljica mačeva, preterano kritika može razdvojiti dugoročnu vezu.",
+          "keywords": [
+            "pravda",
+            "oštrina",
+            "objektivnost",
+            "ravnoteža",
+            "dugoročan"
+          ],
+          "context": "Objektivnost jača dugoročno, kritika testira obveznica."
+        },
+        "position5": {
+          "upright": "Kraljica mačeva pokazuje da se dušem može stvoriti sa jasnoćom i iskrenošću. Važna je ravnoteža intuicije i logike.",
+          "reversed": "Okolištena kraljica mačeva, preterano kritičnosti može opteretiti vezu s duhovima.",
+          "keywords": [
+            "iskrenost",
+            "oštrina",
+            "intuicija",
+            "logika",
+            "srodna duša"
+          ],
+          "context": "Jasnoća jača matesništvo duše, kritika testira obveznica."
+        },
+        "position6": {
+          "upright": "Kraljica omogućava da se vaša želja ostvari sa jasnoćom, pravdom i granicama. Objektivni pristup je važan.",
+          "reversed": "Prekomerna kraljica, prekomerna kritika ili oštrina mogu da se umanjuju na način vaše želje. Otvara se saosećajni jezik.",
+          "keywords": [
+            "oštrina",
+            "pravda",
+            "granica",
+            "istina",
+            "um"
+          ],
+          "context": "Biti fer i jasno ojačati svoju želju."
+        }
+      },
+      "kingofswords": {
+        "position1": {
+          "upright": "Kralj mačeva ukazuje na ozbiljan početak koji dolazi sa principima i strateškom jasnoćom. Odnos koji je prehranila intelektualnom harmonijom mogu se uskoro pojaviti.",
+          "reversed": "Prekoračeni kralj mačeva ukazuje na rizik od oštre presude i udaljenosti. Kada je uravnotežen sa empatijom, pojačane su šanse za nove veze.",
+          "keywords": [
+            "princip",
+            "strategija",
+            "oštrina",
+            "empatija"
+          ],
+          "context": "Čvrsti početak je moguć kada se uspostavi balans uma."
+        },
+        "position2": {
+          "upright": "Kralj mačeva pokazuje mudru i stratešku stranu Vodolije. Ova osoba je neko ko deluje prema njegovim principima.",
+          "reversed": "Ograničeni kralj mačeva može se prikazati kruti, hladno ili dogmatično ponašanje u akvarijskoj senci.",
+          "keywords": [
+            "Akuarius",
+            "mudrost",
+            "strategija",
+            "vlast"
+          ],
+          "context": "Akuarius uticaj je dominantan."
+        },
+        "position3": {
+          "upright": "Kralj mačeva ukazuje da će strateško razmišljanje i iskrenost ojačati harmoniju. Principijelni pristup pruža poverenje u vinograd.",
+          "reversed": "Prekoračeni kralj mačeva, stroga pravila ili prekomjerna kritika otežava harmoniju. Stanje mora se postići sa empatijom.",
+          "keywords": [
+            "strategija",
+            "iskrenost",
+            "raport",
+            "logika",
+            "poverenje"
+          ],
+          "context": "Principi podstiču harmoniju. Čvrstine ograničava vezu."
+        },
+        "position4": {
+          "upright": "Kralj mačeva, strateško razmišljanje i principijelni stav pružaju snažnu osnovu za dugoročnu vezu.",
+          "reversed": "Obrnuti kralj mačeva, krutost i hladnoća otežava dugoročnu vezu.",
+          "keywords": [
+            "strategija",
+            "princip",
+            "vlast",
+            "logika",
+            "dugoročan"
+          ],
+          "context": "Principi neguju dugoročno, rigidnost testira vezu."
+        },
+        "position5": {
+          "upright": "Kralj mačeva ukazuje na srodni sanduk zasnovan na logici i etičkim vrednostima.",
+          "reversed": "Prekoračeni kralj mačeva, stroga pravila ili nedostatak empatije mogu otežati srodnu vezu.",
+          "keywords": [
+            "etika",
+            "logika",
+            "pravda",
+            "iskrenost",
+            "srodna duša"
+          ],
+          "context": "Etika i logika podržavaju matesništvo duše."
+        },
+        "position6": {
+          "upright": "Kralj podržava ispunjenje vaše želje sa logikom, disciplinom i strategijom. Etička moć rezultira trajnim.",
+          "reversed": "Prekoračeni kralj, krutost ili hladnoća može otežati da se vaša želja ostvari. Empatija donosi ravnotežu.",
+          "keywords": [
+            "logika",
+            "etika",
+            "vlast",
+            "disciplina",
+            "oštrina"
+          ],
+          "context": "Disciplina čini da se vaša želja ostvari."
+        }
+      },
+      "aceofwands": {
+        "position1": {
+          "upright": "Ace od štapića najavio je iskru nove veze. Početak ispunjen strašću, uzbuđenjem i hrabrošću mogu biti na pragu.",
+          "reversed": "ACE of Vinds Reversed označava da nedostatak inspiracije ili straha može odložiti priliku. Čak i mala hrabrost može započeti novi odnos.",
+          "keywords": [
+            "strast"
+          ]
+        }
+      }
+    }
+  }
+}

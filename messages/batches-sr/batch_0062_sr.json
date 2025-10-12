@@ -1,0 +1,775 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "knightofcups": {
+        "position9": {
+          "keywords": [
+            null,
+            "nedoslednost",
+            "ponuditi",
+            "osećanje",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi se fokusiraju na romantična obećanja ili emocionalne igre."
+        }
+      },
+      "queenofcups": {
+        "position1": {
+          "upright": "Kraljica šoljica može biti u srcu problema sa empatijom, emocionalnom bilansom ili previše fokusiranja na druge.",
+          "reversed": "Invertirana kraljica šoljica, prekomerna konfuzija, emocionalna konfuzija ili zavisnost može biti izvor problema.",
+          "keywords": [
+            "empatija",
+            "senzibilitet",
+            "ravnoteža",
+            "osetljivost",
+            "pitanje"
+          ],
+          "context": "U srcu problema je emocionalna osetljivost i empatija."
+        },
+        "position10": {
+          "upright": "Kraljica šoljica može biti proces ispunjen emocionalnom ravnotežom, saosećanje i razumevanjem kao rezultat događaja.",
+          "reversed": "Inverterovana kraljica šoljica može postojati preosjetljivost, zavisnost ili emocionalna nestabilnost kao rezultat događaja.",
+          "keywords": [
+            "saosećanje",
+            "ravnoteža",
+            "razumevanje",
+            "senzibilitet",
+            "osećanje"
+          ],
+          "context": "Rezultat može biti emocionalni bilans ili ekstreman."
+        },
+        "position2": {
+          "upright": "Kraljica šoljica kaže da prepreka može biti ekstremna osetljivost, uzimajući probleme drugih ljudi ili emocionalnim previranjem.",
+          "reversed": "Invertirana kraljica šoljica, zavisnosti, manipulacije ili emocionalne nestabilnosti mogu biti izvor prepreke.",
+          "keywords": [
+            "empatija",
+            "senzibilitet",
+            "zavisnost",
+            "osećanje",
+            "prepreka"
+          ],
+          "context": "Prekidanja nastaje od prekomerne osetljivosti i emocionalnog preopterećenja."
+        },
+        "position3": {
+          "upright": "Kraljica Cupa može biti podsvesno prošla neprijateljska, emocionalna osetljivost ili se fokusira na druge.",
+          "reversed": "Invertirana kraljica šoljica, preosjetljivosti, zavisni odnosi ili emocionalna nestabilnost mogu biti podsvesno utisnuti.",
+          "keywords": [
+            "empatija",
+            "senzibilitet",
+            "ravnoteža",
+            "osetljivost",
+            "podsvestan"
+          ],
+          "context": "Prekomerna empatija ili zavisnost u prošlosti mogu biti u korenu današnjih problema."
+        },
+        "position4": {
+          "upright": "Kraljica Cupa kaže da je vaš najbolji potencijal da saosećajno transformiše vaše okruženje kroz duboko empatije, intuitivno rukovodstvo i mogućnost održavanja emocionalnog prostora.",
+          "reversed": "Ograničena kraljica CUP-ova, da dostignete svoj potencijal, morate da prestanete da je prestanete, održavati svoje granice i prioritet samo-negu.",
+          "keywords": [
+            "empatija",
+            "intuicija",
+            "saosećanje",
+            "rukovodstvo",
+            "granica"
+          ],
+          "context": "Najbolji potencijal je voditi sa saosećanjem uz održavanje zdravih granica."
+        },
+        "position5": {
+          "upright": "Kraljica šoljica, možda ste iskusili empatiju, saosećanje ili emocionalnu podršku u nedavnoj prošlosti.",
+          "reversed": "Ograničena kraljica šoljica, možda ste iskusili preosetljivost, zavisnost ili emocionalnu nestabilnost u nedavnoj prošlosti.",
+          "keywords": [
+            "empatija",
+            "saosećanje",
+            "podrška",
+            "senzibilitet",
+            "ravnoteža"
+          ],
+          "context": "Vaša nedavna prošlost možda je obeležena naklonošću ili emocionalnim fluktuacijama."
+        },
+        "position6": {
+          "upright": "Kueen of Cups, saosećanje, empatija i emocionalna mudrost voditiće vas u bliskoj budućnosti.",
+          "reversed": "Prekoračio kraljicu CUP-a, možete da doživite preosjetljivost, zavisnost ili emocionalnu nestabilnost u bliskoj budućnosti.",
+          "keywords": [
+            "saosećanje",
+            "empatija",
+            "mudrost",
+            "senzibilitet",
+            "ravnoteža"
+          ],
+          "context": "Vaša bliža budućnost će biti oblikovana saosećanjem ili neravnotežom."
+        },
+        "position7": {
+          "upright": "Kueen of Cups, trenutno se vodiš sa saosećanjem, empatijom i emocionalnom mudrošću.",
+          "reversed": "Uokrenula je kraljica šoljica, preosjetljivosti, zavisnost ili emocionalna nestabilnost možda vas u ovom trenutku izazivaju.",
+          "keywords": [
+            "saosećanje",
+            "empatija",
+            "mudrost",
+            "senzibilitet",
+            "ravnoteža"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je saosećanjem ili emocionalnom nestabilnošću."
+        },
+        "position8": {
+          "upright": "Kueen of Cups, spoljni uticaji mogu vam ponuditi saosećanje, empatiju i emocionalnu podršku.",
+          "reversed": "Ograničena kraljica šoljica, spoljni uticaji mogu uticati na vas sa prekomernošću, emocionalnom zavisnošću ili nestabilnošću.",
+          "keywords": [
+            "saosećanje",
+            "empatija",
+            "podrška",
+            "senzibilitet",
+            "ravnoteža"
+          ],
+          "context": "Spoljni uticaji utiču na vas putem saosećanja ili emocionalne osetljivosti."
+        },
+        "position9": {
+          "upright": "Kraljica šoljica, možete se bojati da se emocionalno bojite, viđene kao previše osetljive ili zavise od drugih.",
+          "reversed": "Kraljica Cup-ova obrnuta može ukazivati na strah od emocionalne zlostavljanja, preteranošću ili zavisnosti.",
+          "keywords": [
+            "saosećanje",
+            "senzibilitet",
+            "povrijediti",
+            "zavisnost",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi su povezani sa preosjetljivošću ili zavisnošću."
+        }
+      },
+      "kingofcups": {
+        "position1": {
+          "upright": "Kralj šoljica može imati potrebu za emocionalnom zrelošću, smirenom ili pouzdanošću u srcu problema.",
+          "reversed": "Invertirani kralj šoljica, emocionalna nestabilnost, potisnuti osećaji ili nedostatak kontrole mogu biti izvor problema.",
+          "keywords": [
+            "zrelost",
+            "ravnoteža",
+            "rukovodstvo",
+            "osećanje",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba za emocionalnom zrelošću i uravnoteženim pristupom."
+        },
+        "position10": {
+          "upright": "Kralj šoljica može pružiti zrelost, uravnoteženje emocija i mudre smernice kao rezultat događaja.",
+          "reversed": "Invertirani kralj šoljica, emocionalna nestabilnost, manipulacija ili gubitak kontrole može se pojaviti kao rezultat događaja.",
+          "keywords": [
+            "zrelost",
+            "ravnoteža",
+            "uputstvo",
+            "osećanje",
+            "kontrola"
+          ],
+          "context": "Rezultat može biti nezrelost ili neravnoteža."
+        },
+        "position2": {
+          "upright": "Kralj šoljica može biti nemogućnost prepreka za kontrolu emocija, nedostatka samopouzdanja ili gubitka smeša.",
+          "reversed": "Ograničeni kralj šoljica, emocionalne nestabilnosti, potisnuta ljutnja ili neuspeh u preuzimanju odgovornosti može biti izvor prepreke.",
+          "keywords": [
+            "ravnoteža",
+            "zrelost",
+            "poverenje",
+            "odgovornost",
+            "prepreka"
+          ],
+          "context": "Prepreka nastaje zbog gubitka emocionalne zrelosti i neravnoteže."
+        },
+        "position3": {
+          "upright": "Kralj šoljica može podsvesno imati prošli iskustvo zrelih emocija, smirenosti ili manipulisanja drugih.",
+          "reversed": "Invertirani kralj šoljica, emocionalna nestabilnost, potisnuta ljutnja ili kontrolna pitanja mogu se ugraditi u podsvesno.",
+          "keywords": [
+            "zrelost",
+            "ravnoteža",
+            "rukovodstvo",
+            "ljutnja",
+            "podsvestan"
+          ],
+          "context": "Prošla emocionalna iskustva mogu biti osnova za današnje probleme."
+        },
+        "position4": {
+          "upright": "Kralj Cupa pokazuje da njegov najbolji potencijal leži u preostalom smirenju u olujnim vodama sa emocionalnom zrelošću, pružajući mudre smernice i poverenje u građevinama.",
+          "reversed": "Ograničeni kralj čaše, za otključavanje potencijala, morate da uspostavite redovne oblasti izražavanja i upravljate okidačima svesno, umesto da suzbijate emocije.",
+          "keywords": [
+            "zrelost",
+            "spokojstvo",
+            "poverenje",
+            "uputstvo",
+            "ravnoteža"
+          ],
+          "context": "Najbolji potencijal je da bude povereni vodič sa emocionalnim bilansom."
+        },
+        "position5": {
+          "upright": "Kralj šoljica, možda ste doživeli emocionalnu zrelost, smirenost ili mudre smernice u nedavnoj prošlosti.",
+          "reversed": "Ograničeni kralj čaša, možda ste iskusili emocionalnu van kontrole, potisnutog ljutnje ili nesigurnost u nedavnoj prošlosti.",
+          "keywords": [
+            "zrelost",
+            "spokojstvo",
+            "ravnoteža",
+            "uputstvo",
+            "osećanje"
+          ],
+          "context": "Vaša nedavna prošlost možda je oblikovana emocionalnom nezrelom ili neravnotežom."
+        },
+        "position6": {
+          "upright": "Kralj šoljica, emocionalne zrelosti, mudri smernice i mirna energija vodiće vas u bliskoj budućnosti.",
+          "reversed": "Ograničeni kralj čaše, možete doživeti gubitak emocionalne kontrole, pent-up gnev ili nesigurnost u bliskoj budućnosti.",
+          "keywords": [
+            "zrelost",
+            "ravnoteža",
+            "miran",
+            "uputstvo",
+            "mudrost"
+          ],
+          "context": "Vaša neposredna budućnost će se oblikovati zrelom ili nestabilnošću."
+        },
+        "position7": {
+          "upright": "Kralj šoljica, možda ćete raditi sa energijom emocionalne zrelosti, mudrosti i mirno.",
+          "reversed": "Prekoračio kralja šoljica, možda ćete doživeti gubitak emocionalne kontrole, potisnuti gnev ili nesigurnost upravo sada.",
+          "keywords": [
+            "zrelost",
+            "ravnoteža",
+            "miran",
+            "mudrost",
+            "uputstvo"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je emocionalnom nezrelošću ili nestabilnošću."
+        },
+        "position8": {
+          "upright": "Kralj šoljica, spoljni uticaji mogu vam pružiti mudre smernice, emocionalnu zrelost i podršku.",
+          "reversed": "Okolišteni kralj šoljica, spoljni uticaji mogu uticati na vas sa emocionalnim manipulacijama, gubitkom kontrole ili nestabilnosti.",
+          "keywords": [
+            "mudrost",
+            "zrelost",
+            "ravnoteža",
+            "podrška",
+            "uputstvo"
+          ],
+          "context": "Spoljni uticaji utiču na vas kroz mudrost ili manipulaciju."
+        },
+        "position9": {
+          "upright": "Kralj šoljica, možda ćete se plašiti da ne možete da kontrolišete svoje emocije, ne primate podršku ili manipulisani.",
+          "reversed": "Preokrećeni kralj CUP-a može ukazivati na emocionalnu nestabilnost, zlostavljanje ili anksioznost u tome da se potlače.",
+          "keywords": [
+            "zrelost",
+            "kontrola",
+            "manipulacija",
+            "ravnoteža",
+            "anksioznost"
+          ],
+          "context": "Vaš strahovski centar oko gubitka emocionalne kontrole ili je manipulisano."
+        }
+      },
+      "aceofswords": {
+        "position1": {
+          "upright": "Ace mačeva može biti potraga za jasnoćom u srcu problema, pronalaženje istine ili potrebe za novom idejom.",
+          "reversed": "Invertirani as mačeva, zbrke, problemi sa komunikacijom ili nesporazumi mogu biti izvor problema.",
+          "keywords": [
+            "oštrina",
+            "real",
+            "ideja",
+            "komunikacija",
+            "pitanje"
+          ],
+          "context": "U srcu problema je otkrivanje istine i sticanje jasnoće."
+        },
+        "position10": {
+          "upright": "Ace mačeva, možete steći jasnoću, snažnu odluku i novi mentalni početak kao rezultat događaja.",
+          "reversed": "Invertirani ACE mačeva, ishod događaja može biti zbrka, nesporazumi ili neuspešne odluke.",
+          "keywords": [
+            "oštrina",
+            "odluka",
+            "početak",
+            "um",
+            "real"
+          ],
+          "context": "Rezultat može biti mentalna jasnoća ili zbrka."
+        },
+        "position2": {
+          "upright": "Ace mačeva, prepreka može biti nemogućnost jasno razmišljanja, nemogućnost da se vidi istinu ili komunikacijski problemi. Kada nedostaje mentalna jasnoća, rešenja ostaju zamagljena.",
+          "reversed": "Ace mačeva obrnuto može biti ometana konfuzijom, pogrešnim informacijama ili lažima.",
+          "keywords": [
+            "oštrina",
+            "real",
+            "komunikacija",
+            "zbrka",
+            "prepreka"
+          ],
+          "context": "Aprestracite se pojavljuje da ne mogu jasno da razmišljaju o tome i da vidite istinu."
+        },
+        "position3": {
+          "upright": "Ace mačeva može biti iskustvo prosvetljenja, traženje jasnoće ili otkrivanja istine koju ste podsvesno imali u prošlosti. Vaš napori na mentalnoj jasnoći možda su doveli do problema sa kojima danas doživljavate.",
+          "reversed": "Invertirani ACE mačeva, prošli pogrešne odluke, pogrešne reči ili zbrka su se možda rešili u vašoj podsvesti.",
+          "keywords": [
+            "oštrina",
+            "real",
+            "um",
+            "odluka",
+            "podsvestan"
+          ],
+          "context": "Vaša potraga za mentalnom jasnoćom ili zbrkom u prošlosti možda je oblikovala vaše sadašnje probleme."
+        },
+        "position4": {
+          "upright": "Ace mačeva, vaš najbolji potencijal je da se istina vidi sa mentalnom jasnoćom, donosite snažne odluke i pretvorite novu stranicu sa oštrom svesti.",
+          "reversed": "Ace mačeva je preokrenulo: otključavanje vašeg potencijala, morate prevazići konfuziju, razvijati jasnoću u komunikaciji i biti iskren prema sebi.",
+          "keywords": [
+            "oštrina",
+            "odluka",
+            "real",
+            "prosvetljenje",
+            "svest"
+          ],
+          "context": "Vaš najbolji potencijal je da se novi počeci sklopi sa mentalnom jasnoćom."
+        },
+        "position5": {
+          "upright": "Ace mačeva ukazuje da ste možda nedavno doživeli mentalno prosvetljenje, jasnoću ili snažnu odluku.",
+          "reversed": "Okrećeno Ace mačeva, možda ste iskusili zbrku, pogrešno komuniciranje ili nedostatak jasnoće u nedavnoj prošlosti.",
+          "keywords": [
+            "oštrina",
+            "odluka",
+            "komunikacija",
+            "prosvetljenje",
+            "um"
+          ],
+          "context": "Vaša nedavna prošlost možda je oblikovana mentalnom jasnoćom ili zbrkom."
+        },
+        "position6": {
+          "upright": "Čekajte vas u bliskoj budućnosti mačeva, mentalna jasnoća, snažna odluka i energija novog početka vas čekaju u bliskoj budućnosti.",
+          "reversed": "Ace mačeva preokrenuli ste, možda ćete doživeti zbrku, nesporazumi ili nedostatak jasnoće u bliskoj budućnosti.",
+          "keywords": [
+            "oštrina",
+            "odluka",
+            "komunikacija",
+            "početak",
+            "um"
+          ],
+          "context": "Vaša neposredna budućnost oblikovana će mentalne jasnoće ili zbrke."
+        },
+        "position7": {
+          "upright": "Ace mačeva, trenutno možete stići mentalnu jasnoću, fokusirajući se na novu ideju ili snažnu odluku.",
+          "reversed": "Ace mačeva obrnuto, možda ćete biti pod uticajem konfuzije, komunikacionih problema ili loših odluka trenutno.",
+          "keywords": [
+            "oštrina",
+            "odluka",
+            "ideja",
+            "početak",
+            "komunikacija"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je jasnoćom ili zbrkom."
+        },
+        "position8": {
+          "upright": "Ace mačeva, spoljni uticaji mogu vam doneti jasnoću, nove ideje i snažnu komunikacijsku podršku.",
+          "reversed": "Ace mačeva obrnuto, spoljni uticaji mogu vas zavesti sa zbrkom, problemima komunikacije ili dezinformacije.",
+          "keywords": [
+            "oštrina",
+            "ideja",
+            "odluka",
+            "komunikacija",
+            "početak"
+          ],
+          "context": "Spoljašnji uticaji utiču na vas kroz jasnoću ili dezinformacije."
+        },
+        "position9": {
+          "upright": "Ace mačeva, možda ćete se plašiti davanja pogrešne odluke, ne vidite istinu ili doživljavate gubitak jasnoće.",
+          "reversed": "Ace mačeva preokrenuti ukazuje na strah od zbrke, nerazumevanja ili komunikacionih problema.",
+          "keywords": [
+            "oštrina",
+            "odluka",
+            "komunikacija",
+            "real",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi se fokusiraju na to da ne mogu da donesu pravu odluku ili da se uhvate u dezinformacijama."
+        }
+      },
+      "twoofswords": {
+        "position1": {
+          "upright": "Dvoje mačeva mogu biti u srcu problema, neodlučnosti, tražeći ravnotežu ili da se odluče.",
+          "reversed": "Dvoje mačeva preokrenuli su: uskraćivanje istine ili izbegavanje donošenja odluka može biti izvor problema.",
+          "keywords": [
+            "odluka",
+            "ravnoteža",
+            "dilema",
+            "glasati",
+            "pitanje"
+          ],
+          "context": "U srcu problema je kritični izbor koji se mora izvršiti."
+        },
+        "position10": {
+          "upright": "Dvoje mačeva mogu značiti dostizanje važne odluke ili restauriranje ravnoteže kao rezultat događaja.",
+          "reversed": "Prevarala dva mačeva, može postojati nemogućnost odlučivanja kao rezultat događaja, slepih mesta ili pogrešnih izbora.",
+          "keywords": [
+            "odluka",
+            "ravnoteža",
+            "dilema",
+            "glasati",
+            "oštrina"
+          ],
+          "context": "Ishod može biti odlučan ili ostatak neodlučan."
+        },
+        "position2": {
+          "upright": "Dvoje mačeva, prepreka može biti neodlučnost, dileme ili ignorisane činjenice. Ne mogu da napravite izbor čini da se osećate zaglavljeno.",
+          "reversed": "Ograničena dva mačeva, tvrdoglavost, odlaganja ili uskraćivanje istine mogu biti izvor prepreke.",
+          "keywords": [
+            "odluka",
+            "dilema",
+            "ignorisati",
+            "ravnoteža",
+            "prepreka"
+          ],
+          "context": "Aprestracite se pojavljuje da ne donosi odluke i odbacuje činjenice."
+        },
+        "position3": {
+          "upright": "Dvoje mačeva mogu ukazivati na tešku odluku koju ste doneli u prošlosti, dileme koje ste doživeli ili ignorisali činjenice u vašem podsvesti.",
+          "reversed": "Dva mačeva su preokrenula: u prošlosti, stalno odlaganje odluka, tvrdoglav ili odbacujući istinu, možda su se podmirile u podsvesti.",
+          "keywords": [
+            "odluka",
+            "dilema",
+            "ignorisati",
+            "ravnoteža",
+            "podsvestan"
+          ],
+          "context": "Prošla neodlučnost i dileme su možda osnova za današnje probleme."
+        },
+        "position4": {
+          "upright": "Dvoje mačeva, vaš najbolji potencijal je da se uravnoteže izbora, usklađuju sukobe i kombinuju intuiciju i logiku.",
+          "reversed": "Dvoje mačeva preokrenuli su, kako bi otključali potencijal, morate prevazići neodlučnost, suočiti se sa činjenicama i ne odložiti svoje izbore.",
+          "keywords": [
+            "ravnoteža",
+            "glasati",
+            "kompromis",
+            "odluka",
+            "uvid"
+          ],
+          "context": "Vaš najbolji potencijal je donošenje odluka u skladu sa intuicijom i logikom u harmoniji."
+        },
+        "position5": {
+          "upright": "Dvoje mačeva, možda ste doživeli dilemu u nedavnoj prošlosti, imali poteškoća da donesete odluku ili zatvorite oči istini.",
+          "reversed": "Dvoje mačeva preokrenuli ste, možda ste odložili tešku odluku u nedavnoj prošlosti, zaglavili ste se u neodlučnosti ili pogrešili pogrešan izbor u žurbi.",
+          "keywords": [
+            "nestabilnost",
+            "dilema",
+            "glasati",
+            "ravnoteža",
+            "ignorisati"
+          ],
+          "context": "Vaša nedavna prošlost možda je određena procesima donošenja odluka ili odlaganja."
+        },
+        "position6": {
+          "upright": "Dvoje mačeva, možete se suočiti sa teškim izborom u bliskoj budućnosti i doživite neodlučnost.",
+          "reversed": "Dva je mačeva preokrenuta, možda ćete izbeći donošenje odluke ili učiniti pogrešan izbor u bliskoj budućnosti.",
+          "keywords": [
+            "nestabilnost",
+            "glasati",
+            "ravnoteža",
+            "dilema",
+            "raskrsnica"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati procesima donošenja odluka."
+        },
+        "position7": {
+          "upright": "Dvoje mačeva, možda ćete biti u toku odluke trenutno, pokušavajući da uravnotežite između dve opcije.",
+          "reversed": "Dvoje mačeva preokrenuli ste, možda ćete trenutno izbegavati donošenje odluka, možda pogrešnim izborima.",
+          "keywords": [
+            "odluka",
+            "ravnoteža",
+            "dilema",
+            "nestabilnost",
+            "raskrsnica"
+          ],
+          "context": "Vaša trenutna situacija je oblikovana izborom ili neodlučnošću."
+        },
+        "position8": {
+          "upright": "Dvoje mačeva, spoljni uticaji mogu vas prisiliti da donesete odluku, pritisci iz vašeg okruženja mogu da odložite da napravite izbor.",
+          "reversed": "Dvoje modra preokrenite, spoljni uticaji mogu vas dovesti do neodlučnosti, predoricanja ili odlaganja.",
+          "keywords": [
+            "odluka",
+            "dilema",
+            "ravnoteža",
+            "nestabilnost",
+            "glasati"
+          ],
+          "context": "Spoljni uticaji mogu vam olakšati izbor ili teže izbor."
+        },
+        "position9": {
+          "upright": "Dvoje mačeva, možete se plašiti da nećete donositi odluku, zaglaviti se u dilemi ili birati pogrešnu stranu.",
+          "reversed": "Dvoje mačeva obrnuto odražavaju strah od odugovlačenja odluka, a ne mogu prepoznati slepe mrlje ili pogrešne izbore.",
+          "keywords": [
+            "odluka",
+            "dilema",
+            "ravnoteža",
+            "glasati",
+            "anksioznost"
+          ],
+          "context": "Vaš strahovski centar na koji nije mogao da odabere ili učini pogrešan izbor."
+        }
+      },
+      "threeofswords": {
+        "position1": {
+          "upright": "Tri mačeva mogu biti u srcu problema sa razočaranjem, srčanim ili bolno iskustvom.",
+          "reversed": "Pretvorena tri mačeva, ne mogu da zacele rane prošlosti ili nošenje emocionalnih tereta mogu biti izvor problema.",
+          "keywords": [
+            "razočaranje",
+            "ugao",
+            "prošlost",
+            "gubitak",
+            "pitanje"
+          ],
+          "context": "U srcu problema je uticaj bolnog iskustva."
+        },
+        "position10": {
+          "upright": "Tri mačeva mogla bi biti raskid, razočaranje ili emocionalna bol kao rezultat događaja.",
+          "reversed": "Pretvorena tri mačeva, ishod događaja može da uključuje oproštenje, isceljenje i isceljenje srčanih rana.",
+          "keywords": [
+            "odvajanje",
+            "razočaranje",
+            "ugao",
+            "izdaja",
+            "poboljšanje"
+          ],
+          "context": "Rezultat može biti srčani ili oporavak."
+        },
+        "position2": {
+          "upright": "Tri mačeva, prepreka može biti srčana, bolna prošla iskustva ili emocionalne ožiljke. Ovi bolovi mogu da oblakuju njihovu presudu.",
+          "reversed": "Preokrećena tri mačeva mogu biti prepreka vašoj sposobnosti da zaceli bol u prošlosti ili da nosite stare rane.",
+          "keywords": [
+            "ugao",
+            "rane",
+            "gubitak",
+            "prošlost",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje iz činjenice da su prošle rane još uvek efikasne."
+        },
+        "position3": {
+          "upright": "Tri mačeva mogu predstavljati prošle srčane, izdaje ili emocionalne bolove koje ste podsvesno iskusili.",
+          "reversed": "Pretvara se tri mačeva, neuspeh u izlečivanju boli koju ste doživeli u prošlosti, krivica ili žaljenje mogu biti ugrađene u vašu podsvesnu.",
+          "keywords": [
+            "srp",
+            "izdaja",
+            "ugao",
+            "žaliti",
+            "podsvestan"
+          ],
+          "context": "Bolna iskustva u prošlosti mogu pokrenuti trenutne probleme."
+        },
+        "position4": {
+          "upright": "Tri mačeva, vaš najbolji potencijal je da naučite od bola u prošlosti, popravite svoje srce i snažno postajete jači sa emocionalnom mudrošću.",
+          "reversed": "Prekoračio tri mačeva, da postignete svoj potencijal, morate da iscelite srce, pustite krivicu i napravite mesta za oproštaj.",
+          "keywords": [
+            "poboljšanje",
+            "oproštenje",
+            "mudrost",
+            "iskustvo",
+            "saosećanje"
+          ],
+          "context": "Vaš najbolji potencijal je pretvoriti bol u mudrost i snagu."
+        },
+        "position5": {
+          "upright": "Tri mačeva ukazuje da ste možda doživeli nedavno srce, izdaja ili emocionalnu bol.",
+          "reversed": "Okrećena tri mačeva, možda ste nedavno pokušali da ostavite stare bolove iza i ušli u proces oproštenja ili oporavka.",
+          "keywords": [
+            "srp",
+            "izdaja",
+            "ugao",
+            "oproštenje",
+            "rane"
+          ],
+          "context": "Vaša nedavna prošlost je možda oblikovana bolna iskustva ili procesi isceljenja."
+        },
+        "position6": {
+          "upright": "Tri mačeva, možete doživeti emocionalno razbijanje, odvajanje ili razočaranje u bliskoj budućnosti.",
+          "reversed": "Pretvorena tri mačeva, može postojati prilika za isceljenje, oproštenje ili popravku starih rana u bliskoj budućnosti.",
+          "keywords": [
+            "srp",
+            "odvajanje",
+            "ugao",
+            "zarastanje",
+            "oproštenje"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati slomom ili isceljenjem."
+        },
+        "position7": {
+          "upright": "Tri mačeva, možda ćete trenutno doživljavati srce, razdvajanje ili emocionalni bol.",
+          "reversed": "Okrećena tri mačeva, trenutno ste u procesu isceljenja starih rana, praštanju ili puštanjem bola.",
+          "keywords": [
+            "srp",
+            "odvajanje",
+            "ugao",
+            "zarastanje",
+            "da oprosti"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je bolovima ili isceljenjem."
+        },
+        "position8": {
+          "upright": "Tri mačeva, spoljni uticaji mogu vas testirati emocionalnim ranama kao što su srce, sukob ili odvajanje.",
+          "reversed": "Pretvorena tri mačeva, spoljni uticaji mogu pomoći u isceljujunju, pomirenju ili ublažavanju bola.",
+          "keywords": [
+            "srp",
+            "ugao",
+            "odvajanje",
+            "zarastanje",
+            "sukob"
+          ],
+          "context": "Spoljni uticaji utiču na vas kroz bol ili isceljenje."
+        },
+        "position9": {
+          "upright": "Tri mačeva mogu ukazivati na strah od iskušenja srca, izdaje ili emocionalne bolove.",
+          "reversed": "Invertirani tri mačeva pokazuju zabrinutost zbog ponovnog otvaranja starih rana, a ne mogu da oproste ili rastuju ogorčenici.",
+          "keywords": [
+            "izdaja",
+            "ugao",
+            "odvajanje",
+            "probijanje",
+            "anksioznost"
+          ],
+          "context": "Fokusira se na vaše strahove, srčane ili izdaje."
+        }
+      },
+      "fourofswords": {
+        "position1": {
+          "upright": "Četiri mačeva mogu se odmoriti, oporavak ili odugovlačenje u srcu problema.",
+          "reversed": "Prevara četiri mačeva, prekomerna umor, nemogućnost oporavka ili konstantno bežanje može biti izvor problema.",
+          "keywords": [
+            "odmor",
+            "suspenzija",
+            "oporavak",
+            "pobjeći",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba za oporavkom i unutrašnjim odmorom."
+        },
+        "position10": {
+          "upright": "Četiri mačeva mogu biti o miru, oporavku i pronalaženju mentalnog mira kao rezultat događaja.",
+          "reversed": "Pretvorena četvorica mačeva, može postojati prisilna pauza, izgorevanje ili kašnjenje kao rezultat događaja.",
+          "keywords": [
+            "odmor",
+            "oporavak",
+            "mir",
+            "um",
+            "pauza"
+          ],
+          "context": "Rezultat može biti duševni mir ili izgaranje."
+        },
+        "position2": {
+          "upright": "Četiri mačeva sugerišu da prepreka može biti neuspeh da preduzme mere, previše povlačenja u odmor ili odlaganju. Kontinuirano čekanje oduzima se od rastvora.",
+          "reversed": "Prevara četiri mačeva, prekomerna umor, izgaranje ili tendencija da bi se pobjegla može biti izvor prepreke.",
+          "keywords": [
+            "odmor",
+            "suspenzija",
+            "pobjeći",
+            "izgorevanje",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje od neaktivnosti i odlaganja."
+        },
+        "position3": {
+          "upright": "Četiri mačeva mogu biti podsvesna potreba za odmorom, osamljenom ili prisilnom čekanjem da ste iskusili u prošlosti.",
+          "reversed": "Invertirana četvorka mačeva, prošli prekomerni umor, sklonosti izgaranja ili bekstva mogu se srediti u podsvesti.",
+          "keywords": [
+            "odmor",
+            "čekanje",
+            "izgorevanje",
+            "pobjeći",
+            "podsvestan"
+          ],
+          "context": "Oklestva i tendencije za bekstvo doživele su u prošlosti mogu podnijeti današnje probleme."
+        },
+        "position4": {
+          "upright": "Četiri mačeva, vaš najbolji potencijal je napuniti mentalnom mirnošću, svesnom odmorom i unutrašnjim mirom.",
+          "reversed": "Obrnuto četvoro mačeva, da otključate svoj potencijal, morate prestati da odlažete, prepoznajete prekomerno umor i aktivno tražite oporavak.",
+          "keywords": [
+            "odmor",
+            "um",
+            "poboljšanje",
+            "spokoj",
+            "priprema"
+          ],
+          "context": "Vaš najbolji potencijal je obnoviti unutrašnju snagu kroz svesni odmor."
+        },
+        "position5": {
+          "upright": "Četiri mačeva, možda ste nedavno doživeli period odmora, povlačenja ili mentalnog oporavka.",
+          "reversed": "Okrenuo je četiri mačeva, možda ste bili preterani, izgoreli ili zanemareni da se oporavite u nedavnoj prošlosti.",
+          "keywords": [
+            "odmor",
+            "oporavak",
+            "um",
+            "poboljšanje",
+            "ološenje"
+          ],
+          "context": "Vaša nedavna prošlost je možda oblikovana periodima odmora ili izgaranja."
+        },
+        "position6": {
+          "upright": "Četiri mačeva, period odmora, oporavka i mentalne obnove čekaju vas u bliskoj budućnosti.",
+          "reversed": "Ukrasana četiri mačeva mogu ukazivati na izgaranje, nedostatak odmora ili odlaganja oporavka u bliskoj budućnosti.",
+          "keywords": [
+            "odmor",
+            "oporavak",
+            "um",
+            "regeneracija",
+            "mir"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati odmora ili izgoretina."
+        },
+        "position7": {
+          "upright": "Četiri mačeva, možda ćete biti u procesu odmaranja, oporavka ili mentalne obnove.",
+          "reversed": "Okrećeno četiri mačeva, možda ćete doživljavati izgaranje ili ne imati vremena za sebe.",
+          "keywords": [
+            "odmor",
+            "oporavak",
+            "um",
+            "mir",
+            "poboljšanje"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je obnovom ili izgaranjem."
+        },
+        "position8": {
+          "upright": "Četiri mačeva, spoljni uticaji mogu vam ponuditi mogućnost da se odmarate, obnavljate ili oporavite.",
+          "reversed": "Ukrasana četiri mačeva, spoljni uticaji mogu vas dovesti do izgaranja, nedostatka odmora ili stresa.",
+          "keywords": [
+            "odmor",
+            "regeneracija",
+            "mir",
+            "oporavak",
+            "opuštanje"
+          ],
+          "context": "Spoljni uticaji utiču na vas kroz mir ili iscrpljenost."
+        },
+        "position9": {
+          "upright": "Četiri mačeva, možete se bojati da se ne može odmarati, isceliti ili imati priliku da se oporavi.",
+          "reversed": "Prekoračenje četiri mačeva mogu ukazivati na izgaranje, prisilni odmor ili strah od bolesti.",
+          "keywords": [
+            "odmor",
+            "oporavak",
+            "mir",
+            "poboljšanje",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi se ne mogu da se odmaraju ili izgaraju."
+        }
+      },
+      "fiveofswords": {
+        "position1": {
+          "upright": "Petorica mačeva može imati sukob, nelojalnu konkurenciju ili ego bitke u srcu problema.",
+          "reversed": "Okrećeno je pet mačeva, nepotrebnih argumenata ili situacija koje vode do gubitka čak i ako je pobedio mogućnost problema.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "rivalstvo",
+            "izgubiti",
+            "pitanje"
+          ],
+          "context": "Sukob i ego bitke su u srcu problema."
+        },
+        "position10": {
+          "upright": "Petorica mačeva može značiti da je ishod događaja da je sukob pobedio, ali to ne donosi trajno mir.",
+          "reversed": "Invertirano pet mačeva, ishod događaja može biti pomirenje, pomirenje ili kraj nepotrebnih borbi.",
+          "keywords": [
+            "sukob",
+            "pobeda",
+            "kompromis",
+            "ponos",
+            "anksioznost"
+          ]
+        }
+      }
+    }
+  }
+}

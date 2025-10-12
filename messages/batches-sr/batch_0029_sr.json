@@ -1,0 +1,776 @@
+{
+  "money": {
+    "meanings": {
+      "judgement": {
+        "position6": {
+          "keywords": [
+            "odluka",
+            "regeneracija",
+            "računanje",
+            "napredak",
+            "plan"
+          ],
+          "context": "Učenje iz prošlosti u novim finansijskim planovima donijet će obnovu."
+        },
+        "position7": {
+          "upright": "U srcu problema može biti potreba da se suoči sa prošlošću, ponovnom rođenjem ili velikom odlukom, sud je čuo.",
+          "reversed": "Reversed Sud, izbegavajući prošlost, ne preuzimanje odgovornosti ili samoobmana može biti izvor problema.",
+          "keywords": [
+            "ponovno rođenje",
+            "odluka",
+            "konfrontacija",
+            "svest",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba da se suoči sa prošlošću i ponovo se prenosite."
+        },
+        "position8": {
+          "upright": "Sud ukazuje da će veštine pravljenja novca biti ojačane procenom prosvodne iskustva, učenja i ponovnog rođenja.",
+          "reversed": "Reversirani sud ukazuje da će prebivalište u prošlosti, prekomerno samokritika ili nemogućnost donošenja odluka ometati finansijski napredak.",
+          "keywords": [
+            "presuda",
+            "regeneracija",
+            "odluka",
+            "učenje",
+            "sloboda"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa učenjem ili zaglavljenim u prošlosti."
+        }
+      },
+      "theworld": {
+        "position1": {
+          "upright": "Svet ukazuje na anksioznost nerodne i nepotpunosti. Neuspjeh u zatvaranju materijalnog ciklusa stvara nemire.",
+          "reversed": "Naopako svetski svet otkriva anksioznost nepotpunosti i nedostatka integracije. Strah da ne uspeva da ne izaziva anksioznost.",
+          "keywords": [
+            "završetak",
+            "integritet",
+            "anksioznost",
+            "nedostatak",
+            "cilj"
+          ],
+          "context": "Anksioznost proizilazi iz straha da će pasti i da ne bude u stanju da završi. Zatvaranje petlje donosi mir."
+        },
+        "position2": {
+          "upright": "Pokazuje da svet traži sigurnost kroz završetak i celokupnost. Dovršavanje ciklusa donosi mir.",
+          "reversed": "Invertirana zemlja ukazuje na anksioznost nepotpunosti. Želja za sigurnost oslabljena je nepotpunim procesima.",
+          "keywords": [
+            "završetak",
+            "integritet",
+            "sigurnost",
+            "uspeh",
+            "ravnoteža"
+          ],
+          "context": "Nalazite sigurnost ispunjavanjem kruga i celovitošću."
+        },
+        "position3": {
+          "upright": "Zemlja ukazuje na novac za holistički uspeh i završetak. Zatvaranje ciklusa donosi profit.",
+          "reversed": "Reversed Earth ukazuje na nedovršene projekte ili nestale investicije.",
+          "keywords": [
+            "završetak",
+            "uspeh",
+            "integritet",
+            "novac",
+            "stabilnost"
+          ],
+          "context": "Holistički uspeh i stalnost dolaze na prvi prilikom upotrebe novca."
+        },
+        "position4": {
+          "upright": "Završili ste neke svoje finansijske ciljeve i zatvorili petlju u prošlosti.",
+          "reversed": "Reversed Earth ukazuje na nedovršene projekte ili nepotpune finansijske procese.",
+          "keywords": [
+            "završetak",
+            "cilj",
+            "petlja",
+            "Finansijski proces",
+            "uspeh"
+          ],
+          "context": "U prošlosti su završeni završeni i uspeh u finansijskim stavovima."
+        },
+        "position5": {
+          "upright": "Svet pokazuje da su završetak, uspeh i integracija istaknuti u finansijskim odgovornostima. Ciklus je zatvoren, a obaveze su ispunjene.",
+          "reversed": "Reversed Earth ukazuje na kontinuirano opterećenje nedovršenih odgovornosti ili nedostatak integracije.",
+          "keywords": [
+            "završetak",
+            "uspeh",
+            "odgovornost",
+            "integracija",
+            "integritet"
+          ],
+          "context": "Proces završetka i integriteta dolazi do izražaja finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Zemaljska označava završetak, uspeh i otvaranje novog ciklusa u finansijskim planovima.",
+          "reversed": "Ograničena zemlja može ukazivati na nepotpune finansijske planove, napuštanje ili nedovršene projekte.",
+          "keywords": [
+            "završetak",
+            "uspeh",
+            "petlja",
+            "cilj",
+            "plan"
+          ],
+          "context": "Završetak i novi ciklus će imati na nove finansijske planove."
+        },
+        "position7": {
+          "upright": "Svet može biti u centru problema sa potrebom za zatvaranjem, celovitom ili zatvaranjem petlje.",
+          "reversed": "Invertirana zemlja, nepotpuni procesi, nezavršeni rad ili otvoreni petlji mogu biti izvor problema.",
+          "keywords": [
+            "završetak",
+            "uspeh",
+            "integritet",
+            "pobeda",
+            "pitanje"
+          ],
+          "context": "U srcu problema je želja za završetkom ciklusa i postizanje celovitosti."
+        },
+        "position8": {
+          "upright": "Svet pokazuje da su veštine pravljenja novca podržane integritetom, globalnim mogućnostima i energijom završetka.",
+          "reversed": "Reversed Earth ukazuje da nepotpuni ciklusi, nezavršeni projekti ili nedostatak integriteta mogu ograničiti vaše finansijske sposobnosti.",
+          "keywords": [
+            "završetak",
+            "prilika",
+            "integritet",
+            "uspeh",
+            "globalno"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa integritetom ili im nedostaje."
+        }
+      },
+      "aceofcups": {
+        "position1": {
+          "upright": "ACE CUP-a ukazuje na nemogućnost da slobodno izražava nečije emocije i anksioznost da će finansijski gubici ograničiti nečije srce. Možda ćete osećati kao da nedostatak novca ometaju vašu sreću.",
+          "reversed": "ACE of Cups preokrenuti ukazuje na emocionalnu blokadu i strah da ne mogu da dele ljubav. Brinete se da vas finansijski problemi iznutra isključuju.",
+          "keywords": [
+            "osećanje",
+            "dosta",
+            "anksioznost",
+            "izraz",
+            "deljenje"
+          ],
+          "context": "Anksioznost proizilazi iz nedostatka obilja i nemogućnosti izražavanja emocija."
+        },
+        "position2": {
+          "upright": "ACE CUP-a ukazuje da se čovek traži bezbednost kroz iskrcaje zadovoljstvo i emocionalno zadovoljstvo. Nalazite osećaj obilja kada se kombinujete sa ljubavlju.",
+          "reversed": "ACE of Cups preokrenuti otkriva anksioznost o emocionalnom praznini i nezadovoljstvu. Želja za sigurnost ostaje nepotpuna kada ne može da nađe unutrašnji mir.",
+          "keywords": [
+            "dosta",
+            "osećanje",
+            "zadovoljstvo",
+            "sigurnost",
+            "protok"
+          ],
+          "context": "Povezujete finansijsku sigurnost sa emocionalnim zadovoljstvom i osećajem obilja."
+        },
+        "position3": {
+          "upright": "ACE CUPS-a ukazuje na spremnost da se novac daje i deli novac. Velikodušnost stvara protok, ali previše se može pretvoriti u rasipnost.",
+          "reversed": "Reversirani ACE CUP-a ukazuje na potrošnju da ispuni emocionalnu prazninu. Novac je zamjena za ljubav.",
+          "keywords": [
+            "velikodušnost",
+            "deljenje",
+            "trošenje",
+            "osećanje",
+            "protok"
+          ],
+          "context": "Emocionalne potrebe srca utiču na upotrebu novca."
+        },
+        "position4": {
+          "upright": "Možda ste proveli sa emocionalnom motivacijom u prošlosti. Velikodušnost od srca uticala je na vaše finansijske odluke.",
+          "reversed": "Invertirani ACE CUP-a ukazuje na nezadovoljnu potrošnju da popune emocionalnu prazninu.",
+          "keywords": [
+            "osećanje",
+            "velikodušnost",
+            "trošenje",
+            "zadovoljstvo",
+            "srce"
+          ],
+          "context": "Novac je bio usko povezan sa emocijama u prošlosti."
+        },
+        "position5": {
+          "upright": "ACE CUP-a ukazuje na pristup finansijskim odgovornostima sa srčanim željom i ljubavlju. Svesheardno možete podržati porodicu, voljene ljude ili ljude koji vam je stalo.",
+          "reversed": "ACE of Cups preokrenuti može ukazivati na nevoljkost, nevoljnost ili osećaj emocionalne iscrpljenosti ka finansijskim odgovornostima. Opterećenja koja se ne povezujete sa srcem možda vas ne mogu težiti.",
+          "keywords": [
+            "odgovornost",
+            "volontiranje",
+            "podrška",
+            "lova",
+            "opteretiti"
+          ],
+          "context": "U finansijskim odgovornostima, svesrdna obaveza ili nevoljkost je presudna."
+        },
+        "position6": {
+          "upright": "ACE CUP-a pokazuje snagu emocionalnog zadovoljstva i unutrašnju motivaciju u novim finansijskim planovima. Finansijske odluke su podržane inspiracijom iz srca.",
+          "reversed": "ACE of Cups preokrenuti ukazuje na emocionalnu blokadu ili nedostatak motivacije u finansijskim planovima. Možete ostati zatvoreni za nove mogućnosti.",
+          "keywords": [
+            "početak",
+            "motivacija",
+            "inspiracija",
+            "zadovoljstvo",
+            "protok"
+          ],
+          "context": "Motivacija od srca će biti presudna u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "ACE CUP-a ukazuje da će budućnost doneti emocionalno zadovoljstvo i obilje novih mogućnosti u finansijskim planovima. Ulaganja su kombinovana sa motivacijom koja dolazi iz srca.",
+          "reversed": "ACE of Cups preokrenuti ukazuje da emocionalno nezadovoljavajući projekti ili pogrešna investicija mogu biti razočaravajuća.",
+          "keywords": [
+            "početak",
+            "dosta",
+            "zadovoljstvo",
+            "motivacija",
+            "prilika"
+          ],
+          "context": "Emocionalno zadovoljstvo ili razočaranje će odrediti buduće finansijske planove."
+        },
+        "position8": {
+          "upright": "ACE of Cups ukazuje da su sposobnosti donošenja novca podržane kreativnost, inspiracija i emocionalna motivacija. Možete zaraditi novac radeći ono što voliš.",
+          "reversed": "ACE of CUPS preokrenuti ukazuje da njihova sposobnost zarada novca mogu da su ugušene zbog nedostatka inspiracije ili gubitka motivacije.",
+          "keywords": [
+            "kreativnost",
+            "inspiracija",
+            "motivacija",
+            "lova",
+            "početak"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa pronalaženjem ili gubitkom inspiracije."
+        }
+      },
+      "twoofcups": {
+        "position1": {
+          "upright": "Dvoje šoljica pokazuju da ste zabrinuti da će finansijske nesposobnosti narušiti vaše odnose. Nedostatak jednakosti u deljenju može vas učiniti nelagodno.",
+          "reversed": "Dvoje šoljicama obrnuto ukazuje na strah od neravnoteže i nedostatka reciprociteta. Brinete se da će finansijski problemi oštetiti vašu zajednicu.",
+          "keywords": [
+            "raport",
+            "jednakost",
+            "deljenje",
+            "anksioznost",
+            "odnos"
+          ],
+          "context": "Anksioznost proizilazi iz odraz materijalnih nejednakosti u njihovim odnosima."
+        },
+        "position2": {
+          "upright": "Dvoje šoljica pokazuju da tražite sigurnost kroz skladno partnerstvo i zajedničke vrednosti. Finansijska podrška kombinuje se sa ljubavlju.",
+          "reversed": "Dvoje šoljica preokrećene ukazuju na anksioznost o disharmoniji i neuravnoteženih veza. Želja za sigurnost je oslabljena u nejednakim odnosima.",
+          "keywords": [
+            "partnerstvo",
+            "raport",
+            "vrednosti",
+            "sigurnost",
+            "deljenje"
+          ],
+          "context": "Nalazite sigurnost u partnerstvu i skladne odnosa."
+        },
+        "position3": {
+          "upright": "Dva šoljicama ukazuje na tendenciju da se novac koristi zajednički i skladno. Izbori zajedno donose poverenje.",
+          "reversed": "Dvojica ukidana ukidana ukazuje na osećaj finansijske nesklade ili nejednakosti.",
+          "keywords": [
+            "partnerstvo",
+            "raport",
+            "jednakost",
+            "novac",
+            "odnos"
+          ],
+          "context": "Harmonična saradnja dolazi do izražaja novca."
+        },
+        "position4": {
+          "upright": "Možda ste doneli finansijske odluke u prošlosti u koncertu sa partnerstvom ili partnerom.",
+          "reversed": "Dvoje šoljica obrnuto ukazuje na nesklad ili nejednakost u finansijskim pitanjima.",
+          "keywords": [
+            "partnerstvo",
+            "raport",
+            "jednakost",
+            "jedinstvo",
+            "novac"
+          ],
+          "context": "U prošlosti su finansijske odluke bile povezane sa odnosima."
+        },
+        "position5": {
+          "upright": "Dve šolje pokazuju da se finansijske odgovornosti vrše kroz partnerstvo i međusobnu harmoniju. Međusobna podrška i saradnja Osvetlite terete.",
+          "reversed": "Dvoje šoljicama obrnuto ukazuje na neslaganje, neravnotežu u finansijskim odgovornostima ili neusklađenosti obostranih očekivanja.",
+          "keywords": [
+            "partnerstvo",
+            "raport",
+            "deljenje",
+            "balansiranje",
+            "odgovornost"
+          ],
+          "context": "Partnerstvo i saradnja ili neravnoteža dolaze na prednji deo finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Dvoje šoljica pokazuju uravnoteženu uniju uspostavljenu kroz partnerstvo i saradnju u finansijskim planovima. Odluke se donose u harmoniji.",
+          "reversed": "Otkrivena dva šolja skreću pažnju na rizik od neravnoteže ili disharmonije u partnerstvu u finansijskim planovima.",
+          "keywords": [
+            "partnerstvo",
+            "raport",
+            "ravnoteža",
+            "deljenje",
+            "odnos"
+          ],
+          "context": "Partnerstvo i harmonija važni su u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Njih dvoje šoljica pokazuju da će partnerstvo, saradnja i obostrana korist biti ojačana u finansijskim planovima u budućnosti.",
+          "reversed": "Ograničena dva šolja ukazuje na rizik od neslaganja, finansijskog neslaganja ili neravnoteže u poslovnim partnerstvima.",
+          "keywords": [
+            "partnerstvo",
+            "raport",
+            "partnerstvo",
+            "ravnoteža",
+            "upotreba"
+          ],
+          "context": "Harmonizovano partnerstvo ili neslaganje će se pojaviti u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Dvoje šoljica pokazuju poboljšane veštine koje stvaraju novac kroz saradnju, partnerstvo i harmoniju.",
+          "reversed": "Dvoje šoljicama obrnuto ukazuje da nespojiva partnerstva ili problemi sa komunikacijama mogu potkopati svoje finansijske veštine.",
+          "keywords": [
+            "partnerstvo",
+            "raport",
+            "priključak",
+            "ravnoteža",
+            "partnerstvo"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa saradnjom ili neskladom."
+        }
+      },
+      "threeofcups": {
+        "position1": {
+          "upright": "Tri troje šoljica pokazuju zabrinutost zbog socijalne potrošnje i viška. Možete se bojati da će zabava i proslava stvoriti finansijski pritisak.",
+          "reversed": "Pretvorena tri šolje pokazuje da je prekomerna potrošnja izvor nemira. Prekomerni socijalni troškovi mogu da povećaju vašu anksioznost.",
+          "keywords": [
+            "proslava",
+            "društveni",
+            "višak",
+            "anksioznost",
+            "trošenje"
+          ],
+          "context": "Anksioznost proizilazi iz činjenice da vas socijalni troškovi napreduju."
+        },
+        "position2": {
+          "upright": "Tri šolje pokazuju da tražite sigurnost u prijateljstvu, zajednici i mreži podrške. Deljenje pojačava osećaj poverenja.",
+          "reversed": "Tri trošera preokrenuta ukazuje na anksioznost o površnoj upotrebi ili je sama. Želja za sigurnošću je prekinuta u lažnim obveznicama.",
+          "keywords": [
+            "podrška",
+            "zajednica",
+            "deljenje",
+            "sigurnost",
+            "radost"
+          ],
+          "context": "Smatrate da je sigurnost kroz snažne obveznice i podršku zajednice."
+        },
+        "position3": {
+          "upright": "Tri šolje ukazuje na tendenciju da se koristi novac za zabavu, proslave i društvene događaje. Deljenje donosi radost.",
+          "reversed": "Preokrećena tri šolje ukazuje na gubitak novca zbog prenapošavanja ili društvenog pritiska.",
+          "keywords": [
+            "proslava",
+            "deljenje",
+            "društveni",
+            "trošenje",
+            "radost"
+          ],
+          "context": "Socijalitet i deljenje dolaze u izraz u upotrebi novca."
+        },
+        "position4": {
+          "upright": "U prošlosti je potrošnja na proslave i društveni događaji bila na čelu.",
+          "reversed": "Pretvara se tri šolje, prekomerna društvena potrošnja ili ekstravagancija su možda prouzrokovale probleme.",
+          "keywords": [
+            "proslava",
+            "društveni",
+            "trošenje",
+            "zabava",
+            "deljenje"
+          ],
+          "context": "U prošlosti su izdaci za socijalno okruženje bili istaknuti."
+        },
+        "position5": {
+          "upright": "Tri šolje pokazuju da se finansijske odgovornosti dele sa porodicom, prijateljima ili podrškom zajednice. Proslave i zajedništvo mogu da ovi teretni upaljaju.",
+          "reversed": "Tri trupa preokrenuta ukazuju na to da finansijske odgovornosti mogu stvoriti poteškoće zbog neorganizovanih grupa, pogrešnih pogrešnih pogrešnih pogrešaka ili nedostatka podrške.",
+          "keywords": [
+            "zajednica",
+            "podrška",
+            "deljenje",
+            "proslava",
+            "odgovornost"
+          ],
+          "context": "Finansijske odgovornosti dolaze na izraz sa podrškom zajednicom ili im nedostaje."
+        },
+        "position6": {
+          "upright": "Tri šolje ukazuju na snagu podržavajućeg okruženja, proslave i saradnje u finansijskim planovima. Zajednička dostignuća dolaze do izražaja.",
+          "reversed": "Tri trošena ukidanja ukazuju na rizik da se prebroji u finansijskim planovima ili površnošću u saradnji.",
+          "keywords": [
+            "proslava",
+            "partnerstvo",
+            "podrška",
+            "zajednica",
+            "uspeh"
+          ],
+          "context": "Podrška okolina donosi obilje u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Tri šolje ukazuju na podršku zajednici, radost i profit od zajedničkih projekata u budućim finansijskim planovima.",
+          "reversed": "Tri trostruko preokrenuta ukazuju na površnost finansijskim projektima, prekomerno prenaponarenje ili problema u partnerstvu.",
+          "keywords": [
+            "zajednica",
+            "proslava",
+            "zaraditi",
+            "podrška",
+            "deljenje"
+          ],
+          "context": "Budući finansijski planovi će imati podršku zajednice ili površnu potrošnju."
+        },
+        "position8": {
+          "upright": "Tri šolje pokazuju da socijalno okruženje, proslave i saradnici ojačavaju sposobnosti donošenja novca.",
+          "reversed": "Sa troje šoljica obrnuto, finansijski fokus može biti oslabljen površnim priključcima ili prekomernom zabavom.",
+          "keywords": [
+            "zajednica",
+            "proslava",
+            "podrška",
+            "mreža",
+            "deljenje"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa vašim društvenim okruženjem ili površnim."
+        }
+      },
+      "fourofcups": {
+        "position1": {
+          "upright": "Četiri šolje ukazuju na anksioznost da ne vide mogućnosti i nezadovoljstvo. Razmišljanje o nedostajućim finansijskim mogućnostima čini vas nelagodom.",
+          "reversed": "Preokrećena četiri šolje otkriva strah od nestalih prošlih prilika i da ne mogu da nauče od njih. Ova anksioznost vas može blokirati.",
+          "keywords": [
+            "nezadovoljstvo",
+            "prilika",
+            "anksioznost",
+            "nepažnja",
+            "šansa"
+          ],
+          "context": "Anksioznost se podstiče ne mogući prilike i nezadovoljstvo."
+        },
+        "position2": {
+          "upright": "Četiri šolje pokazuju da neko traži sigurnost shvatajući raspoložive resurse. Zahvalnost poziva na mir.",
+          "reversed": "Pretvorena četvoro šoljica ukazuje na anksioznost o tome da ne vide mogućnosti i nezadovoljstvo. Želja za bezbednošću je oslabljena nepažnjom.",
+          "keywords": [
+            "zadovoljstvo",
+            "zahvalnost",
+            "prilika",
+            "sigurnost",
+            "buđenje"
+          ],
+          "context": "Izgradite sigurnost sa svešću i zahvalnošću."
+        },
+        "position3": {
+          "upright": "Četiri šolje ukazuju na ravnodušnost prema novcu ili tendenciji da ignorišu mogućnosti. Može doći do finansijskog nezadovoljstva.",
+          "reversed": "Prekoračenje četvoro šoljica pokazuje proces oduzimanja novih prilika i otvaranja do različitih novčanih puteva.",
+          "keywords": [
+            "nezadovoljstvo",
+            "ravnodušnost",
+            "prilika",
+            "novac",
+            "novi pravac"
+          ],
+          "context": "Nedostatak svesti u upotrebi novca nosi rizike."
+        },
+        "position4": {
+          "upright": "Možda ste iskusili nezadovoljstvo ili nezainteresovanost u novcu u prošlosti.",
+          "reversed": "Invertirana četiri šolje je indikativna nerealizovanih mogućnosti ili propuštenih finansijskih šansi.",
+          "keywords": [
+            "nezadovoljstvo",
+            "ravnodušnost",
+            "prilika",
+            "novac",
+            "svest"
+          ],
+          "context": "U prošlosti je bila apatija ili nezadovoljstvo novcem."
+        },
+        "position5": {
+          "upright": "Četiri šolje mogu ukazivati na osećaj nevoljnosti ili nezadovoljstva finansijskim odgovornostima. Vaš um se može zaglaviti u prošlim teretima.",
+          "reversed": "Preokrećena četiri šolje ukazuje na novu perspektivnu i obnovljenu kamatu za finansijske odgovornosti.",
+          "keywords": [
+            "nezadovoljstvo",
+            "nespremnost",
+            "regeneracija",
+            "kamate",
+            "odgovornost"
+          ],
+          "context": "Nevoljkost ili nova svest postaje odlučujući faktor finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Četiri šolje ukazuju na tendenciju da ignorišu dostupne mogućnosti u finansijskim planovima. Potrebno je biti otvoren za inovacije.",
+          "reversed": "Pretvorena četvoro šoljica ukazuje na proces povećanja svesti o finansijskim planovima i iskorištavanje novih mogućnosti.",
+          "keywords": [
+            "svest",
+            "nezadovoljstvo",
+            "regeneracija",
+            "pažnja",
+            "izbor"
+          ],
+          "context": "Potrebno je prepoznati mogućnosti dostupne u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Četiri šolje ukazuju na rizik da ignorišu postojeće mogućnosti u budućim finansijskim planovima. Zahvalnost i svest će povećati obilje.",
+          "reversed": "Preokrećena četiri šolje ukazuje na buđenje novim mogućnostima i donošenje finansijskijih svesnih odluka.",
+          "keywords": [
+            "prilika",
+            "nezadovoljstvo",
+            "zahvalnost",
+            "buđenje",
+            "svest"
+          ],
+          "context": "Nezadovoljstvo ili svest biće na čelu u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Četiri šolje pokazuju da se njihove sposobnosti ne koriste u potpunosti zbog ignorisanja mogućnosti ili nezadovoljstva.",
+          "reversed": "Pretvorena četvoro šoljica pokazuju da se finansijske veštine mogu ponovo ojačati novom novom svešću i zahvalnošću.",
+          "keywords": [
+            "nezadovoljstvo",
+            "prilika",
+            "svest",
+            "motivacija",
+            "recesija"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa viđenjem ili previdjenim mogućnostima."
+        }
+      },
+      "fiveofcups": {
+        "position1": {
+          "upright": "Petorica šoljica ukazuje na anksioznost gubitka i razočaranja. Možete se bojati da će vas finansijski kvarovi stalno pronaći.",
+          "reversed": "Petorica preokrećenih CUP-ova otkriva tjeskobu da se ne može oporaviti i zadržati prošli gubici. Ne mogu da ispunite postupak finansijske žalosti čini vas nelagodno.",
+          "keywords": [
+            "gubitak",
+            "razočaranje",
+            "anksioznost",
+            "tuga",
+            "finansijski neuspeh"
+          ],
+          "context": "Anksioznost proizilazi iz prošlih finansijskih gubitaka i razočarenja."
+        },
+        "position2": {
+          "upright": "Petorica šoljica pokazuje da se neko traži u učenju gubitaka i fokusiranje na ono što je ostalo. Sa nadom, poverenje se preporođa.",
+          "reversed": "Petorica u obrnutosti ukidaju se da je anksioznost da se zaglave u prošlosti. Želja za sigurnost se uzdrma kada je preplavljena tugom.",
+          "keywords": [
+            "gubitak",
+            "nadati se",
+            "zarastanje",
+            "sigurnost",
+            "transformacija"
+          ],
+          "context": "Nalazite sigurnost prihvatanjem gubitaka i pronalaženjem novih nada."
+        },
+        "position3": {
+          "upright": "Petorica šoljica pokazuje tendenciju da se očajnički koriste novac, fokusirajući se na prethodne gubitke. Mogućnosti se mogu propustiti.",
+          "reversed": "Preokrećeno pet šoljica ukazuje na učenje iz finansijskih gubitaka i razvijanje novog pristupa.",
+          "keywords": [
+            "gubitak",
+            "očajavati",
+            "novac",
+            "prilika",
+            "regeneracija"
+          ],
+          "context": "Prošla iskustva su efikasna u upotrebi novca."
+        },
+        "position4": {
+          "upright": "Možda ste iskusili finansijske gubitke ili žaljenje u prošlosti.",
+          "reversed": "Otkriveni pet šoljica ukazuje na postupak oporavka od finansijskih gubitaka.",
+          "keywords": [
+            "gubitak",
+            "žaliti",
+            "novac",
+            "starost",
+            "oporavak"
+          ],
+          "context": "U prošlosti su finansijski gubici ostavili emocionalne ožiljke."
+        },
+        "position5": {
+          "upright": "Petorica šoljica ukazuje na gubitak, žaljenje ili tugu vezanu za finansijske odgovornosti. Stvari koje se ne mogu učiniti mogu da projure srce.",
+          "reversed": "Ograničeno pet šoljica pokazuje da je proces oporavka od finansijskih odgovornosti i pronalaska nada ponovo započeo.",
+          "keywords": [
+            "gubitak",
+            "žaliti",
+            "oporavak",
+            "nadati se",
+            "odgovornost"
+          ],
+          "context": "Ciklus gubitka i oporavka je na čelu u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Petorica šoljica ukazuje na napredak u finansijskim planovima u senci prethodnih gubitaka. Važno je usredsrediti se na preostale mogućnosti.",
+          "reversed": "Preokrećena pet šoljica predstavlja energiju oporavka i novi početak finansijskih planova.",
+          "keywords": [
+            "gubitak",
+            "fokus",
+            "regeneracija",
+            "nadati se",
+            "zarastanje"
+          ],
+          "context": "U novim finansijskim planovima ostavite prošlost iza i fokusirajte se na trenutne mogućnosti."
+        },
+        "position7": {
+          "upright": "Petorica šoljica ukazuje na buduću tugu nad finansijskim gubicima ili neživljanjima. Međutim, potrebno je usredsrediti na preostale mogućnosti.",
+          "reversed": "Preokrećena pet šoljica pokazuje proces oporavka, nove nade i izgradnja budućnosti sa lekcijama naučenim iz prošlih grešaka.",
+          "keywords": [
+            "gubitak",
+            "lekcija",
+            "nadati se",
+            "zarastanje",
+            "fokus"
+          ],
+          "context": "Gubitak ili oporavak će se pojaviti u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Petorica šoljica pokazuje da su prošli gubici ili razočarenja zamutili njihovu sposobnost da zarađuju.",
+          "reversed": "Preokrećena pet šoljica pokazuje da možete ponovo aktivirati svoje sposobnosti fokusiranjem na oporavak, nadu i trenutne mogućnosti.",
+          "keywords": [
+            "gubitak",
+            "razočaranje",
+            "nadati se",
+            "prilika",
+            "zarastanje"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa fokusiranjem ili oporavkama gubitaka."
+        }
+      },
+      "sixofcups": {
+        "position1": {
+          "upright": "Šest šoljica ukazuje na anksioznost o prošlim finansijskim navikama. Brineš se zbog ponavljanja starih grešaka.",
+          "reversed": "Šest revernih šoljica otkriva tjeskobu da se previše pridržava u prošlost. Stari dugovi ili stare rutine mogu da uznemire vaš mir.",
+          "keywords": [
+            "prošlost",
+            "navika",
+            "anksioznost",
+            "nostalgija",
+            "opet"
+          ],
+          "context": "Anksioznost se pojavljuje od ponavljanja finansijskih grešaka iz prošlosti."
+        },
+        "position2": {
+          "upright": "Šest šoljica pokazuje da tražite sigurnost kroz nostalgiju i vrednosti iz prošlosti. Poznatovanje pojačava osećaj poverenja.",
+          "reversed": "Šest čekova obrnuta ukazuje na anksioznost u tome da se u prošlosti zaglave. Želja za sigurnost može biti ograničena starim obrascima.",
+          "keywords": [
+            "prošlost",
+            "nostalgija",
+            "vrednost",
+            "sigurnost",
+            "moment"
+          ],
+          "context": "Osnivate sigurnost sa poznatim i dubokim vrednostima."
+        },
+        "position3": {
+          "upright": "Šest šoljica ukazuje na tendenciju da se novac koristi u svrhe na osnovu nostalgije, porodice ili istorije. Solidarnost dolazi do izražaja.",
+          "reversed": "Invertirani šest šoljica ukazuje na preostalo zaglavljeno u finansijskim navikama prošlosti ili djetinjaste potrošnje.",
+          "keywords": [
+            "porodica",
+            "prošlost",
+            "pomoći",
+            "nostalgija",
+            "novac"
+          ],
+          "context": "Prošlo iskustvo i uticaj porodice osećaju se u upotrebi novca."
+        },
+        "position4": {
+          "upright": "Porodica ili iskustva iz detinjstva možda su u prošlosti oblikovali vaš odnos sa novcem.",
+          "reversed": "Invertirani šest čaša ukazuje da finansijski napredak postaje težak zbog priklanja do prošlosti.",
+          "keywords": [
+            "prošlost",
+            "porodica",
+            "nostalgija",
+            "novac",
+            "navika"
+          ],
+          "context": "U prošlosti je uticala vaš broj novca, uticala je vaša porodica porekla."
+        },
+        "position5": {
+          "upright": "Šest šoljica može ukazivati na finansijske odgovornosti ili porodične obaveze iz prošlosti. Detinjstvo ili porodična podrška mogu biti efikasna ovde.",
+          "reversed": "Pretvoreni šest šoljica pokazuje da odgovornosti iz prošlosti otežavaju napredak.",
+          "keywords": [
+            "prošlost",
+            "porodica",
+            "podrška",
+            "obaveza",
+            "odgovornost"
+          ],
+          "context": "Protekle veze ili prepreke dolaze do izražaja finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Šest šoljica ukazuje na priliku i pomoć iz prethodnih iskustava u finansijskim planovima. Učenje iz prošlosti isplaćuje dividende.",
+          "reversed": "Invertirani šest šoljica skreće pažnju na rizik od prekomernog vezanosti u prošlost i nemogućnost napretka u finansijskim planovima.",
+          "keywords": [
+            "prošlost",
+            "pomoći",
+            "prilika",
+            "iskustvo",
+            "saosećanje"
+          ],
+          "context": "Lekcije prošlosti vodiće nove finansijske planove."
+        },
+        "position7": {
+          "upright": "Šest šoljica pokazuje da se sigurni finansijski planovi mogu uspostaviti u budućnosti sa naučenim časovima iz prethodnih iskustava.",
+          "reversed": "Invertirani šest šoljica ukazuje na rizik da se previše pridržavate prošlosti i ponavljajući iste greške.",
+          "keywords": [
+            "prošlost",
+            "lekcija",
+            "poverenje",
+            "moment",
+            "učenje"
+          ],
+          "context": "Učenje iz prošlosti će ponovo doći do zaruka u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Šest šoljica ukazuje na jačanje njihove sposobnosti da zarađuju učenjem iz prethodnih iskustava i koristeći nostalgične veze.",
+          "reversed": "Šest čekova obrnuto ukazuje da se zaglavio u prošlosti ili se pridržavao starih načina može da ograniči vaš razvoj.",
+          "keywords": [
+            "prošlost",
+            "nostalgija",
+            "iskustvo",
+            "saosećanje",
+            "učenje"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa učenjem iz prošlosti ili zaglavljene."
+        }
+      },
+      "sevenofcups": {
+        "position1": {
+          "upright": "Sedam šoljica ukazuje na anksioznost o višku opcija i neodlučnosti. Možda se plašite da ne izvršite pravi izbor u finansijskoj oblasti.",
+          "reversed": "Pretvorenih sedam šoljica otkriva anksioznost zbog nereda snova i pogrešnih izbora. Nerealni ciljevi stvaraju nemire.",
+          "keywords": [
+            "nestabilnost",
+            "izbor",
+            "sanjati",
+            "anksioznost",
+            "Pogrešan izbor"
+          ],
+          "context": "Anksioznost se pojavljuje da ne mogu da donese pravu odluku o finansijskim pitanjima."
+        },
+        "position2": {
+          "upright": "Sedam šoljica pokazuje da tražite sigurnost tako što ćete jasno davati izbor. Kada se nesigurnost rasprši, pojavljuje se mir.",
+          "reversed": "Pretvorenih sedam šoljica ukazuje na anksioznost o snovima i obmani. Želja za bezbednošću nestaje kada je isključena od stvarnosti.",
+          "keywords": [
+            "glasati",
+            "oštrina",
+            "sigurnost",
+            "vizija",
+            "prioritet"
+          ],
+          "context": "Vi sigurnosti pronalazite realne izbore."
+        },
+        "position3": {
+          "upright": "Sedam šoljica ukazuje na tendenciju da ulaže novac u imaginarnim projektima ili provode sporadično. Jasni izbori su važni.",
+          "reversed": "Invertirani sedam šoljica pokazuje buđenje iz snova i ostvarivanje realnih finansijskih odluka.",
+          "keywords": [
+            "sanjati",
+            "glasati",
+            "novac",
+            "stvarnost",
+            "prilika"
+          ],
+          "context": "Postoji mašta, rizik i potreba za jasnoćom upotrebom novca."
+        },
+        "position4": {
+          "upright": "Možda je postojala tendencija da se prođe previše finansijskih opcija ili snova u prošlosti.",
+          "reversed": "Invertirani sedmi čaše ukazuje na razočarenja zbog nerealnih očekivanja.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "očekivanje",
+            "novac"
+          ]
+        }
+      }
+    }
+  }
+}

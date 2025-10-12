@@ -1,0 +1,794 @@
+{
+  "marriage": {
+    "meanings": {
+      "fourofcups": {
+        "position8": {
+          "reversed": "Pretvorena četvero šoljica pokazuju da će u komunikaciji biti preporod kao što je svesnost povećala. Zahvalnost olakšava razumevanje.",
+          "keywords": [
+            "nezadovoljstvo",
+            "svest",
+            "slušanje",
+            "zahvalnost"
+          ],
+          "context": "Obratiti pažnju na emocije donosi harmoniju; Apatija sprečava."
+        },
+        "position9": {
+          "upright": "Četiri šolje je pogodna za vas, partnera koji ima unutrašnju dubinu, ali takođe prepoznaje mogućnosti. Neko ko ne ignoriše svoja osećanja daje samopouzdanje.",
+          "reversed": "Četvoro čekova obrnuta nisu pogodna za nekoga ko je stalno nezadovoljna ili nezadovoljna bilo čim.",
+          "keywords": [
+            "svest",
+            "okretanje prema unutra",
+            "zadovoljstvo",
+            "ravnoteža"
+          ],
+          "context": "Pogodan je neko ko je svestan i poštovanje njihovih osećaja."
+        }
+      },
+      "fiveofcups": {
+        "position1": {
+          "upright": "Ishod braka može biti prihvatanje gubitaka i obnove. Čak i ako postoje negativnosti, nada će biti sačuvana.",
+          "reversed": "Dok je žalovanje ostavljeno iza sebe, nada će ponovo procvjetati. Zaključak; Šansa da pretvori novu stranicu.",
+          "keywords": [
+            "gubitak",
+            "starost",
+            "nadati se",
+            "prihvatanje"
+          ],
+          "context": "Zaključak; Novi početak sa lekcijama naučenim od gubitaka. Nada mora biti sačuvana."
+        },
+        "position10": {
+          "upright": "Petorica šoljica nam govori da ožiljci prošlih gubitaka oblak na sadašnjost. Ako je preostalo dobro vraćeno i izabran je oproštenje, put ka braku ponovo postaje jasno.",
+          "reversed": "Sa oporavkom i prihvatanjem, nada cveta; Svesni koraci snimljeni nakon što je to je moguće venčanje.",
+          "keywords": [
+            "starost",
+            "gubitak",
+            "oproštenje",
+            "nadati se",
+            "oporavak"
+          ],
+          "context": "Brak je moguće osloboditi oslobađanjem iz prošlosti."
+        },
+        "position2": {
+          "upright": "Učite iz prethodnih gubitaka. Dok čekate, fokusirajte se na ono što je ostalo.",
+          "reversed": "Vreme je da se ponovo vratimo na nadu. Žalovanje ustupa lečenje.",
+          "keywords": [
+            "gubitak",
+            "starost",
+            "zarastanje",
+            "nadati se"
+          ],
+          "context": "Dok čekate, korisno je prihvatiti prošlost i nadati se živim."
+        },
+        "position3": {
+          "upright": "Prošli finansijski razočari oblak Posebno deljenje. Uma usmeren na gubitak.",
+          "reversed": "Oproštaj i naučeni lekcije omogućavaju da se uspostavi nova naredba. Preostale mogućnosti su ojačane.",
+          "keywords": [
+            "gubitak",
+            "starost",
+            "učenje",
+            "oporavak"
+          ],
+          "context": "Pošteno deljenje je teško bez ikakvog mira sa prošlošću. Naučite lekciju, obnovite okvir."
+        },
+        "position4": {
+          "upright": "Prošli gubici i razočarenja mogu da bacaju senku preko priloga. Međutim, fokusiranje na obveznicu na ruci donosi ravnotežu.",
+          "reversed": "Jednom kada se proces žalosti ostane iza sebe, nada se pričvršćivanje ponovo postavlja. Važno je isceljenje od negativnih emocija.",
+          "keywords": [
+            "gubitak",
+            "tuga",
+            "koji se povezuje",
+            "zarastanje",
+            "nadati se"
+          ],
+          "context": "Želja za povezivanje može se ojačati popravkom prošlih rana."
+        },
+        "position5": {
+          "upright": "Dostojanstveni odnos sa tugom i solidarnošću u gubitku su slični. Vaša sposobnost da vidite ostatak se deli.",
+          "reversed": "Vaši nivoi drćanja u prošlosti mogu biti različiti. Vreme za oproštenje se mora podudarati.",
+          "keywords": [
+            "starost",
+            "gubitak",
+            "prihvatanje",
+            "uteha",
+            "nadati se"
+          ],
+          "context": "Slijedilost u ojaci o žaru. Brzine oslobađanja mogu se razlikovati."
+        },
+        "position6": {
+          "upright": "Petorica čaše nam govori da senka prošlih gubitaka ili ogorčenja u porodici može otežati proces. Međutim, fokusiranje na ono što pri ruci stvara novo područje poverenja.",
+          "reversed": "Invertirani pet šoljica kaže da se energija oporavka i prihvatanja povećava. Ponovno uspostavljanje nade će vas lako prenositi na prihvatanje.",
+          "keywords": [
+            "gubitak",
+            "starost",
+            "prihvatanje",
+            "zarastanje",
+            "nadati se"
+          ],
+          "context": "Protekle senke mogu uticati na proces. Fokusiranje na nadu otvaraju vrata."
+        },
+        "position7": {
+          "upright": "Petorica šoljica kaže da se sastanak otvara nova vrata nakon gubitka ili razočaranja. Izlazak iz prošlosti stvara prostor za susret.",
+          "reversed": "Preokrećena pet šoljica ukazuje na novi susret sa procesom oporavka i povratka u budućnost. Nada koja dolazi nakon što je tuga neguje obveznica.",
+          "keywords": [
+            "gubitak",
+            "nadati se",
+            "poboljšanje",
+            "novi početak"
+          ],
+          "context": "Upoznate se kada ste slobodni iz prošlosti. Nadam se da vas vodi."
+        },
+        "position8": {
+          "upright": "Petorica šoljica ukazuje da prošle ogorčene u komunikaciji mogu da otežavaju razumevanje. Fokus bi trebao biti na preostalim vezama.",
+          "reversed": "Petorica preokrećenih Cups ukazuje da se komunikacija može ponovo uspostaviti oproštajom i prihvatanjem. Nada popravlja ugovor.",
+          "keywords": [
+            "razočaranje",
+            "anksioznost",
+            "prihvatanje",
+            "nadati se"
+          ],
+          "context": "Prepuštanje prošlosti olakšava razumevanje; Fokusna tuga ometa harmoniju."
+        },
+        "position9": {
+          "upright": "Petorica šoljica, neko ko je naučio od gubitaka i zna kako da izgleda sa saosećanjem je pogodno za vas. Supružnik koji je pretvorio tugu pruža dubinu u vezi.",
+          "reversed": "Pet lukova preokrećeno: neko ko je previše zaglavljen u prošlosti ili vidi stalnu negativnost nije pogodna za vas. Supružnik koji se raduje da daje samopouzdanje.",
+          "keywords": [
+            "saosećanje",
+            "učenje",
+            "prihvatanje",
+            "nadati se"
+          ],
+          "context": "Supružnik koji uči iz prošlosti i gleda je prikladno."
+        }
+      },
+      "sixofcups": {
+        "position1": {
+          "upright": "Zaključak; Biće to brak izgrađen na toplini i sećanjima iz prošlosti. Čista ljubav će ojačati fondaciju obveznice.",
+          "reversed": "Prekomerna vezanost za prošlost može ograničiti ishod braka. Potrebno je da se radujemo.",
+          "keywords": [
+            "nostalgija",
+            "nevinost",
+            "moment",
+            "toplota"
+          ],
+          "context": "Zaključak; Obveznica koja je prehranjena saosećanjem prošlosti. Ali važno je ostati napred."
+        },
+        "position10": {
+          "upright": "Šest šoljica sugerira da odnos koji prenosi nedužnu ljubav, prošle veze ili sklad detinjstva može dovesti do braka. Topla, sigurna veza je na čelu.",
+          "reversed": "Prekomerno se pridržavanje prošlosti može vam propustiti sadašnjost. Poštovanje sećanja i uspostavljanje sadašnjosti povećava šanse za brak.",
+          "keywords": [
+            "nostalgija",
+            "nevinost",
+            "pripadnik",
+            "prošla veza",
+            "poverenje"
+          ],
+          "context": "Brak može doći sa toplom i poznatom vezom; Napravite prostor za sada."
+        },
+        "position2": {
+          "upright": "Povežite se sa svojim unutrašnjim detetom. Prikazuju nevinost i radost dok čekate.",
+          "reversed": "Boravak u prošlosti blokira proces. Poštujte sećanja i fokusirajte se na sadašnjost.",
+          "keywords": [
+            "unutrašnji dete",
+            "radost",
+            "nostalgija",
+            "saosećanje"
+          ],
+          "context": "Poštovanje unutrašnjeg deteta dok čekate omekšava srce."
+        },
+        "position3": {
+          "upright": "Prirodna velikodušnost i jednostavnost se vide u deljenju. Prošle navike dodaju toplinu u budžet.",
+          "reversed": "Prebivalište na nostalgiji pokriva stvarne potrebe. Stari uzorci možda ne odgovaraju novim ciljevima.",
+          "keywords": [
+            "nostalgija",
+            "velikodušnost",
+            "navika",
+            "jednostavnost"
+          ],
+          "context": "Postoji toplo deljenje; Ali adaptacija za današnje stvarnosti je obavezna."
+        },
+        "position4": {
+          "upright": "Moguće je povezati sa čistom, djetinjastojom iskrenošću. Osjećaj poverenja iz prošlosti neguje obveznica.",
+          "reversed": "Prekomerno se pridržavanje prošlosti može sprečiti vezu. Odnos se mora fokusirati na sadašnjost.",
+          "keywords": [
+            "nostalgija",
+            "iskrenost",
+            "poverenje",
+            "detinjstvo",
+            "obveznica"
+          ],
+          "context": "Želja za povezivanjem je čista i iskrena, ali ne bi trebalo da ostane u prošlosti."
+        },
+        "position5": {
+          "upright": "Nostalgija i povezivanje sa unutrašnjim detetom su slični. Topla sećanja postaju vaš zajednički jezik.",
+          "reversed": "Jedan od vas može imati tendenciju da se prebiva u prošlosti. Most se mora graditi između sada i sada.",
+          "keywords": [
+            "nostalgija",
+            "nevinost",
+            "memorija",
+            "saosećanje",
+            "jednostavnost"
+          ],
+          "context": "Saosećanje za unutrašnje dete je uobičajeno. Važno je sada da se sastanemo."
+        },
+        "position6": {
+          "upright": "Sa šest šoljica, nostalgije i iskrenosti, vaša porodica vas može povezati sa toplinom prošlosti. Iskrene obveznice naklonosti olakšavaju prihvatanje.",
+          "reversed": "Šest šoljica preokrećeno, preterano se pridržavati prošlosti, ili poređenja mogu odložiti prihvatanje. Poštovanje sećanja i fokusiranje na sadašnjost Povećava samopouzdanje.",
+          "keywords": [
+            "nostalgija",
+            "saosećanje",
+            "prošlost",
+            "toplota",
+            "memorija"
+          ],
+          "context": "Uspostavljanje tople veze sa prošlošću omekšava porodicu. Potrebno je to uravnotežiti danas."
+        },
+        "position7": {
+          "upright": "Šest šoljica kaže da će se sastanak dogoditi kroz prošle veze ili nostalgičnu vezu. Stari prijatelj, obveznica iz detinjstva, može vas ponovo ujediniti.",
+          "reversed": "Pretvoreni šest šoljica govori nam da se previsoko zadržavanje na prošlost može sprečiti nove veze. Poštovanje memorije, ali prelazak na sadašnjost otvara vrata.",
+          "keywords": [
+            "nostalgija",
+            "prošlost",
+            "obveznica",
+            "okupljanje"
+          ],
+          "context": "Upoznate se kroz staru vezu. Poštovanje prošlosti čini sadašnjeg."
+        },
+        "position8": {
+          "upright": "Šest šoljica ukazuje na nostalgičnu i toplu komunikaciju. Veza poverenja iz prošlosti olakšava sporazum.",
+          "reversed": "Šest reversiranih šoljica kaže da se držeći u prošlosti može otežati da se slaže. Predstavljanje glavnog fokusa donosi harmoniju.",
+          "keywords": [
+            "nostalgija",
+            "poverenje",
+            "toplota",
+            "sećanja"
+          ],
+          "context": "Toplina iz prošlosti promoviše harmoniju; Ne zaglavite se, oštetite."
+        },
+        "position9": {
+          "upright": "Šest šoljica, neko sa snažnom vezom sa unutrašnjim detetom, nostalgičnim i toplim srcem je pogodan za vas. To jača svoju vezu sa njegovom nevinosti.",
+          "reversed": "Šest šoljica je preokrenulo: neko ko je zaglavljen u prošlosti ili nedostaje odgovornosti za odrasle nije za vas.",
+          "keywords": [
+            "nostalgija",
+            "nevinost",
+            "toplota",
+            "saosećanje"
+          ],
+          "context": "Pogodan je neko sa nevinim srcem i toplinom."
+        }
+      },
+      "sevenofcups": {
+        "position1": {
+          "upright": "Mnogi snovi i opcije će vam doći u vašem braku. Zaključak; Može postojati lepota sa pravim izborima i haosom sa pogrešnim.",
+          "reversed": "Kada se oslobodite snova i ostvarite realne izbore, vaš brak će napredovati solidnije.",
+          "keywords": [
+            "sanjati",
+            "izbor",
+            "odluka",
+            "prilika"
+          ],
+          "context": "Zaključak; Brak u obliku snova. Realnost će biti presudna na izborima."
+        },
+        "position10": {
+          "upright": "Sedam šoljica kaže da obilje opcija i zbrke između snova i stvarnosti može odložiti odluku. Ako su postavljeni jasni kriterijumi, put ka braku postaje jasan.",
+          "reversed": "Magla čistka; Pomoću realističnog izbora pojavljuje se mogućnost braka. Potrebno je napustiti neodlučnost.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "oštrina",
+            "odluka",
+            "vizija"
+          ],
+          "context": "Postavite jasne izbore i kriterijume za brak."
+        },
+        "position2": {
+          "upright": "Razjasnite svoje snove, svesno dajte svoje izbore. Dok čekate, definišite svoju viziju.",
+          "reversed": "Pronađite ravnotežu između snova i stvarnosti. Izbegavajte pad.",
+          "keywords": [
+            "sanjati",
+            "glasati",
+            "vizija",
+            "stvarnost"
+          ],
+          "context": "Pomoćno je razjasniti svoju viziju dok čekate."
+        },
+        "position3": {
+          "upright": "Obilnost opcija je zbunjujuća; Bez jasnoće cilja, budžet se raspada. Snovi treba da budu svedeni na realne olovke.",
+          "reversed": "Počinje sortiranje i pojašnjenje; Prioritetni setovi olakšavaju deljenje. Magla čist.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "oštrina",
+            "prioritet"
+          ],
+          "context": "Pojednostavite spiskove. Jasni kriterijumi određuju fer udeo."
+        },
+        "position4": {
+          "upright": "Sanjari i opcije mogu otežati povezivanje. Ako odluka postane jasna, veza postaje jača.",
+          "reversed": "Kada se postigne jasnoća, želja za povezivanjem postaje betonski bez dispergovanja. Tranzicija iz snova u stvarnost je važna.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "neizvesnost",
+            "koji se povezuje",
+            "odluka"
+          ],
+          "context": "Jasnoća i realizam su neophodni za angažman."
+        },
+        "position5": {
+          "upright": "Mašta i otvorenost za opcije su slične. Kada postavite jasne kriterijume, harmonija sija.",
+          "reversed": "Prag zamućenja je drugačiji. Ako se odluka odloži, sličnost će se rasipati.",
+          "keywords": [
+            "sanjati",
+            "izbor",
+            "oštrina",
+            "vizija",
+            "sklonost"
+          ],
+          "context": "Kreativna vizija se deli. Pisanje kriterijuma je potrebno."
+        },
+        "position6": {
+          "upright": "Sedam šoljica ukazuje da u porodici može postojati neodlučnost zbog mnogih opcija ili ideja. Možete dobiti njihovo poverenje postavljanjem jasnih kriterijuma.",
+          "reversed": "Sedam revernih šoljica ukazuje da konfuzija u porodici počinje da se rešava. Realistični pristupi ubrzavaju prihvatanje.",
+          "keywords": [
+            "nestabilnost",
+            "sanjati",
+            "oštrina",
+            "izbor",
+            "vizija"
+          ],
+          "context": "U porodici može biti zbrke. Realan i jasan stav donosi prihvatanje."
+        },
+        "position7": {
+          "upright": "Sedam šoljica kaže da će se sastanak doći kada budete jasan izbor između opcija. Postavljanje kriterijuma umesto snova dovodi do prave osobe.",
+          "reversed": "Invertirani sedam šoljica pokazuje da ostavljaju konfuziju iza i stiče jasnoću. Jasna namera ubrzava sastanak.",
+          "keywords": [
+            "izbor",
+            "oštrina",
+            "sanjati",
+            "odluka"
+          ],
+          "context": "Upoznaćete opcije kada ih pojednostavite. Jasnoća otvara prava vrata."
+        },
+        "position8": {
+          "upright": "Sedam šoljica može ukazivati na previše izbora ili zbrke u komunikaciji. Obezbeđivanje jasnoće olakšava sporazum.",
+          "reversed": "Okrećeno sedam šoljica donosi pojednostavljenje u komunikaciji iz realne perspektive. Fokus povećava harmoniju.",
+          "keywords": [
+            "izbor",
+            "zbrka",
+            "oštrina",
+            "fokus"
+          ],
+          "context": "Jasnoća jača ugovor; Sprečava konfuziju."
+        },
+        "position9": {
+          "upright": "Sedam šoljica, supružnika koji je bogat maštom, ali se ne prekida od stvarnosti je pogodan za vas. Vizionarski i uravnotežen pristup donosi harmoniju.",
+          "reversed": "Sedam šoljica preokrećeno: neko ko stalno sledi snu, ali ne uzima konkretne korake nisu pogodne za vas.",
+          "keywords": [
+            "sanjati",
+            "vizija",
+            "ravnoteža",
+            "glasati"
+          ],
+          "context": "Pogodan je neko maštovit, ali dole na zemlji."
+        }
+      },
+      "eightofcups": {
+        "position1": {
+          "upright": "Zaključak; Biće potraga za dubljem vezom, odseljavanje od površnih stvari. Možete doživeti putovanje usmerenim na značenje u vašem braku.",
+          "reversed": "Neodlučnost o probijanju ili odmicanju može se ishod neizvesnog u braku. Određivanje je potrebno.",
+          "keywords": [
+            "potraga",
+            "značenje",
+            "transformacija",
+            "odluka"
+          ],
+          "context": "Zaključak; brak koji se kreće ka dubljem značenju. Postoji rizik od nestabilnosti."
+        },
+        "position10": {
+          "upright": "Osam šoljica opisuje napuštanje ciklusa koji se oseća nepotpuno dostojanstvo i hodanje prema dubljoj istini. Ova hrabrost otvara vrata udružuju udruženu braku.",
+          "reversed": "Dilema za boravak može da se potresi plan za brak. Zatvaranje ritualnog i jasnog pravca čine prave vrata vidljive.",
+          "keywords": [
+            "Potražite značenje",
+            "zatvaranje",
+            "staza",
+            "hrabrost",
+            "pravac"
+          ],
+          "context": "Brak; Moguće je sa hrabrošću da odete na pravo mesto."
+        },
+        "position2": {
+          "upright": "Pustite stvari koje vas više ne hranite. Dok čekate, fokusirajte se na ono što je smisleno.",
+          "reversed": "Rešite dilemu za boravak. Odvažne odluke kreću se napred.",
+          "keywords": [
+            "odlazak",
+            "značenje",
+            "hrabrost",
+            "nov način"
+          ],
+          "context": "Dok čekate, korisno je pretvoriti u ono što je smisleno."
+        },
+        "position3": {
+          "upright": "Vreme je da prestanete da trošite navike koje više nemaju vrednost. Resursi se prebacuju u smislene ciljeve.",
+          "reversed": "Dilema za boravak odlaže ekonomske odluke. Namere su ostavile nedovršene protrese budžet.",
+          "keywords": [
+            "odlazak",
+            "značenje",
+            "preusmeravanje",
+            "dilema"
+          ],
+          "context": "Ostavljanje besmislenog i povratak u vrednost olakšava deljenje."
+        },
+        "position4": {
+          "upright": "Jedan od partnera može se povući iz posvećenosti zbog trenutnog emocionalnog nezadovoljstva. Potraga za dubljem značenjema dolazi do izražaja.",
+          "reversed": "Tendencija da se odlazi može zameniti željom da ostane. Može se naći novi razlog za prilog.",
+          "keywords": [
+            "odlazak",
+            "nezadovoljstvo",
+            "Potražite značenje",
+            "ostati",
+            "obveznica"
+          ],
+          "context": "Želja za povezivanje može se ispitivati, ali može se preoblikovati."
+        },
+        "position5": {
+          "upright": "Sličnosti u potrazi za značenjem i potrebom za dubinom. Voliš da ostavljaš površinu i hodaš u istinu.",
+          "reversed": "Prag GO-GO može biti drugačiji. Bez zatvaranja rituala, Harmonija je natečena.",
+          "keywords": [
+            "značenje",
+            "odlazak",
+            "staza",
+            "zrelost",
+            "zatvaranje"
+          ],
+          "context": "Dubina je uobičajena vrednost. Tranzicije treba da budu napravljene sa saosećanjem."
+        },
+        "position6": {
+          "upright": "Osam šoljica može u početku da izazove udaljenost od vaše porodice ili poteškoće u upoznavanju vas. Međutim, vaš zreli stav će vam omogućiti da se približite vremenom.",
+          "reversed": "Osvećeno osam šoljica govori nam da dilema za boravak može da komplikuje proces prihvatanja porodice. Određivanje i stabilnost donose pouzdanje.",
+          "keywords": [
+            "rastojanje",
+            "potraga",
+            "zrelost",
+            "stabilnost",
+            "zbližavanje"
+          ],
+          "context": "U početku može doći do povlačenja, ali poverenje dolazi sa zrelošću. Određivanje je važno."
+        },
+        "position7": {
+          "upright": "Osam šoljica ukazuje na sastanak u vreme kada tražite značenje. Dublje vas vodi zajedno.",
+          "reversed": "Okolište osam čaše ukazuje da je zaglavljen u dilemi za boravak. Jasna odluka donosi novo poznanstvo.",
+          "keywords": [
+            "potraga",
+            "putovanje",
+            "značenje",
+            "odluka"
+          ],
+          "context": "Upoznate se na smisleno putovanje. Donošenje odluke pojašnjava sastanak."
+        },
+        "position8": {
+          "upright": "Osam šoljica ukazuje na odmak od površne komunikacije i potragu za dubljem razumevanjem. Ugovor o osje iskrenosti.",
+          "reversed": "Osam preokretanih šoljica sugeriše da tendencije za bekstvo mogu otežati komunikaciju. Boravak i razgovor stvara sklad.",
+          "keywords": [
+            "dubina",
+            "iskrenost",
+            "potraga",
+            "pobjeći"
+          ],
+          "context": "Potraga za dubinom povećava harmoniju; Escape stvara prepreke."
+        },
+        "position9": {
+          "upright": "Osam šoljica je pogodno za vas sa partnerom koji traži značenje i otvoren je za duboko putovanje koje će vam hraniti dušu. Unutrašnji pretraživač dodaje dubinu u vašu vezu.",
+          "reversed": "Osam šoljica je preokrenulo: neko ko uvek pokušava da pobegne ili izbegne preuzimanje odgovornosti nije pogodno za vas.",
+          "keywords": [
+            "značenje",
+            "dubina",
+            "potraga",
+            "hrabrost"
+          ],
+          "context": "Pogodno je osoba sa duhovnom dubinom."
+        }
+      },
+      "nineofcups": {
+        "position1": {
+          "upright": "Emocionalno zadovoljstvo i sreća biće na čelu u vašem braku. Zaključak; Stanje mira poput želja koji se ostvaruju.",
+          "reversed": "Povrljena zadovoljstva mogu sprečiti trajno zadovoljstvo kao rezultat braka. Mora se tražiti dublja veza.",
+          "keywords": [
+            "sreća",
+            "zadovoljstvo",
+            "mir",
+            "dosta"
+          ],
+          "context": "Zaključak; Mirno vinograd gde se želje ostvaruju. Ali to ne bi trebalo da ostane površno."
+        },
+        "position10": {
+          "upright": "Devet šoljica sjaji sjajno sa mogućnošću braka sa ispunjenjem želja i zadovoljstva srca. Kada se lično zadovoljstvo deli, postaje zajednička proslava.",
+          "reversed": "Površna zadovoljstva ili jednostrana udobnost mogu suziti viziju braka. Ciljevi fokusiranih vrednosti pružaju ravnotežu.",
+          "keywords": [
+            "želja",
+            "zadovoljstvo",
+            "dosta",
+            "zahvalnost",
+            "zadovoljstvo"
+          ],
+          "context": "Šanse za brak su visoki; Namjera na osnovu vrednosti je obavezna."
+        },
+        "position2": {
+          "upright": "Porasti svoju sreću i zadovoljstvo. Zahvalnost i radost su važni tokom čekanja.",
+          "reversed": "Usredsredite se na trajnu sreću umesto površnih zadovoljstava.",
+          "keywords": [
+            "sreća",
+            "zadovoljstvo",
+            "hvala",
+            "dosta"
+          ],
+          "context": "Pomaže u stvaranju sopstvene sreće dok čekate."
+        },
+        "position3": {
+          "upright": "Lično zadovoljstvo i mala luksulja pronalaze sobu u budžetu. Deljenje se nastavlja u dobroj veri.",
+          "reversed": "Površna užitka sprečavaju trajno zadovoljstvo; \"I\" fokusirana potrošnja stvara sukob.",
+          "keywords": [
+            "zadovoljstvo",
+            "zadovoljstvo",
+            "ravnoteža",
+            "zahvalnost"
+          ],
+          "context": "Možda postoje olovke sreće; Osjećaj pravde mora se sačuvati."
+        },
+        "position4": {
+          "upright": "Emotivno zadovoljstvo i osnaživanje sreće. Obe strane se mogu osećati spremnim.",
+          "reversed": "Prekomerna očekivanja ili sebičnost otežavaju da se povežu. Potreban je stav deljenja.",
+          "keywords": [
+            "zadovoljstvo",
+            "sreća",
+            "zadovoljstvo",
+            "deljenje",
+            "obveznica"
+          ],
+          "context": "Želja za vezom je velika, ali je važno izbeći sebičnost."
+        },
+        "position5": {
+          "upright": "Vaš fokus na ličnom ispunjenju i zahvalnosti je sličan. Zajedno se višestruko male sreće.",
+          "reversed": "Vaša površinska osoba za zadovoljstvo zadovoljstva može se razlikovati. Poravnavanje sa vrijednošću je potrebna.",
+          "keywords": [
+            "zadovoljstvo",
+            "zahvalnost",
+            "zadovoljstvo",
+            "udobnost",
+            "radost"
+          ],
+          "context": "Harmonija jednostavnih radosti. Poravnavanje vrednosti mora se održavati."
+        },
+        "position6": {
+          "upright": "Devet šoljica kaže da vas porodica može videti kao izvor mira i sreće. Iskrene deljenje povećava zadovoljstvo.",
+          "reversed": "Devet obrnutih CUP-ova može da postane površno zadovoljstvo ili uočeno da je teško prihvatiti nezadovoljstvo. Realistični i vrednost orijentisan na vrednost prekida ovu percepciju.",
+          "keywords": [
+            "sreća",
+            "zadovoljstvo",
+            "iskrenost",
+            "zahvalnost",
+            "dosta"
+          ],
+          "context": "Vaš topli i zahvalni stav donosi prihvatanje. Treba da se držite podalje od površno."
+        },
+        "position7": {
+          "upright": "Devet šoljica ukazuje na sastanak u procesu gde je osećaj zadovoljstva i zahvalnosti intenzivan. Unutrašnji mir stvara polje privlačnosti.",
+          "reversed": "Reversed devet šoljica sugeriše da potraga za površnom zadovoljstvom može zasjeniti suštinu veze. Autentične vrednosti upoznavaju poznanstvo trajno.",
+          "keywords": [
+            "zadovoljstvo",
+            "zahvalnost",
+            "dosta",
+            "mir"
+          ],
+          "context": "Upoznaćete unutrašnji mir. Pravo zadovoljstvo jača vezu."
+        },
+        "position8": {
+          "upright": "Devet šoljica označava zadovoljavajuću i ugodnu komunikaciju. Zadovoljstvo i mir olakšavaju sporazum.",
+          "reversed": "Sa devetom šoljicama obrnuto, može postojati nezadovoljstvo komunikacijom zbog sebičnosti ili površnosti. Deljenje donosi harmoniju.",
+          "keywords": [
+            "zadovoljstvo",
+            "mir",
+            "deljenje",
+            "zadovoljstvo"
+          ],
+          "context": "Zajedničko zadovoljstvo povećava harmoniju; Sebinologija razbija obveznica."
+        },
+        "position9": {
+          "upright": "Devet šoljica, neko ko je u miru sa sobom, zadovoljan i spreman za podelu je pogodan za vas. Supružnik koji sa vama postaje sopstvena sreća da daje samopouzdanje.",
+          "reversed": "Devet šoljica je obrnuto, osoba koja je stalno nezasitna ili zavisna od spoljnih zadovoljstava nije pogodna za vas.",
+          "keywords": [
+            "zadovoljstvo",
+            "sreća",
+            "samopouzdanje",
+            "deljenje"
+          ],
+          "context": "Supružnik koji deli svoju sreću je pogodan."
+        }
+      },
+      "tenofcups": {
+        "position1": {
+          "upright": "Zaključak; Biće porodični mir, ljubavni dom i trajna sreća. Kompletna slika sreće.",
+          "reversed": "Odstupanje između snova i stvarnosti može procijediti ishod braka. Mora se postići realna adaptacija.",
+          "keywords": [
+            "porodica",
+            "sreća",
+            "raport",
+            "završetak"
+          ],
+          "context": "Zaključak; miran i ljubazan porodični život. Ali očekivanja moraju biti uravnotežena sa stvarnostima."
+        },
+        "position10": {
+          "upright": "Deset šoljica sugeriše da je brak snažna mogućnost, sa emocionalnom harmonijom, porodičnom toplinom i dugoročnom srećom. Osjećaj kuće je uspostavljen zajedno.",
+          "reversed": "Idealno štampanje slika može podrivati autentičnost. Osnova za brak je ojačan realnim očekivanjima i otvorenom komunikacijom.",
+          "keywords": [
+            "porodica",
+            "raport",
+            "sreća",
+            "jedinstvo",
+            "dugoročan"
+          ],
+          "context": "Potencijal za brak je veoma jak; nahranite ga autentičnošću."
+        },
+        "position2": {
+          "upright": "Negujte harmoniju sa porodicom i voljenim. Negujte osećaj jedinstva dok čekate.",
+          "reversed": "Prekomerni idealizam može dovesti do razočaranja. Izaberite realno uklapanje.",
+          "keywords": [
+            "porodica",
+            "raport",
+            "jedinstvo",
+            "mir"
+          ],
+          "context": "Korisno je razviti osećaj jedinstva dok čekate."
+        },
+        "position3": {
+          "upright": "Osećaj porodice i jedinstva olakšava finansijske odluke. Uobičajeni ciljevi sreće ujedinjuju budžet.",
+          "reversed": "Idealna slika za slikanje zatamnjuje činjenice; Nevidljivi napetost soječi budžet.",
+          "keywords": [
+            "porodica",
+            "raport",
+            "jedinstvo",
+            "realizam"
+          ],
+          "context": "Vizija jedinstva je jaka; Ali autentičnost se ne sme izgubiti."
+        },
+        "position4": {
+          "upright": "Porodica, jedinstvo i trajna sreća dolaze do izražaja. Želja za međusobnom vezom je na svom najjačem nivou.",
+          "reversed": "Možda postoji razlika između zamišljenog harmonije i stvarnosti. Idealna očekivanja mogu izazvati prilog.",
+          "keywords": [
+            "porodica",
+            "sreća",
+            "raport",
+            "obveznica",
+            "mir"
+          ],
+          "context": "Želja za povezivanjem je velika, ali potrebno je biti realno."
+        },
+        "position5": {
+          "upright": "Vaši ideali porodice, jedinstva i mira su slični. San o zajedničkoj kući vas dovodi zajedno pod istim krovom.",
+          "reversed": "Vaš idealno realistični prag može biti drugačiji. Autentični dijalog uravnotežuje sliku.",
+          "keywords": [
+            "porodica",
+            "raport",
+            "mir",
+            "jedinstvo",
+            "idealan"
+          ],
+          "context": "Porodični ideal je uobičajen. Hajde da razgovaramo o realističnom poretku."
+        },
+        "position6": {
+          "upright": "Deset šoljica pokazuje da će se osećaj harmonije i jedinstva unutar porodice lako razvijati. Možete ih učiniti kao deo celine.",
+          "reversed": "Ograničeni deset šoljica može biti percepcija razlike između ideala i stvarnosti. Autentični i otvoreni dijalog Popravci porodične obveznice.",
+          "keywords": [
+            "raport",
+            "porodica",
+            "jedinstvo",
+            "mir",
+            "stvarnost"
+          ],
+          "context": "Vaša energija integriteta utiče na porodicu. Autentičnost pojačava poverenje."
+        },
+        "position7": {
+          "upright": "Deset šoljica ukazuje na sastanak u okruženju u kojem je porodica ili harmonija zajednice snažna. Osjećaj jedinstva priprema zemlju za vezu.",
+          "reversed": "Pretvoreni deset šoljica kaže da prevelika očekivanja mogu zasjeniti sastanak. Realan pristup neguje odnos.",
+          "keywords": [
+            "raport",
+            "porodica",
+            "jedinstvo",
+            "mir"
+          ],
+          "context": "Sastaćete se u atmosferi jedinstva i mira. Realizam daje snagu obveznice."
+        },
+        "position8": {
+          "upright": "Deset šoljica ukazuje na harmoničnu i mirnu komunikaciju. Bond koja se oseća kao porodica čini sporazum trajno.",
+          "reversed": "Reversed deset šoljica govori nam da razlike između očekivanja i stvarnosti mogu otežati komunikaciju. Iskrenost pruža ravnotežu.",
+          "keywords": [
+            "raport",
+            "mir",
+            "jedinstvo",
+            "porodica"
+          ],
+          "context": "Mirna veza podstiče harmoniju; Frustracija otežava adaptaciju."
+        },
+        "position9": {
+          "upright": "Deset šoljica, neko ko može da uspostavi porodičnu toplinu i deljenje mira je pogodan za vas. Supružnik koji brine o osećaju jedinstva daje samopouzdanje.",
+          "reversed": "VELIKO DEN OD CROVA: Neko ko ne ostaje podalje od koncepta porodice ili stalno uznemirava mir nije pogodan za vas.",
+          "keywords": [
+            "porodica",
+            "mir",
+            "jedinstvo",
+            "lova"
+          ],
+          "context": "Pogodan je supružnik koji je briga o porodici i dionici."
+        }
+      },
+      "pageofcups": {
+        "position1": {
+          "upright": "Zaključak; Nevinost, romantika i kreativna osećanja će oblikovati vaš brak. Odnos će biti obojen čistom ljubavlju.",
+          "reversed": "Djetinjasti ili nedostatak emocionalne zrelosti mogu da napreduju ishod braka.",
+          "keywords": [
+            "romantika",
+            "nevinost",
+            "kreativnost",
+            "osetljivost"
+          ],
+          "context": "Zaključak; Brak pun čistih emocija. Ali može biti potrebna ravnoteža zrelosti."
+        },
+        "position10": {
+          "upright": "Princ of Cups oživljava san o braku sa nežnim predlogom, romantičnim vestima i svežim emocijama. Kreativan, čisti pristup otvara vrata.",
+          "reversed": "Prekomerna razdražljivost ili izbegavajući stav može ostaviti namere. Neophodno je povezati emociju sa zrelom, doslednom izrazu.",
+          "keywords": [
+            "ponuditi",
+            "romantika",
+            "nevinost",
+            "inspiracija",
+            "izraz"
+          ],
+          "context": "Uzmite naivne, ali jasne korake za brak."
+        },
+        "position2": {
+          "upright": "Razvijte svoju kreativnu intuiciju, otvorite svoje srce igrom. Nahrani svoje snove dok čekate.",
+          "reversed": "Ekstremna osetljivost otežava proces. Biti u ravnoteži sa stvarnošću.",
+          "keywords": [
+            "kreativnost",
+            "intuicija",
+            "igra",
+            "izraz"
+          ],
+          "context": "Kreativnost i radoznalost otvaraju srce dok čekaju."
+        },
+        "position3": {
+          "upright": "Creative, male ideje dodaju svežinu na upravljanje novcem. Vide se fleksibilno ali dobronamjerno deljenje.",
+          "reversed": "Pretezanost i djetinjasta utaja podrivaju budžetske razgovore. Potreban je konkretan plan.",
+          "keywords": [
+            "kreativnost",
+            "fleksibilnost",
+            "senzibilitet",
+            "početak"
+          ],
+          "context": "Sa ljubaznom komunikacijom, novi stil budžetiranja cveta."
+        },
+        "position4": {
+          "upright": "Čista radoznalost i romantični pristup otvori vrata za vezu. Male geste zasladite odnos.",
+          "reversed": "Prekomerna emocionalnost ili nezreli stavovi mogu otežati pričvršćivanje. Bilans je od suštinskog značaja.",
+          "keywords": [
+            "romantika",
+            "radoznalost",
+            "osećanje",
+            "sanjati",
+            "obveznica"
+          ],
+          "context": "Želja za povezivanje je čista i iskrena, ali je potrebna zrelost."
+        },
+        "position5": {
+          "upright": "Slične vibracije u nevinoj radoznalosti, kreativnosti i emotivnoj razigranosti. Vaša mala gesta čine da srce raste veće.",
+          "reversed": "Ekstremna razdražljivost / tendencija bekstva može biti dominantna u nekoj od vas. Potrebno je povezati emociju na akciju.",
+          "keywords": [
+            "inspiracija",
+            "radoznalost",
+            "senzibilitet",
+            "igra"
+          ]
+        }
+      }
+    }
+  }
+}

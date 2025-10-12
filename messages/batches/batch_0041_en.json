@@ -1,0 +1,794 @@
+{
+  "new-lover": {
+    "meanings": {
+      "death": {
+        "position5": {
+          "keywords": {
+            "3": "start",
+            "4": "soul mate"
+          },
+          "context": "Transformation supports soul mates, testing past bonds."
+        },
+        "position6": {
+          "upright": "Death says you have to give up something to make your wish come true.",
+          "reversed": "Reverse Death, holding on to the past can prevent your wish from coming true, and you have to let go of what you need to leave.",
+          "keywords": {
+            "0": "transformation",
+            "1": "end",
+            "2": "Regeneration",
+            "3": "Don't say goodbye.",
+            "4": "birth"
+          },
+          "context": "Ends lead to new wishes."
+        }
+      },
+      "temperance": {
+        "position1": {
+          "upright": "The balance points to the coming of a compatible and patient relationship.",
+          "reversed": "Reverse Balance says extremes can make a new relationship difficult.",
+          "keywords": {
+            "0": "balance",
+            "1": "compatibility",
+            "2": "Patience",
+            "3": "simplicity"
+          },
+          "context": "The new relationship will soon come with patience and harmony."
+        },
+        "position2": {
+          "upright": "Balance represents Sagittarius, who is optimistic, liberal and adventurous.",
+          "reversed": "Reverse Balance can be flustered in the shadow of Sagittarius, extreme risk taking, or impatient.",
+          "keywords": {
+            "0": "Sagittarius",
+            "1": "balance",
+            "2": "freedom",
+            "3": "optimism"
+          },
+          "context": "The spring energy comes forward."
+        },
+        "position3": {
+          "upright": "Balance, patience, and harmony say you're going to establish a lasting bond, and finding a middle ground calms your relationship.",
+          "reversed": "Reverse balance, extremism and extremism make harmony difficult. Consistency is essential to bonding.",
+          "keywords": {
+            "0": "balance",
+            "1": "Patience",
+            "2": "compatibility",
+            "3": "middle path",
+            "4": "calm"
+          },
+          "context": "The middle way brings harmony, the extreme wears off the bonds."
+        },
+        "position4": {
+          "upright": "Balance, patience, and harmony support the long-term relationship, and the middle-way bonds make it permanent.",
+          "reversed": "Reverse balance, extremes damage long term.",
+          "keywords": {
+            "0": "balance",
+            "1": "Patience",
+            "2": "compatibility",
+            "3": "middle path",
+            "4": "long term"
+          },
+          "context": "Balance feeds the long term, strains the bond of extremism."
+        },
+        "position5": {
+          "upright": "Balance shows that the bond of a soul mate can grow by harmony, patience, and measurement.",
+          "reversed": "Reverse balance, extremities, or impatientness can force the relationship of a soul mate.",
+          "keywords": {
+            "0": "balance",
+            "1": "compatibility",
+            "2": "Patience",
+            "3": "measurance",
+            "4": "soul mate"
+          },
+          "context": "Balance supports soul mates, extreme bonds test them."
+        },
+        "position6": {
+          "upright": "Balance tells you that it takes harmony and patience to make your wish come true, and moderate steps lead you to your goal.",
+          "reversed": "Reverse Balance indicates that extremes can make your wish difficult.",
+          "keywords": {
+            "0": "balance",
+            "1": "Patience",
+            "2": "compatibility",
+            "3": "middle path",
+            "4": "Peace"
+          },
+          "context": "The middle way will make your wish come true."
+        }
+      },
+      "thedevil": {
+        "position1": {
+          "upright": "Satan may point to a relationship that begins with intense passion, and soon a strong attraction can occur.",
+          "reversed": "The Reverse Devil points out addiction and unhealthy bonds, and even if there is a relationship soon, focus on being healthy.",
+          "keywords": {
+            "0": "passion",
+            "1": "gravity",
+            "2": "shadow",
+            "3": "addiction"
+          },
+          "context": "New relationships are possible, but balance is important."
+        },
+        "position2": {
+          "upright": "Satan represents the sign of Capricorn, who is hardworking, ambitious, and strong-willed.",
+          "reversed": "Inverted Satan may display extreme control, cold, or dependent attitudes in Capricorn's shadow.",
+          "keywords": {
+            "0": "Capricorn",
+            "1": "ambition",
+            "2": "control",
+            "3": "endurance"
+          },
+          "context": "Capricorn energy is strong."
+        },
+        "position3": {
+          "upright": "Satan says that strong passion and devotion can bring harmony, but boundaries need to be clear.",
+          "reversed": "Reverse Satan, addiction and jealousy break harmony, and without freedom the bond can't be healthy.",
+          "keywords": {
+            "0": "passion",
+            "1": "commitment",
+            "2": "limit",
+            "3": "compatibility",
+            "4": "freedom"
+          },
+          "context": "Passion feeds harmony, addiction shadows harmony."
+        },
+        "position4": {
+          "upright": "Satan, addiction, or passion, can push the long term, keeping healthy boundaries.",
+          "reversed": "Reverse Satan supports the long-term relationship of liberation.",
+          "keywords": {
+            "0": "addiction",
+            "1": "passion",
+            "2": "limit",
+            "3": "freedom",
+            "4": "long term"
+          },
+          "context": "Boundaries protect the long term, addiction exhausts the bond."
+        },
+        "position5": {
+          "upright": "Satan, intense passion and attraction may feel like a bond of soul mates, but sometimes addiction can have a shadow.",
+          "reversed": "Reverse Satan, the desire to be liberated can make the bond of a soul mate healthier.",
+          "keywords": {
+            "0": "passion",
+            "1": "gravity",
+            "2": "addiction",
+            "3": "freedom",
+            "4": "soul mate"
+          },
+          "context": "Passion can make you feel like a soul mate, addiction can cast a shadow."
+        },
+        "position6": {
+          "upright": "Satan says that in order for your wish to be granted, you must be liberated from addiction and restrictive beliefs.",
+          "reversed": "The Reverse Devil shows that your wish can be opened by freeing and freeing from the chains.",
+          "keywords": {
+            "0": "Freedom",
+            "1": "addiction",
+            "2": "shadow",
+            "3": "limit",
+            "4": "will"
+          },
+          "context": "Freedom opens the way for your wish."
+        }
+      },
+      "thetower": {
+        "position1": {
+          "upright": "The Tower, with an unexpected introduction, a new person can enter your life.",
+          "reversed": "Reverse Tower, delayed, but with a sudden change, a new relationship may arise.",
+          "keywords": {
+            "0": "Shock",
+            "1": "change",
+            "2": "surprise",
+            "3": "start"
+          },
+          "context": "Soon an unexpected relationship can begin."
+        },
+        "position2": {
+          "upright": "The tower has a sudden and unexpected Uranus effect, which is associated with Aquarius: liberal, unusual and revolutionary.",
+          "reversed": "The Reverse Tower may be rebellious, disconnected or unstable in the shadow of the Bucket.",
+          "keywords": {
+            "0": "Bucket",
+            "1": "freedom",
+            "2": "innovation",
+            "3": "surprise"
+          },
+          "context": "Aquarius energy is dominant."
+        },
+        "position3": {
+          "upright": "The tower says unexpected changes will test harmony, and if the crises are handled correctly, they can strengthen your bond.",
+          "reversed": "The Reverse Tower, rejecting destruction and concealing the truth, weakens the harmony. It is necessary to accept crises.",
+          "keywords": {
+            "0": "crisis",
+            "1": "change",
+            "2": "Truth",
+            "3": "compatibility",
+            "4": "Regeneration"
+          },
+          "context": "Crisises test harmony, truth restores bridge."
+        },
+        "position4": {
+          "upright": "The tower supports the long term of regeneration after the crisis, and facing the facts strengthens the bond.",
+          "reversed": "Reverse Tower, avoidable crises damage the long term.",
+          "keywords": {
+            "0": "crisis",
+            "1": "Regeneration",
+            "2": "real",
+            "3": "transformation",
+            "4": "long term"
+          },
+          "context": "Face-to-face strengthens the long term, avoids the bond."
+        },
+        "position5": {
+          "upright": "The tower may come in contact with the soul mate with sudden awareness or crisis, and destruction can lay the foundation of a new bond.",
+          "reversed": "The Reverse Tower, escape from change, prevents the connection to the soul mate from being detected.",
+          "keywords": {
+            "0": "awareness",
+            "1": "crisis",
+            "2": "destruction",
+            "3": "rebuild",
+            "4": "soul mate"
+          },
+          "context": "Sudden awareness opens up the soul mate, testing the escape bond."
+        },
+        "position6": {
+          "upright": "The tower shows that there may be sudden and profound changes in your life to make your wish come true. It is possible to rebuild after destruction.",
+          "reversed": "The Reverse Tower says that escaping the necessary changes can delay your wish.",
+          "keywords": {
+            "0": "destruction",
+            "1": "change",
+            "2": "awareness",
+            "3": "rebuild",
+            "4": "real"
+          },
+          "context": "Sudden changes make room for your wish."
+        }
+      },
+      "thestar": {
+        "position1": {
+          "upright": "The star brings hope and regeneration, and soon a peaceful and inspiring relationship can begin.",
+          "reversed": "The Reverse Star says that despair will delay the new relationship.",
+          "keywords": {
+            "0": "hope",
+            "1": "Inspired",
+            "2": "It's a cure.",
+            "3": "start"
+          },
+          "context": "The possibility of a new relationship is high, hope must be kept alive."
+        },
+        "position2": {
+          "upright": "The star represents Aquarius, who is visionary, humane and innovative.",
+          "reversed": "The Reverse Star can be desperate, disconnected or too idealistic in the shadow of the Bucket.",
+          "keywords": {
+            "0": "Bucket",
+            "1": "Vision",
+            "2": "freedom",
+            "3": "Humanity"
+          },
+          "context": "Bucket energy comes forward."
+        },
+        "position3": {
+          "upright": "The star says that hope and inspired harmony will be easy, and your open heart will strengthen your bond.",
+          "reversed": "Reverse Star, despair, or disappointment, makes it harder to fit in.",
+          "keywords": {
+            "0": "hope",
+            "1": "Inspired",
+            "2": "It's a cure.",
+            "3": "compatibility",
+            "4": "openness"
+          },
+          "context": "Your hope strengthens harmony, and the bonds of despair cast shadows."
+        },
+        "position4": {
+          "upright": "The star, hope and healing support the long-term relationship.",
+          "reversed": "The Reverse Star, despair or indifference, makes the long term difficult.",
+          "keywords": {
+            "0": "hope",
+            "1": "It's a cure.",
+            "2": "Inspired",
+            "3": "Regeneration",
+            "4": "long term"
+          },
+          "context": "Hope feeds the long term, testing the bond of indifference."
+        },
+        "position5": {
+          "upright": "The star, hope, healing, and inspiration indicate the connection of the soul mate, which brings spiritual regeneration.",
+          "reversed": "Reverse Star, despair or loss of inspiration can cloud the bond of soul mate.",
+          "keywords": {
+            "0": "hope",
+            "1": "Inspired",
+            "2": "It's a cure.",
+            "3": "Regeneration",
+            "4": "soul mate"
+          },
+          "context": "Hope nourishes the spirit, the bond of despair tests it."
+        },
+        "position6": {
+          "upright": "The star inspires hope and inspiration that your wish will come true, and you can enter a healing process by keeping your faith.",
+          "reversed": "The Reverse Star says that despair and disbelief can make your wish difficult to fulfill.",
+          "keywords": {
+            "0": "hope",
+            "1": "It's a cure.",
+            "2": "Inspired",
+            "3": "faith",
+            "4": "Regeneration"
+          },
+          "context": "Keeping hope calls for your wish."
+        }
+      },
+      "themoon": {
+        "position1": {
+          "upright": "The moon shows that an emotional and mysterious relationship is coming, and soon your feelings will guide you.",
+          "reversed": "Reverse Moon advises you to pay attention to deceptive situations.",
+          "keywords": {
+            "0": "emotion",
+            "1": "mystery",
+            "2": "intuition",
+            "3": "uncertainty"
+          },
+          "context": "There's a relationship nearby, but it needs clarity."
+        },
+        "position2": {
+          "upright": "The moon represents the Pisces, who is intuitive, emotional and creative.",
+          "reversed": "The Reverse Moon may show illusions, confusion, and emotional fluctuations in the shadow of the Fish.",
+          "keywords": {
+            "0": "Fish",
+            "1": "intuition",
+            "2": "emotion",
+            "3": "creativity"
+          },
+          "context": "The Pisces effect is strong."
+        },
+        "position3": {
+          "upright": "The moon says that harmony with intuition and empathy can deepen, and listening to your heart nourishes your bond.",
+          "reversed": "Reverse Moon, misunderstandings or delusions cloud harmony. Open communication is needed for clarity.",
+          "keywords": {
+            "0": "intuition",
+            "1": "empathy",
+            "2": "compatibility",
+            "3": "sensitivity",
+            "4": "emotion"
+          },
+          "context": "Intuition deepens harmony, delusions wear off the bonds."
+        },
+        "position4": {
+          "upright": "The moon, intuition and emotional depth support the long term, and clarity comes with time.",
+          "reversed": "Reverse Moon, deception or uncertainty damage the long term.",
+          "keywords": {
+            "0": "intuition",
+            "1": "depth",
+            "2": "uncertainty",
+            "3": "emotion",
+            "4": "long term"
+          },
+          "context": "Intuition feeds the long term, testing the bond of uncertainty."
+        },
+        "position5": {
+          "upright": "The moon says that the soul mate bond comes with intuitive and sometimes mysterious signs.",
+          "reversed": "Reverse Moon, delusions or fears make it difficult to understand the bond of a soul mate.",
+          "keywords": {
+            "0": "intuition",
+            "1": "mystery",
+            "2": "fear",
+            "3": "enlightenment",
+            "4": "soul mate"
+          },
+          "context": "Intuition defines soul mates, fears test the bond."
+        },
+        "position6": {
+          "upright": "The moon shows that there may be ambiguities on the way to grant your wish, and trust in your intuition will guide you.",
+          "reversed": "The Reverse Moon shows that delusions or fears can block your wish. The search for clarity is important.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "intuition",
+            "2": "fear",
+            "3": "enlightenment",
+            "4": "Introduction"
+          },
+          "context": "If intuition brings clarity, your wish may come true."
+        }
+      },
+      "thesun": {
+        "position1": {
+          "upright": "The sun says there will definitely be a new relationship, happiness and clarity waiting for you.",
+          "reversed": "The Reverse Sun warns that false expectations can cast a shadow, yet the potential for relationships is high.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "clarity",
+            "2": "start",
+            "3": "joy"
+          },
+          "context": "The new relationship is almost certain."
+        },
+        "position2": {
+          "upright": "The sun represents the Leo, who is cheerful and charismatic and full of life.",
+          "reversed": "The Reverse Sun can show selfishness, arrogance, or false joy in the Lion's shadow.",
+          "keywords": {
+            "0": "Lion",
+            "1": "joy",
+            "2": "Charisma",
+            "3": "creativity"
+          },
+          "context": "Lion energy is strong."
+        },
+        "position3": {
+          "upright": "The sun says that joy and openness will make harmony easier, and the mutual joys will strengthen your bond.",
+          "reversed": "Reverse Sun, superficiality or over-optimism make it difficult to fit in.",
+          "keywords": {
+            "0": "joy",
+            "1": "openness",
+            "2": "share",
+            "3": "compatibility",
+            "4": "love"
+          },
+          "context": "Joy enhances harmony, superficiality narrows the bonds."
+        },
+        "position4": {
+          "upright": "The sun, happiness and clarity support the long-term relationship, making the bonds of joy permanent.",
+          "reversed": "Reverse Sun, fake happiness or superficiality make the long term difficult.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "clarity",
+            "2": "joy",
+            "3": "compatibility",
+            "4": "long term"
+          },
+          "context": "Joy feeds the long term, superficiality wears out the bond."
+        },
+        "position5": {
+          "upright": "The sun, joy, clarity, and authenticity illuminate the bond of the soul, which can bring warmth and happiness.",
+          "reversed": "Reverse Sun, false joy or lack of clarity can force the bond of a soul mate.",
+          "keywords": {
+            "0": "joy",
+            "1": "openness",
+            "2": "Authenticity",
+            "3": "Happiness",
+            "4": "soul mate"
+          },
+          "context": "Clarity supports the spirit mate, the lack of authenticity tests the bond."
+        },
+        "position6": {
+          "upright": "The sun gives good news that your wish will come true. With the energy of joy, success, and clarity, your wish will come to life.",
+          "reversed": "The Reverse Sun shows that temporary pessimism can cloud the light of your wish, and true joy will be revealed again.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "success",
+            "2": "clarity",
+            "3": "joy",
+            "4": "hope"
+          },
+          "context": "Positive energy supports the fulfillment of your wish."
+        }
+      },
+      "judgement": {
+        "position1": {
+          "upright": "The court points to rebirth for a new relationship with the closure of the past.",
+          "reversed": "Inverted court, being stuck in the past can prevent a new relationship.",
+          "keywords": {
+            "0": "Regeneration",
+            "1": "awareness",
+            "2": "start",
+            "3": "closure"
+          },
+          "context": "There may be a relationship soon, you have to let go of the past."
+        },
+        "position2": {
+          "upright": "The court carries the Pluto effect, linked to the Scorpion, transformer, intuitive and powerful.",
+          "reversed": "The Inverse Court may show an obsession or extreme interrogation of the past in the shadow of the Scorpion.",
+          "keywords": {
+            "0": "Scorpion",
+            "1": "transformation",
+            "2": "Rebirth",
+            "3": "intuition"
+          },
+          "context": "Scorpion energy comes forward."
+        },
+        "position3": {
+          "upright": "The court shows that you can adapt by learning from past experiences, and forgiving each other strengthens your bond.",
+          "reversed": "The reverse court, being stuck in the past, can change the harmony, the old mistakes can repeat.",
+          "keywords": {
+            "0": "Don't face it.",
+            "1": "Forgiveness",
+            "2": "learning",
+            "3": "compatibility",
+            "4": "Regeneration"
+          },
+          "context": "Learning from the past brings harmony."
+        },
+        "position4": {
+          "upright": "The court supports a long-term relationship, facing the past and forgiveness, strengthening regeneration bonds.",
+          "reversed": "The reverse court, regret or self-judgment, destroys the long term.",
+          "keywords": {
+            "0": "Don't face it.",
+            "1": "Forgiveness",
+            "2": "Regeneration",
+            "3": "freedom",
+            "4": "long term"
+          },
+          "context": "Forgiveness supports the long term, testing the bonds of self-judgment."
+        },
+        "position5": {
+          "upright": "The court shows that the soul mate connection comes with healing and forgiveness of past experiences, and the rebirth opens the door to the soul mate bond.",
+          "reversed": "The Reverse Court makes it difficult for me to overjudge or forgive a soul mate.",
+          "keywords": {
+            "0": "judgment",
+            "1": "Regeneration",
+            "2": "Forgiveness",
+            "3": "decision",
+            "4": "soul mate"
+          },
+          "context": "Forgiveness nourishes soul mates, and the bond of judgment tests."
+        },
+        "position6": {
+          "upright": "The court says you have to face the past and decide to make your wish come true, and the right choice leads you to your goal.",
+          "reversed": "The Reverse Court points out that the weight of the past delays the fulfillment of your wish.",
+          "keywords": {
+            "0": "decision",
+            "1": "Regeneration",
+            "2": "Don't face it.",
+            "3": "Freedom",
+            "4": "selection"
+          },
+          "context": "A clear decision opens the door to your wish."
+        }
+      },
+      "theworld": {
+        "position1": {
+          "upright": "The world says that a new relationship will begin after the complete cycle, and soon someone will be able to adapt to your life.",
+          "reversed": "The Reverse World shows that incomplete closures can delay a new relationship.",
+          "keywords": {
+            "0": "completion",
+            "1": "start",
+            "2": "compatibility",
+            "3": "cycle"
+          },
+          "context": "The new relationship is at the door, the cycle is complete."
+        },
+        "position2": {
+          "upright": "The Earth represents the combination of fixed constellations (the bull, the lion, the scorpion, the bucket), which carries lasting, powerful, and stable energy.",
+          "reversed": "The Reverse World may show stubbornness, rigority, or incompatibility in the shadow of fixed constellations.",
+          "keywords": {
+            "0": "Bull",
+            "1": "Lion",
+            "2": "Scorpion",
+            "3": "Bucket",
+            "4": "stability"
+          },
+          "context": "Could be one of the fixed signs."
+        },
+        "position3": {
+          "upright": "The world says that harmony with integrity and completeness is born with a balance that completes each other.",
+          "reversed": "Inverted Earth, the sense of unfinishedness weakens the harmony, unfinished work can interfere with the bond.",
+          "keywords": {
+            "0": "completion",
+            "1": "integrity",
+            "2": "balance",
+            "3": "compatibility",
+            "4": "full"
+          },
+          "context": "Fullness strengthens harmony, loose ends wear off the bonds."
+        },
+        "position4": {
+          "upright": "The world supports the long-term relationship of completion and integrity, making the bonds of common goals permanent.",
+          "reversed": "The Reverse World, incomplete or incomplete closure, makes the long term difficult.",
+          "keywords": {
+            "0": "completion",
+            "1": "integrity",
+            "2": "target",
+            "3": "stability",
+            "4": "long term"
+          },
+          "context": "The integrity strengthens the long term, and the lack tests the bond."
+        },
+        "position5": {
+          "upright": "The world is one of the most powerful indicators of the completeness and integrity soul mate connection, which closes the loops to make integration.",
+          "reversed": "The Reverse World, incomplete or incomplete, can make it difficult to feel the complete bond of a soul mate.",
+          "keywords": {
+            "0": "completion",
+            "1": "integrity",
+            "2": "union",
+            "3": "balance",
+            "4": "soul mate"
+          },
+          "context": "The integrity points to the union of the soul, and the lack of it tests the bond."
+        },
+        "position6": {
+          "upright": "The world shows that your wish will come true and that you will reach the cycle of completion.",
+          "reversed": "The Reverse World points out that your wish may be delayed due to the missing parts.",
+          "keywords": {
+            "0": "completion",
+            "1": "celebration",
+            "2": "success",
+            "3": "integrity",
+            "4": "victory"
+          },
+          "context": "It confirms your wish for completion."
+        }
+      },
+      "aceofcups": {
+        "position1": {
+          "upright": "The Ace of Cups announces that the heart is opening up to a new love, and you may soon experience an emotional beginning and intense romance.",
+          "reversed": "The Ace of the Inverted Cups says that you can escape opportunities because you shut down your emotions, and even if the new relationship comes, you can resist opening up.",
+          "keywords": {
+            "0": "love",
+            "1": "start",
+            "2": "emotion",
+            "3": "romance"
+          },
+          "context": "The possibility of new love is too strong, your heart must be ready."
+        },
+        "position2": {
+          "upright": "The Ace of Hearts indicates that this person has a strong element of water, a fresh emotional opening from crab, scorpion, or fish energy.",
+          "reversed": "Inverse Ace of Cups may be emotional confusion or introvertion in the shadow of water horoscopes, which may be a profile that is difficult to share.",
+          "keywords": {
+            "0": "It's a water sign.",
+            "1": "emotion",
+            "2": "angle",
+            "3": "empathy"
+          },
+          "context": "Water groups, such as crabs, scorpions, or fish, come forward."
+        },
+        "position3": {
+          "upright": "The Ace of Hearts says that emotional beginnings have great potential for harmony, open hearts and first emotions create a pure harmony in the relationship.",
+          "reversed": "The Inverse Ace of Cups, the inability to express emotion, or the closure of the heart, shadows the harmony, the repressed emotions, the balance.",
+          "keywords": {
+            "0": "start",
+            "1": "emotion",
+            "2": "compatibility",
+            "3": "openness",
+            "4": "potential"
+          },
+          "context": "New emotions bring harmony, closed hearts push."
+        },
+        "position4": {
+          "upright": "The Ace Cup shows the beginning of pure love and the potential to build a deep emotional bond that can sustain the heart in the long run.",
+          "reversed": "The Reverse Ace Cup, lack of emotional openness, can stand in the way of the long-term bond, and closure or resentment can make continuity difficult.",
+          "keywords": {
+            "0": "start",
+            "1": "love",
+            "2": "emotional connection",
+            "3": "potential",
+            "4": "long term"
+          },
+          "context": "Pure love supports the long term, weakens the bond of closure."
+        },
+        "position5": {
+          "upright": "The Ace of Hearts shows the opening of a pure heart and the birth of a spiritual bond that may be the most innocent and spiritual source of love between you and this person.",
+          "reversed": "The Reverse Heart Ace, the suppression of emotions, or the complete opening of the heart, can interfere with the bond of a soul mate, and the potential of a soul mate must be translucent.",
+          "keywords": {
+            "0": "love",
+            "1": "start",
+            "2": "spirit bond",
+            "3": "Compassion",
+            "4": "innovation"
+          },
+          "context": "A new heart opening increases the potential for soul mates."
+        },
+        "position6": {
+          "upright": "With the power of the aces, there's a very good chance that your wish will bring a new beginning emotionally, a fresh happiness that your heart will find in return.",
+          "reversed": "The Reverse Ace can prevent your wish from coming true, or your emotional blockage, or shutting yourself down, so as long as you don't open your heart, the opportunities can be invisible.",
+          "keywords": {
+            "0": "start",
+            "1": "emotion",
+            "2": "angle",
+            "3": "Luck",
+            "4": "hope"
+          },
+          "context": "If you open your heart, there's a chance your wish will sprout."
+        }
+      },
+      "twoofcups": {
+        "position1": {
+          "upright": "The Duo of Cups says that soon an equal and compatible relationship will be born, mutual attraction and mutual intent are very clear.",
+          "reversed": "The Two of the Reverse Cups indicates a possibility of misunderstandings or an unstable bond.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "gravity",
+            "2": "reciprocity",
+            "3": "partnership"
+          },
+          "context": "Soon, a relationship with mutual attraction can begin."
+        },
+        "position2": {
+          "upright": "The Two of Hearts point to a compatible and balanced sign. The combinations of water elements such as crabs or scorpions are complementary.",
+          "reversed": "The Reverse Cup Duo may show imbalance or disconnection, and although the signor is relationship-oriented, it may be difficult to bond in the shade.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "It's a water sign.",
+            "2": "balance",
+            "3": "relationship"
+          },
+          "context": "Crabs are associated with fish or scorpion energy."
+        },
+        "position3": {
+          "upright": "The Two of Hearts is the basis of mutual love and equality, and mirroring your souls brings a strong balance.",
+          "reversed": "The Reverse Cup Duo, the misunderstanding or the unstable bond, weakens harmony, and the lack of reciprocity breeds distance.",
+          "keywords": {
+            "0": "love",
+            "1": "Equality",
+            "2": "reciprocity",
+            "3": "compatibility",
+            "4": "balance"
+          },
+          "context": "Equality nourishes harmony, instability breaks ties."
+        },
+        "position4": {
+          "upright": "Two Cups, mutual harmony and partnership are the basis of a long-term relationship, and the bond of equality between hearts is permanent.",
+          "reversed": "The Reverse Two Cups, incompatibility or unstable trade, weakens the long term.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "partnership",
+            "2": "Equality",
+            "3": "love",
+            "4": "long term"
+          },
+          "context": "Equality feeds the long term, imbalance destroys the bond."
+        },
+        "position5": {
+          "upright": "The Duo of Hearts is one of the most powerful indicators of the soul mate bond, the mutual love and equal exchange point to the spiritual depth of this bond.",
+          "reversed": "The Reverse Cup Duo, inequalities or misunderstandings, can make the bond of the soul difficult, but through communication, the bond can be restored.",
+          "keywords": {
+            "0": "soul mate",
+            "1": "reciprocity",
+            "2": "Equality",
+            "3": "connection",
+            "4": "love"
+          },
+          "context": "The mutual love strengthens the spirit mate, the imbalance casts a shadow."
+        },
+        "position6": {
+          "upright": "This card shows that your wish will come true and that your wish will come to life when mutual intentions meet.",
+          "reversed": "The reverse duo explains that your wish may be delayed due to incompatibility or misunderstandings, which requires clarity and open communication.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "reciprocity",
+            "2": "connection",
+            "3": "Agreement",
+            "4": "balance"
+          },
+          "context": "The mutual intent makes your wish visible."
+        }
+      },
+      "threeofcups": {
+        "position1": {
+          "upright": "The Trinity of Cups points to a new relationship through social environment or friendship, and the energy of celebration and happiness calls for you.",
+          "reversed": "The Trio of Reverse Cups highlights a mixed risk of starting with the influence of the wrong environment or third party.",
+          "keywords": {
+            "0": "social",
+            "1": "celebration",
+            "2": "environment",
+            "3": "unity"
+          },
+          "context": "A new relationship can be born through a social environment."
+        },
+        "position2": {
+          "upright": "The Three of Hearts points to the powerful social side of fish or crab effect, a person who is in harmony with his surroundings, who loves to celebrate.",
+          "reversed": "The Reverse Cup Triad can show social fatigue or oversized surfaceness, even if it's a water sign, it could be a mess in the shadow of a fish.",
+          "keywords": {
+            "0": "social",
+            "1": "celebration",
+            "2": "It's a water sign.",
+            "3": "friendship"
+          },
+          "context": "The fish or the crab accent comes forward."
+        },
+        "position3": {
+          "upright": "The Three of Hearts shows that joy and sharing will strengthen harmony, and the celebration together deepens your relationship.",
+          "reversed": "The Inverse Three of Hearts, the existence of extreme social factors or third parties may disrupt harmony, and it may be necessary to keep your bond special.",
+          "keywords": {
+            "0": "joy",
+            "1": "share",
+            "2": "Community",
+            "3": "compatibility",
+            "4": "celebration"
+          },
+          "context": "Sharing enhances the harmony, the excesses force the bond."
+        },
+        "position4": {
+          "upright": "Three Cups, the energy of friendship and celebration strengthens the bond in the long run, and the shared joy extends the life of the relationship.",
+          "reversed": "Inverse Three Cups, extreme superficiality, or the effects of third parties make the long term difficult.",
+          "keywords": {
+            "0": "celebration",
+            "1": "friendship",
+            "2": "share",
+            "3": "joy"
+          }
+        }
+      }
+    }
+  }
+}

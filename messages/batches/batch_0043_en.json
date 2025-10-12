@@ -1,0 +1,792 @@
+{
+  "new-lover": {
+    "meanings": {
+      "kingofcups": {
+        "position4": {
+          "upright": "The King of Hearts, emotional balance and mature leadership support the long-term relationship, and the bond of silence makes it permanent.",
+          "reversed": "The reverse King of the Cup, repressed emotions or passive-aggressive attitudes make the long term difficult.",
+          "keywords": {
+            "0": "balance",
+            "1": "leadership",
+            "2": "maturity",
+            "3": "emotion",
+            "4": "long term"
+          },
+          "context": "Maturity feeds the long term, repressed emotions test the bond."
+        },
+        "position5": {
+          "upright": "King of Hearts, emotional maturity and calm leadership point to the bond of soul mates, and even in stormy times, that person gives confidence.",
+          "reversed": "The reverse King of the Cup, the suppression of emotions, or passive-aggressive behavior, can cloud the bond of the soul mate.",
+          "keywords": {
+            "0": "maturity",
+            "1": "Trust",
+            "2": "leadership",
+            "3": "balance",
+            "4": "soul mate"
+          },
+          "context": "Maturity points to soul mates, it tests a repressed bond of emotion."
+        },
+        "position6": {
+          "upright": "The King of Hearts says that your wish can be fulfilled in a mature way, the key to your desire for emotional balance.",
+          "reversed": "The reverse king may block your wish for repressed emotions or passiveness.",
+          "keywords": {
+            "0": "balance",
+            "1": "maturity",
+            "2": "Trust",
+            "3": "Peace",
+            "4": "leadership"
+          },
+          "context": "Emotional maturity makes your wish possible."
+        }
+      },
+      "aceofswords": {
+        "position1": {
+          "upright": "The Sword Ace is a clear sign of clarity and an honest beginning that will soon open the door of a new relationship with a sharp clarity.",
+          "reversed": "The Reverse Sword Ace tells us that vague messages and half-truths can cloud opportunity, that there's potential for a new relationship, but if there's no clarity, the beginning could be delayed.",
+          "keywords": {
+            "0": "clarity",
+            "1": "real",
+            "2": "directness",
+            "3": "start"
+          },
+          "context": "The open word and clear intent call for a new relationship; the vague tongue delays."
+        },
+        "position2": {
+          "upright": "The Sword Ace strongly emphasizes the effect of the air sign, the twins, the Libra, or the Aquarius, defined by intelligence, clarity and sharp thinking.",
+          "reversed": "The Reverse Sword Ace tells us that this person may show blurs or ambiguity in communication, and the mental confusion, which is the shadow of the air horoscopes, can become apparent.",
+          "keywords": {
+            "0": "He's an air sign.",
+            "1": "intelligence",
+            "2": "clarity",
+            "3": "decision"
+          },
+          "context": "Twins indicate Libra or Bucket energy."
+        },
+        "position3": {
+          "upright": "The Sword Ace says that open communication and honesty will be the basis of harmony, and the clarity of facts will bring balance to the relationship.",
+          "reversed": "Reverse Sword Aces, misunderstandings or blurs damage harmony, and communication requires clarity instead of sharpness.",
+          "keywords": {
+            "0": "clarity",
+            "1": "Truth",
+            "2": "compatibility",
+            "3": "communication",
+            "4": "Truth"
+          },
+          "context": "The open word nourishes harmony, the blur strains the bonds."
+        },
+        "position4": {
+          "upright": "Sword Ace, clarity and honesty are the cornerstone of a long-term relationship, and open communication strengthens the future.",
+          "reversed": "Reverse Sword Ace, misunderstandings or miscommunications may damage the long-term bond.",
+          "keywords": {
+            "0": "clarity",
+            "1": "Honesty",
+            "2": "communication",
+            "3": "Truth",
+            "4": "long term"
+          },
+          "context": "The clarity strengthens the long term, and the disconnection tests the bond."
+        },
+        "position5": {
+          "upright": "The Sword Ace says that a bond with a soul mate can be established on clarity and truth, and in this bond honesty and open communication is the greatest force.",
+          "reversed": "The Reverse Sword Ace, the escape from misunderstandings or honesty, can cloud the bond of the soul mate, and the truth must not be hidden.",
+          "keywords": {
+            "0": "Truth",
+            "1": "clarity",
+            "2": "Honesty",
+            "3": "connection",
+            "4": "soul mate"
+          },
+          "context": "The truth strengthens the spirit association, and misunderstandings test the bond."
+        },
+        "position6": {
+          "upright": "The ace makes it possible for your wish to come true with clear awareness and the right decision, and when you speak the truth bravely, your wish will be opened.",
+          "reversed": "Reverse Ace, confusion or blur in communication can prevent your wish from coming true, first you need clarity of mind.",
+          "keywords": {
+            "0": "clarity",
+            "1": "real",
+            "2": "decision",
+            "3": "start",
+            "4": "mind"
+          },
+          "context": "Sharp awareness makes your wish visible."
+        }
+      },
+      "twoofswords": {
+        "position1": {
+          "upright": "Two Swords say that even though the heart is open to a new one, the decisions are locked. The possibility of a relationship may come soon; you must weigh your inner voice and facts together in order to resolve the blindfold.",
+          "reversed": "The Reverse Two Swords show that the avoided confrontation will end and be forced to make an election, and when the decision is made, the new path of relationship becomes clear.",
+          "keywords": {
+            "0": "The dilemma",
+            "1": "decision",
+            "2": "Don't face it.",
+            "3": "balance"
+          },
+          "context": "Once the uncertainty is resolved, the new door will open; avoiding delays."
+        },
+        "position2": {
+          "upright": "The Sword Two represents the unstable but fair side of the Libra, who is known for his quest for balance.",
+          "reversed": "The Reverse Sword Two steps forward in avoiding or making decisions in the shadow of the Libra.",
+          "keywords": {
+            "0": "Libra",
+            "1": "balance",
+            "2": "decision",
+            "3": "The dilemma"
+          },
+          "context": "The Libra effect could be dominant."
+        },
+        "position3": {
+          "upright": "The Sword Duo demonstrates the importance of balanced decisions for harmony, and neutrality maintains balance.",
+          "reversed": "The Reverse Sword Duo, avoidance and indecisiveness, prevents harmony, and instead of ignoring it, clear choices are required.",
+          "keywords": {
+            "0": "decision",
+            "1": "balance",
+            "2": "The dilemma",
+            "3": "compatibility",
+            "4": "selection"
+          },
+          "context": "A clear decision leads to harmony, and avoidance breaks the bond."
+        },
+        "position4": {
+          "upright": "Two swords, delaying decisions can keep the long-term bond suspended. Open elections provide continuity.",
+          "reversed": "Two Reverse Swords, the decision faced determines the fate of a long-term relationship.",
+          "keywords": {
+            "0": "decision",
+            "1": "The dilemma",
+            "2": "Don't face it.",
+            "3": "balance",
+            "4": "long term"
+          },
+          "context": "Decisive clarity feeds the long term, strains the dilemma."
+        },
+        "position5": {
+          "upright": "The Sword Duo shows the need to make a decision between the heart and the mind to accept the soul mate.",
+          "reversed": "The Reverse-Sword Duo, when the indecisive ends, reveals clarity about the bond of soul mate.",
+          "keywords": {
+            "0": "decision",
+            "1": "balance",
+            "2": "The dilemma",
+            "3": "selection",
+            "4": "soul mate"
+          },
+          "context": "Making a decision clears your soul mate."
+        },
+        "position6": {
+          "upright": "The two of you must open your eyes and choose.",
+          "reversed": "Reverse duo, avoidance can suspend your wish, delay your wish.",
+          "keywords": {
+            "0": "The dilemma",
+            "1": "decision",
+            "2": "balance",
+            "3": "avoidance",
+            "4": "clarity"
+          },
+          "context": "Choosing moves your wish forward."
+        }
+      },
+      "threeofswords": {
+        "position1": {
+          "upright": "The Three Swords whisper that fresh wounds have distanced themselves from a new relationship, and as grief and resentment are restored, a clean start arises before you.",
+          "reversed": "The Reverse Three Swords say that the healing has begun and that the heart is ready to love again, and soon, an encounter with emotional clarity may arise.",
+          "keywords": {
+            "0": "Frustration",
+            "1": "Recovery",
+            "2": "repair",
+            "3": "openness"
+          },
+          "context": "Recuperating pain sets the stage for a new relationship; the healing process is accelerating."
+        },
+        "position2": {
+          "upright": "The Sword Trinity points to the shadow of the Gemini, who may have harsh words or hurtful honesty in communication.",
+          "reversed": "The Reverse-Sword Trinity may be involved in the confusion or misunderstandings in Gemini's shadow.",
+          "keywords": {
+            "0": "Twins",
+            "1": "communication",
+            "2": "separation",
+            "3": "rigor"
+          },
+          "context": "Twin energy is highlighted."
+        },
+        "position3": {
+          "upright": "The Sword Trinity says that heartbreaks or harsh truths can force harmony, and open confrontation brings balance.",
+          "reversed": "The Reverse Sword Triad shows that harmony with the healing process can be restored.",
+          "keywords": {
+            "0": "Broken heart",
+            "1": "real",
+            "2": "Don't face it.",
+            "3": "compatibility",
+            "4": "It's a cure."
+          },
+          "context": "Confrontation restores harmony, suppression strains."
+        },
+        "position4": {
+          "upright": "Three swords, heartbreaks can be the test of long-term ties, open healing processes support continuity.",
+          "reversed": "If the Reverse Three Swords are in recovery, the long-term bond can be restored.",
+          "keywords": {
+            "0": "Heartbreak",
+            "1": "Pain",
+            "2": "Recovery",
+            "3": "reality",
+            "4": "long term"
+          },
+          "context": "Healing strengthens the long term, testing the bitter bond."
+        },
+        "position5": {
+          "upright": "The Sword Trinity says that after heartbreak, the soul mate connection can be healing.",
+          "reversed": "After the pain, the Reverse Sword Triad opens the way for a healing soul mate.",
+          "keywords": {
+            "0": "Heartbreak",
+            "1": "Recovery",
+            "2": "love",
+            "3": "experience",
+            "4": "soul mate"
+          },
+          "context": "Heartbreak leads to healing and soul mates."
+        },
+        "position6": {
+          "upright": "The trio says that you may experience disappointment or heartbreak in the way that your wish will come true, but with that awareness, it will heal.",
+          "reversed": "The reverse triplets increase the possibility that your wish will come true, the transformation of pain.",
+          "keywords": {
+            "0": "Frustration",
+            "1": "real",
+            "2": "Recovery",
+            "3": "mourning",
+            "4": "awareness"
+          },
+          "context": "Healing can open the door to your wish."
+        }
+      },
+      "fourofswords": {
+        "position1": {
+          "upright": "The Four Swords tells of a brief period of rest and mind recovery, and when you are breathless, the universe can bring you together with a calm and simple beginning.",
+          "reversed": "The Reverse Four Sword says that running without enough rest is exhausting, and when you lower the rhythm, the possibility of a new relationship is self-inflicted.",
+          "keywords": {
+            "0": "rest",
+            "1": "Recovery",
+            "2": "Tranquillity",
+            "3": "Regeneration"
+          },
+          "context": "Break and mental hygiene support the healthy birth of a new relationship."
+        },
+        "position2": {
+          "upright": "The Sword quartet shows the inner rest of Kovaca's inner rest. This person can value mental breaks.",
+          "reversed": "The Reverse Sword Four may show extreme distance or disconnection in the Bucket's shadow.",
+          "keywords": {
+            "0": "Bucket",
+            "1": "rest",
+            "2": "Distance",
+            "3": "mind"
+          },
+          "context": "The Aquarius effect comes out."
+        },
+        "position3": {
+          "upright": "The Sword Four say it's necessary to relax and calm for harmony, and mental clarity helps balance the relationship.",
+          "reversed": "Reverse Sword Four, extreme tension can disrupt harmony, and progress without taking a break will force the bonds.",
+          "keywords": {
+            "0": "rest",
+            "1": "balance",
+            "2": "Tranquillity",
+            "3": "compatibility",
+            "4": "Mental comfort"
+          },
+          "context": "Tranquillity brings harmony, tension consumes bonds."
+        },
+        "position4": {
+          "upright": "The four swords, the rest and the calming process, maintain the long-term bond, and the calm strengthens the relationship.",
+          "reversed": "The Reverse Four Swords, fatigue and lack of breaks, make the long term difficult.",
+          "keywords": {
+            "0": "rest",
+            "1": "Tranquillity",
+            "2": "Recovery",
+            "3": "balance",
+            "4": "long term"
+          },
+          "context": "Rest feeds the long term, and the bond of extinction tests it."
+        },
+        "position5": {
+          "upright": "The Sword Four, the rest and the inhalation process can prepare the soul mate connection.",
+          "reversed": "The Reverse Sword Four, too much retreat can make the soul mate's bond difficult.",
+          "keywords": {
+            "0": "rest",
+            "1": "Introduction",
+            "2": "preparation",
+            "3": "balance",
+            "4": "soul mate"
+          },
+          "context": "Introduction prepares for soul mates."
+        },
+        "position6": {
+          "upright": "The quartet shows that you need rest and strategic waiting to make your wish come true, and a patient pause can bring results.",
+          "reversed": "The inverse four may delay your desire to avoid extreme fatigue or break, and renewal is essential.",
+          "keywords": {
+            "0": "rest",
+            "1": "Patience",
+            "2": "strategy",
+            "3": "don't wait.",
+            "4": "It's a cure."
+          },
+          "context": "A short break may be needed for your wish."
+        }
+      },
+      "fiveofswords": {
+        "position1": {
+          "upright": "The Five Swords remind the heart of their righteous war, that when left, a peaceful introduction is opened.",
+          "reversed": "The Reverse Five Swords bring back steps and repair from tensions, and when you replace your ego with curiosity, the possibility of a new relationship becomes stronger.",
+          "keywords": {
+            "0": "conflict",
+            "1": "ego",
+            "2": "repair",
+            "3": "Peace"
+          },
+          "context": "Giving up strong language opens up new space; softness creates attraction."
+        },
+        "position2": {
+          "upright": "The Sword Five points to the challenging side of the Bucket. This person can be competitive.",
+          "reversed": "The Reverse Sword Five may show stubbornness or unnecessary debate in the shadow of the Bucket.",
+          "keywords": {
+            "0": "Bucket",
+            "1": "competition",
+            "2": "stubborn",
+            "3": "mind"
+          },
+          "context": "Aquarius comes out in the shadows."
+        },
+        "position3": {
+          "upright": "The Sword Five shows that ego conflicts can force harmony, and instead of wanting to be right, it's important to build a bridge.",
+          "reversed": "The Reverse Sword Five, through forgiveness and reconciliation, can be restored, leaving tension brings peace.",
+          "keywords": {
+            "0": "conflict",
+            "1": "ego",
+            "2": "Rightness",
+            "3": "compatibility",
+            "4": "Compromise"
+          },
+          "context": "The bridge feeds the harmony, the ego severs the bonds."
+        },
+        "position4": {
+          "upright": "Five swords can damage a long-term bond when conflict grows for profit. It's important to protect the bridges.",
+          "reversed": "The Reverse Five Swords restore the long-term relationship with the intent to repair it.",
+          "keywords": {
+            "0": "conflict",
+            "1": "ego",
+            "2": "repair",
+            "3": "competition",
+            "4": "long term"
+          },
+          "context": "Repair feeds the long term, ego tests the bond."
+        },
+        "position5": {
+          "upright": "The Sword Five shows that ego wars can cloud the bond of soul mates, and the true bond is born of understanding, not of victory.",
+          "reversed": "The Reverse Sword Five may reveal the potential for soul mates with the end of conflict.",
+          "keywords": {
+            "0": "conflict",
+            "1": "ego",
+            "2": "Peace",
+            "3": "learning",
+            "4": "soul mate"
+          },
+          "context": "Ego casts a shadow, peace opens up the spirit."
+        },
+        "position6": {
+          "upright": "The five show that in order for your wish to be granted, you need to avoid conflict, and instead of being justified, it leads to harmony.",
+          "reversed": "Reverse fives, with the tensions resolved, your wish can come true, and repair will open the way for your wish.",
+          "keywords": {
+            "0": "conflict",
+            "1": "ego",
+            "2": "Rightness",
+            "3": "repair",
+            "4": "balance"
+          },
+          "context": "Harmony increases the energy of your wish."
+        }
+      },
+      "sixofswords": {
+        "position1": {
+          "upright": "The Six Swords represent the transition from the past waters to the calmer shores, which may soon coincide with a peaceful beginning.",
+          "reversed": "The Reverse Six Sword says that the tendency to return to the old beach delays progress, and when the transition is complete, the new relationship becomes visible.",
+          "keywords": {
+            "0": "transition",
+            "1": "Tranquillity",
+            "2": "Progress",
+            "3": "It's a cure."
+          },
+          "context": "Safe departure from the past makes a new relationship possible."
+        },
+        "position2": {
+          "upright": "The Sword Six accentuates the analytic aspect of the air constellations, bringing about distance and mental clarity from the effects of twins or buckets.",
+          "reversed": "The Reverse Sword Six can show whether or not I can't get away in the shadow of the air signs.",
+          "keywords": {
+            "0": "Twins",
+            "1": "Bucket",
+            "2": "Distance",
+            "3": "analysis"
+          },
+          "context": "Twins or Bucket energy is dominant."
+        },
+        "position3": {
+          "upright": "The Sword Six say you have to get away from difficulties for harmony, to go into calm waters together brings comfort to the relationship.",
+          "reversed": "Reverse Sword Six, being stuck in the past prevents harmony, the journey takes courage.",
+          "keywords": {
+            "0": "transition",
+            "1": "compatibility",
+            "2": "Peace",
+            "3": "Progress",
+            "4": "balance"
+          },
+          "context": "The transition is adaptable, the bonding strains."
+        },
+        "position4": {
+          "upright": "After difficult times, the Six Swords move to calm waters to strengthen the long-term bond.",
+          "reversed": "The Reverse Six Sword can make the long term difficult not to be able to break away from the past.",
+          "keywords": {
+            "0": "transition",
+            "1": "Recovery",
+            "2": "course",
+            "3": "Progress",
+            "4": "long term"
+          },
+          "context": "The transition feeds the long term, and if the bond is stuck in the past, it becomes difficult."
+        },
+        "position5": {
+          "upright": "The Sword Six shows that the spirit mate bond can be found on a quiet journey after difficult times.",
+          "reversed": "Reverse Sword Six, holding on to the past can block the bond of a soul mate.",
+          "keywords": {
+            "0": "journey",
+            "1": "transition",
+            "2": "It's a cure.",
+            "3": "Progress",
+            "4": "soul mate"
+          },
+          "context": "The calm transition feeds on soul mates."
+        },
+        "position6": {
+          "upright": "The Sixers show that the fulfillment of your wish is possible through a safe transition or distance process.",
+          "reversed": "The reverse six can delay your wish to hold on to the old bonds, and you have to accept the transition.",
+          "keywords": {
+            "0": "transition",
+            "1": "journey",
+            "2": "Tranquillity",
+            "3": "Recovery",
+            "4": "Don't go away"
+          },
+          "context": "The transition process will help make your wish come true."
+        }
+      },
+      "sevenofswords": {
+        "position1": {
+          "upright": "The Seven Swords warn that invisible agendas or shy strategy can force close beginnings.",
+          "reversed": "The Reverse Seven Sword opens the way for honest talk and a sincere confession, and the more transparent it becomes, the better the chance for a new relationship.",
+          "keywords": {
+            "0": "transparency",
+            "1": "strategy",
+            "2": "Trust",
+            "3": "intimacy"
+          },
+          "context": "Instead of half-truths, open intent speeds up the new beginning."
+        },
+        "position2": {
+          "upright": "The Sword Seven shows the strategic and sometimes secret side of the Gemini, a man of intelligence.",
+          "reversed": "The Reverse Sword Seven may be a test of honesty or half-truths in the Gemini shadow.",
+          "keywords": {
+            "0": "Twins",
+            "1": "strategy",
+            "2": "intelligence",
+            "3": "secrecy"
+          },
+          "context": "Twin energy is strong."
+        },
+        "position3": {
+          "upright": "The Sword Seven shows that strategy and measured behavior are important for harmony.",
+          "reversed": "Reverse Sword Seven, privacy or half-truths damage harmony. Transparency is necessary.",
+          "keywords": {
+            "0": "strategy",
+            "1": "Honesty",
+            "2": "compatibility",
+            "3": "Trust",
+            "4": "openness"
+          },
+          "context": "Transparency enhances harmony, privacy destroys bonds."
+        },
+        "position4": {
+          "upright": "Seven Swords, secrecy or strategic behavior may test the long-term bond, and transparency strengthens continuity.",
+          "reversed": "The Reverse Seven Sword, facing honesty, restores the foundation of a long-term relationship.",
+          "keywords": {
+            "0": "secrecy",
+            "1": "strategy",
+            "2": "Honesty",
+            "3": "Trust",
+            "4": "long term"
+          },
+          "context": "Transparency feeds the long term, the bond of secrecy tests."
+        },
+        "position5": {
+          "upright": "The Sword Seven, the secrecy or half-truths can make the bond of the soul difficult. Transparency is the basic condition.",
+          "reversed": "The Reverse Sword Seven, with the emergence of the truth, the foundation of the soul mate bond can be strengthened.",
+          "keywords": {
+            "0": "secrecy",
+            "1": "real",
+            "2": "Honesty",
+            "3": "connection",
+            "4": "soul mate"
+          },
+          "context": "Transparency is essential for soul mates."
+        },
+        "position6": {
+          "upright": "The seven say you need to be strategic in order to make your wish come true.",
+          "reversed": "Transparency is essential.",
+          "keywords": {
+            "0": "strategy",
+            "1": "secrecy",
+            "2": "Honesty",
+            "3": "Plan",
+            "4": "clarity"
+          },
+          "context": "Transparency supports your wish."
+        }
+      },
+      "eightofswords": {
+        "position1": {
+          "upright": "Eight Swords say that mental shackles write a story that is impossible. A small piece of evidence and a step will show that the door is actually open.",
+          "reversed": "The Reverse Eight Sword gives good news of the fear knots that are beginning to unravel and the increasing freedom area that you can soon start a relationship with.",
+          "keywords": {
+            "0": "Restricted faith",
+            "1": "fear",
+            "2": "Freedom",
+            "3": "Courage"
+          },
+          "context": "As the mental lock opens, the new relationship becomes visible."
+        },
+        "position2": {
+          "upright": "The Sword Eight points to indecisive and mental barriers in the shadow of the Libra. This person may take time to regain his confidence.",
+          "reversed": "The Reverse Sword Eight reveals the way of the Libra to find balance. He has a tendency to be free from uncertainty.",
+          "keywords": {
+            "0": "Libra",
+            "1": "indecisive",
+            "2": "obstacle",
+            "3": "balance"
+          },
+          "context": "The Libra comes forward."
+        },
+        "position3": {
+          "upright": "The Sword Eight says that mental barriers can limit harmony.",
+          "reversed": "The Reverse Sword Eight shows that harmony can be restored with the will to be liberated.",
+          "keywords": {
+            "0": "Restriction",
+            "1": "faith",
+            "2": "freedom",
+            "3": "compatibility",
+            "4": "Do not overstep"
+          },
+          "context": "Freedom brings harmony, patterns limits bonding."
+        },
+        "position4": {
+          "upright": "Eight Swords, mental constraints can narrow the long-term bond.",
+          "reversed": "The Reverse Eight Swords support the long term of liberation and awareness.",
+          "keywords": {
+            "0": "Restrict",
+            "1": "mind",
+            "2": "freedom",
+            "3": "awareness",
+            "4": "long term"
+          },
+          "context": "Freedom feeds the long term, testing the narrow bond."
+        },
+        "position5": {
+          "upright": "The Sword Eight shows that your own fears can prevent you from seeing the bond of a soul mate.",
+          "reversed": "The Reverse Sword Eight becomes visible by liberation and awareness.",
+          "keywords": {
+            "0": "fear",
+            "1": "freedom",
+            "2": "awareness",
+            "3": "obstacle",
+            "4": "soul mate"
+          },
+          "context": "Fear casts a shadow, a bond of awareness."
+        },
+        "position6": {
+          "upright": "Eights, the biggest thing that prevents your wish from happening is your own mental constraints.",
+          "reversed": "The reverse eights, the small steps you take on your path to liberation, open the way for your wish.",
+          "keywords": {
+            "0": "Self-restraint",
+            "1": "mind",
+            "2": "fear",
+            "3": "Freedom",
+            "4": "awareness"
+          },
+          "context": "When mental barriers are lifted, your wish may flow."
+        }
+      },
+      "nineofswords": {
+        "position1": {
+          "upright": "The Nine Swords say that anxiety cloudes hope with the late-night stories, and with the test of reality and self-control, this fog scatters, and then there may be an introduction.",
+          "reversed": "The Reverse Nine Swords place the nightmare in the morning clarity, and the less worry, the more comfortable the heart opens up to a new relationship.",
+          "keywords": {
+            "0": "Concern",
+            "1": "reality",
+            "2": "Compassion",
+            "3": "clarity"
+          },
+          "context": "With anxiety hygiene, the new ground will be strengthened."
+        },
+        "position2": {
+          "upright": "The Sword Nine represents the extreme mental burden of Gemini.",
+          "reversed": "The Reverse Sword Nine can point to someone trying to get rid of fear in the Twins' shadow.",
+          "keywords": {
+            "0": "Twins",
+            "1": "Concern",
+            "2": "mind",
+            "3": "fear"
+          },
+          "context": "Twin energy is obvious."
+        },
+        "position3": {
+          "upright": "The Sword Nine shows that anxiety and anxiety can force harmony, and facing reality brings balance.",
+          "reversed": "The Reverse Sword Nine says that the dissolution of nightmares can restore harmony, inner peace is important.",
+          "keywords": {
+            "0": "Concern",
+            "1": "anxiety",
+            "2": "real",
+            "3": "compatibility",
+            "4": "Peace"
+          },
+          "context": "Facing the truth brings harmony, strains anxiety bonds."
+        },
+        "position4": {
+          "upright": "Nine Swords, anxiety and fears can weaken the long-term bond, keeping a realistic perspective on the relationship.",
+          "reversed": "The Reverse Nine Swords can strengthen the long term of waking and clarifying nightmares.",
+          "keywords": {
+            "0": "Concern",
+            "1": "fear",
+            "2": "Realism",
+            "3": "clarity",
+            "4": "long term"
+          },
+          "context": "Realism supports the long term, and anxiety tests the bond."
+        },
+        "position5": {
+          "upright": "The Sword Nine says anxiety and anxiety can cloud the bond of the soul mate.",
+          "reversed": "The Reverse Sword Nine opens up space for the soul mate connection to get rid of anxiety.",
+          "keywords": {
+            "0": "Concern",
+            "1": "anxiety",
+            "2": "It's a cure.",
+            "3": "hope",
+            "4": "soul mate"
+          },
+          "context": "Anxious anxiety strengthens the spirit mate, and hope strengthens the bond."
+        },
+        "position6": {
+          "upright": "The nine say that your wish is fulfilled, that anxiety and fear make it difficult.",
+          "reversed": "Inverse nine, with morning clarity and inner peace, your wish may become closer.",
+          "keywords": {
+            "0": "Concern",
+            "1": "fear",
+            "2": "insomnia",
+            "3": "Doubt",
+            "4": "Peace"
+          },
+          "context": "Your fears may delay your wish."
+        }
+      },
+      "tenofswords": {
+        "position1": {
+          "upright": "The Ten Swords say that a cycle is certain to end and that it will no longer proceed the old-fashioned way, which will soon open the door to a fresh and honest relationship.",
+          "reversed": "The Reverse Ten Swords tells of the birth and recovery of ashes, and as the healing process is completed, a new beginning appears on the horizon.",
+          "keywords": {
+            "0": "end",
+            "1": "Agreed",
+            "2": "Rebirth",
+            "3": "It's a cure."
+          },
+          "context": "A clear closure gives the best basis for a new relationship."
+        },
+        "position2": {
+          "upright": "The Sword Ten represents the transformer's side of Kovac. He may be seeking regeneration in order to get out of the crisis.",
+          "reversed": "The Reverse Sword Ten may show difficulties or hard breaking from the past in the shadow of the Bucket.",
+          "keywords": {
+            "0": "Bucket",
+            "1": "transformation",
+            "2": "Regeneration",
+            "3": "crisis"
+          },
+          "context": "Aquarius energy is dominant."
+        },
+        "position3": {
+          "upright": "The Sword Ten says that a bitter end can make room for harmony, and the end may be necessary for rebirth.",
+          "reversed": "The Reverse Sword Ten can be restored to harmony with the beginning of recovery and recovery.",
+          "keywords": {
+            "0": "end",
+            "1": "Regeneration",
+            "2": "compatibility",
+            "3": "It's a cure.",
+            "4": "transformation"
+          },
+          "context": "Ending opens the harmony, healing strengthens the bond."
+        },
+        "position4": {
+          "upright": "After the end, the rebirth of the Ten Swords can lead to a new chapter in the long-term bond.",
+          "reversed": "The Reverse Ten Swords, the recovery process, supports the long term, but requires patience.",
+          "keywords": {
+            "0": "end",
+            "1": "Rebirth",
+            "2": "Surrender",
+            "3": "Regeneration",
+            "4": "long term"
+          },
+          "context": "Innovation from the end supports the long term."
+        },
+        "position5": {
+          "upright": "The Sword Ten says that after a complete cycle, the soul mate bond can be born, and the end is a new beginning.",
+          "reversed": "The Reverse Sword Ten, the recovery process could expose the soul mate bond.",
+          "keywords": {
+            "0": "end",
+            "1": "Rebirth",
+            "2": "It's a cure.",
+            "3": "start",
+            "4": "soul mate"
+          },
+          "context": "Ends lead to soul mates."
+        },
+        "position6": {
+          "upright": "Ten shows that your wish can come true after the end of a current cycle, calling for a new beginning.",
+          "reversed": "Inverse tens strengthen your wish for recovery and rebirth.",
+          "keywords": {
+            "0": "end",
+            "1": "Rebirth",
+            "2": "Surrender",
+            "3": "transformation",
+            "4": "hope"
+          },
+          "context": "A process that's over can start your wish."
+        }
+      },
+      "pageofswords": {
+        "position1": {
+          "upright": "The Prince of the Sword is a spark of curiosity and communication, and soon, a learning and discovery that begins with conversation may arise.",
+          "reversed": "The Reverse Sword Prince warns against the shadow of swift judgment and gossip, and when clear communication is established, the opportunity will shine.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "communication",
+            "2": "learning",
+            "3": "start"
+          },
+          "context": "Open and gentle communication turns a new acquaintance into a relationship."
+        },
+        "position2": {
+          "upright": "The Prince of the Sword is a powerful sign of the Gemini, an energy that is open to learning, curious and young.",
+          "reversed": "The Reverse Sword Prince may show disorganized knowledge or superficiality in the Twins' shadow.",
+          "keywords": {
+            "0": "Twins",
+            "1": "curiosity",
+            "2": "learning",
+            "3": "mind"
+          },
+          "context": "The effect of the Gemini is obvious."
+        },
+        "position3": {
+          "upright": "The Sword Prince shows that curiosity and the desire to learn support harmony, and open dialogue fosters bonds.",
+          "reversed": "The Reverse Sword Prince, gossip or false information can disrupt harmony."
+        }
+      }
+    }
+  }
+}

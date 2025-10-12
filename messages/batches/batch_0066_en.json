@@ -1,0 +1,790 @@
+{
+  "relationship-analysis": {
+    "meanings": {
+      "pageofswords": {
+        "position2": {
+          "keywords": {
+            "4": "clarity"
+          },
+          "context": "Right now, your heart wants to know, direct and soft questions will build trust, so step away from the assumption."
+        },
+        "position3": {
+          "upright": "The Sword Prince says your expectations are clear curiosity and honest questions, and your heart wants transparent dialogue... learning, communication.",
+          "reversed": "The Reverse Sword Prince shows that your expectation is to be free of misunderstandings. Your heart seeks safe speech.",
+          "keywords": {
+            "0": "communication",
+            "1": "Question",
+            "2": "curiosity",
+            "3": "transparency",
+            "4": "learning"
+          },
+          "context": "Your expectations are open dialogue, and your heart is hungry to learn and understand."
+        },
+        "position4": {
+          "upright": "The Prince of Sword says, \"Turn your curiosity to wisdom.\" Questions build bridges. What have I learned today?",
+          "reversed": "The Reverse Sword Prince tells us to turn not to gossip, but to the source. Reality maintains confidence.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "learning",
+            "2": "communication",
+            "3": "Question",
+            "4": "observation"
+          },
+          "context": "Your advice is to turn your curiosity into constructive questions, clear learning strengthens the bond."
+        },
+        "position5": {
+          "upright": "Your path is through curiosity and learning, gathering selective information speeds up progress.",
+          "reversed": "The road wants you to stay away from hasty judgments, and the source of confirmation increases confidence.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "learning",
+            "2": "communication",
+            "3": "Verification"
+          },
+          "context": "Your road map is conscious learning, open observation will support progress."
+        },
+        "position6": {
+          "upright": "Your partner wants you to have a curious but respectful conversation, and he wants you to approach him with honest questions.",
+          "reversed": "Your partner doesn't want gossip or hasty judgment, he's waiting for clear and mature communication.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "communication",
+            "2": "Honesty",
+            "3": "learning",
+            "4": "respect"
+          },
+          "context": "Your partner expects open and respectful communication."
+        },
+        "position7": {
+          "upright": "In the future of communication, curiosity, communication and new learning will emerge, and small discoveries will bring life to the bond.",
+          "reversed": "Quick judgments or rumors may cause problems in the future, honest communication must be protected.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "communication",
+            "2": "learning",
+            "3": "discovery"
+          },
+          "context": "The future of communication will be strengthened by curiosity and communication, but the haste must avoid judgment."
+        }
+      },
+      "knightofswords": {
+        "position1": {
+          "upright": "Knight of the Sword, in the present situation, there's a fast and sharp communication energy, and the words come out in a hurry, and the clue is: listen first, then talk.",
+          "reversed": "The Reverse Sword Knight says strong reactions raise the walls of the vineyard.",
+          "keywords": {
+            "0": "speed",
+            "1": "rigor",
+            "2": "communication",
+            "3": "reaction",
+            "4": "sharpness"
+          },
+          "context": "In the current case, speed and hardness in the ligament are coming forward, and the softness will repair the communication."
+        },
+        "position2": {
+          "upright": "The Knight of the Sword shows your desire for swift and sharp expression in your emotions, ready to be spoken, clue: Hear first, then be clear.",
+          "reversed": "The Reverse Sword Knight says that harsh language increases defence.",
+          "keywords": {
+            "0": "speed",
+            "1": "sharpness",
+            "2": "communication",
+            "3": "reaction",
+            "4": "clarity"
+          },
+          "context": "Right now, your heart is talking fast, one breath stop changes the whole tone, gentle clarity opens the door."
+        },
+        "position3": {
+          "upright": "The Knight of the Sword says your expectations are clear and decisive, your heart wants a quick solution... determination, clarity.",
+          "reversed": "The Reverse Sword Knight shows that your expectations are to avoid hasty decisions. Your heart wants a balanced step.",
+          "keywords": {
+            "0": "determination",
+            "1": "clarity",
+            "2": "measure",
+            "3": "balance",
+            "4": "speed"
+          },
+          "context": "Your expectations are stable but clear, your heart wants a calm solution."
+        },
+        "position4": {
+          "upright": "The Knight of the Sword tells you to align your speed with intent, and the clear argument relaxes the heart, the cycle of breathing and talking.",
+          "reversed": "The Reverse Sword Knight says to slow down the words. Choose calm instead of hardness.",
+          "keywords": {
+            "0": "speed",
+            "1": "defence",
+            "2": "expression",
+            "3": "clarity",
+            "4": "balance"
+          },
+          "context": "Your advice is to breathe before you say it."
+        },
+        "position5": {
+          "upright": "You're going through bold but strategic moves, balancing your speed with the plan will result.",
+          "reversed": "The road wants you to avoid hasty language, and it'll help to breathe and navigate.",
+          "keywords": {
+            "0": "Courage",
+            "1": "speed",
+            "2": "determination",
+            "3": "strategy"
+          },
+          "context": "Your road map, fast but conscious steps, will lead to courage supported by strategy."
+        },
+        "position6": {
+          "upright": "Your partner expects bold, clear, decisive action from you, asking you to step forward for him.",
+          "reversed": "Your partner doesn't want you to act rashly and impulsively.",
+          "keywords": {
+            "0": "Courage",
+            "1": "decision",
+            "2": "clarity",
+            "3": "movement",
+            "4": "balance"
+          },
+          "context": "Your partner awaits bold but balanced steps."
+        },
+        "position7": {
+          "upright": "In the future of communication, quick steps and determination will step forward, and the clarity will add momentum to the bond.",
+          "reversed": "Rushing or outbursts of anger may upset the balance in the future, and patience and breathing are essential.",
+          "keywords": {
+            "0": "speed",
+            "1": "determination",
+            "2": "clarity",
+            "3": "acceleration"
+          },
+          "context": "The future of communication will accelerate with quick decisions, but haste can be a problem."
+        }
+      },
+      "queenofswords": {
+        "position1": {
+          "upright": "Sword Queen, in the present situation, there is clarity and analysis energy, and emotions may have been second-guessed, hint: do not exclude the heart.",
+          "reversed": "The Reverse Sword Queen says that critical and harsh style creates coldness in the ligament, a symptom of sarcasm and sarsaemia.",
+          "keywords": {
+            "0": "analysis",
+            "1": "clarity",
+            "2": "objectivity",
+            "3": "criticism",
+            "4": "Distance"
+          },
+          "context": "In this case, the bond is mind-oriented, and it will bring warmth to balance with compassion."
+        },
+        "position2": {
+          "upright": "The Queen of the Sword says that you have a clear mind and a sense of boundaries in your emotions. The clarity is valuable. The clue is to be clear, but do not exclude the heart.",
+          "reversed": "The Reverse Sword Queen says critical tone hardens emotions, symptoms of sarkasm, sarcastic language.",
+          "keywords": {
+            "0": "analysis",
+            "1": "clarity",
+            "2": "limit",
+            "3": "objectivity",
+            "4": "style"
+          },
+          "context": "Your heart wants order now, and the clarity mixed with compassion brings deep intimacy, and your tongue to the balance."
+        },
+        "position3": {
+          "upright": "The Queen of the Sword says that your expectations are clear but compassionate communication, that your heart seeks balance in sharpness... plain words, gentleness.",
+          "reversed": "The Reverse Sword Queen shows that your expectation is to be protected from hurtful style. Your heart seeks gentle language.",
+          "keywords": {
+            "0": "clarity",
+            "1": "Compassion",
+            "2": "kindness",
+            "3": "communication",
+            "4": "balance"
+          },
+          "context": "Your expectations are from the heart but from the net, your heart wants to be understood gently."
+        },
+        "position4": {
+          "upright": "The Queen of the Sword calls for clear boundaries and clear statements. The cool mind makes a fair decision. I use the tongue.",
+          "reversed": "The Reverse Sword Queen says to soften criticism. Compassionate speech is the most effective weapon.",
+          "keywords": {
+            "0": "clarity",
+            "1": "limit",
+            "2": "justice",
+            "3": "communication",
+            "4": "objectivity"
+          },
+          "context": "Your advice is to use open but compassionate expressions, which make the heart lighter, make the trust bigger."
+        },
+        "position5": {
+          "upright": "Your path leads to objectiveness and clarity, and the cool mind makes a fair decision.",
+          "reversed": "The road wants you to get away from extreme criticism, protecting the compassionate language bond.",
+          "keywords": {
+            "0": "clarity",
+            "1": "limit",
+            "2": "justice",
+            "3": "objectivity"
+          },
+          "context": "Your road map, your clear point of view, the balance of objectiveness and compassion will give you peace."
+        },
+        "position6": {
+          "upright": "Your partner expects you to give him honesty, clear boundaries, and clarity, and he wants you to give him the facts.",
+          "reversed": "Your partner doesn't want extreme criticism.",
+          "keywords": {
+            "0": "Honesty",
+            "1": "clarity",
+            "2": "limit",
+            "3": "Compassion",
+            "4": "justice"
+          },
+          "context": "Your partner expects an honest but compassionate opening."
+        },
+        "position7": {
+          "upright": "In the future of communication, clarity, objectiveness, and independent thought will emerge, and open words will build confidence in the bond.",
+          "reversed": "Excessive criticism or coldness can create distance in the future, and the balance of compassion is important.",
+          "keywords": {
+            "0": "clarity",
+            "1": "independence",
+            "2": "objectivity",
+            "3": "communication"
+          },
+          "context": "The future of communication will be protected by clarity and common sense, but coldness can damage the bond."
+        }
+      },
+      "kingofswords": {
+        "position1": {
+          "upright": "The King of the Sword shows that the rules and principles in the present situation are heavy. Feelings may be in the background. Hint: Open up for empathy.",
+          "reversed": "The Reverse Sword King says that rigid and dogmatic style forces the bond. The sign is cold judgment.",
+          "keywords": {
+            "0": "rule",
+            "1": "authority",
+            "2": "strategy",
+            "3": "clarity",
+            "4": "empathy"
+          },
+          "context": "In the present situation, the bond is governed by rules, bringing out empathy will soften the hearts."
+        },
+        "position2": {
+          "upright": "The King of the Sword says that in your heart there is a strong sense of principle and justice. You seek a building. Tip: blend empathy with mind.",
+          "reversed": "The Reverse Sword King says that the harsh and dominant tone creates distance from the inside. The sign is cold judgment.",
+          "keywords": {
+            "0": "principle",
+            "1": "rule",
+            "2": "strategy",
+            "3": "empathy",
+            "4": "authority"
+          },
+          "context": "Right now your heart wants order and consistency, soft empathy will warm the room, principle and heart go hand in hand."
+        },
+        "position3": {
+          "upright": "The king of the sword says that your expectation is justice and principled communication. Your heart seeks judgment in the balance of mind. To principle, justice.",
+          "reversed": "The Reverse Sword King shows that what you expect is the resolution of strict judgments. Your heart wants an empathic decision.",
+          "keywords": {
+            "0": "justice",
+            "1": "principle",
+            "2": "decision",
+            "3": "balance",
+            "4": "empathy"
+          },
+          "context": "Your expectation is a combination of principle and compassion, and your heart seeks just communication."
+        },
+        "position4": {
+          "upright": "The King of Swords says to stick to his principles, but remember empathy, the strategic mind builds confidence, the formula for first and heart.",
+          "reversed": "The Reverse Sword King says to loosen rigor. To listen is the gentlest form of power.",
+          "keywords": {
+            "0": "principle",
+            "1": "strategy",
+            "2": "authority",
+            "3": "empathy",
+            "4": "justice"
+          },
+          "context": "Your advice is to balance the mind with the heart, with principles, compassion creates trust."
+        },
+        "position5": {
+          "upright": "Your path leads to strategic progress by leaning on ethical principles, where logic and value are combined, power is born.",
+          "reversed": "The road wants you to get away from strict rules, empathy will soften your mind.",
+          "keywords": {
+            "0": "ethics",
+            "1": "logic",
+            "2": "authority",
+            "3": "empathy"
+          },
+          "context": "Your road map, your primitive steps, will strengthen the logical bond of empathy."
+        },
+        "position6": {
+          "upright": "Your partner expects strategic thought, fair judgment, and mature communication, and it's valuable that you show him a visionary direction.",
+          "reversed": "Your partner doesn't want a cold, rigid attitude, he expects you to balance with empathy.",
+          "keywords": {
+            "0": "justice",
+            "1": "strategy",
+            "2": "communication",
+            "3": "maturity",
+            "4": "balance"
+          },
+          "context": "Your partner is awaiting fair and strategic leadership."
+        },
+        "position7": {
+          "upright": "In the future of communication, strategic wisdom and fair leadership will step forward, and the ethical stance will build confidence in the bond.",
+          "reversed": "Hard thoughts or lack of empathy may bring coldness in the future, and understanding is essential for balance.",
+          "keywords": {
+            "0": "strategy",
+            "1": "justice",
+            "2": "authority",
+            "3": "ethics"
+          },
+          "context": "The future of communication will be strengthened by a fair mind, but empathy can create a distance."
+        }
+      },
+      "aceofwands": {
+        "position1": {
+          "upright": "The wand ace shows that your current relationship has sparks and new beginning energy. Enthusiasm and passion are increasing. Tip: Feed the flame with a plan.",
+          "reversed": "The Reverse Stick ace says that delayed initiatives and motivation decrease create a shadow in the present situation. The symptom is incomplete steps.",
+          "keywords": {
+            "0": "start",
+            "1": "fad",
+            "2": "passion",
+            "3": "Inspired",
+            "4": "spark"
+          },
+          "context": "In the current case, the bond is activated by a live spark, a lack of planning can extinguish energy."
+        },
+        "position2": {
+          "upright": "The ace of the wand says that you have passion and a new spark in your senses. Your heart wants to be ignited. Tip: Share your enthusiasm.",
+          "reversed": "The Reverse Stick Ace shows whether the enthusiasm has been extinguished or blocked. The symptom is: the postponed start.",
+          "keywords": {
+            "0": "passion",
+            "1": "Inspired",
+            "2": "start",
+            "3": "Fire",
+            "4": "Excitement"
+          },
+          "context": "You've got a spark in your heart right now, and growing a fire will bring you back to life."
+        },
+        "position3": {
+          "upright": "The ace of the wand says that your expectation is a new passion and creative beginning, and your heart is looking for sparks, inspiration, new energy.",
+          "reversed": "The Reverse Stick Ace shows that your expectation is to exceed the lack of motivation. Your heart wants freshness.",
+          "keywords": {
+            "0": "passion",
+            "1": "start",
+            "2": "Inspired",
+            "3": "energy",
+            "4": "creativity"
+          },
+          "context": "You're expecting a fresh spark, your heart is looking for a fresh start."
+        },
+        "position4": {
+          "upright": "The ace of the wand says turn the spark of inspiration into a small act, just a little step in the direction of the fire.",
+          "reversed": "The Reverse Stick ace tells us to wake up the blocked enthusiasm with a ritual, and the small and consistent repetitions increase the flame.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "start",
+            "2": "energy",
+            "3": "Courage",
+            "4": "ritual"
+          },
+          "context": "Your advice is to turn on the flow with a little movement instead of waiting, and the postponement extinguishes the flame, and the rhythm expands, and the direction of the fire becomes clear with intent."
+        },
+        "position5": {
+          "upright": "Your path is to awaken your inner fire and make a fresh start, the first step with courage will ignite the entire process.",
+          "reversed": "The road wants you to stop procrastinating and grow sparks, and turning inspiration into small actions will move you forward.",
+          "keywords": {
+            "0": "start",
+            "1": "Inspired",
+            "2": "Fire",
+            "3": "Courage"
+          },
+          "context": "Your road map is to grow the spark, little brave steps will take you forward."
+        },
+        "position6": {
+          "upright": "Your partner expects you to have a new energy and an exciting start, and he wants bold initiatives to bring life into the relationship.",
+          "reversed": "He doesn't want the partner to get caught up in the mood, he's expecting consistency and continuity.",
+          "keywords": {
+            "0": "start",
+            "1": "energy",
+            "2": "fad",
+            "3": "Courage",
+            "4": "movement"
+          },
+          "context": "Your partner is waiting for a new energy and bold steps."
+        },
+        "position7": {
+          "upright": "In the future of communication, there will be a new energy and a strong spark of beginnings, a passion that will bring life to the bond.",
+          "reversed": "A lack of inspiration or delayed beginnings may reduce the energy of the bond in the future, and small steps rekindle the spark.",
+          "keywords": {
+            "0": "start",
+            "1": "Inspired",
+            "2": "passion",
+            "3": "movement"
+          },
+          "context": "The future of communication will come to life with fresh energy, but delay can extinguish the spark."
+        }
+      },
+      "twoofwands": {
+        "position1": {
+          "upright": "Two wands show the desire to look at the horizon and plan the future in the current situation. Common vision is spoken. Tip: Draw the horizon together.",
+          "reversed": "The Reverse Two Wands say that avoiding indecisiveness and risk creates a recession in the present situation. The symptom is infinite plans, zero steps.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "risk",
+            "3": "future",
+            "4": "selection"
+          },
+          "context": "In the current situation, there is a common horizon in the bond, and courage to decide will speed up the process."
+        },
+        "position2": {
+          "upright": "Two wands, your senses have a desire to plan and look to the horizon. Your heart is moving towards the future. Tip: Set a bold vision.",
+          "reversed": "The Reverse Two Wands indicate that I can't step up and that indecisiveness holds your senses. The symptom is that you look at the horizon and don't retreat.",
+          "keywords": {
+            "0": "Plan",
+            "1": "Vision",
+            "2": "future",
+            "3": "hesitation",
+            "4": "Courage"
+          },
+          "context": "Your heart is moving forward now, and clear intentions will make it easier to step forward."
+        },
+        "position3": {
+          "upright": "Two wands say your expectations are planned progress, your heart wants to set a course... the goal, the vision.",
+          "reversed": "The Reverse Two Wands show that your expectation is to get rid of uncertainty. Your heart wants a clear course.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "course",
+            "3": "target",
+            "4": "Progress"
+          },
+          "context": "Your expectation is a road map, he wants to know the direction of your heart."
+        },
+        "position4": {
+          "upright": "Two wands say clear the horizon and step out of the safe shore. The vision map feeds courage.",
+          "reversed": "The Reverse Two Wands say to break the cycle of infinite plan zero step. Pilot testing reduces fear.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "horizon",
+            "3": "risk",
+            "4": "pilot"
+          },
+          "context": "Your advice is to make imaginary concrete and scalable trials, small discoveries build trust, keep your feet on the ground while you look at the horizon."
+        },
+        "position5": {
+          "upright": "Your path leads to expanding your horizons and getting out of your comfort zone, making your plans visible will strengthen your vision.",
+          "reversed": "The road wants you to put the undecided behind you, and instead of looking at the horizon, moving forward will bring progress.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "horizon",
+            "3": "Courage"
+          },
+          "context": "Your road map is to put the vision into action, the net plan will determine its new direction."
+        },
+        "position6": {
+          "upright": "Your partner expects you to share your vision and plan for the future.",
+          "reversed": "Your partner doesn't want to see indecisiveness.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "future",
+            "3": "decision",
+            "4": "horizon"
+          },
+          "context": "Your partner is waiting for a shared vision and a plan."
+        },
+        "position7": {
+          "upright": "In the future of communication, the plans and the desire to open to new horizons will emerge, and the shared vision will guide the bond.",
+          "reversed": "Indecision or lack of vision can prevent progress in the future, and if the plan is not clear, the bond is jammed.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "horizon",
+            "3": "decision"
+          },
+          "context": "The future of communication will be strengthened by a shared vision, but it can block the path of indecision."
+        }
+      },
+      "threeofwands": {
+        "position1": {
+          "upright": "Three wands, current state of expectation and expansion energy, growth on the horizon. Tip: Follow with patience.",
+          "reversed": "The Reverse Three Wands say delays and incompatibility create tensions in the present situation.",
+          "keywords": {
+            "0": "expectation",
+            "1": "Vision",
+            "2": "Enlargement",
+            "3": "Coordination",
+            "4": "Patience"
+          },
+          "context": "In the current case, the bond is entering expansion energy, which will facilitate the process of adapting."
+        },
+        "position2": {
+          "upright": "Three wands, your senses have a desire for anticipation and expansion. Your heart wants to open up to new horizons. Tip: Follow the opportunities with patience.",
+          "reversed": "The Reverse Three Wands say that the absence of the expected forces your emotions. Its symptom is disappointment.",
+          "keywords": {
+            "0": "expectation",
+            "1": "Enlargement",
+            "2": "Vision",
+            "3": "hope",
+            "4": "horizon"
+          },
+          "context": "Right now, your heart is hopeful for the future, and patience and faith will make your feelings grow."
+        },
+        "position3": {
+          "upright": "Three wands say your expectation is to open up the horizon and move on to new opportunities, and your heart wants to expand... opportunity, growth.",
+          "reversed": "The Reverse Three Wands show that your expectation is to avoid delays. Your heart wants to move forward with flow.",
+          "keywords": {
+            "0": "horizon",
+            "1": "opportunity",
+            "2": "growth",
+            "3": "Progress",
+            "4": "Enlargement"
+          },
+          "context": "Your expectations are to open new doors, and your heart wants to expand on the journey."
+        },
+        "position4": {
+          "upright": "Three wands say to match your preparation to visible targets, coordination zooms in on the horizon.",
+          "reversed": "The Reverse Three Wands say convert delay perception with plan revision. The flexible calendar produces hope.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "timing",
+            "2": "Coordination",
+            "3": "co-operation",
+            "4": "target"
+          },
+          "context": "Your advice is to transparency the process and divide it into small surrenders, and the path to the horizon is shortened by small stations."
+        },
+        "position5": {
+          "upright": "Your path is to turn your preparations into concrete steps, and while you're looking at the horizon, cooperation will support you.",
+          "reversed": "The road wants you to stop being afraid of delays, and overcoming narrow-mindedness will bring expansion.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "co-operation",
+            "2": "horizon",
+            "3": "opportunity"
+          },
+          "context": "Your road map is to expand the vision."
+        },
+        "position6": {
+          "upright": "Your partner is asking you for expansion, new opportunities and cooperation, and he's expecting a horizon-opening attitude.",
+          "reversed": "Your partner doesn't want narrow-mindedness, he expects you to keep an open mind.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "co-operation",
+            "2": "Vision",
+            "3": "Enlargement",
+            "4": "Progress"
+          },
+          "context": "Your partner expects you to see the horizon and be open to expansion."
+        },
+        "position7": {
+          "upright": "In the future of communication, expansion and opportunities will come forward, and the fruit of common labor will begin to appear.",
+          "reversed": "A narrow look or a delay can be disappointing in the future.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "Enlargement",
+            "2": "Vision",
+            "3": "Progress"
+          },
+          "context": "The future of communication will open with growth opportunities, but there's a risk of narrow perspective."
+        }
+      },
+      "fourofwands": {
+        "position1": {
+          "upright": "Four Wands, in the present situation, have the energy of relationship celebrating and stability, and the thresholds are about to be celebrated. Tip: Share happiness.",
+          "reversed": "The Reverse Four Wands say that a baseless celebration can be disappointing. Its symptom is the shadow of early joy.",
+          "keywords": {
+            "0": "celebration",
+            "1": "stability",
+            "2": "threshold",
+            "3": "belonging",
+            "4": "Happiness"
+          },
+          "context": "In the present situation, the bond is on a threshold, and it will make good basic happiness permanent."
+        },
+        "position2": {
+          "upright": "Four Wands, there's a sense of celebration and safe space energy in your senses, and your heart wants to bond with peace.",
+          "reversed": "It shows a sense of incompatibility, dissonance, or unfinished unity. The symptom is missing celebration.",
+          "keywords": {
+            "0": "celebration",
+            "1": "Peace",
+            "2": "unity",
+            "3": "Trust",
+            "4": "solidarity"
+          },
+          "context": "Right now, your heart is searching for peace of mind, and the safe space sharing will be healing."
+        },
+        "position3": {
+          "upright": "Four Wands say your expectations are peaceful unity and celebration, and your heart wants a safe home... harmony, celebration.",
+          "reversed": "The Reverse Four Wands show that your expectation is to protect yourself from baseless celebrations. Your heart seeks genuine peace.",
+          "keywords": {
+            "0": "Peace",
+            "1": "compatibility",
+            "2": "celebration",
+            "3": "family",
+            "4": "stability"
+          },
+          "context": "Your expectations are solid roots, your heart is searching for a safe space."
+        },
+        "position4": {
+          "upright": "The Four Wands say that the solid foundation is consolidated by the ritual of celebration, and the thresholds are fixed with love.",
+          "reversed": "The Reverse Four Wands say to strengthen the foundation before the ceremony, order maintains peace.",
+          "keywords": {
+            "0": "basic",
+            "1": "celebration",
+            "2": "stability",
+            "3": "belonging",
+            "4": "threshold"
+          },
+          "context": "Your advice is to cross the threshold consciously: first the foundation, then the ceremony. Small celebrations foster commitment."
+        },
+        "position5": {
+          "upright": "Your path is to build celebration and stability, and the solid foundation will give you confidence.",
+          "reversed": "The road wants you to accept disorder and form order with rituals, and small celebrations will strengthen the bond.",
+          "keywords": {
+            "0": "stability",
+            "1": "celebration",
+            "2": "belonging",
+            "3": "basic"
+          },
+          "context": "Your road map is to build a solid foundation, and the celebration will feed the bond."
+        },
+        "position6": {
+          "upright": "Your partner is expecting stability, celebration, and a safe foundation, and he wants you to give him a sense of home.",
+          "reversed": "Your partner doesn't want false peace, he has real stability and expectations of belonging.",
+          "keywords": {
+            "0": "stability",
+            "1": "basic",
+            "2": "celebration",
+            "3": "belonging",
+            "4": "Trust"
+          },
+          "context": "Your partner is waiting for a solid foundation and a sense of belonging."
+        },
+        "position7": {
+          "upright": "In the future of communication, there will be stability, celebration, and a threshold.",
+          "reversed": "Temporarily irregularity or lack of belonging can force peace into the future.",
+          "keywords": {
+            "0": "stability",
+            "1": "celebration",
+            "2": "belonging",
+            "3": "threshold"
+          },
+          "context": "The future of communication will be strengthened by celebration and solid foundation, but there is a risk of irregularity."
+        }
+      },
+      "fiveofwands": {
+        "position1": {
+          "upright": "Five Wands, in the current case, are stepping up small conflicts and power tests. The competitive energy is high. Hint: Turn the conflict into a game.",
+          "reversed": "The Reverse Five Wands say unproductive arguments are exhausting in the ligament. The symptom is noise and disorganized energy.",
+          "keywords": {
+            "0": "conflict",
+            "1": "competition",
+            "2": "Tension",
+            "3": "power test",
+            "4": "dynamism"
+          },
+          "context": "In the current case, the bond is tested by small conflicts, and the constructive approach will bring harmony."
+        },
+        "position2": {
+          "upright": "Five Wands, there's a sense of competition or small conflict in your senses, and your heart wants to be understood.",
+          "reversed": "The Reverse Five Wands show that unnecessary arguments force your emotions. The symptom is energy loss.",
+          "keywords": {
+            "0": "competition",
+            "1": "conflict",
+            "2": "dynamism",
+            "3": "game",
+            "4": "expression"
+          },
+          "context": "Your heart is a little competitive right now, and the constructive approach will feed the bond."
+        },
+        "position3": {
+          "upright": "Five Wands say your expectations are healthy competition and constructive debate, and your heart wants energetic interaction... construction, energy.",
+          "reversed": "The Reverse Five Wand shows that your expectation is to avoid fighting and chaos. Your heart seeks peaceful interaction.",
+          "keywords": {
+            "0": "competition",
+            "1": "interaction",
+            "2": "energy",
+            "3": "debate",
+            "4": "movement"
+          },
+          "context": "Your expectation is a constructive exchange of energy, and your heart is looking for healthy sharing."
+        },
+        "position4": {
+          "upright": "The Five Wands say move the conflict to the rehearsal area, and the argument with the rule is productive.",
+          "reversed": "The Reverse Five Wands tell us to reduce disorganized conflict to one thing, and the Fasilitation collects energy.",
+          "keywords": {
+            "0": "conflict",
+            "1": "rule",
+            "2": "clarity",
+            "3": "fascilation",
+            "4": "focus"
+          },
+          "context": "Your advice is to turn competition into cooperation, the frame protects respect, the net playground converts spark into heat."
+        },
+        "position5": {
+          "upright": "Your path is to turn energy into constructive competition, and the clear rules will make the struggle productive.",
+          "reversed": "The road wants you to talk about repressed tension, and transparency will create chaos.",
+          "keywords": {
+            "0": "competition",
+            "1": "conflict",
+            "2": "dialogue",
+            "3": "clarity"
+          },
+          "context": "Your road map is to consolidate the struggle, bring peace of open communication."
+        },
+        "position6": {
+          "upright": "Your partner expects a constructive competition and a healthy struggle, and he wants you to treat it like a game.",
+          "reversed": "Your partner doesn't want to see a fighting attitude, he's looking for more cooperation and harmony.",
+          "keywords": {
+            "0": "struggle",
+            "1": "competition",
+            "2": "energy",
+            "3": "co-operation",
+            "4": "balance"
+          },
+          "context": "Your partner is looking forward to a healthy struggle and cooperation."
+        },
+        "position7": {
+          "upright": "There may be small conflicts or competitive energy in the future of communication, and the healthy debate will support progress.",
+          "reversed": "Repressed anger or unresolved tension may grow in the future, open dialogue will be necessary.",
+          "keywords": {
+            "0": "conflict",
+            "1": "competition",
+            "2": "Tension",
+            "3": "dialogue"
+          },
+          "context": "The future of communication will be tested by minor tensions, but healthy dialogue will advance."
+        }
+      },
+      "sixofwands": {
+        "position1": {
+          "upright": "Six wands, the current state of success and visible energy, the relationship may be gathering applause from the outside. Tip: Share pride.",
+          "reversed": "The Reverse Six Wands say that unseen labor causes resentment in the bond. The symptom is lack of appreciation.",
+          "keywords": {
+            "0": "victory",
+            "1": "appreciation",
+            "2": "visibility",
+            "3": "success",
+            "4": "celebration"
+          },
+          "context": "In the current situation, the bond is successfully stepping forward, and the sharing of appreciation will increase harmony."
+        },
+        "position2": {
+          "upright": "Six wands, your feelings have a desire to be appreciated and approved, and your heart glows with pride, hint: share your glory.",
+          "reversed": "The Reverse Six Wand says that the feeling of not being seen or lack of approval cloudes your feelings.",
+          "keywords": {
+            "0": "victory",
+            "1": "appreciation",
+            "2": "to be seen",
+            "3": "pride",
+            "4": "success"
+          },
+          "context": "Right now, your heart is looking for appreciation, and transparency will make it easier for you to see."
+        },
+        "position3": {
+          "upright": "Six Wands say your expectations are success and appreciation, and your heart wants to be seen... success, approval.",
+          "reversed": "The Reverse Six Wand shows that your expectation is to stay away from insincere praises. Your heart seeks genuine appreciation.",
+          "keywords": {
+            "0": "success",
+            "1": "appreciation",
+            "2": "confirmation",
+            "3": "sighting",
+            "4": "pride"
+          },
+          "context": "You're expected to see your work, and your heart wants sincere approval."
+        },
+        "position4": {
+          "upright": "Six wands say the invisible effort is to make visible and share victory, and appreciation is the fuel of motivation.",
+          "reversed": "The Reverse Six Wands say that the balance of applause equalizes the balance of fair appearance that melts resentment.",
+          "keywords": {
+            "0": "appreciation",
+            "1": "visibility"
+          }
+        }
+      }
+    }
+  }
+}

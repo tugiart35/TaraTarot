@@ -1,0 +1,794 @@
+{
+  "new-lover": {
+    "meanings": {
+      "eightofwands": {
+        "position2": {
+          "keywords": {
+            "0": "Sagittarius",
+            "1": "speed",
+            "2": "travel",
+            "3": "Progress"
+          },
+          "context": "Sagittarius energy is dominant."
+        },
+        "position3": {
+          "upright": "The Stick Eight strengthens fast progress and open communication, and the flow of energy feeds the bonds.",
+          "reversed": "Reverse Stick Eights, miscommunications can disrupt harmony.",
+          "keywords": {
+            "0": "communication",
+            "1": "speed",
+            "2": "compatibility",
+            "3": "flow",
+            "4": "Progress"
+          },
+          "context": "Open communication strengthens harmony, testing a congestion bond."
+        },
+        "position4": {
+          "upright": "Eight Asas, rapid progress and net communication strengthen the long-term bond.",
+          "reversed": "Reverse Eight Asas, delays and false signals can make the long term difficult.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "Progress",
+            "3": "sync",
+            "4": "long term"
+          },
+          "context": "The rapid flow feeds the long term, testing the late bond."
+        },
+        "position5": {
+          "upright": "The Eight of Wands demonstrates rapid progress and progress in flow, which can be your soul mate, which can happen as fast as fate.",
+          "reversed": "The Eight of Reverse Wands tells of delays or miscommunications in communication, with the energy of soul mates, but it may require patience.",
+          "keywords": {
+            "0": "speed",
+            "1": "flow",
+            "2": "communication",
+            "3": "Fate",
+            "4": "spirit bond"
+          },
+          "context": "Fast flow can indicate soul mates."
+        },
+        "position6": {
+          "upright": "Eight Asas, quick improvements and communication make your wish come true, and the flow speeds up.",
+          "reversed": "Reverse eights can make your wish for delays or miscommunication difficult.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "flow",
+            "3": "acceleration",
+            "4": "news"
+          },
+          "context": "Quick improvements bring your wish."
+        }
+      },
+      "nineofwands": {
+        "position1": {
+          "upright": "Nine wands, even if you're tired, show that love is at the door, and resistance and patience will lead you to a new relationship.",
+          "reversed": "The Reverse Nine Wands tells us that being over-focused can drive love away, and giving up defense can lead to a new relationship.",
+          "keywords": {
+            "0": "resistance",
+            "1": "Patience",
+            "2": "defence",
+            "3": "hope"
+          },
+          "context": "Love comes to the door after hardship."
+        },
+        "position2": {
+          "upright": "And the Nine of the rods show the firm and unrelenting side of the ram: and he shall not give up easily.",
+          "reversed": "The Reverse Stick Nine may show extreme fatigue or constant alertness in the coach's shadow.",
+          "keywords": {
+            "0": "Coach",
+            "1": "resistance",
+            "2": "Determination",
+            "3": "protection"
+          },
+          "context": "The Aries effect is coming out."
+        },
+        "position3": {
+          "upright": "The nine of the rod shows that harmony with endurance and determination is to be maintained. In spite of difficulties, the bonds of solidarity strengthen.",
+          "reversed": "The Reverse Cane Nine can disrupt disorientation or over-defensive harmony.",
+          "keywords": {
+            "0": "resistance",
+            "1": "solidarity",
+            "2": "compatibility",
+            "3": "Determination",
+            "4": "protection"
+          },
+          "context": "Consolidation breeds harmony, and weariness tests the bond."
+        },
+        "position4": {
+          "upright": "Nine Asas, resistance and determination increase the power of a long-term relationship.",
+          "reversed": "The Reverse Nine Wands, weariness or extreme alertness, make the long term difficult.",
+          "keywords": {
+            "0": "resistance",
+            "1": "determination",
+            "2": "protection",
+            "3": "Patience",
+            "4": "long term"
+          },
+          "context": "Determination feeds the long term, testing the bond of extinction."
+        },
+        "position5": {
+          "upright": "Nine of the rods represent endurance and perseverance, and the energy of the soul can be clearer after trials.",
+          "reversed": "The Nine of the Inverted Wands speak of resentment or walling, even though there is a possibility of soul mates, the walls of the heart must be softened.",
+          "keywords": {
+            "0": "resistance",
+            "1": "Patience",
+            "2": "Test",
+            "3": "endurance",
+            "4": "spirit bond"
+          },
+          "context": "After patience, the possibility of soul mates arises."
+        },
+        "position6": {
+          "upright": "The Nine Asas indicate that you must show endurance in the final turn of your wish, which brings success.",
+          "reversed": "Reverse nines, exhaustion can make your wish difficult. It's important to take a break.",
+          "keywords": {
+            "0": "endurance",
+            "1": "Determination",
+            "2": "Last corner",
+            "3": "protection",
+            "4": "power"
+          },
+          "context": "Determination completes your wish."
+        }
+      },
+      "tenofwands": {
+        "position1": {
+          "upright": "The Ten Wands indicate that they do not see a new opportunity for love between their burdens, and when you share it, your heart is lighter and there is room for a relationship.",
+          "reversed": "The Reverse Ten Wands indicate that you're starting to drop the loads, which leads to the birth of a new love.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "relief",
+            "3": "opening"
+          },
+          "context": "When you drop the loads, the new relationship finds you."
+        },
+        "position2": {
+          "upright": "The Ten of Wands may be responsible for the combination of Capricorn and fire energy, but the original fire also shows the determination to carry the burden of the ram.",
+          "reversed": "The Reverse Stick Ten tends to overload or remain on its own in the coach's shadow.",
+          "keywords": {
+            "0": "Coach",
+            "1": "responsibilities",
+            "2": "load",
+            "3": "Determination"
+          },
+          "context": "The Aries are taking its toll."
+        },
+        "position3": {
+          "upright": "The Ten of wands show that harmony with the sharing of responsibilities will strengthen. The common burdens support the bonds.",
+          "reversed": "The Reverse-Stitch Ten may decompensate to overload or unstable responsibility.",
+          "keywords": {
+            "0": "responsibilities",
+            "1": "share",
+            "2": "compatibility",
+            "3": "balance",
+            "4": "load"
+          },
+          "context": "Joint responsibility fosters harmony, disorientation wears off the bond."
+        },
+        "position4": {
+          "upright": "Ten Asas, the sharing of responsibilities is the continuation of the long-term bond.",
+          "reversed": "Reverse Ten Asas, overload and unilateral effort can force a long-term relationship.",
+          "keywords": {
+            "0": "responsibilities",
+            "1": "load",
+            "2": "share",
+            "3": "balance",
+            "4": "long term"
+          },
+          "context": "Sharing feeds the long term, testing the bond of burden."
+        },
+        "position5": {
+          "upright": "The Ten of the staff speaks of burdens and responsibilities, and the bond of the soul can be strengthened by sharing burdens with your mate.",
+          "reversed": "The Ten of the Inverted Wands shows that too much responsibility compels the bond, and for soul mates, the burdens must be lightened.",
+          "keywords": {
+            "0": "responsibilities",
+            "1": "load",
+            "2": "solidarity",
+            "3": "labour",
+            "4": "spirit bond"
+          },
+          "context": "Shared labor deepens the spirit bond."
+        },
+        "position6": {
+          "upright": "Ten Asas show that in order for your wish to be granted, you must carry on a great responsibility.",
+          "reversed": "Reverse ten, overload can make your wish difficult, sharing is important.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "complete",
+            "3": "effort",
+            "4": "target"
+          },
+          "context": "Balance the effort makes your wish possible."
+        }
+      },
+      "pageofwands": {
+        "position1": {
+          "upright": "The Prince of the Wand shows an introduction that begins with curiosity and excitement, and your adventurous spirit opens the door to a new relationship.",
+          "reversed": "The Reverse Wand Prince points out that disorganized energy or impatientness can delay love, and clear intent speeds love.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "Excitement",
+            "2": "discovery",
+            "3": "start"
+          },
+          "context": "Your adventurous spirit will attract a new relationship."
+        },
+        "position2": {
+          "upright": "The Prince of Wand points to the young, adventurous and optimistic side of Sagittarius.",
+          "reversed": "The Prince of the Inverted Wand may show disarray or impatientness in the shadow of Sagittarius.",
+          "keywords": {
+            "0": "Sagittarius",
+            "1": "adventure",
+            "2": "optimism",
+            "3": "learning"
+          },
+          "context": "Sagittarius is dominant."
+        },
+        "position3": {
+          "upright": "The Prince of the Wand supports the harmony of curiosity and discovery, and new experiences bring excitement to the bonds.",
+          "reversed": "The Reverse Wand Prince may disrupt the harmony of disarray or impatientness.",
+          "keywords": {
+            "0": "discovery",
+            "1": "curiosity",
+            "2": "compatibility",
+            "3": "Excitement",
+            "4": "start"
+          },
+          "context": "Reconnaissance enhances harmony, dispersion strains the bond."
+        },
+        "position4": {
+          "upright": "The Prince of Asa, the spirit of discovery and enthusiasm, gives life to the long-term relationship.",
+          "reversed": "The Prince of Reverse Asa, messy or indecisiveness, makes the long term difficult.",
+          "keywords": {
+            "0": "fad",
+            "1": "discovery",
+            "2": "Enliversity",
+            "3": "learning",
+            "4": "long term"
+          },
+          "context": "Enthusiasm feeds the long term, testing the bond of disarray."
+        },
+        "position5": {
+          "upright": "The Prince of the Wands represents the spirit of discovery and the excitement of a new beginning. This person can be your soul mate; you can build an adventurous bond.",
+          "reversed": "The Prince of Reverse Wands tells of impatientness or disarray, and the potential for soul mates requires more stability.",
+          "keywords": {
+            "0": "discovery",
+            "1": "curiosity",
+            "2": "start",
+            "3": "The spirit of adventure",
+            "4": "spirit bond"
+          },
+          "context": "The adventurous energy triggers the possibility of soul mates."
+        },
+        "position6": {
+          "upright": "The prince plays an important role in making your wish come true: discovery, learning, and enthusiasm.",
+          "reversed": "Reverse prince may delay your wish for distraction or loss of focus.",
+          "keywords": {
+            "0": "discovery",
+            "1": "fad",
+            "2": "curiosity",
+            "3": "learning",
+            "4": "start"
+          },
+          "context": "Curiosity begins your wish."
+        }
+      },
+      "knightofwands": {
+        "position1": {
+          "upright": "The Knight of the Wand says that a hot, brave person can quickly enter his life, and a passionate relationship with this person can begin.",
+          "reversed": "Reverse Knight, inconsistency or hastyness can make a new relationship difficult.",
+          "keywords": {
+            "0": "passion",
+            "1": "Courage",
+            "2": "speed",
+            "3": "gravity"
+          },
+          "context": "A hot entrance can start a new love."
+        },
+        "position2": {
+          "upright": "The Knight of the Wand represents the brave, fast and passionate side of Coach or Sagittarius.",
+          "reversed": "The Knight of the Inverted Wand may show disarray or instability in the shadow of the Fire sign.",
+          "keywords": {
+            "0": "Coach",
+            "1": "Sagittarius",
+            "2": "Courage",
+            "3": "passion"
+          },
+          "context": "Coach or Sagittarius energy is stepping up."
+        },
+        "position3": {
+          "upright": "The Knight of the Wand, passion and movement nourishes harmony, brave steps strengthen ties.",
+          "reversed": "The Reverse Wand Knight, rashness or imbalance may disrupt the harmony.",
+          "keywords": {
+            "0": "passion",
+            "1": "movement",
+            "2": "compatibility",
+            "3": "Courage",
+            "4": "balance"
+          },
+          "context": "Passion nourishes harmony, rashness tests bond."
+        },
+        "position4": {
+          "upright": "Knight of Asa, passion and courage make the long-term bond grow.",
+          "reversed": "The Knight of the Reverse Asa, the lack of falsiness or commitment, weakens the long term.",
+          "keywords": {
+            "0": "passion",
+            "1": "Courage",
+            "2": "movement",
+            "3": "determination",
+            "4": "long term"
+          },
+          "context": "Courage feeds the long term, testing the bond of flabbyness."
+        },
+        "position5": {
+          "upright": "The Knight of the Wands represents the bonds of passion, courage, and swiftness, which may be your soul mate; your bond grows passionately.",
+          "reversed": "Knight of the Reverse Wands, it can lead to instability or indecisiveness, but even with the possibility of soul mates, you need to be careful about continuity.",
+          "keywords": {
+            "0": "passion",
+            "1": "Courage",
+            "2": "movement",
+            "3": "Excitement",
+            "4": "spirit bond"
+          },
+          "context": "The passionate beginning suggests the possibility of soul mates."
+        },
+        "position6": {
+          "upright": "The knight shows that your wish will be granted, that brave and passionate steps will speed it up.",
+          "reversed": "The reverse knight can stop your desire to be hasty or incomplete.",
+          "keywords": {
+            "0": "Courage",
+            "1": "passion",
+            "2": "speed",
+            "3": "target",
+            "4": "energy"
+          },
+          "context": "The passionate step speeds up your wish."
+        }
+      },
+      "queenofwands": {
+        "position1": {
+          "upright": "The Stick Queen shows you're ready for a new relationship with your charisma and your gravity.",
+          "reversed": "The Reverse Stick Queen, jealousy or insecurities, can force new love, and confidence attracts the right one.",
+          "keywords": {
+            "0": "Charisma",
+            "1": "gravity",
+            "2": "Self - confidence",
+            "3": "energy"
+          },
+          "context": "Your glowing energy attracts new love."
+        },
+        "position2": {
+          "upright": "The Queen of the wand carries the charisma, warmth and leadership of the Leo.",
+          "reversed": "The Reverse Stick Queen may show jealousy or self-esteem issues in the Lion's shadow.",
+          "keywords": {
+            "0": "Lion",
+            "1": "leadership",
+            "2": "Charisma",
+            "3": "Self - confidence"
+          },
+          "context": "Leo is dominant."
+        },
+        "position3": {
+          "upright": "The Stick Queen shows that warmth and trust support harmony, and charisma enhances bonds.",
+          "reversed": "Reverse Stick Queen, jealousy or insecurities can disrupt harmony.",
+          "keywords": {
+            "0": "temperature",
+            "1": "Trust",
+            "2": "compatibility",
+            "3": "Charisma",
+            "4": "leadership"
+          },
+          "context": "The heat strengthens the harmony, the insecurity tests the bond."
+        },
+        "position4": {
+          "upright": "Queen of Asa, charisma and trust keep fire alive in the long-term bond.",
+          "reversed": "Reverse Queen of Asa, jealousy or insecurities can force a long term.",
+          "keywords": {
+            "0": "Charisma",
+            "1": "Trust",
+            "2": "leadership",
+            "3": "passion",
+            "4": "long term"
+          },
+          "context": "Trust feeds the long term, testing the bond of insecurity."
+        },
+        "position5": {
+          "upright": "The Queen of the Wands represents gravity, self-esteem, and inspiration, which could be your soul mate, and your bond could be an inspiring union.",
+          "reversed": "The Queen of the Reverse Wands can cast a shadow of insecurity or jealousy, and for the energy of soul mates, there is a need for a balance of self-esteem.",
+          "keywords": {
+            "0": "gravity",
+            "1": "Self - confidence",
+            "2": "Inspired",
+            "3": "leadership",
+            "4": "spirit bond"
+          },
+          "context": "Gravity and inspiration strengthen the bond of soul mates."
+        },
+        "position6": {
+          "upright": "The Queen supports the fulfillment of your wish with self-esteem and charisma, and it serves your wish to expand your field of influence.",
+          "reversed": "Reverse queen, jealousy or lack of confidence can make your wish difficult.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "Charisma",
+            "2": "leadership",
+            "3": "power",
+            "4": "gravity"
+          },
+          "context": "Self-esteem strengthens your wish."
+        }
+      },
+      "kingofwands": {
+        "position1": {
+          "upright": "The king of the wand shows that he will enter into the life of a visionary and powerful person, who can begin a powerful and inspiring relationship.",
+          "reversed": "Reverse Stick King, authoritarian or over-controlling can cloud new love, and flexibility can lead to a relationship.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "gravity",
+            "3": "power"
+          },
+          "context": "New love is at hand with a strong and visionary person."
+        },
+        "position2": {
+          "upright": "The king of the wand points to the visionary leadership and courageous nature of Sagittarius or Leo.",
+          "reversed": "The Reverse Stick King may show arrogance or authority issues in the shadow of the constellations of fire.",
+          "keywords": {
+            "0": "Lion",
+            "1": "Sagittarius",
+            "2": "Vision",
+            "3": "leadership"
+          },
+          "context": "The lion or Sagittarius comes forward."
+        },
+        "position3": {
+          "upright": "The King of the wand supports vision and leadership, strengthens bonding, reassuring energy.",
+          "reversed": "The Reverse Wand King can make it difficult to adapt to extreme authority or impatientness.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "compatibility",
+            "3": "Trust",
+            "4": "balance"
+          },
+          "context": "Vision nourishes harmony, powers dictate bond."
+        },
+        "position4": {
+          "upright": "King of Asa, vision and leadership determine the course of the long-term bond.",
+          "reversed": "The reverse king of Asa makes it difficult for him to be authoritarian or impatient.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "Charisma",
+            "3": "Courage",
+            "4": "long term"
+          },
+          "context": "Vision feeds the long term, testing the impatient bond."
+        },
+        "position5": {
+          "upright": "The king of the rods is a sign of visionary leadership and a strong bond. This man can be your soul mate, and you can walk together to great goals.",
+          "reversed": "The King of Reverse Asas speaks of the risk of extreme ego or authoritarian behavior, and mutual respect and balance are essential for soul mates.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "target",
+            "3": "respect",
+            "4": "spirit bond"
+          },
+          "context": "Common goals strengthen the bond of soul mates."
+        },
+        "position6": {
+          "upright": "The King associates your wish with visionary leadership and strategic courage.",
+          "reversed": "The reverse king can make your wish of overbearing or ego difficult.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "Courage",
+            "3": "strategy",
+            "4": "power"
+          },
+          "context": "Vision makes your wish possible."
+        }
+      },
+      "aceofpentacles": {
+        "position1": {
+          "upright": "The amulet ace shows that a concrete and reliable beginning is at the door, and this new relationship can be as solid and long-term as soil.",
+          "reversed": "The Reverse Talisman indicates delays due to lack of vision or security anxiety, and a valuable start is still possible.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "start",
+            "2": "Trust",
+            "3": "stability"
+          },
+          "context": "Soon there will be an opportunity for a solid relationship; be careful."
+        },
+        "position2": {
+          "upright": "The amulet ace points to one of the earth's constellations, the bull, the Virgo, or the Capricorn, defined by reliable and concrete steps.",
+          "reversed": "The Reverse Talisman indicates that this person may experience instability in his search for financial security, instead of stability in the shadow of the Earth's constellations.",
+          "keywords": {
+            "0": "earth sign",
+            "1": "guarantee",
+            "2": "matter",
+            "3": "start"
+          },
+          "context": "The bull, Virgo, or Capricorn influence is dominant."
+        },
+        "position3": {
+          "upright": "The amulet ace shows that harmony is built on solid foundations, and financial and spiritual trust creates stability in a relationship.",
+          "reversed": "The Reverse Talisman, the Abduction of Opportunities or Insecurities, can force harmony.",
+          "keywords": {
+            "0": "basic",
+            "1": "Trust",
+            "2": "stability",
+            "3": "compatibility",
+            "4": "opportunity"
+          },
+          "context": "It feeds the safety of basic harmony, the weak ground strains the bonds."
+        },
+        "position4": {
+          "upright": "The amulet ace offers a strong beginning to a long-term relationship with a solid foundation and concrete opportunity.",
+          "reversed": "The Reverse Talisman, the missed opportunities or financial concerns, can challenge the trust of a long-term relationship.",
+          "keywords": {
+            "0": "basic",
+            "1": "opportunity",
+            "2": "stability",
+            "3": "material trust",
+            "4": "long term"
+          },
+          "context": "The solid foundation supports the long term, and worries test the bond."
+        },
+        "position5": {
+          "upright": "The Amulet says that a bond with a soul mate can be established on a concrete, safe, long-term basis, a permanent start in the real world.",
+          "reversed": "The Reverse Talisman, the Absorption of Opportunities, or insecurity, can make the bond of the soul more difficult, and it may take more effort to strengthen the relationship.",
+          "keywords": {
+            "0": "start",
+            "1": "Trust",
+            "2": "basic",
+            "3": "abundance",
+            "4": "soul mate"
+          },
+          "context": "Safe start supports soul mates."
+        },
+        "position6": {
+          "upright": "The ace shows that a solid opportunity for your wish to come true, a material or concrete start, supports your wish.",
+          "reversed": "Reverse Ace, the idea of opportunity not being noticed or famine can prevent your wish, which is a source of gratitude and attention.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "start",
+            "2": "abundance",
+            "3": "concrete",
+            "4": "basic"
+          },
+          "context": "A solid opportunity can make your wish possible."
+        }
+      },
+      "twoofpentacles": {
+        "position1": {
+          "upright": "Two amulets emphasize the need to balance in the intensity of your life, new relationship opportunities will come, but you need to prioritize.",
+          "reversed": "Two reverse amulets say that a new beginning can be difficult because you're in a chaotic time, and you can open space for small adjustments.",
+          "keywords": {
+            "0": "balance",
+            "1": "flexibility",
+            "2": "priority",
+            "3": "flow"
+          },
+          "context": "When you find your balance, the chance of a new relationship becomes clear."
+        },
+        "position2": {
+          "upright": "The two Talismans point to Virgo's search for practical and balance, which can be very versatile and adaptive.",
+          "reversed": "The Reverse Talisman Two may show indecisive or overburdening in Virgo's shadow.",
+          "keywords": {
+            "0": "Virgo",
+            "1": "balance",
+            "2": "practice",
+            "3": "compatibility"
+          },
+          "context": "Virgo energy comes forward."
+        },
+        "position3": {
+          "upright": "The Talisman Duo says it takes flexibility and balance for harmony, sharing responsibilities balances the relationship.",
+          "reversed": "Reverse Talisman Duo, imbalance or excess charge may disrupt harmony. Priorities must be reviewed.",
+          "keywords": {
+            "0": "balance",
+            "1": "flexibility",
+            "2": "compatibility",
+            "3": "share",
+            "4": "responsibilities"
+          },
+          "context": "Flexibility brings harmony, overburdens bonds."
+        },
+        "position4": {
+          "upright": "Two amulets, compatible balancing and flexibility, provide the flow of a long-term relationship.",
+          "reversed": "Two reverse amulets, imbalance and priority confusion can force a long-term relationship.",
+          "keywords": {
+            "0": "balance",
+            "1": "flexibility",
+            "2": "compatibility",
+            "3": "priority",
+            "4": "long term"
+          },
+          "context": "Balance feeds the long term, chaos tests the bond."
+        },
+        "position5": {
+          "upright": "The Talisman Duo emphasizes the need for balance and harmony in the spirit mate bond, and managing different areas of life together strengthens the relationship.",
+          "reversed": "The Reverse Talisman Duo, the imbalance or the confusion of responsibility, can force the bond of a soul mate.",
+          "keywords": {
+            "0": "balance",
+            "1": "compatibility",
+            "2": "responsibilities",
+            "3": "flow",
+            "4": "soul mate"
+          },
+          "context": "Balance is essential for soul mates."
+        },
+        "position6": {
+          "upright": "The two show that you need flexible balance and time management to make your wish come true, and small settings can produce great results.",
+          "reversed": "The reverse duo may delay your request for instability and postponement, and you need to prioritize.",
+          "keywords": {
+            "0": "balance",
+            "1": "time",
+            "2": "flexibility",
+            "3": "priority",
+            "4": "flow"
+          },
+          "context": "Balanced steps lead to your wish."
+        }
+      },
+      "threeofpentacles": {
+        "position1": {
+          "upright": "Three amulets tell us that co-operation and co-existence will lead to a relationship, and there's a good chance that the joint project will meet in the environment or in the business.",
+          "reversed": "The reverse three amulets indicate that role confusion or misunderstandings can cloud the imminent opportunity, and with open communication, luck is still on your side.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "partnership",
+            "2": "introduction",
+            "3": "effort"
+          },
+          "context": "A common environment or project can start a new relationship."
+        },
+        "position2": {
+          "upright": "The Talisman Trio represents the collaborative and structure-building side of Capricorn, who cares about teamwork.",
+          "reversed": "The Reverse Talisman Trio may have problems of co-operation or individual rigor in the shadow of Capricorn.",
+          "keywords": {
+            "0": "Capricorn",
+            "1": "co-operation",
+            "2": "labour",
+            "3": "structure"
+          },
+          "context": "Capricorn energy is dominant."
+        },
+        "position3": {
+          "upright": "The Talisman Trio shows that co-operation and joint effort will strengthen harmony.",
+          "reversed": "Reverse Talisman Trio, lack of compatibility or co-operation issues can weaken ties. Role clarity is important.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "compatibility",
+            "2": "target",
+            "3": "partnership",
+            "4": "balance"
+          },
+          "context": "Common effort fosters harmony, lack of co-operation exhausts ties."
+        },
+        "position4": {
+          "upright": "Three amulets, co-operation and construction together build a permanent structure for the long-term bond.",
+          "reversed": "The Inverse Three charms, lack of co-operation or a conflict of value, weaken the long-term relationship.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "build",
+            "2": "partnership",
+            "3": "continuity",
+            "4": "long term"
+          },
+          "context": "Co-operation strengthens the long term, tests the bond of conflict."
+        },
+        "position5": {
+          "upright": "The Talisman Trio says that the bond of the soul mate can be established by cooperation and co-operation, and the shared goals strengthen the bond.",
+          "reversed": "The Reverse Talisman Trio, lack of communication or incompatible co-operation, can complicate the bond of a soul mate.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "labour",
+            "2": "share",
+            "3": "target",
+            "4": "soul mate"
+          },
+          "context": "Co-operation deepens soul mates."
+        },
+        "position6": {
+          "upright": "The trio makes it possible to make your wish come true with team support and cooperation.",
+          "reversed": "Inverse threesomes, role uncertainty, or uncompromising collaborations can make your wish difficult.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "support",
+            "2": "compatibility",
+            "3": "role",
+            "4": "labour"
+          },
+          "context": "Common effort strengthens your desire."
+        }
+      },
+      "fourofpentacles": {
+        "position1": {
+          "upright": "Four amulets indicate that the desire to preserve the safe space closes the heart, and when it opens, a new relationship can quickly come to your door.",
+          "reversed": "The Reverse Four Talisms announces the beginning of the process of quitting and yawning that eases the birth of a new relationship.",
+          "keywords": {
+            "0": "security",
+            "1": "control",
+            "2": "opening",
+            "3": "flexibility"
+          },
+          "context": "When the closed heart opens, the opportunity for a relationship reveals itself."
+        },
+        "position2": {
+          "upright": "The Talisman Four points to the Bully's search for security, a man who wants to preserve what he has.",
+          "reversed": "The Reverse Talisman Four may be stingy or jealous in the shadow of the Bull.",
+          "keywords": {
+            "0": "Bull",
+            "1": "security",
+            "2": "property",
+            "3": "protection"
+          },
+          "context": "The Taurus comes forward."
+        },
+        "position3": {
+          "upright": "The Talisman Four shows that trust and ownership can maintain harmony, but extreme restraint can break the balance.",
+          "reversed": "The Reverse Talisman Four can be strengthened by extra control, and sharing comforts the bond.",
+          "keywords": {
+            "0": "Trust",
+            "1": "ownership",
+            "2": "compatibility",
+            "3": "balance",
+            "4": "share"
+          },
+          "context": "Trust breeds harmony, extreme restraint limits."
+        },
+        "position4": {
+          "upright": "The search for four amulets, protection and security gives stability to the long-term bond.",
+          "reversed": "The Reverse Four charms, excessive control, or miserliness, can compress a long-term relationship.",
+          "keywords": {
+            "0": "security",
+            "1": "protection",
+            "2": "stability",
+            "3": "control",
+            "4": "long term"
+          },
+          "context": "Security feeds the long term, testing the control bond."
+        },
+        "position5": {
+          "upright": "The Talisman quartet shows the desire to maintain and maintain security in the spirit mate bond, and balance with the boundaries is important.",
+          "reversed": "The Reverse Talisman Four, extreme control or fear, can cloud the bond of the soul mate.",
+          "keywords": {
+            "0": "security",
+            "1": "ownership",
+            "2": "control",
+            "3": "balance",
+            "4": "soul mate"
+          },
+          "context": "Trust is important, but over-owning is a test."
+        },
+        "position6": {
+          "upright": "The quartet shows your desire for stability and ownership to make your wish come true, and a controlled approach can strengthen your wish.",
+          "reversed": "The reverse four can block your wish whether you want to overpower or not.",
+          "keywords": {
+            "0": "security",
+            "1": "control",
+            "2": "stability",
+            "3": "protection",
+            "4": "balance"
+          },
+          "context": "Instead of overreaching, flexibility grants your wish."
+        }
+      },
+      "fiveofpentacles": {
+        "position1": {
+          "upright": "Five amulets reflect loneliness and isolation, but in this vulnerability, a match that will shine to you may come soon.",
+          "reversed": "The Reverse Five Talisman shows the process of packing and finding support, and with that rise, a new relationship can stand against the door.",
+          "keywords": {
+            "0": "loneliness"
+          }
+        }
+      }
+    }
+  }
+}

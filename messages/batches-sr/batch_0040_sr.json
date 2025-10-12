@@ -1,0 +1,870 @@
+{
+  "blog": {
+    "cards": {
+      "the-emperor": {
+        "story": {
+          "historytitle": "Istorijsko poreklo: Kralj i zakonodavstvo",
+          "history_message": "Car je identifikovan sa kraljevima, carevima i zakonodavskim podacima koji obezbeđuju redosled društava tokom istorije. U srednjem veku i renesansnim tarotskim palumima to je simbol svetskih moći, patrijarhalnog sistema i socijalne strukture.",
+          "mystic_title": "Duhovna poruka: Budite ukorijenjeni i posedujete svoju moć",
+          "mystic_message": "Na duhovnom nivou, car vas poziva na razvoju svog unutrašnjeg liderstva i samodiscipline. Ojačajte svoju korensku čakre, definišite svoje granice sa ljubavlju i uspostavite čvrste temelje u vašem životu.",
+          "cultural_title": "Moderna interpretacija: Mudri vođa i mentor",
+          "cultural_message": "Danas car predstavlja konstruktivan lider, mentor i pionir u zajednici. On je lik koji se ponaša s svešću pravde, naređenja i odgovornosti i vodi drugima.",
+          "lesson": "Car vas uči da vodite kombinovanjem strukture, sigurnosti i vill-vidnjom u vašem životu. Sve sagrađeno na čvrstim temeljima ima dug život."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči cara kartice",
+          "keywords_message": "Car Tarot Značenje, car Tarot Turski, Tarot Ledership, Tarot Autlagent, Tarot Red, Tarot disciplina, ukorenjenja tarota",
+          "positive_title": "Pozitivne snage",
+          "positive_message": "Vođstvo, red, struktura, stabilnost, sigurnost, strategija, uzemljenje.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Izbegavajte prekomernu kontrolu, kruti stavove i emocionalnu hladnoću. Koristite snagu sa ljubavlju.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Ojačajte svoje korijene, prigrlite svoje unutrašnje liderstvo i uspostavite čvrste temelje u vašem životu."
+        },
+        "associations": {
+          "title": "Kosmičke veze cara kartice",
+          "astrology": "Ovan (pokretanje, asertivnost, liderstvo)",
+          "numerology": "4 (Red, Fondacija, Stabilnost)",
+          "element": "Vatra (energija, snaga, motivacija)",
+          "chakra": "Koren (korenska čakra) - sigurnost i uzemljenje"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa carem",
+          "combinations": [
+            {
+              "card": "Kamat",
+              "meaning": "Kada se u kombinaciji strukture i obilježa, snažne temelje se postavljaju materijalno i duhovno. Ravnoteža i produktivnost Povećanje početne porodice, rada ili odnosa."
+            },
+            {
+              "card": "Čarobnjak",
+              "meaning": "VillPover i liderstvo u kombinaciji sa kreativnim napajanjem omogućavaju brzo sprovođenje projekata. Strateški planovi uspeju."
+            },
+            {
+              "card": "Visoki sveštenik",
+              "meaning": "Kada su logika i intuicija uravnotežena, harmonija i integritet se postižu i u unutrašnjim i spoljnim svetovima."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Potvrde cara kartice",
+          "affirmation_list": [
+            "U svom životu uspostavljam čvrste temelje i koristim svoju vlastitu moć sa ljubavlju.",
+            "Ja razjašnjavam svoje granice i demonstriram svoje rukovodstvo sa odgovornošću.",
+            "Snagu izvlačim od korena i krećem ka mojim ciljevima sa disciplinom."
+          ]
+        },
+        "cta": {
+          "main": "Donesite narudžbu i strukturu u svoj život, prigrlite sopstveno vođstvo!",
+          "micro": "Zapišite cilj danas i uzmite jedan korak da ga postignete. Postavite svoje granice, ojačati disciplinu."
+        },
+        "faq": [
+          {
+            "question": "Šta car kartica predstavlja?",
+            "answer": "Car znači liderstvo, red, autoritet i čvrste temelje. Snažan je poziv da uspostavi strukturu i preuzme odgovornost u vašem životu."
+          },
+          {
+            "question": "Šta znači obrnuti car?",
+            "answer": "Invertirani položaj ukazuje na preuzimanje samokontrolu, krutih pravila ili problema sa ovlašćenjima. Morate naučiti da budete fleksibilni i dajte druge prostora."
+          },
+          {
+            "question": "U kojoj su područji car jak?",
+            "answer": "Jak je u vođstvu, strategiji, uspostavljanju redosleda u porodičnom i poslovnog života, postavljanje granica i pružanje bezbednosti."
+          }
+        ],
+        "related_cards": [
+          "kampera",
+          "mađioničar",
+          "visoki sveštenik"
+        ],
+        "imageUrl": "/cards/rvs/iv-emperor.vebp"
+      },
+      "the-hierophant": {
+        "name": "Visoko sveštenik - mudrost, tradicija i duhovna uputstva",
+        "short_description": "Visoki sveštenik je kartica duhovnog znanja, tradicija i smernica. Vodi vas da otkrijete svoju unutrašnju mudrost, učite i krenete naprijed u skladu sa zajednicom.",
+        "meanings": {
+          "upright": {
+            "general": "Visoki sveštenik predstavlja učenje kroz iskustvo i učenja. Važno je da deluje u skladu sa socijalnim i duhovnim strukturama u potrazi za mudrošću. Dobijanje uputstava i deljenje znanja koristiće vas u ovom periodu.",
+            "love": "Zaljubljeni, visoki sveštenik ukazuje na važnost posvećenosti, lojalnosti i zajedničkih vrednosti. Poverenje i zajednička uverenja su na čelu u vezama. Ako ste samac, možete se povezati sa nekim ko ima slične vrednosti.",
+            "career": "U karijeri, visoki sveštenik predstavlja situacije koje zahtevaju tradicionalne metode, mentorske odnose i smernice. Postupak u okviru pravila i postupaka dovodi do uspeha.",
+            "money": "U finansijskim pitanjima, sigurna i strukturirana ulaganja i dugoročni planovi dolaze na izraz. Važno je koristiti raspoložive resurse svesno i odgovorno.",
+            "spiritual": "Na duhovnom putovanju, visoki sveštenik predstavlja rast kroz odnos učenika i duhovnog uputstva. Unutrašnja mudrost se povećava meditacijom, učenjem i ritualima."
+          },
+          "reversed": {
+            "general": "Reversed High Cvjećenici znači dogmatično razmišljanje, tvrdoglavost ili slepo pridržavanje učenja. Naučite da budete otvoreni za inovacije i otkrijte svoju unutrašnju mudrost.",
+            "love": "Invertirani položaj u ljubavi znači nefleksibilne misli ili tradicionalne granice stvaraju probleme u vezi. Prihvatite različite perspektive.",
+            "career": "Krute metode i zatvoreni stav prema inovacijama mogu stvoriti rizike u karijeri. Fleksibilnost i prilagodljivost su važni.",
+            "money": "Finansijski, preterano tradicionalistički ili neverni stav rizika može vam prouzrokovati nedostajati mogućnosti. Pronađite ravnotežu.",
+            "spiritual": "Duhovno, obrnuti visoki sveštenik ukazuje na preoblikovanje učenja drugih umesto da veruju vašoj inte intuiciji. Koristite svoje unutrašnje smernice."
+          }
+        },
+        "context": {
+          "mythology": "Visoki sveštenik je povezan tokom istorije sa duhovnim liderima, sveštenicima i učiteljima mudrosti. Predstavlja brojke koji vode društvo, podučavaju i štite tradicije.",
+          "celtic_cross": {
+            "future": "Postoje mogućnosti za napredovanje kroz znanje i smernice u budućnosti. Mentori i učenja mogu utrgnuti put.",
+            "hidden_influences": "Skriveni uticaji su kulturne norme, vrednosti društva i porodice. Donosite svesne izbore shvatajući to."
+          }
+        },
+        "story": {
+          "title": "Doktrinar abbotova",
+          "description": "Visoki sveštenik sedi na svom prestolu kao čuvar duhovne mudrosti i tradicije. Ima ključeve i svete knjige u ruci; On vodi one oko njega. Zrači svetlošću oko nje sa tihom snagom i mudrošću.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Veliki sveštenik je u istoriji poznata kao duhovni vođa i religiozni i moralni autoritet društva. U Tarot karticama je prikazano kao figura koja simbolizuje mudrost i smernice.",
+          "mystic_title": "Duhovno značenje",
+          "mystic_message": "Verujte svojoj unutrašnjoj mudrosti i smernici. Ojačajte vezu sa meditacijom i ritualima, odvojite vreme da razumete i internalizujete učenja.",
+          "cultural_title": "Moderna interpretacija",
+          "cultural_message": "U savremenom svetu, visoki sveštenik se vidi u ulozi mentora, savetnika ili vođe zajednice. Predstavlja kapacitet za prenos znanja, udio i preuzeti odgovornost.",
+          "lesson": "Visoki sveštenik nas uči da se odgovorno ponašamo, koristeći znanje, tradiciju i smernice. Harmonija sa zajednicom i svesno učenje su glavna poruka ove kartice."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči sa visokim sveštenicima",
+          "keywords_message": "Hierophant Tarot znači, hierofant tarot turski, smernice, nastavnik, tradicija, duhovna mudrost",
+          "positive_title": "Pozitivna energija",
+          "positive_message": "Mudrost, smernice, tradicija, odgovornost, učenje, harmonija zajednice",
+          "balance_title": "Ravnoteža",
+          "balance_message": "Ravnoteža dogmatskih razmišljanja i slepog predanosti; Inovacije i koristite sopstvenu intuiciju.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Slijedite sopstvene unutrašnje smernice i otvorite se za mudrost i učenje."
+        },
+        "associations": {
+          "title": "Kosmičke veze sa visokim sveštenikom",
+          "astrology": "Bik (strpljenje, odlučnost, poverenje)",
+          "numerology": "5 (znanje, učenje, adaptacija)",
+          "element": "Zemlja (stabilnost, strpljenje, praktičnost)",
+          "chakra": "Kruna - mudrost i duhovna veza"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa visokim sveštenikom",
+          "combinations": [
+            {
+              "card": "Car",
+              "meaning": "U kombinaciji sa narudžbom i autoritetom, strukturom i povećanjem discipline; Odluke se sprovode bezbedno."
+            },
+            {
+              "card": "Kamat",
+              "meaning": "Kreativnost i smernice kombinuju se da bi se dobilo produktivan i uravnotežen proces."
+            },
+            {
+              "card": "Abbess",
+              "meaning": "Intuicija i mudrost su uravnoteženi sa tradicijom i učenjem; Duhovna svest postaje jači."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Potvrde sa visokim sveštenicima",
+          "affirmation_list": [
+            "Verujem svojoj mudrosti i sledim svoje unutrašnje smernice.",
+            "Učim od tradicija i iskustava i podelim svoje znanje.",
+            "Ponašam se u skladu sa duhovnom disciplinom i zajednicom."
+          ]
+        },
+        "cta": {
+          "main": "Pozovite svoju mudrost i smernice u svoj život!",
+          "micro": "Primenite nastavu ili delite znanje koje ste danas naučili."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja Visoka sveštenika kartica?",
+            "answer": "Predstavlja duhovno znanje, tradicije, smernice i mogućnosti učenja. Predlaže da preduzmete korake ka mudrosti."
+          },
+          {
+            "question": "Šta to znači kada je opat naopako?",
+            "answer": "Ponovno preokretanje ukazuje na dogmatski ili nefleksibilni stavovi, prevelika zavisnost od učenja drugih i nedostatak inovacija."
+          },
+          {
+            "question": "U kojoj su oblastima snažni visoki sveštenik?",
+            "answer": "Jak je u oblastima tradicije, učenja, mentorstva, mentorskih odnosa i kohezije zajednice."
+          }
+        ],
+        "related_cards": [
+          "car",
+          "kampera",
+          "visoki sveštenik"
+        ],
+        "imageUrl": "/cards/rvs/v-hierofant.vebp"
+      },
+      "the-lovers": {
+        "name": "Ljubitelji - Sveti unija, izbor i buđenje srca",
+        "short_description": "Kartica ljubavnika je simbol dubokog duhovnog jedinstva, važnih izbora i unutrašnje harmonije. Slijedite svoje srce, pronađite ravnotežu u odnosima i krenite ka integraciji.",
+        "meanings": {
+          "upright": {
+            "general": "Kartica ljubavnika predstavlja važnu prekretnicu i trenutak izbora u vašem životu. Ova kartica simbolizuje ne samo romantičnu ljubav, već i integraciju sa sobom, drugima i život. Verujte u vodstvo svog srca u svojim odlukama; Holistička harmonija, iskrenost i otvorena komunikacija dolaze do izražaja.",
+            "love": "Zaljubljeni, ljubavnička karta znači naići na srodni srodnik, produbljivanje u vezi ili povećati harmoniju i strast u postojećoj vezi. Vi ste u periodu u kojem izbori i emocionalno otvorenost mogu transformisati vaš odnos.",
+            "career": "Na putu karijere, važna partnerstva, saradnje i projekti kompatibilne sa vašim vrednostima dođu do izražaja. Etički izbori podržavaju dugoročni uspeh. Teamvork i otvorena komunikacija dolaze do izražaja.",
+            "money": "U finansijskim pitanjima važno je ostati veran vašim vrednostima prilikom donošenja finansijskih odluka. Zajedničke investicije, saradnje ili partnerstva mogu doći do izražaja. Rast je moguć sa deljenjem i međusobnim poverenjem.",
+            "spiritual": "Duhovno, ljubavna kartica simbolizuje proces internog dijaloga, balansiranje muškog i ženstvenog energije i duhovne integracije. Možete se približiti svom istinskom ja slušanju svog srca."
+          },
+          "reversed": {
+            "general": "Ljubitelji obrnuto ukazuje na nespojivost, neodlučnost i rizik od sukoba u odnosima. Pogrešni izbori ili nedostatak komunikacije mogu stvoriti probleme. Ispitajte svoja osećanja i vrednosti.",
+            "love": "Zaljubljeni, obrnuti položaj može ukazivati na razdvajanje, nesporazumi ili pitanja poverenja. Usredsredite se na rešavanje problema sa otvorenom komunikacijom i empatijom.",
+            "career": "Invertirani ljubitelji u karijeri znači nekompatibilno partnerstvo, neetičke odluke ili sukobe u timu. Težite poštivanju i transparentnosti.",
+            "money": "Finansijski, pogrešna partnerstva ili užurbane odluke mogu dovesti do finansijskih gubitaka. Ponašati se pažljivo i svesno.",
+            "spiritual": "Duhovno, to ukazuje na rizik od unutrašnjih sukoba, samo-odbacivanja ili prekida veze iz srca. Odvojite vreme da vratite unutrašnju ravnotežu i samoljublje."
+          }
+        },
+        "context": {
+          "mythology": "Kartica ljubavnika povezana je sa mitološkim parovima kao što su Adam i Eve, Afrodita i Ares. Sadrži teme rastućih, duhovnog jedinstva i odlučivanja sa slobodnom voljom. Sa arhetipom svetog braka (Hieros gamos) simbolizuje harmoniju unutrašnjeg muškog i ženstvene energije.",
+          "celtic_cross": {
+            "future": "Važan odnos, partnerstvo ili izbor vas očekuje u budućnosti. Sledeći svoje srce možete pronaći svoj put do dugoročne sreće.",
+            "hidden_influences": "Skriveni uticaji su podsvesne vrednosti, žele i dinamika u svojim odnosima. Vaša unutrašnja harmonija stvara ravnotežu u spoljnjem svetu."
+          }
+        },
+        "story": {
+          "title": "Priča o svetloškom zajednicu",
+          "description": "U ljubavnoj kartici, dve figure - predstavljaju mušku i ženstvenu energiju - salaze zajedno. O njima je anđeo čuvar; Njihov sindikat je blagoslovljen. Ovaj sastanak simbolizuje ne samo romantičnu ljubav, već i prihvatanje sebe i života u celini. Svaki izbor vam donosi malo bliže svojoj suštini.",
+          "historytitle": "Istorijski poreklo: Izbor i udruženje",
+          "history_message": "Ljubitelji je poznat u istoriji Tarota kao i karta ljubavi i važnih izbora. Brak, partnerstvo i moralne odluke su na čelu u srednjovekovnim karticama. Kartica simbolizuje put integracije osobe sa sobom i drugima.",
+          "mystic_title": "Duhovna poruka: Vodič vašeg srca",
+          "mystic_message": "Ljubitelji su ključ unutrašnje i spoljne harmonije. Nakon vašeg srca je temelj duhovnog rasta i prave ljubavi. Uravnotežite svoju unutrašnju mušku i žensku energiju, dozvolite integraciju.",
+          "cultural_title": "Moderna interpretacija: Svesni izbor i odnosi",
+          "cultural_message": "Danas ljubavnici predstavljaju svesne izbore i žive u skladu sa vrednostima u svim oblastima života, a ne samo romantičnim vezama. Teme zdravih odnosa, otvorene komunikacije i samoljublje dolaze do izražaja.",
+          "lesson": "Kartica ljubavnika vas uči da birate iz srca i pronađite ravnotežu i integritet u odnosima. Svaki izbor otvara nova vrata u vašem duhovnom putovanju."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči za ljubavnike",
+          "keywords_message": "Ljubitelji Tarot Značenje, ljubavnici Tarot Turski, Tarot Love Card, Choice Tarot, Tarot bilateralni odnosi, Tarot Duhovna unija",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Ljubav, zajedništvo, harmonija, srodna duša, integracija, otvorena komunikacija, važni izbori.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Izbegavajte neodlučnost, nesklad, nedostatak komunikacije ili pogrešne izbore. Uravnotežite svoje srce i um.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Ujedinite svoju unutrašnju mušku i žensku energiju. Voli sebe, postignete celovitost."
+        },
+        "associations": {
+          "title": "Kosmičke veze sa ljubavnicima kartice",
+          "astrology": "Blizanci (komunikacija, um, izbor)",
+          "numerology": "6 (Harmoni, porodica, jedinstvo)",
+          "element": "Vazduh (pomisli, veza, uma)",
+          "chakra": "Srce (srce čakre) - ljubav i jedinstvo"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa ljubavnicima",
+          "combinations": [
+            {
+              "card": "Visoki sveštenik",
+              "meaning": "Duhovna duhovna veza uspostavljena je u vezi kroz kombinaciju intuicije i srca."
+            },
+            {
+              "card": "Kamat",
+              "meaning": "Odnos pun ljubavi i obilja otkriva kreativni potencijal u jedinstvu."
+            },
+            {
+              "card": "Lud",
+              "meaning": "Početak nove ljubavi ili odnosa je kombinovan sa uzbuđenjem i slobodom."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Poznake kartice za ljubavnike",
+          "affirmation_list": [
+            "Slušam svoje srce i biram sa ljubavlju.",
+            "Kombinujem mušku i žensku energiju u meni u skladu.",
+            "Pozivam ljubav, harmoniju i celu u životu u životu."
+          ]
+        },
+        "cta": {
+          "main": "Izaberite sa ljubavlju, pronađite ravnotežu u svojim odnosima i otvorite svoje srce!",
+          "micro": "Otvoreno komunicirajte u vezi ili dajete važan izbor o sebi danas."
+        },
+        "faq": [
+          {
+            "question": "Šta zaljubljenika kartica predstavlja?",
+            "answer": "Kartica ljubavnika je simbol ljubavi, zajedništva, važnih izbora i unutrašnje harmonije. Opisuje integraciju i donošenje odluka sa ljubavlju, kako u romantičnim odnosima i drugim oblastima života."
+          },
+          {
+            "question": "Šta znači obrnuti ljubitelji?",
+            "answer": "Pozicija obrnutog znači neslaganje, neodlučnost, komunikacijski problemi ili pogrešne izbore u odnosima. Možda ćete morati da pregledate svoja osećanja i vrednosti."
+          },
+          {
+            "question": "U kojim situacijama se pojavljuje kartica ljubavnika?",
+            "answer": "Kartica ljubavnika se pojavljuje kada morate da napravite važnu vezu, partnerstvo ili veliki izbor u vašem životu. Morate da verujete u vođstvo svog srca."
+          }
+        ],
+        "related_cards": [
+          "visoki sveštenik",
+          "kampera",
+          "budala"
+        ],
+        "imageUrl": "/cards/rvs/vi-lovers.vebp"
+      },
+      "the-chariot": {
+        "name": "Kočija - pobeda, VillPover i Master of the Put",
+        "short_description": "Chariot Card; To je simbol volje, odlučnosti i moć da prevaziđe prepreke na putu života. Uzmite mere sa unutrašnjim bilansom da biste postigli svoje ciljeve, pobeda je s vama.",
+        "meanings": {
+          "upright": {
+            "general": "Kočija predstavlja vreme da se u vašem životu preuzme kontrolu, ojačajte svoju volju i krenite naprijed koji je neotkriveno u lice izazova. Ova kartica je moćan poziv za prevazilaženje unutrašnjih i eksternih prepreka, usredsrediti se na cilj odlučnosti i krenuti napred na putu do pobede. Uspeh dolazi sa kombinacijom discipline i samo-motivacije.",
+            "love": "Zaljubljeni, kočija znači postavljanje smera u odnosu, održavajući emocionalnu ravnotežu i zajedno se kreće ka snažnom cilju. Za prevladavanje problema potreban je obostrano određivanje i otvorena komunikacija.",
+            "career": "Imate disciplinu i upornost potrebnu za vođenje vođstva u važnom projektu na vašoj stazi u karijeri i postići uspeh prevazilaženjem teškoća. Jasna strategija i fokus je od suštinskog značaja za postizanje svojih ciljeva.",
+            "money": "U finansijskim pitanjima možete postići svoje finansijske ciljeve zahvaljujući planiranim i utvrđenim koracima. Dobro procenite rizike, držite svoj budžet pod kontrolom i izbegavajte nepotrebne troškove.",
+            "spiritual": "Na duhovnom nivou, kočija znači upravljati unutrašnjim sukobima i napredovati na vašem duhovnom putovanju. Ravnoteža i volja su ključevi duhovnog razvoja."
+          },
+          "reversed": {
+            "general": "Reversed Chariot ukazuje na gubitak kontrole, nedostatak motivacije ili rizika od dezorijentacije. Pregledajte svoju strategiju da biste postigli svoje ciljeve, budite strpljivi i ne dozvolite da se vaša unutrašnja ravnoteža poremeti.",
+            "love": "Invertirani položaj u ljubavi može značiti sukobe u odnosu, tvrdoglavosti ili nespojivosti u zajedničkim ciljevima. Komunikacija i empatija potrebni su da deluju zajedno.",
+            "career": "U karijeri, nedostatak planiranja, prekomerne ambicije ili nedostatak kontrole može dovesti do poremećaja u projektima. Postavite svoje prioritete i dajte značaj timski rad.",
+            "money": "Finansijski, nepotrebni rizici, gubitak budžetske discipline ili ugostine investicije mogu dovesti do gubitaka. Preispitati svoje finansijske odluke.",
+            "spiritual": "Duhovno, to može biti period kada se interni sukobi povećavaju ili izgubite put. Da biste vratili ravnotežu i voljku, okrenite prema unutra i odvojite vreme da meditirate."
+          }
+        },
+        "context": {
+          "mythology": "Chariot simbolizuje trijumfalna putovanja heroja, kraljeva i bogova u drevnim mitologijama. Poput kočija Sunca Boga Heliosa, Ra's Putovanje ratom kroz nebo u Egiptu, ili Krišna vodič za Arjunu u indijskoj mitologiji, kočiju je simbol volje i sveto putovanje.",
+          "celtic_cross": {
+            "future": "U budućnosti ćete prevazići prepreke i steći snažnu motivaciju da biste postigli svoje ciljeve. Pobeda će biti s vama.",
+            "hidden_influences": "Skriveni efekti dolaze iz unutrašnje odlučnosti i volje. Postoji sila koja vas nosi prema naprijed, a da to ne shvatite."
+          }
+        },
+        "story": {
+          "title": "Trijumfalno putovanje kočija",
+          "description": "Ratnik se kreće naprijed u kočiju koje je povukao dva sphinkes različitih boja, bez ikakvih uzde u ruci. Njegov kola je volja i ravnoteža. Pobeda dolazi kroz prevazilaženje unutrašnjih sukoba i kretanje napred sa određivanjem u svakom trenutku putovanja.",
+          "historytitle": "Istorijsko poreklo: Haroit heroja",
+          "history_message": "Kočija je viđena kao simbol pobede, moći i volje u stara vremena. U srednjovekovnim i renesansnim tarotskim palumima, putovanje i potraga za pobedom predstavljaju ovu karticu.",
+          "mystic_title": "Duhovna poruka: Kombinovano volje sa ravnotežom",
+          "mystic_message": "Chariot vas traži da kombinujete volju i unutrašnju ravnotežu na putu do duhovnog rasta. Ustrajevanje u lice poteškoća, pobeda se pojavljuje iz unutrašnje harmonije.",
+          "cultural_title": "Moderna interpretacija: vođstvo orijentisano na ciljno orijentisano",
+          "cultural_message": "U savremenom svetu, kočija se predstavlja utvrđivanje, disciplinovan i motivisan da bi se postigao nečiji ciljevi. Budite lider sopstvenog puta i pretvorite prepreke u mogućnostima.",
+          "lesson": "Chariot vas uči da delujete odlučnošću, ojačajte svoju volju i krenite naprijed koji je neotkriveno u lice poteškoća. Pobeda je moguća sa unutrašnjom ravnotežom."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči Chariot kartice",
+          "keywords_message": "Chariot Tarot Značenje, Chariot Tarot Turski, Pobeda Tarota, Tarot Targe, Tarot Target, Tarot je prevladao prepreke",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Pobeda, volja, odlučnost, disciplina, putovanje, prevladavanje prepreka.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Izbegavajte prekomernu ambiciju i kontrolu, krenite napred održavanjem unutrašnje ravnoteže.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Upravljajte unutrašnjim sukobima sa ravnotežom i pređite na svoje duhovno putovanje sa odlučnošću."
+        },
+        "associations": {
+          "title": "Kosmičke veze sa charoit karticom",
+          "astrology": "Rak (emocionalna ravnoteža, zaštita, stabilnost)",
+          "numerology": "7 (slava, putovanje, duhovna potraga)",
+          "element": "Voda (emocije, protok, unutrašnja snaga)",
+          "chakra": "Solarni pleksus (Manipura) - Vill i Lična snaga"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa kočijom",
+          "combinations": [
+            {
+              "card": "Snaga",
+              "meaning": "Kada se kombinuju volje i unutrašnja snaga, imate sposobnost da prevaziđete bilo koji izazov."
+            },
+            {
+              "card": "Budala",
+              "meaning": "Pokretanje novog putovanja sa odlučnošću donosi slobodu i pobedu."
+            },
+            {
+              "card": "Mađioničar",
+              "meaning": "Sjajna dostignuća postižu se fokusiranom voljom i veštinom; Ciljevi se brzo ostvaruju."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Validacije Chariot Pass-a",
+          "affirmation_list": [
+            "Prelazim prema svojim ciljevima sa određivanjem i biram pobedu.",
+            "Prevladao sam prepreke sa svojom unutrašnjom snagom.",
+            "Ja sam vođa vlastitog puta i obližem svoj život sa svojom voljom."
+          ]
+        },
+        "cta": {
+          "main": "Ojačajte svoju volju, postanite vođa putovanja i proslavite svoju pobedu!",
+          "micro": "Danas postavite cilj i ponesite prvi korak da ga postignete. Pomerite se napred sa vašom disciplinom i motivacijom."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja Carriot Card?",
+            "answer": "Predstavlja volju, odlučnost, pobedu i prevladavanje prepreka. Disciplina i ravnoteža su potrebni za postizanje vaših ciljeva."
+          },
+          {
+            "question": "Šta znači obrnuti kolač?",
+            "answer": "Invertirani položaj ukazuje na gubitak kontrole, nedostatak motivacije ili rizika od dezorijentacije. Pregledajte svoju strategiju i vratite unutrašnju ravnotežu."
+          },
+          {
+            "question": "U kojim je područjima snažno?",
+            "answer": "Jak je u postavljanju ciljeva, prevazilaženje prepreka, liderstva i kretanja napred sa određivanjem."
+          }
+        ],
+        "related_cards": [
+          "snaga",
+          "budala",
+          "mađioničar"
+        ],
+        "imageUrl": "/cards/rvs/vii-chartiot.vebp"
+      },
+      "strength": {
+        "name": "Snaga - hrabrost, unutrašnja snaga i saosećanje",
+        "short_description": "Kartica jačine simbolizuje da bi unutrašnja hrabrost, volje i saosećanje treba da se koriste zajedno. Koristite nežnu snagu i ravnotežu kada se bavite izazovima.",
+        "meanings": {
+          "upright": {
+            "general": "Snaga predstavlja izraz unutrašnje snage sa strpljenjem i hrabrošću. Umesto da paniše u lice poteškoća, ovo je pravo vreme da im se približava mekom snagu, prevazilaze prepreke i olovo. Kada se kura i saosećajno kombinuju, javljaju se veliki uspeh i harmonični rezultati.",
+            "love": "Ljubav, kartica jačine pokazuje vreme za jačanje odnosa kroz ljubav, razumevanje i strpljenje. Približavanje drugoj osobi sa saosećanjem i razumevanjem produbljuje obveznice.",
+            "career": "U karijernoj stazi, baveći se poteškoćama i upotrebom liderskih sposobnosti sa saosećanjem dođe do izražaja. Pacijent i utvrđeni pristup osigurava uspešan završetak projekata.",
+            "money": "Finansijski je važno upravljati resursima sa disciplinom i pravom strategijom. Umesto da donesete užurbane odluke, delujte na planirani i svesni način i zaradite profit sa strpljenjem.",
+            "spiritual": "U duhovnom smislu, kartica jačine označava duhovni rast kroz unutrašnju hrabrost, strpljenje i saosećanje. Otkrivanje i korišćenje sopstvene unutrašnje energije podržava duhovno putovanje."
+          },
+          "reversed": {
+            "general": "Revertra čvrstoća ukazuje na nestrpljenje, nedostatak samopouzdanja ili nemogućnost kontrole gneva. Potrebno je povratiti unutrašnju ravnotežu i strpljenje.",
+            "love": "Invertirani položaj u ljubavi znači neslaganje, kontrola ponašanja ili nestrpljenja u vezi. Empatija i otvorena komunikacija su od suštinskog značaja.",
+            "career": "Invertirana moć u karijeri ukazuje na rizik neuspeha zbog stresa, gnev ili prekomernog pritiska. Budite strpljivi i mereni.",
+            "money": "Finansijski, možda postoji nepažnja, iskrivena ulaganja ili zloupotreba resursa. Planiranje je potrebno.",
+            "spiritual": "U duhovnom smislu, obrnuta snaga ukazuje na nedostatak unutrašnje hrabrosti i gubitka samodiscipline. Meditirajte i posmatrajte sebe."
+          }
+        },
+        "context": {
+          "mythology": "Snaga je povezana sa lavom i saosećajnim herojem arhetipom u drevnim mitologijama. Izbalansirana upotreba hrabrosti i saosećanja simbolizuje i lične i socijalne snage.",
+          "celtic_cross": {
+            "future": "Možete naići na situacije koje zahtevaju strpljenje i hrabrost u budućnosti. Koristeći svoju moć sa saosećanjem donosi uspeh.",
+            "hidden_influences": "Vaša unutrašnja hrabrost može otkriti izvor snage koju ranije niste shvatili."
+          }
+        },
+        "story": {
+          "title": "Priča o elektroenergetskoj kartici",
+          "description": "Žena mirno i lagano kontroliše lava sa otvorenim ustima. Dok lav predstavlja snagu i divlju energiju, nežan i svesni pristup žene pokazuje kombinaciju volje i saosećanja.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Kartica za jačinu je prikazana kao simbol hrabrosti i vrline u srednjovekovnim tarotima. Ženska figura pokazuje da bi moć trebala biti primenjena svesno i saosećajno, a ne sa grubim silom.",
+          "mystic_title": "Duhovno značenje",
+          "mystic_message": "Kartica snage uči duhovni rast kombinovanjem unutrašnje hrabrosti, strpljenja i saosećanja. Pronađite unutrašnju ravnotežu da biste se nosili sa izazovima.",
+          "cultural_title": "Moderna interpretacija",
+          "cultural_message": "Danas predstavlja snagu, samodisciplinu, liderstvo i emocionalnu inteligenciju. Shvatite svoju unutrašnju snagu i priđite svom okruženju sa saosećanjem.",
+          "lesson": "Uči vas da prevaziđete prepreke i otkrijete svoje unutrašnje liderstvo snagom, hrabrošću, strpljenjem i saosećanjem."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči za napajanje",
+          "keywords_message": "Snaga Tarot Značenje, snaga Tarot Turski, hrabrost, unutrašnja snaga, strpljenje, saosećanje, vođstvo tarota",
+          "positive_title": "Pozitivna energija",
+          "positive_message": "Hrabrost, strpljenje, saosećanje, ravnoteža, unutrašnje liderstvo, prevazilaženje prepreka.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Izbegavajte ljutnju i žurbu; Održavajte ravnotežu sa mekom snagom.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Kombinujte svoju unutrašnju snagu i hrabrost sa saosećanjem i ojačajte svoje duhovno putovanje."
+        },
+        "associations": {
+          "title": "Kosmičke veze na energetskoj kartici",
+          "astrology": "Leo (hrabrost, snaga, liderstvo)",
+          "numerology": "8 (snaga, ravnoteža, kontrola)",
+          "element": "Vatra (energija, motivacija, snaga)",
+          "chakra": "Solarni pleksus (Manipura) - Vill i Lična snaga"
+        },
+        "card_combinations": {
+          "title": "Kombinacije koji se tiču snage",
+          "combinations": [
+            {
+              "card": "Kočija",
+              "meaning": "Kada se kombinuju volje i odredno, prepreke se lako prevazilaze i postižu ciljevi."
+            },
+            {
+              "card": "Lud",
+              "meaning": "Novi podebljani korak otkriva unutrašnju snagu i daje samopouzdanje."
+            },
+            {
+              "card": "Sunce",
+              "meaning": "Hrabrost u kombinaciji sa pozitivnom energijom i uspeh dovodi do duhovnih i materijalnih dobitaka."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Odobrenja za napajanje",
+          "affirmation_list": [
+            "Priznajem svoju unutrašnju snagu i hrabrost.",
+            "Ja se bavim poteškoćama sa strpljenjem i saosećanje.",
+            "Ja sam na svoj način vođa i krećem naprijed sa ravnotežom."
+          ]
+        },
+        "cta": {
+          "main": "Koristite svoju unutrašnju hrabrost i saosećanje, prevaziđite prepreke!",
+          "micro": "Kada se danas suočite sa izazovom, rešite ga mekom snagom i krenite napred."
+        },
+        "faq": [
+          {
+            "question": "Šta zastupa CART kartica?",
+            "answer": "Predstavlja unutrašnju hrabrost, strpljenje, saosećanje i sposobnost prevazilaženja prepreka. Simbolizuje ravnotežu i liderstvo u lice poteškoća."
+          },
+          {
+            "question": "Šta znači reverzna elektrana?",
+            "answer": "Invertirani položaj ukazuje na rizik od nestrpljenja, ljutnje, nedostatka samopouzdanja ili gubitka kontrole. Vratite unutrašnju ravnotežu."
+          },
+          {
+            "question": "U kojoj su oblasti snažna karta snažna?",
+            "answer": "Unutrašnji rukovodstvo je snažno hrabrost, strpljenje, prevazilaženje izazova i saosećajne upotrebe moći."
+          }
+        ],
+        "related_cards": [
+          "karita",
+          "pustinjak",
+          "ljubitelji"
+        ],
+        "imageUrl": "/cards/rvs/vii-strength.vebp"
+      },
+      "the-hermit": {
+        "name": "Saint - unutrašnja mudrost i svetlost duhovnog putovanja",
+        "short_description": "Saint Card je simbol unutrašnje potrage, mudrost koja se nalazi u samoći i duhovno prosvetljenje. Poverite snagu tišine, pronađite svoj put sa sopstvenim svetlošću.",
+        "meanings": {
+          "upright": {
+            "general": "Svetac predstavlja vreme u njegovom životu okretanja prema unutra, slušajući sebe i duboko unutrašnje otkriće. Spuštajući se od buke spoljnog sveta, možete pronaći mir u samoći i otkriti svoje istinske smernice u svojoj unutrašnjoj svetlosti. Ova kartica govori o strpljenju, zrelosti i vašem sopstvenom vodiču na putu života.",
+            "love": "Sveti zaljubljenost znači privremenu udaljenost u odnosima, potreba za individualnim prostorom ili unutrašnjim ispitivanjem. Ako ste usamljeni, ovaj proces je prilika da se upoznate i učite iz prethodnih odnosa. U postojećim odnosima, međusobno razumevanje i individualni razvoj postaju važni.",
+            "career": "U polju karijere, Saint kartica označava odgovarajuće vreme da se odrekne sopstveni put, rade samostalno ili tražite mentorstvo. Umesto isprekidanih odluka, strateško razmišljanje i boravak lične lične vrednosti su na čelu.",
+            "money": "U finansijskim stvarima je idealan period za pregled troškova, uštedjeti novac i stvoriti dugoročne planove. Saint savetuje da se izbegne žurba u materijalnim stvarima i da daju prednost unutrašnjem miru.",
+            "spiritual": "Duhovno, Saint Card simbolizuje meditaciju, unutrašnju tišinu i potragu za duhovnim smernicama. Kada ste sami sa sobom, možete otvoriti vrata univerzalne mudrosti i unutrašnjeg mira."
+          },
+          "reversed": {
+            "general": "Uokrećeni svetac znači ekstremna usamljenost, introverziju ili nedostatak smernica. Iako je korisno da se povučete u sebe, potpuno isključene od ljudi oko vas možete dovesti do poremećaja duhovne ravnoteže. Ostanite povezani sa spoljnim svetom za uravnoteženu unutrašnju potragu.",
+            "love": "Invertirani položaj za ljubav ukazuje na rizik izoliranja sebe od odnosa, emocionalne hladnoće ili nedostatka komunikacije. Pokušajte da ojačate veze sa otvorenom komunikacijom i razumevanjem.",
+            "career": "U karijeri, izolacija ili nedostatak smernica koji dolazi sa samim radom može dovesti do blokade u projektima. Ne ustručavajte se zatražiti pomoć, budite otvoreni za saradnju.",
+            "money": "Finansijski, prekomerni konzervativizam ili nepotrebne brige mogu ometati finansijski tok. Važno je koristiti pouzdan savet i pronaći ravnotežu.",
+            "spiritual": "U duhovnom smislu, to ukazuje na rizik od nedostatka smernica, osećaja usamljenosti ili se odseljava od unutrašnjeg prosvetljenja. Meditirati i ponovo se povezati sa duhovnim zajednicama."
+          }
+        },
+        "context": {
+          "mythology": "Svetac je arhetip drevnih mudraca, dervisa i pustinjaka. U mitologiji je identifikovano sa brojcima koji se ulaze u pećine ili traže mudrost sam na planini. Kao što je Prometej koji donosi vatru čovečanstvu ili naučima Lao Tzu u povlačenju, Saintvo putovanje predstavlja potragu za mudrošću koja je i lična i univerzalna.",
+          "celtic_cross": {
+            "future": "U bliskoj budućnosti možda ćete morati da nastavite sa unutrašnjim istraživanjem ili se oslonite samo na sopstvene smernice. Ovaj postupak će doneti duhovni rast i jasnoću.",
+            "hidden_influences": "Skriveni uticaji, unutrašnje intuicije i prošla iskustva osvetljavaju put. Podsvesna mudrost oblikuje vaše odluke."
+          }
+        },
+        "story": {
+          "title": "Duhovno putovanje svetaca",
+          "description": "Sveti napreduje u mraku sa fenjerom u ruci. Svetlost fenjera osvetljava i vlastiti put i put po kojoj može da vodi druge. Usamljenost nije slabost za njega, već vrata mudrosti i unutrašnji mir. Svakim korakom se oslobodi haosa spoljnog sveta i približava se svojoj suštini i univerzalnim istinama.",
+          "historytitle": "Istorijsko poreklo: mudro i vodeći",
+          "history_message": "Saint simbolizuje mudrost, ojačanje i unutrašnje smernice u istoriji Tarota. Tokom srednjeg veka i renesansnih perioda prikazan je kao mudar čovek, monah ili pustinjak. Lampica je svetlost duše koja može pronaći svoj put čak i u mraku.",
+          "mystic_title": "Duhovna poruka: Moć tišine",
+          "mystic_message": "Saint uči da su tišina i samoća prilika za duhovni rast. Verujte svoje unutrašnje smernice i odgovori će vam doći u svoju svetlost.",
+          "cultural_title": "Moderna interpretacija: unutrašnji iscelitelj i mentor",
+          "cultural_message": "U modernom svetu, svetac se pojavljuje kao unutrašnji iscelitelj, životnog trenera ili duhovnog mentora. Dok osvetlite svoj vlastiti put, takođe možete biti primer drugima.",
+          "lesson": "To uči da je svetac da nađe sopstvenu unutrašnju svetlost i zrelu strpljenje i duboku misao. Putovanje je obogaćeno tišinom i samoćom."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči Saint kartice",
+          "keywords_message": "Hermit Tarot Značenje, Hermit Tarot Turski, Tarot Introversion, Tarot Mudrost, Usamljenost Tarot, Tarot Duhovni vodič",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Unutrašnja mudrost, smernice, strpljenje, mir u samoći, duhovno prosvetljenje.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Izbegavajte prekomernu izolaciju; Uravnotežiti usamljenost sa socijalnim priključcima.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Odgovori su skriveni u dubini tišine i unutrašnjeg putovanja. Pronađite svoj put sa sopstvenim svetlošću."
+        },
+        "associations": {
+          "title": "Kosmičke veze Svetog karte",
+          "astrology": "Devica (analiza, detalja, usluga)",
+          "numerology": "9 (završetak, mudrost, zaključak)",
+          "element": "Zemlja (realizam, izdržljivost, strpljenje)",
+          "chakra": "Treće oko - uvid i duhovna vizija"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa Ermis",
+          "combinations": [
+            {
+              "card": "Visoki sveštenik",
+              "meaning": "Duboka intuicija i unutrašnja mudrost kombinuju se za jačanje duhovnog istraživanja."
+            },
+            {
+              "card": "Snaga",
+              "meaning": "Hrabrost i unutrašnja snaga koja se nalazi u samoći pomaže da prevaziđe poteškoće."
+            },
+            {
+              "card": "Budala",
+              "meaning": "Na novom putovanju uravnoteženi koraci se uzimaju u unutrašnje smernice i iskustvo."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Odobrenja za Saint Card",
+          "affirmation_list": [
+            "Svetlila sam svoj put sa sopstvenim unutrašnjim svetlom.",
+            "Smatram duboku mudrost u tišini.",
+            "Samoća mi donosi mir, zrelost i duhovno isceljivanje."
+          ]
+        },
+        "cta": {
+          "main": "Verujte svoje unutrašnje smernice i osvetlite svoj vlastiti put!",
+          "micro": "Stvorite tihi trenutak danas; Povežite se sa unutrašnjom mudrošću kroz meditaciju ili samotna šetnja."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja Sveti karton?",
+            "answer": "Svetac predstavlja unutrašnju mudrost, mir u samoći, duhovni zadatak i poverenje u sopstvene smernice. Vreme je da koristite snagu tišine."
+          },
+          {
+            "question": "Šta znači obrnuta svetaca?",
+            "answer": "Invertirani položaj ukazuje na ekstremnu usamljenost, introverziju ili nedostatak smernica. Važno je pronaći ravnotežu i dobiti podršku po potrebi."
+          },
+          {
+            "question": "U kojim situacijama se pojavljuje Ermis kartica?",
+            "answer": "Ova kartica se pojavljuje kada ste na unutrašnjem putovanju, pronalaženje sebe, trebate biti sami ili tražite duhovne smernice. Preporučuje se strpljenje i unutrašnja tišina."
+          }
+        ],
+        "related_cards": [
+          "visoki sveštenik",
+          "snaga",
+          "budala"
+        ],
+        "imageUrl": "/cards/rvs/ik-hermit.vebp"
+      },
+      "the-wheel-of-fortune": {
+        "name": "Točak sudbine - promena i ciklusa",
+        "short_description": "Točak sudbine predstavlja cikluse života, promene i sudbine. Simbolizuje povratak sreće, nove mogućnosti i predaje se toku života.",
+        "imageUrl": "/cards/rvs/k-Vheeloffortune.vebp",
+        "meanings": {
+          "upright": {
+            "general": "Točak sudbine predstavlja cikličku prirodu života i promene. Vi ste u periodu u kojem se može promeniti sreća i mogu doći nove mogućnosti. Idite sa tokom i budite otvoreni za promenu.",
+            "love": "Neočekivani događaji i nove mogućnosti zaljubljene. Vaša sudbina vas može dovesti do novog odnosa ili transformacije u vašem trenutnom odnosu.",
+            "career": "Promena karijere i nove mogućnosti. Pozitivna dešavanja i sreća je verovatno.",
+            "money": "Ciklične promene materijalnih materija. Sreća i mogućnosti su na vašem pragu, budite spremni.",
+            "spiritual": "Duhovno se predaje sudbini i protoku. Verujte planiran univerzuma i prihvatite cikluse."
+          },
+          "reversed": {
+            "general": "Obrnuti točak sudbine ukazuje na lošu sreću, otpornost ili protivljenje promeni. Oduprijeti se protoku može prouzrokovati probleme.",
+            "love": "Neočekivani problemi ili cikličke poteškoće u ljubavi. Budite strpljivi i idite s tokom.",
+            "career": "Kašnjenja ili neočekivane promene u karijeri. Prilagođavanje, a ne odupiranju.",
+            "money": "Pazite na finansijska pitanja, sreća možda trenutno nije dobra.",
+            "spiritual": "Možda se duhovno opirate protoku. Naučite da se predate."
+          }
+        },
+        "context": {
+          "mythology": "Točak sudbine predstavlja stan boginja sudbine i cikličke prirode života u drevnoj mitologiji. U grčkoj mitologiji Moiras (boginja sudbine) upravljala je ovim ciklusima.",
+          "celtic_cross": {
+            "future": "Možete da doživite značajne promene i cikličke transformacije u budućnosti. Biti otvoren za sreću.",
+            "hidden_influences": "Radi se o skrivenim uticajima, prošlim ciklusima i sudbinom. Plan univerzuma vas oblikuje."
+          }
+        },
+        "story": {
+          "title": "Točak sudbine - ples ciklusa",
+          "description": "Kartica sadrži rotirajuće točkove, sfinge, zmija i Anubis figure. Točak simbolizuje cikluse života, diže i pada. Ovo vas uči da se predate protoku sudbine i zagrljajte promene.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Točak sudbine je jedan od najstarijih simbola Tarota. U srednjem veku je prikazano sa simbolima sudbine i sreće, prikazujući cikličku prirodu života.",
+          "mystic_title": "Duhovno značenje: predati se toku",
+          "mystic_message": "Duhovno se točak sudbine odnosi na poverenje u planinu Universe i predaje se toku života. Prihvatite cikluse i budite otvoreni za promenu.",
+          "cultural_title": "Moderna interpretacija: sreća i mogućnosti",
+          "cultural_message": "U savremenom svetu točak sudbine predstavlja sreću, mogućnosti i neočekivane promene. Idite sa tokom i budite spremni.",
+          "lesson": "Prihvatite cikluse života, idite s tokom umesto da se odupirete promeni."
+        },
+        "keywords": {
+          "keywords_title": "Kolačak sudbine ključnih reči",
+          "keywords_message": "Točak sretre Tarot znači, točak sreće turski, promena, cikluse, sreća, sudbina",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Sreća, nove mogućnosti, pozitivne promene, ciklični razvoj.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Umesto da se odupirete promeni, idite sa protokom i budite strpljivi.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Verujte planu univerzuma, sudbina vas vodi na pravo mesto."
+        },
+        "associations": {
+          "title": "Točak sudbine kosmičke veze",
+          "astrology": "Jupiter (sreća, širenje, mogućnosti)",
+          "numerology": "10 (Završetak ciklusa, Novi početak)",
+          "element": "Vatra - transformacija i energija",
+          "chakra": "Kruna - univerzalna veza"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa volanom sudbine",
+          "combinations": [
+            {
+              "card": "Budala",
+              "meaning": "Novi počeci i sreća se okupljaju, preuzmite smele korake."
+            },
+            {
+              "card": "Zvezda",
+              "meaning": "Nada i sreća ujedinjuju se svetla budućnost vas očekuje."
+            },
+            {
+              "card": "Temperatura",
+              "meaning": "Bilans i ciklusi su u skladu, budite strpljivi."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Točak sudbine sudbine",
+          "affirmation_list": [
+            "Verujem i predajem se toku života.",
+            "Prigrlim promene i otvoren sam za nove mogućnosti.",
+            "Verujem u sreću i plan sudbine."
+          ]
+        },
+        "cta": {
+          "main": "Otkriti",
+          "micro": "Saznajte više"
+        },
+        "faq": [
+          {
+            "question": "Šta znači točak sudbine?",
+            "answer": "Točak sudbine predstavlja promene, cikluse i sreću. Uči nas da se predamo protoku života."
+          },
+          {
+            "question": "Šta znači volan sudbine u ljubavi?",
+            "answer": "Donosi neočekivana razvoj i nove mogućnosti zaljubljene. To je vreme kada vas sudbina može odvesti u novom pravcu."
+          }
+        ],
+        "related_cards": [
+          "budala",
+          "zvezda",
+          "temperament"
+        ]
+      },
+      "justice": {
+        "name": "Pravda - ravnoteža, istina i karma se računaju",
+        "short_description": "Pravosuđe predstavlja iskrenost, ravnotežu i snagu univerzalnih zakona. Svaka radnja proizvodi odgovor; Božanska ravnoteža je uvek ponovo uspostavljena u životu.",
+        "meanings": {
+          "upright": {
+            "general": "Kartica pravde vam govori da je vreme da se suočimo sa posledicama vaših odluka. Pogledajte činjenice, budite iskreni i preuzmite odgovornost za svoje izbore. Uskoro će se uspostaviti mešoviti balans. Univerzum je fer i nepristrasna skala; Svaka radnja ima posledicu.",
+            "love": "Iskrenost i otvorenost su na čelu zaljubljene. Suočavanje sa stvarnim emocijama pruža ravnotežu u vezi. Pre nego što započnete novu vezu, možda će biti potrebno očistiti prošlosti prošlosti.",
+            "career": "Važno je da se pridržavate etičkih vrednosti u vašem putu karijere. Pravda nudi nagrade kada donesete prave odluke. Može postojati povoljni razvoj u poslovnim pregovorima, ugovorima ili sudskim procesima.",
+            "money": "Finansijski, uravnoteženi troškovi i pošteni zarada dođu do izražaja. Izbegavajte loše dobitke; Prihodi koji zaslužujete naći će vas uskoro.",
+            "spiritual": "U duhovnom smislu pravda simbolizuje buđenje karme. Posledice koraka koje ste uzeli u prošlosti sada su uravnoteženi. Duhovna ravnoteža se postiže svešću samoodgovornosti."
+          },
+          "reversed": {
+            "general": "Reversed Judnjak ukazuje na nepravdu, neravnotežu ili nepoštenost. Ne suočavanje sa činjenicama odgađa duhovni rast. Potrebno je ponovo uspostaviti unutrašnju ravnotežu.",
+            "love": "Invertirani položaj u ljubavi može ukazivati na nesporazume, nestabilne odnose ili emocionalne manipulacije. Suzbijanje istine podriva poverenje u odnos.",
+            "career": "Možda postoji nepravda, neetično ponašanje ili pogrešne procene u poslovnim životom. Budite strpljivi i održavajte svoj integritet; Vreme pruža pravdu.",
+            "money": "Budite oprezni u finansijskim pitanjima; Pogrešne investicije ili nepravedne dobitke mogu prouzrokovati probleme. Držite energiju novca čistom.",
+            "spiritual": "Duhovno, obrnuta pravda ukazuje na nepoštenost prema sebi ili drugima. Rebalansiranje vaga savesti."
+          }
+        },
+        "context": {
+          "mythology": "Pravda je identifikovana sa boginjama Thema i Maat u drevnim mitologijama. Dok Themis predstavlja božanske zakone, Maat je glas istine koji održava redosled univerzuma. Ova kartica vas traži da uravnotežite zakone života sa vagama vašeg srca.",
+          "celtic_cross": {
+            "future": "Proces u kojem će vas pravda očitovati uskoro. Istina će biti otkrivena i balans će se vratiti.",
+            "hidden_influences": "Mešani efekti mogu da dolaze iz prošlosti. Sada je vreme da se suočite sa poštenjem i naučite lekciju."
+          }
+        },
+        "story": {
+          "title": "Ogledalo pravde",
+          "description": "Žena koja sedi na prestolu drži mač u jednoj ruci i skalama u drugom. Mač predstavlja tačnost i oštra istinu; Vaga simbolizuje univerzalnu ravnotežu. Oči su mu otvorene jer se ne boji istine.",
+          "historytitle": "Istorijsko poreklo: Boginja istine",
+          "history_message": "U Egiptu je srce mereno Maat-ovom perom odredio lakoću duše. U Rimu, Themis je zaštitio usklađenost ljudskih zakona sa božanskim redosledom. Pravna karta kombinuje ove drevne simbole.",
+          "mystic_title": "Duhovno značenje: moć iskrenosti",
+          "mystic_message": "Pravda pravde predaje svest o duhovnoj odgovornosti. Iskrenost nije samo ni reč, to je energija. Srce usklađeno sa istinom pronalazi mir.",
+          "cultural_title": "Moderna interpretacija: suočiti se sa sopstvenom istinom",
+          "cultural_message": "Danas ova kartica simbolizuje prihvatanje posledica ličnih izbora i pridržavanje etičkih vrednosti. Istina vas oslobađa.",
+          "lesson": "To uči važnost života sa pravdom, iskrenošću i unutrašnjim ravnotežom. Svaki izbor stvara odjek; Univerzum je pošteno vraća ovo odjeka."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči pravde",
+          "keywords_message": "Pravosuđivanje Tarot Značenje, pravda Tarot Turski, Tarot Balance, Karma se računa, božansko naređenje, istina, odgovornost, tarot iskrenost",
+          "positive_title": "Pozitivna energija",
+          "positive_message": "Balans, iskrenost, božanska pravda, etičko ponašanje, rešavanje karme.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Budite iskreni prema sebi. Suzbijanje istine trese duhovne vage.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Primjetite energiju svojih postupaka. Božansko naređenje sve donosi u sajam."
+        },
+        "associations": {
+          "title": "Kosmičke veze pravde",
+          "astrology": "Vaga (Venera) - balans, odnosi, estetska harmonija",
+          "numerology": "11 (Božanska ravnoteža, istina, odgovornost)",
+          "element": "Vazduh (logika, pravda, komunikacija)",
+          "chakra": "Srčana čakra (anahata) - prava ljubav i ravnoteža"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa pravdom",
+          "combinations": [
+            {
+              "card": "Točak bogatstva",
+              "meaning": "Mešani ciklusi se zatvaraju. Univerzum je uravnotežen svoje prošle radnje."
+            },
+            {
+              "card": "Smrt",
+              "meaning": "Ciklus se završava, pravda se poslužuje. Obnavljanje je neizbežno."
+            },
+            {
+              "card": "Zvezda",
+              "meaning": "Jednom kada se suočite sa istinom, nada i isceljenje vas očekuju."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Odobrenja pravde",
+          "affirmation_list": [
+            "Hrabro vidim istinu i učim iz toga.",
+            "Podržavam božansku ravnotežu kroz svoje postupke.",
+            "Pravda počinje u meni i odjekuje izvan mene."
+          ]
+        },
+        "cta": {
+          "main": "Vidite istinu, vratite ravnotežu!",
+          "micro": "Slušajte svog unutrašnjeg glasa danas. Neka iskrenost i ljubav budu vaš vodič u vašim odlukama."
+        },
+        "faq": [
+          {
+            "question": "Šta zastupa kartica za pravdu?",
+            "answer": "Pravosudska karta predstavlja iskrenost, odgovornost, ravnotežu i karmu zakone. Svaka akcija ima posledice i Univerzum obnavlja ravnotežu."
+          },
+          {
+            "question": "Šta znači obrnuta pravda?",
+            "answer": "Invertirani položaj ukazuje na neravnotežu, laži, nepravdu ili nepoštenost. Vreme je da ponovo uspostavite vašu unutrašnju ravnotežu."
+          },
+          {
+            "question": "U kojim situacijama se pojavljuje pravna karta?",
+            "answer": "Dolazi se u vremenima kada se morate suočiti sa činjenicama, realizovati posledice svojih izbora ili se obratiti etičkim vrednostima."
+          }
+        ],
+        "related_cards": [
+          "točak bogatstva",
+          "presjećen čovek",
+          "zvezda"
+        ],
+        "imageUrl": "/cards/rvs/ki-justice.vebp"
+      },
+      "the-hanged-man": {
+        "name": "Obješen muškarac - predaja, svest i nova perspektiva",
+        "short_description": "Obučeni čovek predstavlja pauziranje, okrećući se prema unutra i gledajući stvari iz druge perspektive. Ponekad je način da se krene napred je zaustaviti i predati se.",
+        "meanings": {
+          "upright": {
+            "general": "Obučena man kartica ukazuje na period čekanja ili suspenzije u vašem životu. Ova pauza nije da vas ne kažnjava, već da produbite svoju svest. Predajte se, prepuštajući kontrolu i vidjeti stvari iz druge perspektive donosi duhovni ronilac.",
+            "love": "Zaljubljen je vreme da pogledate svoju vezu iz druge perspektive. Naučite da čekate, otvorite svoje srce i strpljivo slušate svoju intuiciju. Zamenite stare obrasce prihvatanjem i razumevanjem.",
+            "career": "U polju karijere može postojati privremena stagnacija. Međutim, ovaj proces je prilika da pronađete svoj novi pravac. Pauziranje, ponovno ocenjivanje i donošenje svesnih izbora donosi rast.",
+            "money": "Finansijski, strpljenje i strateški čekanja su važni. Usredsredite se na sticanje uvida, a ne da delujete u trenutku.",
+            "spiritual": "Duhovno, obješen čovek predaje ego predaju i poverenje u božansko tok. Pravi prosvetljenje dolazi kada možete da pustite kontrolu."
+          },
+          "reversed": {
+            "general": "Okrušeni muškarac naopako ukazuje na otpornost, tvrdoglavost ili je zatvoren za promenu. Ako vas život zaustavlja, možda je vreme da drugačije razmišljate.",
+            "love": "Zaljubljeni, obrnuti položaj može navesti period kada je žrtva jednostrana ili je veza energetski blokirana. Reproducirajte svoje granice.",
+            "career": "Možda ste ušli u ciklus nedostatka smera ili odlaganja u karijeri. Kretanje napred bez razvoja nove perspektive vas čuva na istom mestu.",
+            "money": "To ukazuje na rizik od finansijskih blokada ili lošeg vremena. Ako stare metode ne rade, pređite na novu strategiju.",
+            "spiritual": "Duhovno, strah od predaje ili nestrpljenja može ometati unutrašnji mir. Naučite da verujete toku."
+          }
+        },
+        "context": {
+          "mythology": "Obučeni čovek arhetip povezan je sa Odinom učenjem tajne runa viseći sebe na Iggdrasilu, drvetu mudrosti, u norvešoj mitologiji. Prava mudrost proizlazi iz hrabrosti da transformiše bol u svest.",
+          "celtic_cross": {
+            "future": "Proces koji zahteva pauzu ili promenu smera može vas čekati u budućnosti. Čekanje će biti ključ za svest.",
+            "hidden_influences": "Nevidljivi faktori vas vode do puta predaje i prihvatanja. Univerzum vas je možda zaustavio iz unutrašnjeg rasta."
+          }
+        },
+        "story": {
+          "title": "Tiha mudrost vešanog čoveka",
+          "description": "Čovek visi naopako sa drveta. Miran izraz na njegovom licu govori nam da se predaja dolazi od prihvatanja, a ne bola. Gledanje sveta naopačke znači realizovanje stvarnosti iz novog ugla.",
+          "historytitle": "Istorijsko poreklo: prosvetljenje na drvetu mudrosti",
+          "history_message": "U srednjovekovnim tarotima ova kartica je značila dobrovoljnu pauzu, a ne žrtvu. Prava transformacija započinje u unutrašnjoj tišini.",
+          "mystic_title": "Duhovno značenje: moć predaje",
+          "mystic_message": "Obučeni čovek uči da možete postići unutrašnji mir kada odaberete prihvatanje umesto otpora. Duhovno buđenje je ponekad skriveno u čekanju.",
+          "cultural_title": "Moderna interpretacija: promena perspektive",
+          "cultural_message": "Danas je ova kartica povezana sa samosvesti, svesnom pauziranjem i hrabrošću da puste starih obrazaca.",
+          "lesson": "Zaustavljanje nije slabost, to je priprema za ponovno rođenje. Ponekad ništa ne radi je najpametnija akcija."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči obešene man karte",
+          "keywords_message": "Obučeni muškarac Tarot znači, obešeni muškarac Turski, Tarot predaja, svest o tarotu, partijansi Tarot, Tarot Nova perspektiva",
+          "positive_title": "Pozitivna energija",
+          "positive_message": "Predaja, svest, unutrašnji mir, prihvatanje, intuitivna mudrost.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Pogledajte pauze ne kao kaznu, već kao dar svesti.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Unutrašnja predaja otvara vrata božanske mudrosti. Kad pustiš, postaješ slobodan."
+        },
+        "associations": {
+          "title": "Kosmičke veze obešene man karte",
+          "astrology": "Neptun (snovi, božanska predaja, podsvesna)",
+          "numerology": "12 (čeka, svest, duhovna transformacija)",
+          "element": "Voda (emocije, protok, predaja)",
+          "chakra": "Crovn - Božanska veza i prosvetljenje"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa obešenim čovekom",
+          "combinations": [
+            {
+              "card": "Smrt"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

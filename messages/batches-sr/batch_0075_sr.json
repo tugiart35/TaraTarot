@@ -1,0 +1,786 @@
+{
+  "relationship-analysis": {
+    "meanings": {
+      "fiveofswords": {
+        "position2": {
+          "reversed": "Preokrećeno pet mačeva pokazuje da ponos zatvara vrata izvinjenja. Simptom: Hladni rat.",
+          "keywords": [
+            "ego",
+            "sukob",
+            "pobeda",
+            "trošak",
+            "konsenzus"
+          ],
+          "context": "Odbrana je trenutno velika u vašem srcu. Nazad jedan korak će donijeti mir. Meke namere će graditi mostove."
+        },
+        "position3": {
+          "upright": "Petorica mačeva vam govori da je vaša očekivanja da se ego ratovi završavaju. Vaše srce želi mir ... pomirenje, saosećanje.",
+          "reversed": "Otkriveni pet mačeva pokazuje da je vaše očekivanje da se pusti ponos i zaista donosi mir. Vaše srce želi da izgradi mostove. \\ N \\ nsimptom: Zahtev za mir.",
+          "keywords": [
+            "mir",
+            "konsenzus",
+            "ego",
+            "čast",
+            "most"
+          ],
+          "context": "Vaša očekivanja je kompromis. Vaše srce traži razumevanje, a ne boriti se."
+        },
+        "position4": {
+          "upright": "Pet mačeva kaže da se prestani takmičiti za pravdu. Zaštita mostova je suština profita. Perspektiva \"Vin-Vin\".",
+          "reversed": "Preokrećeno pet mačeva nudi priliku za popravak. Kompenzacijski gest zaceljuje obveznice. \\ N \\ nsimptom: Mala izvinjenje, veliki uticaj.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "popraviti",
+            "legitimitet",
+            "nadoknada"
+          ],
+          "context": "Vaš savet; Fokusiranje na povezivanje, a ne da budem u pravu. Poniznost popravlja obveznica."
+        },
+        "position5": {
+          "upright": "Vaš put je da napustite svoju ambiciju da budete u pravu i zaštitite mostove. Dobitak može biti zadovoljstvo ega, a ne obveznice.",
+          "reversed": "Put vas traži da date šansu za popravak. Fleksibilan jezik će olakšati napetost.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "legitimitet",
+            "popraviti"
+          ],
+          "context": "Vaša mapa puta; Zaštitite most. Odabir mira nad pravednošću doneće isceljenje."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje da gradite mostove, a ne borite se. Mir, nije u pravu, vrijedan je za njega.",
+          "reversed": "Vaš partner ne želi da vidi nikakve osnovne borbe za napajanje. Očekuje restaurativni jezik.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "mir",
+            "popraviti",
+            "kompromis"
+          ],
+          "context": "Vaš partner očekuje da odaberete mir zbog pobede."
+        },
+        "position7": {
+          "upright": "Nakon sukoba može postojati osećaj izgubljenog gubitka nakon sukoba u budućnosti odnosa. Umesto da budem u pravu, zaštita mostova postaće važna.",
+          "reversed": "Popravka i oprost će biti moguće u budućnosti. Kada se ego pusti, veza će se ponovo uspostaviti.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "legitimitet",
+            "popraviti"
+          ],
+          "context": "Budućnost komunikacije oblikovaće se lekcijama naučenim iz sukoba. Oproštenje će ojačati mostove."
+        }
+      },
+      "sixofswords": {
+        "position1": {
+          "upright": "Šest mačeva ukazuje na nameru da pređe na mirniju put u trenutnoj situaciji. Stormi vode žele da budu ostavljeni iza sebe. Savet: Verujte tranziciji.",
+          "reversed": "Uokrećena šest mačeva kaže da je tendencija povratka u prošlost odgađa mir. Simptom: ponavljajuće cikluse.",
+          "keywords": [
+            "prelaz",
+            "miran",
+            "napredak",
+            "putovanje",
+            "adaptacija"
+          ],
+          "context": "U trenutnoj situaciji vinograda želi da pređe na mirnije tlo. Ne prebivalište u prošlosti će se izlečiti."
+        },
+        "position2": {
+          "upright": "Šest mačeva vam govori da postoji želja da se preseli u mirne vode u svojim emocijama. Tvoje srce traži most. Savet: Nastavite postepeno.",
+          "reversed": "Preokrećeno šest mačeva kaže da vas vraćaju stare gume. Simptom: Ponavljajući povratni korak.",
+          "keywords": [
+            "prelaz",
+            "miran",
+            "poboljšanje",
+            "staza",
+            "adaptacija"
+          ],
+          "context": "Vaše srce želi da se useli u mir upravo sada. Mali, dosledni koraci će stvoriti poverenje. Nemojte se prebivati u prošlosti."
+        },
+        "position3": {
+          "upright": "Šest mačeva vam govori da je vaše očekivanje putovanje do smirenijih voda. Vaše srce želi mirnu tranziciju. Putovanje, napredak.",
+          "reversed": "Okrećeno šest mačeva ukazuje da je vaše očekivanje da ostave stare probleme potpuno iza sebe. Vaše srce traži zatvaranje. \\ N \\ nsimptom: Potreba za tranzicijom.",
+          "keywords": [
+            "prelaz",
+            "mir",
+            "napredak",
+            "miran",
+            "transformacija"
+          ],
+          "context": "Ono što očekujete je emocionalno smirujuće. Vaše srce želi mirnu rutu."
+        },
+        "position4": {
+          "upright": "Šest mačeva kaže da idite na mirne vode. Mala udaljenost donosi mir nazad. \"Dahni danas.\"",
+          "reversed": "Reversed šest mačeva kaže da je otpuštena prošla veza. Kako postaje upaljač, pravac postaje jasan. \\ N \\ nsimptom: oproštaj ritual.",
+          "keywords": [
+            "prelaz",
+            "spokojstvo",
+            "ruta",
+            "lakoća",
+            "napredak"
+          ],
+          "context": "Vaš savet; Napustiti teret i krenuti prema mirnoj ruti. Proces tranzicije daje mir srcu."
+        },
+        "position5": {
+          "upright": "Vaša staza leži u selištu od olujnih voda i prema smirenosti. Postepeni koraci će vam doneti samopouzdanje.",
+          "reversed": "Staza želi da se oslobodite starih obveznica. Dobijanje podrške olakšava tranziciju.",
+          "keywords": [
+            "prelaz",
+            "spokojstvo",
+            "ruta",
+            "poboljšanje"
+          ],
+          "context": "Vaša mapa puta; Kretanje za smirenosti vode. Sigurna udaljenost će dati duševni mir."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje da napustite prošlost iza i pređete na mirne vode. Želi da se fokusirate na budućnost.",
+          "reversed": "Vaš partner ne želi da nastavite da donesete prošlost. Postoji očekivanje napretka i tranzicije.",
+          "keywords": [
+            "prelaz",
+            "napredak",
+            "spokojstvo",
+            "regeneracija",
+            "pravac"
+          ],
+          "context": "Vaš partner očekuje da ostavite prošlost iza i veselite se zajedno."
+        },
+        "position7": {
+          "upright": "U budućnosti odnosa postoji putovanje za smirive vode. Biće prilika da se sklonite od problema zajedno.",
+          "reversed": "To može biti teško napustiti prošlost iza sebe. Bez unošenja veza, novo putovanje postaje teško.",
+          "keywords": [
+            "prelaz",
+            "spokojstvo",
+            "odmicali se",
+            "regeneracija"
+          ],
+          "context": "Budućnost komunikacije će se oblikovati sigurnim prelazima. Razbijanje sa prošlošću možda nije lako."
+        }
+      },
+      "sevenofswords": {
+        "position1": {
+          "upright": "Sedam mačeva ukazuje na pitanja transparentnosti u trenutnoj situaciji. Odmah reči mogu biti štetno poverenje. Savet: Jasnoća je ključna.",
+          "reversed": "Preokrećeno sedam mačeva ukazuje na nameru da priznaju, ali lima vremena. Simptom: Evasive odgovori.",
+          "keywords": [
+            "sigurnost",
+            "strategija",
+            "iskrenost",
+            "skladištenje",
+            "poverenje"
+          ],
+          "context": "Trenutno obveznica doživljava test poštenosti. Jasnoća će obnoviti poverenje."
+        },
+        "position2": {
+          "upright": "Sedam mačeva ukazuje na tendenciju da bude rezervisana i oprezna u razminiranju svojih emocija. Vaše srce radi test poverenja. Savet: Budite specifični na pravom mestu.",
+          "reversed": "Okrećeno sedam mačeva nam govori da je želja za priznanjem u sukobu sa bašterom sramote. Simptom: Evasive odgovori.",
+          "keywords": [
+            "transparentnost",
+            "poverenje",
+            "skladištenje",
+            "strategija",
+            "iskrenost"
+          ],
+          "context": "Vaše srce je sada oprezno. Biće otvoren u sigurnim oblastima dat će vam duševni mir. Jasnoća umesto polovine reči biće dobro."
+        },
+        "position3": {
+          "upright": "Sedam mačeva vam govori da je vaša očekivanja iskrenost. Vaše srce želi prozirnu vezu, daleko od skrivene agende. Otvorenost, poverenje.",
+          "reversed": "Preokrećeno sedam mačeva ukazuje da vaše očekivanje treba da bude slobodan od tajnih trikova. Vaše srce traži čiste namere. \\ N \\ nsimptom: Zahtev za poverenje.",
+          "keywords": [
+            "iskrenost",
+            "otvorenost",
+            "poverenje",
+            "transparentnost",
+            "lojalnost"
+          ],
+          "context": "Ono što očekujete je jasne namere. Vaše srce zahteva autentičnost."
+        },
+        "position4": {
+          "upright": "Sedam mačeva kaže da će izgraditi vašu strategiju sa čistim namerama. Transparentnost je most poverenja. Podelite plan.",
+          "reversed": "Reversed Sedam mačeva kaže da je pustila pola istine. Jasnoća donosi mir. \\ N \\ nsimptom: \"Moja namera je ova\" rečenica.",
+          "keywords": [
+            "strategija",
+            "iskrenost",
+            "plan",
+            "poverenje",
+            "namera"
+          ],
+          "context": "Vaš savet; Deljenje plana u vašem umu bez skrivanja. Iskrenost jača vezu."
+        },
+        "position5": {
+          "upright": "Vaš put prolazi kroz strateške, ali dobronamerne korake. To je možda korisno da se tiho nastavi.",
+          "reversed": "Put vas traži da pustite napola istine. Transparentnost će popraviti poverenje.",
+          "keywords": [
+            "strategija",
+            "sigurnost",
+            "iskrenost",
+            "plan"
+          ],
+          "context": "Vaša mapa puta; Strategija sa čistom namerom. Transparentnost će sačuvati obveznicu."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje iskrenost i transparentnost od vas. Želi da vidi jasne namere, a ne tajne planove.",
+          "reversed": "Vaš partner ne želi da vidi poluistine. Otvorenost i pouzdanost su mu veoma dragoceni.",
+          "keywords": [
+            "iskrenost",
+            "transparentnost",
+            "poverenje",
+            "otvorenost",
+            "namera"
+          ],
+          "context": "Vaš partner očekuje da ćete biti otvoreni i pouzdan."
+        },
+        "position7": {
+          "upright": "Budućnost komunikacija uključiće strateške korake i pažljiv napredak. Čak i ako se sve ne govori otvoreno, namera mora biti čista.",
+          "reversed": "Tajnost ili poluistine mogu ugroziti poverenje u budućnost. Transparentnost će biti obavezna.",
+          "keywords": [
+            "strategija",
+            "sigurnost",
+            "namera",
+            "poverenje"
+          ],
+          "context": "Budućnost komunikacije napredovala će sa pametnim strategijama. Ali ne bi trebalo da pređe granicu poverljivosti."
+        }
+      },
+      "eightofswords": {
+        "position1": {
+          "upright": "Osam mačeva nam govori da su ograničavajuća uverenja efikasna u trenutnoj situaciji. Smatra se da su putevi koji se zapravo otvore zatvaraju. Savet: razbiti mentalne lance.",
+          "reversed": "Otkriveni osam mačeva ukazuje da se postavlja mogućnost oslobađanja, ali je zadržana strahovima. Simptom: nestabilni koraci.",
+          "keywords": [
+            "ograničenje",
+            "strah",
+            "sloboda",
+            "verovanje",
+            "um"
+          ],
+          "context": "U trenutnoj situaciji, veza je testirana strahom. Podelite podebljani korak će osloboditi lance."
+        },
+        "position2": {
+          "upright": "Osam mačeva vam govori da ograničavanje uverenja su ograničavaju vaše emocije. Kada su vrata otvorena, smatra se da je zatvorena. Savet: Odvojite dokaze iz straha.",
+          "reversed": "Otkriveni osam mačeva govori nam da se oklevanje nastavlja uprkos čvorovima koji počinju da se otkriju. Simptom: napred i nazad.",
+          "keywords": [
+            "samostalno ograničenje",
+            "strah",
+            "verovanje",
+            "sloboda",
+            "hrabrost"
+          ],
+          "context": "Tvoje srce je trenutno stidljivo. Mali podebljani eksperimenti otvoriće prostor. Traženje pomoći je takođe teško."
+        },
+        "position3": {
+          "upright": "Osam mačeva kaže da je vaše očekivanje da prevaziđete strahove. Vaše srce želi da bude slobodna ... hrabrost, rastvaranje.",
+          "reversed": "Osetila osam mačeva ukazuje da je vaše očekivanje da je puštanje mentalnih barijera. Vaše srce traži besplatan dah. \\ N \\ nsimptom: želja za slobodom.",
+          "keywords": [
+            "sloboda",
+            "strah",
+            "hrabrost",
+            "rastvaranje",
+            "svetao"
+          ],
+          "context": "Vaša očekivanja je da se oslobodi. Vaše srce želi da razbije svoje lance."
+        },
+        "position4": {
+          "upright": "Osam mačeva kaže, shvatite veru koju mislite da je lanac. Mali dokazi oslobađaju ... \"Da li je to zaista prepreka?\" upit.",
+          "reversed": "Otkriveno osam mačeva kaže, dozvoljava rastvaranje. Dobijajte podršku, konopci se otpuštaju. \\ N \\ nsimptom: jedan korak ka slobodi.",
+          "keywords": [
+            "samostalno ograničenje",
+            "verovanje",
+            "sloboda",
+            "strah",
+            "svest"
+          ],
+          "context": "Vaš savet; primećujući mentalne lance i labavljenje sa sitnim dokazima. Ako se verovanje promeni, srce se otvara."
+        },
+        "position5": {
+          "upright": "Vaš put je da realizuješ sopstvene mentalne lance i postanete slobodni. Mali dokazi će vas osloboditi.",
+          "reversed": "Put vas želi da vidite izlazna vrata bez predaje strahova. Traženje podrške je korisno.",
+          "keywords": [
+            "oslobođenje",
+            "strah",
+            "umazač",
+            "eksperiment"
+          ],
+          "context": "Vaša mapa puta; da reše sopstvene granice. Mali koraci slobode otvoriće vaš smer."
+        },
+        "position6": {
+          "upright": "Vaš partner vas traži da ne dozvolite da vas strahovi kontrolišu. Hrabri korak čeka.",
+          "reversed": "Vaš partner ne želi da ostanete u ulozi žrtve. Čeka vas da budete slobodni i preuzmete odgovornost.",
+          "keywords": [
+            "sloboda",
+            "odgovornost",
+            "hrabrost",
+            "oštrina",
+            "snaga"
+          ],
+          "context": "Vaš partner čeka da prevaziđete svoje strahove i postanete slobodni."
+        },
+        "position7": {
+          "upright": "Mentalna ograničenja ili strahovi mogu imati uticaja na budućnost veze. Male svesti će pokrenuti oslobođenje.",
+          "reversed": "Lanci će početi da se rastvaraju. Ali strahovi se mogu ponoviti.",
+          "keywords": [
+            "ograničenje",
+            "strah",
+            "oslobođenje",
+            "umazač"
+          ],
+          "context": "Budućnost komunikacije nosi priliku za oslobađanje. Ali strahovi mogu postaviti lanac."
+        }
+      },
+      "nineofswords": {
+        "position1": {
+          "upright": "Devet mačeva kaže da se u trenutnoj situaciji prevladavaju u trenutnoj situaciji, zabrinutosti i preterani scenariji. Um je teško da nađe mir. Savet: Odvojena stvarnost od anksioznosti.",
+          "reversed": "Okrećeno devet mačeva kaže da noćne more počinju da blede, ali ostaci ostaju. Simptom: Insomnia.",
+          "keywords": [
+            "anksioznost",
+            "zabluda",
+            "spavati",
+            "um",
+            "preterivanje"
+          ],
+          "context": "U trenutnoj situaciji, veza postaje umorna sa previše razmišljanja. Zamena anksioznosti sa poverenjem donijet će isceljenje."
+        },
+        "position2": {
+          "upright": "Devet mačeva vam govori da anksioznost i preterani scenariji okružuju vaše emocije. Um uvećava noć. Savet: Uradite proveru stvarnosti.",
+          "reversed": "Pretvoreni devet mačeva ukazuje da je noćna mora sugala, ali ostaje ožiljak. Simptom: Rezidualna nesanica.",
+          "keywords": [
+            "anksioznost",
+            "zabluda",
+            "spavati",
+            "stvarnost",
+            "regulacija"
+          ],
+          "context": "Tvoje srce trenutno želi uvjeravanje. Disanje i jasan govor će rešiti anksioznost. Mali dokazi daju veliki duševni mir."
+        },
+        "position3": {
+          "upright": "Devet mačeva kaže da je vaše očekivanje da se oslobodi brige. Vaše srce želi mirno spavanje ... poverenje, smirenost.",
+          "reversed": "Ograničeno devet mačeva ukazuje da je vaše očekivanje ostaviti strahove iza sebe. Tvoje srce čezne za nadu. \\ N \\ nsimptom: Želja da budete oslobođeni anksioznosti.",
+          "keywords": [
+            "anksioznost",
+            "nadati se",
+            "miran",
+            "sloboda",
+            "zarastanje"
+          ],
+          "context": "Vaša očekivanja je mir. Vaše srce traži siguran prostor."
+        },
+        "position4": {
+          "upright": "Devet mačeva kaže da zapišete svoju anksioznost i učinite ga vidljivim. Senka koja raste noću postaje manja na dnevnom svetlu. Tehnika \"Lista brige\".",
+          "reversed": "Reversed devet mačeva kaže da koristite jasnoću jutra. Male pobjede rastope anksioznost. \\ N \\ nsimptom: sićušna namera u prvom svetlu dana.",
+          "keywords": [
+            "anksioznost",
+            "anksioznost",
+            "ne piši",
+            "oštrina",
+            "zarastanje"
+          ],
+          "context": "Vaš savet; Stavljajući svoje strahove na papir i organizujte ih. Jasnoća donosi mir u srce."
+        },
+        "position5": {
+          "upright": "Na vaš način je da svoje brige postavite u pisanju i suočite se sa stvarnošću. Noćne misli se oslobađaju jutarnje jasnoće.",
+          "reversed": "Put vas traži da pustite scenarije katastrofa. Male pobede će rešiti anksioznost.",
+          "keywords": [
+            "anksioznost",
+            "nesanica",
+            "katastrofalan",
+            "zarastanje"
+          ],
+          "context": "Vaša mapa puta; suočavanje sa anksioznošću. Stvarnost će oslabiti anksioznost."
+        },
+        "position6": {
+          "upright": "Vaš partner želi da pošteno delite svoje brige. Važno je da ne skrivate svoja osećanja prema njemu.",
+          "reversed": "Vaš partner ne želi stalno da vidi mračne scenarije. Čeka se više nade pristupa.",
+          "keywords": [
+            "anksioznost",
+            "iskrenost",
+            "deljenje",
+            "nadati se",
+            "real"
+          ],
+          "context": "Vaš partner očekuje da delite svoje brige, ali ih uravnotežite nadom."
+        },
+        "position7": {
+          "upright": "U budućnosti odnosa mogu biti perioda anksioznosti i nesanice. Ako se uvećaju strahovi, veza se može umoriti.",
+          "reversed": "Ankete će se početi rastvarati sa jutrom jasnoće. Provera stvarnosti će donijeti mir vinogradu.",
+          "keywords": [
+            "anksioznost",
+            "noćna mora",
+            "strah",
+            "stvarnost"
+          ],
+          "context": "Budućnost odnosa može se testirati anksioznošću. Ali sukob će doneti mir."
+        }
+      },
+      "tenofswords": {
+        "position1": {
+          "upright": "Deset mačeva ukazuje na razorni zatvaran ili iscrpljenost u trenutnoj situaciji. Stari način je gotov. Savet: Dozvolite ponovno rođenje.",
+          "reversed": "Prekoračeni deset mačeva pokazuje znakove oporavka, ali nedostatak potpunog zatvaranja. Simptom: Poluprobroji.",
+          "keywords": [
+            "završiti",
+            "zatvaranje",
+            "regeneracija",
+            "izumiranje",
+            "ponovno rođenje"
+          ],
+          "context": "U trenutnoj situaciji, veza zatvara petlju. Izrada prostora za novu će osloboditi."
+        },
+        "position2": {
+          "upright": "Deset mačeva vam govori da je ciklus završio okončan u vaše emocije, a stari način više ne funkcioniše. Vreme je da se pustimo. Savet: Ritualizujte zatvaranje.",
+          "reversed": "Prekoračeni deset mačeva ukazuje da je uprkos nameru oporavka, potpuno oproštaj. Simptom: Pola završetka.",
+          "keywords": [
+            "završiti",
+            "zatvaranje",
+            "regeneracija",
+            "izumiranje",
+            "prihvatanje"
+          ],
+          "context": "Tvoje srce sada želi da istovari odmah. Poštovanje kraja će to ublažiti. Nova stranica je spremna."
+        },
+        "position3": {
+          "upright": "Deset mačeva kaže da je vaše očekivanje da će se stari ciklusi zatvoriti. Vaše srce želi da se rodi. Kraj, početak.",
+          "reversed": "Deset mačeva preokrećeno ukazuje da je vaše očekivanje da se oporavi i nađemo nade ponovo. Tvoje srce traži novu stranicu. \\ N \\ nsimptom: Želja za ponovnom ronilaciji.",
+          "keywords": [
+            "završiti",
+            "regeneracija",
+            "početak",
+            "transformacija",
+            "nadati se"
+          ],
+          "context": "Vaša očekivanja je zatvaranje. Vaše srce želi da se rodi novo."
+        },
+        "position4": {
+          "upright": "Deset mačeva kaže da će časti kraj. Zatvaranje je potrebno za novi početak. Oproštaj ritual.",
+          "reversed": "Invertirani deset mačeva, počinje oporavak. Osvetljena namera otvara vrata novom. \\ N \\ nsimptom: \"Gotovo je i drago mi je što se dogodilo.\"",
+          "keywords": [
+            "završiti",
+            "regeneracija",
+            "predaja",
+            "oproštaj",
+            "rođenje"
+          ],
+          "context": "Vaš savet; zatvaranje starog ciklusa sa saosećanjem. Zatvaranje otvara disanje u srce."
+        },
+        "position5": {
+          "upright": "Vaša staza leži u čast zatvorenog ciklusa i počevši od završetka. Završetak otvara vrata novom.",
+          "reversed": "Put vas traži da ubrzate oporavak. Reframing daje snagu.",
+          "keywords": [
+            "završiti",
+            "ponovno rođenje",
+            "predaja",
+            "zarastanje"
+          ],
+          "context": "Vaša mapa puta; puštanje stvari. Prostor će biti napravljen za novi."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje da poštujete zatvorene petlje. Želi da napravite mesta za novi početak.",
+          "reversed": "Vaš partner ne želi da prebivate na starim ranama. Čeka vas da budete otvoreni za ponovno rođenje.",
+          "keywords": [
+            "zatvaranje",
+            "ponovno rođenje",
+            "prihvatanje",
+            "zarastanje",
+            "nadati se"
+          ],
+          "context": "Vaš partner očekuje da prihvatite zatvaranje i dobrodošli na novo."
+        },
+        "position7": {
+          "upright": "Ciklus će biti završen u budućnosti komunikacije. Sa završetkom će biti prostora za novi početak.",
+          "reversed": "Po početak oporavka i ponovnog rođenja oporavka. Teret prošlosti će ostati iza sebe.",
+          "keywords": [
+            "završiti",
+            "predaja",
+            "regeneracija",
+            "početak"
+          ],
+          "context": "Budućnost odnosa biće oblikovana zatvaranjem i obnovom. Kraj će otvoriti nova vrata."
+        }
+      },
+      "pageofswords": {
+        "position1": {
+          "upright": "Princ mačeva, radoznalost i ispitivanje energije prevladava u trenutnoj situaciji. Pitanja se postavljaju, traže se istina. Savet: Pristojno izrazite svoju radoznalost.",
+          "reversed": "Okrećeni princ mačeva kaže da tračevi i lažne pretpostavke stvaraju senku. Simptom: Nepotvrđene informacije.",
+          "keywords": [
+            "radoznalost",
+            "komunikacija",
+            "pitanje",
+            "učenje",
+            "real"
+          ],
+          "context": "U trenutnoj situaciji obveznica je testirana ispitivanjem. Otvorena i uljudna komunikacija će podstaći poverenje."
+        },
+        "position2": {
+          "upright": "Princ mačeva kaže da radoznalost i želja da nauče da voze vaša osećanja. Imate pitanja koja želite da pitate. Savet: pristojno pitanje, otvoreno srce.",
+          "reversed": "Prenoćini princ mačeva kaže da tračevi i užurbani presudi oblak vaše emocije. Simptom: Nepotvrđene informacije.",
+          "keywords": [
+            "radoznalost",
+            "pitanje",
+            "učenje",
+            "komunikacija",
+            "oštrina"
+          ],
+          "context": "Trenutno vaše srce želi da zna. Direktna i mekana pitanja će izgraditi poverenje. Držite se podalje od pretpostavke."
+        },
+        "position3": {
+          "upright": "Princ mačeva kaže da je vaše očekivanje otvorena radoznalost i iskrena pitanja. Vaše srce želi transparentan dijalog. Učenje, komunikacija.",
+          "reversed": "Okolišteni princ mačeva ukazuje da je vaše očekivanje da se očisti u nesporazumima. Vaše srce traži siguran razgovor. \\ N \\ nsimptom: Želja za transparentnom komunikacijom.",
+          "keywords": [
+            "komunikacija",
+            "pitanje",
+            "radoznalost",
+            "transparentnost",
+            "učenje"
+          ],
+          "context": "Vaša očekivanja je otvoren dijalog. Vaše srce je gladno da uči i bude razumeo."
+        },
+        "position4": {
+          "upright": "Princ mačeva kaže da pretvori svoju radoznalost u mudrost. Pitanja grade mostove. \"Koji sam novi danas naučio?\"",
+          "reversed": "Princ Reverse Mačeva kaže da se fokusira na izvor, a ne tračeve. Autentičnost rađa poverenje. \\ N \\ nsimptom: kontrola izvora.",
+          "keywords": [
+            "radoznalost",
+            "učenje",
+            "komunikacija",
+            "pitanje",
+            "posmatranje"
+          ],
+          "context": "Vaš savet; Pretvaranje radoznalosti u konstruktivna pitanja. Jasno učenje jača vezu."
+        },
+        "position5": {
+          "upright": "Vaš put prolazi kroz korake radoznalosti i učenja. Selektivni prikupljanje informacija ubrzava napredak.",
+          "reversed": "Put vas traži da se držite podalje od iskrivnih presuda. Provera izvora povećava poverenje.",
+          "keywords": [
+            "radoznalost",
+            "učenje",
+            "komunikacija",
+            "verifikacija"
+          ],
+          "context": "Vaša mapa puta; Svesno učenje. Otvoreno zapažanje će podržati napredak."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje znatiželjnu, ali poštovanu komunikaciju od vas. Želi da mu priđete iskrenim pitanjima.",
+          "reversed": "Vaš partner ne želi da vidi tračeve ili užurbane presude. Očekuje se jasna i zrela komunikacija.",
+          "keywords": [
+            "radoznalost",
+            "komunikacija",
+            "iskrenost",
+            "učenje",
+            "poštovanje"
+          ],
+          "context": "Vaš partner očekuje otvorenu i poštujuću komunikaciju."
+        },
+        "position7": {
+          "upright": "U budućnosti komunikacije, radoznalost, komunikacija i novo učenje će doći do izražaja. Mala otkrića će dodati vitalnost u vinograd.",
+          "reversed": "Užasnu presude ili tračevi mogu u budućnosti prouzrokovati probleme. Iskrena komunikacija se mora održati.",
+          "keywords": [
+            "radoznalost",
+            "komunikacija",
+            "učenje",
+            "otkriće"
+          ],
+          "context": "Budućnost komunikacije će se ojačati radoznalost i komunikacija. Ali treba izbegavati užurbanost."
+        }
+      },
+      "knightofswords": {
+        "position1": {
+          "upright": "Vitez mačeva ima brzu i oštre komunikacionu energiju u trenutnoj situaciji. Reči ispadaju u žurbi. Savet: Slušajte prvo, razgovarajte kasnije.",
+          "reversed": "Vitez mačeva obrnut kaže da oštre reakcije podižu zidove obveznice. Simptom: Zatvorena vrata.",
+          "keywords": [
+            "brzina",
+            "tvrdoća",
+            "komunikacija",
+            "reakcija",
+            "oštrina"
+          ],
+          "context": "U trenutnoj situaciji, brzina i tvrdoća se ističu u vinogradu. Mekoća će popraviti komunikaciju."
+        },
+        "position2": {
+          "upright": "Vitez mačeva ukazuje na želju za brzom i oštrom izrazom vaših emocija. Spremni ste da se povučete. Savet: Slušajte prvo, onda razjasnite.",
+          "reversed": "Vitez mačeva obrnut kaže da oštar ton povećava odbranu. Simptom: Završna vrata.",
+          "keywords": [
+            "brzina",
+            "oštrina",
+            "komunikacija",
+            "reakcija",
+            "oštrina"
+          ],
+          "context": "Tvoje srce sada brzo priča. Pauza za jedan dah menja ceo ton. Nežna jasnoća otvara vrata."
+        },
+        "position3": {
+          "upright": "Vitez mačeva vam govori da je vaša očekivanja jasna i utvrđena koraka. Vaše srce želi brzo rešenje. Određivanje, jasnoća.",
+          "reversed": "Vitez mačeva obrnut ukazuje da je vaše očekivanje da se držite podalje od iskrivnih odluka. Vaše srce zahteva uravnotežen korak. \\ N \\ nsimptom: Zahtev za mereno kretanje.",
+          "keywords": [
+            "stabilnost",
+            "oštrina",
+            "merenje",
+            "ravnoteža",
+            "brzina"
+          ],
+          "context": "Vaša očekivanja je uravnotežena, ali jasni koraci. Vaše srce želi mirno rešenje."
+        },
+        "position4": {
+          "upright": "Vitez mačeva kaže da je vaša brzina poravnati sa namerom. Jasna odbrana opušta srce. Disaj-govorni ciklus.",
+          "reversed": "Vitez mačeva obrnut kaže da uspori ishitrene reči. Izaberite smirenost preko oštroreškosti. \\ N \\ nsimptom: 3 drugo pravilo.",
+          "keywords": [
+            "brzina",
+            "odbrana",
+            "izraz",
+            "oštrina",
+            "ravnoteža"
+          ],
+          "context": "Vaš savet; Dah pre nego što to kažete. Smirni tempo čuva vezu."
+        },
+        "position5": {
+          "upright": "Vaša staza prolazi kroz podebljane, ali strateške poteze. Balansiranje vašeg tempa sa planom će dati rezultate.",
+          "reversed": "Put vas traži da izbegnete užurbani ton. Disanje i određivanje smera biće korisno.",
+          "keywords": [
+            "hrabrost",
+            "brzina",
+            "stabilnost",
+            "strategija"
+          ],
+          "context": "Vaša mapa puta; Brzo, ali namerni koraci. Hrabrost će podržana Strategijom će voditi."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje smele, jasne i odlučne akcije od vas. Želi da ga pojačate.",
+          "reversed": "Vaš partner ne želi da se ponašate užurbano i bez razmišljanja. Očekuje se uravnoteženo određivanje.",
+          "keywords": [
+            "hrabrost",
+            "odluka",
+            "oštrina",
+            "pokret",
+            "ravnoteža"
+          ],
+          "context": "Vaš partner očekuje podebljano, ali uravnoteženi koraci."
+        },
+        "position7": {
+          "upright": "U budućnosti komunikacije, brzi koraci i odlučnost će doći do izražaja. Jasnoća će dodati zamah na obveznicu.",
+          "reversed": "Žurba ili ispadi ljutnje mogu ubuduće uznemiriti ravnotežu. Strpljenje i disanje su potrebni.",
+          "keywords": [
+            "brzina",
+            "stabilnost",
+            "oštrina",
+            "ubrzanje"
+          ],
+          "context": "Budućnost komunikacije dobiće zamah sa brze odluke. Ali žurba može biti problem."
+        }
+      },
+      "queenofswords": {
+        "position1": {
+          "upright": "Kraljica mačeva, postoji energija jasnoće i analize u trenutnoj situaciji. Emocije su možda preuzele zadnji deo. Savet: Ne isključujte srce.",
+          "reversed": "Kraljica obrnutog preokrenula kaže da kritični i oštri ton stvara hladnoću u vezi. Simptom: sarkazam i sarkazam.",
+          "keywords": [
+            "analiza",
+            "oštrina",
+            "objektivnost",
+            "kritika",
+            "rastojanje"
+          ],
+          "context": "U trenutnoj situaciji, obveznica radi orijentisana na uma. Balansiranje sa saosećanjem će doneti toplinu."
+        },
+        "position2": {
+          "upright": "Kraljica mačeva kaže da ima jasan um i graničnu svest u vašim emocijama. Jasnoća je vredna. Savet: Budite specifični, ali ne isključujte srce.",
+          "reversed": "Kraljica obronjenih mačeva kaže da kritični ton očvrsnuo emocije. Simptom: sarkazam, sarkastični jezik.",
+          "keywords": [
+            "analiza",
+            "oštrina",
+            "granica",
+            "objektivnost",
+            "stil"
+          ],
+          "context": "Tvoje srce trenutno želi narudžbu. Jasnoća pomešana sa saosećanjem donosi duboku intimnost. Neka vam jezik bude uravnotežen."
+        },
+        "position3": {
+          "upright": "Kraljica mačeva kaže da je vaša očekivanja jasna, ali saosećajna komunikacija. Vaše srce traži ravnotežu u oštrini. Jasne reči, suptilnost.",
+          "reversed": "Kraljica mačeva obrnuta ukazuje da je vaše očekivanje zaštićeno od štetnog tona. Tvoje srce traži nežni jezik. \\ N \\ nsimptom: Potreba za nežnom jezikom.",
+          "keywords": [
+            "oštrina",
+            "saosećanje",
+            "finoća",
+            "komunikacija",
+            "ravnoteža"
+          ],
+          "context": "Vaša očekivanja je iskrena, ali jasna komunikacija. Vaše srce želi da se nježno razume."
+        },
+        "position4": {
+          "upright": "Kraljica mačeva poziva na jasne granice i jasan izraz. Cool um čini fer odluke .. Koristite \"I jezik i jezik\".",
+          "reversed": "Kraljica reverdiranih mačeva kaže da je ton prevelikim kritikama. Ljubazna reč je najefikasnije oružje. \\ N \\ nsimptom: Povratne informacije + empatija.",
+          "keywords": [
+            "oštrina",
+            "granica",
+            "pravda",
+            "komunikacija",
+            "objektivnost"
+          ],
+          "context": "Vaš savet; Koristeći jasan, ali saosećajni izraz. Jasnost osvetljava srce i postaje samopouzdanje."
+        },
+        "position5": {
+          "upright": "Vaša staza leži u kretanju naprijed objektivnosti i jasnoće. Cool um odlučuje pravedno.",
+          "reversed": "Put vas traži da se odmaknete od prekomerne kritike. Štiti vezan za vezu.",
+          "keywords": [
+            "oštrina",
+            "granica",
+            "pravda",
+            "objektivnost"
+          ],
+          "context": "Vaša mapa puta; Jasna perspektiva. Ravnoteža objektivnosti i saosećanja će dati mir."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje iskrenost, jasne granice i otvorenost od vas. Želi da mu predstavite istinu slatko i oštro.",
+          "reversed": "Vaš partner ne želi da prima prekomernu kritiku. Saosećajno čeka jasno jasnoću.",
+          "keywords": [
+            "iskrenost",
+            "oštrina",
+            "granica",
+            "saosećanje",
+            "pravda"
+          ],
+          "context": "Vaš partner očekuje iskreno, ali saosećajno otvorenost."
+        },
+        "position7": {
+          "upright": "U budućnosti komunikacije, jasnoća, objektivnost i nezavisno razmišljanje će doći do izražaja. Otvorene reči će dodati poverenje obveznici.",
+          "reversed": "Preterano kritično ili hladnoća može u budućnosti stvoriti udaljenost. Stanje saosećanja je važan.",
+          "keywords": [
+            "oštrina",
+            "nezavisnost",
+            "objektivnost",
+            "komunikacija"
+          ],
+          "context": "Budućnost angažmana biće zaštićena jasnoćom i zdravom razumom. Ali hladno vreme može oštetiti vinograd."
+        }
+      },
+      "kingofswords": {
+        "position1": {
+          "upright": "Kralj mačeva pokazuje da pravila i principi prevladavaju u trenutnoj situaciji. Emocije mogu biti u pozadini. Savet: Napravite prostor za empatiju.",
+          "reversed": "Reverse kralj mačeva kaže da strogi i dogmatski stil napregne vezu. Simptom: Presuda hladne.",
+          "keywords": [
+            "vladavina",
+            "vlast",
+            "strategija",
+            "oštrina",
+            "empatija"
+          ],
+          "context": "Trenutno se vinograd reguliše pravila. Naglašavanje empatije će omekšati srca."
+        },
+        "position2": {
+          "upright": "Kralj mačeva kaže da su princip i osećaj pravde snažni u vašim emocijama. Tražite strukturu. Savet: Razlog za empatiju pomešajte.",
+          "reversed": "Reverse kralj mačeva kaže da stroga i dominantna tona stvara udaljenost unutar. Simptom: Presuda hladne.",
+          "keywords": [
+            "princip",
+            "vladavina",
+            "strategija",
+            "empatija",
+            "vlast"
+          ],
+          "context": "Tvoje srce vas zaslužuje naređenje i konzistentnost upravo sada. Meka empatija će zagrejati sobu. Neka principi i srce idu ruku pod ruku."
+        },
+        "position3": {
+          "upright": "Kralj mačeva kaže da je vaše očekivanje pošteno i principijelno komunikacija. Vaše srce traži odluku u ravnoteži uma i savesti. Princip, pravda.",
+          "reversed": "Prekoračeni kralj mačeva ukazuje da je vaše očekivanje rastvaranje krutih odredbi. Vaše srce zahteva da se odluka meša sa empatijom. \\ N \\ nsimptom: želja za fleksibilnošću.",
+          "keywords": [
+            "pravda",
+            "princip",
+            "odluka",
+            "ravnoteža",
+            "empatija"
+          ]
+        }
+      }
+    }
+  }
+}

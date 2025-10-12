@@ -1,54 +1,67 @@
 'use client';
 
 import type { TarotCard } from '@/types/tarot';
+import { useTranslations } from '@/hooks/useTranslations';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createRelationshipAnalysisConfig } from '@/features/tarot/shared/config';
-import { getRelationshipAnalysisMeaningByCardAndPosition } from '@/features/tarot/lib/relationship-analysis/position-meanings-index';
+import { getI18nRelationshipAnalysisMeaningByCardAndPosition } from '@/features/tarot/lib/relationship-analysis/position-meanings-index';
 
-const RelationshipAnalysisReading = createTarotReadingComponent({
-  getConfig: () => createRelationshipAnalysisConfig(),
-  interpretationEmoji: '💕',
-  readingType: 'RELATIONSHIP_ANALYSIS_DETAILED', // Relationship Analysis için reading type belirt
-  getCardMeaning: (
-    card: TarotCard | null,
-    position: number,
-    isReversed: boolean
-  ) => {
-    if (!card) {
-      return '';
-    }
+export default function RelationshipAnalysisReading(props: any) {
+  // i18n hook'unu component içinde kullan
+  const { t } = useTranslations();
 
-    console.log('🔍 RelationshipAnalysisTarot getCardMeaning:', {
-      cardName: card.nameTr,
-      position,
-      isReversed,
-    });
+  // TarotComponent'i hook'ların içinde oluştur
+  const TarotComponent = createTarotReadingComponent({
+    getConfig: () => createRelationshipAnalysisConfig(t),
+    interpretationEmoji: '💕',
+    readingType: 'RELATIONSHIP_ANALYSIS_DETAILED',
+    getCardMeaning: (
+      card: TarotCard | null,
+      position: number,
+      isReversed: boolean
+    ) => {
+      if (!card) {
+        return '';
+      }
 
-    const meaning = getRelationshipAnalysisMeaningByCardAndPosition(
-      card,
-      position
-    );
+      console.log('🔍 RelationshipAnalysisTarot getCardMeaning:', {
+        cardName: card.name,
+        position,
+        isReversed,
+      });
 
-    console.log('🔍 RelationshipAnalysisTarot meaning result:', {
-      found: !!meaning,
-      card: meaning?.card,
-      interpretation: meaning
-        ? (isReversed ? meaning.reversed : meaning.upright)?.substring(0, 50) +
-          '...'
-        : 'No meaning',
-    });
+      // i18n destekli anlam al - t fonksiyonu closure ile erişilebilir!
+      const meaning = getI18nRelationshipAnalysisMeaningByCardAndPosition(
+        card.name,
+        position,
+        t
+      );
 
-    if (!meaning) {
-      return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
-    }
+      console.log('🔍 RelationshipAnalysisTarot meaning result:', {
+        found: !!meaning,
+        card: meaning?.card,
+        interpretation: meaning
+          ? (isReversed ? meaning.reversed : meaning.upright)?.substring(
+              0,
+              50
+            ) + '...'
+          : 'No meaning',
+      });
 
-    // Context bilgisini de içeren obje döndür
-    return {
-      interpretation: isReversed ? meaning.reversed : meaning.upright,
-      context: meaning.context,
-      keywords: meaning.keywords || [],
-    };
-  },
-});
+      if (!meaning) {
+        // Fallback: kartın kendi Türkçe anlamını kullan
+        return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
+      }
 
-export default RelationshipAnalysisReading;
+      // Context bilgisini döndür
+      const interpretation = isReversed ? meaning.reversed : meaning.upright;
+      return {
+        interpretation,
+        context: meaning.context || '',
+        keywords: meaning.keywords || [],
+      };
+    },
+  });
+
+  return <TarotComponent {...props} />;
+}

@@ -1,0 +1,784 @@
+{
+  "relationship-analysis": {
+    "meanings": {
+      "tenofpentacles": {
+        "position1": {
+          "upright": "Deset stanovnika trenutno dominiraju tema dugoročne sigurnosti, porodice i stabilnosti. Savet: Planirajte budućnost zajedno.",
+          "reversed": "Prekoračeni deset stanovnika ukazuje da porodični pritisak ili disharmonija u dugoročnim planovima baca senku. Simptom: Anksioznost o budućnosti.",
+          "keywords": [
+            "porodica",
+            "stabilnost",
+            "dugoročan",
+            "uverenje",
+            "baština"
+          ],
+          "context": "U trenutnoj situaciji, obveznica se oblikuje dugoročnim razmatranjima. Jasno planiranje će donijeti mir."
+        },
+        "position2": {
+          "upright": "Deset stanovnika, postoji želja za trajnim poverenjem i porodičnim jedinstvom u vašim osećanjima. Vaše srce želi dugoročni mir. Savet: Povežite se sa svojim korenima.",
+          "reversed": "Deset stanovnika obrnuto, ukazuje da finansijske ili porodične nesigurnosti napregnuju vaša osećanja. Simptom: Nedostaje fondacija.",
+          "keywords": [
+            "stabilnost",
+            "porodica",
+            "baština",
+            "stalnost",
+            "poverenje"
+          ],
+          "context": "Tvoje srce trenutno traži trajno poverenje. Ukorenjenja će vam doneti osećanja u mir."
+        },
+        "position3": {
+          "upright": "Deset stanovnika vam govori da je ono što očekujete je trajno bezbednosno i porodično lepljenje. Vaše srce želi da se ukorijeni. Osiguranje, koren.",
+          "reversed": "Deset stanovnika obrnuti ukazuje da je vaša očekivanja zaštita od nesigurnosti. Vaše srce traži čvrsti temelj. \\ N \\ nsimptom: Traženje sigurnosti.",
+          "keywords": [
+            "porodica",
+            "uverenje",
+            "ukorijenjenost",
+            "stabilnost",
+            "baština"
+          ],
+          "context": "Vaša očekivanja je trajno jedinstvo. Vaše srce traži siguran prilog."
+        },
+        "position5": {
+          "upright": "Vaša mapa puta će se oblikovati dugoročna struktura i želja da ostave nasleđe. Snažni fondacije dodaju vrednost budućim generacijama.",
+          "reversed": "Vaša mapa puta može se poremetiti finansijskim sporovima i sukobima na nasljeđivanju. Transparentnost je od suštinskog značaja.",
+          "keywords": [
+            "stabilnost",
+            "baština",
+            "porodica",
+            "sistem",
+            "budućnost"
+          ],
+          "context": "Negujte svoje korijene, prenesite ih u budućnost. Dajte dugoročni plan."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje dugoročnu stabilnost i porodičnu fondaciju od vas. Želi da uspostaviš trajni poredak.",
+          "reversed": "Vaš partner ne želi nevažnost. Održivo poverenje i naređenje čekaju.",
+          "keywords": [
+            "stabilnost",
+            "porodica",
+            "budućnost",
+            "stalnost",
+            "poverenje"
+          ],
+          "context": "Vaš partner očekuje dugoročnu trajnu strukturu."
+        },
+        "position7": {
+          "upright": "Budućnost komunikacija uključuje dugoročnu sigurnost i duboku ukorijenjenu strukturu. Porodična i duhovna veza će biti ojačana.",
+          "reversed": "Finansijski sukobi ili porodični problemi mogu u budućnosti narušiti ravnotežu. Otvoreni dijalog će biti od suštinskog značaja.",
+          "keywords": [
+            "stabilnost",
+            "porodica",
+            "ukorijenjenost",
+            "poverenje"
+          ],
+          "context": "Budućnost komunikacije raste sa duboko ukorenjenim poverenjem. Ali postoji rizik od trenja."
+        },
+        "position4": {
+          "upright": "Deset stanovnika kaže da vidi dugoročno i budete poput porodice. Stabilnost stvara poverenje.",
+          "reversed": "Reversed deset stanovnika kaže da je radnat da uravnoteži svoj pritisak i pronađete svoj način. Daj slobodu",
+          "keywords": [
+            "porodica",
+            "stabilnost",
+            "dugoročan",
+            "poverenje",
+            "baština"
+          ],
+          "context": "Vaš savet; Zajedno izgraditi budućnost. Zajednička vizija jača vezu."
+        }
+      },
+      "pageofpentacles": {
+        "position1": {
+          "upright": "Princ Pentacles, energija učenja i razvoja dolazi do izražaja u trenutnoj situaciji. Uzimaju se mali, ali vrijedni koraci. Savet: Saznajte sa radoznalošću.",
+          "reversed": "Prestokla se obrnuto, kaže da je nedostatak fokusa i odlaganja opterećen obveznicama. Simptom: namere koje se ne pokreću.",
+          "keywords": [
+            "učenje",
+            "početak",
+            "moje ime",
+            "cilj",
+            "radoznalost"
+          ],
+          "context": "Trenutno je obveznica u fazi učenja i rasta. Mali koraci će napraviti veliku razliku."
+        },
+        "position2": {
+          "upright": "Princ Pentacles-a, postoji radoznalost i želja da nauči u vašim osećanjima. Vaše srce se okreće novim temeljima. Savet: Prigrlite učeništvo.",
+          "reversed": "Princ Pentacles Reversed kaže da nepažnja i površnost bacaju vaša osećanja. Simptom: Nedovršene namere.",
+          "keywords": [
+            "učenje",
+            "radoznalost",
+            "osnova",
+            "iskustvo",
+            "strpljenje"
+          ],
+          "context": "Trenutno vaše srce traži nove temelje. Određivanje će biti progresivno."
+        },
+        "position3": {
+          "upright": "Princ Pentacla vam govori da vaše očekivanje je učenje i dugoročna stabilnost. Vaše srce želi rast. Učenje je temelj.",
+          "reversed": "Princ Pentacles obrnut pokazuje da je vaše očekivanje da se držite podalje od površnosti. Vaše srce traži trajne korake. \\ N \\ nsimptom: Potreba za dubinom.",
+          "keywords": [
+            "učenje",
+            "stabilnost",
+            "osnova",
+            "razvoj",
+            "strpljenje"
+          ],
+          "context": "Vaša očekivanja je napredovanje učenjem. Vaše srce želi radikalne korake."
+        },
+        "position5": {
+          "upright": "Mapa puta će rasti sa željom da uči i radoznalost. Mali projekti mogu biti seme velike vizije.",
+          "reversed": "Vaš mapu puta može biti zamagljen odlaganjem i gubitkom fokusa. Potrebno je postaviti jasne ciljeve.",
+          "keywords": [
+            "učenje",
+            "cilj",
+            "početak",
+            "praktičan",
+            "vizija"
+          ],
+          "context": "Mali saznanje otvaraju velika vrata. Kretati se napred sa radoznalošću."
+        },
+        "position6": {
+          "upright": "Vaš partner je otvoren za učenje i očekuje praktične korake od vas. Želi da isprobate nove načine za njega.",
+          "reversed": "Vaš partner ne želi odlaganja. Mali, ali presudni koraci čekaju.",
+          "keywords": [
+            "učenje",
+            "praktičan",
+            "iskustvo",
+            "moje ime",
+            "stabilnost"
+          ],
+          "context": "Vaš partner očekuje učenje i utvrđen pristup."
+        },
+        "position7": {
+          "upright": "U budućnosti komunikacije, učenje i novi ciljevi će doći do izražaja. Konkretni koraci će otvoriti nova vrata za vinograd.",
+          "reversed": "Odlaganja ili neorganizacija može otežati napredak u budućnosti. Mali ciljevi donose rešenja.",
+          "keywords": [
+            "učenje",
+            "cilj",
+            "početak",
+            "moje ime"
+          ],
+          "context": "Budućnost komunikacije će napredovati sa malim ciljevima. Ali postoji rizik od odlaganja."
+        },
+        "position4": {
+          "upright": "Princ Talismansa kaže da naučite i preduzmite konkretne korake. Mali počeci postaju veliki.",
+          "reversed": "Prestolac pentakala je obrnuo kaže da prestanite odlagati i fokusirati se. Disciplina donosi snagu.",
+          "keywords": [
+            "učenje",
+            "početak",
+            "fokus",
+            "praktičan",
+            "opipljivost"
+          ],
+          "context": "Vaš savet; Nastavite korak po korak. Svaki mali napor čini da ljubav raste."
+        }
+      },
+      "knightofpentacles": {
+        "position1": {
+          "upright": "Vitez pentaklama ima pacijenta, stalnu i sigurnu energiju napretka u trenutnoj situaciji. Savet: Budite organizovani i pouzdan.",
+          "reversed": "Vitez Pentacles-a obrnut ukazuje da je stasis i tvrdoglavost opterećena obveznica. Simptom: Monotonija.",
+          "keywords": [
+            "stabilnost",
+            "strpljenje",
+            "narediti",
+            "poverenje",
+            "razvodnik"
+          ],
+          "context": "Trenutno se veza redovno napreduje. Fleksibilnost umesto monotonije doneće mir."
+        },
+        "position2": {
+          "upright": "Vitez Pentacles, imate želju za stabilnošću i odgovornošću u svojim osećanjima. Vaše srce želi da se kreće napred sa samopouzdanjem. Savet: Gledajte strpljenjem.",
+          "reversed": "Vitez Pentacles-a obrnut kaže da nevoljko ili inercija natera vaše osećaje. Simptom: Prokostinacija.",
+          "keywords": [
+            "stabilnost",
+            "odgovornost",
+            "strpljenje",
+            "poverenje",
+            "napredak"
+          ],
+          "context": "Trenutno vaše srce želi da polako, ali sigurne korake. Strpljenje će doneti samopouzdanje."
+        },
+        "position3": {
+          "upright": "Vitez Pentacles kaže da je vaše očekivanje pouzdanost i stalni napredak. Vaše srce zahteva strpljenje. Strpljenje, odlučnost.",
+          "reversed": "Vitez Pentacles obrnut ukazuje da je vaše očekivanje zaštićeno od stagnacije. Vaše srce traži protok. \\ N \\ nsimptom: Potreba za fleksibilnošću.",
+          "keywords": [
+            "stabilnost",
+            "poverenje",
+            "strpljenje",
+            "stabilnost",
+            "rad"
+          ],
+          "context": "Vaša očekivanja je pouzdan napredak. Vaše srce želi da nastavi sa strpljenjem."
+        },
+        "position5": {
+          "upright": "Vaša mapa puta postaje čvrst sa strpljenjem i redovnim naporom. Polako, ali sigurni da koraci donose trajni uspeh.",
+          "reversed": "Vaša mapa puta može biti zamagljena stagnacijom i ekstremnim konzervativizmom. Potrebno je dodati male inovacije.",
+          "keywords": [
+            "strpljenje",
+            "stabilnost",
+            "rad",
+            "rutinski",
+            "poverenje"
+          ],
+          "context": "Stabilnost će te nositi. Pomerite se polako, ali sigurno."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje pouzdanost, strpljenje i dosledan napredak od vas. Želi da je oseti stabilnost.",
+          "reversed": "Vaš partner ne želi stagnaciju. Polako, ali sigurni su koraci.",
+          "keywords": [
+            "poverenje",
+            "strpljenje",
+            "stabilnost",
+            "doslednost",
+            "lojalnost"
+          ],
+          "context": "Vaš partner očekuje pouzdan i napredak pacijenta."
+        },
+        "position7": {
+          "upright": "Budućnost odnosa biće stabilna, pacijenta i pouzdana. Polako, ali sigurni da će koraci dodati trajnost obveznice.",
+          "reversed": "Stagnacija ili tvrdoglavost mogu otežati napredovanje u budućnosti. Moguće je potrebne manje inovacije.",
+          "keywords": [
+            "stabilnost",
+            "strpljenje",
+            "pouzdanost",
+            "rad"
+          ],
+          "context": "Budućnost odnosa biće ojačana napretkom pacijenta. Ali postoji rizik od stagnacije."
+        },
+        "position4": {
+          "upright": "Vitez Pentacles kaže da se određuje i pređe dosledno. Stabilnost stvara poverenje.",
+          "reversed": "Reversed Vitez Pentacles kaže da će se razbiti iz staze i obnoviti. Fleksibilnost dodaje život.",
+          "keywords": [
+            "stabilnost",
+            "doslednost",
+            "stabilnost",
+            "poverenje",
+            "fleksibilnost"
+          ],
+          "context": "Vaš savet; Da se ​​kreće napred sa samouverenim koracima. Doslednost rađa ljubav."
+        }
+      },
+      "queenofpentacles": {
+        "position1": {
+          "upright": "Kueen of Pentacles, energija saosećajne nege, kućnog i praktičnog reda je na čelu u trenutnoj situaciji. Savet: Zaštitite svoju negovanu stranu.",
+          "reversed": "Kraljica Pentekla je obrnuta ukazuje da samozapuštanje ili preopterećenje sojeva vezu. Simptom: umor.",
+          "keywords": [
+            "briga",
+            "praktičnost",
+            "kuću",
+            "saosećanje",
+            "izvor"
+          ],
+          "context": "U trenutnoj situaciji vinograda teče energijom nege i podrške. Međutim, ako se samopovreda zaboravi, ravnoteža se može poremetiti."
+        },
+        "position2": {
+          "upright": "Kraljica Pentacles-a, postoji energija saosećanja, briga i poverenja u vaša osećanja. Vaše srce želi da se hrani mirom. Savet: Zeleno vaše tlo.",
+          "reversed": "Kraljica Pentekla je obrnuta ukazuje da je prekomerna predanost ili zanemarivanje oporezuju vaša osećanja. Simptom: umorni saosećanje.",
+          "keywords": [
+            "saosećanje",
+            "poverenje",
+            "snabdevanje",
+            "stabilnost",
+            "zvati"
+          ],
+          "context": "Tvoje srce trenutno teče saosećanjem. Stvaranje prostora za vaše potrebe održaće ravnotežu."
+        },
+        "position3": {
+          "upright": "Kraljica Pentacla vam govori da ono što očekujete je davanje saosećanja. Vaše srce želi i toplinu i stabilnost. Saosećanje i poverenje.",
+          "reversed": "Kraljica Pentacles-a obrnuta ukazuje da je vaše očekivanje zaštićeno od prekomerne zavisnosti. Vaše srce traži ravnotežu. \\ N \\ nsimptom: zdrava želja za naklonošću.",
+          "keywords": [
+            "saosećanje",
+            "poverenje",
+            "stabilnost",
+            "dosta",
+            "ravnoteža"
+          ],
+          "context": "Vaša očekivanja je sigurna naklonost. Vaše srce traži i ljubav i stabilnost."
+        },
+        "position5": {
+          "upright": "Vašem mapu treba oblikovati saosećajne praktičnosti i upravljanje resursima. Samopovreda povećava plodnost.",
+          "reversed": "Vaša mapa puta može biti zamračena preopterećenjem ili izgaranjem. Potrebno je tražiti podršku.",
+          "keywords": [
+            "saosećanje",
+            "izvor",
+            "nega",
+            "ravnoteža",
+            "obilje"
+          ],
+          "context": "Koristite balans resurse. Pazite na sebe, neka vaše obilje povećava."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje saosećajne praktičnost i siguran prostor od vas. Želi da ga podržite.",
+          "reversed": "Vaš partner ne želi da bude preopterećen. Očekuje ravnotežu u deljenju.",
+          "keywords": [
+            "saosećanje",
+            "poverenje",
+            "praktičnost",
+            "nega",
+            "ravnoteža"
+          ],
+          "context": "Vaš partner očekuje brižni i siguran prostor."
+        },
+        "position7": {
+          "upright": "Budućnost odnosa imaće saosećanje, praktičnu podršku i siguran prostor. Energija nege će dodati mir vinogradu.",
+          "reversed": "Preopterećenje ili zanemarivanje mogu da uznemiri ravnotežu u budućnosti. Samo-negu treba zapamtiti.",
+          "keywords": [
+            "saosećanje",
+            "praktičnost",
+            "briga",
+            "ravnoteža"
+          ],
+          "context": "Budućnost odnosa će rasti sa saosećajnim prostorom. Ali postoji rizik od zanemarivanja."
+        },
+        "position4": {
+          "upright": "Kraljica PentaKla-a kaže da njegujete i budite praktični. Saosećajna narudžba stvara mir.",
+          "reversed": "Kraljica obrnutog preokrenula je da zaboravite na samo-negu i delite opterećenje. Uštedite ravnotežu.",
+          "keywords": [
+            "ishrana",
+            "praktičnost",
+            "saosećanje",
+            "narediti",
+            "ravnoteža"
+          ],
+          "context": "Vaš savet; Ne zaboravljajući sebe dok se hranite. Izbalansirana nega održava ljubav u životu."
+        }
+      },
+      "kingofpentacles": {
+        "position1": {
+          "upright": "Kralj Talismana, u trenutnoj situaciji, poverenje, stabilnost i materijal i duhovna čvrstina. Savet: Preuzmite odgovornost i ojačajte svoje korijene.",
+          "reversed": "Kralj pentaklova obrnut ukazuje da je prevelika kontrola ili finansijska briga zatežava vezu. Simptom: Tvrdoća, špice.",
+          "keywords": [
+            "poverenje",
+            "stabilnost",
+            "rukovodstvo",
+            "odgovornost",
+            "dosta"
+          ],
+          "context": "U trenutnoj situaciji, obveznica nosi čvrstu energiju poverenja. Ali prekomerna kontrola može stvoriti senku."
+        },
+        "position2": {
+          "upright": "Kralj pentakla, postoji zrelost, samopouzdanje i želja za obiljem u vašim osećanjima. Vaše srce želi da se odmara na čvrstim temeljima. Savet: Vodite sa mudrošću.",
+          "reversed": "Kralj pentaklova obrnut ukazuje da je pretjerana kontrola ili anksioznost statusa naprezala vaša osećanja. Simptom: Otvrđeni stav.",
+          "keywords": [
+            "zrelost",
+            "dosta",
+            "poverenje",
+            "stabilnost",
+            "rukovodstvo"
+          ],
+          "context": "Vaše srce želi da odmah stvori siguran prostor. Nežni pristup će vam osvetliti srce."
+        },
+        "position3": {
+          "upright": "Kralj Pentekla vam govori da je vaše očekivanje snažno temelj i obilje. Vaše srce traži solidno osiguranje ... obilje, snaga.",
+          "reversed": "Kralj pentaklova obrnut ukazuje da je vaše očekivanje da se držite podalje od senke prekomerne kontrole. Vaše srce traži moć deljenja. \\ N \\ nsimptom: želja za podelom.",
+          "keywords": [
+            "dosta",
+            "uverenje",
+            "snaga",
+            "stabilnost",
+            "rukovodstvo"
+          ],
+          "context": "Vaša očekivanja je obilje i sigurna osnova. Vaše srce želi da deljenje moći."
+        },
+        "position5": {
+          "upright": "Vaša mapa puta će uspostaviti sigurne temelje sa čvrstim vizijom i strateškim upravljanjem. Odgovornost liderstva nosi voće dugoročno.",
+          "reversed": "Vaša mapa puta može biti zamagljena opsesijom statusom i kontrolom. Poravnavanje sa vrednostima se oslobađa.",
+          "keywords": [
+            "rukovodstvo",
+            "vizija",
+            "strategija",
+            "stabilnost",
+            "poverenje"
+          ],
+          "context": "Izgradite čvrste temelje. Slijedite strateški i sigurni put."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje snažno, pouzdano i vizionarno rukovodstvo od vas. Želi da mu ponudite stabilnost.",
+          "reversed": "Vaš partner ne želi da vidi autoritarizam ili prekomernu kontrolu. Zakašnjelo je zajedničko i uravnoteženo napajanje.",
+          "keywords": [
+            "rukovodstvo",
+            "stabilnost",
+            "poverenje",
+            "vizija",
+            "deljenje"
+          ],
+          "context": "Vaš partner očekuje pouzdano i vizionalno rukovodstvo."
+        },
+        "position7": {
+          "upright": "Budućnost odnosa biće o otpornosti, liderstvu i dugoročnom poverenju. Materijalna i moralna podrška ojačaće Bond.",
+          "reversed": "Kontrolatnost ili statusna anksioznost može u budućnosti opteretiti intimnost. Deljenje stvara ravnotežu.",
+          "keywords": [
+            "robusnost",
+            "rukovodstvo",
+            "poverenje",
+            "stabilnost"
+          ],
+          "context": "Budućnost komunikacije će napredovati na čvrstim temeljima. Ali postoji rizik od kontrole."
+        },
+        "position4": {
+          "upright": "Kralj Pentekla kaže da razmislite strateški i deli velikodušno. Jaka vizija stvara vezu.",
+          "reversed": "Otkriveni kralj stanovnika kaže da se odustane od kontrole i udio. Deljenje energije raste ljubav.",
+          "keywords": [
+            "strategija",
+            "vizija",
+            "deljenje",
+            "uverenje",
+            "rukovodstvo"
+          ],
+          "context": "Vaš savet; velikodušnost sa snagom. Zajedničko rukovodstvo stvara ljubav."
+        }
+      },
+      "aceofswords": {
+        "position1": {
+          "upright": "ACE of mačevi ukazuju na potragu za istinom i jasnoćom u trenutnoj situaciji. Potreba za otvorenom razgovorom i istinom je dominantna u odnosu. Savet: Nežno koristite reči, ne oštro.",
+          "reversed": "Reversirani ACE mačeva kaže da je burlika, iskrivljena reči i izbegavanje jasnoće stvaraju senku. Simptom: nesporazumi.",
+          "keywords": [
+            "real",
+            "oštrina",
+            "komunikacija",
+            "definicija",
+            "istina"
+          ],
+          "context": "U trenutnoj situaciji, potreba za otkrivanjem istine u vinogradu dolazi do izražaja. Otvorena komunikacija će doneti mir."
+        },
+        "position2": {
+          "upright": "Ace mačeva ukazuje na jasnoću u vašem srcu i spremnost da imenuje istinu. Vaša osećanja žele da dođu do jasne rečenice. Savet: Recite to uljudno, ali jasno.",
+          "reversed": "Ace mačeva preokrenuli su vam da vam je nejasnoća i poluistine gumaju svoje srce. Simptom: sukobljene reči, nestabilni ton.",
+          "keywords": [
+            "oštrina",
+            "real",
+            "izraz",
+            "odluka",
+            "definicija"
+          ],
+          "context": "Tvoje srce sada želi da bude jasno. Emocije će olakšati sve dok su imenovane. Jasan jezik će povećati poverenje."
+        },
+        "position3": {
+          "upright": "Ace mačeva vam govori da je vaša očekivanja jasnoća i iskrenost. Vaše srce želi da se uteče jasnim rečima. Istina, sigurnost.",
+          "reversed": "Ace mačeva obrnuto ukazuje da je vaše očekivanje da prebrodi nerazumevanje i očistite nejasnu komunikaciju. Tvoje srce traži jasne granice. \\ N \\ nsimptom: Želja da se utemelje za konfuziju.",
+          "keywords": [
+            "oštrina",
+            "istina",
+            "jezik",
+            "otvorenost",
+            "preciznost"
+          ],
+          "context": "Ono što očekujete je Frank Dialogue. Vaše srce želi da nađe mir u jasnoći istine."
+        },
+        "position4": {
+          "upright": "Ace mačeva kaže da birate jasnu reč u magli. Pravu kaznu poravnava srce. \"Jedna jasna rečenica\" vežba.",
+          "reversed": "Reversed Ace mačeva kaže da pojednostavljuju zamagljivanje. Previše analize Gume Srce. \\ N \\ nsimptom: Vodite beleške - sažeti udela.",
+          "keywords": [
+            "oštrina",
+            "istina",
+            "istina",
+            "izraz",
+            "prosvetljenje"
+          ],
+          "context": "Vaš savet; čišćenje uma i kretanje naprijed sa jednom izveštajem o namerama. Držeći se istine smiruje srce."
+        },
+        "position5": {
+          "upright": "Vaš put leži u otkrivanju jasnoće i istine. Jasna i iskrena kazna će osvetliti smer veze.",
+          "reversed": "Put vas traži da se odmaknete od neizvesnosti i prekomerne analize. Pojednostavljivanje konfuzije donosi mir.",
+          "keywords": [
+            "oštrina",
+            "istina",
+            "iskrenost",
+            "odluka"
+          ],
+          "context": "Vaša mapa puta; Počinje oštrom tačnošću. Jasne rečenice će dati poverenje obveznice."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje iskrenost i oštra jasnoća od vas. Želi da mu predstavite istinu bez da ga zavežete.",
+          "reversed": "Vaš partner ne želi da vidi nesigurnost i izjave o izbegavanju. Jednostavnost i iskrenost su mu važni.",
+          "keywords": [
+            "istina",
+            "oštrina",
+            "iskrenost",
+            "odluka",
+            "izraz"
+          ],
+          "context": "Vaš partner želi da čuje istinu i nađe poverenje sa jasnoćom."
+        },
+        "position7": {
+          "upright": "Budućnost odnosa biće jedna od jasnoće i otkrivenja istine. Jasne reči će razjasniti smer veze.",
+          "reversed": "Nejednaka i nedostatak komunikacije mogu u budućnosti potkopati poverenje. Ako je istina sakrivena, veza postaje zamagljena.",
+          "keywords": [
+            "oštrina",
+            "istina",
+            "odluka",
+            "otvorenost"
+          ],
+          "context": "Budućnost odnosa će postati jasna sa istinom. Ali skladištenje donosi zamagljenost."
+        }
+      },
+      "twoofswords": {
+        "position1": {
+          "upright": "Dvoje mačeva kaže da su u trenutnoj situaciji, neodlučnost i dilema dominantni. Između srca i uma postoji džem. Savet: Nemojte da ga vidite.",
+          "reversed": "Invertirani su dva mačeva opisuje iznenadnu eksploziju potisnih pitanja. Simptom: Nagle reakcije.",
+          "keywords": [
+            "dilema",
+            "odluka",
+            "izbegavanje",
+            "ravnoteža",
+            "konfrontacija"
+          ],
+          "context": "U trenutnoj situaciji, obveznica se testira paralizom odluke. Konfrontacija postaje neizbežna."
+        },
+        "position2": {
+          "upright": "Njih dvoje mačeva ukazuju na paralizu odluke i izbegavanje u vašim osećanjima. Izgleda da ste zaglavili između srca i uma. Savet: Uklonite povez.",
+          "reversed": "Okrećena dva mačeva nam govore da su potisnute emocije pretvorene u nagle ispade. Simptom: Defanzivni zidovi.",
+          "keywords": [
+            "dilema",
+            "izbegavanje",
+            "ravnoteža",
+            "konfrontacija",
+            "odluka"
+          ],
+          "context": "Vaše emocije su trenutno nestabilne. Malo sukoba će doneti veliko olakšanje. Glas srca želi da se čuje."
+        },
+        "position3": {
+          "upright": "Dvoje mačeva vam govore da je vaša očekivanja uravnotežena odluka. Vaše srce traži harmoniju između razuma i emocija. Kompromis, ravnoteža.",
+          "reversed": "Dva obrnuta mačeva ukazuju na to da je vaša očekivanja da se probije kroz neodlučnost i da se jasni izbor. Magla mora da se očisti. \\ N \\ nsimptom: Želja za jasnoćom odluke.",
+          "keywords": [
+            "odluka",
+            "ravnoteža",
+            "raport",
+            "glasati",
+            "konfrontacija"
+          ],
+          "context": "Vaše očekivanje je da donosite odluke u balansu u umu-srcu. Vaše srce želi jasan izbor."
+        },
+        "position4": {
+          "upright": "Dva mačeva vam govore da uzmete mali korak ka izboru koji ste odložili. Odluka postavlja srce na lakoću .. \"Pros-Conssi\" lista.",
+          "reversed": "Okrećena dva mačeva govore da je Svjetlo u sukobu izbegavanje. Kada se otvori slepo mesto, dolazi mir. \\ N \\ nsimptom: Dijalog sa jasnim pitanjem.",
+          "keywords": [
+            "odluka",
+            "dilema",
+            "ravnoteža",
+            "konfrontacija",
+            "oštrina"
+          ],
+          "context": "Vaš savet; Uzimajući male korake za otkrivanje izbornog čvora. Odluka olakšava teret srca."
+        },
+        "position5": {
+          "upright": "Vaš put je da realizujemo dilemu i donesete odluku sa svojim srcem. Kada stavite svoje emocije na sto, bilte će se postići ravnoteža.",
+          "reversed": "Put vas traži da prestanete da izbegavate. Oslobodiće se da vidi slepe mrlje.",
+          "keywords": [
+            "odluka",
+            "ravnoteža",
+            "konfrontacija",
+            "dilema"
+          ],
+          "context": "Vaša mapa puta; da ne budem u dilemi. Donošenje odluke će doneti mir nazad."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje da napravite uravnotežen izbor. Želi da jasno izrazite svoje odluke.",
+          "reversed": "Vaš partner ne želi da vidi neodlučnost. Primećuje vaše slepe mrlje i čekate da vam se jasno postane jasno.",
+          "keywords": [
+            "ravnoteža",
+            "odluka",
+            "dilema",
+            "glasati",
+            "oštrina"
+          ],
+          "context": "Vaš partner očekuje jasnoću i ravnotežu u vašim odlukama."
+        },
+        "position7": {
+          "upright": "Biće dileme i trenuci odluke u budućnosti odnosa. Srce i um moraju se odmarati zajedno da bi održali ravnotežu.",
+          "reversed": "Ako se neodlučnost nastavlja, odnos se može zaglaviti. Ostatak vezanih očiju čini budućnost teško.",
+          "keywords": [
+            "dilema",
+            "odluka",
+            "ravnoteža",
+            "konfrontacija"
+          ],
+          "context": "Budućnost komunikacije će se objekt objekt. Neodlučnost stvara probleme ako traje dugo vremena."
+        }
+      },
+      "threeofswords": {
+        "position1": {
+          "upright": "Tri mačeva ukazuje na senku srčanih ili povređenih reči u trenutnoj situaciji. Savet: Nemojte se kretati napred bez popravljanja bola.",
+          "reversed": "Ograničeni tri mačeva kaže da se stvaraju napori da zaceli rane, ali ćutanja produžava proces. Simptom: Propuštanje ogorčenosti.",
+          "keywords": [
+            "razočaranje",
+            "ugao",
+            "Percepcija izdaje",
+            "popraviti",
+            "real"
+          ],
+          "context": "U trenutnoj situaciji, obveznica se suočava sa ogorčenjem. Saosećajni razgovor će biti isceljenje."
+        },
+        "position2": {
+          "upright": "Tri mačeva vam govore da u vašem srcu postoji trag ogorčenosti i osetljivog područja. Rana reči može biti sveža. Savet: Dodirnite bol sa saosećanjem.",
+          "reversed": "Preokrećena tri mačeva ukazuje da iako postoji želja za zaceljivanjem, emocija se zadržava nazad. Simptom: Propuštanje tuge.",
+          "keywords": [
+            "razočaranje",
+            "ugao",
+            "popraviti",
+            "izraz",
+            "saosećanje"
+          ],
+          "context": "Tvoje srce trenutno traži popravak. Kada vidite emociju, teret će se olakšati. Mekani govor će izgraditi mostove."
+        },
+        "position3": {
+          "upright": "Tri mačeva kaže da je vaše očekivanje da popravite slomljenost. Vaše srce traži isceljujuće sukob ... popravak, oproštenje.",
+          "reversed": "Preokrećena tri mačeva ukazuje da vaše očekivanje je da u potpunosti iscelite prošle rane. Vaše srce želi da se oseća upaljačima. \\ N \\ nsimptom: Želja da napustimo prošlost iza sebe.",
+          "keywords": [
+            "razočaranje",
+            "konfrontacija",
+            "popraviti",
+            "oproštenje",
+            "zarastanje"
+          ],
+          "context": "Vaša očekivanja je da transformišete bol u prošlosti. Vaše srce želi da nađe mir kroz popravak."
+        },
+        "position4": {
+          "upright": "Tri mačeva kaže da pogledajte bol i navedite ga. Heartbreak je zaceljeno kako se govori o tome .. \"Osećam se to trenutno.\"",
+          "reversed": "Obrnuto tri mačeva će se zaceliti. Saosećajni jezik ubrzava zatvaranje. \\ N \\ nsimptom: jedan mali korak ka oproštenju.",
+          "keywords": [
+            "razočaranje",
+            "istina",
+            "starost",
+            "zarastanje",
+            "izraz"
+          ],
+          "context": "Vaš savet; Deljenje rane srca bez skrivanja. Otvorenost i saosećanje zacekuju ranu."
+        },
+        "position5": {
+          "upright": "Vaš put je da počastite svoje ogorčenosti i suočite im sa saosećanjem. Gledanje bola je prva vrata za isceljenje.",
+          "reversed": "Put vas traži da se ne izgubite u tuzi. Oproštaj će stvoriti prostor u vašem srcu.",
+          "keywords": [
+            "razočaranje",
+            "starost",
+            "istina",
+            "poboljšanje"
+          ],
+          "context": "Vaša mapa puta; da se suoči sa bolovima. Saosećajni pristup će ojačati Bond."
+        },
+        "position6": {
+          "upright": "Vaš partner želi da pošteno delite svoje frustracije. Za njega je važno da ne sakrivate ranu.",
+          "reversed": "Vaš partner ne želi da se stalno vraćate u stare boli. Očekuje da ćete se kretati naprijed sa oproštenjem.",
+          "keywords": [
+            "razočaranje",
+            "real",
+            "otvorenost",
+            "poboljšanje",
+            "oproštenje"
+          ],
+          "context": "Vaš partner očekuje da ćete pošteno deliti svoju bol i izabrati oproštaj."
+        },
+        "position7": {
+          "upright": "Ogorčeno ili bol u srcu mogu doći do izražaja u budućnosti odnosa. Ali prepoznavanje bola inicira zaceljivanje.",
+          "reversed": "To će biti moguće isceliti prošle ogorčenosti. Oproštenje će osloboditi srce.",
+          "keywords": [
+            "razočaranje",
+            "ugao",
+            "oproštenje",
+            "zarastanje"
+          ],
+          "context": "Budućnost odnosa će se otvoriti sa isceljivanjem srčane rane. Konfrontacija će doneti izlečenje."
+        }
+      },
+      "fourofswords": {
+        "position1": {
+          "upright": "Četiri mačeva ukazuje na potrebu za odmor i odraz u trenutnoj situaciji. Veza je možda ušla u energiju pauze. Savet: Tišina treba koristiti za isceljenje.",
+          "reversed": "Preokrećena četiri mačeva ukazuje da se potreba za pauzom negira ili da je prisilna distanca stvara ogorčenje. Simptom: Umorni um.",
+          "keywords": [
+            "odmor",
+            "prekršiti",
+            "razmišljanje",
+            "spokojstvo",
+            "oporavak"
+          ],
+          "context": "U trenutnoj situaciji, vezu je potreban neki predah. Tišina se približava približavanju ako se pravilno koristi."
+        },
+        "position2": {
+          "upright": "Četiri mačeva ukazuje na potrebu da se odmori i povuku iz svojih emocija. Vaše srce želi da diše. Savet: Koristite tišinu za isceljivanje.",
+          "reversed": "Preokrećena četvorka mačeva kaže da ne mogu da preuzmu pauzu povećava napetost. Simptom: Mentalni umor.",
+          "keywords": [
+            "odmor",
+            "oporavak",
+            "spokojstvo",
+            "prekršiti",
+            "okretanje prema unutra"
+          ],
+          "context": "Tvoje srce želi da uspori odmah. Kratka pauza uravnotežuje emocionalni ton. Nežno reguliše vaš ritam."
+        },
+        "position3": {
+          "upright": "Četiri mačeva kaže da je ono što očekujete je mir i predah. Vaše srce je gladno odmora .. SERENITI, unutrašnji mir.",
+          "reversed": "Preokrećena četiri mačeva ukazuje da je vaše očekivanje da se odvoji iz iscrpljujućih ciklusa. Tvoje srce čezne za mirno. \\ N \\ nsimptom: Potražite mir.",
+          "keywords": [
+            "mir",
+            "prekršiti",
+            "odmor",
+            "spokojstvo",
+            "mir"
+          ],
+          "context": "Vaše očekivanje je emocionalno spokojstvo. Tvoje srce želi da se smiri dah."
+        },
+        "position4": {
+          "upright": "Četiri mačeva govore umu da se odmori. Odmor pojašnjava strategiju .. 10 min. Tišina.",
+          "reversed": "Preokrećena četiri mačeva kaže da zamene otpornost na pauzu sa mikro pakiranjem. Umor očvršćuje srce. \\ N \\ nsimptom: nastavak disanja-držanja.",
+          "keywords": [
+            "odmor",
+            "strategija",
+            "spokojstvo",
+            "oporavak",
+            "mir"
+          ],
+          "context": "Vaš savet; Ispraznik uma tišinom. Mali pauze stvaraju siguran prostor za srce."
+        },
+        "position5": {
+          "upright": "Na svoj način je da se odmorite i odmorite se. Tišina će sazreti vašu strategiju.",
+          "reversed": "Put vas traži da prepoznate izgaranje i odlučite da se odmorite. Zavremena insistiranje ne donosi nikakvu korist.",
+          "keywords": [
+            "odmor",
+            "oporavak",
+            "tišina",
+            "strategija"
+          ],
+          "context": "Vaša mapa puta; Mali pauze. Mentalna smirenost olakšaće vam da krenete napred."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje da se smirite i zamišljeno odličite korake. Želi da mu date mir.",
+          "reversed": "Vaš partner ne želi da vidi pasivnost. Deljenje se očekuje umesto previše tišine.",
+          "keywords": [
+            "odmor",
+            "spokojstvo",
+            "ravnoteža",
+            "priprema",
+            "tišina"
+          ],
+          "context": "Vaš partner očekuje miran i razmatran pristup."
+        },
+        "position7": {
+          "upright": "Biće period mirnog i odmara se u budućnosti naše veze. Um i srce će trebati oporavak.",
+          "reversed": "Odbijanje da se odmori može dovesti do izgaranja u budućnosti. Mali pauze su od suštinskog značaja za lepljenje.",
+          "keywords": [
+            "odmor",
+            "oporavak",
+            "tišina",
+            "regeneracija"
+          ],
+          "context": "Budućnost komunikacije biće ojačana spokojem. Poricanje odmora oštećuje ligament."
+        }
+      },
+      "fiveofswords": {
+        "position1": {
+          "upright": "Petorica mačeva pokazuje bitke za moć i pravednost u trenutnoj situaciji. Veza se može oštetiti radi pobede. Savet: Fokusirajte se na kompromis, a ne pobedu.",
+          "reversed": "Otkriveno pet mačeva kaže da se taj ponos odlaže popravku. Simptom: Neizvršeno zatvaranje.",
+          "keywords": [
+            "ego",
+            "sukob",
+            "pobeda",
+            "izgubiti",
+            "konsenzus"
+          ],
+          "context": "U trenutnoj situaciji, ego ratovi dolaze na prednji nar u vinogradu. Poniznost će popraviti mostove."
+        },
+        "position2": {
+          "upright": "Petorica mačeva vam govori da je želja da budete u pravu u vašim osećanjima i potrebama suptilnosti u sukobu. Osjećaj pobede može biti usamljen. Savet: Izaberite kompromis preko časti."
+        }
+      }
+    }
+  }
+}

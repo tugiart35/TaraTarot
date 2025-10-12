@@ -1,0 +1,774 @@
+{
+  "relationship-problems": {
+    "meanings": {
+      "sevenofcups": {
+        "position4": {
+          "keywords": {
+            "0": "option",
+            "1": "decision",
+            "2": "dream",
+            "3": "criteria",
+            "4": "clarity"
+          },
+          "context": "Ignored: election responsibility. Effect: target exposed. Do: 3 criteria + 1 decision."
+        },
+        "position5": {
+          "upright": "Seven Cups says that dreams are abundant, but some of them aren't based on a realistic plan.",
+          "reversed": "The Reverse Seven Cup says that uncertain expectations have become disappointing, that the abundance of choice may have forced the decision.",
+          "keywords": {
+            "0": "dream",
+            "1": "option",
+            "2": "expectation",
+            "3": "real",
+            "4": "decision"
+          },
+          "context": "Creative dreams plus lack of plans, misty targets piled up, and now we need criteria and choices."
+        },
+        "position6": {
+          "upright": "The Seven Cups say that uncertain promises and uncertain expectations can cover the relationship with fog, and fog breeds asymmetry of power.",
+          "reversed": "The Reverse Seven Cup is the risk of selling dreams and taking responsibility and delaying the decision and stalling the partner.",
+          "keywords": {
+            "0": "promise",
+            "1": "uncertainty",
+            "2": "expectation",
+            "3": "decision",
+            "4": "responsibilities"
+          },
+          "context": "Theme: the need for clarity; risk: promise exploitation; do it with criteria and calendar selection."
+        },
+        "position7": {
+          "upright": "The Seven Cup shows multiple choice, vague advice coming from the environment, making a sound in every head.",
+          "reversed": "The Reverse Seven Cup points to those who sell dreams, who distract them with uncertain promises.",
+          "keywords": {
+            "0": "option",
+            "1": "It's vague advice.",
+            "2": "promise",
+            "3": "Confusion",
+            "4": "clarity"
+          },
+          "context": "Go on a recommendation diet, set a short list and a clear criteria."
+        },
+        "position8": {
+          "upright": "Seven Cups is a distraction with a lot of options, a lot of campaigns, a lot of imagination markets, and if there's no clear criteria, money goes away.",
+          "reversed": "The Reverse Seven Cups tells us to stop buying dreams and go back to real costs.",
+          "keywords": {
+            "0": "option",
+            "1": "campaign",
+            "2": "It's distracting.",
+            "3": "criteria",
+            "4": "real"
+          },
+          "context": "Set a list of criteria for shopping and a waiting policy."
+        },
+        "position9": {
+          "upright": "Seven Cups, clear selection and realistic expectation may continue.",
+          "reversed": "The Reverse Seven Cups, selling dreams and vague promises, weaken the continuity.",
+          "keywords": {
+            "0": "selection",
+            "1": "expectation",
+            "2": "clarity",
+            "3": "promise",
+            "4": "real"
+          },
+          "context": "For driving: expectation list + date/criter."
+        }
+      },
+      "eightofcups": {
+        "position1": {
+          "upright": "Eight Cups say the tendency to walk away is a contradiction due to the search for meaning and emotional dissatisfaction.",
+          "reversed": "The Reverse Eight Cup shows that going back and forth between staying and going back and forth creates insecurity.",
+          "keywords": {
+            "0": "meaning",
+            "1": "dissatisfaction",
+            "2": "Don't go away",
+            "3": "The dilemma",
+            "4": "closure"
+          },
+          "context": "The emotional root of conflict: the search for meaning and direction."
+        },
+        "position2": {
+          "upright": "Eight Cups say the problem is in search of meaning and emotional dissatisfaction. The heart says something is missing.",
+          "reversed": "The Reverse Eight Cups tells us that the kalegit dilemma is fluctuating the relationship. The closing ritual has not been performed. It is the indecisive steps. The problem is that you can't determine a clear direction.",
+          "keywords": {
+            "0": "meaning",
+            "1": "dissatisfaction",
+            "2": "Departure",
+            "3": "The dilemma",
+            "4": "path"
+          },
+          "context": "The root problem is the gap of meaning. It affects areas: commitment, unity of purpose, rituals."
+        },
+        "position3": {
+          "upright": "Eight Cups says that if you don't go quietly and share your quest for meaning, you can have a share.",
+          "reversed": "The Reverse Eight Cups tells us that you have grown fire by maintaining the kalegit pendulum. The lack of closure is the end of the relationship.",
+          "keywords": {
+            "0": "meaning",
+            "1": "dissatisfaction",
+            "2": "Departure",
+            "3": "The dilemma",
+            "4": "path"
+          },
+          "context": "Pay: unshared search for direction. Effect: trust, stability. Proposal: clear course sentence."
+        },
+        "position4": {
+          "upright": "The eight Cups say that you can legitimize and ignore your share as protecting yourself from silence. The road without speaking is denial.",
+          "reversed": "The Reverse Eight Cup explains that by normalizing the kaligit emissions, it can mask responsibility.",
+          "keywords": {
+            "0": "Departure",
+            "1": "meaning",
+            "2": "The dilemma",
+            "3": "path",
+            "4": "closure"
+          },
+          "context": "Ignored: net-direction sentence. Effect: confidence melts. Do it: I'm staying/I'm leaving + why."
+        },
+        "position5": {
+          "upright": "Eight Cups tells them to go away for a semester and then come closer again, and there's a search for meaning.",
+          "reversed": "The Reverse Eight Cups tells of the fatigue of the kaligit pendulum, and the lack of closure may be creating insecurity today.",
+          "keywords": {
+            "0": "Don't go away",
+            "1": "meaning",
+            "2": "The dilemma",
+            "3": "rotation",
+            "4": "closure"
+          },
+          "context": "The search period, the net sentences are incomplete, and now the direction and intent must be clear."
+        },
+        "position6": {
+          "upright": "Eight Cups honor the search for meaning, but when silent distance turns into a swing, it can become an emotional control tool.",
+          "reversed": "The Reverse Eight Cup emphasizes the risk of aligning the partner with the threat of abandonment or the suggestion of separation.",
+          "keywords": {
+            "0": "Don't go away",
+            "1": "The dilemma",
+            "2": "The threat of separation",
+            "3": "meaning",
+            "4": "closure"
+          },
+          "context": "Theme: direction and consent; risk: blackmail by separation; do it: the spoken direction decision."
+        },
+        "position7": {
+          "upright": "The eight Cups show external voices that encourage moving away. Some may be making it easier to let go.",
+          "reversed": "The Reverse Eight Cups point to the environment that fuels the kalegit pendulum, and it feeds in uncertainty.",
+          "keywords": {
+            "0": "Don't go away",
+            "1": "suggestion",
+            "2": "The dilemma",
+            "3": "uncertainty",
+            "4": "direction"
+          },
+          "context": "You don't need a guide, you need a clearing environment, you choose your own direction."
+        },
+        "position8": {
+          "upright": "Eight Cups tells us to drop the costs that have lost meaning and to focus on more valuable goals.",
+          "reversed": "The Reverse Eight Cup is a warning of the cost of subscriptions and indecisiveness that you cannot cancel at the kaligit pendulum.",
+          "keywords": {
+            "0": "Don't let go",
+            "1": "value",
+            "2": "subscription",
+            "3": "indecisive",
+            "4": "focus"
+          },
+          "context": "Cancel those who no longer serve, and carry the source to priorities."
+        },
+        "position9": {
+          "upright": "Eight Cups, if you leave worthless patterns and move on to the meaningful, the relationship can continue.",
+          "reversed": "If the reverse Eight Cups, the caligit pendulum lasts for a long time, the bond loosens.",
+          "keywords": {
+            "0": "Don't let go",
+            "1": "meaning",
+            "2": "direction",
+            "3": "The dilemma",
+            "4": "Regeneration"
+          },
+          "context": "To drive: a joint decision plus a clear commitment."
+        }
+      },
+      "nineofcups": {
+        "position1": {
+          "upright": "Nine Cups say there is tension between a desire for personal satisfaction and a common benefit, and individual wishes may conflict with common goals.",
+          "reversed": "The Reverse Nine Cup shows that superficial pleasures prevent lasting satisfaction and make a difference in expectations.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Pleasure",
+            "2": "expectation",
+            "3": "individual target",
+            "4": "common benefit"
+          },
+          "context": "The emotional root of conflict: personal satisfaction and mutual benefit."
+        },
+        "position2": {
+          "upright": "Nine Cups say the problem cannot balance the common benefit with personal satisfaction. Wishes collide.",
+          "reversed": "The Reverse Nine Cups tells us that superficial pleasures prevent permanent satisfaction. Instead of genuine satisfaction, display achievements gather.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Pleasure",
+            "2": "value",
+            "3": "target",
+            "4": "common benefit"
+          },
+          "context": "The root problem: the level of satisfaction and value. The areas it affects: motivation, sharing, purpose."
+        },
+        "position3": {
+          "upright": "Nine Cups says that when you put personal comfort ahead of mutual benefit, your share is greater. When wishes collide, joy becomes narrow.",
+          "reversed": "The Reverse Nine Cups tells us that you pursue superficial pleasures and grow fire by neglecting deep satisfaction, and the happiness of the display is fragile.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Pleasure",
+            "2": "value",
+            "3": "target",
+            "4": "common benefit"
+          },
+          "context": "Pay: I am motivated satisfaction. Effect: sharing, purpose. Proposal: common target definition."
+        },
+        "position4": {
+          "upright": "Nine Cups say that you can put personal comfort forward and ignore your share of the common good. In the guise of selfishness, denial is invisible.",
+          "reversed": "The Reverse Nine Cup tends to deny deep satisfaction by using superficial pleasures as an excuse.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Pleasure",
+            "2": "value",
+            "3": "target",
+            "4": "share"
+          },
+          "context": "Absent: shared joy; the effect: the bond is looser; do it: a common goal."
+        },
+        "position5": {
+          "upright": "Nine Cups says they have many moments of joy and satisfaction together, and small pleasures have nourished the bond.",
+          "reversed": "The Reverse Nine Cup tells us that superficial periods of pleasure cover deep needs.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "pleasure",
+            "2": "Pleasure",
+            "3": "depth",
+            "4": "share"
+          },
+          "context": "Shared happiness is good, deep needs are unspoken, and now we need to talk deep bond."
+        },
+        "position6": {
+          "upright": "Nine Cups is a reminder of the value of personal comfort, but constantly putting comfort ahead can exploit the needs of a partner.",
+          "reversed": "The Reverse Nine Cup points out that it suppresses the deep needs of superficial pleasures and crushes the work of a relationship on one side.",
+          "keywords": {
+            "0": "Comfort",
+            "1": "Pleasure",
+            "2": "balance",
+            "3": "need",
+            "4": "share"
+          },
+          "context": "Theme: balance of comfort; risk: selfishness; do: joint joys and tasks."
+        },
+        "position7": {
+          "upright": "Nine Cups tells us that well-intentioned supporters offer morale and joy, and mutual friends rejoice.",
+          "reversed": "The Reverse Nine Cup points to the outside voice, which conveys deep issues with a message of superficial happiness.",
+          "keywords": {
+            "0": "Morality",
+            "1": "pleasure",
+            "2": "superficiality",
+            "3": "deep issue",
+            "4": "satisfaction"
+          },
+          "context": "Morale is good, but work things out, so let's have fun and make it real."
+        },
+        "position8": {
+          "upright": "Nine Cups brings satisfaction, small luxury, and a sense of self-righteousness.",
+          "reversed": "The Reverse Nine Cup says that the joys are out of control and delaying the basic targets.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "luxury",
+            "2": "Motivation",
+            "3": "measure",
+            "4": "postponement"
+          },
+          "context": "Limit the pleasure budget; prioritize the target budget."
+        },
+        "position9": {
+          "upright": "Nine Cups, the practice of satisfaction and gratitude will carry the relationship for a long time.",
+          "reversed": "The Reverse Nine Cups, selfish comfort and superficiality, weaken the bond.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Gratitude",
+            "2": "pleasure",
+            "3": "selfishness",
+            "4": "depth"
+          },
+          "context": "To drive: the ritual of gratitude plus the common joy plan."
+        }
+      },
+      "tenofcups": {
+        "position1": {
+          "upright": "Ten Cups say the difference between ideal relationship vision and real living conditions generates tension.",
+          "reversed": "The Inverse Ten Cups show that the false appearance of harmony conceals repressed problems and that the lack of expectation management increases the contradiction.",
+          "keywords": {
+            "0": "ideal",
+            "1": "reality",
+            "2": "compatibility",
+            "3": "expectation",
+            "4": "family"
+          },
+          "context": "The emotional root of conflict: the ideal and the range of reality."
+        },
+        "position2": {
+          "upright": "Ten Cups say the problem differs from the ideal image of family relations and the real circumstances. Life differs from the fairy tale.",
+          "reversed": "The Reverse Ten Cup tells of the breaking behind the fake harmony and smiling photo. The unspoken cracks grow.",
+          "keywords": {
+            "0": "ideal",
+            "1": "reality",
+            "2": "compatibility",
+            "3": "family",
+            "4": "expectation"
+          },
+          "context": "The root problem: the ideal real range. It affects areas: ritual, expectation, co-existence."
+        },
+        "position3": {
+          "upright": "Ten Cups says that when you hold on to the ideal table and reject the truth, you can have a share.",
+          "reversed": "The Inverted Ten Cups tells us that he continues to fake harmony and raises fire by pushing the problem under the carpet.",
+          "keywords": {
+            "0": "ideal",
+            "1": "reality",
+            "2": "compatibility",
+            "3": "family",
+            "4": "expectation"
+          },
+          "context": "The numeral is the ideal. The effect: expectation, ritual. Proposal: authentic speech."
+        },
+        "position4": {
+          "upright": "The Ten Cups say that you can defend the ideal painting and ignore the cracks, saying that we're good. Even if the photo laughs, the heart won't shut up.",
+          "reversed": "The Inverse Ten Cups emphasizes the tendency to deny its share by continuing to fake harmony.",
+          "keywords": {
+            "0": "ideal",
+            "1": "reality",
+            "2": "compatibility",
+            "3": "family",
+            "4": "expectation"
+          },
+          "context": "Ignored: visible fracture. The effect: the risk of explosion increases. Do: real talk, small repair."
+        },
+        "position5": {
+          "upright": "Ten Cups says you're having a family/house dream or a peaceful time, and you have a good sense of harmony.",
+          "reversed": "The Inverse Ten Cups tells us that the ideal image edition silences the real needs.",
+          "keywords": {
+            "0": "family",
+            "1": "compatibility",
+            "2": "ideal",
+            "3": "real",
+            "4": "Peace"
+          },
+          "context": "Nice moments of harmony, tired of ideal pressure, and now we need an authentic agenda."
+        },
+        "position6": {
+          "upright": "Ten Cups value harmony and family dreams, but making the ideal painting a shield can silence the real need.",
+          "reversed": "The Reverse Ten Cup speaks of the risk of trumping the apparent happiness and underestimating the concern of the partner.",
+          "keywords": {
+            "0": "ideal",
+            "1": "compatibility",
+            "2": "real",
+            "3": "expectation",
+            "4": "Authenticity"
+          },
+          "context": "Theme: real harmony; risk: window happiness; do it: authentic agenda talk."
+        },
+        "position7": {
+          "upright": "Ten Cups shows family alliances and supportive relatives, and a sense of unity will do you good.",
+          "reversed": "The Reverse Ten Cup points to domestic tension, bias, and window happiness pressure.",
+          "keywords": {
+            "0": "family",
+            "1": "alliance",
+            "2": "side",
+            "3": "display",
+            "4": "compatibility"
+          },
+          "context": "Family support is power, but there must be limits."
+        },
+        "position8": {
+          "upright": "The Ten Cup describes family harmony, domestic peace, and spending in harmony with common goals of happiness.",
+          "reversed": "The Reverse Ten Cup points to window expenses and family expectations costs under pressure to appear happy.",
+          "keywords": {
+            "0": "family",
+            "1": "Peace",
+            "2": "display",
+            "3": "expectation",
+            "4": "compatibility"
+          },
+          "context": "The measure of happiness is the real need; reduce the pressure of vanity."
+        },
+        "position9": {
+          "upright": "Ten Cups, compatible family/cognitive vision and emotional security can make lasting happiness possible.",
+          "reversed": "The Reverse Ten Cups risk continuing window happiness and repressed problems.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "family",
+            "2": "Vision",
+            "3": "Trust",
+            "4": "Authenticity"
+          },
+          "context": "To drive: a real-life-based home/relationship vision."
+        }
+      },
+      "pageofcups": {
+        "position1": {
+          "upright": "The Prince of Hearts says that emotional maturity and sensitivity trigger conflict, even innocent intentions can be misread.",
+          "reversed": "The reverse Prince of the Cup shows that escape, overextended sentiment, or passive communication raises conflict.",
+          "keywords": {
+            "0": "feisty",
+            "1": "maturity",
+            "2": "Escape",
+            "3": "expression",
+            "4": "sensitivity"
+          },
+          "context": "The emotional root of conflict: maturity and expression difference."
+        },
+        "position2": {
+          "upright": "The Prince of Hearts says the problem is the difference in emotional maturity and extreme sensitivity. Good will is read wrong.",
+          "reversed": "The reverse Prince of the Cup tells us that passive-aggressive behavior and childish retreats have damaged the bond. The real speech is postponed.",
+          "keywords": {
+            "0": "sensitivity",
+            "1": "maturity",
+            "2": "Escape",
+            "3": "expression",
+            "4": "gamer"
+          },
+          "context": "The root problem: an emotional maturity deficit. It affects areas: communication, responsibility, boundaries."
+        },
+        "position3": {
+          "upright": "The Prince of Hearts says that he may have increased his share with a sensitive and emotional childhood, and even the innocent intentions that make him read incorrectly wear off confidence.",
+          "reversed": "The reverse Prince of the Cup tells us that he has grown fire with passive aaggressive whining and escape. The adult speech is postponed.",
+          "keywords": {
+            "0": "sensitivity",
+            "1": "maturity",
+            "2": "Escape",
+            "3": "expression",
+            "4": "gamer"
+          },
+          "context": "Pay: emotional maturity deficit. Effect: communication, responsibility. Proposal: open demand sentence."
+        },
+        "position4": {
+          "upright": "The Prince of Hearts says he can legitimize vulnerability and ignore his share. Childish defenders decorate denial.",
+          "reversed": "The reverse Prince of the Cup describes his tendency to conceal responsibility with passive-aggressive whining.",
+          "keywords": {
+            "0": "sensitivity",
+            "1": "maturity",
+            "2": "Escape",
+            "3": "expression",
+            "4": "gamer"
+          },
+          "context": "Ignored: adult expression. Influence: communication is clouded. Do: open demand sentence."
+        },
+        "position5": {
+          "upright": "The Prince of Hearts says that naive gestures and creative sentiment were abundant at first.",
+          "reversed": "The reverse Prince of the Cup tells us that feisty and passive aggressive leaks leave a mark, and emotional maturity may have fluctuated.",
+          "keywords": {
+            "0": "Naiveness",
+            "1": "gesture",
+            "2": "feisty",
+            "3": "expression",
+            "4": "maturity"
+          },
+          "context": "Sweet gestures, sometimes childish reactions, and the need for adult language is obvious, and now we need clear demand sentences."
+        },
+        "position6": {
+          "upright": "The Prince of Hearts speaks of the sweetness of naive gestures, but it's exploiting to blackmail emotionally with feistyness.",
+          "reversed": "The reverse Prince of the Cup expands his tendency to manage partners with passive-aggressive whining and resentment.",
+          "keywords": {
+            "0": "Naiveness",
+            "1": "feisty",
+            "2": "passive aggressive",
+            "3": "gesture",
+            "4": "expression"
+          },
+          "context": "Theme: mature emotional language; Risk: trip and system; Do: open demand sentences."
+        },
+        "position7": {
+          "upright": "The Prince of Hearts tells of the well-intentioned messages of an emotional but naive friend.",
+          "reversed": "The Reverse Cup Prince shows that trip, system and passive-aggressive external comments increase sensitivity.",
+          "keywords": {
+            "0": "Naive friend",
+            "1": "mediation",
+            "2": "website",
+            "3": "passive aggressive",
+            "4": "sensitivity"
+          },
+          "context": "Sweet sounds are good, but choose mature language. Filter emotional floods."
+        },
+        "position8": {
+          "upright": "The Prince of Hearts shows the ideas of creative small opportunities and naive income, and trials can be inspired.",
+          "reversed": "The reverse Prince of the Cup is a warning of feisty exchange and passive-aggressive spending reflex.",
+          "keywords": {
+            "0": "creativity",
+            "1": "small opportunity",
+            "2": "feisty",
+            "3": "Reward",
+            "4": "testing"
+          },
+          "context": "Test small income ideas; leave the card at the moment of emotion."
+        },
+        "position9": {
+          "upright": "The Prince of Hearts, the naive gestures and the creative language of emotion renew the relationship; the chances of survival increase.",
+          "reversed": "The reverse Prince of the Cup, feisty and passive aggression, damage to permanence.",
+          "keywords": {
+            "0": "Naiveness",
+            "1": "gesture",
+            "2": "creativity",
+            "3": "feisty",
+            "4": "expression"
+          },
+          "context": "To drive: open emotion sentences + small gesture rhythm."
+        }
+      },
+      "knightofcups": {
+        "position1": {
+          "upright": "The Knight of Hearts points to tension between romantic ideals and concrete needs, and high expectations can be disappointing.",
+          "reversed": "The Reverse Cup Knight shows that word and action incompatibility undermines trust and deepens contradiction.",
+          "keywords": {
+            "0": "romance",
+            "1": "ideal",
+            "2": "reality",
+            "3": "consistency",
+            "4": "Trust"
+          },
+          "context": "The emotional root of conflict: ideal and true incompatibility."
+        },
+        "position2": {
+          "upright": "The Knight of Hearts says the problem is in the conflict of romantic ideals and practical needs. The word is magical, the ground is uncertain. The gesture is many, the plan is few. The problem is consistency and sustainability.",
+          "reversed": "The reverse Knight of the Cup tells us that the incompatibility and the easy giving up are wearing off confidence. Disappointment builds.",
+          "keywords": {
+            "0": "romance",
+            "1": "ideal",
+            "2": "consistency",
+            "3": "practice",
+            "4": "Trust"
+          },
+          "context": "The root problem is the romantic balance. It affects areas: planning, trust, continuity."
+        },
+        "position3": {
+          "upright": "The Knight of Heart says that when you put the gesture ahead of the plan and weaken the consistency, you have a share.",
+          "reversed": "The reverse Knight of the Cup tells of his wordless incompatibility and quick giving up the fire. Disappointment builds up.",
+          "keywords": {
+            "0": "romance",
+            "1": "ideal",
+            "2": "consistency",
+            "3": "practice",
+            "4": "Trust"
+          },
+          "context": "Pay: unsustainable gestures. Effect: trust, expectation. Proposal: less-less consistency."
+        },
+        "position4": {
+          "upright": "The Knight of Hearts says he can put the gesture before the plan and ignore the responsibility of consistency.",
+          "reversed": "The reverse Knight of the Cup tends to conceal his contribution by using wordless incompatibility.",
+          "keywords": {
+            "0": "romance",
+            "1": "consistency",
+            "2": "ideal",
+            "3": "practice",
+            "4": "Trust"
+          },
+          "context": "Ignored: sustainability. Influence: confidence decreases. Do it: less-less, more regular step."
+        },
+        "position5": {
+          "upright": "The Knight of Hearts says that romantic moves carry your relationship, and the gestures soften the hearts.",
+          "reversed": "The reverse Knight of the Cup describes the inconsistency of the word as a period of disappointment.",
+          "keywords": {
+            "0": "romance",
+            "1": "gesture",
+            "2": "consistency",
+            "3": "ideal",
+            "4": "practice"
+          },
+          "context": "Romance is strong, sustainability is survivable, and now it's a little-small, regular step that counts."
+        },
+        "position6": {
+          "upright": "The Knight of Heart praises the magic of romance, but to trump gestures and obtain approval can be exploited.",
+          "reversed": "The reverse Knight of the Cup points to the risk of giving and withdrawing hope with the inconsistency of the word.",
+          "keywords": {
+            "0": "romance",
+            "1": "gesture",
+            "2": "confirmation",
+            "3": "consistency",
+            "4": "Don't pull back."
+          },
+          "context": "Theme: gesture and trust; risk: stall with hope; do it: small and consistent step."
+        },
+        "position7": {
+          "upright": "The Knight of Hearts shows the desire to reconcile you with someone with a romantic look.",
+          "reversed": "The reverse Knight of the Cup points to the confusion created by the agents who sold dreams and disappeared.",
+          "keywords": {
+            "0": "romance",
+            "1": "gesture",
+            "2": "tool",
+            "3": "consistency",
+            "4": "confusion"
+          },
+          "context": "Select the consistent tool. The continuity is more valuable than the gesture."
+        },
+        "position8": {
+          "upright": "When the Knight of Hearts plans the romantic gesture budget, the heart of the relationship relaxes, and the wallet relaxes.",
+          "reversed": "The Reverse Cup Knight says the pressure of gestures and inconsistencies can force the end of the month.",
+          "keywords": {
+            "0": "gesture",
+            "1": "Plan",
+            "2": "consistency",
+            "3": "romance",
+            "4": "end of the month"
+          },
+          "context": "The gesture is good; it's consistent, small and meaningful when it's planned."
+        },
+        "position9": {
+          "upright": "The Knight of Hearts works with romantic consistency and meaningful gestures.",
+          "reversed": "The reverse Knight of the Cup makes it difficult to maintain the promise of inconsistency.",
+          "keywords": {
+            "0": "romance",
+            "1": "gesture",
+            "2": "consistency",
+            "3": "hope",
+            "4": "balance"
+          },
+          "context": "To drive: small but regular gesture + clear promise."
+        }
+      },
+      "queenofcups": {
+        "position1": {
+          "upright": "The Queen of Hearts says there's an imbalance between the need for empathy and the ability to limit it.",
+          "reversed": "The reverse Queen of the Cup shows that emotional manipulation or border melting is exhausting the relationship.",
+          "keywords": {
+            "0": "empathy",
+            "1": "limit",
+            "2": "care",
+            "3": "manipulation",
+            "4": "balance"
+          },
+          "context": "The emotional root of conflict: empathy and border balance."
+        },
+        "position2": {
+          "upright": "The Queen of Hearts says the problem is in the balance of empathy. Overcare can drown, less read as neglect.",
+          "reversed": "The reverse Queen of the Cup tells us that emotional manipulation and border meltdown damage the bond. Fragileness is a trump card. Guilt triggers, introductions. The problem is the lack of clean empathy channel.",
+          "keywords": {
+            "0": "empathy",
+            "1": "limit",
+            "2": "care",
+            "3": "manipulation",
+            "4": "self - care"
+          },
+          "context": "The root problem: Empathy, the boundary calibration. It affects areas: emotional labor, exhaustion, the distribution of roles."
+        },
+        "position3": {
+          "upright": "The Queen of Hearts says that when you can't balance empathy with boundaries, your share increases.",
+          "reversed": "The reverse Queen of the Cup tells me that emotional manipulation and guilt triggers a fever, and compassion needs its own.",
+          "keywords": {
+            "0": "empathy",
+            "1": "limit",
+            "2": "care",
+            "3": "manipulation",
+            "4": "self - care"
+          },
+          "context": "Pay: border/passion balance. Effect: weariness, trust. Proposal: net border + gentle language."
+        },
+        "position4": {
+          "upright": "The Queen of Hearts tells you that you can't balance empathy with the limit, and that you can ignore your share. Overcare is responsibility.",
+          "reversed": "The reverse Queen of the Cup says she can ignore emotional manipulation and feed denial by triggering guilt.",
+          "keywords": {
+            "0": "empathy",
+            "1": "limit",
+            "2": "care",
+            "3": "manipulation",
+            "4": "self - care"
+          },
+          "context": "Ignored: healthy limit. Effect: weariness, resentment. Do it: clear border + gentle language."
+        },
+        "position5": {
+          "upright": "Queen of Hearts says deep empathy and compassion are the backbone of your relationship.",
+          "reversed": "The reverse Queen of the Cup tells us that emotional manipulation or border melting leave a mark.",
+          "keywords": {
+            "0": "empathy",
+            "1": "Compassion",
+            "2": "limit",
+            "3": "Trust",
+            "4": "care"
+          },
+          "context": "High empathy, risk of border blur, lack of self-care, now the net limit plus gentle language is required."
+        },
+        "position6": {
+          "upright": "The Queen of Hearts covers it with empathy, but it can produce extreme emotional care, invisible debt and addiction.",
+          "reversed": "The reverse Queen of the Cup points out the risk of managing the partner by triggering guilt and emotional manipulation.",
+          "keywords": {
+            "0": "empathy",
+            "1": "care",
+            "2": "addiction",
+            "3": "Guilt",
+            "4": "limit"
+          },
+          "context": "Theme: compassion and boundaries; risk: emotional debtion; do it: self-care and border clarity."
+        },
+        "position7": {
+          "upright": "The Queen of Hearts shows the soothing effect of an empathic female figure (mom/abla/friend). It provides safe emotional space.",
+          "reversed": "The reverse Queen of the Cup points to the voice of emotional manipulation and guilt pressure.",
+          "keywords": {
+            "0": "empathy",
+            "1": "female figure",
+            "2": "sedation",
+            "3": "manipulation",
+            "4": "Guilt"
+          },
+          "context": "Compassionate support is good; pay attention to emotional debt. The border is clear."
+        },
+        "position8": {
+          "upright": "The Queen of Hearts relieves her financial burden with tender support, emotional security, and smart help.",
+          "reversed": "The reverse Queen of the Cup warns against the emotional manipulation of money and the pressure to do it for me.",
+          "keywords": {
+            "0": "Compassion",
+            "1": "support",
+            "2": "security",
+            "3": "manipulation",
+            "4": "demand"
+          },
+          "context": "Help with love and constraint; give without debt."
+        },
+        "position9": {
+          "upright": "Queen of Hearts, the empathic field and the safe bond support long life.",
+          "reversed": "The reverse Queen of the Cup, the emotional manipulation and the inoculation of guilt, undermines permanence.",
+          "keywords": {
+            "0": "empathy",
+            "1": "secure bond",
+            "2": "care",
+            "3": "manipulation",
+            "4": "limit"
+          },
+          "context": "To drive: compassion + setting the border together."
+        }
+      },
+      "kingofcups": {
+        "position1": {
+          "upright": "The King of Hearts says that differences in the way he directs emotions create contradictions, while one stays calm and in control, while the other wants a statement.",
+          "reversed": "The reverse King of the Cup shows that passive aggressiveness and repressed anger wear off confidence.",
+          "keywords": {
+            "0": "emotion management",
+            "1": "expression",
+            "2": "Tranquillity",
+            "3": "passive aggressive",
+            "4": "Trust"
+          },
+          "context": "The emotional root of conflict: the difference of expression and regulation."
+        },
+        "position2": {
+          "upright": "The King of Hearts says the problem is a sense of style. One keeps it calm, the other wants a statement.",
+          "reversed": "The reverse King of the Cup tells us that repressed anger and passive-aggressive waves wear off confidence. The water is still on the surface, but it swells at the bottom.",
+          "keywords": {
+            "0": "Tranquillity",
+            "1": "expression",
+            "2": "balance",
+            "3": "passive aggressive",
+            "4": "leadership"
+          },
+          "context": "The root problem is: the expression of emotion. It affects areas: understanding, trust, crisis management."
+        },
+        "position3": {
+          "upright": "The King of Hearts says that you may have a share, because you have too much control over your emotions, and you seem to be cold. Don't let the peace stop you from being heard.",
+          "reversed": "The reverse King of the Cup says that he grows fire with repressed anger and passive waves.",
+          "keywords": {
+            "0": "Tranquillity",
+            "1": "expression",
+            "2": "balance",
+            "3": "passive aggressive"
+          }
+        }
+      }
+    }
+  }
+}

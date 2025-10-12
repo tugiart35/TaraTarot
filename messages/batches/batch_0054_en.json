@@ -1,0 +1,772 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "nineofswords": {
+        "position3": {
+          "upright": "Nine Swords can be subconscious anxiety, sleepless nights, or feelings of guilt.",
+          "reversed": "The Reverse Nine Swords may have settled in the subconscious of repressed guilt or extreme stress, not being able to face fear in the past.",
+          "keywords": {
+            "0": "Concern",
+            "1": "Stress",
+            "2": "fear",
+            "3": "Guilt",
+            "4": "subconscious"
+          },
+          "context": "The anxiety and stress of the past may have shaped today's problems."
+        },
+        "position4": {
+          "upright": "The Nine Swords may be your best potential to confront your fears, to control your anxiety with consciousness and regain mental peace.",
+          "reversed": "In order to reveal your potential, Reverse Nine Swords, you need to get rid of constant anxiety, support, and take a hopeful view.",
+          "keywords": {
+            "0": "Don't face it.",
+            "1": "fear",
+            "2": "Peace",
+            "3": "hope",
+            "4": "mind"
+          },
+          "context": "Your best potential is to confront fears and restore mental balance."
+        },
+        "position5": {
+          "upright": "Nine Swords, in recent times you may have experienced intense anxiety, sleepless nights, or feelings of guilt.",
+          "reversed": "Inverse Nine Swords, you may have recently faced anxiety, begun to put nightmares behind you, or sought support.",
+          "keywords": {
+            "0": "Concern",
+            "1": "Stress",
+            "2": "nightmare",
+            "3": "Guilt",
+            "4": "Don't face it."
+          },
+          "context": "Your recent past may have been shaped by anxiety or confrontation."
+        },
+        "position6": {
+          "upright": "Nine Swords may raise intense anxiety, stress, or insomnia in the near future.",
+          "reversed": "The Reverse Nine Swords may have an opportunity to relieve anxiety, relax, or find support in the near future.",
+          "keywords": {
+            "0": "Concern",
+            "1": "Stress",
+            "2": "nightmare",
+            "3": "anxiety",
+            "4": "support"
+          },
+          "context": "Your near future will be shaped by anxiety or healing."
+        },
+        "position7": {
+          "upright": "Nine Swords, you may be suffering from intense anxiety, stress, or insomnia.",
+          "reversed": "Reverse Nine Swords, you may be experiencing a process of relief, relief, or support.",
+          "keywords": {
+            "0": "Concern",
+            "1": "Stress",
+            "2": "anxiety",
+            "3": "nightmare",
+            "4": "relief"
+          },
+          "context": "Your current condition is shaped by anxiety or healing."
+        },
+        "position8": {
+          "upright": "Nine Swords, external effects can lead you to intense concerns, such as stress, anxiety, and insomnia.",
+          "reversed": "Reverse Nine Swords, the outside effects can relieve you of your anxiety, bring support and relief.",
+          "keywords": {
+            "0": "Concern",
+            "1": "Stress",
+            "2": "anxiety",
+            "3": "relief",
+            "4": "nightmare"
+          },
+          "context": "It affects you through external effects, anxiety, or healing."
+        },
+        "position9": {
+          "upright": "Nine Swords can show a fear of insomnia, intense anxiety, and stress.",
+          "reversed": "The Reverse Nine Swords can show nightmares, anxiety growth, or the fear of losing your sanity.",
+          "keywords": {
+            "0": "Concern",
+            "1": "Stress",
+            "2": "nightmare",
+            "3": "insomnia",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on mental pressure and anxiety."
+        }
+      },
+      "tenofswords": {
+        "position1": {
+          "upright": "The Ten Swords may have an end, betrayal, or destructive end at the heart of the problem.",
+          "reversed": "The Reverse Ten Swords, not being able to recover, not being able to close old wounds or prolong the process, could be the source of the problem.",
+          "keywords": {
+            "0": "end",
+            "1": "Betrayal",
+            "2": "Pain",
+            "3": "Regeneration",
+            "4": "Question"
+          },
+          "context": "There's a painful ending or closure at the center of the problem."
+        },
+        "position10": {
+          "upright": "The Ten Swords may result in an end, a great end, or a painful end.",
+          "reversed": "The Reverse Ten Swords may result in a recovery, a resurrection, or a new beginning.",
+          "keywords": {
+            "0": "end",
+            "1": "Pain",
+            "2": "Betrayal",
+            "3": "Rebirth",
+            "4": "last"
+          },
+          "context": "The result could be the end or the rebirth."
+        },
+        "position2": {
+          "upright": "The Ten Swords may not accept the end of the barrier, they may not be able to cover the wounds of betrayal, or they may not be restored.",
+          "reversed": "The Reverse Ten Swords may be the source of the obstacle to constantly opening old wounds or resisting closure.",
+          "keywords": {
+            "0": "end",
+            "1": "Betrayal",
+            "2": "Regeneration",
+            "3": "history",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born from not accepting an ending."
+        },
+        "position3": {
+          "upright": "Ten swords, subconsciously, can be your past endings, betrayals, or defeats.",
+          "reversed": "The Reverse Ten Swords may have been placed in the subconscious to avoid the past traumas, to refuse closure, or to constantly open old wounds.",
+          "keywords": {
+            "0": "end",
+            "1": "Betrayal",
+            "2": "Trauma",
+            "3": "defeat",
+            "4": "subconscious"
+          },
+          "context": "The past endings and betrayals may be affecting your problems today."
+        },
+        "position4": {
+          "upright": "The Ten Swords are to accept a difficult end to your best potential, to be reborn and to drop the old loads and make a fresh start.",
+          "reversed": "In order to reveal your potential, the Reverse Ten Sword, you must not flee the closings, but accept them with wisdom and choose healing.",
+          "keywords": {
+            "0": "end",
+            "1": "Rebirth",
+            "2": "It's a cure.",
+            "3": "acceptance",
+            "4": "freedom"
+          },
+          "context": "Your best potential is to start over by turning endings into opportunities."
+        },
+        "position5": {
+          "upright": "The Ten Swords indicate that they may have had an end, betrayal, or destructive experience in the recent past.",
+          "reversed": "The Reverse Ten Swords have recently begun to recover, so you may have been in the process of putting the trauma behind you or being reborn.",
+          "keywords": {
+            "0": "end",
+            "1": "Betrayal",
+            "2": "Rebirth",
+            "3": "missing",
+            "4": "Trauma"
+          },
+          "context": "Your recent past may have been shaped by endings or rebirth."
+        },
+        "position6": {
+          "upright": "The Ten Swords may come to an end, betrayal, or painful closure in the near future.",
+          "reversed": "The Reverse Ten Swords may have the opportunity to recover in the near future, to be reborn, or to put the trauma behind them.",
+          "keywords": {
+            "0": "end",
+            "1": "Betrayal",
+            "2": "Rebirth",
+            "3": "missing",
+            "4": "Pain"
+          },
+          "context": "Your near future will be shaped by the end or rebirth."
+        },
+        "position7": {
+          "upright": "Ten Swords, you may be experiencing a painful ending, betrayal, or weariness.",
+          "reversed": "Reverse Ten Swords, you are now in the process of rebirth, recovery, and putting the dark times behind you.",
+          "keywords": {
+            "0": "end",
+            "1": "Betrayal",
+            "2": "Rebirth",
+            "3": "Pain",
+            "4": "Trauma"
+          },
+          "context": "Your current condition is shaped by the end or rebirth."
+        },
+        "position8": {
+          "upright": "Ten Swords, external effects can lead you to challenging endings, betrayals, or a painful closure.",
+          "reversed": "Reverse Ten Swords, the outside effects can lead you to recovery, rebirth, and to put the difficult times behind you.",
+          "keywords": {
+            "0": "end",
+            "1": "Betrayal",
+            "2": "Rebirth",
+            "3": "Pain",
+            "4": "Trauma"
+          },
+          "context": "The external effects affect you through the end or rebirth."
+        },
+        "position9": {
+          "upright": "You may be afraid of the Ten Swords, betrayals, endings, or heavy losses.",
+          "reversed": "The Reverse Ten Swords can show anxiety about not being able to recover, not being able to start over, or not being able to close wounds.",
+          "keywords": {
+            "0": "Betrayal",
+            "1": "end",
+            "2": "Pain",
+            "3": "Rebirth",
+            "4": "anxiety"
+          },
+          "context": "It's focused on fears, betrayals, or endless endings."
+        }
+      },
+      "pageofswords": {
+        "position1": {
+          "upright": "The Sword Prince may be at the center of the problem of curiosity, new ideas, or recklessness.",
+          "reversed": "Reverse Sword Prince, superficiality, gossip or reckless behavior may be the source of the problem.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "idea",
+            "2": "learning",
+            "3": "Attention",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is the search for information and the desire to learn."
+        },
+        "position10": {
+          "upright": "The Sword Prince may have opportunities to gain new information, to move forward with curiosity, or to communicate with others.",
+          "reversed": "Reverse Sword Prince, the result may be false information, gossip, or recklessness.",
+          "keywords": {
+            "0": "information",
+            "1": "communication",
+            "2": "curiosity",
+            "3": "learning",
+            "4": "Attention"
+          },
+          "context": "The result may be getting new information or misunderstanding."
+        },
+        "position2": {
+          "upright": "The Sword Prince may be misdirecting the obstacle's desire to be careless, superficial, or learning.",
+          "reversed": "Reverse Sword Prince, rumors, misinformation, or lack of focus may be the source of the obstacle.",
+          "keywords": {
+            "0": "Attention",
+            "1": "curiosity",
+            "2": "learning",
+            "3": "information",
+            "4": "obstacle"
+          },
+          "context": "Obstruction comes from being careless and superficial."
+        },
+        "position3": {
+          "upright": "The Prince of Sword, subconsciously, there may be a desire to learn in the past, curiosity, or careless behavior.",
+          "reversed": "Reverse Sword Prince, rumors, misinformation, or superficiality may have been carried from the past to the subconscious.",
+          "keywords": {
+            "0": "learning",
+            "1": "curiosity",
+            "2": "information",
+            "3": "Carelessness",
+            "4": "subconscious"
+          },
+          "context": "Past learning experiences and carelessness may be leading to today's problems."
+        },
+        "position4": {
+          "upright": "The Sword Prince is to feed the curiosity of the best potential, to learn new information and to creatively develop your intelligence.",
+          "reversed": "Reverse Sword Prince, in order to reveal your potential, you must avoid recklessness, superficiality, and gossip.",
+          "keywords": {
+            "0": "learning",
+            "1": "curiosity",
+            "2": "intelligence",
+            "3": "creativity",
+            "4": "communication"
+          },
+          "context": "Your best potential is to use learning curiosity constructively."
+        },
+        "position5": {
+          "upright": "Sword Prince, in the recent past, you may have experienced curiosity, a desire to learn, or the energy to explore a new idea.",
+          "reversed": "Reverse Sword Prince, you may have recently experienced rumors, misinformation, or recklessness.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "learning",
+            "2": "communication",
+            "3": "intelligence",
+            "4": "Attention"
+          },
+          "context": "Your recent history may have been determined by learning or recklessness."
+        },
+        "position6": {
+          "upright": "Sword Prince, in the near future, you can act with a new idea, curiosity, or research energy.",
+          "reversed": "Reverse Sword Prince, in the near future, rumors, misinformation, or carelessness may come to light.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "communication",
+            "2": "intelligence",
+            "3": "learning",
+            "4": "Attention"
+          },
+          "context": "Your near future will be shaped by learning or carelessness."
+        },
+        "position7": {
+          "upright": "Sword Prince, right now you have the energy of curiosity, the desire to learn and new ideas.",
+          "reversed": "Reverse Sword Prince, right now, gossip, misinformation or carelessness may be affecting you.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "communication",
+            "2": "learning",
+            "3": "intelligence",
+            "4": "Attention"
+          },
+          "context": "Your current condition is shaped by learning or carelessness."
+        },
+        "position8": {
+          "upright": "The Prince of Sword, the outside effects can offer you new information, intriguing opportunities and learning fields.",
+          "reversed": "Reverse Sword Prince, outside effects can force you with gossip, misinformation or carelessness.",
+          "keywords": {
+            "0": "learning",
+            "1": "curiosity",
+            "2": "communication",
+            "3": "information",
+            "4": "intelligence"
+          },
+          "context": "It affects you through external effects, information or misdirection."
+        },
+        "position9": {
+          "upright": "Prince of the Sword, you may be afraid of misunderstanding, of twisting your words, or of being underestimated by your curiosity.",
+          "reversed": "The Reverse Sword Prince may show fear of gossip, misinformation, or carelessness.",
+          "keywords": {
+            "0": "communication",
+            "1": "Don't get me wrong.",
+            "2": "information",
+            "3": "gossip",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on twisting your words or misinformation."
+        }
+      },
+      "knightofswords": {
+        "position1": {
+          "upright": "The Knight of the Sword may be at the center of the problem of quick decisions, rashness, or focus on the goal.",
+          "reversed": "Reverse Sword Knight, rashness, indiscretions, or aggressive behavior may be the source of the problem.",
+          "keywords": {
+            "0": "speed",
+            "1": "Hurry",
+            "2": "target",
+            "3": "determination",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is hasty decisions or quick action."
+        },
+        "position10": {
+          "upright": "The Knight of the Sword may be the result of rapid progress, decisive action, or courage.",
+          "reversed": "Reverse Sword Knight, the result may be rashness, unplanned or undirected action.",
+          "keywords": {
+            "0": "speed",
+            "1": "Courage",
+            "2": "determination",
+            "3": "move",
+            "4": "Unplanned"
+          },
+          "context": "The result may be rapid progress or rashness."
+        },
+        "position2": {
+          "upright": "Knight of the Sword, your obstacle can be rash, impatient, or aggressive behavior.",
+          "reversed": "Reverse Sword Knight, running undirected, reckless or impulsive, could be the source of the obstacle.",
+          "keywords": {
+            "0": "Hurry",
+            "1": "I can't wait.",
+            "2": "target",
+            "3": "Fierceness",
+            "4": "obstacle"
+          },
+          "context": "The obstacle arises from hasty decisions and impatientness."
+        },
+        "position3": {
+          "upright": "The Knight of the Sword, subconsciously, in the past, there may have been rash decisions, impatience, or outbursts of anger.",
+          "reversed": "Reverse Sword Knight, in the past, or recklessness or extreme risk may have settled in your subconscious.",
+          "keywords": {
+            "0": "In a hurry.",
+            "1": "I can't wait.",
+            "2": "Anger",
+            "3": "risk",
+            "4": "subconscious"
+          },
+          "context": "The rash decisions of the past may be affecting your problems today."
+        },
+        "position4": {
+          "upright": "Knight of the Sword, your best potential is to act with courage, to defend your ideas and to move forward with determination.",
+          "reversed": "Reverse Sword Knight, to achieve your potential, you must avoid hastyness, clarify your direction, and not distract yourself.",
+          "keywords": {
+            "0": "Courage",
+            "1": "determination",
+            "2": "movement",
+            "3": "defence",
+            "4": "Vision"
+          },
+          "context": "Your best potential is to move forward with determination and bring your ideas to life."
+        },
+        "position5": {
+          "upright": "The Knight of the Sword, in recent times, you may have acted rashly, made swift decisions, or taken bold steps.",
+          "reversed": "Reverse Sword Knight, in the recent past, you may have experienced disorientation, carelessness, or impatience.",
+          "keywords": {
+            "0": "In a hurry.",
+            "1": "Courage",
+            "2": "movement",
+            "3": "I can't wait.",
+            "4": "target"
+          },
+          "context": "Your recent history may have been determined by haste or lack of direction."
+        },
+        "position6": {
+          "upright": "Knight of the Sword, in the near future, you may have a bold attempt, a quick move, or a clear decision.",
+          "reversed": "Reverse Sword Knight, in the near future, you may experience rashness, carelessness, or disorientation.",
+          "keywords": {
+            "0": "Courage",
+            "1": "speed",
+            "2": "decision",
+            "3": "target",
+            "4": "Hurry"
+          },
+          "context": "Your near future will be shaped by courage or haste."
+        },
+        "position7": {
+          "upright": "Knight of the Sword, you're moving fast, you're taking bold steps, and you're moving decisively.",
+          "reversed": "Reverse-Sword Knight, right now, rashness, carelessness, or disorientation may force you.",
+          "keywords": {
+            "0": "Courage",
+            "1": "speed",
+            "2": "decision",
+            "3": "focus",
+            "4": "Hurry"
+          },
+          "context": "Your current situation is shaped by courage or haste."
+        },
+        "position8": {
+          "upright": "Knight of the Sword, the outside effects may encourage you to move quickly, to move bravely.",
+          "reversed": "Reverse-Sword Knight, external effects can drive you to hasty, careless, or undirected behavior.",
+          "keywords": {
+            "0": "speed",
+            "1": "Courage",
+            "2": "decision",
+            "3": "Hurry",
+            "4": "focus"
+          },
+          "context": "It affects you through external effects, speed, courage, or hastyness."
+        },
+        "position9": {
+          "upright": "Knight of the Sword, you may be afraid to make mistakes, to act rashly, or to be unplanned.",
+          "reversed": "The Reverse Sword Knight can show the fear of uncontrollably anger, undirected movement, or failure.",
+          "keywords": {
+            "0": "Hurry",
+            "1": "Unplanned",
+            "2": "Anger",
+            "3": "speed",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on acting rashly or making mistakes."
+        }
+      },
+      "queenofswords": {
+        "position1": {
+          "upright": "The Queen of the Sword may need logic, objectiveness or independence at the heart of the problem.",
+          "reversed": "Reverse Sword Queen, extreme criticism, coldness or lack of understanding may be the source of the problem.",
+          "keywords": {
+            "0": "logic",
+            "1": "Objectivity",
+            "2": "independence",
+            "3": "criticism",
+            "4": "Question"
+          },
+          "context": "The problem needs a rational and objective approach at its center."
+        },
+        "position10": {
+          "upright": "The Queen of the Sword may result in logical decisions, independence, and clear communication.",
+          "reversed": "Reverse Sword Queen, the result may be coldness, extreme criticism, or misunderstandings.",
+          "keywords": {
+            "0": "logic",
+            "1": "independence",
+            "2": "communication",
+            "3": "criticism",
+            "4": "clarity"
+          },
+          "context": "The result may be logical decisions or misunderstandings."
+        },
+        "position2": {
+          "upright": "The Queen of the Sword, your obstacle may be to be overly critical, cold behavior, or distance, which suppresses too much logic.",
+          "reversed": "Reverse Sword Queen, rigor, extreme judgment or lack of understanding may be the source of the obstacle.",
+          "keywords": {
+            "0": "criticism",
+            "1": "coldness",
+            "2": "logic",
+            "3": "judgment",
+            "4": "obstacle"
+          },
+          "context": "The obstacle arises from extreme criticism and a cold approach."
+        },
+        "position3": {
+          "upright": "The Queen of the Sword, subconsciously, in the past, it can be to assert reason, to be separated from coldness or emotions.",
+          "reversed": "Reverse Sword Queen, extreme criticism, lack of understanding or rigor may have been carried from the past to the subconscious.",
+          "keywords": {
+            "0": "logic",
+            "1": "coldness",
+            "2": "criticism",
+            "3": "rigor",
+            "4": "subconscious"
+          },
+          "context": "The harsh or cold approaches in the past may have shaped today's problems."
+        },
+        "position4": {
+          "upright": "Queen of the Sword, your best potential is to move forward with objectiveness, sharp intelligence and independent thinking.",
+          "reversed": "Reverse Sword Queen, in order to reveal your potential, you must avoid extreme criticism, rigor, and emotional disconnection.",
+          "keywords": {
+            "0": "independence",
+            "1": "intelligence",
+            "2": "Objectivity",
+            "3": "wisdom",
+            "4": "thought"
+          },
+          "context": "Your best potential is to move forward with an independent and sharp mind."
+        },
+        "position5": {
+          "upright": "The Queen of the Sword, in recent times, you may have acted objectively, put your logic first, or acted independently.",
+          "reversed": "Reverse Sword Queen, you may have had a recent experience of coldness, criticism, or insensitivity.",
+          "keywords": {
+            "0": "logic",
+            "1": "independence",
+            "2": "Objectivity",
+            "3": "coldness",
+            "4": "criticism"
+          },
+          "context": "Your recent history may have been shaped by objectiveness or emotional distance."
+        },
+        "position6": {
+          "upright": "The Queen of the Sword, in the near future, you will put your logic first, make objective decisions, or take an independent stance.",
+          "reversed": "In the near future, the Reverse Sword Queen may be cold, critical, or insensitive.",
+          "keywords": {
+            "0": "logic",
+            "1": "independence",
+            "2": "Objectivity",
+            "3": "coldness",
+            "4": "criticism"
+          },
+          "context": "Your near future will be shaped by objectiveness or emotional distance."
+        },
+        "position7": {
+          "upright": "Queen of the Sword, you're using logic right now, making objective decisions, and acting independently.",
+          "reversed": "Reverse Sword Queen, you may be facing coldness, criticism, or insensitivity.",
+          "keywords": {
+            "0": "logic",
+            "1": "independence",
+            "2": "Objectivity",
+            "3": "coldness",
+            "4": "decision"
+          },
+          "context": "Your current condition is shaped by logic or extreme coldness."
+        },
+        "position8": {
+          "upright": "Queen of the Sword, the outside effects can give you logical, objective, and wise guidance.",
+          "reversed": "Reverse Sword Queen, outside effects can force you into cold, extreme criticism or insensitivity.",
+          "keywords": {
+            "0": "logic",
+            "1": "wisdom",
+            "2": "independence",
+            "3": "coldness",
+            "4": "decision"
+          },
+          "context": "It affects you through external effects, wisdom, or coldness."
+        },
+        "position9": {
+          "upright": "Queen of the Sword, you may be afraid of looking emotionally cold, of being alone, or of being misunderstood.",
+          "reversed": "The Reverse Sword Queen may show a fear of extreme criticism, insensitivity, or harshness.",
+          "keywords": {
+            "0": "coldness",
+            "1": "criticism",
+            "2": "loneliness",
+            "3": "independence",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on coldness or misunderstanding."
+        }
+      },
+      "kingofswords": {
+        "position1": {
+          "upright": "The Sword King may have justice, wisdom, or authority at the heart of the problem.",
+          "reversed": "Reverse Sword King may be the source of the problem of rigor, injustice, or conflict with authority.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "justice",
+            "2": "authority",
+            "3": "leadership",
+            "4": "Question"
+          },
+          "context": "At the center of the problem are wise decisions and the search for justice."
+        },
+        "position10": {
+          "upright": "Sword King, the result may be fair decisions, logical leadership, and mental power.",
+          "reversed": "The Reverse Sword King may result in oppressive decisions, injustice, or cold authority.",
+          "keywords": {
+            "0": "justice",
+            "1": "logic",
+            "2": "authority",
+            "3": "leadership",
+            "4": "decision"
+          },
+          "context": "The result may be a fair government or oppressive decisions."
+        },
+        "position2": {
+          "upright": "Sword King, the obstacle may be pressured by authority, extreme logic, or strict rules, but being too strict prevents flexibility.",
+          "reversed": "Reverse Sword King, injustice, conflict with authority or cold attitudes can be the source of the obstacle.",
+          "keywords": {
+            "0": "authority",
+            "1": "logic",
+            "2": "rigor",
+            "3": "justice",
+            "4": "obstacle"
+          },
+          "context": "The obstacle comes from the extreme pressure of strict rules and logic."
+        },
+        "position3": {
+          "upright": "The Sword King may have subconsciously had a history of pressure on authority, rigor of logic, or search for justice.",
+          "reversed": "Reverse Sword King, past injustices, oppressive figures, or cold attitudes may have been embedded in his subconscious.",
+          "keywords": {
+            "0": "authority",
+            "1": "justice",
+            "2": "rigor",
+            "3": "coldness",
+            "4": "subconscious"
+          },
+          "context": "In the past, authority pressure and injustice may have been the basis for today's problems."
+        },
+        "position4": {
+          "upright": "Sword King, your best potential is to make fair decisions, guide them with your wisdom, and establish order with reason.",
+          "reversed": "In order to achieve your potential, reverse Sword King, you must avoid authoritarianism, coldness, and harsh attitudes.",
+          "keywords": {
+            "0": "justice",
+            "1": "logic",
+            "2": "guidance",
+            "3": "authority",
+            "4": "wisdom"
+          },
+          "context": "Your best potential is to be a just and logical guide."
+        },
+        "position5": {
+          "upright": "King of the Sword, you may have made logical decisions recently, acted justly, or demonstrated authority.",
+          "reversed": "Reverse Sword King, you may have experienced oppressive behavior, coldness, or injustice in recent times.",
+          "keywords": {
+            "0": "authority",
+            "1": "justice",
+            "2": "decision",
+            "3": "logic",
+            "4": "coldness"
+          },
+          "context": "Your recent past may have been determined by fair or unfair authority."
+        },
+        "position6": {
+          "upright": "Sword King, in the near future, you will make logical decisions, act justly, and guide them with your wisdom.",
+          "reversed": "In the near future, the Reverse Sword King may be subject to oppression, coldness, or unjust decisions.",
+          "keywords": {
+            "0": "authority",
+            "1": "justice",
+            "2": "logic",
+            "3": "wisdom",
+            "4": "decision"
+          },
+          "context": "Your near future will be shaped by wise decisions or injustice."
+        },
+        "position7": {
+          "upright": "Sword King, right now, you're making rational decisions, you're being fair, and you're using your wisdom.",
+          "reversed": "Reverse Sword King, you may be under pressure, unfair decisions, or a cold attitude.",
+          "keywords": {
+            "0": "authority",
+            "1": "justice",
+            "2": "logic",
+            "3": "wisdom",
+            "4": "decision"
+          },
+          "context": "Your current situation is shaped by wisdom or injustice."
+        },
+        "position8": {
+          "upright": "Sword King, external influences can bring you fair decisions, logical guidance, and authority support.",
+          "reversed": "Reverse Sword King, outside effects can force you through oppression, injustice, or a cold authority figure.",
+          "keywords": {
+            "0": "justice",
+            "1": "authority",
+            "2": "wisdom",
+            "3": "logic",
+            "4": "decision"
+          },
+          "context": "It affects you through external effects, justice, or oppression."
+        },
+        "position9": {
+          "upright": "King of the Sword, you may fear wrongful judgment, loss of reason, or injustice.",
+          "reversed": "The Reverse Sword King may show fear of oppression, oppression, or misdirection by authority.",
+          "keywords": {
+            "0": "justice",
+            "1": "logic",
+            "2": "authority",
+            "3": "misjudgment",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on injustice or pressure from authority."
+        }
+      },
+      "aceofwands": {
+        "position1": {
+          "upright": "The wand may need a new inspiration, a creative idea, or a strong start at the heart of the problem.",
+          "reversed": "Reverse Ace, lack of motivation, delays, or quick extinction of enthusiasm may be the source of the problem.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "creativity",
+            "2": "start",
+            "3": "Motivation",
+            "4": "Question"
+          },
+          "context": "At the center of the problem is the search for a new source of energy or inspiration."
+        },
+        "position10": {
+          "upright": "The ace of wands may result in a new beginning, an inspiring opportunity, and a creative enterprise.",
+          "reversed": "The Reverse Stick ace may result in lack of motivation, delayed projects or aimlessness.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "start",
+            "2": "creativity",
+            "3": "Motivation",
+            "4": "opportunity"
+          },
+          "context": "The result may be a creative beginning or a delayed attempt."
+        },
+        "position2": {
+          "upright": "The wand may be the lack of motivation, lack of inspiration, or lack of courage to begin with, but when the fire inside of you does not burn, it becomes difficult to assess new opportunities.",
+          "reversed": "The Reverse Wand, the unfinished projects, the quickly extinguishing of enthusiasm or obstructed creativity may be the source of the problem.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "Motivation",
+            "2": "creativity",
+            "3": "start",
+            "4": "obstacle"
+          },
+          "context": "The obstacle comes from lack of inspiration and motivation."
+        },
+        "position3": {
+          "upright": "The wand may have been a powerful inspiration, a creative spark, or an exciting beginning in the past, which may have left a trail leading to the problems you're experiencing today.",
+          "reversed": "Inverted Asa's ace, in the past, the quickness of enthusiasm, the incomplete projects, or the loss of motivation may have settled into his subconscious.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "start",
+            "2": "creativity",
+            "3": "fad",
+            "4": "subconscious"
+          },
+          "context": "The inspiring beginnings of the past, or the loss of motivation, may have shaped today's problems."
+        },
+        "position4": {
+          "upright": "The ace of wands is the best potential to bring new ideas into existence, to bring their passion into action, and to turn inspiration into bold steps.",
+          "reversed": "You need to stop delaying to reach your potential, get your courage back, and get your motivation back.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "start",
+            "2": "creativity",
+            "3": "passion",
+            "4": "Courage"
+          },
+          "context": "Your best potential comes from turning inspiration into action."
+        },
+        "position5": {
+          "upright": "You may have recently experienced a new inspiration, a creative spark, or a powerful beginning energy.",
+          "reversed": "You may have experienced a recent lack of inspiration, delayed beginnings, or a recession of energy.",
+          "keywords": {
+            "0": "start",
+            "1": "Inspired"
+          }
+        }
+      }
+    }
+  }
+}

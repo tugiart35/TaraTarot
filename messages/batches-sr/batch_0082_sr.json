@@ -1,0 +1,779 @@
+{
+  "relationship-problems": {
+    "meanings": {
+      "nineofcups": {
+        "position7": {
+          "keywords": [
+            null,
+            null,
+            null,
+            "duboko mateti",
+            "zadovoljstvo"
+          ],
+          "context": "Moral je dobar, ali i na problemima. Neka se i zadovoljstvo i stvarnost uspostave."
+        },
+        "position8": {
+          "upright": "Devet šoljica donosi zadovoljstvo, malu raskoši i osećaj ispunjenja. Dodaje motivaciju kada meri.",
+          "reversed": "Okrećeno devet šoljica govori nam da je potrošnja zadovoljstva izlazi iz kontrole i odlaganja osnovnih ciljeva.",
+          "keywords": [
+            "zadovoljstvo",
+            "luksuzan",
+            "motivacija",
+            "merenje",
+            "suspenzija"
+          ],
+          "context": "Ograničite proizvoljni budžet; Prioritete ciljni budžet."
+        },
+        "position9": {
+          "upright": "Praksa devet šoljica, zadovoljstva i zahvalnosti duže vreme nosi odnos. Stvorite područja zadovoljstva zajedno.",
+          "reversed": "Pretvoreno devet šoljica, sebična udobnost i površnost slabi vezu.",
+          "keywords": [
+            "zadovoljstvo",
+            "zahvalnost",
+            "zadovoljstvo",
+            "sebičnost",
+            "dubina"
+          ],
+          "context": "Da biste poslednji put: RITUALNO RITUALNO RITUAL + SHAREDNI JOI PLAN."
+        }
+      },
+      "tenofcups": {
+        "position1": {
+          "upright": "Deset šoljica kaže da razlika između idealne slike i stvarnih životnih uslova proizvodi napetost.",
+          "reversed": "Prekoračeni deset šoljica ukazuje da lažno pojavljivanje harmonije skriva potisnute probleme i nedostatak menadžmenta očekivanja povećava sukob.",
+          "keywords": [
+            "idealan",
+            "stvarnost",
+            "raport",
+            "očekivanje",
+            "porodica"
+          ],
+          "context": "Emotivni koren kontradikcije: jaz između ideala i stvarnosti."
+        },
+        "position2": {
+          "upright": "Deset šoljica kaže da problem leži u razlici između idealne slike o porodičnoj vezi i stvarnih uslova. Bajke i život su razdvojeni. \\ N \\ n \\ nhint: Upravljanje očekivanjem je slabo. Problem je u tome što istinsko skladištenje ustupa mesto na slici.",
+          "reversed": "Invertirani deset šoljica opisuje ruptura iza lažne harmonije i nasmejane fotografije. Neizložene pukotine rastu. \\ N \\ nsimptom: Tihi stolovi, svečana sreća. Problem je što je očigledno skladištenje izdubljeno.",
+          "keywords": [
+            "idealan",
+            "stvarnost",
+            "raport",
+            "porodica",
+            "očekivanje"
+          ],
+          "context": "Problem sa korenom: Idealno-stvarni domet. Područja koja utiče: ritual, očekivanje, živi zajedno."
+        },
+        "position3": {
+          "upright": "Deset šoljica kaže da možete imati udeo kada se prikupite za idealnu sliku i odbacite stvarnost. Bajka je nestala od života.",
+          "reversed": "Deset pukotina obrnuto vam govori da nastavljate lažnu harmoniju i gurate problem pod tepihom, čineći vatru veću. Fotografija se smeje, srce ostaje ćutanje.",
+          "keywords": [
+            "idealan",
+            "stvarnost",
+            "raport",
+            "porodica",
+            "očekivanje"
+          ],
+          "context": "Share: Idealna-realne poništavanje. EFEKT: Očekivanje, ritual. Preporuka: Autentični govor."
+        },
+        "position4": {
+          "upright": "Deset šoljica kaže da možete da branite idealnu sliku rekavši \"Dobri smo\" i ignorišemo pukotine. Čak i ako se fotografije nasmeši, srce ne bi trebalo da šutira.",
+          "reversed": "Invertirani deset šoljica naglašava tendenciju da negira nečije učešće održavanjem lažne harmonije. Autentični govor je obavezan.",
+          "keywords": [
+            "idealan",
+            "stvarnost",
+            "raport",
+            "porodica",
+            "očekivanje"
+          ],
+          "context": "Ignorisan: vidljiva pukotina. Efekat: Povećani rizik od eksplozije. DO: Stvarni razgovor, manji popravak."
+        },
+        "position5": {
+          "upright": "Deset šoljica vam govori da doživljavate san o porodici / kući ili mirnom periodu. Smisao harmonije je visok.",
+          "reversed": "Pretvoreni deset šoljica objašnjava da idealna utiša na slici stvarne potrebe. Faza i zadnja praznica mogu se razdvojiti.",
+          "keywords": [
+            "porodica",
+            "raport",
+            "idealan",
+            "real",
+            "mir"
+          ],
+          "context": "Prelepi trenuci sklada. Idealan pritisak je naporan. Sada je autentična agenda mora."
+        },
+        "position6": {
+          "upright": "Deset šoljica govori o vrednosti harmonije i san o porodici; Ali zaštita idealne slike može da utiče na stvarnu potrebu.",
+          "reversed": "Invertirani deset šoljica opisuje rizik da se trube prividne sreće i potcenjuju partnersku anksioznost.",
+          "keywords": [
+            "idealan",
+            "raport",
+            "real",
+            "očekivanje",
+            "autentičnost"
+          ],
+          "context": "Tema: Istinska harmonija; Rizik: Izložba sreće; Do: Autentični razgovor o dnevnom redu."
+        },
+        "position7": {
+          "upright": "Deset šoljica ukazuje na porodični savez i podrška rođacima. Osjećaj jedinstva je dobar za vas.",
+          "reversed": "Pretvoreni deset šoljica ukazuje na domaću napetost, pristrasnost i pritisak da pokaže sreću.",
+          "keywords": [
+            "porodica",
+            "savezništvo",
+            "na strani",
+            "izlog",
+            "raport"
+          ],
+          "context": "Porodična podrška je teška, ali trebalo bi da postoje ograničenja. Održavajte osnovni prostor odluke."
+        },
+        "position8": {
+          "upright": "Deset šoljica opisuje potrošnju koja je kompatibilna sa ciljevima porodičnog harmonije, domaće spokoje i zajedničke sreće.",
+          "reversed": "Prekoračeni deset šoljica ukazuje na pritisak da \"izgleda srećno\" i trošak prozora za presvlačenje i porodična očekivanja.",
+          "keywords": [
+            "porodica",
+            "mir",
+            "izlog",
+            "očekivanje",
+            "raport"
+          ],
+          "context": "Mera sreće je stvarna potreba; Smanjite pritisak da se pokaže."
+        },
+        "position9": {
+          "upright": "Trajna sreća je moguća sa deset šoljica, skladne porodične / zajedničke vizije i emocionalne sigurnosti.",
+          "reversed": "Deset šoljica preokrećeno je u riziku koji održavaju izložbu izložbe i potisnute probleme.",
+          "keywords": [
+            "raport",
+            "porodica",
+            "vizija",
+            "poverenje",
+            "autentičnost"
+          ],
+          "context": "Da traje: vizija doma / odnosa zasnovana na stvarnim potrebama."
+        }
+      },
+      "pageofcups": {
+        "position1": {
+          "upright": "Princ čaša kaže da je emocionalna nezrelost i ogorčenje okidača. Čak i nevine namere mogu biti pogrešno pročitane.",
+          "reversed": "Princ of Cups preokrenuti ukazuje da je utaja, preuveličana emocionalnost ili pasivna komunikacija uvećavaju sukob.",
+          "keywords": [
+            "osetljivost",
+            "zrelost",
+            "pobjeći",
+            "izraz",
+            "senzibilitet"
+          ],
+          "context": "Emocionalni koren kontradikcije: razlika u zrelosti i izrazu."
+        },
+        "position2": {
+          "upright": "Princ Cup-ova kaže da problem leži u razlici u emocionalnoj zrelosti i prekomernoj osetljivosti. Dobre namere su pogrešno pročitane. \\ N \\ nHint: Ogorčeno, bekstvo i utočište u fantaziji. Problem ne može da poveže emociju za akciju.",
+          "reversed": "Prenoćini princ čaša objašnjava da pasivno agresivni stavovi i detinjaste povlačenja oštećuju vezu. Pravi razgovor je odložen. \\ N \\ nsimptom: psovanje, razgovori putem tekstualne poruke. Problem je u tome što se emocionalna odrastala u kasni.",
+          "keywords": [
+            "senzibilitet",
+            "zrelost",
+            "pobjeći",
+            "izraz",
+            "razigranost"
+          ],
+          "context": "Problem sa korenom: Emocionalno zrelo zrelost. Područja koja utiče na komunikaciju, odgovornost, granice."
+        },
+        "position3": {
+          "upright": "Princ Cup-ova kaže da je on možda povećao svoju veliku dirnu i emocionalnu detinjstvo. Stavovi koji pogrešno pročitaju čak i nevine namere u gumima guma.",
+          "reversed": "Princ Cup-ova obrnut je objašnjava da ga podstiče vatru pasivno agresivno cviljenje i beži. Govor odraslih je kasni.",
+          "keywords": [
+            "senzibilitet",
+            "zrelost",
+            "pobjeći",
+            "izraz",
+            "razigranost"
+          ],
+          "context": "Numerator: Emocionalno zrelo zrelost. Uticaj: Komunikacija, odgovornost. Predlog: Izričita rečenica za zahtev."
+        },
+        "position4": {
+          "upright": "Princ čaša kaže da može opravdati svoju osetljivost kao \"osetljivost\" i ignoriše svoj udeo. Djetinjasta odbrana ukrašena poricanjem.",
+          "reversed": "Princ Cup-ova obrnut opisuje tendenciju da sakrije odgovornost pasivno agresivnim cviljenjem.",
+          "keywords": [
+            "senzibilitet",
+            "zrelost",
+            "pobjeći",
+            "izraz",
+            "razigranost"
+          ],
+          "context": "Ignorisan: izraz odraslih. Efekat: Komunikacija je zamagljena. DO: Postavite jasnu izjavu o zahtevu."
+        },
+        "position5": {
+          "upright": "Princ Cup-a kaže da naivne geste i kreativna sentimentalnost obiluju ranim danima. Nevinost je uspostavila vezu.",
+          "reversed": "Okrećeni princ Cup-a govori nam da ogorčenost i pasivno-agresivni curi napuštaju svoju marku. Emocionalna zrelost može fluktuirati.",
+          "keywords": [
+            "naivnost",
+            "gest",
+            "osetljivost",
+            "izraz",
+            "zrelost"
+          ],
+          "context": "Slatke geste; Ponekad djetinjaste reakcije. Potrebe za jezikom odraslih su vidljivi. Sada nam je potrebna jasna potražnja rečenica."
+        },
+        "position6": {
+          "upright": "Princ čaša opisuje slatkoću naivne geste; Ali korišćenje emocionalne ucene od ogorčenja je eksploatacija.",
+          "reversed": "Okolišteni princ čaše uvežava tendenciju da dominira partnerom sa pasivnim agresivnim cviljenjem i hlađenjem.",
+          "keywords": [
+            "naivnost",
+            "osetljivost",
+            "pasivni agresivan",
+            "gest",
+            "izraz"
+          ],
+          "context": "Tema: zreli emotivni jezik; Rizik: putovanje i prigovor; DO: Izričito zahtjevi rečenice."
+        },
+        "position7": {
+          "upright": "Princ čaša opisuje dobronamerne poruke emocionalnog, ali naivnog prijatelja. Možda postoji nedužna medijacija.",
+          "reversed": "Princ Cup-ova preokrećeno ukazuje da se spotaknu, prigovara i pasivno-agresivni spoljni komentari povećavaju osetljivost.",
+          "keywords": [
+            "naivan prijatelj",
+            "medijacija",
+            "prigovarati",
+            "pasivni agresivan",
+            "senzibilitet"
+          ],
+          "context": "Slatki glasovi su u redu, ali izaberite zreli jezik. Filtrirajte emocionalne prelive."
+        },
+        "position8": {
+          "upright": "Princ čaša označava kreativne male mogućnosti i naivne ideje o prihodima. Eksperimenti mogu biti inspirativni.",
+          "reversed": "Prenoćini princ Cup-a je upozorenje o ogorčenom \"Zaslužujem to\" bavi se i pasivno-agresivnim refleksima.",
+          "keywords": [
+            "kreativnost",
+            "mala prilika",
+            "osetljivost",
+            "nagrada",
+            "pokušati"
+          ],
+          "context": "Ispitajte male ideje o prihodima; Oslobodite karticu u trenutku emocije."
+        },
+        "position9": {
+          "upright": "Princ čaša, naivni gestikulacija i kreativni emocionalni jezik obnoviti odnos; šanse za povećanje preživljavanja.",
+          "reversed": "U obrnutom princu CUP-ova, ogorčenost i pasivna agresivnost podrivaju stalnost.",
+          "keywords": [
+            "naivnost",
+            "gest",
+            "kreativnost",
+            "osetljivost",
+            "izraz"
+          ],
+          "context": "Poslednji: Jasne emocionalne fraze + mali gestični ritam."
+        }
+      },
+      "knightofcups": {
+        "position1": {
+          "upright": "Vitez čaše pokazuje napetost između romantičnih ideala i konkretnih potreba. Visoka očekivanja mogu dovesti do razočaranja.",
+          "reversed": "Vitez Cup-a obrnut ukazuje da nespojivost reči i akcija podriva poverenje i produbljuje sukob.",
+          "keywords": [
+            "romantika",
+            "idealan",
+            "stvarnost",
+            "doslednost",
+            "poverenje"
+          ],
+          "context": "Emotivni koren kontradikcije: nespojivost idealnog i stvarnosti."
+        },
+        "position2": {
+          "upright": "Vitez čaše kaže da problem leži u sukobu romantičnih ideala i praktičnih potreba. Reči su čarobne, tlo je neizvesno. \\ N \\ NHINT: Postoji mnogo gesta, nekoliko planova. Pitanje je doslednost i održivost.",
+          "reversed": "Učitavanje viteza CURS-a objašnjava da nespojivost reči i lako odustajanje u rezoluciju poverenja. Frustracija se akumulira. \\ N \\ nsimptom: bežeći od obećanja, nedosledna intimnost. Problem je što je ideal isključen iz stvarnosti.",
+          "keywords": [
+            "romantika",
+            "idealan",
+            "doslednost",
+            "praktičan",
+            "poverenje"
+          ],
+          "context": "Problem sa korenom: uravnoteženje romantizma - balansiranje. Područja koja utiče: planiranje, poverenje, kontinuitet."
+        },
+        "position3": {
+          "upright": "Knight of Cups kaže da imate udeo kada stavite gest pre plana i oslabite doslednost. Romantika je prelepa, ali zahteva održivost.",
+          "reversed": "Reversed vitez šoljica objašnjava da ga podstiče sa nespojivovodljivošću reči i brzom napuštanju. Frustracija se akumulira.",
+          "keywords": [
+            "romantika",
+            "idealan",
+            "doslednost",
+            "praktičan",
+            "poverenje"
+          ],
+          "context": "Podelite: neodržive geste. Efekat: Poverenje, očekivanje. Preporuka: Manje samosveštenosti."
+        },
+        "position4": {
+          "upright": "Vitez čaše sugeriše da možete staviti gest pre plana i ignorisati odgovornost za doslednost. Romantičnosti polira poricanje.",
+          "reversed": "Prekoračeni vitez Cupa pokazuje tendenciju da sakrije vaš doprinos koristeći nespojivost reči-akcije kao izgovor.",
+          "keywords": [
+            "romantika",
+            "doslednost",
+            "idealan",
+            "praktičan",
+            "poverenje"
+          ],
+          "context": "Ignorisano: održivost. UTICAJ: Trust Falls. Učinite to: sažeti, redovni koraci."
+        },
+        "position5": {
+          "upright": "Knight of Cups kaže da romantični potezi nose vašu vezu. Gestikulacija omekšala srca.",
+          "reversed": "Preokrećeni vitez čaša objašnjava da nedoslednost reči-akcije ne izaziva razočaranje s vremena na vreme.",
+          "keywords": [
+            "romantika",
+            "gest",
+            "doslednost",
+            "idealan",
+            "praktičan"
+          ],
+          "context": "Romantika je jaka. Održivost fluktuira. Sada su sažeti, redovni koraci su važni."
+        },
+        "position6": {
+          "upright": "Vitez čaše slavi magiju romantike; Ali koristeći geste kao aduta i dobijanje odobrenja može dovesti do eksploatacije.",
+          "reversed": "Invertirani vitez čaše ukazuje na rizik od nade i potom ga povući neusklađivanjem reči.",
+          "keywords": [
+            "romantika",
+            "gest",
+            "odobrenje",
+            "doslednost",
+            "povlačenje"
+          ],
+          "context": "Tema: gest i poverenje; Rizik: Diverzija sa nadom; Do: Malo, dosledne korake."
+        },
+        "position7": {
+          "upright": "Vitez čaše predstavlja želju romantične osobe da vas pomiri. Moguće je doći spoljni predlozi orijentisani na geste.",
+          "reversed": "Učitavanje viteza šoljica pokazuje da je haos stvorio posrednici koji prodaju snove i nestaju.",
+          "keywords": [
+            "romantika",
+            "gest",
+            "sredstvo",
+            "doslednost",
+            "složenost"
+          ],
+          "context": "Izaberite stalni alat. Kontinuitet je vredniji od geste."
+        },
+        "position8": {
+          "upright": "Kada vitez na CUP-ova planira romantični budžet geste, kako srce odnosa i novčanik je lako u lakoću.",
+          "reversed": "Učitavanje viteza CUP-ova kaže da pritisak gesta i nedosledna potrošnja može da napreduje kraj meseca.",
+          "keywords": [
+            "gest",
+            "plan",
+            "doslednost",
+            "romantika",
+            "kraj meseca"
+          ],
+          "context": "Gesta je prelepa; Zamislilo je kada je to dosledno, mali i planiran."
+        },
+        "position9": {
+          "upright": "Vitez čaše odnosi se u odnos sa romantičnom konzistenjom i smislenim gestima.",
+          "reversed": "Obrnuti vitez čaše, očekivanja za neusklađenost reči i vijed-geste. postaje teško održavati.",
+          "keywords": [
+            "romantika",
+            "gest",
+            "doslednost",
+            "nadati se",
+            "ravnoteža"
+          ],
+          "context": "Da biste to učinili: nekoliko, ali redovnih gestikulacija + jasne reči."
+        }
+      },
+      "queenofcups": {
+        "position1": {
+          "upright": "Kraljica Cupa kaže da postoji neravnoteža između potrebe za empatijom i mogućnošću postavljanja granica. Prekomerna nega može se shvatiti kao gušenje.",
+          "reversed": "Kraljica Cup-ova obrnuta ukazuje da je emocionalna manipulacija ili granično topljenje naporno udesno.",
+          "keywords": [
+            "empatija",
+            "granica",
+            "briga",
+            "manipulacija",
+            "ravnoteža"
+          ],
+          "context": "Emocionalni koren disonancije: empatija i granična ravnoteža."
+        },
+        "position2": {
+          "upright": "Kraljica Cupa kaže da je problem u ravnotežnom ravnoteži. Previše se brige može ugušiti, premalo glasi kao zanemarivanje. \\ N \\ NHINT: Emocionalni preliv, energetski umor. Problem je u tome što saosećanje sama gori.",
+          "reversed": "Reversed Kueen of Cups opisuje emocionalnu manipulaciju i granično topljenje koje oštećuje obveznice. Ranjivost postaje adut. \\ N \\ nsimptom: krivična krivica, introverzija. Problem je nedostatak čistih empatijanih kanala.",
+          "keywords": [
+            "empatija",
+            "granica",
+            "briga",
+            "manipulacija",
+            "nega"
+          ],
+          "context": "Problem sa korenom: Kalibracija empatije. Područja koja utiče: emocionalni rad, izgaranje, distribucija uloga."
+        },
+        "position3": {
+          "upright": "Kraljica Cupa kaže da kada ne možete ravnoteža empatija sa granicama, vaš udeo raste. Previše se briga zvuči ugušeno, premalo zvukova poput zanemarivanja.",
+          "reversed": "Reversed Kueen of Cups opisuje povećanje požara aktiviranjem emocionalne manipulacije i krivice. Sama je potrebna za vas prvo.",
+          "keywords": [
+            "empatija",
+            "granica",
+            "briga",
+            "manipulacija",
+            "nega"
+          ],
+          "context": "Share: Balance granične / saosećanja. Efekat: Izgaranje, samopouzdanje. Predlog: bistre granice + ljubazan jezik."
+        },
+        "position4": {
+          "upright": "Kraljica šoljica objašnjava da nije u stanju da ravnoteža empatija sa granicama je \"žrtva\" i kaže da ona može da ignoriše svoj udeo. Prekomerna briga je takođe obaveza.",
+          "reversed": "Ograničena kraljica šoljica objašnjava da ignorisanje emocionalne manipulacije može podstaći uskraćivanje aktiviranjem krivice.",
+          "keywords": [
+            "empatija",
+            "granica",
+            "briga",
+            "manipulacija",
+            "nega"
+          ],
+          "context": "Ignorisan: zdrava granica. Efekat: Izgorevanje, ogorčenost. DO: Jasne granice + ljubazan jezik."
+        },
+        "position5": {
+          "upright": "Kraljica Cupa kaže da su duboka empatija i saosećanja okosnica vaše veze. Stvorena je emocionalna bezbednosna zona.",
+          "reversed": "Kraljica Cup-ova preokrenuta ukazuje da je emocionalna manipulacija ili topljenje granica ostavila svoju ocenu.",
+          "keywords": [
+            "empatija",
+            "saosećanje",
+            "granica",
+            "poverenje",
+            "briga"
+          ],
+          "context": "Visoka empatija; Rizik od burncije granice. Nedostaje samopovreda. Jasne granice + ljubazan jezik sada moraju biti obavezni."
+        },
+        "position6": {
+          "upright": "Kraljica srca obuhvata empatiju; Ali prekomerna emocionalna nega može proizvesti nevidljivi dug i zavisnost.",
+          "reversed": "Kraljica Cup-ova preokrenuta skreće pažnju na rizik da indukuje krivicu i kontrolu partnera emocionalnom manipulacijom.",
+          "keywords": [
+            "empatija",
+            "briga",
+            "zavisnost",
+            "krivica",
+            "granica"
+          ],
+          "context": "Tema: saosećanje i granice; Rizik: Emotivni dug; DO: Samo-nega i granična jasnoća."
+        },
+        "position7": {
+          "upright": "Kraljica šoljica pokazuje umirujuće efekat empatične ženske figure (majka / sestra / prijatelj). Omogućava siguran emotivni prostor.",
+          "reversed": "Kraljica Cup-ova preokrenuta odnosi se na spoljni glas koji vrši emocionalnu manipulaciju i pritisak krivice.",
+          "keywords": [
+            "empatija",
+            "ženska figura",
+            "umanjenje",
+            "manipulacija",
+            "krivica"
+          ],
+          "context": "Saosećajna podrška je dobra; Pazite na emocionalni dug. Neka granica bude jasna."
+        },
+        "position8": {
+          "upright": "Kraljica šoljica ublažava teret finansija sa saosećajnom podrškom, emocionalnom sigurnošću i mudrošću.",
+          "reversed": "Kraljica šoljica preokrenuta je upozorava na emocionalnu manipulaciju, novčane zahteve i \"učini to za mene\" pritisak.",
+          "keywords": [
+            "saosećanje",
+            "podrška",
+            "sigurnost",
+            "manipulacija",
+            "zatražiti"
+          ],
+          "context": "Neka vam pomogne da bude ljubav i ograničenja; dati / primiti bez zaduživanja."
+        },
+        "position9": {
+          "upright": "Kraljica šoljica, empatični prostor i sigurna podrška za podršku vezanosti.",
+          "reversed": "Invertirana kraljica šoljica, emocionalne manipulacije i podmirivanje krivice podrivaju stalnost.",
+          "keywords": [
+            "empatija",
+            "sigurna veza",
+            "briga",
+            "manipulacija",
+            "granica"
+          ],
+          "context": "Poslednji: saosećanje + uspostavljanje granice zajedno."
+        }
+      },
+      "kingofcups": {
+        "position1": {
+          "upright": "Kralj šoljica kaže da razlike u stilu upravljanja emocijama stvaraju kontradikcije. Jedan ostaje miran i kontrolisan dok drugi zahteva izražavanje.",
+          "reversed": "Prekoračeni kralj šoljica ukazuje na to da je pasivni agresivan stav i potisnuto gnev pouzdano.",
+          "keywords": [
+            "Emocionalno upravljanje",
+            "izraz",
+            "spokojstvo",
+            "pasivni agresivan",
+            "poverenje"
+          ],
+          "context": "Emotivni koren sukoba: Razlika u izražavanju i uredbi."
+        },
+        "position2": {
+          "upright": "Kralj šoljica kaže da je problem je svest u stilu emocionalnog menadžmenta. Jedan je mirno, ostalo želi ekspresiju. \\ N \\ NHINT: Ne grešite bez emotion-a, nemojte se razumeti. Problem je što se oblici izražavanja preklapaju.",
+          "reversed": "Prekoračen kralj šoljica objašnjava da potisnute ljutnje i pasivno-agresivne talase urođene poverenje. Vode su bistre na površini, ali na dnu na dnu. \\ N \\ nsimptom: Sugestivne tišine, uspone i padove. Problem nije u stanju da se emocija osvrne na zdrav način.",
+          "keywords": [
+            "spokojstvo",
+            "izraz",
+            "ravnoteža",
+            "pasivni agresivan",
+            "rukovodstvo"
+          ],
+          "context": "Problem sa korenom: način prenošenja emocija. Područja koja utiče na: razumevanje, poverenje, upravljanje krizama."
+        },
+        "position3": {
+          "upright": "Kralj šoljica kaže da možete pobediti tako što ćete previše kontrolisati svoje emocije i pojaviti se \"hladno\". Ne dozvolite da vas tišina spreči da se čujete.",
+          "reversed": "Prekoračen kralj šoljica objašnjava da podstiče vatru uz potisnutu ljutnju i pasivne agresivne talase. Emocija zahteva zdrav kanal.",
+          "keywords": [
+            "spokojstvo",
+            "izraz",
+            "ravnoteža",
+            "pasivni agresivan",
+            "rukovodstvo"
+          ],
+          "context": "Share: Emocionalni stil prenosa. EFEKT: Razumevanje, poverenje. Predlog: Ime-udela."
+        },
+        "position4": {
+          "upright": "Kralj šoljica predstavlja prekomernu kontrolu emocija kao \"zrelost\" i kaže da može da ignoriše svoj udeo. Ne dozvolite da se spokojstvo pretvori u isključivanje.",
+          "reversed": "Preokrećeni kralj Cupa naglašava tendenciju da sakrije odgovornost umanjenjem pasivnih agresivnih talasa.",
+          "keywords": [
+            "spokojstvo",
+            "izraz",
+            "ravnoteža",
+            "pasivni agresivan",
+            "rukovodstvo"
+          ],
+          "context": "Zanemareno: vidljivost emocija. Efekat: Razumevanje se smanjuje. DO: Ime-udela."
+        },
+        "position5": {
+          "upright": "Kralj šoljica vam govori o vremenima kada nosite svoje emocije materiju i mirno. Postao si luka u oluji.",
+          "reversed": "Preokrećeni kralj šoljica pokazuje da su pasivno-agresivni talasi ili potiskivani gnev napustili svoj trag.",
+          "keywords": [
+            "spokojstvo",
+            "zrelost",
+            "izraz",
+            "pasivni agresivan",
+            "ravnoteža"
+          ],
+          "context": "Zrelo emotivno rukovodstvo. Neke emocije su skrivene. Sada moramo da ime i delimo."
+        },
+        "position6": {
+          "upright": "Kralj šoljica naglašava emocionalnu zrelost; Ali koristeći smirenost kao štit i brišući pitanja mogu ugasiti emociju partnera.",
+          "reversed": "Prekoračeni kralj CUP-a ukazuje na oblik eksploatacije koji trudi ravnotežu sa pasivnim agresivnim talasima.",
+          "keywords": [
+            "zrelost",
+            "spokojstvo",
+            "suzbijanje",
+            "pasivni agresivan",
+            "izraz"
+          ],
+          "context": "Tema: Zrela smirena; RIZIK: SILENCIranje emocija; DO: Ime i napravite vidljive."
+        },
+        "position7": {
+          "upright": "Kralj Cupa kaže da zreli savetnik (terapeut / stariji prijatelj) daje smilu.",
+          "reversed": "Preokrećeni kralj Cupa ukazuje na pasivno-agresivne sugestije i spoljni glas koji vas poziva na \"smiri se\".",
+          "keywords": [
+            "zreli savetnik",
+            "terapija",
+            "spokojstvo",
+            "pasivni agresivan",
+            "ugnjetavanje"
+          ],
+          "context": "Profesionalna / zrela podrška korisna. Izbegavajte opresivni smirivač."
+        },
+        "position8": {
+          "upright": "Kralj šoljica donosi emocionalnu zrelost, smirenost i empatiju finansijskim razgovorima.",
+          "reversed": "Prekoračen kralj Cupa je upozorenje za odlaganje budžetskog pitanja sa pasivnim agresivnim curenjem i krhkošću.",
+          "keywords": [
+            "zrelost",
+            "empatija",
+            "miran",
+            "suspenzija",
+            "izraz"
+          ],
+          "context": "Izraziti svoja osećanja i jasno raspravljati o budžetu; Njih dvojica se nastavljaju zajedno."
+        },
+        "position9": {
+          "upright": "Sa kraljem šoljicama, emocionalne zrelosti i smirenosti uredbe, odnos će biti dugotrajan.",
+          "reversed": "Invertirani kralj šoljica, pasivna agresivnost i emocionalno izbegavanje podriva kontinuitet.",
+          "keywords": [
+            "zrelost",
+            "spokojstvo",
+            "regulacija",
+            "izbegavanje",
+            "stabilnost"
+          ],
+          "context": "Da bi to bilo poslednje: Imenovanje osećaja + planirajte teške razgovore."
+        }
+      },
+      "aceofswords": {
+        "position1": {
+          "upright": "Ace mačeva kaže da postoji kontradikcija u tumačenju stvarnosti i potrebe za jasnoćom. Dok neko želi jasne i oštre reči, drugi traži mekanu tranziciju.",
+          "reversed": "Ace mačeva obrnuta ukazuje da se dezinformacija, iskrivljena naracija i nejasne poruke pogoršavaju sukob.",
+          "keywords": [
+            "oštrina",
+            "istina",
+            "poručiti",
+            "komentar",
+            "komunikacija"
+          ],
+          "context": "Mentalni koren kontradikcije: razlika u jasnoći i narativima."
+        },
+        "position2": {
+          "upright": "Ace mačeva kaže da je problem da jasnoća i istina nisu imenovana. Potrebna je oštra kazna. \\ N \\ nhint: dvosmislene izjave, činjenice čine drugačije. Problem je nedostatak definicije.",
+          "reversed": "Reverse Ace mačeva objašnjava da zagađenje informacija, izobličenje i poluistine povećavaju problem. Ostaje mutna jer oštrina plaši. \\ N \\ nsimptom: Citati van konteksta, netačne atribucije. Problem je higijenski jaz.",
+          "keywords": [
+            "oštrina",
+            "real",
+            "poručiti",
+            "definicija",
+            "odluka"
+          ],
+          "context": "Problem sa korenom: Nejasni jezik i podaci. Područja koja utiče: Odluka, Savez, poverenje."
+        },
+        "position3": {
+          "upright": "Ace mačeva kaže da kada uđete u argument bez jasne definicije, imate udeo. Oštrina je dobra, nedostatak konteksta boli.",
+          "reversed": "Reverse Ace mačeva vam govori da podstičete požar sa dezinformacijama i iskrivljenim narativom. Polu istine uništavaju poverenje.",
+          "keywords": [
+            "oštrina",
+            "real",
+            "poručiti",
+            "definicija",
+            "odluka"
+          ],
+          "context": "Share: Nejasni jezik / podaci. Efekat: Odluka, Savez. Predlog: napišite definiciju."
+        },
+        "position4": {
+          "upright": "Ace mačeva kaže da bez jasne definicije može razmotriti raspravu kao \"već očigledno\" i ignorisati svoj deo. Oštrina zahteva kontekst.",
+          "reversed": "Reverse Ace mačeva teži da sakrije odgovornost prenošenjem informacija bez da je to ostvarilo.",
+          "keywords": [
+            "oštrina",
+            "definicija",
+            "real",
+            "odluka",
+            "kontekst"
+          ],
+          "context": "Zanemareno: definicija / kriterijumi. Efekat: Odluke se bacaju okolo. DO: Prvo definišite."
+        },
+        "position5": {
+          "upright": "Ace mačeva kaže da jasne razgovore određuju smer odnosa. Činjenice su iskazane iskreno.",
+          "reversed": "ACE of Mačevi obrnuti ukazuje da dezinformacija ili oštra ton izaziva rane. Polu istine su možda napustile svoj trag.",
+          "keywords": [
+            "oštrina",
+            "real",
+            "komunikacija",
+            "stil",
+            "odluka"
+          ],
+          "context": "Neto odlivi su vredni. Ton / kontekst je oštar na mestima. Nežna jasnoća je sada potrebna."
+        },
+        "position6": {
+          "upright": "ACE mačeva kaže da jasnoća štedi; Ali kada oštrina slamen uvrede i zastrašivanje, pretvara se u eksploataciju.",
+          "reversed": "Reverse Ace mačeva uvećavaju rizik da zablude partnera sa zagađenjem informacija, izobličenjem i poluistinom.",
+          "keywords": [
+            "oštrina",
+            "oštrina",
+            "distorzija",
+            "istina",
+            "snaga"
+          ],
+          "context": "Tema: jezik istine; Rizik: Verbalni pritisak; Do: nežna jasnoća i dokaz."
+        },
+        "position7": {
+          "upright": "ACE mačeva kaže da treća strana koja govori o jasnom govoru može odagnati maglu. Tačne informacije poravnaju spoljne uticaje.",
+          "reversed": "Ace mačeva preokrenuti ukazuje da su iskrivljene informacije, komentari tračeva i snarki počinju da se mešaju.",
+          "keywords": [
+            "oštrina",
+            "informacije",
+            "tračevi",
+            "distorzija",
+            "obećanje"
+          ],
+          "context": "Proverite izvor. Dobiti jasnu verbalnu podršku koja je vođena podacima."
+        },
+        "position8": {
+          "upright": "Ace mačeva opisuje jasnu finansijsku strategiju, oštar donošenje odluka i iseći nepotrebne.",
+          "reversed": "ACE mačeva obrnuto može dovesti do finansijskog gubitka kroz iskrivljene informacije, dvosmislene ugovore i konfuziju.",
+          "keywords": [
+            "oštrina",
+            "odluka",
+            "sporazum",
+            "prečica",
+            "strategija"
+          ],
+          "context": "Pročitajte ugovore, isecite nepotrebne; Rešenje stavite u pisanom odluku."
+        },
+        "position9": {
+          "upright": "Ace mačeva, ako se uspostavi jasnoća i pošteni dijalog, odnos će trajati. Oštar, ali fer integritet gradi vezu.",
+          "reversed": "Preokrenuo je mačeve, distorzije i poluistine podrivaju stalnost.",
+          "keywords": [
+            "oštrina",
+            "iskrenost",
+            "odluka",
+            "distorzija",
+            "istina"
+          ],
+          "context": "Da biste poslednji put: jasne odluke + razgovor zasnovan na dokazima."
+        }
+      },
+      "twoofswords": {
+        "position1": {
+          "upright": "Njih dvoje mačeva govore da su u suprotnosti sa tim neodlučnošću i umom koji isključuju emocije u suprotnosti.",
+          "reversed": "Dva reverzija mačeva ukazuju na to da izbegavanje i ignorisanje konfrontacije produžava blokadu.",
+          "keywords": [
+            "nestabilnost",
+            "konfrontacija",
+            "ravnoteža",
+            "prepreka",
+            "poricanje"
+          ],
+          "context": "Mentalni koren disonanca: izbegavanje i paraliza odlučivanja."
+        },
+        "position2": {
+          "upright": "Njih dvoje mačeva kaže da je problem paraliza i izbegavanje odluke. Slapljenje očiju, srce je izostavljeno. \\ N \\ nhint: kašnjenje, maska neutralnosti. Problem je izbegavanje konfrontacije.",
+          "reversed": "Dva preokrenuta mačeva govore nam da je ono što je potišteno, a mali okidači postaju veći. Slepo spot curenja. \\ N \\ nsimptom: Nagle eksplozije, defanzivni zidovi. Problem je isključenje mosta uma za umu emocija.",
+          "keywords": [
+            "nestabilnost",
+            "izbegavanje",
+            "dilema",
+            "konfrontacija",
+            "ravnoteža"
+          ],
+          "context": "Problem sa korenom: Nedostatak odluke i sukoba. Područja koja utiče: granica, jasnoća, vreme."
+        },
+        "position3": {
+          "upright": "Dvoje mačeva kaže da se vaša akcija povećava sa paralizom odluke i izbegavanjem. Sevenje očiju i govorite da \"ja nisam neutralan\", zadržava problem koji čeka.",
+          "reversed": "Reverse dva mačeva objašnjava da odložite sukob i pripremite zemlju za eksplozije, povećavajući tako požar. Most za umu emocija je obavezan.",
+          "keywords": [
+            "nestabilnost",
+            "izbegavanje",
+            "dilema",
+            "konfrontacija",
+            "ravnoteža"
+          ],
+          "context": "Share: Odlučena odluka. UTICAJ: Vreme, samopouzdanje. Preporuka: Mali određeni izbor."
+        },
+        "position4": {
+          "upright": "Njih dvoje mačeva nazivaju izbegavanje odluke \"nepristrasnost\" i kaže da se može ignorisati njegov udeo. Suspenzija je takođe efekat.",
+          "reversed": "Okrećena dva mačeva objašnjavaju da odlaganje konfrontacije može podsticati poricanje normalizacijom.",
+          "keywords": [
+            "nestabilnost",
+            "izbegavanje",
+            "konfrontacija",
+            "ravnoteža",
+            "dilema"
+          ],
+          "context": "Zanemareno: Mali precizni selekcija. Efekat: Propušteno je vreme. DO: Skini oiepat."
+        },
+        "position5": {
+          "upright": "Dva mačeva kaže da se izbegavanje odluka dogoditi u kritičnim trenucima. Postoje pitanja koja ostaju u toku.",
+          "reversed": "Reverse Dva mačeva objašnjava da se odskošenje udruže put eksplozija. Slepa mesta mogu biti okidač i danas.",
+          "keywords": [
+            "nestabilnost",
+            "izbegavanje",
+            "vešalica",
+            "konfrontacija",
+            "ravnoteža"
+          ],
+          "context": "Do datoteke na čekanju nakupljaju se. Male odluke su zakasnele. Jasan izbor je sada potreban."
+        },
+        "position6": {
+          "upright": "Njih dvoje mačeva kaže da izbegavanje odluka može proizvesti pasivnu kontrolu. Ostavljanje da se vise može pretvoriti u upravljanje partnerom sa neizvesnošću.",
+          "reversed": "Obrnuti dva mačeva opisuje rizik odlaganja sukoba i ostavljajući teret zločina na drugoj strani.",
+          "keywords": [
+            "nestabilnost",
+            "izbegavanje",
+            "vešalica",
+            "konfrontacija",
+            "neizvesnost"
+          ],
+          "context": "Tema: Odluka i saglasnost; Rizik: Sling Control; DO: Mali jasan izbor."
+        },
+        "position7": {
+          "upright": "Dvoje mačeva vam govore da vas uhvate između dva spoljna glasova. Napor da ostane neutralan odlaže vašu odluku."
+        }
+      }
+    }
+  }
+}

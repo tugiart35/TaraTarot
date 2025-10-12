@@ -1,0 +1,778 @@
+{
+  "situation-analysis": {
+    "meanings": {
+      "knightofwands": {
+        "position2": {
+          "keywords": {
+            "0": "Courage",
+            "1": "speed",
+            "2": "move",
+            "3": "passion",
+            "4": "Now."
+          },
+          "context": "Confiscation of Enterprise or restraint of looseness."
+        },
+        "position3": {
+          "upright": "The Knight of the wand shows that aggression, speed and passion rise from the inside. There's a strong urge to pursue opportunities. This card says that sudden acceleration can create a leap when combined with strategy.",
+          "reversed": "The Reverse Stick Knight points to the hidden effect of the tendency to rush, flex, or give up. The fire can blink fast. The Net aim and timing commitment puts the energy back on track.",
+          "keywords": {
+            "0": "Dareness",
+            "1": "speed",
+            "2": "passion",
+            "3": "strategy",
+            "4": "stability"
+          },
+          "context": "It's a need for strategic discipline with the urge to act."
+        },
+        "position4": {
+          "upright": "There's a bold move and passion at the center, and speed has to meet strategy.",
+          "reversed": "There's a risk of being sloppy or interrupted at the center, which requires commitment management.",
+          "keywords": {
+            "0": "Courage",
+            "1": "speed",
+            "2": "passion",
+            "3": "strategy",
+            "4": "A commitment."
+          },
+          "context": "Center: the reins of Enterprise energy."
+        },
+        "position5": {
+          "upright": "The Knight of the Wand shows that the outside momentum is high and the bold moves are echoing.",
+          "reversed": "The Reverse Wand Knight says that loose energy and interrupted attempts can undermine the outside trust.",
+          "keywords": {
+            "0": "momentum",
+            "1": "Courage",
+            "2": "move",
+            "3": "stability",
+            "4": "Trust"
+          },
+          "context": "Fast energy must be connected by strategy."
+        },
+        "position6": {
+          "upright": "Advice: Connect your energy to the single OKR, and move fast.",
+          "reversed": "Advice: Start-and-finish the commitment; stop interrupting.",
+          "keywords": {
+            "0": "energy",
+            "1": "OKR",
+            "2": "speed",
+            "3": "A commitment.",
+            "4": "complete"
+          },
+          "context": "Advice: to restore the Enterprise."
+        },
+        "position7": {
+          "upright": "Possible future: a bold breakthrough creates momentum; rapid progress is visible.",
+          "reversed": "Possible future: Extremism increases the risk of energy and remaining in the middle; commitment management is essential.",
+          "keywords": {
+            "0": "Courage",
+            "1": "speed",
+            "2": "momentum",
+            "3": "A commitment.",
+            "4": "Progress"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "queenofwands": {
+        "position1": {
+          "upright": "The Queen of the Wand represents a strong, charismatic and leading influence in the past. It could be you or it could be a powerful figure in your life. His influence has shaped your present condition. This card shows that this past leadership has added courage and charisma to you.",
+          "reversed": "The Reverse Wand Queen points to past insecurity, jealousy, or imbalances. These circumstances may have been the basis of today's conditions. This card tells you that these negative effects of the past have led you even today.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "Charisma",
+            "2": "leadership",
+            "3": "power",
+            "4": "history"
+          },
+          "context": "The effect of past confidence or insecurity."
+        },
+        "position2": {
+          "upright": "The Stick Queen now shows the time of self-esteem, charisma, and warm leadership. Visibility increases; you can bring people together by inspiration.",
+          "reversed": "The Reverse Stick Queen now poses a risk of insecurity, jealousy shadow, or disorganized focus. The need for over-approvement can reduce energy.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "Charisma",
+            "2": "leadership",
+            "3": "visibility",
+            "4": "Now."
+          },
+          "context": "Stabilize magnetic leadership or defuse internal sabotage."
+        },
+        "position3": {
+          "upright": "The Stick Queen shows that charisma, self-esteem, and warm leadership are a powerful magnet inside. The desire to be visible and inspiring works deeply. This card implies that there is a secret feeding cycle between self-value and impact field.",
+          "reversed": "The Reverse Stick Queen points to the hidden effect of insecurity, jealousy shadow, or disorganized focus. Excessive need for external approval gives light. The study of value and clear priorities clear up the light.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "Charisma",
+            "2": "leadership",
+            "3": "visibility",
+            "4": "priority"
+          },
+          "context": "The need for charisma and the fine balance of apparent anxiety."
+        },
+        "position4": {
+          "upright": "There's charisma and warm leadership at the center.",
+          "reversed": "There may be a shadow of insecurity or jealousy at the center, align with self-value.",
+          "keywords": {
+            "0": "Charisma",
+            "1": "leadership",
+            "2": "Self - confidence",
+            "3": "visibility",
+            "4": "Inspired"
+          },
+          "context": "Center: magnetic effect."
+        },
+        "position5": {
+          "upright": "The Queen of the Wand shows that charisma, attractive brand and inspiring leadership have a powerful effect on the outside.",
+          "reversed": "The Reverse Stick Queen says the anxiety of appearance, jealousy and disorganized focus can cloud the charisma outside.",
+          "keywords": {
+            "0": "Charisma",
+            "1": "brand",
+            "2": "leadership",
+            "3": "visibility",
+            "4": "focus"
+          },
+          "context": "External perception is magnetic; consistency makes it permanent."
+        },
+        "position6": {
+          "upright": "Advice: See; share your charisma; inspire.",
+          "reversed": "Advice: Strengthen self-value; exit the comparison trap.",
+          "keywords": {
+            "0": "visibility",
+            "1": "Self - confidence",
+            "2": "Inspired",
+            "3": "leadership",
+            "4": "effect"
+          },
+          "context": "Advice: to maintain magnetic posture."
+        },
+        "position7": {
+          "upright": "Possible future: With charisma and self - confidence, the field grows; inspiring leadership becomes permanent.",
+          "reversed": "Possible future: confidence/partial shadow can reduce motivation; it needs to be aligned with self-value.",
+          "keywords": {
+            "0": "Charisma",
+            "1": "leadership",
+            "2": "Self - confidence",
+            "3": "Inspired",
+            "4": "visibility"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "kingofwands": {
+        "position1": {
+          "upright": "The King of the wand represents a visionary leadership in the past, a powerful direction, or a great success. This figure may have been the energy of you or someone around you, and it may have been the basis for the situation today. This card shows that the past leadership or vision still guides you today.",
+          "reversed": "The Reverse Stick King points to arrogance, loss of direction or authority pressure in the past. These conditions may be at the root of today's conditions. This card shows that past authority figures or false leadership cause problems today.",
+          "keywords": {
+            "0": "leadership",
+            "1": "Vision",
+            "2": "authority",
+            "3": "power",
+            "4": "history"
+          },
+          "context": "The effect of past visionary achievements or arrogant behavior."
+        },
+        "position2": {
+          "upright": "The king of the wand emphasizes his ability to maintain visionary leadership, strategic courage, and the great image. The right time to expand your influence. The era of control and clear direction also raises your environment.",
+          "reversed": "The Reverse Stick King is now a warning of authoritarianism, impatient resistance or ego conflicts. If vision does not change into communication, resistance increases. Listening, common intelligence and flexibility will bring back effective leadership.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "strategy",
+            "3": "effect",
+            "4": "Now."
+          },
+          "context": "Don't activate the vision or solve the ego-induced friction."
+        },
+        "position3": {
+          "upright": "The King of the wand shows that visionaries, strategic courage, and the ability to hold the big picture work as a powerful captain inside. The desire to expand the effect is silently guiding. This card reminds us that it is possible to calculate risks and scale them with the transfer of power.",
+          "reversed": "The Reverse Stick King points to the hidden effect of authoritarianism, impatient resistance or ego conflicts. If vision does not change into communication, resistance increases.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "Courage",
+            "3": "ego",
+            "4": "scaling"
+          },
+          "context": "The conflict between visionary control and the need for flexibility."
+        },
+        "position4": {
+          "upright": "There's visionary leadership and strategic courage at the center.",
+          "reversed": "There may be an act of authoritarianism or ego friction at the center.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "Courage",
+            "3": "scale",
+            "4": "Don't listen."
+          },
+          "context": "Center: the steering wheel of vision."
+        },
+        "position5": {
+          "upright": "The King of the Wand shows that in the outside world, visionary leaders are given space and opportunity to scale.",
+          "reversed": "The Reverse Stick King says that authoritarian tone, ego friction, and lack of listening will cause resistance outside.",
+          "keywords": {
+            "0": "Vision",
+            "1": "scale",
+            "2": "leadership",
+            "3": "ego",
+            "4": "resistance"
+          },
+          "context": "Sharing vision increases external support."
+        },
+        "position6": {
+          "upright": "Advice: Tell the vision clearly, transfer power and scale it.",
+          "reversed": "Advice: Listen, ease the ego disputes; strengthen the teams.",
+          "keywords": {
+            "0": "Vision",
+            "1": "authority",
+            "2": "scale",
+            "3": "Don't listen.",
+            "4": "Enforcement"
+          },
+          "context": "Advice: to share the vision."
+        },
+        "position7": {
+          "upright": "Possible future: the vision is scaled; the force field expands with the transfer of power.",
+          "reversed": "Possible future: Authority produces ton of resistance; need to listen and share power.",
+          "keywords": {
+            "0": "Vision",
+            "1": "scale",
+            "2": "authority",
+            "3": "leadership",
+            "4": "effect"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "aceofpentacles": {
+        "position1": {
+          "upright": "The amulet ace represents a solid step in the past, financial security, or a new opportunity. This may be an opportunity to start a business, invest or to take a stabilisation opportunity. At that time, this card is one of the cornerstones of your current circumstances. This card reminds you that this safe beginning in the past still supports you.",
+          "reversed": "The Reverse Talisman acid points to opportunities that have been missed in the past, false investments or unsafe foundations. The work established on potentials may have created reasons for your present situation. This card shows that opportunities that have been kidnapped or misjudged still affect you today.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "material trust",
+            "2": "start",
+            "3": "stability",
+            "4": "history"
+          },
+          "context": "The effect of past opportunities or missed beginnings."
+        },
+        "position2": {
+          "upright": "The amulet ace shows that a concrete opportunity is at hand: the new income door, the job offer, the project budget or a solid foundation. The ground is suitable for practical steps to boost material confidence. If you clarify your intentions and put the seed in the ground with small but consistent actions, the potential for stability and growth will increase.",
+          "reversed": "The Reverse Talisman is now pointing to the risk of running out of opportunities, acting on unsafe foundations or famine mentality. Too long or messy plans may delay a productive start.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "start",
+            "2": "material trust",
+            "3": "basic",
+            "4": "Now."
+          },
+          "context": "The threshold for taking concrete opportunity or wasting it."
+        },
+        "position3": {
+          "upright": "The amulet ace shows a strong desire to build a solid foundation in your subconscious, boost material trust, and cultivate a concrete opportunity. An inner faith of fertility may give you invisible courage to take practical steps. This card reminds you that the possibilities are already in the seed form and can sprout quickly with the right care.",
+          "reversed": "The Reverse Talisman, the famine mentality, the fear of missing the opportunity, or the fear of investing in the wrong foundation, is behind the curtain. Excessive or disorganized plan may delay its access to the soil. This card says that simplifying the value and building trust with small and repetitive tests will solve the obstruction.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "basic",
+            "2": "fertility",
+            "3": "Trust",
+            "4": "Seed"
+          },
+          "context": "The threshold for stealth stability and opportunity."
+        },
+        "position4": {
+          "upright": "There's concrete opportunity and solid foundation at the center, and small consistent steps guarantee growth.",
+          "reversed": "There may be fear of loss of opportunity or famine at the center. Simplify value proposition.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "basic",
+            "2": "material trust",
+            "3": "growth",
+            "4": "Seed"
+          },
+          "context": "Center: seed of the foundation."
+        },
+        "position5": {
+          "upright": "The amulet ace shows opening windows of funds, budgets, or concrete opportunity outside.",
+          "reversed": "The Reverse Charm indicates tightness of resources, budget cuts or uncertain financing conditions.",
+          "keywords": {
+            "0": "fund",
+            "1": "budget",
+            "2": "opportunity",
+            "3": "investment",
+            "4": "resource"
+          },
+          "context": "The material ground determines the speed of decision."
+        },
+        "position6": {
+          "upright": "Advice: Start a solid seed crop/small investment/producing/accessibility.",
+          "reversed": "Advice: Release the language of famine; save in small but consistent steps.",
+          "keywords": {
+            "0": "Seed",
+            "1": "investment",
+            "2": "habit",
+            "3": "consistency",
+            "4": "growth"
+          },
+          "context": "Word to the wise: to sprout the nut."
+        },
+        "position7": {
+          "upright": "Possible future: a solid opportunity/proposal comes; growth begins on a solid basis.",
+          "reversed": "Possible future: the loss of opportunity or famine limits progress; small but consistent steps need to be taken.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "basic",
+            "2": "growth",
+            "3": "material trust",
+            "4": "Seed"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "twoofpentacles": {
+        "position1": {
+          "upright": "Two amulets represent your efforts to balance responsibilities in the past. The balance you set between work, family or material matters may be the basis of your present circumstances. This card reminds you that your former flexibility and ability to adapt still supports you today.",
+          "reversed": "The Reverse Two Charms represent the imbalances of the past, the imposition of responsibilities, or unnecessary confusion. This may have created the causes of today's jam. This card tells us that energy that has been distributed in the past still affects your current balances.",
+          "keywords": {
+            "0": "balance",
+            "1": "responsibilities",
+            "2": "flexibility",
+            "3": "compatibility",
+            "4": "history"
+          },
+          "context": "The effect of the search for balance in the past or imbalances."
+        },
+        "position2": {
+          "upright": "Two amulets show that you are now balancing multiple responsibilities with agility. The cash flow, time management and priority ranking are on the agenda.",
+          "reversed": "Inverse Two amulets now say that imbalance, dissolution and delays are piling up. Overloading can lead to mistakes and stressful decisions. A simple priority matrix, handing over and eliminating unnecessary tasks; regaining control.",
+          "keywords": {
+            "0": "balance",
+            "1": "time management",
+            "2": "priority",
+            "3": "flexibility",
+            "4": "Now."
+          },
+          "context": "Responsibilization of responsibilities or crushing under duress."
+        },
+        "position3": {
+          "upright": "Two amulets show that you have a desire to manage multiple responsibilities with agility and flexibility in your subconscious. The desire to adjust the internal rhythm may align decisions like an invisible balance bar. This card emphasizes that tiny settings can extinguish large fluctuations.",
+          "reversed": "The Reverse Two Talisms point to an invisible imbalance, decision fatigue, or secret delay cycle. Overload may be disrupting focus, such as internal pain. This card suggests calling back balance with a simple priority matrix and clear boundaries.",
+          "keywords": {
+            "0": "balance",
+            "1": "flexibility",
+            "2": "flow",
+            "3": "timing",
+            "4": "priority"
+          },
+          "context": "Secret balance game and invisible flow pressure."
+        },
+        "position4": {
+          "upright": "There's flexible balance and time management at the center, and small settings bring in large yields.",
+          "reversed": "There may be an imbalance and a delay cycle at the center. Set a priority matrix.",
+          "keywords": {
+            "0": "balance",
+            "1": "time",
+            "2": "flexibility",
+            "3": "priority",
+            "4": "flow"
+          },
+          "context": "Center: rhythm setting."
+        },
+        "position5": {
+          "upright": "Two amulets indicate that out there, variable priorities and more than one demand must be balanced.",
+          "reversed": "Two Inverse Talismans say there may be some malfunctions outside due to unstable cash flow/operation charge.",
+          "keywords": {
+            "0": "balance",
+            "1": "cash",
+            "2": "priority",
+            "3": "flow",
+            "4": "operation"
+          },
+          "context": "Flexible planning cures external fluctuations."
+        },
+        "position6": {
+          "upright": "Advice: Apply timeboxing to stabilize energy.",
+          "reversed": "Advice: reduce extra commitments; simplify the agenda.",
+          "keywords": {
+            "0": "balance",
+            "1": "timeboxing",
+            "2": "priority",
+            "3": "flow",
+            "4": "simplicity"
+          },
+          "context": "Advice: to control the rhythm."
+        },
+        "position7": {
+          "upright": "Possible future: Flexible balance is maintained; multiple responsibilities are governed by rhythm.",
+          "reversed": "Possible future: the cycle of instability and delay can increase the charge; it needs simplification.",
+          "keywords": {
+            "0": "balance",
+            "1": "time",
+            "2": "flexibility",
+            "3": "flow",
+            "4": "priority"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "threeofpentacles": {
+        "position1": {
+          "upright": "Three amulets represent past collaborations, teamwork, or learning processes. Success achieved by mutual effort may have laid the groundwork for your present conditions. This card tells you that what you have built together in the past still guides you.",
+          "reversed": "The Inverse Three charms represent past incompatibility, lack of support, or failure cooperation. These problems may be the basis of your present situation. This card shows that there is not enough support in the past or that the wrong collaborations are reflected today.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "learning",
+            "2": "Team",
+            "3": "success",
+            "4": "history"
+          },
+          "context": "The effect of past collaborations or incompatibility."
+        },
+        "position2": {
+          "upright": "Three amulets now show that teamwork, mastery sharing and good defined processes produce results. The feedback loop and role clarity increase efficiency. Learning within cooperation increases the quality and visibility of the project.",
+          "reversed": "The Reverse Three Charms now point to the confusion of roles, incompatible expectations, or unappreciative expectations. The Silo work may lower quality. Rewriting responsibility and success measures strengthens alignment.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "mastery",
+            "2": "process",
+            "3": "feedback",
+            "4": "Now."
+          },
+          "context": "To strengthen team harmony or correct incompatibility."
+        },
+        "position3": {
+          "upright": "Three amulets show that the need for skill and co-operation that are appreciated inside is strong. The desire to share your knowledge and build it with others may increase quality from behind the curtain. This card reminds you that the feedback loop is invisibly feeding you.",
+          "reversed": "The Reverse Three Charms show a hidden effect of role uncertainty, feelings of worthlessness, or a lonely working pattern. Don't hesitate to ask for support, it can lower quality quietly. This card says that covering and clarifying responsibilities will solve the internal tension.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "mastery",
+            "2": "feedback",
+            "3": "appreciation",
+            "4": "role"
+          },
+          "context": "The need for stealth mastery approval and co-operation threshold."
+        },
+        "position4": {
+          "upright": "There's team work and mastery sharing at the center, and character clarity raises quality.",
+          "reversed": "At the center, the lack of character is lowering quality.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "mastery",
+            "2": "process",
+            "3": "feedback",
+            "4": "role"
+          },
+          "context": "Center: build together."
+        },
+        "position5": {
+          "upright": "Three amulets indicate that outside cooperation, expert teams and quality standards meet on the common ground.",
+          "reversed": "The Inverse Three amulets say that role uncertainty and low coordination can cause quality loss in external jobs.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "expert",
+            "2": "quality",
+            "3": "Coordination",
+            "4": "role"
+          },
+          "context": "External partnerships require a clear frame."
+        },
+        "position6": {
+          "upright": "Advice: Co-operation; clarify role and quality standards.",
+          "reversed": "Advice: Write down a responsibilities matrix; increase coordination.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "role",
+            "2": "standard",
+            "3": "Coordination",
+            "4": "quality"
+          },
+          "context": "Advice: the construction system together."
+        },
+        "position7": {
+          "upright": "Possible future: cooperation produces quality; mastery appears and results are sound.",
+          "reversed": "Possible future: Co-ordination weakness can lower quality; roles need to be clear.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "mastery",
+            "2": "quality",
+            "3": "Coordination",
+            "4": "feedback"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "fourofpentacles": {
+        "position1": {
+          "upright": "Four amulets represent your desire to preserve what you have in the past, your concern for security, and your search for stability. This attitude may be at the root of your present circumstances. This card shows that this search for security in the past still guides you.",
+          "reversed": "The Reverse Four Talism indicates that there has been a lack of confidence in the past because of stingyness, extreme control or loss. These experiences may be the basis of your present situation. This card tells us that past concerns still increase your security needs today.",
+          "keywords": {
+            "0": "security",
+            "1": "stability",
+            "2": "protection",
+            "3": "material power",
+            "4": "history"
+          },
+          "context": "The effects of the search for security in the past or loss."
+        },
+        "position2": {
+          "upright": "Four Talisms now tend to protect security, keep the budget tight and limit risks. You're on a controlled course to reinforce assets.",
+          "reversed": "The Reverse Four Talisms now point to either staying in the extreme tightness or uncontrollably spending pendulum. The balance between the need for security and flexible investment is needed. Net goals bring healthy flow to reduce non-emergency costs and strategic expenditures.",
+          "keywords": {
+            "0": "security",
+            "1": "savings",
+            "2": "control",
+            "3": "flexibility",
+            "4": "Now."
+          },
+          "context": "The balance of protecting assets and supporting growth."
+        },
+        "position3": {
+          "upright": "Four Talisms show that the tendency to maintain protection, savings, and status quo is working inside. The search for security may be cloaking its appetite for risk. This card says that seeing the difference between self value and net value will unlock the lock.",
+          "reversed": "The Reverse Four Talisms talks about a secret pendulum between wastelessness and loss of control. Tight grip may narrow the flow. This card emphasizes the purposeful spending and flexible budget will calm the internal tension.",
+          "keywords": {
+            "0": "security",
+            "1": "control",
+            "2": "don't hold",
+            "3": "budget",
+            "4": "flexibility"
+          },
+          "context": "The stealth reflex and the fear of losing."
+        },
+        "position4": {
+          "upright": "There's security and protection at the center.",
+          "reversed": "Holding at the centre works on the pendulum, which balances the flexible budget.",
+          "keywords": {
+            "0": "security",
+            "1": "savings",
+            "2": "control",
+            "3": "flexibility",
+            "4": "flow"
+          },
+          "context": "Center: the setting of ownership."
+        },
+        "position5": {
+          "upright": "Four amulets indicate increased risk-resistant and austerity in the outside world.",
+          "reversed": "The Inverse Four Talismans say the extreme tightness/pharmaceutical dilemma can disrupt the flow in the outside market.",
+          "keywords": {
+            "0": "savings",
+            "1": "risk",
+            "2": "control",
+            "3": "cash",
+            "4": "flexibility"
+          },
+          "context": "A cautious climate requires a moderate risk."
+        },
+        "position6": {
+          "upright": "Advice: Make a budget, but set aside a share for growth investment.",
+          "reversed": "Advice: relax the extreme tightness; take strategic risks.",
+          "keywords": {
+            "0": "budget",
+            "1": "savings",
+            "2": "investment",
+            "3": "risk",
+            "4": "balance"
+          },
+          "context": "Advice: Maintaining the balance of protection and growth."
+        },
+        "position7": {
+          "upright": "Possible future: Security and savings increase; a controlled attitude ensures stability.",
+          "reversed": "Possible future: Excession slows growth; it needs to open a measured risk field.",
+          "keywords": {
+            "0": "security",
+            "1": "savings",
+            "2": "control",
+            "3": "stability",
+            "4": "risk"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "fiveofpentacles": {
+        "position1": {
+          "upright": "Five amulets represent past financial difficulties, times of loneliness, or feelings of isolation. This difficult process may be the basis of today's situation. This card also reminds you that past losses have given you endurance.",
+          "reversed": "The Reverse Five Talism represents opportunities to recover in the past, to receive support or to come out of difficulties. Perhaps this process has given you a new power. But at the same time, the challenges may still affect your mood today. This card shows signs of past losses that have left today.",
+          "keywords": {
+            "0": "material difficulty",
+            "1": "loneliness",
+            "2": "support",
+            "3": "missing",
+            "4": "history"
+          },
+          "context": "The effect of financial difficulties or recovery in the past."
+        },
+        "position2": {
+          "upright": "Five amulets now stress the feeling of lack of material/emotion, exclusion or support. Sources may seem limited. Asking for help, activating networks and building bridges with temporary solutions speed up recovery.",
+          "reversed": "The Reverse Five charms now demonstrate the opportunity to recover, find support, and get back on your feet. The difficult cycle is ready to break. It is reassuring to make small gains visible and to establish sustainable habits.",
+          "keywords": {
+            "0": "withdrawal",
+            "1": "support",
+            "2": "Recovery",
+            "3": "endurance",
+            "4": "Now."
+          },
+          "context": "Don't set up a support network in a temporary difficulty."
+        },
+        "position3": {
+          "upright": "Five Talisms show that past deprivation experiences affect your perception today. The internal story may be that support is unacceptable. This card reminds you that running the ask for help will solve invisible barriers.",
+          "reversed": "The Reverse Five Spells show that you have the urge to recover and the strength to grow inside you. Yet the narrative of shame or inadequacy can turn back from the door. This card says that making small gains visible balances self-esteem.",
+          "keywords": {
+            "0": "withdrawal",
+            "1": "support",
+            "2": "endurance",
+            "3": "shame",
+            "4": "Recovery"
+          },
+          "context": "A covert withdrawal story and a backup barrier."
+        },
+        "position4": {
+          "upright": "The center needs a sense of deprivation and support, and asking for help opens doors.",
+          "reversed": "The potential for recovery is increasing at the center, and small gains must be made visible.",
+          "keywords": {
+            "0": "withdrawal",
+            "1": "support",
+            "2": "Recovery",
+            "3": "endurance",
+            "4": "network"
+          },
+          "context": "Center: support threshold."
+        },
+        "position5": {
+          "upright": "Five amulets indicate external financial compression, low demand or lack of support.",
+          "reversed": "The Reverse Five Talisms tells us that grants, relief programs, or signs of recovery appear outside.",
+          "keywords": {
+            "0": "compression",
+            "1": "support",
+            "2": "demand",
+            "3": "Recovery",
+            "4": "help"
+          },
+          "context": "Bridge financing/help is critical in a difficult climate."
+        },
+        "position6": {
+          "upright": "Advice: Ask for help; search for support programmes.",
+          "reversed": "Advice: Make small gains visible; increase morale.",
+          "keywords": {
+            "0": "support",
+            "1": "help",
+            "2": "program",
+            "3": "gain",
+            "4": "Morality"
+          },
+          "context": "Advice: Crossing bridge with backup."
+        },
+        "position7": {
+          "upright": "Possible future: there may be a temporary pinch or lack of support; it is important to ask for help.",
+          "reversed": "Possible future: recovery begins; relief programs and small gains bring morale.",
+          "keywords": {
+            "0": "compression",
+            "1": "support",
+            "2": "endurance",
+            "3": "Recovery",
+            "4": "network"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "sixofpentacles": {
+        "position1": {
+          "upright": "Six amulets represent the help you have received or given in the past, support relationships and sharing. These interactions may be the basis of today's conditions. This card shows that fair sharing in the past is one of the elements that carries you today.",
+          "reversed": "The Inverse Six charms point to past injustices, addictions, or unstable relationships. These may be the origins of today's problems. This card tells us that in the past, inequal sharing has left a mark so far.",
+          "keywords": {
+            "0": "help",
+            "1": "share",
+            "2": "justice",
+            "3": "balance",
+            "4": "history"
+          },
+          "context": "The effect of past aid or injustice."
+        },
+        "position2": {
+          "upright": "Six Talisms say that the exchange of fair share, help and win-wins is now prominent. Balance, transparent conditions and trust are established. Healthy rhythms, relationships, and flow between giving and receiving.",
+          "reversed": "The Reverse Six Talisman is now a warning of unstable trade, conditional help or dependent relations. Power imbalances undermine confidence.",
+          "keywords": {
+            "0": "share",
+            "1": "justice",
+            "2": "don't-don't-don't-don't-don't-don't-don't-don't-don't-don't-don't-don't-don't...",
+            "3": "Trust",
+            "4": "Now."
+          },
+          "context": "To make fair trade or to correct imbalance."
+        },
+        "position3": {
+          "upright": "Six Talisms show that you have a strong desire to have a fair share and a win-win relationship. The rhythm between giving and taking draws an invisible balance. This card emphasizes that transparent conditions will make confidence permanent.",
+          "reversed": "The Reverse Six Talism shows the hidden effect of power imbalances, conditional aid or approval response patterns. This can create a silent resentment in relationships. This card says that balance can be called back with borders and clear agreements.",
+          "keywords": {
+            "0": "share",
+            "1": "justice",
+            "2": "don't-don't-don't-don't-don't-don't-don't-don't-don't-don't-don't-don't-don't...",
+            "3": "power",
+            "4": "limit"
+          },
+          "context": "Secret power balance and conditional shopping pattern."
+        },
+        "position4": {
+          "upright": "There's fair sharing and trust at the center, and transparent conditions strengthen relationships.",
+          "reversed": "There could be power imbalances and conditional exchanges at the center.",
+          "keywords": {
+            "0": "justice",
+            "1": "share",
+            "2": "don't-don't-don't-don't-don't-don't-don't-don't-don't-don't-don't-don't-don't...",
+            "3": "Trust",
+            "4": "limit"
+          },
+          "context": "Center: Fair balance."
+        },
+        "position5": {
+          "upright": "Six amulets show that fair trade, sponsorship and hybrid win-win models are possible in the outside world.",
+          "reversed": "The Reverse Six Talisman says that power imbalance and conditional support can cause addiction outside.",
+          "keywords": {
+            "0": "shopping",
+            "1": "sponsorship",
+            "2": "justice",
+            "3": "power",
+            "4": "condition"
+          },
+          "context": "Transparency creates trust."
+        },
+        "position6": {
+          "upright": "Advice: Set fair deals; transparency of conditions.",
+          "reversed": "Advice: Adjust the balance of power; write net expectations.",
+          "keywords": {
+            "0": "justice",
+            "1": "Agreement",
+            "2": "transparency",
+            "3": "balance",
+            "4": "expectation"
+          },
+          "context": "Advice: Configuring the boiler-accident."
+        },
+        "position7": {
+          "upright": "Possible future: fair share and win-win order is established; trust is restored.",
+          "reversed": "Possible future: conditional support can create power imbalance; transparency must be required.",
+          "keywords": {
+            "0": "justice",
+            "1": "share",
+            "2": "Trust",
+            "3": "balance",
+            "4": "condition"
+          },
+          "context": "Future potential and possible consequences"
+        }
+      },
+      "sevenofpentacles": {
+        "position1": {
+          "upright": "The Seven Talisms represent the processes you've worked for in the past, the processes you've waited patiently for, and the consequences you've worked for. These efforts may be based on today's conditions. This card reminds you that your patience and efforts in the past still have consequences today.",
+          "reversed": "The Inverse Seven charms point to past long - suffering, false investments, or ineffective efforts. These experiences may be at the root of your present situation. This card shows today the effects of failure to repay your efforts in the past.",
+          "keywords": {
+            "0": "labour",
+            "1": "Patience",
+            "2": "investment",
+            "3": "Reward"
+          }
+        }
+      }
+    }
+  }
+}

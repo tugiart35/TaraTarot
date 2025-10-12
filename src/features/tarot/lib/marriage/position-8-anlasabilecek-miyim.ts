@@ -792,6 +792,18 @@ export const position8Meanings: MarriagePositionMeaning[] = [
     context: 'Şefkatli yaklaşım anlaşmayı kolaylaştırır.',
     group: 'Tılsımlar',
   },
+  {
+    id: 'king_of_pentacles_pe_pos8',
+    card: 'King of Pentacles',
+    position: 8,
+    upright:
+      'Tılsım Kralı, iletişimde istikrar, güven ve pratik çözümler sunar. Olgun yaklaşım anlaşmayı kolaylaştırır.',
+    reversed:
+      'Ters Tılsım Kralı, aşırı kontrolcülük ya da iletişimde katılık anlaşmayı zorlaştırır. Esneklik uyumu getirir.',
+    keywords: ['istikrar', 'güven', 'pratiklik', 'olgunluk'],
+    context: 'İstikrarlı ve güvenilir iletişim uyumu sağlar.',
+    group: 'Tılsımlar',
+  },
 
   // ==== WANDS (Asalar) ====
   {

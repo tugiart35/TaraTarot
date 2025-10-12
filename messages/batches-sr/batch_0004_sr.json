@@ -1,0 +1,779 @@
+{
+  "career": {
+    "meanings": {
+      "judgement": {
+        "position2": {
+          "keywords": [
+            null,
+            "svest",
+            "odluka",
+            "oslobođenje",
+            "napredak"
+          ],
+          "context": "Da biste poboljšali svoju karijeru, morate pustiti opterećenja prošlosti."
+        },
+        "position3": {
+          "upright": "Suđenje, posledice prošlosti i povratnih poruka su stvarnosti koje ne možete da kontrolišete. Shovdovns su neizbežni.",
+          "reversed": "Reversirani sud ukazuje da će posle vas ostaviti posledica poslednje odluke.",
+          "keywords": [
+            "prošlost",
+            "odluka",
+            "računanje",
+            "ponovno rođenje",
+            "neizbežnost"
+          ],
+          "context": "Ne možete promeniti posledice prošlosti u vašoj karijeri."
+        },
+        "position4": {
+          "upright": "Sud pokazuje da je to najbolje učinilo učeći iz prethodnih iskustava. Vaš trud je svestan i moćan.",
+          "reversed": "Reversed Sud, ignorisanje prošlih grešaka može da ograniči vaše performanse.",
+          "keywords": [
+            "lekcija",
+            "svest",
+            "iskustvo",
+            "trud",
+            "performanse"
+          ],
+          "context": "Vaš trenutni napor je ojačan uključivanjem onoga što ste naučili iz prošlosti u svoj rad."
+        },
+        "position5": {
+          "upright": "Sud, možete da promenite svoju karijeru učeći iz svojih dosadašnjih iskustava.",
+          "reversed": "Obrnuti sud, prihvatajući prošlost, a ne ignorisanje to stvara napredak.",
+          "keywords": [
+            "lekcija",
+            "svest",
+            "prošlost",
+            "ponovno rođenje",
+            "promeniti"
+          ],
+          "context": "Da biste promenili svoju karijeru, pažljivo bi trebalo da procenite svoja prošlost iskustva."
+        },
+        "position6": {
+          "upright": "Sud, ne učenje iz prošlih grešaka ili izbegavanje konfrontacija možda su danas uticali na vas.",
+          "reversed": "Reversed Sud, a ne suočavanje sa prošlošću može da ometa vaš napredak.",
+          "keywords": [
+            "lekcija",
+            "konfrontacija",
+            "prošlost",
+            "računanje",
+            "kašnjenje"
+          ],
+          "context": "Ne suočavanje sa prošlošću možda je ometala vašu trenutnu karijeru."
+        },
+        "position7": {
+          "upright": "Sud pokazuje da će ishod putovanja u karijeri biti ponovno rođenje učenjem iz prošlosti.",
+          "reversed": "Reversed Sud, ne suočavanje sa prošlošću može odložiti ishod.",
+          "keywords": [
+            "ponovno rođenje",
+            "lekcija",
+            "konfrontacija",
+            "svest",
+            "budućnost"
+          ],
+          "context": "Rezultat će se suočiti sa prošlošću i iskusiti snažnu obnovu."
+        }
+      },
+      "theworld": {
+        "position1": {
+          "upright": "Svet je kartica završetka i celovitosti. Ako ste tamo došli u karijeri, nudi vam zadovoljstvo i integritet, vi ste na pravom putu.",
+          "reversed": "Ograničena zemlja ukazuje da ciklus nije kompletan ili osećate da nešto nedostaje.",
+          "keywords": [
+            "završetak",
+            "uspeh",
+            "integritet",
+            "zadovoljstvo",
+            "petlja"
+          ],
+          "context": "Vaša stvarna karijera je put koji vam daje osećaj ispunjenja."
+        },
+        "position2": {
+          "upright": "Svet simbolizuje završetak i prelazak na nove cikluse. Međunarodne mogućnosti ili veći projekti mogu vas unaprediti u vašoj karijeri.",
+          "reversed": "Ograničena zemlja pokazuje da vas nedovršeni posao usporava.",
+          "keywords": [
+            "završetak",
+            "uspeh",
+            "Novi ciklus",
+            "razvoj",
+            "napredak"
+          ],
+          "context": "Da biste poboljšali svoju karijeru, morate završiti nedovršeni posao i započeti nove cikluse."
+        },
+        "position3": {
+          "upright": "Svet pokazuje da se završi i zatvaranje ciklusa se javlja izvan vas. Postoje univerzalni procesi.",
+          "reversed": "Prekoračeni svet vam govori da ponekad nesumnjivost ili kašnjenja nisu izvan vaše kontrole.",
+          "keywords": [
+            "završetak",
+            "petlja",
+            "zatvaranje",
+            "Univerzalni proces",
+            "van kontrole"
+          ],
+          "context": "Kraj nekih ciklusa u vašoj karijeri je izvan vaše kontrole."
+        },
+        "position4": {
+          "upright": "Svet pokazuje da on daje holistički napor u svom radu i kreće se ka završetku.",
+          "reversed": "Invertirani svet može sprečiti performanse nedostajućih detalja da se pojave u potpunosti.",
+          "keywords": [
+            "završetak",
+            "uspeh",
+            "trud",
+            "performanse",
+            "petlja"
+          ],
+          "context": "Vaš trud se kreće ka holističkom uspehu."
+        },
+        "position5": {
+          "upright": "Svijet, u karijeri možete da promenite tako što ćete završiti nedovršeno poslovanje i pripremajući se za nove cikluse.",
+          "reversed": "Invertirani svet, zatvaranje praznina biće kritični korak za razvoj.",
+          "keywords": [
+            "završetak",
+            "petlja",
+            "novi početak",
+            "integritet",
+            "promeniti"
+          ],
+          "context": "Za promenu u karijeri morate zatvoriti praznine i pripremiti se za novi ciklus."
+        },
+        "position6": {
+          "upright": "Svet, nezavršeni projekti ili nedovršeni posao u prošlosti mogu uticati na vašu trenutnu karijeru.",
+          "reversed": "Invertirani svet, nepotpuni procesi i dalje vas mogu zadržati.",
+          "keywords": [
+            "završetak",
+            "nedostatak",
+            "period",
+            "petlja",
+            "prošlost"
+          ],
+          "context": "Nedovršeni posao u prošlosti ometa vašu trenutnu karijeru."
+        },
+        "position7": {
+          "upright": "Zemlja ukazuje da će ishod putovanja u karijeri biti završetak, uspeh i celovitost.",
+          "reversed": "Invertirani svet, nepotpuni procesi mogu dovesti do nepotpunih rezultata.",
+          "keywords": [
+            "završetak",
+            "uspeh",
+            "integritet",
+            "pobeda",
+            "budućnost"
+          ],
+          "context": "Rezultat će biti uspešno završiti ciklus i postići celovitost."
+        }
+      },
+      "sixofcups": {
+        "position1": {
+          "upright": "Šest šoljica simbolizuje sreću iz prošlosti, nostalgije i čiste radosti. Možda ćete imati želju da se vratite svojim detinjskim snovima ili smer u karijeri koja vam zaista donosi radost.",
+          "reversed": "Vedro šest šoljica pokazuje da ste previše zaglavili u prošlosti ili da vas stare navike zadržavaju. Ovaj put vas možda neće voditi napred.",
+          "keywords": [
+            "nostalgija",
+            "prošlost",
+            "sreća",
+            "djetinjski san",
+            "čista radost"
+          ],
+          "context": "Vaša stvarna karijera je na mestu koje vas podseća na vaše dečije snove i ispuni vašu dušu radošću."
+        },
+        "position2": {
+          "upright": "Šest šoljica sugerira korišćenje vaših detinjskih snova ili prošlih iskustava kao inspiracija. Ovo vam može dati smer.",
+          "reversed": "Visoko šest šoljica pokazuje da se zaglavi u prošlosti može da vas zadrži.",
+          "keywords": [
+            "nostalgija",
+            "inspiracija",
+            "prošlost",
+            "sanjati",
+            "moment"
+          ],
+          "context": "Da biste poboljšali svoju karijeru, trebalo bi da izvučete snagu iz svojih prošlih iskustava."
+        },
+        "position3": {
+          "upright": "Šest šoljica kaže da ne možete da promenite uticaj prošlih iskustava i snova iz detinjstva. Ovo su vaša osnova.",
+          "reversed": "Šest šoljica preokrećeno ukazuje da je zaglavljen u prošlosti ili nostalgiji može stvoriti efekte izvan vas.",
+          "keywords": [
+            "prošlost",
+            "moment",
+            "nostalgija",
+            "osnova",
+            "van kontrole"
+          ],
+          "context": "Ne možete u potpunosti da promenite efekte prošlosti na karijeru."
+        },
+        "position4": {
+          "upright": "Šest šoljica pokazuje da donosite iskrenost i prošlo iskustvo na svoj rad.",
+          "reversed": "Pretvoreno šest šoljica, kada se previše prebivate u prošlosti, vaša energija se možda neće u potpunosti odraziti u sadašnjost.",
+          "keywords": [
+            "iskrenost",
+            "iskustvo",
+            "prošlost",
+            "deljenje",
+            "performanse"
+          ],
+          "context": "Vaš trud je podržan iskrenošću i snagom koju izvlačite iz svoje prošlosti."
+        },
+        "position5": {
+          "upright": "Šest šoljica, krećući se naprijed što je inspirisan prošlim iskustvima, ali bez da se zaglave sa njima, pruža korisničke promene u vašoj karijeri.",
+          "reversed": "Invertirani šest šoljica, morate se osloboditi nostalgije i fokusirati se danas.",
+          "keywords": [
+            "prošlost",
+            "iskustvo",
+            "lekcija",
+            "svest",
+            "promeniti"
+          ],
+          "context": "Za promenu karijere, nacrtajte inspiraciju iz prošlosti, ali fokusirajte se na budućnost."
+        },
+        "position6": {
+          "upright": "Šest šoljica, previše je pričvršćeno na prošlost ili se pridržavao nostalgije, možda su ometali vašu karijeru.",
+          "reversed": "Pretvoreno šest šoljica, ne prepuštate prošlim iskustvima možda vas vezuju na sadašnjost.",
+          "keywords": [
+            "nostalgija",
+            "prošlost",
+            "lojalnost",
+            "sećanja",
+            "prepreka"
+          ],
+          "context": "Prošle obaveze možda su ometale vašu trenutnu karijeru."
+        },
+        "position7": {
+          "upright": "Šest šoljica ukazuje da će ishod putovanja u karijeri biti ojačan podrškom ili iskustvima iz prošlosti.",
+          "reversed": "Invertirani šest šoljica, prekomerna vezanost za prošlost može usporiti napredak rezultata.",
+          "keywords": [
+            "prošlost",
+            "iskustvo",
+            "podrška",
+            "prilika",
+            "budućnost"
+          ],
+          "context": "Rezultat će biti jačan iz vaših prethodnih iskustava."
+        }
+      },
+      "sevenofcups": {
+        "position1": {
+          "upright": "Sedam šoljica simbolizuje snove, opcije i konfuziju. Možda će vam biti mnogo staza koji vam se nalaze u karijeri, ali nisu svi realistični. Morate biti oprezni da napravite pravi izbor.",
+          "reversed": "Pretvorenih sedam šoljica ukazuje da je vreme da se oslobodimo snova i damo jasnu odluku. Počinjete da razlikujete ono što je stvarno i šta nije.",
+          "keywords": [
+            "snova",
+            "opcije",
+            "zbrka",
+            "prilika",
+            "iluzija"
+          ],
+          "context": "Vaša istinska karijera biće otkrivena kada odaberete onaj koji vam najbolje odgovara vašem srcu među više opcija."
+        },
+        "position2": {
+          "upright": "Sedam šoljica preporučuje da razjasnite svoje mogućnosti i preduzmite konkretne korake da ostvarite svoje snove.",
+          "reversed": "Prekoračeni sedam šoljica ukazuje da vas sanja o snimku mogu odvratiti pažnju.",
+          "keywords": [
+            "izbor",
+            "vizija",
+            "sanjati",
+            "fokus",
+            "odluka"
+          ],
+          "context": "Da biste poboljšali svoju karijeru, morate odabrati realnu među opcijama."
+        },
+        "position3": {
+          "upright": "Sedam šoljica pokazuje da snovi i obilje opcija koje dođu na vaš način nisu uvek u vašoj kontroli.",
+          "reversed": "Uokrećeno sedam šoljica nam govori da se zbrka ili zloupotreba ponekad pojave iz spoljnih okolnosti.",
+          "keywords": [
+            "izbor",
+            "sanjati",
+            "prilika",
+            "zbrka",
+            "van kontrole"
+          ],
+          "context": "Ne možete da odaberete sve opcije koje vam dođu u karijeri."
+        },
+        "position4": {
+          "upright": "Sedam šoljica pokazuje da težite među mnogim snovima i opcijama, ali ponekad se ponekad možete raspasti.",
+          "reversed": "Kada preokrene sedam šoljica postane jasno, vaše performanse će biti mnogo jače.",
+          "keywords": [
+            "sanjati",
+            "izbor",
+            "fokus",
+            "trud",
+            "performanse"
+          ],
+          "context": "Imate napor, ali postaje vidljiviji kada se fokusirate."
+        },
+        "position5": {
+          "upright": "Sedam šoljica pomoći će vam da napredujete u svojoj karijeri tako što ćete realistični izbori dati među snovima.",
+          "reversed": "Invertirani sedam šoljica, morate da očistite konfuziju i fokusiranje.",
+          "keywords": [
+            "glasati",
+            "vizija",
+            "fokus",
+            "realizam",
+            "promeniti"
+          ],
+          "context": "Da biste promenili karijeru, morate pretvoriti svoje snove u realan plan."
+        },
+        "position6": {
+          "upright": "Sedam pehara možda je u prošlosti otežalo njegovu karijeru sanjajući previše i ne mogu se fokusirati.",
+          "reversed": "Invertirani sedam šoljica, bendukcija i pogrešnih izbora može danas uticati na vaš put.",
+          "keywords": [
+            "sanjati",
+            "zbrka",
+            "glasati",
+            "fokus",
+            "prošlost"
+          ],
+          "context": "Nesigurni izbori u prošlosti danas utiču na vašu karijeru."
+        },
+        "position7": {
+          "upright": "Sedam šoljica pokazuje da će ishod vašeg putovanja u karijeri biti oblikovan odabirom prave opcije među opcijama.",
+          "reversed": "Invertirani sedam šoljica može usporiti ishod konfuzijom.",
+          "keywords": [
+            "glasati",
+            "vizija",
+            "sanjati",
+            "fokus",
+            "budućnost"
+          ],
+          "context": "Rezultat će izabrati pravo među vašim snovima."
+        }
+      },
+      "eightofcups": {
+        "position1": {
+          "upright": "Osam šoljica simbolizuje hrabrost da ostavi neispravan put iza. Spremni ste da pređete sa područja vaše karijere koja vam više ne donosi sreću.",
+          "reversed": "Osvećeno osam šoljica ukazuje da ostajete tamo gde trebate da odete ili se plašite da odete. Ovo vas može još više nositi.",
+          "keywords": [
+            "izdanje",
+            "oproštaj",
+            "putovanje",
+            "nezadovoljstvo",
+            "hrabrost"
+          ],
+          "context": "Vaša istinska karijera će se pojaviti kada ostavite put koji vas više ne hranite i uzmete novi put."
+        },
+        "position2": {
+          "upright": "Osam šoljica sugerira da ostavljaju put koji vam više ne služi. Morate se hrabro kretati prema novom cilju.",
+          "reversed": "Okolište osam čaše vam govori da ostanete tamo gde trebate da vas usporite.",
+          "keywords": [
+            "hrabrost",
+            "izdanje",
+            "napredak",
+            "nov način",
+            "zadovoljstvo"
+          ],
+          "context": "Da biste poboljšali svoju karijeru, morate pustiti stvari koje vas ne zadovoljavaju."
+        },
+        "position3": {
+          "upright": "Osam šoljica ukazuje da su neke nezadovoljavajuće situacije neizbežne. Ovi emocionalni odredi su izvan kontrole.",
+          "reversed": "Osetila osam čaša govori vam da je vreme raskida ili otuđenih iz vaših ruku.",
+          "keywords": [
+            "prekršiti",
+            "nezadovoljstvo",
+            "odvajanje",
+            "svest",
+            "van kontrole"
+          ],
+          "context": "Neke odvajanja ili završetka u vašoj karijeri su izvan vaše kontrole."
+        },
+        "position4": {
+          "upright": "Osam šoljica pokazuje da vam najbolje snalazite odseli se od stvari koje vam ne donose zadovoljstvo. Vaša hrabrost se ogleda u vašem učinku.",
+          "reversed": "Invertirano osam šoljica, suzbijanje onoga što u vašem srcu može otežati napor da se pokaže.",
+          "keywords": [
+            "hrabrost",
+            "nezadovoljstvo",
+            "prekršiti",
+            "svest",
+            "performanse"
+          ],
+          "context": "Vaš trud je ojačan da se udaljava od stvari koje vas ne ispunjavaju."
+        },
+        "position5": {
+          "upright": "Osam šoljica, ostavljajući iza sebe ono što vas ne zadovoljava i pretvara se na nove staze ubrzavaju vaš razvoj.",
+          "reversed": "Okrećeno osam čaša, morate naučiti da hrabro ostavite umesto da ostanete zbog straha.",
+          "keywords": [
+            "hrabrost",
+            "prekršiti",
+            "inovativnost",
+            "vizija",
+            "promeniti"
+          ],
+          "context": "Da biste promenili karijeru, morate da pustite stvari koje vas ne koristi."
+        },
+        "position6": {
+          "upright": "Osam šoljica, ne puštajući stvari koje vam nisu dali zadovoljstvo u prošlosti, možda su ometali vašu karijeru.",
+          "reversed": "Invertirano osam šoljica, držeći se stvari koje je potrebno pustiti da danas utiču na vašu karijeru.",
+          "keywords": [
+            "prekršiti",
+            "nezadovoljstvo",
+            "hrabrost",
+            "ne mogu da pustim",
+            "prošlost"
+          ],
+          "context": "Držeći se stvarima u prošlosti koju ste trebali pustiti da blokira svoj put."
+        },
+        "position7": {
+          "upright": "Osam šoljica ukazuje da će se ishod vašeg putovanja u karijeri kretati napred, odseliti se od stvari koje vas ne zadovoljavaju.",
+          "reversed": "Okrećeno osam šoljica, prikupljanje do prošlosti može usporiti rezultate.",
+          "keywords": [
+            "prekršiti",
+            "zadovoljstvo",
+            "napredak",
+            "vizija",
+            "budućnost"
+          ],
+          "context": "Rezultat će biti ostaviti iza sebe ono što vas ne zadovoljava i krene napred."
+        }
+      },
+      "nineofcups": {
+        "position1": {
+          "upright": "Devet šoljica je kartica zadovoljstva, sreće i obilja. Ako vam trenutna karijera zaista donosi radost i zadovoljstvo, vi ste na pravom putu.",
+          "reversed": "Ograničeno devet šoljica može ukazivati na površno zadovoljstvo ili nestvaran smisao postignuća. Možda se osećate prazno iznutra.",
+          "keywords": [
+            "zadovoljstvo",
+            "sreća",
+            "uspeh",
+            "dosta",
+            "zadovoljstvo"
+          ],
+          "context": "Vaša istinska karijera je put koja vam daje unutrašnju sreću i zadovoljstvo."
+        },
+        "position2": {
+          "upright": "Devet šoljica preporučuje da postavite jasne želje da postignete svoje ciljeve i preduzmete korake koji će doneti zadovoljstvo.",
+          "reversed": "Ograničeno devet šoljica ukazuje da su površne zahvalnosti mogu da vas vrate.",
+          "keywords": [
+            "zadovoljstvo",
+            "želja",
+            "cilj",
+            "sreća",
+            "uspeh"
+          ],
+          "context": "Da biste unapredili svoju karijeru, morate postaviti ciljeve koji pružaju stvarno zadovoljstvo."
+        },
+        "position3": {
+          "upright": "Devet šoljica nas podseća da neki uslovi za zadovoljstvo i sreću zavise od spoljnih faktora. Nije svaka želja koju imate u rukama.",
+          "reversed": "Reversed devet šoljica ukazuje da su površna zadovoljstva ili razočarenja ponekad proizilaze iz spoljnih okolnosti.",
+          "keywords": [
+            "zadovoljstvo",
+            "sreća",
+            "želja",
+            "uslovi",
+            "van kontrole"
+          ],
+          "context": "Ne možete uvek da stvorite osećaj potpunog zadovoljstva u vašoj karijeri."
+        },
+        "position4": {
+          "upright": "Devet šoljica pokazuje da dajete sve od sebe da postignete zadovoljstvo i sreću u svom poslu.",
+          "reversed": "Pretvoreno devet šoljica, uhvaćeno u površnim zadovoljavanjem možda neće odražavati u potpunosti vaše performanse.",
+          "keywords": [
+            "zadovoljstvo",
+            "sreća",
+            "uspeh",
+            "trud",
+            "performanse"
+          ],
+          "context": "Vaš nastojanje napreduje na način koji vam donosi sreću i zadovoljstvo."
+        },
+        "position5": {
+          "upright": "Devet šoljica, postavljanje novih ciljeva dok uživajući u uspehu stvara korisne promene u vašoj karijeri.",
+          "reversed": "Invertirani devet šoljica, trebalo bi da krenete napred, a da se ne preuzmete prenošenjem osećaja zadovoljstva.",
+          "keywords": [
+            "zadovoljstvo",
+            "uspeh",
+            "cilj",
+            "napredak",
+            "promeniti"
+          ],
+          "context": "Da biste promenili svoju karijeru, trebalo bi da postavite nove ciljeve na vrhu svojih trenutnih uspeha."
+        },
+        "position6": {
+          "upright": "Devet šoljica, previše je uhvaćen u žalosti u prošlosti, možda je usporio njegov razvoj.",
+          "reversed": "Invertirani devet šoljica, skrivanje iza površnih dostignuća može danas da ograniči vašu karijeru.",
+          "keywords": [
+            "zadovoljstvo",
+            "uspeh",
+            "zona komfora",
+            "usporavanje",
+            "prošlost"
+          ],
+          "context": "Previše je pričvršćen na vašu zonu komfora u prošlosti danas utiče na vašu karijeru."
+        },
+        "position7": {
+          "upright": "Devet šoljica ukazuje da će ishod putovanja u karijeri biti lično zadovoljstvo, sreća i uspeh.",
+          "reversed": "Invertirani devet šoljica, površne zahvalnosti ili nezadovoljstvo može umanjiti kvalitet ishoda.",
+          "keywords": [
+            "zadovoljstvo",
+            "uspeh",
+            "sreća",
+            "mir",
+            "budućnost"
+          ],
+          "context": "Rezultat će biti lična sreća i zadovoljstvo."
+        }
+      },
+      "tenofcups": {
+        "position1": {
+          "upright": "Deset šoljica je kartica emocionalnog zadovoljstva, mira i celovitosti. Ako je vaša karijera u harmoniji sa drugim oblastima u vašem životu, na pravom ste stazu.",
+          "reversed": "Invertirani deset šoljica ukazuje na poremećenu ravnotežu radne životne sredine ili nedostatak harmonije.",
+          "keywords": [
+            "sreća",
+            "raport",
+            "porodica",
+            "ravnoteža",
+            "mir"
+          ],
+          "context": "Vaša istinska karijera je put koji je kompatibilan sa svim oblastima vašeg života."
+        },
+        "position2": {
+          "upright": "Deset šoljica preporučuje vam da uravnotežite svoj rad i privatni život. Ojačaće vas skladan nalog za razvoj.",
+          "reversed": "Invertirani deset šoljica, disharmonija i neravnoteža mogu otežati napredak u karijeri.",
+          "keywords": [
+            "ravnoteža",
+            "raport",
+            "sreća",
+            "narediti",
+            "zadovoljstvo"
+          ],
+          "context": "Da biste razvili svoju karijeru, morate da održite svoj životnu ravnotežu."
+        },
+        "position3": {
+          "upright": "Deset šoljica pokazuje da ne kontrolišete neke faktore koji utiču na vašu ravnotežu radnog života. Ljudi i uslovi oko vas su presudni.",
+          "reversed": "Preokrećeni deset šoljica podseća vas da se vaš nedostatak sklada ponekad razvija van vas.",
+          "keywords": [
+            "raport",
+            "ravnoteža",
+            "porodica",
+            "okruženje",
+            "van kontrole"
+          ],
+          "context": "Ne možete pružiti svu harmoniju i ravnotežu u karijeri; Spoljni uslovi su i efikasni."
+        },
+        "position4": {
+          "upright": "Deset šoljica pokazuje da on daje sve od sebe, stvarajući harmoniju i mir u svom radu.",
+          "reversed": "Invertirani deset šoljica, nesklade ili nemiri mogu se naporno učiniti da se to teško vidi.",
+          "keywords": [
+            "raport",
+            "mir",
+            "ravnoteža",
+            "trud",
+            "performanse"
+          ],
+          "context": "Vaši napori su ojačani stvaranjem harmoničnog okruženja."
+        },
+        "position5": {
+          "upright": "Deset šoljica, možete stvoriti harmonije promene u vašoj karijeri uspostavljanjem ravnoteže radne životne sredine.",
+          "reversed": "Invertirani deset šoljica podržaće razvoj rešavanja nemira.",
+          "keywords": [
+            "raport",
+            "ravnoteža",
+            "mir",
+            "zadovoljstvo",
+            "promeniti"
+          ],
+          "context": "Da biste promenili karijeru, morate razmotriti ravnotežu radne životne sredine."
+        },
+        "position6": {
+          "upright": "Deset šoljica, pritisak iz porodičnih ili očekivanja životne sredine možda je stvorio ograničenja u vašoj karijeri u prošlosti.",
+          "reversed": "Ograničeni deset šoljica, disharmonije ili porodičnih problema možda su ometali vašu trenutnu karijeru.",
+          "keywords": [
+            "porodica",
+            "očekivanje",
+            "raport",
+            "ugnjetavanje",
+            "prošlost"
+          ],
+          "context": "Porodični pritisci u stvari utiču na vašu karijeru danas."
+        },
+        "position7": {
+          "upright": "Deset šoljica pokazuje da će ishod putovanja u karijeri donijeti skladan životnu ravnotežu i mir.",
+          "reversed": "Obrnuti deset šoljica može zasjeniti ishod nemira ili disharmonija.",
+          "keywords": [
+            "raport",
+            "ravnoteža",
+            "mir",
+            "završetak",
+            "budućnost"
+          ],
+          "context": "Rezultat će biti miran i uravnotežen život."
+        }
+      },
+      "pageofcups": {
+        "position1": {
+          "upright": "Princ čaša donosi nove ideje, kreativnost i intuitivni uvidi. U vašoj karijeri se može pojaviti kreativni početak ili iznenađujuća prilika.",
+          "reversed": "Princ of Cups preokrenuti ukazuje da se ponašate iz nezrelih emocija ili sanjivih očekivanja. To bi vas moglo dovesti do nerealni put.",
+          "keywords": [
+            "kreativnost",
+            "inspiracija",
+            "intuicija",
+            "Nove mogućnosti",
+            "mašta"
+          ],
+          "context": "Vaša stvarna karijera je mesto gde slobodno možete izraziti svoju intuiciju i maštu."
+        },
+        "position2": {
+          "upright": "Princ čaša preporučuje vam da potrošite kreativne ideje hrabro. Pokretanje novih projekata može vas premestiti napred.",
+          "reversed": "Princ of Cups preokrenut ukazuje da se mogućnosti mogu propustiti zbog sanjarine i nepažnje.",
+          "keywords": [
+            "kreativnost",
+            "inspiracija",
+            "pokušati",
+            "ideja",
+            "otkriće"
+          ],
+          "context": "Da biste poboljšali svoju karijeru, morate da stavite svoje kreativne ideje u praksu."
+        },
+        "position3": {
+          "upright": "Princ Cup-a ukazuje da vi ne kontrolirate kada se pojave inspiracija i kreativne ideje.",
+          "reversed": "Princ of Cups preokrenut sugeriše da prirodni ciklus razočaranja ili nedostatak inspiracije razvija izvan vas.",
+          "keywords": [
+            "inspiracija",
+            "ideja",
+            "kreativnost",
+            "sanjati",
+            "van kontrole"
+          ],
+          "context": "Ne možete u potpunosti da odredite dolazak inspiracije u karijeri."
+        },
+        "position4": {
+          "upright": "Princ čaša pokazuje da on donosi kreativnost i radoznalost svojim radom. Vaš iskreni napor ističe se.",
+          "reversed": "Invertirani princ čaše, nepažnja ili sanjarina može da ograniči performanse.",
+          "keywords": [
+            "kreativnost",
+            "radoznalost",
+            "inspiracija",
+            "trud",
+            "performanse"
+          ],
+          "context": "Vaši napori su vidljivi u onome što donesete svom radu iskreno i radoznalošću."
+        },
+        "position5": {
+          "upright": "Princ Cup-a: Korišćenje vaše mašte više i isprobavanje novih ideja donosi korisne promene u vašoj karijeri.",
+          "reversed": "Princ obrnutih šoljica, prestanite da sanjate i stavite svoje ideje u praksu.",
+          "keywords": [
+            "kreativnost",
+            "ideja",
+            "inspiracija",
+            "pokušati",
+            "promeniti"
+          ],
+          "context": "Da biste promenili karijeru, morate da stavite svoje ideje u praksu."
+        },
+        "position6": {
+          "upright": "Princ Cup-ova možda je ometao karijeru u prošlosti ne stavljajući svoje snove u praksi ili je previše sanjiv.",
+          "reversed": "Princ of Cups preokrenuo je: nedostatak emocionalne zrelosti može imati ograničene mogućnosti u prošlosti.",
+          "keywords": [
+            "sanjati",
+            "Primena",
+            "zrelost",
+            "vizija",
+            "prošlost"
+          ],
+          "context": "Ne stavljajući svoje snove u praksi u prošlosti ometa vašu karijeru danas."
+        },
+        "position7": {
+          "upright": "Princ Cup-a ukazuje da će ishod vašeg putovanja u karijeri biti oblikovani novim idejama i kreativnošću.",
+          "reversed": "Prenoćini princ CUP-a može odložiti rezultate zbog željenog razmišljanja ili nedostatka izvršenja.",
+          "keywords": [
+            "kreativnost",
+            "ideja",
+            "sanjati",
+            "pokušati",
+            "budućnost"
+          ],
+          "context": "Rezultat će stvoriti nove mogućnosti sa kreativnost."
+        }
+      },
+      "knightofcups": {
+        "position1": {
+          "upright": "Vitez čaše simbolizuje prateći vaše ideale i prateći vaše srce. Emocionalno zadovoljavajući put vas može čekati u vašoj karijeri.",
+          "reversed": "Prekoračeni vitez čaše pokazuje da ste uhvaćeni u sanjini, bekstvom ili nerealnom ciljevima.",
+          "keywords": [
+            "ideali",
+            "osećanje",
+            "kreativnost",
+            "potraga",
+            "sanjati"
+          ],
+          "context": "Vaša istinska karijera će vas naći kada sledite svoje srce."
+        },
+        "position2": {
+          "upright": "Vitez čaše preporučuje da sledite svoje ideale. Razvijanje strasti i emocionalne veze u vašoj karijeri će vas rasti.",
+          "reversed": "Vitez Cup-a obrnut pokazuje da ne treba da se uhvate nerealnim ciljevima.",
+          "keywords": [
+            "idealan",
+            "strast",
+            "kreativnost",
+            "prilika",
+            "vizija"
+          ],
+          "context": "Da biste poboljšali karijeru, trebalo bi da se fokusirate na ciljeve na kojima ste postavili svoje srce."
+        },
+        "position3": {
+          "upright": "Vitez čaše vam govori da je vreme za idealističke mogućnosti ili emocionalne prevelike uvlake iz vaših ruku.",
+          "reversed": "Vitez Cups-a obrnut ukazuje da razočarenja ponekad nastaju iz spoljnih okolnosti.",
+          "keywords": [
+            "idealan",
+            "prilika",
+            "vizija",
+            "sanjati",
+            "van kontrole"
+          ],
+          "context": "Ne možete promeniti vreme neke ponude u vašoj karijeri."
+        },
+        "position4": {
+          "upright": "Vitez čaše pokazuje da ima idealistički pristup svom radu i pokušava da daje sve od sebe.",
+          "reversed": "VELIKO KNIGHT KUPA: Prekomerna sanjarina ili pasivnost može potkopati efekat napora.",
+          "keywords": [
+            "idealizam",
+            "vizija",
+            "iskrenost",
+            "trud",
+            "performanse"
+          ],
+          "context": "CAban se ističe sa svojim idealističkim pristupom."
+        },
+        "position5": {
+          "upright": "Vitez čaše, prevođenje njegovog idealizma u konkretne projekte donosi snažne promene u svojoj karijeri.",
+          "reversed": "Ograničeno vitez čaše, ostaje dalje od prekomerne sanije, odvešće vas dalje.",
+          "keywords": [
+            "idealizam",
+            "vizija",
+            "prilika",
+            "Primena",
+            "promeniti"
+          ],
+          "context": "Da biste promenili karijeru, morate da pretvorite svoju viziju u praksi."
+        },
+        "position6": {
+          "upright": "Vitez čaše je u prošlosti bio previše idealistički i ne preduzimajući konkretne korake, što je možda otežalo njegovu karijeru.",
+          "reversed": "Učitavanje viteza čaše, nepovezano je od stvarnosti možda je sprečio da se krećete naprijed u prošlosti.",
+          "keywords": [
+            "idealizam",
+            "vizija",
+            "realizam",
+            "prilika",
+            "prošlost"
+          ],
+          "context": "Prekomerni idealizam u prošlosti danas utiče na njegovu karijeru."
+        },
+        "position7": {
+          "upright": "Vitez čaše pokazuje da će ishod vašeg putovanja u karijeri biti napredak sa idealističkim ciljevima i vizijom.",
+          "reversed": "Vitez Cup-ova obrnut može se oslabiti kao rezultat odreda od stvarnosti.",
+          "keywords": [
+            "vizija",
+            "idealizam",
+            "cilj",
+            "prilika",
+            "budućnost"
+          ],
+          "context": "Rezultat će se kretati napred sa idealističkim ciljevima."
+        }
+      },
+      "queenofcups": {
+        "position1": {
+          "upright": "Kueen of Cups simbolizuje empatiju, intuiciju i emocionalnu dubinu. Na pravom ste mestu u vašoj karijeri u kojoj imate koristi i nadahnjujete druge.",
+          "reversed": "Kraljica Cup-ova preokrenuta može ukazivati na prekomernu emocionalnost ili zanemarivanje sopstvenih potreba.",
+          "keywords": [
+            "empatija",
+            "intuicija",
+            "osećanje",
+            "saosećanje",
+            "inspiracija"
+          ]
+        }
+      }
+    }
+  }
+}

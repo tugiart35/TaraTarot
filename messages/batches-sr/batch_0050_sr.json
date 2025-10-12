@@ -1,0 +1,798 @@
+{
+  "new-lover": {
+    "meanings": {
+      "thelovers": {
+        "position4": {
+          "keywords": [
+            null,
+            null,
+            null,
+            null,
+            "dugoročan"
+          ],
+          "context": "Jasan izbor podržava dugoročno, neodlučan testira obveznica."
+        },
+        "position5": {
+          "upright": "Ljubitelji su jedan od najjačih pokazatelja potencijala srodne duše. Vaše srce i srce ove osobe mogu se sastajati na sličnoj frekvenciji.",
+          "reversed": "Invertirani ljubitelji, neodlučnost ili nespojivi izbori oslabiju vezu srodne duše.",
+          "keywords": [
+            "lova",
+            "glasati",
+            "raport",
+            "obveznica",
+            "srodna duša"
+          ],
+          "context": "Harmoni neguje matesi u dušu, ambivalencija testira obveznica."
+        },
+        "position6": {
+          "upright": "Ljubitelji pokazuju da će prave odluke i skladne veze biti efikasne u tome da se vaše želje ostvare. Izbor koji dolazi iz vašeg srca odvešće vas na vaš cilj.",
+          "reversed": "Ljubitelji obrnuto ukazuju na neodlučnost i sukobljene vrednosti na način vaše želje. Ako izbor nije jasan, želja se možda neće ostvariti.",
+          "keywords": [
+            "glasati",
+            "raport",
+            "obveznica",
+            "vrednosti",
+            "odluka"
+          ],
+          "context": "Jasan izbor otvara vrata vašoj želji."
+        }
+      },
+      "thechariot": {
+        "position1": {
+          "upright": "Koloracija kaže da sa napretkom i odlučnošću možete brzo da unesete novi odnos.",
+          "reversed": "Reversed Charoot upozorava da se mogu propustiti prilike zbog nedostatka kontrole.",
+          "keywords": [
+            "napredak",
+            "brzina",
+            "stabilnost",
+            "pravac"
+          ],
+          "context": "Nova veza može uskoro da žuri."
+        },
+        "position2": {
+          "upright": "Kočija predstavlja rak znaka zodijaka. Ova osoba je osetljiva, ali takođe ima snažnu volju.",
+          "reversed": "Ukrašeni kola pod senkom raka može donijeti neodlučnost, emocionalne fluktuacije i nedostatak smera.",
+          "keywords": [
+            "Rak",
+            "osećanje",
+            "volja",
+            "zaštita"
+          ],
+          "context": "Rak Energija dolazi do izražaja."
+        },
+        "position3": {
+          "upright": "Čarolija kaže da će odlučnost kretanja u istom pravcu ojačati harmoniju. Zajednički ciljevi poravnavaju vašu obveznicu.",
+          "reversed": "Obrnuti kočiju, povučeni u različitim pravcima slabi harmoniju. Kontrolne bitke gumaju odnos.",
+          "keywords": [
+            "pravac",
+            "cilj",
+            "raport",
+            "ravnoteža",
+            "stabilnost"
+          ],
+          "context": "Isti cilj donosi harmoniju. Strife prekida veze."
+        },
+        "position4": {
+          "upright": "Kočija, odlučnost i zajednički ciljevi podržavaju dugoročnu vezu. Putovanje zajedno jača obveznice.",
+          "reversed": "Invertirani kolač, nedostatak smera ili prekomernog ega dugoročno otežava.",
+          "keywords": [
+            "stabilnost",
+            "cilj",
+            "jedinstvo",
+            "napredak",
+            "dugoročan"
+          ],
+          "context": "Zajednički golovi neguju dugoročno, nedostatak smernih guma Bond."
+        },
+        "position5": {
+          "upright": "Chariot ukazuje na potencijal da se krene naprijed sa zajedništvom i disciplinom u vezi sa dušem. Putovanje se može završiti zajedno.",
+          "reversed": "Ukrašeno kočije, nedostatak smera ili neravnoteže može oslabiti srodnu vezu.",
+          "keywords": [
+            "pravac",
+            "disciplina",
+            "napredak",
+            "zajedništvo",
+            "srodna duša"
+          ],
+          "context": "Zajedništvo podržava matesništvo duše, neravnoteže testira Bond."
+        },
+        "position6": {
+          "upright": "Koloracija vam govori da će se vaša želja ostvariti snažnom voljom i fokusom. Ako preuzmete kontrolu, postići ćete uspeh.",
+          "reversed": "Reversed Coriot može blokirati vašu želju za neorganizacijom ili nedostatkom smera. Potrebno je postaviti jasne ciljeve.",
+          "keywords": [
+            "volja",
+            "kontrola",
+            "uspeh",
+            "pravac",
+            "pobeda"
+          ],
+          "context": "Fokusirana snaga volje čini da se vaša želja ostvari."
+        }
+      },
+      "strength": {
+        "position1": {
+          "upright": "Moć vam govori da će vas unutrašnji spokoj privući u novu vezu. Vaša nežna hrabrost može otvoriti tuđe srce.",
+          "reversed": "Povezana snaga vam govori da previše ponosa ili kontrole može ometati novi odnos.",
+          "keywords": [
+            "hrabrost",
+            "ljubaznost",
+            "povući",
+            "ravnoteža"
+          ],
+          "context": "Odnos je moguć ubrzo, pristup sa strpljenjem."
+        },
+        "position2": {
+          "upright": "Snaga predstavlja horoskopski znak Leo. Ova osoba je harizmatična, ponosna i hrabra.",
+          "reversed": "Obrnuta snaga, u Leo Shadov, može pokazati arogantnost, tvrdoglavost i nestrpljivost.",
+          "keywords": [
+            "Lav",
+            "hrabrost",
+            "ponos",
+            "rukovodstvo"
+          ],
+          "context": "Leo energija je jaka."
+        },
+        "position3": {
+          "upright": "Pokazuje da će snaga, strpljenje i saosećanje produbiti harmoniju. Nežan pristup raste poverenje obveznice.",
+          "reversed": "Otkazana snaga, ponos i nestrpljenje ometaju harmoniju. Umesto sile je potrebno mekoća.",
+          "keywords": [
+            "saosećanje",
+            "strpljenje",
+            "hrabrost",
+            "raport",
+            "poverenje"
+          ],
+          "context": "Saosećanje raste sklad. Ponos prekida harmoniju."
+        },
+        "position4": {
+          "upright": "Snaga, strpljenje i saosećanje je temelj dugoročne veze. Meka hrabrost postavljaju poslednje obveznice.",
+          "reversed": "Ograničena snaga, ponos ili ljutnja će dugoročno obući obveznice.",
+          "keywords": [
+            "strpljenje",
+            "saosećanje",
+            "hrabrost",
+            "ravnoteža",
+            "dugoročan"
+          ],
+          "context": "Saosećanje jača dugoročno, ponos slabi vezu."
+        },
+        "position5": {
+          "upright": "Snaga, strpljenje, saosećanje i unutrašnja hrabrost obeležavaju prirodu duše veze. Ova veza može da raste sa nežnim, ali dubokoj snazi.",
+          "reversed": "Otkazana snaga, nestrpljivost ili ljubomora može otežati vezu srodne duše.",
+          "keywords": [
+            "saosećanje",
+            "strpljenje",
+            "hrabrost",
+            "ravnoteža",
+            "srodna duša"
+          ],
+          "context": "Saosećanje neguje materišu sa dušema, nestrpljenje testira vezu."
+        },
+        "position6": {
+          "upright": "Snaga pokazuje da će se vaša želja ostvariti sa strpljenjem, saosećanje i unutrašnje hrabrosti. Možete prevazići prepreke sa svojom nežnom snagom.",
+          "reversed": "Povezana snaga vam govori da nestrpljenje i unutrašnja nesigurnost mogu ometati vaše želje.",
+          "keywords": [
+            "hrabrost",
+            "saosećanje",
+            "strpljenje",
+            "poverenje",
+            "ravnoteža"
+          ],
+          "context": "Unutrašnja snaga olakšava vaše želje da se ostvare."
+        }
+      },
+      "thehermit": {
+        "position1": {
+          "upright": "Ermis, ono što naučite okretanjem u sebi priprema vas za pravu vezu. Ova usamljenost se uskoro može završiti.",
+          "reversed": "Okolišteni Sveti, previše zatvorenosti može odložiti novu vezu. Trebali biste biti društveniji.",
+          "keywords": [
+            "unutrašnji put",
+            "mudrost",
+            "čekanje",
+            "priprema"
+          ],
+          "context": "Uskoro može postojati odnos, ali proces skretanja prema unutra je na snazi."
+        },
+        "position2": {
+          "upright": "Saint predstavlja Devica. Ova osoba je analitička, introvertirana i mudra.",
+          "reversed": "Ograničeno sveti može biti preterano kritičan ili izolovan u senci Device.",
+          "keywords": [
+            "Virgo",
+            "mudrost",
+            "analiza",
+            "okretanje prema unutra"
+          ],
+          "context": "Virgov uticaj je jak."
+        },
+        "position3": {
+          "upright": "Sveti pokazuje da će unutrašnja mudrost i zdravo priznanje prostora podržati Harmoniju. Davanje jedni drugima prostor jača vašu obveznicu.",
+          "reversed": "Preokrenut sveti, pretjeranu introverziju ili podlogu zasjenjivanje harmonije. Previše je izolovano stvara distancu.",
+          "keywords": [
+            "mudrost",
+            "oblast",
+            "razumevanje",
+            "raport",
+            "okretanje prema unutra"
+          ],
+          "context": "Davanje prostora podstiče harmoniju. Previše oštećenja udaljenosti."
+        },
+        "position4": {
+          "upright": "Sainthood, unutrašnja mudrost i zdrava samoća podržavaju dugoročno. Zamišljeni prilaz sazreva veze.",
+          "reversed": "Prekoračenje svetih, prekomerna izolacija će dugoročno oštetiti vezu.",
+          "keywords": [
+            "mudrost",
+            "okretanje prema unutra",
+            "zrelost",
+            "ravnoteža",
+            "dugoročan"
+          ],
+          "context": "Mudrost neguje dugoročno, izolacione testira obveznice."
+        },
+        "position5": {
+          "upright": "Saint kaže da se veza srodne duše može pronaći kroz unutrašnje istraživanje i duboku svest. U tišini dolazi osećaj prepoznavanja.",
+          "reversed": "Prekoračena svetac, prekomerna izolacija može odlagati ili oslabiti srodnu vezu.",
+          "keywords": [
+            "okretanje prema unutra",
+            "mudrost",
+            "potraga",
+            "svest",
+            "srodna duša"
+          ],
+          "context": "Unutrašnje istraživanje podržava materi u dušema, izolaciono testira obveznica."
+        },
+        "position6": {
+          "upright": "Svetac kaže da će se vaša želja ostvariti, morate se okrenuti prema unutra i sledite svoju svetlost. Pacijent i period samoće mogu biti potrebni.",
+          "reversed": "Okrećeni svetac pokazuje da prekomerna izolacija može otežati da se vaša želja ostvari. Deljenje je takođe važno.",
+          "keywords": [
+            "unutrašnji put",
+            "strpljenje",
+            "svetlo",
+            "mudrost",
+            "uputstvo"
+          ],
+          "context": "Unutrašnje smernice otvara put ka vašoj želji."
+        }
+      },
+      "thewheeloffortune": {
+        "position1": {
+          "upright": "Točak sudbine vam govori da će vas nova veza iznenaditi.",
+          "reversed": "Točak naopačke ukazuje da se mogućnosti mogu odložiti zbog lošeg vremena.",
+          "keywords": [
+            "sudbina",
+            "iznenađenje",
+            "vremenski vreme",
+            "šansa"
+          ],
+          "context": "Postoji snažna mogućnost usporavanja veze, vreme je važno."
+        },
+        "position2": {
+          "upright": "Točak sudbine nosi energiju promjernih znakova (Blizanci, Virgo, Strelac, Ribe). Ova osoba je otvorena za transformacije u njegovom životu.",
+          "reversed": "Obrnuti točak sudbine može donijeti neodlučnost i nestabilnost u senci mupromistih znakova.",
+          "keywords": [
+            "promeniti",
+            "sudbina",
+            "promenljiv",
+            "petlja"
+          ],
+          "context": "To bi mogla biti jedan od promašivih znakova."
+        },
+        "position3": {
+          "upright": "Točak sudbine kaže da će ciklusi u vašoj vezi podržati prirodna harmonija. Ispravan vremenski vremenski usklađen je lakše.",
+          "reversed": "Obrnuti točak, ponovljene greške mogu otežati prilagođavanje. Bez svesti ciklus ostaje isti.",
+          "keywords": [
+            "vremenski vreme",
+            "petlja",
+            "raport",
+            "sudbina",
+            "promeniti"
+          ],
+          "context": "Vreme donosi harmoniju. Ponavljanje guma Ligamenti."
+        },
+        "position4": {
+          "upright": "Točak sudbine pokazuje da će se odnos razviti u ciklusima. Prilagođavanje promenama jača dugoročno.",
+          "reversed": "Obrnuti točak, otpornost i želja za kontrolom dugoročno otežavaju dugoročno.",
+          "keywords": [
+            "petlja",
+            "promeniti",
+            "raport",
+            "šansa",
+            "dugoročan"
+          ],
+          "context": "Prilagođavanje promenama podržava dugoročno, otporno gume Bond."
+        },
+        "position5": {
+          "upright": "Točak sudbine pokazuje da je sastanak srodne srodne duše o vremenu sudbine. Ciklusi vas mogu sastajati.",
+          "reversed": "Preokrećeni točak sudbine, otpornost ili vremenska greška može odložiti srodnu vezu.",
+          "keywords": [
+            "sudbina",
+            "petlja",
+            "vremenski vreme",
+            "protok",
+            "srodna duša"
+          ],
+          "context": "Pravo vreme neguje matesništvo duše, otpornost testira obveznice."
+        },
+        "position6": {
+          "upright": "Točak sudbine pokazuje da su sreća i pravo vreme važni u pravljenju vaše želje. Ciklusi će vam predstaviti priliku.",
+          "reversed": "Obrnuti točak sudbine ukazuje da se vaša želja može odložiti zbog nesreće ili otpora.",
+          "keywords": [
+            "sudbina",
+            "vremenski vreme",
+            "prilika",
+            "petlja",
+            "šansa"
+          ],
+          "context": "Pravo vreme olakšava vašu želju da se ostvari."
+        }
+      },
+      "justice": {
+        "position1": {
+          "upright": "Označava da se odnosi odnos koji će se uspostaviti pravdom, iskrenošću i ravnotežom.",
+          "reversed": "Obrnuto pravda kaže da nesporazumi mogu otežati novu vezu.",
+          "keywords": [
+            "ravnoteža",
+            "iskrenost",
+            "pravda",
+            "raport"
+          ],
+          "context": "Pošteni i uravnotežen odnos može uskoro doći."
+        },
+        "position2": {
+          "upright": "Pravda predstavlja znak Vage. Ova osoba je fer, uravnotežene i vrednosti odnosa.",
+          "reversed": "Ograničena pravda može biti neodlučna, površna ili odnos zavisna u senci Vaga.",
+          "keywords": [
+            "Skala",
+            "ravnoteža",
+            "pravda",
+            "odnos"
+          ],
+          "context": "Energija Vaga dolazi do izražaja."
+        },
+        "position3": {
+          "upright": "Pokazuje da će pravda, iskrenost i pošteni pristup povećati harmoniju. Transparentna komunikacija gradi poverenje.",
+          "reversed": "Perverzna pravda, dvostruki standardi ili prikrivanje uništavaju harmoniju. Nepravedno stavovi oslabiti obveznice.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "raport",
+            "transparentnost",
+            "iskrenost"
+          ],
+          "context": "Iskrenost je osnova harmonije. Tajnost sagoreva mostove."
+        },
+        "position4": {
+          "upright": "Pravda, iskrenost i pošteno deljenje podržavaju dugoročno. Otvorena komunikacija jača obveznice.",
+          "reversed": "Obrnuto pravda, nepravda ili ležanje štete dugoročno.",
+          "keywords": [
+            "pravda",
+            "iskrenost",
+            "ravnoteža",
+            "komunikacija",
+            "dugoročan"
+          ],
+          "context": "Pravda neguje dugoročno, nepravda testira vezu."
+        },
+        "position5": {
+          "upright": "Fainess pokazuje da se veza srodne duše može izgraditi na iskrenosti, jednakosti i transparentnosti.",
+          "reversed": "Obrnuta pravda, nepravda ili neravnoteža mogu oštetiti vezu srodne duše.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "jednakost",
+            "transparentnost",
+            "srodna duša"
+          ],
+          "context": "Transparentnost neguje matesništvo duše, neravnoteže testira Bond."
+        },
+        "position6": {
+          "upright": "Pravda kaže da su fer izbori i uravnoteženi pristupi važni u pravljenju vaše želje. Ono što zaslužujete biće nagrađeni.",
+          "reversed": "Okolištena pravda ukazuje da se vaša želja može odložiti zbog nepravde ili neravnoteže.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "istina",
+            "iskrenost",
+            "zaključak"
+          ],
+          "context": "Pošteni i transparentan pristup će ubrzati vašu želju."
+        }
+      },
+      "thehangedman": {
+        "position1": {
+          "upright": "Obučeni čovek objašnjava da novi odnos zahteva vreme. Čekanje vas priprema za pravu osobu.",
+          "reversed": "Okrušen muškarac naopako upozorava da će nepotrebne odlaganja odložiti novu vezu.",
+          "keywords": [
+            "čekanje",
+            "vreme",
+            "predaja",
+            "drugačiji pogled"
+          ],
+          "context": "Može doći novi odnos, ali vreme zahteva strpljenje."
+        },
+        "position2": {
+          "upright": "Obučeni čovek predstavlja Ribe. Ova osoba je altruistička, osetljiva i intuitivna.",
+          "reversed": "Okrušeni muškarac naopako može pokazati neodlučnost, viktimizacija i neorganizaciju u senci Ribe.",
+          "keywords": [
+            "Riba",
+            "žrtvovati",
+            "intuicija",
+            "empatija"
+          ],
+          "context": "Uticaj Ribe je jak."
+        },
+        "position3": {
+          "upright": "Obučeni čovek pokazuje da se harmonija može uspostaviti iz različitih perspektiva. Gledanje sa empatijom jača vašu obveznicu.",
+          "reversed": "Obrnuti obešeni muškarac, tvrdoglavost ili jednostrana samopožrtvovanja čine harmoniju teškim. Potrebno je posmatrati ravnotežu.",
+          "keywords": [
+            "perspektivan",
+            "empatija",
+            "žrtvovati",
+            "raport",
+            "ravnoteža"
+          ],
+          "context": "Empatija donosi Harmoniju. Jednostrizam oštećuje veze."
+        },
+        "position4": {
+          "upright": "Obučeni čovek, različite perspektive promovišu dugoročnu vezu. Predaja jača obveznice.",
+          "reversed": "Obrnuti obješen čovek, uloga žrtve ili tvrdoglavost otežavaju dugoročno.",
+          "keywords": [
+            "predaja",
+            "perspektivan",
+            "ravnoteža",
+            "predovost",
+            "dugoročan"
+          ],
+          "context": "Perspektiva podržava dugoročno, tvrdoglavost oštećena obveznica."
+        },
+        "position5": {
+          "upright": "Obučeni čovek kaže da se veza srodne duše može razviti sa drugačijom perspektivom i strpljenjem.",
+          "reversed": "Invertirani obješen čovek, inercija ili nevoljnost mogu odložiti srodnu vezu.",
+          "keywords": [
+            "perspektivan",
+            "predaja",
+            "strpljenje",
+            "svest",
+            "srodna duša"
+          ],
+          "context": "Nova perspektiva podržava matesništvo duše, testira vezu inercije."
+        },
+        "position6": {
+          "upright": "Obučeni čovek pokazuje da su strpljenje i nove perspektive potrebne da se vaša želja ostvari. Proces postaje lakši sa predajom.",
+          "reversed": "Okrušeni muškarac naopako kaže da nevoljnost i tvrdoglavost mogu odložiti vašu želju.",
+          "keywords": [
+            "strpljenje",
+            "predaja",
+            "perspektivan",
+            "čekanje",
+            "svest"
+          ],
+          "context": "Predaja i nova perspektiva čine da se vaša želja ostvari."
+        }
+      },
+      "death": {
+        "position1": {
+          "upright": "Smrt može označiti kraj starih veza i početak nove veze. Kada se otvori prostor, dođe ljubav.",
+          "reversed": "Okolištena smrt, držeći se prošlosti može ometati novi odnos.",
+          "keywords": [
+            "završiti",
+            "regeneracija",
+            "transformacija",
+            "početak"
+          ],
+          "context": "Prepuštanje prošlosti je od suštinskog značaja za novu vezu."
+        },
+        "position2": {
+          "upright": "Smrt predstavlja Scorpio. Ova osoba je strastvena, duboka i transformaciona lik.",
+          "reversed": "Ukrašena smrt u Scorpio Shadov može biti opsesivna, ljubomorna ili sklona da se drži zakrhe.",
+          "keywords": [
+            "Škorpion",
+            "transformacija",
+            "strast",
+            "dubina"
+          ],
+          "context": "Scorpio energija je dominantna."
+        },
+        "position3": {
+          "upright": "Smrt kaže da će Transformacija i prepuštanje starosti ojačati harmoniju. Biti otvoren za obnovu produbljuje vašu vezu.",
+          "reversed": "Obrnute promene otporne na smrt sprečava adaptaciju. Držanje prošlosti stvara neravnotežu.",
+          "keywords": [
+            "transformacija",
+            "regeneracija",
+            "izdanje",
+            "raport",
+            "promeniti"
+          ],
+          "context": "Otvorenost za promenu donosi Harmoniju. Otpornost prekida veze."
+        },
+        "position4": {
+          "upright": "Smrt, transformacija i prepuštanje starih otvori vrata na dugoročnu vezu. Obnavljanje obnovljivanja obveznica.",
+          "reversed": "Obrnuti smrt, otpornost na promene čini dugoročno teško.",
+          "keywords": [
+            "transformacija",
+            "regeneracija",
+            "završiti",
+            "početak",
+            "dugoročan"
+          ],
+          "context": "Transformacija jača dugoročno, otpornost testira obveznica."
+        },
+        "position5": {
+          "upright": "Smrt kaže da je srodna snaga moguća transformacijom i ponovnom rogodom. Dopuštanje starosti da napravi mesta za novo.",
+          "reversed": "Obrnuta smrt, držeći se prošlosti može biti prepreka vezi sa dušem.",
+          "keywords": [
+            "transformacija",
+            "ponovno rođenje",
+            "završiti",
+            "početak",
+            "srodna duša"
+          ],
+          "context": "Transformacija podržava materije sa dušema i testira prošlu vezu."
+        },
+        "position6": {
+          "upright": "Smrt vam govori da se morate odreći nečega kako bi se vaša želja ostvarila. Sa transformacijom, nove želje će se prostirati.",
+          "reversed": "Obrnuto smrt, držeći se starosti da spreči vašu želju da se ostvari. Morate pustiti ono što trebate da pustite.",
+          "keywords": [
+            "transformacija",
+            "završiti",
+            "regeneracija",
+            "oproštaj",
+            "rođenje"
+          ],
+          "context": "Završeci utrljavaju put za nove želje."
+        }
+      },
+      "temperance": {
+        "position1": {
+          "upright": "Ravnoteža ukazuje da se približava skladan i pacijentni odnos.",
+          "reversed": "Ukrašena ravnoteža kaže da krajnosti mogu otežati novu vezu.",
+          "keywords": [
+            "ravnoteža",
+            "raport",
+            "strpljenje",
+            "jednostavnost"
+          ],
+          "context": "Novi odnos će uskoro doći strpljenje i harmonijom."
+        },
+        "position2": {
+          "upright": "Bilans predstavlja Strelac. Ova osoba je optimistična, liberalna i avanturistička.",
+          "reversed": "Invertirana ravnoteža, u Shadov of Strelca, može biti rasipna, pretjerano uzimajući rizik ili nestrpljiv.",
+          "keywords": [
+            "Prolećni",
+            "ravnoteža",
+            "sloboda",
+            "optimizam"
+          ],
+          "context": "Prolećna energija dolazi do izražaja."
+        },
+        "position3": {
+          "upright": "Kaže da će ravnoteža, strpljenje i harmonija stvoriti trajnu vezu. Pronalaženje srednjeg osnova smiriće vašu vezu.",
+          "reversed": "Obrnuti ravnoteža, viškovi i intemperstanci čine harmoniju teško. Doslednost je od suštinskog značaja za vezu.",
+          "keywords": [
+            "ravnoteža",
+            "strpljenje",
+            "raport",
+            "u srednjem stanju",
+            "miran"
+          ],
+          "context": "Srednja staza donosi Harmoniju. Prekomerna nosi obveznice."
+        },
+        "position4": {
+          "upright": "Balans, strpljenje i harmonija podržavaju dugoročne odnose. Srednja staza traje obveznice.",
+          "reversed": "Obrnuti ravnoteža, viškovi štete dugoročno.",
+          "keywords": [
+            "ravnoteža",
+            "strpljenje",
+            "raport",
+            "u srednjem stanju",
+            "dugoročan"
+          ],
+          "context": "Bilans neguje dugoročno, višak sojeva veze."
+        },
+        "position5": {
+          "upright": "Bilans pokazuje da sanduk duše može da raste sa harmonijom, strpljenjem i umerenjima.",
+          "reversed": "Obrnuti ravnoteža, viškovi ili nestrpljenje mogu da opterene srodnu vezu.",
+          "keywords": [
+            "ravnoteža",
+            "raport",
+            "strpljenje",
+            "temperatura",
+            "srodna duša"
+          ],
+          "context": "Ravnoteža podržava matesništvo duše, višak testira obveznice."
+        },
+        "position6": {
+          "upright": "Balans vam govori da su harmonija i strpljenje potrebni da se vaša želja ostvari. Izmereni koraci će vas prevesti na vaš cilj.",
+          "reversed": "Ukrašena ravnoteža ukazuje da krajnost mogu otežati vašu želju.",
+          "keywords": [
+            "ravnoteža",
+            "strpljenje",
+            "raport",
+            "u srednjem stanju",
+            "mir"
+          ],
+          "context": "Srednji put će vašu želju dovesti u stvarnost."
+        }
+      },
+      "thedevil": {
+        "position1": {
+          "upright": "Đavo može navesti vezu koja započinje intenzivnom strašću. Snažna atrakcija može se uskoro dogoditi.",
+          "reversed": "Reverdirani đavo skreće pažnju na zavisnosti i nezdrave priloge. Usredsredite se na održavanje zdravog, čak i ako je to veza uskoro.",
+          "keywords": [
+            "strast",
+            "povući",
+            "senka",
+            "zavisnost"
+          ],
+          "context": "Moguće je novi odnos, ali je važan balans."
+        },
+        "position2": {
+          "upright": "Sotona predstavlja Jarac. Ova osoba je marljiva, ambiciozna i snažna voljena.",
+          "reversed": "Invertirana sotona može preterano kontrolisati, prehladiti ili zavisi od senke Jarac.",
+          "keywords": [
+            "Koza",
+            "pohlepa",
+            "kontrola",
+            "izdržljivost"
+          ],
+          "context": "Energija Jarca je jaka."
+        },
+        "position3": {
+          "upright": "Sotona kaže da jaka strast i predanost mogu donijeti harmoniju. Međutim, granice moraju biti jasne.",
+          "reversed": "Okrećena sotona, zavisnost i ljubomora ometaju harmoniju. Bez slobode, veza ne može biti zdrava.",
+          "keywords": [
+            "strast",
+            "lojalnost",
+            "granica",
+            "raport",
+            "sloboda"
+          ],
+          "context": "Passion pasmine harmonija. Ovisnost Mars Harmoni."
+        },
+        "position4": {
+          "upright": "Sotona, ovisnost ili strast mogu da projure dugoročno. Zdrave granice štite odnos.",
+          "reversed": "Reversed Demon podržava dugoročni odnos oslobođenja.",
+          "keywords": [
+            "zavisnost",
+            "strast",
+            "granica",
+            "sloboda",
+            "dugoročan"
+          ],
+          "context": "Granice štite dugoročno, zavisnosti gume vezu."
+        },
+        "position5": {
+          "upright": "Demon, intenzivna strast i atrakcija mogu se osećati kao srodna veza, ali ponekad mogu da nose senku zavisnosti.",
+          "reversed": "Invertirani demon, želja za oslobađanjem može učiniti zdravijim srodnom snagom.",
+          "keywords": [
+            "strast",
+            "povući",
+            "zavisnost",
+            "sloboda",
+            "srodna duša"
+          ],
+          "context": "Strast vas može učiniti da osetite dušu, zavisnost stvara senku."
+        },
+        "position6": {
+          "upright": "Sotona vam govori da će se vaša želja ostvariti, morate biti slobodni od zavisnosti i ograničavajući verovanja.",
+          "reversed": "Okrećeni vrag pokazuje da se put vaše želje može otvoriti oslobađanjem i oslobađanjem od lanca.",
+          "keywords": [
+            "oslobođenje",
+            "zavisnost",
+            "senka",
+            "granica",
+            "volja"
+          ],
+          "context": "Sloboda udruže put za vašu želju."
+        }
+      },
+      "thetower": {
+        "position1": {
+          "upright": "Toranj, nova osoba može ući u vaš život kroz neočekivani sastanak. Moguće je iznenađujuće početak.",
+          "reversed": "Invertirana kula, novi odnos može nastati sa odgođenim, ali iznenadnim promenama.",
+          "keywords": [
+            "šok",
+            "promeniti",
+            "iznenađenje",
+            "početak"
+          ],
+          "context": "Neočekivani odnos može početi uskoro."
+        },
+        "position2": {
+          "upright": "Kula nosi nagli i neočekivani uticaj Urana. Ova osoba je povezana sa znakom Vodolije: Libertarijanska, nekonvencionalna i revolucionarna.",
+          "reversed": "Reversed Tover se može buntoviti, isključiti ili nestabilno u senci Vodolije.",
+          "keywords": [
+            "Akuarius",
+            "sloboda",
+            "inovativnost",
+            "iznenađenje"
+          ],
+          "context": "Akvarijska energija je dominantna."
+        },
+        "position3": {
+          "upright": "Toranj kaže da će neočekivane promene testirati harmoniju. Krize, ako se upravljaju korektno, mogu ojačati vašu obveznicu.",
+          "reversed": "Invertirana kula, odbijanje uništenja i skrivanje istine slabi se sklad. Od suštinskog je značaja da prihvatite krize.",
+          "keywords": [
+            "kriza",
+            "promeniti",
+            "istina",
+            "raport",
+            "regeneracija"
+          ],
+          "context": "Adaptacija ispitivanja krize. Istina popravlja most."
+        },
+        "position4": {
+          "upright": "Toranj podržava dugoročnu obnovu nakon krize. Suočavanje sa činjenicama jača vezu.",
+          "reversed": "Invertirana kula, izbegavane krize štete dugoročno.",
+          "keywords": [
+            "kriza",
+            "regeneracija",
+            "real",
+            "transformacija",
+            "dugoročan"
+          ],
+          "context": "Konfrontacija jača dugoročno, izbegavanje guma iz obveznice."
+        },
+        "position5": {
+          "upright": "Toranj, srodna snaga može doći sa iznenadnim realizacijama ili krizama. Uništavanje može da postavi temelj za novu obveznicu.",
+          "reversed": "Inverterovatna kula, bekstvo iz promene može sprečiti da se privede veza srodne duše",
+          "keywords": [
+            "svest",
+            "kriza",
+            "rušenje",
+            "rekonstrukcija",
+            "srodna duša"
+          ],
+          "context": "Iznenadna svest otvara matesništvo duše, testira vezu bekstva."
+        },
+        "position6": {
+          "upright": "Toranj ukazuje da mogu postojati nagli i radikalni promjene u vašem životu kako bi se vaša želja ostvarila. Rekonstrukcija nakon uništenja je moguća.",
+          "reversed": "Invertirani toranj govori da izbegavanje neophodnih promena može odložiti ispunjenje vaše želje.",
+          "keywords": [
+            "rušenje",
+            "promeniti",
+            "svest",
+            "rekonstrukcija",
+            "real"
+          ],
+          "context": "Nagle promene čine prostor za vaše želje."
+        }
+      },
+      "thestar": {
+        "position1": {
+          "upright": "Zvezda donosi nadu i obnavljanje. Uskoro počinje miran i nadahnjujući odnos.",
+          "reversed": "Invertovana zvezda kaže da će očaj odložiti novu vezu.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "zarastanje",
+            "početak"
+          ],
+          "context": "Mogućnost nove veze je velika, nada bi trebalo da bude održana živa."
+        },
+        "position2": {
+          "upright": "Zvezda predstavlja Vodolija. Ova osoba je vizionarska, humanitarna i inovativna.",
+          "reversed": "Ograničena zvezda može biti beznadežna, samostojeća ili je idealistična u akvarijskoj senci.",
+          "keywords": [
+            "Akuarius",
+            "vizija",
+            "sloboda",
+            "čovečanstvo"
+          ],
+          "context": "Akuarius Energi dolazi do izražaja."
+        },
+        "position3": {
+          "upright": "Zvezda kaže da se harmonija lako može postići nadom i inspiracijom. Otvoreno srce jača vašu vezu.",
+          "reversed": "Inverterovana zvezda, očaj ili razočaranje čine harmoniju teško. Izlečenje zahteva poverenje.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "zarastanje",
+            "raport",
+            "otvorenost"
+          ],
+          "context": "Vaša nada ojačava harmoniju. Očaj senke obveznice."
+        }
+      }
+    }
+  }
+}

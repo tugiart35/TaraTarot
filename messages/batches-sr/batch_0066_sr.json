@@ -1,0 +1,775 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "nineofwands": {
+        "position9": {
+          "keywords": [
+            null,
+            "reekam",
+            "odustati",
+            "sumnja",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi se fokusiraju na izgorevanje ili ne može se odmrsiti."
+        }
+      },
+      "tenofwands": {
+        "position1": {
+          "upright": "Deset štapića može biti u srcu problema, gde mogu biti prevelika odgovornost, teret ili pritisak u srcu problema.",
+          "reversed": "Okrećeno deset pripadnika, nepotrebnih tereta, izgaranje ili ne deljenje može biti izvor problema.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "ugnjetavanje",
+            "izgorevanje",
+            "pitanje"
+          ],
+          "context": "U srcu problema je prevelika odgovornost."
+        },
+        "position10": {
+          "upright": "Deset štapića može biti završetak odgovornosti, nošenje opterećenja i uspešnog završetka kao rezultat događaja.",
+          "reversed": "Invertirani deset štapića može rezultirati preopterećenjem, nedostatkom pomoći ili izgaranja kao rezultat događaja.",
+          "keywords": [
+            "odgovornost",
+            "opteretiti",
+            "završetak",
+            "uspeh",
+            "završnjak"
+          ],
+          "context": "Ishod može biti uspešan završetak ili izgaranje."
+        },
+        "position2": {
+          "upright": "Deset štapića, prepreka može biti preopterećenje, viška odgovornost ili pritiske. Preveliki teret otežava napredak.",
+          "reversed": "Ograničeno deset ljudskih štapića, nepotrebnih odgovornosti, ne deljenje ili izgaranje može biti prepreka.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "ugnjetavanje",
+            "izgorevanje",
+            "prepreka"
+          ],
+          "context": "Aprestraci se pojavljuje prevelika odgovornost i opterećenje."
+        },
+        "position3": {
+          "upright": "Deset štapića može podsvesti podsvesno da preuzme preveliku odgovornost, noseći teret ili pod pritiskom u prošlosti.",
+          "reversed": "Invertirani deset štapića, nepotrebne odgovornosti u prošlosti, a ne deljenje ili izgaranjem možda su se smestili u podsvijesti.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "izgorevanje",
+            "ugnjetavanje",
+            "podsvestan"
+          ],
+          "context": "Prekomerno odgovornosti u prošlosti mogu biti u korenu današnjih problema."
+        },
+        "position4": {
+          "upright": "Deset ljudskih štapića znači podnijeti odgovornosti najboljeg potencijala svesno, organizovanje njihovih opterećenja i primanje nagrade svojih napora.",
+          "reversed": "Okrećeno deset štapića da otključate svoj potencijal, morate da pustite nepotrebne opterećenja i fokusirajte se samo na odgovornosti koje vam služe.",
+          "keywords": [
+            "odgovornost",
+            "opteretiti",
+            "rad",
+            "stabilnost",
+            "rezolucija"
+          ],
+          "context": "Vaš najbolji potencijal je da krenete naprijed sa svesnom odgovornošću."
+        },
+        "position5": {
+          "upright": "Deset štapića, možda ste uzeli teške odgovornosti, terete ili preterane u nedavnoj prošlosti.",
+          "reversed": "Invertirani deset štapića, možda ste nedavno smanjili svoje odgovornosti, oslobodili se vaših tereta ili je srušen u prekomernom teretu.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "dužnost",
+            "težina",
+            "borba"
+          ],
+          "context": "Vaša nedavna prošlost možda je oblikovana oslobađanjem od viška odgovornosti ili tereta."
+        },
+        "position6": {
+          "upright": "Deset štapića može u bliskoj budućnosti moći da nosi teške odgovornosti, vaše radno opterećenje može povećati ili se vaše dužnosti mogu pojačati.",
+          "reversed": "Invertirani deset štapića može značiti olakšanje od opterećenja, ublažavanja odgovornosti ili ekstremnog umora u bliskoj budućnosti.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "dužnost",
+            "borba",
+            "težina"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati odgovornošću ili lakoćom."
+        },
+        "position7": {
+          "upright": "Deset štapića, trenutno nosite teške odgovornosti, možda ste pod velikim opterećenjem.",
+          "reversed": "Deset štapića preokrećeno, možda ćete se baviti osvetljavanjem tereta, prepuštajući odgovornosti ili ekstremnim umorama odmah.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "rad",
+            "intenzitet",
+            "rezolucija"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je slobodom od odgovornosti ili tereta."
+        },
+        "position8": {
+          "upright": "Deset štapića može povećati odgovornosti na spoljnim uticajima; Možda je potrebno zatražiti podelu opterećenja.",
+          "reversed": "Invertirani deset štapića, spoljni faktori mogu otežati delegiranje vlasti ili nepotrebne opterećenja na sebi.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "intenzitet",
+            "završnjak",
+            "delegat"
+          ],
+          "context": "Spoljni uticaji mogu povećati ili osvetliti teret."
+        },
+        "position9": {
+          "upright": "Deset štapića: Možda se plašite preuzimanja prevelike odgovornosti, preplavljene ili preuzete rad koji ne možete da ispunite.",
+          "reversed": "Invertirani deset štapića može ukazivati na strah da neće biti u stanju da dobije pomoć, a ne može da podeli teret ili strah od izgaranja.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "završnjak",
+            "izgorevanje",
+            "anksioznost"
+          ],
+          "context": "Fokusira se na strahove, preopterećeno ili se sruše pod odgovornostima."
+        }
+      },
+      "pageofwands": {
+        "position1": {
+          "upright": "Princ štapiće može biti u srcu problema sa novom idejom, entuzijazmom za učenje ili potragu za avanture.",
+          "reversed": "Invertirani princ štapiće, nestrpljenje, nedostatak entuzijazma ili nepažnje može biti izvor problema.",
+          "keywords": [
+            "ideja",
+            "učenje",
+            "entuzijazam",
+            "kreativnost",
+            "pitanje"
+          ],
+          "context": "U srcu problema je želja da isprobate nešto novo."
+        },
+        "position10": {
+          "upright": "Princ of Vands, ishod događaja može biti novo otkriće, inspirativni početak ili uzbudljiv put.",
+          "reversed": "Invertirani princ štapiće, ishod događaja može biti bezbrižnost, gubitak motivacije ili površnih pokušaja.",
+          "keywords": [
+            "otkriće",
+            "inspiracija",
+            "početak",
+            "uzbuđenje",
+            "energija"
+          ],
+          "context": "Rezultat može biti uzbudljivo otkriće ili površan poduhvat."
+        },
+        "position2": {
+          "upright": "Princ of Vands, prepreka može biti nestrpljenje, nepažnja, ili pogrešno osvrćeno entuzijazam za učenje.",
+          "reversed": "Prekoračen princ štapiće, nedostatak motivacije, brzo blede entuzijazam ili nedostatak svrhe može biti izvor prepreke.",
+          "keywords": [
+            "entuzijazam",
+            "učenje",
+            "nestrpljenje",
+            "motivacija",
+            "prepreka"
+          ],
+          "context": "Prepreka nastaje od nestrpljenja i pogrešnog entuzijazma."
+        },
+        "position3": {
+          "upright": "Princ štapiće može biti podsvesna želja za učenjem, novim poduhvatima ili željom za avanturom koju ste iskusili u prošlosti.",
+          "reversed": "Invertirani princ štapiće, prošla nestrpljivost, nepažnja ili brzo bledenje entuzijazma možda se naglasila u podsvesti.",
+          "keywords": [
+            "učenje",
+            "entuzijazam",
+            "avantura",
+            "nestrpljenje",
+            "podsvestan"
+          ],
+          "context": "Prošlo iskustvo učenja i entuzijazmi mogu uticati na današnje probleme."
+        },
+        "position4": {
+          "upright": "Princ of Vands, vaš najbolji potencijal je da se istražite sa radoznalošću, isprobajte nove ideje i preuzmite podebljane akcije.",
+          "reversed": "Invertirani princ štapiće, kako bi se postigao vaš potencijal, morate zadržati svoju motivaciju živu i preuzeti korake prevazići strahove.",
+          "keywords": [
+            "otkriće",
+            "hrabrost",
+            "inspiracija",
+            "početak",
+            "radoznalost"
+          ],
+          "context": "Vaš najbolji potencijal dolazi od istraživanja novih ideja."
+        },
+        "position5": {
+          "upright": "Princ of Vands, možda ste motivisani novom idejom, otkrićem ili inspiracijom u nedavnoj prošlosti.",
+          "reversed": "Okolišteni princ Vands, možda ste iskusni žurbu, nepažnju ili gubitak motivacije u nedavnoj prošlosti.",
+          "keywords": [
+            "inspiracija",
+            "otkriće",
+            "početak",
+            "iskustvo",
+            "učenje"
+          ],
+          "context": "Vaša nedavna prošlost možda su oblikovale nove ideje ili gubitak motivacije."
+        },
+        "position6": {
+          "upright": "Princ Vands, nova inspiracija, kreativna ideja ili smela otkriće vas u bliskoj budućnosti čekaju u bliskoj budućnosti.",
+          "reversed": "Okolišteni princ štapiće, možete da doživite gubitak motivacije, žurbe ili nepažnje u bliskoj budućnosti.",
+          "keywords": [
+            "inspiracija",
+            "otkriće",
+            "hrabrost",
+            "iskustvo",
+            "radoznalost"
+          ],
+          "context": "Vaša bliža budućnost će biti oblikovana hrabrom koracima ili užurbanosti."
+        },
+        "position7": {
+          "upright": "Princ of Vands, vi ste u energiji novih ideja, radoznalosti i otkrića trenutno.",
+          "reversed": "Okolišteni princ štapiće, možete da doživite gubitak motivacije, nepažnje, ili nedostatak entuzijazma.",
+          "keywords": [
+            "radoznalost",
+            "inspiracija",
+            "hrabrost",
+            "otkriće",
+            "iskustvo"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je nedostatkom istraživanja ili motivacije."
+        },
+        "position8": {
+          "upright": "Princ Vands donosi spoljne uticaje, vesti koje pozivaju na istraživanje, male mogućnosti koje podstiču eksperimentisanje i intrigantne signale.",
+          "reversed": "Invertirani princ štapiće, spoljni faktori mogu da predstave raštrkane poruke, prazne ćudbe ili ometajuće predloge.",
+          "keywords": [
+            "otkriće",
+            "vesti",
+            "pokušati",
+            "radoznalost",
+            "iskra"
+          ],
+          "context": "Spoljni uticaji mogu podstaći ili zaustaviti eksperimentiranje."
+        },
+        "position9": {
+          "upright": "Princ of Vands, možda ćete se plašiti da popijete pogrešan put, budete nepažljivi ili prenošeni uzaludnim entuzijazmom.",
+          "reversed": "Okolišteni princ štapiće može ukazivati na strah od gubitka motivacije, nedostatka svrhe ili neorganizacije.",
+          "keywords": [
+            "otkriće",
+            "cilj",
+            "inspiracija",
+            "pokušati",
+            "anksioznost"
+          ],
+          "context": "Vaš strahovski centar za ulazak u pogrešnu smeru ili gubitak cilja."
+        }
+      },
+      "knightofwands": {
+        "position1": {
+          "upright": "Vitez štapiće može imati hrabrosti, želju da deluje ili energija u srcu problema.",
+          "reversed": "Ograničen vitez štapića, impetusiti, nedostatak smera ili nedoslednosti može biti izvor problema.",
+          "keywords": [
+            "hrabrost",
+            "pokret",
+            "energija",
+            "strast",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba za akcijom."
+        },
+        "position10": {
+          "upright": "Vitez štapića, ishod događaja može biti hrabri koraci, brzi razvoj i strastvene inicijative.",
+          "reversed": "Invertirani vitez štapića, ishod događaja može biti nesmotrenost, nedostatak smera ili žurba.",
+          "keywords": [
+            "hrabrost",
+            "pokret",
+            "strast",
+            "brzina",
+            "razvoj"
+          ],
+          "context": "Rezultat može biti strastveni napredak ili impeturativnost."
+        },
+        "position2": {
+          "upright": "Vitez štapića, prepreka može biti osiromašenje, nedoslednost ili kretanje bez smera. Prebrzo sprečava rešenje.",
+          "reversed": "Pretvoreni vitez štapiće, nepažnja, neodlučnost ili prekomernog uzimanja rizika može biti izvor prepreke.",
+          "keywords": [
+            "žuriti",
+            "pokret",
+            "rizikovati",
+            "nedoslednost",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje iz užurbanih i smernih pokreta."
+        },
+        "position3": {
+          "upright": "Vitez štapiće može podsvesno da preuzme podebljane korake, osipne akcije ili rizike u prošlosti.",
+          "reversed": "Invertirani vitez štapića, prošli nepažnju, nedoslednost ili nedostatak smera može se ugraditi u podsvest.",
+          "keywords": [
+            "hrabrost",
+            "rizikovati",
+            "nedoslednost",
+            "pokret",
+            "podsvestan"
+          ],
+          "context": "Prošli rizici i iskrivene akcije mogu uticati na današnje probleme."
+        },
+        "position4": {
+          "upright": "Najbolji potencijal Viteza štampe je da stavi svoje strasti u akciju, odbacuje se odvažnim rizicima i demonstrira njegov avanturistički duh.",
+          "reversed": "Invertirani vitez štapiće, da dostignete svoj potencijal, morate izbegavati žurbu i usmeriti svoju energiju na kontrolisan način.",
+          "keywords": [
+            "strast",
+            "hrabrost",
+            "avantura",
+            "pokret",
+            "energija"
+          ],
+          "context": "Vaš najbolji potencijal je hrabro staviti svoje strasti u akciju."
+        },
+        "position5": {
+          "upright": "Vitez štapića, možda ste preuzeli hrabrost akcije, ukrcali na avanture ili doživeli strastvenu inicijativu u nedavnoj prošlosti.",
+          "reversed": "Vitez štapića obrnuo je, možda ste iskusili nestrpljenje, nedostatak smera ili nepažljivog ponašanja u nedavnoj prošlosti.",
+          "keywords": [
+            "hrabrost",
+            "pokret",
+            "avantura",
+            "strast",
+            "energija"
+          ],
+          "context": "Vaša nedavna prošlost možda je oblikovana hrabrošću ili nepažnjom."
+        },
+        "position6": {
+          "upright": "Vitez štapića, možete doživeti strastvenu inicijativu, odvažni korak ili avanturistički proces u bliskoj budućnosti.",
+          "reversed": "Ukrasan vitez štapića može ukazivati na nestrpljenje, nedostatak smera ili ponašanja osiromašenja u bliskoj budućnosti.",
+          "keywords": [
+            "strast",
+            "hrabrost",
+            "avantura",
+            "pokret",
+            "energija"
+          ],
+          "context": "Vaša bliža budućnost oblikovaće se odvažnim inicijativama ili užurbanosti."
+        },
+        "position7": {
+          "upright": "Vitez štapića, možda strastveno preduzimaju akcije i odmah pohađate korake.",
+          "reversed": "Vitez štapića obrnuto, možda ćete pogoditi žurba, nedostatak smera ili nestrpljenja trenutno.",
+          "keywords": [
+            "strast",
+            "hrabrost",
+            "pokret",
+            "avantura",
+            "energija"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je hrabrim koracima ili užurbanosti."
+        },
+        "position8": {
+          "upright": "Vitez štapića, spoljni uticaji mogu nositi hrabre skokove, poziv na akciju i avanturu.",
+          "reversed": "Invertirani vitez štapiće, spoljni faktori mogu stvoriti žurbu, nesmotrenost ili nekretnine.",
+          "keywords": [
+            "hrabrost",
+            "pokret",
+            "skok",
+            "avantura",
+            "energija"
+          ],
+          "context": "Spoljni uticaji mogu brzo da naprave ili prekinu."
+        },
+        "position9": {
+          "upright": "Vitez štapiće, možete se bojati žurbeći, preduzimanje akcije bez razmišljanja ili ignorisajući rizike.",
+          "reversed": "Vraćeni vitez štapića može ukazivati na strah da je neuravnotežen, nesmotreni ili smerni.",
+          "keywords": [
+            "žuriti",
+            "rizikovati",
+            "pokret",
+            "ravnoteža",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi se fokusiraju na požurivanje ili nedostatak smera."
+        }
+      },
+      "queenofwands": {
+        "position1": {
+          "upright": "Kraljica štapića može imati samopouzdanje, liderstvo ili karizmu u srcu problema.",
+          "reversed": "Invertirana kraljica štapića, nedostatak samopouzdanja, ljubomore ili pitanja ovlašćenja mogu biti izvor problema.",
+          "keywords": [
+            "poverenje",
+            "rukovodstvo",
+            "karizma",
+            "hrabrost",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba za samopouzdanim stavom."
+        },
+        "position10": {
+          "upright": "Kraljica štapića može imati samopouzdanje, harizmu i snažno rukovodstvo kao rezultat događaja.",
+          "reversed": "Invertirana kraljica štapića, može biti ljubomora, nesigurnost ili neravnoteža kao rezultat događaja.",
+          "keywords": [
+            "poverenje",
+            "karizma",
+            "rukovodstvo",
+            "snaga",
+            "čarolija"
+          ],
+          "context": "Rezultat može biti snažan stav ili neravnoteža."
+        },
+        "position2": {
+          "upright": "Kraljica štapića, prepreka može biti nedostatak samopouzdanja, ljubomore ili straha od liderstva. Skrivanje sopstvene svetlosti vas zadržava.",
+          "reversed": "Invertirana kraljica štapića, pitanja ovlašćenja, neodlučnost ili zasjenjena od strane drugih može biti izvor prepreke.",
+          "keywords": [
+            "poverenje",
+            "rukovodstvo",
+            "karizma",
+            "ljubomora",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje od nedostatka samopouzdanja i straha od liderstva."
+        },
+        "position3": {
+          "upright": "Kraljica štapića može podsvestiti prošlost iskustva da bude samouverena, pretpostavljajući liderstvo ili prikazivanje harizme.",
+          "reversed": "Invertirana kraljica štapića, prošli gubitak samopouzdanja, ljubomore ili biti u senci drugih, možda su bili posvećeni podsvesti.",
+          "keywords": [
+            "poverenje",
+            "rukovodstvo",
+            "karizma",
+            "ljubomora",
+            "podsvestan"
+          ],
+          "context": "Prošle iskustva samopouzdanja ili ljubomosti možda su oblikovale današnje probleme."
+        },
+        "position4": {
+          "upright": "Kraljica štapića odnosi se na prikazivanje samopouzdanja svog najboljeg potencijala, izvezujući šarm i pokazati inspirativno rukovodstvo.",
+          "reversed": "Invertirana kraljica štapića da dostigne vaš potencijal, morate da prolijete svoje nesigurnosti i zasjajte svoje unutrašnje svetlo.",
+          "keywords": [
+            "poverenje",
+            "rukovodstvo",
+            "povući",
+            "inspiracija",
+            "karizma"
+          ],
+          "context": "Vaš najbolji potencijal je voditi sa pouzdanjem."
+        },
+        "position5": {
+          "upright": "Kraljica štapića, možda ste pokazali svoje samopouzdanje, pokazali svoj šarm ili je bila inspirativna figura u nedavnoj prošlosti.",
+          "reversed": "Ograničena kraljica štapića, možda ste iskusni nesigurnost, ljubomoru ili pad energije u nedavnoj prošlosti.",
+          "keywords": [
+            "poverenje",
+            "povući",
+            "inspiracija",
+            "rukovodstvo",
+            "energija"
+          ],
+          "context": "Vaša nedavna prošlost je možda oblikovana iskustvom samopouzdanja ili nesigurnosti."
+        },
+        "position6": {
+          "upright": "Kraljica štapića, vodit ćete se samopouzdanje, šarmom i nadahnjujući liderstvo u bliskoj budućnosti.",
+          "reversed": "Prekoračio kraljicu štapića, možda ćete doživeti nesigurnost, ljubomoru ili smanjenje energije u bliskoj budućnosti.",
+          "keywords": [
+            "poverenje",
+            "rukovodstvo",
+            "inspiracija",
+            "povući",
+            "energija"
+          ],
+          "context": "Vaša bliska budućnost će se oblikovati samopouzdanje ili nesigurnost."
+        },
+        "position7": {
+          "upright": "Kraljica štapića, već ste sigurni, nadahnjuju se i prelazite sa veoma magnetnom energijom.",
+          "reversed": "Ograničena kraljica štapića, nesigurnost, ljubomora, ili pad energije može vas u to vreme izazivati.",
+          "keywords": [
+            "poverenje",
+            "rukovodstvo",
+            "povući",
+            "inspiracija",
+            "energija"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je samopouzdanje ili nesigurnost."
+        },
+        "position8": {
+          "upright": "Kraljica štapića, spoljni okruženje može ponuditi inspirativne figure, podrške mreže i okruženja koja podstanjuju samopouzdanje.",
+          "reversed": "Invertirana kraljica štapića, spoljni uticaji mogu stvoriti ljubomoru, pasivne agresivne stavove ili situacije koje podrivaju poverenje.",
+          "keywords": [
+            "poverenje",
+            "karizma",
+            "podrška",
+            "inspiracija",
+            "povući"
+          ],
+          "context": "Spoljni uticaji mogu uljepšiti njeno svetlo ili baciti senku."
+        },
+        "position9": {
+          "upright": "Kraljica štapića, možeš se bojati gubitka samopouzdanja, potcenjujući svoju moć ili gubitak atraktivnosti.",
+          "reversed": "Kraljica štapića obrnuta može ukazivati na strah od ljubomore, nesigurnosti ili nestabilnosti.",
+          "keywords": [
+            "poverenje",
+            "čarolija",
+            "karizma",
+            "nesigurnost",
+            "anksioznost"
+          ],
+          "context": "Fokusira se na vaše strahove, gubitak samopouzdanja ili neravnoteže."
+        }
+      },
+      "kingofwands": {
+        "position1": {
+          "upright": "Kralj štapića, potreba za vizijom, vođstvom ili kontrolom može biti u srcu problema.",
+          "reversed": "Invertirani kralj štapića, nedostatak smera, stavove za dominiranje ili nedostatak vizije može biti izvor problema.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "kontrola",
+            "karizma",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba za snažnom vizijom i pravcem."
+        },
+        "position10": {
+          "upright": "Kralj štapića može imati vizionarno rukovodstvo, uspeh i snažan smer kao rezultat događaja.",
+          "reversed": "Invertirani kralj štapića, ishod događaja može biti autoritarizam, dezorijentacija ili arogacija.",
+          "keywords": [
+            "rukovodstvo",
+            "vizija",
+            "uspeh",
+            "vlast",
+            "snaga"
+          ],
+          "context": "Rezultat može biti vizionarski uspeh ili nedostatak smera."
+        },
+        "position2": {
+          "upright": "Kralj štapića, prepreka može biti nedostatak vizije, kontrolna pitanja ili nedostatak smera. Suzbijanje potencijala liderstva otežava rešenje.",
+          "reversed": "Invertirani kralj štapića, dominering, nestrpljivost ili nedostatak vizije može biti izvor prepreke.",
+          "keywords": [
+            "vizija",
+            "kontrola",
+            "rukovodstvo",
+            "pravac",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje zbog nedostatka vidnih i kontrolnih problema."
+        },
+        "position3": {
+          "upright": "Kralj štapića možda je podsvesno bio vizionarski, lider ili smer u prošlosti.",
+          "reversed": "Invertirani kralj štapića, prošli nedostatak vizije, dominiranja ili nedostatka smera možda su se smestili u podsvijesti.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "pravac",
+            "ugnjetavanje",
+            "podsvestan"
+          ],
+          "context": "Prošle vizije i iskustvene iskustva mogu uticati na današnje probleme."
+        },
+        "position4": {
+          "upright": "Kralj štapića odnosi se na manifestiranje vizije vašeg najboljeg potencijala, biti odlučni vođa i nadahnjujući ih oko vas.",
+          "reversed": "Preokrenuo je kralja štapiće, da dostignete svoj potencijal, morate da pustite svoju potrebu za prekomernom kontrolom i delite svoju viziju.",
+          "keywords": [
+            "vizija",
+            "rukovodstvo",
+            "inspiracija",
+            "stabilnost",
+            "hrabrost"
+          ],
+          "context": "Vaš najbolji potencijal dolazi od vodećeg sa vidom."
+        },
+        "position5": {
+          "upright": "Kralj štapića, možda ste pokazali liderstvo u nedavnoj prošlosti, pokazali svoju viziju ili inspirisali one oko sebe.",
+          "reversed": "Prekoračio je kralja štapića, možda ste doživeli prekomernu domineriju, želju za kontrolom ili nedostatka vizije u nedavnoj prošlosti.",
+          "keywords": [
+            "rukovodstvo",
+            "vizija",
+            "inspiracija",
+            "kontrola",
+            "karizma"
+          ],
+          "context": "Vaša nedavna prošlost možda je obeležena opsesijom vođstvom ili kontrolom."
+        },
+        "position6": {
+          "upright": "Kralj štapića, moći ćete da vodite svoju viziju i nadahnite one oko sebe u bliskoj budućnosti.",
+          "reversed": "Invertirani kralj štapića, ugnjetavanja, želja za kontrolom ili nedostatka vizije može doći do izražaja u bliskoj budućnosti.",
+          "keywords": [
+            "rukovodstvo",
+            "vizija",
+            "inspiracija",
+            "karizma",
+            "hrabrost"
+          ],
+          "context": "Vaša neposredna budućnost će se oblikovati potrebom za vidom ili kontrolom."
+        },
+        "position7": {
+          "upright": "Kralj štapića, trenutno ste u vizionari, određenoj i vodećoj energiji.",
+          "reversed": "Prekoračio je kralja štapića, možda će vas osporiti željom za kontrolu, dominiranje ili nedostatak vizije.",
+          "keywords": [
+            "rukovodstvo",
+            "vizija",
+            "inspiracija",
+            "karizma",
+            "hrabrost"
+          ],
+          "context": "Vaša trenutna situacija je oblikovana potrebom za vidom ili kontrolom."
+        },
+        "position8": {
+          "upright": "Kralj štapića, spoljni uticaji mogu podržati vizionarno liderstvo, mentorstvo i fokus velikom slikom.",
+          "reversed": "Invertirani kralj štapića, spoljni faktori mogu donijeti autoritarni pritisak, želju za kontrolu ili vođenje bez viđenja.",
+          "keywords": [
+            "rukovodstvo",
+            "vizija",
+            "uticaj",
+            "strategija",
+            "izgradnja"
+          ],
+          "context": "Spoljni uticaji mogu povećati viziju ili suziti ga pritiskom."
+        },
+        "position9": {
+          "upright": "Kralj štapića, možda ćete se plašiti da ne možete voditi, izgubiti viziju ili padati od autoriteta.",
+          "reversed": "Prekoračeni kralj štapića može ukazivati na strah od ugnjetavnih ličnosti, anksioznosti o zločinci ili nedostatku vizije.",
+          "keywords": [
+            "rukovodstvo",
+            "vizija",
+            "vlast",
+            "ugnjetavanje",
+            "anksioznost"
+          ],
+          "context": "Vaš strahovski centar okolo u toku nije doložen ili gubitak smera."
+        }
+      },
+      "aceofpentacles": {
+        "position1": {
+          "upright": "ACE PENTACLES-a može biti u srcu problema: nova prilika, finansijska sigurnost ili želja za uspostavljanjem čvrste temelje.",
+          "reversed": "Ograničeni as pentacles, propuštene prilike, nestabilnost ili finansijska nesigurnost može biti izvor problema.",
+          "keywords": [
+            "prilika",
+            "Finansijska sigurnost",
+            "osnova",
+            "početak",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potraga za konkretnom mogućnostima ili sigurnošću."
+        },
+        "position10": {
+          "upright": "ACE of Pentekla može rezultirati novim materijalnim mogućnostima, siguran početak i temelj ispunjen obiljem kao rezultat događaja.",
+          "reversed": "Reversed Ace Pentacles Ishod događaja može biti propušteno mogućnosti, pogrešne investicije ili nesigurna fondacija.",
+          "keywords": [
+            "prilika",
+            "dosta",
+            "sigurnost",
+            "početak",
+            "investicija"
+          ],
+          "context": "Rezultat može biti novi finansijski dobici ili propuštene mogućnosti."
+        },
+        "position2": {
+          "upright": "Ace Pentacles, prepreka možda neće moći da vidi nove mogućnosti, finansijska nesigurnost ili ne pronalaženje potrebne temelje za početak. Kada nemate čvrstu zemlju, postaje teško napredovati.",
+          "reversed": "Ograničena asa pentaklama, propuštenih prilika, nestabilnosti ili pogrešnih investicija može biti izvor prepreke.",
+          "keywords": [
+            "prilika",
+            "Finansijska sigurnost",
+            "osnova",
+            "investicija",
+            "prepreka"
+          ],
+          "context": "Aprestracite se pojavljuje da ne mogu da iskoriste mogućnosti i nedostatak sigurnost."
+        },
+        "position3": {
+          "upright": "Ace Pentacles može biti podsvesna potraga za novom prilikom, finansijskog starta, ili čvrste temelje koje ste iskusili u prošlosti. Ova iskustva mogu oblikovati današnje probleme.",
+          "reversed": "Invertirani ACE Pentacles, propuštene prilike, pogrešne investicije ili nestabilnost u prošlosti mogu se posvetiti podsvijesti.",
+          "keywords": [
+            "prilika",
+            "početak",
+            "Finansijska sigurnost",
+            "investicija",
+            "podsvestan"
+          ],
+          "context": "Prošle mogućnosti ili materijalne fondacije mogu se oblikovati današnji problemi."
+        },
+        "position4": {
+          "upright": "Ace of Pentacles, vaš najbolji potencijal je izgradnja novih prilika na čvrstim temeljima, stvaranje obima i napravite konkretan početak.",
+          "reversed": "Ace Pentacles je preokrenuo, da dostignete svoj potencijal, morate prepustiti strahu da nestane, preuzmite nove korake sa samopouzdanjem i izaberite stabilnost.",
+          "keywords": [
+            "početak",
+            "dosta",
+            "stabilnost",
+            "uverenje",
+            "prilika"
+          ],
+          "context": "Vaš najbolji potencijal je da sa pouzdanjem iskoriste nove finansijske mogućnosti."
+        },
+        "position5": {
+          "upright": "ACE OF PENTACLES: Nova prilika, posao ili finansijski početak možda je došlo u nedavnoj prošlosti. Nosite energiju da biste položili jake temelje.",
+          "reversed": "Ace of Pentacles se preokrenuo, možda ste doživeli nedavnu propuštenu priliku, pogrešnu investiciju ili nedostatak stabilnosti.",
+          "keywords": [
+            "prilika",
+            "početak",
+            "dosta",
+            "investicija",
+            "stabilnost"
+          ],
+          "context": "Vaša nedavna prošlost je možda oblikovana oduzimanjem ili nedostajućim finansijskim mogućnostima."
+        },
+        "position6": {
+          "upright": "ACE OF PENTACLES: Nova finansijska prilika, pokretanje preduzeća ili energija stvaranja snažne temelje može doći do izražaja u bliskoj budućnosti.",
+          "reversed": "Invertirani ACE Pentacles, mogu se propustiti mogućnosti, pogrešna ulaganja ili nedostatak stabilnosti u bliskoj budućnosti.",
+          "keywords": [
+            "prilika",
+            "početak",
+            "dosta",
+            "investicija",
+            "osnova"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati uspostavljanjem čvrstih fondacija ili nedostajućih mogućnosti."
+        },
+        "position7": {
+          "upright": "ACE of Pentecles, trenutno postoji nova finansijska prilika, čvrst početak ili energija za stvaranje snažne temelje u vašem životu.",
+          "reversed": "Ukrao je Ace Pentacles, trenutno možda imate poteškoće u proceni mogućnosti, možda ćete doživeti pogrešne investicije ili nedostatak stabilnosti.",
+          "keywords": [
+            "prilika",
+            "početak",
+            "dosta",
+            "investicija",
+            "osnova"
+          ],
+          "context": "Objavljuje se uticajem trenutne situacije, mogućnosti ili nestabilnosti."
+        },
+        "position8": {
+          "upright": "Ace Pentacles-a, spoljni uticaji mogu vam doneti novu finansijsku priliku, čvrst početak ili ponudu koja će pružiti stabilnost.",
+          "reversed": "Ace of Pentacles obrnut, spoljni uticaji mogu vas dovesti do propuštenih prilika, pogrešnih ulaganja ili nesigurnosti.",
+          "keywords": [
+            "prilika",
+            "početak",
+            "dosta",
+            "investicija",
+            "osnova"
+          ],
+          "context": "Spoljni uticaji mogu predstaviti mogućnosti ili stvoriti nestabilnost."
+        },
+        "position9": {
+          "upright": "Ace of Pentacles, možda se plašite nestalih mogućnosti, a ne možete da pružite finansijsku sigurnost ili ne možete da uspostave čvrste temelje.",
+          "reversed": "ACE Of Pentacles obrnut može ukazivati na nesigurnost, nesigurnost ili anksioznost u vezi sa pokretanjem.",
+          "keywords": [
+            "prilika",
+            "uverenje",
+            "početak",
+            "investicija",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi se fokusiraju na to da ne mogu da iskoriste finansijske mogućnosti ili ne mogu da uspostave stabilnost."
+        }
+      },
+      "twoofpentacles": {
+        "position1": {
+          "upright": "Dvojica Pentekla mogu se usredsrediti na potragu za ravnotežom, više odgovornosti ili prioriteta.",
+          "reversed": "Pretvorena dva pentakla, neravnoteža, nedostatak kontrole ili loše upravljanje resursima mogu biti izvor problema.",
+          "keywords": [
+            "ravnoteža",
+            "prioritet",
+            "odgovornost",
+            "fleksibilnost",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba za uravnoteživanjem resursa."
+        },
+        "position10": {
+          "upright": "Dvoje pentakala, ishod događaja može biti uravnoteženo upravljanje, fleksibilnost i balansiranje odgovornosti.",
+          "reversed": "Pretvoreno dva pentakla, kao rezultat događaja, može postojati neravnoteža, preplavljena odgovornostima ili disharmonijom.",
+          "keywords": [
+            "ravnoteža",
+            "odgovornost",
+            "fleksibilnost",
+            "raport",
+            "odluka"
+          ]
+        }
+      }
+    }
+  }
+}

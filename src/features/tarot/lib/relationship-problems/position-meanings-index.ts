@@ -1,3 +1,5 @@
+'use client';
+
 /*
 info:
 Bağlantılı dosyalar:
@@ -532,6 +534,130 @@ export const getRelationshipProblemsStatistics = () => {
   };
 };
 
+/**
+ * i18n destekli Relationship Problems anlam fonksiyonu
+ * @param cardName - Kart adı (örn: "The Fool")
+ * @param position - Pozisyon numarası (1-9)
+ * @param t - i18n translate fonksiyonu
+ * @returns i18n destekli anlam veya null
+ */
+export const getI18nRelationshipProblemsMeaningByCardAndPosition = (
+  cardName: string,
+  position: number,
+  t: (_key: string) => string
+): RelationshipProblemsPositionMeaning | null => {
+  // Orijinal anlamı al
+  let originalMeaning: RelationshipProblemsPositionMeaning | null = null;
+
+  switch (position) {
+    case 1:
+      originalMeaning =
+        getRelationshipProblemsPosition1MeaningByCardName(cardName);
+      break;
+    case 2:
+      originalMeaning =
+        getRelationshipProblemsposition2MeaningByCardName(cardName);
+      break;
+    case 3:
+      originalMeaning =
+        getRelationshipProblemsposition3MeaningByCardName(cardName);
+      break;
+    case 4:
+      originalMeaning =
+        getRelationshipProblemsposition4MeaningByCardName(cardName);
+      break;
+    case 5:
+      originalMeaning =
+        getRelationshipProblemsposition5MeaningByCardName(cardName);
+      break;
+    case 6:
+      originalMeaning =
+        getRelationshipProblemsposition6MeaningByCardName(cardName);
+      break;
+    case 7:
+      originalMeaning =
+        getRelationshipProblemsposition7MeaningByCardName(cardName);
+      break;
+    case 8:
+      originalMeaning =
+        getRelationshipProblemsposition8MeaningByCardName(cardName);
+      break;
+    case 9:
+      originalMeaning =
+        getRelationshipProblemsposition9MeaningByCardName(cardName);
+      break;
+    default:
+      return null;
+  }
+
+  if (!originalMeaning) {
+    return null;
+  }
+
+  // i18n'den çevirileri al
+  const cardKey = cardName
+    .toLowerCase()
+    .replace(/\s+/g, '')
+    .replace(/[^a-z0-9]/g, '');
+
+  const i18nUpright = t(
+    `relationship-problems.meanings.${cardKey}.position${position}.upright`
+  );
+  const i18nReversed = t(
+    `relationship-problems.meanings.${cardKey}.position${position}.reversed`
+  );
+  const i18nKeywords = t(
+    `relationship-problems.meanings.${cardKey}.position${position}.keywords`
+  );
+  const i18nContext = t(
+    `relationship-problems.meanings.${cardKey}.position${position}.context`
+  );
+
+  // i18n çevirisi mevcut değilse orijinali kullan
+  const isI18nAvailable =
+    i18nUpright && !i18nUpright.startsWith('relationship-problems.meanings.');
+
+  return {
+    ...originalMeaning,
+    upright: isI18nAvailable ? i18nUpright : originalMeaning.upright,
+    reversed:
+      i18nReversed &&
+      !i18nReversed.startsWith('relationship-problems.meanings.')
+        ? i18nReversed
+        : originalMeaning.reversed,
+    keywords: (() => {
+      if (
+        !i18nKeywords ||
+        i18nKeywords.startsWith('relationship-problems.meanings.')
+      ) {
+        return originalMeaning.keywords;
+      }
+      // Keywords zaten array olabilir veya JSON string olabilir
+      if (Array.isArray(i18nKeywords)) {
+        return i18nKeywords;
+      }
+      try {
+        const parsed = JSON.parse(i18nKeywords);
+        if (Array.isArray(parsed)) {
+          return parsed;
+        }
+        return originalMeaning.keywords;
+      } catch (error) {
+        console.error(
+          `[Relationship Problems Position ${position}] Failed to parse keywords for ${cardName}:`,
+          error
+        );
+        return originalMeaning.keywords;
+      }
+    })(),
+    context:
+      i18nContext &&
+      !i18nContext.startsWith('relationship-problems.meanings.')
+        ? i18nContext
+        : originalMeaning.context,
+  };
+};
+
 // Varsayılan export
 const relationshipProblemsExports = {
   getRelationshipProblemsMeaningByCardAndPosition,
@@ -548,6 +674,8 @@ const relationshipProblemsExports = {
   searchRelationshipProblemsMeaningsByCardName,
   searchRelationshipProblemsMeaningsByKeyword,
   getRelationshipProblemsStatistics,
+  // i18n destekli fonksiyon
+  getI18nRelationshipProblemsMeaningByCardAndPosition,
   // Tüm pozisyon özel fonksiyonları
   getRelationshipProblemsPosition1Meaning,
   getRelationshipProblemsPosition1MeaningByCardName,

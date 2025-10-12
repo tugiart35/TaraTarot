@@ -12,7 +12,7 @@ export default function LoveReading(props: any) {
 
   // TarotComponent'i hook'ların içinde oluştur
   const TarotComponent = createTarotReadingComponent({
-    getConfig: () => createLoveConfig(),
+    getConfig: () => createLoveConfig(t), // t fonksiyonunu parametre olarak ver
     interpretationEmoji: '❤️',
     getCardMeaning: (
       card: TarotCard | null,

@@ -1,0 +1,868 @@
+{
+  "blog": {
+    "cards": {
+      "seven-of-cups": {
+        "story": {
+          "mystic_title": "Duhovno značenje: između stvarnosti i mašte",
+          "mystic_message": "Duhovno, ova kartica uči kako pravilno usmera snagu sna. Sanjanje bez probijanja od stvarnosti je najčišći oblik stvaranja.",
+          "cultural_title": "Moderna interpretacija: Pažljivi izbori",
+          "cultural_message": "U današnjem svetu, sedam šoljica predstavlja višak informacija i distrakcije. Povratak na svoje prave želje i slušajte glas koji vodi vaše srce.",
+          "lesson": "San, ali ne grešite. Izaberite svetlošću svog srca, jer ne svaka šolja ima isti sjaj."
+        },
+        "keywords": {
+          "keywords_title": "Sedam ključnih reči u šoljima",
+          "keywords_message": "Sedam šoljica Tarot znači, sedam šoljica turske, opcije, snovi, iluzija, odlučivanje, stvarnost",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Kreativnost, vizija, inspiracija, potencijal, duhovno istraživanje.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Nije sve što blista zlato. Intuitivno razaznati istinu.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Vaši snovi su vaš vodič, ali ako vam um postane oblačno, slušajte svoje srce."
+        },
+        "associations": {
+          "title": "Sedam šoljica kosmičkih veza",
+          "astrology": "Ribe (mašta, emocionalnost, intuicija)",
+          "numerology": "7 (Tražim, svest, duhovna dubina)",
+          "element": "Voda - san, emocija, inspiracija",
+          "chakra": "Treće oko (čelo Chakra) - intuicija i vizija"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa sedam srca",
+          "combinations": [
+            {
+              "card": "Mesec",
+              "meaning": "Iluzije i snovi se intenziviraju; Krenuti naprijed sa vođstvom intuicije."
+            },
+            {
+              "card": "Ace srca",
+              "meaning": "Snovi postaju emocionalno betonski, srce postaje vodič."
+            },
+            {
+              "card": "Osam šoljica",
+              "meaning": "Napustite nerealne opcije i okrenite se duhovnoj pravednosti."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Sedam CUPS potvrda",
+          "affirmation_list": [
+            "Istinu vidim svojom intuicijom i izaberem ga svojim srcem.",
+            "Svoje snove usmeravam sa mudrošću i ostavljam iluzije iza sebe.",
+            "Moj um je jasan, moje srce je moj vodič."
+          ]
+        },
+        "cta": {
+          "main": "Razjasnite svoje snove, izaberite šta će postati stvarnost!",
+          "micro": "Zapišite san danas, a zatim ponesite prvi mali korak da biste to učinili stvarnošću."
+        },
+        "faq": [
+          {
+            "question": "Šta zastupa sedam srca?",
+            "answer": "Sedam šoljica predstavlja snove, iluzije, obilje opcija i poteškoća u donošenju odluka. To je kartica za razlikovanje stvarnosti i fantazije."
+          },
+          {
+            "question": "Šta znači obrnuti sedam šoljica?",
+            "answer": "Invertirani položaj simbolizuje jasnoću, odlučivanje i rasipanje neizvesnosti. Sada znate šta vaše srce želi."
+          },
+          {
+            "question": "U kojim situacijama je kartica jaka?",
+            "answer": "Jak je u kreativnosti, razvoju vida, intuitivne svesti i procese donošenja odluka."
+          }
+        ],
+        "related_cards": [
+          "mesec",
+          "osam šoljica",
+          "Ace-Cups"
+        ],
+        "imageUrl": "/cards/rvs/vii-cups.vebp"
+      },
+      "eight-of-cups": {
+        "name": "Osam šoljica - oproštaj, unutrašnji put i svesno odlazak",
+        "short_description": "Osam šoljica predstavlja svesno prepuštanje emocionalnih veza koje više ne služe, prilazeći novom putu sa unutrašnjim smernicama i duhovnim sazrevanjem.",
+        "meanings": {
+          "upright": {
+            "general": "Osam šoljica je vreme da se oduzmete težinu vašeg srca sa ramena i namjerno hodate prema novom putu koji će vas rasti. Čaše ostavljene iza cifre predstavljaju završene emocionalne cikluse i priče koje vas više ne odgovaraju. Ova kartica savetuje zarastanje prepuštanja, odlazeći sa mudrošću i verujući nepoznatom.",
+            "love": "Zaljubljena, osam šoljica signalizira kraj faze odnosa ili potrebe da se odseli od veze koja ne može da napreduje emocionalno. Ovo razdvajanje nije uvek \"izgubljeno\"; Ponekad je to neophodno čišćenje da se dostigne dublje celovitost.",
+            "career": "U karijeri je vreme svesnog odvajanja od projekata, okruženja ili uloga. Boravak u vašoj zoni komfora možda vas zadržava nazad; Poziv na akciju za novu poziciju, drugačiji put ili projekat koji odgovara vašoj strasti.",
+            "money": "U finansijskim uslovima, osam šoljica ukazuje na potrebu da se oslobode nepotrebnih finansijskih obaveza i prihvataju neke kratkoročne žrtve za dugoročni mir. Pazite na potrošnju na emocionalne razloge.",
+            "spiritual": "Na duhovnom nivou, ova kartica sugerira poštovanje unutrašnjeg poziva, birajući život koji služi višim ciljevima duše. Meditacija, posao sanja i da je sama u prirodi ubrzavaju isceljenje."
+          },
+          "reversed": {
+            "general": "Invertirani položaj ukazuje na izbegavanje, prebivalište u prošlosti ili odbijajući da se oprosti. Možda ne možete da preduzmete mere zbog straha ili krivice. Hrabrost dolazi iznutra; Kretati se prema slobodi sa malim, svesnim koracima.",
+            "love": "Zaljubljena, obrnuta osam simbolizuje produženje odnosa koji treba da završi, želja da se ponovo poveže ili strah od razdvajanja. Neophodna su emocionalna iskrenost i jasne granice.",
+            "career": "Postavljate u karijeri znači da se ne odrekne udobnosti i sigurnosti, blokirajući potencijal. Uzmite realne korake da se otkriju naizgled sigurni lanci.",
+            "money": "Finansijski, postoji rizik da se zaglavi u starom potrošnjoj navike ili održavanju štetnih investicija. Ponavljajte i učite od grešaka.",
+            "spiritual": "Duhovno, to znači da ne sluša unutrašnjeg poziva ili odlaže duhovnu transformaciju. Radite kroz strahove i ponovo se ponovo povežite sa malim ritualima."
+          }
+        },
+        "context": {
+          "mythology": "Kod mitoloških narativa heroji često napuštaju dom, svet ili ljubav iza i uđu u nepoznato. Osam šoljica je jedan od onih herojskih trenutaka: trofeje ostavljene su naučene lekcije; Putovanje je poziv zrelosti i sudbine.",
+          "celtic_cross": {
+            "future": "Možda ćete morati da okončate neke emocionalne zavisnosti za spokoj i nove horizonte koje vas čekaju u budućnosti. Ovaj postupak će otvoriti nova vrata u skladu sa vašim unutrašnjim smernicama.",
+            "hidden_influences": "Nerešeni emotivni teretnici iz prošlosti mogu uticati na njihove izbore. Podsvesna nostalgija i 'nada se da će vam se moći bolje \"možda vas zadržava."
+          }
+        },
+        "story": {
+          "title": "Osam šoljica - prelazeći most",
+          "description": "U ponoć, figura polako ulazi u svetlost osam šoljica koje se postavlja iza. Čaše koje stoje iza njega su simboli prošlih iskustava i završene priče. Postoji trag i tuge i odlučnosti na ličnosti lica; Sve što nosi je nada i šapat njegovog unutrašnjeg vodiča. U daljini se pojavljuje sjaj nove doline - ovaj korak nije lak, ali je potreban za dušu.",
+          "historytitle": "Istorijsko poreklo: Simbol napuštanja",
+          "history_message": "Osam šoljica predstavlja oproštaj, dobrovoljno razdvajanje i duhovne potrage od klasičnih slika za čišćenje jahača. Tradicionalne interpretacije tretiraju ovu karticu kao dve strane tuge i slobode.",
+          "mystic_title": "Duhovna poruka: Odlazite hrabrošću",
+          "mystic_message": "Vaša duša želi da budete oslobođeni opterećenja koje više ne čine da rastete. Ovo nije napušteno, to bira izlečenje. Pogledajte svoju senku i zahvalite je; Zatim nastavite na putu.",
+          "cultural_title": "Moderna interpretacija: Svesno odlazak",
+          "cultural_message": "U modernom kontekstu, osam šoljica je poziv za \"emocionalni minimalizam\" i izgradnja zdravih granica. Ne dozvolite da vas socijalni mediji, prošle okolnosti ili obrasce odnosa vas vraćaju.",
+          "lesson": "Prepuštanje hrabrosti; Svako svesno odvajanje je rođenje novog sloja duše. Oproštajni rituali, spisi ili simbolički rituali ubrzavaju zarastanje."
+        },
+        "keywords": {
+          "keywords_title": "Osam šoljica -",
+          "keywords_message": "Osam šoljica koje znače, osam šoljica na turskom, oproštajnoj tarotu, odvajanje Tarota, duhovno putovanje, svesno odvajanje",
+          "positive_title": "Osnovne pozitivne teme",
+          "positive_message": "Svesno oproštaj, duhovni rast, unutrašnja hrabrost, prečišćavanje, nova putovanja.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Znajte razliku između bežanja od mogućnosti i boravka u strahu. Ako prekid ne isceljuje, potražite podršku.",
+          "soul_title": "Duhovni fokus",
+          "soul_message": "Slušajte pravi poziv u svom srcu; Ponekad je rast moguć kroz ono što ostavljate iza sebe."
+        },
+        "associations": {
+          "title": "Osam čaše kosmičkih veza",
+          "astrology": "PISCE / NEPTUNE UTICAJ (duhovna potraga, inspiracija, oproštajni) - ponekad problemi emocionalne veze dolaze na prednji plan u raku.",
+          "numerology": "8 (ciklusi, završetak, novi pravac)",
+          "element": "Voda (emocije, transformacija, unutrašnje putovanje)",
+          "chakra": "Srce i treće oko (isceljenje srca i unutrašnjih uvjeslivanja)"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa osam šoljica",
+          "combinations": [
+            {
+              "card": "Devet srca",
+              "meaning": "Unutrašnje zadovoljstvo i ispunjenje želja nakon oproštanja; Mirnije emocionalna država od mesta gde ste stali."
+            },
+            {
+              "card": "Deset mačeva",
+              "meaning": "Kraj noćnog ponavljanja ciklusa; ponovno rođenje nakon nadira bola."
+            },
+            {
+              "card": "Pustinjak",
+              "meaning": "Sama hodanje je produbljeno prečišćavanje i sticanje mudrosti sa unutrašnjim smernicama."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Kup osam potvrda",
+          "affirmation_list": [
+            "Poštujem prošlost i sada izaberem novi put za svoju dušu.",
+            "Prepuštanje je lekovima; Svaki korak me čini stvarnijim svojim suštinom.",
+            "Verujem svoje unutrašnje smernice i u korak u nepoznato."
+          ]
+        },
+        "cta": {
+          "main": "Slušajte uputstva za isceljenje u sebi; Nežno pustite ono što vam više ne odgovara i zakorači na novi put.",
+          "micro": "Danas uradite \"oproštaj ritualni ritual\" zapišite stare i pustite ih sigurno."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja osam šoljica?",
+            "answer": "Predstavlja svesno odvajanje, duhovno putovanje i odseljavanje od emocionalnih priloga koji vam više ne služe. Ovo je karta zrelosti i unutrašnje hrabrosti."
+          },
+          {
+            "question": "Šta znači obrnuti osam šoljica?",
+            "answer": "Invertirani položaj je tendencija da se prebivate u prošlosti, izbegavajte zbogom ili odložite promenu. Potrebno je da se krene napred sa malim, određenim koracima."
+          },
+          {
+            "question": "U kojim situacijama je ova kartica snažna?",
+            "answer": "Snažno je u svesnim pauzama u odnosima, promene u karijeri, ponovno utvrđivanje životnog pravca i duhovnih transformacijskih procesa."
+          }
+        ],
+        "related_cards": [
+          "sedam šoljica",
+          "devet šoljica",
+          "pustinjak"
+        ],
+        "imageUrl": "/cards/rvs / viii-cups.vebp"
+      },
+      "nine-of-cups": {
+        "name": "Devet šoljica - ispunjenje želja i emocionalno zadovoljstvo",
+        "short_description": "Devet šoljica predstavlja period kada se želje ostvaruju, srce je zadovoljno, a emocionalno zadovoljstvo dostiže vrhunac. Ova kartica je manifestacija energije unutrašnjeg mira i zahvalnosti.",
+        "meanings": {
+          "upright": {
+            "general": "Devet šoljica je obično poznato kao \"Kartica za želju\". To nosi potencijal za nešto što želite da se ostvarite. Ova kartica simbolizuje period u kojem su integrisane unutrašnji mir, radost, sreću i osećaj uspeha. Vaš dugogodišnji napor će biti nagrađen; Sada je vreme da dišete sa zadovoljstvom.",
+            "love": "Zaljubljena, emocionalno zadovoljstvo, romantična harmonija i obostrana sreća su na čelu. Poverenje se povećava u postojećim odnosima, a ako ste samac, postoji velika verovatnoća da će se upoznati nekoga ko će vam ispuniti srce.",
+            "career": "To je period uspeha karijere, prepoznavanja i povećanog samopoštovanja. Vaši napori su uvaženi, projekti prinosni rezultatima. Nastavite da se krećete napred sa ponosom.",
+            "money": "Finansijski, energija stabilnosti i obima dominira. Pored materijalnog blagostanja, postiže se i emocionalno zadovoljstvo. Održavajte zahvalnost.",
+            "spiritual": "U duhovnom smislu, ova kartica je simbol unutrašnjeg mira i zadovoljstva. Osećate se celokupno i potpuno; Rezonira sa obilje energije duše."
+          },
+          "reversed": {
+            "general": "Devet obrnutih Cups-a može predstavljati površno zadovoljstvo, privremenu sreću ili masku zadovoljstva koja sakriva unutrašnju prazninu. Može postojati tendencija traženja istinskog mira u materijalnim ili spoljnim izvorima.",
+            "love": "Invertirani položaj u ljubavi znači da prvo postavlja svoje potrebe ili osećaj emocionalnog nezadovoljstva. Ravnoteža sa saosećanjem.",
+            "career": "U vašoj karijeri, čak i ako ste postigli uspeh, možete se osećati interno nezadovoljnim. Sećate se ponovo svoju pravu strast.",
+            "money": "Čak i ako postoji finansijsko obilje, može postojati nedostatak emocionalnog zadovoljstva. Počinje da se traži značenje izvan novca.",
+            "spiritual": "Duhovno je ova kartica poziv da nadilazi površno zadovoljstvo i traži pravi mir srca."
+          }
+        },
+        "context": {
+          "mythology": "Devet šoljica predstavlja sveti trenutak u drevnim mitovima kada su želje odobrene i boginje osmeha plodnosti. Ova kartica opisuje ravnotežu i želje i zahvalnosti.",
+          "celtic_cross": {
+            "future": "Ispunjavanje vaših želja, unutrašnji mir ili emocionalno zadovoljstvo može vam uskoro pronaći. Održavati energiju zahvalnosti.",
+            "hidden_influences": "Granice koje vas nesvesno postavljate za sebe možda vas sprečavaju da osećate punu sreću."
+          }
+        },
+        "story": {
+          "title": "Devet šoljica - na vratima želja",
+          "description": "Na kartici se čovek s ponosom sjedi ispred devet trofeja postrojenih iza njega. Ova scena predstavlja postignuti uspeh i unutrašnji mir. Ali pogled na njegovo lice i podseća nas da je pravo zadovoljstvo nađeno u deljenju, ne samo da pobedi.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Devet šoljica naziva se \"karticama srećom\" ili \"ispunjenje želja\" u drevnim tarotskim tradicijama. Ova kartica nosi energiju zadovoljstva koja dolazi posle napora.",
+          "mystic_title": "Duhovno značenje: ispunjenje kroz zahvalnost",
+          "mystic_message": "Duhovno, ova kartica vas poziva na svest ispunjenu zahvalnošću. Dok održavate svest o obilju, život vam nudi više.",
+          "cultural_title": "Moderna interpretacija: unutrašnje bogatstvo",
+          "cultural_message": "U modernom svetu, devet šoljica je poziv za uživanje u uspehom i ojačati svest o samo-vrednosti. Deljenje sreće sa drugima povećava obilje.",
+          "lesson": "Prava želja je skrivena u miru vašeg srca. Budite zahvalni, delite, pojednostavite; Jer je suština zadovoljstva u vašem srcu."
+        },
+        "keywords": {
+          "keywords_title": "Devet ključnih reči srca",
+          "keywords_message": "Devet šoljica Tarot znači, devet čaša turskih, karata želja, emocionalno zadovoljstvo, sreća, obilje, zahvalnost",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Sreća, zadovoljstvo, uspeh, obilje, samopoštovanje, emocionalno stanje.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Ne tražite zadovoljstvo od spoljnih izvora; Negujte unutrašnji mir sa zahvalnošću.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Zadovoljstvo nije napolju; To je u mirnom centru vašeg srca."
+        },
+        "associations": {
+          "title": "Devet čaša kosmičkih veza",
+          "astrology": "Ribe (intuicija, obilje, emocionalno zadovoljstvo)",
+          "numerology": "9 (završetak, uspeh, mir)",
+          "element": "Voda - emocije, obilje, zahvalnost",
+          "chakra": "Srce i solarni pleksus - mir i samo-vrednost"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa devet srca",
+          "combinations": [
+            {
+              "card": "Deset šoljica",
+              "meaning": "Potpuno emocionalno zadovoljstvo i porodična sreća se javljaju. Pravi mir postaje trajan."
+            },
+            {
+              "card": "Sunce",
+              "meaning": "Radost, uspeh i obilje u životu dostižu svoj vrhunac. Vaše želje se ostvaruju."
+            },
+            {
+              "card": "Osam šoljica",
+              "meaning": "Nakon oproštenog perioda, sada se vaša srčana želja ostvari; Nagrada dolazi sa mirom."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Devet potvrda srca",
+          "affirmation_list": [
+            "Moje želje se ostvaruju jer mi je srce ispunjeno zahvalnošću.",
+            "Zagrljavam sa zahvalnošću ljepotima koje mi život nudi.",
+            "Sreća se rodi u meni i povećava se sa svakim dahom."
+          ]
+        },
+        "cta": {
+          "main": "Budite zahvalni, proslavite i počastite želju svog srca. Raste energiju obilja deljenjem!",
+          "micro": "Zapišite tri stvari na kojima ste danas zahvalni i hvala univerzumu."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja devet srca?",
+            "answer": "Devet šoljica predstavlja ispunjenost želja, unutrašnji mir i emocionalno zadovoljstvo. Poznat je kao \"Kartica želja\"."
+          },
+          {
+            "question": "Šta znači obrnuti devet šoljica?",
+            "answer": "Invertirani položaj simbolizuje osećaj površne sreće ili unutrašnje praznine. To je poziv za pronalaženje istinskog zadovoljstva u srcu."
+          },
+          {
+            "question": "U kojim situacijama je kartica jaka?",
+            "answer": "To je snažno tokom perioda uspeha, zahvalnosti, obilja i emocionalnog ispunjenja. Sjaji u trenucima kada se manifestuju želje."
+          }
+        ],
+        "related_cards": [
+          "osam šoljica",
+          "deset šoljica",
+          "sunce"
+        ],
+        "imageUrl": "/cards/rvs/ik-cups.vebp"
+      },
+      "ten-of-cups": {
+        "name": "Deset šoljica - porodica, harmonija i emocionalni završetak",
+        "short_description": "Deset šoljica predstavlja vrhunac emocionalne celovitosti, porodične harmonije i duhovnog ispunjenja. Ova kartica je stanje svete ravnoteže u kojem se ljubav i mir koji dolaze od srca širene na sve oblasti života.",
+        "meanings": {
+          "upright": {
+            "general": "Deset šoljica je jedna od najsrećnijih karata u Tarotu. Ova kartica simbolizuje mir iz srca, ljubavnih obveznica i unutrašnji integritet. Dostićite vrhunac i emocionalnog i duhovnog zadovoljstva. U vašem životu preovlađuje ravnotežu, mir i harmonija. Univerzum vam donosi osećaj \"završetka\".",
+            "love": "Zaljubljeni, deset šoljica predstavlja pravu ljubav, trajna sreća i porodične veze. Vaš odnos ulazi u mirnu fazu ili je vreme da upoznate srodnu srodnu dušu. Ljubav, poverenje i energija rasta zajedno su na čelu.",
+            "career": "U karijeri postoji proces koji rezultira harmonijom i uspehom u timu. Poslovni život kombinuje lično zadovoljstvo i emocionalnu ravnotežu. Žetićete plodove projekata za koje ste dugo vremena ciljali.",
+            "money": "Finansijski, preovlađuje energija obilja i stabilnosti. Sa novcem dolazi mir uma. Ali stvarni dobitak je duhovno zadovoljstvo.",
+            "spiritual": "Na duhovnom nivou, deset šoljica predstavlja unutrašnji mir i svest o univerzalnoj ljubavi. Vaše srce je u potpunoj harmoniji sa univerzumom. Ljubav sada postaje tvoja priroda."
+          },
+          "reversed": {
+            "general": "Prekoračeni deset šoljica može ukazivati na nesklad, nezakonit očekivanja ili privremene napetosti u odnosima. Potraga o spoljnoj sreći može ometati unutrašnji mir. Zapamtite ponovo izvor istinskog zadovoljstva.",
+            "love": "Invertirani položaj za ljubav ukazuje na nesporazume ili nedostatak komunikacije u porodici. Opustite očekivanja i ponovno uspostavljanje komunikacije iz srca.",
+            "career": "U karijeri može doći do nedostatka unutrašnjeg mira uprkos spoljnom uspehu. Pregledajte ravnotežu svog radnog života.",
+            "money": "Uprkos finansijskom obilju, možete osetiti emocionalno nezadovoljstvo. Imajte na umu da istinsko bogatstvo dolazi iz ljubavi.",
+            "spiritual": "Duhovno, možda postoji potreba da se poveže sa ljubavlju. Snaga meditacija i zahvalnosti vraćaju unutrašnju ravnotežu."
+          }
+        },
+        "context": {
+          "mythology": "Deset šoljica odgovara arhetipu 'bašta raja' u kreiranju mitova. Predstavlja tačku u kojoj ljubav i harmonija zadovoljavaju božansku ravnotežu. Ova kartica simbolizuje integraciju ljudske duše i bezuslovnu ljubav.",
+          "celtic_cross": {
+            "future": "Uskoro počinje period koji vam ispunjava srce ljubavlju. Mir će prevladati u porodici, odnosima i prijateljskim brodovima.",
+            "hidden_influences": "Potraga za savršenstvom ponekad može zasjeniti sreću. Pravi mir leži u realizaciji ljubavi unutar nedostataka."
+          }
+        },
+        "story": {
+          "title": "Deset šoljica - kompletan krug ljubavi",
+          "description": "Na kartici, porodica izgleda deset srca koje sede pod dugom na nebu. Dečiji plešu, roditelji se zahvaljuju nebu otvorenim rukama. Ova scena je simbol mira, ljubavi i zajedničke sreće. Deset šoljica završava ciklus ljubavi: davanje, primanje i davanje zahvalnosti zajedno.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Deset šoljica tumače se kao \"vrhunac sreće\" u vekovima palura Tarota. U srednjem veku to je viđeno kao simbol porodičnog jedinstva i socijalnog mira.",
+          "mystic_title": "Duhovno značenje: lečenje jedinstva",
+          "mystic_message": "Duhovno, ova kartica ukazuje da je srčana čakra u potpunosti otvorena i postignuta je svest bezuslovne ljubavi. Sada ste u skladu sa vlastitom i kolektivnom ljubavlju.",
+          "cultural_title": "Moderna interpretacija: miran život",
+          "cultural_message": "U savremenom svetu, deset šoljica predstavlja ravnotežu između posla, porodice i duše. Pravi uspeh se meri srčanim mirom. Pojednostavite i povežite se sa svojim najmilijima.",
+          "lesson": "Sreća nije cilj, to je deljenje. Mir raste kada ljubav slobodno teče."
+        },
+        "keywords": {
+          "keywords_title": "Deset ključnih reči u šoljima",
+          "keywords_message": "Deset šoljica Tarot znači, deset šoljica turskih, sreće, porodično skladištenje, ljubav, mir, emocionalni završetak",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Mir, porodične veze, ljubav, emocionalni integritet, ravnoteža, zadovoljstvo.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Umesto da traži savršenstvo, cenite sadašnju sreću.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Pravo na nebo nalazi se u srcu za ljubav."
+        },
+        "associations": {
+          "title": "Deset čaša kosmičkih veza",
+          "astrology": "Ribe (saosećanje, jedinstvo, ljubavnu svest)",
+          "numerology": "10 (završetak, harmonija, kraj ciklusa)",
+          "element": "Voda - ljubav, veza, emocionalno bogatstvo",
+          "chakra": "Srce čakra - bezuslovna ljubav"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa deset šoljica",
+          "combinations": [
+            {
+              "card": "Sunce",
+              "meaning": "Porodična sreća, obilje i radost se kombinuju. To je vreme istinite proslave."
+            },
+            {
+              "card": "Devet srca",
+              "meaning": "Lična sreća se pretvara u sreću zajednice. Vaši snovi se ostvaruju."
+            },
+            {
+              "card": "Ljubavnici",
+              "meaning": "Sveto unije i duhovna harmonija uzimaju vaš odnos prema božanskom nivou."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Deset potvrda srca",
+          "affirmation_list": [
+            "Okružen sam ljubavlju, moje srce je ispunjeno mirom.",
+            "Moja porodica, prijatelji i ja smo u skladu; Moj život teče obiljem.",
+            "Zahvalan sam zbog ljubavi koju mi je svemir dao."
+          ]
+        },
+        "cta": {
+          "main": "Otvorite svoje srce, delite ljubav i uzgajate ciklus mira.",
+          "micro": "Pošaljite malu hvala ili ljubavnu poruku svojim najmilijima danas."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja deset šoljica?",
+            "answer": "Deset šoljica predstavlja emocionalni završetak, porodični mir, ljubavne veze i duhovnu celovitost."
+          },
+          {
+            "question": "Šta znači obrnuti deset šoljica?",
+            "answer": "Invertirani položaj znači privremenu nesklad, pritisak očekivanja ili emocionalnog odreda. Prava sreća leži u unutrašnjoj ravnoteži."
+          },
+          {
+            "question": "U kojim situacijama je kartica jaka?",
+            "answer": "Jak je u porodičnim odnosima, braku, dugoročnim obveznicama i potragu za duhovnom integritetom."
+          }
+        ],
+        "related_cards": [
+          "devet šoljica",
+          "ljubitelji",
+          "sunce"
+        ],
+        "imageUrl": "/cards/rvs/k-cups.vebp"
+      },
+      "page-of-cups": {
+        "name": "Princ Cup-a - intuicija, inspiracija i emocionalno istraživanje",
+        "short_description": "Princ Cup-ova je mlad glasnik koji dolazi sa prvim šapatom srca, kreativne iskre i intuitivne poruke. Predstavlja čistu i nežnu energiju koja se usudi da istražuje emocije.",
+        "meanings": {
+          "upright": {
+            "general": "Princ čaša označava novo buđenje unutrašnjeg sveta. Spark svetli u vašem srcu kroz snove, intuiciju ili neočekivanu poruku. Ova energija koja dolazi sa radoznalošću i otvorenom podržava emocionalno učenje i nežno istraživanje.",
+            "love": "Zaljubljeni, princ čaša najavio je prve emocionalne geste, iskrene ispovesti ili nove emocionalne svesti. Ako ste samac, može doći ljubazna i iskrena ponuda; Ako ste u vezi, oživljava se emocionalna komunikacija.",
+            "career": "To bi mogla biti kreativna ideja u karijeri, inspirisani projekat ili podržavajuća poruka kolega. Biti otvoren za nove početke; Mala ideja može da raste vremenom.",
+            "money": "U finansijskom smislu, princ čaša ukazuje na male mogućnosti zasnovane na intuiciji i kreativnim izvorima prihoda. Možete naići na iznenadnu ponudu ili neočekivanu velikodušnost.",
+            "spiritual": "Na duhovnom nivou, ova kartica skreće pažnju na posao sanjara, meditaciju i smernice kroz simbole. Slušajte svoje unutrašnje dete; Igrajte i radoznalost gorivo duhovno otkriće."
+          },
+          "reversed": {
+            "general": "Princ Cup-ova preokrećeno je upozorenje na emocionalne adolescencije, emocionalne previranja ili razočarenja. Čuvajte se rizika od pogrešnih interpretiranja poruka, preterane i preterano razočarenja.",
+            "love": "Invertirani položaj u ljubavi može značiti nedostatak emocionalnog sazrevanja, površnih gesta ili nerazumevanja primljenih poruka. Otvorena komunikacija je važna.",
+            "career": "U karijeri, iznenadne ideje će verovatno stvoriti nerealna očekivanja ili opterećene poslovne odnose sa emocionalnim reakcijama. Ne delite ideje bez učvršćivanja.",
+            "money": "Finansijski, slepo poverenje u intuiciju ili emocionalne izdatke mogu dovesti do grešaka. Stanje logike i plana je obavezan.",
+            "spiritual": "U duhovnom carstvu upozorenje je površne duhovne prakse ili nestrpljenje u traženju smernica. Odvojite vreme da produbite."
+          }
+        },
+        "context": {
+          "mythology": "Princ srca odjekuje sa mladim glasnicima i prevodiocima iz snova u drevnim pričama. Podseća na poruku od mora ili je tajna šapnuta na mesečini; Sveže je, transformativno i ponekad iznenađujuće.",
+          "celtic_cross": {
+            "future": "Neočekivane emocionalne vesti, pozivnicu ili kreativna inspiracija mogu u bliskoj budućnosti oboriti na vaša vrata. Ovo je mali, ali važan početak.",
+            "hidden_influences": "Latentni uticaji mogu uključivati sećanja iz detinjstva, potisnute emocije ili simboličke snove. Ovi elementi predstavljaju izvor poruka."
+          }
+        },
+        "story": {
+          "title": "Princ srca - pismo koje vam je donelo snim",
+          "description": "Na plaži se nalazi napomena u kutiji koju je udubio vetar. Mlada figura koja otvara belešku nailazi na ljubavni poziv. Princ čaša je takva brojka: on donosi ljubazne vesti, unutrašnje pozive ili neočekivanu iskrupira inspiraciju. I krhki i hrabri; To je poziv za istraživanje.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Princ čaša je arhetip emocionalnih glasnika i mladenačke kreativnosti u tradicionalnom Tarotu. U renesansi i ranim tumačenim tumačenjima, poruke koje su donijele princa opisane su kao što ukazuju na rast i učenje.",
+          "mystic_title": "Duhovno značenje: Veliki uticaj malih vesti",
+          "mystic_message": "Na duhovnom nivou, princ čaša podučava da mala poruka snova, intuitivni impulsi i glas unutrašnjeg deteta mogu dovesti do glavnih transformacija. Svaka mala inspiracija može otvoriti vrata.",
+          "cultural_title": "Moderana interpretacija: intuicija u digitalnom dobu",
+          "cultural_message": "Danas princ čaša simbolizuje da je kratka poruka, neočekivana adresa e-pošte ili socijalni poziv mogu stvoriti duhovnu iskru. Ljubazna i iskrena komunikacija je važna.",
+          "lesson": "Slušajte male vesti; Šapat intuicije nežno menja put života."
+        },
+        "keywords": {
+          "keywords_title": "Princ srca",
+          "keywords_message": "Princ of Cups Tarot Značenje, stranica šoljica Turske, intuicione kartice, emocionalne vesti, tarot inspiracija, poruke iz snova",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Inspiracija, intuicija, emocionalna radoznalost, kreativnost, ljubazna vest, veza sa unutrašnjim detetom.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Ravnoteža između sirovih emocija i realnih granica; Ne skačite na svaku inspiraciju.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Slušajte male glasove; Šapat srca je pismo koje vam svetli."
+        },
+        "associations": {
+          "title": "Princ of Cups kosmičkih veza",
+          "astrology": "Neptun / Ribe uticaji (snovi, intuicija, empatija) - kvalitet messengera ojačana je impulsi živa.",
+          "numerology": "Stranica (princ) - 11/2 efekata (komunikacija, premošćivanje, dvosmerno učenje)",
+          "element": "Voda - intuicija, emocija, mašta",
+          "chakra": "Srce i treće oko - saosećajne intuicije"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa princom srca",
+          "combinations": [
+            {
+              "card": "Kraljica srca",
+              "meaning": "Emocionalna poruka Princ donosi sazrevanje i produbljuje se sa kraljičinim saosećajnim smernicama."
+            },
+            {
+              "card": "Vitez čaše",
+              "meaning": "Romantični predlog ili kreativni projekat se može pretvoriti u emocionalno putovanje; Naivnost i strasti kombinuju."
+            },
+            {
+              "card": "Mesec",
+              "meaning": "Poruke iz snova i podsvesni simboli dolaze u prvi plan; Pažljivo tumačitu intuiciju."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Princ of Hearts afirmacija",
+          "affirmation_list": [
+            "Slušam svoju intuiciju i prihvatam ljubazne poruke koje dobijam.",
+            "Inspiracija me menja u malim koracima; Nastavljam sa radoznalošću.",
+            "Slušam svoje unutrašnje dete i verujem njenim smernicama."
+          ]
+        },
+        "cta": {
+          "main": "Slušajte nežne vesti; Male inspiracije dovode do velikih transformacija.",
+          "micro": "Imajte na umu snu ili unutrašnji šapat koji dolazi danas; Ispitajte ideju inspiracije na mali način."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja princ srca?",
+            "answer": "Princ čaša predstavlja intuitivne poruke, nove emocionalne svesti i kreativnu inspiraciju. Podseća nas da male vesti mogu dovesti do velikih promena."
+          },
+          {
+            "question": "Šta znači obrnuti princ čaše?",
+            "answer": "Invertirani položaj ukazuje na emocionalnu osetljivost, razočaranje ili rizik od nerazumevanja poruka. Potrebno je strpljenje i jasnoća."
+          },
+          {
+            "question": "U kojim situacijama je kartica jaka?",
+            "answer": "Tokom perioda novih emocionalnih početaka, radna dela, kreativna inspiracija i prijemčivost na ljubazne vesti."
+          }
+        ],
+        "related_cards": [
+          "Stranice-of-pentacles",
+          "kraljica šoljica",
+          "vitez"
+        ],
+        "imageUrl": "/cards/rvs / page-cups.vebp"
+      },
+      "knight-of-cups": {
+        "name": "Knight of Cups - Romantika, inspiracija i emocionalno putovanje",
+        "short_description": "Vitez čaše je heroj koji je vođen srcu. Prihodi sa intuicijom, emocijom i inspiracijom; Predstavlja emocionalno istraživanje i kreativni koraci.",
+        "meanings": {
+          "upright": {
+            "general": "Vitez CAP-a ukazuje da su emocije i kreativnost aktivno na putu. Vreme je da izrazite svoja osećanja i uključite se u romantične ili umetničke nastojanja. Hrabri koraci i iskrene namere dolaze do izražaja.",
+            "love": "Zaljubljeni, to je Harbinger of romantičnih predloga, emocionalne otvorenosti i strastvene pobožnosti. Može započeti novi odnos ili ukazati na emocionalno produbljivanje u postojećem odnosu.",
+            "career": "U karijeri, kreativni projekti, inspirisani zadaci ili empatični pristup kolegama dolaze do izražaja. Sledeća inspiracija može dovesti do projekata u uspeh.",
+            "money": "Finansijski, intuicione investicije i tokovi kreativnih prihoda dolaze u igru. Proceniti rizike veštanjem vaše intuicije; Prilike se mogu kombinovati sa vašom emocionalnom inteligencijom.",
+            "spiritual": "Duhovno, vitez Cupa promoviše emocionalni i duhovni rast meditacijom, ritualnim ili unutrašnjim putovanjima. Važno je verovati u vođstvu vašeg srca."
+          },
+          "reversed": {
+            "general": "Vitez čaše je preokrenulo upozorene na emocionalnu nestabilnost, razočaranje ili površnu romantiku. Vaše emocije mogu biti nekontrolisane ili preterano idealizovane.",
+            "love": "Invertirana pozicija za ljubav pokazuje rizik od emocionalnih iluzija, razočaranja ili nerazumevanja emocionalnih poruka. Potrebna je jasnoća i realna procena.",
+            "career": "Prekomerna emocionalna ili nerealna očekivanja mogu prouzrokovati probleme u karijeri i projektima. Očvrstite planove i odvojite vreme.",
+            "money": "Finansijski, slepo poverenje intuicije ili emocionalne odluke mogu dovesti do grešaka. Logička analiza je od suštinskog značaja.",
+            "spiritual": "U duhovnom polju, preterano romantizovani ili površni duhovni pristupi daju upozorenje. Važno je ići duboko i biti uravnotežen."
+          }
+        },
+        "context": {
+          "mythology": "Vitez čaše povezano je sa arhetipom heroja koji sledi put srca u drevnim mitovima. Inicira putovanje emocionalnog otkrivanja i inspiracije sa tečnošću energije vodenog elementa.",
+          "celtic_cross": {
+            "future": "Emotivni ili kreativni poziv, predlog ili nadahnjujuća prilika mogu nastati u bliskoj budućnosti. Slušajte svoje srce.",
+            "hidden_influences": "Možda postoje skriveni uticaji, potisnuti emocije ili intuitivne poruke. Važno je prepoznati izvor svojih emocija."
+          }
+        },
+        "story": {
+          "title": "Knight of Cups - Putnika srca",
+          "description": "Rekom, vitez hoda napred, podižući svoju šolju visoko. Kup simbolizuje unutrašnje inspiraciju i emocionalne poruke. Njegovo putovanje je vođeno hrabrom i ljubazno srcem. Vitez čaše je vodič koji deluje sa emocijama i intuicijom.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Vitez čaše je prikazan u tradicionalnoj tarotu kao harbinger emocionalnih i kreativnih putovanja. U srednjovekovnim kartama uparen je sa podacima pesnika i romantičnih heroja.",
+          "mystic_title": "Duhovno značenje: emocionalno putovanje",
+          "mystic_message": "Duhovno, ova kartica predaje emocionalnu inteligenciju, prateći srce i unutrašnje inspiraciju. Svaki korak je prilika za učenje i unutrašnji rast.",
+          "cultural_title": "Moderna interpretacija: inspiracija i empatija",
+          "cultural_message": "U savremenoj eri vitez šoljica predstavlja emocionalnu komunikaciju, kreativne projekte i ljubazno, ljubazno ponašanje. Empatija i srčana veza su na čelu.",
+          "lesson": "Djelovati sa emocijama i inspiracijom; Budite hrabri i ljubazni na putu."
+        },
+        "keywords": {
+          "keywords_title": "Knight of Cups - SEO ključne reči",
+          "keywords_message": "Knight of Cups Tarot Značenje, vitez čaše Turski, emocionalno putovanje, romantika, inspiracija kartica, kreativnost Tarota, djelovanje sa intuicijom",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Romantika, inspiracija, emocionalni izraz, nežna hrabrost, kreativno putovanje, uputstvo srca.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Ravnoteža između mašte i realizma; Pregledajte emocionalne odluke.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Verujte u vodstvo svog srca; Inspiracija osvetljava vaš put na vašem emocionalnom putovanju."
+        },
+        "associations": {
+          "title": "Knight of Cups kosmičkih veza",
+          "astrology": "Uticaj Venere / Riba (emocionalna inteligencija, romantika, inspiracija)",
+          "numerology": "Knight - 12/3 (pokret, kreativni protok, paming)",
+          "element": "Voda - intuicija, emocije, mašta",
+          "chakra": "Srce i sakralna - emocionalna ravnoteža i kreativna energija"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa vitezom čaše",
+          "combinations": [
+            {
+              "card": "Princ srca",
+              "meaning": "Sveže emocionalne poruke princa postaju romantično ili kreativno putovanje u kombinaciji sa vitezom."
+            },
+            {
+              "card": "Kraljica srca",
+              "meaning": "Emocionalna zrelost i saosećajne smernice produbljuju vitezovu energiju i pružaju stabilnost."
+            },
+            {
+              "card": "Ljubavnici",
+              "meaning": "Romantika i emocionalne odluke postaju moćna prilika za jedinstvo ili izbor sa vitezovom akcijom."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Vitez na CUPS Afirmacije",
+          "affirmation_list": [
+            "Izražavam svoja osećanja hrabro i nježno.",
+            "Otvoren sam za kreativna i emocionalna putovanja vođena svojim srcem.",
+            "Ponašam se sa inspiracijom i empatijom, svaki korak je prilika za učenje."
+          ]
+        },
+        "cta": {
+          "main": "Pratite svoje srce i budite hrabri na vašem emocionalnom putovanju!",
+          "micro": "Imao je emocionalnu poruku ili je danas stavio kreativnu inspiraciju u akciju."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja vitez čaše?",
+            "answer": "Vitez čaše predstavlja romantiku, inspiraciju, emocionalno istraživanje i kreativna putovanja. Važno je verovati uputstva srca."
+          },
+          {
+            "question": "Šta znači obrnuti vitez šoljica?",
+            "answer": "Invertirani položaj ukazuje na emocionalnu nestabilnost, razočaranje ili rizik od nerazumevanja emocionalnih poruka. Jasnost i ravnoteža su od suštinskog značaja."
+          },
+          {
+            "question": "U kojim situacijama je kartica jaka?",
+            "answer": "Jak je u romantičnim predlozima, kreativnim projektima, emocionalnim putovanjima i inspirisanim počecima."
+          }
+        ],
+        "related_cards": [
+          "Page-of-of Cups",
+          "kraljica šoljica",
+          "ljubitelji"
+        ],
+        "imageUrl": "/cards/rvs/knight-cups.vebp"
+      },
+      "queen-of-cups": {
+        "name": "Kueen of Cups - emocionalna zrelost i saosećanje",
+        "short_description": "Kraljica šoljica je simbol emocionalne zrelosti, intuicije i saosećanja. On se ponaša sa empatijom i vešt je u razumevanju emocija drugih.",
+        "meanings": {
+          "upright": {
+            "general": "Kraljica šoljica predstavlja emocionalnu ravnotežu, saosećanje i deluje sa intuitivnom svešću. Može da vodi ljude i ojačati odnose sa emocionalnom inteligencijom.",
+            "love": "Zaljubljeni, pokazuje duboku naklonost, razumevanje i emocionalnu posvećenost. Empatija i podrška su na čelu u vezi. Ako ste samci, postoji mogućnost da se neko upozna sa duhovnim harmonijom.",
+            "career": "U polju karijere važni su saradnja, empatija i intuitivno rukovodstvo. Možete preuzeti podršku i razumevanje uloge u timu.",
+            "money": "Finansijski, možete upravljati resursima da verujete svojoj intuiciji. Možete biti uspešni u investicijama ili kolaboracijama koristeći svoju emocionalnu inteligenciju.",
+            "spiritual": "Na duhovnom nivou, kraljica šoljica predstavlja unutrašnji mir meditacijom, saosećanje i intuitivne svesti. Može da vodi druge."
+          },
+          "reversed": {
+            "general": "Kraljica Cups-a preokrećena ukazuje na rizik od emocionalne nestabilnosti, prekomerno osetljivosti ili preterano oslanjanje na osećanja drugih. Važno je postaviti ograničenja za sebe.",
+            "love": "Zaljubljeni, obrnuti položaj simbolizuje rizik od emocionalne zavisnosti, ljubomore ili nesporazuma. Podesite zdrave granice.",
+            "career": "U karijeri, preterano emotivni pristup ili sastojak strane mogu stvoriti probleme. Ne zaboravite da budete objektivni.",
+            "money": "Finansijski, preopterećenje ili emocionalne odluke mogu dovesti do gubitaka. Senljivo planiranje je neophodno.",
+            "spiritual": "U duhovnom smislu, preokrenuta kraljica podstiče intuiciju sa pogrešnom interpretacijom ili emocionalnom složenošću. Pronađite ravnotežu."
+          }
+        },
+        "context": {
+          "mythology": "Kraljica šoljica povezana je sa boginjama saosećanja i intuicije u drevnim mitologijama. Predstavlja emocionalni protok i unutrašnje smernice sa vodenim elementom.",
+          "celtic_cross": {
+            "future": "U bliskoj budućnosti, situacije koje ste približavaju emocionalnom zrelosti i saosećanju će doći do izražaja. Vaše empatično ponašanje će biti efikasno.",
+            "hidden_influences": "Latentni uticaji mogu biti vaša sposobnost da intuitivno doživljavaju potrebe drugih i pružite emocionalnu podršku."
+          }
+        },
+        "story": {
+          "title": "Kraljica šoljica - vladar saosećanja i intuicije",
+          "description": "Kraljica drži svoju šolju u ruci dok je sedela na svom prestolu; Predstavlja svetlost dubokog emocionalnog znanja i intuicije unutar. Njegovo smernice je osvetlilo svoje i druge emocionalne putovanja. Dobiva svačije poverenje svojim nežnim i uravnoteženim pristupom.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Kraljica šoljica predstavlja žensku figuru emocionalne zrelosti i saosećanja u tarot palubi. U srednjovekovnim i renesansnim karticama identifikovana je sa intuitivnim i podržanim ženskim figurama.",
+          "mystic_title": "Duhovno značenje: intuicija i saosećanje",
+          "mystic_message": "Duhovno, kraljica nosi poruku sledeće intuicije, održavajući emocionalnu ravnotežu i deluje sa saosećanjem. Svaki korak jača duhovnu zrelost.",
+          "cultural_title": "Savremeni komentar: Empatija i podrška",
+          "cultural_message": "Danas kraljica šoljica simbolizuje figuru empatičnog lidera, savetnika ili saosećanja. Istaknuta je povezivanje sa ljudima i pružanje podrške.",
+          "lesson": "Djeluju sa emocionalnom zrelošću, saosećanje i intuicijom. Vodite i sebe i druge."
+        },
+        "keywords": {
+          "keywords_title": "Ključna reč KUEEN OF HERSE",
+          "keywords_message": "Kueen of Cups Tarot Značenje, kraljica šoljica Turski, emocionalna zrelost, intuicija, saosećanje, empatija, voditelj Tarot",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Emocionalna zrelost, saosećanje, intuicija, empatija, smernice, unutrašnja ravnoteža.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Izbegavajte emocionalne krajnosti; Održavajte ravnotežu između empatije i granica.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Djelovati sa intuicijom i saosećanje; negujte sebe i druge."
+        },
+        "associations": {
+          "title": "Kraljica srca kosmičkih veza",
+          "astrology": "Rak (empatija, emocionalna inteligencija, saosećanje)",
+          "numerology": "Kueen - 13/4 (zrelost, ravnoteža, smernice)",
+          "element": "Voda - emocije, empatija, saosećanje",
+          "chakra": "Srce i sakralno - emocionalno stanje i intuicija"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa kraljicom srca",
+          "combinations": [
+            {
+              "card": "Vitez čaše",
+              "meaning": "Knight-ova inspiracija i emocionalna akcija u kombinaciji sa zrelošću i saosećanjem kraljice stvaraju efikasno i uravnoteženo emotivno putovanje."
+            },
+            {
+              "card": "Princ srca",
+              "meaning": "Sveže emocionalne poruke princa poravnavaju se sa kraljičinom intuitivnom mudrošću."
+            },
+            {
+              "card": "Ljubavnici",
+              "meaning": "Emocionalna zrelost i svesni izbor stvaraju snažni bilans u partnerstvu i romantičnim vezama."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Kueen of Hearts afirmacija",
+          "affirmation_list": [
+            "Izražavam balans i saosećajno svoje emocije.",
+            "Verujem svojoj intuiciji i približavam se drugima sa empatijom.",
+            "Nudim podršku i ravnotežu vođenim svojim srcem."
+          ]
+        },
+        "cta": {
+          "main": "Koristite svoju intuiciju i saosećanje, negujte sebe i druge!",
+          "micro": "Podržavajte nekoga ili danas izrazite svoja osećanja."
+        },
+        "faq": [
+          {
+            "question": "Šta zastupa kraljica srca?",
+            "answer": "Predstavlja emocionalnu zrelost, intuiciju, saosećanje i empatiju. Emocionalne smernice i unutrašnja ravnoteža su na čelu."
+          },
+          {
+            "question": "Šta znači preokrenuta kraljica šoljica?",
+            "answer": "Invertirani položaj ukazuje na emocionalnu nestabilnost, prekomernu osetljivost ili prekomernu zavisnost od drugih. Zdrave granice su bitne."
+          },
+          {
+            "question": "U kojim situacijama je kartica jaka?",
+            "answer": "Moćan je u emocionalnim smernicama, kreativnim projektima, odnosima i situacijama koje zahtevaju empatiju i saosećanje."
+          }
+        ],
+        "related_cards": [
+          "vitez",
+          "Page-of-of Cups",
+          "ljubitelji"
+        ],
+        "imageUrl": "/cards/rvs/kueen-cups.vebp"
+      },
+      "king-of-cups": {
+        "name": "Kralj šoljica - emocionalna zrelost i smernice",
+        "short_description": "Kralj šoljica simbolizuje emocionalnu zrelost, uravnoteženo vođstvo i sposobnost saosećanja drugih. On upravlja svojim emocijama i daje samopouzdanje onima oko njega.",
+        "meanings": {
+          "upright": {
+            "general": "Kralj šoljica predstavlja zrelu emocionalnu inteligenciju i ravnotežu. Sposoban da upravlja složenim emocionalnim situacijama, vodi druge sa saosećanjem i ostanite mirni u teškim situacijama.",
+            "love": "Zaljubljeni, to vodi odnos sa dubokom posvećenošću i razumevanjem. Empatija i strpljenje su na čelu. Održavate emocionalnu ravnotežu sa partnerom i izgradite poverenje u odnos.",
+            "career": "U polju karijere su istaknute liderstvo, mentorstvo i saradnja. Možete da rešite probleme i stvorite pozitivno radno okruženje sa emocionalnom inteligencijom u svom timu.",
+            "money": "Sposobnost delovanja uravnoteženog i odgovornog u finansijskim pitanjima je na čelu. Ulažete ulaganja i budžeta sa intuicijom i logikom.",
+            "spiritual": "Na duhovnom nivou, kralj šoljica je povezan sa meditacijom, unutrašnjom ravnotežom i emocionalnim smernicama. Uči vas da budete saosećajni prema drugima i sebi."
+          },
+          "reversed": {
+            "general": "Kralj šoljica obrnut ukazuje na tendenciju ka emocionalne nestabilnosti, manipulaciji ili prevelikoj metogu. Možda imate poteškoća da upravljate svojim emocijama ili pokušate da na njih emocionalno utičete na druge.",
+            "love": "Zaljubljeni, obrnuti položaj simbolizuje emocionalnu nestabilnost ili rizik da manipuliše odnosom. Otvorena komunikacija je od suštinskog značaja.",
+            "career": "U karijeri, obrnuti kralj može stvoriti probleme zbog kontrole ponašanja ili emocionalnih reakcija. Potrebno je pronaći ravnotežu.",
+            "money": "Finansijski, neuravnotežena potrošnja ili emocionalne odluke mogu dovesti do gubitaka. Budite planirani i logični.",
+            "spiritual": "U duhovnom smislu, obrnuta kraljica ukazuje na rizik od prevelike zavisnosti od emocija drugih ili zanemarivanje unutrašnjih smernica."
+          }
+        },
+        "context": {
+          "mythology": "Kralj šoljica povezan je sa podacima emocionalne ravnoteže, mudrosti i rukovodstva u mitologiji. Predstavlja emocionalni protok i unutrašnje smernice sa vodenim elementom.",
+          "celtic_cross": {
+            "future": "U budućnosti će se pojaviti situacije koje zahtevaju emocionalnu zrelost i uravnoteženo rukovodstvo. Saosećanje i uputstvo će biti na čelu.",
+            "hidden_influences": "Latentni uticaji podržavaju sposobnost intuitivne razumevanja emocionalnih potreba drugih i donose prave odluke."
+          }
+        },
+        "story": {
+          "title": "Kralj šoljica - Majstor emocija i smernica",
+          "description": "Kralj drži svoju šolju u ruci dok je sedeo na svom prestolu; Predstavlja mirnost vodenog elementa i svetlo duboke emocionalne mudrosti. Označava emocionalnu zrelost, mogućnost vođenja drugih i ostati mirna u teškim situacijama.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Kralj šoljica je slika koja predstavlja emocionalnu zrelost i liderstvo u tarot palumima. U srednjovekovnim i renesansnim karticama, on je prikazan kao mirna i mudra muška figura.",
+          "mystic_title": "Duhovno značenje: ravnoteža i smernice",
+          "mystic_message": "Duhovno nas kralj uči da nađemo emocionalnu ravnotežu, da vodimo sa saosećanjem i da ostanemo mirni u teškim situacijama. Važno je razumeti i podržati osećanja drugih.",
+          "cultural_title": "Moderna interpretacija: Empatični vođa i mentor",
+          "cultural_message": "Danas kralj šoljica predstavlja lidera, mentora ili savetnik sa emocionalnom inteligencijom. On se odlikuje pri povezivanju sa ljudima i nudi podršku.",
+          "lesson": "Kada se emocionalna zrelost i smernice kombinuju sa liderstvom i saosećanjem, možete da vodite i sebe i druge."
+        },
+        "keywords": {
+          "keywords_title": "King Of Hearts Seo Ključne reči",
+          "keywords_message": "King of Cups Tarot znači, kralj šoljica Turski, emocionalna zrelost, rukovodstvo, smernica, saosećanje, Empatija Tarot",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Emocionalna ravnoteža, saosećanje, smernice, liderstvo, empatija, unutrašnja mudrost.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Održavaju ravnotežu između emocionalne kontrole i smernica drugima; Izbegavajte manipulaciju.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Deluju sa emocionalnom zrelošću i smernicama; Podržite i sebe i druge."
+        },
+        "associations": {
+          "title": "Kralj srca kosmičkih veza",
+          "astrology": "Ribe (intuicija, empatija, emocionalna mudrost)",
+          "numerology": "King - 14/5 (zrelost, liderstvo, uputstvo)",
+          "element": "Voda - emocije, empatija, saosećanje",
+          "chakra": "Srce i sakralno - emocionalno stanje, smernice i intuicija"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa kraljem srca",
+          "combinations": [
+            {
+              "card": "Kraljica šoljica",
+              "meaning": "Kraljičina empatija i intuicija, u kombinaciji sa kraljevim zrelim i uravnoteženim uputstvima, pružaju snažnu i uravnoteženu emocionalnu vezu."
+            },
+            {
+              "card": "Vitez čaše",
+              "meaning": "Vitezova emocionalna inicijativa i kraljeve smernice podrške odnosa ili napredak projekta sa namerom i uravnoteženom akcijom."
+            },
+            {
+              "card": "Kočija",
+              "meaning": "Kada se emocionalno ravnoteža i voljna snaga kombinuju, teške situacije uspešno upravljaju i na kontrolirani način."
+            }
+          ]
+        },
+        "affirmations": {
+          "title": "Potvrde kralja srca",
+          "affirmation_list": [
+            "Ja upravljam balansiranjem svoje emocije i svesno.",
+            "Vodim i podržavam druge sa saosećanjem.",
+            "Ponašam se mirno i snažno, vođen svojim srcem."
+          ]
+        },
+        "cta": {
+          "main": "Koristite svoju emocionalnu zrelost, vodite druge i održavajte ravnotežu!",
+          "micro": "Podržavajte nekoga danas ili mirno rukovati tešku situaciju."
+        },
+        "faq": [
+          {
+            "question": "Šta predstavlja kralj srca?",
+            "answer": "Predstavlja emocionalnu zrelost, liderstvo, uputstvo i saosećanje. Emocionalna inteligencija i empatija su na čelu."
+          },
+          {
+            "question": "Šta znači obrnuti kralj šoljica?",
+            "answer": "Invertirani položaj pokazuje tendenciju prema emocionalnom nestabilnosti, manipulaciji ili prevelikoj metogovor. Emocionalna menadžmenta i granice su važne."
+          },
+          {
+            "question": "U kojim situacijama je kartica jaka?",
+            "answer": "Moćan je za emocionalne smernice, liderstvo, situacije koje zahtevaju empatiju i teške odluke."
+          }
+        ],
+        "related_cards": [
+          "kraljica šoljica",
+          "vitez",
+          "karita"
+        ],
+        "imageUrl": "/cards/rvs/king-cups.vebp"
+      },
+      "ace-of-swords": {
+        "name": "Ace mačeva - jasnoća i nove misli",
+        "short_description": "Ace mačeva predstavlja mentalnu jasnoću, nove ideje i moć da se upita stvarnost. Simbolizuje snažan početak za oštre inteligencije i fer odluke.",
+        "imageUrl": "/cards/rvs / toace-ssvords.vebp",
+        "meanings": {
+          "upright": {
+            "general": "Ace mačeva donosi mentalnu jasnoću i nove misli. Idealno je vreme da se vidi istinu, praveći fer odluke i jasnoću u komunikaciji.",
+            "love": "Zaljubljena, otvorena komunikacija i iskrenost su na čelu. Dobijate jasnoću u odnosima i izrazite svoja prava osećanja.",
+            "career": "Odličan je period za nove projekte, oštre odluke i mentalni uspeh u karijeri. Nastavite pravdom i iskrenošću.",
+            "money": "Napredak je dat u finansijskim pitanjima sa jasnim odlukama i logičkim planovima. Obratite pažnju na detalje.",
+            "spiritual": "Duhovno, mentalna svest i sposobnost da se vide unutrašnja istina su ojačana. Meditacija i misaoni disciplina su korisne."
+          },
+          "reversed": {
+            "general": "Ace mačeva preokrenuli su rizik od mentalne zbrke, komunikacione probleme ili pogrešne odluke. Izbegavajte emocionalne reakcije.",
+            "love": "Zaljubljeni, nesporazumi ili oštre komunikacije mogu oštetiti odnos. Budite strpljivi i razumeti.",
+            "career": "Neudnošljivost ili neispravni planovi u vašoj karijeri mogu prouzrokovati probleme. Uradite više istraživanja.",
+            "money": "Ne delujte užurbano u finansijskim odlukama. Budite razumni i oprezni.",
+            "spiritual": "Možda postoje mentalni blokovi ili unutrašnji sukobi. Pokušajte da steknete jasnoću meditacijom."
+          }
+        },
+        "context": {
+          "mythology": "ACE mačeva predstavlja mentalnu jasnoću i sposobnost da se ugleda stvarnost, sa snagom vazdušnog elementa. U mitologiji, pravdi i mudrosti simbolizuju mač.",
+          "celtic_cross": {
+            "future": "U budućnosti možete da preduzmete važne korake sa mentalnim širenjem i jasnim odlukama.",
+            "hidden_influences": "Latentni uticaji povezani su sa logičkim, prošlim iskustvom i procesima učenja."
+          }
+        },
+        "story": {
+          "title": "Ace mačeva - mač istine",
+          "description": "Na kartici, ruka drži mač sa neba, mač ukrašen krunom simbolizuje snagu i pravdu. Ovo je početak mentalne jasnoće i sposobnost da se vidi stvarnost.",
+          "historytitle": "Istorijsko poreklo",
+          "history_message": "Ace mačeva je poznata kao simbol mentalne snage i pravde u maloj lučnoj arci tarota. U srednjem veku, mač je predstavio viteštvo i iskrenost.",
+          "mystic_title": "Duhovno značenje: mentalno prosvetljenje",
+          "mystic_message": "Duhovno, ACE mačeva je uvod na istupiju, mentalnu disciplinu i unutrašnju pravdu.",
+          "cultural_title": "Savremeni komentar: Jasne odluke",
+          "cultural_message": "U modernom svetu, ACE mačeva predstavlja logično razmišljanje, jasnu komunikaciju i fer donošenje odluka.",
+          "lesson": "Oštrite svoj um, potražite istinu i ponašajte se pravdom."
+        },
+        "keywords": {
+          "keywords_title": "Ključne reči mačeva",
+          "keywords_message": "Ace mačeva Tarot znači, as mačeva turskih, mentalne jasnoće, nove ideje, pravda, istina",
+          "positive_title": "Pozitivne teme",
+          "positive_message": "Mentalna jasnoća, pravda, istina, nove ideje, oštra inteligencija.",
+          "balance_title": "Bilans i upozorenje",
+          "balance_message": "Biti logičan, a ne emotivan; Budite strpljivi i oprezni da vidite istinu.",
+          "soul_title": "Duhovna poruka",
+          "soul_message": "Potražite istinu, disciplinirajte svoje mišljenje i ponašajte se pravedno."
+        },
+        "associations": {
+          "title": "Ace mačeva kosmičkih veza",
+          "astrology": "Blizanci (komunikacija, inteligencija, radoznalost)",
+          "numerology": "1 (novi početak, potencijal, snaga)",
+          "element": "Vazduh - inteligencija, komunikacija, misli",
+          "chakra": "Grlo (grlo čakre) - Komunikacija i istina"
+        },
+        "card_combinations": {
+          "title": "Istaknuti kombinacije sa ACE mačeva"
+        }
+      }
+    }
+  }
+}

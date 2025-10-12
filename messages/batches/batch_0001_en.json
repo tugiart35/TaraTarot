@@ -1,0 +1,936 @@
+{
+  "career": {
+    "meanings": {
+      "thefool": {
+        "position1": {
+          "keywords": {
+            "0": "new beginning",
+            "1": "Courage",
+            "2": "freedom",
+            "3": "risk",
+            "4": "adventure"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "Courage",
+            "1": "experience",
+            "2": "innovation",
+            "3": "risk",
+            "4": "freedom"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "== sync, corrected by elderman == @elder_man",
+            "1": "risk",
+            "2": "uncertainty",
+            "3": "surprise",
+            "4": "freedom"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "Courage",
+            "1": "Originality",
+            "2": "curiosity",
+            "3": "performance",
+            "4": "freedom"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "innovation",
+            "1": "Courage",
+            "2": "risk",
+            "3": "start",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "Unplanned",
+            "1": "risk",
+            "2": "Courage",
+            "3": "uncertainty",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "new beginning",
+            "1": "freedom",
+            "2": "adventure",
+            "3": "risk",
+            "4": "future"
+          }
+        }
+      },
+      "themagician": {
+        "position1": {
+          "keywords": {
+            "0": "creativity",
+            "1": "potential",
+            "2": "communication",
+            "3": "Vision",
+            "4": "power"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "creativity",
+            "1": "skill",
+            "2": "communication",
+            "3": "Self - confidence",
+            "4": "potential"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "opportunity",
+            "1": "creativity",
+            "2": "communication",
+            "3": "timing",
+            "4": "external effect"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "skill",
+            "1": "potential",
+            "2": "creativity",
+            "3": "Self - confidence",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "skill",
+            "1": "creativity",
+            "2": "communication",
+            "3": "focus",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "potential",
+            "1": "manipulation",
+            "2": "creativity",
+            "3": "power",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "potential",
+            "1": "success",
+            "2": "creativity",
+            "3": "skill",
+            "4": "future"
+          }
+        }
+      },
+      "thehighpriestess": {
+        "position1": {
+          "keywords": {
+            "0": "intuition",
+            "1": "wisdom",
+            "2": "internal guidance",
+            "3": "secret",
+            "4": "Silence"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "intuition",
+            "1": "information",
+            "2": "internal guidance",
+            "3": "learning",
+            "4": "wisdom"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "hidden factors",
+            "1": "uncertainty",
+            "2": "intuition",
+            "3": "timing",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "intuition",
+            "1": "wisdom",
+            "2": "internal power",
+            "3": "awareness",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "intuition",
+            "1": "wisdom",
+            "2": "awareness",
+            "3": "internal power",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "intuition",
+            "1": "information",
+            "2": "hidden truths",
+            "3": "awareness",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "intuition",
+            "1": "wisdom",
+            "2": "depth",
+            "3": "awareness",
+            "4": "future"
+          }
+        }
+      },
+      "theempress": {
+        "position1": {
+          "keywords": {
+            "0": "creativity",
+            "1": "abundance",
+            "2": "productivity",
+            "3": "satisfaction",
+            "4": "Feminine energy"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "creativity",
+            "1": "productivity",
+            "2": "abundance",
+            "3": "Inspired",
+            "4": "Nutrition"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "nature",
+            "1": "time",
+            "2": "creativity",
+            "3": "production",
+            "4": "Inspired"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "creativity",
+            "1": "productivity",
+            "2": "Inspired",
+            "3": "performance",
+            "4": "fertility"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "creativity",
+            "1": "Inspired",
+            "2": "production",
+            "3": "Nutrition",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "creativity",
+            "1": "Inspired",
+            "2": "Nutrition",
+            "3": "production",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "creativity",
+            "1": "fertility",
+            "2": "productivity",
+            "3": "Inspired",
+            "4": "future"
+          }
+        }
+      },
+      "theemperor": {
+        "position1": {
+          "keywords": {
+            "0": "authority",
+            "1": "stability",
+            "2": "rules",
+            "3": "layout",
+            "4": "power"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "discipline",
+            "1": "layout",
+            "2": "authority",
+            "3": "planning",
+            "4": "stability"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "authority",
+            "1": "rules",
+            "2": "system",
+            "3": "discipline",
+            "4": "layout"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "discipline",
+            "1": "determination",
+            "2": "stability",
+            "3": "authority",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "discipline",
+            "1": "layout",
+            "2": "determination",
+            "3": "control",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "authority",
+            "1": "rules",
+            "2": "pressure",
+            "3": "discipline",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "stability",
+            "1": "power",
+            "2": "authority",
+            "3": "leadership",
+            "4": "future"
+          }
+        }
+      },
+      "thehierophant": {
+        "position1": {
+          "keywords": {
+            "0": "tradition",
+            "1": "teaching",
+            "2": "authority",
+            "3": "compatibility",
+            "4": "guidance"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "guidance",
+            "1": "learning",
+            "2": "tradition",
+            "3": "authority",
+            "4": "wisdom"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "tradition",
+            "1": "authority",
+            "2": "rules",
+            "3": "society",
+            "4": "system"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "information",
+            "1": "learning",
+            "2": "teaching",
+            "3": "authority",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "information",
+            "1": "support",
+            "2": "learning",
+            "3": "mentor",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "tradition",
+            "1": "rules",
+            "2": "teaching",
+            "3": "authority",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "tradition",
+            "1": "wisdom",
+            "2": "support",
+            "3": "teaching",
+            "4": "future"
+          }
+        }
+      },
+      "thelovers": {
+        "position1": {
+          "keywords": {
+            "0": "selection",
+            "1": "compatibility",
+            "2": "heart-mental balance",
+            "3": "partnership",
+            "4": "decision"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "selection",
+            "1": "compatibility",
+            "2": "balance",
+            "3": "co-operation",
+            "4": "decision"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "Relationships",
+            "1": "compatibility",
+            "2": "selection",
+            "3": "balance",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "decision",
+            "1": "intimacy",
+            "2": "compatibility",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "selection",
+            "1": "relationship",
+            "2": "compatibility",
+            "3": "decision",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "selection",
+            "1": "compatibility",
+            "2": "relationship",
+            "3": "indecisive",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "selection",
+            "1": "compatibility",
+            "2": "partnership",
+            "3": "decision",
+            "4": "future"
+          }
+        }
+      },
+      "thechariot": {
+        "position1": {
+          "keywords": {
+            "0": "will",
+            "1": "determination",
+            "2": "Progress",
+            "3": "power",
+            "4": "focus"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "determination",
+            "1": "focus",
+            "2": "power",
+            "3": "will",
+            "4": "control"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "control",
+            "1": "speed",
+            "2": "barriers",
+            "3": "will",
+            "4": "balance"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "Determination",
+            "1": "focus",
+            "2": "will",
+            "3": "determination",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "determination",
+            "1": "Determination",
+            "2": "focus",
+            "3": "will",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "will",
+            "1": "focus",
+            "2": "control",
+            "3": "direction",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "will",
+            "1": "victory",
+            "2": "control",
+            "3": "determination",
+            "4": "future"
+          }
+        }
+      },
+      "strength": {
+        "position1": {
+          "keywords": {
+            "0": "Courage",
+            "1": "Self - confidence",
+            "2": "Patience",
+            "3": "balance",
+            "4": "endurance"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "Courage",
+            "1": "Patience",
+            "2": "Self - confidence",
+            "3": "balance",
+            "4": "endurance"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "Patience",
+            "1": "endurance",
+            "2": "control",
+            "3": "Self - confidence",
+            "4": "external effect"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "Patience",
+            "1": "resistance",
+            "2": "Self - confidence",
+            "3": "control",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "Patience",
+            "1": "resistance",
+            "2": "self - discipline",
+            "3": "self-confidence",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "Patience",
+            "1": "self-confidence",
+            "2": "resistance",
+            "3": "fear",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "Courage",
+            "1": "Patience",
+            "2": "balance",
+            "3": "self-confidence",
+            "4": "future"
+          }
+        }
+      },
+      "thehermit": {
+        "position1": {
+          "keywords": {
+            "0": "wisdom",
+            "1": "Introduction",
+            "2": "guidance",
+            "3": "search",
+            "4": "enlightenment"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "Introduction",
+            "1": "wisdom",
+            "2": "guidance",
+            "3": "enlightenment",
+            "4": "research"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "loneliness",
+            "1": "Introduction",
+            "2": "guidance",
+            "3": "cycle",
+            "4": "Obligation"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "wisdom",
+            "1": "experience",
+            "2": "internal power",
+            "3": "learning",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "wisdom",
+            "1": "research",
+            "2": "internal power",
+            "3": "awareness",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "loneliness",
+            "1": "research",
+            "2": "Isolation",
+            "3": "wisdom",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "wisdom",
+            "1": "enlightenment",
+            "2": "awareness",
+            "3": "loneliness",
+            "4": "future"
+          }
+        }
+      },
+      "thewheeloffortune": {
+        "position1": {
+          "keywords": {
+            "0": "change",
+            "1": "Fate",
+            "2": "Luck",
+            "3": "opportunity",
+            "4": "cycle"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "change",
+            "1": "opportunity",
+            "2": "compatibility",
+            "3": "Fate",
+            "4": "cycle"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "Fate",
+            "1": "Luck",
+            "2": "change",
+            "3": "cycle",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "opportunity",
+            "1": "cycle",
+            "2": "Luck",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "cycle",
+            "1": "Luck",
+            "2": "opportunity",
+            "3": "compatibility",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "Fate",
+            "1": "Luck",
+            "2": "cycle",
+            "3": "opportunity",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "Fate",
+            "1": "Luck",
+            "2": "cycle",
+            "3": "opportunity",
+            "4": "future"
+          }
+        }
+      },
+      "justice": {
+        "position1": {
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "Truth",
+            "3": "ethics",
+            "4": "responsibilities"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "justice",
+            "1": "Honesty",
+            "2": "ethics",
+            "3": "balance",
+            "4": "responsibilities"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "justice",
+            "1": "law",
+            "2": "ethics",
+            "3": "system",
+            "4": "decision"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "justice",
+            "1": "Honesty",
+            "2": "responsibilities",
+            "3": "balance",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "justice",
+            "1": "Honesty",
+            "2": "balance",
+            "3": "responsibilities",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "justice",
+            "1": "injustice",
+            "2": "decision",
+            "3": "responsibilities",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "justice",
+            "1": "balance",
+            "2": "Truth",
+            "3": "responsibilities",
+            "4": "future"
+          }
+        }
+      },
+      "thehangedman": {
+        "position1": {
+          "keywords": {
+            "0": "sacrifice",
+            "1": "waiting",
+            "2": "different view",
+            "3": "transformation",
+            "4": "Surrender"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "From a point of view",
+            "1": "Surrender",
+            "2": "difference",
+            "3": "experience",
+            "4": "Patience"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "waiting",
+            "1": "Patience",
+            "2": "pause",
+            "3": "Surrender",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "sacrifice",
+            "1": "Patience",
+            "2": "From a point of view",
+            "3": "Surrender",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "From a point of view",
+            "1": "Patience",
+            "2": "Surrender",
+            "3": "awareness",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "waiting",
+            "1": "opportunity",
+            "2": "Surrender",
+            "3": "stubbornness",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "awareness",
+            "1": "From a point of view",
+            "2": "Surrender",
+            "3": "balance",
+            "4": "future"
+          }
+        }
+      },
+      "death": {
+        "position1": {
+          "keywords": {
+            "0": "transformation",
+            "1": "last",
+            "2": "Rebirth",
+            "3": "Don't let go",
+            "4": "change"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "transformation",
+            "1": "end",
+            "2": "Regeneration",
+            "3": "change",
+            "4": "Freedom"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "end",
+            "1": "transformation",
+            "2": "Inevitability",
+            "3": "change",
+            "4": "Regeneration"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "transformation",
+            "1": "Courage",
+            "2": "Regeneration",
+            "3": "change",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "transformation",
+            "1": "end",
+            "2": "Regeneration",
+            "3": "Courage",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "end",
+            "1": "transformation",
+            "2": "change",
+            "3": "resistance",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "transformation",
+            "1": "end",
+            "2": "start",
+            "3": "Regeneration",
+            "4": "future"
+          }
+        }
+      },
+      "temperance": {
+        "position1": {
+          "keywords": {
+            "0": "balance",
+            "1": "compatibility",
+            "2": "Patience",
+            "3": "middle path",
+            "4": "Peace"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "balance",
+            "1": "compatibility",
+            "2": "Patience",
+            "3": "middle path",
+            "4": "stability"
+          }
+        }
+      }
+    }
+  }
+}

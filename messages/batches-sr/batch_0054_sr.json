@@ -1,0 +1,793 @@
+{
+  "new-lover": {
+    "meanings": {
+      "aceofwands": {
+        "position1": {
+          "keywords": [
+            null,
+            "početak",
+            "iskra",
+            "hrabrost"
+          ],
+          "context": "Energija nove ljubavi je izazvati; biti spreman"
+        },
+        "position2": {
+          "upright": "Ace od štapića nosi direktnu energiju vatrogasnih znakova. Ovan, Leo ili sagittari mogu biti entuzijastični i preduzetni.",
+          "reversed": "ACE of Vinds Reversed ukazuje da se čini da je ta osoba možda izgubila karakteristike vatrenog znaka. Nestrpljivost ili nedostatak motivacije mogu doći do izražaja.",
+          "keywords": [
+            "Ram",
+            "Lav",
+            "Prolećni",
+            "entuzijazam",
+            "početak"
+          ],
+          "context": "Uticaj Ovna, Lea ili Strelca je dominantan."
+        },
+        "position3": {
+          "upright": "ACE of štapića donosi svežu energiju i strast u odnos. Kreativna iskra zapali početak harmonije.",
+          "reversed": "Ace štapiće preokrenuli su, nedostatak motivacije ili odlaganja može otežati adaptaciju. Potrebno je da vatra drži živ.",
+          "keywords": [
+            "strast",
+            "početak",
+            "kreativnost",
+            "raport",
+            "energija"
+          ],
+          "context": "Nova SPARK oživljava harmoniju. Slaba vatra slabi vezu."
+        },
+        "position4": {
+          "upright": "Ace od štapića, nova iskra i snažna energija može da postave temelje za dugotrajnu vezu. Strast dugoročno dodaje vitalnost u odnosu.",
+          "reversed": "ACE of štapića preokrenuo je, nedostatak inspiracije ili odloženih početaka može prouzrokovati dugoročnu vezu da pati.",
+          "keywords": [
+            "početak",
+            "strast",
+            "inspiracija",
+            "energija",
+            "dugoročan"
+          ],
+          "context": "Strast jača dugoročno, nedostatak inspiracije testira obveznice."
+        },
+        "position5": {
+          "upright": "ACE of štapiću nosi iskru nove početke. Susret sa ovom osobom može stvoriti snažnu privlačnost i inspiraciju koja pali vašu dušu. To daje instinktivno \"da\" osećaj.",
+          "reversed": "ACE of Vinds Reversed opisuje iskrupljenu kako se brzo blede ili sastaje u pogrešno vreme. Energija srodne duše je tu, ali možda neće biti u potpunosti otkrivena.",
+          "keywords": [
+            "početak",
+            "inspiracija",
+            "povući",
+            "iskra",
+            "duša"
+          ],
+          "context": "Mogućnost nove srodne duše je jaka; Ali vreme je kritično."
+        },
+        "position6": {
+          "upright": "ACE of štapiću nosi snažnu inspiraciju i novu početnu energiju kako bi se vaša želja ostvarila. Kreativna iskra vas pokreće u akciju.",
+          "reversed": "Okolišteni asa štapiće, nedostatak inspiracije ili odlaganja može vam otežati vašu želju. Mali koraci ponovo pokreću protok.",
+          "keywords": [
+            "inspiracija",
+            "početak",
+            "energija",
+            "kreativnost",
+            "pokret"
+          ],
+          "context": "Creative Spark pokreće vašu želju."
+        }
+      },
+      "twoofwands": {
+        "position1": {
+          "upright": "Dvoje štapiće ukazuju na to da se u vašim budućim planovima može pojaviti nova prilika za odnose. Kada ste otvoreni za horizont, vaše srce čini prostor za novo.",
+          "reversed": "Dva osvežena štapića ukazuje da ljubav može biti odložena zbog neodlučnosti i nedostatka vida. Jednom jasno, novi početak dolazi brzo.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "odluka",
+            "prilika"
+          ],
+          "context": "Vaš pogled na horizont poziva na novi odnos u vaš život."
+        },
+        "position2": {
+          "upright": "Tvoje štapiće ukazuju na prirodu horizonta i vizionarske prirode Strelca. On može biti planirana i osoba koja izgleda napred.",
+          "reversed": "Dva obrnuta štapića mogu ukazivati na averziju neodlučnog ili rizika u Strelskoj senci.",
+          "keywords": [
+            "Prolećni",
+            "vizija",
+            "plan",
+            "horizont"
+          ],
+          "context": "Strelac se ističe."
+        },
+        "position3": {
+          "upright": "Dvojica štapića podstiču harmoniju u zajedničkoj viziji budućnosti. Planiranje osigurava ravnotežu u vezi.",
+          "reversed": "Dvojica štapića preokrenula je, nesigurnost ili nemogućnost da se odluče mogu da poremete harmoniju.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "partnerstvo",
+            "raport",
+            "ravnoteža"
+          ],
+          "context": "Zajednička vizija podstiče harmoniju. Indecicija testira obveznica."
+        },
+        "position4": {
+          "upright": "Dvoje štapića, deljenje budućih planova je snažan znak za dugoročnu vezu. Zajednička vizija osigurava kontinuitet.",
+          "reversed": "Dvoje štapiće obrnuto, nedostatak vizije ili oklevanja otežava razvijanje dugoročne veze.",
+          "keywords": [
+            "vizija",
+            "planiranje",
+            "budućnost",
+            "partnerstvo",
+            "dugoročan"
+          ],
+          "context": "Zajedničko vizija podržava dugoročno, oklevanje testira obveznice."
+        },
+        "position5": {
+          "upright": "Tvoje štapiće nosi energiju vida i zajedničko planiranje za budućnost. Ova osoba može proširiti svoje životne horizonte sa potencijalom da postane srodna duša.",
+          "reversed": "Dvojica štapića obrnuta opisuje neizvesnost ili nedostatak zajedništva. Postoji mogućnost matesa sa dušema, ali harmonija se ne može postići sve dok odluke ne budu jasne.",
+          "keywords": [
+            "vizija",
+            "zajednički način",
+            "potencijal",
+            "planiranje",
+            "duša"
+          ],
+          "context": "Zajedničko vizija donosi harmoniju; Neodlučnost slabi dušu."
+        },
+        "position6": {
+          "upright": "Tvoje štampe pokazuju da vam je potrebno da postavite viziju i napravite plan da se vaša želja ostvari. Proširivanje vaših horizonta jača vašu želju.",
+          "reversed": "Obrnuta binarna, oklevanje ili uska perspektiva može odložiti vašu želju.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "ekspanzija",
+            "odluka",
+            "horizont"
+          ],
+          "context": "Vizija i plan ojačajte svoju želju."
+        }
+      },
+      "threeofwands": {
+        "position1": {
+          "upright": "Triska štapića kažu da će se širenje krugova i novih mogućnosti donijeti ljubav. Novi ljudi i putovanja mogu da otvore vrata ljubavi prema vama.",
+          "reversed": "Okolište Tri štapića, kratkovidnu nemir ili nestrpljivost mogu naprezanje na novu vezu. Održavanje horizonta širom sveta poziva na ljubav.",
+          "keywords": [
+            "ekspanzija",
+            "prilika",
+            "horizont",
+            "putovanje"
+          ],
+          "context": "Nova okruženja i iskustva ubrzavaju dolazak ljubavi."
+        },
+        "position2": {
+          "upright": "Tri štapića nosi energiju LEO-a širenja. On može biti hrabar i kooperativan.",
+          "reversed": "Tri štapića obrnuta u senci Lea mogu ukazivati na uski ugovornost ili prekomerna ponos.",
+          "keywords": [
+            "Lav",
+            "ekspanzija",
+            "partnerstvo",
+            "hrabrost"
+          ],
+          "context": "Uticaj Leona je vidljiv."
+        },
+        "position3": {
+          "upright": "Tri štapića zajedno ojača harmoniju širenja i mogućnosti. Gledajući horizont neguje obveznice.",
+          "reversed": "Pretvorena tri štapića, kratkovidnost ili kašnjenja otežavaju harmoniju.",
+          "keywords": [
+            "prilika",
+            "ekspanzija",
+            "raport",
+            "vizija",
+            "jedinstvo"
+          ],
+          "context": "HORIZONSKI FORESERS HARMONI. Odlaganje testira vezu."
+        },
+        "position4": {
+          "upright": "Tri štapića, horizont-širi prilike i napredak doprinose rastu dugoročne veze.",
+          "reversed": "Okolištena tri štapića, kratkovidne osobe ili kašnjenja mogu ometati razvoj dugoročne veze.",
+          "keywords": [
+            "horizont",
+            "prilika",
+            "ekspanzija",
+            "napredak",
+            "dugoročan"
+          ],
+          "context": "Proširenje neguje dugoročno, kašnjenje testira obveznice."
+        },
+        "position5": {
+          "upright": "Tri štapića simbolizuje putovanje u daleke horizontama. Ova osoba bi mogla biti vaša srodna duša; Zajedno nosite energiju rasta i otkrića.",
+          "reversed": "Triska štapića, obrnuta, ukazuje na neuspeh u ispunjavanju očekivanja ili fokusiranja na pogrešan smer. Dok je srodna duša mogućnost, udaljenost ili tajming može da ga ometaju.",
+          "keywords": [
+            "horizont",
+            "putovanje",
+            "razvoj",
+            "partnerstvo",
+            "duša"
+          ],
+          "context": "Želja za rastom otvara vrata za matesništvo duše."
+        },
+        "position6": {
+          "upright": "Tri štapića ukazuje da su mogućnosti na horizontu kako bi se vaša želja ostvarila. Priprema i uklanjanje smela donose rezultate.",
+          "reversed": "Obrnuta trina, nestrpljenje ili kratkovidnost može da komplikuje vašu želju.",
+          "keywords": [
+            "prilika",
+            "ekspanzija",
+            "priprema",
+            "horizont",
+            "napredak"
+          ],
+          "context": "Gledanje horizonta omogućava vašu želju."
+        }
+      },
+      "fourofwands": {
+        "position1": {
+          "upright": "Četiri štapića ukazuju na to da možete sresti nekoga novog u proslavi, prijem ili društvenom okruženju. Ova veza se može zasnivati na sigurnom fondaciji.",
+          "reversed": "Preokrećena četiri štapića, nedostatak planiranja ili socijalnog povlačenja mogu odložiti priliku za ljubav. Proslave koje pohađate mogu doneti novu ljubav.",
+          "keywords": [
+            "proslava",
+            "osnova",
+            "sigurnost",
+            "društveno okruženje"
+          ],
+          "context": "Mogućnost novih odnosa nastaje u društvenim oblastima."
+        },
+        "position2": {
+          "upright": "Četiri štapića predstavljaju Leovu potragu za proslavom i pripadnikom. Ova osoba može biti vesela i deljenje.",
+          "reversed": "Pretvorena Četiri štapića mogu ukazivati na nemir ili strah od posvećenosti u leoj senci.",
+          "keywords": [
+            "Lav",
+            "proslava",
+            "pripadnik",
+            "raport"
+          ],
+          "context": "Leo energija je dominantna."
+        },
+        "position3": {
+          "upright": "Četiri štapića nosi energiju proslave i harmonije. Zajednička sreća jača obveznice.",
+          "reversed": "Pretvorena Četiri štapića mogu doneti privremeni poremećaj ili nemire, a ne harmoniju.",
+          "keywords": [
+            "proslava",
+            "raport",
+            "ravnoteža",
+            "jedinstvo",
+            "stabilnost"
+          ],
+          "context": "Proslava jača harmoniju. Poremećaj slabi vezu."
+        },
+        "position4": {
+          "upright": "Četiri štapića su znak proslave, harmonije i čvrste temelje za dugoročnu vezu.",
+          "reversed": "Uokrenuli su četiri štapiće, nestabilnost ili nepotpunost dugoročno procijeni.",
+          "keywords": [
+            "proslava",
+            "raport",
+            "stabilnost",
+            "osnova",
+            "dugoročan"
+          ],
+          "context": "Čvrsta fondacija podržava dugoročno, nestabilnost testira obveznica."
+        },
+        "position5": {
+          "upright": "Četiri štapića predstavljaju proslavu, jedinstvo i ukorijenjenost. Ova osoba bi mogla biti vaša srodna duša; Vaš odnos može donijeti trajnu sreću.",
+          "reversed": "Četiri štapića obrnuta ukazuju na nedostatak uzemljenja ili neravnoteže. Čak i ako postoji matesi s duhovima, potrebne su čvrste temelje.",
+          "keywords": [
+            "proslava",
+            "jedinstvo",
+            "stabilnost",
+            "sreća",
+            "duša"
+          ],
+          "context": "Trajna sreća jača mogućnost srodne duše."
+        },
+        "position6": {
+          "upright": "Četiri štapišta imaju energiju proslave, harmonije i stabilnosti u ispunjenju želja. Imati čvrstu fondaciju otvara prostor za vaše želje.",
+          "reversed": "Invertirana četiri, privremeni poremećaj može odložiti vašu želju. Potrebno je ojačati fondaciju.",
+          "keywords": [
+            "stabilnost",
+            "proslava",
+            "raport",
+            "osnova",
+            "prag"
+          ],
+          "context": "Čvrsta fondacija podržava vašu želju."
+        }
+      },
+      "fiveofwands": {
+        "position1": {
+          "upright": "Petorica štapića ukazuje da se sa nekim možete povezati sa nekim novim usred sitnih rivalstva i živahnih argumenata. Dinamična energija se može pretvoriti u odnos.",
+          "reversed": "Preokrećeno pet štapića ukazuje da prekomerni sukob ili konkurencija može otežati odnos. Razigrani konkurencija podstiče bliskost.",
+          "keywords": [
+            "rivalstvo",
+            "život",
+            "dinamičan",
+            "povući"
+          ],
+          "context": "Iskra ljubavi se mogu pojaviti u dinamičnim i živahnim okruženjima."
+        },
+        "position2": {
+          "upright": "Petorica štapića pokazuje konkurentnu i izazovnu stranu ojaka. On može biti živahan, ambiciozna osoba.",
+          "reversed": "Petorica osnivanih štapića može ukazivati na nepotrebne argumente ili nestrpljenje pod senkama Ovna.",
+          "keywords": [
+            "Ram",
+            "rivalstvo",
+            "izazov",
+            "život"
+          ],
+          "context": "Uticaj ojaka dolazi do izražaja."
+        },
+        "position3": {
+          "upright": "Petorica štapića pokazuje da zdrava konkurencija može podsticati harmoniju. Konstruktivna borba čini obveznice dinamične.",
+          "reversed": "Invertirano pet štapića, povećani sukobi mogu oštetiti harmoniju. Za sklad je potreban bilans.",
+          "keywords": [
+            "rivalstvo",
+            "borba",
+            "raport",
+            "ravnoteža",
+            "dinamičnost"
+          ],
+          "context": "Konstruktivna konkurencija održava harmoniju živu. Sukobske gume iz obveznice."
+        },
+        "position4": {
+          "upright": "Petorica štapića, konkurencije i razlike u mišljenju mogu biti test u dugoročnoj vezi. Proces rastvora sazreva odnos.",
+          "reversed": "Uokrenuo je pet štapića, penzionisana napetost može dugoročno oslabiti, transparentnost je obavezna.",
+          "keywords": [
+            "rivalstvo",
+            "sukob",
+            "prihod",
+            "rešenje",
+            "dugoročan"
+          ],
+          "context": "Rešenje neguje dugoročno, napetost testira obveznica."
+        },
+        "position5": {
+          "upright": "Petorica štapića pokazuje da su manji sukobi zapravo mogućnosti za rast. Srodna duša energija može se oslobađati transformacijom razlike u harmoniju.",
+          "reversed": "Petorica osnivanih štapića ukazuje da nepotrebni sukobi mogu da napreduju odnos. Iako postoji mogućnost srodne duše, pacijent i razumevanje je potrebno.",
+          "keywords": [
+            "sukob",
+            "učenje",
+            "raport",
+            "energija",
+            "duša"
+          ],
+          "context": "Razlike su test; Ako se postigne harmonija, duša duše se produbljuje."
+        },
+        "position6": {
+          "upright": "Petorima štapića, konkurencije i manjih prepreka mogu se pojaviti u ispunjenju vaše želje. Borba će vas učiniti jačim.",
+          "reversed": "Invertirani pentakle, nepotrebni sukobi mogu komplicirati vaše želje. Fokus je od suštinskog značaja.",
+          "keywords": [
+            "rivalstvo",
+            "borba",
+            "prepreka",
+            "energija",
+            "stabilnost"
+          ],
+          "context": "Prevladavanje prepreka približava vašu želju."
+        }
+      },
+      "sixofwands": {
+        "position1": {
+          "upright": "Šest štapića ukazuje da vam je ljubav privučena, zajedno sa vidljivim uspehom i priznanjem. Možete da se povežete sa nekim novim u oblastima u kojima sijaš.",
+          "reversed": "Preokrećeno šest štapića, preostali nevidljivi ili nedostatak uvažavanja može odložiti novu ljubav. Ljubav se bliži kada se izražava.",
+          "keywords": [
+            "pobeda",
+            "prepoznavanje",
+            "povući",
+            "diskrecija"
+          ],
+          "context": "Uspeh i vidljivost otvorite vrata ljubavi."
+        },
+        "position2": {
+          "upright": "Šest štapića ukazuje na harizmatično rukovodstvo Lea. Možda je neko ko je poznat i divljen.",
+          "reversed": "Šest štapića obrnuto u Leo Shadov može ukazivati na pitanja ega ili zavisnosti od odobrenja.",
+          "keywords": [
+            "Lav",
+            "pobeda",
+            "prepoznavanje",
+            "karizma"
+          ],
+          "context": "Leo energija je vidljiva."
+        },
+        "position3": {
+          "upright": "Šest štapića, deljenje uspeha i prepoznavanja pojačavaju harmoniju. Po čast jedni prema drugima jača obveznice.",
+          "reversed": "Šest štapića obrnuto, ljubomora ili nedostatak zahvalnosti može poremetiti harmoniju.",
+          "keywords": [
+            "uspeh",
+            "diskrecija",
+            "raport",
+            "podrška",
+            "pobeda"
+          ],
+          "context": "Uhvaćeno uzgoj Harmoni. Nepotpuna potvrda prisiljava vezu."
+        },
+        "position4": {
+          "upright": "Šest štapića, zajedničke pobede i priznanje povećavaju poverenje dugoročne veze.",
+          "reversed": "Šest štapića preokrenulo je, nedostatak uvažavanja može da otežava dugoročnu vezu.",
+          "keywords": [
+            "pobeda",
+            "prepoznavanje",
+            "uspeh",
+            "diskrecija",
+            "dugoročan"
+          ],
+          "context": "Pobeda neguje dugoročno, nedostatak zahvalnosti testira obveznice."
+        },
+        "position5": {
+          "upright": "Šest štapića simbolizuje uspeh i priznanje. Ova osoba bi mogla biti vaša srodna duša; Zajedno možete da kreirate odnos da biste bili ponosni.",
+          "reversed": "Šesta osvajanih štapića je opisano očekivanje spoljnog odobrenja koji se pretvara u senku. Unutrašnje poverenje je neophodno za energiju srodne duše.",
+          "keywords": [
+            "uspeh",
+            "pobeda",
+            "ponos",
+            "poverenje",
+            "duša"
+          ],
+          "context": "Zajednička dostignuća podstiču mogućnost srodne duše."
+        },
+        "position6": {
+          "upright": "Šest štapića ima energiju uspeha i prividnu pobedu u ispunjenju vaše želje. Povećava se ubrzava vašu želju.",
+          "reversed": "Obrnuti sekstil, nedostatak zahvalnosti ili arogacije može ometati vašu želju.",
+          "keywords": [
+            "pobeda",
+            "uspeh",
+            "vidljivost",
+            "motivacija",
+            "diskrecija"
+          ],
+          "context": "Energija pobede podstiče vašu želju."
+        }
+      },
+      "sevenofwands": {
+        "position1": {
+          "upright": "Sedam štapića vam govori da neko može da se pojavi ko će vam privući pažnju dok brani vaš stav. Snažno držanje stvara atrakciju.",
+          "reversed": "Preokrećeno sedam štapića ukazuje da preterano defanzivni pristup može da otežava priliku za ljubav. Udobnost čini prostor za vezu.",
+          "keywords": [
+            "odbrana",
+            "stajati",
+            "povući",
+            "stabilnost"
+          ],
+          "context": "Vaš vlastiti stav privlači pravu osobu vama."
+        },
+        "position2": {
+          "upright": "Sedam štapića pokazuje utvrđenu i defanzivnu stranu ojaka. On može biti tvrdoglav i borbeni.",
+          "reversed": "Otkaz sedam štapića, pod senkom Ovna, može dovesti do umora ili tendencije da se odrekne.",
+          "keywords": [
+            "Ram",
+            "borba",
+            "odbrana",
+            "tvrdoglavost"
+          ],
+          "context": "Aries je dominantan."
+        },
+        "position3": {
+          "upright": "Sedam štapića kaže da je održavanje granica važno za harmoniju. Snažno držanje jača obveznice.",
+          "reversed": "Okrećeno sedam štapića: Previše odbrane može oštetiti harmoniju.",
+          "keywords": [
+            "odbrana",
+            "granica",
+            "raport",
+            "ravnoteža",
+            "snaga"
+          ],
+          "context": "Solidne granice podstiču harmoniju. Krutost sojena obveznica."
+        },
+        "position4": {
+          "upright": "Sedam štapića, granična zaštita i određivanje osiguravaju kontinuitet dugoročnih obveznica.",
+          "reversed": "Okrećeno sedam štapića, prekomerna odbrambenost ili umora slabi dugoročnu vezu.",
+          "keywords": [
+            "odbrana",
+            "granica",
+            "stabilnost",
+            "otpornost",
+            "dugoročan"
+          ],
+          "context": "Određivanje podržava dugoročno, umor testira vezu."
+        },
+        "position5": {
+          "upright": "Sedam štapića pokazuje da brani nečija uverenja i postavljanje granica. Možda ćete morati da prođete kroz ovaj proces da biste imali snažnu vezu sa srodnom dušom.",
+          "reversed": "Sedam štapića obrnuta ukazuje na umor ili gubitak otpornosti. Iako postoji potencijal za srodnu dušu, stabilnost može oslabiti.",
+          "keywords": [
+            "odbrana",
+            "verovanje",
+            "granica",
+            "otpornost",
+            "duša"
+          ],
+          "context": "Bond koja prolazi kroz suđenja postaje jači za matesni brod."
+        },
+        "position6": {
+          "upright": "Sedam štapića vam govori da morate braniti svoju poziciju da biste želeli da se ostvarite. Otpornost će vas učiniti jačim.",
+          "reversed": "Invertirani sedmi, umor ili neodlučnost može odložiti vašu želju.",
+          "keywords": [
+            "odbrana",
+            "otpornost",
+            "stabilnost",
+            "granica",
+            "snaga"
+          ],
+          "context": "Određivanje omogućava vašu želju."
+        }
+      },
+      "eightofwands": {
+        "position1": {
+          "upright": "Osam štapića ukazuje da je ljubavna veza koja se brzo razvija na horizontu. Iznenadne vesti ili sastanak mogu dovesti do nove veze.",
+          "reversed": "Otkriveni osam štapića, kašnjenja ili konfuzija komunikacije može odložiti ljubav. Ide sa tokom ubrzava nove obveznice.",
+          "keywords": [
+            "brzina",
+            "vesti",
+            "komunikacija",
+            "protok"
+          ],
+          "context": "Uskoro može doći do brzog razvoja ljubavi."
+        },
+        "position2": {
+          "upright": "Osam štapića ukazuje na brzu i aktivnu prirodu Strelca. Može se povezati sa putovanjima ili brzom kretanjem.",
+          "reversed": "Osam revernih štapića može ukazivati na haos ili brzinu bez smera u Strelskoj senci.",
+          "keywords": [
+            "Prolećni",
+            "brzina",
+            "izlet",
+            "razvoj"
+          ],
+          "context": "Strelac je dominantna energija Strelca."
+        },
+        "position3": {
+          "upright": "Osam štapića, brzi napredak i otvorena komunikacija ojačaju harmoniju. Energetski protok neguje obveznice.",
+          "reversed": "Invertirano osam štapića, poremećaji u komunikaciji mogu poremetiti harmoniju.",
+          "keywords": [
+            "komunikacija",
+            "brzina",
+            "raport",
+            "protok",
+            "napredak"
+          ],
+          "context": "Otvorena komunikacija ojačava harmoniju. Okluzija testira vezu."
+        },
+        "position4": {
+          "upright": "Osam štapića, brzi napredak i jasna komunikacija ojačavaju dugoročnu vezu.",
+          "reversed": "Otkriveno osam štapića, odlaganja i lažnih signala može dugoročno otežano.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "napredak",
+            "sinhronost",
+            "dugoročan"
+          ],
+          "context": "Brzo protok neguje dugoročno, odlaganje testira obveznice."
+        },
+        "position5": {
+          "upright": "Osam štapića ukazuje na brz razvoj i napredak u protoku. Ova osoba bi mogla biti vaša srodna duša; Vaš sastanak se može dogoditi jednako brzo kao i sudbina.",
+          "reversed": "Osam osnivanih štapića ukazuje na odlaganja ili zbrku u komunikaciji. Postoji energija srodne duše, ali može biti potrebno strpljenje.",
+          "keywords": [
+            "brzina",
+            "protok",
+            "komunikacija",
+            "sudbina",
+            "duša"
+          ],
+          "context": "Brzo protok može ukazivati na matesništvo duše."
+        },
+        "position6": {
+          "upright": "Osam štapića olakšava brzu razvoj i komunikaciju kako bi se vaša želja ostvarila. Protok ubrzava.",
+          "reversed": "Invertirano osam, kašnjenja ili pogrešno komuniciranje može da komplikuje vašu želju.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "protok",
+            "ubrzanje",
+            "vesti"
+          ],
+          "context": "Donosi vašu želju za brzom kretanjem."
+        }
+      },
+      "nineofwands": {
+        "position1": {
+          "upright": "Devet štapića pokazuje da čak i ako ste umorni, ljubav je iza ugla. Otpor i strpljenje vodiće vas u novu vezu.",
+          "reversed": "Invertirani devet štapića sugeriše da je prekomerno-budan moglo da gurne ljubav. Prepuštanje odbrane donosi novu vezu.",
+          "keywords": [
+            "otpornost",
+            "strpljenje",
+            "odbrana",
+            "nadati se"
+          ],
+          "context": "Nakon poteškoća, ljubav dolazi do vrata."
+        },
+        "position2": {
+          "upright": "Devet štapića pokazuje elastičnu i neugodnu stranu ojaka. Ova osoba se ne odustaje lako.",
+          "reversed": "Devet štapića obrnuto u senci Ovna može ukazivati na ekstremnu umor ili stalnu budnost.",
+          "keywords": [
+            "Ram",
+            "otpornost",
+            "rezolucija",
+            "zaštita"
+          ],
+          "context": "Uticaj ojaka dolazi do izražaja."
+        },
+        "position3": {
+          "upright": "Devet štapića ukazuje da će se harmonija zadržati kroz otpornost i upornost. Uprkos poteškoćama, solidarnost jača obveznice.",
+          "reversed": "Pretvoreni devet štapića, izgaranje ili prekorače odbrane može poremetiti harmoniju.",
+          "keywords": [
+            "otpornost",
+            "solidarnost",
+            "raport",
+            "rezolucija",
+            "zaštita"
+          ],
+          "context": "Solidarnost podstiče harmoniju. Izgaranje testira obveznice."
+        },
+        "position4": {
+          "upright": "Devet štapića, otpornosti i odlučnosti povećavaju snagu dugoročnih odnosa.",
+          "reversed": "Otkazan devet štapića, izgaranje ili hipervigilancije dugoročno otežava.",
+          "keywords": [
+            "otpornost",
+            "stabilnost",
+            "zaštita",
+            "strpljenje",
+            "dugoročan"
+          ],
+          "context": "Određivanje podstiče dugoročno, iscrpljenost iscrpljivanja obveznice."
+        },
+        "position5": {
+          "upright": "Devet štapića simbolizuje otpornost i upornost. Energija srodne duše može se jasnije pojaviti nakon ispita.",
+          "reversed": "Devet štapića preokrećeno predstavlja obeshrabrenje ili kamena. Iako postoji mogućnost matesa sa dušema, zidovi srca moraju biti omekšani.",
+          "keywords": [
+            "otpornost",
+            "strpljenje",
+            "ispit",
+            "izdržljivost",
+            "duša"
+          ],
+          "context": "Nakon strpljenja, pojavljuje se mogućnost srodne duše"
+        },
+        "position6": {
+          "upright": "Devet štapića ukazuje da u poslednjem uglu morate pokazati izdržljivost da biste ostvarili svoju želju. Upornost donosi uspeh.",
+          "reversed": "Invertirani devetnici mogu da komplikuju vašu želju za izgaranjem. Važno je uzeti pauze.",
+          "keywords": [
+            "izdržljivost",
+            "rezolucija",
+            "poslednji ugao",
+            "zaštita",
+            "snaga"
+          ],
+          "context": "Upornost ispunjava vašu želju."
+        }
+      },
+      "tenofwands": {
+        "position1": {
+          "upright": "Deset štapića ukazuje da ne možete videti priliku za novu ljubav među vašim teretama. Kada delite, vaše srce postaje upaljača i soba je napravljena za vezu.",
+          "reversed": "Prekoračeni deset štapića ukazuje da ste počeli da pustite teret. Ovo olakšanje vodi do rođenja nove ljubavi.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "prostranost",
+            "otvaranje"
+          ],
+          "context": "Kada otpustite teret, novi odnos vas nalazi."
+        },
+        "position2": {
+          "upright": "Deset štapića može biti odgovorno lice, kao što je kombinacija Jarac i požarne energije. Međutim, to takođe pokazuje određivanje ojaka, jednog od vatrogasnih znakova, da se nosi opterećenje.",
+          "reversed": "Deset osnivanih štapića može imati premostana ili stajati samostalno u senci Ovna.",
+          "keywords": [
+            "Ram",
+            "odgovornost",
+            "opteretiti",
+            "rezolucija"
+          ],
+          "context": "Uticaj ojaka je dominantan."
+        },
+        "position3": {
+          "upright": "Deset štapića ukazuje da će se harmonija ojačati deljenjem odgovornosti. Zajednička opterećenja podržavaju obveznice.",
+          "reversed": "Ograničeno deset štapića, preopterećenja ili neuravnotežene odgovornosti može poremetiti harmoniju.",
+          "keywords": [
+            "odgovornost",
+            "deljenje",
+            "raport",
+            "ravnoteža",
+            "opteretiti"
+          ],
+          "context": "Zajednička odgovornost podstiče harmoniju. Neravnoteže gume Ligament."
+        },
+        "position4": {
+          "upright": "Deset štapića, odgovornosti za deljenje osigurava nastavak dugoročnih obveznica.",
+          "reversed": "Prekoračen deset štapića, preopterećenja i jednostranog napora može naprezanje na dugoročnoj vezi.",
+          "keywords": [
+            "odgovornost",
+            "opteretiti",
+            "deljenje",
+            "ravnoteža",
+            "dugoročan"
+          ],
+          "context": "Deljenje neguje dugoročno, teret testira vezu."
+        },
+        "position5": {
+          "upright": "Deset štapića opisuje nošenje tereta i odgovornosti. Bond sa vašom srodnim dušem može se ojačati deljenjem tereta.",
+          "reversed": "Deset štapića preokrećeno ukazuje da je prevelika odgovornost naprezala obveznica. Za matere za duše potrebno je osvetliti teret.",
+          "keywords": [
+            "odgovornost",
+            "opteretiti",
+            "solidarnost",
+            "rad",
+            "duša"
+          ],
+          "context": "Zajednički rad produbljuje dušu."
+        },
+        "position6": {
+          "upright": "Deset štapića ukazuje da morate da podnesete veliku odgovornost da biste želeli da se vaša želja ostvari. Napor donosi rezultate.",
+          "reversed": "Pretvoreni deset može da vam je otežano preopterećenje. Deljenje je važno.",
+          "keywords": [
+            "opteretiti",
+            "odgovornost",
+            "završetak",
+            "trud",
+            "cilj"
+          ],
+          "context": "Balansiranje napora omogućava vašu želju."
+        }
+      },
+      "pageofwands": {
+        "position1": {
+          "upright": "Princ štapiće ukazuje na poznanstvo koje započinje radoznalošću i uzbuđenjem. Vaš avanturistički duh otvoriće vrata novim vezama.",
+          "reversed": "Princ Vands Reversed-a ukazuje da je raštrkana energija ili nestrpljivost može odložiti ljubav. Jasna namera ubrzava ljubav.",
+          "keywords": [
+            "radoznalost",
+            "uzbuđenje",
+            "otkriće",
+            "početak"
+          ],
+          "context": "Vaš avanturistički duh privući će novi odnos."
+        },
+        "position2": {
+          "upright": "Princ štapiće ukazuje na mladu, avanturističku i optimističnu stranu Strelca.",
+          "reversed": "Princ Vands-a obrnut može pokazati neorganizaciju ili nestrpljenje u senci Strelca.",
+          "keywords": [
+            "Prolećni",
+            "avantura",
+            "optimizam",
+            "učenje"
+          ],
+          "context": "Sagittarius je dominantan."
+        },
+        "position3": {
+          "upright": "Princ štapiće promoviše harmoniju radoznalosti i istraživanja. Nova iskustva dodaju uzbuđenje na obveznice.",
+          "reversed": "Princ štapiće preokrenuo je, nerbanizacija ili nestrpljenje može poremetiti harmoniju.",
+          "keywords": [
+            "otkriće",
+            "radoznalost",
+            "raport",
+            "uzbuđenje",
+            "početak"
+          ],
+          "context": "Otkriće raste skladno. Nered napregne obveznice."
+        },
+        "position4": {
+          "upright": "Princ štapiće, duh istraživanja i entuzijazma obuhvata dugoročne odnose.",
+          "reversed": "Invertirani princ štapiće, neorganizacija ili neodlučnost dugoročno otežava.",
+          "keywords": [
+            "entuzijazam",
+            "otkriće",
+            "život",
+            "učenje",
+            "dugoročan"
+          ],
+          "context": "Entuzijazam podstiče dugoročno, neorganizacija testira vezu."
+        },
+        "position5": {
+          "upright": "Princ štapiće simbolizuje duh otkrivanja i uzbuđenja novih početaka. Ova osoba bi mogla biti vaša srodna duša; Možete da uspostavite avanturističku vezu.",
+          "reversed": "Princ Vands Reversed-a ukazuje na nestrpljenje ili neorganizaciju. Potencijal srodne duše zahteva više stabilnosti.",
+          "keywords": [
+            "otkriće",
+            "radoznalost",
+            "početak",
+            "avanturistički duh",
+            "duša"
+          ],
+          "context": "Avanturistička energija pokreće mogućnost srodne duše."
+        },
+        "position6": {
+          "upright": "Princ, otkriće, učenje i entuzijazam igraju važnu ulogu u tome da se vaša želja ostvari. Otvorene su nove staze.",
+          "reversed": "Prestovkani princ, neorganizacija ili gubitak fokusa može da odloži vašu želju.",
+          "keywords": [
+            "otkriće",
+            "entuzijazam"
+          ]
+        }
+      }
+    }
+  }
+}

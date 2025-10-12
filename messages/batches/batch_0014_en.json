@@ -1,0 +1,794 @@
+{
+  "marriage": {
+    "meanings": {
+      "nineofwands": {
+        "position8": {
+          "keywords": {
+            "1": "endurance",
+            "2": "Tired.",
+            "3": "communication"
+          },
+          "context": "Patience strengthens harmony."
+        },
+        "position9": {
+          "upright": "Nine of the staffs, patient, patient, and able to fight, will suit you.",
+          "reversed": "Nine of the Reverse Wands, a man who's always tired and giving up isn't right for you.",
+          "keywords": {
+            "0": "Patience",
+            "1": "resistance",
+            "2": "power",
+            "3": "endurance"
+          },
+          "context": "A wife with a fighting force is suitable."
+        },
+        "position4": {
+          "upright": "Nine wands show resistance to commitment, patience and struggle, and in spite of difficulties, yes strengthens the bond.",
+          "reversed": "The reverse nine wands are a risk of weariness or of giving up in bonding, and weariness delays the pace.",
+          "keywords": {
+            "0": "resistance",
+            "1": "Patience",
+            "2": "struggle",
+            "3": "power",
+            "4": "endurance"
+          },
+          "context": "It is strengthened by commitment, patience, and resistance."
+        }
+      },
+      "tenofwands": {
+        "position1": {
+          "upright": "The result will be complete with heavy responsibilities, and your effort will pay off.",
+          "reversed": "Overloading can force the outcome of a marriage, and responsibility must be shared.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "complete",
+            "3": "effort"
+          },
+          "context": "The result is a marriage shaped by labor, but the burdens must be shared."
+        },
+        "position10": {
+          "upright": "Ten wands show that marriage is possible despite the weight of responsibilities, and if the burden is shared, success comes.",
+          "reversed": "Overloading can make marriage difficult. Simplification and sharing are essential.",
+          "keywords": {
+            "0": "responsibilities",
+            "1": "load",
+            "2": "complete",
+            "3": "endurance",
+            "4": "effort"
+          },
+          "context": "It's important to share a burden in marriage."
+        },
+        "position2": {
+          "upright": "Organize your responsibilities, ask for help, share the burden while waiting.",
+          "reversed": "Overloading or avoiding responsibility will complicate the process.",
+          "keywords": {
+            "0": "responsibilities",
+            "1": "organisation",
+            "2": "share",
+            "3": "balance"
+          },
+          "context": "It helps to organize responsibilities while waiting."
+        },
+        "position3": {
+          "upright": "Overloads and responsibilities reduce budget quality.",
+          "reversed": "Motivation is broken as the expenses that need to be left are kept.",
+          "keywords": {
+            "0": "load",
+            "1": "delegates",
+            "2": "priority",
+            "3": "complete"
+          },
+          "context": "Simplicity opens up financial breathing space."
+        },
+        "position5": {
+          "upright": "Your appetite for responsibility is similar, but when the burden is shared, the power increases, and the love of completion is shared.",
+          "reversed": "The tendency to pick up the load on one shoulder may be too much for one of you.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "complete",
+            "3": "delegates",
+            "4": "simplicity"
+          },
+          "context": "Load culture, partner, sharing must be visible."
+        },
+        "position6": {
+          "upright": "The family may see you as someone who takes responsibility and carries a burden, and your effort and sacrifice will speed up your acceptance, and you can be a reliable support to them.",
+          "reversed": "The family can see you as being overwhelmed by extreme burdens, taking too much responsibility can create a sense of weakness, which makes it difficult to accept.",
+          "keywords": {
+            "0": "responsibilities",
+            "1": "load",
+            "2": "sacrifice",
+            "3": "effort",
+            "4": "credibility"
+          },
+          "context": "Sacrifice makes acceptance easier. Overload perception creates distance."
+        },
+        "position7": {
+          "upright": "Ten Asas show that they meet under the burden of responsibility, that sharing eases the burden and enhances intimacy.",
+          "reversed": "The Reverse Ten Asa says the overload can push the bond, so simplicity and balance make it easier to meet.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "share",
+            "3": "balance"
+          },
+          "context": "When the cargo is shared, you meet."
+        },
+        "position8": {
+          "upright": "The Ten of wands show the sharing of the loads in communication, making it easier to adapt to common responsibility.",
+          "reversed": "The Reverse Stick Ten shows that overload can disrupt communication.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "share",
+            "3": "communication"
+          },
+          "context": "The sharing of cargo increases harmony."
+        },
+        "position9": {
+          "upright": "Ten of the staffs, the wife who shares her responsibilities and eases the burdens, is fitting for you.",
+          "reversed": "Ten of the Reverse Wands, you're not cut out for someone else to take responsibility for.",
+          "keywords": {
+            "0": "responsibilities",
+            "1": "solidarity",
+            "2": "labour",
+            "3": "share"
+          },
+          "context": "Responsibility partner is appropriate."
+        },
+        "position4": {
+          "upright": "Ten wands show the desire to share responsibility in bonding and to lighten burdens. The joint transport strengthens the bond.",
+          "reversed": "The Reverse Ten Wans may be overloading the bonding or avoiding responsibility, but the unstable load makes the bond difficult.",
+          "keywords": {
+            "0": "responsibilities",
+            "1": "share",
+            "2": "load",
+            "3": "labour",
+            "4": "solidarity"
+          },
+          "context": "Commitment is strengthened by sharing responsibility."
+        }
+      },
+      "pageofwands": {
+        "position1": {
+          "upright": "The result is that the spirit of curiosity, discovery, and adventure will color your marriage.",
+          "reversed": "Carelessness or disorientation can complicate the outcome of a marriage.",
+          "keywords": {
+            "0": "discovery",
+            "1": "curiosity",
+            "2": "adventure",
+            "3": "fad"
+          },
+          "context": "The result is a marriage that survives with discoveries, but disorientation can be an obstacle."
+        },
+        "position10": {
+          "upright": "The Prince of the Wand shows that with the energy of curiosity and discovery, new steps towards marriage are near, and a bold step must be taken.",
+          "reversed": "Distribution or indecisiveness can make the marriage path difficult.",
+          "keywords": {
+            "0": "discovery",
+            "1": "curiosity",
+            "2": "Courage",
+            "3": "step",
+            "4": "learning"
+          },
+          "context": "It's time to take a bold step into marriage and explore."
+        },
+        "position2": {
+          "upright": "Build new ideas, feed your curiosity, and be open to learning while waiting.",
+          "reversed": "Distract or lack of motivation will complicate the process.",
+          "keywords": {
+            "0": "learning",
+            "1": "curiosity",
+            "2": "idea",
+            "3": "innovation"
+          },
+          "context": "It helps to learn new things while waiting."
+        },
+        "position3": {
+          "upright": "Reconstruction and testing give birth to additional incomes and savings ideas.",
+          "reversed": "Distracted attention and interruptions undermine financial trust.",
+          "keywords": {
+            "0": "discovery",
+            "1": "fad",
+            "2": "pilot",
+            "3": "focus"
+          },
+          "context": "The cycle of learning from the small experiment expands the budget."
+        },
+        "position5": {
+          "upright": "A similar spark in the quest to explore and test, you turn learning journey into a game.",
+          "reversed": "You may have a different threshold for distraction, microtarget focus.",
+          "keywords": {
+            "0": "discovery",
+            "1": "fad",
+            "2": "experiment",
+            "3": "focus",
+            "4": "learning"
+          },
+          "context": "Reconnaissance partner, set up a focus frame."
+        },
+        "position6": {
+          "upright": "The family may see you as curious, eager, and open to learning, and your openness to new ideas affects them, making your acceptance of life easier.",
+          "reversed": "Family may perceive you as disorganized or childish, too unstable, too unstable, too quick to lose confidence, too hard to accept.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "fad",
+            "2": "learning",
+            "3": "Enliversity",
+            "4": "openness"
+          },
+          "context": "Enthusiasticity speeds up acceptance, dispersion lowers trust in the family."
+        },
+        "position7": {
+          "upright": "The Prince of Asa shows a moment of discovery and curiosity, a new experience or journey opens the door.",
+          "reversed": "The Prince of Reverse Asa says that disorganized attention or postponement will delay the introduction, and small goals will ease the bond.",
+          "keywords": {
+            "0": "discovery",
+            "1": "curiosity",
+            "2": "experiment",
+            "3": "journey"
+          },
+          "context": "You'll meet him during the discovery process, and my little step will make the bond bigger."
+        },
+        "position8": {
+          "upright": "The Prince of the Wand brings in the energy of exploration and curiosity in communication, and new approaches strengthen the agreement.",
+          "reversed": "The Reverse Wand Prince says disorganized communication can make it difficult to fit in, so focus makes the deal easier.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "discovery",
+            "2": "energy",
+            "3": "communication"
+          },
+          "context": "Curiosity strengthens harmony."
+        },
+        "position9": {
+          "upright": "Prince of the Wands, an exciting, open and aggressive wife suits you.",
+          "reversed": "Prince of the Reverse Wands, a aimless and disorganized man is no match for you.",
+          "keywords": {
+            "0": "Excitement",
+            "1": "discovery",
+            "2": "initiative",
+            "3": "energy"
+          },
+          "context": "A wife who's excited is appropriate."
+        },
+        "position4": {
+          "upright": "The Prince of the Wand shows the desire for excitement, discovery and innovation in bonding, and initiative makes it easier to say yes.",
+          "reversed": "The Reverse Stick Prince may be aimless or disorganized in commitment, and inconsistency weakens the bond.",
+          "keywords": {
+            "0": "Excitement",
+            "1": "discovery",
+            "2": "initiative",
+            "3": "innovation",
+            "4": "energy"
+          },
+          "context": "It's strengthened by commitment, excitement, and discovery."
+        }
+      },
+      "knightofwands": {
+        "position1": {
+          "upright": "The result will be a marriage filled with passion, courage, and quick steps.",
+          "reversed": "Rushing or impatientness can cloud the outcome of marriage.",
+          "keywords": {
+            "0": "Courage",
+            "1": "passion",
+            "2": "speed",
+            "3": "movement"
+          },
+          "context": "The result is a passionate and courageous marriage, but patience is also necessary."
+        },
+        "position10": {
+          "upright": "The Knight of the Wand, with passion and courage, can make rapid progress on the path to marriage.",
+          "reversed": "Extortion or hastyness can make marriage difficult.",
+          "keywords": {
+            "0": "Courage",
+            "1": "passion",
+            "2": "speed",
+            "3": "determination",
+            "4": "Progress"
+          },
+          "context": "Marriage requires passionate and balanced progress."
+        },
+        "position2": {
+          "upright": "Act with courage, be open to adventure, direct your energy while waiting.",
+          "reversed": "Aggression or impulse makes the process difficult.",
+          "keywords": {
+            "0": "Courage",
+            "1": "adventure",
+            "2": "energy",
+            "3": "movement"
+          },
+          "context": "It helps to be brave while waiting."
+        },
+        "position3": {
+          "upright": "Enterpriseship and speed increase revenue opportunities; commitment architecture is essential.",
+          "reversed": "Distracted energy and decomposition, disrupting trust and cash flow.",
+          "keywords": {
+            "0": "speed",
+            "1": "Dareness",
+            "2": "risk",
+            "3": "A commitment."
+          },
+          "context": "Courage plus plan = sustainability."
+        },
+        "position5": {
+          "upright": "Similar fire in the act of aggression and passion, combined with strategy, harmony glows.",
+          "reversed": "It might be obvious in one of you to give up or give up. You need commitment architecture.",
+          "keywords": {
+            "0": "Dareness",
+            "1": "passion",
+            "2": "acceleration",
+            "3": "strategy",
+            "4": "A commitment."
+          },
+          "context": "The fire, partner, is permanent when the structure is added."
+        },
+        "position6": {
+          "upright": "The family may see you as an energetic, courageous, and impulsive person, and your passion speeds up your acceptance, and to them, you're a life-altering figure.",
+          "reversed": "Family may find you impatient or sloppy, lack of coherence undermines confidence, too hasty makes the acceptance process difficult.",
+          "keywords": {
+            "0": "Courage",
+            "1": "energy",
+            "2": "passion",
+            "3": "Progress",
+            "4": "Enliversity"
+          },
+          "context": "Courageous energy increases acceptance, rashness breeds doubt in the family."
+        },
+        "position7": {
+          "upright": "The Knight of Asa shows a moment of passion and courage, an energetic move that crosses your paths.",
+          "reversed": "The Knight of the Reverse Asa says that rashness or instability can force the bond.",
+          "keywords": {
+            "0": "Courage",
+            "1": "passion",
+            "2": "energy",
+            "3": "A commitment."
+          },
+          "context": "You meet in a passionate environment."
+        },
+        "position8": {
+          "upright": "The Knight of the Wand points to passionate and impulsive communication, and bold words strengthen harmony.",
+          "reversed": "The Knight of the Reverse Wand shows that hasty and impulsive communication can force the bond, and balance brings harmony.",
+          "keywords": {
+            "0": "passion",
+            "1": "Courage",
+            "2": "Dareness",
+            "3": "communication"
+          },
+          "context": "Courageous expression enhances harmony."
+        },
+        "position9": {
+          "upright": "Knight of the Wands, passionate, brave, and moving wife suits you.",
+          "reversed": "Knight of the Reverse Wands, an unstable or extremely hasty person is not suitable for you.",
+          "keywords": {
+            "0": "passion",
+            "1": "Courage",
+            "2": "movement",
+            "3": "energy"
+          },
+          "context": "A passionate and courageous wife is appropriate."
+        },
+        "position4": {
+          "upright": "The Knight of the Wand shows passion, courage, and fast movement in bonding, which makes it easier to say yes.",
+          "reversed": "Knight of the Reverse Stick, there's a risk of rashness or imbalance in bonding, and hyperspeed makes the bond difficult.",
+          "keywords": {
+            "0": "passion",
+            "1": "Courage",
+            "2": "speed",
+            "3": "movement",
+            "4": "Dareness"
+          },
+          "context": "It is strengthened by commitment, courage, and passion."
+        }
+      },
+      "queenofwands": {
+        "position1": {
+          "upright": "The result is that confidence, charisma, and warmth will feed your marriage.",
+          "reversed": "Jealousy or insecurities can force the outcome of a marriage.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "Charisma",
+            "2": "temperature",
+            "3": "leadership"
+          },
+          "context": "The result is a marriage that grows with trust and warmth, but jealousy can be an obstacle."
+        },
+        "position10": {
+          "upright": "The Queen of the Wand shows that marriage is possible with charisma and hot energy, and leadership and trust strengthen marriage.",
+          "reversed": "Jealousy or insecurity can cloud the way to marriage. Self - confidence is essential.",
+          "keywords": {
+            "0": "Charisma",
+            "1": "Trust",
+            "2": "leadership",
+            "3": "passion",
+            "4": "balance"
+          },
+          "context": "Trust and warm energy are important for marriage."
+        },
+        "position2": {
+          "upright": "Increase your confidence, lead, express yourself while waiting.",
+          "reversed": "Excessive domination or lack of trust will complicate the process.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "leadership",
+            "2": "expression",
+            "3": "power"
+          },
+          "context": "It helps to build confidence while waiting."
+        },
+        "position3": {
+          "upright": "Charisma and trust can attract resources in joint projects.",
+          "reversed": "The search for approval and the shadow of jealousy push together the budget.",
+          "keywords": {
+            "0": "Charisma",
+            "1": "leadership",
+            "2": "Self - confidence",
+            "3": "visibility"
+          },
+          "context": "With value, aligned appearance brings blessings."
+        },
+        "position5": {
+          "upright": "You polish each other in charisma and visibleness, your true self-esteem.",
+          "reversed": "The shadow of comparison/security can be triggered in one of you.",
+          "keywords": {
+            "0": "Charisma",
+            "1": "Self - confidence",
+            "2": "visibility",
+            "3": "Inspired",
+            "4": "share"
+          },
+          "context": "Glorious energy, partner, should be left in comparison."
+        },
+        "position6": {
+          "upright": "The family may see you as a charismatic, warm, attractive person, and your social skills and trust make it easier for you to accept, and your inspiring posture inspires appreciation.",
+          "reversed": "Family may perceive you as too dominant or jealous, but controlling behaviors make it difficult to accept, and over-interesting lowers confidence.",
+          "keywords": {
+            "0": "Charisma",
+            "1": "temperature",
+            "2": "Attraction",
+            "3": "Trust",
+            "4": "Inspired"
+          },
+          "context": "Temperatures and charisma make acceptance easier, too much dominance forces the family."
+        },
+        "position7": {
+          "upright": "The Queen of Asa shows us to meet in an environment of charisma and self-esteem, and the heat increases the gravity.",
+          "reversed": "The Reverse Asa Queen says jealousy or insecurity can cloud the meeting, making the self-value bond easier.",
+          "keywords": {
+            "0": "Charisma",
+            "1": "Self - confidence",
+            "2": "gravity",
+            "3": "leadership"
+          },
+          "context": "You meet in a charismatic environment, it strengthens the self-value bond."
+        },
+        "position8": {
+          "upright": "The Stick Queen points to warm and charismatic communication, and intimacy enhances harmony.",
+          "reversed": "The Reverse Stick Queen shows that the shadow of jealousy or insecurity can make communication difficult.",
+          "keywords": {
+            "0": "Charisma",
+            "1": "intimacy",
+            "2": "Trust",
+            "3": "communication"
+          },
+          "context": "Intimacy enhances harmony."
+        },
+        "position9": {
+          "upright": "Queen of the Wands, you're fit for a confident, cheerful, full of life.",
+          "reversed": "The Queen of Reverse Wands, an overbearing or jealous person, is not right for you.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "joy",
+            "2": "energy",
+            "3": "leadership"
+          },
+          "context": "A confident and cheerful wife is appropriate."
+        },
+        "position4": {
+          "upright": "The Stick Queen shows confidence, joy and life in commitment, charisma and energy make it easier to say yes.",
+          "reversed": "The Reverse Wand Queen, there may be oppression or jealousy in bonding, and insecurity weakens the bond.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "joy",
+            "2": "energy",
+            "3": "Charisma",
+            "4": "leadership"
+          },
+          "context": "It is strengthened by commitment, confidence, and joy."
+        }
+      },
+      "kingofwands": {
+        "position1": {
+          "upright": "The result is that your marriage will be permanent with visionary leadership, strategy and courage.",
+          "reversed": "Excessive authority or ego can complicate the outcome of marriage.",
+          "keywords": {
+            "0": "leadership",
+            "1": "Vision",
+            "2": "Courage",
+            "3": "strategy"
+          },
+          "context": "The result is a marriage driven by a powerful vision, but the ego must be governed."
+        },
+        "position10": {
+          "upright": "The King of the Wand shows that marriage can happen with vision and determination, and strong leadership builds a solid foundation.",
+          "reversed": "Excessive authoritarianism or ego can make the marriage process difficult.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "determination",
+            "3": "passion",
+            "4": "power"
+          },
+          "context": "Marriage requires vision and strong determination."
+        },
+        "position2": {
+          "upright": "Show visionary leadership, think big, inspire while waiting.",
+          "reversed": "Excessive authoritarianism or stagnation makes the process difficult.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "Inspired",
+            "3": "big thought"
+          },
+          "context": "It helps to show visionary leadership while waiting."
+        },
+        "position3": {
+          "upright": "Visionary leadership and strategic courage increase common capital, the transfer of power provides a scale.",
+          "reversed": "Ego and authoritarian tone reduce co-operation and sharing.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "Courage",
+            "3": "scale"
+          },
+          "context": "The shared vision gives birth to a fair and large budget."
+        },
+        "position5": {
+          "upright": "It's similar courage in visionary leadership, and your inspiration to share authority increases the common goal.",
+          "reversed": "There's a risk of ego/otority conflict.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "Inspired",
+            "3": "turnout",
+            "4": "direction"
+          },
+          "context": "The vision is shared, the participation leadership maintains harmony."
+        },
+        "position6": {
+          "upright": "The family may see you as a visionary, strong, leaderly person, and your bold posture and reassuring attitude will make the acceptance process easier, and to them, you are a guiding figure.",
+          "reversed": "Family can perceive you as bossy or ego-centered, too much domination makes acceptance difficult, lack of balance creates distance in the family.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "Courage",
+            "3": "power",
+            "4": "authority"
+          },
+          "context": "Leadership increases acceptance, too much authority makes the family difficult."
+        },
+        "position7": {
+          "upright": "The King of Asa shows to meet in a visionary and strategic environment, making the bond of leadership and courage permanent.",
+          "reversed": "The reverse king of Asa says that authoritarianism or ego friction can force the bond, and the listening muscle will ease the process.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "Courage",
+            "3": "strategy"
+          },
+          "context": "You meet in a strategic environment, the listening bond balances out."
+        },
+        "position8": {
+          "upright": "The king of the wand points to visionary and leader communication, and clear direction is adaptive.",
+          "reversed": "The reverse rod king shows that oppression can make communication difficult. Listening strengthens the bond.",
+          "keywords": {
+            "0": "leadership",
+            "1": "Vision",
+            "2": "Don't listen.",
+            "3": "communication"
+          },
+          "context": "Leadership and listening bring harmony."
+        },
+        "position9": {
+          "upright": "King of the Wands, visionary, inspirational, and a strong wife suits you.",
+          "reversed": "King of the Inverted Wands, a oppressor or undirected man is no match for you.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "power",
+            "3": "Inspired"
+          },
+          "context": "The visionary and the strong mate are appropriate."
+        },
+        "position4": {
+          "upright": "The King of the Wand shows vision, leadership and inspiration in commitment, and strong energy makes it easier to say yes.",
+          "reversed": "The King of the Inverted Wand may be oppression or disorientation in bonding, and the authority of authority makes the bond difficult.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "Inspired",
+            "3": "power",
+            "4": "energy"
+          },
+          "context": "It's strengthened by commitment, vision and leadership."
+        }
+      },
+      "aceofpentacles": {
+        "position1": {
+          "upright": "The result will be a sound start in your marriage, financial trust, and lasting opportunities.",
+          "reversed": "Abducted opportunities or lack of financial confidence can force the outcome of a marriage.",
+          "keywords": {
+            "0": "start",
+            "1": "opportunity",
+            "2": "material trust",
+            "3": "stability"
+          },
+          "context": "The result is a safe and stable marriage, but without opportunity, it can be difficult."
+        },
+        "position10": {
+          "upright": "The amulet ace shows the potential to sit on a strong and concrete basis of marriage, opening the doors of opportunity and plenty for a new beginning.",
+          "reversed": "The abduction of opportunity or insecurities can make the marriage path difficult, so careful steps must be taken to establish stability.",
+          "keywords": {
+            "0": "start",
+            "1": "opportunity",
+            "2": "security",
+            "3": "abundance",
+            "4": "basic"
+          },
+          "context": "There are concrete opportunities for marriage, solid steps are needed."
+        },
+        "position2": {
+          "upright": "Take advantage of material opportunities, build a solid foundation while waiting.",
+          "reversed": "Abducted opportunities slow the process.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "basic",
+            "2": "material trust",
+            "3": "start"
+          },
+          "context": "It helps to build a foundation while waiting."
+        },
+        "position3": {
+          "upright": "The solid opportunity and the solid foundation give a strong start to the common budget, and the small seeds grow.",
+          "reversed": "Fear of famine and loss of opportunity delays the pace.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "basic",
+            "2": "guarantee",
+            "3": "start"
+          },
+          "context": "Conspiracy with solid plan gives root."
+        },
+        "position4": {
+          "upright": "A solid beginning, a desire for trust and stability, strengthens commitment, and when both sides are willing to invest in a common foundation, the relationship is rooted.",
+          "reversed": "Financial concerns or lack of security may delay binding. Hearts remain shy to say yes before concrete plans become clear.",
+          "keywords": {
+            "0": "start",
+            "1": "guarantee",
+            "2": "solidity",
+            "3": "investment",
+            "4": "stability"
+          },
+          "context": "Connection can be eased by concrete steps and security; uncertainty can delay."
+        },
+        "position5": {
+          "upright": "It's a similar request for concrete beginnings, assurances, and basic building, and you can grow your little steps together.",
+          "reversed": "Famine mentality may be different, but if there's no concrete plan, then the resemblance fades.",
+          "keywords": {
+            "0": "basic",
+            "1": "opportunity",
+            "2": "guarantee",
+            "3": "Seed",
+            "4": "solidity"
+          },
+          "context": "Safe basic partner, keep the plan visible."
+        },
+        "position6": {
+          "upright": "In the beginning, the family may look at you as an opportunity, and firmness, credibility, and material stability will reassure them, and your concrete steps and serious intentions can speed up the process of acceptance.",
+          "reversed": "Family may perceive you as opportunistic or insecure, making it difficult to accept material concerns or future concerns, and doubt increases when the concrete evidence is missing.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "Trust",
+            "2": "start",
+            "3": "stability",
+            "4": "solidity"
+          },
+          "context": "Family seeks trust, your concrete steps lead to acceptance, lack of trust."
+        },
+        "position7": {
+          "upright": "The As Talisman says it's a concrete opportunity to meet, intersect new jobs, projects, or financial opportunities.",
+          "reversed": "The Reverse Ace Talisman says that ignoring the opportunity delays the introduction, and it makes the bond easier to recognize the values.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "basic",
+            "2": "project",
+            "3": "growth"
+          },
+          "context": "You meet him when you can, it's a bond to appreciate him."
+        },
+        "position8": {
+          "upright": "The amulet ace represents a safe and sound beginning in communication, and financial and spiritual stability makes the deal easier.",
+          "reversed": "The Reverse Talisman ace can make it difficult for opportunities to slip away or to communicate with an insecure base, and clarity and concrete steps strengthen the bond.",
+          "keywords": {
+            "0": "start",
+            "1": "Trust",
+            "2": "stability",
+            "3": "solidity"
+          },
+          "context": "It supports solid basic communication."
+        },
+        "position9": {
+          "upright": "The ace of charms, the wife who builds safe and sound foundations, is right for you. One who takes concrete steps brings peace.",
+          "reversed": "The ace of reverse charms, someone who acts erratically and insecurely, is not fit for you.",
+          "keywords": {
+            "0": "Trust",
+            "1": "basic",
+            "2": "stability",
+            "3": "growth"
+          },
+          "context": "The mate who builds safe foundations is suitable."
+        }
+      },
+      "twoofpentacles": {
+        "position1": {
+          "upright": "The result will be the progression of balance, harmony, and flexibility in your marriage.",
+          "reversed": "Unstableness and inability to make decisions can make the outcome of marriage difficult.",
+          "keywords": {
+            "0": "balance",
+            "1": "flexibility",
+            "2": "compatibility",
+            "3": "decision"
+          },
+          "context": "The result is a flexible, balanced marriage, but the decisions must be clear."
+        },
+        "position10": {
+          "upright": "Two amulets highlight the search for balance and harmony in the marriage process, balancing responsibilities makes marriage possible.",
+          "reversed": "Loss of balance and delays may delay progress in marriage, making clear priorities is essential.",
+          "keywords": {
+            "0": "balance",
+            "1": "compatibility",
+            "2": "responsibilities",
+            "3": "flexibility",
+            "4": "priority"
+          },
+          "context": "The balance of responsibility for marriage is critical."
+        },
+        "position2": {
+          "upright": "Learn time and energy management, stay flexible while you wait.",
+          "reversed": "Excessive disarray complicates the process.",
+          "keywords": {
+            "0": "balance",
+            "1": "time",
+            "2": "flexibility",
+            "3": "priority"
+          },
+          "context": "It helps to be balanced while waiting."
+        },
+        "position3": {
+          "upright": "Flexible balance and intelligent juggling governs variable costs. The priority setting is essential.",
+          "reversed": "Distract and postponement fail to pay; the balance fails.",
+          "keywords": {
+            "0": "balance",
+            "1": "flexibility",
+            "2": "priority",
+            "3": "flow"
+          },
+          "context": "Rhythms protect fair sharing."
+        },
+        "position4": {
+          "upright": "Time, balancing energy and resources makes it possible to connect. When a flexible rhythm is established, the relationship moves without charge.",
+          "reversed": "Excession and priority confusion can make the decision difficult, and the hearts can't say yes at the same time unless the programs are compatible.",
+          "keywords": {
+            "0": "balance",
+            "1": "flexibility",
+            "2": "timing",
+            "3": "compatibility",
+            "4": "priority"
+          },
+          "context": "Rhythms and priorities must be adapted to connect; disarray prevents."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,794 @@
+{
+  "new-lover": {
+    "meanings": {
+      "eightofpentacles": {
+        "position5": {
+          "keywords": [
+            null,
+            null,
+            null,
+            null,
+            "srodna duša"
+          ],
+          "context": "Kontinuirano poboljšanje jača vezu."
+        },
+        "position6": {
+          "upright": "Osam podržava realizaciju vaše želje sa redovnim naporom i disciplinov rad. Kontinuitet donosi uspeh.",
+          "reversed": "Invertirana osam, neugodnost ili gubitak motivacije može vam otežati vašu želju.",
+          "keywords": [
+            "rad",
+            "disciplina",
+            "studija",
+            "briga",
+            "stabilnost"
+          ],
+          "context": "Redovna radna snaga neguje vašu želju."
+        }
+      },
+      "nineofpentacles": {
+        "position1": {
+          "upright": "Devet stanovnika kaže da nezavisnost i samo-vrednost stvaraju snažnu privlačnost. Novi odnos uskoro može nastati sa nekim ko vidi svoju snagu.",
+          "reversed": "Devet pentakova preokrećeno ukazuje da tendencija prema prevelike zavisnosti može naprezanje na novu vezu. Pravi meč dolazi kada poštujete svoju nezavisnost.",
+          "keywords": [
+            "nezavisnost",
+            "samopouzdanje",
+            "povući",
+            "poverenje"
+          ],
+          "context": "Održavanje svoje vrednosti će privući novu ljubav."
+        },
+        "position2": {
+          "upright": "Devet stanovnika ukazuje na gracioznu nezavisnost Bika. Ova osoba poznaje svoju vrednost.",
+          "reversed": "Devet obrnutih preokreta može ukazivati na zavisnost ili prekomerna udobnost u senci Bika.",
+          "keywords": [
+            "Bik",
+            "nezavisnost",
+            "samopouzdanje",
+            "udobnost"
+          ],
+          "context": "Energija Bika dolazi do izražaja."
+        },
+        "position3": {
+          "upright": "Devet stanovnika pruža ravnotežu u skladu sa individualnom snagom i samo-vrednom. Nezavisnost podstiče mir u vezi.",
+          "reversed": "Devet pentakova preokrenulo je prevelika zavisnost ili ekstravagancija može poremetiti harmoniju. Samoefikasnost je važna.",
+          "keywords": [
+            "samopouzdanje",
+            "nezavisnost",
+            "raport",
+            "ravnoteža",
+            "sloboda"
+          ],
+          "context": "Samo-vrediće veličanstveno skladištenje. Zavisnost naprežena veza."
+        },
+        "position4": {
+          "upright": "Devet stanovnika, nezavisnosti i samo-vrednosti donose ročnost dugoročnom odnosu.",
+          "reversed": "Invertirani devet stanovnika, previsoka zavisnost ili ekstravagannce može oštetiti dugoročno.",
+          "keywords": [
+            "samopouzdanje",
+            "nezavisnost",
+            "udobnost",
+            "zrelost",
+            "dugoročan"
+          ],
+          "context": "Samo-vrednost podržava dugoročno, zavisnost testira vezu."
+        },
+        "position5": {
+          "upright": "Devet stanovnika sugeriše da bi individualna sloboda i samopotrebna vrednost trebala biti sačuvana u vezi sa dušem.",
+          "reversed": "Devet pentakova obrnuto, previsoka zavisnost može otežati vezu srodne duše.",
+          "keywords": [
+            "sloboda",
+            "samopouzdanje",
+            "nezavisnost",
+            "ravnoteža",
+            "srodna duša"
+          ],
+          "context": "Samo-vredno podržava matesništvo duše."
+        },
+        "position6": {
+          "upright": "Davanje ispunjenja želja sa osećajem nezavisnosti i samo-vrednosti. Rezultati dolaze kada stojite na svoju dva metra.",
+          "reversed": "Prevrnuta deveta, previsoka zavisnost može vam otežati vašu želju. Jača samopouzdanje.",
+          "keywords": [
+            "poverenje",
+            "nezavisnost",
+            "samopouzdanje",
+            "udobnost",
+            "uspeh"
+          ],
+          "context": "Samopouzdanje donosi vašu želju bližu stvarnosti."
+        }
+      },
+      "tenofpentacles": {
+        "position1": {
+          "upright": "Deset stanovnika ukazuje da je dugoročan i trajan odnos na horizontu. Ova nova veza može da nosi energiju porodice i stabilnosti.",
+          "reversed": "Deset pentakova obrnuto objašnjava da porodice ili teme bezbednosti iz prošlosti mogu da izazove početak. Kada su ta pitanja rešena, novi odnos postaje jači.",
+          "keywords": [
+            "stabilnost",
+            "porodica",
+            "dugoročan",
+            "poverenje"
+          ],
+          "context": "Uskoro postoji mogućnost trajne veze."
+        },
+        "position2": {
+          "upright": "Deset stanovnika pokazuje dugoročni konstruktivni aspekt Jarac. Ova osoba pridaje značaj za standenciju.",
+          "reversed": "Ograničeni deset pentaka pod senkom Jarac može predstaviti poteškoće sa porodicom ili naslednim pitanjima.",
+          "keywords": [
+            "Koza",
+            "stabilnost",
+            "baština",
+            "stalnost"
+          ],
+          "context": "Jarac je dominantan."
+        },
+        "position3": {
+          "upright": "Deset stanovnika ukazuje da će porodica i dugoročna stabilnost ojačati harmoniju. Zajedničke vrednosti ojačavaju vezu.",
+          "reversed": "Deset pentakova obrnuto, porodični sukobi ili nestabilnost može otežati harmoniju.",
+          "keywords": [
+            "porodica",
+            "stabilnost",
+            "raport",
+            "vrednosti",
+            "stalnost"
+          ],
+          "context": "Dugoročna stabilnost podstiče harmoniju. Sukob testira vezu."
+        },
+        "position4": {
+          "upright": "Deset stanovnika, porodice i trajne strukture formiraju osnovu dugoročne veze.",
+          "reversed": "Invertirani deset stanovnika, nasledstva ili porodičnih sukoba može da prostire dugoročnu vezu.",
+          "keywords": [
+            "porodica",
+            "stabilnost",
+            "stalnost",
+            "baština",
+            "dugoročan"
+          ],
+          "context": "Upornost neguje dugoročno, sukob testira vezu."
+        },
+        "position5": {
+          "upright": "Deset stanovnika pokazuje da se veza srodne duše može izgraditi na temelju dugoročne stabilnosti i porodice.",
+          "reversed": "Reversed deset stanovnika može opteretiti vezu disharmonije u porodici ili finansijskim pitanjima.",
+          "keywords": [
+            "stabilnost",
+            "porodica",
+            "Finansijska sigurnost",
+            "stalnost",
+            "srodna duša"
+          ],
+          "context": "Porodica i stabilnost podržavaju matesništvo duše."
+        },
+        "position6": {
+          "upright": "Deset pokazuje da će ispunjenje vaše želje donijeti trajno prosperitet i porodičnu stabilnost.",
+          "reversed": "Invertirani deset, finansijski sukobi mogu otežati vaše želje. Potrebna su transparentna pravila.",
+          "keywords": [
+            "stabilnost",
+            "blagostanje",
+            "porodica",
+            "sistem",
+            "dosta"
+          ],
+          "context": "Stalni nalog podržava vašu želju."
+        }
+      },
+      "pageofpentacles": {
+        "position1": {
+          "upright": "Princ Pentaklova ukazuje na poznanstvo koje dolazi sa radoznalošću i entuzijazmom za novo učenje. Konkretni mali koraci mogu započeti novu ljubav.",
+          "reversed": "Preokrećeni princ Pentacles kaže da je odlaganje i raštrkani fokus može propustiti priliku. Postavljanje jasnih ciljeva dovodi do novih odnosa.",
+          "keywords": [
+            "početak",
+            "učenje",
+            "betonski korak",
+            "entuzijazam"
+          ],
+          "context": "Mali, ali presudan korak donosi novu vezu."
+        },
+        "position2": {
+          "upright": "Princ pentacla predstavlja mladu energiju device koja je otvorena za učenje. Radoznao je i marljiv.",
+          "reversed": "Princ Pentacles obrnut može pokazati neorganizaciju ili odlaganju u senci Device.",
+          "keywords": [
+            "Virgo",
+            "učenje",
+            "početak",
+            "studija"
+          ],
+          "context": "Energija Djevice dolazi do izražaja."
+        },
+        "position3": {
+          "upright": "Princ Pentacles, želja za učenjem i novim počecima promovišu harmoniju. Mali koraci donose veliki napredak.",
+          "reversed": "Ograničeni princ pentakla, nepažnje ili raštrkane ciljeve može poremetiti harmoniju. Fokus je obavezan.",
+          "keywords": [
+            "učenje",
+            "početak",
+            "raport",
+            "fokus",
+            "cilj"
+          ],
+          "context": "Novo učenje donosi harmoniju. Nered guma Bond."
+        },
+        "position4": {
+          "upright": "Princ Pentacles, entuzijazam za učenje i planirane korake ojačavaju dugoročnu vezu.",
+          "reversed": "Odrastao je princ pentakla, neorganizacija i odlaganja oslabiti dugoročnu vezu.",
+          "keywords": [
+            "učenje",
+            "cilj",
+            "planiranje",
+            "praktičnost",
+            "dugoročan"
+          ],
+          "context": "Planirani koraci podržavaju dugoročno, odlaganje testira obveznice."
+        },
+        "position5": {
+          "upright": "Princ Pentacles pokazuje uzbuđenje učenja i isprobavanja novih stvari zajedno za vezu srodne duše.",
+          "reversed": "Princ pentaklova obrnut, nedostatak fokusa ili odlaganja može se obveznica obveznica.",
+          "keywords": [
+            "učenje",
+            "radoznalost",
+            "početak",
+            "iskustvo",
+            "srodna duša"
+          ],
+          "context": "Radoznalost revitalizuje vezu."
+        },
+        "position6": {
+          "upright": "Princ je omogućilo da se vaša želja ostvari sa entuzijazmom za učenje i malih početaka.",
+          "reversed": "Prestotak koji je obrnut može ometati vašu želju za odlaganjem i raštrkanim fokusom.",
+          "keywords": [
+            "učenje",
+            "početak",
+            "cilj",
+            "praktičan",
+            "fokus"
+          ],
+          "context": "Mali koraci započinju vašu želju."
+        }
+      },
+      "knightofpentacles": {
+        "position1": {
+          "upright": "Vitez Pentacles Heralds koji će pacijent i stabilan kandidat uskoro ući u vaš život. Ova osoba može dugoročno biti pouzdan partner.",
+          "reversed": "Vitez Pentaklova obrnuto kaže da stagnacija i prekomerna oprema mogu usporiti novu vezu. Mala hrabrost ubrzava postupak.",
+          "keywords": [
+            "stabilnost",
+            "strpljenje",
+            "pouzdanost",
+            "kontinuitet"
+          ],
+          "context": "Polako, ali sigurno, nastaje mogućnost veze."
+        },
+        "position2": {
+          "upright": "Vitez Pentekla pokazuje disciplinovani i stabilni aspekt Jarac. Pouzdan je.",
+          "reversed": "Vitez pentaklova može se pokazati rigidnost ili tvrdoglavost u nijansi Jarac.",
+          "keywords": [
+            "Koza",
+            "disciplina",
+            "stabilnost",
+            "razvodnik"
+          ],
+          "context": "Jarac je dominantan."
+        },
+        "position3": {
+          "upright": "Vitez pentakala pokazuje da će pacijent i stalni koraci ojačati harmoniju. Lojalnost jača obveznice.",
+          "reversed": "Vitez Pentacles obrnut, stasis ili tvrdoglavost može da poremeti sklad. Fleksibilnost je obavezna.",
+          "keywords": [
+            "stabilnost",
+            "strpljenje",
+            "raport",
+            "lojalnost",
+            "poverenje"
+          ],
+          "context": "Stabilnost jača harmoniju. Krutost sojena obveznica."
+        },
+        "position4": {
+          "upright": "Vitez Pentacles, stabilan i dosledan trud je najveća snaga dugoročne veze.",
+          "reversed": "Okolišteni vitez Pentacles, stagnacije i nefleksibilnosti dugoročno otežava.",
+          "keywords": [
+            "stabilnost",
+            "trud",
+            "kontinuitet",
+            "narediti",
+            "dugoročan"
+          ],
+          "context": "Doslednost podržava dugoročno, stabilnost testira obveznica."
+        },
+        "position5": {
+          "upright": "Vitez Pentacles kaže da će se srodne duše obveznice izgraditi na strpljenju, poverenju i stabilnosti.",
+          "reversed": "Vitez Pentacles obrnut, inercija ili preovladanost može opteretiti vezu.",
+          "keywords": [
+            "stabilnost",
+            "poverenje",
+            "strpljenje",
+            "odgovornost",
+            "srodna duša"
+          ],
+          "context": "Strpljenje podstiče materi u dušema."
+        },
+        "position6": {
+          "upright": "Vitez polako, ali sigurno donosi ispunjenje vaše želje. Doslednost je ključna.",
+          "reversed": "Vraćanje viteza, staze ili preokrećenost mogu odložiti vašu želju.",
+          "keywords": [
+            "stabilnost",
+            "strpljenje",
+            "rutinski",
+            "rad",
+            "doslednost"
+          ],
+          "context": "Dosledni koraci omogućavaju vašu želju."
+        }
+      },
+      "queenofpentacles": {
+        "position1": {
+          "upright": "Kraljica Pentakova ukazuje na njegujući odnos sa njenom saosećajnom i praktičnom energijom. U oblasti samopovrede i podrške može doći do snažnog meča.",
+          "reversed": "Kraljica Pentacles Reversed kaže da preopterećenje ne ostavlja prostora za nove veze. Prilika se brzo pojavljuje kada se otvori prostor.",
+          "keywords": [
+            "saosećanje",
+            "praktičnost",
+            "ishrana",
+            "ravnoteža"
+          ],
+          "context": "Vaša njegovanja energija privući će novi odnos."
+        },
+        "position2": {
+          "upright": "Kraljica pentakla ukazuje na negovanje i saosećajne strane Bika. Koristi svoje resurse balansono.",
+          "reversed": "Kraljica obrnutog preokrenuće može pokazati prekomerno posesivnost ili nedostatak samo-nege u senci Bika.",
+          "keywords": [
+            "Bik",
+            "saosećanje",
+            "praktičnost",
+            "uverenje"
+          ],
+          "context": "Energija Bika je dominantna."
+        },
+        "position3": {
+          "upright": "Kraljica Pentakova ukazuje da će saosećajni i praktični pristup promovisati harmoniju. Negujući energiju štiti vezu.",
+          "reversed": "Kraljica Pentacles-a preokrenuta, preopterećenja ili nedostatak samo-nege može naprezati harmoniju.",
+          "keywords": [
+            "saosećanje",
+            "praktičnost",
+            "raport",
+            "ravnoteža",
+            "ishrana"
+          ],
+          "context": "Negujući energiju uvećava Harmoniju. Nedostatak samo-nege slabi vezu."
+        },
+        "position4": {
+          "upright": "Kueen of Pentacles, saosećanje i praktičnost podstiču dugoročnu vezu.",
+          "reversed": "Ograničena kraljica pentakla, preopterećenja ili nedostatak samopovrede može naštetiti dugoročnom roku.",
+          "keywords": [
+            "saosećanje",
+            "praktičnost",
+            "nega",
+            "ravnoteža",
+            "dugoročan"
+          ],
+          "context": "Saosećanje neguje dugoročno, nedostatak samo-nege testira obveznice."
+        },
+        "position5": {
+          "upright": "Kraljicu Pentekla dominira saosećanje, podrška i praktično poverenje u srodnu vezu.",
+          "reversed": "Prekoračena kraljica pentakala, predanost koja se pretvara u iscrpljenost može opteretiti vezu.",
+          "keywords": [
+            "saosećanje",
+            "praktičnost",
+            "podrška",
+            "ravnoteža",
+            "srodna duša"
+          ],
+          "context": "Saosećanje uvećava matesiranje duše."
+        },
+        "position6": {
+          "upright": "Kraljica sarađuje ispunjenje želja sa saosećajnom praktičnošću i samo-negom.",
+          "reversed": "Inverterovana kraljica, zanemarivanje samopovrede može vam otežati vašu želju.",
+          "keywords": [
+            "nega",
+            "saosećanje",
+            "izvor",
+            "ravnoteža",
+            "praktičnost"
+          ],
+          "context": "Podržava vašu želju za samo-negu."
+        }
+      },
+      "kingofpentacles": {
+        "position1": {
+          "upright": "Kralj pentakla pokazuje da će uskoro biti zreli i pouzdan partner. Ova veza može da nosi materijalnu i duhovnu stabilnost.",
+          "reversed": "Prekoračeni kralj stanovnika upozorava da prekomerna kontrola ili fokus statusa mogu zasjeniti novi početak. Sa fleksibilnošću, ljubav se otkriva.",
+          "keywords": [
+            "zrelost",
+            "stabilnost",
+            "poverenje",
+            "robusnost"
+          ],
+          "context": "Zreli i pouzdan partner može donijeti novu ljubav."
+        },
+        "position2": {
+          "upright": "Kralj pentaklama predstavlja aspekt liderstva i čvrstine Jarac. On je uvjerljiv i određen.",
+          "reversed": "Ograničeni kralj Pentekla može pokazati prekomernu kontrolu ili orijentaciju statusa u senci Jarac.",
+          "keywords": [
+            "Koza",
+            "rukovodstvo",
+            "robusnost",
+            "član"
+          ],
+          "context": "Uticaj Jarac dolazi do izražaja."
+        },
+        "position3": {
+          "upright": "Kralj pentaklova promoviše harmoniju čvrstine i odgovornosti. Strateški pristup dodaje poverenje u odnos.",
+          "reversed": "Kralj pentaklova obrnut, preterana kontrola ili status fokusiranja slabi sklad.",
+          "keywords": [
+            "robusnost",
+            "raport",
+            "odgovornost",
+            "strategija",
+            "poverenje"
+          ],
+          "context": "Pazite na harmoniju. Kontrola ograničava vezu."
+        },
+        "position4": {
+          "upright": "Kralj pentakla, finansijsko poverenje i strateška čvrstina čine dugoročne odnose trajne.",
+          "reversed": "Prekoračen kralj pentakla, prevelika kontrola i fokus o statusu dugoročno otežava.",
+          "keywords": [
+            "Finansijska sigurnost",
+            "robusnost",
+            "strategija",
+            "stabilnost",
+            "dugoročan"
+          ],
+          "context": "Poverenje podržava dugoročno, kontrola testira obveznica."
+        },
+        "position5": {
+          "upright": "Kralj Pentekla pokazuje da se veza srodne duše može izgraditi na poverenju, stabilnosti i snažnom fondaciji.",
+          "reversed": "Prekoračen kralj Pentekla, prevelika kontrola ili fokus statusa može da oblakne obveznice.",
+          "keywords": [
+            "poverenje",
+            "stabilnost",
+            "rukovodstvo",
+            "stalnost",
+            "srodna duša"
+          ],
+          "context": "Poverenje i stabilnost podržavaju matesništvo duše."
+        },
+        "position6": {
+          "upright": "Kralj podržava realizaciju vaše želje strateškim zvukom i materijalnom mudrošću.",
+          "reversed": "Prekomerni kralj, pretjeranu kontrolu ili statusna anksioznost mogu vam otežati vašu želju.",
+          "keywords": [
+            "robusnost",
+            "rukovodstvo",
+            "sistem",
+            "blagostanje",
+            "poverenje"
+          ],
+          "context": "Jača vašu želju za strateške čvrstine."
+        }
+      }
+    }
+  },
+  "problem-solving": {
+    "meanings": {
+      "thefool": {
+        "position1": {
+          "upright": "Joker, koren problema može biti potreba za novim početkom ili željom da se zakorači na nepoznati put. Problem se može nastati od neizvesnosti i nedostatka planiranja.",
+          "reversed": "Invertirani šaljivdžija, koren problema može da leži u nepažljivosti, ignorisanje rizika ili izbegavanje odgovornosti.",
+          "keywords": [
+            "početak",
+            "rizikovati",
+            "sloboda",
+            "neizvesnost",
+            "pitanje"
+          ],
+          "context": "U srcu problema je stanje zaglavljene između želje za slobodom i neizvesnošću."
+        },
+        "position10": {
+          "upright": "JOKER vam može donijeti novi početak, oslobođenje i priliku da oduzme hrabre korake kao rezultat događaja.",
+          "reversed": "Učitavanje Joker može ukazivati na žurbu, nepažnju ili rizik od lažnog početka kao rezultat događaja.",
+          "keywords": [
+            "početak",
+            "sloboda",
+            "hrabrost",
+            "rizikovati",
+            "inovativnost"
+          ],
+          "context": "Rezultat se može krenuti na novo putovanje ili pogrešiti u žurbi."
+        },
+        "position2": {
+          "upright": "Joker, osnova prepreke može biti impulsivni koraci, prekomjerni rizik ili nedostatak planiranja. Pokazuje da je ono što zapravo stoji na putu problema je vaša nestrpljiva želja za skokom u novo.",
+          "reversed": "Invertirani šaljivdžija, izvor prepreke je bezbrižnost, neodgovornost ili rizike koje stalno odložite. Možda gubite hrabrost dok bežite od neizvesnosti.",
+          "keywords": [
+            "rizikovati",
+            "nedostatak planiranja",
+            "neizvesnost",
+            "nestrpljenje",
+            "prepreka"
+          ],
+          "context": "Prepreka se postavlja iz nesigurnosti i neplaniranih koraka."
+        },
+        "position3": {
+          "upright": "Džoker, možda će biti nekontrolisani početni, ishitreni koraci ili tendencije da rizikuju bez razmišljanja da ste iskusili u prošlosti u vašoj podsvijesti. Ova iskustva su možda dovela do njegovog trenutnog problema.",
+          "reversed": "Invertirani šaljivdžija, prošla neodgovorna sposobnost, nepažnja ili potrošnja ili potrošnja mogu se srediti u podsvesti. Prepreke koje danas doživite mogu doći iz ovih iskustava.",
+          "keywords": [
+            "rizikovati",
+            "početak",
+            "neodgovornost",
+            "prošlost",
+            "podsvestan"
+          ],
+          "context": "Urođene odluke i neplanirane korake u prošlosti možda su bila osnova za današnje probleme."
+        },
+        "position4": {
+          "upright": "JOKER vam donosi neograničene mogućnosti, podebljane početke i oslobađanje kao vaš najbolji potencijal. Uzimajući rizike mogu otvoriti nove horizonte za vas.",
+          "reversed": "Invertirani šaljivdžija, trebalo bi da izbegavate nepažnju, nedostatak planiranja i nepotrebnih rizika kako bi se vaš potencijal ne gubi.",
+          "keywords": [
+            "sloboda",
+            "početak",
+            "rizikovati",
+            "kreativnost",
+            "potencijal"
+          ],
+          "context": "Vaš najbolji potencijal dolazi od hrabrosti otvoren za nove početke."
+        },
+        "position5": {
+          "upright": "Joker je možda nedavno ušao u svoj život energijom novog početka, uzimajući rizik ili oslobađanje. Možda ste uzeli hrabar korak i kretali se prema nepoznatom.",
+          "reversed": "Invertirani šaljivdžija, možda ste se bezbrižno ponašali u nedavnoj prošlosti, napravili isprilike odluke ili zanemareni rizici.",
+          "keywords": [
+            "početak",
+            "rizikovati",
+            "sloboda",
+            "hrabrost",
+            "iskustvo"
+          ],
+          "context": "Vaša nedavna prošlost je možda oblikovana koracima koje ste krenuli slobodno, ali možda bezbrižno."
+        },
+        "position6": {
+          "upright": "Joker, nova avantura, energija da uđe u nepoznato i slobodno rizikuje da vas čeka u bliskoj budućnosti.",
+          "reversed": "Obrnuti šaljivdžija, možete da doživite probleme u bliskoj budućnosti zbog nepažnje, iskrilne odluke ili nedostatka pripreme.",
+          "keywords": [
+            "početak",
+            "sloboda",
+            "rizikovati",
+            "avantura",
+            "uzbuđenje"
+          ],
+          "context": "Vaša bliska budućnost može se oblikovati hrabro početkom ili nepažnjom."
+        },
+        "position7": {
+          "upright": "Joker, u situaciji je trenutno nova početna energija u situaciji. Možda ćete hrabro ući u život i približiti se nepoznati radoznalost.",
+          "reversed": "Invertirani šaljivdžija, vaš neoprezan, nespreman ili neodgovorljiv ponašanje trenutno bi mogao da vas stavi u tešku situaciju. Možda ignorišete rizike.",
+          "keywords": [
+            "početak",
+            "sloboda",
+            "rizikovati",
+            "hrabrost",
+            "avantura"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je hrabrim počecima ili nepažnjom."
+        },
+        "position8": {
+          "upright": "Joker, uticaji iz spoljnog okruženja mogu vas dovesti do novog početka. Neočekivane mogućnosti ili avanturističke energije mogu ući u vaš život.",
+          "reversed": "Invertirani šaljivdžija, spoljni faktori mogu vas gurnuti u nepažnju, nesigurnost ili pogrešno usmerene.",
+          "keywords": [
+            "početak",
+            "sloboda",
+            "rizikovati",
+            "avantura",
+            "prilika"
+          ],
+          "context": "Spoljni uticaji mogu vas dovesti do podebljanih početaka ili nepažljivih koraka."
+        },
+        "position9": {
+          "upright": "JOKER može uključivati anksioznost o ulasku u nepoznato, rizikuje ili greške među vašim strahovima.",
+          "reversed": "Invertirani šaljivdžija, nedostatak kontrole, bezbrižnosti ili strah da vas zavedeno zavedeno mogu da vas drže.",
+          "keywords": [
+            "rizikovati",
+            "nejasnost",
+            "početak",
+            "sloboda",
+            "anksioznost"
+          ],
+          "context": "Fokusira se na vaše strahove i da li se usudite da preuzmete nove početke."
+        }
+      },
+      "themagician": {
+        "position1": {
+          "upright": "Mage je potreba da ispuni svoj potencijal i ne znajući kako da koristi svoje veštine mogu biti u srcu problema.",
+          "reversed": "Verovni mađioničar, varljive situacije, manipulacija ili nedostatak volje može biti glavni izvor ovog problema.",
+          "keywords": [
+            "potencijal",
+            "kreativnost",
+            "veština",
+            "volja",
+            "pitanje"
+          ],
+          "context": "U srcu problema nije u mogućnosti da pravilno kanališe nečiju moć ili je pogrešno usmeren."
+        },
+        "position10": {
+          "upright": "Mađioničar pokazuje da će realizovati svoj potencijal koristeći svoju moć kao rezultat događaja.",
+          "reversed": "Prekoračeni mađioničar može da rizikuje manipulaciju, pogrešne situacije ili koriste svoje veštine u pogrešnom pravcu kao rezultat događaja.",
+          "keywords": [
+            "potencijal",
+            "snaga",
+            "stvaranje",
+            "prilika",
+            "uspeh"
+          ],
+          "context": "Ishod može biti ispunjenje nečijeg potencijala ili je zavedeno."
+        },
+        "position2": {
+          "upright": "U srcu prepreke možda ne koristi nečije potencijalno pravilno, neorganizaciju ili nedostatak samopouzdanja, kaže mađioničar. Možda imate poteškoće sa stavljanjem veština koje imate u praksi.",
+          "reversed": "Ograničeni mađioničar, manipulacija, pogrešne situacije ili nedostatak volje može da ometaju. Provesti svoju snagu u pogrešnim oblastima otežava vaš napredak.",
+          "keywords": [
+            "potencijal",
+            "snaga",
+            "volja",
+            "nered",
+            "prepreka"
+          ],
+          "context": "Prepreka dolazi da ne koristi vašu snagu jasno i pravilno."
+        },
+        "position3": {
+          "upright": "Čarobnjak, u vašoj podsvesti, možda ćete imati poteškoća u korištenju prošlih veština tačno ili u realizaciji svog potencijala.",
+          "reversed": "Obrnuti mađioničar, prošli manipulacija, pogrešno predomerno ili gubitak volje možda su se sredili u vašem podsvesti.",
+          "keywords": [
+            "potencijal",
+            "veština",
+            "snaga",
+            "manipulacija",
+            "podsvestan"
+          ],
+          "context": "Neuspjeh u direktno usmeravanje nečije moći u prošlosti može biti iza današnjih problema."
+        },
+        "position4": {
+          "upright": "Mađioničar pokazuje da je njegov potencijal postići ono što želi korišćenjem njegovih mentalnih veština, komunikacije i kreativnosti.",
+          "reversed": "Vreo je mađioničar, morate se držati podalje od manipulacije, neodlučnosti i ometanja da ne biste pogrešno prekršili svoj potencijal.",
+          "keywords": [
+            "kreativnost",
+            "snaga",
+            "veština",
+            "komunikacija",
+            "potencijal"
+          ],
+          "context": "Vaš najbolji potencijal je da koristite moć u vama pravilno i kreativno."
+        },
+        "position5": {
+          "upright": "Mađioničar, možda ste nedavno doživeli energiju da pokažete svoje veštine, stavite svoje namere u akciju i napravite snažan početak.",
+          "reversed": "Okrećeni mađioničar, možda ste imali nedavna iskustva sa manipulacijom, neorganizacijom ili nemogućno da pravilno usmerite svoj potencijal.",
+          "keywords": [
+            "kreativnost",
+            "snaga",
+            "namera",
+            "veština",
+            "početak"
+          ],
+          "context": "Vaša nedavna prošlost može biti puna iskustava o korišćenju ili ne korišćenju vašeg potencijala."
+        },
+        "position6": {
+          "upright": "Mađioničar, možda ćete imati priliku da prikažete svoje talente, iskoriste mogućnosti i učinite snažne počne u bliskoj budućnosti.",
+          "reversed": "Okrećeni mađioničar, rizikujete od manipulacije, predoricanjem ili nedovoljnošću vašeg potencijala u bliskoj budućnosti.",
+          "keywords": [
+            "talenat",
+            "početak",
+            "prilika",
+            "kreativnost",
+            "snaga"
+          ],
+          "context": "Vaša bliska budućnost će se oblikovati da li koristite svoje sposobnosti ili ne."
+        },
+        "position7": {
+          "upright": "Čarobnjak, imate na raspolaganju moć da efikasno koristite resurse, sposobnosti i inteligenciju na raspolaganju.",
+          "reversed": "Ukrao mađioničar, u ovom trenutku ne realizujete svoj puni potencijal, možda se bavite manipulacijom ili obmanom.",
+          "keywords": [
+            "snaga",
+            "kreativnost",
+            "izvor",
+            "početak",
+            "talenat"
+          ],
+          "context": "Vaša trenutna situacija se određuje da li koristite ili trošite svoje sposobnosti."
+        },
+        "position8": {
+          "upright": "Čarobnjak, spoljni okruženje može vam ponuditi resurse, mogućnosti i kreativne saradnje.",
+          "reversed": "Prekoračeni mađioničar, spoljni uticaji mogu vas podnijeti manipulacijom, pogrešnim ponudama ili lažnim obećanjima.",
+          "keywords": [
+            "izvor",
+            "kreativnost",
+            "prilika",
+            "komunikacija",
+            "početak"
+          ],
+          "context": "Spoljni uticaji mogu otključati njegov potencijal ili predstavljati rizik od manipulacije."
+        },
+        "position9": {
+          "upright": "Mađioničar, možeš doživjeti strah da nećete koristiti svoj puni potencijal, trošiti svoje resurse ili manipulirati.",
+          "reversed": "Prekoračen mađioničar, možda ćete se brinuti da ćete biti prevareni, zavedeni ili da će vaše veštine biti neadekvatne.",
+          "keywords": [
+            "potencijal",
+            "izvor",
+            "manipulacija",
+            "uspeh",
+            "strah"
+          ],
+          "context": "Vaši strahovi se ne mogu pravilno koristiti svoju moć ili zlostavljani."
+        }
+      },
+      "thehighpriestess": {
+        "position1": {
+          "upright": "Visoka sveštenica, srce problema može biti informacija skrivene u podsvesti, neuspjeh da slušaju nečiju intuiciju ili neizvesnost.",
+          "reversed": "Obrnuti visoki sveštenici, suzbijanje vaše intuicije ili ignorisanja činjenica može biti izvor problema.",
+          "keywords": [
+            "intuicija",
+            "informacije",
+            "skrivena istina",
+            "neizvesnost",
+            "pitanje"
+          ],
+          "context": "U srcu problema postoje skrivene istine ili potisnuti intuicije."
+        },
+        "position10": {
+          "upright": "Visoka sveštenica može donijeti unutrašnju mudrost, otkrivenje tajne i dobitak poverenja u intuiciju kao rezultat događaja.",
+          "reversed": "Ograničena visoka sveštenica, ishod događaja može uključivati ignorisanje intuicije, dezinformacije ili skrivene istine.",
+          "keywords": [
+            "mudrost",
+            "tajna",
+            "intuicija",
+            "sigurnost",
+            "prosvetljenje"
+          ],
+          "context": "Rezultat može biti da se dobije intuitivna svest ili ostane u Limbu."
+        },
+        "position2": {
+          "upright": "Visoka sveštenica može da ne sluša intuiciju prepreka, suzbijajući svoju unutrašnju mudrost ili izbegavanje da se vidi istinu. Podsvesni strahovi mogu graditi zid ispred vas.",
+          "reversed": "Preokrećena visoka sveštenica ukazuje na prepreku stvorena skrivenim znanjem, tajnama ili da se zatvaraju za sebe. Suzbijanje vaše intuicije otežava da pronađe rešenje.",
+          "keywords": [
+            "intuicija",
+            "poverljive informacije",
+            "unutrašnji strah",
+            "bliskost",
+            "prepreka"
+          ],
+          "context": "Prepreka potiče od suzbijanja vaše intuicije i vašeg unutrašnjeg glasa mudrosti."
+        },
+        "position3": {
+          "upright": "Visoka sveštenica može biti podsvesno ignorisanje njene intuicije u prošlosti, zanemarujući skrivene informacije ili biti okruženi tajnama.",
+          "reversed": "Prekoračeni visoki sveštenici mogu imati prođene potisnute intuicije, ignorisane znakove ili svesne poricane u njenom podsvesti.",
+          "keywords": [
+            "intuicija",
+            "tajne",
+            "informacije",
+            "suzbijanje",
+            "podsvestan"
+          ],
+          "context": "Odbijanje vaše intuicije i življenja sa tajnama u prošlosti može danas uticati na vaše probleme."
+        },
+        "position4": {
+          "upright": "Visoki sveštenici pokazuje da njeni potencijal leži u slušanju njene intuicije, verujući svojoj unutrašnjoj mudrosti i prihvata duhovne smernice.",
+          "reversed": "Obrnuti visoki sveštenik, da otključate svoj potencijal, ne smete suzbiti svoju intuiciju ili ignorisati unutrašnje znakove.",
+          "keywords": [
+            "intuicija",
+            "mudrost",
+            "duša",
+            "informacije",
+            "potencijal"
+          ],
+          "context": "Vaš najbolji potencijal proizlazi da sluša vaše intuicije i unutrašnje smernice."
+        },
+        "position5": {
+          "upright": "Majka superiorna, možda ste slušali svoju intuiciju u nedavnoj prošlosti, okrenuli se dubokim znanju ili ostvarene skrivene istine.",
+          "reversed": "Obrnuti visoki sveštenik, možda ste ignorisali svoj unutrašnji glas ili ste uhvaćeni u pogrešnim informacijama u nedavnoj prošlosti.",
+          "keywords": [
+            "intuicija",
+            "mudrost",
+            "tajne",
+            "unutrašnja smernica",
+            "svest"
+          ],
+          "context": "Vaša nedavna prošlost možda je razvila od slušanja ili odbijanja vaše intuicije."
+        },
+        "position6": {
+          "upright": "Visoka sveštenica, u bliskoj budućnosti ćete osetiti svoju intuiciju jaču i imaćete priliku da se obratite unutrašnjoj mudrosti.",
+          "reversed": "Obrnuti visoki sveštenik, ne slušajući svoje unutrašnje glas, čuvanje tajne ili susreću o pogrešnim informacijama može se pojaviti u bliskoj budućnosti.",
+          "keywords": [
+            "intuicija",
+            "mudrost",
+            "poverljive informacije",
+            "unutrašnja smernica"
+          ]
+        }
+      }
+    }
+  }
+}

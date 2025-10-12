@@ -1,0 +1,778 @@
+{
+  "money": {
+    "meanings": {
+      "kingofwands": {
+        "position5": {
+          "keywords": {
+            "4": "responsibilities"
+          },
+          "context": "The visionary outlook or oppressive attitude in financial responsibilities is in the forefront."
+        },
+        "position6": {
+          "upright": "The King of the Wand points to strategic vision, entrepreneurial and leadership in financial plans.",
+          "reversed": "The Reverse Stick King points to authoritarian behavior, ego, or extreme control.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "strategy",
+            "3": "initiative",
+            "4": "power"
+          },
+          "context": "The new financial plans will bring out vision or extreme control."
+        },
+        "position7": {
+          "upright": "The King of Asa points out that future financial plans will lead to visionary leadership, strategic investments and bold steps.",
+          "reversed": "King of the Reverse Asa shows that it can be a problem to neglect authority, overzealous ambition, or listening.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "strategy",
+            "3": "Courage",
+            "4": "investment"
+          },
+          "context": "In future financial plans, visionary leadership or authoritarianism will be decisive."
+        },
+        "position8": {
+          "upright": "The King of the Wand shows that the spirit of strategic vision, leadership and entrepreneurship strengthens their ability to make money.",
+          "reversed": "The Reverse Stick King points out that authoritarian behavior, overconfidence, or unplanning can limit opportunities.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership",
+            "2": "entrepreneurial",
+            "3": "strategy",
+            "4": "Courage"
+          },
+          "context": "Your ability to make money is linked to strategic leadership or excess."
+        }
+      },
+      "aceofpentacles": {
+        "position1": {
+          "upright": "The Amulet indicates anxiety about missing a new opportunity or not being able to take it, and you might be afraid of missing out on material luck.",
+          "reversed": "The Reverse Talisman is concerned about instability and the lack of resources, and you might be worried that new beginnings won't hold.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "Concern",
+            "2": "stability",
+            "3": "start",
+            "4": "Trust"
+          },
+          "context": "Concern arises from lack of opportunity and instability."
+        },
+        "position2": {
+          "upright": "The amulet ace shows that he is looking for security with new opportunities and solid beginnings, and financial stability can be promising.",
+          "reversed": "The Reverse Talisman indicates the anxiety of missed opportunities or insecurity, and the desire for security is shaken by baselessness.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "start",
+            "2": "security",
+            "3": "material foundation",
+            "4": "stability"
+          },
+          "context": "You'll find security in new material steps."
+        },
+        "position3": {
+          "upright": "The Amulet is a sign of new opportunities and solid beginnings in the use of money, and spending can become concrete investments.",
+          "reversed": "The Reverse Talisman shows anxiety about missing opportunities or misdirecting material resources.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "start",
+            "2": "investment",
+            "3": "abundance",
+            "4": "security"
+          },
+          "context": "New and reliable beginnings arise in the use of money."
+        },
+        "position4": {
+          "upright": "There may have been new financial opportunities and concrete gains in the past.",
+          "reversed": "The Reverse Charm indicates that the missed opportunities or financial beginnings have been postponed.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "start",
+            "2": "Money",
+            "3": "investment",
+            "4": "basic"
+          },
+          "context": "New financial opportunities have opened up in the past, but some may have been abducted."
+        },
+        "position5": {
+          "upright": "The amulet ace offers a chance to build a new opportunity and a solid foundation in financial responsibilities, a strong start for financial stability.",
+          "reversed": "The Reverse Talisman indicates that financial responsibilities are burdened by missed opportunities or false investments.",
+          "keywords": {
+            "0": "start",
+            "1": "opportunity",
+            "2": "stability",
+            "3": "investment",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, solid foundations or lost opportunities are at the forefront."
+        },
+        "position6": {
+          "upright": "The amulet ace points to a new opportunity in financial plans, a solid start, and a fertile investment door.",
+          "reversed": "The Reverse Talisman warns of missed opportunities, false investments or unstable plans.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "start",
+            "2": "investment",
+            "3": "stability",
+            "4": "fertility"
+          },
+          "context": "New financial plans are on the agenda of a solid start or a missed opportunity."
+        },
+        "position7": {
+          "upright": "The amulet ace opens the way for new material opportunities, solid beginnings and permanent investments in the future, a strong foundation for long-term security.",
+          "reversed": "The Reverse Talisman indicates the risk of missing opportunities, financial insecurity or false investments.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "basic",
+            "2": "investment",
+            "3": "security",
+            "4": "start"
+          },
+          "context": "In future financial plans, new opportunities or missed opportunities will be decisive."
+        },
+        "position8": {
+          "upright": "The amulet ace shows that new financial opportunities, investments and concrete beginnings support the ability to make money.",
+          "reversed": "The Reverse Talisman indicates that financial potential cannot be used due to loss of opportunities, poor investment decisions, or lazyness.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "start",
+            "2": "investment",
+            "3": "abundance",
+            "4": "basic"
+          },
+          "context": "Your ability to make money depends on taking on new opportunities or kidnapping them."
+        }
+      },
+      "twoofpentacles": {
+        "position1": {
+          "upright": "Two amulets point to the fiscal balance and the anxiety of multi-responsibility, and you may be afraid of being forced to manage your resources.",
+          "reversed": "Two reverse amulets expose the anxiety of disarray and loss of control, and you might be worried about making a mistake in the money management.",
+          "keywords": {
+            "0": "balance",
+            "1": "Concern",
+            "2": "control",
+            "3": "financial management",
+            "4": "responsibilities"
+          },
+          "context": "The anxiety arises from the lack of balance and the weight of responsibilities."
+        },
+        "position2": {
+          "upright": "The Talisman Duo shows he's looking for security with balance and flexibility, and a good balance brings peace.",
+          "reversed": "The Reverse Talisman Duo points to disarray and instability anxiety, a desire for safety, a lack of priorities.",
+          "keywords": {
+            "0": "balance",
+            "1": "flexibility",
+            "2": "security",
+            "3": "priority",
+            "4": "time"
+          },
+          "context": "You find security with balanced management and flexibility."
+        },
+        "position3": {
+          "upright": "Two amulets point to flexibility and balance in the use of money, and the management of income-goers is masterfully maintained.",
+          "reversed": "Two reverse amulets indicate difficulty due to financial imbalance or delays.",
+          "keywords": {
+            "0": "balance",
+            "1": "flexibility",
+            "2": "time",
+            "3": "resource",
+            "4": "compatibility"
+          },
+          "context": "In use of money, balance and multi-directional governance are important."
+        },
+        "position4": {
+          "upright": "In the past, there was financial balance, budget management, and more than one effort to run a business.",
+          "reversed": "Two reverse amulets indicate an increase in imbalance and financial loads.",
+          "keywords": {
+            "0": "balance",
+            "1": "budget",
+            "2": "Money",
+            "3": "multiple jobs",
+            "4": "compatibility"
+          },
+          "context": "In the past, there was an effort to ensure financial balance."
+        },
+        "position5": {
+          "upright": "Two amulets represent balance in financial responsibilities, budget management and multiple tasks.",
+          "reversed": "The Inverse Two Charms, the imbalance in financial responsibilities, the overlapping of debts, or the sign of bad timing.",
+          "keywords": {
+            "0": "balance",
+            "1": "flexibility",
+            "2": "budget",
+            "3": "multiple tasks",
+            "4": "responsibilities"
+          },
+          "context": "The balance or imbalance of financial responsibilities arises."
+        },
+        "position6": {
+          "upright": "Two amulets show the importance of balance in financial plans, managing multi-income resources and flexibility.",
+          "reversed": "Two reverse amulets indicate disorganization, fiscal imbalance, or overload.",
+          "keywords": {
+            "0": "balance",
+            "1": "multiple sources",
+            "2": "flexibility",
+            "3": "management",
+            "4": "compatibility"
+          },
+          "context": "New financial plans may require balancing or cleaning up the mess."
+        },
+        "position7": {
+          "upright": "Two amulets indicate the search for flexibility in future financial plans, management of more than one source of income, and balance.",
+          "reversed": "Two reverse amulets indicate disorder, imbalance, or excessive responsibility will force financial progress.",
+          "keywords": {
+            "0": "balance",
+            "1": "flexibility",
+            "2": "multifaceting",
+            "3": "compatibility",
+            "4": "time management"
+          },
+          "context": "The future financial plans will bring about balance or instability."
+        },
+        "position8": {
+          "upright": "Two amulets show that the ability to balance multiple tasks, to manage time and resources improves their ability to earn money.",
+          "reversed": "Two reverse amulets indicate that opportunities can be lost because of mess, bad planning, or mixed priorities.",
+          "keywords": {
+            "0": "balance",
+            "1": "planning",
+            "2": "time management",
+            "3": "flexibility",
+            "4": "priority"
+          },
+          "context": "Your ability to earn money is linked to balance or dissolution."
+        }
+      },
+      "threeofpentacles": {
+        "position1": {
+          "upright": "Three amulets point to anxiety about not being able to cooperate, or being undervalued, and you may be afraid that your efforts will not be repaid.",
+          "reversed": "The Inverse Three charms show the anxiety of incompatible teamwork and failed co-operation, and you may be concerned that your financial efforts will go to waste.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "Concern",
+            "2": "In return for your hard work",
+            "3": "value",
+            "4": "compatibility"
+          },
+          "context": "Concern arises from the lack of co-operation and effort."
+        },
+        "position2": {
+          "upright": "The Talisman Trio shows that he's looking for security through cooperation and skill sharing.",
+          "reversed": "The Reverse Talisman Three points to a lack of co-operation anxiety, a desire for security, a weak effort.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "skill",
+            "2": "security",
+            "3": "compatibility",
+            "4": "work"
+          },
+          "context": "You'll find security by working together."
+        },
+        "position3": {
+          "upright": "Three amulets point to co-operation and co-planning in the use of money, and material resources are more efficient with teamwork.",
+          "reversed": "The Inverse Three Spells indicate that sources can be misused due to incompatibility and lack of communication.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "Plan",
+            "2": "resource",
+            "3": "mastery",
+            "4": "share"
+          },
+          "context": "Co-operation and coordination in the use of money."
+        },
+        "position4": {
+          "upright": "In the past, co-operation, teamwork and joint projects may have played a role in financial development.",
+          "reversed": "The Inverse Three amulets indicate that lack of co-operation and unplannedness lead to casualties.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "Team",
+            "2": "Money",
+            "3": "Plan",
+            "4": "mastery"
+          },
+          "context": "In the past, financial gains were shaped by teamwork."
+        },
+        "position5": {
+          "upright": "Three amulets show that financial responsibilities are eased by co-operation, teamwork and sharing roles.",
+          "reversed": "The Inverse Three amulets indicate dissonance in financial responsibilities, conflict, or insufficient co-operation.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "role sharing",
+            "2": "labour",
+            "3": "compatibility",
+            "4": "responsibilities"
+          },
+          "context": "Co-operation or dissonance in financial responsibilities is decisive."
+        },
+        "position6": {
+          "upright": "Three amulets show the value of co-operation in financial plans, teamwork and joint investments.",
+          "reversed": "The Inverse Three amulets indicate incompatibility, lack of co-operation, or problems in joint projects.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "team",
+            "2": "investment",
+            "3": "partnership",
+            "4": "compatibility"
+          },
+          "context": "Co-operation or incompatibility will arise in the new financial plans."
+        },
+        "position7": {
+          "upright": "Three amulets point to the future of co-operation, joint projects and teamwork, and the future of financial growth.",
+          "reversed": "The Inverse Three charms show the risk of incompatibility, domestic problems, or dissolution of co-operation.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "partnership",
+            "2": "planning",
+            "3": "build",
+            "4": "share"
+          },
+          "context": "Co-operation or incompatibility will be decisive in future financial plans."
+        },
+        "position8": {
+          "upright": "Three amulets show that co-operation, teamwork and sharing of expertise increase their financial skills.",
+          "reversed": "The Inverse Three Charms indicate that the team's incompatibility, insufficient co-operation, or lack of communication can weaken opportunities.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "Team",
+            "2": "expertise",
+            "3": "work",
+            "4": "share"
+          },
+          "context": "Your ability to earn money is linked to cooperation or incompatibility."
+        }
+      },
+      "fourofpentacles": {
+        "position1": {
+          "upright": "Four amulets point to the anxiety of losing what they have and not being safe, and you might be afraid of losing the money.",
+          "reversed": "The Reverse Four Charms show excessive or over-expensive anxiety, and you might be concerned about not being stable.",
+          "keywords": {
+            "0": "security",
+            "1": "Concern",
+            "2": "missing",
+            "3": "protection",
+            "4": "balance"
+          },
+          "context": "The anxiety comes from losing what it has and losing trust."
+        },
+        "position2": {
+          "upright": "The Talisman Four shows you're looking for security by protecting what you have, and stability gives you peace.",
+          "reversed": "The Reverse Talisman Four points to the anxiety of overreaching or losing, and the desire for security distances itself from flexibility.",
+          "keywords": {
+            "0": "protection",
+            "1": "stability",
+            "2": "security",
+            "3": "control",
+            "4": "material"
+          },
+          "context": "You'll find security with protection and stability."
+        },
+        "position3": {
+          "upright": "Four amulets point to conservativeness in the use of money and the tendency to protect what is available, and the fear of losing is dominant.",
+          "reversed": "The Inverse Four Talisms indicate being trapped between extreme stingyness or wastefulness.",
+          "keywords": {
+            "0": "control",
+            "1": "protection",
+            "2": "conservative",
+            "3": "Money",
+            "4": "security"
+          },
+          "context": "The balance between the use of money and the release is sought."
+        },
+        "position4": {
+          "upright": "In the past, he had a tendency to oversell, save, and control money matters.",
+          "reversed": "The Reverse Four Talisms point to loose attitudes in wasteful or financial matters.",
+          "keywords": {
+            "0": "don't hold",
+            "1": "Don't save",
+            "2": "Money",
+            "3": "control",
+            "4": "security"
+          },
+          "context": "In the past, money matters have been under strict control."
+        },
+        "position5": {
+          "upright": "The Four Charms show the need to be frugal in financial responsibilities, to protect what is available, and to secure what is available.",
+          "reversed": "The Reverse Four Charms may be a problem whether I want to be stingy in financial responsibilities or over-control or share them.",
+          "keywords": {
+            "0": "savings",
+            "1": "protection",
+            "2": "guarantee",
+            "3": "control",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, frugal approach or extreme control comes forward."
+        },
+        "position6": {
+          "upright": "Four amulets point to the need for security, saving and protecting resources in financial plans.",
+          "reversed": "The Reverse Four Talisman shows extreme restraint, stingyness, or loss of control.",
+          "keywords": {
+            "0": "security",
+            "1": "Savings",
+            "2": "protection",
+            "3": "control",
+            "4": "savings"
+          },
+          "context": "Security or over-responsibility will be effective in new financial plans."
+        },
+        "position7": {
+          "upright": "Four amulets point to future financial plans, the search for security, and the desire to preserve what is available.",
+          "reversed": "The Reverse Four Charms indicate that extreme stingyness, loss of control, or unnecessary spending will force financial trust.",
+          "keywords": {
+            "0": "savings",
+            "1": "protection",
+            "2": "guarantee",
+            "3": "control",
+            "4": "conservative"
+          },
+          "context": "There will be protection or extremism in future financial plans."
+        },
+        "position8": {
+          "upright": "Four amulets show that the ability to maintain financial security, to be frugal and to manage what they have supports their ability to earn money.",
+          "reversed": "The Reverse Four Charms indicate that they may run away from opportunities of development due to extreme miserliness, greed, or fear of loss.",
+          "keywords": {
+            "0": "security",
+            "1": "protection",
+            "2": "attitude",
+            "3": "resource management",
+            "4": "control"
+          },
+          "context": "Your ability to earn money is linked to security or constraints."
+        }
+      },
+      "fiveofpentacles": {
+        "position1": {
+          "upright": "Five amulets point to the anxiety of deprivation and exclusion, and you may be afraid of being financially alone.",
+          "reversed": "The Reverse Five charms show anxiety about not being able to recover and being helpless, and you might worry about not finding support in the future.",
+          "keywords": {
+            "0": "withdrawal",
+            "1": "Concern",
+            "2": "support",
+            "3": "loneliness",
+            "4": "financial distress"
+          },
+          "context": "Concerns, deprivation, and support are born from not being able to see."
+        },
+        "position2": {
+          "upright": "The Five Talisman shows that he's facing security deprivation and trying to find support.",
+          "reversed": "The Reverse Talisman Five points to the anxiety of losing again in the recovery process, and the desire for security is shaken with loneliness.",
+          "keywords": {
+            "0": "withdrawal",
+            "1": "support",
+            "2": "security",
+            "3": "help",
+            "4": "Recovery"
+          },
+          "context": "You'll find security looking for backup."
+        },
+        "position3": {
+          "upright": "Five amulets point to the use of money, the awareness of famine and fear of loss, and temporary difficulties can be dominant.",
+          "reversed": "The Reverse Five Talisman shows the process of packing and finding support, new sources may emerge.",
+          "keywords": {
+            "0": "famine",
+            "1": "missing",
+            "2": "Concern",
+            "3": "support",
+            "4": "Money"
+          },
+          "context": "The sense of famine may be dominant in the use of money."
+        },
+        "position4": {
+          "upright": "There may have been financial losses, withdrawals, and difficult times in the past.",
+          "reversed": "The Reverse Five amulets point to the process of recovering from financial difficulties.",
+          "keywords": {
+            "0": "withdrawal",
+            "1": "missing",
+            "2": "Money",
+            "3": "It's a hard time.",
+            "4": "Recovery"
+          },
+          "context": "There have been difficult times with money in the past."
+        },
+        "position5": {
+          "upright": "Five amulets represent lack of financial responsibilities, loss or support.",
+          "reversed": "The Reverse Five Charms show the process of recovery in financial responsibilities, of finding new opportunities or support.",
+          "keywords": {
+            "0": "withdrawal",
+            "1": "support",
+            "2": "resource",
+            "3": "Recovery",
+            "4": "responsibilities"
+          },
+          "context": "Financial responsibilities are at the forefront of loss or recovery."
+        },
+        "position6": {
+          "upright": "Five amulets point to loss, absence, or financial problems in financial plans.",
+          "reversed": "The Reverse Five Talisman shows recovery, support and financial recovery.",
+          "keywords": {
+            "0": "missing",
+            "1": "Trouble",
+            "2": "support",
+            "3": "Recovery",
+            "4": "Recovery"
+          },
+          "context": "New financial plans are either missing or resuming."
+        },
+        "position7": {
+          "upright": "Five amulets may bring up the challenge of financial plans in the future, the search for loss or support, a temporary problem.",
+          "reversed": "The Reverse Five amulets point to recovery, finding new sources of support and financial recovery.",
+          "keywords": {
+            "0": "missing",
+            "1": "withdrawal",
+            "2": "support",
+            "3": "Recovery",
+            "4": "endurance"
+          },
+          "context": "The future financial plans will be difficult or decisive."
+        },
+        "position8": {
+          "upright": "Five amulets show that learning lessons and endurance from challenges improve their ability to earn money.",
+          "reversed": "The Reverse Five amulets indicate that the recovery process, the ability to find support and get back on your feet can improve.",
+          "keywords": {
+            "0": "difficulty",
+            "1": "endurance",
+            "2": "help",
+            "3": "Recovery",
+            "4": "power"
+          },
+          "context": "Your ability to earn money depends on learning from challenges or losing hope."
+        }
+      },
+      "sixofpentacles": {
+        "position1": {
+          "upright": "Six amulets point to the anxiety of not being able to see a fair share, and you may fear the disparity of resources.",
+          "reversed": "The Reverse Six Charms expose anxiety about becoming dependent or exploited, and you may be concerned about injustice in financial relationships.",
+          "keywords": {
+            "0": "share",
+            "1": "Concern",
+            "2": "justice",
+            "3": "inequality",
+            "4": "Trust"
+          },
+          "context": "The anxiety arises from the fear of disparaging, sharing, and exploitation."
+        },
+        "position2": {
+          "upright": "The Talisman Six shows you seek security with fair sharing and balance, giving and receiving brings peace.",
+          "reversed": "The Reverse Talisman is a sign of unstable shopping anxiety, a desire for security, a lack of justice.",
+          "keywords": {
+            "0": "share",
+            "1": "balance",
+            "2": "security",
+            "3": "justice",
+            "4": "help"
+          },
+          "context": "You'll find security in fair share."
+        },
+        "position3": {
+          "upright": "Six amulets point to balance and fair sharing in the use of money, giving and receiving in harmony.",
+          "reversed": "The Reverse Six Talisman shows conditional aid or power imbalances.",
+          "keywords": {
+            "0": "balance",
+            "1": "share",
+            "2": "help",
+            "3": "justice",
+            "4": "resource"
+          },
+          "context": "Fair share in the use of money comes forward."
+        },
+        "position4": {
+          "upright": "In the past, financial aid, balance and sharing may have come forward.",
+          "reversed": "There have been inverse Six Talisms, unstable aid, or unrequited expectations.",
+          "keywords": {
+            "0": "share",
+            "1": "help",
+            "2": "Money",
+            "3": "balance",
+            "4": "generosity"
+          },
+          "context": "In the past, financial resources were used to share."
+        },
+        "position5": {
+          "upright": "Six amulets mean balance, sharing and mutual support in financial responsibilities. Equality is important.",
+          "reversed": "The Inverse Six Charms can cause problems in financial responsibilities, inequality, dependent relationships, or injustice.",
+          "keywords": {
+            "0": "balance",
+            "1": "share",
+            "2": "support",
+            "3": "justice",
+            "4": "responsibilities"
+          },
+          "context": "Financial responsibilities are affected by fair sharing or inequality."
+        },
+        "position6": {
+          "upright": "Six amulets point to fair sharing, support, and cooperation in financial plans.",
+          "reversed": "The Inverse Six Talisman points to unstable help, disrequitement, or a relationship of interest.",
+          "keywords": {
+            "0": "share",
+            "1": "help",
+            "2": "balance",
+            "3": "support",
+            "4": "justice"
+          },
+          "context": "The new financial plans bring up fair sharing or imbalance."
+        },
+        "position7": {
+          "upright": "Six amulets, in the future, balance, justice and mutual cooperation in financial plans, maintain balance in giving and receiving.",
+          "reversed": "The Inverse Six Charms indicate that imbalance, addiction, or conditional aid can be a problem.",
+          "keywords": {
+            "0": "balance",
+            "1": "help",
+            "2": "justice",
+            "3": "Equality",
+            "4": "share"
+          },
+          "context": "Fair share or imbalance will be effective in future financial plans."
+        },
+        "position8": {
+          "upright": "Six amulets show that sharing, generosity, and ability to balance increase financial potential.",
+          "reversed": "The Reverse Six Spells indicate that power imbalance, addiction, or conflict of interest, can weaken their abilities.",
+          "keywords": {
+            "0": "share",
+            "1": "balance",
+            "2": "help",
+            "3": "Equality",
+            "4": "generosity"
+          },
+          "context": "Your ability to make money is linked to sharing or imbalance."
+        }
+      },
+      "sevenofpentacles": {
+        "position1": {
+          "upright": "The Seven Talisms show concern that their efforts will not be repaid, and you may be afraid that the material gains you expect will not come.",
+          "reversed": "The Seven Inverted charms show false investments and waste of time, and you might be concerned that the effort will go to waste.",
+          "keywords": {
+            "0": "labour",
+            "1": "Concern",
+            "2": "investment",
+            "3": "expectation",
+            "4": "time"
+          },
+          "context": "The anxiety comes from not being able to pay for its labor."
+        },
+        "position2": {
+          "upright": "The Amulet Seven shows that you seek security with patience and a long-term plan.",
+          "reversed": "The Reverse-Strength Seven points to the anxiety of impatientness and waste of time, and the desire for security is shaken in haste.",
+          "keywords": {
+            "0": "Patience",
+            "1": "Plan",
+            "2": "security",
+            "3": "don't wait.",
+            "4": "investment"
+          },
+          "context": "You find security with patience and a long-term plan."
+        },
+        "position3": {
+          "upright": "Seven amulets point to patience and long-term planning in the use of money.",
+          "reversed": "The Seven Inverted Charms show concerns of impatientness or false investments.",
+          "keywords": {
+            "0": "Patience",
+            "1": "investment",
+            "2": "don't wait.",
+            "3": "labour",
+            "4": "Plan"
+          },
+          "context": "Patience and long-term vision in the use of money."
+        },
+        "position4": {
+          "upright": "In the past, patience, long-term investments and evaluations may have come forward.",
+          "reversed": "Seven reverse amulets have suffered losses due to impatientness and the search for short-term gains.",
+          "keywords": {
+            "0": "Patience",
+            "1": "investment",
+            "2": "Money",
+            "3": "assessment",
+            "4": "waiting"
+          },
+          "context": "In the past, financial matters have been shaped by long-term investments."
+        },
+        "position5": {
+          "upright": "Seven amulets point to patience, long-term planning and evaluation of financial responsibilities.",
+          "reversed": "The Inverse Seven charms show impatient financial responsibilities, impatient expectations, or false investments.",
+          "keywords": {
+            "0": "Patience",
+            "1": "planning",
+            "2": "assessment",
+            "3": "investment",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, patience or impatience are decisive."
+        },
+        "position6": {
+          "upright": "Seven amulets show the vision of patience, evaluation and long-term investment in financial plans.",
+          "reversed": "The Inverse Seven Talisms indicate impatience, false investment or waste of time.",
+          "keywords": {
+            "0": "Patience",
+            "1": "investment",
+            "2": "long term",
+            "3": "assessment",
+            "4": "Vision"
+          },
+          "context": "Patience or impatience will be effective in new financial plans."
+        },
+        "position7": {
+          "upright": "The Seven Talisms show the process of waiting for patience, long-term investments and efforts in future financial plans.",
+          "reversed": "The Inverse Seven Charms indicate the risk of impatient, short-term thinking or false investments.",
+          "keywords": {
+            "0": "Patience",
+            "1": "investment",
+            "2": "assessment",
+            "3": "efficiency",
+            "4": "waiting"
+          },
+          "context": "The future financial plans will bring forward patience or impatience."
+        },
+        "position8": {
+          "upright": "Seven amulets show that patience, evaluation, and long-term planning support the ability to earn money.",
+          "reversed": "The Reverse Seven charms point to loss due to impatient, short-term thinking or false investments.",
+          "keywords": {
+            "0": "Patience",
+            "1": "planning",
+            "2": "assessment",
+            "3": "investment",
+            "4": "don't wait."
+          },
+          "context": "Your ability to make money depends on patience or patience."
+        }
+      },
+      "eightofpentacles": {
+        "position1": {
+          "upright": "Eight amulets point to your lack of authority and concern for wrongful work, and you may be afraid that your efforts will not be valued.",
+          "reversed": "The Reverse Eight Charms show the anxiety of carelessness and carelessness, and you may be concerned that you will not be able to develop enough skills.",
+          "keywords": {
+            "0": "mastery",
+            "1": "Concern",
+            "2": "skill",
+            "3": "error",
+            "4": "effort"
+          },
+          "context": "Concern arises from not being able to master enough and doing wrong."
+        },
+        "position2": {
+          "upright": "The Talisman Eight shows that he's looking for security through study and skill.",
+          "reversed": "The Reverse Talisman Eight points to the anxiety of carelessness and reluctance, the desire for safety, the lack of discipline.",
+          "keywords": {
+            "0": "work",
+            "1": "skill",
+            "2": "security",
+            "3": "learning",
+            "4": "labour"
+          },
+          "context": "You find security with hard work and effort."
+        },
+        "position3": {
+          "upright": "Eight amulets point to progress in the use of money through disciplined work and learning, spending for education and mastery.",
+          "reversed": "The Reverse Eight charms show losses due to reckless or sloppy financial planning.",
+          "keywords": {
+            "0": "discipline",
+            "1": "learning",
+            "2": "mastery",
+            "3": "labour",
+            "4": "Money"
+          },
+          "context": "In the use of money, discipline and learning come first."
+        },
+        "position4": {
+          "upright": "In the past, disciplinary work, business development, and financial mastery may have stepped up.",
+          "reversed": "The Inverse Eight Talisms were affected by the loss of carelessness or motivation."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,774 @@
+{
+  "money": {
+    "meanings": {
+      "thehierophant": {
+        "position1": {
+          "keywords": [
+            "tradicija",
+            "očekivanje",
+            "raport",
+            "anksioznost",
+            "društvo"
+          ],
+          "context": "Anksioznost proizilazi iz nekompatibilnosti sa socijalnim očekivanjima. Postupanje prema sopstvenim vrednostima donosi samopouzdanje."
+        },
+        "position2": {
+          "upright": "Saint povezuje vašu želju za sigurnost tradicionalnim sistemima i strukturom podrške. Osećate se sigurnije u institucionalnim nalozima.",
+          "reversed": "Okolišteni svetac ukazuje na anksioznost o slepo se pridržavaju pravila. Želja za bezbednošću može postati nefleksibilna.",
+          "keywords": [
+            "tradicija",
+            "organizacija",
+            "sigurnost",
+            "podrška",
+            "narediti"
+          ],
+          "context": "Osnivate sigurnost kroz tradicionalne strukture i mehanizme podrške."
+        },
+        "position3": {
+          "upright": "Svetac ima tendenciju da upravlja novac na tradicionalne načine. Porodična ili institucionalna podrška je važna.",
+          "reversed": "Ukrašeni svetac ukazuje na želju za finansijskom nezavisnošću ili zabrinutošću zbog odstupanja od tradicionalnih metoda.",
+          "keywords": [
+            "tradicija",
+            "podrška",
+            "metod",
+            "sigurnost",
+            "organizacija"
+          ],
+          "context": "Tradicionalni načini i učenja dolaze na prvi plan u upotrebi novca."
+        },
+        "position4": {
+          "upright": "U prošlosti su finansijske odluke mogu date na osnovu tradicije ili porodičnih učenja.",
+          "reversed": "Ograničeno Saint pokazuje tendenciju da odbacuje konvencionalne pravila ili isprobaju nekonvencionalne metode u finansijskim pitanjima.",
+          "keywords": [
+            "tradicija",
+            "porodica",
+            "pravila",
+            "doktrina",
+            "materijalni nalog"
+          ],
+          "context": "U prošlosti su tradicionalni uticaji bili istaknuti u finansijskim stavovima."
+        },
+        "position5": {
+          "upright": "Aziz, tradicionalni načini, porodične obaveze ili društvene dužnosti mogu doći do finansijskih odgovornosti.",
+          "reversed": "Otkazno sveto, slepo pridržavanje tradicija ili preterano zavisnosti da je otežalo finansijske obaveze.",
+          "keywords": [
+            "tradicija",
+            "porodica",
+            "društvo",
+            "odgovornost",
+            "zavisnost"
+          ],
+          "context": "Tradicionalne metode i društvene uloge dolaze do izražaja finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Svetac označava tradicionalne metode, stručne savete i napredak sa pouzdanim institucijama u finansijskim planovima.",
+          "reversed": "Uokrećeni svetac pokazuje da upisuju pravila, idu protiv konvencija i traženje više originalnih rešenja u novim finansijskim planovima.",
+          "keywords": [
+            "tradicija",
+            "institucije",
+            "preporuka",
+            "disciplina",
+            "plan"
+          ],
+          "context": "Na novim finansijskim planovima tradicionalne metode ili jedinstveni načini dolaze do izražaja."
+        },
+        "position7": {
+          "upright": "Aziz kaže da u budućnosti treba oslanjati tradicionalne metode, obuku i smernice. Pouzdan sistem će povećati finansijsku stabilnost.",
+          "reversed": "Ukrašeni svetac ukazuje na neravnotežu slepih pridržavanja pravila ili potpunog odbijanja pravila.",
+          "keywords": [
+            "tradicija",
+            "uputstvo",
+            "sistem",
+            "doktrina",
+            "stabilnost"
+          ],
+          "context": "Uputstvo ili slepa predanost će odrediti buduće finansijske planove."
+        },
+        "position8": {
+          "upright": "Aziz naglašava važnost tradicionalnih metoda, obrazovanja i saradnje sa institucijama u veštinama donošenja novca. Prenos informacija je moćan resurs.",
+          "reversed": "Ograničeno svetići ukazuje da razvoj finansijskih sposobnosti može biti ometano strogom pridržavanjem pravila ili slepa pobuna.",
+          "keywords": [
+            "tradicija",
+            "doktrina",
+            "obrazovanje",
+            "uputstvo",
+            "partnerstvo"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa tradicionalnim metodama ili strogim pravilima."
+        }
+      },
+      "thelovers": {
+        "position1": {
+          "upright": "Ljubitelji ukazuju na anksioznost o pogrešnom izboru u finansijskoj sferi. Mogućnost da finansijske odluke mogu uticati na njihove odnose stvara anksioznost.",
+          "reversed": "Ukrajini ljubitelji ukazuju na zabrinutost za sukob interesa i nespojivosti. Nesuglasice o novcu mogu potkopati samopouzdanje.",
+          "keywords": [
+            "glasati",
+            "raport",
+            "sukob",
+            "anksioznost",
+            "odluka"
+          ],
+          "context": "Anksioznost proizilazi iz pogrešnog izbora ili nekompatibilnosti. Postavljanje jasnih vrijednosti daje mir uma."
+        },
+        "position2": {
+          "upright": "Pokazuje da ljubavnici traže finansijsku sigurnost kroz skladno partnerstvo i prave izbore. Donošenje odluka zajedno povećava samopouzdanje.",
+          "reversed": "Ljubitelji obrnuto ukazuje na anksioznost o pogrešnom izboru ili nekompatibilnom partnerstvu. Želja za bezbednošću slabi na neizvesne izbore.",
+          "keywords": [
+            "glasati",
+            "partnerstvo",
+            "sigurnost",
+            "raport",
+            "vrednosti"
+          ],
+          "context": "Nalazite sigurnost kroz skladne izbore i partnerstva."
+        },
+        "position3": {
+          "upright": "Ljubitelji imaju tendenciju da upravljaju novcem zajedničkim odlukama. Harmonična saradnja jača resurse.",
+          "reversed": "Ljubitelji obrnuto ukazuje na nesklad ili neodlučnost u finansijskim pitanjima.",
+          "keywords": [
+            "raport",
+            "odluka",
+            "partnerstvo",
+            "novac",
+            "partnerstvo"
+          ],
+          "context": "Upotreba novca oblikovana je zajedničkim izborima i skladnim odlukama."
+        },
+        "position4": {
+          "upright": "U prošlosti su finansijska pitanja mogu upravljati zajedničkim odlukama. Odluke koje se uzimaju zajedno sa supružnikom ili partnerom su došli do izražaja.",
+          "reversed": "Ljubitelji obrnuto ukazuje da je neodlučnost u finansijskim pitanjima ili nekompatibilnim partnerstvima stvaraju probleme.",
+          "keywords": [
+            "partnerstvo",
+            "odluka",
+            "raport",
+            "porodica",
+            "fiskalna unija"
+          ],
+          "context": "U prošlosti je bilo deljeno odlučivanje o fiskalnim stavovima."
+        },
+        "position5": {
+          "upright": "Ljubitelji pokazuju da zajedničke odluke i saradnja dolaze u finansijske odgovornosti. Odluke sa partnerom delili su teret.",
+          "reversed": "Ljubitelji preokrenuti, razlike u mišljenju ili pogrešne izbore mogu pogoršati finansijske odgovornosti.",
+          "keywords": [
+            "partnerstvo",
+            "partnerstvo",
+            "odluka",
+            "odgovornost",
+            "ravnoteža"
+          ],
+          "context": "Finansijske odgovornosti su oblikovane saradnjom ili izborom."
+        },
+        "position6": {
+          "upright": "Ljubitelji ukazuju na odluke kompatibilne sa partnerstvom i saradnjom u novim finansijskim planovima. Odluke bi trebale biti u skladu sa vašim vrednostima.",
+          "reversed": "Ljubitelji obrnuto ukazuju na neodlučnost u finansijskim planovima, nekompatibilnim partnerstvima ili riziku pogrešnih izbora.",
+          "keywords": [
+            "partnerstvo",
+            "odluka",
+            "raport",
+            "glasati",
+            "vrednosti"
+          ],
+          "context": "Pravi partnerstva donose uspeh u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Ljubitelji ukazuju na zajedničke izbore, harmoniju u vrednostima i saradnji u finansijskim planovima. Zajednička vizija dveju strana može ojačati budućnost.",
+          "reversed": "Ljubitelji obrnuto mogu stvoriti disharmoniju, neodlučnost ili vrednost sukoba u finansijskim pitanjima.",
+          "keywords": [
+            "raport",
+            "glasati",
+            "partnerstvo",
+            "vrednosti",
+            "odluka"
+          ],
+          "context": "Harmonija ili nekompatibilnost biće na dnevnom redu u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Ljubavnici pokazuju da će njihova sposobnost zaraditi novac povećati se kroz saradnju, partnerstvo i prave odluke. Poravnanje vrednosti donosi uspeh.",
+          "reversed": "Obrnuti ljubitelji pokazuju da finansijske sposobnosti nisu u potpunosti iskorišćene zbog pogrešnih izbora, neodlučnosti ili vrednosti vrednosti.",
+          "keywords": [
+            "partnerstvo",
+            "raport",
+            "glasati",
+            "vrednost",
+            "priključak"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa pravim izborima ili neodlučnošću."
+        }
+      },
+      "thechariot": {
+        "position1": {
+          "upright": "Kočija otkriva anksioznost gubitka finansijske kontrole. Gubitak smera ili ne postizanje ciljeva stvara anksioznost.",
+          "reversed": "Reversed Chariot ukazuje na anksioznost o dezorijentaciji i nedostatku smera. Možete se bojati da će finansijski napori biti besplodni.",
+          "keywords": [
+            "pravac",
+            "kontrola",
+            "disciplina",
+            "anksioznost",
+            "cilj"
+          ],
+          "context": "Anksioznost proizilazi iz nedostatka smera i kontrole. Postavljanje jasne rute daje samopouzdanje."
+        },
+        "position2": {
+          "upright": "Kočija pokazuje da neko traži bezbednost utvrđenim napretkom i postignućem ciljeva. Osećate se samopouzdanje kada imate kontrolu.",
+          "reversed": "Invertirani kolatira ukazuje na anksioznost u vezi s klizanjem i gubitkom smera. Želja za sigurnost može se potkopati strahom od gubitka kontrole.",
+          "keywords": [
+            "kontrola",
+            "pravac",
+            "sigurnost",
+            "cilj",
+            "volja"
+          ],
+          "context": "Nalazite sigurnost tako što ćete održavati svoj smer i kretati se prema naprijed sa određivanjem."
+        },
+        "position3": {
+          "upright": "Chariot ukazuje na novac u cilju orijentisan i utvrđen način. Fokus donosi uspeh.",
+          "reversed": "Reversed Chariot ukazuje na rasipne potrošnje ili usmerene finansijske korake.",
+          "keywords": [
+            "cilj",
+            "stabilnost",
+            "fokus",
+            "novac",
+            "napredak"
+          ],
+          "context": "Upotreba novca je fokusirana i utvrđena."
+        },
+        "position4": {
+          "upright": "Pokazali ste snažnu kontrolu i odlučnost u novcu u prošlosti. Napredak je bio fokusiran na golove.",
+          "reversed": "Invertirani kočija može biti izvan ravnoteže zbog prekomernog unapređenja ili neurednog menadžmenta.",
+          "keywords": [
+            "kontrola",
+            "stabilnost",
+            "napredak",
+            "disciplina",
+            "novac"
+          ],
+          "context": "U prošlosti, kontrola i fokus bili su na prvom planu u finansijskim stavovima."
+        },
+        "position5": {
+          "upright": "Chariot pokazuje da se kreće naprijed sa kontrolom i odlučnošću u finansijskim odgovornostima. Uzimaju se ciljani orijentisani koraci.",
+          "reversed": "Ukrašeni kola, gubitak pravca ili nedostatak kontrole može stvoriti neravnotežu u finansijskim odgovornostima.",
+          "keywords": [
+            "kontrola",
+            "stabilnost",
+            "cilj",
+            "napredak",
+            "ravnoteža"
+          ],
+          "context": "Određivanje i podešavanje smera važni su u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Chariot ukazuje na napredak ka cilju sa određivanjem, fokusom i napajanjem u finansijskim planovima.",
+          "reversed": "Ograničeno kolatiranje može ukazivati na nedostatak smera, žurbe ili gubitka kontrole u ​​finansijskim planovima.",
+          "keywords": [
+            "volja",
+            "kontrola",
+            "fokus",
+            "uspeh",
+            "plan"
+          ],
+          "context": "Jasni ciljevi i odlučnost su važni u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Charit ukazuje da ćete u budućnosti nastaviti finansijske ciljeve sa snažnim fokusom i odlučnošću. Jasan pravac i volja donosi uspeh.",
+          "reversed": "Reversed Chariot ukazuje na raštrkane energetske, nekontrolirane troškove ili gubitak smera.",
+          "keywords": [
+            "fokus",
+            "volja",
+            "pravac",
+            "stabilnost",
+            "uspeh"
+          ],
+          "context": "Jasan pravac ili gubitak pravca odrediće buduće finansijske planove."
+        },
+        "position8": {
+          "upright": "Charit ukazuje da ste razvili veštine pravljenja novca odlučnošću, volje i orijentacije ciljeva.",
+          "reversed": "Reversed Chariot ukazuje da mogućnosti mogu oslabiti zbog gubitka smera, indisciplina ili nedostatka kontrole.",
+          "keywords": [
+            "stabilnost",
+            "cilj",
+            "kontrola",
+            "napredak",
+            "disciplina"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa gubitkom discipline ili smera."
+        }
+      },
+      "strength": {
+        "position1": {
+          "upright": "Snaga ukazuje da je anksioznost neadekvatnog u polju materijala. Strah da se ne može nositi sa poteškoćama povećava njihovu anksioznost.",
+          "reversed": "Ograničena snaga otkriva anksioznost, nestrpljivost i nedostatak samopouzdanja. Možete se osećati bespomoćno u finansijskim borbama.",
+          "keywords": [
+            "hrabrost",
+            "snaga",
+            "anksioznost",
+            "poverenje",
+            "strpljenje"
+          ],
+          "context": "Anksioznost proizilazi iz nedostatka samopouzdanja i strpljenja. Fokusiranje na unutrašnju snagu donosi mir."
+        },
+        "position2": {
+          "upright": "Snaga ukazuje da tražite sigurnost putem strpljenja, samokontrole i unutrašnje snage. Tvoj nežan, ali jak stav pojačava osećaj poverenja.",
+          "reversed": "Obrnuta snaga ukazuje na unutrašnju nesigurnost i nestrpljenje anksioznost. Želja za bezbednošću slabi se kada se samopouzdanje smanji.",
+          "keywords": [
+            "snaga",
+            "strpljenje",
+            "sigurnost",
+            "samokontrola",
+            "hrabrost"
+          ],
+          "context": "Tražite sigurnost kroz unutrašnju snagu i strpljenje."
+        },
+        "position3": {
+          "upright": "Snaga ukazuje na tendenciju da upravljanje novcem sa samodisciplinom. Strpljivo proverite zahteve.",
+          "reversed": "Povratna moć ukazuje na rizik od prevremene posvećenosti ili gubitka kontrole upotrebe novca.",
+          "keywords": [
+            "samodisciplina",
+            "strpljenje",
+            "kontrola",
+            "ravnoteža",
+            "novac"
+          ],
+          "context": "Strpljenje i samokontrola dolaze do izražaja kada koriste novac."
+        },
+        "position4": {
+          "upright": "U prošlosti je pacijent, mirno i samodisciplinovano ponašanje prikazano u upravljanju novcem. Rashodi su bili pod kontrolom.",
+          "reversed": "Obrnuta snaga ukazuje na nedostatak samokontrole ili preovlađujuće finansijske probleme.",
+          "keywords": [
+            "strpljenje",
+            "disciplina",
+            "samokontrola",
+            "ravnoteža",
+            "poverenje"
+          ],
+          "context": "U prošlosti su strpljenje i samokontrola bili istaknuti u finansijskim stavovima."
+        },
+        "position5": {
+          "upright": "Snaga ukazuje da strpljenje i samodisciplina dolaze na prednji deo finansijskih odgovornosti. Obaveze su upravljane sa emocionalnim bilansom.",
+          "reversed": "Ograničena snaga, nestrpljivost ili unutrašnja slabost možda je otežalo finansijske odgovornosti.",
+          "keywords": [
+            "strpljenje",
+            "samodisciplina",
+            "odgovornost",
+            "ravnoteža",
+            "snaga"
+          ],
+          "context": "Finansijske odgovornosti su nosile strpljenje i samodisciplinu."
+        },
+        "position6": {
+          "upright": "Moć kaže da će strpljenje, samodisciplina i dosledan napor donijeti uspeh u novim finansijskim planovima.",
+          "reversed": "Obrnuta snaga ukazuje na nestrpljivost sa finansijskim planovima, nedostatkom samopouzdanja ili rizika od nekontrolisane potrošnje.",
+          "keywords": [
+            "strpljenje",
+            "poverenje",
+            "disciplina",
+            "stabilnost",
+            "plan"
+          ],
+          "context": "Strpljenje i samodisciplina biće presudni u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Snaga ukazuje na dugoročni uspeh sa strpljenjem, samodisciplinom i unutrašnjom ravnotežom u finansijskim planovima.",
+          "reversed": "Obrnuta snaga upozorava rizike koji proizilaze iz nestrpljenja, ljutnje ili nedostatka kontrole u ​​finansijskim pitanjima.",
+          "keywords": [
+            "strpljenje",
+            "samodisciplina",
+            "ravnoteža",
+            "stabilnost",
+            "kontrola"
+          ],
+          "context": "Strpljenje ili nedostatak kontrole biće presudni u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Pokazuje da su veštine pravljenja novca podržane snagom, strpljenjem, saosećanjem i samodisciplinom. Meka moć donosi uspeh dugoročno.",
+          "reversed": "Ukrašena snaga ukazuje da nestrpljenje, nedostatak samopouzdanja ili nekontrolisanog ljutnje može potkopati vaše sposobnosti.",
+          "keywords": [
+            "poverenje",
+            "strpljenje",
+            "samodisciplina",
+            "saosećanje",
+            "stabilnost"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa strpljenjem ili nestrpljenjem."
+        }
+      },
+      "thehermit": {
+        "position1": {
+          "upright": "Saint otkriva njegovu anksioznost o tome da je sama i nedostaje finansijska podrška. Interno ispitivanje može stvoriti finansijske nemire.",
+          "reversed": "Ukrašeni svetac ukazuje na anksioznost ekstremne izolacije. Oklevanje zatražiti pomoć može povećati finansijske probleme.",
+          "keywords": [
+            "usamljenost",
+            "podrška",
+            "okretanje prema unutra",
+            "anksioznost",
+            "potraga"
+          ],
+          "context": "Anksioznost se pojavljuje od toga da budem sam, a ne na pronalaženje podrške. Dobijanje podrške putem otvorene komunikacije daje samopouzdanje."
+        },
+        "position2": {
+          "upright": "Saint pokazuje da on traži sigurnost kroz unutrašnju mudrost i usamljenje. Pouzdajući svoje unutrašnje svetlo štiti vas.",
+          "reversed": "Okolišteni svetac označava ekstremnu usamljenost i anksioznost u vezi sa izolovanjem. Želja za bezbednošću smanjuje se ako je udaljena od spoljnih veza.",
+          "keywords": [
+            "mudrost",
+            "okretanje prema unutra",
+            "sigurnost",
+            "uputstvo",
+            "oblast"
+          ],
+          "context": "Vi sigurnosti pronalazite unutrašnju mudrost i jednostavnim izborima."
+        },
+        "position3": {
+          "upright": "Svetac obično koristi novac jednostavno i svesno. Biti zadovoljan sa manje donosi mir.",
+          "reversed": "Okolišteni svetac označava ekstremnu izolaciju ili anksioznost u vezi sa novcem.",
+          "keywords": [
+            "jednostavnost",
+            "svest",
+            "štedljiv",
+            "okretanje prema unutra",
+            "novac"
+          ],
+          "context": "Pojednostavljenje i svesna potrošnja su na čelu kada koristite novac."
+        },
+        "position4": {
+          "upright": "U prošlosti je u finansijskim stvarima prikazano introvertirani i pažljiv stav. Odluke su možda učinjene sami.",
+          "reversed": "Okolišteni svetac pokazuje da finansijske odluke donesene u ekstremnoj samoći ili bez podrške rizikama.",
+          "keywords": [
+            "okretanje prema unutra",
+            "pažnja",
+            "usamljenost",
+            "istraživanje",
+            "samoefikasnost"
+          ],
+          "context": "U prošlosti su introverzija i oprez bili istaknuti u finansijskim stavovima."
+        },
+        "position5": {
+          "upright": "Svetac ima tendenciju da deluje sam ili traži unutrašnje smernice u finansijskim odgovornostima. Odgovornost se vrši putem pojedinačnih odluka.",
+          "reversed": "Okolišteni sveti mogu biti opterećeni prekomernom izolacijom ili tendencijom da se izbegnu odgovornosti.",
+          "keywords": [
+            "usamljenost",
+            "mudrost",
+            "odgovornost",
+            "uputstvo",
+            "okretanje prema unutra"
+          ],
+          "context": "Individualne odluke i unutrašnje smernice dolaze na prednji deo finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Ermis ukazuje na potrebu za introspekcijom, istraživanjem i strateškim donošenjem sama u novim finansijskim planovima.",
+          "reversed": "Ograničeno sveti može ukazivati na ekstremnu izolaciju, samotni odlučivanje i odbacivanje smernica u finansijskim planovima.",
+          "keywords": [
+            "istraživanje",
+            "okretanje prema unutra",
+            "mudrost",
+            "uputstvo",
+            "plan"
+          ],
+          "context": "Duboko razmišljanje i analiza vodiće nove finansijske planove."
+        },
+        "position7": {
+          "upright": "Saint ukazuje na period unutrašnje mudrosti i samih odlučivanja u finansijskim planovima u budućnosti. Duboka analiza omogućava dugoročno profit.",
+          "reversed": "Okolišteni svetac pokazuje da ekstremna izolacija ili usamljene odluke mogu biti rizične.",
+          "keywords": [
+            "mudrost",
+            "analiza",
+            "okretanje prema unutra",
+            "dugoročan",
+            "usamljenost"
+          ],
+          "context": "Duboka analiza ili izolacija biće istaknuti u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Svetac pokazuje da unutrašnja mudrost, iskustvo i sposobnost da sami rade podržavaju njihovu sposobnost da zarade novac.",
+          "reversed": "Okolišteni svetac pokazuje da se mogu propustiti prilike zbog prevelike izolacije, usamljenosti ili nedostatka podrške od drugih.",
+          "keywords": [
+            "mudrost",
+            "okretanje prema unutra",
+            "iskustvo",
+            "nezavisnost",
+            "uputstvo"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa unutrašnjom mudrošću ili izolacijom."
+        }
+      },
+      "thewheeloffortune": {
+        "position1": {
+          "upright": "Točak sudbine ukazuje na zabrinutost zbog finansijskih fluktuacija. Promjene u bogatstvu mogu vas osećati nelagodno.",
+          "reversed": "Obrnuti točak, nekontrolirani gubici i ciklusi ponavljanja su razlog za zabrinutost. Možda se plašite da se iste i ponovo napravite iste greške.",
+          "keywords": [
+            "petlja",
+            "promeniti",
+            "sreća",
+            "anksioznost",
+            "neizvesnost"
+          ],
+          "context": "Anksioznost dolazi od uticaja promene bogatstva. Razumevanje ciklusa donosi mir."
+        },
+        "position2": {
+          "upright": "Točak sudbine pokazuje da tražite sigurnost prihvatanjem ciklusa promene. Podržani ste srećom i mogućnostima.",
+          "reversed": "Naglazni točak ukazuje na anksioznost zbog gubitka kontrole i nesreće. Želja za bezbednošću može se uzdrmati neočekivanim promenama.",
+          "keywords": [
+            "petlja",
+            "šansa",
+            "sigurnost",
+            "prilika",
+            "vremenski vreme"
+          ],
+          "context": "Sigurnost pronalazite prilagođavanjem ciklusima promena."
+        },
+        "position3": {
+          "upright": "Točak sudbine pokazuje cikličnu priliku i promenljivost u upotrebi novca. Moguće je da će se sreća otvoriti.",
+          "reversed": "Naglazni točak ukazuje na neočekivane gubitke ili ponavljanje istih grešaka.",
+          "keywords": [
+            "petlja",
+            "šansa",
+            "promeniti",
+            "prilika",
+            "novac"
+          ],
+          "context": "Ciklusi i sretni trenuci postaju važni u upotrebi novca."
+        },
+        "position4": {
+          "upright": "U prošlosti su sreća i sudbina uticaja na novčane stvari. Mogu se dogoditi neočekivani dobici ili gubici.",
+          "reversed": "Naglazni točak ukazuje na ponavljajuće finansijske cikluse ili propuštene mogućnosti.",
+          "keywords": [
+            "šansa",
+            "petlja",
+            "prilika",
+            "gubitak",
+            "sudbina"
+          ],
+          "context": "U prošlosti su sreća i ciklusi bili efikasni u finansijskim stavovima."
+        },
+        "position5": {
+          "upright": "Točak sudbine pokazuje da postoje ciklični efekti na finansijske odgovornosti. Šansa, tržište ili spoljni uslovi su oblikovali obaveze.",
+          "reversed": "Obrnuti točak bogatstva ukazuje da neočekivani prekidi i nesreće povećavaju finansijske odgovornosti.",
+          "keywords": [
+            "petlja",
+            "šansa",
+            "odgovornost",
+            "sudbina",
+            "Spoljni uslovi"
+          ],
+          "context": "Finansijske odgovornosti utiču cikličke porote sudbine."
+        },
+        "position6": {
+          "upright": "Točak sudbine ukazuje na podršku neočekivanih mogućnosti, sreće i ciklusa u finansijskim planovima.",
+          "reversed": "Prekoračeni točak bogatstva može ukazivati na nedostatke u finansijskim planovima, ponovljenim greškama ili nekontroliranim odlaganjem.",
+          "keywords": [
+            "šansa",
+            "prilika",
+            "petlja",
+            "promeniti",
+            "plan"
+          ],
+          "context": "Šansa i ciklusi imaju snažan uticaj na nove finansijske planove."
+        },
+        "position7": {
+          "upright": "Točak sudbine naglašava sreću, cikličke mogućnosti i promene finansijskih planova u budućnosti. Ispravna odluka u pravo vreme će doneti obilje.",
+          "reversed": "Obrnuti točak bogatstva ukazuje na rizik od nesreće, lošeg vremena ili propuštene mogućnosti.",
+          "keywords": [
+            "šansa",
+            "petlja",
+            "prilika",
+            "vremenski vreme",
+            "promeniti"
+          ],
+          "context": "Srećom mogućnosti ili loše vreme će doći do zaruka u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Točak sudbine pokazuje da su veštine pravljenja novca podržane promenom, ciklusima i srećom. Prilike dolaze u pravo vreme.",
+          "reversed": "Obrnuti točak bogatstva ukazuje na poteškoće u finansijskom razvoju zbog ponovljenih grešaka, nekontrolisanih događaja ili loša sreća.",
+          "keywords": [
+            "petlja",
+            "šansa",
+            "promeniti",
+            "prilika",
+            "vremenski vreme"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa srećom ili ponovljenim greškama."
+        }
+      },
+      "justice": {
+        "position1": {
+          "upright": "Pravda ukazuje na zabrinutost za nepravde i nepravedne uslove. Potraga za jednakošću u polju materijala može vas izazvati.",
+          "reversed": "Reversed Judnjak ukazuje na zabrinutost zbog greške i nerazumevanja. Strah od pogrešnih računara ili nepravednih situacija stvara anksioznost.",
+          "keywords": [
+            "pravda",
+            "jednakost",
+            "nepravda",
+            "anksioznost",
+            "ravnoteža"
+          ],
+          "context": "Anksioznost proizilazi iz straha da se nepravedno tretira. Transparentnost i istinitost donose mir."
+        },
+        "position2": {
+          "upright": "Pravda znači tražiti sigurnost putem poštenih izbora i transparentnosti. Oslanjajući se na prave odluke štiti vas.",
+          "reversed": "Reversed Judnjak ukazuje na zabrinutost za nepravednost i nepravednost. Želja za sigurnost može se potkopati dvostrukim standardima.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "sigurnost",
+            "odgovornost",
+            "oštrina"
+          ],
+          "context": "Izgradite sigurnost kroz fer izbore i transparentnost."
+        },
+        "position3": {
+          "upright": "Pravda se odnosi na tendenciju da koristi novac u uravnotežen i fer način. Transparentnost stvara poverenje.",
+          "reversed": "Reversed Judnjak ukazuje na nepravdu ili skrivene detalje u finansijskim pitanjima.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "transparentnost",
+            "novac",
+            "odgovornost"
+          ],
+          "context": "Potreban je pošteni i uravnotežen pristup upotrebi novca."
+        },
+        "position4": {
+          "upright": "Pošteno, uravnoteženi i odgovorni stav prikazani su u finansijskim pitanjima u prošlosti. Odgovornost je bila na čelu.",
+          "reversed": "Moguće je da se podnese štetna pravda, nepravedno ili neuravnotežene finansijske odluke.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "odgovornost",
+            "račun",
+            "iskrenost"
+          ],
+          "context": "U prošlosti su pravda i ravnoteža bili istaknuti u finansijskim stavovima."
+        },
+        "position5": {
+          "upright": "Pravda, transparentnost finansijskih odgovornosti i fer podjela rada bila je na čelu. Odgovornosti su pokušane da se podele podjednako.",
+          "reversed": "Restrovna pravda, nepravda ili nejednaka deljenje odgovornosti stvorila je probleme.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "odgovornost",
+            "transparentnost",
+            "jednakost"
+          ],
+          "context": "Postoji potraga za pravdom i transparentnošću finansijskih odgovornosti."
+        },
+        "position6": {
+          "upright": "Pravda se odnosi na transparentnost, iskrenost i poštovanje zakonskih propisa u novim finansijskim planovima.",
+          "reversed": "Revertra pravičnost ukazuje na nepoštenost finansijskih planova, nepotpunih informacija ili rizika pravnih problema.",
+          "keywords": [
+            "pravda",
+            "iskrenost",
+            "zakon",
+            "ravnoteža",
+            "plan"
+          ],
+          "context": "Transparentnost i fer pristup su od suštinskog značaja za nove finansijske planove."
+        },
+        "position7": {
+          "upright": "Pravednost se odnosi na fer odluke, transparentnost i ispravno funkcionisanje ugovora u budućim finansijskim planovima.",
+          "reversed": "Obrnuta pravičnost odnosi se na rizik nepravednosti, pogrešne obrade ili neprozirne odluke.",
+          "keywords": [
+            "pravda",
+            "ravnoteža",
+            "sporazum",
+            "odluka",
+            "odgovornost"
+          ],
+          "context": "Pošteno ili nepravedno odluke će imati uticaja na buduće finansijske planove."
+        },
+        "position8": {
+          "upright": "Pokazuje da poštenost, iskrenost, transparentnost i etičko ponašanje podržavaju sposobnosti donošenja novca.",
+          "reversed": "Obrnuta pravda ukazuje da finansijske veštine mogu biti oslabljene zbog nepravde, laži ili nedostatka odgovornosti.",
+          "keywords": [
+            "pravda",
+            "etika",
+            "transparentnost",
+            "ravnoteža",
+            "odgovornost"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa etičkim ili neetičkim ponašanjem."
+        }
+      },
+      "thehangedman": {
+        "position1": {
+          "upright": "Obučeni čovek otkriva anksioznost čekanja i neaktivnosti. Stagnacija u finansijskim pitanjima može stvoriti nemire.",
+          "reversed": "Obučeni čovek naopako ukazuje na strah od žrtve da je nenagrađen. Možete se brinuti da će vaši napori biti besplodni.",
+          "keywords": [
+            "čekanje",
+            "stabilnost",
+            "žrtvovati",
+            "anksioznost",
+            "predaja"
+          ],
+          "context": "Anksioznost proizilazi iz straha od stagnacije i neuzvraćenosti. Promena perspektive donosi mir."
+        },
+        "position2": {
+          "upright": "Obučeni čovek pokazuje da on traži sigurnost putem strpljenja i različitih perspektiva. Prihvatanje čekanja daje mir.",
+          "reversed": "Obučeni čovek naopako ukazuje na anksioznost žrtve i staze. Želja za sigurnost se može izgubiti u pasivnosti.",
+          "keywords": [
+            "perspektivan",
+            "strpljenje",
+            "sigurnost",
+            "čekati",
+            "predaja"
+          ],
+          "context": "Nalazite sigurnost sa različitim perspektivama i strpljenjem."
+        },
+        "position3": {
+          "upright": "Obučeni čovek pokazuje tendenciju da se uzme u obzir novac iz druge perspektive. Biti pacijent isplaćen.",
+          "reversed": "Okrušeni muškarac naopako ukazuje na svest žrtve ili odlaganju anksioznost u upotrebi novca.",
+          "keywords": [
+            "perspektivan",
+            "strpljenje",
+            "čekati",
+            "žrtvovati",
+            "novac"
+          ],
+          "context": "Pacijent čeka i nova perspektiva su važne prilikom korišćenja novca."
+        },
+        "position4": {
+          "upright": "U prošlosti ste preferirali da sačekate i vidite stvari iz druge perspektive kada je u pitanju finansijska pitanja. Tretirao je strpljivo.",
+          "reversed": "Obučeni čovek naopako ukazuje na neodlučnost ili odlaganje koraka koje treba preduzeti.",
+          "keywords": [
+            "čekati",
+            "žrtvovati",
+            "perspektivan",
+            "odluka",
+            "strpljenje"
+          ],
+          "context": "U prošlosti su čekanja i strpljenja bili istaknuti u finansijskim stavovima."
+        },
+        "position5": {
+          "upright": "Obučeni čovek može da se žrtvuje ili odlažu u finansijskim odgovornostima. Čekanje je uticalo na tok obaveza.",
+          "reversed": "Okrušeni muškarac naglavačke, koji spada u ulogu žrtve ili tendenciju da pobegnete je pogoršalo odgovornosti.",
+          "keywords": [
+            "žrtvovati",
+            "čekati",
+            "odgovornost",
+            "predaja",
+            "ravnoteža"
+          ],
+          "context": "Žrtva ili odložena odluka su efikasna u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Obučeni čovek ukazuje na različite perspektive, strpljenje i privremene žrtve u finansijskim planovima.",
+          "reversed": "Okrušen čovek naglavačke može ukazivati na tvrdoglavost u finansijskim planovima, otpornošću na promenu ili odlaganje mogućnosti.",
+          "keywords": [
+            "strpljenje",
+            "drugačiji pogled",
+            "žrtvovati",
+            "čekanje",
+            "plan"
+          ],
+          "context": "Strpljenje i različite perspektive su važne u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Obučeni čovek ukazuje na važnost očekivanja, žrtve i drugačije perspektive u finansijskim planovima u budućnosti.",
+          "reversed": "Okrušeni muškarac naopako ukazuje na nevoljkoku nevoljku čekanju ili nepotrebnu ulogu žrtve.",
+          "keywords": [
+            "čekanje",
+            "žrtvovati",
+            "perspektivan",
+            "strpljenje"
+          ]
+        }
+      }
+    }
+  }
+}

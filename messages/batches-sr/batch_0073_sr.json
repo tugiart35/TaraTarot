@@ -1,0 +1,782 @@
+{
+  "relationship-analysis": {
+    "meanings": {
+      "kingofcups": {
+        "position7": {
+          "keywords": [
+            "zrelost",
+            "rukovodstvo",
+            "Emocionalno upravljanje",
+            "spokojstvo"
+          ],
+          "context": "Budućnost odnosa će rasti sa zrelim emocijama. Otvorena će biti osnova poverenja."
+        }
+      },
+      "aceofpentacles": {
+        "position1": {
+          "upright": "Ace Pentacles ukazuje da je trenutni odnos počeo da se gradi na betonskim temeljima. Postoji poverenje, naređenje i energija novog početka. Savet: Uzmite male, ali čvrste korake.",
+          "reversed": "Reversed Ace Pentacla vam govori da se mogu zanemariti prilike ili nesigurnosti sprečavaju konkretne akcije. Simptom: Prokostinovanje i lima vremena.",
+          "keywords": [
+            "početak",
+            "poverenje",
+            "opipljivost",
+            "osnova",
+            "prilika"
+          ],
+          "context": "U trenutnoj situaciji odnos traži sigurnu osnovu. Konkretni koraci će ojačati Bond. Zanemarene mogućnosti moraju se oporaviti."
+        },
+        "position2": {
+          "upright": "Ace Pentacles, vaša osećanja imaju samopouzdanje, stabilnost i želju za dugoročnom početkom. Vaše srce želi da izgradi čvrste temelje. Savet: Semenke biljaka.",
+          "reversed": "ACE Of Pentacles Reversed vam govori da mogućnosti zagura vaše osećaje zbog nedostatka priznavanja ili nesigurnosti. Simptom: propušteni pokretanje.",
+          "keywords": [
+            "poverenje",
+            "početak",
+            "osnova",
+            "stabilnost",
+            "dosta"
+          ],
+          "context": "Sada je vaše srce spremno za solidan početak. Osjećaj poverenja će ojačati vaša osećanja."
+        },
+        "position3": {
+          "upright": "As Pentacles vam govori da je vaše očekivanje čvrst početni i konkretan sigurnost. Vaše srce želi stabilnost .. SIGURNO FONDACIJA.",
+          "reversed": "ACE Of Pentacles obrnut ukazuje da je vaše očekivanje da se mogućnosti da ne budu propustine. Vaše srce traži stabilnost. \\ N \\ nsimptom: Potreba za uveravanjem.",
+          "keywords": [
+            "poverenje",
+            "početak",
+            "beton",
+            "stabilnost",
+            "dosta"
+          ],
+          "context": "Ono što očekujete je radikalni početak. Tvoje srce traži čvrsto tlo."
+        },
+        "position5": {
+          "upright": "Vaša mapa puta treba da bude izgrađena na konkretnoj mogućnosti i sigurnom fondaciji. Mali, stalni koraci stvaraju dugoročnu stabilnost.",
+          "reversed": "Mapa za put može postati zamagljena strahom da se ometa i nedostaje prilika. Postavljanje jasnih prioriteta i boravka fokusiranja vas osnažuje.",
+          "keywords": [
+            "prilika",
+            "početak",
+            "osnova",
+            "stabilnost",
+            "rast"
+          ],
+          "context": "Očekuje vas novi početak. Betonski je i izgradi poverenje na male korake."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje čvrstu osnovu i pouzdano pouzdano od vas. Želi da vidi konkretne korake.",
+          "reversed": "Vaš partner ne želi da propuste mogućnosti. Određivanje, a ne nesigurnost, čeka.",
+          "keywords": [
+            "poverenje",
+            "početak",
+            "opipljivost",
+            "stabilnost",
+            "osnova"
+          ],
+          "context": "Vaš partner očekuje siguran i čvrst početak."
+        },
+        "position7": {
+          "upright": "Budućnost komunikacija traži čvrste temelje i nove mogućnosti. Ojačaće vezu materijalnog ili duhovnog poverenja.",
+          "reversed": "Propuštene prilike ili nepoverenje mogu usporiti vezu. Mali koraci obnavljaju stabilnost.",
+          "keywords": [
+            "prilika",
+            "osnova",
+            "poverenje",
+            "početak"
+          ],
+          "context": "Budućnost komunikacije biće izgrađena sa čvrstim koracima. Ali postoji rizik od nesigurnosti."
+        },
+        "position4": {
+          "upright": "ACE Of Pentacles kaže da gradi poverenje konkretnim koracima. Mali, ali čvrsti počeci čine da obveznica raste.",
+          "reversed": "Reversed Ace Pentacles kaže da naučite da vidite mogućnosti i prestanete da odlažete. Sada je vreme za djelovanje.",
+          "keywords": [
+            "početak",
+            "opipljivost",
+            "poverenje",
+            "osnova",
+            "prilika"
+          ],
+          "context": "Vaš savet; Rezervne kopije reči sa akcijom. Mali koraci stvaraju veliko samopouzdanje."
+        }
+      },
+      "twoofpentacles": {
+        "position1": {
+          "upright": "Dvojica PENTAKLES-a kaže da se ravnoteža traži u trenutnoj situaciji. Potreban je napor da se uspostavi ravnoteža između svakodnevnog života, osećaj se radnog i odnosa. Savet: Pojednostavite svoje prioritete.",
+          "reversed": "Otkrivena dva pentaklova ukazuje da sukobljene odgovornosti i rasporedi obveznice. Simptom: nered i zanemarivanje.",
+          "keywords": [
+            "ravnoteža",
+            "prioritet",
+            "vreme",
+            "energija",
+            "fleksibilnost"
+          ],
+          "context": "U trenutnoj situaciji, obveznica se testira višestrukim odgovornostima. Upravljanje vremenom će olakšati srca. Jednostavnost će doneti mir."
+        },
+        "position2": {
+          "upright": "Dva pentaklama, postoji napor da se vaše emocije uravnoteže i upravljaju višestrukim odgovornostima. Vaše srce traži fleksibilnost. Savet: Razjasnite svoje prioritete.",
+          "reversed": "Otkrivena dva pentaklama vam govori da neravnoteža i preopterećenje napregnuju vaša osećanja. Simptom: Raštrkana energija.",
+          "keywords": [
+            "ravnoteža",
+            "raport",
+            "odgovornost",
+            "fleksibilnost",
+            "protok"
+          ],
+          "context": "Tvoje srce se sada bavi puno. Fleksibilnost će vas osvetliti."
+        },
+        "position3": {
+          "upright": "Dvojica Pentekla vam govori da je vaše očekivanje ravnoteža i harmonija. Vaše srce želi fleksibilnost ... Harmonija, svestranost.",
+          "reversed": "Otkrivena dva pentakla pokazuju da je vaše očekivanje da se odseli od haosa. Vaše srce traži naređenje. \\ N \\ nsimptom: želja za ravnotežom.",
+          "keywords": [
+            "ravnoteža",
+            "raport",
+            "fleksibilnost",
+            "narediti",
+            "potraga za ravnotežom"
+          ],
+          "context": "Ono što očekujete je uravnotežena šetnja. Vaše srce traži sklad u više područja."
+        },
+        "position5": {
+          "upright": "Vaša mapa puta treba da se zasniva na fleksibilnosti i ravnoteži. Upravljanje više odgovornosti skladno omogućava vam napredak.",
+          "reversed": "Vaša mapa puta može biti ometana neravnotežom i odlaganjem. Od suštinskog je značaja da pojednostavite svoje prioritete.",
+          "keywords": [
+            "ravnoteža",
+            "fleksibilnost",
+            "vreme",
+            "prioritet",
+            "raport"
+          ],
+          "context": "Krenite napred dok održavate ravnotežu. Mala podešavanja će otvoriti put."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje ravnotežu i fleksibilnost od vas. Želi da podnesete posao, ljubav i život u skladu.",
+          "reversed": "Vaš partner ne želi da vidi neravnotežu. Čeka vas da razjasnite svoje prioritete.",
+          "keywords": [
+            "ravnoteža",
+            "fleksibilnost",
+            "prioritet",
+            "raport",
+            "stabilizator"
+          ],
+          "context": "Vaš partner očekuje da ćete pronaći ravnotežu i upravljati svojim prioritetima."
+        },
+        "position7": {
+          "upright": "U budućnosti će potraga za ravnotežom, fleksibilnost i harmonija doći do izražaja. Dve stranke mogu morati da uravnoteže odgovornosti.",
+          "reversed": "Preopterećenje ili odlaganja mogu u budućnosti opteretiti vezu. Prioritizacija će biti od suštinskog značaja.",
+          "keywords": [
+            "ravnoteža",
+            "fleksibilnost",
+            "raport",
+            "odgovornost"
+          ],
+          "context": "Budućnost komunikacije nastaviće se sa uravnoteženim koracima. Ali odlaganja može oslabiti obveznicu."
+        },
+        "position4": {
+          "upright": "Dva Penfala kaže da uspostavlja ravnotežu i razjašnjenja prioriteta. Fleksibilnost opušta ligament.",
+          "reversed": "Otkrivena dva pentaklama kaže da pojednostavljuju nered i upravljanje vremenom. Fokus donosi snagu.",
+          "keywords": [
+            "ravnoteža",
+            "prioritet",
+            "fleksibilnost",
+            "upravljanje",
+            "protok"
+          ],
+          "context": "Vaš savet; Pojednostavljivanje života. Ljubav cveta u ravnoteži i gumama u haosu."
+        }
+      },
+      "threeofpentacles": {
+        "position1": {
+          "upright": "Tri od tri pentakla ukazuju na energiju saradnje, deljenje uloga i krećući se uobičajenim ciljevima u trenutnoj situaciji. Savet: Povraćajte timski duh.",
+          "reversed": "Trojica obrnutog Reversed-a kažu da nevidljivost doprinosa ili neskladna saradnja napregne obveznicom. Simptom: niska motivacija.",
+          "keywords": [
+            "partnerstvo",
+            "deljenje",
+            "uloga",
+            "set",
+            "cilj"
+          ],
+          "context": "U trenutnoj situaciji, odnos testira potrebu za saradnjom. Zajednički napori će ojačati fondaciju obveznice."
+        },
+        "position2": {
+          "upright": "Tri pentakla, želja za saradnjom i zajedničkom radnom snagom dolazi do izražaja u vašim osećanjima. Vaše srce želi da izgradi u harmoniji. Savet: Negujte timski duh.",
+          "reversed": "Tri povratka obrnuto, ukazuju na to da je disharmonija i nedostatak integriteta naprezanje svojih osećaja. Simptom: Nedostatak zajedničkog rada.",
+          "keywords": [
+            "partnerstvo",
+            "rad",
+            "raport",
+            "solidarnost",
+            "izgradnja"
+          ],
+          "context": "Trenutno vaše srce čezne za zajednički napor. Radeći zajedno ojačaće vezu."
+        },
+        "position3": {
+          "upright": "Tri pentakala vam govore da je vaša očekivanja saradnja. Vaše srce želi zajednički napor. Partnerstvo, harmonija.",
+          "reversed": "Trojica preokrenuta pentaklova ukazuje da je vaša očekivanja zaštita od neslaganih napora. Vaše srce želi skladnu saradnju. \\ N \\ nsimptom: Potreba za partnerstvom.",
+          "keywords": [
+            "partnerstvo",
+            "partnerstvo",
+            "rad",
+            "raport",
+            "podrška"
+          ],
+          "context": "Vaša očekivanja je da se za zajednički napor ceni. Vaše srce želi da gradi zajedno."
+        },
+        "position5": {
+          "upright": "Vašem mapetovima napajanja je stručnosti saradnje i deljenja. Struktura izgrađena zajedno je dugotrajna.",
+          "reversed": "Vaša mapa puta može biti blokirana nejasnim ulogama i pogrešno komuniciranje. Potrebna je jasna podela rada.",
+          "keywords": [
+            "partnerstvo",
+            "savladav",
+            "deljenje",
+            "izgradnja",
+            "set"
+          ],
+          "context": "Radeći zajedno stvara efekat povećanja stakla. Podelite sa pouzdanjem."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje saradnju i zajednički napor od vas. Želi da izgradi odnos zajedno.",
+          "reversed": "Vaš partner ne želi da vidi jednostrani napori. On ceni zajednički rad.",
+          "keywords": [
+            "partnerstvo",
+            "rad",
+            "partnerstvo",
+            "solidarnost",
+            "raport"
+          ],
+          "context": "Vaš partner očekuje zajednički napor i saradnju."
+        },
+        "position7": {
+          "upright": "U budućnosti komunikacije, saradnja i zajednički napori će doći do izražaja. Stvari izgrađene zajedno će trajati.",
+          "reversed": "Negred nejasnoće ili nespojiva saradnja mogu stvoriti probleme u budućnosti. Transparentnost će biti potrebna.",
+          "keywords": [
+            "partnerstvo",
+            "izgradnja",
+            "uloga",
+            "raport"
+          ],
+          "context": "Budućnost komunikacije će se povećati sa zajedničkim naporima. Ali neizvesnost može ometati."
+        },
+        "position4": {
+          "upright": "Tri pentakova kaže da sarađuju i razjašnjavaju uloge. Zajednička radna snaga jača Bond.",
+          "reversed": "Tri povratka obrnuto sugerišu preraspodele zadatke i dijeljenje kredita. Pravda donosi mir.",
+          "keywords": [
+            "partnerstvo",
+            "uloga",
+            "rad",
+            "diskrecija",
+            "kvalitet"
+          ],
+          "context": "Vaš savet; Da se ​​kreće naprijed sa timskim duhom. Zajeljena odgovornost produbljuje ljubav."
+        }
+      },
+      "fourofpentacles": {
+        "position1": {
+          "upright": "Četiri pentaklova ukazuje da je potreba za sigurnošću istaknuta u trenutnoj situaciji. Vi ste u periodu u kojem se emocije ili resursi pokušavaju zaštititi. Savet: Naučite da delite.",
+          "reversed": "Uokrećena četvorica pentakala kaže da je prekomerno zadržavanje ili prekomerno ekstravagantnost natjecala vezu. Simptom: kontrolisani ili zaglavili osećanja.",
+          "keywords": [
+            "sigurnost",
+            "kontrola",
+            "deljenje",
+            "zaštita",
+            "stabilnost"
+          ],
+          "context": "U trenutnoj situaciji postoji napor da se stvori siguran prostor. Međutim, prekomjerni zahvat može suziti ligament. Izbalansirana deljenja će donijeti mir."
+        },
+        "position2": {
+          "upright": "Četiri pentakla, vaša osećanja dominiraju željom da poseduju i štite. Vaše srce želi da drži prostor poverenja. Savet: ravnoteža sa otvorenom.",
+          "reversed": "Preokrećena četvorica pentakala vam govori da se prekomerno pridržavanje ili strah od gubitka naprezaju vaša osećanja. Simptom: Ljubomora.",
+          "keywords": [
+            "posesivnost",
+            "poverenje",
+            "kontrola",
+            "zaštita",
+            "strast"
+          ],
+          "context": "Tvoje srce želi da bude sigurno sigurno. Držite se previše može da vas umorite."
+        },
+        "position3": {
+          "upright": "Četiri pentacla vam govore da je vaše očekivanje zaštite vašeg sigurnog prostora. Vaše srce želi stabilnost .. Osiguranje, zaštita.",
+          "reversed": "Preokrećena četvorica pentakla ukazuje da je vaše očekivanje da se oslobodite prekomernog konzervativizma. Tvoje srce traži deljenje. \\ N \\ nsimptom: želja za udobnosti.",
+          "keywords": [
+            "sigurnost",
+            "zaštita",
+            "stabilnost",
+            "kontrola",
+            "deljenje"
+          ],
+          "context": "Vaša očekivanja je da se osećate sigurno. Vaše srce traži zdravu ravnotežu."
+        },
+        "position5": {
+          "upright": "Vaša mapa puta zasniva se na izdržljivosti i zaštitom onoga što imate. Ostatak fleksibilnog bez ikakvog zadržavanja osigurava dugoročni rast.",
+          "reversed": "Vaša mapa puta može se suziti prekomerno recepcija i pohlepe. Puštanje i deljenje napretka.",
+          "keywords": [
+            "sigurnost",
+            "zaštita",
+            "kontrola",
+            "ravnoteža",
+            "fleksibilnost"
+          ],
+          "context": "Sigurno zaštitite svoje korenje. Ali naučite da preuzmete previše."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje sigurnost i odanost od vas. Želi da mu priđete posesivno, ali uravnotežen način.",
+          "reversed": "Vaš partner ne želi da se preterano kontroliše. Verodovanje čeka u deljenju.",
+          "keywords": [
+            "sigurnost",
+            "lojalnost",
+            "posesivnost",
+            "ravnoteža",
+            "zaštita"
+          ],
+          "context": "Vaš partner očekuje siguran, ali deljenje pristupa."
+        },
+        "position7": {
+          "upright": "U budućnosti komunikacije, želja za sigurnošću i zaštitom će doći do izražaja. Čvrsta obveznica će stvoriti osećaj pripadnosti.",
+          "reversed": "Prekomerno posesivnost ili strahovi mogu ubuduće suziti vezu. Deljenje otvara prostor.",
+          "keywords": [
+            "sigurnost",
+            "posesivnost",
+            "pripadnik",
+            "ravnoteža"
+          ],
+          "context": "Budućnost odnosa biće zaštićena osećajem poverenja. Ali previsok može biti problem."
+        },
+        "position4": {
+          "upright": "Četiri pentaklova kažu da čuvaju sigurne, ali zaboravite na deljenje. Držite ga u ravnoteži.",
+          "reversed": "Preokrećena četiri pentaklama kaže da je otpuštena kontrola i povećala fleksibilnost. Ostavite slobodu prostora.",
+          "keywords": [
+            "sigurnost",
+            "kontrola",
+            "deljenje",
+            "ravnoteža",
+            "fleksibilnost"
+          ],
+          "context": "Vaš savet; Razlika između zaštite i smetanja. Oslobađaju slobodu u sigurnosti."
+        }
+      },
+      "fiveofpentacles": {
+        "position1": {
+          "upright": "Pet pentakova ukazuje na osećaj isključenosti ili materijalnog i duhovnog uskraćivanja u trenutnoj situaciji. Savet: Ne bojte se zatražiti pomoć.",
+          "reversed": "Otkriveni pet pentakama nam govori da iako postoji namera da se oporavi, tendencija da se samostalno nosi sama. Simptom: Tiho zaglavljivanje.",
+          "keywords": [
+            "glad",
+            "usamljenost",
+            "pomoći",
+            "podrška",
+            "isključenje"
+          ],
+          "context": "Jedna strana može se osećati ostavljeno u trenutnoj situaciji. Solidarnost će otvoriti vrata. Deljenje će doneti izlečenje."
+        },
+        "position2": {
+          "upright": "Pet pentaka, vaša osećanja su usamljenosti ili nedostatka podrške. Vaše srce se oseća izostavljeno. Savet: Ne bojte se zatražiti podršku.",
+          "reversed": "Invertirani Pet stanovnika ukazuje na povećanu želju da se okrene oporavku i podršku. Simptom: Otvaraju se vrata.",
+          "keywords": [
+            "usamljenost",
+            "nedostatak",
+            "podrška",
+            "izvor",
+            "pomoći"
+          ],
+          "context": "Tvoje srce trenutno traži podršku. Deljenje će zaceliti rane."
+        },
+        "position3": {
+          "upright": "Pet pentakala vam govori da je ono što očekujete je podrška i solidarnost. Vaše srce ne želi da ne bude sama. Solidarnost, nada.",
+          "reversed": "Pet Pentakova obrnuto, ukazuje da vaše očekivanje ispada da izađe iz uskraćivanja. Vaše srce traži obilje. \\ N \\ nsimptom: Potreba za nadom.",
+          "keywords": [
+            "solidarnost",
+            "nadati se",
+            "podrška",
+            "jedinstvo",
+            "dosta"
+          ],
+          "context": "Vaša očekivanja je da se podržava. Vaše srce želi da pobegne od usamljenosti."
+        },
+        "position5": {
+          "upright": "Vaša mapa puta će biti ojačana traženjem solidarnosti i podrške u teškim vremenima. Poteškoće postaje lakši kada se deli.",
+          "reversed": "Vaša mapa puta može biti zamagljena osećanjima usamljenosti i uskraćenosti. Traženje pomoći Otvara nova vrata.",
+          "keywords": [
+            "poteškoće",
+            "podrška",
+            "izdržljivost",
+            "pomoći",
+            "jedinstvo"
+          ],
+          "context": "Pridružuju se rukama u teškoćama. Podrška će vas učiniti jačim."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje da ćete biti tamo za njega u teškim vremenima. On traži podršku i solidarnost sa njim.",
+          "reversed": "Vaš partner ne želi da se oseća usamljeno. Čeka se da se oporavi zajedno.",
+          "keywords": [
+            "podrška",
+            "solidarnost",
+            "lojalnost",
+            "jedinstvo",
+            "saosećanje"
+          ],
+          "context": "Vaš partner očekuje da ćete biti tamo za njega u teškim vremenima."
+        },
+        "position7": {
+          "upright": "Percepcija uskraćivanja ili potreba za podrškom može doći do izražaja u budućnosti. Poteškoće se moraju prevazići zajedno.",
+          "reversed": "Oporavak i podrška će u budućnosti ojačati vezu. Nada će se otkriti.",
+          "keywords": [
+            "uskraćivanje",
+            "podrška",
+            "nadati se",
+            "jedinstvo"
+          ],
+          "context": "Budućnost komunikacije biće testirana sa izazovima. Ali podrška će biti isceljenje."
+        },
+        "position4": {
+          "upright": "Pet PentaKles kaže da se stoji zajedno i traži podršku u teškim vremenima. Solidarnost jača.",
+          "reversed": "Reversed Pet stanovnika kaže da izađe iz usamljenosti i prihvata pomoć. Oporavak je lakši zajedno.",
+          "keywords": [
+            "solidarnost",
+            "podrška",
+            "poteškoće",
+            "jedinstvo",
+            "poboljšanje"
+          ],
+          "context": "Vaš savet; Da stoji rame do ramena u teškim vremenima. Zajedničko opterećenje postaje svetlo i veza je jaka."
+        }
+      },
+      "sixofpentacles": {
+        "position1": {
+          "upright": "Šest stanovnika ukazuje na potrebu za ravnotežom i pravdom u trenutnoj situaciji. Uloge za prijemnike Giver je na dnevnom redu. Savet: Budite egalitarni.",
+          "reversed": "Okrećena šest Talisman-a nam govori da su očekivanja zauzvrat za favoritosti naklonjene obveznice. Simptom: Pritisak zahvalnosti.",
+          "keywords": [
+            "pravda",
+            "deljenje",
+            "ravnoteža",
+            "jednakost",
+            "pomoći"
+          ],
+          "context": "U trenutnoj situaciji, obveznica testira željom za fer deljenje. Bezuslovna podrška će ojačati korenje obveznice."
+        },
+        "position2": {
+          "upright": "Šest pentakala postoji ravnoteža u vašim osećanjima i želje za deljenjem. Vaše srce je usmereno prema jednakim razmeni. Savet: Davanje i primanje ravnoteže.",
+          "reversed": "Reversed šest talismana vam govori da je neuravnoteženo kupovanje oblači vaše osećaje. Simptom: jednostrani rad.",
+          "keywords": [
+            "deljenje",
+            "ravnoteža",
+            "jednakost",
+            "podrška",
+            "pravda"
+          ],
+          "context": "Tvoje srce trenutno traži jednakost. Pronalaženje ravnoteže će hraniti vaša osećanja."
+        },
+        "position3": {
+          "upright": "Šest pentakala vam govori da je vaše očekivanje pošteno bavljenje. Vaše srce želi jednaku ravnotežu .. Pošteno deljenje.",
+          "reversed": "Prekoračenje šest pentakla ukazuje da je vaše očekivanje da se držite podalje od neuravnotežene pomoći. Vaše srce traži jednakost. \\ N \\ nsimptom: Traženje ravnoteže.",
+          "keywords": [
+            "jednakost",
+            "pravda",
+            "deljenje",
+            "ravnoteža",
+            "podrška"
+          ],
+          "context": "Vaša očekivanja je jednaka razmena. Vaše srce želi uravnoteženu deljenje."
+        },
+        "position5": {
+          "upright": "Vaša mapa puta zasniva se na sajmu i ravnoteži. Davanje i primanje rasti istovremeno.",
+          "reversed": "Vaša mapa puta može biti zamagljena neravnotežama napajanja. Morate da ostanete jasne granice.",
+          "keywords": [
+            "deljenje",
+            "pravda",
+            "ravnoteža",
+            "davati",
+            "poverenje"
+          ],
+          "context": "To utišava put za jednakost i transparentnost. Deljenje gradi mostove."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje pravedni deo i transparentna ravnoteža od vas. Želi da posmatrate ravnotežu davanja i prijem.",
+          "reversed": "Vaš partner ne želi neravnotežu napajanja. Bezuslovno deljenje čeka.",
+          "keywords": [
+            "deljenje",
+            "pravda",
+            "ravnoteža",
+            "transparentnost",
+            "poverenje"
+          ],
+          "context": "Vaš partner očekuje uravnoteženu i fer transakciju."
+        },
+        "position7": {
+          "upright": "U budućnosti odnosi, ravnoteža, pravda i reciprocitet će doći do izražaja. Deljenje će stvoriti poverenje.",
+          "reversed": "Neravnoteža snage ili uslovno prenošenje može biti problem u budućnosti. Pažnju treba posvetiti ravnoteži.",
+          "keywords": [
+            "deljenje",
+            "ravnoteža",
+            "pravda",
+            "poverenje"
+          ],
+          "context": "Budućnost komunikacije biće izgrađena na fer delivanju. Ali postoji rizik od nejednakosti."
+        },
+        "position4": {
+          "upright": "Podelite pošteno i očuvajte reciprocitet, kaže šest pentakala. Bilans stvara poverenje.",
+          "reversed": "Reversed šest talisman kaže da je ispravljati nejednakost i uspostaviti ravnotežu moći. Pravda donosi mir.",
+          "keywords": [
+            "pravda",
+            "deljenje",
+            "reciprocitet",
+            "ravnoteža",
+            "poverenje"
+          ],
+          "context": "Vaš savet; Utvrđivanje ravnoteže davanja i prijem. Pošteni odnos je trajan."
+        }
+      },
+      "sevenofpentacles": {
+        "position1": {
+          "upright": "Sedam pentakla ukazuje na strpljenje i investicione energije u trenutnoj situaciji. Odnos polako raste, ali stalno. Savet: Verujte vreme.",
+          "reversed": "Reversed Sedam pentakala kaže da nestrpljenje i preuranjeno odustajanje stvori senku. Simptom: Ne odustajte lako.",
+          "keywords": [
+            "strpljenje",
+            "investicija",
+            "prinos",
+            "napredak",
+            "vreme"
+          ],
+          "context": "U trenutnoj situaciji vinograda će tokom vremena snijeti svoje voće. Budući da je pacijent povećaće snagu odnosa."
+        },
+        "position2": {
+          "upright": "Sedam pentakala, u vašim osećanjima i energijom u budućnost ulaže u budućnost. Vaše srce je prepuno iščekivanja. Savet: Napravite vreme sigurno.",
+          "reversed": "Reversed Sedam pentakala vam govori da nestrpljenje i nedostatak rezultata napregnute vaša čula. Simptom: Beznadežno čekanje.",
+          "keywords": [
+            "strpljenje",
+            "investicija",
+            "čekanje",
+            "nadati se",
+            "rad"
+          ],
+          "context": "Tvoje srce je trenutno puno strpljenja. Čekanje sa verom će podnijeti plod."
+        },
+        "position3": {
+          "upright": "Sedam pentakala vam govori da je vaše očekivanje da vidite rezultate strpljenja i truda. Vaše srce traži voće ... strpljenje, produktivnost.",
+          "reversed": "Reversed Sedam stanovnika ukazuje da vaše očekivanje treba zaštititi od izgubljenih napora. Vaše srce traži dragocenu radnu snagu. \\ N \\ nsimptom: Želja za efikasnošću.",
+          "keywords": [
+            "strpljenje",
+            "rad",
+            "prinos",
+            "očekivanje",
+            "zaključak"
+          ],
+          "context": "Vaša očekivanja je da se nagradi za vaš rad. Vaše srce želi voće."
+        },
+        "position5": {
+          "upright": "Vaša mapa puta napreduje sa ritmom strpljenja i evaluacije. Mala poboljšanja plaćaju dividende dugoročno.",
+          "reversed": "Vaša mapa puta može se osporiti nestrpljenjem i \"potopnim troškovima\" sindromom. Možda je potrebno da se okreće.",
+          "keywords": [
+            "strpljenje",
+            "procena",
+            "rad",
+            "čekanje",
+            "žetva"
+          ],
+          "context": "Budite strpljivi i vaši napori će cvjetati. Mala podešavanja čine veliku razliku."
+        },
+        "position6": {
+          "upright": "Vaš partner vas pita za strpljenje i snagu da sačekate plodove vašeg rada. Tražeći dugoročni pristup.",
+          "reversed": "Vaš partner ne želi ishrane. Utvrđeno strpljenje i istrajnost očekuje se.",
+          "keywords": [
+            "strpljenje",
+            "upornost",
+            "žetva",
+            "procena",
+            "stabilnost"
+          ],
+          "context": "Vaš partner očekuje pacijent i dugoročni pristup."
+        },
+        "position7": {
+          "upright": "U budućnosti odnosa biće period strpljenja i ocenjivanja. Vaši napori će se tokom vremena nagraditi.",
+          "reversed": "Osjećaj nestrpljenja ili neefikasnosti može u budućnosti stvoriti očaj. Potrebna će evaluacija.",
+          "keywords": [
+            "strpljenje",
+            "procena",
+            "rad",
+            "žetva"
+          ],
+          "context": "Budućnost komunikacije će rasti sa pacijentskim ulaganjima. Ali postoji rizik od nestrpljenja."
+        },
+        "position4": {
+          "upright": "Sedam stanovnika kaže da bude strpljiv i proceni. Plod rada sazreva na vreme.",
+          "reversed": "Reversed Sedam pentaklama kaže da prestanete da budete nestrpljenje i videćete postupak. Žuriće stvara greške.",
+          "keywords": [
+            "strpljenje",
+            "procena",
+            "period",
+            "sazrevanje",
+            "rad"
+          ],
+          "context": "Vaš savet; da gaji strpljenje. Ljubav raste sa naporom, ne bledi u žurbi."
+        }
+      },
+      "eightofpentacles": {
+        "position1": {
+          "upright": "Osam stanovnika nam govori da su napori i briga postavljeni u odnos u trenutnoj situaciji. Mali koraci stvaraju velike veze. Savet: Saznajte više.",
+          "reversed": "Osetila osam stanovnika ukazuje da nepažnja ili traženje brzih rezultata stvara senku. Simptom: Ponovni greške.",
+          "keywords": [
+            "rad",
+            "briga",
+            "studija",
+            "učenje",
+            "strpljenje"
+          ],
+          "context": "U trenutnoj situaciji, zanat je važno zanatstvo vinograda. Pažni koraci će doneti srca bliže."
+        },
+        "position2": {
+          "upright": "Osam pentaka, postoji želja da se naučimo i teže u vašim osećanjima. Vaše srce želi da savlada. Savet: Napravite male korake.",
+          "reversed": "Invertirani osam stanovnika vam govori da su vam osećanja zamračena nevoljkošću ili nepažnjom. Simptom: Pola poslova.",
+          "keywords": [
+            "rad",
+            "učenje",
+            "trud",
+            "savladav",
+            "strpljenje"
+          ],
+          "context": "Vaše srce sada želi da radi odmah. Disciplina će maziti vaša osećanja."
+        },
+        "position3": {
+          "upright": "Osam od Pentakala vam govori da je vaše očekivanje napor i majstorstvo. Vaše srce želi da nauči .. Rad, učenje.",
+          "reversed": "Otkriveno osam stanovnika ukazuje da je vaše očekivanje da izbegavate trošenje napora. Vaše srce traži smisleno delo. \\ N \\ nsimptom: želja za vrijednom radnom snagom.",
+          "keywords": [
+            "trud",
+            "učenje",
+            "savladav",
+            "rad",
+            "razvoj"
+          ],
+          "context": "Vaša očekivanja je razvoj. Vaše srce želi da raste sa naporom."
+        },
+        "position5": {
+          "upright": "Vaša mapa puta treba da bude utkana disciplinovanim radom i majstorstvom. Ponavljanje i fokus donose uspeh.",
+          "reversed": "Vaša mapa puta može biti blokirana nepažnjom ili bezobzirnošću. Obnovite svoju motivaciju.",
+          "keywords": [
+            "studija",
+            "rad",
+            "disciplina",
+            "fokus",
+            "savladav"
+          ],
+          "context": "Učitelj je korak po korak. Izgraditi strpljenjem."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje trud, negu i stalno poboljšanje od vas. Zahteva da je dodavanje napora na vezu.",
+          "reversed": "Vaš partner ne želi da vidi nevoljnost. Većana i vernost čekaju.",
+          "keywords": [
+            "rad",
+            "briga",
+            "razvoj",
+            "trud",
+            "stabilnost"
+          ],
+          "context": "Vaš partner očekuje da je mukotrpan napor i lojalnost."
+        },
+        "position7": {
+          "upright": "U budućnosti komunikacije, napora, discipline i učenja će doći do izražaja. Korak po korak savladavanje će ojačati Bond.",
+          "reversed": "Zanemarivanje ili nepažljivost može u budućnosti smanjiti kvalitet vinograda. Kontinuitet će biti važan.",
+          "keywords": [
+            "rad",
+            "disciplina",
+            "učenje",
+            "kontinuitet"
+          ],
+          "context": "Budućnost odnosa biće bolja sa redovnim naporima. Ali postoji rizik od nepažnje."
+        },
+        "position4": {
+          "upright": "Osam stanovnika pentakova redovno studira i poboljšava kvalitet. Disciplina jača vezu.",
+          "reversed": "Otkriveni osam stanovnika kaže da prestanite biti bezbrižni i uloženi u trud. Pažnja raste ljubav.",
+          "keywords": [
+            "disciplina",
+            "rad",
+            "kvalitet",
+            "učenje",
+            "narediti"
+          ],
+          "context": "Vaš savet; Ne zanemarujući dnevni rad. Redovna pažnja čuva ljubav u životu."
+        }
+      },
+      "nineofpentacles": {
+        "position1": {
+          "upright": "Devet stanovnika ukazuje da je potreba za nezavisnošću i ličnim prostorom na čelu u trenutnoj situaciji. Zona komfora je blagoslovljena. Savet: Sloboda balansa sa deljenjem.",
+          "reversed": "Devet preokretanih Pentera-a ukazuje da je prevelika nezavisnost ili ekstravagantnost natjerala vezu. Simptom: Nezadovoljstvo.",
+          "keywords": [
+            "nezavisnost",
+            "udobnost",
+            "sloboda",
+            "oblast",
+            "zadovoljstvo"
+          ],
+          "context": "U trenutnoj situaciji, u vinogradu se nalazi potraga za ličnom prostorom. Uravnotežene granice će ojačati Bond."
+        },
+        "position2": {
+          "upright": "Devet pentakala, osećate nezavisnost i osećaj samo-vrednosti. Vaše srce želi da stoji na vlastitim stopalima. Savet: Proslavite sopstveni prostor.",
+          "reversed": "Ukrasan devet stanovnika kaže da zavisnost ili nedostatak samo-vrednosti zamuće vaša osećanja. Simptom: Traženje odobrenja.",
+          "keywords": [
+            "samopouzdanje",
+            "nezavisnost",
+            "poverenje",
+            "uspeh",
+            "sloboda"
+          ],
+          "context": "Vaše srce želi da sada oseti svoju sopstvenu vrednost. Samodovoljnost će vas osnažiti."
+        },
+        "position3": {
+          "upright": "Devet stanovnika vam govori da je vaša očekivanja nezavisna mir. Vaše srce želi radosnu slobodu ... Sloboda, zadovoljstvo.",
+          "reversed": "Devet preokretanih pentakala ukazuje da vaša očekivanja da bude slobodna bez paljenja usamljenosti. Vaše srce traži zdravu ravnotežu. \\ N \\ nsimptom: Želja za slobodom.",
+          "keywords": [
+            "sloboda",
+            "mir",
+            "zadovoljstvo",
+            "nezavisnost",
+            "dosta"
+          ],
+          "context": "Vaša očekivanja je zadovoljna. Vaše srce želi da bude nezavisno, ali deljenje."
+        },
+        "position5": {
+          "upright": "Vaš mapu puta je ojačan uživanjem u nezavisnosti i samo-vrednosti. Ponorava vas da vidite plodove svog sopstvenog rada.",
+          "reversed": "Vaša mapa puta može biti poremećena rasipništvom ili prekomernom zavisnošću od drugih. Disciplina vas štiti.",
+          "keywords": [
+            "samopouzdanje",
+            "nezavisnost",
+            "udobnost",
+            "stabilnost",
+            "rad"
+          ],
+          "context": "Poštuj svoj trud. Sklonite se ponosno na svoje noge."
+        },
+        "position6": {
+          "upright": "Vaš partner očekuje da delite mir koji dolazi sa samopouzdanjem i nezavisnošću. Želi da mu date zreli prostor.",
+          "reversed": "Vaš partner ne želi da vidi prekomernu zavisnost. Očekuje da ćete da stanete jedan pored drugog samopouzdanja.",
+          "keywords": [
+            "poverenje",
+            "nezavisnost",
+            "mir",
+            "zrelost",
+            "ravnoteža"
+          ],
+          "context": "Vaš partner očekuje samopouzdano i mirno energiju."
+        },
+        "position7": {
+          "upright": "Budućnost odnosa biće o samopouzdanju, nezavisnosti i elegantnom harmoniji. Znajući da će vaša sopstvena vrednost ojačati Bond.",
+          "reversed": "Prekomercijalna ovisnost ili problemi sa samo-vrednošću mogu u budućnosti opteretiti vezu. Individualnost mora biti zaštićena.",
+          "keywords": [
+            "samopouzdanje",
+            "nezavisnost",
+            "milost",
+            "ravnoteža"
+          ],
+          "context": "Budućnost odnosa će rasti sa svešću o sebi vrednosti. Ali postoji rizik od zavisnosti."
+        },
+        "position4": {
+          "upright": "Devet stanovnika kaže da održava nezavisnost, ali podeli. Samopouzdanje dodaje snagu obveznice.",
+          "reversed": "Ukirani devet stanovnika kaže da je ton preveliki nezavisnost i približiti se. Proširimo vaše polje.",
+          "keywords": [
+            "poverenje",
+            "nezavisnost",
+            "deljenje",
+            "ravnoteža",
+            "blagostanje"
+          ],
+          "context": "Vaš savet; očuvanje individualnosti i rastuće zajednice. Oboje su neophodni."
+        }
+      }
+    }
+  }
+}

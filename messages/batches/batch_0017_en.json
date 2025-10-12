@@ -1,0 +1,776 @@
+{
+  "money": {
+    "meanings": {
+      "themagician": {
+        "position1": {
+          "keywords": {
+            "4": "manipulation"
+          },
+          "context": "The anxiety is born from wasted opportunities or deception, transparency and clarity protect you."
+        },
+        "position2": {
+          "upright": "The wizard uses his abilities and resources to emphasize his desire for financial security, and you have the power and you can set up security with active action.",
+          "reversed": "The Reverse Wizard shows the fear of manipulation or misuse of resources, and the desire for security, insecurity and wrong strategies can weaken.",
+          "keywords": {
+            "0": "creation",
+            "1": "skill",
+            "2": "resource",
+            "3": "security",
+            "4": "Vision"
+          },
+          "context": "You can set it up using your security skills and your resources."
+        },
+        "position3": {
+          "upright": "The wizard demonstrates his ability to use his resources wisely and evaluate opportunities. Money is a means of creation.",
+          "reversed": "The Reverse Wizard points to the risk of manipulative spending or underestimating their skills.",
+          "keywords": {
+            "0": "creation",
+            "1": "skill",
+            "2": "opportunity",
+            "3": "Money management",
+            "4": "consciousness"
+          },
+          "context": "It's time to manipulate money with skill and invest consciously."
+        },
+        "position4": {
+          "upright": "In the past, you've been resourceful and creative in money management, and you've used resources in different ways.",
+          "reversed": "The Reverse Wizard points to risky behavior for manipulative decisions or short-term gain.",
+          "keywords": {
+            "0": "creativity",
+            "1": "skill",
+            "2": "resource",
+            "3": "opportunity",
+            "4": "subtlety"
+          },
+          "context": "In the past, he had a creative tendency to use money."
+        },
+        "position5": {
+          "upright": "The wizard shows that the management of skill and resources in financial responsibilities has stepped up, with intelligence and will, and the liabilities have been dealt with successfully.",
+          "reversed": "The Reverse Wizard points out that manipulation or misleading decisions make financial responsibilities heavy, and superficial solutions create long-term burdens.",
+          "keywords": {
+            "0": "resource",
+            "1": "skill",
+            "2": "responsibilities",
+            "3": "will",
+            "4": "balance"
+          },
+          "context": "The skill and conscious governance of financial responsibilities are stepping up."
+        },
+        "position6": {
+          "upright": "The wizard shows the effective use of skills and resources in new financial plans, and with your communication power and creativity it is possible to succeed.",
+          "reversed": "The Reverse Wizard points to the risk of misdirection, manipulation, or wasteful energy in new financial plans.",
+          "keywords": {
+            "0": "skill",
+            "1": "creativity",
+            "2": "resource",
+            "3": "success",
+            "4": "Plan"
+          },
+          "context": "In new financial plans, right management of resources will bring success."
+        },
+        "position7": {
+          "upright": "The wizard shows that in future financial plans, you can effectively use your skills and resources to create new opportunities, a powerful vision of intelligence and creativity.",
+          "reversed": "The Reverse Wizard points to the risk of manipulation, misdirection, or abuse of the source, and honesty and clarity are essential for future plans.",
+          "keywords": {
+            "0": "creation",
+            "1": "resource",
+            "2": "Vision",
+            "3": "skill",
+            "4": "power"
+          },
+          "context": "In future financial plans, strong vision or abuse of the source will be on the agenda."
+        },
+        "position8": {
+          "upright": "The wizard demonstrates his ability to make money, his ability to communicate, and his ability to use your creative intelligence, and you can direct his resources correctly.",
+          "reversed": "The Reverse Wizard points out that due to manipulation, disarray, or lack of focus, he is unable to use his abilities with full potential.",
+          "keywords": {
+            "0": "skill",
+            "1": "focus",
+            "2": "creativity",
+            "3": "communication",
+            "4": "resource"
+          },
+          "context": "It's related to using or misdirecting the skills of making money."
+        }
+      },
+      "thehighpriestess": {
+        "position1": {
+          "upright": "The Mother Superior shows that material uncertainty and classified information cause anxiety, and when she doesn't trust your inner intuition, it becomes difficult to make decisions.",
+          "reversed": "The upside-down Mother says that suppressing her own inner voice can cause financial anxiety, and listening to voices can cloud her inner strength.",
+          "keywords": {
+            "0": "Unknown",
+            "1": "intuition",
+            "2": "secrecy",
+            "3": "Concern",
+            "4": "Insecurity"
+          },
+          "context": "The anxiety comes from suppressing your inner voice and lack of transparency."
+        },
+        "position2": {
+          "upright": "The Mother Superior shows that the desire for financial security feeds on insight and inner wisdom, and trust in her inner guide protects you.",
+          "reversed": "Reverse Mother Superior points to uncertainty and secrecy, and it may be difficult for you not to have access to clear information in your quest for security.",
+          "keywords": {
+            "0": "intuition",
+            "1": "wisdom",
+            "2": "security",
+            "3": "Secret",
+            "4": "balance"
+          },
+          "context": "You attach security to internal guidance and wise choices."
+        },
+        "position3": {
+          "upright": "The Mother Superior points to an intuitive approach and a moderate attitude in the use of money, and quiet planning helps.",
+          "reversed": "Reverse Mother Superior points to hidden expenditures or non-transparent financial decisions.",
+          "keywords": {
+            "0": "intuition",
+            "1": "measure",
+            "2": "Secret",
+            "3": "savings",
+            "4": "balance"
+          },
+          "context": "In use of money, transparency and measurement are important."
+        },
+        "position4": {
+          "upright": "In the past, you may have made your financial decisions based on your intuition that you've taken invisible opportunities.",
+          "reversed": "The upside-down Mother may have been a problem with me not sharing too much privacy or information in financial matters.",
+          "keywords": {
+            "0": "intuition",
+            "1": "secrecy",
+            "2": "information",
+            "3": "Introduction",
+            "4": "uncertainty"
+          },
+          "context": "In the past, in the money management, intuition and secrecy have been brought forward."
+        },
+        "position5": {
+          "upright": "The High Priestess tends to act with intuition and insight in financial responsibilities, and some decisions are supported by the inner voice.",
+          "reversed": "Inverted Mother Superior, privacy or ignorance in financial responsibilities can be a problem.",
+          "keywords": {
+            "0": "intuition",
+            "1": "wisdom",
+            "2": "secrecy",
+            "3": "responsibilities",
+            "4": "decision"
+          },
+          "context": "Intuitive progress in financial responsibilities, but also in need of transparency."
+        },
+        "position6": {
+          "upright": "The High Priestess says you have to rely on your intuition in new financial plans, unseen opportunities can be noticed in the inner voice.",
+          "reversed": "Inverted Mother Superior points to suppressing intuition or being lost in uncertainty in financial plans.",
+          "keywords": {
+            "0": "intuition",
+            "1": "wisdom",
+            "2": "Invisible",
+            "3": "internal guidance",
+            "4": "Plan"
+          },
+          "context": "Listening to your intuition will lead to new financial plans."
+        },
+        "position7": {
+          "upright": "In the future, the Mother Superior emphasizes that you must trust your intuition in your financial decisions, and with deep understanding, you will be able to see hidden opportunities.",
+          "reversed": "Reverse Mother Superior, it's risky to take financial decisions in limbo, ignore extreme secrecy or intuition.",
+          "keywords": {
+            "0": "intuition",
+            "1": "information",
+            "2": "hidden opportunity",
+            "3": "Introduction",
+            "4": "balance"
+          },
+          "context": "Intuition or uncertainty will determine future financial plans."
+        },
+        "position8": {
+          "upright": "The Mother Superior makes intuition, secret information, and strategic insights a powerful resource for making money. It's a great advantage to trust her inner voice.",
+          "reversed": "Reverse Mother Superior shows that opportunities can be avoided by suppressing your intuition, confusion, or not sharing information.",
+          "keywords": {
+            "0": "intuition",
+            "1": "information",
+            "2": "Introduction",
+            "3": "strategy",
+            "4": "secrecy"
+          },
+          "context": "Your ability to make money depends on using your intuition or ignoring it."
+        }
+      },
+      "theempress": {
+        "position1": {
+          "upright": "The Empress points to the fear of loss and inadequacy, and the damage to material security can raise her anxiety.",
+          "reversed": "The Reverse Empress reveals her anxiety about addiction and productivity, her concern about not being able to sustain or sustain the abundance.",
+          "keywords": {
+            "0": "abundance",
+            "1": "inadequacy",
+            "2": "addiction",
+            "3": "Concern",
+            "4": "security"
+          },
+          "context": "Concern arises from fear of loss or addiction, and remembering its self - worth is reassuring."
+        },
+        "position2": {
+          "upright": "The Empress feeds her desire for safety with abundance, productivity, and abundance, and a strong desire to take root in the material world.",
+          "reversed": "Reverse Empress shows excessive spending or addiction anxiety, and the desire for safety can be clouded by uncontrollability.",
+          "keywords": {
+            "0": "abundance",
+            "1": "fertility",
+            "2": "security",
+            "3": "production",
+            "4": "rooting"
+          },
+          "context": "You build security with fertility and roots."
+        },
+        "position3": {
+          "upright": "The Empress tends to use money to create abundance and support others.",
+          "reversed": "Reverse Empress points to excessive spending or emotional exchange anxiety.",
+          "keywords": {
+            "0": "abundance",
+            "1": "generosity",
+            "2": "support",
+            "3": "spending",
+            "4": "fertility"
+          },
+          "context": "The use of money is about sharing and producing abundance."
+        },
+        "position4": {
+          "upright": "You've had plenty and plenty of money in the past, and spending may have been made for family and pleasure.",
+          "reversed": "The Reverse Empress tends to consume excessive spending or material resources.",
+          "keywords": {
+            "0": "abundance",
+            "1": "fertility",
+            "2": "family",
+            "3": "spending",
+            "4": "pleasure"
+          },
+          "context": "In the past, abundance and pleasure-oriented spending were in the forefront."
+        },
+        "position5": {
+          "upright": "In financial responsibilities, the Empress sets out to provide for the family, care and needs, and financial matters are governed by compassion and generosity.",
+          "reversed": "Reverse Empress, over-expension or over-owning can increase financial burdens.",
+          "keywords": {
+            "0": "care",
+            "1": "generosity",
+            "2": "family",
+            "3": "spending",
+            "4": "load"
+          },
+          "context": "Financial responsibilities are based on protecting and supporting loved ones."
+        },
+        "position6": {
+          "upright": "The Empress points to abundance and productivity in new financial plans, and creatively abundant investments can be raised.",
+          "reversed": "The Reverse Empress may show the congestion of overexpension, dissatisfaction, or productivity.",
+          "keywords": {
+            "0": "abundance",
+            "1": "creativity",
+            "2": "productivity",
+            "3": "investment",
+            "4": "Plan"
+          },
+          "context": "In new financial plans, fertility and creativity are the prerequisite."
+        },
+        "position7": {
+          "upright": "The Empress points to the time in the future to reap the fruits of abundance, fertility, and investment, and your financial security will take a stronger root.",
+          "reversed": "The Reverse Empress warns against excessive spending, uncontrollable investment, or depletion of material possessions.",
+          "keywords": {
+            "0": "abundance",
+            "1": "investment",
+            "2": "fertility",
+            "3": "security",
+            "4": "growth"
+          },
+          "context": "The future financial plans will be on the agenda of fertility or excessive consumption."
+        },
+        "position8": {
+          "upright": "The Empress demonstrates her ability to reproduce creativity, productivity and resources, and your ability to earn money is supported by abundance and fertility.",
+          "reversed": "The Reverse Empress points out that material opportunities can be weakened by extreme addiction, carelessness, or inefficiency.",
+          "keywords": {
+            "0": "creativity",
+            "1": "abundance",
+            "2": "fertility",
+            "3": "production",
+            "4": "resource"
+          },
+          "context": "Your ability to make money develops through productivity or inefficiency."
+        }
+      },
+      "theemperor": {
+        "position1": {
+          "upright": "The Emperor shows the anxiety of loss of control and lack of order, without the structure to ensure financial security, there is unrest.",
+          "reversed": "The Reverse Emperor points to a lack of authority or anxiety caused by extreme pressure, financial responsibilities may be overwhelming.",
+          "keywords": {
+            "0": "control",
+            "1": "layout",
+            "2": "security",
+            "3": "responsibilities",
+            "4": "authority"
+          },
+          "context": "It comes from lack of anxiety, control and order, and solid planning brings peace."
+        },
+        "position2": {
+          "upright": "The Emperor represents the desire for order, structure and authority and security, clear plans and solid strategies to protect you.",
+          "reversed": "The Reverse Emperor points to a lack of authority or extreme control anxiety, a desire for security can be narrowed down by rigor.",
+          "keywords": {
+            "0": "layout",
+            "1": "authority",
+            "2": "Plan",
+            "3": "security",
+            "4": "stability"
+          },
+          "context": "You're calling security with regular structures and strategic steps."
+        },
+        "position3": {
+          "upright": "The Emperor tends to use money regularly and plannedly, and you manage resources to build a secure structure.",
+          "reversed": "The Reverse Emperor points to security anxiety with extreme control or strict spending rules.",
+          "keywords": {
+            "0": "layout",
+            "1": "Plan",
+            "2": "control",
+            "3": "security",
+            "4": "system"
+          },
+          "context": "In use of money, order and structure stand out."
+        },
+        "position4": {
+          "upright": "In the past, you've had a disciplined and regular approach to money issues, plans for security.",
+          "reversed": "The Reverse Emperor points to the loss of flexibility due to extreme control or rigid attitudes.",
+          "keywords": {
+            "0": "discipline",
+            "1": "layout",
+            "2": "security",
+            "3": "planning",
+            "4": "authority"
+          },
+          "context": "There was a regular and authoritarian approach to money in the past."
+        },
+        "position5": {
+          "upright": "The Emperor demonstrates the ability to maintain order and discipline in financial responsibilities, and trust and structure have been the basis in this process.",
+          "reversed": "Reverse Emperor, financial responsibilities can become pressure due to extreme control or rigidity.",
+          "keywords": {
+            "0": "layout",
+            "1": "authority",
+            "2": "responsibilities",
+            "3": "Trust",
+            "4": "discipline"
+          },
+          "context": "Financial responsibilities are based on discipline and configuration."
+        },
+        "position6": {
+          "upright": "The Emperor points to order, authority, and solid structure in new financial plans, and strategic steps bring lasting results.",
+          "reversed": "The Reverse Emperor says that the lack of solid control or flexibility in financial plans can lead to failure.",
+          "keywords": {
+            "0": "layout",
+            "1": "authority",
+            "2": "planning",
+            "3": "stability",
+            "4": "structure"
+          },
+          "context": "New financial plans require discipline and strategic approach."
+        },
+        "position7": {
+          "upright": "The Emperor points to long-term success in future financial plans with discipline, order and sound strategy.",
+          "reversed": "The Reverse Emperor shows that firm rules or fiscal plans without flexibility can be risky.",
+          "keywords": {
+            "0": "layout",
+            "1": "strategy",
+            "2": "stability",
+            "3": "authority",
+            "4": "long term"
+          },
+          "context": "Discipline or rigor will step forward in future financial plans."
+        },
+        "position8": {
+          "upright": "The Emperor shows that he strengthens his ability to make money through discipline, planning and order, and strategic decisions bring success.",
+          "reversed": "The Reverse Emperor points out that opportunities can be narrowed down due to extreme rigor, authoritarian or flexibleness.",
+          "keywords": {
+            "0": "layout",
+            "1": "planning",
+            "2": "discipline",
+            "3": "authority",
+            "4": "stability"
+          },
+          "context": "Your ability to make money is directly linked to order or rigor."
+        }
+      },
+      "thehierophant": {
+        "position1": {
+          "upright": "The saint exposes his concern that he can't abide by tradition and social expectations in terms of money, and you can reconcile financial security with community approval.",
+          "reversed": "The Reverse Aziz talks about the anxiety of rejecting the rules or of going astray in conventional ways, and it can be uncomfortable to stay out of the material order.",
+          "keywords": {
+            "0": "tradition",
+            "1": "expectation",
+            "2": "compatibility",
+            "3": "Concern",
+            "4": "society"
+          },
+          "context": "Concern arises from incompatibility with social expectations, acting on their own values brings confidence."
+        },
+        "position2": {
+          "upright": "The saint attaches your desire for security to traditional systems and support structures, and you feel safer in institutional arrangements.",
+          "reversed": "The Reverse Saint points to the anxiety of blindly sticking to the rules, the desire for safety may lose its flexibility.",
+          "keywords": {
+            "0": "tradition",
+            "1": "institution",
+            "2": "security",
+            "3": "support",
+            "4": "layout"
+          },
+          "context": "You set up security with traditional structures and support mechanisms."
+        },
+        "position3": {
+          "upright": "Aziz tends to manage money in traditional ways. Family or institutional support is important.",
+          "reversed": "Reverse Saint points to a desire for financial independence or a concern for deviation from traditional methods.",
+          "keywords": {
+            "0": "tradition",
+            "1": "support",
+            "2": "method",
+            "3": "security",
+            "4": "institution"
+          },
+          "context": "Traditional ways and teachings come forward in the use of money."
+        },
+        "position4": {
+          "upright": "Financial decisions may have been made in the past, depending on tradition or family teachings.",
+          "reversed": "Reverse Aziz tends to reject traditional rules in financial matters or to try unusual ways.",
+          "keywords": {
+            "0": "tradition",
+            "1": "family",
+            "2": "rules",
+            "3": "teaching",
+            "4": "material order"
+          },
+          "context": "In the past, traditional influences have preceded financial attitudes."
+        },
+        "position5": {
+          "upright": "Saint, traditional means of financial responsibility, family obligations, or social duties may be at the forefront.",
+          "reversed": "Reverse Saint, blind devotion to tradition or excessive addiction has made financial obligations difficult.",
+          "keywords": {
+            "0": "tradition",
+            "1": "family",
+            "2": "society",
+            "3": "responsibilities",
+            "4": "addiction"
+          },
+          "context": "Traditional methods and social roles stand out in financial responsibilities."
+        },
+        "position6": {
+          "upright": "The Aziz points to traditional methods, expert advice, and progress with reliable institutions in financial plans.",
+          "reversed": "In reverse Aziz, new financial plans indicate questioning the rules, defying tradition, and seeking more specific solutions.",
+          "keywords": {
+            "0": "tradition",
+            "1": "institutions",
+            "2": "advice",
+            "3": "discipline",
+            "4": "Plan"
+          },
+          "context": "The new financial plans bring forward traditional methods or original ways."
+        },
+        "position7": {
+          "upright": "The saint says that in the future traditional methods, education and guidance should be trusted, and reliable systems will increase financial stability.",
+          "reversed": "The Reverse Saint points to a blind commitment to the rules or an imbalance of total denial of the rules.",
+          "keywords": {
+            "0": "tradition",
+            "1": "guidance",
+            "2": "system",
+            "3": "teaching",
+            "4": "stability"
+          },
+          "context": "There will be guidance or blind commitment in future financial plans."
+        },
+        "position8": {
+          "upright": "Aziz emphasizes the importance of traditional methods, education and cooperation with institutions in their ability to make money. Information transfer is a powerful source.",
+          "reversed": "The Reverse Saint shows that the development of financial abilities can be interrupted by commitment to strict rules or blind rebellion.",
+          "keywords": {
+            "0": "tradition",
+            "1": "teaching",
+            "2": "education",
+            "3": "guidance",
+            "4": "co-operation"
+          },
+          "context": "Your ability to earn money is linked to traditional methods or strict rules."
+        }
+      },
+      "thelovers": {
+        "position1": {
+          "upright": "Lovers point to anxiety about making a financial wrong choice, and the possibility of financial decisions affecting their relationship raises concern.",
+          "reversed": "Reverse lovers show conflict of interest and dissonance, and disputes about money can weaken your confidence.",
+          "keywords": {
+            "0": "selection",
+            "1": "compatibility",
+            "2": "conflict",
+            "3": "Concern",
+            "4": "decision"
+          },
+          "context": "The anxiety comes from making the wrong choice or incompatibility."
+        },
+        "position2": {
+          "upright": "Lovers show that they're looking for financial security through compatible partnerships and the right choices.",
+          "reversed": "Inverted lovers point to mischoice or uncompromising partnership anxiety, a desire for security, a weakness in uncertain elections.",
+          "keywords": {
+            "0": "selection",
+            "1": "partnership",
+            "2": "security",
+            "3": "compatibility",
+            "4": "values"
+          },
+          "context": "You find security with matching choices and partnerships."
+        },
+        "position3": {
+          "upright": "Lovers tend to manage money through common decisions, and harmonisation strengthens resources.",
+          "reversed": "Reverse lovers point to incompatibility or ambiguity in financial matters.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "decision",
+            "2": "partnership",
+            "3": "Money",
+            "4": "co-operation"
+          },
+          "context": "The use of money is shaped by common choices and harmonised decisions."
+        },
+        "position4": {
+          "upright": "In the past, financial matters may have been governed by joint decisions, decisions made with spouses or partners have been made.",
+          "reversed": "Reverse lovers point out that indecision in financial matters or incompatible partnerships are a problem.",
+          "keywords": {
+            "0": "partnership",
+            "1": "decision",
+            "2": "compatibility",
+            "3": "family",
+            "4": "fiscal unity"
+          },
+          "context": "In the past, there was a joint decision on financial attitudes."
+        },
+        "position5": {
+          "upright": "Lovers point to joint decisions and co-operation in financial responsibilities, and decisions made by partners share the burden.",
+          "reversed": "Inverted lovers can burden financial responsibilities with differences of opinion or wrong choices.",
+          "keywords": {
+            "0": "co-operation",
+            "1": "partnership",
+            "2": "decision",
+            "3": "responsibilities",
+            "4": "balance"
+          },
+          "context": "Financial responsibilities are based on co-operation or elections."
+        },
+        "position6": {
+          "upright": "Lovers act in harmony with partnership and co-operation in new financial plans, decisions must be consistent with your values.",
+          "reversed": "Reverse lovers point to the risk of indecision in financial plans, incompatible partnership, or wrong choice.",
+          "keywords": {
+            "0": "partnership",
+            "1": "decision",
+            "2": "compatibility",
+            "3": "selection",
+            "4": "values"
+          },
+          "context": "The right partnerships in new financial plans bring success."
+        },
+        "position7": {
+          "upright": "Lovers show common choices in financial plans, harmony and co-operation in values, the common vision of the two sides can strengthen the future.",
+          "reversed": "Reverse lovers can create dissonance in financial matters, indecisiveness or a conflict of value.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "selection",
+            "2": "partnership",
+            "3": "values",
+            "4": "decision"
+          },
+          "context": "In future financial plans, harmony or incompatibility will be on the agenda."
+        },
+        "position8": {
+          "upright": "Lovers show that their ability to earn money will increase through cooperation, partnership, and the right choices.",
+          "reversed": "Inverted lovers point out that financial skills are not fully used due to wrong choices, indecisive or value conflicts.",
+          "keywords": {
+            "0": "partnership",
+            "1": "compatibility",
+            "2": "selection",
+            "3": "value",
+            "4": "connection"
+          },
+          "context": "Your ability to make money is linked to the right choices or indecisiveness."
+        }
+      },
+      "thechariot": {
+        "position1": {
+          "upright": "The Chariot reveals the anxiety of losing material control, causing concern whether to lose direction or not reach goals.",
+          "reversed": "The Reverse Chariot points to the anxiety of disorientation and disorientation, and you may be afraid that financial efforts will fail.",
+          "keywords": {
+            "0": "direction",
+            "1": "control",
+            "2": "discipline",
+            "3": "Concern",
+            "4": "target"
+          },
+          "context": "It comes from anxiety, disorientation and lack of control, setting a clear course is reassuring."
+        },
+        "position2": {
+          "upright": "The Chariot shows you're looking for security through decisive progress and access to goals, and when you're in control, you feel confident.",
+          "reversed": "The Reverse Chariot points to the anxiety of swings and loss of direction, and the desire for security can be shaken in fear of losing control.",
+          "keywords": {
+            "0": "control",
+            "1": "direction",
+            "2": "security",
+            "3": "target",
+            "4": "will"
+          },
+          "context": "You'll find safety in your direction and decisive progress."
+        },
+        "position3": {
+          "upright": "The Chariot points to using money with focus and determination. Focus brings success.",
+          "reversed": "The Reverse Chariot points to loose spending or undirected fiscal steps.",
+          "keywords": {
+            "0": "target",
+            "1": "determination",
+            "2": "focus",
+            "3": "Money",
+            "4": "Progress"
+          },
+          "context": "The use of money is focused and determined."
+        },
+        "position4": {
+          "upright": "In the past, you've shown strong control and determination in matters of money, focused on goals.",
+          "reversed": "The Reverse Chariot may have been unstable due to excessive control or poor management.",
+          "keywords": {
+            "0": "control",
+            "1": "determination",
+            "2": "Progress",
+            "3": "discipline",
+            "4": "Money"
+          },
+          "context": "In the past, financial attitudes have been the primary control and focus."
+        },
+        "position5": {
+          "upright": "The Chariot shows control and decisive progress in financial responsibilities.",
+          "reversed": "Reverse Chariots, loss of direction or uncontrollability can cause an imbalance in financial responsibilities.",
+          "keywords": {
+            "0": "control",
+            "1": "determination",
+            "2": "target",
+            "3": "Progress",
+            "4": "balance"
+          },
+          "context": "In financial responsibilities, determination and direction are important."
+        },
+        "position6": {
+          "upright": "The Chariot points to determination, focus, and willpower, moving forward to the target.",
+          "reversed": "The Reverse Chariot can show lack of direction, haste or loss of control in financial plans.",
+          "keywords": {
+            "0": "will",
+            "1": "control",
+            "2": "focus",
+            "3": "success",
+            "4": "Plan"
+          },
+          "context": "Clear goal and determination are important in new financial plans."
+        },
+        "position7": {
+          "upright": "The Chariot shows that in the future, you will move forward with a strong focus and determination to financial goals, and clear direction and will bring success.",
+          "reversed": "The Reverse Chariot indicates disorganized energy, uncontrollable spending or loss of direction.",
+          "keywords": {
+            "0": "focus",
+            "1": "will",
+            "2": "direction",
+            "3": "determination",
+            "4": "success"
+          },
+          "context": "In future financial plans, clear direction or loss of direction will be decisive."
+        },
+        "position8": {
+          "upright": "The Chariot shows that it improves its ability to earn money through determination, willpower, and focus.",
+          "reversed": "The Reverse Chariot indicates that opportunities can be weakened due to loss of direction, lack of discipline or uncontrollability.",
+          "keywords": {
+            "0": "determination",
+            "1": "target",
+            "2": "control",
+            "3": "Progress",
+            "4": "discipline"
+          },
+          "context": "Your ability to earn money is linked to discipline or loss of direction."
+        }
+      },
+      "strength": {
+        "position1": {
+          "upright": "Power points to a lack of material possessions, and fear of failure to cope raises anxiety.",
+          "reversed": "The Reverse Power brings out the anxiety of impatience and self-esteem, and you can feel helpless in financial struggles.",
+          "keywords": {
+            "0": "Courage",
+            "1": "power",
+            "2": "Concern",
+            "3": "self-confidence",
+            "4": "Patience"
+          },
+          "context": "It comes from anxiety, self-esteem, and lack of patience, and focusing on inner power brings peace."
+        },
+        "position2": {
+          "upright": "It shows that you seek strength, security, patience, self - control, and inner strength, strengthening the confidence of gentle but strong posture.",
+          "reversed": "The Reverse Power points to inner insecurity and impatientness, and the desire for safety weakens when self-esteem fades.",
+          "keywords": {
+            "0": "power",
+            "1": "Patience",
+            "2": "security",
+            "3": "Self - control",
+            "4": "Courage"
+          },
+          "context": "You seek security with inner strength and patience."
+        },
+        "position3": {
+          "upright": "Power tends to direct money with self-discipline, and you patiently control requests.",
+          "reversed": "The Reverse Power indicates the risk of excessive self - sacrifice or loss of control in the use of money.",
+          "keywords": {
+            "0": "self - discipline",
+            "1": "Patience",
+            "2": "control",
+            "3": "balance",
+            "4": "Money"
+          },
+          "context": "Patience and self - control stand out in the use of money."
+        },
+        "position4": {
+          "upright": "In the past, there have been patient, calm, self-disciplined behaviors under the management of money, and the spending has been controlled.",
+          "reversed": "The Reverse Force indicates that lack of self-control or financial concerns are dominant.",
+          "keywords": {
+            "0": "Patience",
+            "1": "discipline",
+            "2": "self-control",
+            "3": "balance",
+            "4": "Trust"
+          },
+          "context": "In the past, patience and self - control were ahead in financial attitudes."
+        },
+        "position5": {
+          "upright": "Power points to patience and self-discipline in financial responsibilities, and emotional balance and obligations are governed.",
+          "reversed": "Reverse Power, impatience or internal weakness may have made financial responsibilities more difficult.",
+          "keywords": {
+            "0": "Patience",
+            "1": "self - discipline",
+            "2": "responsibilities",
+            "3": "balance",
+            "4": "power"
+          },
+          "context": "Financial responsibilities are carried by patience and self-discipline."
+        },
+        "position6": {
+          "upright": "The force says that patience, self - discipline, and stable effort will succeed in new financial plans.",
+          "reversed": "The Reverse Force poses the risk of impatient, insecure, or uncontrollably spending on financial plans.",
+          "keywords": {
+            "0": "Patience",
+            "1": "Self - confidence",
+            "2": "discipline",
+            "3": "stability",
+            "4": "Plan"
+          },
+          "context": "Patience and self-discipline will be decisive in new financial plans."
+        },
+        "position7": {
+          "upright": "Power points to long-term success with patience, self-awareness and internal balance in financial plans.",
+          "reversed": "The Reverse Power warns against risks caused by impatientness, anger, or lack of control over financial matters.",
+          "keywords": {
+            "0": "Patience",
+            "1": "(PHP 3, PHP 4)",
+            "2": "balance",
+            "3": "determination",
+            "4": "control"
+          },
+          "context": "Patience or lack of control will be decisive in future financial plans."
+        },
+        "position8": {
+          "upright": "It shows that strength, patience, compassion, and self - discipline support their ability to earn money, and soft power brings success in the long run.",
+          "reversed": "The Reverse Power points to a lack of patience, lack of self - confidence, or uncontrollable anger that can weaken your abilities."
+        }
+      }
+    }
+  }
+}

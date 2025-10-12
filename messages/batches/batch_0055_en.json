@@ -1,0 +1,772 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "aceofwands": {
+        "position5": {
+          "keywords": {
+            "2": "creativity",
+            "3": "passion",
+            "4": "spark"
+          },
+          "context": "Your recent past may have been shaped by a creative spark or lack of inspiration."
+        },
+        "position6": {
+          "upright": "The wand ace can open the doors to you in the near future, a new idea, a powerful inspiration, or a creative beginning.",
+          "reversed": "In the near future, you may experience a lack of inspiration, delayed projects, or a recession in energy.",
+          "keywords": {
+            "0": "start",
+            "1": "Inspired",
+            "2": "creativity",
+            "3": "passion",
+            "4": "spark"
+          },
+          "context": "Your near future will be shaped by new inspirations or delays."
+        },
+        "position7": {
+          "upright": "There is now a new inspiration, a powerful spark, or creative beginning energy in your life.",
+          "reversed": "Reverse Stick Ace, right now you may experience a lack of motivation, delayed plans, or a blockage of inspiration.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "start",
+            "2": "creativity",
+            "3": "passion",
+            "4": "spark"
+          },
+          "context": "Your current situation is shaped by creative beginnings or delays."
+        },
+        "position8": {
+          "upright": "The ace of wands may offer you the beginnings, creative incentives, and motivational opportunities that inspire you.",
+          "reversed": "The Reverse Stick Ace can create an external impact blockage, delayed projects, or circumstances that reduce motivation.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "start",
+            "2": "movement",
+            "3": "creativity",
+            "4": "opportunity"
+          },
+          "context": "The external effects can ignite sparks or reduce the flame."
+        },
+        "position9": {
+          "upright": "Ace of wands, you may be afraid of losing your inspiration, of not having the courage to start over, or of missing opportunities.",
+          "reversed": "The Reverse Stick ace may show the lack of motivation, the fear of delaying projects or not being able to use its potential.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "start",
+            "2": "Motivation",
+            "3": "opportunity",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on not being creative or missing opportunities."
+        }
+      },
+      "twoofwands": {
+        "position1": {
+          "upright": "Two Asas may be at the center of the problem, making plans, creating visions, or making decisions about the future.",
+          "reversed": "Two Reverse Asas, the lack of narrow-mindedness, lack of courage, or fear of taking steps may be the source of the problem.",
+          "keywords": {
+            "0": "Plan",
+            "1": "Vision",
+            "2": "future",
+            "3": "Courage",
+            "4": "Question"
+          },
+          "context": "At the center of the problem, it needs to come up with clear plans for the future."
+        },
+        "position10": {
+          "upright": "Two wands may be the result of the revelation of plans for the future, vision and progress.",
+          "reversed": "The Reverse Two Wands could result in lack of plans, lack of vision, or missing opportunities.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "future",
+            "3": "Progress",
+            "4": "decision"
+          },
+          "context": "The result may be to develop vision or to remain unplanned."
+        },
+        "position2": {
+          "upright": "Two Asas may not be able to create a clear vision of the future of the obstacle, to be narrow-minded, or to make decisions.",
+          "reversed": "Two Reverse Asas, lack of courage, contempt for opportunities, or trust issues can be a barrier.",
+          "keywords": {
+            "0": "Vision",
+            "1": "future",
+            "2": "Courage",
+            "3": "narrow view",
+            "4": "obstacle"
+          },
+          "context": "Obstruction is born from lack of vision and fear of taking steps."
+        },
+        "position3": {
+          "upright": "Two Asas may have subconscious experiences of making future plans in the past, developing visions, or making big decisions.",
+          "reversed": "Two Reverse Asas may have settled in the subconscious of the past, lack of vision, lack of courage, or contempt for opportunity.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "future",
+            "3": "Courage",
+            "4": "subconscious"
+          },
+          "context": "The plans of the past and the lack of vision may be affecting your problems today."
+        },
+        "position4": {
+          "upright": "Two wands are planning the future of the best potential, expanding its vision and boldly exploring its horizons.",
+          "reversed": "Two Reverse Sticks, you need to stop being in limbo and clear your direction in order to reveal your potential.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "future",
+            "3": "Courage",
+            "4": "selection"
+          },
+          "context": "Your best potential is to shape the future with bold plans."
+        },
+        "position5": {
+          "upright": "You may have made plans for the future, thought of new ways, or expanded your horizons.",
+          "reversed": "Reverse Two Wands, you may have experienced a narrow perspective of not making decisions, taking risks in the recent past.",
+          "keywords": {
+            "0": "Plan",
+            "1": "Vision",
+            "2": "future",
+            "3": "decision",
+            "4": "horizon"
+          },
+          "context": "Your recent history may have been determined by plans or indecisiveness."
+        },
+        "position6": {
+          "upright": "In the near future, opportunities may arise to expand their plans, choose new ways, or expand their horizons.",
+          "reversed": "The Reverse Two Wands can avoid taking risks in the near future, you can experience insecurity or narrow perspective.",
+          "keywords": {
+            "0": "Plan",
+            "1": "Vision",
+            "2": "future",
+            "3": "selection",
+            "4": "opportunity"
+          },
+          "context": "Your near future will be shaped by expanding your vision or limited by a narrow look."
+        },
+        "position7": {
+          "upright": "Two wands, right now, you're making plans for the future, expanding your vision and setting a course between elections.",
+          "reversed": "Reverse Two Wands, you can avoid taking risks right now, you can be short-sighted or insecure.",
+          "keywords": {
+            "0": "Plan",
+            "1": "Vision",
+            "2": "future",
+            "3": "selection",
+            "4": "Courage"
+          },
+          "context": "Your current situation is shaped by vision expansion or insecurity."
+        },
+        "position8": {
+          "upright": "Two wands support you to expand your vision of the outside environment, plan and assess the horizon-opening options.",
+          "reversed": "The Reverse Two Wands can deter external effects from taking risks, create narrow perspectives or uncertainty.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "option",
+            "3": "horizon",
+            "4": "Courage"
+          },
+          "context": "External effects can encourage or delay planning."
+        },
+        "position9": {
+          "upright": "Two wands, you can be afraid of making the wrong plan, not seeing the future, or taking risks.",
+          "reversed": "The Reverse Two Wands can show the fear of lack of vision, indecisiveness, or loss of opportunity.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "risk",
+            "3": "option",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on choosing the wrong direction or losing your vision."
+        }
+      },
+      "threeofwands": {
+        "position1": {
+          "upright": "The three Asas may be at the center of the problem, to explore opportunities, to expand, or to move forward.",
+          "reversed": "The Inverse Three Asas could be the source of the problem of missing opportunities, waiting, or lack of vision.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "Enlargement",
+            "2": "Vision",
+            "3": "Progress",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is to see and take advantage of new opportunities."
+        },
+        "position10": {
+          "upright": "Three Wands may be the result of expanding opportunities, new collaborations, and opening horizons.",
+          "reversed": "The Reverse Three Wands may result in delays, failed attempts or expectations not being met.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "co-operation",
+            "2": "Progress",
+            "3": "Vision",
+            "4": "Enlargement"
+          },
+          "context": "The result may be new opportunities or disappointments."
+        },
+        "position2": {
+          "upright": "Three Asas, the obstacle may be that you don't see opportunities, you don't dare wait, or you don't dare expand, and when you can't look at the horizon, you see that your path is limited.",
+          "reversed": "The Inverse Three Wands could be the source of a false plan, uncertainty, or visionlessness.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "Vision",
+            "2": "Plan",
+            "3": "uncertainty",
+            "4": "obstacle"
+          },
+          "context": "The obstacle arises from the lack of opportunity and vision."
+        },
+        "position3": {
+          "upright": "Three Asas may be subconsciously expanding in the past, exploring opportunities, or looking at distant goals.",
+          "reversed": "The Reverse-Three Wands, the lack of vision or opportunity, may have been carried into your subconscious in the past.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "Vision",
+            "2": "Plan",
+            "3": "Enlargement",
+            "4": "subconscious"
+          },
+          "context": "The opportunities or lack of vision in the past may have been the basis for your problems today."
+        },
+        "position4": {
+          "upright": "The Three Wands are to expand the horizon of the best potential, take opportunities and take strategic steps for long-term success.",
+          "reversed": "To reach your potential, you need to stop delaying and set a clear course.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "Vision",
+            "2": "Progress",
+            "3": "Plan",
+            "4": "horizon"
+          },
+          "context": "Your best potential is to move on to opportunities by expanding your horizons."
+        },
+        "position5": {
+          "upright": "Three Wands, you may have begun to see the consequences of your recent steps, opening up to new opportunities.",
+          "reversed": "The Reverse Three Wands, you may have had obstacles, delays or loss of vision in the recent past.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "Progress",
+            "2": "Vision",
+            "3": "discovery",
+            "4": "waiting"
+          },
+          "context": "The recent past may have been shaped by the development of opportunities or delays."
+        },
+        "position6": {
+          "upright": "Three wands are waiting for you to expand your horizons in the near future, face opportunities and see the consequences of your steps.",
+          "reversed": "The Reverse Three Wands may be delays, loss of vision or a delay of expectations in the near future.",
+          "keywords": {
+            "0": "Progress",
+            "1": "horizon",
+            "2": "opportunity",
+            "3": "Plan",
+            "4": "Vision"
+          },
+          "context": "Your near future will be shaped by opportunities or obstacles."
+        },
+        "position7": {
+          "upright": "Three wands are now expanding your horizons, opening up to new opportunities, and you're getting paid for your steps.",
+          "reversed": "Reverse Three Wands, right now you may experience delays, obstacles, or flaws in plans.",
+          "keywords": {
+            "0": "Progress",
+            "1": "opportunity",
+            "2": "Vision",
+            "3": "horizon",
+            "4": "Plan"
+          },
+          "context": "Your current situation is shaped by progress or delays."
+        },
+        "position8": {
+          "upright": "The Three Wands bring you a time when you can take on the outside effects, co-operation, distant opportunities and winds of expansion.",
+          "reversed": "The Reverse Three Wands can create external effects delays, supply/communication failures and vision tightening.",
+          "keywords": {
+            "0": "Enlargement",
+            "1": "opportunity",
+            "2": "Progress",
+            "3": "waiting",
+            "4": "co-operation"
+          },
+          "context": "Extremities can open the horizon or narrow its path."
+        },
+        "position9": {
+          "upright": "Three Sticks, you may be afraid of not being able to see distant opportunities, not being able to move forward, or failing to cooperate.",
+          "reversed": "The Reverse Three Wands may show the fear of delays, failed attempts, or disappointment.",
+          "keywords": {
+            "0": "Progress",
+            "1": "opportunity",
+            "2": "Vision",
+            "3": "waiting",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on delays or loss of vision."
+        }
+      },
+      "fourofwands": {
+        "position1": {
+          "upright": "Four Asas may have a desire for stability, co-operation, or celebration at the heart of the problem.",
+          "reversed": "The Reverse Four Asas may be the source of the problem of unrest, lack of support, or lack of foundation.",
+          "keywords": {
+            "0": "stability",
+            "1": "support",
+            "2": "celebration",
+            "3": "basic",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is a stable structure and the desire for compatible bonds."
+        },
+        "position10": {
+          "upright": "Four Wands may be the result of celebration, success, and harmony based on a solid foundation.",
+          "reversed": "The Reverse Four Wands may result in dissonance, family unrest, or instability.",
+          "keywords": {
+            "0": "celebration",
+            "1": "basic",
+            "2": "compatibility",
+            "3": "success",
+            "4": "stability"
+          },
+          "context": "The result may be celebrating or confronting incompatibility."
+        },
+        "position2": {
+          "upright": "Four Asas, the obstacle can be a lack of stability, a lack of fundamental relationships or dissonance, and when there is no solid foundation, it becomes difficult to move forward.",
+          "reversed": "The Reverse Four Asas may be the source of unrest, the loss of opportunities to celebrate, or the obstruction of home/work.",
+          "keywords": {
+            "0": "stability",
+            "1": "compatibility",
+            "2": "basic",
+            "3": "dissatisfaction",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born from instability and insecurities."
+        },
+        "position3": {
+          "upright": "Four Asas may have a subconscious experience of celebrating in the past, family ties, or building a solid foundation.",
+          "reversed": "The Reverse Four Asa may have settled in the subconscious of the past, dissonance, or incompatibility.",
+          "keywords": {
+            "0": "basic",
+            "1": "celebration",
+            "2": "compatibility",
+            "3": "Peace",
+            "4": "subconscious"
+          },
+          "context": "Family backgrounds and harmonies in the past may be the basis for today's problems."
+        },
+        "position4": {
+          "upright": "Four Wands, your best potential is to share celebrations, find balance, and build success on stable foundations.",
+          "reversed": "Inverse Four Wands, to open up your potential, you have to get rid of the incompatibility and strengthen your sense of belonging.",
+          "keywords": {
+            "0": "celebration",
+            "1": "balance",
+            "2": "stability",
+            "3": "belonging",
+            "4": "success"
+          },
+          "context": "Your best potential is to establish compatible bonds and make stable progress."
+        },
+        "position5": {
+          "upright": "Four Wands, you may have experienced a celebration, a home, or a working life, balance and harmony.",
+          "reversed": "You may have had the reverse Four Wands, the recent history of unrest, dissonance, or unfinished process.",
+          "keywords": {
+            "0": "celebration",
+            "1": "compatibility",
+            "2": "balance",
+            "3": "Peace",
+            "4": "completion"
+          },
+          "context": "Your recent past may have been shaped by the experience of harmony or unrest."
+        },
+        "position6": {
+          "upright": "The Four Wands may come to the attention of celebrations, a peaceful period, or the energy of building a solid foundation.",
+          "reversed": "Inverse Four Wands, you may experience dissonance in the near future, dissonance in your home or in your work life.",
+          "keywords": {
+            "0": "celebration",
+            "1": "basic",
+            "2": "compatibility",
+            "3": "balance",
+            "4": "Peace"
+          },
+          "context": "Your near future will be shaped by harmony or unrest."
+        },
+        "position7": {
+          "upright": "Four Wands, right now, you could be in the energy to celebrate, to make peace and solid foundations.",
+          "reversed": "The Reverse Four Wands may be affecting you right now, incompatibility, home or work life.",
+          "keywords": {
+            "0": "celebration",
+            "1": "Peace",
+            "2": "basic",
+            "3": "compatibility",
+            "4": "balance"
+          },
+          "context": "Your current condition is shaped by peace or incompatibility."
+        },
+        "position8": {
+          "upright": "The Four Wands can feel a safe foundation by offering celebration, support, and stability.",
+          "reversed": "The Reverse Four Wands can cause external effects to be affected by incompatibility, relocation/location problems or sense of belonging.",
+          "keywords": {
+            "0": "celebration",
+            "1": "basic",
+            "2": "compatibility",
+            "3": "support",
+            "4": "belonging"
+          },
+          "context": "The external effects can build or shake the nest."
+        },
+        "position9": {
+          "upright": "Four Wands, you can be afraid of losing your sense of belonging, being out of the celebration, or being unstable.",
+          "reversed": "The Reverse Four Wands may show dissonance, family problems, or concerns about moving in.",
+          "keywords": {
+            "0": "belonging",
+            "1": "celebration",
+            "2": "compatibility",
+            "3": "basic",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on loss of belonging or incompatibility."
+        }
+      },
+      "fiveofwands": {
+        "position1": {
+          "upright": "Five Asas may have a conflict of competition, struggle, or different views at the heart of the problem.",
+          "reversed": "The Reverse Five Asa may be the source of the problem of unnecessary debate, dissonance, or passiveness.",
+          "keywords": {
+            "0": "competition",
+            "1": "struggle",
+            "2": "conflict",
+            "3": "difference",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is the struggle and the conflict of opinion."
+        },
+        "position10": {
+          "upright": "Five Wands may result in competition, struggle, and proving their own strength.",
+          "reversed": "The Reverse Five Wand may result in the end of unnecessary conflicts, peace or harmony.",
+          "keywords": {
+            "0": "competition",
+            "1": "struggle",
+            "2": "conflict",
+            "3": "endurance",
+            "4": "Peace"
+          },
+          "context": "The result may be fighting or adapting."
+        },
+        "position2": {
+          "upright": "Five Asas, the obstacle may be a constant lack of competition, conflict or co-operation.",
+          "reversed": "The Reverse Five Asa may be an obstacle to passive, indefensible, or unnecessary debates.",
+          "keywords": {
+            "0": "competition",
+            "1": "conflict",
+            "2": "Lack of co-operation",
+            "3": "struggle",
+            "4": "obstacle"
+          },
+          "context": "The obstacle arises from constant struggles and incompatibility."
+        },
+        "position3": {
+          "upright": "Five Asas, subconsciously, may have been rivalries, arguments, or struggles of power in the past.",
+          "reversed": "Inverse Five Asas, in the past, there may have been incompatibility, passiveness, or unnecessary debates in the subconscious.",
+          "keywords": {
+            "0": "competition",
+            "1": "struggle",
+            "2": "conflict",
+            "3": "Incompatibility",
+            "4": "subconscious"
+          },
+          "context": "The conflict in the past and the experience of competition may be affecting your current problems."
+        },
+        "position4": {
+          "upright": "The Five Wands are to turn the competition of the best potential into opportunity, to improve its abilities, and to come out of the struggle with strength.",
+          "reversed": "Inverse Five Wands, to open your potential, you need to move away from unnecessary conflict and direct your energy to efficient areas.",
+          "keywords": {
+            "0": "competition",
+            "1": "struggle",
+            "2": "Development",
+            "3": "Courage",
+            "4": "opportunity"
+          },
+          "context": "Your best potential is to turn the struggle into growth."
+        },
+        "position5": {
+          "upright": "Five Wands, you may have had rivalries, disagreements, or disagreements in the recent past.",
+          "reversed": "You may have solved a conflict recently, reduced the competition, or turned to co-operation.",
+          "keywords": {
+            "0": "competition",
+            "1": "conflict",
+            "2": "struggle",
+            "3": "co-operation",
+            "4": "Tension"
+          },
+          "context": "The recent history may have been determined by the struggle or co-operation process."
+        },
+        "position6": {
+          "upright": "Five Wands may come to an agenda in the near future: competition, difference of opinion, or a struggle.",
+          "reversed": "Inverse Five Wands, in the near future, you can avoid conflict, you can focus more on co-operation.",
+          "keywords": {
+            "0": "competition",
+            "1": "conflict",
+            "2": "struggle",
+            "3": "co-operation",
+            "4": "Tension"
+          },
+          "context": "Your near future will be shaped by competition or cooperation."
+        },
+        "position7": {
+          "upright": "Five Wands, you could be competing, disagreeing, or struggling right now.",
+          "reversed": "Reverse Five Wands, you're in the process of moving away from conflict, of cooperating, of reducing tensions.",
+          "keywords": {
+            "0": "competition",
+            "1": "conflict",
+            "2": "struggle",
+            "3": "Tension",
+            "4": "co-operation"
+          },
+          "context": "Your current situation is shaped by competition or co-operation."
+        },
+        "position8": {
+          "upright": "Five Wands, external effects can produce competition, conflict of opinion, and a healthy fighting environment.",
+          "reversed": "The Reverse Five Wands can create unnecessary friction, chaos, or passive-aggressive conflict.",
+          "keywords": {
+            "0": "competition",
+            "1": "conflict",
+            "2": "struggle",
+            "3": "energy",
+            "4": "Development"
+          },
+          "context": "The external effects can sharpen or wear you out."
+        },
+        "position9": {
+          "upright": "Five Wands, you may be afraid of losing the competition, of arguing, of being inadequate in the fight.",
+          "reversed": "The Reverse Five Wand can show unnecessary conflict, dissonance, or constant fear of friction.",
+          "keywords": {
+            "0": "competition",
+            "1": "conflict",
+            "2": "struggle",
+            "3": "Incompatibility",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on competition or debate."
+        }
+      },
+      "sixofwands": {
+        "position1": {
+          "upright": "Six Asas may have a desire to succeed at the heart of the problem, to be recognized or appreciated.",
+          "reversed": "The Reverse-Six Wand, to remain invisible, to be jealous, or to be blinded by success, can be the source of the problem.",
+          "keywords": {
+            "0": "success",
+            "1": "recognition",
+            "2": "appreciation",
+            "3": "Self - confidence",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is the desire for success and appreciation."
+        },
+        "position10": {
+          "upright": "Six Wands may result in victory, recognition, and deserved success.",
+          "reversed": "The Reverse Six Wand may result in jealousy, appreciation, or failure.",
+          "keywords": {
+            "0": "victory",
+            "1": "success",
+            "2": "recognition",
+            "3": "visibility",
+            "4": "pride"
+          },
+          "context": "The result may be a great victory or a temporary failure."
+        },
+        "position2": {
+          "upright": "Six Asas, the obstacle may be unappreciated, invisible, or failure to achieve success, making it difficult not to be recognized.",
+          "reversed": "Reverse Asa, arrogance, fear of failure, or jealousy can be the source of the obstacle.",
+          "keywords": {
+            "0": "success",
+            "1": "appreciation",
+            "2": "visibility",
+            "3": "Vanity",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born from being unappreciated and feeling worthless."
+        },
+        "position3": {
+          "upright": "Six Asas, subconsciously the achievements of the past may be to be appreciated or to step forward.",
+          "reversed": "The Reverse Six Asa may have settled in his subconscious in the past, not being jealous, afraid of failure, or undervalued.",
+          "keywords": {
+            "0": "success",
+            "1": "appreciation",
+            "2": "visibility",
+            "3": "Jealousy",
+            "4": "subconscious"
+          },
+          "context": "The achievements or lack of appreciation in the past may have shaped today's problems."
+        },
+        "position4": {
+          "upright": "Six Wands, celebrating the achievements of the best potential, being appreciated and leading with confidence.",
+          "reversed": "In order to reach its potential, you must give up the search for approval and internally appreciate your own success.",
+          "keywords": {
+            "0": "success",
+            "1": "victory",
+            "2": "appreciation",
+            "3": "Self - confidence",
+            "4": "leadership"
+          },
+          "context": "Your best potential is to achieve success by owning it."
+        },
+        "position5": {
+          "upright": "Six Wands, you may have experienced a victory, success, or appreciation in the recent past.",
+          "reversed": "You may have had a fear of failure or a lack of self-esteem, which has not been appreciated in the recent past.",
+          "keywords": {
+            "0": "victory",
+            "1": "success",
+            "2": "appreciation",
+            "3": "Self - confidence",
+            "4": "Trust"
+          },
+          "context": "Your recent past may have been shaped by success or lack of self-esteem."
+        },
+        "position6": {
+          "upright": "Six Wands, success in the near future, victory and the energy of appreciation from your environment await you.",
+          "reversed": "Inverse Six Wands, you may experience a lack of value, a lack of success, or self-esteem in the near future.",
+          "keywords": {
+            "0": "victory",
+            "1": "success",
+            "2": "appreciation",
+            "3": "Self - confidence",
+            "4": "leadership"
+          },
+          "context": "Your near future will be shaped by victory or disappointment."
+        },
+        "position7": {
+          "upright": "Six Wands, you're in the process of success, victory, and recognition from your environment.",
+          "reversed": "The Reverse Six Wands, you may now face a lack of confidence, a shadowing of success, or a lack of appreciation.",
+          "keywords": {
+            "0": "victory",
+            "1": "success",
+            "2": "appreciation",
+            "3": "Self - confidence",
+            "4": "leadership"
+          },
+          "context": "Your current situation is shaped by success or disappointment."
+        },
+        "position8": {
+          "upright": "Six Wands may offer opportunities to promote appreciation, visibility, and success.",
+          "reversed": "The Reverse Six Wands may appear to be external effects of jealousy, delay of applause, or scorn of its labor.",
+          "keywords": {
+            "0": "appreciation",
+            "1": "success",
+            "2": "victory",
+            "3": "visibility",
+            "4": "Dignity"
+          },
+          "context": "The external effects can either exalt you or shade you."
+        },
+        "position9": {
+          "upright": "Six Wands can show fear of failure, not being visible or not being appreciated.",
+          "reversed": "The Reverse Six Wands can cause loss of pride, jealousy, or contempt for labor.",
+          "keywords": {
+            "0": "success",
+            "1": "appreciation",
+            "2": "visibility",
+            "3": "pride",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on being unappreciated or failing."
+        }
+      },
+      "sevenofwands": {
+        "position1": {
+          "upright": "Seven Asas may be at the center of the problem, defending themselves, protecting their rights, or resisting.",
+          "reversed": "The Reverse Seven Wands, weakness, lack of resistance or retreat could be the source of the problem.",
+          "keywords": {
+            "0": "defence",
+            "1": "resistance",
+            "2": "right",
+            "3": "Courage",
+            "4": "Question"
+          },
+          "context": "The problem needs to defend its own position at the center of the problem."
+        },
+        "position10": {
+          "upright": "Seven Wands may be the result of self - defense, strength, and determination to fight.",
+          "reversed": "The Reverse Seven Wands may be the result of retreating, breaking or giving up.",
+          "keywords": {
+            "0": "defence",
+            "1": "determination",
+            "2": "resistance",
+            "3": "struggle",
+            "4": "To give up"
+          },
+          "context": "The result could be a strong defense or retreat."
+        },
+        "position2": {
+          "upright": "Seven Asas, the obstacle may be a lack of self - defense, lack of resistance, or submission to pressures.",
+          "reversed": "The Reverse Seven Asa may be an obstacle to giving up, to giving up, or to give up the fight.",
+          "keywords": {
+            "0": "resistance",
+            "1": "defence",
+            "2": "Courage",
+            "3": "Insecurity",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born from lack of resistance and self-defense."
+        },
+        "position3": {
+          "upright": "Seven Asas can subconsciously be self-defense, resistance, or trying to survive the competition.",
+          "reversed": "The Reverse Seven Asa may have been in his subconscious to give up, to give up, to give up, to give up, or to give up the fight.",
+          "keywords": {
+            "0": "defence",
+            "1": "resistance",
+            "2": "Insecurity",
+            "3": "struggle",
+            "4": "subconscious"
+          },
+          "context": "The defences and insecurities of the past may have been the basis for your problems today."
+        },
+        "position4": {
+          "upright": "The Seven Wands are to maintain the posture of the best potential, to defend their beliefs, and to survive in a competitive environment.",
+          "reversed": "The Reverse Seven Wands must not back down to reach its potential, but to defend its limits with determination.",
+          "keywords": {
+            "0": "defence",
+            "1": "determination",
+            "2": "Courage",
+            "3": "endurance",
+            "4": "struggle"
+          },
+          "context": "Your best potential comes from defending your limits."
+        },
+        "position5": {
+          "upright": "Seven Wands, you may have defended yourself recently, maintained your stance or resisted in competition.",
+          "reversed": "The Reverse Seven Wands may have been vulnerable recently, tired of the struggle or retreated.",
+          "keywords": {
+            "0": "defence",
+            "1": "struggle",
+            "2": "determination",
+            "3": "Resistance",
+            "4": "Courage"
+          },
+          "context": "Your recent past may have been shaped by determination or retreat."
+        },
+        "position6": {
+          "upright": "In the near future, you will defend your own stand, maintain your borders, and fight decisively.",
+          "reversed": "The Reverse Seven Wands may be difficult to resist in the near future, and you may feel the need to take a step back.",
+          "keywords": {
+            "0": "defence",
+            "1": "struggle",
+            "2": "determination",
+            "3": "Courage",
+            "4": "borders"
+          },
+          "context": "Your near future will be shaped by resistance or retreat."
+        },
+        "position7": {
+          "upright": "Seven Wands, right now, you're defending your own borders, protecting your beliefs and fighting.",
+          "reversed": "Reverse Seven Wands, right now you may be prone to loss of resistance, retreat or abandonment.",
+          "keywords": {
+            "0": "defence",
+            "1": "determination",
+            "2": "Courage",
+            "3": "borders",
+            "4": "endurance"
+          },
+          "context": "Your current situation is shaped by determination or retreat."
+        }
+      }
+    }
+  }
+}

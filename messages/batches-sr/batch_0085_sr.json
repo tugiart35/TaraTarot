@@ -1,0 +1,774 @@
+{
+  "relationship-problems": {
+    "meanings": {
+      "twoofwands": {
+        "position6": {
+          "reversed": "Otkrivena dva štapića govore o riziku da naprave samo planove i stvara Fait Sartplis i čuva snagu u Centru.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "učestvovanje",
+            "snaga",
+            "rizikovati"
+          ],
+          "context": "Tema: Zajednički horizont; Rizik: Centralizacija; DO: PLAN I PILOT KORAK ZAJEDNO."
+        },
+        "position7": {
+          "upright": "Dvoje štapiće ukazuju na spoljne učesnike u razgovorima o planovima i horizontima. Neko vodi vašu mapu puta.",
+          "reversed": "Preokrećena dva štapića ukazuje na spoljni faktor koji stvara jednostrane planove i stvara fakultet.",
+          "keywords": [
+            "plan",
+            "horizont",
+            "učestvovanje",
+            "Fait Carspli",
+            "pravac"
+          ],
+          "context": "Izaberite ko ćete doneti u sto za planiranje. Ne dajte autoritet."
+        },
+        "position8": {
+          "upright": "Dvoje štapiće sugeriraju da studira horizont / plan i budžetski ciljni scenariji. Vizija donosi prihod.",
+          "reversed": "Otkrivena dva štapića govore nam da je jaz za izvršenje plana i odluka o fairt-a daju resurse.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "scenarij",
+            "Primena",
+            "razmak"
+          ],
+          "context": "Povežite plan kalendaru; Pojasnite autoritet i dužnosti."
+        },
+        "position9": {
+          "upright": "Odnos se nastavlja sa dva štapića, zajednički horizont i plan. Vision se povezuje.",
+          "reversed": "Invertirano dvoje štapiće, GAP i izvršenje plana probija kontinuitet.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "horizont",
+            "izvršni",
+            "odluka"
+          ],
+          "context": "Da biste to učinili: Prevedite viziju u kalendar i zadatak."
+        }
+      },
+      "threeofwands": {
+        "position1": {
+          "upright": "Tri štapića ukazuju na neusklađenost u menadžmentu vremena i očekivanja. Horizont ishoda i nivo strpljenja možda se ne podudaraju.",
+          "reversed": "Pretvoreni tri štapića ukazuje da kašnjenje pretvore u ciklus krivice i nedostatak koordinacije stvara sukob.",
+          "keywords": [
+            "vremenski vreme",
+            "očekivanje",
+            "strpljenje",
+            "koordinacija",
+            "horizont"
+          ],
+          "context": "Operativni koren kontradikcije: vreme i koordinacija."
+        },
+        "position2": {
+          "upright": "Tri štapića kažu da je problem vremena, očekivanja i koordinacija. Skinuli smo, port je neizvestan. \\ N \\ n \\ n \\ n \\ Nhint: Očekivani rezultat je na horizontu, harmonija nedostaje u tom procesu. Problem je uloga.",
+          "reversed": "Pretvoreni tri štapića ukazuje da kašnjenja pretvore u ciklus krivice. Ogorčeni pogleda na povećanju horizonta. \\ N \\ nsimptom: Kašnjenje, pogrešna sinhronizacija. Problem ne ažurira plan dinamički ažuriranje.",
+          "keywords": [
+            "vremenski vreme",
+            "očekivanje",
+            "ekspanzija",
+            "koordinacija",
+            "horizont"
+          ],
+          "context": "Problem sa korenom: poravnanje vremenske uloge. Područja pogođena: protok projekata, isporuka, strpljenje."
+        },
+        "position3": {
+          "upright": "Tri štapića kažu da postavljate očekivanja i povećate svoj udeo bez razgovora o vremenu i koordinaciji. Horizon je prelep; Ako je proces pokvaren, gubi se mir.",
+          "reversed": "Prekoračili tri štapića govore vam da krivite kašnjenja i dodavanje goriva na požar ne ažurirajući plan. Sinhrono je obavezan.",
+          "keywords": [
+            "vremenski vreme",
+            "očekivanje",
+            "ekspanzija",
+            "koordinacija",
+            "horizont"
+          ],
+          "context": "Share: Sinc Gap. Efekat: Predajte se, strpljenje. Preporuka: Poravnavanje uloga."
+        },
+        "position4": {
+          "upright": "Tri štampe vam govore da možete ignorisati svoj udeo postavljanjem očekivanja bez govora i razmatranje kašnjenja kao \"normalno\".",
+          "reversed": "Preokrećena tri štapića pokazuje tendenciju podsticanja uskraćivanja za ogovarajući bez ažuriranja plana.",
+          "keywords": [
+            "vremenski vreme",
+            "očekivanje",
+            "koordinacija",
+            "horizont",
+            "protok"
+          ],
+          "context": "Zanemaren: poravnanje vremena uloga. Učinak: Strpljenje se istroši. DO: Podesite sinhronizaciju."
+        },
+        "position5": {
+          "upright": "Tri štapića govore o želji da rastu i šire zajedno. Očekivanja su jasna.",
+          "reversed": "Preokrećena tri štapića ukazuju na probleme sa sinhronizacijom i odlaganja napuštanja svoje trake.",
+          "keywords": [
+            "ekspanzija",
+            "očekivanje",
+            "vremenski vreme",
+            "sinhronost",
+            "horizont"
+          ],
+          "context": "Postoji želja da raste. Bilo je problema sa koordinacijom. Sada je potrebna harmonija uloga."
+        },
+        "position6": {
+          "upright": "Tri štapića promovišu širenje; Ali postavljanje očekivanja bez govora može da se partner oseća zaduženo.",
+          "reversed": "Preokrećena tri štapića skreću pažnju na rizik da se koristi kašnjenja kao utjecavanje i davanje smera sa prigovorom.",
+          "keywords": [
+            "očekivanje",
+            "ekspanzija",
+            "vremenski vreme",
+            "koordinacija",
+            "prigovarati"
+          ],
+          "context": "Tema: Sinhroni i uloga; Rizik: Nevidljivi očekivanja; DO: Jasno mapa uloga."
+        },
+        "position7": {
+          "upright": "Tri štapića opisuje uticaj velikih mreža, udaljenih prijatelja i partnera. Spoljne mogućnosti menjaju ritam.",
+          "reversed": "Preokrećena tri štapića ukazuje na spoljnu koordinaciju, što povećava pritisak kašnjenja i očekivanja.",
+          "keywords": [
+            "mreža",
+            "udaljeni prijatelj",
+            "prilika",
+            "očekivanje",
+            "koordinacija"
+          ],
+          "context": "Svesno koristite svoje mreže. Upravljajte očekivanjima."
+        },
+        "position8": {
+          "upright": "Tri štapića predstavljaju rast, novu tržištu i poslovnu priliku. Pacijent koji čeka da podnese plod.",
+          "reversed": "Okrećena tri štampe je upozorenje o kašnjenju, nepravilnoj koordinaciji i krijumčarenju gotovine.",
+          "keywords": [
+            "rast",
+            "prilika",
+            "koordinacija",
+            "kašnjenje",
+            "novac"
+          ],
+          "context": "Uspostaviti kalendar koordinacije; Planirajte finansiranje mosta."
+        },
+        "position9": {
+          "upright": "Odnos uspeva na snazi tri štapića, širenje pacijenata i čekaju zajedno.",
+          "reversed": "Okolištena tri štapića, kašnjenje i nekompatibilno očekivanja utrljavaju put puknute.",
+          "keywords": [
+            "ekspanzija",
+            "strpljenje",
+            "očekivanje",
+            "vremenski vreme",
+            "nadati se"
+          ],
+          "context": "Da biste poslednji put: Pogodnika očekivanja + srednji ciljevi."
+        }
+      },
+      "fourofwands": {
+        "position1": {
+          "upright": "Četiri štapića ukazuju na neslaganje u proslavi, koracima zajedničkog života ili porodičnih rituala.",
+          "reversed": "Preokrećena četiri štapića pokazuju da proslava praga pre njegovog završetka stvara razočaranje i temelj se upisuje.",
+          "keywords": [
+            "prag",
+            "proslava",
+            "porodica",
+            "osnova",
+            "pripadnik"
+          ],
+          "context": "Operativni koren kontradikcije: prag i ritualna harmonija."
+        },
+        "position2": {
+          "upright": "Četiri štapića kažu da problem leži u pragu i koracima slavlja. Solidnost Fondacije je upitna. \\ N \\ n \\ NHINT: venčanje, kretanje, rituali za upoznavanje. Problem je bezvremenosti pragova.",
+          "reversed": "Invertirana četvorica štapića ukazuje da je proslava bez završetka praga razočaravajući. Prvo temelj, zatim ceremonija. \\ N \\ nsimptom: Nepotpuni završetak, ceremonijalna napetost. Problem je greška sortiranja.",
+          "keywords": [
+            "prag",
+            "proslava",
+            "osnova",
+            "pripadnik",
+            "kuću"
+          ],
+          "context": "Problem sa korenom: Pragodno upravljanje. Područja pogođena: ko-živi, porodična integracija."
+        },
+        "position3": {
+          "upright": "Četiri štapića kažu da on žuri na prag i povećava svoj udeo bez jačanja fondacije. Razočaranje raste kada se redosled proslave pomeša.",
+          "reversed": "Pretvoreni četvorici štapića objašnjava da odložite problem sa ceremonijalnim \"Mi smo u redu\" i zarađuju vatru veću. Prvo temelj, zatim ceremonija.",
+          "keywords": [
+            "prag",
+            "proslava",
+            "osnova",
+            "pripadnik",
+            "kuću"
+          ],
+          "context": "Share: Greška sortiranja. Efekat: Stabilnost, porodična integracija. Preporuka: ojačati bazu."
+        },
+        "position4": {
+          "upright": "Četiri štapića kažu da je bez jačanja fondacije može poći na prag i zanemariti nečiji deo razočaranja, s obzirom na to \"nesreću\".",
+          "reversed": "Pretvoreni četvorica štapića ukazuje da neko može da održi negiranje s ceremonijalnim \"Mi smo dobro\" štit.",
+          "keywords": [
+            "prag",
+            "osnova",
+            "proslava",
+            "pripadnik",
+            "narediti"
+          ],
+          "context": "Ignorisan: osnovni poslovi. Efekat: Stabilnost je oslabljena. DO: Prvo temelj, zatim ceremonija."
+        },
+        "position5": {
+          "upright": "Četiri štapića govore da su proslave, pragovi i trenuci pripadnosti snažni. Osnovan je osećaj kuće.",
+          "reversed": "Pretvorena četvorica štapića ukazuje da je ceremonija pojurila pre ojačanja temelja. Razočaranje se može nastati kada se narudžba pomeša.",
+          "keywords": [
+            "prag",
+            "proslava",
+            "pripadnik",
+            "osnova",
+            "kuću"
+          ],
+          "context": "Predivni trenuci praga. Rizik od preskakanja osnovnih zadataka. Prvo temelj, a zatim ceremonija."
+        },
+        "position6": {
+          "upright": "Četiri štapića slave prag i proslavu; Ali koristeći ceremoniju kao štit i prisiljavanje temelja za skok može se pretvoriti u eksploataciju.",
+          "reversed": "Preokrećena četiri štapića ukazuju na rizik upotrebe prividne sreće kao pregovarački alat i vršenje pritiska na reputaciju.",
+          "keywords": [
+            "prag",
+            "proslava",
+            "osnova",
+            "reputacija",
+            "ugnjetavanje"
+          ],
+          "context": "Tema: Fondacija i ceremonijalni poredak; Rizik: Štampanje prozora; DO: Prvo temelj, proslava kasnije."
+        },
+        "position7": {
+          "upright": "Četiri štapića kaže da su proslave porodice / prijatelja dobre za vezu. Postoji podrška zajednica.",
+          "reversed": "Preokrenuta četiri štapića, ceremonija / određivanja nalepnice i \"kada?\" On ukazuje na strani intervenciju svojim pitanjima.",
+          "keywords": [
+            "proslava",
+            "zajednica",
+            "ceremonija",
+            "ulaznica",
+            "ugnjetavanje"
+          ],
+          "context": "Proslavite, ali vi birate naređenje. Ne ostavljajte ritam."
+        },
+        "position8": {
+          "upright": "Četiri štapića otkrivaju kućne proslave, troškove kretanja i praga; Zabavno je kada to planirate.",
+          "reversed": "Preokrećena četvorica štapića upozorava na troškove pritiska rituala / nalepnica i ostentacije.",
+          "keywords": [
+            "prag",
+            "kuću",
+            "proslava",
+            "shov",
+            "plan"
+          ],
+          "context": "Podesite proslavi budžet; Pojednostavite ako nije potrebno."
+        },
+        "position9": {
+          "upright": "Četiri štapića, proslavljajući prag i postavljanje stalnosti temelja.",
+          "reversed": "Ukrasana Četiri štapića slabi osnivanje izložbenog / ceremonijalnog pritiska.",
+          "keywords": [
+            "prag",
+            "proslava",
+            "osnova",
+            "kuću",
+            "stabilnost"
+          ],
+          "context": "Da biste poslednji put: Prvo temelj, zatim ceremonija."
+        }
+      },
+      "fiveofwands": {
+        "position1": {
+          "upright": "Petorica štapića sugeriše da konkurentni ton, sukob ideja i suđenja čvrstoće proizvode napetost.",
+          "reversed": "Invertirani pet štapića ukazuje da diskusija bez pravila rađa neefikasnost i igru je potreban okvir.",
+          "keywords": [
+            "rivalstvo",
+            "ideja",
+            "borba",
+            "vladavina",
+            "prinos"
+          ],
+          "context": "Operativni koren sukoba: nedostatak okvira sukoba."
+        },
+        "position2": {
+          "upright": "Petorica štapića kaže da problem leži u neregulisanim argumentima i suđenjem snage. Pretvara se u rat za probe. \\ N \\ nhint: takmičenje, poređenje i fragmentarne borbe. Problem je što nema pravila igre.",
+          "reversed": "Reversed Pet štapića objašnjava da neuspeh u premeštanju sukoba u konstruktivnu arenu rezultira neefikasnošću. Energija se troši. \\ N \\ nsimptom: Gubitak dnevnog reda, buka. Problem je nedostatak olakšavanja.",
+          "keywords": [
+            "sukob",
+            "rivalstvo",
+            "vladavina",
+            "olakšavanje",
+            "prinos"
+          ],
+          "context": "Problem sa korenom: strukturno borbu. Područja koja utiče: sastanak, odluka, saradnja."
+        },
+        "position3": {
+          "upright": "Petorica štapića kaže da povećavate svoj udeo kroz nepristojne argumente i suđenja snage. Ako nema igre, borbe je pokvarila igru.",
+          "reversed": "Invertirani Petorica štapića govore vam da povećavate buku i odbacujući olakšavanje, povećavajući tako požar. Podesite okvir.",
+          "keywords": [
+            "sukob",
+            "rivalstvo",
+            "vladavina",
+            "olakšavanje",
+            "prinos"
+          ],
+          "context": "Share: Dekonstruisana borba. Efekat: Efikasnost, poštovanje. Predlog: Pravila diskusije."
+        },
+        "position4": {
+          "upright": "Petorica štapića kaže da ljudi mogu da pogreše neregulisane diskusije za \"otvorenu komunikaciju\" i ignorišu njihov deo. Ako igra nema pravila, borba eskalira.",
+          "reversed": "Otkriveni pet štapića ukazuje na tendenciju da negira njegovu ulogu u trajanju buke.",
+          "keywords": [
+            "sukob",
+            "vladavina",
+            "rivalstvo",
+            "olakšavanje",
+            "prinos"
+          ],
+          "context": "Zanemaren: Okvir za diskusiju. Efekat: Poštovanje i smanjenje efikasnosti. Do: kanonski dijalog."
+        },
+        "position5": {
+          "upright": "Petorica štapića sugeriše konstruktivna konkurencija i sukobe ideja. Energija je bila živa.",
+          "reversed": "Invertirani pet štapića ukazuje da nepravilne diskusije smanjuju produktivnost. Buka je možda ostavila marku.",
+          "keywords": [
+            "sukob",
+            "rivalstvo",
+            "vladavina",
+            "energija",
+            "prinos"
+          ],
+          "context": "Živo protok ideja. Umorna od nedostatka okvira. Odlučeni dijalog je sada neophodan."
+        },
+        "position6": {
+          "upright": "Petorica štapića čuva sukob ideja živih; Ali diskusija bez pravila može pretvoriti u eksploataciju dominantnog.",
+          "reversed": "Otkriveni pet štapića ukazuje na taktiku preusmeravanja teme stvaranjem buke i napornog druge strane.",
+          "keywords": [
+            "sukob",
+            "vladavina",
+            "rivalstvo",
+            "prelivanje",
+            "olakšavanje"
+          ],
+          "context": "Tema: kanonski dijalog; Rizik: pritisak buke; Do: Pravilo krila i trajanja."
+        },
+        "position7": {
+          "upright": "Pet štapića pokazuje da se gomila sukobljava sa idejama. Svi imaju predloge, nema naređenja.",
+          "reversed": "Invertirani pet štapića ukazuje na ilegalna okruženja za diskusiju koja eskaliraju borbu.",
+          "keywords": [
+            "argument",
+            "zauzet",
+            "vladavina",
+            "bučan",
+            "sukob"
+          ],
+          "context": "Podesite pravila za dijalog. Zatvorite gomilu bez olakšavanja."
+        },
+        "position8": {
+          "upright": "Petorica štapića ukazuje na sukob mišljenja o novčanim prioritetima. Vladana diskusija je produktivna.",
+          "reversed": "Otkriveni pet štapića može dovesti do haotičnog pregovaranja, gubitka energije i neorganizovane potrošnje.",
+          "keywords": [
+            "argument",
+            "prioritet",
+            "pregovaranje",
+            "vladavina",
+            "nered"
+          ],
+          "context": "Podesite vremensko okruglo pravilo; Zapišite odluke."
+        },
+        "position9": {
+          "upright": "Odnos se razvija i traje sa pet štapića, redovna diskusija i pravo na sajam.",
+          "reversed": "Invertirano pet štapića, haotične borbe erodira stalnost.",
+          "keywords": [
+            "argument",
+            "vladavina",
+            "rivalstvo",
+            "olakšavanje",
+            "poštovanje"
+          ],
+          "context": "Da biste nastavili: protokol za diskusiju (trajanje / ton / pauza)."
+        }
+      },
+      "sixofwands": {
+        "position1": {
+          "upright": "Šest štapića sugeriše da postoji napetost između potrebe za prepoznavanjem i očekivanjem poniznosti. Ko sjaji, koji ostaje u senci.",
+          "reversed": "Prekoračenje šest štapića ukazuje da se nevidljivi rad i sukob goriva od ljubomora.",
+          "keywords": [
+            "diskrecija",
+            "vidljivost",
+            "ljubomora",
+            "uspeh",
+            "percepcija"
+          ],
+          "context": "Operativni koren kontradikcije: vidljivost i prepoznavanje."
+        },
+        "position2": {
+          "upright": "Šest štapića kaže da je pitanje u ravnoteži prepoznavanja i vidljivosti. Ko se aplaudira i ko je zasjenjen. \\ N \\ nHint: Narativa o uspehu se ne deli podjednako. Problem nije u stanju da zajedno napišete priču.",
+          "reversed": "Preokrećeno šest štapića objašnjava da nevidljivi rad stvara ogorčenje. Pobeda se doživljava kao da pripada jednoj osobi. \\ N \\ nsimptom: Ogorčeno, smanjenje motivacije. Problem je nedostatak diskrecionog sistema.",
+          "keywords": [
+            "diskrecija",
+            "vidljivost",
+            "pobeda",
+            "percepcija",
+            "motivacija"
+          ],
+          "context": "Problem sa korenom: ekonomija uvažavanja. Područja koja utiče: motivacija, pravda, harmonija tima."
+        },
+        "position3": {
+          "upright": "Šest štapića kaže da ne delite vidljivost i priznanje, već povećavate svoj udeo. Ako aplauz pripada samo jednoj osobi, ogorčeno raste.",
+          "reversed": "Ukinuta šest štapića opisuje da je vatra veća ignorisanjem nevidljive radne snage. Zapišite pobedu zajedno.",
+          "keywords": [
+            "diskrecija",
+            "vidljivost",
+            "pobeda",
+            "percepcija",
+            "motivacija"
+          ],
+          "context": "Share: Gip uhvate. Efekat: Motivacija, pravičnost. Preporuka: Napravite radnu snagu vidljivu."
+        },
+        "position4": {
+          "upright": "Šest štapića vam govori da možete ignorisati svoj udeo tako što ne delite vidljivost i nazivajući ga \"zasluženo\". Aplauz stvara ogorčenje u jednoj ruci.",
+          "reversed": "Ukinuta šest štapića naglašava tendenciju da ignoriše nevidljivi rad.",
+          "keywords": [
+            "diskrecija",
+            "vidljivost",
+            "pobeda",
+            "percepcija",
+            "motivacija"
+          ],
+          "context": "Zanemareno: Pošteno diskreciono pravo. Efekat: Motivacija se topi. DO: Napravite radnu snagu vidljivim."
+        },
+        "position5": {
+          "upright": "Šest štapića kaže da se uspesi proslavljaju zajedno. Zahvalnost je ojačala vezu.",
+          "reversed": "Okrećeno šest štapića govori nam da nevidljivi nevidljivi nevidljivi rad ostavlja ogorčenje.",
+          "keywords": [
+            "diskrecija",
+            "uspeh",
+            "vidljivost",
+            "rad",
+            "motivacija"
+          ],
+          "context": "Pobede su podeljene. Fer uvažavanje nije uvek bilo slučaj. Sada napori učinite vidljivim."
+        },
+        "position6": {
+          "upright": "Šest štapića kaže da je vidljivost slatka; Ali okupljajući aplauz u jednoj ruci, partnerov trud nevidljiv napor.",
+          "reversed": "Preokrećeno šest štapića opisuje rizik od pregovora sa motivacijom zadržavanjem uvažavanja.",
+          "keywords": [
+            "diskrecija",
+            "vidljivost",
+            "rad",
+            "motivacija",
+            "deljenje"
+          ],
+          "context": "Tema: fer uvažavanje; Rizik: Monopol aplauz; Napravite: ritam pravljenja radne snage vidljive."
+        },
+        "position7": {
+          "upright": "Šest štapića kaže da aplauz i vidljivost pružaju spoljnu motivaciju. Podrška zajednice pojačava moral.",
+          "reversed": "Uokrećeno šest štapića ukazuje na monopolizaciju diskrecije i ugnjetavanje \"slike\".",
+          "keywords": [
+            "aplauz",
+            "vidljivost",
+            "slika",
+            "diskrecija",
+            "moral"
+          ],
+          "context": "Zahvalnost je lepo, ali neka bude fer. Nije za sliku, ali za ono što jesi."
+        },
+        "position8": {
+          "upright": "Šest štapića ukazuje na uspeh i vidljive dobitke kao što su bonusi. Zahvalnost donosi motivaciju.",
+          "reversed": "Ukinuta šest štapića upozorava nepotrebne troškove za potrošnju i aplauz slike.",
+          "keywords": [
+            "uspeh",
+            "premium",
+            "diskrecija",
+            "slika",
+            "trošak"
+          ],
+          "context": "Proslaviti pobedu; Provedite na osnovu vrednosti, a ne imidž."
+        },
+        "position9": {
+          "upright": "Šest štapića, deljenje i uvažavanje uspeha, odnos nosi u dugom roku.",
+          "reversed": "Okrećeno šest štapića, nedostatak zahvalnosti i pritiska slike slabi kontinuitet.",
+          "keywords": [
+            "diskrecija",
+            "uspeh",
+            "vidljivost",
+            "slika",
+            "motivacija"
+          ],
+          "context": "Poslednji: nedeljni ritual zahvalnosti."
+        }
+      },
+      "sevenofwands": {
+        "position1": {
+          "upright": "Sedam štapića kaže da odbrana i potreba za stalnim opravdanjem stvara distancu u vezi.",
+          "reversed": "Invertirani sedam štapića pokazuje da preterana odbrana zatvara dijalog i da je to od suštinskog značaja.",
+          "keywords": [
+            "odbrana",
+            "granica",
+            "legitimitet",
+            "dijalog",
+            "fleksibilnost"
+          ],
+          "context": "Operativni koren kontradikcije: ravnoteža odbrane i otvorenosti."
+        },
+        "position2": {
+          "upright": "Sedam štapića kaže da je problem uvek biti u odbrambenom položaju. Pozicija se uzima umesto dijaloga. \\ N \\ nhint: opravdanje umor. Problem je što se sigurni prostor suža i transparentnost opadaju.",
+          "reversed": "Pretvorenih sedam štapića opisuje ustrojstvo prekomerne odbrane i samo borbe. Nije zatraženo pomoć. \\ N \\ nsimptom: usamljeni dvorac, oštri ton. Problem ne postavlja sistem podrške.",
+          "keywords": [
+            "odbrana",
+            "granica",
+            "otpornost",
+            "podrška",
+            "opteretiti"
+          ],
+          "context": "Problem sa korenom: odbrambeni refleks. Područja pogođena: saradnja, empatija, umor."
+        },
+        "position3": {
+          "upright": "Sedam štapića kaže da uvek ostaje u odbrani i povećava njegov udeo. Živjeti u izolaciji ubija dijalog.",
+          "reversed": "Okrećeno sedam štapića govori nam da ste požar veću napravili požar odabirom da se borite sami i odbijaju podršku. Omekšati, udeli.",
+          "keywords": [
+            "odbrana",
+            "granica",
+            "otpornost",
+            "podrška",
+            "opteretiti"
+          ],
+          "context": "Podelite: Ektreme Defense. Efekat: Saradnja, empatija. Predlog: Zatražite pomoć."
+        },
+        "position4": {
+          "upright": "Sedam štapića kaže da neko može pogrešiti odbranu za sigurnost i ignorisati nečiji udeo. Stalno pozicioniranje ubija dijalog.",
+          "reversed": "Okrećeno sedam štapića pokazuje tendenciju podsticanja uskraćivanja, pronalaženje je teško da traži pomoć.",
+          "keywords": [
+            "odbrana",
+            "granica",
+            "otpornost",
+            "podrška",
+            "opteretiti"
+          ],
+          "context": "Zanemaren: meka odbrana. UTICAJ: SERTIONSKA SREDITE SE. DO: Zahtevajte podršku."
+        },
+        "position5": {
+          "upright": "Sedam štapića vam govori da zajedno sa spoljnim pritiscima gradite liniju odbrane. Pazili ste jedni na druge.",
+          "reversed": "Okrećeno sedam štapića govori nam da konstantna odbrana stvara napetost unutra. Odbijanje pomoći možda je napustio svoj znak.",
+          "keywords": [
+            "odbrana",
+            "granica",
+            "ugnjetavanje",
+            "podrška",
+            "otpornost"
+          ],
+          "context": "Zajedno smo snažni protiv spolja. Unutra je bilo umora. Meka odbrana i podrška je sada bitna."
+        },
+        "position6": {
+          "upright": "Sedam štapića opisuje odbranu granice; Ali stalno boravak u položaju može suzbiti pravo partnera da govori.",
+          "reversed": "Pretvorenih sedam štapića ukazuje na rizik da se zahtjera za pomoć za pomoć kao slabost, prenošenje tereta na drugu osobu i upravljajući ga odbrambenim.",
+          "keywords": [
+            "odbrana",
+            "granica",
+            "podrška",
+            "opteretiti",
+            "otpornost"
+          ],
+          "context": "Tema: Fleksibilna granica; Rizik: Defanzivno prigušivanje; DO: Common Definisani jezik."
+        },
+        "position7": {
+          "upright": "Sedam štapića opisuje zajedničku odbranu od spoljnih pritisaka. Potrebno je stav prema okruženju.",
+          "reversed": "Invertirani sedam štapića ukazuje na okruženje koje podstiče jedan da stalno ostane na odbrambeni.",
+          "keywords": [
+            "odbrana",
+            "ugnjetavanje",
+            "stajati",
+            "granica",
+            "otpornost"
+          ],
+          "context": "Biti jedan glas zajedno. Strateški koristite odbranu."
+        },
+        "position8": {
+          "upright": "Sedam štapića opisuje odbranu budžeta protiv spoljnih finansijskih pritisaka. Granice su potrebne.",
+          "reversed": "Preokrećeno sedam štapića kaže da je to stalno u odbrambeni u odbrani, sprečava vas da vidite mogućnosti.",
+          "keywords": [
+            "odbrana",
+            "granica",
+            "ugnjetavanje",
+            "prilika",
+            "ravnoteža"
+          ],
+          "context": "Postavite granice, ali ne postaju slepi; Potražite prozore mogućnosti."
+        },
+        "position9": {
+          "upright": "Sedam štapića zajedno štiti i vodi odnos pogranične odbrane.",
+          "reversed": "Preokrećeno sedam štapića prisiljava beskrajnu odbranu i tvrdoglavost.",
+          "keywords": [
+            "granica",
+            "odbrana",
+            "jedinstvo",
+            "tvrdoglavost",
+            "fleksibilnost"
+          ],
+          "context": "Poslednji: mekan granica + zajednički front."
+        }
+      },
+      "eightofwands": {
+        "position1": {
+          "upright": "Osam štapića ukazuje na neusklađenost u brzini komunikacije i prioriteta. Dok neko zahteva brzi odgovor, drugi može polako protopiti.",
+          "reversed": "Otkriveni osam štapića ukazuje na to da je poruka koja je zbunjena i odlaganje poruka povećala nesporazume.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "prioritet",
+            "sinhronost",
+            "kašnjenje"
+          ],
+          "context": "Operativni koren kontradikcije: Tempo komunikacije."
+        },
+        "position2": {
+          "upright": "Osam štapića kaže da je problem u komunikacijskoj brzini i prevrtanja kanala. Poruke lete, što znači da pada. \\ N \\ n \\ nhint: Mnogi kanali, manje jasnoće. Problem je nemogućnost reda i nedostatka sinhronizacije.",
+          "reversed": "Otkriveni osam štapića ukazuje da kašnjenja i zbrka uvećavaju nesporazum. Brzina je sve ili ništa. \\ N \\ nsimptom: Čekanje razgovora, sukobljene poruke. Problem je nedostatak dizajna protoka.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "sinhronost",
+            "narediti",
+            "protok"
+          ],
+          "context": "Problem sa korenom: protok komunikacije. Područja pogođena: Red u redu, menadžment očekivanja."
+        },
+        "position3": {
+          "upright": "Osam štapića kaže da ne upravlja brzinom poruke i brojem kanala, ali povećava njegov udeo. Mnogo poruka, malo značenja.",
+          "reversed": "Otkriveno osam štapića objašnjava da normalizuje odlaganje / konfuziju i povećava temperaturu. Podesite protok.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "sinhronost",
+            "narediti",
+            "protok"
+          ],
+          "context": "Share: Communication Flov Chaos. Efekat: nerazumevanje. Preporuka: Jednokratni red kanala."
+        },
+        "position4": {
+          "upright": "Osam štapića vam govori da možete pogrešiti brzinu / poruku gužvu za \"akciju\" i ignorišite svoj udeo. Mnogo poruka, malo značenja.",
+          "reversed": "Otkriveno osam štapića naglašava tendenciju da održi negiranje koristeći kašnjenje kao izgovor.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "sinhronost",
+            "narediti",
+            "protok"
+          ],
+          "context": "Zanemareno: Dizajn protoka. Efekat: Povećava se nerazumevanje. DO: Pojedinačni kanal + red."
+        },
+        "position5": {
+          "upright": "Osam štapića ukazuje na periode brze komunikacije i brze odluke. Protok poruka je bio intenzivan.",
+          "reversed": "Okolište Osam štapića ukazuje da su komplikovani kanali i odlaganja dovode do nesporazuma.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "protok",
+            "narediti",
+            "sinhronost"
+          ],
+          "context": "Brzo protok; Mali red. Konfuzija je napustila svoju marku. Sada nam je potreban jedan kanal i jasan red."
+        },
+        "position6": {
+          "upright": "Osam štapića hvali brzo komunikaciju; Ali utapanje partnera poplavom poruka i nametanje odluka je eksploatacija.",
+          "reversed": "Osvećeno osam štapića ukazuje na rizik od uzimanja dnevnog reda taoca svesnim odlaganjem i odlaganjem.",
+          "keywords": [
+            "brzina",
+            "komunikacija",
+            "kašnjenje",
+            "nametanje",
+            "protok"
+          ],
+          "context": "Tema: Dizajn protoka; Rizik: Pritisak poruke; Napravite: Jedan kanal i red."
+        },
+        "position7": {
+          "upright": "Osam štapića ukazuje na brzu baražu poruka / DMS i brzo širenje vesti.",
+          "reversed": "Okolište Osam štapića ukazuje na spoljne kanale koji imaju taoca dnevnog reda kroz namerno odlaganje ili poplavu poruka.",
+          "keywords": [
+            "poručiti",
+            "brzina",
+            "širenje",
+            "kašnjenje",
+            "dnevni red"
+          ],
+          "context": "Izaberite jedan kanal, postavite pravilo brzine. Ograničite obaveštenja."
+        },
+        "position8": {
+          "upright": "Osam štapića ukazuje na brzo tekući posao / plaćanje / ponudu saobraćaja. Brzina je dobitak ako se upravlja pravilno.",
+          "reversed": "Otkriven osam štapića upozorava na rizik od iscrpljenog odobrenja, neispravnog prenosa i zbrke u komunikaciji.",
+          "keywords": [
+            "brzina",
+            "saobraćaj",
+            "odobrenje",
+            "prenos",
+            "složenost"
+          ],
+          "context": "Osigurajte svoju brzinu sa jednim kanalom i kontrolnom listom."
+        },
+        "position9": {
+          "upright": "Osam štapića održava živu vezu sa brzom, otvorenom komunikacijom i protokom.",
+          "reversed": "Pretvoreno osam štapića, komunikacijski haos i odlaganje oštećenja obveznice.",
+          "keywords": [
+            "brzina",
+            "protok",
+            "komunikacija",
+            "kašnjenje",
+            "oštrina"
+          ],
+          "context": "Da biste poslednji put: pojedinačni kanal + ritam odgovora."
+        }
+      },
+      "nineofwands": {
+        "position1": {
+          "upright": "Devet štapića kaže da umor i budnost stvaraju preterano reagovanje na najmanji signal.",
+          "reversed": "Reversed devet ljudskih štapića pokazuje da gledajući poklon kroz prošle rane slabi poverenje.",
+          "keywords": [
+            "umor",
+            "biti na straži",
+            "zaštita",
+            "tolerancija",
+            "prošlost"
+          ],
+          "context": "Operativni koren kontradikcije: umorna odbrambena država."
+        },
+        "position2": {
+          "upright": "Devet štapića kaže da problem leži u umoru i budnosti. Mala iskra pretvara se u požar. \\ N \\ nHint: Previše dužnosti, malo odmora. Problem gura izdržljivost na pogrešnom mestu.",
+          "reversed": "Invertirani devet štapića opisuje nošenje prošlih rana u sadašnje i podizanje odbrambenih zidova. Tolerancija se smanjuje. \\ N \\ nsimptom: Brzo eksplozija, zaljepčavanje vrata. Problem pokušava da se pomiri sa nezarazljenim ožiljcima.",
+          "keywords": [
+            "izdržljivost",
+            "umor",
+            "biti na straži",
+            "prekršiti",
+            "zaštita"
+          ],
+          "context": "Problem sa korenom: prag energije i tolerancije. Područja koja utiče: prag sukoba, prekida kulture."
+        },
+        "position3": {
+          "upright": "Devet štapića kaže da kada ste umorni, ostanite budni i povećajte svoj ulog preterano reagovajući na male signale. Nema rata bez odmora.",
+          "reversed": "Invertirani devet štapića objašnjava da staru ranu dovedete u sadašnjost i pravite vatru veću. Osvežite prag tolerancije.",
+          "keywords": [
+            "izdržljivost",
+            "umor",
+            "biti na straži",
+            "prekršiti",
+            "zaštita"
+          ],
+          "context": "Share: Umorna odbrana. Efekat: Prag sukoba. Predlog: Pravilo odmora."
+        },
+        "position4": {
+          "upright": "Devet štapića sugeriše da se umorna budnost može smatrati \"neophodnim\" i ignorisati svoj udeo. Poricanje odmora je poricanje.",
+          "reversed": "Reversed devet štapića ukazuje na tendenciju da negira ulogu stare rane u sadašnjost.",
+          "keywords": [
+            "umor",
+            "biti na straži",
+            "prekršiti",
+            "izdržljivost",
+            "prag"
+          ],
+          "context": "Zanemareno: Pravilo za vremensko ograničenje. Efekat: Prag eksplozije smanjen je. DO: Ponovite povratak."
+        },
+        "position5": {
+          "upright": "Devet štapića vam govori da ne odustanete čak i ako ste umorni. Izdržljivost je sačuvala vašu vezu.",
+          "reversed": "Pretvoreni devet štapića govore nam da vas život na straži istroši. Stare rane su možda prenele na sadašnjost.",
+          "keywords": [
+            "izdržljivost",
+            "umor",
+            "okidač"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,996 @@
+{
+  "tarotCards": {
+    "cups": {
+      "queen": {
+        "meaning": {
+          "reversed": "Internal feelings, self-care",
+          "upright": "Compassionate, emotionally determined"
+        },
+        "name": "Queen of Glasses"
+      }
+    },
+    "majorArcana": {
+      "0": {
+        "keywords": {
+          "0": "new beginnings",
+          "1": "Innocence"
+        },
+        "meaning": {
+          "reversed": "Carelessness, abuse",
+          "upright": "New beginnings, innocence, spontaneousness"
+        },
+        "name": "Crazy."
+      },
+      "1": {
+        "keywords": {
+          "0": "The epiphany.",
+          "1": "power"
+        },
+        "meaning": {
+          "reversed": "Manipulation, bad planning.",
+          "upright": "♪ Cheer, skill, power ♪"
+        },
+        "name": "Wizard"
+      },
+      "2": {
+        "keywords": {
+          "0": "intuition",
+          "1": "mystery"
+        },
+        "meaning": {
+          "reversed": "Secrets, intuitiveness.",
+          "upright": "Intuition, holy knowledge, divine femininity"
+        },
+        "name": "High Priestess"
+      },
+      "3": {
+        "keywords": {
+          "0": "femininity",
+          "1": "Beauty"
+        },
+        "meaning": {
+          "reversed": "Creative block, addiction",
+          "upright": "Feminineity, beauty, nature"
+        },
+        "name": "Empress"
+      },
+      "4": {
+        "keywords": {
+          "0": "authority",
+          "1": "structure"
+        },
+        "meaning": {
+          "reversed": "Tahakkum, overcontrol",
+          "upright": "Authority, institutionalism, structure"
+        },
+        "name": "Emperor"
+      },
+      "5": {
+        "keywords": {
+          "0": "tradition",
+          "1": "compatibility"
+        },
+        "meaning": {
+          "reversed": "Personal beliefs, freedom",
+          "upright": "Spiritual wisdom, religious beliefs"
+        },
+        "name": "Aziz"
+      },
+      "6": {
+        "keywords": {
+          "0": "love",
+          "1": "compatibility"
+        },
+        "meaning": {
+          "reversed": "Self-love, incompatibility",
+          "upright": "Love, harmony, relationships"
+        },
+        "name": "Lovers"
+      },
+      "7": {
+        "keywords": {
+          "0": "control",
+          "1": "will"
+        },
+        "meaning": {
+          "reversed": "Self-discipline, opposition",
+          "upright": "Control, willpower, success"
+        },
+        "name": "Chariot"
+      },
+      "8": {
+        "keywords": {
+          "0": "power",
+          "1": "Courage"
+        },
+        "meaning": {
+          "reversed": "Self-doubt, lack of trust",
+          "upright": "Power, courage, persuasion"
+        },
+        "name": "Power"
+      },
+      "9": {
+        "keywords": {
+          "0": "internal observation",
+          "1": "search"
+        },
+        "meaning": {
+          "reversed": "Isolation, loneliness",
+          "upright": "The search for the soul, the inner observation"
+        },
+        "name": "She's a hermit."
+      },
+      "10": {
+        "keywords": {
+          "0": "Luck",
+          "1": "Karma"
+        },
+        "meaning": {
+          "reversed": "Bad luck, lack of control.",
+          "upright": "Good luck, karma, life cycles."
+        },
+        "name": "Wheel of Destiny"
+      },
+      "11": {
+        "keywords": {
+          "0": "justice",
+          "1": "justice"
+        },
+        "meaning": {
+          "reversed": "It's not fair, I can't answer",
+          "upright": "Justice, justice, truth"
+        },
+        "name": "Justice"
+      },
+      "12": {
+        "keywords": {
+          "0": "Surrender",
+          "1": "sacrifice"
+        },
+        "meaning": {
+          "reversed": "Delays, resistance, distraction",
+          "upright": "Don't give up, don't give up, don't give up"
+        },
+        "name": "The Hanged Man"
+      },
+      "13": {
+        "keywords": {
+          "0": "transformation",
+          "1": "endings"
+        },
+        "meaning": {
+          "reversed": "Resistance to change, internal cleansing.",
+          "upright": "Ends, transformation, transition"
+        },
+        "name": "Death"
+      },
+      "14": {
+        "keywords": {
+          "0": "balance",
+          "1": "measurance"
+        },
+        "meaning": {
+          "reversed": "Insaneness, extremism, self-medication",
+          "upright": "Balance, measurement, patience"
+        },
+        "name": "Moderation"
+      },
+      "15": {
+        "keywords": {
+          "0": "addiction",
+          "1": "materialism"
+        },
+        "meaning": {
+          "reversed": "Don't let go, don't let go, don't let go",
+          "upright": "Addictation, passion, materialism"
+        },
+        "name": "Satan"
+      },
+      "16": {
+        "keywords": {
+          "0": "sudden change",
+          "1": "confusion"
+        },
+        "meaning": {
+          "reversed": "The fear of personal transformation, of change",
+          "upright": "Sudden change, confusion, chaos"
+        },
+        "name": "Tower"
+      },
+      "17": {
+        "keywords": {
+          "0": "hope",
+          "1": "faith"
+        },
+        "meaning": {
+          "reversed": "Lack of faith, despair, disconnection",
+          "upright": "Hope, faith, purpose, renewal"
+        },
+        "name": "Star"
+      },
+      "18": {
+        "keywords": {
+          "0": "illusion",
+          "1": "fear"
+        },
+        "meaning": {
+          "reversed": "The release of fear, the repressed emotion",
+          "upright": "Illusion, fear, anxiety, subconscious"
+        },
+        "name": "Month"
+      },
+      "19": {
+        "keywords": {
+          "0": "positivity",
+          "1": "entertainment"
+        },
+        "meaning": {
+          "reversed": "Drink up, kid, you're depressed.",
+          "upright": "Positiveity, fun, temperature, success"
+        },
+        "name": "Sun"
+      },
+      "20": {
+        "keywords": {
+          "0": "judgment",
+          "1": "Rebirth"
+        },
+        "meaning": {
+          "reversed": "Self-doubt, internal critic",
+          "upright": "♪ Judgement, rebirth, inner call ♪"
+        },
+        "name": "Court"
+      },
+      "21": {
+        "keywords": {
+          "0": "completion",
+          "1": "integration"
+        },
+        "meaning": {
+          "reversed": "Personal closure search, shortcut",
+          "upright": "Completion, integration, success"
+        },
+        "name": "Earth"
+      }
+    },
+    "pentacles": {
+      "1": {
+        "keywords": {
+          "0": "opportunity",
+          "1": "The epiphany."
+        },
+        "meaning": {
+          "reversed": "Abducted opportunity, lack of planning",
+          "upright": "New opportunity, epiphany"
+        },
+        "name": "Ace of Gold"
+      },
+      "2": {
+        "keywords": {
+          "0": "priorities",
+          "1": "compatibility"
+        },
+        "meaning": {
+          "reversed": "Excessive commitment, disorder",
+          "upright": "Multiple priorities, harmony"
+        },
+        "name": "The Two of Gold"
+      },
+      "3": {
+        "keywords": {
+          "0": "co-operation",
+          "1": "learning"
+        },
+        "meaning": {
+          "reversed": "Incompatibility, working alone",
+          "upright": "Co-operation, learning"
+        },
+        "name": "The Three of Gold"
+      },
+      "4": {
+        "keywords": {
+          "0": "Don't save",
+          "1": "security"
+        },
+        "meaning": {
+          "reversed": "Overexpension, generosity",
+          "upright": "Saving money, security"
+        },
+        "name": "The Four of Gold"
+      },
+      "5": {
+        "keywords": {
+          "0": "missing",
+          "1": "Isolation"
+        },
+        "meaning": {
+          "reversed": "Absolving loss, spiritual poverty",
+          "upright": "Financial loss, isolation"
+        },
+        "name": "The Five of Gold"
+      },
+      "6": {
+        "keywords": {
+          "0": "don't give",
+          "1": "share"
+        },
+        "meaning": {
+          "reversed": "Self-care, unpaid debts",
+          "upright": "Don't give, share wealth"
+        },
+        "name": "Six of Gold"
+      },
+      "7": {
+        "keywords": {
+          "0": "Persistence",
+          "1": "investment"
+        },
+        "meaning": {
+          "reversed": "Long-term lack of vision, impatientness",
+          "upright": "Persistence, investment"
+        },
+        "name": "The Seven of Gold"
+      },
+      "8": {
+        "keywords": {
+          "0": "mastery",
+          "1": "skill"
+        },
+        "meaning": {
+          "reversed": "Perfectionism, lack of commitment",
+          "upright": "A mastery, skill development"
+        },
+        "name": "The Eight of Gold"
+      },
+      "9": {
+        "keywords": {
+          "0": "abundance",
+          "1": "independence"
+        },
+        "meaning": {
+          "reversed": "Self-value, over-investment",
+          "upright": "Wealth, financial independence"
+        },
+        "name": "The Nine of Gold"
+      },
+      "10": {
+        "keywords": {
+          "0": "wealth",
+          "1": "family"
+        },
+        "meaning": {
+          "reversed": "Financial failure, the dark side of wealth",
+          "upright": "Wealth, family, long-term success"
+        },
+        "name": "Ten of Gold"
+      },
+      "king": {
+        "keywords": {
+          "0": "success",
+          "1": "work"
+        },
+        "meaning": {
+          "reversed": "Financial advice to live above your power",
+          "upright": "Financial success, business intelligence"
+        },
+        "name": "King of Gold"
+      },
+      "knight": {
+        "keywords": {
+          "0": "work",
+          "1": "routine"
+        },
+        "meaning": {
+          "reversed": "Self-discipline, feeling stuck",
+          "upright": "Hard work, routine"
+        },
+        "name": "Knight of the Gold"
+      },
+      "page": {
+        "keywords": {
+          "0": "The epiphany.",
+          "1": "opportunity"
+        },
+        "meaning": {
+          "reversed": "Lack of progress, delay",
+          "upright": "Cheer, financial opportunity"
+        },
+        "name": "Prince of Gold"
+      },
+      "queen": {
+        "keywords": {
+          "0": "nourishing",
+          "1": "practice"
+        },
+        "meaning": {
+          "reversed": "Financial independence, business-house conflict",
+          "upright": "Feeding, practical"
+        },
+        "name": "Queen of Gold"
+      }
+    },
+    "swords": {
+      "1": {
+        "keywords": {
+          "0": "clarity",
+          "1": "Progress"
+        },
+        "meaning": {
+          "reversed": "Confusion, chaos",
+          "upright": "The leap, the clarity"
+        },
+        "name": "Ace of Swords"
+      },
+      "2": {
+        "keywords": {
+          "0": "decisions",
+          "1": "no way"
+        },
+        "meaning": {
+          "reversed": "Indecision, confusion",
+          "upright": "Tough decisions don't come out"
+        },
+        "name": "Two of Swords"
+      },
+      "3": {
+        "keywords": {
+          "0": "Heartbreak",
+          "1": "grief"
+        },
+        "meaning": {
+          "reversed": "Don't release pain, optimism",
+          "upright": "Heartbreak, grief"
+        },
+        "name": "The Three of Swords"
+      },
+      "4": {
+        "keywords": {
+          "0": "rest",
+          "1": "meditation"
+        },
+        "meaning": {
+          "reversed": "Wastedness, burning",
+          "upright": "Rest, meditation"
+        },
+        "name": "The Four of Swords"
+      },
+      "5": {
+        "keywords": {
+          "0": "conflict",
+          "1": "defeat"
+        },
+        "meaning": {
+          "reversed": "Compromise, past resentment",
+          "upright": "Fighting, defeat"
+        },
+        "name": "The Five of Swords"
+      },
+      "6": {
+        "keywords": {
+          "0": "transition",
+          "1": "change"
+        },
+        "meaning": {
+          "reversed": "Personal transition, resistance",
+          "upright": "Passage, change"
+        },
+        "name": "The Six of Swords"
+      },
+      "7": {
+        "keywords": {
+          "0": "Betrayal",
+          "1": "Don't cheat."
+        },
+        "meaning": {
+          "reversed": "Fraud syndrome, secrets",
+          "upright": "Betrayal, deception"
+        },
+        "name": "The Seven of Swords"
+      },
+      "8": {
+        "keywords": {
+          "0": "limit",
+          "1": "prison"
+        },
+        "meaning": {
+          "reversed": "Self-restricting beliefs, internal critics",
+          "upright": "Restriction, imprisonment"
+        },
+        "name": "The Eight of Swords"
+      },
+      "9": {
+        "keywords": {
+          "0": "Concern",
+          "1": "fear"
+        },
+        "meaning": {
+          "reversed": "Inner chaos, freeing anxiety",
+          "upright": "Worry, fear"
+        },
+        "name": "The Nine of Swords"
+      },
+      "10": {
+        "keywords": {
+          "0": "endings",
+          "1": "Betrayal"
+        },
+        "meaning": {
+          "reversed": "Recovery, resisting the end",
+          "upright": "Painful endings, betrayal"
+        },
+        "name": "The Ten of Swords"
+      },
+      "king": {
+        "keywords": {
+          "0": "clarity",
+          "1": "authority"
+        },
+        "meaning": {
+          "reversed": "Silent power, abuse of power",
+          "upright": "Mental clarity, authority"
+        },
+        "name": "King of Swords"
+      },
+      "knight": {
+        "keywords": {
+          "0": "ambition",
+          "1": "action"
+        },
+        "meaning": {
+          "reversed": "Unsettled, impulsive",
+          "upright": "Ambitious, action-oriented"
+        },
+        "name": "Knight of the Swords"
+      },
+      "page": {
+        "keywords": {
+          "0": "ideas",
+          "1": "curiosity"
+        },
+        "meaning": {
+          "reversed": "No self-expression, no action.",
+          "upright": "New ideas, curiosity"
+        },
+        "name": "Prince of Swords"
+      },
+      "queen": {
+        "keywords": {
+          "0": "independence",
+          "1": "borders"
+        },
+        "meaning": {
+          "reversed": "Too emotional, too cold-hearted",
+          "upright": "Independent, clear boundaries"
+        },
+        "name": "Queen of Swords"
+      }
+    },
+    "wands": {
+      "1": {
+        "keywords": {
+          "0": "Inspired",
+          "1": "power"
+        },
+        "meaning": {
+          "reversed": "Lack of energy, boredom",
+          "upright": "Inspiration, new opportunities"
+        },
+        "name": "Ace of Wands"
+      },
+      "2": {
+        "keywords": {
+          "0": "planning",
+          "1": "decisions"
+        },
+        "meaning": {
+          "reversed": "Personal goals, fear of the unknown",
+          "upright": "Future planning, decisions"
+        },
+        "name": "Two of the Wands"
+      },
+      "3": {
+        "keywords": {
+          "0": "Enlargement",
+          "1": "predict"
+        },
+        "meaning": {
+          "reversed": "Don't play small, don't be late",
+          "upright": "Enlargement, vision"
+        },
+        "name": "The Three of Wands"
+      },
+      "4": {
+        "keywords": {
+          "0": "celebration",
+          "1": "compatibility"
+        },
+        "meaning": {
+          "reversed": "Personal celebration, conflict",
+          "upright": "Celebration, harmony"
+        },
+        "name": "The Four of Wands"
+      },
+      "5": {
+        "keywords": {
+          "0": "conflict",
+          "1": "competition"
+        },
+        "meaning": {
+          "reversed": "Internal conflict, avoidance",
+          "upright": "The conflict, the competition."
+        },
+        "name": "The Five of Wands"
+      },
+      "6": {
+        "keywords": {
+          "0": "success",
+          "1": "recognition"
+        },
+        "meaning": {
+          "reversed": "Special achievement, not falling from grace.",
+          "upright": "Success, recognition"
+        },
+        "name": "The Six of Wands"
+      },
+      "7": {
+        "keywords": {
+          "0": "challenge",
+          "1": "Persistence"
+        },
+        "meaning": {
+          "reversed": "Endure, do not give up",
+          "upright": "Challenge, perseverance"
+        },
+        "name": "The Seven of Wands"
+      },
+      "8": {
+        "keywords": {
+          "0": "speed",
+          "1": "Progress"
+        },
+        "meaning": {
+          "reversed": "The delays, the disappointment.",
+          "upright": "Speed, progress"
+        },
+        "name": "The Eight of Wands"
+      },
+      "9": {
+        "keywords": {
+          "0": "endurance",
+          "1": "Courage"
+        },
+        "meaning": {
+          "reversed": "Internal resources, struggle",
+          "upright": "Toughness, courage"
+        },
+        "name": "The Nine of Wands"
+      },
+      "10": {
+        "keywords": {
+          "0": "load",
+          "1": "responsibilities"
+        },
+        "meaning": {
+          "reversed": "Don't do it all, it's a time of authority.",
+          "upright": "The burden, the responsibility."
+        },
+        "name": "Ten of Wands"
+      },
+      "king": {
+        "keywords": {
+          "0": "leadership",
+          "1": "Vision"
+        },
+        "meaning": {
+          "reversed": "Intimidation, ruthless.",
+          "upright": "Leadership, vision"
+        },
+        "name": "King of the Wands"
+      },
+      "knight": {
+        "keywords": {
+          "0": "energy",
+          "1": "passion"
+        },
+        "meaning": {
+          "reversed": "Quick, messy energy.",
+          "upright": "Energy, passion, adventure"
+        },
+        "name": "Knight of the Wands"
+      },
+      "page": {
+        "keywords": {
+          "0": "Inspired",
+          "1": "discovery"
+        },
+        "meaning": {
+          "reversed": "Lack of direction, delay",
+          "upright": "Inspiration, discovery"
+        },
+        "name": "Prince of Wands"
+      },
+      "queen": {
+        "keywords": {
+          "0": "Courage",
+          "1": "independence"
+        },
+        "meaning": {
+          "reversed": "Self-respect, introverted",
+          "upright": "Courage, independence"
+        },
+        "name": "Queen of Wands"
+      }
+    }
+  },
+  "tarotPage": {
+    "careerSpread": {
+      "summary": "General Evaluation",
+      "summaryText": "With the tender guidance of the cards, see opportunities in career travel, soften obstacles and take clear steps."
+    },
+    "problemSolvingSpread": {
+      "summary": "General Evaluation",
+      "summaryText": "With the tender guidance of the cards, analyze the problem with calm and explore practical solutions."
+    },
+    "situationAnalysisSpread": {
+      "summary": "General Evaluation",
+      "summaryText": "With the tender guidance of the cards, see the present situation, hear the inner voice, and plan your next step with confidence."
+    }
+  },
+  "tarotSpreadSelector": {
+    "morePositions": "The position is more...",
+    "scrollHint": "Look more open by scrolling.",
+    "showLess": "Show less",
+    "spreadMeaning": "The Meaning of this Statement",
+    "spreadPositions": "Opening Positions:"
+  },
+  "technical": {
+    "paths": {
+      "adminUserModals": "./AdminUserModals",
+      "auditLogViewer": "./AuditLogViewer",
+      "autoReporting": "./Auto Reporting",
+      "baseInterpretation": "./BaseInterpritation",
+      "cardDetails": "./CardDetails",
+      "careerTarot": "♪/features/ tarot/components/ Career-Spread/CareerTarot",
+      "creditManagementModal": "./CreditManagementModal",
+      "emailTemplateModals": "./Email",
+      "footer": "./Footey",
+      "loveTarot": "@/features/tarot/components/Love-Spread/LoveTarot",
+      "marriageTarot": "♪/features/ tarot/components/Marriage/MarriageTarot",
+      "messagesPath": "../../messages/ ${locale}.json",
+      "moneyTarot": "♪/features/ tarot/components/ Money-Spread/MoneyTarot",
+      "newLoverTarot": "♪/features/ tarot/components/ New-Lover/New LoverTarot",
+      "paymentHistory": "./PaymentHistory",
+      "pdfExport": "./PDFExport",
+      "problemSolvingTarot": "@/features/tarot/components/Problem-Solving/ProblemSolvingTarot",
+      "readingDetailModal": "./Reading DetailsModal",
+      "readingHistory": "./ReadingHistory",
+      "readingStatusUtils": "♪/utils/reading-status-utils",
+      "spreadEditor": "./SpreadEditor",
+      "transactionHistory": "./TransactionHistory",
+      "useReadingCards": "♪/hooks/useReadingCards",
+      "useReadingQuestions": "♪/hooks/useReadingQuations",
+      "userDetailModal": "./UserDetailModal"
+    },
+    "symbols": {
+      "asterisk": "*",
+      "at": "@",
+      "colon": ":",
+      "comma": ",",
+      "dot": ".",
+      "letterA": "a",
+      "letterT": "T",
+      "newline": "\\n",
+      "slash": "/",
+      "underscore": "_"
+    },
+    "templates": {
+      "cardKey": "${cardKey}",
+      "configTranslationNamespace": "${config.translation}",
+      "namespace": "${namespace}"
+    },
+    "urls": {
+      "authError": "/$_PH_0__/auth?or=$_PH_1____",
+      "dashboard": "/$_PH_0__/dashboard",
+      "forwardedHostFullPath": "https://$_PH_0_$_PH_1___",
+      "originFullPath": "$__PH_0_${fullPath}_"
+    }
+  },
+  "toast": {
+    "cardSelectionReady": "You may proceed with the card selection.",
+    "readingSaveError": "An error occurred while saving reading.",
+    "readingSaveErrorLog": "Error saving reading:",
+    "simpleReadingComplete": "Simple reading complete!"
+  },
+  "validation": {
+    "between": "{min}_{max}",
+    "confirmPassword": "Passwords don't match.",
+    "date": "Enter a valid date",
+    "email": "Enter a valid email address",
+    "integer": "Enter an integer",
+    "max": "The maximum must be {max}",
+    "maxLength": "Maximum {max}character",
+    "min": "At least {min}",
+    "minLength": "Must be at least {min}character",
+    "negative": "Enter negative number",
+    "number": "Enter a valid number",
+    "password": {
+      "noLowercase": "We need at least one small letter.",
+      "noNumber": "We need at least a number.",
+      "noSpecialChar": "We need at least one special character.",
+      "noUppercase": "We need at least one capital letter.",
+      "rules": "The password must contain at least 8 characters, capital letters, lower letters and figures",
+      "strength": {
+        "medium": "Medium",
+        "strong": "Strong",
+        "veryStrong": "Very Strong",
+        "weak": "Weak"
+      },
+      "tooShort": "The password is too short."
+    },
+    "pattern": "Invalid format",
+    "phone": "Enter a valid phone number",
+    "phoneRequired": "WhatsApp needs a phone number",
+    "positive": "Enter positive number",
+    "realTime": {
+      "checking": "Checking...",
+      "invalid": "Invalid",
+      "valid": "Current"
+    },
+    "required": "This area is mandatory.",
+    "url": "Enter a valid URL"
+  },
+  "profile2": {
+    "noName": "Name Unspecified"
+  },
+  "profile": {
+    "personalInfo": "Personal Information",
+    "firstName": "Name",
+    "title": "Profile Information",
+    "lastName": "Last name",
+    "lastNamePlaceholder": "Enter your last name",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Enter your full name",
+    "birthDate": "Date of Birth"
+  },
+  "blog": {
+    "title": "Tarot Card Guide",
+    "subtitle": "Explore the deeper meanings of each card",
+    "description": "Travel in the mysterious world of tarot cards, comments on the flat and inverse meanings of each card, love, career, money, and spiritual guidance.",
+    "cards": {
+      "the-fool": {
+        "name": "Crazy ▪ Passenger of Infinity Possibilities",
+        "short_description": "Crazy is the card of new beginnings, pure potential, and stepping into the unknown.",
+        "meanings": {
+          "upright": {
+            "general": "Crazy represents the beginning of the journey of life, notice your potential, your curiosity, your courage, new experiences, new learning opportunities.",
+            "love": "In love, crazy represents fresh beginnings and spontaneous emotions, a new relationship or a resuscitation in a current relationship.",
+            "career": "On the way to career, you have the courage to start creative projects and get out of your comfort zone, take risks and try new ways.",
+            "money": "In financial matters, it's important to intuitively assess opportunities, and small risks can lead to great gains, so don't forget to be careful.",
+            "spiritual": "Spiritually, Mad is the card of inner discovery and awareness, trust in your intuition, and consider every experience an opportunity to learn."
+          },
+          "reversed": {
+            "general": "Reverse Crazy is a warning of recklessness and planlessness, and rash decisions can block your potential, so be planned and conscious.",
+            "love": "It points to indecision in love and lack of communication, clarify your feelings, and keep intimacy at the forefront.",
+            "career": "In projects, impregnation or hasty steps can pose a risk.",
+            "money": "There's a risk of financial failures and losses.",
+            "spiritual": "You may have lost your way spiritually, return to your inner guidance and trust your intuition."
+          }
+        },
+        "context": {
+          "mythology": "The mad carries the universal passenger and the symbol of zero. In mythology, travel and transformation begins with the hero's step into the unknown. Hermes and Trickster's energy represents the freedom and curiosity of Madman.",
+          "celtic_cross": {
+            "future": "In the future, you will be open to new experiences and surprises that will offer unexpected ways of learning and growing opportunities.",
+            "hidden_influences": "Secret influences, pureness and courage, shape things and people around you, and guidances that you don't realize are in effect."
+          }
+        },
+        "story": {
+          "title": "The Inner Journey of the Mad",
+          "description": "The madman stops at the beginning of the path of life; he has nothing but trust and curiosity; his inner guidance is gradually guided; every experience gives courage, learning, and growth.",
+          "historytitle": "Historical Origin: Zero and Beginning",
+          "history_message": "The madman is placed in the Tarot sequence with number 0, representing the zero potential, space and beginning, depicting the madness as a symbol of travel and learning in the Middle Ages and Renaissance cards.",
+          "mystic_title": "Spiritual Message - Take a Fearless Step",
+          "mystic_message": "The madman invites you to open your heart and your mind, every step is an intention, every experience is a learning, go without fear, the unknown will make you mature.",
+          "cultural_title": "Modern Comment: Healer Inside",
+          "cultural_message": "In modern times, it represents the crazy, inner healer, the brave entrepreneur, and the person who dances with the surprises of life.",
+          "lesson": "It teaches you to explore your potential with madness and courage and curiosity, and the journey is more learning and progress than the destination."
+        },
+        "keywords": {
+          "keywords_title": "Crazy Card Keywords",
+          "keywords_message": "Insane tarot meaning, the fool tarot, the tarot, new beginning, tarot courage, tarot potential, tarot journey",
+          "positive_title": "Powers of Light",
+          "positive_message": "New beginnings, pure potential, courage, curiosity, learning and internal discovery.",
+          "balance_title": "Balance and Warning",
+          "balance_message": "Avoid carelessness, act with intuition and awareness instead of hasty steps.",
+          "soul_title": "Spiritual Message",
+          "soul_message": "Each step is an opportunity to learn, listen to the guidance within, and take a safe step into the unknown."
+        },
+        "associations": {
+          "title": "Cosmic Connections to the Mad Card",
+          "astrology": "Uranus (Change, Innovation, Freedom)",
+          "numerology": "0 (Start, Potential, Zero Point)",
+          "element": "Air (Mind, Intelligence, Exploration)",
+          "chakra": "Crown (Tacchara) ▪ Inspiration and Universal Knowledge"
+        },
+        "card_combinations": {
+          "title": "Combinations With Crazy",
+          "combinations": {
+            "0": {
+              "card": "Wizard (The Magician)",
+              "meaning": "When combined with the gift of the pure potential Wizard, ideas are quickly applied."
+            },
+            "1": {
+              "card": "Mother Superior (The High Priestess)",
+              "meaning": "Intuition and internal guidance make the journey of the madman safe and meaningful."
+            },
+            "2": {
+              "card": "Sun (The Sun)",
+              "meaning": "New beginnings can turn into happiness and success; positive developments can occur."
+            }
+          }
+        },
+        "affirmations": {
+          "title": "Demention Card Approved",
+          "affirmation_list": {
+            "0": "My heart and mind are clear, I'm stepping into the unknown.",
+            "1": "Every experience is an opportunity for me to grow up.",
+            "2": "I'm progressing under the guidance of the healer in me."
+          }
+        },
+        "cta": {
+          "main": "Expose your courage and take the first step!",
+          "micro": "Take a small step today: an idea, an initiative or a new experience."
+        },
+        "faq": {
+          "0": {
+            "question": "What does the mad card represent?",
+            "answer": "It represents new beginnings, pure potential, courage, and my name to the unknown, and it's time to rely on inner guidance."
+          },
+          "1": {
+            "question": "Why does the crazy card matter?",
+            "answer": "This card reminds you of the beginning of the journey, of growing up through learning and experience, and trust your potential and step forward."
+          },
+          "2": {
+            "question": "What does Reverse-Crazy show?",
+            "answer": "It stimulates inverse positions, recklessness, rash decisions, or irresponsible behavior."
+          }
+        },
+        "imageUrl": "/cards/rws/0-Fool.webp"
+      },
+      "the-magician": {
+        "name": "Magician Power and Master will, where intent is materialized",
+        "short_description": "The wizard is a symbol of the art of using willpower, skill, and resources consciously, representing his mastery of transforming intent into exposition with the four elements he has (the staff, the glass, the sword, the pentagram).",
+        "meanings": {
+          "upright": {
+            "general": "When the wizard comes steep, you're in a time when internal resources and means of the outside world come together expertly. With wills, focus and abilities, you can turn your dreams into solids. This card reminds you to recognize your creative power, to make your intentions clear and step forward. You have the energy and skill to turn ideas into actions. Now it's time to organize them.",
+            "love": "In love, the Wizard represents communication, attraction, and intentional interactions. You're entering an impressive period; you have the power to influence the other person, to shape the dynamics of the relationship with consciousness. If you're starting a new relationship, express yourself openly and decisively; creative solutions and sincere rhetoric will emerge in the existing relationship.",
+            "career": "The Wizard in terms of careers brings up skills, entrepreneurial and persuasive skills. Presentations are a good time for projects and new initiatives. Use resources effectively, activate the network, and turn your ideas into concrete plans. When technical skill meets charisma, progress speeds up.",
+            "money": "In material matters, the Wizard shows the capacity to find strategic use and creative income routes. You can use your resources in the right place, but with small but effective investments, the intention must be clear; instead of following every opportunity, be selective and planned.",
+            "spiritual": "At a spiritual level, the Wizard is associated with energy studies, intentional rituals and concreteization practice, strengthen his intentions with meditations, align energy centers and accelerate internal transformation through symbols. When you combine will with internal knowledge, your spiritual skills become practice."
+          },
+          "reversed": {
+            "general": "The Reverse Wizard points to the lack of full use of abilities, distractions or manipulative intentions. Don't let potential go to waste; lack of planning, lack of self-esteem or the tendency to manipulate others can be a problem. Reevaluate your intentions and check the ethics of your actions.",
+            "love": "In reverse positions in love indicate the risk of deception, overcontrolling behavior or insincere communication, and it takes intimacy and clarity to ensure that the desire to influence does not cause instability in the relationship.",
+            "career": "A reverse Wizard in a career can mean loss of reputation or failure projects due to show-off or superficial approaches. Start projects in a hurry; first make sure there's enough skills and support.",
+            "money": "Financially, inverse position, misinvestment decisions are threatened by false promises or inefficient use of the source. Apply a realistic plan and validation processes.",
+            "spiritual": "On a spiritual level, the reverse Wizard is related to spiritual ego or \"short search.\" Avoid displayive practices instead of real practice and discipline; seek humble learning and guidance."
+          }
+        },
+        "context": {
+          "mythology": "The wizard is closely related to the Hermes/Mercury archetype: communication, skill, deception and experience. The four tools in his hand represent four elements (the staff, the glass, the sword, the pentagram) and all the resources available in the physical world. Similar figures in mythology are seen as the tools that download divine messages to the world.",
+          "celtic_cross": {
+            "future": "If the Wizard appears in the future, you have a good chance to start something by using your abilities, and when you support your plans with intent, the means and persons will appear before you.",
+            "hidden_influences": "In the field of hidden influences, the skills you possess or the support of someone in your inner circle may affect your decisions. Don't underestimate your own power; adapt with external resources."
+          }
+        },
+        "story": {
+          "title": "The Story of the Card: Master of the Four Unsorts on the Table",
+          "description": "The wizard stands behind a table; in front of it lies a wand, a glass, a sword, and a pentagram. These objects symbolize the material in his hand and the capacity to transform the world. One hand reaches up to the sky and the other to the ground. He sets a bridge: he turns ideas into action, intent into reality.",
+          "historytitle": "Historical Origin: First Master and Symbolic Tools",
+          "history_message": "In history, the Wizard figure appears in a variety of mastery traditions, from alchemists to pundits. During the Renaissance, the Wizard painting refers to the capacity to shape man's own destiny. The tools in symbolism represent both internal and external resources: mental skill, emotional balance, mental clarity and material resources.",
+          "mystic_title": "Spiritual Meaning: The Power of Entrance",
+          "mystic_message": "Spiritually, the Wizard teaches the importance of working with the harmony of intent and self, you can transform your inner strength into concrete results with will, focus and discipline, spiritual practice, intentional work, and energy manipulation techniques form the spiritual practice of this card."
+        }
+      }
+    }
+  }
+}

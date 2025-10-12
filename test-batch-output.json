@@ -1,0 +1,20 @@
+{
+  "dashboard": {
+    "errors": {
+      "statsLoadFailed": "Unable to load statistics",
+      "creditRefreshFailed": "Unable to renew credit balance",
+      "loadError": "An error occurred while loading Dashboard components."
+    },
+    "sections": {
+      "welcome": "Welcome",
+      "statistics": "Statistics",
+      "creditPackages": "Credit Packages",
+      "profileManagement": "Profile Management",
+      "recentActivity": "Latest Actions"
+    },
+    "ariaLabel": {
+      "profileOptions": "Profile management options"
+    },
+    "creditBalanceRefreshed": "Unable to renew credit balance"
+  }
+}

@@ -1,0 +1,783 @@
+{
+  "situation-analysis": {
+    "meanings": {
+      "pageofswords": {
+        "position3": {
+          "keywords": [
+            null,
+            null,
+            null,
+            "tračevi",
+            "verifikacija"
+          ],
+          "context": "Latentni pogon za radoznalost i potrebu za higijenom informacija."
+        },
+        "position4": {
+          "upright": "U centru je radoznalost i posmatranje. Prikupljanje selektivnih podataka ubrzava napredak.",
+          "reversed": "U centru postoji rizik od ugroženih presuda ili tračeva. Provera izvora je potrebna.",
+          "keywords": [
+            "radoznalost",
+            "posmatranje",
+            "učenje",
+            "komunikacija",
+            "verifikacija"
+          ],
+          "context": "Centar: ivica otkrića."
+        },
+        "position5": {
+          "upright": "Princ mačeva ukazuje na visoku radoznalost napolju, povećana potražnja za pitanja i odgovore i znanja.",
+          "reversed": "Reverse princ mačeva kaže da se tračevi, dezinformacije i ishitrene presude proširile u inostranstvo.",
+          "keywords": [
+            "radoznalost",
+            "informacije",
+            "pitanje",
+            "tračevi",
+            "verifikacija"
+          ],
+          "context": "Informacije higijena pruža konkurentsku prednost."
+        },
+        "position6": {
+          "upright": "Savet: Istraživanje, postavljajte pitanja, prikupljajte podatke; ubrzati učenje.",
+          "reversed": "Preporuka: Proverite izvor; Držite se dalje od tračeva.",
+          "keywords": [
+            "istraživanje",
+            "pitanje",
+            "podaci",
+            "verifikacija",
+            "učenje"
+          ],
+          "context": "Savet: Radioznalost discipline."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: Pokreće se radoznalost; Vesti, ideje ili mogućnosti učenja ubrzavaju napredak.",
+          "reversed": "Moguća budućnost: tračevi i užurbani presudi mogu dovesti do greške; Verifikacija postaje kritična.",
+          "keywords": [
+            "radoznalost",
+            "vesti",
+            "učenje",
+            "verifikacija",
+            "komunikacija"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "knightofswords": {
+        "position1": {
+          "upright": "Vitez mačeva simbolizuje brze odluke, podebljane poteze ili nagle promene pravca u prošlosti. Hrabrost koju ste u to vreme pokazali možda ima uticaja na današnju situaciju. Vaš brzi napredak je mogao da vas dovede do vašeg trenutnog položaja. \\ N \\ NTHIS kartica pokazuje da je ova asertivnost u prošlosti i danas svoj pristup događajima danas.",
+          "reversed": "Vitez mačeva obrnuto simbolizuje ishitrene pokušaje, nedostatak planiranja ili nekontrolisanog ponašanja u prošlosti. Ovi pogrešnici mogu biti u korenu današnjih problema. Reči izgovorene užurbano ili korake bez razmišljanja mogu još uvek imati uticaja. \\ N \\ nThis kartica takođe naglašava da je nestrpljenje pokazano u prošlosti možda otežalo današnje procese.",
+          "keywords": [
+            "hrabrost",
+            "brzina",
+            "premestiti",
+            "odluka",
+            "prošlost"
+          ],
+          "context": "Uticaj ishistnih ili smelarnih odluka u prošlosti."
+        },
+        "position2": {
+          "upright": "Vitez mačeva ukazuje da su u ovom trenutku brze akcije, jasna odbrana i asertivna komunikacija u ovom trenutku. Um zahteva brze odluke. \\ N \\ nspeed, u kombinaciji sa strategijom, proizvodi oštre rezultate.",
+          "reversed": "Vitez mačeva obrnut ukazuje na rizik od žurbe, impulzivne retorike i štetnog tona. Želja za pravdom može da skraćuje slušanje. \\ N \\ n \\ n \\ n \\ n \\ ritam-govorni ritam povećava efikasnost.",
+          "keywords": [
+            "brzina",
+            "stabilnost",
+            "argument",
+            "strategija",
+            "izraz"
+          ],
+          "context": "Trenutni zamah: Razmislite brzo, izvršite Smart."
+        },
+        "position3": {
+          "upright": "Vitez mačeva pokazuje da je nagon da se brzo kreće, tvrdi se naglo i braniti ideju je snažna unutar. Um želi brzinu; Poziv na akciju zvoni naglas. \\ N \\ nThis kartica je podsetnik ta brzina, kada nije pomešan sa strategijom, može stvoriti ranjivost.",
+          "reversed": "Prekoračeni vitez mačeva ukazuje na skriveni rizik od impeturatiznosti, impulzivnosti ili agresivne komunikacije. Želja za pravom može da smanji kapacitet za slušanje. \\ N \\ NTHIS Card naglašava da će ritam prestala dah-govoreći da će biti efikasan.",
+          "keywords": [
+            "brzina",
+            "argument",
+            "odbrana",
+            "žuriti",
+            "strategija"
+          ],
+          "context": "Skriven hrabar um i potreba za balansom kočionog gasa."
+        },
+        "position4": {
+          "upright": "U centru je brzo kretanje i jasna odbrana. Brzina u kombinaciji sa strategijom proizvodi oštre rezultate.",
+          "reversed": "Žurba u centru može očvrsnuti ton. Ritam-govorni ritam je koristan.",
+          "keywords": [
+            "brzina",
+            "stabilnost",
+            "odbrana",
+            "strategija",
+            "izraz"
+          ],
+          "context": "Centar: Brzi um."
+        },
+        "position5": {
+          "upright": "Vitez mačeva ukazuje na brzo pokretne aktere i agresivnu komunikaciju na vanjskom polju.",
+          "reversed": "Vitez mačeva obrnut je upozorio da je užurbana / oštra retorika mogla da se pozabavi i stvori otpor.",
+          "keywords": [
+            "brzina",
+            "agresivan",
+            "diskurs",
+            "rizikovati",
+            "tempo"
+          ],
+          "context": "Strateški kočioni gas je potreban u brzim oblastima."
+        },
+        "position6": {
+          "upright": "Preporuka: Dodajte jasan plan brze akcije; Dajte poruku direktno.",
+          "reversed": "Savet: Vežbajte ritam prestonice za prestanak daha; Nemojte ga prekršiti u žurbi.",
+          "keywords": [
+            "brzina",
+            "plan",
+            "poručiti",
+            "ritam",
+            "uticaj"
+          ],
+          "context": "Savet: Brzo, ali tačno."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: Brza akcija i oštra komunikacija donose rezultate; Brzina se kombinuje sa strategijom.",
+          "reversed": "Moguća budućnost: žurba povećava rizik od sukoba i povratnih alata; Potrebno je podesiti ritam.",
+          "keywords": [
+            "brzina",
+            "stabilnost",
+            "diskurs",
+            "strategija",
+            "rizikovati"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "queenofswords": {
+        "position1": {
+          "upright": "Kraljica mačeva simbolizuje nezavisnu i moćnu ličnost koja je u prošlosti dala razumne odluke. Ova osoba bi mogla biti vi ili neko drugi koji je uticao u vašem životu. Njegov stav može biti u korenu vaše trenutne situacije. \\ N \\ NTHIS Card vas podseća da vam je ovaj logičan i odlučan pristup u prošlosti učinio vas i danas nezavisnijim i jasnim razmišljanjem danas.",
+          "reversed": "Kraljica mačeva obrnuta je simbolizuje preterano kritični, hladni ili udaljeni stav u prošlosti. Ovakav stav je možda izazvao da se zidovi grade u odnosima. Možda je ovaj pristup jedan od glavnih uzroka koji stvaraju poteškoće današnjih uslova. \\ N \\ nThis kartica objašnjava da je oštar i kritičan ponašan u prošlom obliku današnjim problemima.",
+          "keywords": [
+            "logika",
+            "nezavisnost",
+            "kritika",
+            "prehlađen",
+            "prošlost"
+          ],
+          "context": "Uticaj logičkih ili hladnih pristupa u prošlosti."
+        },
+        "position2": {
+          "upright": "Kraljica mačeva ukazuje da su jasnoća, granice i objektivnost kompasa u ovom trenutku. Podaci aduti mit; Pošteno gledište donosi jasnoću. \\ N \\ NVLAGLE GLAVNI Um je uravnotežen sa toplim srcem, rođena je ispravna odluka.",
+          "reversed": "Kraljica mačeva obrnuta ukazuje na tendenciju da se zaštiti prekomerna kritika, oštar jezik ili udaljenost. Harshness može razdvojiti vezu. \\ N \\ NCompasionatni jezik povećava uticaj poruke.",
+          "keywords": [
+            "objektivnost",
+            "granica",
+            "oštrina",
+            "komunikacija",
+            "saosećajni ton"
+          ],
+          "context": "Trenutni stav: Jasan um, meka izraz."
+        },
+        "position3": {
+          "upright": "Kraljica mačeva ukazuje da postoji unutrašnji kompas jasnoće, podešavanja granice i kapacitet za fer procenu, bez emocije. Um želi podatke, a ne legenda. \\ N \\ nThis kartica podseća nas da je toplo srce i cool um daju najlepše rezultate kada se drže zajedno.",
+          "reversed": "Kraljica mačeva obrnuta ukazuje na skriveni rizik od preteranih kritika, ogorčenog ironije ili oštrog jezika. Udaljenost za zaštitu može da tankuje vezu. \\ N \\ NTHIS kartica naglašava da će saosećajne i meke granice obogatiće interakciju.",
+          "keywords": [
+            "oštrina",
+            "granica",
+            "objektivnost",
+            "kritika",
+            "simpatični jezik"
+          ],
+          "context": "Skriveni analitički kompas i rizik od oštrine jezika."
+        },
+        "position4": {
+          "upright": "U centru su jasnoća, granice i objektivnost. Cool um odlučuje pravedno.",
+          "reversed": "Prekomerna kritika u Centru može razdvojiti vezu. Saosećajni jezik je efikasan.",
+          "keywords": [
+            "oštrina",
+            "granica",
+            "objektivnost",
+            "pravda",
+            "komunikacija"
+          ],
+          "context": "Centar: Clear Compass."
+        },
+        "position5": {
+          "upright": "Kraljica mačeva ukazuje na velika očekivanja objektivnosti, transparentnog razloga i poštene procene spolja.",
+          "reversed": "Kraljica mačeva obrnuta kaže da preterana kritika, suptilna sarkazam ili oštrog jezika mogu stvoriti otuđenje spolja.",
+          "keywords": [
+            "objektivnost",
+            "pravda",
+            "transparentnost",
+            "kritika",
+            "komunikacija"
+          ],
+          "context": "Racionalni okvir povećava prihvatanje; Ton jezika je kritičan."
+        },
+        "position6": {
+          "upright": "Savet: Postavite jasne granice, donosite objektivne odluke, budite fer.",
+          "reversed": "Savet: omekšati jezik; Pokušajte da budete jasni sa saosećanjem.",
+          "keywords": [
+            "granica",
+            "objektivnost",
+            "pravda",
+            "komunikacija",
+            "saosećanje"
+          ],
+          "context": "Savet: Budite jasni, ali ljubazni."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: objektivna odluka i jasne granice dovode do poštenog ishoda.",
+          "reversed": "Moguća budućnost: oštar ton može oslabiti vezu; Potrebno je biti jasno sa saosećanjem.",
+          "keywords": [
+            "objektivnost",
+            "granica",
+            "pravda",
+            "komunikacija",
+            "oštrina"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "kingofswords": {
+        "position1": {
+          "upright": "Kralj mačeva u prošlosti simbolizuje pravu, logičku i autoritarnu ličnost. Uticaj ove osobe ili vaše ponašanje na ovaj način možda je formirao osnovu današnjeg procesa. Njegova mudrost i odluke mogu voditi vaš život. \\ N \\ NTHIS kartica naglašava da je disciplina i potraga za pravdom u prošlosti jedan od osnovnih razloga za situaciju koju danas doživljavate.",
+          "reversed": "Reverse kralj mačeva predstavlja opresivnu, hladnu ili nepravednu figuru u prošlosti. Ovaj autoritarizam možda je danas negativno oblikovao vaše okolnosti. Možda je pretjerano kontrolisana osoba ili nepravedna odluka u korenu današnjih problema. \\ N \\ nThis kartica takođe nas podseća i da su tragovi prošlih nepravde ili hladnih organa i dalje ostati.",
+          "keywords": [
+            "pravda",
+            "logika",
+            "vlast",
+            "rukovodstvo",
+            "prošlost"
+          ],
+          "context": "Uticaj pravednog ili opresivnih podataka iz prošlosti."
+        },
+        "position2": {
+          "upright": "Kralj mačeva ukazuje da su principi, etika i strateška logika trenutno na čelu na čelu. Um koji uspostavlja sistem organizuje haos. \\ N \\ n \\ nfair upotreba energije gradi poverenje.",
+          "reversed": "Reverse kralj mačeva ukazuje na krute pravila, dogmatski mišljenje ili rizik od upotrebe razloga kao alata za napajanje. Hladna logika može zasjeniti empatiju. \\ N \\ n \\ n \\ npAiring etika sa empatijom uvećava i uticaj i prihvatanje.",
+          "keywords": [
+            "logika",
+            "etika",
+            "vlast",
+            "strategija",
+            "empatija"
+          ],
+          "context": "Trenutna osovina: principijelni razlog, uravnotežen organ."
+        },
+        "position3": {
+          "upright": "Kralj mačeva ukazuje da je pridržavanje principa, etika i strateškog razloga princip upravljanja unutar. Logički okvir brzo organizuje haos. \\ N \\ NThis kartica nas podseća na to da je pošteno korišćenje energije gradi poverenje.",
+          "reversed": "Prekoračeni kralj mačeva ukazuje na skriveni rizik od dogmatskih razmišljanja, krutih pravila ili korišćenjem razloga kao alata za napajanje. Hladna logika može zasjeniti empatiju. \\ N \\ NTHIS kartica naglašava da će se uparivanje etike sa empatijom povećati i uticaj i prihvatanje.",
+          "keywords": [
+            "etika",
+            "logika",
+            "vlast",
+            "dogma",
+            "empatija"
+          ],
+          "context": "Skriveni princip prag fokusa i očvršćivanja."
+        },
+        "position4": {
+          "upright": "U centru su principi i strateška logika. Etička čvrstoća gradi poverenje.",
+          "reversed": "U centru postoji rizik od rigidnosti ili dogme. Uravnotežiti to sa empatijom.",
+          "keywords": [
+            "etika",
+            "logika",
+            "vlast",
+            "strategija",
+            "empatija"
+          ],
+          "context": "Centar: principijelno um."
+        },
+        "position5": {
+          "upright": "Kralj mačeva pokazuje da je spoljni autoritet, stručni odbori i etički standardni oblik utakmicu.",
+          "reversed": "Reverse kralj mačeva kaže da krute / dogmatske odluke i zloupotreba moći mogu stvoriti eroziju poverenja napolju.",
+          "keywords": [
+            "vlast",
+            "stručnjak",
+            "etika",
+            "dogma",
+            "poverenje"
+          ],
+          "context": "Spoljni razlog i etički okvir određuju rutu."
+        },
+        "position6": {
+          "upright": "Preporuka: Pisanje politike na osnovu principa; Jasno saopšti strategiju.",
+          "reversed": "Preporuka: Smanjite krutost; Dodajte empatiju okviru.",
+          "keywords": [
+            "princip",
+            "strategija",
+            "politika",
+            "komunikacija",
+            "empatija"
+          ],
+          "context": "Savet: Kombinovanje principa i empatija."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: izrađena je strateška i etička presuda; Um koji uspostavlja sistem gradi poverenje.",
+          "reversed": "Moguća budućnost: kruti / dogmatski pristup može stvoriti blokadu; Potreban je empatični okvir.",
+          "keywords": [
+            "strategija",
+            "etika",
+            "vlast",
+            "vladavina",
+            "poverenje"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "aceofwands": {
+        "position1": {
+          "upright": "ACE of štapiće simbolizuje ideju, inspiraciju ili strastveni početak rođen u prošlosti. Ova energija je možda stvorila snažnu motivaciju da uđe u novi projekat ili doda uzbuđenje u vaš život. Ova iskra je igrala važnu ulogu u osnivanju vaše trenutne situacije. \\ N \\ NTHIS kartica takođe vas podseća da vam je ova prethodna inicijativa dala samopouzdanje i oblikovala vaše sledeće korake.",
+          "reversed": "ACE of Vinds Reversed ukazuje na nedovršeni pokušaj u prošlosti, gubitak motivacije ili nisiknje. Mogućnosti koje nisu korišćene dok je postojala potencijala možda su izazvale trenutnu situaciju. Možda su se mogućnosti od vas udaljile jer niste preduzeli mere u pravo vreme. \\ N \\ NTHIS kartica pokazuje da ovi nedostaci u prošlosti još uvek utiču na vašu energiju danas.",
+          "keywords": [
+            "početak",
+            "inspiracija",
+            "strast",
+            "motivacija",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih inspirativnih početaka ili nedovršenih poduhvata."
+        },
+        "position2": {
+          "upright": "ACE of štapića ukazuje da iskra inspiracije sada gori i spremni ste za kreativan početak. Energija je velika, motivacija je sveža; Univerzum daje zeleno svetlo za novi projekat, inicijativu ili strastveni korak. \\ N \\ nThis kartica naglašava da je odgovarajuće vreme da se namera prebacite u akciju, prestanite da se odlažete i napravite prvi korak sa hrabrošću.",
+          "reversed": "ACE of Vinds Reversed je označava da trenutno doživljavate inspiraciju, nedostatak svrhe ili odloženo. U vama je iskra, ali okolnosti, strahovi ili raštrkani fokus može otežati porast požara. \\ N \\ nclarifiing namera pre započinjanja novog i otvaranja protoka sa malim i utvrđenim koracima rešiće blokadu.",
+          "keywords": [
+            "inspiracija",
+            "početak",
+            "energija",
+            "motivacija",
+            "Sada"
+          ],
+          "context": "Trenutno se kreativna iskra ili privremena blokada diriše."
+        },
+        "position3": {
+          "upright": "ACE of štapiće ukazuje da je jaka iskra, želja za kreiranjem i \"da krenemo odmah\" impuls rade u vašoj podsvijesti. Duboko u sebi želite da rizikujete i zakoračite na novu fazu; Strast se može neprimetno gurati vaše odluke. \\ N \\ NTHIS kartica podseća da vas potiskuje inspiraciju može stvoriti brzi skok napred kada se usmeri na pravi kanal.",
+          "reversed": "Ace of Vinds Reversed kaže vam da je iskra u vama potisnuta zbog strahova, perfekcionizma ili raštrkanog fokusa. \"Šta ako grešim?\" Anksioznost može potajno blokirati protok inspiracije. \\ N \\ NTHIS kartica naglašava da će pojednostavljenje namere i negovanja samopouzdanja malim eksperimentima rešiti blokadu.",
+          "keywords": [
+            "iskra",
+            "inspiracija",
+            "početak",
+            "hrabrost",
+            "protok"
+          ],
+          "context": "Podsvesno potisnuta inspiracija i spremnost za rizike."
+        },
+        "position4": {
+          "upright": "U centru je iskra inspiracije i akcije. Prvi korak čini vatru veću.",
+          "reversed": "U centru može biti blokade inspiracije ili odlaganja. Mala akcija otvara protok.",
+          "keywords": [
+            "inspiracija",
+            "početak",
+            "energija",
+            "hrabrost",
+            "pokret"
+          ],
+          "context": "Centar: iskra vatre."
+        },
+        "position5": {
+          "upright": "ACE of štapića ukazuje da postoje sveže mogućnosti tamo, ubrzavajuća potražnja i preduzetničke energije.",
+          "reversed": "ACE of Vinds Reversed vam govori da spoljna iskra može biti kratkotrajna ili vreme može biti rano / kasno.",
+          "keywords": [
+            "prilika",
+            "zatražiti",
+            "energija",
+            "pokušati",
+            "vremenski vreme"
+          ],
+          "context": "Nedelja vatra gori; Ne bi trebalo da propustiš prozor."
+        },
+        "position6": {
+          "upright": "Savet: Pretvorite početnu iskru u malu radnju odmah.",
+          "reversed": "Savet: Učinite 10-minutni mikrostart da se probije kroz blokadu.",
+          "keywords": [
+            "iskra",
+            "početak",
+            "pokret",
+            "sitni korak",
+            "ubrzanje"
+          ],
+          "context": "Savet: Svetli vatru sa praksom."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: iskra inspiracije zapali snažnu inicijativu; Povećanje energije i hrabrosti.",
+          "reversed": "Moguća budućnost: Loše vreme ili strah mogu odložiti početak; Malena akcija otvara potok.",
+          "keywords": [
+            "inspiracija",
+            "početak",
+            "energija",
+            "hrabrost",
+            "pokret"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "twoofwands": {
+        "position1": {
+          "upright": "Dvoje štapića simbolizuje planove koji su ostvareni u prošlosti, razvoju vizije i prve korake preuzete u budućnost. Ovaj proces koji proširuje vaše horizonte može biti u korenu današnjih uslova. \\ N \\ NTHIS kartica podseća da su vas prošli planovi vodili i utrli put da se danas sretnete.",
+          "reversed": "Dva osvežena štapića ukazuju na nedostatak jasne vizije, oklevanje ili nedostatak poverenja u prošlost. Možda se koraci koje niste usudili da dovode do nedostataka današnje situacije. \\ N \\ nThis kartica vam govori da će odlaganje poteza koji će se oblikovati budućnost da danas stvara zaglavu.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "budućnost",
+            "napredak",
+            "prošlost"
+          ],
+          "context": "Sadašnji uticaj prošlih planova ili nepotpune vizije."
+        },
+        "position2": {
+          "upright": "Dvoje štapiće ukazuju na to da ste trenutno u fazi viđenja, upoređujući opcije i planirate rutu. Vaši horizonti se šire; Odlikujete mogućnost rasta ostavljajući svoju zonu komfora. \\ N \\ NA Vedro strategija i merljivi koraci pretvaraju potencijal u stvarnost.",
+          "reversed": "Preokrećena dva štapića ukazuje na oklevanje, posvećenost zoni komfora ili u trenutku nedostajanja vizije. Neodlučnost može usporiti napredak. \\ N \\ n \\ nsimplifikovanje prioriteta i fokusiranje na prvi mali korak stvara zamah.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "odluka",
+            "horizont",
+            "Sada"
+          ],
+          "context": "Faza planiranja ili se zaglavila u zoni komfora."
+        },
+        "position3": {
+          "upright": "Tvoje štapiće ukazuju da iza scene leži namera da proširi horizonte, napravi planove i zakorači na veću fazu. Želja za izlaskom iz zone komfora mirno je sazreva. \\ N \\ n Tajni faktor je da je verovanje da je \"više moguće\" povećati viziju.",
+          "reversed": "Preokrećena dva štapića ukazuje na nevidljivo oklevanje, fluktuacije u samopouzdanju i tendenciju da se minimizira vizija zbog \"šta ako\" anksioznost. Unutrašnji oprez može odložiti proboj. \\ N \\ NTHIS kartica podseća nas da čak i jedan mali korak može da zamahne klatno.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "oklevanje",
+            "ekspanzija",
+            "zona komfora"
+          ],
+          "context": "Skrivena zona komfora vizije klatno i hrabrost odluke."
+        },
+        "position4": {
+          "upright": "U centru je vizija i planiranje. Potreban je kontrolisan izlazak iz zone komfora.",
+          "reversed": "Okletva u centru smanjuje vid. Prvi mali korak daje zamah.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "horizont",
+            "odluka",
+            "ekspanzija"
+          ],
+          "context": "Centar: Crtanje horizonta."
+        },
+        "position5": {
+          "upright": "Dvoje štapiće ukazuju na to da postoji mogućnost širenja na inostranim tržištima i kontakt sa novim regionima.",
+          "reversed": "Otkrivena dva štapića kaže da spoljne nesigurnosti mogu smanjiti apetit rizika i stvoriti pritisak da ostanu unutra.",
+          "keywords": [
+            "ekspanzija",
+            "Nedelja",
+            "horizont",
+            "rizikovati",
+            "vizija"
+          ],
+          "context": "Planirani korak na vanjskom pružam konkurentsku prednost."
+        },
+        "position6": {
+          "upright": "Savet: plan za 90 dana; Mapirajte horizont.",
+          "reversed": "Savet: Testirajte veliku viziju sa malim pilotom.",
+          "keywords": [
+            "plan",
+            "horizont",
+            "pilot",
+            "rizikovati",
+            "mapa"
+          ],
+          "context": "Savet: Donesite viziju na zemlju."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: horizonti se proširuju; Izlazi iz zone komfora na planirani način.",
+          "reversed": "Moguća budućnost: oklevanje može suziti vid; Mali korak pilota daje ubrzanje.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "horizont",
+            "rizikovati",
+            "ekspanzija"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "threeofwands": {
+        "position1": {
+          "upright": "Tri štapića simbolizuje da je u prošlosti iskorištavajući seminalnu priliku, nove saradnje i proširenje mogućnosti. Ovaj proces je možda ojačao temelj današnjih uslova. \\ N \\ NTHIS kartica pokazuje da su vas hrabri koraci preduzeli u prošlosti doveli vas tamo gde ste danas.",
+          "reversed": "Pretvoreni tri štapića simbolizuje prošla odlaganja, neuspešne pokušaje ili neuspeh u ispunjavanju očekivanja. Neuspjeh vaših snova koji će se ostvariti možda će biti u korenu današnjeg procesa. \\ N \\ NTHIS kartica govori da je period u kojem se očekivanja ne ispunjava bacanja u vašoj trenutnoj situaciji.",
+          "keywords": [
+            "prilika",
+            "ekspanzija",
+            "partnerstvo",
+            "vizija",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih kolaboracija ili razočarenja."
+        },
+        "position2": {
+          "upright": "Tri štapiće vam govore da preparati koje sada pravite treba da podnesete mogućnosti voća i širenja su na horizontu. Saradnja, daljinske veze ili nova tržišta mogu biti na dnevnom redu. \\ N \\ n 'NVViding strpljivo i proaktivno ispunjavanje dolaznih prilika ubrzava rast.",
+          "reversed": "Okolište Tri štapića trenutno upozoravaju od kašnjenja, rezultati koji su ukidali očekivanja ili kratkovidne. Prisiljavanje rasta bez diverzifikacije resursa može stvoriti blokadu. \\ N \\ n \\ nBroadenting Horizons, dobijanje povratnih informacija i revizije plana otvara protok.",
+          "keywords": [
+            "ekspanzija",
+            "prilika",
+            "partnerstvo",
+            "horizont",
+            "Sada"
+          ],
+          "context": "Pregled praga ili odlaganja širenja."
+        },
+        "position3": {
+          "upright": "Tri štapiće nam govore da želja da tražimo mogućnosti, pogledamo horizont i rastu kroz saradnje je živa u sebi. Želja da budete proaktivna, a ne čekanje strpljivo trči duboko. \\ N \\ NTHIS kartica naglašava da nevidljivi preparat stvara osećaj \"sreće\".",
+          "reversed": "Preokrećena tri štapića ukazuje da je skriveno razočaranje, strah od kašnjenja ili uočeni nedostatak resursa zatamnjivanje širenja. Možda postoji unutrašnja naracija koja sužava horizont. \\ N \\ nThis kartica vam govori da će vam dobiti povratne informacije i ažuriranje plana umanjiti bol.",
+          "keywords": [
+            "ekspanzija",
+            "prilika",
+            "očekivanje",
+            "partnerstvo",
+            "revizija"
+          ],
+          "context": "Napetost između želje za širenjem i strah od kašnjenja / resursa."
+        },
+        "position4": {
+          "upright": "U centru postoje ekspanzije i kolaboracije. Pripreme dolaze na plodovoda.",
+          "reversed": "Može postojati percepcija kašnjenja ili kratkoročnosti u centru. Revidirati plan.",
+          "keywords": [
+            "ekspanzija",
+            "prilika",
+            "partnerstvo",
+            "horizont",
+            "vremenski vreme"
+          ],
+          "context": "Centar: Putovanje do horizonta."
+        },
+        "position5": {
+          "upright": "Triska štapića ukazuju na to da spoljna partnerstva, lanac snabdevanja i logistička rast podrške.",
+          "reversed": "Preokrećena tri štapića govore vam da kašnjenja, poremećaji snabdevanja ili pitanja carine / logistike zadrže napolju.",
+          "keywords": [
+            "partnerstvo",
+            "snabdevanje",
+            "logistika",
+            "kašnjenje",
+            "rast"
+          ],
+          "context": "Spoljna okosnica (ponuda / logistika) je ključna za rast."
+        },
+        "position6": {
+          "upright": "Preporuka: Podesite delegaciju i prekretnice; Hodajte dok gledate horizont.",
+          "reversed": "Preporuka: Revizija rasporeda; Poravnajte očekivanje sa stvarnošću.",
+          "keywords": [
+            "ekspanzija",
+            "delegat",
+            "prekretnica",
+            "vremenski vreme",
+            "horizont"
+          ],
+          "context": "Savet: Plan za širenje."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: Očekivani rezultati pojavljuju se na horizontu; Saradnja medju voće.",
+          "reversed": "Moguća budućnost: Kašnjenja bi mogla da napreduju vremensku traku; Može se potrebna revizija plana.",
+          "keywords": [
+            "ekspanzija",
+            "partnerstvo",
+            "vremenski vreme",
+            "horizont",
+            "dostava"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "fourofwands": {
+        "position1": {
+          "upright": "Četiri štapića simbolizuje prošlo slavlje, zajedništvo ili čvrstu fondaciju. Ovo iskustvo je možda dalo samopouzdanje i stabilnost. \\ N \\ NTHIS kartica podseća vas da prošli trenuci sreće daju snagu u vaš život i danas.",
+          "reversed": "Preokrećena četiri štapića ukazuje na prošlu disharmoniju, porodične nemire ili nestabilnost. Možda umesto jedinstva, postojala je neorganizacija, a to je uticalo na današnje uslove. \\ N \\ NTHIS kartica objašnjava da prošlost disharmonija slabi današnju stabilnost.",
+          "keywords": [
+            "proslava",
+            "osnova",
+            "raport",
+            "uspeh",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih harmonija ili nesklade."
+        },
+        "position2": {
+          "upright": "Četiri štapića ukazuju na to da su stabilnost, proslava i osećaj zajednice u ovom trenutku. Možda ste prešli prag i počeli da vidite plodove vaših napora. \\ N \\ n \\ n \\ nProglašavanje obveznica i jačanje temelja podržava sledeću fazu.",
+          "reversed": "Uokrećena četvorica štapića opisuje osećaj privremene nestabilnosti, disharmonije ili nepotpune proslave u istoj situaciji u kući / radnoj situaciji. Neki od kamenje ne mogu biti na mestu. \\ N \\ n \\ n \\ n \\ nmaking Prostor za ravnotežu i rituali vraća skladnost sa malim korekcijama.",
+          "keywords": [
+            "stabilnost",
+            "proslava",
+            "osnova",
+            "raport",
+            "Sada"
+          ],
+          "context": "Jačanje temelja ili popravke privremenog poremećaja."
+        },
+        "position3": {
+          "upright": "Četiri štapića pokazuju da nevidljiva želja za stabilnošću, pripadnikom i osećajem \"dolaska kući\" oblikuje ponašanje. Potreba za proslavom i sigurnom prostorom motiviše se iznutra. \\ N \\ NTHIS kartica objašnjava da osnovni osećaj poverenja takođe hrani apetit za rizik.",
+          "reversed": "Preokrećena četvorica štapića ukazuje na strah od nedostatka podrške, osećaj \"van mesta\" ili senke neispunjenog praga. Unutrašnji nemir može tiho napredak u koči. \\ N \\ NRITUALS i male proslave popravljaju nevidljivi jaz.",
+          "keywords": [
+            "stabilnost",
+            "pripadnik",
+            "prag",
+            "proslava",
+            "poverenje"
+          ],
+          "context": "Potreba da pripadaju i senku nezavršenog praga."
+        },
+        "position4": {
+          "upright": "U centru je prag stabilnosti i proslave. Fondacija mora biti ojačana.",
+          "reversed": "Može postojati privremeni poremećaj ili nepotpunost u centru. Rituali uspostavljaju ravnotežu.",
+          "keywords": [
+            "stabilnost",
+            "osnova",
+            "proslava",
+            "pripadnik",
+            "prag"
+          ],
+          "context": "Centar: Kamen temelja."
+        },
+        "position5": {
+          "upright": "Četiri štapića ukazuju na to da spoljni događaji, lansiraju i okupljanja zajednice stvaraju zamah.",
+          "reversed": "Preokrećena Četiri štapića sugerišu da mesta mesta / organizacione pitanja ili nisko pohađanje mogu smanjiti spoljni zamah.",
+          "keywords": [
+            "aktivnost",
+            "zajednica",
+            "lansirati",
+            "pripadnik",
+            "učestvovanje"
+          ],
+          "context": "Vidljive proslave na spoljnoj sceni stvaraju moral i potražnju."
+        },
+        "position6": {
+          "upright": "Savet: Organizujte malu proslavu / orijentir; pojačajte temelj.",
+          "reversed": "Preporuka: Popunite prag, zatvorite praznine; Zatim proslavite.",
+          "keywords": [
+            "osnova",
+            "prag",
+            "proslava",
+            "stabilnost",
+            "završetak"
+          ],
+          "context": "Preporuka: Zatvaranje osnovne petlje prag."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: čvrsti prag i proslava; Ulazimo u period u kojem temelj postane jači.",
+          "reversed": "Moguća budućnost: Proslava ostaje slaba pre nego što je prag završen; Potrebno je zatvoriti nedostatke.",
+          "keywords": [
+            "prag",
+            "proslava",
+            "stabilnost",
+            "pripadnik",
+            "osnova"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "fiveofwands": {
+        "position1": {
+          "upright": "Pet štapića simbolizuje rivalstvo, borbu ili sukob ideja u prošlosti. Ovaj period vam je možda dao otpornost. \\ N \\ NTHIS kartica pokazuje da vas je borba u prošlosti danas učinila jačim osobom danas.",
+          "reversed": "Preokrećeno pet štapića ukazuje na nepotrebne argumente, neslaganja ili nerešene sukobe u prošlosti. Ove situacije mogu imati uticaja na osnovu današnjeg procesa. \\ N \\ NTHIS kartica pokazuje da su ovi prošli sukobi i dalje efikasni.",
+          "keywords": [
+            "rivalstvo",
+            "borba",
+            "sukob",
+            "izdržljivost",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih sukoba ili borbe."
+        },
+        "position2": {
+          "upright": "Pet štapića ukazuje da trenutno prolazite kroz konkurenciju, neslaganje ili zdravu borbu za probu. Sukob ideja takođe može pokrenuti kreativnost. \\ N \\ n \\ nclarifikovanje pravila i podsećanje na jedinstvo svrhe pretvara sukob u produktivnost.",
+          "reversed": "Pet štapića preokrećeno ukazuje na tendenciju da se okonča nepotrebno trenje, umanjuje unutrašnje sukobe ili u trenutku argumentacije. Potpunjena napetost se zatim može vratiti teže. \\ N \\ n \\ nconstruktivni dijalog i jasna distribucija uloga trajno rešavate napetost.",
+          "keywords": [
+            "rivalstvo",
+            "sukob",
+            "proba",
+            "dijalog",
+            "Sada"
+          ],
+          "context": "Strukturirati borbu ili de-eskaliranje."
+        },
+        "position3": {
+          "upright": "Petorica štapića pokazuje da su unutrašnji sukobi, osećaj konkurencije i potreba da se pokaže da se iza kulisa rade. Dok se poriv za borbu protiv pokreće kreativnost, takođe može da stvori napetost. \\ N \\ n Skriveni faktor je \"Moram biti u pravu\" narativ.",
+          "reversed": "Invertirani pet štapića ukazuje na skrivene sukobe koji se izbegavaju, potisnuto gnev ili iskre koje se nakupljaju rekavši \"Nema potrebe\". Zanemarivanje napetosti može isušiti energiju iznutra. \\ N \\ n \\ nstructurding dijalog bezbedno oslobađa ugrađeni pritisak.",
+          "keywords": [
+            "rivalstvo",
+            "unutrašnji sukob",
+            "koji dokazuje",
+            "ljutnja",
+            "dijalog"
+          ],
+          "context": "Potreba za dokazom i ciklusom potisnute napetosti."
+        },
+        "position4": {
+          "upright": "U centru je sukob rivalstva i probe. Razjašnjenje pravila stvara produktivnost.",
+          "reversed": "U centru može doći do pent-up napetosti. Strukturirani dijalog je obavezan.",
+          "keywords": [
+            "rivalstvo",
+            "sukob",
+            "proba",
+            "dijalog",
+            "oštrina"
+          ],
+          "context": "Centar: Strukturiranje borbe."
+        },
+        "position5": {
+          "upright": "Petorica štapića ukazuje na intenzivnu spoljnu konkurenciju, sukobe probe i sukobi ideja.",
+          "reversed": "Otkriveni pet štapića kaže da su neuredni sukobi stvarali neefikasnost i pravila treba da se razjasne.",
+          "keywords": [
+            "rivalstvo",
+            "ideja",
+            "proba",
+            "vladavina",
+            "prinos"
+          ],
+          "context": "Strano takmičenje pretvara se u priliku sa pametnim okvirom."
+        },
+        "position6": {
+          "upright": "Preporuka: Razjasnite pravila o igri; Pretvorite sukob u kreativne probe.",
+          "reversed": "Preporuka: Pomerite bilo nepotrebno trenje na olakšani sastanak.",
+          "keywords": [
+            "vladavina",
+            "olakšavanje",
+            "kreativnost",
+            "proba",
+            "rešenje"
+          ],
+          "context": "Savet: Strukturirajte izazov."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: Konkurencija i kreativno trenje se nastavlja; Jasna pravila povećavaju efikasnost.",
+          "reversed": "Moguća budućnost: Rezolucija sukoba se kreće dalje; Regulatorni okvir smanjuje napetost.",
+          "keywords": [
+            "rivalstvo",
+            "proba",
+            "vladavina",
+            "borba",
+            "rešenje"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "sixofwands": {
+        "position1": {
+          "upright": "Šest štapića simbolizuje prošlu pobedu, uspeh i priznanje. Uspeh postignut tokom ovog perioda možda je osnova za vašu motivaciju danas. \\ N \\ NTHIS kartica pokazuje da vas prethodna slava još uvek nosi napred.",
+          "reversed": "Okrećena šest štapića ukazuje da prošla dostignuća nisu bila uvažena, postojala je ljubomora ili neuspeh. Ove situacije su možda danas uticale na vaše mišljenje o sebi. \\ N \\ NTHIS kartica pokazuje da su tragovi uspeha ili neuspeha koji su bili bez presedana u prošlosti još uvek ostali danas.",
+          "keywords": [
+            "pobeda",
+            "uspeh",
+            "prepoznavanje",
+            "ponos",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih pobeda ili neuspeha."
+        },
+        "position2": {
+          "upright": "Šest štapića u ovom trenutku donosi vidljiv uspeh, prepoznavanje i moral u ovom trenutku. Tvoji napori su primećeni; Efekat rukovodstva raste. \\ N \\ n \\ n \\ n \\ n",
+          "reversed": "Šest ljudskih štapića je upozorenje o nedostatku uvažavanja, senki ljubomore u ovom trenutku. Komunikacija uspeha je možda ostala ili netačna ili nevidljiva. \\ N \\ n \\ ncconcreate napredak sa metricima i transparentno deljenje poboljšava percepciju.",
+          "keywords": [
+            "pobeda",
+            "prepoznavanje",
+            "motivacija",
+            "rukovodstvo",
+            "Sada"
+          ],
+          "context": "Ojačanja ili percepcija opravdanog uspeha."
+        },
+        "position3": {
+          "upright": "Šest štapića sugeriše da je želja da se ceni, na pozornici i da postigne vidljivi uspeh je moćan interni motivator. San o pobedi tiho vodi vaše korake. \\ N \\ n Skriveni motor je potreba za priznanjem."
+        }
+      }
+    }
+  }
+}

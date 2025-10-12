@@ -1,0 +1,773 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "pageofswords": {
+        "position4": {
+          "keywords": [
+            null,
+            "radoznalost",
+            "obaveštajna služba",
+            "kreativnost",
+            "komunikacija"
+          ],
+          "context": "Vaš najbolji potencijal je da koristite svoju radoznalost da konstruktivno učite konstruktivno."
+        },
+        "position5": {
+          "upright": "Princ mačeva, možda ste iskusili radoznalost, želju za učenjem ili energijom da istražite novu ideju u nedavnoj prošlosti.",
+          "reversed": "Princ mačeva je preokrenuo, možda ste imali iskusne glasine, dezinformacije ili nepažnju u nedavnoj prošlosti.",
+          "keywords": [
+            "radoznalost",
+            "učenje",
+            "komunikacija",
+            "obaveštajna služba",
+            "pažnja"
+          ],
+          "context": "Vaša nedavna prošlost možda je obeležena učešćim ili neopreznim iskustvom."
+        },
+        "position6": {
+          "upright": "Princ mačeva, možete djelovati sa novom idejom, radoznalošću ili istraživačkom energijom u bliskoj budućnosti.",
+          "reversed": "Invertirani princ mačeva, glasine, dezinformacija ili nepažnje može doći do izražaja u bliskoj budućnosti.",
+          "keywords": [
+            "radoznalost",
+            "komunikacija",
+            "obaveštajna služba",
+            "učenje",
+            "pažnja"
+          ],
+          "context": "Vaša bliža budućnost će biti oblikovana učenjem ili nepažnjom."
+        },
+        "position7": {
+          "upright": "Princ mačeva, trenutno imate energiju koja je trenutno ispunjena radoznalošću, želje da učite i nove ideje.",
+          "reversed": "Princ mačeva obrnut, tračevi, dezinformacije ili nepažnju možda vas trenutno utiču.",
+          "keywords": [
+            "radoznalost",
+            "komunikacija",
+            "učenje",
+            "obaveštajna služba",
+            "pažnja"
+          ],
+          "context": "Vaša trenutna situacija je oblikovana učenjem ili nepažnjom."
+        },
+        "position8": {
+          "upright": "Princ mačeva, spoljni uticaji mogu vam ponuditi nove informacije, intrigantne mogućnosti i područja učenja.",
+          "reversed": "Princ mačeva obrnut, spoljni uticaji mogu vas izazvati tračevima, dezinformacijama ili nepažnjom.",
+          "keywords": [
+            "učenje",
+            "radoznalost",
+            "komunikacija",
+            "informacije",
+            "obaveštajna služba"
+          ],
+          "context": "Spoljni uticaji utiču na vas putem informacija ili pogrešne displejke."
+        },
+        "position9": {
+          "upright": "Princ mačeva, možete se bojati da ste pogrešno shvaćeni, vaše reči iskrivljene ili vaša radoznalost potcenjena.",
+          "reversed": "Prekoračeni princ mačeva može ukazivati na strah da će biti izložen tračevima, širenjem dezinformacija ili nepažnjom.",
+          "keywords": [
+            "komunikacija",
+            "ne razumem pogrešno",
+            "informacije",
+            "tračevi",
+            "anksioznost"
+          ],
+          "context": "Fokusira se na strahove, izobličenja reči ili dezinformacija."
+        }
+      },
+      "knightofswords": {
+        "position1": {
+          "upright": "Vitez mačeva može biti u srcu problema, gde mogu biti u igri brze odluke, ubrzanje ili fokusiranje na cilj.",
+          "reversed": "Invertirani vitez mačeva, žurba, nepromišljenosti ili agresivnog stavova može biti izvor problema.",
+          "keywords": [
+            "brzina",
+            "žuriti",
+            "cilj",
+            "stabilnost",
+            "pitanje"
+          ],
+          "context": "Uklonjene odluke ili brze akcije su u srcu problema."
+        },
+        "position10": {
+          "upright": "Vitez mačeva, ishod događaja može biti brz napredak, presudan potez ili pokazivanje hrabrosti.",
+          "reversed": "Invertirani vitez mačeva, ishod događaja može biti žurba, nedostatak planiranja ili smernica.",
+          "keywords": [
+            "brzina",
+            "hrabrost",
+            "stabilnost",
+            "premestiti",
+            "nedostatak planiranja"
+          ],
+          "context": "Rezultat može biti brz napredak ili žurba."
+        },
+        "position2": {
+          "upright": "Vitez mačeva, prepreka može biti osiromašenje, nestrpljenje ili agresivno ponašanje. Prebrzo kreće se da rešenje teško postaje teško.",
+          "reversed": "Okolišteni vitez mačeva, trčanje bez pravca, nepažnja ili impulsivnost može biti izvor prepreke.",
+          "keywords": [
+            "žuriti",
+            "nestrpljenje",
+            "cilj",
+            "impulsivnost",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje iz iskrivnih odluka i nestrpljenja."
+        },
+        "position3": {
+          "upright": "Vitez mačeva može podsvesno imati istoriju ishitrenih odluka, nestrpljenja ili ispada ljutnje.",
+          "reversed": "Za vitez mačeva obrnut, prošli nedostatak smera, nepažnje, ili prekomernog uzimanja rizika može se ugraditi u podsvesti.",
+          "keywords": [
+            "podsticaj",
+            "nestrpljenje",
+            "ljutnja",
+            "rizikovati",
+            "podsvestan"
+          ],
+          "context": "Urođene odluke u prošlosti mogu uticati na današnje probleme."
+        },
+        "position4": {
+          "upright": "Vitez mačeva, vaši najbolji potencijal leži u preduzimanju akcije sa hrabrošću, braniš svoje ideje i unapredite svoje ciljeve sa određivanjem.",
+          "reversed": "Vitez mačeva preokrenuo je, da dostignete svoj potencijal, morate izbegavati žurbu, držati svoje pravac jasnim i izbegavati ometanja.",
+          "keywords": [
+            "hrabrost",
+            "stabilnost",
+            "pokret",
+            "odbrana",
+            "vizija"
+          ],
+          "context": "Vaš najbolji potencijal je da se krenete napred sa odlučnošću i donesete svoje ideje u život."
+        },
+        "position5": {
+          "upright": "Vitez mačeva, možda ste postupili nepristojno, dali su brze odluke ili su podebljali korake u nedavnoj prošlosti.",
+          "reversed": "Vitez mačeva preokrenuo, možda ste iskusili nedostatak smera, nepažnje ili nestrpljivosti u nedavnoj prošlosti.",
+          "keywords": [
+            "podsticaj",
+            "hrabrost",
+            "pokret",
+            "nestrpljenje",
+            "cilj"
+          ],
+          "context": "Vaša nedavna prošlost možda je obeležena žurbama ili nedostatkom smera."
+        },
+        "position6": {
+          "upright": "Vitez mačeva, smela inicijativa, brza akcija ili jasna odluka mogu vas čekati u bliskoj budućnosti.",
+          "reversed": "Okrećeno vitez mačeva, možda ćete doživeti impetusitiju, nepažnju ili nedostatak smera u bliskoj budućnosti.",
+          "keywords": [
+            "hrabrost",
+            "brzina",
+            "odluka",
+            "cilj",
+            "žuriti"
+          ],
+          "context": "Vaša bliska budućnost će biti oblikovana hrabrošću ili osipom."
+        },
+        "position7": {
+          "upright": "Vitez mačeva, brzo se krećeš, odvaži korake i odmah se krećeš prema naprijed sa odlučnošću.",
+          "reversed": "Ograničeno vitez mačeva, žurba, nepažnje, ili nedostatak smera vas u ovom trenutku može izazvati.",
+          "keywords": [
+            "hrabrost",
+            "brzina",
+            "odluka",
+            "fokus",
+            "žuriti"
+          ],
+          "context": "Vaša trenutna situacija je oblikovana hrabrošću ili osipom."
+        },
+        "position8": {
+          "upright": "Vitez mačeva, spoljni uticaji mogu vas podstaći da se brzo ponašate, da biste hrabro unapredili.",
+          "reversed": "Okolišteni vitez mačeva, spoljni uticaji mogu vas gurnuti u osipanje, neoprezno ili usmereno ponašanje.",
+          "keywords": [
+            "brzina",
+            "hrabrost",
+            "odluka",
+            "žuriti",
+            "fokus"
+          ],
+          "context": "Spoljni uticaji utiču na vas brzinu i hrabrosti ili impetuotizmom."
+        },
+        "position9": {
+          "upright": "Vitez mačeva, možete se plašiti greške u žurbi, ponašajući se impulsivno ili nedostaje plana.",
+          "reversed": "Učitavanje viteza mačeva može ukazivati na nekontrolisanu ljutnju, smernu akciju ili strah od neuspeha.",
+          "keywords": [
+            "žuriti",
+            "nedostatak planiranja",
+            "ljutnja",
+            "brzina",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi se fokusiraju na glume užurbano ili pravljenje grešaka."
+        }
+      },
+      "queenofswords": {
+        "position1": {
+          "upright": "Kraljica mačeva, potreba za logikom, objektivnošću ili nezavisnošću mogu biti u srcu problema.",
+          "reversed": "Kraljica mačeva preokrenuta: Prekomerna kritika, hladnoća ili nedostatak razumevanja može biti izvor problema.",
+          "keywords": [
+            "logika",
+            "objektivnost",
+            "nezavisnost",
+            "kritika",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba za logičkom i objektivnom pristupom."
+        },
+        "position10": {
+          "upright": "Kraljica mačeva, ishod događaja može biti logičke odluke, nezavisnost i jasna komunikacija.",
+          "reversed": "Invertirana kraljica mačeva, ishod događaja može biti hladnoća, prevelika kritika ili nesporazumi.",
+          "keywords": [
+            "logika",
+            "nezavisnost",
+            "komunikacija",
+            "kritika",
+            "oštrina"
+          ],
+          "context": "Rezultat može biti razumne odluke ili nesporazume."
+        },
+        "position2": {
+          "upright": "Kraljica mačeva, vaša prepreka može biti preterano kritična, hladno ponašanje ili zadržavanje udaljenosti. Previše logike suzbijamo emocije.",
+          "reversed": "Invertirana kraljica mačeva, krutost, prehrani ili nedostatak razumevanja može biti izvor prepreke.",
+          "keywords": [
+            "kritika",
+            "prehlađen",
+            "logika",
+            "presuda",
+            "prepreka"
+          ],
+          "context": "Aprestraba se pojavljuje iz preterano kritičnog i hladnog pristupa."
+        },
+        "position3": {
+          "upright": "Kraljica mačeva može podsvesno naglasiti logiku, hladnoću ili odred od emocija u prošlosti.",
+          "reversed": "Invertirana kraljica mačeva, prekomerne kritike, nedostatak razumevanja ili rigidnosti možda su dovedeni u podsvijest iz prošlosti.",
+          "keywords": [
+            "logika",
+            "prehlađen",
+            "kritika",
+            "krutost",
+            "podsvestan"
+          ],
+          "context": "Teško ili hladni pristupi u prošlosti su možda oblikovali današnje probleme."
+        },
+        "position4": {
+          "upright": "Kraljica mačeva, vaš najbolji potencijal je da se krene naprijed sa objektivnošću, oštrom inteligencijom i nezavisnošću.",
+          "reversed": "Kraljica mačeva je preokrenuta, otključavanje vašeg potencijala, morate izbeći prekomernu kritiku, krutost i emocionalni odred.",
+          "keywords": [
+            "nezavisnost",
+            "obaveštajna služba",
+            "objektivnost",
+            "mudrost",
+            "misao"
+          ],
+          "context": "Vaš najbolji potencijal je da se samostalno napreduje napred i sa oštrim umom."
+        },
+        "position5": {
+          "upright": "Kraljica mačeva, možda ste delovali objektivno, prioritet logici ili prikazali nezavisni stav u nedavnoj prošlosti.",
+          "reversed": "Kraljica mačeva je preokrenuta, možda ste iskusili hladnoću, kritiku ili nerazumevanje u nedavnoj prošlosti.",
+          "keywords": [
+            "logika",
+            "nezavisnost",
+            "objektivnost",
+            "prehlađen",
+            "kritika"
+          ],
+          "context": "Vaša nedavna prošlost je možda objektivnost ili emocionalna rastojanja objektivnosti."
+        },
+        "position6": {
+          "upright": "Kraljica mačeva, u bliskoj budućnosti određivat ćete svoju logiku, donositi objektivne odluke ili preuzeti nezavisni stav.",
+          "reversed": "Kraljica preokretanih mačeva može ukazivati na hladnoću, kritičnost ili nedostatak razumevanja u bliskoj budućnosti.",
+          "keywords": [
+            "logika",
+            "nezavisnost",
+            "objektivnost",
+            "prehlađen",
+            "kritika"
+          ],
+          "context": "Vaša neposredna budućnost oblikovana će objektivnošću ili emocionalnom daljinom."
+        },
+        "position7": {
+          "upright": "Kraljica mačeva, koristiš logiku, donošenje objektivnih odluka i trenutno prikazuješ nezavisan stav.",
+          "reversed": "Obrnuta kraljica mačeva, možda ćete trenutno doživljavati hladnoću, kritiku ili neshvatljivost.",
+          "keywords": [
+            "logika",
+            "nezavisnost",
+            "objektivnost",
+            "prehlađen",
+            "odluka"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je logikom ili ekstremnom hladnoću."
+        },
+        "position8": {
+          "upright": "Kraljica mačeva, spoljni uticaji mogu vam pružiti logičke, objektivne i mudre smernice.",
+          "reversed": "Ograničena kraljica mačeva, spoljni uticaji mogu vas izazvati hladnoćom, prekomernom kritikom ili nerazumevanjem.",
+          "keywords": [
+            "logika",
+            "mudrost",
+            "nezavisnost",
+            "prehlađen",
+            "odluka"
+          ],
+          "context": "Spoljni uticaji utiču na vas kroz mudrost ili hladnoću."
+        },
+        "position9": {
+          "upright": "Kraljica mačeva, možda ćete se plašiti pojavljivanja hladnog hladnog, da budete sami ili je pogrešno shvaćeno.",
+          "reversed": "Ograničena kraljica mačeva može ukazivati na strah od prevelike kritike, nedostatka razumevanja ili oštrine.",
+          "keywords": [
+            "prehlađen",
+            "kritika",
+            "usamljenost",
+            "nezavisnost",
+            "anksioznost"
+          ],
+          "context": "Fokusira se na vaše strahove, hladnoću ili nerazumevanje."
+        }
+      },
+      "kingofswords": {
+        "position1": {
+          "upright": "Kralj mačeva može biti o pravdi, mudrosti ili autoritetu u srcu problema.",
+          "reversed": "Preokrećen kralj mačeva, krutost, nepravda ili sukob sa ovlašćenjima može biti izvor problema.",
+          "keywords": [
+            "mudrost",
+            "pravda",
+            "vlast",
+            "rukovodstvo",
+            "pitanje"
+          ],
+          "context": "U srcu problema su mudre odluke i potraga za pravdom."
+        },
+        "position10": {
+          "upright": "Kralj mačeva može imati samo odluke, razumno vođstvo i mentalnu snagu kao rezultat događaja.",
+          "reversed": "Invertirani kralj mačeva, ishod događaja može biti opresivne odluke, nepravda ili hladna vlast.",
+          "keywords": [
+            "pravda",
+            "logika",
+            "vlast",
+            "rukovodstvo",
+            "odluka"
+          ],
+          "context": "Rezultat može biti nepravedna administracija ili opresivne odluke."
+        },
+        "position2": {
+          "upright": "Kralj mačeva, prepreka može biti pritisak vlasti, prekomerna logika ili kruta pravila. Previše kruti inhibira fleksibilnost.",
+          "reversed": "Invertirani kralj mačeva, nepravda, sukob sa autoritetom ili hladnim stavovima može biti izvor prepreke.",
+          "keywords": [
+            "vlast",
+            "logika",
+            "krutost",
+            "pravda",
+            "prepreka"
+          ],
+          "context": "Prekidač nastaje iz prevelikih pritiska čvrstih pravila i logike."
+        },
+        "position3": {
+          "upright": "Kralj mačeva može podsvesno imati prošli pritisak od autoriteta, krutost logike ili potrage za pravdom.",
+          "reversed": "U obrnutom kralju mačeva, prošlih nepravda, ugnjetavajuće figure ili hladni stavovi mogu se urezati u podsvesno.",
+          "keywords": [
+            "vlast",
+            "pravda",
+            "krutost",
+            "prehlađen",
+            "podsvestan"
+          ],
+          "context": "Ovlaštenost i nepravda u prošlosti su možda osnova za današnje probleme."
+        },
+        "position4": {
+          "upright": "Kralj mačeva, vaš najbolji potencijal je da se prave pravedne odluke, vodič sa mudrošću i utvrdite redosled logike.",
+          "reversed": "Obrnuti kralj mačeva, da biste postigli svoj potencijal, morate se odmaknuti od autoritarizma, hladnoće i krute stavove.",
+          "keywords": [
+            "pravda",
+            "logika",
+            "uputstvo",
+            "vlast",
+            "mudrost"
+          ],
+          "context": "Vaš najbolji potencijal je da budete fer i razumni vodič."
+        },
+        "position5": {
+          "upright": "Kralj mačeva, možda ste se razumljivi odlučili, postupili pošteno ili prikazali autoritet u nedavnoj prošlosti.",
+          "reversed": "Obrnuti kralj mačeva, možda ste doživeli tlačivo ponašanje, hladnoću ili nepravdu u nedavnoj prošlosti.",
+          "keywords": [
+            "vlast",
+            "pravda",
+            "odluka",
+            "logika",
+            "prehlađen"
+          ],
+          "context": "Vaša nedavna prošlost možda je određena pravednom ili nepravednom organom."
+        },
+        "position6": {
+          "upright": "Kralj mačeva, u bliskoj budućnosti ćete napraviti logičke odluke, ponašati se pošteno i voditi sa svojom mudrošću.",
+          "reversed": "Invertirani kralj mačeva, može biti ugnjetavanje, hladnoća ili nepravedne odluke u bliskoj budućnosti.",
+          "keywords": [
+            "vlast",
+            "pravda",
+            "logika",
+            "mudrost",
+            "odluka"
+          ],
+          "context": "Vaša bliža budućnost će se oblikovati mudrim odlukama ili nepravdi."
+        },
+        "position7": {
+          "upright": "Kralj mačeva, pravite razumne odluke, dužnosti se pošteno i trenutno koristite svoju mudrost.",
+          "reversed": "Obrnuti kralj mačeva, možda ćete trenutno prikazati ugnjetavost, nepravedne odluke ili prehlade.",
+          "keywords": [
+            "vlast",
+            "pravda",
+            "logika",
+            "mudrost",
+            "odluka"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je mudrošću ili nepravdom."
+        },
+        "position8": {
+          "upright": "Kralj mačeva, spoljni uticaji mogu vam doneti fer odluke, razumne smernice i autoritativnu podršku.",
+          "reversed": "Obrnuti kralj mačeva, spoljni uticaji mogu vas osporiti kroz ugnjetavanje, nepravdu ili prehladu.",
+          "keywords": [
+            "pravda",
+            "vlast",
+            "mudrost",
+            "logika",
+            "odluka"
+          ],
+          "context": "Spoljni uticaji utiču na vas kroz pravdu ili ugnjetavanje."
+        },
+        "position9": {
+          "upright": "Kralj mačeva, možete se bojati pogrešne promjene, gubitka razloga ili nepravde.",
+          "reversed": "Prekoračeni kralj mačeva može ukazivati na strah od potlačenja, drobljene autoritetom ili zavedenom.",
+          "keywords": [
+            "pravda",
+            "logika",
+            "vlast",
+            "pogrešno promet",
+            "anksioznost"
+          ],
+          "context": "Vaš strahovi centar za nepravdu ili pritiskom autoriteta."
+        }
+      },
+      "aceofwands": {
+        "position1": {
+          "upright": "ACE of štapića može biti u srcu problema, sa novom inspiracijom, kreativnom idejom ili potrebom za snažnim početkom.",
+          "reversed": "Ace štapiće preokrenuli su, nedostatak motivacije, odlaganja ili ljuštenje entuzijazma može biti izvor problema.",
+          "keywords": [
+            "inspiracija",
+            "kreativnost",
+            "početak",
+            "motivacija",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potraga za novim izvorom energije ili inspiracije."
+        },
+        "position10": {
+          "upright": "ACE of štapiće može biti novi početak, inspirativna prilika i kreativna inicijativa kao rezultat događaja.",
+          "reversed": "Invertirani ACE of štapiće, rezultat događaja može biti nedostatak motivacije, odloženi projekti ili nedostatak svrhe.",
+          "keywords": [
+            "inspiracija",
+            "početak",
+            "kreativnost",
+            "motivacija",
+            "prilika"
+          ],
+          "context": "Rezultat može biti kreativan početak ili odložena inicijativa."
+        },
+        "position2": {
+          "upright": "Ace od štapića, prepreka bi mogla biti nedostatak motivacije, gubitak inspiracije ili ne ima hrabrosti da započnete. Kada vatra u vas ne gori, postaje teško proceniti nove mogućnosti.",
+          "reversed": "Invertirani as ljudskih štapića, nedovršenih projekata, brzo blede entuzijazam ili blokirana kreativnost može biti izvor problema.",
+          "keywords": [
+            "inspiracija",
+            "motivacija",
+            "kreativnost",
+            "početak",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje od nedostatka inspiracije i motivacije."
+        },
+        "position3": {
+          "upright": "Ace ljudskih štapića može biti moćna inspiracija, kreativna iskra ili uzbudljiv početak rođen u podsvesnom prošlosti. Ova motivacija je možda ostavila otisak na problemima koje danas doživljavate.",
+          "reversed": "Invertirani ACE of Vinds može biti zbog brzog blede entuzijazam, nedovršene projekte ili gubitak motivacije u prošlosti, koji su se možda rešili u podsvesti.",
+          "keywords": [
+            "inspiracija",
+            "početak",
+            "kreativnost",
+            "entuzijazam",
+            "podsvestan"
+          ],
+          "context": "Prošle inspirativne početke ili gubitak motivacije možda su oblikovali današnje probleme."
+        },
+        "position4": {
+          "upright": "ACE O SHAT-ovima: Vaš najbolji potencijal je da u životu donesete nove ideje, stavite svoje strasti u akciju i pretvorite inspiraciju u hrabre korake.",
+          "reversed": "Ace of Vinds Reversed: Da biste postigli svoj potencijal, morate prestati da prekrasite, prikupite svoju hrabrost i ponovite svoju motivaciju.",
+          "keywords": [
+            "inspiracija",
+            "početak",
+            "kreativnost",
+            "strast",
+            "hrabrost"
+          ],
+          "context": "Vaš najbolji potencijal dolazi od prevrtanja inspiracije u akciju."
+        },
+        "position5": {
+          "upright": "Ace of Vinds, možda ste nedavno doživeli novu inspiraciju, kreativnu iskru ili snažnu početnu energiju.",
+          "reversed": "Ace of Vinds je preokrenuo, možda ste doživeli nedostatak inspiracije, odloženo započinje ili uspavljivanje energije u nedavnoj prošlosti.",
+          "keywords": [
+            "početak",
+            "inspiracija",
+            "kreativnost",
+            "strast",
+            "iskra"
+          ],
+          "context": "Vaša nedavna prošlost možda je oblikovana nedostatkom kreativne iskra ili inspiracije."
+        },
+        "position6": {
+          "upright": "Ace od štapića može otvoriti vrata novu ideju, snažnu inspiraciju ili kreativan početak u bliskoj budućnosti.",
+          "reversed": "Ace of Vinds Reversed: Možda ćete doživeti nedostatak inspiracije, odloženih projekata ili stagnacije u velikoj mjeri u skoroj budućnosti.",
+          "keywords": [
+            "početak",
+            "inspiracija",
+            "kreativnost",
+            "strast",
+            "iskra"
+          ],
+          "context": "Vaša bliža budućnost će oblikovati nove inspiracije ili odlaganja."
+        },
+        "position7": {
+          "upright": "Ace od štapića, postoji nova inspiracija, jaka iskra ili stvaralačka početna energija u vašem životu trenutno.",
+          "reversed": "Ace of Vinds je preokrenuo, možda ćete doživljavati nedostatak motivacije, odloženih planova ili inspiraciju trenutno.",
+          "keywords": [
+            "inspiracija",
+            "početak",
+            "kreativnost",
+            "strast",
+            "iskra"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je kreativnim počecima ili odlaganjem."
+        },
+        "position8": {
+          "upright": "Ace od štapića, spoljni uticaji mogu vam pružiti inspirativne početke, kreativne stimulacije i aktiviranje mogućnosti.",
+          "reversed": "Invertirani as štapiće, spoljni uticaji mogu stvoriti blokadu inspiracije, odložene projekte ili okolnosti koje smanjuju motivaciju.",
+          "keywords": [
+            "inspiracija",
+            "početak",
+            "pokret",
+            "kreativnost",
+            "prilika"
+          ],
+          "context": "Spoljni uticaji mogu zapaliti iskru ili prigušiti plamen."
+        },
+        "position9": {
+          "upright": "Ace od štapića, možda ćete se plašiti gubitka inspiracije, a ne možete da se usuđujete da se usuđujete nove početke ili nedostajuće mogućnosti.",
+          "reversed": "ACE of Vinds Reversed može ukazivati na gubitak motivacije, odlaganje projekata ili straha da neće moći da ispuni nečiji potencijal.",
+          "keywords": [
+            "inspiracija",
+            "početak",
+            "motivacija",
+            "prilika",
+            "anksioznost"
+          ],
+          "context": "Vaši strahovi se fokusiraju na to da ne mogu da izrazite svoju kreativnost ili nedostajuće mogućnosti."
+        }
+      },
+      "twoofwands": {
+        "position1": {
+          "upright": "Dvoje štapića mogu biti u srcu problema, gde planiranje, viđenje ili buduće odluke mogu biti u srcu.",
+          "reversed": "Dvoje štapiće preokrenuli su, uski ugovornost, nedostatak hrabrosti ili straha od preduzimanja akcije mogu biti izvor problema.",
+          "keywords": [
+            "plan",
+            "vizija",
+            "budućnost",
+            "hrabrost",
+            "pitanje"
+          ],
+          "context": "U srcu problema je potreba za stvaranjem jasnih planova za budućnost."
+        },
+        "position10": {
+          "upright": "Dvoje štapića mogu ukazivati na pojašnjenje budućih planova, vizije i napretka kao rezultat događaja.",
+          "reversed": "Invertirana dva štapića mogu rezultirati nedostatkom planiranja, nedostatka vida ili nedostajućih mogućnosti kao rezultat događaja.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "budućnost",
+            "napredak",
+            "odluka"
+          ],
+          "context": "Rezultat može biti da se razvija vizija ili ostane bez plana."
+        },
+        "position2": {
+          "upright": "Dvoje štapiće znači da prepreka može biti nemogućnost formiranja jasne vizije budućnosti, kratkovidne osobe ili nemogućnosti donošenja odluka.",
+          "reversed": "Dvoje štapića obrnuto može ometati nedostatak hrabrosti, podcjenjivanja mogućnosti ili pitanja poverenja.",
+          "keywords": [
+            "vizija",
+            "budućnost",
+            "hrabrost",
+            "uski pogled",
+            "prepreka"
+          ],
+          "context": "Prepreka se pojavljuje zbog nedostatka vizije i oklevanja da preduzme korake."
+        },
+        "position3": {
+          "upright": "Dvoje štapiće mogu podsvesno imati prošla iskustva o stvaranju budućih planova, razvoja vizija ili donošenje velikih odluka.",
+          "reversed": "Drugo je pretvoreno dvoje, prošlo nedostatak vizije, nedostatak hrabrosti, ili podmazavajućim mogućnostima mogu biti ugrađeni u podsvijesti.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "budućnost",
+            "hrabrost",
+            "podsvestan"
+          ],
+          "context": "Prošli planovi i nedostatak vizije mogu uticati na današnje probleme."
+        },
+        "position4": {
+          "upright": "Dvoje štapiće znači da je vaš najbolji potencijal da planira budućnost, proširite svoju viziju i hrabro istražite svoje horizonte.",
+          "reversed": "Okolišta je dva štapića da otključate svoj potencijal, morate prestati da ostanete u neizvesnosti i razjasnite svoj smer.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "budućnost",
+            "hrabrost",
+            "glasati"
+          ],
+          "context": "Vaš najbolji potencijal je da se budućnost oblikovate sa smelim planovima."
+        },
+        "position5": {
+          "upright": "Dvoje štapiće, možda ste nedavno napravili planove za budućnost, pomislili na nove staze ili proširili svoje horizonte.",
+          "reversed": "Pretvorena dva štapića, možda ste nedavno iskusni nesposobnost da donosite odluke, nemogućnost rizika ili zaglavljene u uskoj perspektivi.",
+          "keywords": [
+            "plan",
+            "vizija",
+            "budućnost",
+            "odluka",
+            "horizont"
+          ],
+          "context": "Vaša nedavna prošlost je možda određena planovima ili neodlučnošću."
+        },
+        "position6": {
+          "upright": "Dvoje štapiće: Prilike za proširenje vaših planova, izaberite nove staze ili proširite svoje horizonte mogu nastati u bliskoj budućnosti.",
+          "reversed": "Pretvoreno dvoje štapiće, možete izbeći rizike u bliskoj budućnosti i iskusiti nesigurnost ili usku perspektivu.",
+          "keywords": [
+            "plan",
+            "vizija",
+            "budućnost",
+            "glasati",
+            "prilika"
+          ],
+          "context": "Vaša bliska budućnost će se oblikovati širenjem vaše vizije ili biti ograničen uskom prikazom."
+        },
+        "position7": {
+          "upright": "Dvoje štapiće, trenutno pravite planove za budućnost, proširite svoje vizije i navigacione izbore.",
+          "reversed": "Drugi štapite, trenutno izbegavate rizike, možda ćete imati uskoj perspektivi ili nesigurnosti.",
+          "keywords": [
+            "plan",
+            "vizija",
+            "budućnost",
+            "glasati",
+            "hrabrost"
+          ],
+          "context": "Vaša trenutna situacija oblikovana je ekspanzijom vida ili nesigurnosti."
+        },
+        "position8": {
+          "upright": "Dvoje štapića vas podržavaju da proširite svoju viziju spoljnog okruženja, plana i razmislite o mogućnostima otvaranja očiju.",
+          "reversed": "Invertirano dvoje štapića, spoljni uticaji mogu odvratiti rizike, stvoriti usku perspektivu ili neizvesnost.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "izbor",
+            "horizont",
+            "hrabrost"
+          ],
+          "context": "Spoljni uticaji mogu podstaći ili odložiti planiranje."
+        },
+        "position9": {
+          "upright": "Dvoje štapiće, možda ćete se plašiti da napravite pogrešan plan, ne videvši budućnost ili riziku.",
+          "reversed": "Preokrećena dva štapića mogu ukazivati na nedostatak vizije, neodlučnosti ili straha od nestalih mogućnosti.",
+          "keywords": [
+            "vizija",
+            "plan",
+            "rizikovati",
+            "izbor",
+            "anksioznost"
+          ],
+          "context": "Vaš strahovski centar okola je odabir pogrešnog smera ili gubitak vida."
+        }
+      },
+      "threeofwands": {
+        "position1": {
+          "upright": "Triska štapića mogu biti radi o oduzimanju mogućnosti, širenju ili napredovanju u srcu problema.",
+          "reversed": "Prekoračili tri štapića, nedostajuće mogućnosti, čekaju ili nedostatak vizije mogu biti izvor problema.",
+          "keywords": [
+            "prilika",
+            "ekspanzija",
+            "vizija",
+            "napredak",
+            "pitanje"
+          ],
+          "context": "U srcu problema je videti i ocenjivati nove mogućnosti."
+        },
+        "position10": {
+          "upright": "Tri štapića mogu ukazivati na proširene mogućnosti, nove saradnje i otvaranje horizonta kao rezultat događaja.",
+          "reversed": "Pretvorena tri štampe, ishod događaja može biti odlaganja, neuspešni pokušaji ili neuspeh u ispunjavanju očekivanja.",
+          "keywords": [
+            "prilika",
+            "partnerstvo",
+            "napredak",
+            "vizija",
+            "ekspanzija"
+          ],
+          "context": "Rezultat može biti nove mogućnosti ili razočarenja."
+        },
+        "position2": {
+          "upright": "Tri štapića, prepreka može biti neuspeh u viđenju mogućnosti, čekanja ili ne smeju da se proširi. Kada ne možete da pogledate horizont, vidite svoj put kao ograničen.",
+          "reversed": "Okolištena tri štapića, pogrešne planove, neizvesnost ili nedostatak vizije mogu biti izvor prepreke.",
+          "keywords": [
+            "prilika",
+            "vizija",
+            "plan",
+            "neizvesnost",
+            "prepreka"
+          ],
+          "context": "Aprestracite se pojavljuje da ne može da proceni mogućnosti i nedostatak vida."
+        },
+        "position3": {
+          "upright": "Tri štapića mogu se podsvesti podsvesti u prošlost, istraživanje mogućnosti ili gledajući udaljene ciljeve.",
+          "reversed": "Okolišta je tri štapića, pogrešne planove, nedostatak vizije ili neuspeha da se mogu videti u podsvesti u prošlosti.",
+          "keywords": [
+            "prilika",
+            "vizija",
+            "plan",
+            "ekspanzija",
+            "podsvestan"
+          ],
+          "context": "Prošle mogućnosti ili nedostatak vizije možda su bili osnova za današnje probleme."
+        },
+        "position4": {
+          "upright": "Triska štapića odnose se na širenje horizonta vaših najboljih potencijala, iskorištavanje mogućnosti i preuzimanja strateških koraka za dugoročni uspeh.",
+          "reversed": "Pretvorena tri štampe, da dostignete svoj potencijal, morate izbeći prepreke, prestati odlagati i postaviti jasan pravac.",
+          "keywords": [
+            "prilika",
+            "vizija",
+            "napredak",
+            "plan",
+            "horizont"
+          ],
+          "context": "Vaš najbolji potencijal je proširenje vaših horizonta i preći na prilike."
+        },
+        "position5": {
+          "upright": "Tri štapića, možda ste počeli da vidite rezultate koraka koje ste preduzeli u nedavnoj prošlosti i otvorili nove mogućnosti.",
+          "reversed": "Pretvorena tri štampe, možda ste iskusili prepreke, odlaganja ili gubitak vida u nedavnoj prošlosti.",
+          "keywords": [
+            "prilika",
+            "napredak",
+            "vizija",
+            "otkriće",
+            "čekanje"
+          ],
+          "context": "Nedavna prošlost je možda oblikovana razvojem mogućnosti ili odlaganja."
+        },
+        "position6": {
+          "upright": "Tri štapića, širenje vaših horizonta, susrećući se sa mogućnostima i videvši rezultate koraka koje vi čekate vas čekaju u bliskoj budućnosti.",
+          "reversed": "Pretvorena tri štapića mogu ukazivati na kašnjenje, gubitak vida ili odlaganja očekivanja u bliskoj budućnosti.",
+          "keywords": [
+            "napredak",
+            "horizont",
+            "prilika",
+            "plan",
+            "vizija"
+          ]
+        }
+      }
+    }
+  }
+}

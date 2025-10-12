@@ -1,0 +1,772 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "themoon": {
+        "position3": {
+          "upright": "The moon may have been subconsciously uncertain in the past, or fears, or illusions, which may have led to today's problems.",
+          "reversed": "The Reverse Moon may have been embedded in your subconscious, in the past, in misunderstandings, deception, or ignoring your intuition.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "fear",
+            "2": "illusion",
+            "3": "Don't be fooled.",
+            "4": "subconscious"
+          },
+          "context": "The fears and illusions of the past may be the basis of today's problems."
+        },
+        "position4": {
+          "upright": "The moon shows that its potential is to develop intuition, to face uncertainty, and to overcome illusions.",
+          "reversed": "The Reverse Moon may be fears, illusions, and insecurities that block its potential.",
+          "keywords": {
+            "0": "intuition",
+            "1": "uncertainty",
+            "2": "fear",
+            "3": "illusion",
+            "4": "potential"
+          },
+          "context": "Your best potential is to strengthen your intuition and overcome your fears."
+        },
+        "position5": {
+          "upright": "The moon, in the recent past, you may have experienced uncertainty, fears, or misleading circumstances.",
+          "reversed": "Reverse Moon, in the recent past, you may have faced misunderstandings, deception, or illusions.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "fear",
+            "2": "illusion",
+            "3": "intuition",
+            "4": "confusion"
+          },
+          "context": "Your recent past may have been shaped by uncertainties and illusions."
+        },
+        "position6": {
+          "upright": "The moon, in the near future, you may encounter uncertainty, illusions, or hidden fears.",
+          "reversed": "Reverse Moon, in the near future, you can live with the revelations, the clarity, or the release of illusions.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "illusion",
+            "2": "intuition",
+            "3": "fear",
+            "4": "hidden"
+          },
+          "context": "Your near future will be determined by the processes of uncertainty or clarity."
+        },
+        "position7": {
+          "upright": "Moon, you may be facing uncertainties, illusions, or intuitive fears.",
+          "reversed": "Reverse Moon, there may be a process of revealing secrets, gaining clarity, or getting rid of illusions.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "illusion",
+            "2": "intuition",
+            "3": "fear",
+            "4": "hidden"
+          },
+          "context": "Your current situation is shaped by uncertainty or clarity."
+        },
+        "position8": {
+          "upright": "Moon, external effects may be affecting your life with uncertainty, illusion, or intuitive fears.",
+          "reversed": "Reverse Moon, external effects can affect you by revealing secrets, gaining clarity, or dissolving deception.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "illusion",
+            "2": "fear",
+            "3": "intuition",
+            "4": "Secret"
+          },
+          "context": "It affects you through external effects, uncertainty, or clarity."
+        },
+        "position9": {
+          "upright": "Moon, you may be concerned about uncertainty, deception, or facing fears.",
+          "reversed": "The Reverse Moon, the revelation of secrets, the misunderstandings, or the growing anxiety of inner fears.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "fear",
+            "2": "illusion",
+            "3": "intuition",
+            "4": "Concern"
+          },
+          "context": "Your fears are focused on uncertainty and illusions."
+        }
+      },
+      "thesun": {
+        "position1": {
+          "upright": "The sun may need success, the pursuit of happiness, or visibleness at the center of the problem.",
+          "reversed": "Reverse Sun, pessimism, lack of self-esteem, or prevented success can be the source of the problem.",
+          "keywords": {
+            "0": "success",
+            "1": "Self - confidence",
+            "2": "light",
+            "3": "hope",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is the desire for success and visibility."
+        },
+        "position10": {
+          "upright": "Sun, you can achieve success, happiness, and enlightenment as a result of the event.",
+          "reversed": "The Reverse Sun may result in temporary pessimism, loss of confidence, or decline of appearance.",
+          "keywords": {
+            "0": "success",
+            "1": "Happiness",
+            "2": "enlightenment",
+            "3": "Self - confidence",
+            "4": "victory"
+          },
+          "context": "The result may be bright happiness or temporary shadows."
+        },
+        "position2": {
+          "upright": "The sun, the obstacle, can be too optimistic, to ignore the facts, or to have extreme expectations, and not being realistic makes the solution difficult.",
+          "reversed": "Reverse Sun, lack of self - confidence, blocked success or pessimism may be an obstacle.",
+          "keywords": {
+            "0": "optimism",
+            "1": "success",
+            "2": "Self - confidence",
+            "3": "Realism",
+            "4": "obstacle"
+          },
+          "context": "Obstacle arises from extreme expectations or lack of self - confidence."
+        },
+        "position3": {
+          "upright": "The sun may have been unconscious in the past, a lack of happiness, success, or self-esteem, and the loss of light time may have affected you in your present condition.",
+          "reversed": "Reverse Sun, pessimism, inhibited success or loss of self-esteem may be embedded in his subconscious.",
+          "keywords": {
+            "0": "success",
+            "1": "Self - confidence",
+            "2": "hope",
+            "3": "pessimism",
+            "4": "subconscious"
+          },
+          "context": "The sense of trust and success lost in the past may be reflected in today's problems."
+        },
+        "position4": {
+          "upright": "The sun says its potential is to polish its life with happiness, success and enlightenment.",
+          "reversed": "The Reverse Sun may be a fear of disappointment, failure, or lack of self - confidence, blocking its potential.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "success",
+            "2": "enlightenment",
+            "3": "Self - confidence",
+            "4": "potential"
+          },
+          "context": "Your best potential is to fill your life with joy and light."
+        },
+        "position5": {
+          "upright": "The sun, in the recent past, you may have experienced the energy of happiness, success, and enlightenment.",
+          "reversed": "Inverse Sun, you may have experienced a recent history of pessimism, obstruction of accomplishments, or lack of self - confidence.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "success",
+            "2": "Self - confidence",
+            "3": "enlightenment",
+            "4": "joy"
+          },
+          "context": "Your recent past may have been determined by happiness or pessimism."
+        },
+        "position6": {
+          "upright": "The sun will be waiting for you in the near future, happiness, success and inner enlightenment.",
+          "reversed": "Inverse Sun, in the near future, there may be pessimism, lack of confidence, or obstruction of accomplishments.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "success",
+            "2": "Self - confidence",
+            "3": "enlightenment",
+            "4": "joy"
+          },
+          "context": "Your near future will be shaped by happiness or pessimism."
+        },
+        "position7": {
+          "upright": "Sun, right now, the energy of happiness, success and inner enlightenment supports you.",
+          "reversed": "The Reverse Sun may now be a problem of pessimism, lack of confidence, or delay of accomplishments.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "success",
+            "2": "enlightenment",
+            "3": "Self - confidence",
+            "4": "joy"
+          },
+          "context": "Your current situation is shaped by enlightenment or pessimism."
+        },
+        "position8": {
+          "upright": "The sun, the external effects, may bring you the energy of happiness, success and enlightenment.",
+          "reversed": "Inverted Sun, external effects can force you with lack of confidence, pessimism, or delay of accomplishments.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "success",
+            "2": "enlightenment",
+            "3": "Self - confidence",
+            "4": "joy"
+          },
+          "context": "It affects you through external effects, happiness, or pessimism."
+        },
+        "position9": {
+          "upright": "The sun can cause anxiety about loss of happiness, failure, or visibleness.",
+          "reversed": "The Reverse Sun may be a lack of confidence, a fear of shadowing or underestimation of their accomplishments.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "success",
+            "2": "Self - confidence",
+            "3": "enlightenment",
+            "4": "anxiety"
+          },
+          "context": "Your fears focus on loss of success or not being visible."
+        }
+      },
+      "judgement": {
+        "position1": {
+          "upright": "The court may need to confront the past at the center of the problem, be reborn, or make a big decision.",
+          "reversed": "The reverse court may be the source of the problem of running from the past, not taking responsibility, or deceiving yourself.",
+          "keywords": {
+            "0": "Rebirth",
+            "1": "decision",
+            "2": "Don't face it.",
+            "3": "awareness",
+            "4": "Question"
+          },
+          "context": "At the center of the problem, it needs to face the past and be reborn."
+        },
+        "position10": {
+          "upright": "The court may result in rebirth, forgiveness, and liberation from the past.",
+          "reversed": "The reverse court may be the result of missing opportunities, avoiding responsibilities, or not being able to forgive.",
+          "keywords": {
+            "0": "Rebirth",
+            "1": "decision",
+            "2": "Freedom",
+            "3": "history",
+            "4": "reckoning"
+          },
+          "context": "The result may be the rebirth or the abduction of opportunity."
+        },
+        "position2": {
+          "upright": "The court may find it difficult not to face the past, to avoid responsibilities or to make decisions, and unless the old wounds are covered, the solution will be delayed.",
+          "reversed": "The Inverted Court may be a barrier to avoiding self-evaluation, self - deception, or denial of the past.",
+          "keywords": {
+            "0": "decision",
+            "1": "history",
+            "2": "responsibilities",
+            "3": "Don't face it.",
+            "4": "obstacle"
+          },
+          "context": "The obstacle arises from not facing the past and avoiding responsibility."
+        },
+        "position3": {
+          "upright": "The court may be subconsciously the burden of decisions that have not been faced in the past, of delayed responsibilities or of the past.",
+          "reversed": "The reverse court may have moved into your subconscious to deceive yourself, to deny the past, or to avoid responsibilities.",
+          "keywords": {
+            "0": "decision",
+            "1": "history",
+            "2": "responsibilities",
+            "3": "Don't face it.",
+            "4": "subconscious"
+          },
+          "context": "Decisions and responsibilities that have not been made in the past may be the basis of their problems today."
+        },
+        "position4": {
+          "upright": "The court shows that its potential is to face the past, to gain new awareness and to be reborn.",
+          "reversed": "The Reverse Court may be avoiding denial, remorse, and responsibility that limits its potential.",
+          "keywords": {
+            "0": "awareness",
+            "1": "Rebirth",
+            "2": "history",
+            "3": "decision",
+            "4": "potential"
+          },
+          "context": "Your best potential is to face the past and be reborn."
+        },
+        "position5": {
+          "upright": "The court may have had significant awareness recently, faced the past, or made a strong decision.",
+          "reversed": "In reverse court, you may have escaped responsibility recently, denied the past, or ignored opportunities.",
+          "keywords": {
+            "0": "awareness",
+            "1": "decision",
+            "2": "Don't face it.",
+            "3": "history",
+            "4": "Regeneration"
+          },
+          "context": "Your recent past may have been shaped by awareness or escape."
+        },
+        "position6": {
+          "upright": "In the near future, the court will bring up a significant awareness, a confrontation with the past, or a strong decision.",
+          "reversed": "In the near future, the Inverted Court may be avoiding responsibility, rejecting the past, or ignoring opportunities.",
+          "keywords": {
+            "0": "awareness",
+            "1": "decision",
+            "2": "Don't face it.",
+            "3": "Regeneration",
+            "4": "call"
+          },
+          "context": "Your near future will be shaped by awareness or escape."
+        },
+        "position7": {
+          "upright": "Court, you're in the process of confronting the past, regaining awareness and making an important decision.",
+          "reversed": "The reverse court may be running from responsibilities right now, rejecting the past, or ignoring opportunities.",
+          "keywords": {
+            "0": "awareness",
+            "1": "decision",
+            "2": "Don't face it.",
+            "3": "Regeneration",
+            "4": "call"
+          },
+          "context": "Your current situation is shaped by awareness or escape."
+        },
+        "position8": {
+          "upright": "The court's external effects can bring up issues from the past - awareness and the energy of reckoning.",
+          "reversed": "Reverse Court, external effects can cause you to miss opportunities, reject the past, or avoid responsibilities.",
+          "keywords": {
+            "0": "awareness",
+            "1": "decision",
+            "2": "history",
+            "3": "call",
+            "4": "Regeneration"
+          },
+          "context": "It affects you through external effects, awareness, or escape."
+        },
+        "position9": {
+          "upright": "You may have a fear of court, facing the past, being judged, or making the wrong decision.",
+          "reversed": "The reverse court can create a fear of evading responsibilities, missing opportunities, or being forgiven.",
+          "keywords": {
+            "0": "judgment",
+            "1": "history",
+            "2": "decision",
+            "3": "reckoning",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on being judged or missing opportunities."
+        }
+      },
+      "theworld": {
+        "position1": {
+          "upright": "The world may need completion, integrity or closure at the center of the problem.",
+          "reversed": "Reverse Earth, incomplete processes, unfinished jobs, or unfinished cycles may be the source of the problem.",
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "integrity",
+            "3": "victory",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is the desire to complete a cycle and achieve integrity."
+        },
+        "position10": {
+          "upright": "The world may result in a new cycle of completion, integrity, and success.",
+          "reversed": "The Reverse World may result in failure, failure, or incompatible processes.",
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "cycle",
+            "3": "integrity",
+            "4": "closure"
+          },
+          "context": "The result could be closure or loose ends."
+        },
+        "position2": {
+          "upright": "Earth, the unfinished work of the obstacle, the unfinished cycles, or the lack of integrity, the incomplete processes that stop you.",
+          "reversed": "The Reverse World may be a barrier to fear of failure, unfinished goals, or continuous postponement.",
+          "keywords": {
+            "0": "completion",
+            "1": "cycle",
+            "2": "deficiencies",
+            "3": "target",
+            "4": "obstacle"
+          },
+          "context": "The obstacle comes from unresolved cycles and unfinished business."
+        },
+        "position3": {
+          "upright": "The world can be subconsciously unfinished cycles of the past, missing jobs or failure to capture integrity.",
+          "reversed": "The Reverse World may have settled in the subconscious of past unfinished targets, unfinished processes, or the fear of failure.",
+          "keywords": {
+            "0": "completion",
+            "1": "cycle",
+            "2": "deficiencies",
+            "3": "target",
+            "4": "subconscious"
+          },
+          "context": "In the past, unresolved cycles and incomplete processes may be the basis for today's problems."
+        },
+        "position4": {
+          "upright": "The world shows that its potential is to complete the integrity, close the cycles and move to a new stage.",
+          "reversed": "The Reverse Earth may have unfinished business, unfinished cycles and flaws that limit its potential.",
+          "keywords": {
+            "0": "completion",
+            "1": "cycle",
+            "2": "success",
+            "3": "new phase",
+            "4": "potential"
+          },
+          "context": "Your best potential is to complete a cycle and start over."
+        },
+        "position5": {
+          "upright": "The world may have completed a cycle recently, achieved success, or experienced a sense of integrity.",
+          "reversed": "The Reverse World, you may have experienced unfinished business, unfinished processes, or shortcomings in the recent past.",
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "integrity",
+            "3": "cycle",
+            "4": "closure"
+          },
+          "context": "Your recent history may have been determined by completions or loose ends."
+        },
+        "position6": {
+          "upright": "In the near future, the world will complete a cycle, achieve success, or experience a sense of integrity.",
+          "reversed": "Inverse Earth, in the near future, loose ends, or dissatisfaction may come to the agenda.",
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "cycle",
+            "3": "integrity",
+            "4": "closure"
+          },
+          "context": "Your near future will be shaped by completion or incomplete closures."
+        },
+        "position7": {
+          "upright": "Earth, you're in the process of completing a cycle, succeeding, or experiencing a sense of integrity.",
+          "reversed": "Reverse Earth, right now, loose ends, loops that don't close, or dissatisfaction can force you.",
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "cycle",
+            "3": "integrity",
+            "4": "closure"
+          },
+          "context": "Your current situation is shaped by completion or incompleteness."
+        },
+        "position8": {
+          "upright": "The outside effects of the Earth may bring you the beginning of completion, success, or a new cycle.",
+          "reversed": "Reverse Earth, external effects can affect you with unfinished business, incomplete satisfaction, or unresolved cycles.",
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "cycle",
+            "3": "closure",
+            "4": "integrity"
+          },
+          "context": "It affects you through external effects, completion or incomplete closure."
+        },
+        "position9": {
+          "upright": "Earth, you may have a fear of completion, failure to achieve success, or failure to close cycles.",
+          "reversed": "The Reverse World can create anxiety about loose ends, failure or loss of integrity.",
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "cycle",
+            "3": "closure",
+            "4": "Concern"
+          },
+          "context": "Your fears focus on failure or lack of success."
+        }
+      },
+      "aceofcups": {
+        "position1": {
+          "upright": "The Ace of Hearts may be at the center of the problem, an emotional beginning, a new feeling, or a search for the heart.",
+          "reversed": "The Reverse Cup Ace, emotional blockage, suppression of love, or disappointment may be the source of the problem.",
+          "keywords": {
+            "0": "emotion",
+            "1": "start",
+            "2": "love",
+            "3": "Inspired",
+            "4": "Question"
+          },
+          "context": "The problem needs emotional regeneration at its core."
+        },
+        "position10": {
+          "upright": "The Ace of Hearts may be the result of an emotional renewal, a new love, or a happiness from the heart.",
+          "reversed": "The Reverse Cup Ace may result in disappointment, emotional closure, or unrequited feelings.",
+          "keywords": {
+            "0": "love",
+            "1": "Regeneration",
+            "2": "Happiness",
+            "3": "start",
+            "4": "love"
+          },
+          "context": "The result may be an opening from the heart or an emotional disappointment."
+        },
+        "position2": {
+          "upright": "The Ace of Hearts may be that the obstacle is emotionally unprepared for a new beginning or suppressing your feelings, and when you can't open your heart, the flow of love and inspiration is blocked.",
+          "reversed": "Reverse Cup aces, emotional disappointments, rejection of love or introvertion can be the main obstacle to the problem.",
+          "keywords": {
+            "0": "emotion",
+            "1": "start",
+            "2": "intuition",
+            "3": "love",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born from suppressing your emotions and closing your heart."
+        },
+        "position3": {
+          "upright": "The Ace of Hearts can be an intense emotional beginning in the past, pure love, or an inspiration from the heart, which may have emotionally shaped your problems today.",
+          "reversed": "The Reverse Cup ace may have left traces in the subconscious of past disappointments, rejection of love, or emotional concealment.",
+          "keywords": {
+            "0": "emotion",
+            "1": "start",
+            "2": "Inspired",
+            "3": "Disappointment",
+            "4": "subconscious"
+          },
+          "context": "The emotional beginnings or disappointments of the past may be affecting your problems today."
+        },
+        "position4": {
+          "upright": "The Ace of Hearts says that its best potential is to open its heart, to experience emotional regeneration, and to feed on the pure source of inspiration, and when it begins the flow of love, relationships, creativity and inner peace grow naturally.",
+          "reversed": "The Reverse Cup Ace reminds you to solve emotional blockages to fully reveal your potential, and to accept the feelings you suppress with compassion, and to keep your heart closed also reduces inspiration.",
+          "keywords": {
+            "0": "emotional start",
+            "1": "Compassion",
+            "2": "opening",
+            "3": "Inspired",
+            "4": "Recovery"
+          },
+          "context": "The best potential is to allow flow from the heart and embrace emotional regeneration."
+        },
+        "position5": {
+          "upright": "The Ace of Hearts shows that you have recently opened your heart, had an emotional beginning, or had an inspired moment.",
+          "reversed": "You may have experienced a recent emotional disappointment, a closure of the heart, or a lack of complete expression of love.",
+          "keywords": {
+            "0": "start",
+            "1": "emotion",
+            "2": "Inspired",
+            "3": "love",
+            "4": "opening"
+          },
+          "context": "Your recent past may have been shaped by emotional openings or closures."
+        },
+        "position6": {
+          "upright": "The Ace of Hearts shows that in the near future, you may experience a new emotional beginning or inspiring experience that will open your heart.",
+          "reversed": "The Reverse Cup Ace may be difficult to express your feelings in the near future, or you may experience disappointment or a closed heart.",
+          "keywords": {
+            "0": "New love",
+            "1": "Inspired",
+            "2": "Feelings",
+            "3": "start",
+            "4": "Compassion"
+          },
+          "context": "Your near future can be shaped by emotional openings or disappointments."
+        },
+        "position7": {
+          "upright": "The Ace of Hearts is now open to new feelings, inspiration, and love, and you may be experiencing an internal awakening or emotional regeneration.",
+          "reversed": "The Reverse Cup Ace is suppressing your emotions right now, and you may be experiencing disappointment or a closed-heart experience.",
+          "keywords": {
+            "0": "new feelings",
+            "1": "Inspired",
+            "2": "love",
+            "3": "start",
+            "4": "Compassion"
+          },
+          "context": "Your current situation is shaped by emotional opening or disappointment."
+        },
+        "position8": {
+          "upright": "The Ace of Hearts can bring you new emotional opportunities, inspiration, and caring relationships.",
+          "reversed": "Reverse Cup Ace, external effects can cause emotional closure, disappointment, or love imbalance.",
+          "keywords": {
+            "0": "emotion",
+            "1": "start",
+            "2": "Inspired",
+            "3": "love",
+            "4": "Compassion"
+          },
+          "context": "It affects you through external effects, emotional exposure, or closure."
+        },
+        "position9": {
+          "upright": "You may be afraid of opening up emotionally, not being loved, or being broken in a new bond.",
+          "reversed": "The Reverse Cup Ace shows the anxiety of suppression, rejection, or disappointment.",
+          "keywords": {
+            "0": "opening",
+            "1": "emotion",
+            "2": "Fragrance",
+            "3": "love",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on opening up your feelings and not being requited."
+        }
+      },
+      "twoofcups": {
+        "position1": {
+          "upright": "The two Cups may be at the center of the problem, a desire to form a relationship, a partnership, or a compatible bond.",
+          "reversed": "Two Reverse Cups, incompatibility, conflict or disconnection may be the source of the problem.",
+          "keywords": {
+            "0": "partnership",
+            "1": "compatibility",
+            "2": "relationship",
+            "3": "unity",
+            "4": "Question"
+          },
+          "context": "There's a connection or cooperation at the heart of the problem."
+        },
+        "position10": {
+          "upright": "The two Cups may result in a compatible union, friendship, or partnership.",
+          "reversed": "Two Reverse Cups may result in dissonance, dissension, or conflict.",
+          "keywords": {
+            "0": "unity",
+            "1": "partnership",
+            "2": "compatibility",
+            "3": "love",
+            "4": "relationship"
+          },
+          "context": "The result may be a strong connection or separation."
+        },
+        "position2": {
+          "upright": "Two Cups, the obstacle may be incompatibility, wrong partnerships, or the weakness of ties, and where you're supposed to move forward, the lack of compatibility stops you.",
+          "reversed": "Two Reverse Cups, unstable relationships, insecurity or severing ties could be the source of the problem.",
+          "keywords": {
+            "0": "partnership",
+            "1": "compatibility",
+            "2": "Trust",
+            "3": "relationship",
+            "4": "obstacle"
+          },
+          "context": "Obstacle arises from conflict and trust issues in relationships."
+        },
+        "position3": {
+          "upright": "Two Cups can be a powerful bond, a partnership, or a relationship in the past in the subconscious, which may be guiding your problems today.",
+          "reversed": "The Inverse Two Cups, incompatible relationships, false partnerships, or lack of trust may be embedded in his subconscious.",
+          "keywords": {
+            "0": "relationship",
+            "1": "partnership",
+            "2": "compatibility",
+            "3": "Trust",
+            "4": "subconscious"
+          },
+          "context": "Past relationships and partnerships may be the factors that affect your problems today."
+        },
+        "position4": {
+          "upright": "The Two Cups show that their best potential is to build a partnership based on mutual trust and respect, strengthen real ties and grow in harmony.",
+          "reversed": "The Reverse Two Cup says that to fully harness your potential, you need to clear the boundaries, stop the wrong matches, and prioritize your internal harmony.",
+          "keywords": {
+            "0": "partnership",
+            "1": "compatibility",
+            "2": "reciprocity",
+            "3": "connection",
+            "4": "Trust"
+          },
+          "context": "The best potential is to establish balanced and mutually nutritious relationships."
+        },
+        "position5": {
+          "upright": "The two Cups may have strengthened a partnership, friendship, or romantic bond in the recent past.",
+          "reversed": "The Inverse Two Cups may have been involved in recent history of incompatibility, dissension, or severing ties.",
+          "keywords": {
+            "0": "relationship",
+            "1": "partnership",
+            "2": "connection",
+            "3": "compatibility",
+            "4": "friendship"
+          },
+          "context": "The recent history may have developed through relationships being established or broken."
+        },
+        "position6": {
+          "upright": "Two Cups, a compatible partnership in the near future, a new relationship or the strengthening of the existing bond may be waiting for you.",
+          "reversed": "Inverse Two Cups may be a problem of dissension, communication problems, or loss of ties in the near future.",
+          "keywords": {
+            "0": "relationship",
+            "1": "partnership",
+            "2": "compatibility",
+            "3": "love",
+            "4": "connection"
+          },
+          "context": "Your near future will be shaped by compatible bonds or incompatibility."
+        },
+        "position7": {
+          "upright": "Two Cups, you may be in a compatible bond, a romantic relationship, or an intimate partnership.",
+          "reversed": "Two Reverse Cups, right now, conflict, incompatibility, or communication issues can be a challenge to you.",
+          "keywords": {
+            "0": "relationship",
+            "1": "partnership",
+            "2": "compatibility",
+            "3": "love",
+            "4": "connection"
+          },
+          "context": "Your current situation is shaped by harmony or incompatibility."
+        },
+        "position8": {
+          "upright": "Two Cups, external effects can bring you compatible partnerships, romantic connections, or collaborations.",
+          "reversed": "The Reverse Two Cups can create incompatibility, conflict, or communication problems in relationships.",
+          "keywords": {
+            "0": "partnership",
+            "1": "relationship",
+            "2": "compatibility",
+            "3": "connection",
+            "4": "co-operation"
+          },
+          "context": "It affects you with external effects, compatible ties, or disagreements."
+        },
+        "position9": {
+          "upright": "The two Cups can show anxiety about becoming incompatible, not being afraid of commitment, or losing love for each other.",
+          "reversed": "You may have the fear of two Reverse Cups, separation, conflict, or an unstable relationship.",
+          "keywords": {
+            "0": "relationship",
+            "1": "compatibility",
+            "2": "separation",
+            "3": "connection",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on not being able to establish a compatible relationship or losing touch."
+        }
+      },
+      "threeofcups": {
+        "position1": {
+          "upright": "Three Cups may be important to see support, celebration, or social ties at the center of the problem.",
+          "reversed": "The Reverse Three Cups, exclusion, loneliness, or overkill can be the source of the problem.",
+          "keywords": {
+            "0": "celebration",
+            "1": "support",
+            "2": "Community",
+            "3": "unity",
+            "4": "Question"
+          },
+          "context": "At the center of the problem is the search for social connections or support."
+        },
+        "position10": {
+          "upright": "The three Cups may result in a happy union of celebration, supportive friendship, and happiness.",
+          "reversed": "The Inverse Three Cups may result in false friendships, misunderstandings, or social disconnection.",
+          "keywords": {
+            "0": "celebration",
+            "1": "support",
+            "2": "Friendship",
+            "3": "Happiness",
+            "4": "unity"
+          },
+          "context": "The result may be celebrating or questioning friendships."
+        },
+        "position2": {
+          "upright": "Three Cups, the obstacle could be extreme socialism, distraction, or excess external effects, and when it loses its focus, it becomes difficult to move forward.",
+          "reversed": "The Inverse Three Cups, loneliness, exclusion, or lack of support may have brought about the obstacle.",
+          "keywords": {
+            "0": "support",
+            "1": "Friendship",
+            "2": "social",
+            "3": "loneliness",
+            "4": "obstacle"
+          },
+          "context": "The obstacle comes from not getting enough support from the social community or from extreme addiction."
+        },
+        "position3": {
+          "upright": "Three Cups can be subconscious celebrations, social ties, or friendships, and those relationships can be both supportive and limited to you.",
+          "reversed": "The Inverse Three Cups, exclusion, loneliness, or frustrations from the social environment may be embedded in his subconscious.",
+          "keywords": {
+            "0": "celebration",
+            "1": "social connection",
+            "2": "support",
+            "3": "loneliness",
+            "4": "subconscious"
+          },
+          "context": "Past social ties and friendships may be the basis for today's problems."
+        },
+        "position4": {
+          "upright": "The Three Cups say their best potential is to meet up with supportive communities, share successes and increase fertility with co-operation.",
+          "reversed": "Inverse Three Cups, to open up your potential, you have to reduce the spread of oversociality, distance yourself from unhealthy environments, and strengthen the real support network.",
+          "keywords": {
+            "0": "celebration",
+            "1": "support",
+            "2": "Community",
+            "3": "co-operation",
+            "4": "joy"
+          },
+          "context": "The best potential is sharing joy and productivity with the supportive environment."
+        },
+        "position5": {
+          "upright": "You may have enjoyed three Cups, a recent celebration, a meeting with friends, or a network of social support.",
+          "reversed": "Inverse Three Cups, you may have recently experienced a sense of social estrangement, misunderstandings, or loneliness.",
+          "keywords": {
+            "0": "celebration",
+            "1": "Community"
+          }
+        }
+      }
+    }
+  }
+}

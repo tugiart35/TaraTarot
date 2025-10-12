@@ -1,0 +1,936 @@
+{
+  "career": {
+    "meanings": {
+      "temperance": {
+        "position3": {
+          "keywords": {
+            "0": "balance",
+            "1": "time",
+            "2": "compatibility",
+            "3": "Patience",
+            "4": "natural process"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "balance",
+            "1": "compatibility",
+            "2": "Patience",
+            "3": "stability",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "balance",
+            "1": "compatibility",
+            "2": "Patience",
+            "3": "measure",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "balance",
+            "1": "Patience",
+            "2": "compatibility",
+            "3": "extremism",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "balance",
+            "1": "compatibility",
+            "2": "Patience",
+            "3": "measurance",
+            "4": "future"
+          }
+        }
+      },
+      "thedevil": {
+        "position1": {
+          "keywords": {
+            "0": "addiction",
+            "1": "control",
+            "2": "limit",
+            "3": "passion",
+            "4": "Freedom"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "addiction",
+            "1": "limit",
+            "2": "freedom",
+            "3": "habit",
+            "4": "control"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "addiction",
+            "1": "limit",
+            "2": "system",
+            "3": "habit",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "addiction",
+            "1": "extremism",
+            "2": "effort",
+            "3": "passion",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "addiction",
+            "1": "limit",
+            "2": "Freedom",
+            "3": "Courage",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "addiction",
+            "1": "limit",
+            "2": "habit",
+            "3": "freedom",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "addiction",
+            "1": "freedom",
+            "2": "control",
+            "3": "limit",
+            "4": "future"
+          }
+        }
+      },
+      "thetower": {
+        "position1": {
+          "keywords": {
+            "0": "destruction",
+            "1": "change",
+            "2": "crisis",
+            "3": "Freedom",
+            "4": "Regeneration"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "destruction",
+            "1": "change",
+            "2": "Freedom",
+            "3": "crisis",
+            "4": "Regeneration"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "crisis",
+            "1": "change",
+            "2": "destruction",
+            "3": "Freedom",
+            "4": "unexpected"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "crisis",
+            "1": "effort",
+            "2": "power",
+            "3": "endurance",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "transformation",
+            "1": "crisis",
+            "2": "Regeneration",
+            "3": "opportunity",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "crisis",
+            "1": "Trauma",
+            "2": "destruction",
+            "3": "transformation",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "crisis",
+            "1": "destruction",
+            "2": "transformation",
+            "3": "innovation",
+            "4": "future"
+          }
+        }
+      },
+      "thestar": {
+        "position1": {
+          "keywords": {
+            "0": "hope",
+            "1": "Inspired",
+            "2": "Regeneration",
+            "3": "Vision",
+            "4": "brightness"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "hope",
+            "1": "Inspired",
+            "2": "Vision",
+            "3": "creativity",
+            "4": "future"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "hope",
+            "1": "Inspired",
+            "2": "Vision",
+            "3": "Morality",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "hope",
+            "1": "Inspired",
+            "2": "positivity",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "hope",
+            "1": "Inspired",
+            "2": "Vision",
+            "3": "Regeneration",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "hope",
+            "1": "Inspired",
+            "2": "Vision",
+            "3": "Disappointment",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "hope",
+            "1": "Inspired",
+            "2": "Vision",
+            "3": "awareness",
+            "4": "future"
+          }
+        }
+      },
+      "themoon": {
+        "position1": {
+          "keywords": {
+            "0": "uncertainty",
+            "1": "intuition",
+            "2": "illusion",
+            "3": "dream",
+            "4": "mystery"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "uncertainty",
+            "1": "intuition",
+            "2": "dream",
+            "3": "fear",
+            "4": "mystery"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "uncertainty",
+            "1": "illusion",
+            "2": "fear",
+            "3": "mystery",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "uncertainty",
+            "1": "intuition",
+            "2": "effort",
+            "3": "performance",
+            "4": "illusion"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "uncertainty",
+            "1": "intuition",
+            "2": "fear",
+            "3": "awareness",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "uncertainty",
+            "1": "fear",
+            "2": "illusion",
+            "3": "intuition",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "intuition",
+            "1": "uncertainty",
+            "2": "awareness",
+            "3": "fear",
+            "4": "future"
+          }
+        }
+      },
+      "thesun": {
+        "position1": {
+          "keywords": {
+            "0": "success",
+            "1": "Happiness",
+            "2": "brightness",
+            "3": "openness",
+            "4": "hope"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "success",
+            "1": "Happiness",
+            "2": "visibility",
+            "3": "optimism",
+            "4": "clarity"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "success",
+            "1": "visibility",
+            "2": "optimism",
+            "3": "light",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "success",
+            "1": "Self - confidence",
+            "2": "positivity",
+            "3": "energy",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "positivity",
+            "1": "Self - confidence",
+            "2": "success",
+            "3": "energy",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "success",
+            "1": "Self - confidence",
+            "2": "light",
+            "3": "positivity",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "success",
+            "1": "Self - confidence",
+            "2": "light",
+            "3": "hope",
+            "4": "future"
+          }
+        }
+      },
+      "judgement": {
+        "position1": {
+          "keywords": {
+            "0": "Rebirth",
+            "1": "awareness",
+            "2": "decision",
+            "3": "Awakening",
+            "4": "Freedom"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "Rebirth",
+            "1": "awareness",
+            "2": "decision",
+            "3": "Freedom",
+            "4": "Progress"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "history",
+            "1": "decision",
+            "2": "reckoning",
+            "3": "Rebirth",
+            "4": "Inevitability"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "lesson",
+            "1": "awareness",
+            "2": "experience",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "lesson",
+            "1": "awareness",
+            "2": "history",
+            "3": "Rebirth",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "lesson",
+            "1": "Don't face it.",
+            "2": "history",
+            "3": "reckoning",
+            "4": "delay"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "Rebirth",
+            "1": "lesson",
+            "2": "Don't face it.",
+            "3": "awareness",
+            "4": "future"
+          }
+        }
+      },
+      "theworld": {
+        "position1": {
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "integrity",
+            "3": "satisfaction",
+            "4": "cycle"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "new cycle",
+            "3": "Development",
+            "4": "Progress"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "completion",
+            "1": "cycle",
+            "2": "closure",
+            "3": "universal process",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "effort",
+            "3": "performance",
+            "4": "cycle"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "completion",
+            "1": "cycle",
+            "2": "new beginning",
+            "3": "integrity",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "completion",
+            "1": "deficiencies",
+            "2": "process",
+            "3": "cycle",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "integrity",
+            "3": "victory",
+            "4": "future"
+          }
+        }
+      },
+      "sixofcups": {
+        "position1": {
+          "keywords": {
+            "0": "nostalgia",
+            "1": "history",
+            "2": "Happiness",
+            "3": "childhood dream",
+            "4": "pure joy"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "nostalgia",
+            "1": "Inspired",
+            "2": "history",
+            "3": "dream",
+            "4": "memory"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "history",
+            "1": "memory",
+            "2": "nostalgia",
+            "3": "basic",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "intimacy",
+            "1": "experience",
+            "2": "history",
+            "3": "share",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "history",
+            "1": "experience",
+            "2": "lesson",
+            "3": "awareness",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "nostalgia",
+            "1": "history",
+            "2": "commitment",
+            "3": "memories",
+            "4": "obstacle"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "history",
+            "1": "experience",
+            "2": "support",
+            "3": "opportunity",
+            "4": "future"
+          }
+        }
+      },
+      "sevenofcups": {
+        "position1": {
+          "keywords": {
+            "0": "Dreams",
+            "1": "options",
+            "2": "Confusion",
+            "3": "opportunities",
+            "4": "illusion"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "option",
+            "1": "Vision",
+            "2": "dream",
+            "3": "focus",
+            "4": "decision"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "opportunity",
+            "3": "Confusion",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "dream",
+            "1": "option",
+            "2": "focus",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "selection",
+            "1": "Vision",
+            "2": "focus",
+            "3": "Realism",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "dream",
+            "1": "Confusion",
+            "2": "selection",
+            "3": "focus",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "selection",
+            "1": "Vision",
+            "2": "dream",
+            "3": "focus",
+            "4": "future"
+          }
+        }
+      },
+      "eightofcups": {
+        "position1": {
+          "keywords": {
+            "0": "Don't let go",
+            "1": "Don't say goodbye.",
+            "2": "journey",
+            "3": "dissatisfaction",
+            "4": "Courage"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "Courage",
+            "1": "Don't let go",
+            "2": "Progress",
+            "3": "new path",
+            "4": "satisfaction"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "dissolution",
+            "1": "dissatisfaction",
+            "2": "separation",
+            "3": "awareness",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "Courage",
+            "1": "dissatisfaction",
+            "2": "dissolution",
+            "3": "awareness",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "Courage",
+            "1": "dissolution",
+            "2": "innovation",
+            "3": "Vision",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "dissolution",
+            "1": "dissatisfaction",
+            "2": "Courage",
+            "3": "Don't let go.",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "dissolution",
+            "1": "satisfaction",
+            "2": "Progress",
+            "3": "Vision",
+            "4": "future"
+          }
+        }
+      },
+      "nineofcups": {
+        "position1": {
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Happiness",
+            "2": "success",
+            "3": "abundance",
+            "4": "pleasure"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Wish",
+            "2": "target",
+            "3": "Happiness",
+            "4": "success"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Happiness",
+            "2": "Wish",
+            "3": "conditions",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Happiness",
+            "2": "success",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "satisfaction",
+            "1": "success",
+            "2": "target",
+            "3": "Progress",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "satisfaction",
+            "1": "success",
+            "2": "It's a comfort zone.",
+            "3": "Slowing down",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "satisfaction",
+            "1": "success",
+            "2": "Happiness",
+            "3": "Peace",
+            "4": "future"
+          }
+        }
+      },
+      "tenofcups": {
+        "position1": {
+          "keywords": {
+            "0": "Happiness",
+            "1": "compatibility",
+            "2": "family",
+            "3": "balance",
+            "4": "Peace"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "balance",
+            "1": "compatibility",
+            "2": "Happiness",
+            "3": "layout",
+            "4": "satisfaction"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "compatibility",
+            "1": "balance",
+            "2": "family",
+            "3": "environment",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "compatibility",
+            "1": "Peace",
+            "2": "balance",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "compatibility",
+            "1": "balance",
+            "2": "Peace",
+            "3": "satisfaction",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "family",
+            "1": "expectation",
+            "2": "compatibility",
+            "3": "pressure",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "compatibility",
+            "1": "balance",
+            "2": "Peace",
+            "3": "completion",
+            "4": "future"
+          }
+        }
+      },
+      "pageofcups": {
+        "position1": {
+          "keywords": {
+            "0": "creativity",
+            "1": "Inspired",
+            "2": "intuition",
+            "3": "new opportunities",
+            "4": "Imagination"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "creativity",
+            "1": "Inspired",
+            "2": "testing",
+            "3": "idea",
+            "4": "discovery"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "Inspired",
+            "1": "idea",
+            "2": "creativity",
+            "3": "dream",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "creativity",
+            "1": "curiosity",
+            "2": "Inspired",
+            "3": "effort",
+            "4": "performance"
+          }
+        },
+        "position5": {
+          "keywords": {
+            "0": "creativity",
+            "1": "idea",
+            "2": "Inspired",
+            "3": "testing",
+            "4": "change"
+          }
+        },
+        "position6": {
+          "keywords": {
+            "0": "dream",
+            "1": "application",
+            "2": "maturity",
+            "3": "Vision",
+            "4": "history"
+          }
+        },
+        "position7": {
+          "keywords": {
+            "0": "creativity",
+            "1": "idea",
+            "2": "dream",
+            "3": "testing",
+            "4": "future"
+          }
+        }
+      },
+      "knightofcups": {
+        "position1": {
+          "keywords": {
+            "0": "ideals",
+            "1": "emotion",
+            "2": "creativity",
+            "3": "search",
+            "4": "dream"
+          }
+        },
+        "position2": {
+          "keywords": {
+            "0": "ideal",
+            "1": "passion",
+            "2": "creativity",
+            "3": "opportunity",
+            "4": "Vision"
+          }
+        },
+        "position3": {
+          "keywords": {
+            "0": "ideal",
+            "1": "opportunity",
+            "2": "Vision",
+            "3": "dream",
+            "4": "Out of control"
+          }
+        },
+        "position4": {
+          "keywords": {
+            "0": "idealism",
+            "1": "Vision",
+            "2": "intimacy",
+            "3": "effort",
+            "4": "performance"
+          }
+        }
+      }
+    }
+  }
+}

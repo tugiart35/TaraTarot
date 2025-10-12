@@ -1,0 +1,782 @@
+{
+  "money": {
+    "meanings": {
+      "thehangedman": {
+        "position7": {
+          "keywords": [
+            null,
+            null,
+            null,
+            null,
+            "protok"
+          ],
+          "context": "Čekanje ili neodlučnost biće odlučujući faktor u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Obučeni muškarac pokazuje da će se veštine pravljenja novca poboljšati promenom perspektive, strpljenja i isprobavanja novih metoda.",
+          "reversed": "Okrušen čovek naglavačke pokazuje da će inercija, odlaganje mogućnosti, ili polusvetne žrtve ometati finansijski napredak.",
+          "keywords": [
+            "perspektivan",
+            "strpljenje",
+            "žrtvovati",
+            "metod",
+            "inercija"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa novim perspektivama ili pad u inerciju."
+        }
+      },
+      "death": {
+        "position1": {
+          "upright": "To ukazuje na strah od smrti, gubitka i završetka. Nagle promene finansijskog naloga mogu izazvati anksioznost.",
+          "reversed": "Obrnuta smrt otkriva otpornost na promenu i anksioznost o neizvesnosti. Držeći se starih uzrokuje nemiri.",
+          "keywords": [
+            "promeniti",
+            "završiti",
+            "anksioznost",
+            "otpornost",
+            "regeneracija"
+          ],
+          "context": "Anksioznost proizilazi iz otpora na promene. Prihvatanje završetaka donosi mir."
+        },
+        "position2": {
+          "upright": "Smrt pokazuje da neko traži bezbednost kroz transformaciju, prepuštajući se staroj. Obnavljanje donosi mir za vas.",
+          "reversed": "Ukrašena smrt ukazuje na otpor promenama i anksioznosti o gubitku. Želja za bezbednošću je zasjenjena nemogućom da se prepusti prošlosti.",
+          "keywords": [
+            "transformacija",
+            "izdanje",
+            "sigurnost",
+            "regeneracija",
+            "zatvaranje"
+          ],
+          "context": "Osnivate sigurnost kroz transformaciju i obnovu."
+        },
+        "position3": {
+          "upright": "Smrt ukazuje na napuštanje starih navika u korištenju novca i uspostavljanje nove porudžbine. Transformacija donosi profit.",
+          "reversed": "Ukrašena smrt ukazuje na strah od promene ili anksioznosti gubitka.",
+          "keywords": [
+            "transformacija",
+            "izdanje",
+            "regeneracija",
+            "novac",
+            "promeniti"
+          ],
+          "context": "Stare navike u upotrebi novca treba napustiti."
+        },
+        "position4": {
+          "upright": "U prošlosti je bilo finansijskih zatvarača i restrukturiranja. Stari načini su možda napušteni.",
+          "reversed": "Ukrašena smrt ukazuje na izbegavanje promena ili se pridržavanih stare finansijske navike.",
+          "keywords": [
+            "završiti",
+            "promeniti",
+            "regeneracija",
+            "transformacija",
+            "novac"
+          ],
+          "context": "U prošlosti su transformacija i zatvaranje bili na prvom planu u finansijskim stavovima."
+        },
+        "position5": {
+          "upright": "Smrt signalizira radikalne transformacije u finansijskim odgovornostima. Stare obaveze su zatvorene i napravljena je soba za nove.",
+          "reversed": "Obrnuta smrt je opterećena otporom na promenu ili tendenciju da nastave obaveze koje je potrebno završiti.",
+          "keywords": [
+            "transformacija",
+            "završiti",
+            "odgovornost",
+            "promeniti",
+            "regeneracija"
+          ],
+          "context": "Stari tereni u pogledu finansijskih odgovornosti su eliminisani ili je započeo proces transformacije."
+        },
+        "position6": {
+          "upright": "Smrt predstavlja proces napuštanja starih načina i izgradnje novih finansijskih planova.",
+          "reversed": "Ograničena smrt može ukazivati na otpornost na promenu finansijskih planova, pridržavajući se starih obrazaca.",
+          "keywords": [
+            "transformacija",
+            "završiti",
+            "inovativnost",
+            "izdanje",
+            "plan"
+          ],
+          "context": "U novim finansijskim planovima, prepuštanje starosti će pozvati novo."
+        },
+        "position7": {
+          "upright": "Smrt ukazuje na proces transformacije u finansijskim planovima u budućnosti, prepuštajući stare sisteme i pozdravi novo.",
+          "reversed": "Ukrašena smrt ukazuje na otpor promenama, riziku da se pridržava starih planova i odloži novu.",
+          "keywords": [
+            "transformacija",
+            "završiti",
+            "inovativnost",
+            "izdanje",
+            "ponovno rođenje"
+          ],
+          "context": "Transformacija ili otpornost biće efikasni u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Smrt ukazuje da će veštine pravljenja novca biti ojačane transformacijom, razbijajući stare navike i obnovu.",
+          "reversed": "Obrnuta smrt ukazuje da se mogu propustiti prilike zbog otpornosti na promene, otvorene datoteke ili pridržavati se na stare načine.",
+          "keywords": [
+            "transformacija",
+            "izdanje",
+            "regeneracija",
+            "zadnji",
+            "početak"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa transformacijom ili otpornošću."
+        }
+      },
+      "temperance": {
+        "position1": {
+          "upright": "Ravnoteža ukazuje na zabrinutost za krajnosti. Prekomerna potrošnja ili prekomerni stav u finansijskim pitanjima stvara nemire.",
+          "reversed": "Reverse ravnoteža otkriva anksioznost o disharmoniji i višku. Ne pronalaženje ravnoteže povećava anksioznost.",
+          "keywords": [
+            "ravnoteža",
+            "raport",
+            "merenje",
+            "anksioznost",
+            "strpljenje"
+          ],
+          "context": "Anksioznost proizilazi iz nedostatka ravnoteže. Pronalaženje srednje staze donosi mir."
+        },
+        "position2": {
+          "upright": "Ravnoteža ukazuje da se čovek traži umjerenosti i harmonijom. Srednji put vam daje mir.",
+          "reversed": "Reversed Balance ukazuje na anksioznost o viškama i disharmoniji. Želja za bezbednošću može da bledi u tanki vazduh.",
+          "keywords": [
+            "ravnoteža",
+            "raport",
+            "sigurnost",
+            "strpljenje",
+            "merenje"
+          ],
+          "context": "Nalazite sigurnost u umerenosti i harmoniji."
+        },
+        "position3": {
+          "upright": "Ravnoteža ukazuje na korišćenje novca na izmereni i skladan način. Ostanite podalje od viška donosi mir.",
+          "reversed": "ReverSed Balance ukazuje na zabrinutost zbog ekstravage ili prekomernog ograničenja.",
+          "keywords": [
+            "merenje",
+            "ravnoteža",
+            "raport",
+            "novac",
+            "strpljenje"
+          ],
+          "context": "Umjeravanje i ravnoteža su na čelu kada koristite novac."
+        },
+        "position4": {
+          "upright": "U prošlosti su bilansi i umereni bile na prvom planu u finansijskim pitanjima. Rashodi i ušteda čuvana su u harmoniji.",
+          "reversed": "Obrnuti ravnoteža, višak ili neuravnotežena potrošnja možda je prouzrokovala probleme u prošlosti.",
+          "keywords": [
+            "ravnoteža",
+            "merenje",
+            "raport",
+            "štedljiv",
+            "kontrola"
+          ],
+          "context": "U prošlosti su ravnoteža i harmonija bili istaknuti u finansijskim stavovima."
+        },
+        "position5": {
+          "upright": "Ravnoteža ukazuje na mereni i uravnotežen pristup finansijskim odgovornostima. Opterećenja su nosila harmoniju.",
+          "reversed": "Obrnuti ravnoteža, neravnoteža ili viškovi otežali su odgovornosti.",
+          "keywords": [
+            "ravnoteža",
+            "merenje",
+            "odgovornost",
+            "raport",
+            "strpljenje"
+          ],
+          "context": "Finansijske odgovornosti upravljale su traženjem moderiranja i ravnoteže."
+        },
+        "position6": {
+          "upright": "Ravnoteža ukazuje na umerenost, harmoniju i napredak pacijenta u novim finansijskim planovima.",
+          "reversed": "Reversed Bilans može ukazivati na viškove, nestrpljenje ili neuravnotežen pristup finansijskim planovima.",
+          "keywords": [
+            "raport",
+            "merenje",
+            "ravnoteža",
+            "strpljenje",
+            "plan"
+          ],
+          "context": "Bilans i moderiranje nalaze se na novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Ravnoteža ukazuje na umerenost, harmoniju i dugoročnu stabilnost u finansijskim planovima.",
+          "reversed": "Obrnuta ravnoteža ukazuje na rizik od viška, neravnoteže ili nedostatka planiranja.",
+          "keywords": [
+            "ravnoteža",
+            "merenje",
+            "raport",
+            "stabilnost",
+            "strpljenje"
+          ],
+          "context": "Harmonija ili neravnoteža će biti presudni u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Pokazuje da ravnoteža, harmonija, strpljenje i umerenost podržavaju veštine pravljenja novca.",
+          "reversed": "ReverSed Balance ukazuje da je višak, nestrpljivost ili neuravnotežena odluka mogla ugroziti finansijski razvoj.",
+          "keywords": [
+            "ravnoteža",
+            "raport",
+            "strpljenje",
+            "temperatura",
+            "mir"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa ravnotežom ili neravnotežom."
+        }
+      },
+      "thedevil": {
+        "position1": {
+          "upright": "Sotona označava anksioznost o zavisnosti i finansijskoj zavisnosti. Dug ili prevladavanje može vas brinuti.",
+          "reversed": "Reversed Đavo otkriva anksioznost osećaja očaranih. Uslovi koji vas ograničavaju vaša finansijska sloboda.",
+          "keywords": [
+            "zavisnost",
+            "duga",
+            "anksioznost",
+            "sloboda",
+            "Ograničenje"
+          ],
+          "context": "Anksioznost proizilazi iz zavisnosti i ograničenja. Ponovno preuzimanje kontrole donosi mir."
+        },
+        "position2": {
+          "upright": "Sotona teži da traži sigurnost putem kontrole i zavisnosti. Materijalne veze mogu suzbiti želju za sigurnost.",
+          "reversed": "Reversed đavo ukazuje na zavisnost i anksioznost zbog gubitaka. Želja za sigurnost može se zasjeniti strahom od gubitka slobode.",
+          "keywords": [
+            "zavisnost",
+            "kontrola",
+            "sigurnost",
+            "senka",
+            "granica"
+          ],
+          "context": "Tražite sigurnost kroz kontrolu i veze, ali je takođe važna sloboda."
+        },
+        "position3": {
+          "upright": "Sotona ima novca da koristi novac kroz zavisnost ili prekomjernosti. Kontrola može oslabiti.",
+          "reversed": "Reversed Đavo pokazuje proces rešavanja finansijskih zavisnosti.",
+          "keywords": [
+            "zavisnost",
+            "kontrola",
+            "ekstremizam",
+            "novac",
+            "sloboda"
+          ],
+          "context": "Obratite pažnju na stanje zavisnosti i slobode u korištenju novca."
+        },
+        "position4": {
+          "upright": "Ovisnost, dug ili prekomernu potrošnju možda su u prošlosti bili istaknuti u novcu.",
+          "reversed": "Reversed Đavo pokazuje postupak postavljanja finansijskih zavisnosti ili odustajanje od štetnih navika.",
+          "keywords": [
+            "zavisnost",
+            "duga",
+            "potrošnja",
+            "kontrola",
+            "sloboda"
+          ],
+          "context": "U prošlosti su zavisnosti i dug bili istaknuti u finansijskim stavovima."
+        },
+        "position5": {
+          "upright": "Sotona, zavisnosti, dugovi ili pritisci mogu doći do izražaja finansijskih odgovornosti. Finansijske veze su napravile teret težim.",
+          "reversed": "Okretni vrag ukazuje na proces razbijanja zavisnosti i osloboditi se finansijskih pritisaka.",
+          "keywords": [
+            "zavisnost",
+            "duga",
+            "odgovornost",
+            "ugnjetavanje",
+            "oslobođenje"
+          ],
+          "context": "Finansijske odgovornosti su možda postale teške zbog zavisnosti ili pritiska."
+        },
+        "position6": {
+          "upright": "Đavo skreće pažnju na zavisnosti, prekomernom riziku ili samo-interesovanju za finansijske planove.",
+          "reversed": "Reversed Đavo pokazuje da se probija lanci u finansijskim planovima, postavljanje ovisnosti i oslobađanja.",
+          "keywords": [
+            "zavisnost",
+            "rizikovati",
+            "sloboda",
+            "kamate",
+            "plan"
+          ],
+          "context": "Važno je prepoznati zavisnosti u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Đavo pokazuje da su zavisnosti, prekomerni dug ili materijalne ambicije mogu dominirati finansijskim planovima u budućnosti.",
+          "reversed": "Reversed Đavo pokazuje slobodu od lanca, finansijske slobode i kraja zavisnosti.",
+          "keywords": [
+            "zavisnost",
+            "duga",
+            "pohlepa",
+            "sloboda",
+            "kontrola"
+          ],
+          "context": "Zavisnost ili sloboda će se pojaviti u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Sotona pokazuje uticaj strasti, predanosti i ambicije u veštine pravljenja novca. Međutim, ova veza se ponekad može pretvoriti u zavisnost.",
+          "reversed": "Reversed Đavo pokazuje da će finansijske sposobnosti biti ojačane lomljenjem lanaca, postajući slobodni i prepustite se zavisnosti.",
+          "keywords": [
+            "strast",
+            "lojalnost",
+            "pohlepa",
+            "sloboda",
+            "senka"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa strastvenim predanošću ili oslobođenjem."
+        }
+      },
+      "thetower": {
+        "position1": {
+          "upright": "Kula označava strah od iznenadnog gubitka i kolapsa. Otreseći finansijski temelji mogu vas učiniti nelagodno.",
+          "reversed": "Invertirani toranj otkriva anksioznost neočekivanih promena. Čak i mali drhtaji mogu stvoriti velike strahove.",
+          "keywords": [
+            "urušiti se",
+            "promeniti",
+            "gubitak",
+            "anksioznost",
+            "osnova"
+          ],
+          "context": "Anksioznost proizilazi iz naglih promena i gubitka. Uspostavljanje čvrstog tla daje mir uma."
+        },
+        "position2": {
+          "upright": "Toranj pokazuje da to traži bezbednost kroz rekonstrukciju nakon uništenja. Realna konfrontacija pruža trajna sigurnost.",
+          "reversed": "Invertirani toranj ukazuje na anksioznost o kolapsu i gubitku. Želja za sigurnost može se potkopati strahom od krize.",
+          "keywords": [
+            "rušenje",
+            "rekonstrukcija",
+            "sigurnost",
+            "istina",
+            "osnova"
+          ],
+          "context": "Sigurnost možete uspostaviti čvrstim temeljima nakon uništenja."
+        },
+        "position3": {
+          "upright": "Kula ukazuje na nagle promene upotrebe novca i neočekivanih troškova. Strukture mogu da se sruše.",
+          "reversed": "Invertirani toranj ukazuje na odloženu krizu ili manje šokove.",
+          "keywords": [
+            "iznenadna promena",
+            "kriza",
+            "novac",
+            "rušenje",
+            "rekonstrukcija"
+          ],
+          "context": "Neočekivani događaji u upotrebi novca mogu biti transformativne."
+        },
+        "position4": {
+          "upright": "Možda je bilo neočekivanih kriza ili naglih gubitaka u finansijskoj oblasti u prošlosti.",
+          "reversed": "Invertirani kula ukazuje na odloženu krizu ili manje šokove.",
+          "keywords": [
+            "kriza",
+            "gubitak",
+            "rušenje",
+            "neočekivano",
+            "rekonstrukcija"
+          ],
+          "context": "U prošlosti su finansijski stavovi dominirali krize i gubici."
+        },
+        "position5": {
+          "upright": "Kula ukazuje da nagli krize ili neočekivani troškovi povećavaju finansijske odgovornosti. Restrukturiranje je traženo nakon kolapsa.",
+          "reversed": "Invertirana kula, odlaganje ili ignorisanje krize povećala je odgovornosti.",
+          "keywords": [
+            "kriza",
+            "trošak",
+            "odgovornost",
+            "restrukturiranje",
+            "promeniti"
+          ],
+          "context": "Finansijske odgovornosti mogu se uzdrmati naglim krizama."
+        },
+        "position6": {
+          "upright": "Kula označava nagle promene, neočekivanu krizu ili destruktivnu transformaciju u finansijskim planovima. Uručenje starih struktura može da stvori nove mogućnosti.",
+          "reversed": "Invertirani toranj upozorava na odložene krize, potisnutih problema ili manjih šokova u finansijskim planovima.",
+          "keywords": [
+            "kriza",
+            "rušenje",
+            "transformacija",
+            "rekonstrukcija",
+            "plan"
+          ],
+          "context": "Obnavljanje posle krize može doći na prednji plan u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Kula ukazuje na iznenadnu krizu u finansijskim planovima, neočekivanim troškovima i transformativnim propadanjem u budućnosti.",
+          "reversed": "Invertirani toranj ukazuje na šansu da rekonfiguriše budućnost kroz odložene krize ili manje trag podsticaja.",
+          "keywords": [
+            "kriza",
+            "rušenje",
+            "promeniti",
+            "protresti",
+            "rekonstrukcija"
+          ],
+          "context": "Kriza ili restrukturiranje će biti na dnevnom redu u budućim finansijskim planovima."
+        },
+        "position8": {
+          "upright": "Toranj ukazuje da će iznenadna svest, krize i radikalne promene transformisati veštine pravljenja novca.",
+          "reversed": "Invertirani toranj ukazuje da mogućnosti mogu biti oslabljene odloženim krizama, potisnutim gnevom ili neuspeh u prihvatanju uništenja.",
+          "keywords": [
+            "kriza",
+            "rušenje",
+            "svest",
+            "promeniti",
+            "ponovno rođenje"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa pretvarajućim krizama u mogućnosti ili ih odbacuju."
+        }
+      },
+      "thestar": {
+        "position1": {
+          "upright": "Zvezda ukazuje na anksioznost gubitka nade. Neizvesnost o budućem obilju mogu stvoriti nemire.",
+          "reversed": "Invertovana zvezda otkriva anksioznost iscrpljenosti i beznađe. Možete se plašiti da finansijski prosperitet nikada neće doći.",
+          "keywords": [
+            "nadati se",
+            "regeneracija",
+            "anksioznost",
+            "verovanje",
+            "budućnost"
+          ],
+          "context": "Anksioznost nastaje od gubitka nade. Održavanje vaše vere donosi mir."
+        },
+        "position2": {
+          "upright": "Zvezda pokazuje da tražite sigurnost kroz nadu, inspiraciju i transparentnost. Unutrašnji mir vas podržava.",
+          "reversed": "Inverrovana zvezda ukazuje na anksioznost beznađe i iscrpljenosti. Želja za bezbednošću slabi kada izgubi svetlo.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "sigurnost",
+            "zarastanje",
+            "oštrina"
+          ],
+          "context": "Smatrate sigurnost sa nadom i transparentnošću."
+        },
+        "position3": {
+          "upright": "Zvezda ukazuje na tendenciju da koristi novac za nadu i obnovu. Transparentni ciljevi donose mir.",
+          "reversed": "Inverrovana zvezda ukazuje na finansijski očaj ili izgaranje.",
+          "keywords": [
+            "nadati se",
+            "regeneracija",
+            "cilj",
+            "novac",
+            "transparentnost"
+          ],
+          "context": "Nada i nadahnjujuće ciljeve dolaze na prvi plan kada koriste novac."
+        },
+        "position4": {
+          "upright": "U prošlosti su nada i optimizam bili na čelu u finansijskoj oblasti. Verovanje u postizanje bolje je bilo snažno.",
+          "reversed": "Inverrovana zvezda ukazuje na razočarenja ili preterano optimistična očekivanja da se ne ostvaruju.",
+          "keywords": [
+            "nadati se",
+            "optimizam",
+            "sanjati",
+            "verovanje",
+            "novac"
+          ],
+          "context": "U prošlosti su nada i optimizam bili istaknuti u finansijskim stavovima."
+        },
+        "position5": {
+          "upright": "Zvezda pokazuje da nada i napori na poboljšanju dolaze na prednji plan u finansijskim odgovornostima. Transparentnost i osećaj poverenja ublažili su teret.",
+          "reversed": "Inverterovana zvezda, razočaranje ili očaj, mogu da se finansijske odgovornosti osećaju teško.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "odgovornost",
+            "transparentnost",
+            "poverenje"
+          ],
+          "context": "Proces nade i poboljšanja je efikasan u finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Zvezda predstavlja nadu, obnavljanje i inspiraciju u finansijskim planovima. Svetlost se pojavljuje u dugoročnim ciljevima.",
+          "reversed": "Inverrovana zvezda može ukazivati na očaj, nedostatak inspiracije ili pogrešnosmera u finansijskim planovima.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "vizija",
+            "regeneracija",
+            "plan"
+          ],
+          "context": "Nada i vizija vodiće nove finansijske planove."
+        },
+        "position7": {
+          "upright": "Zvezda u budućnosti ukazuje na nadu, inspiraciju i isceljenje restrukturiranja u finansijskim planovima u budućnosti. Vaš put će biti vedar.",
+          "reversed": "Inverrovana zvezda ukazuje na rizik od očaja, nedostatak motivacije ili pogrešne displejke.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "zarastanje",
+            "regeneracija",
+            "vizija"
+          ],
+          "context": "Nada ili očaj će odrediti buduće finansijske planove."
+        },
+        "position8": {
+          "upright": "Zvezda ukazuje da nada, inspiracija i vizija podržavaju sposobnosti donošenja novca.",
+          "reversed": "Inverrovana zvezda ukazuje da očaj, gubitak vizije ili nedostatak inspiracije može ometati finansijski razvoj.",
+          "keywords": [
+            "nadati se",
+            "inspiracija",
+            "vizija",
+            "zarastanje",
+            "regeneracija"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa nadom ili očaju."
+        }
+      },
+      "themoon": {
+        "position1": {
+          "upright": "Mesec ukazuje na anksioznost nesigurnosti i iluzije. Kada materijalne činjenice izgledaju maglovito, stvara anksioznost.",
+          "reversed": "Reverse Moon otkriva tjeskobu da je pogrešno shvaćena i prevarena. Sakrivanje materijalnih činjenica stvara strah.",
+          "keywords": [
+            "neizvesnost",
+            "iluzija",
+            "varati",
+            "anksioznost",
+            "nesigurnost"
+          ],
+          "context": "Anksioznost proizilazi iz neizvesnosti i iluzija. Traženje jasnoće donosi mir."
+        },
+        "position2": {
+          "upright": "Mesec označava da tražite sigurnost sa intuicijom, ali neizvesnošću. Vaš unutrašnji glas može biti vaš vodič.",
+          "reversed": "Invertirani mesec ukazuje na anksioznost o prevarenju i greškom. Želja za sigurnost može se izgubiti u magli.",
+          "keywords": [
+            "neizvesnost",
+            "intuicija",
+            "sigurnost",
+            "strah",
+            "prosvetljenje"
+          ],
+          "context": "Sigurnost možete pronaći verovanjem svoje intuicije."
+        },
+        "position3": {
+          "upright": "Mesec ukazuje na tendenciju da upravljate novcem sa nesigurnošću i intuicijom. Jasnoća može nedostajati.",
+          "reversed": "Preokrećeni Mesec ukazuje na otkrivanje skrivenih finansijskih problema.",
+          "keywords": [
+            "neizvesnost",
+            "intuicija",
+            "novac",
+            "tajna",
+            "iluzija"
+          ],
+          "context": "Nesigurnost i intuicija idu zajedno u korištenju novca."
+        },
+        "position4": {
+          "upright": "Možda su postojale neizvesnosti i pogrešne situacije u vezi sa finansijskim pitanjima u prošlosti. U glavi možda nema jasnoće.",
+          "reversed": "Reverse Moon ukazuje na nesporazume koje počinju da postanu jasne.",
+          "keywords": [
+            "neizvesnost",
+            "pogrešan",
+            "zbrka",
+            "rizikovati",
+            "novac"
+          ],
+          "context": "U prošlosti je neizvesnost dominirala finansijskim stavovima."
+        },
+        "position5": {
+          "upright": "Mesec pokazuje da neizvesnost ili iluzije igraju ulogu u finansijskim odgovornostima. Nedostatak jasnoće možda je povećao teret.",
+          "reversed": "Invertirani mesec, jasnija staza utvrđena je u finansijskim odgovornostima jer se nesigurnosti počinju rešiti.",
+          "keywords": [
+            "neizvesnost",
+            "iluzija",
+            "odgovornost",
+            "strah",
+            "oštrina"
+          ],
+          "context": "Neizvesnost i potraga za jasnoćom dolaze u finansijske odgovornosti."
+        },
+        "position6": {
+          "upright": "Mesec ukazuje na značaj neizvesnosti, iluzije i intuicije u finansijskim planovima.",
+          "reversed": "Invertirani Mesec predstavlja rasipanje magle, objavljivanje poverljivih informacija i pojašnjenja u finansijskim planovima.",
+          "keywords": [
+            "neizvesnost",
+            "intuicija",
+            "iluzija",
+            "poverljive informacije",
+            "plan"
+          ],
+          "context": "Nesigurnost u novim finansijskim planovima mogu se prevazići intuicijom."
+        },
+        "position7": {
+          "upright": "Mesec može staviti neizvesnost, strahove ili iluzije u srcu problema.",
+          "reversed": "Invertirani mesec, ne može da vidi činjenice, prevarene ili uhvaćene u strahu mogu biti izvor problema.",
+          "keywords": [
+            "neizvesnost",
+            "strah",
+            "iluzija",
+            "intuicija",
+            "pitanje"
+          ],
+          "context": "U srcu problema su nesigurnosti i iluzije."
+        },
+        "position8": {
+          "upright": "Mesec pokazuje da intuicija, kreativnost i misteriozni načini mogu biti efikasni u veštinama donošenja novca.",
+          "reversed": "Reverse Moon označava da iluzije, strahovi ili nesigurnosti mogu zasjeniti mogućnosti.",
+          "keywords": [
+            "intuicija",
+            "kreativnost",
+            "neizvesnost",
+            "misterija",
+            "sanjati"
+          ],
+          "context": "Vaše sposobnosti donošenja novca povezane su sa intuicijom ili iluzijama."
+        }
+      },
+      "thesun": {
+        "position1": {
+          "upright": "Sunce pokazuje anksioznost zbog gubitka sreće i ne može da održava obilje. Možete se bojati da će se budući prosperitet umanjiti.",
+          "reversed": "Reverse Sun otkriva lažnu sreću i površnu anksioznost o obilju. Činjenica da istina nije vidljiva može vas učiniti nelagodno.",
+          "keywords": [
+            "dosta",
+            "sreća",
+            "anksioznost",
+            "sigurnost",
+            "svetao"
+          ],
+          "context": "Anksioznost proizilazi iz straha da izgubite obilje. Videći istinu donosi mir."
+        },
+        "position2": {
+          "upright": "Sunce ukazuje na traženje sigurnosti sa otvorenom, radošću i uspehom. Obilje i radost ojačavaju osećaj poverenja.",
+          "reversed": "Obrnuti sunce označava lažnu radost i anksioznost neizvesnosti. Želja za bezbednošću slabi se kada se neko kreće od stvarnosti.",
+          "keywords": [
+            "radost",
+            "uspeh",
+            "sigurnost",
+            "otvorenost",
+            "dosta"
+          ],
+          "context": "Otvorenu sigurnost uspostavljate otvorenom i radošću."
+        },
+        "position3": {
+          "upright": "Sunce pokazuje tendenciju da se novac koristi veselo i obilno. Otvorena stvara poverenje.",
+          "reversed": "Obrnuti sunce pokazuje prekomerno optimizam ili anksioznost o pogrešnosti.",
+          "keywords": [
+            "dosta",
+            "otvorenost",
+            "radost",
+            "novac",
+            "uspeh"
+          ],
+          "context": "Jasnost i radost prevladavaju u upotrebi novca."
+        },
+        "position4": {
+          "upright": "U prošlosti je bilo perioda uspeha i obilja u finansijskim pitanjima. Rashodi su napravljeni sa samopouzdanjem.",
+          "reversed": "Obrnuti sunce pokazuje prekomernu potrošnju u potrazi za površnom srećom.",
+          "keywords": [
+            "uspeh",
+            "dosta",
+            "poverenje",
+            "trošenje",
+            "novac"
+          ],
+          "context": "U prošlosti su se obilazili obilje i samopouzdanje u finansijskim stavovima."
+        },
+        "position5": {
+          "upright": "Sunce ukazuje na uspeh, jasnoću i optimizam u finansijskim odgovornostima. Burdenci su podeljeni i osvetljeni.",
+          "reversed": "Obrnuti sunce, lažni optimizam ili površni pristupi možda su otežali odgovornosti.",
+          "keywords": [
+            "uspeh",
+            "optimizam",
+            "odgovornost",
+            "oštrina",
+            "deljenje"
+          ],
+          "context": "Jasnoća i uspeh u finansijskim odgovornostima ublažili su teret."
+        },
+        "position6": {
+          "upright": "Sunce označava period uspeha, jasnoće i obilje u finansijskim planovima. Pozitivna energija podržava projekte.",
+          "reversed": "Obrnuti sunce može ukazivati na privremena razočarenja, odlaganja ili rizik preteranog optimizma u finansijskim planovima.",
+          "keywords": [
+            "uspeh",
+            "dosta",
+            "oštrina",
+            "optimizam",
+            "plan"
+          ],
+          "context": "Uspeh i jasnoća biće na prvom planu u novim finansijskim planovima."
+        },
+        "position7": {
+          "upright": "Sunce može biti u srcu problema, potraga za uspehom, srećom ili potrebom za vidljivošću.",
+          "reversed": "Obrnuti sunce, pesimizam, nedostatak samopouzdanja ili ometani uspeh može biti izvor problema.",
+          "keywords": [
+            "uspeh",
+            "poverenje",
+            "svetao",
+            "nadati se",
+            "pitanje"
+          ],
+          "context": "U srcu problema je želja za uspehom i vidljivošću."
+        },
+        "position8": {
+          "upright": "Sunce ukazuje na radost, otvorenost i uspeh u veštinama donošenja novca. Vaši napori daju vidljive rezultate.",
+          "reversed": "Obrnuti sunce pokazuje da lažne nade, prekomerni optimizam ili skriveni problemi mogu smanjiti mogućnosti.",
+          "keywords": [
+            "uspeh",
+            "otvorenost",
+            "radost",
+            "vidljivost",
+            "nadati se"
+          ],
+          "context": "Vaše sposobnosti za donošenje novca povezane su sa otvorenom ili lažnom nadom."
+        }
+      },
+      "judgement": {
+        "position1": {
+          "upright": "Sud ukazuje na zabrinutost zbog tereta prošlih odluka. Možete se bojati da će stare greške uticati na vašu finansijsku budućnost.",
+          "reversed": "Reversirani sud otkriva preterano samokritičnost i anksioznost krivice. Ne mogu da oprostimo da prošlost povećava anksioznost.",
+          "keywords": [
+            "prošlost",
+            "računanje",
+            "anksioznost",
+            "presuda",
+            "samokritičnost"
+          ],
+          "context": "Anksioznost se pojavljuje iz tereta prošlih odluka. Oproštaj i naknada donose mir."
+        },
+        "position2": {
+          "upright": "Sud pokazuje da traži sigurnost učenjem iz prošlosti i ponovnog rođenja. Jasnoća nakon što je sećalo da je poverenje.",
+          "reversed": "Preokrećeni sud ukazuje na anksioznost o zasjenjivanju prošlih grešaka. Želja za bezbednošću može se oslabiti nemogućnost oprosti.",
+          "keywords": [
+            "ponovno rođenje",
+            "računanje",
+            "sigurnost",
+            "oslobođenje",
+            "svest"
+          ],
+          "context": "Možete pronaći sigurnost pokrivajući prošlost sa saosećanjem."
+        },
+        "position3": {
+          "upright": "Sud ukazuje na upotrebu novca kroz svesno sukob i učenje. Donosi se računanje.",
+          "reversed": "Obrnuti sud pokazuje izbegavanje prošlih finansijskih grešaka ili prekomerne samokritike.",
+          "keywords": [
+            "računanje",
+            "lekcija",
+            "novac",
+            "svest",
+            "regeneracija"
+          ],
+          "context": "Važno je učiti iz prošlosti kada koristite novac."
+        },
+        "position4": {
+          "upright": "Važne odluke u prošlosti su izvršene na finansijska pitanja. Stari dugovi ili obaveze su možda rešeni.",
+          "reversed": "Obrnuti sud u prošlosti pokazuje izbegavanje odgovornosti u finansijskim pitanjima.",
+          "keywords": [
+            "odluka",
+            "duga",
+            "odgovornost",
+            "konfrontacija",
+            "novac"
+          ],
+          "context": "U prošlosti su se u prvom stavovima na Finansijskim stavovima bile odgovornost i odluka."
+        },
+        "position5": {
+          "upright": "Sud ističe da se protekle odluke o finansijskim odgovornostima procenjuju i restrukturiraju. To je bilo period reckoniranja.",
+          "reversed": "Reversed Sud, izbegavanje odgovornosti ili samokritika imaju povećane finansijske opterećenja.",
+          "keywords": [
+            "računanje",
+            "procena",
+            "odgovornost",
+            "odluka",
+            "regeneracija"
+          ],
+          "context": "Suočavaju se posledice prošlih odluka u vezi sa finansijskim odgovornostima."
+        },
+        "position6": {
+          "upright": "Sud označava prelazak na novu fazu u finansijskim planovima, crtanjem časova iz prošlosti. Velike odluke mogu doći do izražaja.",
+          "reversed": "Obrnuti sud ukazuje na pridržavanje prošlih grešaka ili odbijanje obnavljanja finansijskih planova."
+        }
+      }
+    }
+  }
+}

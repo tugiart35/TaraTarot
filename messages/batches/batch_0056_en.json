@@ -1,0 +1,774 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "sevenofwands": {
+        "position8": {
+          "upright": "The Seven Wands can bring pressures and tests that require you to defend your external impact stance.",
+          "reversed": "The Reverse Seven Wands may tend to intimidate, force retreat, or weaken the line of defense.",
+          "keywords": {
+            "0": "defence",
+            "1": "pressure",
+            "2": "determination",
+            "3": "limit",
+            "4": "Resistance"
+          },
+          "context": "The external effects can compress you or strengthen you."
+        },
+        "position9": {
+          "upright": "Seven Wands, you may fear that you will not be able to defend yourself, that you will submit to pressure, or that you will lose your position.",
+          "reversed": "The Reverse Seven Wands may show the fear of giving up, resisting, or retreating.",
+          "keywords": {
+            "0": "defence",
+            "1": "pressure",
+            "2": "resistance",
+            "3": "To give up",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on losing their strength or surrendering to pressure."
+        }
+      },
+      "eightofwands": {
+        "position1": {
+          "upright": "Eight Asas may need rapid improvements, communication or change at the center of the problem.",
+          "reversed": "Reverse Eight Asas, delays, miscommunication or obstruction could be the source of the problem.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "change",
+            "3": "opportunity",
+            "4": "Question"
+          },
+          "context": "The problem needs rapid progress and communication at its center."
+        },
+        "position10": {
+          "upright": "Eight Wands may result in rapid developments, breaking news and obstacles.",
+          "reversed": "Reverse Eight Wands may result in delays, communication problems or misunderstandings.",
+          "keywords": {
+            "0": "speed",
+            "1": "news",
+            "2": "Progress",
+            "3": "communication",
+            "4": "barriers"
+          },
+          "context": "The result could be rapid progress or delay."
+        },
+        "position2": {
+          "upright": "Eight Asas may be delays, communication problems or loss of speed, but slow progress in the process prevents the solution.",
+          "reversed": "Reverse Eight Asas, misunderstandings, obstructions, or continuous delays may be the source of the obstacle.",
+          "keywords": {
+            "0": "communication",
+            "1": "delay",
+            "2": "speed",
+            "3": "congestion",
+            "4": "obstacle"
+          },
+          "context": "Obstacle, problems in communication, and it's born without slowing down."
+        },
+        "position3": {
+          "upright": "Eight Asas, subconsciously, there may be rapid developments in the past, communication traffic, or sudden changes.",
+          "reversed": "Reverse Eight Asas, past misunderstandings, congestions, or delays may be embedded in your subconscious.",
+          "keywords": {
+            "0": "communication",
+            "1": "speed",
+            "2": "change",
+            "3": "delay",
+            "4": "subconscious"
+          },
+          "context": "The problems of communication and sudden changes in the past may be affecting today's problems."
+        },
+        "position4": {
+          "upright": "Eight Wands, your best potential is to move fast, communicate, and take chances on time.",
+          "reversed": "Reverse Eight Wands, to reach your potential, you have to stop delays and take focused, clear steps.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "Progress",
+            "3": "opportunity",
+            "4": "focus"
+          },
+          "context": "Your best potential is to move fast and focused."
+        },
+        "position5": {
+          "upright": "Eight Wands, you may have had rapid developments in the recent past, news or sudden changes.",
+          "reversed": "You may have experienced inverse Eight Wands, recent delays, communication problems, or failure to move forward.",
+          "keywords": {
+            "0": "speed",
+            "1": "news",
+            "2": "communication",
+            "3": "change",
+            "4": "Progress"
+          },
+          "context": "Your recent history may have been determined by rapid developments or delays."
+        },
+        "position6": {
+          "upright": "Eight Wands, in the near future, you may experience rapid developments, news or sudden changes.",
+          "reversed": "The Reverse Eight Wands may be delays, communication problems or slow progress in the near future.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "news",
+            "3": "Progress",
+            "4": "change"
+          },
+          "context": "Your near future will be shaped by rapid progress or delays."
+        },
+        "position7": {
+          "upright": "Eight Wands, you're in the middle of rapid developments, news and sudden changes.",
+          "reversed": "The Reverse Eight Wands may now be in question of delays, communication problems, or slow progress.",
+          "keywords": {
+            "0": "speed",
+            "1": "news",
+            "2": "communication",
+            "3": "Progress",
+            "4": "change"
+          },
+          "context": "Your current situation is shaped by rapid developments or delays."
+        },
+        "position8": {
+          "upright": "Eight wands, external effects can speed up the process with rapid communication, acceleration, and sudden opportunity.",
+          "reversed": "Reverse Eight Wands, external factors can create delays, miscommunications, or undirected running.",
+          "keywords": {
+            "0": "speed",
+            "1": "news",
+            "2": "acceleration",
+            "3": "flow",
+            "4": "Progress"
+          },
+          "context": "The external effects can speed up or brake."
+        },
+        "position9": {
+          "upright": "Eight Wands, you might be afraid of delays, messages going wrong, or not being able to control progress.",
+          "reversed": "The Reverse Eight Wands may show concern for miscommunications, misunderstandings, or delaying opportunities.",
+          "keywords": {
+            "0": "speed",
+            "1": "communication",
+            "2": "delay",
+            "3": "opportunity",
+            "4": "anxiety"
+          },
+          "context": "It's focused on fears, communication failures, or delays."
+        }
+      },
+      "nineofwands": {
+        "position1": {
+          "upright": "Nine Asas may be the center of the problem, to resist, to be patient, or to pass a test.",
+          "reversed": "The Reverse Nine Wands, fatigue, the tendency to give up, or weakness may be the source of the problem.",
+          "keywords": {
+            "0": "resistance",
+            "1": "Patience",
+            "2": "Determination",
+            "3": "protection",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is endurance and patience."
+        },
+        "position10": {
+          "upright": "The Nine Wands may result in the success of patience, endurance, and a final struggle.",
+          "reversed": "The Reverse Nine Wands may result in weariness, vulnerability, or loss of resistance.",
+          "keywords": {
+            "0": "resistance",
+            "1": "Patience",
+            "2": "struggle",
+            "3": "endurance",
+            "4": "determination"
+          },
+          "context": "The result may be survival or extinction by endurance."
+        },
+        "position2": {
+          "upright": "Nine Asas, your obstacle may be fatigue, constant defensiveness, or to the point of giving up.",
+          "reversed": "The Reverse Nine Asas could be the source of resistance loss, excessive pressure, or frustration.",
+          "keywords": {
+            "0": "Tired.",
+            "1": "resistance",
+            "2": "defence",
+            "3": "pressure",
+            "4": "obstacle"
+          },
+          "context": "Obstruction is born from weariness and endurance."
+        },
+        "position3": {
+          "upright": "Nine Asas can be subconsciously resisting in the past, not giving up, or continuing to be injured.",
+          "reversed": "The Reverse Nine Wands may have settled into the subconscious of a history of dissension, extreme pressure, or vulnerability.",
+          "keywords": {
+            "0": "resistance",
+            "1": "Tired.",
+            "2": "defence",
+            "3": "pressure",
+            "4": "subconscious"
+          },
+          "context": "The fatigues and defences of the past may have shaped today's problems."
+        },
+        "position4": {
+          "upright": "Nine Wands, your best potential is to resist adversity, endure patiently and turn your experiences into a source of strength.",
+          "reversed": "In order to achieve your potential, the Reverse Nine Wands must not be defeated by fatigue, but continue to resist.",
+          "keywords": {
+            "0": "resistance",
+            "1": "Patience",
+            "2": "experience",
+            "3": "protection",
+            "4": "struggle"
+          },
+          "context": "Your best potential is patient resistance."
+        },
+        "position5": {
+          "upright": "In the recent past, you may have resisted hardship, endured patiently, or maintained your limitations.",
+          "reversed": "Inverse Nine Wands, in the recent past, you may have experienced fatigue, abandonment of defense, or difficulty resisting.",
+          "keywords": {
+            "0": "endurance",
+            "1": "struggle",
+            "2": "Patience",
+            "3": "defence",
+            "4": "protection"
+          },
+          "context": "Your recent past may have been shaped by patience or fatigue."
+        },
+        "position6": {
+          "upright": "Nine wands can be tested in the near future, and you can endure patiently.",
+          "reversed": "The Reverse Nine Wands may be exhausted, vulnerable, or having difficulty resisting in the near future.",
+          "keywords": {
+            "0": "resistance",
+            "1": "Patience",
+            "2": "protection",
+            "3": "endurance",
+            "4": "struggle"
+          },
+          "context": "Your near future will be shaped by patience or fatigue."
+        },
+        "position7": {
+          "upright": "Nine Wands, you are now resisting hardship, and you are still standing patiently.",
+          "reversed": "Reverse Nine Wands, you may be experiencing exhaustion, fatigue, or a tendency to give up.",
+          "keywords": {
+            "0": "resistance",
+            "1": "Patience",
+            "2": "protection",
+            "3": "endurance",
+            "4": "struggle"
+          },
+          "context": "Your current condition is shaped by resistance or fatigue."
+        },
+        "position8": {
+          "upright": "Nine wands can create repetitive tests and endurance conditions; it's useful to guard your guard.",
+          "reversed": "Reverse Nine Wands, external factors can increase fatigue, trigger suspicion and a tendency to retreat.",
+          "keywords": {
+            "0": "endurance",
+            "1": "retest",
+            "2": "protection",
+            "3": "Patience",
+            "4": "Conscientious"
+          },
+          "context": "The external effects can test you or intimidate you."
+        },
+        "position9": {
+          "upright": "You may be afraid of losing your strength, of succumbing to repeated tests, or of letting your guard down.",
+          "reversed": "The Reverse Nine Wands may indicate weariness, doubt, or fear of giving up.",
+          "keywords": {
+            "0": "endurance",
+            "1": "retest",
+            "2": "To give up",
+            "3": "Doubt",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on being exhausted or vulnerable."
+        }
+      },
+      "tenofwands": {
+        "position1": {
+          "upright": "Ten Asas may be at the center of the problem with excessive responsibility, burden, or pressure.",
+          "reversed": "Reverse Ten Asas, unnecessary burdens, weariness or not sharing may be the source of the problem.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "pressure",
+            "3": "extremism",
+            "4": "Question"
+          },
+          "context": "There's too much responsibility at the center of the problem."
+        },
+        "position10": {
+          "upright": "Ten Wands may result in completing responsibilities, carrying loads, and successfully finishing.",
+          "reversed": "Reverse Ten Wands may result in overload, failure to receive help, or exhaustion.",
+          "keywords": {
+            "0": "responsibilities",
+            "1": "load",
+            "2": "complete",
+            "3": "success",
+            "4": "Don't finish it."
+          },
+          "context": "The result may be successful completion or exhaustion."
+        },
+        "position2": {
+          "upright": "Ten Asas, the obstacle can be overburdened, overburdened, or overburdened, making it difficult to move forward.",
+          "reversed": "The Reverse Ten Asa may be an obstacle to unnecessary responsibilities, to not sharing or to being exhausted.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "pressure",
+            "3": "extremism",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born from carrying too much responsibility and burden."
+        },
+        "position3": {
+          "upright": "Ten Asas can be subconsciously overresponsive in the past, carrying burdens, or being under pressure.",
+          "reversed": "The Reverse Ten Asa may have settled into the subconscious of unnecessary responsibilities, shared or exhausted in the past.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "extremism",
+            "3": "pressure",
+            "4": "subconscious"
+          },
+          "context": "Excessive responsibilities in the past may be at the root of today's problems."
+        },
+        "position4": {
+          "upright": "The Ten Wands are to carry the responsibilities of the best potential consciously, to regulate its burdens and to get the satisfaction of its labor.",
+          "reversed": "Reverse Ten Wands, to open your potential, you have to drop the unnecessary burdens and focus solely on the responsibilities that serve you.",
+          "keywords": {
+            "0": "responsibilities",
+            "1": "load",
+            "2": "labour",
+            "3": "determination",
+            "4": "Determination"
+          },
+          "context": "Your best potential is to move forward with conscious responsibilities."
+        },
+        "position5": {
+          "upright": "Ten Wands, in the recent past, you may have taken on heavy responsibilities, burdens, or excessive duties.",
+          "reversed": "You may have recently reduced your responsibilities, been relieved of your burdens, or been crushed under extreme pressure.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "task",
+            "3": "weight",
+            "4": "struggle"
+          },
+          "context": "Your recent past may have been shaped by excess responsibility or relief from burdens."
+        },
+        "position6": {
+          "upright": "Ten Wands may carry heavy responsibilities in the near future, your workload may increase, or your duties may be concentrated.",
+          "reversed": "Inverse Ten Wands may be relief from their burdens, relief from their responsibilities, or extreme fatigue in the near future.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "task",
+            "3": "struggle",
+            "4": "weight"
+          },
+          "context": "Your near future will be shaped by responsibility or relief."
+        },
+        "position7": {
+          "upright": "Ten Wands, you're carrying heavy responsibilities right now, you could be under heavy labor.",
+          "reversed": "Reverse Ten Wands, you may be dealing with relief, responsibilities, or extreme fatigue right now.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "labour",
+            "3": "density",
+            "4": "Determination"
+          },
+          "context": "Your current situation is shaped by responsibilities or relief from burdens."
+        },
+        "position8": {
+          "upright": "Ten Wands can increase the responsibilities of external effects; it may be necessary to ask for a share of cargo.",
+          "reversed": "The Reverse Ten Wands can make the transfer of authority difficult or impose unnecessary burdens on you.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "density",
+            "3": "Don't finish it.",
+            "4": "delegates"
+          },
+          "context": "External effects can increase or reduce your load."
+        },
+        "position9": {
+          "upright": "Ten Wands, you can be afraid to take on too much responsibility, to be crushed under the burden, or to get involved in things you can't finish.",
+          "reversed": "The Reverse Ten Wands may show the fear of not getting help, of not sharing the burden, or of being exhausted.",
+          "keywords": {
+            "0": "load",
+            "1": "responsibilities",
+            "2": "Don't finish it.",
+            "3": "extremism",
+            "4": "anxiety"
+          },
+          "context": "Your fears focus on overloading or being overwhelmed by responsibilities."
+        }
+      },
+      "pageofwands": {
+        "position1": {
+          "upright": "The Prince of Asa may have a new idea, a learning spirit, or a quest for adventure at the heart of the problem.",
+          "reversed": "The reverse Prince of Asa may be the source of the problem of impatient, eagerness, or carelessness.",
+          "keywords": {
+            "0": "idea",
+            "1": "learning",
+            "2": "fad",
+            "3": "creativity",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is the desire to try something new."
+        },
+        "position10": {
+          "upright": "The Prince of the Wand may result in a new discovery, an inspiring beginning, or an exciting journey.",
+          "reversed": "The Reverse Wand Prince may result in recklessness, loss of motivation, or superficial initiatives.",
+          "keywords": {
+            "0": "discovery",
+            "1": "Inspired",
+            "2": "start",
+            "3": "Excitement",
+            "4": "energy"
+          },
+          "context": "The result may be an exciting discovery or a superficial attempt."
+        },
+        "position2": {
+          "upright": "The Prince of Asa may be misleading the impatient, careless, or eager to learn.",
+          "reversed": "The reverse Prince of Asa, lack of motivation, quick extinction of enthusiasm, or aimlessness may be the source of the obstacle.",
+          "keywords": {
+            "0": "fad",
+            "1": "learning",
+            "2": "I can't wait.",
+            "3": "Motivation",
+            "4": "obstacle"
+          },
+          "context": "The obstacle arises from impatient and misguided enthusiasm."
+        },
+        "position3": {
+          "upright": "The Prince of Asa may be a subconscious desire for learning, new initiatives, or adventure that you have experienced in the past.",
+          "reversed": "In the past, the Prince of the Reverse Asa may have settled in his subconscious, the quickness of impatience, carelessness, or the quickness of enthusiasm.",
+          "keywords": {
+            "0": "learning",
+            "1": "fad",
+            "2": "adventure",
+            "3": "I can't wait.",
+            "4": "subconscious"
+          },
+          "context": "Past learning experiences and desires may be affecting your problems today."
+        },
+        "position4": {
+          "upright": "The Prince of Wand, your best potential is to explore with curiosity, try new ideas and act bravely.",
+          "reversed": "In order to achieve its potential, you must keep your motivation alive and take steps beyond your fears.",
+          "keywords": {
+            "0": "discovery",
+            "1": "Courage",
+            "2": "Inspired",
+            "3": "start",
+            "4": "curiosity"
+          },
+          "context": "Your best potential comes from discovering new ideas."
+        },
+        "position5": {
+          "upright": "The Prince of the Wand, in the recent past, you may have taken action with a new idea, discovery, or inspiration.",
+          "reversed": "The Reverse Wand Prince, in the recent past, you may have suffered a rash, carelessness, or loss of motivation.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "discovery",
+            "2": "start",
+            "3": "experience",
+            "4": "learning"
+          },
+          "context": "Your recent past may have been shaped by new ideas or loss of motivation."
+        },
+        "position6": {
+          "upright": "The Prince of the Wand may be waiting for you in the near future for a new inspiration, creative idea, or a bold discovery.",
+          "reversed": "In the near future you may experience loss of motivation, rashness, or carelessness.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "discovery",
+            "2": "Courage",
+            "3": "experience",
+            "4": "curiosity"
+          },
+          "context": "Your near future will be shaped by bold steps or rashness."
+        },
+        "position7": {
+          "upright": "Prince of the Wand, you are now in the spirit of new ideas, curiosity and discovery.",
+          "reversed": "The Reverse Stick Prince, right now, you could be in a state of loss of motivation, carelessness, or loss of enthusiasm.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "Inspired",
+            "2": "Courage",
+            "3": "discovery",
+            "4": "experience"
+          },
+          "context": "Your current situation is shaped by a lack of discovery or motivation."
+        },
+        "position8": {
+          "upright": "The Prince of the Wand brings out news that calls for exploration of external effects, small opportunities to try, and curious signals.",
+          "reversed": "The Reverse Stick Prince can offer disorganized messages, idle desires, or distracting suggestions.",
+          "keywords": {
+            "0": "discovery",
+            "1": "news",
+            "2": "testing",
+            "3": "curiosity",
+            "4": "spark"
+          },
+          "context": "The external effects may encourage or delay the trial."
+        },
+        "position9": {
+          "upright": "The Prince of the Wand, you may be afraid to go astray, to be careless, or to fall into vain desires.",
+          "reversed": "The Reverse Stick Prince may show the fear of loss of motivation, aimlessness, or disarray.",
+          "keywords": {
+            "0": "discovery",
+            "1": "target",
+            "2": "Inspired",
+            "3": "testing",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on turning in the wrong direction or losing your target."
+        }
+      },
+      "knightofwands": {
+        "position1": {
+          "upright": "Knight of Asa, there may be courage, a desire to move, or energy at the heart of the problem.",
+          "reversed": "Reverse Knight of the Wand, rashness, disorientation, or inconsistency may be the source of the problem.",
+          "keywords": {
+            "0": "Courage",
+            "1": "movement",
+            "2": "energy",
+            "3": "passion",
+            "4": "Question"
+          },
+          "context": "The problem needs action at its center."
+        },
+        "position10": {
+          "upright": "The Knight of the Wand may result in bold steps, rapid advances, and passionate attempts.",
+          "reversed": "The Knight of the Inverted Wand may result in looseness, disorientation, or hastyness.",
+          "keywords": {
+            "0": "Courage",
+            "1": "movement",
+            "2": "passion",
+            "3": "speed",
+            "4": "Progress"
+          },
+          "context": "The result may be a passionate advance or rashness."
+        },
+        "position2": {
+          "upright": "Knight of Asa, your obstacle may be rash, inconsistencies, or undirected movement.",
+          "reversed": "Knight of the Reverse Asa, recklessness, indecisiveness, or extreme risk may be the source of the obstacle.",
+          "keywords": {
+            "0": "Hurry",
+            "1": "movement",
+            "2": "risk",
+            "3": "Inconsistencies",
+            "4": "obstacle"
+          },
+          "context": "The obstacle arises from hasty and undirected movements."
+        },
+        "position3": {
+          "upright": "Knight of Asa, there may be bold steps, hasty actions, or risks in the past.",
+          "reversed": "The Knight of the Reverse Asa may have settled into the subconscious of inconsistencies, inconsistencies, or disorientation in the past.",
+          "keywords": {
+            "0": "Courage",
+            "1": "risk",
+            "2": "Inconsistencies",
+            "3": "movement",
+            "4": "subconscious"
+          },
+          "context": "The risks and hasty actions of the past may be affecting your problems today."
+        },
+        "position4": {
+          "upright": "The Knight of the Wand is to act on the passions of the best potential, to take a bold risk and to reveal your adventurous spirit.",
+          "reversed": "In order to achieve its potential, Knight of the Inverted Wand, you must avoid haste and direct your energy in a controlled manner.",
+          "keywords": {
+            "0": "passion",
+            "1": "Courage",
+            "2": "adventure",
+            "3": "movement",
+            "4": "energy"
+          },
+          "context": "Your best potential is to brave your passions."
+        },
+        "position5": {
+          "upright": "Knight of the Wand, in recent times, you may have had a bold act of action, adventure, or passion.",
+          "reversed": "Knight of the Reverse Wand, in the recent past, you may have experienced insufferable, disorientation, or reckless behavior.",
+          "keywords": {
+            "0": "Courage",
+            "1": "movement",
+            "2": "adventure",
+            "3": "passion",
+            "4": "energy"
+          },
+          "context": "Your recent past may have been shaped by courage or carelessness."
+        },
+        "position6": {
+          "upright": "Knight of the Wand, in the near future, you may experience a passionate venture, a bold step, or an adventure.",
+          "reversed": "In the near future, the Knight of the Inverted Wand can be impatient, undirected, or hasty behavior.",
+          "keywords": {
+            "0": "passion",
+            "1": "Courage",
+            "2": "adventure",
+            "3": "movement",
+            "4": "energy"
+          },
+          "context": "Your near future will be shaped by bold initiatives or rashness."
+        },
+        "position7": {
+          "upright": "Knight of the Wand, you may be acting passionately, taking bold steps.",
+          "reversed": "Knight of the Reverse Stick, right now, you may be affected by rashness, disorientation, or impatience.",
+          "keywords": {
+            "0": "passion",
+            "1": "Courage",
+            "2": "movement",
+            "3": "adventure",
+            "4": "energy"
+          },
+          "context": "Your current situation is shaped by bold steps or rashness."
+        },
+        "position8": {
+          "upright": "Knight of the Wand, the outside effects can carry the call of bold breakthroughs, action and adventure.",
+          "reversed": "Knight of the Reverse Wands, exclusions can create a rash, loose, or undirected run.",
+          "keywords": {
+            "0": "Courage",
+            "1": "movement",
+            "2": "Progress",
+            "3": "adventure",
+            "4": "energy"
+          },
+          "context": "The external effects can fast-forward or swing."
+        },
+        "position9": {
+          "upright": "Knight of the Wand, you may be afraid to be hasty, impulsive, or to ignore the risks.",
+          "reversed": "The Reverse Wand Knight may show the fear of instability, looseness, or disorientation.",
+          "keywords": {
+            "0": "Hurry",
+            "1": "risk",
+            "2": "movement",
+            "3": "balance",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on haste or directionlessness."
+        }
+      },
+      "queenofwands": {
+        "position1": {
+          "upright": "The Queen of Asa may have confidence, leadership, or charisma at the heart of the problem.",
+          "reversed": "The Reverse Asa Queen, lack of confidence, jealousy or authority issues can be the source of the problem.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "leadership",
+            "2": "Charisma",
+            "3": "Courage",
+            "4": "Question"
+          },
+          "context": "The problem needs a confident stance at its centre."
+        },
+        "position10": {
+          "upright": "The Queen of the Wand may result in self-esteem, charisma, and strong leadership.",
+          "reversed": "The Reverse Stick Queen may result in jealousy, insecurities, or instability.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "Charisma",
+            "2": "leadership",
+            "3": "power",
+            "4": "Attraction"
+          },
+          "context": "The result could be a strong stance or imbalance."
+        },
+        "position2": {
+          "upright": "Queen of Asa, the obstacle may be a lack of self-esteem, jealousy, or fear of leadership, but hiding your own light is holding you back.",
+          "reversed": "The Reverse Asa Queen may be the source of the obstacle to authority issues, indecisive issues, or to remain in the shadow of others.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "leadership",
+            "2": "Charisma",
+            "3": "Jealousy",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born out of lack of confidence and fear of leadership."
+        },
+        "position3": {
+          "upright": "Queen of Asa, in her subconscious, there may be experiences of self-esteem, leadership, or charisma in the past.",
+          "reversed": "In reverse Asa Queen, in the past, loss of self-esteem, jealousy, or the shadow of others may have been applied to the subconscious.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "leadership",
+            "2": "Charisma",
+            "3": "Jealousy",
+            "4": "subconscious"
+          },
+          "context": "Her past self-esteem experiences or jealousy may have shaped her problems today."
+        },
+        "position4": {
+          "upright": "The Queen of the Wand is to show the confidence of the best potential, to spread its charm, and to show an inspiring leadership.",
+          "reversed": "In order to achieve its potential, the Reverse Stick Queen, you must be free of insecurity and shine your inner light.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "leadership",
+            "2": "gravity",
+            "3": "Inspired",
+            "4": "Charisma"
+          },
+          "context": "Your best potential is to lead with confidence."
+        },
+        "position5": {
+          "upright": "The Queen of the Stick may have shown her self-esteem in recent times, exhibited her charm, or been an inspirational figure.",
+          "reversed": "Reverse Stick Queen, you may have recently experienced a decline in in insecurity, jealousy, or energy.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "gravity",
+            "2": "Inspired",
+            "3": "leadership",
+            "4": "energy"
+          },
+          "context": "Your recent past may have been shaped by experience of self-confidence or insecurity."
+        },
+        "position6": {
+          "upright": "Stick Queen, in the near future, you will be led by confidence, charm and inspirational leadership.",
+          "reversed": "Reverse Stick Queen, in the near future, you may experience insecurity, jealousy, or a drop in energy.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "leadership",
+            "2": "Inspired",
+            "3": "gravity",
+            "4": "energy"
+          },
+          "context": "Your near future will be shaped with confidence or insecurity."
+        },
+        "position7": {
+          "upright": "Stick Queen, right now, you're moving with a confident, inspiring, gravity-driven energy.",
+          "reversed": "Reverse Stick Queen, right now, you may be forced to be insecure, jealous, or drop in energy.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "leadership",
+            "2": "gravity",
+            "3": "Inspired",
+            "4": "energy"
+          },
+          "context": "Your current situation is shaped by self-confidence or insecurity."
+        },
+        "position8": {
+          "upright": "The Stick Queen can offer inspirational figures, supportive networks, and environments that support self-esteem.",
+          "reversed": "The Reverse Wand Queen can produce external influences, jealousy, passive aggressive behaviors, or situations that undermine confidence.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "Charisma",
+            "2": "support",
+            "3": "Inspired",
+            "4": "gravity"
+          },
+          "context": "The external effects can shine your light or cast a shadow."
+        },
+        "position9": {
+          "upright": "You may be afraid of losing your confidence, of underestimating your power, or of losing your charm.",
+          "reversed": "The Reverse Stick Queen may show fear of jealousy, insecurity, or instability.",
+          "keywords": {
+            "0": "Self - confidence",
+            "1": "Attraction",
+            "2": "Charisma",
+            "3": "Insecurity",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on loss of self-esteem or instability."
+        }
+      },
+      "kingofwands": {
+        "position1": {
+          "upright": "The King of Asa may need vision, leadership or control at the center of the problem.",
+          "reversed": "The Reverse Asa King may be the source of the problem of disorientation, oppression, or lack of vision.",
+          "keywords": {
+            "0": "Vision",
+            "1": "leadership"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,779 @@
+{
+  "relationship-problems": {
+    "meanings": {
+      "thetower": {
+        "position8": {
+          "keywords": [
+            null,
+            null,
+            null,
+            "popraviti",
+            "predostrožnost"
+          ],
+          "context": "Podesite hitni budžet; Smanjite rizik sa održavanjem i garancijom."
+        },
+        "position9": {
+          "upright": "Ako se rade radikalne popravke nakon šokantne istine, odnos se može nastaviti iskrenom osnovom. U suprotnom, uništenje će biti trajno.",
+          "reversed": "Inverterovatna kula, ignorisanje pukotina će pre ili kasnije dovesti do veće rupture.",
+          "keywords": [
+            "kriza",
+            "obelodanjivanje",
+            "popraviti",
+            "real",
+            "prekršiti"
+          ],
+          "context": "Da biste poslednji put: goli istina + protokol za jasan popravak."
+        }
+      },
+      "thestar": {
+        "position1": {
+          "upright": "Iıldız kaže da je ravnoteža nade i stvarnosti i razlike u očekivanjima u vezi sa brzinom oporavka stvarala sukob. Dok jedna strana može očekivati brže zaceljivanje, drugi će možda trebati vremena.",
+          "reversed": "Invertovana zvezda ukazuje da je diskurs beznađa i negativna predviđanja oslabila vezu. Gubitak vere suši komunikaciju.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "očekivanje",
+            "stvarnost",
+            "poboljšanje"
+          ],
+          "context": "Priroda sukoba u vezi: tempo isceljenja i ravnoteže nade."
+        },
+        "position2": {
+          "upright": "Iıldız kaže da se problem leži u ravnoteži nade i stvar i tempo lečenja. Očekuje se brz oporavak, dok je vreme ostale potrebe. \\ N \\ nHint: Nedostatak plana oporavka post-loma. Problem je u potrazi za magičnim rešenjima, a ne popravka pacijenta.",
+          "reversed": "Objašnjena zvezda objašnjava da diskurs beznadežnosti osuši tkaninu. Čini se da je nebo oblačno, ali zora kasni. \\ N \\ nsimptom: jezik odustajanja, povlačenja i gubitka motivacije. Problem je u tome što mišići nade slabljenje.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "jednostavnost",
+            "strpljenje",
+            "regeneracija"
+          ],
+          "context": "Problem sa korenom: Proces isceljenja i upravljanje nadom. Područja koja utiče: komunikacijski ton, očekivanje, bliskost."
+        },
+        "position3": {
+          "upright": "Iıldız kaže da kada izgubite ravnotežu sa prekomerno naočarama za zatamnjenim ružinim ružnim ili prekomernim pesimizmom, iskra mogu biti u vama. Menadžment nade određuje tempo zarastanja.",
+          "reversed": "Invertovana zvezda vam govori da se vaš udeo povećao jer ste povećali svoje \"to neće dogoditi\" jeziku i smanjenu motivaciju. Odsustvo malih iznosnih koraka boli.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "jednostavnost",
+            "strpljenje",
+            "regeneracija"
+          ],
+          "context": "Share: Nada / Realiti Balance. Efekat: Motivacija, isceljivanje. Preporuka: Mali betonski korak."
+        },
+        "position4": {
+          "upright": "Iıldız kaže da može podceniti odgovornost za popravke rekavši \"da će proći\" sa ružičarskim naočarima. Nadam se da je dobar, potreban je plan.",
+          "reversed": "Invertovana zvezda pokazuje tendenciju da negira nečije udio koristeći očaj kao izgovor. Osim ako se ne preduzmu mali konkretni koraci, zarastanje će biti odloženo.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "jednostavnost",
+            "plan",
+            "strpljenje"
+          ],
+          "context": "Šta da ignorišem: moj lekoviti rad. Efekat: Motivacija se smanjuje. DO: Mali / merljiv korak."
+        },
+        "position5": {
+          "upright": "Zvezda vam govori da sa sobom nosite period oporavka. Nada, ljubaznost i jednostavni koraci su vam dobrili.",
+          "reversed": "Inverrovana zvezda ukazuje na očaj ili ružičaste naočare koje stvaraju uspone i padove. Realistične nade vage su danas obavezna.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "jednostavnost",
+            "strpljenje",
+            "regeneracija"
+          ],
+          "context": "Postoji iskustvo isceljenja. Postavka realizma je zasečena. Sada je vreme za male, ali jasne korake."
+        },
+        "position6": {
+          "upright": "Iıldız kaže da se nada i isceljenje daju snagu kada se ljubazno deli. Ali zalazak sa praznim obećanjima ili odlaganjem sa obećanjem zaceljenje je eksploatacija.",
+          "reversed": "Invertovana zvezda ukazuje na opasnost da koristi očaj kao aduta i podcijenjujući potrebe partnera. Ako je nada neuravnotežena, postavlja se zavisno stanje čekanja.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "obećanje",
+            "realizam",
+            "strpljenje"
+          ],
+          "context": "Tema: Ekonomija nade; Rizik: eksploatacija obećanja; Do: mali merljiv korak."
+        },
+        "position7": {
+          "upright": "Zvezda opisuje mrežu za isceljujuće podršku, dobronamjerne prijatelje i nade brojke. Pravo okruženje vas čini da dišete.",
+          "reversed": "Invertovana zvezda ukazuje na prazna obećanja i spoljni glasovi koji slikaju ružičastu sliku. Nerealni predlozi mogu da vas odbacuju.",
+          "keywords": [
+            "mreža za podršku",
+            "nadati se",
+            "zarastanje",
+            "predlog",
+            "realizam"
+          ],
+          "context": "Pronaći kvalifikovanu podršku. Izaberite lečenje, ali realno okruženje."
+        },
+        "position8": {
+          "upright": "Zvezda predstavlja nadu, donaciju / pomoć mrežu, stipendiju i poboljšani novčani tok. Mali, održivi koraci donose isceljenje.",
+          "reversed": "Invertovana zvezda nam govori da se iskaka za ružicu, samostalno o \"šta god da se desi\" i neplanirano optimizam mogu pretvoriti u razočaranje.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "podrška",
+            "optimizam",
+            "plan"
+          ],
+          "context": "Nada + plan = stvarnost; Kretati se napred sa merljivim ciljevima."
+        },
+        "position9": {
+          "upright": "Zvezda obećava nadu, isceljenje i nežnu kontinuitet. Mali, ali stalni koraci pomeraju odnos.",
+          "reversed": "Inverterovana zvezda, ružičasta očekivanja i neplanirani optimizam se pretvaraju u razočaranje; Ako se nada ne kombinuje sa planom, on bledi.",
+          "keywords": [
+            "nadati se",
+            "zarastanje",
+            "ljubaznost",
+            "stabilnost",
+            "plan"
+          ],
+          "context": "Poslednji: nada + mjerljivi mini golovi."
+        }
+      },
+      "themoon": {
+        "position1": {
+          "upright": "Mesec nam govori da su neizvesnost, projekcije i strahovi u centru suprotnosti. Nejasne granice povećavaju sumnju.",
+          "reversed": "Reverse Moon označava da magla može biti jasna jer se otkriju tajne; Ali pokazuje da je krhko poverenje zahteva negu. Osetljivost se povećava kako se iluzije rastvaraju.",
+          "keywords": [
+            "neizvesnost",
+            "strah",
+            "projekcija",
+            "poverenje",
+            "iluzija"
+          ],
+          "context": "Priroda sukoba u vezi: neizvesnost i zablude."
+        },
+        "position2": {
+          "upright": "Mesec nam govori da se problem podstiče neizvesnošću, projekcijama i strahovima. Kada senka raste, san se doživljava kao stvarnost. \\ N \\ n \\ nhint: sumnja, zatvoreni krajevi i detalji ostavljeni u mraku. Problem je neutemeljenih pretpostavki.",
+          "reversed": "Invertirani Mesec, iako magla počinje da će se očistiti jer su otkrivene neke tajne, ostaje trag nepoverenja. Vreme je potrebno za jasnoću. \\ N \\ nsimptom: kontradiktorne narative, ambivalentni znakovi. Problem je u tome što se provera stvarnosti kasni.",
+          "keywords": [
+            "neizvesnost",
+            "strah",
+            "projekcija",
+            "iluzija",
+            "poverenje"
+          ],
+          "context": "Problem sa korenom: pretpostavka i neizvesnost. Područja pogođena: stvarnost testiranja, otvorena komunikacija."
+        },
+        "position3": {
+          "upright": "Mesec kaže da kada reagujete razmišljajući o pretpostavkama su stvarne, vaš udeo može biti visok. Dok magla raste, pa radi nerazumevanje.",
+          "reversed": "Reverse Moon vam govori da vatru držite živom traženjem tajne i prikupljanja nagoveštaja. Presuda je iscrpljena pre nego što je stvorila jasnoća.",
+          "keywords": [
+            "neizvesnost",
+            "strah",
+            "projekcija",
+            "iluzija",
+            "poverenje"
+          ],
+          "context": "Numerator: Neproverena pretpostavka. EFEKT: Poverenje, komunikacija. Preporuka: Zatražite jasnoću."
+        },
+        "position4": {
+          "upright": "Mesec vam kaže da možete ignorisati svoj udeo tako što mislite da je pretpostavka stvarna i legitimira svoju reakciju. Magla skriva samo-odgovornost.",
+          "reversed": "Preokrećeni Mesec naglašava tendenciju da uobičajeno sumnja i negira odgovornost da potvrdi. Traženje jasnoće je hrabrost.",
+          "keywords": [
+            "neizvesnost",
+            "hipoteza",
+            "strah",
+            "iluzija",
+            "oštrina"
+          ],
+          "context": "Ono što ignorišem: Realnost provera. UTICAJ: Poverenje je erodirano. DO: Pitajte, potvrdite, a zatim interpretirajte."
+        },
+        "position5": {
+          "upright": "Mesec nam govori da su nesigurnosti i intuitivna područja uobičajena. Kad su strahovi ostali neizgovoreni, magla se povećala.",
+          "reversed": "Preokrećeni Mesec ukazuje da su ciklusi pretpostavke i sumnje ostavljati svoju marku. Potreba za jasnoćom može danas da gori.",
+          "keywords": [
+            "neizvesnost",
+            "strah",
+            "hipoteza",
+            "intuicija",
+            "oštrina"
+          ],
+          "context": "Magla. Komentari bez dokaza su se povećali. Sada su potrebni dokazi i jasnoća."
+        },
+        "position6": {
+          "upright": "Mesec nam govori da je neizvesnost, sumnja i kontradiktorna signala osnova. Kako maglja raste, moć interpretacije raste i to se može pretvoriti u eksploataciju.",
+          "reversed": "Preokrećeni Mesec označava cikluse gatralidacije i paranoje. Proizvodnja insinuacija umesto da dokazuje guma partnera.",
+          "keywords": [
+            "neizvesnost",
+            "iluzija",
+            "gasmaring",
+            "strah",
+            "oštrina"
+          ],
+          "context": "Tema: magla i jasnoća; Rizik: Um igrama; DO: Validacija i jasan jezik."
+        },
+        "position7": {
+          "upright": "Mesec skreće pažnju na iza sebe scene, insinuacije i dvosmislene spoljne signale. Tračevi stvaraju maglu i rase nepoverenje.",
+          "reversed": "Reverse Moon označava gasmarivanje, anonimne poruke i nijanse društvenih medija. Izbegavajte komentare bez dokaza.",
+          "keywords": [
+            "neizvesnost",
+            "tračevi",
+            "pogled",
+            "paranoja",
+            "oštrina"
+          ],
+          "context": "Magla spoljni signali su intenzivni. Donosite odluke samo sa verifikovanim informacijama."
+        },
+        "position8": {
+          "upright": "Mesec upozorava na neizvesne troškove, skrivene naknade i nejasne ugovore. Maglački broj Shakes Poverenje.",
+          "reversed": "Obrnuti mesec znači traženje dokaza bez pada u paranoju; To znači napuštanje glasine / pretpostavke i spuštanje na ugovor.",
+          "keywords": [
+            "neizvesnost",
+            "skrivena naknada",
+            "sporazum",
+            "hipoteza",
+            "oštrina"
+          ],
+          "context": "Zapišite svaki broj; Ne ostavljajte magla."
+        },
+        "position9": {
+          "upright": "Osim ako se Mesec ne očiste, nesigurnosti i strahovi, kontinuitet ostaje krhki. Ako se magla raspršuje, veza postaje jača.",
+          "reversed": "Obrnuti mesec, ako se nastavljaju zablude, insinuacije i gasa svetlo, odnos će se istrošiti; Teško je održiti bez jasnoće.",
+          "keywords": [
+            "neizvesnost",
+            "strah",
+            "oštrina",
+            "zabluda",
+            "poverenje"
+          ],
+          "context": "Da biste poslednji put: kultura verifikacije + bistri jezik."
+        }
+      },
+      "thesun": {
+        "position1": {
+          "upright": "Sunce pokazuje da postoji napetost oko vidljivosti, ega i potreba da se vole. Sjajni sukvidni uspesi mogu imati zasjenjene dublje potrebe.",
+          "reversed": "Obrnuti sunce pokazuje da veštačka radost, pokazivanje ili poređenje podriva iskrenost. Sukob raste kada deljena radost ne stvara pravu vezu.",
+          "keywords": [
+            "ego",
+            "vidljivost",
+            "radost",
+            "poređenje",
+            "autentičnost"
+          ],
+          "context": "Priroda kontradikcije u odnosu: napetost vidljivosti i autentičnosti."
+        },
+        "position2": {
+          "upright": "Sunce nam govori da se problem vrti oko vidljivosti, ega i potreba za priznanjem. Sjajnost je zbunjena sa deljenjem. \\ N \\ n \\ nhint: prikaz, poređenje i dnevni red uspeha. Problem ne može da izjednači zajedničku radost.",
+          "reversed": "Reverzno sunce nam govori da veštačka radost i površna pozitivnost prikrivaju stvarne probleme. Detalji koji nedostaju su zasjenjeni. \\ N \\ nsimptom: pretvarajući se da je dobro, nedostatak iskrenosti. Problem nije u stanju da zajedno drži autentičnu radost i istinu.",
+          "keywords": [
+            "vidljivost",
+            "ego",
+            "diskrecija",
+            "autentičnost",
+            "oštrina"
+          ],
+          "context": "Ispitivanje root-a: ravnoteža prepoznavanja i vidljivosti. Područja koja utiče: autentičnost, deljenje, ritual radosti."
+        },
+        "position3": {
+          "upright": "Sunce kaže da kada istaknete svoju vidljivost bez da ga delite, možda ćete imati iskru. Osvetljenost je možda stvorila senke.",
+          "reversed": "Reverzno sunce nam govori da povećava svoj udeo prekrivajući stvarne probleme rekavši \"u redu smo\". Veštačka radost odgađa popravak.",
+          "keywords": [
+            "vidljivost",
+            "ego",
+            "diskrecija",
+            "autentičnost",
+            "oštrina"
+          ],
+          "context": "Share: Aprecijacija / Atentičnost Neravnoteža. Efekat: Jednakost, toplina. Predlog: Podelite radost."
+        },
+        "position4": {
+          "upright": "Sunce vam govori da možete ignorisati svoj udeo tako što ćete zaseliti stvarne probleme sa \"nam dobro\" sjaj. Ne dozvolite da se pozitivnost preruši kao poricanje.",
+          "reversed": "Reverzno sunce prikazuje tendenciju da se smanji problemi koristeći veštačku radost kao štit. To čini autentičan deo otvorenosti vidljiv.",
+          "keywords": [
+            "vidljivost",
+            "autentičnost",
+            "diskrecija",
+            "oštrina",
+            "real"
+          ],
+          "context": "Ono što ignorišem: zasjenjena tema. Efekat: Akumulacija, eksplozija. DO: Pokažite istinu zajedno sa radošću."
+        },
+        "position5": {
+          "upright": "Sunce vam govori da iskusite periode radosti, igru i uspeha zajedno. Vidljivost i uvažavanje su ojačali vašu vezu.",
+          "reversed": "Obrnuti sunce pokazuje da lažna pozitivnost ili poređenje ponekad baca senku. Kada deli da radost smanjuje, bol raste.",
+          "keywords": [
+            "radost",
+            "diskrecija",
+            "vidljivost",
+            "autentičnost",
+            "deljenje"
+          ],
+          "context": "Svijetli trenuci su moćni. Senka: Poređenje / lažna radost. Autentična vidljivost je sada važna."
+        },
+        "position6": {
+          "upright": "Sunce naglašava da su vidljivost i otvorenost antidota eksploatacije. Ali stalan pritisak da izgleda dobro može gurnuti probleme pod prostijem.",
+          "reversed": "Obrnuti sunce opisuje rizik od toksične pozitivnosti i sakrivši se iza scena. Izrada radosti štitica suzbija stvarnu potrebu.",
+          "keywords": [
+            "otvorenost",
+            "vidljivost",
+            "autentičnost",
+            "performanse",
+            "poverenje"
+          ],
+          "context": "Tema: Transparentna toplina; Rizik: Pretvarajte se sreća; Do: Autentična deljenja."
+        },
+        "position7": {
+          "upright": "Jasna vidljivost i transparentan pristup životnoj sredini smanjuju rizik od smetnji, kaže Gunes. Jasna deljenje stvara poverenje.",
+          "reversed": "Reverzno sunce pokazuje da je veće spoljne poređenje sa performansama društvenih medija i pritiska da \"izgleda srećno\".",
+          "keywords": [
+            "transparentnost",
+            "vidljivost",
+            "poređenje",
+            "Društveni mediji",
+            "autentičnost"
+          ],
+          "context": "Istina, ne oblačenje prozora, radi. Usredsredite se na unutrašnju harmoniju, a ne spoljne oči."
+        },
+        "position8": {
+          "upright": "Sunce donosi opuštanje sa jasnim izračunavanjem, poštenom slikom i vidljivim ciljevima. Mogući su uspeh i obilje.",
+          "reversed": "Obrnuti sunce nam govori da je privredno stanje prozora, pokazivač potrošnja i pritisak da \"izgledaju srećno\" prostirati budžet.",
+          "keywords": [
+            "otvorenost",
+            "uspeh",
+            "izlog",
+            "cilj",
+            "vidljivost"
+          ],
+          "context": "Podelite realnu sliku; Potrošite na mir, a ne za sliku."
+        },
+        "position9": {
+          "upright": "Sunce obećava dugoročnu toplinu otvorenom, radošću i zajedničkom uspehom. Autentična vidljivost jača vezu.",
+          "reversed": "Obrnuti sunce, pokazivačka sreća i potiskivani problemi oštećuju kontinuitet.",
+          "keywords": [
+            "otvorenost",
+            "radost",
+            "autentičnost",
+            "uspeh",
+            "vidljivost"
+          ],
+          "context": "Da traje: istina, a ne izlog; Zakažite redovno dobra vremena."
+        }
+      },
+      "judgement": {
+        "position1": {
+          "upright": "Sud kaže da su prošle odluke i sukob sada pozivaju na odgovornost. Ako se prošli datoteke nisu zatvorene, kontradikcija curi u sadašnjost.",
+          "reversed": "Preokrećeni sud ukazuje da nedostatak samokritika ili prekomernog presude sprečava okretanje novog lista. Kada se odloži oprost, napetost se nastavlja.",
+          "keywords": [
+            "konfrontacija",
+            "račun",
+            "oproštenje",
+            "prošlost",
+            "odluka"
+          ],
+          "context": "Priroda sukoba u odnosu: Dolazeći se u odnosu na prošlost i oprost."
+        },
+        "position2": {
+          "upright": "Sud kaže da problem leži u ne zatvaranju prošlih datoteka i ne može da odgovori na poziv. Stare odluke vladaju sadašnjošću. \\ N \\ nhint: nedostatak oproštenja, strah od sukoba. Pitanje je potreba za pravičnom ponovnom procjenom.",
+          "reversed": "Reverse Sud opisuje ljuljanje do krajnosti prekomerne samospropusnosti ili ne preuzimaju nikakvu odgovornost. Nova stranica je odložena. \\ N \\ nsimptom: ponavljani govore optužbe za odbranu. Problem je u tome što nema jasnog računanja sa prošlošću.",
+          "keywords": [
+            "konfrontacija",
+            "oproštenje",
+            "odluka",
+            "regeneracija",
+            "račun"
+          ],
+          "context": "Problem sa korenom: Nepotpuno računovodstvo. Područja pogođena: zatvaranje, samoodgovornost, napredak."
+        },
+        "position3": {
+          "upright": "Sud kaže da postoji udeo kada odložite sukob i odložite izvinjenje. Sadašnjost neće biti olakšan dok se ne zatvori prošla datoteka.",
+          "reversed": "Preokrećeni sud vam govori da podstičete vatru jer vam se navijate na ivici bilo prekomernog samosprosudnog ili nulte odgovornosti. Pošteno računovodstvo je obavezna.",
+          "keywords": [
+            "konfrontacija",
+            "oproštenje",
+            "odluka",
+            "regeneracija",
+            "račun"
+          ],
+          "context": "Share: Enlosed nalog. Efekat: napredak, poverenje. Predlog: izvinjenje + nadoknada."
+        },
+        "position4": {
+          "upright": "Sud kaže da može ignorisati svoj udeo odlaskom izvinjenja / kompenzacije i rekavši \"da će se tokom vremena biti bolje\". Ne postoji obnavljanje bez sukoba.",
+          "reversed": "Invertirani sud nam govori da se može skloniti u ekstremnosti ili ekstremne samospropusnosti ili nulte odgovornosti i hraniteljskog poricanja. Pošteno računovodstvo je obavezna.",
+          "keywords": [
+            "konfrontacija",
+            "oproštenje",
+            "nadoknada",
+            "regeneracija",
+            "račun"
+          ],
+          "context": "Ono što ignorišem: pošteno računovodstvo. Efekat: Napredak je blokiran. DO: Izvinjenje + betonska nadoknada."
+        },
+        "position5": {
+          "upright": "Sud kaže da ste otvorili stranicu konfrontacije i oproštenja u prošlosti. Možda je došao osećaj ponovnog rođenja.",
+          "reversed": "Reverse Sud objašnjava da je otkrivene datoteke i odloženo izvinjenje ostavljaju svoju marku. Reparacija će i dalje danas pozivati.",
+          "keywords": [
+            "konfrontacija",
+            "oproštenje",
+            "nadoknada",
+            "odluka",
+            "regeneracija"
+          ],
+          "context": "Vreme je za računanje. Neki naslovi su nedovršeni. Poštena kompenzacija je sada obaveza."
+        },
+        "position6": {
+          "upright": "Sud kaže da računovodstvo i naknada prečišćavaju odnos. Ako postoji zloupotreba, pošteno sukob i popravak su neizbežni.",
+          "reversed": "Obrnuti suđenje uvećava rizik od prenošenja krivice, selektivno sećajući prošlosti i upotrebom izvinjenja kao pregovarački čip. Ne postoji obnavljanje bez odgovornosti.",
+          "keywords": [
+            "konfrontacija",
+            "nadoknada",
+            "račun",
+            "odgovornost",
+            "regeneracija"
+          ],
+          "context": "Tema: Pošteno računovodstvo; Rizik: utaja odgovornosti; DO: Jasno izvinjenje i betonska nadoknada."
+        },
+        "position7": {
+          "upright": "Sud kaže da je otvorena konfrontacija sa porodičnim savjetom, grupom prijatelja ili savjetnika može zadržati spoljni uticaj na zalivu.",
+          "reversed": "Obrnuti sud se odnosi na kulturu Linching, kolektivne prosudbe i donošenje odluka sa jednostranim naravanjem.",
+          "keywords": [
+            "konfrontacija",
+            "savet",
+            "zajednica",
+            "presuda",
+            "nadoknada"
+          ],
+          "context": "Možda će biti potrebno javno govorenje; Izgradite pravila i pravičnost. Izbegavajte pristranu gomilu."
+        },
+        "position8": {
+          "upright": "Sud poziva na finansijsko računovodstvo, priznanje prošlih grešaka i reparacije. Čista sveska znači nova stranica.",
+          "reversed": "Reverse Sud kaže da se prebacivanje, odloženo izvinjenje / popravke i izbegavanje uništava budžet.",
+          "keywords": [
+            "računovodstvo",
+            "priznanje",
+            "nadoknada",
+            "prošlost",
+            "regeneracija"
+          ],
+          "context": "Održavajte jasno računovodstvo; Odredite plan odgovornosti i rezolucije."
+        },
+        "position9": {
+          "upright": "Odnos se može preporod presuditi, računajući, kompenzacija i druge mogućnosti. Lekcije naučene da proizvode stalnost.",
+          "reversed": "Invertirani sud, utaja odgovornosti i ponovljene greške otežavaju se održati.",
+          "keywords": [
+            "konfrontacija",
+            "nadoknada",
+            "druga šansa",
+            "lekcija",
+            "regeneracija"
+          ],
+          "context": "Da biste poslednji put: Clear računovodstvo + betonska promena."
+        }
+      },
+      "theworld": {
+        "position1": {
+          "upright": "Svet kaže da je glavni prag, kao što je dovršavanje ciklusa, pomeranja ili promena faza, stvara kontradikciju. Odluka da ga preuzme na sledeći nivo zajedno može biti izazovna.",
+          "reversed": "Invertirani svet pokazuje da je osećaj nedovršenosti i tendencija da pređe na novo bez završne obrade stvara napetost. Nedovršena pitanja važaju odnos.",
+          "keywords": [
+            "završetak",
+            "prag",
+            "pozornica",
+            "posvećenost",
+            "nepotpun"
+          ],
+          "context": "Priroda sukoba u vezi: pitanje praga i konzumacije."
+        },
+        "position2": {
+          "upright": "Problem, kaže svet, u hrabrosti je da pređe veliki prag i završi ciklus. Osjećaj diplomiranja je ostavljen nedovršen. \\ N \\ NHINT: Držite se na naslovima kao što su kretanje, zajednički život, porodični plan. Problem se prelazi na novo bez dovršavanja.",
+          "reversed": "Invertirani svet govori o napetosti koja se nastavlja sa nepotpunošću i nestalih krajeva koji nisu zatvoreni. Celina je fragmentirana. \\ N \\ nsimptom: Odložene odluke, nezadovoljne završetke. Problem je ukorijenjen u nedostatku integracije.",
+          "keywords": [
+            "završetak",
+            "integritet",
+            "prag",
+            "integracija",
+            "produžetak"
+          ],
+          "context": "Problem sa korenom: zatvaranje i integracija petlje. Područja koja utiče na: dugoročni, zajednički cilj, sistem."
+        },
+        "position3": {
+          "upright": "Kaže da kada se svet pređe u novi bez završetka ciklusa, njegov učešće raste. Ako se preskoči integracija, nezadovoljstvo traje.",
+          "reversed": "Naglavac strana svet govori da ste možda imali požar sa nedostajućim krajevima koji uvećavaju osećaj nepotpunosti. Pokretanje bez završetka je naporan.",
+          "keywords": [
+            "završetak",
+            "integritet",
+            "prag",
+            "integracija",
+            "produžetak"
+          ],
+          "context": "Numerator: Nepotpuni završetak. EFEKT: Mir, kontinuitet. Predlog: Zatvorite praznine."
+        },
+        "position4": {
+          "upright": "Svet kaže da to može videti nestali komad kao \"mali detalj\" i potceniti njegov udeo. Nepotpuni ciklus uništava mir.",
+          "reversed": "Svet naopako naglašava tendenciju da se normalizuje nedovršeno poslovanje i negira odgovornost za integraciju. Počinje bez dovršavanja je poricanje.",
+          "keywords": [
+            "završetak",
+            "integritet",
+            "integracija",
+            "prag",
+            "produžetak"
+          ],
+          "context": "Ono što ignorišem: nedostaju se krajevi. Efekat: Nezadovoljstvo trajanja. DO: Blizu, a zatim počnite."
+        },
+        "position5": {
+          "upright": "Svet vam govori da ste zajedno sazreli ciklus. Integritet i svest o putovanju su razvili.",
+          "reversed": "Invertirani svet nam govori da nedostajuće komadi ometaju mir. Nedovršeni posao može procuriti u sadašnjost.",
+          "keywords": [
+            "završetak",
+            "integritet",
+            "prag",
+            "integracija",
+            "produžetak"
+          ],
+          "context": "Završene faze + Otvoreni krajevi. Potreba za integracijom. Sada je vreme da zatvorite praznine."
+        },
+        "position6": {
+          "upright": "Zemlja naglašava zrelu završetak ciklusa. Namerno odlazeći otvorene krajeve mogu se pretvoriti u alat da ostane strana čeka i kontroliše.",
+          "reversed": "Reversed Earth ukazuje na rizik da troši trud partnera, sa obrascima početka bez dovršetka i odlaska nedovršenog. Nema mira bez integracije.",
+          "keywords": [
+            "završetak",
+            "integracija",
+            "otvoren kraj",
+            "kontrola",
+            "mir"
+          ],
+          "context": "Tema: Zatvara disciplina; Rizik: Nedovršeni posao; DO: Popunite i delite."
+        },
+        "position7": {
+          "upright": "Svet pokazuje uticaj na velike daljine, različite kulture ili velike društvene mreže. Globalne veze mogu oblikovati dnevni red.",
+          "reversed": "Inverterovana Zemlja ukazuje na nedovršene poslovne, neprekine veze sa starim okruženjima i natkriveni ciklusi.",
+          "keywords": [
+            "plač",
+            "rastojanje",
+            "kultura",
+            "Staro okruženje",
+            "zatvaranje"
+          ],
+          "context": "Velike mreže stvaraju plus / minus efekat. Zatvorite stare ligamente i zaštitite jezgro područje."
+        },
+        "position8": {
+          "upright": "Zemlja ukazuje na završetak dugoročnih ciljeva (dom, kredit, štednja) i finansijsku ročnost.",
+          "reversed": "Invertirana zemlja ukazuje na nedovršene planove, produžene dugove i neprekidne cikluse.",
+          "keywords": [
+            "završetak",
+            "dugoročan",
+            "kredit",
+            "akumulacija",
+            "petlja"
+          ],
+          "context": "Bliski planovi, citate ciljeve na konkretne prekretnice."
+        },
+        "position9": {
+          "upright": "Ako svet dovršete cikluse koji se materiji i postiže integracija, ona ukazuje na stalno jedinstvo. Jedrilo je moguće vinograd.",
+          "reversed": "Invertirani svet, nedovršeni poslovi i otvoreni dosijei oslabili su održivost.",
+          "keywords": [
+            "završetak",
+            "integracija",
+            "zrelost",
+            "petlja",
+            "zatvaranje"
+          ],
+          "context": "Da biste to učinili: Zatvorite labave krajeve, napišite zajedničku viziju."
+        }
+      },
+      "aceofcups": {
+        "position1": {
+          "upright": "ACE of CUPS kaže da postoji kontradikcija između načina na koji se eksprimiraju emocije i da su ih videle. Dok neko čeka emocionalno otvor, drugi može ostati oprezan.",
+          "reversed": "ACE of Cups preokrenuti ukazuje da emocionalne blokade i ogorčenje otežavaju deljenje. Nesporazumi se povećavaju kako srce ostaje zatvoreno.",
+          "keywords": [
+            "osećanje",
+            "izraz",
+            "krhkost",
+            "potreba",
+            "blizina"
+          ],
+          "context": "Emotivni koren sukoba: ravnoteža izražavanja i potrebe."
+        },
+        "position2": {
+          "upright": "ACE of Cups kaže da je problem da emocije ne teku sigurno. Srce je pune, ali ekspresijski kanal je blokiran. \\ N \\ nTip: Ne sakrivajte emocije, stidljive deljenje i izbegavanje ranjivosti. Problem je zaključavanje na emocionalnim otvorima.",
+          "reversed": "Reversed ACE CUP-a prikazuje potisnute ogorčenost i staro razočaranje zasjenjenja novih šansi. Emocija preplavljuje iznutra ne iscuri. \\ N \\ nsimptom: dosadnost, samostojeća uljudnost i ukočenost. Problem je u tome što se srce isključuje.",
+          "keywords": [
+            "osećanje",
+            "izraz",
+            "krhkost",
+            "zarastanje",
+            "blizina"
+          ],
+          "context": "Problem sa korenom: blokada emocionalnog protoka. Područja koja utiče: siguran izraz, empatija, vezivanje."
+        },
+        "position3": {
+          "upright": "As Cups vam govori da možete da igrate ulogu sakrivajući svoje emocije i ne pokazujete svoju ranjivost. Ako je srce puno, ali kanal je zatvoren, nerazumevanje raste.",
+          "reversed": "ACE of CUPS preokrenuti sugerira da podstičete vatru neprekidjujući potisnute ogorčenost i emocionalnu blokadu. Ono što preliva unutra postaje zid napolju.",
+          "keywords": [
+            "osećanje",
+            "izraz",
+            "krhkost",
+            "blizina",
+            "zarastanje"
+          ],
+          "context": "Share: Emocija koja ne teče. Efekat: Bliskost, empatija. PREPORUKA: Gatevai za sigurnu ekspresiju."
+        },
+        "position4": {
+          "upright": "Ace Cups vam kaže da možete sakriti svoja osećanja i ignorisati svoj deo u očekivanju da će \"on / ona razumeti\". Ako je srce puno, ali vrata su zatvorena, odgovornost je nevidljiva.",
+          "reversed": "ACE of CUPS preokrećenih teži da normalizuje emocionalnu blokadu i negira samo-jasnoću. Emocija koja ne teče je maska od poricanja.",
+          "keywords": [
+            "osećanje",
+            "izraz",
+            "krhkost",
+            "blizina",
+            "zarastanje"
+          ],
+          "context": "Ignorisano: potreba za deljenjem. EFEKT: Intimci bledi. DO: Otvorite kapiju sigurne izraze."
+        },
+        "position5": {
+          "upright": "ACE CUP-a ukazuje da je na početku vašeg odnosa bilo intenzivnog emocionalnog otvora. Srca se brzo vezala.",
+          "reversed": "Reversirani ACE CUP-a ukazuje da su emocije u nekom trenutku blokirane. Suzbijena osećanja danas mogu da stvaraju udaljenost.",
+          "keywords": [
+            "osećanje",
+            "otvaranje",
+            "krhkost",
+            "blokiranost",
+            "blizina"
+          ],
+          "context": "Rani emocionalni ispad. Vremenom je protok prekinut. Sada je potreban siguran ekspresijski kanal."
+        },
+        "position6": {
+          "upright": "ACE of Cups kaže da je emocionalna otvorena hranjiva, ali ljubav i saosećanje ne treba pretvoriti u sistem nagrade-kazne.",
+          "reversed": "Ace of Cups preokrenuti ukazuje na rizik stvaranja zavisnosti i trube emocionalne gladi povlačenjem i davanjem ljubavi.",
+          "keywords": [
+            "lov",
+            "saosećanje",
+            "nagraditi kaznu",
+            "otvorenost",
+            "zavisnost"
+          ],
+          "context": "Tema: bezuslovna toplina; Rizik: ekonomija ljubavi; DO: Protokol za deljenje emocija."
+        },
+        "position7": {
+          "upright": "ACE CUPS-a ukazuje na postojanje emocionalno podržavajućeg okruženja. Nova poznanstva su možda dodala topli, ali efikasan glas između vas.",
+          "reversed": "ACE of Cups preokrenuti ukazuje da je ogorčen prijatelj ili stari odnos utiču na vas sa emocionalnim curenjem.",
+          "keywords": [
+            "Emocionalna podrška",
+            "Nova veza",
+            "stara ljubav",
+            "razočaranje",
+            "uticaj"
+          ],
+          "context": "Eksterni glasovi koji su centrirani emocijama su aktivni. Podesite ograničenje i deljenje doze zajedno."
+        },
+        "position8": {
+          "upright": "ACE of Cups kaže da emocionalna podrška i velikodušnost mogu biti salvet za novac od stresa. Solidarnost od srca takođe poboljšava budžet.",
+          "reversed": "Reversed Ace Cups ukazuje da potrošnja da popuni emocionalnu prazninu kupovinom i \"dozvolite mi da se nadam\" mogu se povećati \".",
+          "keywords": [
+            "podrška",
+            "velikodušnost",
+            "kupovina",
+            "osećanje",
+            "mast"
+          ],
+          "context": "Ne nadoknađujte osećaj sa novcem; Uspostavite podršku razgovorom."
+        },
+        "position9": {
+          "upright": "Ace od šoljica, sa svežim emocijama i otvoreno srce, odnos ima visoku šansu za nastavak. Saosećanje i milost daju život vinogradu.",
+          "reversed": "ACE of Cups preokrenuti, kontinuitet postaje težak ako emocionalno blokiranje i represija istraju.",
+          "keywords": [
+            "novi osećaj",
+            "otvoreno srce",
+            "saosećanje",
+            "blokiranost",
+            "protok"
+          ],
+          "context": "Da traje: imenovanje emocije + nežnog ritma izražavanja."
+        }
+      },
+      "twoofcups": {
+        "position1": {
+          "upright": "Dvoje šoljica ukazuju na razliku u očekivanju reciprociteta i jednake razmene. Percepcija neravnoteže između onoga što je data i ono što je primljeno stvara sukob.",
+          "reversed": "Otkrivena dva šolja kaže da poremećaj harmonije, nerazumevanja i krhkih veza povećavaju napetost. Nekontrolena očekivanja složena je problem.",
+          "keywords": [
+            "reciprocitet",
+            "ravnoteža",
+            "raport",
+            "očekivanje",
+            "obveznica"
+          ],
+          "context": "Emotivni koren sukoba: jednakost i reciprocitet."
+        },
+        "position2": {
+          "upright": "Dva šoljica kaže da je problem u ravnoteži reciprociteta i jednake razmene. Giver-prijemnik zamah se ne oseća jednakim. \\ N \\ nhint: GESTURE-RADNOG RASPOLOŽENjE DISKUSIJE. Problem je što je očigledna jednakost prekinuta.",
+          "reversed": "Invertirana dva šolja pokazuje da je harmonija poremećena i male nesporazumi pretvaraju se u simboličke događaje. U ligamentu postoje mikroprakovi. \\ N \\ nsimptom: ogorčene geste, povlačenje. Problem je što se ugovor o odnosima ne ažurira.",
+          "keywords": [
+            "reciprocitet",
+            "ravnoteža",
+            "raport",
+            "obveznica",
+            "jednakost"
+          ],
+          "context": "Problem sa korenom: Pošteno poslovanje. Područja koja su pogođena: gesturalni jezik, nekuješna očekivanja."
+        },
+        "position3": {
+          "upright": "Dvoje šoljica vam govore da ćete možda imati ulogu u ravnoteži davanja i primanje vaših stavova zbog kojih se osećate nepravedno. Nekompatibilnost napora gesta stvara ogorčenje.",
+          "reversed": "Invertirana dva šolja govori vam da ne govorite o mikro-ciljevima i odlazite, a lošiji vatru. Vinograd je razređen malim propustima.",
+          "keywords": [
+            "reciprocitet",
+            "ravnoteža",
+            "raport",
+            "obveznica",
+            "jednakost"
+          ],
+          "context": "Share: Fair Shopping Gap. EFEKT: Poverenje, toplina. Predlog: Poravnajte jezik geste."
+        },
+        "position4": {
+          "upright": "Dvoje šoljica vam govore da ne možete videti neravnotežu geste-napora i sklonite se reći \"već dajem.\" Osjećaj jednakosti ne dolazi bez razgovora.",
+          "reversed": "Preokrećena dva šolja naglašava tendenciju da negiraju nečiji udio ignorisanjem manjeg prekida. Mikro nepažnja se pretvara u makro ogorčenost.",
+          "keywords": [
+            "reciprocitet",
+            "ravnoteža",
+            "raport",
+            "jednakost",
+            "obveznica"
+          ],
+          "context": "Zanemareno: Pošteno poslovanje. UTICAJ: Poverenje je erodirano. DO: Poravnajte jezik geste."
+        },
+        "position5": {
+          "upright": "Dvoje šoljica kaže da su reciprocitet i jednakost u početku u početku. Osećaj zajedništva vas je hranio.",
+          "reversed": "Invertirana dva šolja objašnjava da je skraćena ravnoteža geste povremeno poremetiti. Mali propusti mogu se nagomilati ogorčenje.",
+          "keywords": [
+            "reciprocitet",
+            "ravnoteža",
+            "obveznica",
+            "gest",
+            "zanemarivati"
+          ],
+          "context": "Jaka utakmica. Mikro neravnoteže su se nagomilale. Sada bi trebalo da se raspravlja sa fer kupovina."
+        },
+        "position6": {
+          "upright": "Dvoje šoljica uzdižu reciprocitet. Nejednaka distribucija gesta i radne snage može se pretvoriti u nevidljiva eksploatacija.",
+          "reversed": "Ograničena dva šolja opisuje rizik od akumuliranja malih ogorčenja, stavljajući partnera u dug i okretanje odnosa u tablicu.",
+          "keywords": [
+            "reciprocitet",
+            "ravnoteža",
+            "gest",
+            "rad",
+            "jednakost"
+          ],
+          "context": "Tema: Poštena kupovina; Rizik: Debit; DO: GESTURI JEZIK I OGRANIČENjE."
+        },
+        "position7": {
+          "upright": "Dvoje šoljica opisuje podržavajućeg para / prijatelja Duo-a. Postoje sigurni ljudi koji deluju kao mostovi.",
+          "reversed": "Dvoje Cup-ova obrnuta ukazuju na to da će rođaci koji sačuvati strane prekršiti reciprocitet. Jezik \"nas i njih\" produbljuje se.",
+          "keywords": [
+            "reciprocitet",
+            "prijateljski par",
+            "na strani",
+            "most",
+            "savezništvo"
+          ],
+          "context": "Moguć je da je mogućnost podrške; Ali pristrasni prijatelji mogu proširiti pukotinu. Izaberite uravnotežene posrednice."
+        },
+        "position8": {
+          "upright": "Dvoje šoljica ukazuju na harmoniju u zajedničkoj torbici i reciprocitetu. Čak i mala gesta, povećavaju finansijsko poverenje."
+        }
+      }
+    }
+  }
+}

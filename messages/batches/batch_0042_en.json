@@ -1,0 +1,794 @@
+{
+  "new-lover": {
+    "meanings": {
+      "threeofcups": {
+        "position4": {
+          "keywords": {
+            "4": "long term"
+          },
+          "context": "Joy feeds the long term, superficiality wears out the bond."
+        },
+        "position5": {
+          "upright": "The Three of Hearts tells us that finding a soul mate may be possible with joyful celebrations or social environments, and this bond may sprout from a friendly heat.",
+          "reversed": "The Reverse Cup Triad, too much social disarray, or the influence of the third party can cloud the bond of the soul mate.",
+          "keywords": {
+            "0": "celebration",
+            "1": "Community",
+            "2": "connection",
+            "3": "joy",
+            "4": "soul mate"
+          },
+          "context": "Joy increases the potential for soul mates, external effects cast a shadow."
+        },
+        "position6": {
+          "upright": "The trio shows that the fulfillment of your wish brings celebration and joy, and social support and friendships can accompany you on this road.",
+          "reversed": "The reverse triad indicates that superficial bonds or false circles can make your wish difficult to fulfill.",
+          "keywords": {
+            "0": "celebration",
+            "1": "support",
+            "2": "unity",
+            "3": "joy",
+            "4": "share"
+          },
+          "context": "The right environment makes it easier for your wish to come true."
+        }
+      },
+      "fourofcups": {
+        "position1": {
+          "upright": "The Four of Cups says you may not see the opportunity for a new relationship, so you have to pay attention to the offer in front of the heart.",
+          "reversed": "The Four of the Reverse Cups shows that awareness can lead to a new relationship.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "recession",
+            "2": "awareness",
+            "3": "angle"
+          },
+          "context": "There may be a relationship soon, but you have to realize."
+        },
+        "position2": {
+          "upright": "The Four of Hearts points to the inner-minded crab energy, which can be sensitive, concealive, but deep feelings.",
+          "reversed": "The Reverse Cup Four may show melancholy or indifference in the Crab's shadow, and introvertibility may reflect on the relationship.",
+          "keywords": {
+            "0": "Introduction",
+            "1": "Crab",
+            "2": "sensitivity",
+            "3": "emotion"
+          },
+          "context": "It tells the inner side of the Cancer."
+        },
+        "position3": {
+          "upright": "The Four of Hearts says there may be a dissatisfaction or emotional retreat that prevents harmony, and notice innovation restores balance.",
+          "reversed": "The Inverse Four of Hearts, when awareness awakens, harmony is born again.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "awareness",
+            "2": "compatibility",
+            "3": "transformation",
+            "4": "Gratitude"
+          },
+          "context": "Consciousness brings harmony, closure weakens ties."
+        },
+        "position4": {
+          "upright": "The Four Cups show that a long-term relationship can have a sense of stability over time.",
+          "reversed": "Inverse Four Cups, with the increase of awareness, comes a new freshness in the relationship, which supports the long term.",
+          "keywords": {
+            "0": "stasis",
+            "1": "awareness",
+            "2": "satisfaction",
+            "3": "Regeneration",
+            "4": "long term"
+          },
+          "context": "Awareness feeds the long term, testing the bond of dissatisfaction."
+        },
+        "position5": {
+          "upright": "The Four of Hearts point to the risk of not recognizing the soul mate or ignoring the present opportunities.",
+          "reversed": "The Reverse Cup Four, with awakening and awareness, becomes visible the potential of the soul mate, the desire to open the heart can trigger this bond.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "awareness",
+            "2": "Awakening",
+            "3": "emotion",
+            "4": "soul mate"
+          },
+          "context": "Awareness paves the way for a soul mate, and indifference stands in the way of a bond."
+        },
+        "position6": {
+          "upright": "The quartet shows that even if there are opportunities in front of you to grant your wish, you may be distracted, calling for an emotional wake-up call.",
+          "reversed": "The reverse four points to the possibility that your wish will resuscitate, and if you look at it with gratitude, you can see what you want.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "Awakening",
+            "2": "dissatisfaction",
+            "3": "Gratitude",
+            "4": "awareness"
+          },
+          "context": "Awareness will pave the way for your wish."
+        }
+      },
+      "fiveofcups": {
+        "position1": {
+          "upright": "The Five of Cups tells you that you will not be ready for a new relationship unless you let go of past disappointments, yet you have new opportunities.",
+          "reversed": "The Five of the Reverse Cups tells us that the heart is opening up to a new relationship after grief.",
+          "keywords": {
+            "0": "missing",
+            "1": "It's a cure.",
+            "2": "new opportunity",
+            "3": "Regeneration"
+          },
+          "context": "If you let go of the past, there might be a new relationship."
+        },
+        "position2": {
+          "upright": "The Five of Hearts points to the shadow of the Scorpion, whose passions may be deep but also sensitive to loss.",
+          "reversed": "The Reverse Heart Five reveals the transforming side of the Scorpion, and it can grow stronger from the pain.",
+          "keywords": {
+            "0": "Scorpion",
+            "1": "emotion",
+            "2": "transformation",
+            "3": "passion"
+          },
+          "context": "The Scorpion effect could be strong."
+        },
+        "position3": {
+          "upright": "The Five of Hearts say that loss or past sorrows can force harmony, and focus on what is happening restores harmony.",
+          "reversed": "The Reverse Heart Five shows that harmony can be improved by the beginning of acceptance, leaving the past brings peace.",
+          "keywords": {
+            "0": "missing",
+            "1": "sadness",
+            "2": "acceptance",
+            "3": "compatibility",
+            "4": "It's a cure."
+          },
+          "context": "Leaving the past opens up the harmony, the mourning bonds narrow it down."
+        },
+        "position4": {
+          "upright": "Five Cups show that focusing on loss can force a long-term relationship, and the habit of seeing what's available provides continuity.",
+          "reversed": "Inverse Five Cups, after grief, healing and hope repair long-term ties.",
+          "keywords": {
+            "0": "missing",
+            "1": "mourning",
+            "2": "hope",
+            "3": "Recovery",
+            "4": "long term"
+          },
+          "context": "Returning to hope feeds the long term, and loss tests the bond."
+        },
+        "position5": {
+          "upright": "The Five of Hearts points to the possibility of finding a soul mate after past losses.",
+          "reversed": "The reverse five of hearts, along with the end of mourning, the soul mate's connection can become visible, a new chance arises after loss.",
+          "keywords": {
+            "0": "missing",
+            "1": "It's a cure.",
+            "2": "hope",
+            "3": "Rebirth",
+            "4": "soul mate"
+          },
+          "context": "After loss, healing opens the way to soul mates."
+        },
+        "position6": {
+          "upright": "The five show that you can pass through disappointment or loss in the process of fulfilling your wish, but if you focus on the remaining possibilities, your wish may be possible.",
+          "reversed": "The reverse five shows that your wish can come true with recovery and hope again.",
+          "keywords": {
+            "0": "missing",
+            "1": "hope",
+            "2": "It's a cure.",
+            "3": "Rebirth",
+            "4": "Agreed"
+          },
+          "context": "Maintaining hope gives you a wish."
+        }
+      },
+      "sixofcups": {
+        "position1": {
+          "upright": "The Six of Hearts may be reconnected with someone from the past, or an innocent love of children may soon come.",
+          "reversed": "Six of the Reverse Cups, if you stick to the past, the new relationship door won't open.",
+          "keywords": {
+            "0": "history",
+            "1": "nostalgia",
+            "2": "Innocence",
+            "3": "again"
+          },
+          "context": "The new relationship may be related to past ties."
+        },
+        "position2": {
+          "upright": "The Six of Hearts points to the nostalgic and loving Cancer, which is important to connect with the past.",
+          "reversed": "The reverse Six of Hearts can point to a person who can't break out of the past in the shadow of the Crab, who's too attached.",
+          "keywords": {
+            "0": "Crab",
+            "1": "nostalgia",
+            "2": "emotion",
+            "3": "family"
+          },
+          "context": "Crab energy is obvious."
+        },
+        "position3": {
+          "upright": "The Six of Hearts shows that nostalgia and pure bonds strengthen harmony, and internal child energy generates warmth.",
+          "reversed": "Inverse Six of Hearts, overconnected to the past makes it harder to fit in.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "purity",
+            "2": "Drink up, kid.",
+            "3": "compatibility",
+            "4": "history"
+          },
+          "context": "Pure bond nourishes harmony."
+        },
+        "position4": {
+          "upright": "Six Cups, heat and warmth from the past, give root to a long-term relationship that makes the bond of innocence alive.",
+          "reversed": "Inverse Six Cups, too attached to the past makes the long term difficult, so you need to focus now.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "Innocence",
+            "2": "temperature",
+            "3": "history",
+            "4": "long term"
+          },
+          "context": "The heat supports the long term, and the bond is worn out by sticking to the past."
+        },
+        "position5": {
+          "upright": "The Six of Hearts says that soul mates can be linked to past life or someone from the past.",
+          "reversed": "The Reverse Heart Six can make it difficult to hold on to the past, but a new bond can be established by honoring the memory.",
+          "keywords": {
+            "0": "history",
+            "1": "nostalgia",
+            "2": "familiarity",
+            "3": "spirit bond",
+            "4": "soul mate"
+          },
+          "context": "The warmth of the past can indicate soul mates."
+        },
+        "position6": {
+          "upright": "The Sixers point to the possibility that your wish will come true with a bond from the past or a nostalgic energy that can open a familiar door.",
+          "reversed": "The reverse six tells you that hanging on to the past can block your wish, so you need to focus on today.",
+          "keywords": {
+            "0": "history",
+            "1": "nostalgia",
+            "2": "connection",
+            "3": "Compassion",
+            "4": "memory"
+          },
+          "context": "The bond from the past can trigger your wish."
+        }
+      },
+      "sevenofcups": {
+        "position1": {
+          "upright": "The Seven of Cups shows that you can meet many opportunities for love, but it's important that you make the right choice.",
+          "reversed": "The Seven of the Reverse Cups says that the illusions in your head will fall apart and you can choose a real relationship.",
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "decision",
+            "3": "opportunity"
+          },
+          "context": "There may be plenty of opportunities for a relationship soon."
+        },
+        "position2": {
+          "upright": "The Seven of Hearts points to the mighty Pisces, who can be creative, intuitive, but sometimes indecisive.",
+          "reversed": "The reverse seven of hearts may show disarray or illusions in the shadow of the fish, which may be difficult to decide.",
+          "keywords": {
+            "0": "Fish",
+            "1": "dream",
+            "2": "intuition",
+            "3": "confusion"
+          },
+          "context": "The Pisces effect comes out."
+        },
+        "position3": {
+          "upright": "The Seven of Hearts shows that dreams can nurture harmony, the right choices create a shared vision.",
+          "reversed": "The Reverse Seven of Hearts, disappointment or disarray damage the harmony.",
+          "keywords": {
+            "0": "dream",
+            "1": "selection",
+            "2": "Vision",
+            "3": "compatibility",
+            "4": "reality"
+          },
+          "context": "Elections determine harmony, dispersion forces the bond."
+        },
+        "position4": {
+          "upright": "The seven Cups, the abundance of dreams and options, require a clear choice in the long run, and uncertainty can shake the balance of the bond.",
+          "reversed": "The inverse Seven Cups, clarity and realistic approach support the long term.",
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "clarity",
+            "3": "Realism",
+            "4": "long term"
+          },
+          "context": "The clear choice feeds the long term, testing the bond of uncertainty."
+        },
+        "position5": {
+          "upright": "The Seven of Hearts shows that dreams of a soul mate are multiplying and that there must be a choice between many possibilities.",
+          "reversed": "The reverse seven of hearts, with the end of confusion, the potential for a soul mate can become clear, and the realistic choice will strengthen that bond.",
+          "keywords": {
+            "0": "dream",
+            "1": "option",
+            "2": "Vision",
+            "3": "clarity",
+            "4": "soul mate"
+          },
+          "context": "Dreams enhance soul mates, clarity builds the foundation of the bond."
+        },
+        "position6": {
+          "upright": "The seven show that you have a lot of options for your wish to be fulfilled, making your wish clear.",
+          "reversed": "If you wake up from the wrong seven dreams and make realistic choices, your wish may come true.",
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "clarity",
+            "3": "Vision",
+            "4": "selection"
+          },
+          "context": "The clear choice makes your wish come true."
+        }
+      },
+      "eightofcups": {
+        "position1": {
+          "upright": "The Eight of Hearts shows that you will emerge from the bonds that no longer serve you and move on to a new love.",
+          "reversed": "The Eights of the Reverse Cups say that having difficulty letting go of the past delays the new relationship.",
+          "keywords": {
+            "0": "separation",
+            "1": "Progress",
+            "2": "new path",
+            "3": "change"
+          },
+          "context": "For a new relationship, you have to put the old one behind you."
+        },
+        "position2": {
+          "upright": "The Eight of Hearts points to Fish or Scorpion searching for spiritual depth, a person who seeks meaning in his life.",
+          "reversed": "The Inverse Eight of Hearts may tend to be indecisive or escape in the shadow of the scorpion.",
+          "keywords": {
+            "0": "Fish",
+            "1": "Scorpion",
+            "2": "search",
+            "3": "depth"
+          },
+          "context": "Fish or Scorpion accent is strong."
+        },
+        "position3": {
+          "upright": "The Eight of Hearts says that harmony can be strengthened by emotional maturity and the search for meaning.",
+          "reversed": "The Inverse Eight of Hearts, the tightness between going and staying, makes it difficult to fit in, and indecisiveness creates distance in a relationship.",
+          "keywords": {
+            "0": "search for meaning",
+            "1": "maturity",
+            "2": "Don't let go",
+            "3": "compatibility",
+            "4": "balance"
+          },
+          "context": "Maturity brings harmony, a bond of indecisiveness."
+        },
+        "position4": {
+          "upright": "Eight Cups, the search for deeper meaning may require transformation in the long run, and healthy decisions ensure continuity.",
+          "reversed": "The Reverse Eight Cups, whether indecisive or go, make the long term difficult.",
+          "keywords": {
+            "0": "search",
+            "1": "transformation",
+            "2": "decision",
+            "3": "go",
+            "4": "long term"
+          },
+          "context": "The search for meaning strengthens the long term, testing the bond of indecisiveness."
+        },
+        "position5": {
+          "upright": "The Eight of Hearts shows the need to leave the old bonds behind to find the soul mate.",
+          "reversed": "The Reverse Eight of Hearts, the going-and-stay dilemma can block the bond of the soul mate.",
+          "keywords": {
+            "0": "Departure",
+            "1": "journey",
+            "2": "Truth",
+            "3": "decision",
+            "4": "soul mate"
+          },
+          "context": "The search for new truth makes the soul mate visible."
+        },
+        "position6": {
+          "upright": "The eight show that in order for your wish to come true, you have to put things behind you, and to turn to the new, it opens the way for your wish.",
+          "reversed": "Reverse eights, when you're between going and staying, your wish can be suspended.",
+          "keywords": {
+            "0": "Departure",
+            "1": "new path",
+            "2": "Courage",
+            "3": "meaning",
+            "4": "decision"
+          },
+          "context": "It will make room for your wish to let go."
+        }
+      },
+      "nineofcups": {
+        "position1": {
+          "upright": "The Nine of Cups says that his wish will come true, and soon he will have a relationship that will satisfy his heart.",
+          "reversed": "The Nine of Reverse Cups warns that superficial satisfaction can prevent true happiness.",
+          "keywords": {
+            "0": "Wish",
+            "1": "satisfaction",
+            "2": "pleasure",
+            "3": "Happiness"
+          },
+          "context": "Your wish for a new relationship can come true."
+        },
+        "position2": {
+          "upright": "The Nine of Hearts points to a Cancer or Pisces consistent with the Venus effect, who cares about emotional satisfaction.",
+          "reversed": "The Reverse Cup Nine may show superficiality or dissatisfaction in the shadow of the water horoscopes.",
+          "keywords": {
+            "0": "It's a water sign.",
+            "1": "satisfaction",
+            "2": "emotion",
+            "3": "empathy"
+          },
+          "context": "Crab/fish effects bring out the light."
+        },
+        "position3": {
+          "upright": "The Nine of Hearts shows that satisfaction and happiness can be the natural result of harmony, and your inner peace reflects on the bond.",
+          "reversed": "The Nine of Reverse Hearts, the pursuit of superficial pleasures weakens harmony, and the search for true satisfaction is necessary.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "satisfaction",
+            "2": "compatibility",
+            "3": "satisfaction",
+            "4": "Peace"
+          },
+          "context": "Saturation breeds harmony, and the bond of surfaceness shadows."
+        },
+        "position4": {
+          "upright": "Nine Cups, personal satisfaction and happiness strengthen the long-term bond, and shared satisfaction ensures continuity.",
+          "reversed": "The Reverse Nine Cups, selfishness or superficial satisfaction, weaken the long term.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Happiness",
+            "2": "share",
+            "3": "Pleasure",
+            "4": "long term"
+          },
+          "context": "Shared happiness feeds the long term, testing the bond of selfishness."
+        },
+        "position5": {
+          "upright": "The Nine of Hearts shows that personal satisfaction and happiness increase the power to attract the soul mate, and a satisfied heart is open to the bond of the soul mate.",
+          "reversed": "Inverse Nine of Hearts, pursuing superficial pleasures can interfere with the bond of a soul mate.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Pleasure",
+            "2": "Happiness",
+            "3": "satisfaction",
+            "4": "soul mate"
+          },
+          "context": "Satisfaction attracts soul mates, superficiality casts a shadow."
+        },
+        "position6": {
+          "upright": "The nines show that your wish is very likely to come true, a conclusion that your heart will be satisfied with.",
+          "reversed": "The reverse nine tells you that superficial satisfaction can interfere with the essence of your wish, so you need to focus on the deep needs.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "satisfaction",
+            "2": "Happiness",
+            "3": "abundance",
+            "4": "Thank God."
+          },
+          "context": "True satisfaction makes your wish visible."
+        }
+      },
+      "tenofcups": {
+        "position1": {
+          "upright": "The Ten of Hearts points to the possibility of a happy and peaceful relationship, and soon you may meet someone who will give your heart a sense of home.",
+          "reversed": "The Ten of Reverse Cups shows that there may be differences between expectations and reality.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "compatibility",
+            "2": "family",
+            "3": "Peace"
+          },
+          "context": "It's possible to have a peaceful, compatible relationship soon."
+        },
+        "position2": {
+          "upright": "The Ten of Hearts points to family-oriented Cancer, who cares about home and property contact.",
+          "reversed": "The Inverse Ten of Hearts may be challenges from family expectations in the shadow of the Crab.",
+          "keywords": {
+            "0": "Crab",
+            "1": "family",
+            "2": "emotion",
+            "3": "belonging"
+          },
+          "context": "Cancer energy is dominant."
+        },
+        "position3": {
+          "upright": "The Ten of Hearts shows the potential for family harmony and lasting happiness, together a peaceful future is possible.",
+          "reversed": "The Inverse Ten of Hearts, overimagining expectations can disrupt harmony, and realistic dialogue is important.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "family",
+            "2": "Peace",
+            "3": "compatibility",
+            "4": "future"
+          },
+          "context": "Unity brings harmony, idealism pushes the bond."
+        },
+        "position4": {
+          "upright": "Ten Cups, family harmony and peace are a sign of a long-term relationship, a sense of unity fosters continuity.",
+          "reversed": "The Inverse Ten Cups, the conflict of expectation, makes the long term difficult.",
+          "keywords": {
+            "0": "family",
+            "1": "compatibility",
+            "2": "Peace",
+            "3": "unity",
+            "4": "long term"
+          },
+          "context": "The Union feeds the long term, testing the bond of conflict."
+        },
+        "position5": {
+          "upright": "The Ten of Hearts is one of the most powerful indicators of the soul mate bond, family, unity, and lasting happiness are possible in this bond.",
+          "reversed": "The Ten of Reverse Hearts, the difference between ideal and reality can force the bond of a soul mate, but realism remains the power of a bond.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "family",
+            "2": "unity",
+            "3": "compatibility",
+            "4": "soul mate"
+          },
+          "context": "Unity and harmony point to soul mates."
+        },
+        "position6": {
+          "upright": "Ten shows that the fulfillment of your wish will bring lasting happiness and harmony, pointing to a peaceful and loving family environment.",
+          "reversed": "If reality collides with the inverse ten, ideal expectations, your wish may be difficult to fully fulfill.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "compatibility",
+            "2": "family",
+            "3": "love",
+            "4": "Peace"
+          },
+          "context": "The loving atmosphere supports your wish."
+        }
+      },
+      "pageofcups": {
+        "position1": {
+          "upright": "The Prince of Cups announces a romantic and surprising beginning, and soon an innocent love can find you.",
+          "reversed": "The Prince of Reverse Cups says that a new relationship can be short-lived due to lack of emotional maturity.",
+          "keywords": {
+            "0": "romance",
+            "1": "Innocence",
+            "2": "surprise",
+            "3": "sensitivity"
+          },
+          "context": "There may soon be a romantic relationship."
+        },
+        "position2": {
+          "upright": "The Prince of Hearts points to young and dreamer Fish energy, which may be innocent, romantic and intuitive.",
+          "reversed": "The reverse Prince of the Cup can be extremely sensitive or evasive in the shadow of a fish.",
+          "keywords": {
+            "0": "Fish",
+            "1": "romance",
+            "2": "intuition",
+            "3": "Innocence"
+          },
+          "context": "Fish energy dominates."
+        },
+        "position3": {
+          "upright": "The Prince of Hearts, pure emotions and curiosity strengthen harmony, and small gestures revive the relationship.",
+          "reversed": "The reverse Prince of the Cup, extreme sensitivity or imagination, makes it difficult to fit in, and it may require a realistic approach.",
+          "keywords": {
+            "0": "Innocence",
+            "1": "curiosity",
+            "2": "gestures",
+            "3": "compatibility",
+            "4": "expression"
+          },
+          "context": "Pure emotions enhance harmony, extreme bonds."
+        },
+        "position4": {
+          "upright": "The Prince of Hearts, emotional openness and innocence bring freshness to long-term relationships, and curiosity keeps the bond alive.",
+          "reversed": "The reverse Prince of the Cup, oversensitive or immature, makes the long term difficult.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "Innocence",
+            "2": "openness",
+            "3": "maturity",
+            "4": "long term"
+          },
+          "context": "The openness feeds the long term, testing the bond of immatureness."
+        },
+        "position5": {
+          "upright": "The Prince of Hearts, an innocent emotion and an inspiring beginning could be the first spark of the soul mate connection.",
+          "reversed": "The reverse Prince of the Cup, overimagining, can make the bond of the soul more difficult.",
+          "keywords": {
+            "0": "Innocence",
+            "1": "Inspired",
+            "2": "start",
+            "3": "dream",
+            "4": "soul mate"
+          },
+          "context": "Innocence increases the possibility of soul mates."
+        },
+        "position6": {
+          "upright": "The prince shows that there will be little surprises and creative beginnings in the fulfillment of your wish.",
+          "reversed": "Reverse prince, over-imagining can make your wish difficult.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "creativity",
+            "2": "start",
+            "3": "curiosity",
+            "4": "hope"
+          },
+          "context": "A little surprise may be the key to your wish."
+        }
+      },
+      "knightofcups": {
+        "position1": {
+          "upright": "Knight of the Cup says you're going to have a romantic offer or a person who's full of love.",
+          "reversed": "The Knight of the Reverse Cup shows that there may be a risk of inconsistency or disappointment.",
+          "keywords": {
+            "0": "romance",
+            "1": "proposal",
+            "2": "gravity",
+            "3": "Vision"
+          },
+          "context": "You might get a romantic offer soon."
+        },
+        "position2": {
+          "upright": "The Knight of Hearts points to the romantic Fish or Scorpion, who is an idealist and expressive emotion.",
+          "reversed": "The Reverse Cup Knight may be too dreamer or inconsistencies in the shade of the scorpion.",
+          "keywords": {
+            "0": "Fish",
+            "1": "Scorpion",
+            "2": "romance",
+            "3": "ideal"
+          },
+          "context": "Fish or Scorpion accent is strong."
+        },
+        "position3": {
+          "upright": "The Knight of Hearts says romance and grace will nourish harmony, and the offer from the heart strengthens your bond.",
+          "reversed": "The reverse Knight of the Cup, extreme romanticization or inconsistencies, can disrupt harmony, requires clarity and continuity.",
+          "keywords": {
+            "0": "romance",
+            "1": "grace",
+            "2": "proposal",
+            "3": "compatibility",
+            "4": "Vision"
+          },
+          "context": "Romance nourishes harmony, inconsistency weakens bond."
+        },
+        "position4": {
+          "upright": "Knight of Hearts, romance and grace support a long-term relationship.",
+          "reversed": "Knight of the Reverse Cup, inconsistencies destroy the long term.",
+          "keywords": {
+            "0": "romance",
+            "1": "grace",
+            "2": "proposal",
+            "3": "emotion",
+            "4": "long term"
+          },
+          "context": "Romance feeds the long term, testing the bond of inconsistency."
+        },
+        "position5": {
+          "upright": "Knight of Hearts, a romantic and heartfelt offer points to the bond of soul mate, a person who can express his feelings with grace.",
+          "reversed": "The reverse Knight of the Cup, overrated romance or inconsistencies, can cloud the bond of the soul mate.",
+          "keywords": {
+            "0": "romance",
+            "1": "proposal",
+            "2": "Vision",
+            "3": "emotion",
+            "4": "soul mate"
+          },
+          "context": "The romantic approach points to soul mates."
+        },
+        "position6": {
+          "upright": "The knight says that your wish will come true, that it will bring about a romantic offer or an emotional development.",
+          "reversed": "Reverse knights, dreamers, promises or inconsistencies can make your wish difficult.",
+          "keywords": {
+            "0": "romance",
+            "1": "proposal",
+            "2": "Vision",
+            "3": "step",
+            "4": "emotion"
+          },
+          "context": "A consistent romantic step makes your wish possible."
+        }
+      },
+      "queenofcups": {
+        "position1": {
+          "upright": "The Queen of Cups points to an empathic, loving, deep-feeling candidate, and you may soon meet someone like that.",
+          "reversed": "The Queen of Reverse Cups describes the risk of emotional imbalance or extreme sensitivity.",
+          "keywords": {
+            "0": "empathy",
+            "1": "love",
+            "2": "sensitivity",
+            "3": "depth"
+          },
+          "context": "Soon, an emotionally powerful candidate for a partner may arrive."
+        },
+        "position2": {
+          "upright": "The Queen of Hearts points to an intuitive and caring Cancer, who has emotional maturity.",
+          "reversed": "The reverse Queen of the Cup can be overly sensitive or addictive in the Crab shadow.",
+          "keywords": {
+            "0": "Crab",
+            "1": "intuition",
+            "2": "Compassion",
+            "3": "maturity"
+          },
+          "context": "Crab energy is dominant."
+        },
+        "position3": {
+          "upright": "The Queen of Hearts shows that empathy and deep emotion will strengthen harmony.",
+          "reversed": "The reverse Queen of the Cup shadows the loss of borders or oversensitive harmony, which requires self-regulation.",
+          "keywords": {
+            "0": "empathy",
+            "1": "Compassion",
+            "2": "compatibility",
+            "3": "sentimentality",
+            "4": "Trust"
+          },
+          "context": "Empathy enhances harmony, instability pushes the bond."
+        },
+        "position4": {
+          "upright": "Queen of Hearts, empathy and emotional maturity are the basis for long-term bonding, providing safe space continuity.",
+          "reversed": "The reverse queen of hearts, the lack of sentimentality or boundaries, makes the long term difficult.",
+          "keywords": {
+            "0": "empathy",
+            "1": "maturity",
+            "2": "Trust",
+            "3": "emotion",
+            "4": "long term"
+          },
+          "context": "Empathy supports the long term, the lack of borders tests the bond."
+        },
+        "position5": {
+          "upright": "Queen of Hearts, deep empathy and compassion form the heart of the soul mate, which is built on emotional maturity.",
+          "reversed": "The reverse Queen of the Cup, emotional addiction or border issues, can make the bond of the soul difficult.",
+          "keywords": {
+            "0": "empathy",
+            "1": "Compassion",
+            "2": "maturity",
+            "3": "limit",
+            "4": "soul mate"
+          },
+          "context": "Compassion nourishes the spirit mate, and addiction tests the bond."
+        },
+        "position6": {
+          "upright": "The Queen shows that intuition and compassionate support will play an important role in making your wish come true.",
+          "reversed": "Reverse queen, emotional imbalance or oversensitivity can make your wish difficult.",
+          "keywords": {
+            "0": "intuition",
+            "1": "Compassion",
+            "2": "support",
+            "3": "empathy",
+            "4": "wisdom"
+          },
+          "context": "Intuitive support strengthens your wish."
+        }
+      },
+      "kingofcups": {
+        "position1": {
+          "upright": "The King of Cups says he will enter the life of a mature, balanced, emotionally trusted partner.",
+          "reversed": "The King of Reverse Cups warns that he may encounter a manipulative person who suppresses his emotions.",
+          "keywords": {
+            "0": "maturity",
+            "1": "balance",
+            "2": "love",
+            "3": "Trust"
+          },
+          "context": "Soon, a relationship with an emotionally mature person can begin."
+        },
+        "position2": {
+          "upright": "The King of Hearts points to mature Fish or Scorpion, a man who manages and understands his emotions.",
+          "reversed": "The reverse King of the Cup may show manipulation or repressed anger in the shadow of the fish.",
+          "keywords": {
+            "0": "Fish",
+            "1": "Scorpion",
+            "2": "maturity",
+            "3": "emotion"
+          },
+          "context": "Fish or Scorpion comes forward."
+        },
+        "position3": {
+          "upright": "The King of Hearts shows that he will strengthen harmony with emotional maturity and calm leadership, and in times of crisis balance brings peace to the bond.",
+          "reversed": "The reverse King of the Cup, suppression of emotions or passive aggression, makes harmony difficult.",
+          "keywords": {
+            "0": "maturity",
+            "1": "balance",
+            "2": "compatibility",
+            "3": "Tranquillity",
+            "4": "leadership"
+          },
+          "context": "Maturity brings harmony, suppression forces the bond."
+        }
+      }
+    }
+  }
+}

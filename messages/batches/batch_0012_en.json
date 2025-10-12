@@ -1,0 +1,792 @@
+{
+  "marriage": {
+    "meanings": {
+      "tenofswords": {
+        "position2": {
+          "keywords": {
+            "0": "end",
+            "1": "Regeneration",
+            "2": "closure",
+            "3": "start"
+          },
+          "context": "It would be helpful to accept the endings while we wait."
+        },
+        "position3": {
+          "upright": "A financial method ends; a new beginning is inevitable. Closing is healing.",
+          "reversed": "In the recovery process, the old ghosts may return; the frame must be kept clear.",
+          "keywords": {
+            "0": "end",
+            "1": "closure",
+            "2": "Rebirth",
+            "3": "rule"
+          },
+          "context": "It's time to honor the old one and write a new plan."
+        },
+        "position4": {
+          "upright": "A finished cycle can make it difficult to connect, taking time to establish a new bond after betrayal or a heavy finish.",
+          "reversed": "The process of recovery begins after suffering, in which case the bonding can be reborn.",
+          "keywords": {
+            "0": "end",
+            "1": "Betrayal",
+            "2": "Pain",
+            "3": "Rebirth",
+            "4": "connection"
+          },
+          "context": "There's a desire to connect, but the past wounds must be closed."
+        },
+        "position5": {
+          "upright": "It's like accepting loops and opening a new page.",
+          "reversed": "One of you may have the tendency to come back from half the time.",
+          "keywords": {
+            "0": "end",
+            "1": "closure",
+            "2": "Rebirth",
+            "3": "Agreed",
+            "4": "It's a cure."
+          },
+          "context": "It's close-up ethics, partner."
+        },
+        "position6": {
+          "upright": "A certain rejection or termination attitude from the family can be seen, and even though it's hard in the first place, it can lead to another door opening in time, knowing the truth will set you free.",
+          "reversed": "A hard break with the family may slowly begin to recover, but for a complete acceptance, the process can go very slowly.",
+          "keywords": {
+            "0": "last",
+            "1": "Rejection",
+            "2": "Don't break it.",
+            "3": "Freedom",
+            "4": "Recovery"
+          },
+          "context": "There's a chance that the family will be able to recuperate slowly."
+        },
+        "position7": {
+          "upright": "The Ten Swords show the introduction after the end, the final closure opens the door to the new beginning.",
+          "reversed": "The Reverse Ten Swords point to recovery and rebirth, making it easier to meet again.",
+          "keywords": {
+            "0": "end",
+            "1": "Rebirth",
+            "2": "transformation",
+            "3": "closure"
+          },
+          "context": "You meet after an end, transformation opens a new door."
+        },
+        "position8": {
+          "upright": "The Sword Ten shows the end of a cycle in communication, an opportunity to renegotiate after a difficult finish.",
+          "reversed": "The Reverse Sword Ten points to the process of recovery and recommunication, and rebirth brings harmony.",
+          "keywords": {
+            "0": "end",
+            "1": "Regeneration",
+            "2": "cycle",
+            "3": "expression"
+          },
+          "context": "After the end, openness adapts; resistance is damaged."
+        },
+        "position9": {
+          "upright": "Ten of Swords, one who has the power to be reborn, honors the endings, and opens up to the new one suits you.",
+          "reversed": "The Ten of Reverse Swords is not suitable for you to be a constant victim or a resistance to the new one.",
+          "keywords": {
+            "0": "Rebirth",
+            "1": "end",
+            "2": "power",
+            "3": "transformation"
+          },
+          "context": "Renewal partner is suitable."
+        }
+      },
+      "pageofswords": {
+        "position1": {
+          "upright": "The result is curiosity, communication, and learning will keep the marriage fresh.",
+          "reversed": "Misunderstandings or rumors may force the outcome of the marriage.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "learning",
+            "2": "communication",
+            "3": "real"
+          },
+          "context": "The result is a marriage that is strengthened by open communication."
+        },
+        "position10": {
+          "upright": "The Sword Prince shows that you are in the process of researching the possibility of marriage through curiosity and communication.",
+          "reversed": "Gossip, misinformation, or hasty judgment may cloud the way to marriage.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "learning",
+            "2": "communication",
+            "3": "observation",
+            "4": "Truth"
+          },
+          "context": "Marriage is strengthened by open communication and learning."
+        },
+        "position2": {
+          "upright": "Learn new things, feed your curiosity, and while you wait, knowledge will give you strength.",
+          "reversed": "Gossip or disorganized information will make the process difficult.",
+          "keywords": {
+            "0": "learning",
+            "1": "curiosity",
+            "2": "information",
+            "3": "observation"
+          },
+          "context": "It helps to learn while you wait."
+        },
+        "position3": {
+          "upright": "Curiosity and data collection make smart budgets, confirmed information is power.",
+          "reversed": "Gossip and hasty judgment poison money talk.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "data",
+            "2": "Verification",
+            "3": "learning"
+          },
+          "context": "It's fair sharing with proven knowledge."
+        },
+        "position4": {
+          "upright": "Curiosity and observation can increase commitment, and if one of the parties is trying to learn and understand, the bond is strengthened.",
+          "reversed": "Excessive interrogation or gossip weakens bonding, suspicion can undermine confidence.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "learning",
+            "2": "query",
+            "3": "Trust",
+            "4": "connection"
+          },
+          "context": "There's a desire to commit, but over-questioning can be in the way."
+        },
+        "position5": {
+          "upright": "Your culture of curiosity, learning and confirmation is similar. You like to ask questions.",
+          "reversed": "You may have a different threshold for gossip/fast judgment. Source control is required.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "learning",
+            "2": "Verification",
+            "3": "communication",
+            "4": "ethics"
+          },
+          "context": "The curiosity of learning, partner, may the discipline of confirmation be maintained."
+        },
+        "position6": {
+          "upright": "The family will want to observe you more, asking questions, testing your actions, making it easier to accept your curiosity honestly and patiently.",
+          "reversed": "Excessive curiosity, gossip, or misinterpretations can make it difficult to accept in the family, and there may be delusions about you, and patient communication can correct those perceptions over time.",
+          "keywords": {
+            "0": "observation",
+            "1": "curiosity",
+            "2": "Question",
+            "3": "learning",
+            "4": "Patience"
+          },
+          "context": "Family can test you, and your honest answers will open the way to acceptance."
+        },
+        "position7": {
+          "upright": "The Prince of Sword demonstrates the introduction of learning and curiosity, which speeds up the bond of education or research.",
+          "reversed": "The Reverse Sword Prince says that a hasty judgment can force the bond, and the observation process will be easier.",
+          "keywords": {
+            "0": "learning",
+            "1": "curiosity",
+            "2": "communication",
+            "3": "observation"
+          },
+          "context": "You'll meet him in a learning environment."
+        },
+        "position8": {
+          "upright": "The Sword Prince shows that communication will be strengthened by curiosity and careful listening, and the desire to learn will facilitate the deal.",
+          "reversed": "The Reverse Sword Prince points out that hasty judgments can damage communication, and open questions bring harmony.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "learning",
+            "2": "communication",
+            "3": "Don't listen."
+          },
+          "context": "Curiosity enhances harmony; hasty judgment prevents it."
+        },
+        "position9": {
+          "upright": "The Prince of Swords, curious, open to learning, and honest communication is fitting for you.",
+          "reversed": "The Prince of Reverse Swords, a gossiper or a hasty judge, is not fit for you.",
+          "keywords": {
+            "0": "curiosity",
+            "1": "learning",
+            "2": "communication",
+            "3": "Honesty"
+          },
+          "context": "A curious and honest wife is appropriate."
+        }
+      },
+      "knightofswords": {
+        "position1": {
+          "upright": "The result is that rapid progress, determination, and clear steps will shape your marriage.",
+          "reversed": "Rushing or anger can cloud the outcome of marriage.",
+          "keywords": {
+            "0": "determination",
+            "1": "speed",
+            "2": "Action",
+            "3": "mind"
+          },
+          "context": "The result is a marriage that is strengthened by decisive steps, but must be avoided in haste."
+        },
+        "position10": {
+          "upright": "The Knight of the Sword creates a momentum towards marriage by swift decision and attack, but patience and strategy are essential.",
+          "reversed": "Aggression and harshness can ruin a marriage, and it's necessary to breathe and ease the process.",
+          "keywords": {
+            "0": "speed",
+            "1": "Attack",
+            "2": "determination",
+            "3": "strategy",
+            "4": "communication"
+          },
+          "context": "Marriage requires speed + patience balance."
+        },
+        "position2": {
+          "upright": "Proceed with speed to your goals, and proceed with determination while waiting.",
+          "reversed": "Rushing or anger will make the process difficult.",
+          "keywords": {
+            "0": "target",
+            "1": "speed",
+            "2": "decision",
+            "3": "Determination"
+          },
+          "context": "Determination helps while waiting."
+        },
+        "position3": {
+          "upright": "Quick decision and decisive communication will clear the budget, and the speed combined with strategy will yield results.",
+          "reversed": "The harsh form of hastyness burns the channels; resistance is born.",
+          "keywords": {
+            "0": "speed",
+            "1": "determination",
+            "2": "strategy",
+            "3": "communication"
+          },
+          "context": "It's not hard, it's clear speed."
+        },
+        "position4": {
+          "upright": "Quick and decisive steps promote commitment, and bold steps lead to a relationship.",
+          "reversed": "A rash act or anger can cloud the bonding.",
+          "keywords": {
+            "0": "speed",
+            "1": "decision",
+            "2": "Courage",
+            "3": "In a hurry.",
+            "4": "connection"
+          },
+          "context": "There's a desire to connect, but speed has to be balanced."
+        },
+        "position5": {
+          "upright": "The way you think fast and defend clearly, you speak bravely in the right place.",
+          "reversed": "You have a different threshold for rushing/strength. The rhythm of speech remains in harmony.",
+          "keywords": {
+            "0": "speed",
+            "1": "Courage",
+            "2": "strategy",
+            "3": "expression",
+            "4": "rhythm"
+          },
+          "context": "Quick mind, partner, even the speed dose."
+        },
+        "position6": {
+          "upright": "The family can act with swift judgments and hasty decisions, but when you remain calm and moderate, this storm can be disbanded quickly, and your courageous but patient stance may be appreciated.",
+          "reversed": "Your family's hasty and aggressive behavior may put you in a corner, and tensions may weaken your chances of acceptance by growing, and at this point you may need to distance yourself.",
+          "keywords": {
+            "0": "In a hurry.",
+            "1": "decision",
+            "2": "Courage",
+            "3": "storm",
+            "4": "measurance"
+          },
+          "context": "The family can make quick judgments, and your calm stance can be appreciated."
+        },
+        "position7": {
+          "upright": "The Knight of the Sword shows you to meet in a fast and clear environment, an argument or a rapid development unites you.",
+          "reversed": "The Reverse Sword Knight says that rashness can push the bond, and slowing down makes the relationship stronger.",
+          "keywords": {
+            "0": "speed",
+            "1": "determination",
+            "2": "communication",
+            "3": "defence"
+          },
+          "context": "You meet him in a fast environment, he maintains a clear connection."
+        },
+        "position8": {
+          "upright": "The Knight of the Sword points to fast and sharp communication.",
+          "reversed": "The Reverse Sword Knight shows that hasty words can make communication difficult.",
+          "keywords": {
+            "0": "speed",
+            "1": "clarity",
+            "2": "sharpness",
+            "3": "communication"
+          },
+          "context": "Clarity brings harmony; haste makes the bond difficult."
+        },
+        "position9": {
+          "upright": "Knight of the Swords, a steadfast and fast-thinking wife who speaks bravely and thinks well for you.",
+          "reversed": "Knight of the Reverse Swords, someone with a hasty and aggressive way of communicating is not suitable for you.",
+          "keywords": {
+            "0": "Courage",
+            "1": "determination",
+            "2": "communication",
+            "3": "clarity"
+          },
+          "context": "A wife who is courageous and determined to communicate is appropriate."
+        }
+      },
+      "queenofswords": {
+        "position1": {
+          "upright": "The result is that objective gaze, wisdom, and clear communication will make marriage healthy.",
+          "reversed": "Coldness or extreme criticism can complicate the outcome of marriage.",
+          "keywords": {
+            "0": "wisdom",
+            "1": "communication",
+            "2": "justice",
+            "3": "clarity"
+          },
+          "context": "The result is a marriage shaped by wisdom and clarity, but compassion must be preserved."
+        },
+        "position10": {
+          "upright": "The Queen of the Sword makes the decision to marry objectively, honesty and boundaries healthy.",
+          "reversed": "Excessive criticism or coldness can make the marriage process difficult, and it's important to balance with compassion.",
+          "keywords": {
+            "0": "clarity",
+            "1": "limit",
+            "2": "justice",
+            "3": "communication",
+            "4": "wisdom"
+          },
+          "context": "Marriage requires clarity and tender expression."
+        },
+        "position2": {
+          "upright": "Win logic and objectiveness, and clarity is important while waiting.",
+          "reversed": "Excessive criticism makes the process difficult.",
+          "keywords": {
+            "0": "clarity",
+            "1": "logic",
+            "2": "Objectivity",
+            "3": "justice"
+          },
+          "context": "It helps to be reasonable while waiting."
+        },
+        "position3": {
+          "upright": "Objectivity and boundaries make money sharing fair. The cool mind guides.",
+          "reversed": "Excessive criticism and sarcoma break the bond; compassion requires balance.",
+          "keywords": {
+            "0": "objectivity",
+            "1": "limit",
+            "2": "justice",
+            "3": "communication"
+          },
+          "context": "The clear but gentle frame is reassuring."
+        },
+        "position4": {
+          "upright": "Logic and objectiveness can strengthen commitment, and a clear and just attitude can give you confidence.",
+          "reversed": "Coldness or extreme criticism weakens the desire to bond, and emotions need to be opened up.",
+          "keywords": {
+            "0": "logic",
+            "1": "justice",
+            "2": "coldness",
+            "3": "clarity",
+            "4": "connection"
+          },
+          "context": "There's a desire for commitment, but numbness can be a shadow."
+        },
+        "position5": {
+          "upright": "Consistency in objectiveness and border language, clear, fair frames relax.",
+          "reversed": "Excessive criticism/ cold perception can be a trigger for one of you.",
+          "keywords": {
+            "0": "clarity",
+            "1": "limit",
+            "2": "justice",
+            "3": "objectivity",
+            "4": "style"
+          },
+          "context": "Cool mind, partner."
+        },
+        "position6": {
+          "upright": "In the family, a rational, cold-blooded figure will evaluate you, acting with more logic than emotion, and being sincere and respectful to him will play a key role in the acceptance process.",
+          "reversed": "This figure can be overly critical and focus on your flaws, and it can distance itself from your constant test, and it can make it difficult to accept too cold.",
+          "keywords": {
+            "0": "logic",
+            "1": "criticism",
+            "2": "Coolness",
+            "3": "authority",
+            "4": "Distance"
+          },
+          "context": "A rational figure in the family can test you, and your respectful attitude makes acceptance easier."
+        },
+        "position7": {
+          "upright": "The Queen of the Sword shows us to meet in an environment where clarity and honesty are strong.",
+          "reversed": "The Reverse Sword Queen says that extreme criticism can force the bond, and the compassionate language makes the process easier.",
+          "keywords": {
+            "0": "clarity",
+            "1": "Honesty",
+            "2": "limit",
+            "3": "justice"
+          },
+          "context": "You'll meet him on the floor of honesty."
+        },
+        "position8": {
+          "upright": "The Sword Queen points to objective and open communication, and honesty strengthens the agreement.",
+          "reversed": "The Reverse Sword Queen shows that extreme criticism can disrupt harmony.",
+          "keywords": {
+            "0": "Honesty",
+            "1": "Objectivity",
+            "2": "criticism",
+            "3": "Compassion"
+          },
+          "context": "Honesty enhances harmony; rigor prevents rigor."
+        },
+        "position9": {
+          "upright": "The Queen of Swords, an independent, intelligent, and frank person, suits you, a match that balances love with logic.",
+          "reversed": "The Queen of Reverse Swords is not fit for you to be overly critical or distant.",
+          "keywords": {
+            "0": "intelligence",
+            "1": "independence",
+            "2": "clarity",
+            "3": "logic"
+          },
+          "context": "The intelligent and clear match is appropriate."
+        }
+      },
+      "kingofswords": {
+        "position1": {
+          "upright": "The result is that strategic thought, honesty and justice will guide your marriage.",
+          "reversed": "Rigor or communication can force the outcome of a marriage.",
+          "keywords": {
+            "0": "justice",
+            "1": "logic",
+            "2": "Honesty",
+            "3": "authority"
+          },
+          "context": "The result is a marriage progressing with honesty and strategy, but watch out for rigor."
+        },
+        "position10": {
+          "upright": "The King of the Sword shows that a decision to marry with strategic wisdom, justice and authority can be made, and logic and ethics are strong.",
+          "reversed": "Rigorous attitudes or dogmatic perspective can make marriage difficult. Empathy must be included.",
+          "keywords": {
+            "0": "strategy",
+            "1": "authority",
+            "2": "logic",
+            "3": "justice",
+            "4": "empathy"
+          },
+          "context": "For marriage, logic and ethical harmony are essential."
+        },
+        "position2": {
+          "upright": "Proceed with knowledge and strategy and act on your principles while waiting.",
+          "reversed": "Solid dogma makes the process difficult.",
+          "keywords": {
+            "0": "information",
+            "1": "strategy",
+            "2": "principle",
+            "3": "authority"
+          },
+          "context": "It helps to increase wisdom while waiting."
+        },
+        "position3": {
+          "upright": "Clear rules based on principles and transparency of accounting have increased confidence. Ethical leadership is essential.",
+          "reversed": "Dogmatic tone and cold judgment block the common budget, lack of empathy is a problem.",
+          "keywords": {
+            "0": "principle",
+            "1": "ethics",
+            "2": "rule",
+            "3": "transparency"
+          },
+          "context": "Fair frame + empathy = solid model."
+        },
+        "position4": {
+          "upright": "A thoughtful decision and a reasonable approach strengthens commitment, an authoritarian but just attitude creates trust.",
+          "reversed": "Solid rules or lack of emotion can prevent commitment. Empathy is important.",
+          "keywords": {
+            "0": "authority",
+            "1": "logic",
+            "2": "justice",
+            "3": "coldness",
+            "4": "connection"
+          },
+          "context": "There's a need for commitment, but you have to avoid rigor."
+        },
+        "position5": {
+          "upright": "Similar stance in principle and strategy. Ethical logic is common ground.",
+          "reversed": "The Dogma/Cativity threshold may be different, but empathy requires balance.",
+          "keywords": {
+            "0": "principle",
+            "1": "strategy",
+            "2": "ethics",
+            "3": "logic",
+            "4": "empathy"
+          },
+          "context": "The principled mind partner, the elasticity element must be added."
+        },
+        "position6": {
+          "upright": "When you show that you are honest and clear and responsible, it is likely that you will accept it. It is important that you act according to the rules.",
+          "reversed": "Someone who's extremely strict and driven by the rules can leave you out, and instead of being emotionally close, he can only approach you with logic, which makes the cold attitude difficult to accept.",
+          "keywords": {
+            "0": "authority",
+            "1": "rule",
+            "2": "Honesty",
+            "3": "responsibilities",
+            "4": "coldness"
+          },
+          "context": "In the family, an authoritarian figure can decide, and your clear and responsible attitude will be acceptable."
+        },
+        "position7": {
+          "upright": "The King of the Sword shows to meet in an environment where principles and logic are at the forefront, and strategy and justice strengthen the bond.",
+          "reversed": "The Reverse Sword King says rigor can cloud the bond, and empathy makes it easier to meet.",
+          "keywords": {
+            "0": "logic",
+            "1": "justice",
+            "2": "strategy",
+            "3": "authority"
+          },
+          "context": "You meet in a society of principles and justice, and empathy balances."
+        },
+        "position8": {
+          "upright": "The Sword King points to reasonable and fair communication, and strategic thinking makes the deal easier.",
+          "reversed": "The Reverse Sword King says that solid or cold communication can disrupt harmony, and empathy brings balance.",
+          "keywords": {
+            "0": "logic",
+            "1": "justice",
+            "2": "strategy",
+            "3": "empathy"
+          },
+          "context": "Logic leads to harmony; rigor leads to obstruction."
+        },
+        "position9": {
+          "upright": "King of the Swords, a fair, reasonable, strategic wife suits you.",
+          "reversed": "King of the Reverse Swords, one who is hard and unfeeling is not fit for you.",
+          "keywords": {
+            "0": "justice",
+            "1": "logic",
+            "2": "strategy",
+            "3": "balance"
+          },
+          "context": "Fair and strategic equals are appropriate."
+        }
+      },
+      "aceofwands": {
+        "position1": {
+          "upright": "The result is that your marriage will have a new spark of energy, passion, and beginnings, and your relationship will grow alive.",
+          "reversed": "Delayed beginnings or lack of motivation can cloud the outcome of the marriage.",
+          "keywords": {
+            "0": "start",
+            "1": "passion",
+            "2": "energy",
+            "3": "creativity"
+          },
+          "context": "The result is a living marriage that begins with passion, but motivation must be maintained."
+        },
+        "position10": {
+          "upright": "The ace of wands brings a strong start-up energy towards marriage, combining passion and desire to open a new door.",
+          "reversed": "Lack of inspiration or indecisiveness may delay the start of the marriage, and one small step will ignite the fire.",
+          "keywords": {
+            "0": "start",
+            "1": "Inspired",
+            "2": "passion",
+            "3": "opportunity",
+            "4": "movement"
+          },
+          "context": "A strong desire for marriage and a new beginning is on the agenda."
+        },
+        "position2": {
+          "upright": "Start new projects, use your creative energy, revitalize your passion while waiting.",
+          "reversed": "The lack of energy or lack of motivation makes the process difficult.",
+          "keywords": {
+            "0": "creativity",
+            "1": "passion",
+            "2": "start",
+            "3": "energy"
+          },
+          "context": "It's useful to use creative energy while waiting."
+        },
+        "position3": {
+          "upright": "The idea of new incomes and the fever of enterprise raises, as well as the enthusiasm for sharing.",
+          "reversed": "Inspiration and postponement cause opportunities to slip away.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "start",
+            "2": "energy",
+            "3": "initiative"
+          },
+          "context": "Putting the spark in the plan increases the budget."
+        },
+        "position5": {
+          "upright": "Enthusiasm, sparks, and a similar fire, you love the first step together.",
+          "reversed": "You may have a different threshold for continuity, but if you don't turn your passions into rhythms, then harmony falls.",
+          "keywords": {
+            "0": "spark",
+            "1": "fad",
+            "2": "start",
+            "3": "Courage",
+            "4": "acceleration"
+          },
+          "context": "The fire is similar, let sustainability be established."
+        },
+        "position6": {
+          "upright": "The family can see you with new energy and freshness, your bold steps and sincere intentions make it easier to be accepted, so you can bring a fresh breath to the family.",
+          "reversed": "Family may perceive you as eager but inconsistencies, but if your steps appear unequivocally, trust can be damaged, instability will make the acceptance process difficult.",
+          "keywords": {
+            "0": "energy",
+            "1": "start",
+            "2": "Courage",
+            "3": "fad",
+            "4": "Enliversity"
+          },
+          "context": "New energy accedession speeds up, instability raises doubts in the family."
+        },
+        "position7": {
+          "upright": "The ace of the staff shows that meeting will be an inspiration and an energy start, a new project or spark will bring you together.",
+          "reversed": "The Reverse Wand Ace says that delaying or blockage of inspiration will delay the introduction, and a small step will ignite the fire.",
+          "keywords": {
+            "0": "Inspired",
+            "1": "start",
+            "2": "energy",
+            "3": "Courage"
+          },
+          "context": "You meet in a moment of inspiration, and the small step speeds up the bond."
+        },
+        "position8": {
+          "upright": "The wand ace shows a new spark and freshness in communication, and the passionate approach feeds the deal.",
+          "reversed": "The Reverse Stick Ace shows that lack of motivation can make communication difficult, small steps rekindle fire.",
+          "keywords": {
+            "0": "start",
+            "1": "spark",
+            "2": "Motivation",
+            "3": "communication"
+          },
+          "context": "Passion and freshness make the deal easier."
+        },
+        "position9": {
+          "upright": "The Ace of Wands, passionate, creative, entrepreneurial wife is good for you.",
+          "reversed": "The Ace of Reverse Wands, someone who is unmotivated and reluctant, is not suitable for you.",
+          "keywords": {
+            "0": "passion",
+            "1": "creativity",
+            "2": "initiative",
+            "3": "Excitement"
+          },
+          "context": "The passionate and creative mate is appropriate."
+        },
+        "position4": {
+          "upright": "The ace of the wand shows a passionate beginning and creative energy in the desire to connect, and excitement and inspiration makes it easier for both sides to say yes from the heart.",
+          "reversed": "The Reverse Stick Ace may have a lack of motivation or a lack of energy in connection, and the loss of inspiration delays the pace.",
+          "keywords": {
+            "0": "passion",
+            "1": "creativity",
+            "2": "start",
+            "3": "Inspired",
+            "4": "energy"
+          },
+          "context": "Connection is strengthened by a passionate beginning; the lack of energy delays."
+        }
+      },
+      "twoofwands": {
+        "position1": {
+          "upright": "The result is that joint vision, planning, and commitment to the future will guide your marriage.",
+          "reversed": "The uncertainty or lack of vision may slow down the outcome of the marriage.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "decision",
+            "3": "future"
+          },
+          "context": "The result is a marriage based on common plans."
+        },
+        "position10": {
+          "upright": "Two wands point to planning for marriage and vision for the future, and the relationship can be moved to the next step.",
+          "reversed": "Being indecisive and inflexible can delay the marriage.",
+          "keywords": {
+            "0": "Vision",
+            "1": "planning",
+            "2": "future",
+            "3": "decision",
+            "4": "Courage"
+          },
+          "context": "Marriage requires vision and daring planning."
+        },
+        "position2": {
+          "upright": "Make your plans, focus on the future, expand your vision while you wait.",
+          "reversed": "Indecisiveness or fear will make the process difficult.",
+          "keywords": {
+            "0": "planning",
+            "1": "Vision",
+            "2": "Courage",
+            "3": "future"
+          },
+          "context": "It would be helpful to make plans for the future while we wait."
+        },
+        "position3": {
+          "upright": "Vision and planning combine with common goals, time to take controlled risks.",
+          "reversed": "The area of uncertainty and comfort delays expansion.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "risk",
+            "3": "horizon"
+          },
+          "context": "The horizon map makes the fair share visible."
+        },
+        "position5": {
+          "upright": "A shared view of horizons and vision, easy to expand if risk appetite is balanced.",
+          "reversed": "Your comfort zone threshold may be different, the first concrete step must not be delayed.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "horizon",
+            "3": "risk",
+            "4": "decision"
+          },
+          "context": "There's a common horizon."
+        },
+        "position6": {
+          "upright": "The family can view you as visionary and planned, and your solid plans for the future will convince them that if your horizons are wide, it'll be easier to accept.",
+          "reversed": "Family may see you as an unstable or undirected person, lack of a plan lowers confidence, uncertainty about the future creates distance in the family.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "future",
+            "3": "decision",
+            "4": "horizon"
+          },
+          "context": "Their future plans inspire confidence, uncertainty makes acceptance difficult."
+        },
+        "position7": {
+          "upright": "Two Asas show you how to meet in the process of vision and planning, and the search for a new horizon compares you.",
+          "reversed": "Two Reverse Asas, your hesitation tells you you can delay the introduction, the first step speeds up the meeting.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "horizon",
+            "3": "decision"
+          },
+          "context": "In search of the horizon, the first step opens the process."
+        },
+        "position8": {
+          "upright": "The Two Sticks point to vision and co-planning in communication, and looking at the future together brings harmony.",
+          "reversed": "The Reverse-Stitch Duo could damage communication and the uncertainty and the inability to make decisions, making a clear direction would make the deal easier.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "decision",
+            "3": "future"
+          },
+          "context": "The shared vision enhances communication."
+        },
+        "position9": {
+          "upright": "The Dual of the Wands, the visionary, the wife who plans for the future, it suits you.",
+          "reversed": "Two of the Reverse Wands, one who is unstable and aimless is not suitable for you.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "future",
+            "3": "Courage"
+          },
+          "context": "The spouse who plans the future is appropriate."
+        },
+        "position4": {
+          "upright": "Two wands indicate the common vision of commitment and the desire to look to the future together, strengthening the bond of planning and targeting.",
+          "reversed": "The Reverse Two Wands may be indecisive and uncertain about the future in the desire to connect, and retreating in different directions makes it difficult to say yes.",
+          "keywords": {
+            "0": "Vision",
+            "1": "Plan",
+            "2": "future",
+            "3": "target",
+            "4": "decision"
+          }
+        }
+      }
+    }
+  }
+}

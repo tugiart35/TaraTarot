@@ -41,7 +41,7 @@ export interface I18nMoneyPosition6Meaning {
   group: string;
 }
 
-export const Position6Meanings: MoneyPosition6Meaning[] = [
+export const position6Meanings: MoneyPosition6Meaning[] = [
   // --- Majör Arkana Kartları ---//
   {
     id: 'the_fool_ma_pos6',
@@ -857,11 +857,12 @@ export const Position6Meanings: MoneyPosition6Meaning[] = [
     id: 'three_of_wands_wa_pos6',
     card: 'Three of Wands',
     position: 6,
-    upright: '',
+    upright:
+      'Üç Değnek, mali planlarda genişleme, yeni işbirlikleri ve uzun vadeli kazanç fırsatlarını işaret eder.',
     reversed:
       'Ters Üç Değnek, gecikme, dar görüşlülük veya planlarda tıkanıklığı gösterir.',
     keywords: [
-      'genişlÜç Değnek, mali planlarda genişleme, yeni işbirlikleri ve uzun vadeli kazanç fırsatlarını işaret eder.eme',
+      'genişleme',
       'işbirliği',
       'uzun vade',
       'vizyon',

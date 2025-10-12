@@ -1,0 +1,778 @@
+{
+  "money": {
+    "meanings": {
+      "thetower": {
+        "position6": {
+          "keywords": {
+            "4": "Plan"
+          },
+          "context": "New financial plans may bring up post-crisis regeneration."
+        },
+        "position7": {
+          "upright": "In future financial plans, the tower points to sudden crisis, unexpected costs, and transformational collapses.",
+          "reversed": "The Reverse Tower shows a chance to restructure the future with delayed crises or small stimuli tremors.",
+          "keywords": {
+            "0": "crisis",
+            "1": "destruction",
+            "2": "change",
+            "3": "Concussion",
+            "4": "reconstruction"
+          },
+          "context": "In future financial plans, crisis or reconstruction will be on the agenda."
+        },
+        "position8": {
+          "upright": "The tower shows that sudden awareness, crises, and radical changes will transform the ability to make money.",
+          "reversed": "The Reverse Tower indicates that opportunities can be weakened by delaying crises, by not accepting repressed anger or destruction.",
+          "keywords": {
+            "0": "crisis",
+            "1": "destruction",
+            "2": "awareness",
+            "3": "change",
+            "4": "Rebirth"
+          },
+          "context": "Your ability to earn money is linked to turning or rejecting crises into opportunities."
+        }
+      },
+      "thestar": {
+        "position1": {
+          "upright": "The star points to the anxiety of losing hope, and the uncertainty of the future abundance can cause unrest.",
+          "reversed": "The Reverse Star reveals the anxiety of weariness and despair, and you may be afraid that material prosperity will never come.",
+          "keywords": {
+            "0": "hope",
+            "1": "Regeneration",
+            "2": "Concern",
+            "3": "faith",
+            "4": "future"
+          },
+          "context": "The anxiety comes from losing hope, and it brings peace to keep your faith."
+        },
+        "position2": {
+          "upright": "The star shows that you seek security with hope, inspiration, and transparency, and inner peace will support you.",
+          "reversed": "The Reverse Star points to the anxiety of despair and weariness, the desire for safety weakens when it loses its light.",
+          "keywords": {
+            "0": "hope",
+            "1": "Inspired",
+            "2": "security",
+            "3": "It's a cure.",
+            "4": "clarity"
+          },
+          "context": "You find security with hope and transparency."
+        },
+        "position3": {
+          "upright": "The star tends to use money for hope and regeneration, and transparent targets bring peace.",
+          "reversed": "The Reverse Star points to financial despair or exhaustion.",
+          "keywords": {
+            "0": "hope",
+            "1": "Regeneration",
+            "2": "target",
+            "3": "Money",
+            "4": "transparency"
+          },
+          "context": "Hope and inspirational goals stand out in the use of money."
+        },
+        "position4": {
+          "upright": "In the past, there was hope and optimism in finance, and he had a strong faith in getting better.",
+          "reversed": "The Reverse Star points out disappointments or overly optimistic expectations do not come true.",
+          "keywords": {
+            "0": "hope",
+            "1": "optimism",
+            "2": "dream",
+            "3": "faith",
+            "4": "Money"
+          },
+          "context": "In the past, there was hope and optimism in financial attitudes."
+        },
+        "position5": {
+          "upright": "The star shows that hopes and efforts to improve financial responsibilities have come forward, and the feeling of transparency and trust has eased the burdens.",
+          "reversed": "Reverse Star, disappointment or despair may have made financial responsibilities feel heavy.",
+          "keywords": {
+            "0": "hope",
+            "1": "It's a cure.",
+            "2": "responsibilities",
+            "3": "transparency",
+            "4": "Trust"
+          },
+          "context": "Hope and healing have been effective in financial responsibilities."
+        },
+        "position6": {
+          "upright": "The star represents hope, innovation and inspiration in financial plans, and light rises on long-term goals.",
+          "reversed": "The Reverse Star can show despair, lack of inspiration, or misdirection in financial plans.",
+          "keywords": {
+            "0": "hope",
+            "1": "Inspired",
+            "2": "Vision",
+            "3": "Regeneration",
+            "4": "Plan"
+          },
+          "context": "Hope and vision will guide new financial plans."
+        },
+        "position7": {
+          "upright": "In future financial plans, the star points to hope, inspiration, and healing reconstruction, and your path will be bright.",
+          "reversed": "The Reverse Star points to the risk of despair, lack of motivation, or misdirection.",
+          "keywords": {
+            "0": "hope",
+            "1": "Inspired",
+            "2": "It's a cure.",
+            "3": "Regeneration",
+            "4": "Vision"
+          },
+          "context": "Hope or despair will be decisive in future financial plans."
+        },
+        "position8": {
+          "upright": "The star shows that hope, inspiration, and vision support their ability to make money.",
+          "reversed": "The Reverse Star points out that despair, loss of vision, or lack of inspiration can interfere with financial development.",
+          "keywords": {
+            "0": "hope",
+            "1": "Inspired",
+            "2": "Vision",
+            "3": "It's a cure.",
+            "4": "Regeneration"
+          },
+          "context": "Your ability to earn money is linked to hope or despair."
+        }
+      },
+      "themoon": {
+        "position1": {
+          "upright": "The moon is a sign of uncertainty and illusion, and the foginess of material facts raises concern.",
+          "reversed": "The Reverse Moon reveals the anxiety of misunderstanding and deception, and the concealment of material truths causes fear.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "illusion",
+            "2": "Don't cheat.",
+            "3": "Concern",
+            "4": "Insecurity"
+          },
+          "context": "It comes from anxiety and uncertainty and illusions, seeking clarity brings peace."
+        },
+        "position2": {
+          "upright": "The moon shows that you're looking for security intuitively, but uncertainly, your inner voice can be a guide.",
+          "reversed": "The Reverse Moon points to the anxiety of deception and error, and the desire for safety can be lost in the mist.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "intuition",
+            "2": "security",
+            "3": "fear",
+            "4": "enlightenment"
+          },
+          "context": "You can find security based on your intuition."
+        },
+        "position3": {
+          "upright": "The moon tends to manage money with uncertainty and intuition, and clarity may be incomplete.",
+          "reversed": "The Reverse Moon points to the discovery of hidden financial problems.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "intuition",
+            "2": "Money",
+            "3": "Secret",
+            "4": "illusion"
+          },
+          "context": "There's uncertainty and intuition in the use of money."
+        },
+        "position4": {
+          "upright": "In the past, there may have been ambiguities and misleading circumstances in financial matters, and there may not be clarity in the mind.",
+          "reversed": "The Reverse Moon shows the beginning of misunderstandings.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "misleading",
+            "2": "Confusion",
+            "3": "risk",
+            "4": "Money"
+          },
+          "context": "In the past, fiscal attitudes have led to uncertainty."
+        },
+        "position5": {
+          "upright": "The Moon indicates that uncertainty or illusions play a role in financial responsibilities, and lack of clarity may have increased the burdens.",
+          "reversed": "The Reverse Moon has a clearer way of dealing with financial responsibilities as uncertainty begins to unravel.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "illusion",
+            "2": "responsibilities",
+            "3": "fear",
+            "4": "clarity"
+          },
+          "context": "In financial responsibilities, the search for uncertainty and clarity stands out."
+        },
+        "position6": {
+          "upright": "The moon points to the importance of uncertainty, illusion, and intuition in financial plans.",
+          "reversed": "The Reverse Moon represents the dissolution of the financial plan, the disclosure of classified information and clarity.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "intuition",
+            "2": "illusion",
+            "3": "classified information",
+            "4": "Plan"
+          },
+          "context": "In new financial plans, uncertainty can be overcome by intuition."
+        },
+        "position7": {
+          "upright": "The moon may be at the center of the problem of uncertainty, fears, or illusions.",
+          "reversed": "Reverse Moon, not being able to see the truth, being deceived, or being afraid, could be the source of the problem.",
+          "keywords": {
+            "0": "uncertainty",
+            "1": "fear",
+            "2": "illusion",
+            "3": "intuition",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is uncertainty and illusions."
+        },
+        "position8": {
+          "upright": "The Moon shows that intuition, creativity, and mysterious ways can be effective in their ability to make money.",
+          "reversed": "The Reverse Moon indicates that illusions, fears, or uncertainty can cloud opportunities.",
+          "keywords": {
+            "0": "intuition",
+            "1": "creativity",
+            "2": "uncertainty",
+            "3": "mystery",
+            "4": "dream"
+          },
+          "context": "Your ability to make money is linked to intuition or illusions."
+        }
+      },
+      "thesun": {
+        "position1": {
+          "upright": "The sun points to the anxiety of losing happiness and not being able to maintain abundance, and you may be afraid that future prosperity will be reduced.",
+          "reversed": "The Reverse Sun brings out the anxiety of false happiness and superficial abundance, and the absence of the truth may make you uneasy.",
+          "keywords": {
+            "0": "abundance",
+            "1": "Happiness",
+            "2": "Concern",
+            "3": "security",
+            "4": "light"
+          },
+          "context": "Concern arises from fear of losing abundance, and it brings peace to see the truth."
+        },
+        "position2": {
+          "upright": "The sun shows that it seeks security, openness, joy, and success, and abundance strengthens its sense of trust.",
+          "reversed": "The Reverse Sun points to false joy and uncertainty, and the desire for safety weakens when it is removed from reality.",
+          "keywords": {
+            "0": "joy",
+            "1": "success",
+            "2": "security",
+            "3": "openness",
+            "4": "abundance"
+          },
+          "context": "You set up security with openness and joy."
+        },
+        "position3": {
+          "upright": "The sun tends to use money with joy and abundance.",
+          "reversed": "The Reverse Sun points to extreme optimism or misinvestment anxiety.",
+          "keywords": {
+            "0": "abundance",
+            "1": "openness",
+            "2": "joy",
+            "3": "Money",
+            "4": "success"
+          },
+          "context": "There is openness and joy in the use of money."
+        },
+        "position4": {
+          "upright": "There has been a period of success and prosperity in financial matters in the past, and spending is done with confidence.",
+          "reversed": "The Reverse Sun points to excessive spending in search of superficial happiness.",
+          "keywords": {
+            "0": "success",
+            "1": "abundance",
+            "2": "Self - confidence",
+            "3": "spending",
+            "4": "Money"
+          },
+          "context": "In the past, wealth and trust were ahead in financial attitudes."
+        },
+        "position5": {
+          "upright": "The sun shows that success, clarity and optimism in financial responsibilities have come forward, and the burdens have been shared and lightened.",
+          "reversed": "Reverse Sun, false optimism or superficial approaches may have made responsibilities difficult.",
+          "keywords": {
+            "0": "success",
+            "1": "optimism",
+            "2": "responsibilities",
+            "3": "clarity",
+            "4": "share"
+          },
+          "context": "Clearness and success in financial responsibilities have eased the burden."
+        },
+        "position6": {
+          "upright": "The sun points to the period of success, clarity and abundance in financial plans, supporting positive energy projects.",
+          "reversed": "The Reverse Sun may risk temporary disappointments, delays, or exaggerated optimism in financial plans.",
+          "keywords": {
+            "0": "success",
+            "1": "abundance",
+            "2": "clarity",
+            "3": "optimism",
+            "4": "Plan"
+          },
+          "context": "Success and clarity in new financial plans will be at the forefront."
+        },
+        "position7": {
+          "upright": "The sun may need success, the pursuit of happiness, or visibleness at the center of the problem.",
+          "reversed": "Reverse Sun, pessimism, lack of self-esteem, or prevented success can be the source of the problem.",
+          "keywords": {
+            "0": "success",
+            "1": "Self - confidence",
+            "2": "light",
+            "3": "hope",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is the desire for success and visibility."
+        },
+        "position8": {
+          "upright": "The sun points to joy, clarity and success in the skills of making money, and your efforts are visible.",
+          "reversed": "The Reverse Sun points out that false hopes, extreme optimism, or hidden problems can reduce opportunities.",
+          "keywords": {
+            "0": "success",
+            "1": "openness",
+            "2": "joy",
+            "3": "visibility",
+            "4": "hope"
+          },
+          "context": "Your ability to earn money is linked to openness or false hope."
+        }
+      },
+      "judgement": {
+        "position1": {
+          "upright": "The court points to anxiety from the burden of past decisions, and you may fear that old mistakes may affect the material future.",
+          "reversed": "The Inverted Court exposes excessive self-criticism and guilt anxiety, and inability to forgive the past raises anxiety.",
+          "keywords": {
+            "0": "history",
+            "1": "reckoning",
+            "2": "Concern",
+            "3": "judgment",
+            "4": "self-criticism"
+          },
+          "context": "Concern comes from the burden of past decisions, forgiveness and redemption bring peace."
+        },
+        "position2": {
+          "upright": "The court shows that you seek security from the past and through rebirth.",
+          "reversed": "The Reverse Court points to the anxiety of being in the shadow of past mistakes, and the desire for security may weaken by not being able to forgive.",
+          "keywords": {
+            "0": "Rebirth",
+            "1": "reckoning",
+            "2": "security",
+            "3": "Freedom",
+            "4": "awareness"
+          },
+          "context": "You can find security by shutting down the past with compassion."
+        },
+        "position3": {
+          "upright": "The court points to using money consciously to confront and learn lessons.",
+          "reversed": "The Reverse Court points to past financial mistakes or extreme self-criticism.",
+          "keywords": {
+            "0": "reckoning",
+            "1": "lesson",
+            "2": "Money",
+            "3": "consciousness",
+            "4": "Regeneration"
+          },
+          "context": "It's important to learn from the past in the use of money."
+        },
+        "position4": {
+          "upright": "In the past, major financial decisions may have been made, old debts or obligations may have been closed.",
+          "reversed": "The Inverted Court has pointed out that in the past, financial matters have been averted from responsibilities.",
+          "keywords": {
+            "0": "decision",
+            "1": "debt",
+            "2": "responsibilities",
+            "3": "Don't face it.",
+            "4": "Money"
+          },
+          "context": "In the past, financial attitudes have led to responsibilities and decisions."
+        },
+        "position5": {
+          "upright": "The court points to the assessment and restructuring of past decisions in financial responsibilities.",
+          "reversed": "The reverse court has increased financial burdens, avoiding responsibilities or self-criticism.",
+          "keywords": {
+            "0": "reckoning",
+            "1": "assessment",
+            "2": "responsibilities",
+            "3": "decision",
+            "4": "Regeneration"
+          },
+          "context": "Financial responsibilities have faced the consequences of past decisions."
+        },
+        "position6": {
+          "upright": "In financial plans, the court points to learning from the past and moving to a new stage.",
+          "reversed": "In reverse court, financial plans show whether to dwell on past errors or refuse regeneration.",
+          "keywords": {
+            "0": "decision",
+            "1": "Regeneration",
+            "2": "reckoning",
+            "3": "Progress",
+            "4": "Plan"
+          },
+          "context": "Learning from the past in new financial plans will bring regeneration."
+        },
+        "position7": {
+          "upright": "The court may need to confront the past at the center of the problem, be reborn, or make a big decision.",
+          "reversed": "The reverse court may be the source of the problem of running from the past, not taking responsibility, or deceiving yourself.",
+          "keywords": {
+            "0": "Rebirth",
+            "1": "decision",
+            "2": "Don't face it.",
+            "3": "awareness",
+            "4": "Question"
+          },
+          "context": "At the center of the problem, it needs to face the past and be reborn."
+        },
+        "position8": {
+          "upright": "The court shows that their ability to earn money will be strengthened by reviewing past experiences, learning, and rebirth.",
+          "reversed": "The Reverse Court points out that the fact that you're stuck in the past, excessive self-criticism, or inability to make decisions will prevent financial development.",
+          "keywords": {
+            "0": "judgment",
+            "1": "Regeneration",
+            "2": "decision",
+            "3": "learning",
+            "4": "freedom"
+          },
+          "context": "Your ability to earn money depends on learning or sticking to the past."
+        }
+      },
+      "theworld": {
+        "position1": {
+          "upright": "The world points to a lack of completion and a lack of anxiety, and the lack of a financial cycle will cause unrest.",
+          "reversed": "The Reverse World reveals the anxiety of incompleteness and lack of integration, and the fear of failure is worrying.",
+          "keywords": {
+            "0": "completion",
+            "1": "integrity",
+            "2": "Concern",
+            "3": "deficiencies",
+            "4": "target"
+          },
+          "context": "Fear of anxiety, loss, and failure to finish, and closing the cycle brings peace."
+        },
+        "position2": {
+          "upright": "The world shows that it seeks security with completion and integrity, and completeing the cycle brings peace.",
+          "reversed": "The Reverse World is a sign of unfinished anxiety, a desire for security, a weakness in incomplete processes.",
+          "keywords": {
+            "0": "completion",
+            "1": "integrity",
+            "2": "security",
+            "3": "success",
+            "4": "balance"
+          },
+          "context": "You'll find security by completing the cycle and integrity."
+        },
+        "position3": {
+          "upright": "The world points to using money for total success and completion.",
+          "reversed": "The Reverse World points to incomplete projects or incomplete investments.",
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "integrity",
+            "3": "Money",
+            "4": "stability"
+          },
+          "context": "In use of money, total success and permanence arise."
+        },
+        "position4": {
+          "upright": "You've completed some of your financial goals in the past and closed the cycles.",
+          "reversed": "The Reverse World points to unfinished projects or incomplete financial processes.",
+          "keywords": {
+            "0": "completion",
+            "1": "target",
+            "2": "cycle",
+            "3": "fiscal process",
+            "4": "success"
+          },
+          "context": "In the past, fiscal attitudes were ahead of completion and success."
+        },
+        "position5": {
+          "upright": "The world shows that completion of financial responsibilities, success and integration have come forward. The cycle is closed, obligations are met.",
+          "reversed": "The Reverse World points to the continuing burden of unfinished responsibilities or lack of integration.",
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "responsibilities",
+            "3": "Integration",
+            "4": "integrity"
+          },
+          "context": "The completion and integrity process of financial responsibilities is stepping up."
+        },
+        "position6": {
+          "upright": "The world points to completion of financial plans, success and the opening of a new cycle.",
+          "reversed": "The Reverse World can show incomplete financial plans, incomplete abandonment or incomplete projects.",
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "cycle",
+            "3": "target",
+            "4": "Plan"
+          },
+          "context": "The completion of new financial plans and a new cycle will emerge."
+        },
+        "position7": {
+          "upright": "The world may need completion, integrity or closure at the center of the problem.",
+          "reversed": "Reverse Earth, incomplete processes, unfinished jobs, or unfinished cycles may be the source of the problem.",
+          "keywords": {
+            "0": "completion",
+            "1": "success",
+            "2": "integrity",
+            "3": "victory",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem is the desire to complete a cycle and achieve integrity."
+        },
+        "position8": {
+          "upright": "The world shows that their ability to make money is supported by integrity, global opportunities, and the energy of completion.",
+          "reversed": "The Reverse World points out that missing cycles, incomplete projects, or the absence of integrity, can limit financial skills.",
+          "keywords": {
+            "0": "completion",
+            "1": "opportunity",
+            "2": "integrity",
+            "3": "success",
+            "4": "global"
+          },
+          "context": "Your ability to earn money is linked to integrity or lack of money."
+        }
+      },
+      "aceofcups": {
+        "position1": {
+          "upright": "The Ace of Hearts shows concern that you can't express your feelings freely and that material loss will limit your heart, and you may feel that lack of money will prevent happiness.",
+          "reversed": "The Reverse Cup Ace points to emotional blockage and the fear of not sharing love, and you're worried that financial problems will shut you down internally.",
+          "keywords": {
+            "0": "emotion",
+            "1": "abundance",
+            "2": "Concern",
+            "3": "expression",
+            "4": "share"
+          },
+          "context": "Concern is born from lack of abundance and lack of expression of emotion."
+        },
+        "position2": {
+          "upright": "The Ace of Hearts shows that you seek security with the satisfaction and emotional satisfaction of the heart, and you find the feeling of abundance with love.",
+          "reversed": "The Reverse Cup Ace reveals the anxiety of emotional emptiness and dissatisfaction, and the desire for security remains incomplete when it does not find inner peace.",
+          "keywords": {
+            "0": "abundance",
+            "1": "emotion",
+            "2": "satisfaction",
+            "3": "security",
+            "4": "flow"
+          },
+          "context": "You tie financial security to emotional satisfaction and abundance."
+        },
+        "position3": {
+          "upright": "The Ace of Hearts shows the will to give and share the money freely, and generosity creates flow, but the excess can become wasteful.",
+          "reversed": "The Reverse Cup Ace points to spending to fill the emotional void. Money is substituted instead of love.",
+          "keywords": {
+            "0": "generosity",
+            "1": "share",
+            "2": "spending",
+            "3": "emotion",
+            "4": "flow"
+          },
+          "context": "The emotional needs of the heart are effective in the use of money."
+        },
+        "position4": {
+          "upright": "In the past, you may have spent emotional motivation, and generosity from the heart has affected your financial decisions.",
+          "reversed": "The Reverse Ace Cup shows unsatisfactory spending to fill the emotional void.",
+          "keywords": {
+            "0": "emotion",
+            "1": "generosity",
+            "2": "spending",
+            "3": "satisfaction",
+            "4": "heart"
+          },
+          "context": "Money has been closely linked to feelings in the past."
+        },
+        "position5": {
+          "upright": "The Ace of Hearts shows a heartfelt desire and loving approach to financial responsibilities, and you can support your family, your loved ones, or those you care about from the heart.",
+          "reversed": "The Reverse Cup Ace can show a feeling of reluctance, involuntary or emotional exhaustion towards financial responsibilities, and the burdens that you do not connect with your heart may be too heavy for you.",
+          "keywords": {
+            "0": "responsibilities",
+            "1": "Volunteering",
+            "2": "support",
+            "3": "love",
+            "4": "load"
+          },
+          "context": "In financial responsibilities, sincere devotion or unwillingness are decisive."
+        },
+        "position6": {
+          "upright": "The Ace of Hearts shows the power of emotional satisfaction and internal motivation in new financial plans, and financial decisions are supported by inspiration from the heart.",
+          "reversed": "The Reverse Cup Ace points to a lack of emotional blockage or motivation in financial plans, and you may be closed to new opportunities.",
+          "keywords": {
+            "0": "start",
+            "1": "Motivation",
+            "2": "Inspired",
+            "3": "satisfaction",
+            "4": "flow"
+          },
+          "context": "New financial plans will determine heart-to-heart motivation."
+        },
+        "position7": {
+          "upright": "The Ace of Hearts points out that in future financial plans, emotional satisfaction and new opportunities will bring abundance, and investments combine with a heartfelt motivation.",
+          "reversed": "The Reverse Cup Ace shows that projects or misguided investments can be disappointing.",
+          "keywords": {
+            "0": "start",
+            "1": "abundance",
+            "2": "satisfaction",
+            "3": "Motivation",
+            "4": "opportunity"
+          },
+          "context": "In future financial plans, emotional satisfaction or disappointment will be decisive."
+        },
+        "position8": {
+          "upright": "The Ace of Hearts shows that their ability to make money is supported by creativity, inspiration, and emotional motivation, and you can gain by doing what you love.",
+          "reversed": "The Reverse Cup Ace indicates that their ability to earn money may have been dulled by lack of inspiration or lack of motivation.",
+          "keywords": {
+            "0": "creativity",
+            "1": "Inspired",
+            "2": "Motivation",
+            "3": "love",
+            "4": "start"
+          },
+          "context": "Your ability to make money depends on finding or losing inspiration."
+        }
+      },
+      "twoofcups": {
+        "position1": {
+          "upright": "The two Cups show that you're concerned that financial incompatibility will break their relationship, and the lack of equality in sharing can make you uncomfortable.",
+          "reversed": "Two Reverse Cups point to the fear of instability and non-reciprocity, and you're worried about financial problems damaging your union.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "Equality",
+            "2": "share",
+            "3": "Concern",
+            "4": "relationship"
+          },
+          "context": "Concern arises from the reflection of material inequality in their relationships."
+        },
+        "position2": {
+          "upright": "The Duo of Hearts shows that you seek security with compatible partnerships and shared values, and financial support combines with love.",
+          "reversed": "The Reverse Cup Duo points to incompatibility and unstable bond anxiety, a desire for security, a weakness in unequal relationships.",
+          "keywords": {
+            "0": "partnership",
+            "1": "compatibility",
+            "2": "values",
+            "3": "security",
+            "4": "share"
+          },
+          "context": "You find security in partnerships and compatible relationships."
+        },
+        "position3": {
+          "upright": "The two Cups tend to use money jointly and in harmony, and the choices made together bring confidence.",
+          "reversed": "Two Reverse Cups indicate a sense of fiscal incompatibility or inequality.",
+          "keywords": {
+            "0": "partnership",
+            "1": "compatibility",
+            "2": "Equality",
+            "3": "Money",
+            "4": "relationship"
+          },
+          "context": "Co-operation in the use of money comes forward."
+        },
+        "position4": {
+          "upright": "In the past, you may have made financial decisions in harmony with partner or partner.",
+          "reversed": "The Inverse Two Cups indicate that there has been an incompatibility or inequality in financial matters.",
+          "keywords": {
+            "0": "partnership",
+            "1": "compatibility",
+            "2": "Equality",
+            "3": "unity",
+            "4": "Money"
+          },
+          "context": "In the past, financial decisions were linked to relationships."
+        },
+        "position5": {
+          "upright": "The two Cups show that financial responsibilities are carried in partnership and mutual harmony, and mutual support and cooperation relieve burdens.",
+          "reversed": "The Reverse Two Cup points to conflict in financial responsibilities, instability, or a conflict in mutual expectations.",
+          "keywords": {
+            "0": "partnership",
+            "1": "compatibility",
+            "2": "share",
+            "3": "balancing",
+            "4": "responsibilities"
+          },
+          "context": "Partnership and cooperation or instability in financial responsibilities are prominent."
+        },
+        "position6": {
+          "upright": "The two Cups point to a balanced union of partnership and cooperation in financial plans. The decisions are made in harmony.",
+          "reversed": "The Reverse Two Cup points to the risk of instability or incompatibility in co-operation in financial plans.",
+          "keywords": {
+            "0": "partnership",
+            "1": "compatibility",
+            "2": "balance",
+            "3": "share",
+            "4": "relationship"
+          },
+          "context": "Partnership and harmony are important in new financial plans."
+        },
+        "position7": {
+          "upright": "The two Cups show that future financial plans will strengthen partnership, co-operation and mutual benefit.",
+          "reversed": "The Reverse Two Cup points to the risk of conflict, fiscal incompatibility or imbalance in business partnerships.",
+          "keywords": {
+            "0": "partnership",
+            "1": "compatibility",
+            "2": "co-operation",
+            "3": "balance",
+            "4": "benefit"
+          },
+          "context": "The future financial plans will bring up compatible partnerships or disagreements."
+        },
+        "position8": {
+          "upright": "The two Cups show that co-operation, partnership, and harmony have improved their ability to earn money.",
+          "reversed": "The Inverse Two Cups indicate that incompatible partnerships or communication problems can weaken their financial skills.",
+          "keywords": {
+            "0": "partnership",
+            "1": "compatibility",
+            "2": "connection",
+            "3": "balance",
+            "4": "co-operation"
+          },
+          "context": "Your ability to earn money is linked to cooperation or incompatibility."
+        }
+      },
+      "threeofcups": {
+        "position1": {
+          "upright": "Three Cups shows the anxiety of social spending and excess, and you may be afraid that entertainment and celebrations will create financial pressure.",
+          "reversed": "The Inverse Three Cups tells us that excessive spending is a source of unrest, and too much social expenses can raise your anxiety.",
+          "keywords": {
+            "0": "celebration",
+            "1": "social",
+            "2": "excess",
+            "3": "Concern",
+            "4": "spending"
+          },
+          "context": "The anxiety comes from social spending pushing you."
+        },
+        "position2": {
+          "upright": "The Three of Hearts shows you're looking for security in a network of friendship, community and support, and sharing reinforces the sense of trust.",
+          "reversed": "The Reverse Cup Triad points to superficiality or loneliness anxiety, and the desire for security is broken in false bonds.",
+          "keywords": {
+            "0": "support",
+            "1": "Community",
+            "2": "share",
+            "3": "security",
+            "4": "joy"
+          },
+          "context": "You'll find security with strong ties and community support."
+        },
+        "position3": {
+          "upright": "Three Cups tend to use money for entertainment, celebration and social activities.",
+          "reversed": "The Reverse Three Cup points to the loss of money due to excessive spending or social pressure.",
+          "keywords": {
+            "0": "celebration",
+            "1": "share",
+            "2": "social",
+            "3": "spending",
+            "4": "joy"
+          },
+          "context": "In the use of money, socialism and sharing are the key."
+        },
+        "position4": {
+          "upright": "In the past, celebrations and spending on social activities were a front.",
+          "reversed": "The Inverse Three Cups may have created a problem of excessive social spending or wastefulness.",
+          "keywords": {
+            "0": "celebration",
+            "1": "social",
+            "2": "spending",
+            "3": "entertainment",
+            "4": "share"
+          },
+          "context": "Expenses for the social community in the past were ahead."
+        },
+        "position5": {
+          "upright": "Three Cups shows that financial responsibilities are shared by family, friends, or community support.",
+          "reversed": "The Reverse Three Cup points out that financial responsibilities can be difficult due to disorganized groups, false sharing, or lack of support."
+        }
+      }
+    }
+  }
+}

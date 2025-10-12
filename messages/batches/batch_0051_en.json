@@ -1,0 +1,772 @@
+{
+  "problem-solving": {
+    "meanings": {
+      "threeofcups": {
+        "position5": {
+          "keywords": {
+            "2": "support",
+            "3": "social",
+            "4": "pleasure"
+          },
+          "context": "It may have been shaped by the strengthening or weakening of social ties in the recent past."
+        },
+        "position6": {
+          "upright": "Three Cups, in the near future, you can have happy times in the community, celebrating, meeting friends.",
+          "reversed": "Inverse Three Cups may be a lack of social distance, misunderstanding, or intimacy in the near future.",
+          "keywords": {
+            "0": "celebration",
+            "1": "friendship",
+            "2": "Community",
+            "3": "Happiness",
+            "4": "support"
+          },
+          "context": "The near future will be determined by the strengthening or weakening of social ties."
+        },
+        "position7": {
+          "upright": "Three Cups, you're in the process of celebrating, meeting friends or strengthening social ties.",
+          "reversed": "Inverse Three Cups, right now, you may encounter some kind of social retreat, misunderstanding, or insincereness.",
+          "keywords": {
+            "0": "celebration",
+            "1": "friendship",
+            "2": "Community",
+            "3": "Happiness",
+            "4": "share"
+          },
+          "context": "Your current condition is shaped by social connections or distance."
+        },
+        "position8": {
+          "upright": "Three Cups, external effects can bring you friendship, celebration and support from your social circle.",
+          "reversed": "Inverse Three Cups, external effects can create insincereness, false friendships, or social disconnection.",
+          "keywords": {
+            "0": "celebration",
+            "1": "friendship",
+            "2": "Community",
+            "3": "share",
+            "4": "Happiness"
+          },
+          "context": "It affects you with external influences, friendships, or social problems."
+        },
+        "position9": {
+          "upright": "Three Cups may show concern about exclusion, trust in wrong friendships, or being left out of celebration.",
+          "reversed": "You may experience the fear of reverse Three Cups, gossip, false friendships, or social disconnection.",
+          "keywords": {
+            "0": "friendship",
+            "1": "celebration",
+            "2": "fake bond",
+            "3": "social environment",
+            "4": "anxiety"
+          },
+          "context": "Your fears focus on deception or exclusion in friendships."
+        }
+      },
+      "fourofcups": {
+        "position1": {
+          "upright": "The Four Cups may be at the center of the problem, not seeing indifference, dissatisfaction, or opportunities.",
+          "reversed": "The Reverse Four Cups, distraction or lack of awareness could be the source of the problem.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "opportunity",
+            "2": "interest",
+            "3": "Introduction",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem, there are undetected opportunities."
+        },
+        "position10": {
+          "upright": "The Four Cups may be the result of internal questioning, dissatisfaction, or undetected opportunities.",
+          "reversed": "The Reverse Four Cup may result in a new awareness, evaluation of opportunities, or awakening.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "opportunity",
+            "2": "awareness",
+            "3": "questioning",
+            "4": "Awakening"
+          },
+          "context": "The result may be internal questioning or access to awareness."
+        },
+        "position2": {
+          "upright": "Four Cups, your obstacle may be to not see indifference, dissatisfaction, or opportunities, but introvertion takes you away from the solution.",
+          "reversed": "The Reverse Four Cup could be a constant loss of opportunity or recklessness.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "Recklessness",
+            "2": "opportunity",
+            "3": "closure",
+            "4": "obstacle"
+          },
+          "context": "The obstacle arises from not seeing opportunities and not caring."
+        },
+        "position3": {
+          "upright": "Four Cups can be subconsciously ignoring the dissatisfaction, indifference, or opportunities you've experienced in the past.",
+          "reversed": "The Reverse Four Cup may have left a mark on the subconscious of past missed opportunities, carelessness, or emotional concealment.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "opportunity",
+            "2": "Recklessness",
+            "3": "emotion",
+            "4": "subconscious"
+          },
+          "context": "Recklessness and dissatisfaction in the past may shape today's problems."
+        },
+        "position4": {
+          "upright": "The Four Cups rests on your emotional stagnation by renewing your awareness of the best potential and seeing new opportunities ahead of you; the look of gratitude opens up a blockage.",
+          "reversed": "The Reverse Four Cup shows that in order to expand your potential, you have to get out of your shell, get out of your carelessness, and try new offers with curiosity.",
+          "keywords": {
+            "0": "awareness",
+            "1": "Awakening",
+            "2": "Gratitude",
+            "3": "opportunity",
+            "4": "Regeneration"
+          },
+          "context": "The best potential is to renew interest and recognize unseen opportunities."
+        },
+        "position5": {
+          "upright": "Four Cups, in the recent past, you may have had opportunities to be indifferent, dissatisfaction, or unrecognised.",
+          "reversed": "Inverse Four Cups, you may have recently opened to new opportunities, renewed your interest or regained your focus.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "opportunity",
+            "2": "Recklessness",
+            "3": "Awakening",
+            "4": "Attention"
+          },
+          "context": "It may have been determined by the fact that the recent past was closed or open to opportunities."
+        },
+        "position6": {
+          "upright": "Four Cups, in the near future, may come to the forefront of disinterest, dissatisfaction, or inner search.",
+          "reversed": "Inverse Four Cups, in the near future, you may experience opening up to opportunities, gaining awareness, and finding a new interest.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "opportunity",
+            "2": "Recklessness",
+            "3": "Awakening",
+            "4": "Search"
+          },
+          "context": "Your near future will be shaped by dissatisfaction or awareness."
+        },
+        "position7": {
+          "upright": "Four Cups, right now, you may have a sense of indifference, dissatisfaction, or inner emptiness.",
+          "reversed": "You may be regaining awareness, reopening opportunities, or developing new interests.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "Recklessness",
+            "2": "Awakening",
+            "3": "opportunity",
+            "4": "internal space"
+          },
+          "context": "Your current situation is shaped by dissatisfaction or awareness."
+        },
+        "position8": {
+          "upright": "Four Cups, external effects call for awareness, you may need to watch out for opportunities around you.",
+          "reversed": "Inverse Four Cups, external effects can lead you to new interests or increase your indifference.",
+          "keywords": {
+            "0": "Recklessness",
+            "1": "opportunity",
+            "2": "Awakening",
+            "3": "awareness",
+            "4": "space"
+          },
+          "context": "It affects you through external effects, awareness, or indifference."
+        },
+        "position9": {
+          "upright": "Four Cups, you may be afraid of missing opportunities, of indifference, of dissatisfaction with life.",
+          "reversed": "The Reverse Four Cup may show anxiety about being indifferent, not being able to take advantage of opportunities or seem indifferent.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "opportunity",
+            "2": "Recklessness",
+            "3": "Kidnap",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on not seeing or missing opportunities."
+        }
+      },
+      "fiveofcups": {
+        "position1": {
+          "upright": "Five Cups may have disappointments, losses, or regrets at the heart of the problem.",
+          "reversed": "The Reverse Five Cup could be the source of the problem, whether you're stuck in the past or not.",
+          "keywords": {
+            "0": "missing",
+            "1": "sadness",
+            "2": "Regret",
+            "3": "history",
+            "4": "Question"
+          },
+          "context": "At the heart of the problem are past losses and regrets."
+        },
+        "position10": {
+          "upright": "Five Cups can be a result of loss, disappointment, or regret.",
+          "reversed": "The Inverse Five Cups may result in abandonment of the past, forgiveness, and recovery.",
+          "keywords": {
+            "0": "missing",
+            "1": "Regret",
+            "2": "Disappointment",
+            "3": "Recovery",
+            "4": "It's a cure."
+          },
+          "context": "The result may be regret or recovery."
+        },
+        "position2": {
+          "upright": "Five Cups, your obstacle may be to focus too much on the past losses, regret or guilt, but to stick to the past prevents you from moving forward.",
+          "reversed": "The Reverse Five Cup can be the source of the obstacle, not to learn or to let go of the burdens of the past.",
+          "keywords": {
+            "0": "missing",
+            "1": "Regret",
+            "2": "history",
+            "3": "Guilt",
+            "4": "obstacle"
+          },
+          "context": "The obstacle is born from being stuck in the past and not letting go."
+        },
+        "position3": {
+          "upright": "Five Cups, subconsciously, could be past losses, regrets, or feelings of guilt, which could be affecting today's obstacles.",
+          "reversed": "The Reverse Five Cup may have been subconsciously embedded in the past, not being able to learn or constantly thinking about loss.",
+          "keywords": {
+            "0": "missing",
+            "1": "Regret",
+            "2": "history",
+            "3": "Guilt",
+            "4": "subconscious"
+          },
+          "context": "The losses and regrets of the past can be profound emotions that affect today's problems."
+        },
+        "position4": {
+          "upright": "Five Cups say that their best potential is to learn from loss and claim what's left, to distill and rebuild the meaning of grief.",
+          "reversed": "The Reverse Five Cup emphasizes that in order to reveal your potential, you have to give up on the past and look forward to forgiveness and compassion.",
+          "keywords": {
+            "0": "Recovery",
+            "1": "Agreed",
+            "2": "learning",
+            "3": "rebuild",
+            "4": "hope"
+          },
+          "context": "The best potential is to transform loss into wisdom and forward power."
+        },
+        "position5": {
+          "upright": "Five Cups, you may have suffered a loss, regret, or sadness in the recent past.",
+          "reversed": "Inverse Five Cups, you may have noticed that in the recent past, you have begun to put the grieving process behind you, the remaining beauty.",
+          "keywords": {
+            "0": "missing",
+            "1": "Regret",
+            "2": "mourning",
+            "3": "awareness",
+            "4": "It's a cure."
+          },
+          "context": "Your recent past may have been shaped by losses or healing processes."
+        },
+        "position6": {
+          "upright": "Five Cups may raise a loss, regret, or emotional sadness in the near future.",
+          "reversed": "You can have Reverse Five Cups, close-up recovery, focus on what's left of beauty and healing.",
+          "keywords": {
+            "0": "missing",
+            "1": "Regret",
+            "2": "sadness",
+            "3": "It's a cure.",
+            "4": "awareness"
+          },
+          "context": "Your near future will be shaped by grieving or healing processes."
+        },
+        "position7": {
+          "upright": "Five Cups, right now, you're focusing on your losses, you could be regretting or grieving.",
+          "reversed": "The Reverse Five Cup is now putting the past behind you, focusing on what's left of beauty and healing.",
+          "keywords": {
+            "0": "missing",
+            "1": "Regret",
+            "2": "sadness",
+            "3": "It's a cure.",
+            "4": "awareness"
+          },
+          "context": "Your current condition is shaped by grief or healing."
+        },
+        "position8": {
+          "upright": "Five Cups, external effects can lead to loss, regrets, or emotional disappointments.",
+          "reversed": "Reverse Five Cups, external effects can lead you to heal, to put the past behind you, to focus on the beauty that remains.",
+          "keywords": {
+            "0": "missing",
+            "1": "Regret",
+            "2": "sadness",
+            "3": "It's a cure.",
+            "4": "awareness"
+          },
+          "context": "The external effects affect you through loss or healing."
+        },
+        "position9": {
+          "upright": "Five Cups, you may be afraid of loss, regret, and emotional disappointment.",
+          "reversed": "The Reverse Five Cup shows my concern for overcoming the sadness of the past or constantly focusing on loss.",
+          "keywords": {
+            "0": "missing",
+            "1": "Regret",
+            "2": "sadness",
+            "3": "Disappointment",
+            "4": "anxiety"
+          },
+          "context": "Your fears stem from the loss of life or the fact that you can't leave the past behind."
+        }
+      },
+      "sixofcups": {
+        "position1": {
+          "upright": "Six Cups may be at the center of the problem, memories from the past, childhood effects, or nostalgia.",
+          "reversed": "The Reverse Six Cup can be the source of the problem, whether you're stuck in the past or not.",
+          "keywords": {
+            "0": "history",
+            "1": "memory",
+            "2": "childhood",
+            "3": "nostalgia",
+            "4": "Question"
+          },
+          "context": "There are emotional effects from the past at the heart of the problem."
+        },
+        "position10": {
+          "upright": "The six Cups may be memories of the past, reconciliation, or nostalgic happiness as a result of the incident.",
+          "reversed": "The Inverse Six Cups may be the result of the past, not being able to go forward, or being childish.",
+          "keywords": {
+            "0": "history",
+            "1": "nostalgia",
+            "2": "Reconciliation",
+            "3": "Happiness",
+            "4": "memories"
+          },
+          "context": "The result may be happiness from the past or failure to move forward."
+        },
+        "position2": {
+          "upright": "Six Cups could be childhood effects, nostalgia, or ties from the past, holding onto old memories is what's stopping you.",
+          "reversed": "The Inverse Six Cups can be a barrier to the past, to not being able to look forward, or to keep going back.",
+          "keywords": {
+            "0": "history",
+            "1": "childhood",
+            "2": "connection",
+            "3": "nostalgia",
+            "4": "obstacle"
+          },
+          "context": "The obstacle comes from the fact that ties from the past are still effective."
+        },
+        "position3": {
+          "upright": "Six Cups, subconsciously, can have childhood effects, nostalgic ties, or family situations.",
+          "reversed": "The Inverse Six Cups, the inability to break from the past, the inability to look forward, or the trapped in old memories, may have entered your subconscious.",
+          "keywords": {
+            "0": "history",
+            "1": "childhood",
+            "2": "connection",
+            "3": "nostalgia",
+            "4": "subconscious"
+          },
+          "context": "Early childhood memories and old ties may have led to today's problems."
+        },
+        "position4": {
+          "upright": "The Six Cups show that its best potential is to establish secure bonds by carrying innocence, sincerity, and the nutritious memories of the past to this day.",
+          "reversed": "To achieve your potential, you have to stop being nostalgic and respond to the true needs of the moment with compassion.",
+          "keywords": {
+            "0": "Innocence",
+            "1": "intimacy",
+            "2": "The power of memories",
+            "3": "Trust",
+            "4": "Compassion"
+          },
+          "context": "The best potential is to turn the heat of the past into healthy bonds today."
+        },
+        "position5": {
+          "upright": "Six Cups may have been reminiscent, nostalgic, or your childhood ties may have come to light.",
+          "reversed": "The Reverse Six Cup may have been about being trapped in the past, unable to look forward, or unable to break the old bonds.",
+          "keywords": {
+            "0": "history",
+            "1": "nostalgia",
+            "2": "memory",
+            "3": "childhood",
+            "4": "connection"
+          },
+          "context": "It may have been determined by your recent past, past memories, or the fact that you can't get away from them."
+        },
+        "position6": {
+          "upright": "Six Cups, in the near future, you may encounter a person from the past, you may experience nostalgia, or you may bring back memories of your childhood.",
+          "reversed": "The Inverse Six Cups may be stuck in the past in the near future, unable to look forward, or bear the burden of old bonds.",
+          "keywords": {
+            "0": "history",
+            "1": "memory",
+            "2": "nostalgia",
+            "3": "childhood",
+            "4": "connection"
+          },
+          "context": "Your near future will be shaped by past ties or failure to advance to the future."
+        },
+        "position7": {
+          "upright": "Six Cups may now be on the agenda of memories from the past, old friendships, or nostalgic feelings.",
+          "reversed": "Reverse Six Cups, you may be in a situation where you don't get too caught up in the past or move forward.",
+          "keywords": {
+            "0": "history",
+            "1": "memory",
+            "2": "nostalgia",
+            "3": "childhood",
+            "4": "connection"
+          },
+          "context": "Your current condition is shaped by the lack of commitment to the past or to the future."
+        },
+        "position8": {
+          "upright": "Six Cups, external effects can bring up friendships, memories, or supporting bonds from the past.",
+          "reversed": "Inverse Six Cups, external effects can make you dependent on the past or slow your progress.",
+          "keywords": {
+            "0": "history",
+            "1": "memory",
+            "2": "nostalgia",
+            "3": "childhood",
+            "4": "connection"
+          },
+          "context": "The external effects affect you through ties from the past or not being able to move forward."
+        },
+        "position9": {
+          "upright": "Six Cups may show the fear of being stuck in the past, not being able to break free from old ties, or getting lost in nostalgia.",
+          "reversed": "The Reverse Six Cup can cause the anxiety of the past to repeat or not move forward.",
+          "keywords": {
+            "0": "history",
+            "1": "nostalgia",
+            "2": "connection",
+            "3": "childhood",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on not being able to break away from the past or repeating the same mistakes."
+        }
+      },
+      "sevenofcups": {
+        "position1": {
+          "upright": "The Seven Cups may have an abundance of options, dreams or confusion at the heart of the problem.",
+          "reversed": "The Inverse Seven Cups may be the source of the problem of breaking the truth or making the wrong choices.",
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "confusion",
+            "3": "Vision",
+            "4": "Question"
+          },
+          "context": "There's confusion at the center of the problem or getting lost between options."
+        },
+        "position10": {
+          "upright": "The Seven Cups can be a process of many choices, fulfillment of dreams, or creativity as a result of the event.",
+          "reversed": "The Inverse Seven Cups may result in confusion, wrong choices, or illusions.",
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "creativity",
+            "3": "decision",
+            "4": "illusion"
+          },
+          "context": "The result may be a multi-option period or confusion."
+        },
+        "position2": {
+          "upright": "The Seven Cups can be too many choices, too many confusions, too many delusions, and when you can't make a realistic choice, your path becomes clouded.",
+          "reversed": "The Reverse Seven Cups may be a barrier to wrong choices, deception, or breaking up from reality.",
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "confusion",
+            "3": "Don't be fooled.",
+            "4": "obstacle"
+          },
+          "context": "Obstacle comes from confusion and wrong choices."
+        },
+        "position3": {
+          "upright": "Seven Cups can be subconsciously lost in the past, confusion, delusions, or many options.",
+          "reversed": "The Reverse Seven Cups, the wrong choices, the illusion, or the escape from reality, may have settled in the subconscious.",
+          "keywords": {
+            "0": "dream",
+            "1": "option",
+            "2": "confusion",
+            "3": "illusion",
+            "4": "subconscious"
+          },
+          "context": "The confusion of the past and the wrong choices may have been the basis for today's problems."
+        },
+        "position4": {
+          "upright": "The Seven Cups say that its best potential is to combine the imagination with clear intentions and simplify the options and focus on a realistic vision.",
+          "reversed": "Inverse Seven Cups, to expand its potential, you have to eliminate fantasies that distract you, put transparent priorities and act.",
+          "keywords": {
+            "0": "Vision",
+            "1": "selection",
+            "2": "focus",
+            "3": "creativity",
+            "4": "clarity"
+          },
+          "context": "The best potential is to clear the options and focus on one real reason."
+        },
+        "position5": {
+          "upright": "Seven Cups, you may have had a lot of choices recently, a lot of dreams, a lot of confusion.",
+          "reversed": "Inverse Seven Cups, you may have recently made your options clear, driven from dreams to realistic goals.",
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "confusion",
+            "3": "Vision",
+            "4": "clarity"
+          },
+          "context": "It could have been shaped by recent history, confusion, or clarity."
+        },
+        "position6": {
+          "upright": "Seven Cups may face many options in the near future, and you may have to decide between dreams and reality.",
+          "reversed": "The Inverse Seven Cups may be the end of the recent confusion, to gain clarity and to take concrete steps.",
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "decision",
+            "3": "Vision",
+            "4": "clarity"
+          },
+          "context": "The near future will be shaped by confusion or clarity."
+        },
+        "position7": {
+          "upright": "Seven Cups can be a lot of options or dreams right now, and you may be having trouble making decisions.",
+          "reversed": "The Reverse Seven Cups, you're leaving your confusion behind right now, you're gaining clarity, and you're heading for concrete elections.",
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "decision",
+            "3": "Vision",
+            "4": "clarity"
+          },
+          "context": "The current situation is shaped by confusion or clarity."
+        },
+        "position8": {
+          "upright": "Seven Cups, external effects can compare you to choices, dreams, attractive but unrealistic opportunities.",
+          "reversed": "Inverse Seven Cups, external effects can lead you to clarity, to make realistic choices, and to clear up your confusion.",
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "opportunity",
+            "3": "clarity",
+            "4": "decision"
+          },
+          "context": "The external effects affect you with confusion or clarity."
+        },
+        "position9": {
+          "upright": "Seven Cups, you may be afraid to make the wrong choice, to dream, or to walk away from reality.",
+          "reversed": "The Reverse Seven Cups may show fear of disappointment, loss of clarity, or misleading options.",
+          "keywords": {
+            "0": "option",
+            "1": "illusion",
+            "2": "dream",
+            "3": "decision",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on wrong choices or misleading dreams."
+        }
+      },
+      "eightofcups": {
+        "position1": {
+          "upright": "Eight Cups may need to get away from dissatisfaction at the heart of the problem or leave something behind.",
+          "reversed": "The Reverse Eight Cups may be the source of the problem of difficulty giving up or addiction.",
+          "keywords": {
+            "0": "let go",
+            "1": "dissolution",
+            "2": "dissatisfaction",
+            "3": "search",
+            "4": "Question"
+          },
+          "context": "The problem needs to be left behind at the center of something that doesn't satisfy it."
+        },
+        "position10": {
+          "upright": "Eight Cups may be the result of leaving unsatisfactory things behind and taking a new path.",
+          "reversed": "The Reverse Eight Cup may be the result of the incident, not being able to move forward or indecisive.",
+          "keywords": {
+            "0": "Quit.",
+            "1": "journey",
+            "2": "dissatisfaction",
+            "3": "Escape",
+            "4": "Progress"
+          },
+          "context": "The result may be progress or return."
+        },
+        "position2": {
+          "upright": "Eight Cups, not letting go of what you need to put down, running from dissatisfaction or commitment, it's preventing you from carrying what's left behind.",
+          "reversed": "Reverse Eight Cups, addiction, return or failure to leave could be the source of the problem.",
+          "keywords": {
+            "0": "let go",
+            "1": "dissatisfaction",
+            "2": "addiction",
+            "3": "Recycling",
+            "4": "obstacle"
+          },
+          "context": "Obstacle is born from not letting go of things that don't improve you anymore."
+        },
+        "position3": {
+          "upright": "Eight Cups can be subconsciously getting away from the past because of dissatisfaction, leaving things behind or giving up.",
+          "reversed": "The Reverse Eight Cup may have been embedded in your subconscious in the past, not being able to break, not letting go, or coming back.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "let go",
+            "2": "Recycling",
+            "3": "commitment",
+            "4": "subconscious"
+          },
+          "context": "Past distances or addictions may be affecting your problems today."
+        },
+        "position4": {
+          "upright": "Eight Cups tells us that your best potential is to leave the things that no longer feed you behind honorably and take a more meaningful path.",
+          "reversed": "Inverse Eight Cups, to achieve your potential, you have to restore emotional attachments, choose curiosity instead of fear, and accept goodbye when necessary.",
+          "keywords": {
+            "0": "Quit.",
+            "1": "search for meaning",
+            "2": "maturity",
+            "3": "Courage",
+            "4": "Progress"
+          },
+          "context": "The best potential is to seek deeper satisfaction with an honest goodbye."
+        },
+        "position5": {
+          "upright": "Eight Cups, you may have recently left a situation unsatisfactory, on a new quest.",
+          "reversed": "You may have had a hard time breaking the Reverse Eight Cups in the past, back to old habits, or been indecisive about quitting.",
+          "keywords": {
+            "0": "Quit.",
+            "1": "search",
+            "2": "dissatisfaction",
+            "3": "decision",
+            "4": "new path"
+          },
+          "context": "Your recent history may have been determined whether to leave or not."
+        },
+        "position6": {
+          "upright": "Eight Cups, you can leave something unsatisfactory in the near future and go on a new journey.",
+          "reversed": "Inverse Eight Cups, you can have trouble breaking up in the near future, going back to the past, or indecisive.",
+          "keywords": {
+            "0": "Quit.",
+            "1": "search",
+            "2": "dissatisfaction",
+            "3": "decision",
+            "4": "Escape"
+          },
+          "context": "Your near future will be shaped by giving up or coming back."
+        },
+        "position7": {
+          "upright": "Eight Cups, you could be in the process of leaving a situation that doesn't satisfy you right now or going on a new journey.",
+          "reversed": "Reverse Eight Cups, you may be in a state of inability to return to the past, struggle to leave, or indecisive.",
+          "keywords": {
+            "0": "Quit.",
+            "1": "search",
+            "2": "dissatisfaction",
+            "3": "decision",
+            "4": "Escape"
+          },
+          "context": "Your current condition is shaped by abandonment or feedback."
+        },
+        "position8": {
+          "upright": "Eight Cups, external effects can lead you to abandonment, to get away from unsatisfactory things, or to look for new ways.",
+          "reversed": "Inverse Eight Cups, external effects can bring you back to the past or cause you to remain indecisive.",
+          "keywords": {
+            "0": "Quit.",
+            "1": "search",
+            "2": "Escape",
+            "3": "dissatisfaction",
+            "4": "decision"
+          },
+          "context": "It affects you through external effects, abandonment, or return."
+        },
+        "position9": {
+          "upright": "Eight Cups, you might be afraid to give up, not be able to move on, not be able to get away from things that don't satisfy you.",
+          "reversed": "The Reverse Eight Cup shows concern for coming back, indecision or inability to move forward.",
+          "keywords": {
+            "0": "Quit.",
+            "1": "Escape",
+            "2": "dissatisfaction",
+            "3": "decision",
+            "4": "anxiety"
+          },
+          "context": "Your fears are focused on whether you can't move forward or not."
+        }
+      },
+      "nineofcups": {
+        "position1": {
+          "upright": "Nine Cups may have a desire for satisfaction, success, or personal satisfaction at the heart of the problem.",
+          "reversed": "Reverse Nine Cups, superficial satisfactions or extreme expectations may be the source of the problem.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "success",
+            "2": "Happiness",
+            "3": "expectation",
+            "4": "Question"
+          },
+          "context": "At the center of the problem is the search for personal happiness and satisfaction."
+        },
+        "position10": {
+          "upright": "Nine Cups can be the result of wishes, satisfaction and happiness.",
+          "reversed": "The Reverse Nine Cups may result in superficial satisfaction, dissatisfaction, or disappointment.",
+          "keywords": {
+            "0": "Happiness",
+            "1": "satisfaction",
+            "2": "Wish",
+            "3": "pleasure",
+            "4": "satisfaction"
+          },
+          "context": "The result can be a source of great happiness or dissatisfaction."
+        },
+        "position2": {
+          "upright": "The Nine Cups may be the extreme expectation of the obstacle, dissatisfaction, or simply putting its own happiness first.",
+          "reversed": "The Reverse Nine Cups may be the source of superficial satisfaction, dissatisfaction, or internal emptiness.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "expectation",
+            "2": "satisfaction",
+            "3": "superficiality",
+            "4": "obstacle"
+          },
+          "context": "The obstacle arises from extreme expectations and internal dissatisfaction."
+        },
+        "position3": {
+          "upright": "Nine Cups, subconsciously, can be your past achievements, satisfactions, or personal happiness, which may have given you today's perspective.",
+          "reversed": "The Reverse Nine Cups may have settled into the subconscious of superficial satisfaction, extreme expectations, or dissatisfaction.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "expectation",
+            "2": "success",
+            "3": "dissatisfaction",
+            "4": "subconscious"
+          },
+          "context": "The achievements or disappointments of the past may shape today's problems."
+        },
+        "position4": {
+          "upright": "The Nine Cups say that feeding the self-value of its best potential, enjoying the fruit, multiplying satisfaction with gratitude, and approaching its wishes in concrete steps.",
+          "reversed": "The Reverse Nine Cups, to open up the potential, you have to give up the superficial satisfaction and align yourself with your values for lasting happiness.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Gratitude",
+            "2": "self-value",
+            "3": "Wish",
+            "4": "alignment"
+          },
+          "context": "The best potential is to create sustainable satisfaction in line with real values."
+        },
+        "position5": {
+          "upright": "Nine Cups, in the recent past, you may have had your wishes fulfilled, satisfaction, or personal happiness.",
+          "reversed": "Inverse Nine Cups, you may have experienced superficial satisfaction, extreme expectations, or dissatisfaction in recent times.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Wish",
+            "2": "Happiness",
+            "3": "expectation",
+            "4": "satisfaction"
+          },
+          "context": "Your recent past may have been shaped by experiences of satisfaction or dissatisfaction."
+        },
+        "position6": {
+          "upright": "Nine Cups, in the near future, you can have your wishes fulfilled, personal satisfaction and happiness.",
+          "reversed": "Inverse Nine Cups, you may experience a lack of expectations in the near future, superficial satisfaction, or dissatisfaction.",
+          "keywords": {
+            "0": "Wish",
+            "1": "satisfaction",
+            "2": "Happiness",
+            "3": "satisfaction",
+            "4": "expectation"
+          },
+          "context": "Your near future will be shaped with satisfaction or expectation."
+        },
+        "position7": {
+          "upright": "Nine Cups, you could be in a time when your wishes are granted and you're satisfied and you're happy.",
+          "reversed": "The Reverse Nine Cups may now be subject to superficial satisfaction, dissatisfaction, or failure to meet expectations.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Wish",
+            "2": "Happiness",
+            "3": "satisfaction",
+            "4": "expectation"
+          },
+          "context": "Your current situation is shaped by satisfaction or dissatisfaction."
+        }
+      }
+    }
+  }
+}

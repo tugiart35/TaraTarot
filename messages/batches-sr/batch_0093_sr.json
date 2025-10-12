@@ -1,0 +1,778 @@
+{
+  "situation-analysis": {
+    "meanings": {
+      "twoofswords": {
+        "position4": {
+          "reversed": "Konfrontacija izbegavana u centru odlaže odluku. Slepo mesto mora biti osvetljeno.",
+          "keywords": [
+            "dilema",
+            "nestabilnost",
+            "ravnoteža",
+            "konfrontacija",
+            "slepo mesto"
+          ],
+          "context": "Centar: Čvor odluke."
+        },
+        "position5": {
+          "upright": "Njih dvoje mačeva ukazuju na stav ili neodlučnost sa čekanjem i osposobljavanjem spoljnih zainteresovanih strana. Datoteke mogu da visi.",
+          "reversed": "Okrećena dva mačeva kažu da će biti otkrivena odložena konfrontacija i pritisak odluka će se povećati.",
+          "keywords": [
+            "nestabilnost",
+            "čekati",
+            "konfrontacija",
+            "skala",
+            "prag"
+          ],
+          "context": "Spoljna struktura za donošenje odluka deluje polako; Vremenski plan je važan."
+        },
+        "position6": {
+          "upright": "Preporuka: Prikupljajte podatke koji nedostaju i postavite datum odluke.",
+          "reversed": "Savet: Krajnja paraliza odlučivanja; Dozvolite manju grešku i izaberite.",
+          "keywords": [
+            "odluka",
+            "podaci",
+            "istorija",
+            "dilema",
+            "glasati"
+          ],
+          "context": "Preporuka: Otvorite prozor odluke."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: privremeni zastoj se nastavlja; Skala se ne može uravnotežiti bez donošenja emocije na sto.",
+          "reversed": "Moguća budućnost: Slepo mesto je osvetljeno i donesena je odluka; Protok se ponovo pokreće.",
+          "keywords": [
+            "zastoj",
+            "dilema",
+            "ravnoteža",
+            "konfrontacija",
+            "odluka"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "threeofswords": {
+        "position1": {
+          "upright": "Tri mačeva simbolizuje srčana, izdaja ili duboko razočaranje koje ste iskusili u prošlosti. Ovo bolno iskustvo možda vas je učinilo pažljivijim i opreznijim, ali je takođe ostavio duboke ožiljke na vašem srcu. Gubici koje ste doživeli tokom tog perioda možda su direktno uticali na vašu situaciju danas. \\ N \\ NTHIS kartica podseća na instruktivan aspekt bola. Razočanti koje ste doživeli možda su vam omogućili da danas budete svesniji izbori.",
+          "reversed": "Invertirani tri mačeva ukazuju na prošle nezarazljeđene rane, nezakonitog omještaja i nezakonitog izdaja. Možda ste pokušali da potisnite bol koju ste doživeli u prošlosti, ali ta osećanja su ostala neriješena. Ove nesrećene rane mogu biti u korenu problema sa kojima se danas suočavate. \\ N \\ NTHIS kartica takođe naglašava da ima poteškoća u oproštenju sebi ili drugima i dalje stvara unutrašnje nemire. Težina prošlosti možda je zasjenila sadašnjost.",
+          "keywords": [
+            "srp",
+            "ugao",
+            "izdaja",
+            "razočaranje",
+            "prošlost"
+          ],
+          "context": "Odraz prošlih bolova danas."
+        },
+        "position2": {
+          "upright": "Tri mačeva ukazuju da trenutno prolazite kroz ogorčenost, razočaranje ili senku oštre stvarnosti. Um se može izoštriti kako bi zaštitio srce. \\ N \\ nming bol i davanje kredita za tugu donosi jasnoću.",
+          "reversed": "Invertirani tri mačeva ukazuju da je rana spremna za isceljenje formirala krasta; Ali pokazuje da okidači još uvek mogu da ubacuju povremeno. Oproštenje postaje trajno sa fleksibilnim granicama. \\ N \\ na saosećajni ekspresion izvještava unutrašnjeg čvora.",
+          "keywords": [
+            "razočaranje",
+            "starost",
+            "istina",
+            "izraz",
+            "poboljšanje"
+          ],
+          "context": "Trenutni ton: Suočavanje i popravke srčana srca."
+        },
+        "position3": {
+          "upright": "Tri mačeva ukazuje da podsvesni trag neobrađene ogorčenosti, razočaranje ili izdaja oštre vaše misli. Mentalna odbrana može biti upozorena da zaštiti srce. \\ N \\ NTHIS kartica kaže da će imenovati bol i davanje kredita za tugu će obnoviti mentalnu jasnoću.",
+          "reversed": "Pretvoreni tri mačeva opisuju ožiljak spreman za isceljenje i poziv za oproštenje iznutra. Međutim, okidači mogu postati oštar na neočekivanim trenucima. \\ N \\ NTHIS kartica naglašava da će se sigurna ekspresija i saosećajna granice ojačati ranjivost.",
+          "keywords": [
+            "razočaranje",
+            "starost",
+            "izdaja",
+            "poboljšanje",
+            "izraz"
+          ],
+          "context": "Skriveni srčani bolovi oštrošira misli misli."
+        },
+        "position4": {
+          "upright": "U centru je ogorčena ili oštra istina. Učešće žalosti donosi jasnoću.",
+          "reversed": "Želja za zaceljenje je cvetanja u centru. Saosećajni jezik odvezuje čvor.",
+          "keywords": [
+            "razočaranje",
+            "starost",
+            "istina",
+            "poboljšanje",
+            "izraz"
+          ],
+          "context": "Centar: Suočavanje sa bolom."
+        },
+        "position5": {
+          "upright": "Tri mačeva ukazuje na uticaj spoljne oštre kritike, neslaganja ili negativne štampe.",
+          "reversed": "Preokrećena tri mačeva ukazuje da se spoljni prelomi mogu popraviti popravkom i poštenom komunikacijom.",
+          "keywords": [
+            "kritika",
+            "sukob",
+            "P.r.",
+            "popraviti",
+            "izraz"
+          ],
+          "context": "Upravljanje spoljnim kritikama je od vitalnog značaja."
+        },
+        "position6": {
+          "upright": "Savet: Imajte pošteno konfrontaciju i pristojan razgovor; Dajte svoj udeo žalosti.",
+          "reversed": "Preporuka: Potražite podršku za zatvaranje / terapiju; Prepišite priču u lekoviti način.",
+          "keywords": [
+            "konfrontacija",
+            "izraz",
+            "zatvaranje",
+            "zarastanje",
+            "komunikacija"
+          ],
+          "context": "Preporuka: Dijalog koji transformiše bol."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: suočena je oštra stvarnost ili razočaranje; Ova otvorenost inicira zaceljivanje.",
+          "reversed": "Moguća budućnost: isceljenje ubrzava; Oproštaj popravlja mostove.",
+          "keywords": [
+            "razočaranje",
+            "real",
+            "poboljšanje",
+            "izraz",
+            "oproštenje"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "fourofswords": {
+        "position1": {
+          "upright": "Četiri mačeva ukazuje na period odmora, prinudne pauze ili oporavka koju ste iskusili u prošlosti. Pauza u tom trenutku možda je formirala osnovu za uslove koje danas naiđete na koji se susrećete. Ovaj proces vam je možda pružio priliku da dišete i pregrupišete. \\ N \\ NT Istovremeno, ova kartica takođe pokazuje da je tišina ili ojačanje koje ste doživeli u prošlosti danas postali deo vaše unutrašnje snage danas.",
+          "reversed": "Pretvorena četiri mačeva simbolizuje zanemarene odmor u prošlosti, odloženi oporavak ili stalno odlaganje. Ne dajete sebi vreme nakon napornog perioda može biti u korenu današnjih teškoća. Beskrajno žure ili ne dobijaju dovoljno odmora možda su uticali na vaše zdravlje i odluke. \\ N \\ NTHIS kartica pokazuje da se ovi zanemari u prošlosti još uvek mogu pojaviti u obliku umora i danas.",
+          "keywords": [
+            "odmor",
+            "poboljšanje",
+            "pauza",
+            "mir",
+            "prošlost"
+          ],
+          "context": "Efekat prošlih odmora ili zanemarivanja."
+        },
+        "position2": {
+          "upright": "Četiri mačeva ukazuje da je potreba da se odmori, povlači i očisti umu u ovom trenutku. Mirna pauza sazreva strategiju. \\ N \\ Nas otvorite prostor tišine, rastvor se pojavljuje sam.",
+          "reversed": "Preokrećena četiri mačeva ukazuje na mentalnu buku tako intenzivnu da čak odložite pauzu. Verovanje da \"ako prestanem, ja ću pasti\" povećava izgorevanje. \\ N \\ Nmicro Breaks i digitalna ishrane mentalne energije.",
+          "keywords": [
+            "odmor",
+            "oporavak",
+            "strategija",
+            "spokojstvo",
+            "regeneracija"
+          ],
+          "context": "Potreba od sata: mentalni prostor i ritmično disanje."
+        },
+        "position3": {
+          "upright": "Četiri mačeva ukazuje na snažnu podsvestnu potrebu za povlačenjem, odmori uma i unutrašnji oporavak. Umorne misli mogu se pozivati na mirnu pauzu. \\ N \\ NTHIS kartica podseća vas da strategija sazreva u snu i oslonac otvara prostor za nova rešenja.",
+          "reversed": "Preokrećena četiri mačeva ukazuje na mentalnu buku koju čak i odlaže odmor. Verovanje da \"ako sada prestanem da padnem\" može produbiti izgaranje. \\ N \\ nthis kartica naglašava da će kratki i redovni mikro pauze donijeti produktivnost.",
+          "keywords": [
+            "odmor",
+            "oporavak",
+            "okretanje prema unutra",
+            "strategija",
+            "spokojstvo"
+          ],
+          "context": "Tajna potreba za odmor i pozivom da tiha mentalne buke."
+        },
+        "position4": {
+          "upright": "U centru je potreba da se odmara i prikupi um. Spokojstvo sazreva strategiju.",
+          "reversed": "Otpornost na pauzu u Censtruma uvećava izgaranje. Mikro pauze su obaveza.",
+          "keywords": [
+            "odmor",
+            "oporavak",
+            "strategija",
+            "spokojstvo",
+            "regeneracija"
+          ],
+          "context": "Centar: Tiha snaga."
+        },
+        "position5": {
+          "upright": "Četiri mačeva ukazuje na privremene pauze, praznike ili prozore čekanja u spoljnim procesima.",
+          "reversed": "Preokrećena četvorka mačeva kaže da kultura rada bez ostatka smanjuje produktivnost napolju.",
+          "keywords": [
+            "pauza",
+            "kalendar",
+            "čekati",
+            "ritam",
+            "prinos"
+          ],
+          "context": "Ritam nagiba je isprekidan; Dobro snimite prozor."
+        },
+        "position6": {
+          "upright": "Savet: Blokovi odmora planiranja; Kako se um ohladi, pojavljuje se rešenje.",
+          "reversed": "Savet: Smanjite izgaranje mikro-pauze i digitalnim dijetama.",
+          "keywords": [
+            "odmor",
+            "prekršiti",
+            "oporavak",
+            "ritam",
+            "oštrina"
+          ],
+          "context": "Savet: popunjavanje energetske banke."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: proces odmora i oporavka snosi plod; Kada se um ohladi, pojavljuje se rešenje.",
+          "reversed": "Moguća budućnost: Izgaranje se može produžiti ako se odmor odloži; Mikro pauze su od suštinskog značaja.",
+          "keywords": [
+            "odmor",
+            "oporavak",
+            "spokojstvo",
+            "strategija",
+            "regeneracija"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "fiveofswords": {
+        "position1": {
+          "upright": "Petorica mačeva simbolizuje prošle sukobe, borbe ili pobedu koja nije donela trajnu sreću čak i ako je pobedila. Ovo iskustvo vas je možda ostavilo nelagodno pomešano sa ponosom. Ova napetost u prošlosti može biti u korenu vaše trenutne situacije. \\ N \\ NTHIS Card vas podseća da biste trebali razmisliti i ono što ste stekli od nečega što ste zapravo izgubili. Ovi dosadni sukobi mogu se danas odraziti u vašim odnosima i izborima.",
+          "reversed": "Otkriveni pet mačeva simbolizuje prošle nerešene sukobe, puknute prouzrokovane ponosom ili propuštenim mogućnostima za mir. Možda ste odbili da odustanete u prošlost, a to je stvorilo sukobnu energiju koja se nastavlja do danas. \\ N \\ nThis kartica vam govori da još uvek možete imati tragove starih borbe i da se nemiri nastavljaju jer niste prešli na oproštaj.",
+          "keywords": [
+            "sukob",
+            "pobeda",
+            "anksioznost",
+            "nepopustljivost",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih sukoba na sadašnjost."
+        },
+        "position2": {
+          "upright": "Petorica mačeva ukazuje da se u to vreme rasprave mogu prebaciti na osnovu \"opravdanja\" i rizik od ignorisanja relacijskih troškova. Pobeda se može osećati prazno. \\ N \\ n \\ n \\ Nrevisiranje definicija pobede štedi mostove.",
+          "reversed": "Obrnutih pet mačeva ukazuje na nameru smanjenja napetosti i popravke; Ali on kaže da se ponos može ući na put. Fleksibilni pregovor otvara prostor. \\ N \\ nfocus na onome što je \"dobro\", a ne \"tačno\".",
+          "keywords": [
+            "sukob",
+            "legitimitet",
+            "ego",
+            "popraviti",
+            "pregovaranje"
+          ],
+          "context": "Aktuelna lekcija: Bilans obaveza prava."
+        },
+        "position3": {
+          "upright": "Petorica mačeva pokazuje opsesiju pobedju pobedom, potreba da bude u pravu, a odbrambeni um koji radi iza scene. \"Pobeda bez obzira na troškove\" Narativ može da iskoristi odnose. \\ N \\ nThis kartica naglašava važnost pregledavanja definicije dobitaka i postavljanja granica bez paljenja mostova.",
+          "reversed": "Ograničena pet mačeva ukazuje da je namera da se de-eskalira i izvinjava / popravka u toku; Ali ponos može da proizvede otpor. \\ N \\ NTHIS kartica kaže da će fleksibilno pregovaranje i zajedničko tlo zaceliti nevidljive rane.",
+          "keywords": [
+            "sukob",
+            "legitimitet",
+            "pobeda",
+            "ego",
+            "popraviti"
+          ],
+          "context": "Raskrsnica skrivene pojaseve i relacijske troškove."
+        },
+        "position4": {
+          "upright": "Želja da bude u redu u Centru može očvrsnuti sukob. Redefinirajte dobitak za očuvanje mostova.",
+          "reversed": "Postoji namera da se popravi centar. Fleksibilni pregovori rešava napetost.",
+          "keywords": [
+            "sukob",
+            "ego",
+            "legitimitet",
+            "popraviti",
+            "pregovaranje"
+          ],
+          "context": "Centar: Bond ili opravdanje."
+        },
+        "position5": {
+          "upright": "Petorica mačeva ukazuje na pobednika - preuzme sve stavove i žestoko takmičenje tamo.",
+          "reversed": "Okrećeno pet mačeva govori nam da su kompromise i rešenja za uštedu lica mogući napolju.",
+          "keywords": [
+            "rivalstvo",
+            "sukob",
+            "konsenzus",
+            "trošak",
+            "strategija"
+          ],
+          "context": "Klima orijentisana na dobitniku; Pomičite se napred bez paljenja mostova."
+        },
+        "position6": {
+          "upright": "Savet: Odaberite odnos - očuvanje pribora nad pravednošću.",
+          "reversed": "Savet: Popravite mostove sa izvinjenjem / ponudom popravke.",
+          "keywords": [
+            "odnos",
+            "ego",
+            "dobiti",
+            "popraviti",
+            "pregovaranje"
+          ],
+          "context": "Savet: Ne sagorevajte mostove."
+        },
+        "position7": {
+          "upright": "Moguća je moguća budućnost: skupo dobitak, podseća na pirorhuzijsku pobedu, moguće je; Relativni trošak postaje vidljiv.",
+          "reversed": "Moguća budućnost: Otvara se vrata za popravak i usklađivanje suočavanja.",
+          "keywords": [
+            "sukob",
+            "pobeda",
+            "trošak",
+            "ego",
+            "konsenzus"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "sixofswords": {
+        "position1": {
+          "upright": "Šest mačeva simbolizuje tranziciju, putovanje ili prelazak iz teškog vremena koje ste iskusili u prošlosti. Ovaj proces vam je možda ponudio priliku da zaceli i prelazi u mirniji život. Vašu trenutnu situaciju možda su uticale odluke koje ste u to vreme koje ste doneli u to vreme. \\ N \\ NTHIS kartica takođe pokazuje da vas je ovo putovanje u prošlosti zreli emocionalno.",
+          "reversed": "Prekoračenje šest mačeva ukazuje na povratak, zaglavljen, ili nedovršenu tranziciju, a ne da se kreće naprijed u prošlosti. Hteli ste da se sklonite od stvari, ali ovaj proces nije završen. Zato se možda i dalje osećate zaglavljenim u istom ciklusu danas. \\ N \\ NThis kartica vas podseća da ne može da iskoristi mogućnosti za napredovanje u prošlosti je izvor današnjih problema.",
+          "keywords": [
+            "prelaz",
+            "putovanje",
+            "napredak",
+            "pobjeći",
+            "prošlost"
+          ],
+          "context": "Efekat prošlih tranzicija ili zategnuće."
+        },
+        "position2": {
+          "upright": "Šest mačeva ukazuje da trenutno prelazite iz olujnih voda na smireniji kurs. Logika privlači sigurnu izlaznu liniju. \\ N \\ Ngradual i tihi napredak je najodrživiji.",
+          "reversed": "Prekoračenje šest mačeva ukazuje da su tanke niti koje vas vezuju u prošlost teškim prelazom. Strah od nesigurnosti može zamagliti rutu. \\ N \\ nsmall poteze i podrška omogućavaju moguće kretanje.",
+          "keywords": [
+            "prelaz",
+            "poboljšanje",
+            "spokojstvo",
+            "ruta",
+            "odmicali se"
+          ],
+          "context": "Trenutni pokret: Tiha i sigurna promena smera."
+        },
+        "position3": {
+          "upright": "Šest mačeva ukazuje na snažnu podsvesnu želju da se \"mirno odmakne odavde\" i pređe na smirenije vode. Um se izvlači ruti iz emocionalne oluje. \\ N \\ NTHIS kartica podseća na to da će prelaz biti održiviji kada je tiho i postepeno.",
+          "reversed": "Prekoračenje šest mačeva ukazuje da vas konopci koji vas vežu u prošlost i strah od nesigurnih voda odgađaju tranziciju. To može nazvati stare načine razmišljanja. \\ N \\ nThis kartica naglašava da će mali potezi i sigurni drugovi olakšati tranziciju.",
+          "keywords": [
+            "prelaz",
+            "odmicali se",
+            "spokojstvo",
+            "neizvesnost",
+            "naterati rutu"
+          ],
+          "context": "Tajna želja da se sklone i tanki užad koji ga vezuju u prošlost."
+        },
+        "position4": {
+          "upright": "U centru se nalazi prelazak na mirne vode. Postepeno odvajanje je najzdravije.",
+          "reversed": "U centru su teme koje ga vezuju u prošlost zamućena ruta. Olakšajte tranziciju uz podršku.",
+          "keywords": [
+            "prelaz",
+            "ruta",
+            "spokojstvo",
+            "poboljšanje",
+            "odmicali se"
+          ],
+          "context": "Centar: sigurna tranzitna linija."
+        },
+        "position5": {
+          "upright": "Šest mačeva ukazuje da postoje prelazni programi, preseljenje / transformacioni projekti i mekani prilika za sletanje vani.",
+          "reversed": "Okrećena šest mačeva govori nam da problemi sa putevima / mrežom ili tranzitnim otpori mogu stvoriti prepreke napolju.",
+          "keywords": [
+            "prelaz",
+            "premestiti",
+            "transformacija",
+            "mreža",
+            "prepreka"
+          ],
+          "context": "Spoljna infrastruktura može olakšati tranziciju olakšati ili teže."
+        },
+        "position6": {
+          "upright": "Savet: Napravite postepeni plan tranzicije; Pronađite sigurne drugove.",
+          "reversed": "Savet: Pomičite se napred sa malim potezima umesto velikih skokova.",
+          "keywords": [
+            "prelaz",
+            "plan",
+            "pratnja",
+            "postepen",
+            "poverenje"
+          ],
+          "context": "Preporuka: Put do smirivanja vode."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: prelazak na smirenije vode; Glatka tranzicija donosi mir.",
+          "reversed": "Moguća budućnost: Stare veze mogu odložiti napredak; Potreban je postepeni potez.",
+          "keywords": [
+            "prelaz",
+            "poboljšanje",
+            "spokojstvo",
+            "ruta",
+            "odmicali se"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "sevenofswords": {
+        "position1": {
+          "upright": "Sedam mačeva ukazuje na istine, tajne planove ili strateške poteze skrivene u prošlosti. Možda ne dele stvari otvorene ili dalje napred, mogu biti u korenu današnje situacije. \\ N \\ nThis kartica označava da strategija koju ste pratili u prošlosti izaziva danas probleme, čak i ako je uspelo u kratkom roku.",
+          "reversed": "Preokrećeno sedam mačeva predstavlja otkrivene tajne, trikove uhvaćene, ili neuspele strategije u prošlosti. Pojava skrivenih istina možda je direktno uticala na današnje uslove. \\ N \\ NTHIS kartica takođe vas podseća da ste možda naišli na veće probleme jer ste odložili iskrenost.",
+          "keywords": [
+            "strategija",
+            "sigurnost",
+            "varati",
+            "plan",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih tajnih poteza."
+        },
+        "position2": {
+          "upright": "Sedam mačeva ukazuje da strateško napredovanje, manje vidljivi potezi i potrebu za zaštitom resursa u ovom trenutku su istaknuti. Taktika je jača od odbrane. \\ N \\ n \\ n minimalna tajnost je korisna ako je namera čista.",
+          "reversed": "Preokrećeno sedam mačeva kaže da poluistine, samoobmana ili anksioznost u tome da se uhvate umanjiti produktivnost. Poverenje je erodirano. \\ N \\ na transparentno realizacija donosi lakoću.",
+          "keywords": [
+            "strategija",
+            "taktika",
+            "sigurnost",
+            "samopravednost",
+            "poverenje"
+          ],
+          "context": "Trenutni pristup: Smart plan, čista namera."
+        },
+        "position3": {
+          "upright": "Iza scene pokazuju da će sedam mačeva pokazati tu strategiju, prikrivanje i potrebu da se \"premesti nezapaženo\" rade iza kulisa. Skrivanje taktike može biti na snazi za zaštitu resursa. \\ N \\ NTHIS kartica podseća nas da ako je namera čista, strategija mora biti uravnotežena transparentnošću.",
+          "reversed": "Preokrećeno sedam mačeva ukazuje da samoobmanja, poluistine ili anksioznost uhvate stvaranje unutrašnje napetosti. Skriveni planovi mogu da erodiraju poverenje. \\ N \\ NTHIS Card naglašava da priznanje i realizacija uma.",
+          "keywords": [
+            "strategija",
+            "sigurnost",
+            "taktika",
+            "samoobmana",
+            "poverenje"
+          ],
+          "context": "Fina linija između tajne strategije i potrebe za transparentnošću."
+        },
+        "position4": {
+          "upright": "U centru je strategija i napredak sa malo vidljivosti. Ako je namera čista, minimalna tajnost je korisna.",
+          "reversed": "Samoobmana ili poluistine u Centra Erode Trust. Transparentno poravnanje je obavezna.",
+          "keywords": [
+            "strategija",
+            "taktika",
+            "sigurnost",
+            "poverenje",
+            "iskrenost"
+          ],
+          "context": "Centar: linija inteligentnog plana."
+        },
+        "position5": {
+          "upright": "Sedam mačeva pokazuje da su strateški potezi, lobiranje i informativne prakse skrivene efikasne u inostranstvu.",
+          "reversed": "Preokrećeno sedam mačeva kaže da curi, otkrivenje i gubitak poverenja stvaraju rizike tamo.",
+          "keywords": [
+            "strategija",
+            "zakon",
+            "sigurnost",
+            "curenje",
+            "poverenje"
+          ],
+          "context": "Pravila igre su napisana nazad, a ne na pozornici."
+        },
+        "position6": {
+          "upright": "Preporuka: Uspostaviti etičku strategiju; Ne objašnjavajte sve nepotrebno.",
+          "reversed": "Savet: Ispravite poluistine; Poravnajte transparentno.",
+          "keywords": [
+            "strategija",
+            "etika",
+            "taktika",
+            "transparentnost",
+            "poverenje"
+          ],
+          "context": "Preporuka: Smart i čista igra."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: pametna taktika može donijeti kratkoročni dobitak; Ali menadžment poverenja postaje kritično.",
+          "reversed": "Moguća budućnost: otkrivanje skrivenih pitanja stvara priliku za čišćenje; Transparentnost obnavlja poverenje.",
+          "keywords": [
+            "strategija",
+            "taktika",
+            "poverenje",
+            "transparentnost",
+            "rizikovati"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "eightofswords": {
+        "position1": {
+          "upright": "Osam mačeva simbolizuje vreme kada ste se zaglavili u prošlosti, vaša sloboda je bila ograničena ili ste osećali bespomoćno. Ovo iskustvo je možda nateralo da ostvarite sopstvena ograničenja. Međutim, to bi takođe moglo nahraniti vaše strahove koji su u jezgri današnje situacije. \\ N \\ NThis kartica vas podseća da je bespomoćnost iskusna u prošlosti možda ograničila vašu percepciju danas.",
+          "reversed": "Osetila osam mačeva ukazuje na situacije u kojima ste nastavili da se ograničavate iako ste imali priliku da pobegnete u prošlosti. Možda je bilo moguće biti slobodan, ali vaši strahovi su vas zaustavili. Zato i danas možda osećate odjeke istih lanaca. \\ N \\ NTHIS kartica pokazuje da je podcjenjivanje sopstvene moći u prošlosti dovela do danas do problema.",
+          "keywords": [
+            "sloboda",
+            "prepreka",
+            "ograničenje",
+            "očajavati",
+            "prošlost"
+          ],
+          "context": "Efekat prošlih zaglađenja ili pokušaja oslobađanja."
+        },
+        "position2": {
+          "upright": "Osam mačeva ukazuje da je \"nikakav izlaz\" pripovest u trenutku i samoograničavajuća uverenja ograničavaju vaš asortiman akcije. Mentalni lanci su čvrši nego što su u stvarnosti. \\ N \\ n \\ nsmall eksperimenti stvaraju prvo labavljenje u ovim lancima.",
+          "reversed": "Otkriveni osam mačeva nam govori da čvorovi počinju da se otkriju, ali stari strahovi se povremeno vraćaju. Prikupljanje dokaza ubrzavaju oslobođenje. \\ N \\ N \\ Nasking za podršku oduzet je konopcima jedan po jedan.",
+          "keywords": [
+            "samostalno ograničenje",
+            "strah",
+            "umazač",
+            "oslobođenje",
+            "eksperiment"
+          ],
+          "context": "Trenutna tema: Testiranje percipiranih barijera."
+        },
+        "position3": {
+          "upright": "Osam mačeva pokazuje da samoauzdržavno uverenje i \"ne izlaz\" narativno grade nevidljive zidove u podsvijesti. Um je možda stvorio labirint koji ograničava slobodu. \\ N \\ nThis kartica nas podseća da će mali eksperimenti koje testirati stvarnost razneći teme.",
+          "reversed": "Okolište od osam mačeva govori nam da su čvorovi spremni da budu nevezani i namera oslobađanja je ojačana unutra. Ali stari strahovi se povremeno mogu vratiti kao povez. \\ N \\ NTHIS kartica sugeriše prikupljanje dokaza i traženje podrške kao poluga oslobođenja.",
+          "keywords": [
+            "samostalno ograničenje",
+            "strah",
+            "umazač",
+            "oslobođenje",
+            "eksperiment"
+          ],
+          "context": "Skrivene samoigrade i pokušaji izlaza."
+        },
+        "position4": {
+          "upright": "U središtu okružuje samoograničavajuća uverenja. Mali dokazi olose lanac.",
+          "reversed": "Dezintegracija počinje u centru, ali stari strahovi se zadržavaju. Zatražite podršku.",
+          "keywords": [
+            "samostalno ograničenje",
+            "strah",
+            "umazač",
+            "oslobođenje",
+            "eksperiment"
+          ],
+          "context": "Centar: Uništavanje žica."
+        },
+        "position5": {
+          "upright": "Osam mačeva ukazuje da spoljni propisi / ograničenja ograničavaju obim akcije.",
+          "reversed": "Otkriveni osam mačeva ukazuje da ograničenja mogu biti opuštena ili se izuzeci mogu otvoriti napolju.",
+          "keywords": [
+            "ograničenje",
+            "regulacija",
+            "prepreka",
+            "izuzeće",
+            "fleksibilnost"
+          ],
+          "context": "Podešavanje pravila definiše polje; Traženje fleksibilnosti je važno."
+        },
+        "position6": {
+          "upright": "Savet: Testirajte granice verovanja sa malim eksperimentima; Prikupite dokaze.",
+          "reversed": "Savet: Zatražite pomoć; Napišite izlazne korake.",
+          "keywords": [
+            "verovanje",
+            "eksperiment",
+            "dokaz",
+            "pomoći",
+            "oslobođenje"
+          ],
+          "context": "Savet: Odvezite mentalno čvor."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: pokret ostaje uzak ako samoograničavaju verovanja; Suđenja zasnovana na dokazima su od suštinskog značaja.",
+          "reversed": "Moguća budućnost: mentalne čvorove su odmotane; Koraci ka oslobađanju ubrzavaju.",
+          "keywords": [
+            "samostalno ograničenje",
+            "strah",
+            "liberalizacija",
+            "verovanje",
+            "eksperiment"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "nineofswords": {
+        "position1": {
+          "upright": "Devet mačeva simbolizuje prošle intenzivne strepnje, strahove ili periode nesanice. Ova iskustva su možda stalno zauzela vaš um i direktno je uticala na vaše raspoloženje danas. \\ N \\ NTHIS kartica pokazuje da se ovi brige iz prošlosti još uvek utiču na vas iznutra i mogu biti u korenu problema sa kojima se danas suočavate.",
+          "reversed": "Invertirani devet mačeva predstavlja strahove, potisnute strepnje ili odbijene bolove koji su u prošlosti ignorisani. Emocije koje ste izbegli u to vreme možda su postale još veće danas. \\ N \\ NTHIS kartica naglašava da je poteškoće u pronalaženju mentalnog mira u prošlosti možda uticalo na današnje uslove.",
+          "keywords": [
+            "anksioznost",
+            "stres",
+            "anksioznost",
+            "noćni",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih strahova na vašem trenutnom raspoloženju."
+        },
+        "position2": {
+          "upright": "Devet mačeva ukazuje da anksioznost, noćne misli i katastrofalni scenariji trenutno zauzimaju um. Nedostatak oblaka za spavanje Jasnoća. \\ N \\ n \\ n \\ n \\ nprskopresivanje anksioznost na papiru i traženje dokaza slabi se u ciklusu.",
+          "reversed": "Invertirani devet mačeva ukazuje da stvarnost izgleda prenosive ujutro noćne more. Očkrijeri se i dalje mogu pojaviti. \\ N \\ n \\ n \\ n breathing, regulacija karoserije i snimanje malih uspeha donose ravnotežu.",
+          "keywords": [
+            "anksioznost",
+            "nesanica",
+            "katastrofalan",
+            "regulacija",
+            "test stvarnosti"
+          ],
+          "context": "Trenutna potreba: higijeni anksioznosti i ritam."
+        },
+        "position3": {
+          "upright": "Devet mačeva pokazuje noćnu anksioznost, katastrofazujući i \"šta ako ...\" scenariji jedu na umu iza scene. Misli u besani mogu da naznačite danju. \\ N \\ NTHIS kartica podseća na snagu eksternizacije (pisanja / razgovora) anksioznosti.",
+          "reversed": "Reversed devet mačeva kaže da je ujutro noćne more, počne da shvata da je stvarnost manje zastrašujuća. Međutim, mentalni ciklusi se povremeno mogu vratiti. \\ N \\ NTHIS kartica naglašava da pobijanje i regulacija tela oslabite ciklus.",
+          "keywords": [
+            "anksioznost",
+            "nesanica",
+            "katastrofalan",
+            "rastvaranje",
+            "regulacija"
+          ],
+          "context": "Skriveni ciklus anksioznosti i potreba za stvarnim testiranjem."
+        },
+        "position4": {
+          "upright": "U centru su anksioznost i noći. Pisanje i traženje dokaza slabiju ciklus.",
+          "reversed": "Jutarnja jasnoća raste u centru. Regulacija i male pobede obnovite ravnotežu.",
+          "keywords": [
+            "anksioznost",
+            "nesanica",
+            "katastrofalan",
+            "regulacija",
+            "stvarnost"
+          ],
+          "context": "Centar: dugme za anksioznost."
+        },
+        "position5": {
+          "upright": "Devet mačeva ukazuje da je na spolja dominantna klima anksioznosti, krizne vesti i stresa.",
+          "reversed": "Okrećeno devet mačeva kaže da će talas panike podstaći i racionalniji ton će se pojaviti napolju.",
+          "keywords": [
+            "anksioznost",
+            "kriza",
+            "vesti",
+            "stres",
+            "racionalnost"
+          ],
+          "context": "Protok stranih vesti utiče na raspoloženje."
+        },
+        "position6": {
+          "upright": "Savet: Napišite listu strahova, pobijati ih dokazima; Regulirajte svoje telo.",
+          "reversed": "Savet: Učinite stvarnost da testirate naviku sa jutarnjim ritualom.",
+          "keywords": [
+            "anksioznost",
+            "ne piši",
+            "dokaz",
+            "regulacija",
+            "ritual"
+          ],
+          "context": "Savet: Higijena anksioznosti."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: anksioznost može biti vrhunac, a zatim bledi sa stvarnošću testiranja; Podrška i obrezna udobnost.",
+          "reversed": "Moguća budućnost: Nakon što se noćevi noću dolazi jasno; Mentalno opterećenje je osvetljeno.",
+          "keywords": [
+            "anksioznost",
+            "nesanica",
+            "stvarnost",
+            "regulacija",
+            "opuštanje"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "tenofswords": {
+        "position1": {
+          "upright": "Deset mačeva ukazuje na završetak, izdaja ili iznenadni gubitak u prošlosti. Iako je ovaj kraj vrlo bolan, možda može otvoriti put za novi početak. Današnja situacija je možda oblikovana nakon ovog zatvaranja. \\ N \\ NTHIS kartica podseća vas da je veliko uništenje koje ste iskusili u prošlosti takođe možda predstavljati izvor vaše trenutne snage.",
+          "reversed": "Invertirani deset mačeva simbolizuje prošlo, ali neprepoznati završetak, odloženo zatvaranje ili produženi bol. Možda niste prihvatili kraj nečega što je bilo potrebno za okončanje, a ova situacija i dalje utiče na vas. \\ N \\ NTHIS kartica pokazuje da su otkrili ciklusi u prošlosti u korenu današnjih problema.",
+          "keywords": [
+            "završiti",
+            "izdaja",
+            "ugao",
+            "zatvaranje",
+            "prošlost"
+          ],
+          "context": "Uticaj prošlih završetaka i gubitaka."
+        },
+        "position2": {
+          "upright": "Deset mačeva ukazuje da je ciklus sada efikasno gotov i predati se na vratima. Nakon dna, smer je samo up. \\ N \\ n \\ n \\ n \\ n \\ n 'Na kraju se čini prostor za novu.",
+          "reversed": "Deset reversanih mačeva govori nam da je započeo proces oporavka i reframbiranja priče. Promjena perspektive na starom boli ubrzava se izlečenje. \\ N \\ n \\ nsmall Sporazumi napred stvaraju obnovljenu snagu.",
+          "keywords": [
+            "završiti",
+            "dostava",
+            "ponovno rođenje",
+            "poboljšanje",
+            "refrakcija"
+          ],
+          "context": "Trenutni prag: Prihvatanje zatvaranja, iskra početka."
+        },
+        "position3": {
+          "upright": "Deset mačeva ukazuje da je ciklus već mentalno gotov, ali prihvatanje zaostaje. Narative \"do dna\" ukazuje na prag ponovnog rođenja. \\ N \\ NTHIS kartica kaže da će čast na kraju stvoriti snagu i lakoću.",
+          "reversed": "Deset mačeva preokrećeno ukazuje da je namera da se oporavi, bacila teret i refrimiranje priče je u toku. Pogled za povratak u staru bol može povremeno zadržati. \\ N \\ NTHIS Card naglašava da će mali sporazumi koji izgledaju napred-izgleda (sa sobom) da će zaraditi trajno.",
+          "keywords": [
+            "završiti",
+            "dostava",
+            "ponovno rođenje",
+            "prihvatanje",
+            "poboljšanje"
+          ],
+          "context": "Skriveni krajnji prihvat i restauritet prag."
+        },
+        "position4": {
+          "upright": "Petlja je završena u centru. Poštovanje kraja čini prostor za novo.",
+          "reversed": "Oporavak počinje u centru. Reframing daje snagu.",
+          "keywords": [
+            "završiti",
+            "dostava",
+            "ponovno rođenje",
+            "poboljšanje",
+            "zatvaranje"
+          ],
+          "context": "Centar: Poklon kraja."
+        },
+        "position5": {
+          "upright": "Deset mačeva ukazuje na oštre završetke kao što su zatvaranje datoteke vani, prestanak ili bankrot / invalidnost.",
+          "reversed": "Invertirani deset mačeva nam govori da je spolja osnova osnova za početak otpadaka i oporavka.",
+          "keywords": [
+            "završiti",
+            "zatvaranje",
+            "kriza",
+            "počevši od",
+            "oporavak"
+          ],
+          "context": "Spoljne zatvaranje zahtevaju nove rute."
+        },
+        "position6": {
+          "upright": "Preporuka: Prihvatite završni i dizajnirajte novi okvir.",
+          "reversed": "Savet: Učinite male ponude koje napreduju; Oporavak snage.",
+          "keywords": [
+            "završiti",
+            "prihvatanje",
+            "refrakcija",
+            "početak",
+            "snaga"
+          ],
+          "context": "Savet: Zatim instalirajte novi."
+        },
+        "position7": {
+          "upright": "Moguća budućnost: definitivni kraj; Priča se zatvara i pojavljuje se prag rođenja.",
+          "reversed": "Moguća budućnost: Počinje oporavak; Prošla optužba se otvara i moć se oporavi.",
+          "keywords": [
+            "završiti",
+            "zatvaranje",
+            "ponovno rođenje",
+            "poboljšanje",
+            "prihvatanje"
+          ],
+          "context": "Budući potencijalni i mogući ishodi"
+        }
+      },
+      "pageofswords": {
+        "position1": {
+          "upright": "Princ mačeva predstavlja proces koji je počeo u prošlosti sa željom da nauči, znatiželjno ili komunikacijski napori. Informacije koje ste stekli ili mali koraci koje ste uzeli u tom periodu mogu biti u korenima današnje situacije. \\ N \\ NTHIS kartica podseća da vas je ovaj proces učenja u prošlosti doveo do pažljivije i analitičke perspektive.",
+          "reversed": "Obrnuti princ mačeva simbolizuje da se vode pogrešnim informacijama u prošlosti, uhvaćeni su u tračevima ili nepažljivim koracima. Ova pogrešna orijentacija može biti efikasna u oblikovanju današnjih uslova. \\ N \\ NTHIS kartica takođe može ukazivati na to da su nepažnjene reči ili brzi odluke doneta u prošlosti i dalje se prate do danas.",
+          "keywords": [
+            "učenje",
+            "radoznalost",
+            "informacije",
+            "komunikacija",
+            "prošlost"
+          ],
+          "context": "Uticaj naših napora u učenju ili dezinformacije."
+        },
+        "position2": {
+          "upright": "Princ mačeva ukazuje da je radoznalost trenutno visoka, posmatranje je oštre i nestrpljivost da nauči je živa. Pitanja su usmerena na pravo mesto. \\ N \\ nNev ideje zahtevaju kontrolisane rizike.",
+          "reversed": "Okolišteni princ mačeva ukazuje na rizik od raštrkanih informacija, užurbane presude ili tračeve. Ne dozvolite da brzina zasjene tačnost. \\ N \\ n \\ nSource Verifikacija i jasnoća namere razjasnite um.",
+          "keywords": [
+            "radoznalost",
+            "posmatranje",
+            "komunikacija",
+            "verifikacija",
+            "učenje"
+          ],
+          "context": "Trenutni režim: Istraživanje i prikupljanje podataka, ali selektivni."
+        },
+        "position3": {
+          "upright": "Princ mačeva ukazuje da su mentalna radoznalost, posmatranje i otvorenost za nove ideje snažni guranje iza kulisa. Postavljanje pitanja je vaše nevidljivo gorivo. \\ N \\ NTHIS kartica vam govori o tome da će vam radoznalost uravnotežiti odgovornost, stvoriće oštro krivulje učenja.",
+          "reversed": "Preokrećeni princ mačeva ukazuje na skriveni rizik od tračeva, neorganizovanih prikupljanja informacija ili budan višak. Brze presude mogu podići lažne zastave. \\ N \\ nJS kartica naglašava da će verifikacija izvora i razjašnjenja namera razjasniti um.",
+          "keywords": [
+            "radoznalost",
+            "posmatranje",
+            "učenje"
+          ]
+        }
+      }
+    }
+  }
+}

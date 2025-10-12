@@ -1,0 +1,776 @@
+{
+  "relationship-problems": {
+    "meanings": {
+      "theworld": {
+        "position4": {
+          "keywords": {
+            "4": "extension"
+          },
+          "context": "What I'm ignoring is missing ends. The effect: dissatisfaction lasts. Do it: close it, then start."
+        },
+        "position5": {
+          "upright": "The world says you've completed a mature cycle together, and it's developed a sense of integrity and travel.",
+          "reversed": "The Reverse World tells us that the missing pieces are missing peace, and the unfinished business may be leaking today.",
+          "keywords": {
+            "0": "complete",
+            "1": "integrity",
+            "2": "threshold",
+            "3": "Integration",
+            "4": "extension"
+          },
+          "context": "Completed stages plus open ends, needs integration, now it's time to close the gaps."
+        },
+        "position6": {
+          "upright": "The world emphasizes the ripe completion of cycles, leaving open ends intentionally, and turning the opposite side into a waiting and controlling tool.",
+          "reversed": "The Reverse World risks spending the partner's labor with a half-mast and a half-mast before it's finished, and without integration, there's no peace.",
+          "keywords": {
+            "0": "complete",
+            "1": "Integration",
+            "2": "open tip",
+            "3": "control",
+            "4": "Peace"
+          },
+          "context": "Theme: closure discipline; risk: half jobs; do: complete and share."
+        },
+        "position7": {
+          "upright": "The Earth has the effect of distant distance, different cultures, or broad social networks, which may shape the agenda of global bonds.",
+          "reversed": "The Reverse World points to unfinished business, unbreakable ties with old circles, and unclosed cycles.",
+          "keywords": {
+            "0": "networks",
+            "1": "Distance",
+            "2": "culture",
+            "3": "ancient environment",
+            "4": "closure"
+          },
+          "context": "Wide networks plus/minus effect. Close the old links and maintain the core area."
+        },
+        "position8": {
+          "upright": "The world shows the completion of long-term goals (home, credit, savings) and financial maturity.",
+          "reversed": "The Reverse World points to unfinished plans, extended debts, and unresolved cycles.",
+          "keywords": {
+            "0": "complete",
+            "1": "long term",
+            "2": "loan",
+            "3": "Savings",
+            "4": "cycle"
+          },
+          "context": "Close the plans, connect the targets to concrete milestones."
+        },
+        "position9": {
+          "upright": "If the Earth completes the cycles maturely and is integrated, it points to a permanent union. The mature bond is possible.",
+          "reversed": "Reverse World, loose ends and unfinished files weaken sustainability.",
+          "keywords": {
+            "0": "complete",
+            "1": "Integration",
+            "2": "maturity",
+            "3": "cycle",
+            "4": "closure"
+          },
+          "context": "To drive: close open ends, write common vision."
+        }
+      },
+      "aceofcups": {
+        "position1": {
+          "upright": "The Ace of Hearts says there's a contradiction between the way emotions are expressed and the way needs are seen, while one can remain emotional while the other can remain cautious.",
+          "reversed": "The Reverse Cup Ace shows that emotional blockage and resentment make sharing difficult, and the more the heart stays closed, the more misunderstandings increase.",
+          "keywords": {
+            "0": "emotion",
+            "1": "expression",
+            "2": "Fragrance",
+            "3": "need",
+            "4": "Closeness"
+          },
+          "context": "The emotional root of conflict: the balance of expression and need."
+        },
+        "position2": {
+          "upright": "The Ace of Hearts says the problem is that emotions don't flow safely. The heart is full, but the channel of expression is blocked. The trick is to hide emotion, to avoid shy sharing and vulnerability. The problem is the key to the emotional opening door.",
+          "reversed": "The Reverse Cup Ace talks about the shadowing of repressed resentment and old disappointments. Inside, the overflowing emotion doesn't get out. It's the coldness, distant kindness and numbness. The problem is that the heart shuts itself down.",
+          "keywords": {
+            "0": "emotion",
+            "1": "expression",
+            "2": "Fragrance",
+            "3": "It's a cure.",
+            "4": "Closeness"
+          },
+          "context": "The root problem: emotional flow congestion. It affects areas: safe expression, empathy, bonding."
+        },
+        "position3": {
+          "upright": "The Ace of Hearts says you may have a share in hiding your feelings and not showing your vulnerability, full of heart, but if the channel is closed, the misunderstanding will grow.",
+          "reversed": "The Reverse Cup Ace tells us that you raised the fire by maintaining repressed resentment and emotional blockage.",
+          "keywords": {
+            "0": "emotion",
+            "1": "expression",
+            "2": "Fragrance",
+            "3": "Closeness",
+            "4": "It's a cure."
+          },
+          "context": "Pay: unflowing emotion. Effect: closeness, empathy. Proposal: safe expression door."
+        },
+        "position4": {
+          "upright": "The Ace of Hearts says that he can hide your feelings and ignore your share with the expectation of understanding. If the heart is full, but the door is closed, there is no responsibility.",
+          "reversed": "The Reverse Cup Ace tends to normalize the emotional blockage and deny the openness, and the emotion that doesn't flow is the mask of denial.",
+          "keywords": {
+            "0": "emotion",
+            "1": "expression",
+            "2": "Fragrance",
+            "3": "Closeness",
+            "4": "It's a cure."
+          },
+          "context": "Ignored: the need to share. The effect: the closeness fades. Do it: open the safe expression door."
+        },
+        "position5": {
+          "upright": "The Ace of Hearts says there's been an intense emotional opening at the beginning of your relationship.",
+          "reversed": "The Reverse Cup Ace tells us that emotions are blocked at some point, and the repressed feelings may be creating distance today.",
+          "keywords": {
+            "0": "emotion",
+            "1": "opening",
+            "2": "Fragrance",
+            "3": "blockage",
+            "4": "Closeness"
+          },
+          "context": "Early emotional outburst, time-stamped flow, and now we need a safe expression channel."
+        },
+        "position6": {
+          "upright": "The Ace of Hearts says that emotional openness is nutritious, but love and compassion should not be converted into a reward system.",
+          "reversed": "The Reverse Cup Ace points to the risk of attracting love, creating addiction, and using emotional hunger as leverage.",
+          "keywords": {
+            "0": "love",
+            "1": "Compassion",
+            "2": "The reward is punishment",
+            "3": "openness",
+            "4": "addiction"
+          },
+          "context": "Theme: unconditional temperature; risk: economics of love; do: emotion sharing protocol."
+        },
+        "position7": {
+          "upright": "The Ace of Hearts says there's an emotional-supporting environment, and new acquaintances may have put a warm but effective sound between you.",
+          "reversed": "The Reverse Cup Ace shows that a broken friend or an old relationship affects you with emotional leaks.",
+          "keywords": {
+            "0": "emotional support",
+            "1": "new connection",
+            "2": "Old love",
+            "3": "Frustration",
+            "4": "effect"
+          },
+          "context": "Emotion-based external sounds are active. Set the limit and share dosage together."
+        },
+        "position8": {
+          "upright": "The Ace of Hearts says that emotional support and generosity can be an ointment in the stress of money, and solidarity from the heart heals the budget.",
+          "reversed": "The Reverse Cup Ace tells of the possibility that I can fill the emotional void with shopping and reward myself for increasing expenses.",
+          "keywords": {
+            "0": "support",
+            "1": "generosity",
+            "2": "shopping",
+            "3": "emotion",
+            "4": "ointment"
+          },
+          "context": "Don't make up for the feeling with money; talk about the support."
+        },
+        "position9": {
+          "upright": "The Ace of Hearts has a good chance of continuing your relationship with fresh emotions and open hearts, and compassion and grace give life to the bond.",
+          "reversed": "If the reverse ace of hearts continues, emotional blockage and suppression, the continuity becomes difficult.",
+          "keywords": {
+            "0": "new feeling",
+            "1": "open heart",
+            "2": "Compassion",
+            "3": "congestion",
+            "4": "flow"
+          },
+          "context": "To drive: call emotion + rhythm of soft expression."
+        }
+      },
+      "twoofcups": {
+        "position1": {
+          "upright": "The two Cups show that there is a difference in the prospect of reciprocity and equal exchange. The perception of imbalance between given and received creates conflict.",
+          "reversed": "The Reverse Two Cup says that dissonance of harmony, misunderstanding, and fragile bonds increase tension, and unscheduled expectations increase the problem.",
+          "keywords": {
+            "0": "reciprocity",
+            "1": "balance",
+            "2": "compatibility",
+            "3": "expectation",
+            "4": "connection"
+          },
+          "context": "The emotional root of conflict: equality and reciprocity."
+        },
+        "position2": {
+          "upright": "The two Cups say the problem is in the balance of reciprocity and equal exchange. It does not feel equal to the release of the field.",
+          "reversed": "The Reverse Two Cups tells us that harmony has been broken and small misunderstandings have become iconic events. There are microfractures in the ligament. The problem is that the relationship contract has not been updated.",
+          "keywords": {
+            "0": "reciprocity",
+            "1": "balance",
+            "2": "compatibility",
+            "3": "connection",
+            "4": "Equality"
+          },
+          "context": "The root problem is: Fair trade. It affects areas: gesture language, unscheduled expectations."
+        },
+        "position3": {
+          "upright": "The two Cups say that you may have a share in the balance that you have given, and that you may feel unfairly.",
+          "reversed": "The Reverse Two Cups tells us that you don't talk about micro-fractures, but you grow fire by moving away, and the bond is thinned by minor neglects.",
+          "keywords": {
+            "0": "reciprocity",
+            "1": "balance",
+            "2": "compatibility",
+            "3": "connection",
+            "4": "Equality"
+          },
+          "context": "Pay: fair trade deficit. Effect: trust, temperature. Proposal: align gesture language."
+        },
+        "position4": {
+          "upright": "The two Cups say that you may not see the imbalance of gestures, but that you may be inclined to say, \"I'm already giving.\" The sense of equality doesn't come without talking.",
+          "reversed": "The Reverse Two Cups emphasizes your tendency to deny your share by ignoring minor fractures.",
+          "keywords": {
+            "0": "reciprocity",
+            "1": "balance",
+            "2": "compatibility",
+            "3": "Equality",
+            "4": "connection"
+          },
+          "context": "Ignored: fair trade. Influence: confidence wear off. Do it: align gesture language."
+        },
+        "position5": {
+          "upright": "Two Cups says that reciprocity and equality are strong at first.",
+          "reversed": "Two Reverse Cups tells us that the balance of gestures has been broken from time to time. Small neglects may have accumulated resentment.",
+          "keywords": {
+            "0": "reciprocity",
+            "1": "balance",
+            "2": "connection",
+            "3": "gesture",
+            "4": "neglect"
+          },
+          "context": "It's a strong match, micro imbalances piled up, so fair trade needs to be discussed."
+        },
+        "position6": {
+          "upright": "The two Cups exalt the reciprocity, the disparity of non-equal gestures and labor can turn into invisible exploitation.",
+          "reversed": "The Reverse Two Cup describes the risk of collecting minor resentments and turning a partner into a debtor and turning a relationship into a scoreboard.",
+          "keywords": {
+            "0": "reciprocity",
+            "1": "balance",
+            "2": "gesture",
+            "3": "labour",
+            "4": "Equality"
+          },
+          "context": "Theme: fair trade; risk: debting; do: gesture language and limits."
+        },
+        "position7": {
+          "upright": "Two Cups tells of a pair/friendly pair that supports you, and there are safe people who serve as bridges.",
+          "reversed": "The Reverse Two Cup points to the dissolution of the relatives who sided with us and they deepened their language.",
+          "keywords": {
+            "0": "reciprocity",
+            "1": "a couple of friends",
+            "2": "side",
+            "3": "bridge",
+            "4": "alliance"
+          },
+          "context": "Support alliances are possible, but biased friends can grow cracks."
+        },
+        "position8": {
+          "upright": "Two Cups, common wallets, and mutual harmony, even small gestures increase financial confidence.",
+          "reversed": "The Inverse Two Cups tells us that I gave it to you and that the account and the inequality of your sense of contribution have caused tension.",
+          "keywords": {
+            "0": "common wallet",
+            "1": "Equality",
+            "2": "gesture",
+            "3": "contribution",
+            "4": "Trust"
+          },
+          "context": "Talk regularly about sharing and contributing; don't score."
+        },
+        "position9": {
+          "upright": "Two Cups point to a long-lived partnership with reciprocity, respect, and small gestures.",
+          "reversed": "Two Reverse Cups, equality is broken, and if resentment builds up, the bond is broken.",
+          "keywords": {
+            "0": "reciprocity",
+            "1": "alliance",
+            "2": "Equality",
+            "3": "Frustration",
+            "4": "compatibility"
+          },
+          "context": "It's a weekly little gesture and thank-you protocol."
+        }
+      },
+      "threeofcups": {
+        "position1": {
+          "upright": "Three Cups point to friction in the balance of social life, social circle and shared joy, while one wants more socialism, while the other wants to maintain privacy.",
+          "reversed": "The Reverse Three Cups tells us that jealousy, feeling left out, or superficial socialism damage the bond.",
+          "keywords": {
+            "0": "social",
+            "1": "Jealousy",
+            "2": "belonging",
+            "3": "share",
+            "4": "privacy"
+          },
+          "context": "The emotional root of conflict: social space and privacy."
+        },
+        "position2": {
+          "upright": "Three Cups say the problem occurs in social space, social circles and shared rituals.",
+          "reversed": "The Reverse Three Cups tells us that superficial socialism and gossip shadows damage the bond. The real connection is weak.",
+          "keywords": {
+            "0": "social",
+            "1": "privacy",
+            "2": "Jealousy",
+            "3": "ritual",
+            "4": "belonging"
+          },
+          "context": "The root problem: social boundary and rhythm. The areas it affects: time plan, third parties, belonging."
+        },
+        "position3": {
+          "upright": "The three Cups say that when they share their social space and time, they increase their share. When their privacy is out of balance, envy arises.",
+          "reversed": "The Inverse Three Cups tells us that you took refuge in superficial sociality, delaying actual contact, expanding the fire, draining the flow from the outside.",
+          "keywords": {
+            "0": "social",
+            "1": "privacy",
+            "2": "Jealousy",
+            "3": "ritual",
+            "4": "belonging"
+          },
+          "context": "Pay: social rhythm incompatibility. Effect: trust, belonging. Proposal: balancing the time share."
+        },
+        "position4": {
+          "upright": "Three Cups say that you can break the balance of social security and ignore your share by calling it normal. Time sharing must be discussed.",
+          "reversed": "The Inverse Three Cups tells us that it can shield superficial socialism by delaying deep contact and feeding denial.",
+          "keywords": {
+            "0": "social",
+            "1": "privacy",
+            "2": "time",
+            "3": "belonging",
+            "4": "ritual"
+          },
+          "context": "Ignored: balanced time. Influence: jealousy/space increases. Do: equal social rhythm."
+        },
+        "position5": {
+          "upright": "Three Cups says the energy of friendship and celebration keeps your relationship alive.",
+          "reversed": "The Inverse Three Cups tells us that the third person/crowd effect is from time to time, and the need for privacy may have been invisible.",
+          "keywords": {
+            "0": "Friendship",
+            "1": "celebration",
+            "2": "Community",
+            "3": "privacy",
+            "4": "Jealousy"
+          },
+          "context": "Social support's high, privacy's unstable, and now you two have a ritual."
+        },
+        "position6": {
+          "upright": "Three Cups say social support is healing, but the crowd and the third must not be made a means of jealousy or oppression.",
+          "reversed": "The Reverse Three Cup points out the risk of using external approval as a weapon and reducing the partner.",
+          "keywords": {
+            "0": "Community",
+            "1": "Comparison",
+            "2": "Jealousy",
+            "3": "confirmation",
+            "4": "privacy"
+          },
+          "context": "Theme: social space; risk: third person pressure; do it: privacy agreement."
+        },
+        "position7": {
+          "upright": "Three Cups brings the pep and celebration energy of the group of friends to strengthen your right environmental bond.",
+          "reversed": "The Reverse Three Cup points to confusion in extreme social environment, gossip, or the flirty behavior of third parties.",
+          "keywords": {
+            "0": "friend environment",
+            "1": "celebration",
+            "2": "gossip",
+            "3": "Third person",
+            "4": "privacy"
+          },
+          "context": "If it's good for the crowd, open it up, if it's not coming, cut it down."
+        },
+        "position8": {
+          "upright": "Three Cups point to social spending and celebration budgets, and when planned, it feeds the bonds.",
+          "reversed": "The Inverse Three Cups is the excessive spending of the crowd, the pressure of every event, and the unnecessary expense warning.",
+          "keywords": {
+            "0": "social",
+            "1": "celebration",
+            "2": "pressure",
+            "3": "cost",
+            "4": "Plan"
+          },
+          "context": "Put in a social budget; learn to say no."
+        },
+        "position9": {
+          "upright": "Three Cups, social support and celebration together keep the relationship alive, the shared joys add to the bond.",
+          "reversed": "The Reverse Three Cups, gossip, and the shadow of the third party wear down the process.",
+          "keywords": {
+            "0": "celebration",
+            "1": "Community",
+            "2": "support",
+            "3": "gossip",
+            "4": "privacy"
+          },
+          "context": "To drive: safe environment + privacy limit."
+        }
+      },
+      "fourofcups": {
+        "position1": {
+          "upright": "The Four Cups point to a discussion of the perception of disinterest and emotional satisfaction, while one can look for a new spark and the other can be satisfied with the current order.",
+          "reversed": "The Reverse Four Cup shows that the opportunity to ignore and the apathetic attitude is misread, and lack of gratitude increases the conflict.",
+          "keywords": {
+            "0": "Recklessness",
+            "1": "satisfaction",
+            "2": "opportunity",
+            "3": "Gratitude",
+            "4": "perception"
+          },
+          "context": "The emotional root of conflict: the balance of satisfaction and attention."
+        },
+        "position2": {
+          "upright": "Four Cups say the problem is in a sense of dissatisfaction and disinterest. Opportunities are in the horizon when they're at the door.",
+          "reversed": "The Reverse Four Cup shows that the curtain of apathy has been opened, but the courage to reach for a new one is low. The old disappointment shadows the new proposal.: Involuntary yeses, postponement. The problem is rooted in emotional harmony.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "interest",
+            "2": "opportunity",
+            "3": "Gratitude",
+            "4": "focus"
+          },
+          "context": "The root problem is the discussion of emotional satire. The areas it affects are motivation, gratitude, openness."
+        },
+        "position3": {
+          "upright": "Four Cups say you may have lit the fire with your uninteresting attitude, but hope falls when you don't notice what's good.",
+          "reversed": "The Reverse Four Cups tells us that you continue the apathy and expand your share by staying closed to opportunities, and the lack of gratitude cools the bond.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "interest",
+            "2": "opportunity",
+            "3": "Gratitude",
+            "4": "focus"
+          },
+          "context": "Pay: apathy/interest perception. Effect: motivation, closeness. Suggest: show appreciation."
+        },
+        "position4": {
+          "upright": "Four Cups says you can explain indifference with fatigue and ignore your share, and the lack of gratitude is read like ice.",
+          "reversed": "The Reverse Four Cup tends to normalize reluctance and deny the responsibility of appreciation.",
+          "keywords": {
+            "0": "interest",
+            "1": "satisfaction",
+            "2": "Gratitude",
+            "3": "focus",
+            "4": "opportunity"
+          },
+          "context": "Ignore: visible appreciation. Effect: motivation drops. Do it: little thank-you rhythm."
+        },
+        "position5": {
+          "upright": "Four Cups say there are cycles of periodic indifference or dissatisfaction, and the color fades when Thanksgiving is forgotten.",
+          "reversed": "The Reverse Four Cup tells us that ignoring opportunities leaves a mark, and apathy may be reflected today.",
+          "keywords": {
+            "0": "Recklessness",
+            "1": "satisfaction",
+            "2": "Gratitude",
+            "3": "opportunity",
+            "4": "apathic"
+          },
+          "context": "Moments of emotional stagnation, low appreciation, and now it's time for a little appreciation."
+        },
+        "position6": {
+          "upright": "The Four Cups say that indifference and boredom can create passive exploitation, and to withdraw appreciation is a form of control.",
+          "reversed": "The Reverse Four Cup, reluctantly describes the risk of punishing his partner and increasing his power by ignoring opportunities.",
+          "keywords": {
+            "0": "Recklessness",
+            "1": "appreciation",
+            "2": "passive",
+            "3": "opportunity",
+            "4": "control"
+          },
+          "context": "Theme: appreciation economy; risk: leverage interest; do it: visible thank-you rhythm."
+        },
+        "position7": {
+          "upright": "The four Cups say that the environment, which says, \"Don't worry about it,\" increases the distance. External apathy can turn into internal cooling.",
+          "reversed": "The Reverse Four Cup points to the spread of negative stimuli and reluctance that prevents you from seeing opportunities.",
+          "keywords": {
+            "0": "Recklessness",
+            "1": "suggestion",
+            "2": "Cooling",
+            "3": "opportunity",
+            "4": "Motivation"
+          },
+          "context": "Turn down the demoralizing noise, pick the little environment that's good for you."
+        },
+        "position8": {
+          "upright": "Four Cups, motivation, and if we do it with a sense of motivation, it's not enough to force us to release the spending.",
+          "reversed": "The Reverse Four Cup describes the tendency to ignore opportunities and miss discounts.",
+          "keywords": {
+            "0": "apathic",
+            "1": "opportunity",
+            "2": "Motivation",
+            "3": "savings",
+            "4": "Recklessness"
+          },
+          "context": "To notice small opportunities, look on purpose; exit the autopilot."
+        },
+        "position9": {
+          "upright": "Four Cups, apathy, and frustration, and if you go over it, the bond can be restored, awareness returns to opportunity.",
+          "reversed": "Four Reverse Cups, if indifference becomes chronic, the relationship is extinguished.",
+          "keywords": {
+            "0": "apathic",
+            "1": "opportunity",
+            "2": "renovation",
+            "3": "interest",
+            "4": "Motivation"
+          },
+          "context": "To drive: planned new experiences plus appreciation routine."
+        }
+      },
+      "fiveofcups": {
+        "position1": {
+          "upright": "Five Cups say past resentments cloud the present and that focusing on loss fuels conflict.",
+          "reversed": "The Reverse Five Cup shows that when forgiveness is delayed, the cycle of blame continues, and the meaning of what happened is essential.",
+          "keywords": {
+            "0": "missing",
+            "1": "mourning",
+            "2": "Forgiveness",
+            "3": "charge",
+            "4": "Recovery"
+          },
+          "context": "The emotional root of conflict: the shadow of past resentment."
+        },
+        "position2": {
+          "upright": "Five Cups say it's about focusing on past losses and directing the present. The remaining two cups are invisible.",
+          "reversed": "The Reverse Five Cup says that even though he intends to recover, the forgiveness door is not fully opened. The heart is wary.",
+          "keywords": {
+            "0": "mourning",
+            "1": "missing",
+            "2": "Forgiveness",
+            "3": "Recovery",
+            "4": "hope"
+          },
+          "context": "The root problem: the shadow of the past. The areas it affects: repair, forgiveness, focus on the future."
+        },
+        "position3": {
+          "upright": "Five Cups says that when you're stuck in the past and focused on loss, you have a share, and the eye that doesn't see the rest weakens your bond with today.",
+          "reversed": "The Reverse Five Cup tells us that you delay forgiveness and continue the language of contrition and grow fire, and grief demands cooperation.",
+          "keywords": {
+            "0": "mourning",
+            "1": "missing",
+            "2": "Forgiveness",
+            "3": "Recovery",
+            "4": "hope"
+          },
+          "context": "Pay: shadow of the past. Effect: repair, progress. Suggest: make sense + leave."
+        },
+        "position4": {
+          "upright": "Five Cups say that they can legitimize holding on to the past and ignore your contribution to this day.",
+          "reversed": "The Reverse Five Cup explains that it can feed denial by making a habit of delaying forgiveness.",
+          "keywords": {
+            "0": "mourning",
+            "1": "missing",
+            "2": "Forgiveness",
+            "3": "Recovery",
+            "4": "hope"
+          },
+          "context": "Ignored: recovery step. The effect: repair delays. Do it: the minimaturization ritual."
+        },
+        "position5": {
+          "upright": "Five Cups says there's been a loss or disappointment in the past, and the grieving process has tested your bond.",
+          "reversed": "The Reverse Five Cup tells us that when forgiveness delays, there may still be sensitive spots today.",
+          "keywords": {
+            "0": "mourning",
+            "1": "missing",
+            "2": "Frustration",
+            "3": "Forgiveness",
+            "4": "Recovery"
+          },
+          "context": "It's a difficult time of emotion, some of it's been repaired, some of it's alive, and now we need a gentle closure."
+        },
+        "position6": {
+          "upright": "Five Cups acknowledge that grief and disappointment are real, but constant reminder of past suffering can turn into a debtor's tool.",
+          "reversed": "The Reverse Five Cup points to the risk of delaying forgiveness and building power over guilt.",
+          "keywords": {
+            "0": "mourning",
+            "1": "Frustration",
+            "2": "Forgiveness",
+            "3": "Guilt",
+            "4": "Recovery"
+          },
+          "context": "Theme: age limit; risk: guilt management; do: closure and new page."
+        },
+        "position7": {
+          "upright": "Five Cups says that those who remember past losses carry emotional weights, and grief tellers infiltrate the relationship.",
+          "reversed": "The Reverse Five Cup shows that the constant noise that opens up the past delays the recovery.",
+          "keywords": {
+            "0": "mourning",
+            "1": "history",
+            "2": "missing",
+            "3": "reminder",
+            "4": "Recovery"
+          },
+          "context": "It creates an environmental spiral focused on the past, so keep the healing and future sounds close."
+        },
+        "position8": {
+          "upright": "Five Cups carry the sadness of past financial losses, and mourning is natural, but the window of hope is open.",
+          "reversed": "The Reverse Five Cup tells of the risk of missing new opportunities with regret. Forgiveness also relaxes the budget.",
+          "keywords": {
+            "0": "missing",
+            "1": "mourning",
+            "2": "Regret",
+            "3": "opportunity",
+            "4": "Recovery"
+          },
+          "context": "Learn from loss; take microsteps focused on the future."
+        },
+        "position9": {
+          "upright": "Five Cups, mourning and learning, bridges can be repaired; the window of hope is open.",
+          "reversed": "Inverse Five Cups, remaining stuck in the past prevents continuity.",
+          "keywords": {
+            "0": "mourning",
+            "1": "compensation",
+            "2": "hope",
+            "3": "history",
+            "4": "repair"
+          },
+          "context": "To drive: closing speech plus focus on the future."
+        }
+      },
+      "sixofcups": {
+        "position1": {
+          "upright": "Six Cups say that today's contact has been broken due to nostalgia and old patterns. The good times of the past shape today's expectations.",
+          "reversed": "The Inverse Six Cups show that the stabilisation of the past prevents development and the repeated childish responses cause conflict.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "history",
+            "2": "pattern",
+            "3": "expectation",
+            "4": "Development"
+          },
+          "context": "The emotional root of conflict is that the past leaks into the present."
+        },
+        "position2": {
+          "upright": "Six Cups say the problem is that nostalgia shapes the present. To tell the old good is to multiply the present. &gt;&gt; Childhood patterns, ritualistic rituals. &gt;&gt; The problem is extreme commitment to the comfort of the past.",
+          "reversed": "The Inverse Six Cups tells us that the retrogression has blocked development. Today's needs are delayed.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "history",
+            "2": "pattern",
+            "3": "Comfort",
+            "4": "Now."
+          },
+          "context": "The root problem is the look that depends on the past. The areas that it affects: innovation, flexibility, moment awareness."
+        },
+        "position3": {
+          "upright": "Six Cups say that you may have a share in nostalgia, with expectations, such as the old one. The injustice will grow by now.",
+          "reversed": "The Reverse Six Cup goes back to childish arguments and tells us that you've grown fire by neglecting this day, and the comfort of the past is not a guide, but a chain.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "history",
+            "2": "pattern",
+            "3": "Comfort",
+            "4": "Now."
+          },
+          "context": "Pay: background-based view. Effect: innovation, flexibility. Proposal: calibration today."
+        },
+        "position4": {
+          "upright": "Six Cups say that you can shield nostalgia and ignore the present needs.",
+          "reversed": "The Reverse Six Cup tells us that it can hide its share by refusing to notice childhood patterns.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "history",
+            "2": "pattern",
+            "3": "Comfort",
+            "4": "Now."
+          },
+          "context": "Ignored: today's need. Influence: flexibility decreases. Do it: now check here."
+        },
+        "position5": {
+          "upright": "Six Cups, sweet memories and pure bonds are often remembered.",
+          "reversed": "The Inverse Six Cups tells us that overhanging on to the past has clouded the present, and childhood patterns can be triggering.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "Innocence",
+            "2": "history",
+            "3": "pattern",
+            "4": "Now."
+          },
+          "context": "Good memories are strong, there's a lot of past idealization, and now we need to set up today."
+        },
+        "position6": {
+          "upright": "Six Cups say that sweet memories connect, but with nostalgia, demand today can be exploited, it can put pressure on rhetoric like it used to.",
+          "reversed": "The Reverse Six Cup highlights the risk of delaying responsibility as an excuse for childhood patterns.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "history",
+            "2": "pattern",
+            "3": "Comfort",
+            "4": "demand"
+          },
+          "context": "Theme: past and now; risk: nostalgia pressure; do it: talk about today's needs."
+        },
+        "position7": {
+          "upright": "Six Cups, like their childhood friends/family friends, tells of the impact of the nostalgic environment.",
+          "reversed": "The Reverse Six Cup points to the interference that has clouded today's day by the pressure of the old days.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "childhood environment",
+            "2": "family friend",
+            "3": "pressure",
+            "4": "Now."
+          },
+          "context": "The past is sweet, but be moderate."
+        },
+        "position8": {
+          "upright": "Six Cups bring up family support, old habits and nostalgic expenses.",
+          "reversed": "The Inverse Six Cups say that expensive habits, which were used to be so, have pushed the budget.",
+          "keywords": {
+            "0": "family",
+            "1": "nostalgia",
+            "2": "habit",
+            "3": "support",
+            "4": "expensive routine"
+          },
+          "context": "The past is beautiful; let it live today in its proper, sustainable form."
+        },
+        "position9": {
+          "upright": "Six Cups, warm memories together carry the relationship, innocence and compassion bring a long life.",
+          "reversed": "Reverse Six Cups, nostalgia today, shadows, progress stops.",
+          "keywords": {
+            "0": "nostalgia",
+            "1": "memory",
+            "2": "Compassion",
+            "3": "Progress",
+            "4": "balance"
+          },
+          "context": "To drive: memories plus rituals that feed today."
+        }
+      },
+      "sevenofcups": {
+        "position1": {
+          "upright": "The Seven Cups say that the fuzzy boundaries between fantasy and reality create contradictions, and the number of choices increase in ambiguity.",
+          "reversed": "The Reverse Seven Cup shows that idealization and escape cloud the needs of the bond. The lack of clear criteria creates problems.",
+          "keywords": {
+            "0": "dream",
+            "1": "reality",
+            "2": "indecisive",
+            "3": "option",
+            "4": "idealization"
+          },
+          "context": "The emotional root of contradiction: the balance of imagination and reality."
+        },
+        "position2": {
+          "upright": "The Seven Cups say the problem is an abundance of options and a real blur. When the decision is delayed, the bond gets tired.",
+          "reversed": "The Inverse Seven Cups tells us that you lack courage to decide despite the dissolution of the fog. It is a choice not to make. Partial intentions, vague words. The problem is lack of commitment.",
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "real",
+            "3": "decision",
+            "4": "criteria"
+          },
+          "context": "The root problem is the unsolved choice. It affects areas: target, responsibility, commitment."
+        },
+        "position3": {
+          "upright": "The Seven Cups say that when you blur the real line and miss the decision, you have a share.",
+          "reversed": "The Inverse Seven Cups tells us that you have increased fire by multiplying choices and not setting criteria, and not choosing is choosing.",
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "real",
+            "3": "decision",
+            "4": "criteria"
+          },
+          "context": "Pay: non-clear preference. Effect: target, commitment. Suggest: set criteria."
+        },
+        "position4": {
+          "upright": "The Seven Cups say that you can explain indecisiveness and ignore responsibility. Without the clear criteria, denial is easy.",
+          "reversed": "The Reverse Seven Cup highlights your tendency to dream and deny the price of choice."
+        }
+      }
+    }
+  }
+}

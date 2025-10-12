@@ -1,0 +1,776 @@
+{
+  "money": {
+    "meanings": {
+      "threeofcups": {
+        "position5": {
+          "keywords": {
+            "0": "Community",
+            "1": "support",
+            "2": "share",
+            "3": "celebration",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, the lack of support or support comes first."
+        },
+        "position6": {
+          "upright": "Three Cups demonstrates the power of supporting environment, celebration and cooperation in financial plans.",
+          "reversed": "The Reverse Three Cup points to excessive spending in financial plans or the risk of superficiality in cooperation.",
+          "keywords": {
+            "0": "celebration",
+            "1": "co-operation",
+            "2": "support",
+            "3": "Community",
+            "4": "success"
+          },
+          "context": "In new financial plans, supportive environments bring blessings."
+        },
+        "position7": {
+          "upright": "The three Cups show the future financial plan for public support, joy and gain from joint projects.",
+          "reversed": "The Reverse Three Cup points to superficiality, excessive spending or problems in financial projects.",
+          "keywords": {
+            "0": "Community",
+            "1": "celebration",
+            "2": "gain",
+            "3": "support",
+            "4": "share"
+          },
+          "context": "The future financial plans will bring forth community support or superficial spending."
+        },
+        "position8": {
+          "upright": "The three Cups show that social environment, celebrations and collaboration strengthen their ability to make money.",
+          "reversed": "The Inverse Three Cups may weaken the financial focus due to superficial connections or extreme entertainment.",
+          "keywords": {
+            "0": "Community",
+            "1": "celebration",
+            "2": "support",
+            "3": "network",
+            "4": "share"
+          },
+          "context": "Your ability to make money is linked to social environment or superficiality."
+        }
+      },
+      "fourofcups": {
+        "position1": {
+          "upright": "Four Cups point to the lack of opportunity and the anxiety of dissatisfaction.",
+          "reversed": "The Reverse Four Cup reveals the fear of past opportunities being missed and not learning from it, which might block you out.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "opportunity",
+            "2": "Concern",
+            "3": "Carelessness",
+            "4": "Luck"
+          },
+          "context": "The anxiety feeds on the lack of opportunity and dissatisfaction."
+        },
+        "position2": {
+          "upright": "The Four of Hearts means that you're looking for security by noticing the available resources.",
+          "reversed": "The Reverse Cup Four points to the sight of opportunities and the anxiety of dissatisfaction, the desire for security, the weakness of carelessness.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "Gratitude",
+            "2": "opportunity",
+            "3": "security",
+            "4": "Awakening"
+          },
+          "context": "You build security with awareness and gratitude."
+        },
+        "position3": {
+          "upright": "Four Cups point to a tendency to ignore money or opportunities, which can lead to financial dissatisfaction.",
+          "reversed": "The Reverse Four Cup shows the process of reviewing new opportunities and opening up to different money routes.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "Recklessness",
+            "2": "opportunity",
+            "3": "Money",
+            "4": "new direction"
+          },
+          "context": "The lack of awareness of the use of money is risky."
+        },
+        "position4": {
+          "upright": "You may have experienced dissatisfaction or disinterest in money in the past.",
+          "reversed": "The Reverse Four Cup is a sign of undetected opportunities or missed financial chances.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "Recklessness",
+            "2": "opportunity",
+            "3": "Money",
+            "4": "awareness"
+          },
+          "context": "In the past, there was a lack of interest in money or dissatisfaction."
+        },
+        "position5": {
+          "upright": "The Four Cups can show their feelings of reluctance or dissatisfaction towards financial responsibilities, and your mind may have remained in past burdens.",
+          "reversed": "The Reverse Four Cup points to gaining a new perspective on financial responsibilities and reinteresting.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "dissatisfaction",
+            "2": "Regeneration",
+            "3": "interest",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, reluctance or a new awareness would be decisive."
+        },
+        "position6": {
+          "upright": "Four Cups point to the tendency to ignore the opportunities available in financial plans, to be open to innovation.",
+          "reversed": "The Reverse Four Cup shows the process of increased awareness of financial plans and the evaluation of new opportunities.",
+          "keywords": {
+            "0": "awareness",
+            "1": "dissatisfaction",
+            "2": "Regeneration",
+            "3": "Attention",
+            "4": "option"
+          },
+          "context": "In new financial plans, you need to recognize the opportunities available."
+        },
+        "position7": {
+          "upright": "Four Cups point to the risk of ignoring available opportunities in future financial plans, which will increase the abundance of gratitude and awareness.",
+          "reversed": "The Inverse Four Cups demonstrates the awakening of new opportunities and the financial decision-making of more conscious decisions.",
+          "keywords": {
+            "0": "opportunity",
+            "1": "dissatisfaction",
+            "2": "Gratitude",
+            "3": "Awakening",
+            "4": "awareness"
+          },
+          "context": "The future financial plans will preempt either dissatisfaction or awareness."
+        },
+        "position8": {
+          "upright": "The Four Cups show that their abilities are not fully used for ignoring opportunities or dissatisfaction.",
+          "reversed": "The Reverse Four Cup points to new awareness and gratitude that financial skills can be strengthened again.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "opportunity",
+            "2": "awareness",
+            "3": "Motivation",
+            "4": "recession"
+          },
+          "context": "Your ability to make money depends on seeing or missing opportunities."
+        }
+      },
+      "fiveofcups": {
+        "position1": {
+          "upright": "Five Cups point to loss and disappointment anxiety, and you may be afraid that financial failures will always find you.",
+          "reversed": "The Reverse Five Cups, not being able to recover and holding on to past losses, raises anxiety, which makes you uneasy that you can't complete the financial grieving process.",
+          "keywords": {
+            "0": "missing",
+            "1": "Disappointment",
+            "2": "Concern",
+            "3": "sadness",
+            "4": "financial failure"
+          },
+          "context": "Concern arises from past financial losses and disappointments."
+        },
+        "position2": {
+          "upright": "The Five of Hearts shows that by learning about security from loss and focusing on what's left, trust is reborn with hope.",
+          "reversed": "The Reverse Heart Five points to the anxiety of being stuck in the past, and the desire for safety shakes when it chokes.",
+          "keywords": {
+            "0": "missing",
+            "1": "hope",
+            "2": "It's a cure.",
+            "3": "security",
+            "4": "transformation"
+          },
+          "context": "You can accept the loss of security and find it with new hopes."
+        },
+        "position3": {
+          "upright": "Five Cups point to the tendency to use money desperately by focusing on past losses.",
+          "reversed": "The Reverse Five Cup shows learning from financial losses and developing a new approach.",
+          "keywords": {
+            "0": "missing",
+            "1": "despair",
+            "2": "Money",
+            "3": "opportunity",
+            "4": "Regeneration"
+          },
+          "context": "Past experiences in the use of money are effective."
+        },
+        "position4": {
+          "upright": "You may have suffered financial losses or regrets in the past.",
+          "reversed": "The Reverse Five Cup shows the process of recovering from financial losses.",
+          "keywords": {
+            "0": "missing",
+            "1": "Regret",
+            "2": "Money",
+            "3": "mourning",
+            "4": "Recovery"
+          },
+          "context": "In the past, financial losses left emotional scars."
+        },
+        "position5": {
+          "upright": "Five Cups point to loss, regret, or sadness about financial responsibilities, and those who can't do it can force the heart.",
+          "reversed": "The Reverse Five Cup shows that financial responsibilities have begun to recover and find hope again.",
+          "keywords": {
+            "0": "missing",
+            "1": "Regret",
+            "2": "Recovery",
+            "3": "hope",
+            "4": "responsibilities"
+          },
+          "context": "The loss of financial responsibilities and recovery cycle are in the forefront."
+        },
+        "position6": {
+          "upright": "Five Cups point to moving in the shadow of past losses in financial plans. It's important to focus on the remaining possibilities.",
+          "reversed": "The Reverse Five Cup represents the recovery of financial plans and the energy of a new beginning.",
+          "keywords": {
+            "0": "missing",
+            "1": "focus",
+            "2": "Regeneration",
+            "3": "hope",
+            "4": "It's a cure."
+          },
+          "context": "Leave the past in the new financial plans and move on to the possibilities available."
+        },
+        "position7": {
+          "upright": "Five Cups point to the sadness of future financial losses or false investments, but you need to focus on the remaining opportunities.",
+          "reversed": "The Reverse Five Cup shows how to build the future with the recovery process, new hopes, and lessons from past mistakes.",
+          "keywords": {
+            "0": "missing",
+            "1": "lesson",
+            "2": "hope",
+            "3": "It's a cure.",
+            "4": "focus"
+          },
+          "context": "The next financial plan will be lost or recovered."
+        },
+        "position8": {
+          "upright": "Five Cups shows that past losses or disappointments cloud their ability to make money.",
+          "reversed": "The Reverse Five Cup indicates that by focusing on recovery, hope, and present opportunities, you can restore your abilities.",
+          "keywords": {
+            "0": "missing",
+            "1": "Disappointment",
+            "2": "hope",
+            "3": "opportunity",
+            "4": "It's a cure."
+          },
+          "context": "Your ability to make money depends on focusing on loss or recovery."
+        }
+      },
+      "sixofcups": {
+        "position1": {
+          "upright": "Six Cups point to the anxiety of past financial habits, worrying about old mistakes repeating themselves.",
+          "reversed": "The Reverse Six Cup exposes the anxiety of overextending the past, old debts or old schemes may disturb your peace.",
+          "keywords": {
+            "0": "history",
+            "1": "habit",
+            "2": "Concern",
+            "3": "nostalgia",
+            "4": "again"
+          },
+          "context": "Concern arises from repeated financial errors from the past."
+        },
+        "position2": {
+          "upright": "The Six of Hearts shows you're looking for security with nostalgia and values from the past.",
+          "reversed": "The reverse Six of Hearts points to the anxiety of being stuck in the past, and the desire for safety can be limited to old patterns.",
+          "keywords": {
+            "0": "history",
+            "1": "nostalgia",
+            "2": "value",
+            "3": "security",
+            "4": "memory"
+          },
+          "context": "You build security with familiar and profound values."
+        },
+        "position3": {
+          "upright": "Six Cups point to the tendency to use money for nostalgia, family, or background-based purposes.",
+          "reversed": "The Reverse Six Cup points to the past's fiscal habits or childish spending.",
+          "keywords": {
+            "0": "family",
+            "1": "history",
+            "2": "help",
+            "3": "nostalgia",
+            "4": "Money"
+          },
+          "context": "The use of money is felt by past experience and family influence."
+        },
+        "position4": {
+          "upright": "In the past, family or childhood experiences may have shaped your relationship with money.",
+          "reversed": "The Reverse Six Cup shows that financial progress has become difficult due to the fact that it's stuck in the past.",
+          "keywords": {
+            "0": "history",
+            "1": "family",
+            "2": "nostalgia",
+            "3": "Money",
+            "4": "habit"
+          },
+          "context": "In the past, your attitude towards money was influenced by the root family."
+        },
+        "position5": {
+          "upright": "Six Cups can show financial responsibilities or family obligations from the past, where childhood or family support can be effective.",
+          "reversed": "The Reverse Six Cup points out that responsibilities from the past make progress difficult.",
+          "keywords": {
+            "0": "history",
+            "1": "family",
+            "2": "support",
+            "3": "obligation",
+            "4": "responsibilities"
+          },
+          "context": "In financial responsibilities, ties from the past or obstacles arise."
+        },
+        "position6": {
+          "upright": "Six Cups show opportunity and help from past experiences in financial plans, and learning from the past pays off.",
+          "reversed": "The Reverse Six Cup points out the risk of extreme commitment to the past and failure to move forward in financial plans.",
+          "keywords": {
+            "0": "history",
+            "1": "help",
+            "2": "opportunity",
+            "3": "experience",
+            "4": "Compassion"
+          },
+          "context": "The lessons of the past will lead to new financial plans."
+        },
+        "position7": {
+          "upright": "Six Cups indicate that with lessons learned from past experiences, safe financial plans can be set up in the future.",
+          "reversed": "The Reverse Six Cup points to the risk of overextending the past and repeating the same mistakes.",
+          "keywords": {
+            "0": "history",
+            "1": "lesson",
+            "2": "Trust",
+            "3": "memory",
+            "4": "learning"
+          },
+          "context": "In future financial plans, he will learn from the past or re-open."
+        },
+        "position8": {
+          "upright": "Six Cups show that it strengthens their ability to earn money by learning from past experiences and using nostalgic ties.",
+          "reversed": "The Reverse Six Cup points out that staying stuck in the past or sticking to the old ways can limit its development.",
+          "keywords": {
+            "0": "history",
+            "1": "nostalgia",
+            "2": "experience",
+            "3": "Compassion",
+            "4": "learning"
+          },
+          "context": "Your ability to earn money is related to learning from the past or being stabbed."
+        }
+      },
+      "sevenofcups": {
+        "position1": {
+          "upright": "The Seven Cups point to the excess of options and anxiety of indecision, and you may be afraid that you won't be able to make the right choice in the material area.",
+          "reversed": "The Reverse Seven Cup reveals the disarray of dreams and the anxiety of the wrong choice, and unrealistic targets create unrest.",
+          "keywords": {
+            "0": "indecisive",
+            "1": "option",
+            "2": "dream",
+            "3": "Concern",
+            "4": "wrong choice"
+          },
+          "context": "Concern arises from failing to make the right decision on material matters."
+        },
+        "position2": {
+          "upright": "The Seven of Hearts shows you're looking for security by making clear choices, and when the uncertainty breaks, there's peace.",
+          "reversed": "The Inverse Seven of Hearts points to the anxiety of delusions and delusions, and the desire for safety fades away from reality.",
+          "keywords": {
+            "0": "selection",
+            "1": "clarity",
+            "2": "security",
+            "3": "Vision",
+            "4": "priority"
+          },
+          "context": "You find security with realistic choices."
+        },
+        "position3": {
+          "upright": "The Seven Cups point to the tendency to invest money in imaginary projects or to spend scatteredly. Net choices are important.",
+          "reversed": "The Reverse Seven Cup shows you to wake up from a dream and make realistic financial decisions.",
+          "keywords": {
+            "0": "dream",
+            "1": "selection",
+            "2": "Money",
+            "3": "reality",
+            "4": "opportunity"
+          },
+          "context": "The use of money requires imagination, risk and clarity."
+        },
+        "position4": {
+          "upright": "There may have been a lot of financial options or a tendency to pursue delusions in the past.",
+          "reversed": "The Reverse Seven Cup shows disappointments due to unrealistic expectations.",
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "expectation",
+            "3": "Money",
+            "4": "indecisive"
+          },
+          "context": "In the past, financial attitudes have led to an abundance of dreams and options."
+        },
+        "position5": {
+          "upright": "Seven Cups points to a lot of options or confusion in financial responsibilities. It can be difficult to decide.",
+          "reversed": "The Reverse Seven Cup shows clarity of financial responsibilities and the setting of priorities.",
+          "keywords": {
+            "0": "option",
+            "1": "indecisive",
+            "2": "clarity",
+            "3": "priority",
+            "4": "responsibilities"
+          },
+          "context": "Indecision or clarity in financial responsibilities comes first."
+        },
+        "position6": {
+          "upright": "The Seven Cup shows that there are many options and dreams in financial plans. It's important to set clear goals.",
+          "reversed": "The Reverse Seven Cup points to the process of making realistic choices and focusing on financial plans.",
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "target",
+            "3": "clarity",
+            "4": "Vision"
+          },
+          "context": "New financial plans need to set clear goals."
+        },
+        "position7": {
+          "upright": "The Seven Cups show that there will be a great number of financial opportunities in the future, but when you make a choice, you need clarity.",
+          "reversed": "The Reverse Seven Cup points to the end of confusion and the process of clarity in financial plans.",
+          "keywords": {
+            "0": "opportunities",
+            "1": "Dreams",
+            "2": "selection",
+            "3": "clarity",
+            "4": "Vision"
+          },
+          "context": "There will be plenty or clarity of future financial plans."
+        },
+        "position8": {
+          "upright": "The Seven Cups show that multiple options, dreams and visions support the ability to make money, but the clear choice is important.",
+          "reversed": "The Reverse Seven Cups indicate that opportunities may be wasted due to delusions or indecisiveness.",
+          "keywords": {
+            "0": "option",
+            "1": "dream",
+            "2": "Vision",
+            "3": "indecisive",
+            "4": "clarity"
+          },
+          "context": "Your ability to make money is linked to clearing or dissolving dreams."
+        }
+      },
+      "eightofcups": {
+        "position1": {
+          "upright": "Eight Cups points to abandonment and abandonment anxiety, and you may be afraid of having to break your financial order.",
+          "reversed": "The Reverse Eight Cups exposes the anxiety of not letting go and being trapped in the same cycle, and the lack of financial progress can cause unrest.",
+          "keywords": {
+            "0": "Don't let go",
+            "1": "Concern",
+            "2": "abandon",
+            "3": "cycle",
+            "4": "material order"
+          },
+          "context": "Concern arises from giving up or not giving up on old material order."
+        },
+        "position2": {
+          "upright": "The Eight of Hearts shows you're looking for security by taking meaningful routes, giving up the old brings peace.",
+          "reversed": "The Reverse Heart Eight points to the anxiety of separation and stasis, whose desire for safety is clouded by the lack of progress.",
+          "keywords": {
+            "0": "Quit.",
+            "1": "meaning",
+            "2": "security",
+            "3": "journey",
+            "4": "Regeneration"
+          },
+          "context": "You find security in meaningful choices and new ways."
+        },
+        "position3": {
+          "upright": "Eight Cups point to the use of money, away from dissatisfaction, looking for new ways to start a financial transformation.",
+          "reversed": "The Reverse Eight Cup shows difficulty returning or letting go of old spending habits.",
+          "keywords": {
+            "0": "dissatisfaction",
+            "1": "new direction",
+            "2": "Money",
+            "3": "Escape",
+            "4": "transformation"
+          },
+          "context": "In the use of money, the search for new ways comes forward."
+        },
+        "position4": {
+          "upright": "You may have decided to put some financial matters behind you in the past.",
+          "reversed": "The Reverse Eight Cup points to avoiding necessary changes.",
+          "keywords": {
+            "0": "Do not leave",
+            "1": "change",
+            "2": "decision",
+            "3": "Money",
+            "4": "Progress"
+          },
+          "context": "In the past, there have been circumstances of abandonment in financial attitudes."
+        },
+        "position5": {
+          "upright": "The Eight Cup shows consciously moving away from certain financial responsibilities and seeking a new direction.",
+          "reversed": "The Reverse Eight Cup points to failure to break free from financial responsibilities or to release past burdens.",
+          "keywords": {
+            "0": "Don't let go",
+            "1": "Don't go away",
+            "2": "new direction",
+            "3": "I can't.",
+            "4": "responsibilities"
+          },
+          "context": "The effects of leaving or becoming dependent on financial responsibilities arise."
+        },
+        "position6": {
+          "upright": "Eight Cups point to giving up old habits and moving towards more meaningful goals in financial plans.",
+          "reversed": "The Reverse Eight Cup shows the ambiguity between going on financial plans and staying.",
+          "keywords": {
+            "0": "Departure",
+            "1": "change",
+            "2": "meaning",
+            "3": "new path",
+            "4": "Vision"
+          },
+          "context": "New financial plans will require moving towards meaningful goals."
+        },
+        "position7": {
+          "upright": "Eight Cups point to the search for meaning in the future, moving away from existing financial plans and looking for more satisfying ways.",
+          "reversed": "The Reverse Eight Cup points to being stuck between going and staying or leaving without completing financial projects.",
+          "keywords": {
+            "0": "Departure",
+            "1": "meaning",
+            "2": "satisfaction",
+            "3": "new path",
+            "4": "decision"
+          },
+          "context": "There will be new ways or indecision in future financial plans."
+        },
+        "position8": {
+          "upright": "Eight Cups demonstrates the ability to move on to more meaningful opportunities by leaving jobs or projects that don't satisfy you.",
+          "reversed": "The Reverse Eight Cup indicates that it can limit its potential because of the indecisiveness between going or staying.",
+          "keywords": {
+            "0": "Departure",
+            "1": "search for meaning",
+            "2": "journey",
+            "3": "Courage",
+            "4": "change"
+          },
+          "context": "Their ability to earn money is related to the search for meaning or indecisiveness."
+        }
+      },
+      "nineofcups": {
+        "position1": {
+          "upright": "Nine Cups point to the anxiety of losing happiness, and you may be concerned that financial satisfaction will be temporary.",
+          "reversed": "The Reverse Nine Cups exposes the anxiety of false satisfaction and excessive consumption, and the lack of abundance makes you uneasy.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "abundance",
+            "2": "Concern",
+            "3": "fake happiness",
+            "4": "satisfaction"
+          },
+          "context": "Concern arises from unsustainable or false satisfaction."
+        },
+        "position2": {
+          "upright": "The Nine of Hearts shows you seek security with satisfaction and personal success.",
+          "reversed": "The Reverse Cup Nine points to extreme dissatisfaction or superficial anxiety of pleasure, and the desire for safety fades away from deep values.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "success",
+            "2": "security",
+            "3": "abundance",
+            "4": "satisfaction"
+          },
+          "context": "You find security with inner satisfaction and success."
+        },
+        "position3": {
+          "upright": "Nine Cups tend to use money for pleasure and personal satisfaction.",
+          "reversed": "The Reverse Nine Cup points to the tendency of excessive consumption or insatiable spending.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "luxury",
+            "2": "pleasure",
+            "3": "Money",
+            "4": "pleasure"
+          },
+          "context": "In the use of money, personal pleasures are decisive."
+        },
+        "position4": {
+          "upright": "There may have been times of financial satisfaction and abundance in the past.",
+          "reversed": "The Reverse Nine Cup points to unnecessary spending in search of superficial satisfaction.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "abundance",
+            "2": "Money",
+            "3": "spending",
+            "4": "pleasure"
+          },
+          "context": "In the past, financial satisfaction was in the forefront."
+        },
+        "position5": {
+          "upright": "Nine Cups shows that financial responsibilities are fulfilled with satisfaction and satisfaction.",
+          "reversed": "The Reverse Nine Cup points to a sense of dissatisfaction or superficiality in financial responsibilities.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "satisfaction",
+            "2": "share",
+            "3": "superficiality",
+            "4": "responsibilities"
+          },
+          "context": "The effects of satisfaction or dissatisfaction arise in financial responsibilities."
+        },
+        "position6": {
+          "upright": "Nine Cups represent satisfaction, success and gratitude in financial plans.",
+          "reversed": "The Reverse Nine Cup points to the search for dissatisfaction or extreme pleasure in financial plans.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "success",
+            "2": "Gratitude",
+            "3": "abundance",
+            "4": "satisfaction"
+          },
+          "context": "A sense of satisfaction and gratitude is at the forefront of new financial plans."
+        },
+        "position7": {
+          "upright": "Nine Cups point to future financial satisfaction, enjoying success, and enjoying abundance.",
+          "reversed": "The Reverse Nine Cup shows that superficial satisfaction or excessive luxury expenses can lead to disappointment.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "abundance",
+            "2": "pleasure",
+            "3": "success",
+            "4": "luxury"
+          },
+          "context": "There will be satisfaction or superficial pleasure in future financial plans."
+        },
+        "position8": {
+          "upright": "The Nine Cups show that personal satisfaction, abundance, and inner peace support the ability to earn money.",
+          "reversed": "The Reverse Nine Cup points out that long-term achievements may be at risk due to excessive pleasure or superficial satisfaction.",
+          "keywords": {
+            "0": "satisfaction",
+            "1": "abundance",
+            "2": "Happiness",
+            "3": "satisfaction",
+            "4": "inner peace"
+          },
+          "context": "Your ability to make money is related to satisfaction or superficiality."
+        }
+      },
+      "tenofcups": {
+        "position1": {
+          "upright": "The Ten Cup shows concern that family peace will be ruined by material shortcomings, and you may fear that happiness will be clouded by money.",
+          "reversed": "The Inverse Ten Cup points to concern that material incompatibility will undermine family ties, and failure to achieve the ideal picture of happiness will cause unrest.",
+          "keywords": {
+            "0": "family",
+            "1": "Happiness",
+            "2": "Concern",
+            "3": "Peace",
+            "4": "material shortcomings"
+          },
+          "context": "Concern arises from financial problems affecting family peace."
+        },
+        "position2": {
+          "upright": "The Ten of Hearts shows that you seek security in family, harmony and unity, and mutual happiness strengthens the sense of trust.",
+          "reversed": "The Reverse Heart Ten points to dissonance and domestic conflict anxiety, and the desire for safety becomes fragile when it gets away from the ideal.",
+          "keywords": {
+            "0": "family",
+            "1": "compatibility",
+            "2": "unity",
+            "3": "security",
+            "4": "Happiness"
+          },
+          "context": "You find security with family ties and a sense of unity."
+        },
+        "position3": {
+          "upright": "Ten Cups tend to use money for family well-being and mutual happiness.",
+          "reversed": "The Reverse Ten Cup points to the risk of family dissonance or dissatisfaction in financial matters.",
+          "keywords": {
+            "0": "family",
+            "1": "Happiness",
+            "2": "prosperity",
+            "3": "share",
+            "4": "Money"
+          },
+          "context": "In the use of money, family prosperity and happiness are the foremost."
+        },
+        "position4": {
+          "upright": "In the past, expenses may have been made for family happiness.",
+          "reversed": "The Reverse Ten Cup points to domestic financial disputes.",
+          "keywords": {
+            "0": "family",
+            "1": "Happiness",
+            "2": "compatibility",
+            "3": "Money",
+            "4": "spending"
+          },
+          "context": "In the past, family-focused financial decisions were at the forefront."
+        },
+        "position5": {
+          "upright": "Ten Cups shows that financial responsibilities are fulfilled in family harmony and peace, and mutual happiness relieves those burdens.",
+          "reversed": "The Reverse Ten Cup points to domestic disputes or harmonies in financial responsibilities.",
+          "keywords": {
+            "0": "family",
+            "1": "compatibility",
+            "2": "Happiness",
+            "3": "responsibilities",
+            "4": "balance"
+          },
+          "context": "In financial responsibilities, family harmony or dissonance are decisive."
+        },
+        "position6": {
+          "upright": "Ten Cups point to family harmony, peace and mutual happiness in financial plans, and financial trust supports emotional well-being.",
+          "reversed": "The Reverse Ten Cup points to the difference in financial plans in family disputes or expectations of reality.",
+          "keywords": {
+            "0": "compatibility",
+            "1": "family",
+            "2": "Peace",
+            "3": "Happiness",
+            "4": "partnership"
+          },
+          "context": "Family harmony and peace are stepping up in the new financial plans."
+        },
+        "position7": {
+          "upright": "The Ten Cup promises future financial harmony, peace of mind, and long-term security within the family.",
+          "reversed": "The Inverse Ten Cup points to the risk of financial incompatibility or expectations not being met within the family.",
+          "keywords": {
+            "0": "family",
+            "1": "compatibility",
+            "2": "Peace",
+            "3": "long term",
+            "4": "security"
+          },
+          "context": "Family harmony or dissonance will be effective in future financial plans."
+        },
+        "position8": {
+          "upright": "The Ten Cup shows that family, community, and strong emotional ties support the ability to make money.",
+          "reversed": "The Inverse Ten Cups indicate that incompatible relationships or family problems may limit their financial abilities.",
+          "keywords": {
+            "0": "family",
+            "1": "Community",
+            "2": "compatibility",
+            "3": "connection",
+            "4": "Peace"
+          },
+          "context": "Your ability to earn money is linked to harmony or incompatibility."
+        }
+      },
+      "pageofcups": {
+        "position1": {
+          "upright": "The Prince of Hearts points to the anxiety of financial inability to feel pure and unprepared in the material world.",
+          "reversed": "The reverse Prince of the Cup brings out the anxiety of imagination and irresponsibility, and the lack of seriousness in the material world leads to anxiety.",
+          "keywords": {
+            "0": "lack of experience",
+            "1": "Imagination",
+            "2": "Concern",
+            "3": "sentimentality",
+            "4": "purity"
+          },
+          "context": "Concern arises from lack of experience in material matters."
+        },
+        "position2": {
+          "upright": "The Prince of Hearts shows you seek security with creative imaginations and intuition, innocence brings peace.",
+          "reversed": "The reverse Prince of the Cup points to disappointment and emotional sensitivity anxiety, and the desire for safety is forced by extreme vulnerability.",
+          "keywords": {
+            "0": "creativity",
+            "1": "intuition",
+            "2": "security",
+            "3": "Innocence",
+            "4": "Inspired"
+          },
+          "context": "You find security with creativity and innocent intuition."
+        },
+        "position3": {
+          "upright": "The Prince of Hearts tends to use money for creative projects or new ideas.",
+          "reversed": "The reverse Prince of the Cup points to the risk of reckless and delusional spending.",
+          "keywords": {
+            "0": "creativity",
+            "1": "dream",
+            "2": "Money",
+            "3": "start"
+          }
+        }
+      }
+    }
+  }
+}

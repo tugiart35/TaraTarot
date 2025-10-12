@@ -1,0 +1,774 @@
+{
+  "relationship-problems": {
+    "meanings": {
+      "twoofpentacles": {
+        "position5": {
+          "reversed": "Otkrivena dva pentaklama objašnjava da se neraspoloženje i odlaganja dovode do krize.",
+          "keywords": [
+            "ravnoteža",
+            "vreme",
+            "prioritet",
+            "fleksibilnost",
+            "program"
+          ],
+          "context": "Fleksibilno upravljanje je dobro; Ponekad skidding. Postojao je last minute stres. Sada je potreban jednostavan dnevni red."
+        },
+        "position6": {
+          "upright": "Dvojica pentakla hvali veštinu ravnoteže; Ali ostavljajući stvari u poslednjem trenutku sa zrelošću i stavljanjem tereta na partneru je eksploatacija.",
+          "reversed": "Dvojica obrnutog Reversed ukazuje na rizik da stalno ometa plan drugog, nametanjem sopstvenog prioriteta.",
+          "keywords": [
+            "ravnoteža",
+            "prioritet",
+            "vreme",
+            "opteretiti",
+            "fleksibilnost"
+          ],
+          "context": "Tema: Agenda pravde; Rizik: Poslednji minut prenos; DO: Common plan i ograničenje kapaciteta."
+        },
+        "position7": {
+          "upright": "Dva pentaklama vam govori da se porodični / radni rasporedi naprezaju vaš saldo sa spoljnim zahtevima.",
+          "reversed": "Preokrećena dva pentaklama pokazuju da vas pojurite poslednjim minutnim promenama u okolini.",
+          "keywords": [
+            "ravnoteža",
+            "program",
+            "zatražiti",
+            "fleksibilnost",
+            "kitnjast"
+          ],
+          "context": "Upravljate svom dnevnom redom. Izjavite ograničenje kapaciteta."
+        },
+        "position8": {
+          "upright": "Dva pentaklama opisuje balansiranje rashoda prihoda, više tokova i fleksibilno planiranje.",
+          "reversed": "Otkrivena dva od pentakla nosi rizik od neraspoloženja, last-minute stresova i kašnjenja plaćanja.",
+          "keywords": [
+            "ravnoteža",
+            "Multi tok",
+            "fleksibilnost",
+            "nered",
+            "protok"
+          ],
+          "context": "Organizujte ritam sa izjavom dnevnog reda i novčanom tokom."
+        },
+        "position9": {
+          "upright": "Dvoje pentakala, ako je život uravnotežen, odnos će raditi. Fleksibilno planiranje je obavezna.",
+          "reversed": "Preokrenuo dva pentakla, haosa i last-minute krize i nose vezu.",
+          "keywords": [
+            "ravnoteža",
+            "fleksibilnost",
+            "vreme",
+            "prioritet",
+            "protok"
+          ],
+          "context": "Da biste poslednji put: Pariranje dnevnog reda + granica kapaciteta."
+        }
+      },
+      "threeofpentacles": {
+        "position1": {
+          "upright": "Tri Pentekla kaže da nedostatak saradnje i jasnoća uloga stvara trenje. Očekivanja kvaliteta se možda neće podudarati.",
+          "reversed": "Trojica pentaklova obrnuta ukazuju na to da nedostatak uvažavanja i neviđenog rada uvećavaju sukob.",
+          "keywords": [
+            "partnerstvo",
+            "uloga",
+            "kvalitet",
+            "diskrecija",
+            "koordinacija"
+          ],
+          "context": "Betonski koren kontradikcije: Okvir uloge i kvaliteta."
+        },
+        "position2": {
+          "upright": "Tri Pentekla kaže da je problem saradnja, jasnoća uloga i standard kvaliteta. Ovladavanje treba razgovarati. \\ N \\ nhint: Nejasno je ko radi šta. Problem je ugovor o očekivanju uloga.",
+          "reversed": "Tri pentaklova obrnuta objašnjavaju da nedostatak nevidljivih napora i uvažavanja demotivira. Koordinacija je niska. \\ N \\ nsimptom: dvostruki rad, ponavljanja. Problem je nedostatak dizajna procesa.",
+          "keywords": [
+            "partnerstvo",
+            "uloga",
+            "kvalitet",
+            "diskrecija",
+            "koordinacija"
+          ],
+          "context": "Problem sa korenom: Arhitektura saradnje. Područja koja utiče: proces, standardni, vidljivi rad."
+        },
+        "position3": {
+          "upright": "Tri Pentekla kaže da ne razgovara o ulozi / standardnoj jasnoći i povećava njegov udeo. Bez arhitekture saradnje, trenje se povećava.",
+          "reversed": "Tri pentaklova obrnuta objašnjavaju da vatru rastu ignorisanjem nevidljive radne snage i zanemarivanja koordinacije. Podesite sistem prepoznavanja.",
+          "keywords": [
+            "partnerstvo",
+            "uloga",
+            "kvalitet",
+            "diskrecija",
+            "koordinacija"
+          ],
+          "context": "Share: Nejasnoća uloga / kvaliteta. Effekat: Motivacija, ponavljajte posao. Preporuka: Proces / standard."
+        },
+        "position4": {
+          "upright": "Tri Pentekla predlaže da neko može odbaciti ulogu / standardnu dvosmislenost tako što ga odbacuju kao \"može se sortirati.\"",
+          "reversed": "Tri pentaklova obrnuto naglašava tendenciju da ignorišu nevidljivu radnu snagu i negiraju odgovornost uvažavanja.",
+          "keywords": [
+            "partnerstvo",
+            "uloga",
+            "kvalitet",
+            "diskrecija",
+            "koordinacija"
+          ],
+          "context": "Zanemareno: Procesa / Jasnoća uloga. EFEKT: Prepravljanje, gubitak motivacije. DO: Napišite dogovor."
+        },
+        "position5": {
+          "upright": "Tri Pentekla kaže da saradnja i jasnoća uloga rješavaju mnoge probleme. Izradili ste ga zajedno.",
+          "reversed": "Preokrećena tri pentakla opisuje nevidljivost nevidljivog rada i nedostatka standarda kvaliteta.",
+          "keywords": [
+            "partnerstvo",
+            "uloga",
+            "kvalitet",
+            "diskrecija",
+            "koordinacija"
+          ],
+          "context": "Lepa saradnja; Zahvalnost / standardni gaz. Sada vam je potrebno pismo sporazuma i vidljivo hvala."
+        },
+        "position6": {
+          "upright": "Tri pentakova pozivaju na saradnju i jasnoću uloge. Kvalitet i definicija uloga su od suštinskog značaja protiv nevidljive radne eksploatacije.",
+          "reversed": "Tri povratka Reversed-a ukazuju na rizik devalviranja partnera povlačenjem zahvalnosti i preduzimanjem vlasništva nad naporima.",
+          "keywords": [
+            "partnerstvo",
+            "uloga",
+            "kvalitet",
+            "diskrecija",
+            "nevidljivi rad"
+          ],
+          "context": "Tema: Ugovor o kvalitetu uloga; Rizik: Vlasništvo nad radom; DO: Otvoreni postupak i diskrecija."
+        },
+        "position7": {
+          "upright": "Tri Pentekla pokazuje korist zadružnog tima porodice / prijatelja. Jasnoća uloge čini spoljnu intervenciju na snazi.",
+          "reversed": "Tri preokrenuta Pentekla-a ukazuju na autsajdere koji preuzmu vlasništvo nad nevidljivim radom i miks ulogama.",
+          "keywords": [
+            "partnerstvo",
+            "uloga",
+            "kvalitet",
+            "pojava rada",
+            "koordinacija"
+          ],
+          "context": "Napišite ugovor o ulozi. Neka budu vidljivi diskrecija i granice."
+        },
+        "position8": {
+          "upright": "Tri Pentekla kaže da saradnja, standardi kvaliteta i vidljivi napori uveličavaju profit.",
+          "reversed": "Prekoračena tri pentakla ukazuje da će uloga zbrka, nizak kvalitet i izrada rada nevidljivi rezultirati gubicima.",
+          "keywords": [
+            "partnerstvo",
+            "kvalitet",
+            "uloga",
+            "diskrecija",
+            "prinos"
+          ],
+          "context": "Upišite standarde uloga; Zahvalnost je vidljivo."
+        },
+        "position9": {
+          "upright": "Tri pentake, saradnja i jasnoća uloga čine odnos trajom.",
+          "reversed": "Trojica pentaklama, nevidljiva radna snaga i uloga poremeti kontinuitet.",
+          "keywords": [
+            "partnerstvo",
+            "uloga",
+            "diskrecija",
+            "kvalitet",
+            "prinos"
+          ],
+          "context": "Poslednji put: Ugovor o ulozi + Vidljivost prepoznavanja."
+        }
+      },
+      "fourofpentacles": {
+        "position1": {
+          "upright": "Četiri pentaklova kaže da je želja za deljenjem granice kontrole i granice bezbednosti. Percepcija ubodnosti proizvodi napetost.",
+          "reversed": "Pretvorena četvorica pentakla pokazuje da ekstremna stroža ili ekstravagancija povećavaju sukob.",
+          "keywords": [
+            "kontrola",
+            "sigurnost",
+            "deljenje",
+            "zadrzati",
+            "ukrštati"
+          ],
+          "context": "Betonski koren kontradikcije: ravnoteža kontrole i deljenja."
+        },
+        "position2": {
+          "upright": "Problem, kaže Četiri pentakla, jeste da je potreba za deljenjem kontrolnih i bezbednosnih blokova. Palma je uska. \\ N \\ n \\ nhint: ograničenje budžeta, emocionalno ograničenje. Problem je nedostatak fleksibilnih deljenja.",
+          "reversed": "Pretvorena Četiri pentakla opisuje kako se ekstremi držanja ili ekstravagacije stvaraju napetost. Postoji van kontrole ravnoteže. \\ N \\ nsimptom: Odgovornost, tajna potrošnja. Problem je sigurni okvir za deljenje.",
+          "keywords": [
+            "kontrola",
+            "sigurnost",
+            "deljenje",
+            "zadrzati",
+            "ukrštati"
+          ],
+          "context": "Problem sa korenom: ravnoteža za deljenje kontrole. Područja koja utiče: Finansije, emocionalni resurs, polje."
+        },
+        "position3": {
+          "upright": "Četiri pentaklama kaže da povećavate svoj ulog kroz kontrolu i držanje refleksa. Ne dozvolite da deli bezbednosni ugušivanje.",
+          "reversed": "Pretvorena Četiri pentakla opisuje preuveličavanje vatre prekomerne strogosti ili krajnosti ekstravagancije. Balans mora biti vidljiv.",
+          "keywords": [
+            "kontrola",
+            "sigurnost",
+            "deljenje",
+            "zadrzati",
+            "ukrštati"
+          ],
+          "context": "Numeritor: Control / Action se završava. Uticaj: Trust, Transparentnost. Preporuka: Otvoreni budžet."
+        },
+        "position4": {
+          "upright": "Četiri pentaklova sugeriraju da neko može da sadrži kontrolu kao sigurnost i ignoriše nečiji udeo. Čuvanje je takođe izbor.",
+          "reversed": "Četiri preokrenuta pentaklova pokazuje tendenciju da paketira preteranu strogost kao \"ekonomija\" i podsticanje poricanja.",
+          "keywords": [
+            "kontrola",
+            "sigurnost",
+            "deljenje",
+            "zadrzati",
+            "fleksibilnost"
+          ],
+          "context": "Zanemaren: Fleksibilna deljenja. Efekat: Transparentnost opada. DO: Otvorite budžet / prostor."
+        },
+        "position5": {
+          "upright": "Četiri pentaklama kaže da su refleksi zaštite i resursa jaki. Materijalna / emocionalna uključenost je bila velika.",
+          "reversed": "Preokrećena četvorica pentakala objašnjava da prekomerna kontrola ili ubodnost smanjuje toplinu.",
+          "keywords": [
+            "sigurnost",
+            "kontrola",
+            "deljenje",
+            "zadrzati",
+            "transparentnost"
+          ],
+          "context": "Potraga za uveravanjem je snažna. Fleksibilnost se smanjila. Sada je otvoreni budžet i deljenje mora."
+        },
+        "position6": {
+          "upright": "Četiri pentakla razumeju potrebu za sigurnost; Ali korišćenje novca i kuće jer se oruđe kontrole može pretvoriti u eksploataciju.",
+          "reversed": "Pretvorena četvorica pentaklama naglašava rizik da partner zavisi od šljokice ili ograničavajući pristup.",
+          "keywords": [
+            "sigurnost",
+            "kontrola",
+            "vlasništvo",
+            "deljenje",
+            "pristupiti"
+          ],
+          "context": "Tema: samopouzdanje i otpornost; Rizik: Kontrola zavarivanjem; DO: Transparentna pravila za deljenje."
+        },
+        "position7": {
+          "upright": "Četiri pentaklova ukazuju na spoljni akter koji uspostavlja kontrolu nad imovinom / novcem. Ograničenja pristupa stvaraju pritisak.",
+          "reversed": "Preokrećena četvorica pentakla ukazuje na uplitanje u stoliću ili nedostatak finansijske transparentnosti.",
+          "keywords": [
+            "kontrola",
+            "vlasništvo",
+            "pristupiti",
+            "škilost",
+            "ugnjetavanje"
+          ],
+          "context": "Transparentni plan umesto vlasničkog jezika. Postavite zajedničke finansijske granice."
+        },
+        "position8": {
+          "upright": "Četiri pentakla naglašava štednju, sigurnost i očuvanje resursa pri ruci. Fond za jastuk je važan.",
+          "reversed": "Prekoračenje četvoro pentakama kaže da je prekomjerno držanje, škiljanost ili kontrola nad naporima novca.",
+          "keywords": [
+            "štedljiv",
+            "sigurnost",
+            "jastuk",
+            "škilost",
+            "kontrola"
+          ],
+          "context": "Sigurnost je dobra; Ne zaboravite fleksibilnost i deljenje."
+        },
+        "position9": {
+          "upright": "Četiri pentakla, bezbednosti i razumne ekonomije daju stabilnost odnosa.",
+          "reversed": "Uoči se četiri pentakla, utegavanja / kontrola podriva upornost.",
+          "keywords": [
+            "sigurnost",
+            "štedljiv",
+            "kontrola",
+            "deljenje",
+            "fleksibilnost"
+          ],
+          "context": "Da biste poslednji put: Transparentnost budžeta + ostavljanja sobe."
+        }
+      },
+      "fiveofpentacles": {
+        "position1": {
+          "upright": "Pet PentaKlaca kaže da percepcija materijalne nepropusnosti i osećaja isključenosti stvara emocionalno određivanje.",
+          "reversed": "Pet Pentaklova obrnuta ukazuje da nedostatak traženja pomoći i solidarnosti pogoršava problem.",
+          "keywords": [
+            "zaglaviti",
+            "isključenje",
+            "pomoći",
+            "solidarnost",
+            "poverenje"
+          ],
+          "context": "Betonski koren kontradikcije: kriza i nedostatak podrške."
+        },
+        "position2": {
+          "upright": "Pet Pentaklova kaže da problem leži u osećaju materijalnog i duhovnog isključenja i oskudice. Misli se da postoji vrata, ali nema ključa. \\ N \\ nhint: ne tražiš pomoć, sramota. Problem ne može da koristi mrežu podrške.",
+          "reversed": "Pet Pentaklova preokrenuće nam govori da iako postoje znakovi oporavka, tvrdoglavost da se samostalo nastavlja. Poziv za solidarnost nedostaje. \\ N \\ nsimptom: mirna gužva, povučena. Problem je hrabrost da je rešite zajedno.",
+          "keywords": [
+            "glad",
+            "isključenje",
+            "pomoći",
+            "solidarnost",
+            "moral"
+          ],
+          "context": "Pitanje root: pristup podršci. Područja pogođena: finansijski stres, emocionalna podrška."
+        },
+        "position3": {
+          "upright": "Pet stanovnika kaže da u teškim vremenima ne tražite pomoć i povećajte svoj udeo. Samo se bori čini odnos usamljenim.",
+          "reversed": "Reversed Pet stanovnika objašnjava da odlaskom poziva na solidarnošću, zarađujete vatru veću. Ima vrata; igranje",
+          "keywords": [
+            "glad",
+            "isključenje",
+            "pomoći",
+            "solidarnost",
+            "moral"
+          ],
+          "context": "Share: Izbegavanje podrške. Efekat: Moral, Bond. Predlog: Potreban zahtev."
+        },
+        "position4": {
+          "upright": "Pet Pentahla kaže da možete razmotriti traženje pomoći kao slabosti i ignorisati svoj udeo. Usamljenost uvećava poricanje.",
+          "reversed": "Pet pentaklova obrnuto naglašava tendenciju da sakrije odgovornost odlaganjem kucanja na vrata solidarnosti.",
+          "keywords": [
+            "glad",
+            "pomoći",
+            "isključenje",
+            "moral",
+            "solidarnost"
+          ],
+          "context": "Zanemareno: Poziv za podršku. Efekat: Moral kapi. DO: jasno navedite potrebu."
+        },
+        "position5": {
+          "upright": "Pet pentakala vam govori da prolazite kroz period uskraćivanja / hladnoće zajedno. Solidarnost je testirana.",
+          "reversed": "Petorica preokrenenih pentakala opisuje obrasce da ne traže pomoć i bore se samog.",
+          "keywords": [
+            "glad",
+            "pomoći",
+            "solidarnost",
+            "isključenje",
+            "moral"
+          ],
+          "context": "Teško ekonomsko / emocionalno vreme. Postoje trenuci kada nema kucanja na vratima. Uspostavite mehanizam za podršku sada."
+        },
+        "position6": {
+          "upright": "Pet pentakolova poziva na solidarnost u doba uskraćivanja; Ali od zadržavanja pomoći ili privrženja mogu biti načini uspostavljanja vlasti.",
+          "reversed": "Pet Pentaklova obrnuta ukazuje na rizik od straha od isključenja kao aduta i pokušava da podnese partneru.",
+          "keywords": [
+            "glad",
+            "solidarnost",
+            "sramota",
+            "isključenje",
+            "pomoći"
+          ],
+          "context": "Tema: Etika solidarnosti; Rizik: Ucena ucene uz pomoć; DO: Otvorite potrebu i mrežu podrške."
+        },
+        "position7": {
+          "upright": "Pet pentakama vam govori da imate nekoga da se pokuca tokom teških vremena. Solidarnost može doći spolja.",
+          "reversed": "Pet Pentaklova obrnuta ukazuje na okruženje koje pritisnete pomoć / isključivanje, sramota i isključenje.",
+          "keywords": [
+            "solidarnost",
+            "pomoći",
+            "isključenje",
+            "sramota",
+            "vrata"
+          ],
+          "context": "Neka mreža podrške bude selektivna. Zatvorite sramotnu vrata."
+        },
+        "position8": {
+          "upright": "Pet pentaklama opisuje finansijske teškoće, sužavanje i osećaj usamljenosti. Postoje vrata.",
+          "reversed": "Invertirani Pet stanovnika ukazuje na pristup mreži pomoći, podršku i šansu za oporavak.",
+          "keywords": [
+            "kontrakcija",
+            "usamljenost",
+            "pomoći",
+            "podrška",
+            "oporavak"
+          ],
+          "context": "Zatražite podršku; Napravite kratak srednjoročni plan oporavka."
+        },
+        "position9": {
+          "upright": "Pet stanovnika: Ako se solidarnost uspostavi u teškim vremenima, veza će i dalje jačati.",
+          "reversed": "Otkrivena pet pentakla, jezik izolacije i sramote, prekida kontinuitet.",
+          "keywords": [
+            "solidarnost",
+            "uskraćivanje",
+            "podrška",
+            "sramota",
+            "blizina"
+          ],
+          "context": "Da biste poslednji put: \"Mi\" jezik + mreže za pomoć."
+        }
+      },
+      "sixofpentacles": {
+        "position1": {
+          "upright": "Šest pentakala nam govori da postoji problem sa bilansom fer bavljenja i podrške. Uloge davaoca i prijemnika su kontroverzni.",
+          "reversed": "Prekoračenje šest pentakla ukazuje na to da uslovna podrška i neravnoteža sukoba podmetanja moći.",
+          "keywords": [
+            "pravda",
+            "podrška",
+            "snaga",
+            "uslov",
+            "ravnoteža"
+          ],
+          "context": "Betonski koren kontradikcije: Pošteno deljenje i ravnoteža moći."
+        },
+        "position2": {
+          "upright": "Šest pentakala kaže da je problem pod odjeljkom pravednog deljenja i ravnoteže snage. Uloge za prijemne prijemnika su kontroverzna. \\ N \\ n \\ nhint: uslovna podrška, očekivanje zahvalnosti. Problem je osnova jednakosti.",
+          "reversed": "Invertirani šesto od talismana objašnjava da je osećaj zrelosti i zaduženosti zauzvrat za favoritove zasjenjene obveznice. Ravnoteža je zalutala. \\ N \\ nsimptom: vođenje rezultata, ne očekujući ništa zauzvrat. Problem je nedostatak transparentnog sporazuma.",
+          "keywords": [
+            "pravda",
+            "deljenje",
+            "snaga",
+            "uslov",
+            "jednakost"
+          ],
+          "context": "Ispitivanje roonika: Poštena razmena. Područja koja utiče: podrška, granice, poverenje."
+        },
+        "position3": {
+          "upright": "Šest stanovnika kaže da povećavate svoj udeo u iščekivanju uslovne podrške i zahvalnosti. Ako nema jednakosti, postoji ogorčenje.",
+          "reversed": "Pretvoreni šest talismana objašnjava da vatru postane rast vođenjem rezultata. Deljenje treba da bude transparentno i dobrovoljno.",
+          "keywords": [
+            "pravda",
+            "deljenje",
+            "snaga",
+            "uslov",
+            "jednakost"
+          ],
+          "context": "Share: Nepoštena razmena. EFEKT: Poverenje, ravnoteže moći. Predlog: postanite bezuslovni."
+        },
+        "position4": {
+          "upright": "Šest pentakala kaže da se može pogrešiti očekivanje uslovne podrške / uzajamne veze za \"ravnotežu\" i ignoriše nečije udeo.",
+          "reversed": "Ukinuta šest pentaklama teži da podstiče negiranje normalizacijom čuvanja rezultata.",
+          "keywords": [
+            "pravda",
+            "deljenje",
+            "snaga",
+            "uslov",
+            "jednakost"
+          ],
+          "context": "Zanemareno: dobrovoljno deljenje. Učinak: Poverenje odbija. DO: Smanjite stanje, budite transparentni."
+        },
+        "position5": {
+          "upright": "Šest pentakila kaže da su velikodušnost i deljenje dobri za odnose. Stanje je primećeno.",
+          "reversed": "Uokrećena šest pentakala objašnjava da uslovna pomoć i vođenje rezultata ostavljaju svoju marku.",
+          "keywords": [
+            "deljenje",
+            "pravda",
+            "snaga",
+            "uslov",
+            "jednakost"
+          ],
+          "context": "Dobra namera za deljenje. Okolnosti i očekivanja imaju slomljene trenutke. Sada je potrebna transparentna i dobrovoljna deljenja."
+        },
+        "position6": {
+          "upright": "Šest pentaklova zagovara fer deljenje; Ali rezultat uslovne pomoći i vođenja je eksploatacija.",
+          "reversed": "Ograničena šest pentakla ukazuje na rizik od instrumentalizacije davanja i stvaranja zavisnosti u cilju održavanja ravnoteže snage.",
+          "keywords": [
+            "pravda",
+            "deljenje",
+            "uslov",
+            "snaga",
+            "jednakost"
+          ],
+          "context": "Tema: bezuslovno i transparentnost; Rizik: Snaga uz pomoć; DO: Jasni kriterijumi i reciprocitet."
+        },
+        "position7": {
+          "upright": "Šest pentakla ukazuje na podršku porodičnog / prijatelja sa pravom deljenjem. Ravnoteža deljenja čini spoljne efekte pozitivnim.",
+          "reversed": "Učitavanje šest stanovnika naglašava uslovnu pomoć / zajam i električnu asimetriju.",
+          "keywords": [
+            "deljenje",
+            "pravda",
+            "uslov",
+            "zaduženje",
+            "snaga"
+          ],
+          "context": "Potražite bezuslovnu i transparentnu podršku. Odbijte pomoć dužnika."
+        },
+        "position8": {
+          "upright": "Šest pentakala opisuje uravnoteženje budžeta kroz pravednije deljenje, saradnju i reciprocitet.",
+          "reversed": "Uokrećena šest pentakala je upozorenje o uslovnoj pomoći, zaduženosti i električne asimetrije.",
+          "keywords": [
+            "deljenje",
+            "pravda",
+            "uslov",
+            "reciprocitet",
+            "snaga"
+          ],
+          "context": "Transparentna i časna saradnja; Odbijaju zaduženje."
+        },
+        "position9": {
+          "upright": "Šest pentakala, pravednog deljenja i reciprociteta nose odnos u dugoročno.",
+          "reversed": "Preokrenuo je šest pentakala, uslovne pomoći i duga oštećeno obveznice.",
+          "keywords": [
+            "deljenje",
+            "pravda",
+            "reciprocitet",
+            "uslov",
+            "snaga"
+          ],
+          "context": "Da biste poslednji put: transparentan model aditiva."
+        }
+      },
+      "sevenofpentacles": {
+        "position1": {
+          "upright": "Sedam pentakala kaže da je razlika u strpljenju u vremenu truda i rezultata stvara napetost.",
+          "reversed": "Reversed Sedam pentakla ukazuje da su potopljeni troškovi, tvrdoglavost i nestrpljenje pokrenuli pogrešne odluke.",
+          "keywords": [
+            "strpljenje",
+            "žetva",
+            "prinos",
+            "potonuti troškovi",
+            "vremenski vreme"
+          ],
+          "context": "Betonski koren kontradikcije: ravnoteža rada i žetve."
+        },
+        "position2": {
+          "upright": "Sedam pentakala kaže da problem leži u strpljenju i očekivanju efikasnosti. Misli se da usev kasni. \\ N \\ NTip: Idite na berbu rano. Problem ne čita indikatore.",
+          "reversed": "Okrećeno sedam stanovnika govori nam da su potopljeni troškovi, tvrdoglavost i nestrpljivost dovode do pogrešnih odluka. Voda se daje pogrešnoj tlu. \\ N \\ nsimptom: rano napuštanje ili nepotrebna insistiranje. Problem je nedostatak ciklusa merenja u učenju.",
+          "keywords": [
+            "strpljenje",
+            "prinos",
+            "žetva",
+            "merenje",
+            "okretanje"
+          ],
+          "context": "Problem sa korenom: Evaluacija i kalibracija. Područja koja utiče: cilj, izvor, vreme."
+        },
+        "position3": {
+          "upright": "Sedam pentakala kaže da rano odlazite u žetvu i nestrpljivo povećavate svoj deo. Sudeći bez merenja je iscrpljujuće.",
+          "reversed": "Reversed Sedam pentakala objašnjava da je vatra veća od toga da je potopio troškove potopa. Rad bez okretanja je iscrpljenost.",
+          "keywords": [
+            "strpljenje",
+            "prinos",
+            "žetva",
+            "merenje",
+            "okretanje"
+          ],
+          "context": "Share: Mjerenje / učenje nedostaje. Efekat: Izvor, nada. Preporuka: Podesite indikator."
+        },
+        "position4": {
+          "upright": "Sedam pentaklama kaže da nestrpljenje možete da označite kao \"neefikasnost\" i ignorišete njen udeo.",
+          "reversed": "Preokrećeno sedam stanovnika naglašava tendenciju da preuveličavaju negiranje pogrešnim tvrdoglavošću za potopljene troškove kao \"upornost\".",
+          "keywords": [
+            "strpljenje",
+            "prinos",
+            "žetva",
+            "merenje",
+            "okretanje"
+          ],
+          "context": "Zanemareno: merenje - učenje. Efekat: Otpad resursa. DO: Pokazatelj / odluka o okretanju."
+        },
+        "position5": {
+          "upright": "Sedam pentakala vam govori da strpljivo radite i dobijate rezultate. Formirana je kultura merenja i učenja.",
+          "reversed": "Preokrećeno sedam pentakala ukazuje da se nestrpljenje ili tvrdoglavost prema sunavši troškove nose.",
+          "keywords": [
+            "strpljenje",
+            "prinos",
+            "merenje",
+            "žetva",
+            "okretanje"
+          ],
+          "context": "Ravnoteža rada i čekanja. Ponekad pogrešna insistiranje. Sada nam je potreban indikator i okretanje."
+        },
+        "position6": {
+          "upright": "Sedam pentakla pohvali rad i strpljenje; Ali čineći partnerovu radnu snagu bez opravdanja čekanja može se pretvoriti u eksploataciju.",
+          "reversed": "Reversed Sedam stanovnika ukazuje na rizik iscrpljivanja druge energije tako što će se utočilo u potonju u potonuli.",
+          "keywords": [
+            "rad",
+            "strpljenje",
+            "prinos",
+            "čekati",
+            "potonuti troškovi"
+          ],
+          "context": "Tema: Sajam berba; Rizik: odvlačenje čekanjem; DO: Neto metrika i okretni prostor."
+        },
+        "position7": {
+          "upright": "Sedam pentakala kaže da postoji iskusni glas koji potiče strpljenje. Mogu se izvršiti predloge merenja i evaluacije.",
+          "reversed": "Okolište sedam pentakala ukazuje na životnu sredinu koja zaustavlja i nastavlja neproduktivni ciklus.",
+          "keywords": [
+            "strpljenje",
+            "procena",
+            "odvlačenje",
+            "prinos",
+            "žetva"
+          ],
+          "context": "Očekujte sa podacima, a ne neizvesnošću. Stavite metrike i datume."
+        },
+        "position8": {
+          "upright": "Sedam pentakla naglašava strpljenje, merenje u učenju ciklusa u učenju mere i vreme žetve.",
+          "reversed": "Reversed Sedam pentakova upozorava na nestrpljive prodaje, fiksaciju na potopitog troškova i neproduktivne upornosti.",
+          "keywords": [
+            "strpljenje",
+            "merenje",
+            "žetva",
+            "potonuti troškovi",
+            "poboljšanje"
+          ],
+          "context": "Odrediti metrike; Okretanje ako je potrebno."
+        },
+        "position9": {
+          "upright": "Sa sedam pentakala, strpljenja i mere-učiti - Poboljšani pristup, odnos nosi plod.",
+          "reversed": "Otkriveno sedam pentakova prisiljava nestrpljenje i fiksaciju o troškovima potonuća.",
+          "keywords": [
+            "strpljenje",
+            "procena",
+            "žetva",
+            "prinos",
+            "učenje"
+          ],
+          "context": "Poslednji: periodična procena + manje prilagođavanje."
+        }
+      },
+      "eightofpentacles": {
+        "position1": {
+          "upright": "Osam stanovnika ukazuje na disharmoniju u radnim navikama i standardima kvaliteta.",
+          "reversed": "Oporedila osam stanovnika ukazuje da nevremena ili prekomerno perfekcionizam stvara trenje.",
+          "keywords": [
+            "studija",
+            "standardni",
+            "briga",
+            "perfekcionizam",
+            "navika"
+          ],
+          "context": "Betonski koren kontradikcije: razlika u standardima rada."
+        },
+        "position2": {
+          "upright": "Osam stanovnika kaže da je problem u standardu izrade i fokusa. Zaravna nega fluktuira. \\ N \\ nTip: ne automatizujte ili ne budite preterano pažljivi. Problem je nedostatak svesne prakse.",
+          "reversed": "Invertirani osam stanovnika objašnjava da nepažnja i želja za brze rezultate smanjuju kvalitet. Rad postaje nevidljiv. \\ N \\ nsimptom: Greške, ponavljajte posao. Problem je disciplina učenja.",
+          "keywords": [
+            "savladav",
+            "praktičan",
+            "fokus",
+            "kvalitet",
+            "briga"
+          ],
+          "context": "Pitanje korena: zanat i fokus. Područja koja utiče na kvalitet zadatka, ponosa, razvoj."
+        },
+        "position3": {
+          "upright": "Osam stanovnika kaže da povećavate svoj udeo tako što ćete ga staviti na automatsko i smanjujući negu. Ljubav prema zanatu je takođe neophodna u vezi.",
+          "reversed": "Osetila osam stanovnika opisuje gorivu vatre kroz nepažnju i želju za brze rezultate. Izgraditi svesnu praksu.",
+          "keywords": [
+            "savladav",
+            "praktičan",
+            "fokus",
+            "kvalitet",
+            "briga"
+          ],
+          "context": "Share: Kvalitetni talas. Efekat: Ponos, samopouzdanje. Preporuka: Redovno precizno podešavanje."
+        },
+        "position4": {
+          "upright": "Osam stanovnika kaže da nepažnju može pogrešiti za \"praktičnost\" i da se može ignorisati njegov udeo. Ljubav prema zanatu je takođe neophodna u vezi.",
+          "reversed": "Okolište osam stanovnika pokazuje tendenciju da podnesu poricanje upotrebom želje za brze rezultate kao izgovor.",
+          "keywords": [
+            "savladav",
+            "briga",
+            "fokus",
+            "kvalitet",
+            "praktičan"
+          ],
+          "context": "Ignorisano: svesna praksa. Efekat: Kvalitet opada. DO: Redovno fino podešavanje."
+        },
+        "position5": {
+          "upright": "Osam od Penfala kaže da ulaganje u zanat veštine i odnosa zajedno. Mala poboljšanja traju dug put.",
+          "reversed": "Otkriveno osam stanovnika nam govori da nepažnja i autopilot napuštaju svoju marku.",
+          "keywords": [
+            "savladav",
+            "praktičan",
+            "briga",
+            "kvalitet",
+            "fokus"
+          ],
+          "context": "Svesna praksa je dragocena. Ponekad je plima kvaliteta opala. Sada je potrebno redovno fino podešavanje."
+        },
+        "position6": {
+          "upright": "Osam pentakla se zagovara nega i zanatstvo; Ali postavljanje tereta kvaliteta na jednu osobu proizvodi nevidljivu eksploataciju.",
+          "reversed": "Okolište osam stanovnika opisuje rizik od normalizacije neprolađenosti i čekanju partnera da ispravi grešku.",
+          "keywords": [
+            "briga",
+            "kvalitet",
+            "Podeljenje rada",
+            "ponavljati posao",
+            "odgovornost"
+          ],
+          "context": "Tema: Kvalitet i deljenje; Rizik: Nevidljivi lektorski rad; DO: Standardni i kontrolni spisak."
+        },
+        "position7": {
+          "upright": "Osam stanovnika kaže da neko ko daje praktične savete može poboljšati postupak.",
+          "reversed": "Oporačeni osam stanovnika ukazuje na to da nepažljivo izvan smetnje čini da ponovo radite posao.",
+          "keywords": [
+            "praktičan",
+            "savladav",
+            "briga",
+            "ponavljati posao",
+            "poboljšanje"
+          ],
+          "context": "Nabavite savet za kvalitet, uklonite Rush rešenja. Podesite standarde."
+        },
+        "position8": {
+          "upright": "Osam stanovnika kaže da je zanatstvo, rast veština i redovan mali poboljšanje stvaraju prihod.",
+          "reversed": "Otkriveno osam stanovnika objašnjava da je nejasnoća, ponavljajući posao i loš novac sagorevanje novca.",
+          "keywords": [
+            "savladav",
+            "praktičan",
+            "kvalitet",
+            "briga",
+            "prinos"
+          ],
+          "context": "Osigurati kvalitet sa standardima i kontrolnim listima."
+        },
+        "position9": {
+          "upright": "Osam pentakala, nege i mikro-poboljšanja čine odnos trajom.",
+          "reversed": "Preokrenuta osam pentakla, nevremenosti i ponovljenih grešaka poremeti kontinuitet.",
+          "keywords": [
+            "briga",
+            "zanat",
+            "poboljšanje",
+            "standardni",
+            "rad"
+          ],
+          "context": "Da bi to bilo poslednje: standardi odnosa + praksa."
+        }
+      },
+      "nineofpentacles": {
+        "position1": {
+          "upright": "Devet stanovnika sugeriše da postoji napetost između želje za nezavisnošću i očekivanjem zajedničkog života.",
+          "reversed": "Devet Pentekla je obrnuti ukazuje da je opaženo otpad ili prekomerna štednjaka propasti polemike.",
+          "keywords": [
+            "nezavisnost",
+            "udobnost",
+            "štedljiv",
+            "otpad",
+            "simbioza"
+          ],
+          "context": "Betonski koren kontradikcije: nezavisnost i zajednička udobnost."
+        },
+        "position2": {
+          "upright": "Devet stanovnika kaže da je problem između želje za nezavisnošću i očekivanjem zajedničkog života. Elegantna samoća ili udobnost zajedno. \\ N \\ nTip: blagoslovi vaš sopstveni prostor. Problem je ritam granične unije.",
+          "reversed": "Devet pentakova obrnuto objašnjava da krajnost rasipnosti i ekstremne štednje stvaraju napetost. Udobnost je zasjenjena krivicom. \\ N \\ nsimptom: Novac-prestižni argumenti. Problem je poravnanje potrošnje vrednosti.",
+          "keywords": [
+            "nezavisnost",
+            "udobnost",
+            "granica",
+            "trošenje",
+            "štedljiv"
+          ],
+          "context": "Pitanje korena: nezavisnost i zajednička udobnost. Uticaji: prostor, budžet, stil."
+        },
+        "position3": {
+          "upright": "Devet stanovnika kaže da ste stavili nezavisnu udobnost uobičajenog dobra i povećali svoj udeo. Elegantna usamljena snaga zaostala.",
+          "reversed": "Reversed devet stanovnika objašnjava da je krajnost ušteđanja uštede i preterane povećati vatru. Uspostavite poravnanje potrošnje vrednosti.",
+          "keywords": [
+            "nezavisnost",
+            "udobnost",
+            "granica",
+            "trošenje",
+            "štedljiv"
+          ],
+          "context": "Share: Comfort Prioritet. Uticaj: prostor, budžet. Preporuka: Protokol za zajednički Comfort."
+        },
+        "position4": {
+          "upright": "Devet stanovnika vam govori da možete odrediti samostalnu udobnost kao \"Moj prostor\" i ignorišete svoj udeo.",
+          "reversed": "Devet pentakova obrnuto naglašava tendenciju da se pakovanje otpada / prenosi kao \"stil\" i podsticanje poricanja.",
+          "keywords": [
+            "nezavisnost",
+            "udobnost",
+            "oblast"
+          ]
+        }
+      }
+    }
+  }
+}
