@@ -492,16 +492,11 @@ export const getI18nRelationshipAnalysisMeaningByCardAndPosition = (
         }
         return originalMeaning.keywords;
       } catch (error) {
-        console.error(
-          `[Relationship Analysis Position ${position}] Failed to parse keywords for ${cardName}:`,
-          error
-        );
         return originalMeaning.keywords;
       }
     })(),
     context:
-      i18nContext &&
-      !i18nContext.startsWith('relationship-analysis.meanings.')
+      i18nContext && !i18nContext.startsWith('relationship-analysis.meanings.')
         ? i18nContext
         : originalMeaning.context,
   };

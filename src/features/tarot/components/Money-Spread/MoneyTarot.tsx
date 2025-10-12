@@ -3,7 +3,7 @@
 import type { TarotCard } from '@/types/tarot';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createMoneyConfig } from '@/features/tarot/shared/config';
-import { getMoneyMeaningByCardAndPosition } from '@/features/tarot/lib/money/position-meanings-index';
+import { getI18nMoneyMeaningByCardAndPosition } from '@/features/tarot/lib/money/position-meanings-index';
 import { useTranslations } from '@/hooks/useTranslations';
 
 export default function MoneyReading(props: any) {
@@ -22,13 +22,15 @@ export default function MoneyReading(props: any) {
         return '';
       }
 
-      const meaning = getMoneyMeaningByCardAndPosition(
-        card,
+      // i18n destekli fonksiyon - kullanıcının diline göre çevirileri döndürür
+      const meaning = getI18nMoneyMeaningByCardAndPosition(
+        card.name,
         position,
-        isReversed
+        t
       );
 
       if (!meaning) {
+        // Fallback: orijinal kart anlamlarını kullan
         return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
       }
 

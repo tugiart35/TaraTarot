@@ -3,7 +3,7 @@
 import type { TarotCard } from '@/types/tarot';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createMarriageConfig } from '@/features/tarot/shared/config';
-import { getMarriageMeaningByCardAndPosition } from '@/features/tarot/lib/marriage/position-meanings-index';
+import { getI18nMarriageMeaningByCardAndPosition } from '@/features/tarot/lib/marriage/position-meanings-index';
 import { useTranslations } from '@/hooks/useTranslations';
 
 export default function MarriageReading(props: any) {
@@ -22,13 +22,15 @@ export default function MarriageReading(props: any) {
         return '';
       }
 
-      const meaning = getMarriageMeaningByCardAndPosition(
-        card,
+      // i18n destekli fonksiyon - kullanıcının diline göre çevirileri döndürür
+      const meaning = getI18nMarriageMeaningByCardAndPosition(
+        card.name,
         position,
-        isReversed
+        t
       );
 
       if (!meaning) {
+        // Fallback: orijinal kart anlamlarını kullan
         return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
       }
 

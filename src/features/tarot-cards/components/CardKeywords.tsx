@@ -5,7 +5,7 @@ interface CardKeywordsProps {
   locale: 'tr' | 'en' | 'sr';
 }
 
-export function CardKeywords({ content, locale }: CardKeywordsProps) {
+export function CardKeywords({ content, locale: _locale }: CardKeywordsProps) {
   // Don't render if keywords data is missing
   if (!content.keywords?.keywords_title) {
     return null;

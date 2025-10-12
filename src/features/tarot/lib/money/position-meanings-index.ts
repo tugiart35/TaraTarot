@@ -5,10 +5,12 @@ Dosya Amacı:
 - Para Açılımı tarot açılımında her pozisyon için kart anlamlarını birleştirir
 - Pozisyona, karta, anahtar kelimeye veya gruba göre anlam arama ve filtreleme fonksiyonları sunar
 - Pozisyon başlıkları, açıklamaları ve ilgili meta verileri içerir
+- i18n desteği ile 3 dilde (TR/EN/SR)
 
 Bağlı Dosyalar:
 - MoneyTarot.tsx (ana bileşen)
 - money-config.ts (konfigürasyon)
+- i18n-helper.ts (i18n yardımcı fonksiyonları)
 - messages/tr.json (çeviriler)
 - position-1-mevcut-finansal-durum.ts (1. pozisyon anlamları)
 - position-2-para-akisi.ts (2. pozisyon anlamları)
@@ -20,21 +22,24 @@ Bağlı Dosyalar:
 - position-8-para-kazanma-yetenekleri.ts (8. pozisyon anlamları)
 
 Üretime Hazır mı?:
-- Evet, tüm pozisyon anlamları ve arama fonksiyonları tamamlandı
+- Evet, tüm pozisyon anlamları ve arama fonksiyonları tamamlandı + i18n entegrasyonu
 ---
 
 */
 
+'use client';
+
 import { TarotCard } from '@/types/tarot';
+import { getMoneyMeaningI18nKey } from './i18n-helper';
 import { getCardNameMappingSync } from '@/features/tarot/lib/love/card-name-mapping';
 import { position1Meanings } from './position-1-mevcut-finansal-durum';
 import { position2Meanings } from './position-2-para-akisi';
 import { position3Meanings } from './position-3-finansal-engeller';
 import { position4Meanings } from './position-4-firsatlar';
-import { Position5Meanings } from './position-5-yakin-gelecek';
-import { Position6Meanings } from './position-6-yeni-mali-planlar';
-import { Position7Meanings } from './position-7-gelecek-para-planlari';
-import { position8meanings } from './position-8-para-kazanma-yetenekleri';
+import { position5Meanings } from './position-5-yakin-gelecek';
+import { position6Meanings } from './position-6-yeni-mali-planlar';
+import { position7Meanings } from './position-7-gelecek-para-planlari';
+import { position8Meanings } from './position-8-para-kazanma-yetenekleri';
 
 export interface MoneyPositionMeaning {
   id: string;
@@ -109,13 +114,13 @@ export const MONEY_POSITION_MEANINGS: Record<string, MoneyPositionMeaning[]> = {
   // Pozisyon 4: Fırsatlar
   '4': position4Meanings,
   // Pozisyon 5: Yakın Gelecek
-  '5': Position5Meanings,
+  '5': position5Meanings,
   // Pozisyon 6: Yeni Mali Planlar
-  '6': Position6Meanings,
+  '6': position6Meanings,
   // Pozisyon 7: Gelecek Para Planları
-  '7': Position7Meanings,
+  '7': position7Meanings,
   // Pozisyon 8: Para Kazanma Yetenekleri
-  '8': position8meanings,
+  '8': position8Meanings,
 };
 
 /**
@@ -179,10 +184,6 @@ export function getMoneyMeaningByCardAndPosition(
     reversed: isReversed ? baseMeaning.upright : baseMeaning.reversed,
   };
 
-  console.log(
-    '⚠️ Returning fallback meaning:',
-    fallbackResult.upright.substring(0, 50) + '...'
-  );
   return fallbackResult;
 }
 
@@ -376,9 +377,124 @@ export const getMoneyStatistics = () => {
   };
 };
 
+/**
+ * i18n destekli Money meaning fonksiyonu
+ * Kart anlamlarını kullanıcının diline göre döndürür
+ *
+ * @param cardName - Kart adı (İngilizce, örn: "The Fool")
+ * @param position - Pozisyon numarası (1-8)
+ * @param t - Translation fonksiyonu
+ * @returns i18n destekli pozisyon anlamı veya null
+ */
+export function getI18nMoneyMeaningByCardAndPosition(
+  cardName: string,
+  position: number,
+  t: (_key: string) => string
+): MoneyPositionMeaning | null {
+  // Pozisyon kontrolü
+  if (position < 1 || position > 8) {
+    // eslint-disable-next-line no-console
+    console.warn(`[Money] Invalid position: ${position}. Must be 1-8.`);
+    return null;
+  }
+
+  // Orijinal anlamları al
+  let positionMeanings: MoneyPositionMeaning[] = [];
+  switch (position) {
+    case 1:
+      positionMeanings = position1Meanings;
+      break;
+    case 2:
+      positionMeanings = position2Meanings;
+      break;
+    case 3:
+      positionMeanings = position3Meanings;
+      break;
+    case 4:
+      positionMeanings = position4Meanings;
+      break;
+    case 5:
+      positionMeanings = position5Meanings;
+      break;
+    case 6:
+      positionMeanings = position6Meanings;
+      break;
+    case 7:
+      positionMeanings = position7Meanings;
+      break;
+    case 8:
+      positionMeanings = position8Meanings;
+      break;
+    default:
+      return null;
+  }
+
+  // Kartı bul
+  const originalMeaning = positionMeanings.find(m => m.card === cardName);
+
+  if (!originalMeaning) {
+    // eslint-disable-next-line no-console
+    console.warn(`[Money Position ${position}] Card not found: ${cardName}`);
+    return null;
+  }
+
+  // i18n değerlerini al
+  const i18nUpright = t(getMoneyMeaningI18nKey(cardName, position, 'upright'));
+  const i18nReversed = t(
+    getMoneyMeaningI18nKey(cardName, position, 'reversed')
+  );
+  const i18nKeywords = t(
+    getMoneyMeaningI18nKey(cardName, position, 'keywords')
+  );
+  const i18nContext = t(getMoneyMeaningI18nKey(cardName, position, 'context'));
+
+  // Eğer çeviri bulunamazsa (key döndürülürse), orijinal değeri kullan
+  const uprightText = i18nUpright.startsWith('money.meanings.')
+    ? originalMeaning.upright
+    : i18nUpright;
+
+  const reversedText = i18nReversed.startsWith('money.meanings.')
+    ? originalMeaning.reversed
+    : i18nReversed;
+
+  const contextText = i18nContext.startsWith('money.meanings.')
+    ? originalMeaning.context
+    : i18nContext;
+
+  // Keywords: JSON string'den array'e çevir
+  const keywordsArray = (() => {
+    if (!i18nKeywords || i18nKeywords.startsWith('money.meanings.')) {
+      return originalMeaning.keywords;
+    }
+    try {
+      const parsed = JSON.parse(i18nKeywords);
+      if (Array.isArray(parsed)) {
+        return parsed;
+      }
+      return originalMeaning.keywords;
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.error(
+        `[Money Position ${position}] Failed to parse keywords for ${cardName}:`,
+        error
+      );
+      return originalMeaning.keywords;
+    }
+  })();
+
+  return {
+    ...originalMeaning,
+    upright: uprightText,
+    reversed: reversedText,
+    keywords: keywordsArray,
+    context: contextText,
+  };
+}
+
 // Varsayılan export
 const moneyExports = {
   getMoneyMeaningByCardAndPosition,
+  getI18nMoneyMeaningByCardAndPosition, // i18n destekli fonksiyon
   getMoneyMeaningByCardNameAndPosition,
   getMoneyPositionMeanings,
   getMoneyMeaningsByCard,

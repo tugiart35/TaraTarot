@@ -5,11 +5,13 @@ Dosya Amacı:
 - Yeni Bir Sevgili açılımı tarot açılımında her pozisyon için kart anlamlarını birleştirir
 - Pozisyona, karta, anahtar kelimeye veya gruba göre anlam arama ve filtreleme fonksiyonları sunar
 - Pozisyon başlıkları, açıklamaları ve ilgili meta verileri içerir
+- i18n desteği ile 3 dilde (TR/EN/SR)
 
 Bağlı Dosyalar:
 - NewLoverTarot.tsx (ana bileşen)
 - new-lover-config.ts (konfigürasyon)
-- messages/tr.json (çeviriler)
+- i18n-helper.ts (i18n yardımcı fonksiyonları)
+- messages/tr.json (çeviriler - "new-lover" key)
 - position-1-yeni-bir-sevgili-yaklasacak-mi.ts (1. pozisyon anlamları)
 - position-2-bu-kisi-nasil-biri.ts (2. pozisyon anlamları)
 - position-3-bu-kisiyle-uyumlu-muyum.ts (3. pozisyon anlamları)
@@ -18,12 +20,15 @@ Bağlı Dosyalar:
 - position-6-dilegim-gerceklesecek-mi.ts (6. pozisyon anlamları)
 
 Üretime Hazır mı?:
-- Evet, tüm pozisyon anlamları ve arama fonksiyonları tamamlandı
+- Evet, tüm pozisyon anlamları ve arama fonksiyonları tamamlandı + i18n entegrasyonu
 ---
 
 */
 
+'use client';
+
 import { TarotCard } from '@/types/tarot';
+import { getNewLoverMeaningI18nKey } from './i18n-helper';
 import { getCardNameMappingSync } from '@/features/tarot/lib/love/card-name-mapping';
 import { position1Meanings } from './position-1-yakinda-yeni-bir-iliskiye';
 import { position2Meanings } from './position-2-bu-kisi-hangi-burctan';
@@ -358,9 +363,114 @@ export const getNewLoverStatistics = () => {
   };
 };
 
+/**
+ * i18n destekli New Lover meaning fonksiyonu
+ * Kart anlamlarını kullanıcının diline göre döndürür
+ *
+ * @param cardName - Kart adı (İngilizce, örn: "The Fool")
+ * @param position - Pozisyon numarası (1-6)
+ * @param t - Translation fonksiyonu
+ * @returns i18n destekli pozisyon anlamı veya null
+ */
+export function getI18nNewLoverMeaningByCardAndPosition(
+  cardName: string,
+  position: number,
+  t: (_key: string) => string
+): NewLoverPositionMeaning | null {
+  // Pozisyon kontrolü
+  if (position < 1 || position > 6) {
+    // eslint-disable-next-line no-console
+    console.warn(`[New Lover] Invalid position: ${position}. Must be 1-6.`);
+    return null;
+  }
+
+  // Orijinal anlamları al
+  let positionMeanings: NewLoverPositionMeaning[] = [];
+  switch (position) {
+    case 1:
+      positionMeanings = position1Meanings;
+      break;
+    case 2:
+      positionMeanings = position2Meanings;
+      break;
+    case 3:
+      positionMeanings = position3Meanings;
+      break;
+    case 4:
+      positionMeanings = position4Meanings;
+      break;
+    case 5:
+      positionMeanings = position5Meanings;
+      break;
+    case 6:
+      positionMeanings = position6Meanings;
+      break;
+    default:
+      return null;
+  }
+
+  // Kartı bul
+  const originalMeaning = positionMeanings.find(m => m.card === cardName);
+
+  if (!originalMeaning) {
+    // eslint-disable-next-line no-console
+    console.warn(`[New Lover Position ${position}] Card not found: ${cardName}`);
+    return null;
+  }
+
+  // i18n değerlerini al
+  const i18nUpright = t(getNewLoverMeaningI18nKey(cardName, position, 'upright'));
+  const i18nReversed = t(getNewLoverMeaningI18nKey(cardName, position, 'reversed'));
+  const i18nKeywords = t(getNewLoverMeaningI18nKey(cardName, position, 'keywords'));
+  const i18nContext = t(getNewLoverMeaningI18nKey(cardName, position, 'context'));
+
+  // Eğer çeviri bulunamazsa (key döndürülürse), orijinal değeri kullan
+  const uprightText = i18nUpright.startsWith('new-lover.meanings.')
+    ? originalMeaning.upright
+    : i18nUpright;
+
+  const reversedText = i18nReversed.startsWith('new-lover.meanings.')
+    ? originalMeaning.reversed
+    : i18nReversed;
+
+  const contextText = i18nContext.startsWith('new-lover.meanings.')
+    ? originalMeaning.context
+    : i18nContext;
+
+  // Keywords: JSON string'den array'e çevir
+  const keywordsArray = (() => {
+    if (!i18nKeywords || i18nKeywords.startsWith('new-lover.meanings.')) {
+      return originalMeaning.keywords;
+    }
+    try {
+      const parsed = JSON.parse(i18nKeywords);
+      if (Array.isArray(parsed)) {
+        return parsed;
+      }
+      return originalMeaning.keywords;
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.error(
+        `[New Lover Position ${position}] Failed to parse keywords for ${cardName}:`,
+        error
+      );
+      return originalMeaning.keywords;
+    }
+  })();
+
+  return {
+    ...originalMeaning,
+    upright: uprightText,
+    reversed: reversedText,
+    keywords: keywordsArray,
+    context: contextText,
+  };
+}
+
 // Varsayılan export
 const newLoverExports = {
   getNewLoverMeaningByCardAndPosition,
+  getI18nNewLoverMeaningByCardAndPosition, // i18n destekli fonksiyon
   getNewLoverMeaningByCardNameAndPosition,
   getNewLoverPositionMeanings,
   getNewLoverMeaningsByCard,

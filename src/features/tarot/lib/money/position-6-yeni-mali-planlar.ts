@@ -1021,7 +1021,7 @@ export function getMoneyPosition6Meaning(
 ): MoneyPosition6Meaning | null {
   // Kart ismi eşleştirmesi için hem İngilizce hem Türkçe isimleri kontrol et
   // Önce doğrudan eşleşme ara
-  let meaning = Position6Meanings.find(
+  let meaning = position6Meanings.find(
     m =>
       m.card === card.name ||
       m.card === card.nameTr ||
@@ -1068,7 +1068,7 @@ export function getMoneyPosition6Meaning(
   const englishName = cardNameMapping[card.nameTr] || card.nameTr;
 
   // İngilizce isimle tekrar ara
-  meaning = Position6Meanings.find(m => m.card === englishName);
+  meaning = position6Meanings.find(m => m.card === englishName);
 
   return meaning || null;
 }
@@ -1081,7 +1081,7 @@ export function getMoneyPosition6Meaning(
 export function getMoneyPosition6MeaningByCardName(
   cardName: string
 ): MoneyPosition6Meaning | null {
-  return Position6Meanings.find(m => m.card === cardName) || null;
+  return position6Meanings.find(m => m.card === cardName) || null;
 }
 
 /**
@@ -1089,7 +1089,7 @@ export function getMoneyPosition6MeaningByCardName(
  * @returns Pozisyon 1 anlamları array'i
  */
 export function getAllMoneyPosition6Meanings(): MoneyPosition6Meaning[] {
-  return Position6Meanings;
+  return position6Meanings;
 }
 
 /**
@@ -1100,7 +1100,7 @@ export function getAllMoneyPosition6Meanings(): MoneyPosition6Meaning[] {
 export function getMoneyPosition6MeaningsByGroup(
   group: 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar'
 ): MoneyPosition6Meaning[] {
-  return Position6Meanings.filter(meaning => meaning.group === group);
+  return position6Meanings.filter(meaning => meaning.group === group);
 }
 
 // i18n destekli fonksiyonlar - şu an kullanılmıyor
@@ -1109,7 +1109,7 @@ export const useI18nPosition6Meanings = (): I18nMoneyPosition6Meaning[] => {
   const { getCardMeaning, getCardKeywords, getCardContext, getCardGroup } =
     useLoveTranslations();
 
-  return Position6Meanings.map(meaning => {
+  return position6Meanings.map(meaning => {
     // i18n'den çevirileri al
     const i18nUpright = getCardMeaning(meaning.card, 1, 'upright');
     const i18nReversed = getCardMeaning(meaning.card, 1, 'reversed');
@@ -1136,7 +1136,7 @@ export const getI18nPosition6Meaning = (
   cardName: string,
   t: (_key: string) => string
 ): I18nMoneyPosition6Meaning | null => {
-  const originalMeaning = Position6Meanings.find(m => m.card === cardName);
+  const originalMeaning = position6Meanings.find(m => m.card === cardName);
   if (!originalMeaning) {
     return null;
   }
@@ -1170,7 +1170,7 @@ export const getI18nPosition6Meaning = (
 
 // Varsayılan export
 const moneyPosition6Exports = {
-  Position6Meanings,
+  position6Meanings,
   getMoneyPosition6Meaning,
   getMoneyPosition6MeaningByCardName,
   getAllMoneyPosition6Meanings,

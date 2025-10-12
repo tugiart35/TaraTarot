@@ -1058,7 +1058,7 @@ export function getMoneyPosition5Meaning(
 ): MoneyPosition5Meaning | null {
   // Kart ismi eşleştirmesi için hem İngilizce hem Türkçe isimleri kontrol et
   // Önce doğrudan eşleşme ara
-  let meaning = Position5Meanings.find(
+  let meaning = position5Meanings.find(
     m =>
       m.card === card.name ||
       m.card === card.nameTr ||
@@ -1105,7 +1105,7 @@ export function getMoneyPosition5Meaning(
   const englishName = cardNameMapping[card.nameTr] || card.nameTr;
 
   // İngilizce isimle tekrar ara
-  meaning = Position5Meanings.find(m => m.card === englishName);
+  meaning = position5Meanings.find(m => m.card === englishName);
 
   return meaning || null;
 }
@@ -1118,15 +1118,15 @@ export function getMoneyPosition5Meaning(
 export function getMoneyPosition5MeaningByCardName(
   cardName: string
 ): MoneyPosition5Meaning | null {
-  return Position5Meanings.find(m => m.card === cardName) || null;
+  return position5Meanings.find(m => m.card === cardName) || null;
 }
 
 /**
  * Tüm pozisyon 1 anlamlarını getirir
  * @returns Pozisyon 1 anlamları array'i
  */
-export function getAllMoneyPosition5Meanings(): MoneyPosition5Meaning[] {
-  return Position5Meanings;
+export function getAllMoneyposition5Meanings(): MoneyPosition5Meaning[] {
+  return position5Meanings;
 }
 
 /**
@@ -1134,19 +1134,19 @@ export function getAllMoneyPosition5Meanings(): MoneyPosition5Meaning[] {
  * @param group - Kart grubu
  * @returns Filtrelenmiş anlamlar
  */
-export function getMoneyPosition5MeaningsByGroup(
+export function getMoneyposition5MeaningsByGroup(
   group: 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar'
 ): MoneyPosition5Meaning[] {
-  return Position5Meanings.filter(meaning => meaning.group === group);
+  return position5Meanings.filter(meaning => meaning.group === group);
 }
 
 // i18n destekli fonksiyonlar - şu an kullanılmıyor
 /*
-export const useI18nPosition5Meanings = (): I18nMoneyPosition5Meaning[] => {
+export const useI18nposition5Meanings = (): I18nMoneyPosition5Meaning[] => {
   const { getCardMeaning, getCardKeywords, getCardContext, getCardGroup } =
     useLoveTranslations();
 
-  return Position5Meanings.map(meaning => {
+  return position5Meanings.map(meaning => {
     // i18n'den çevirileri al
     const i18nUpright = getCardMeaning(meaning.card, 1, 'upright');
     const i18nReversed = getCardMeaning(meaning.card, 1, 'reversed');
@@ -1173,7 +1173,7 @@ export const getI18nPosition5Meaning = (
   cardName: string,
   t: (_key: string) => string
 ): I18nMoneyPosition5Meaning | null => {
-  const originalMeaning = Position5Meanings.find(m => m.card === cardName);
+  const originalMeaning = position5Meanings.find(m => m.card === cardName);
   if (!originalMeaning) {
     return null;
   }
@@ -1207,11 +1207,11 @@ export const getI18nPosition5Meaning = (
 
 // Varsayılan export
 const moneyPosition5Exports = {
-  Position5Meanings,
+  position5Meanings,
   getMoneyPosition5Meaning,
   getMoneyPosition5MeaningByCardName,
-  getAllMoneyPosition5Meanings,
-  getMoneyPosition5MeaningsByGroup,
+  getAllMoneyposition5Meanings,
+  getMoneyposition5MeaningsByGroup,
   getI18nPosition5Meaning,
 };
 

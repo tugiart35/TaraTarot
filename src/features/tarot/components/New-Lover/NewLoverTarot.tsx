@@ -3,10 +3,8 @@
 import type { TarotCard } from '@/types/tarot';
 import { createTarotReadingComponent } from '@/features/tarot/shared/components';
 import { createNewLoverConfig } from '@/features/tarot/shared/config';
-import newLoverExports from '@/features/tarot/lib/new-lover/position-meanings-index';
+import { getI18nNewLoverMeaningByCardAndPosition } from '@/features/tarot/lib/new-lover/position-meanings-index';
 import { useTranslations } from '@/hooks/useTranslations';
-
-const { getNewLoverMeaningByCardAndPosition } = newLoverExports;
 
 export default function NewLoverReading(props: any) {
   const { t } = useTranslations();
@@ -24,13 +22,15 @@ export default function NewLoverReading(props: any) {
         return '';
       }
 
-      const meaning = getNewLoverMeaningByCardAndPosition(
-        card,
+      // i18n destekli fonksiyon - kullanıcının diline göre çevirileri döndürür
+      const meaning = getI18nNewLoverMeaningByCardAndPosition(
+        card.name,
         position,
-        isReversed
+        t
       );
 
       if (!meaning) {
+        // Fallback: orijinal kart anlamlarını kullan
         return isReversed ? card.meaningTr.reversed : card.meaningTr.upright;
       }
 

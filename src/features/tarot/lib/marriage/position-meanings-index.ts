@@ -5,10 +5,12 @@ Dosya Amacı:
 - Evlilik açılımı pozisyon anlamları
 - 10 pozisyon için özel evlilik odaklı yorumlar
 - Sylvia Abraha kitabından uyarlanmış
+- i18n desteği ile 3 dilde (TR/EN/SR)
 
 Bağlı Dosyalar:
 - marriage-config.ts (pozisyon tanımları)
 - MarriageTarot.tsx (ana bileşen)
+- i18n-helper.ts (i18n yardımcı fonksiyonları)
 - position-1-sonuc-ne-olacak.ts (1. pozisyon anlamları)
 - position-2-esimi-beklerken.ts (2. pozisyon anlamları)
 - position-3-mali-kaynaklar.ts (3. pozisyon anlamları)
@@ -21,12 +23,15 @@ Bağlı Dosyalar:
 - position-10-evlenebilme.ts (10. pozisyon anlamları)
 
 Üretime Hazır mı?:
-- Evet, tam anlam seti hazır
+- Evet, tam anlam seti hazır + i18n entegrasyonu tamamlandı
 ---
 
 */
 
+'use client';
+
 import { TarotCard } from '@/types/tarot';
+import { getMarriageMeaningI18nKey } from './i18n-helper';
 import { getCardNameMappingSync } from '@/features/tarot/lib/love/card-name-mapping';
 import {
   position1Meanings,
@@ -510,9 +515,134 @@ export const getMarriageStatistics = () => {
   };
 };
 
+/**
+ * i18n destekli Marriage meaning fonksiyonu
+ * Kart anlamlarını kullanıcının diline göre döndürür
+ *
+ * @param cardName - Kart adı (İngilizce, örn: "The Fool")
+ * @param position - Pozisyon numarası (1-10)
+ * @param t - Translation fonksiyonu
+ * @returns i18n destekli pozisyon anlamı veya null
+ */
+export function getI18nMarriageMeaningByCardAndPosition(
+  cardName: string,
+  position: number,
+  t: (_key: string) => string
+): MarriagePositionMeaning | null {
+  // Pozisyon kontrolü
+  if (position < 1 || position > 10) {
+    // eslint-disable-next-line no-console
+    console.warn(`[Marriage] Invalid position: ${position}. Must be 1-10.`);
+    return null;
+  }
+
+  // Orijinal anlamları al
+  let positionMeanings: MarriagePositionMeaning[] = [];
+  switch (position) {
+    case 1:
+      positionMeanings = position1Meanings;
+      break;
+    case 2:
+      positionMeanings = position2Meanings;
+      break;
+    case 3:
+      positionMeanings = position3Meanings;
+      break;
+    case 4:
+      positionMeanings = position4Meanings;
+      break;
+    case 5:
+      positionMeanings = position5Meanings;
+      break;
+    case 6:
+      positionMeanings = position6Meanings;
+      break;
+    case 7:
+      positionMeanings = position7Meanings;
+      break;
+    case 8:
+      positionMeanings = position8Meanings;
+      break;
+    case 9:
+      positionMeanings = position9Meanings;
+      break;
+    case 10:
+      positionMeanings = position10Meanings;
+      break;
+    default:
+      return null;
+  }
+
+  // Kartı bul
+  const originalMeaning = positionMeanings.find(m => m.card === cardName);
+
+  if (!originalMeaning) {
+    // eslint-disable-next-line no-console
+    console.warn(`[Marriage Position ${position}] Card not found: ${cardName}`);
+    return null;
+  }
+
+  // i18n değerlerini al
+  const i18nUpright = t(
+    getMarriageMeaningI18nKey(cardName, position, 'upright')
+  );
+  const i18nReversed = t(
+    getMarriageMeaningI18nKey(cardName, position, 'reversed')
+  );
+  const i18nKeywords = t(
+    getMarriageMeaningI18nKey(cardName, position, 'keywords')
+  );
+  const i18nContext = t(
+    getMarriageMeaningI18nKey(cardName, position, 'context')
+  );
+
+  // Eğer çeviri bulunamazsa (key döndürülürse), orijinal değeri kullan
+  const uprightText = i18nUpright.startsWith('marriage.meanings.')
+    ? originalMeaning.upright
+    : i18nUpright;
+
+  const reversedText = i18nReversed.startsWith('marriage.meanings.')
+    ? originalMeaning.reversed
+    : i18nReversed;
+
+  const contextText = i18nContext.startsWith('marriage.meanings.')
+    ? originalMeaning.context
+    : i18nContext;
+
+  // Keywords: JSON string'den array'e çevir
+  const keywordsArray = (() => {
+    if (!i18nKeywords || i18nKeywords.startsWith('marriage.meanings.')) {
+      return originalMeaning.keywords;
+    }
+    try {
+      const parsed = JSON.parse(i18nKeywords);
+      if (Array.isArray(parsed)) {
+        return parsed;
+      }
+      return originalMeaning.keywords;
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.error(
+        `[Marriage Position ${position}] Failed to parse keywords for ${cardName}:`,
+        error
+      );
+      return originalMeaning.keywords;
+    }
+  })();
+
+  return {
+    ...originalMeaning,
+    upright: uprightText,
+    reversed: reversedText,
+    keywords: keywordsArray,
+    context: contextText,
+  };
+}
+
 // Varsayılan export
 const marriageExports = {
   getMarriageMeaningByCardAndPosition,
+  getI18nMarriageMeaningByCardAndPosition, // i18n destekli fonksiyon
   getMarriageMeaningByCardNameAndPosition,
   getMarriageMeaningsByPosition,
   getMarriageMeaningsByCard,

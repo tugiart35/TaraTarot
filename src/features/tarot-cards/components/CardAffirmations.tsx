@@ -5,7 +5,7 @@ interface CardAffirmationsProps {
   locale: 'tr' | 'en' | 'sr';
 }
 
-export function CardAffirmations({ content, locale }: CardAffirmationsProps) {
+export function CardAffirmations({ content, locale: _locale }: CardAffirmationsProps) {
   const { affirmations } = content;
 
   if (!affirmations || !affirmations.affirmation_list.length) return null;

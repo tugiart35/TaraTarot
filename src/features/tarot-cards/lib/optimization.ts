@@ -164,7 +164,7 @@ export class SEOUtils {
     _locale: 'tr' | 'en' | 'sr'
   ): string {
     const maxLength = 160;
-    const description = content.uprightMeaning;
+    const description = content.short_description;
 
     if (description.length <= maxLength) {
       return description;
@@ -178,7 +178,14 @@ export class SEOUtils {
     content: CardContent,
     locale: 'tr' | 'en' | 'sr'
   ): string[] {
-    const baseKeywords = content.keywords;
+    // keywords obje olduğu için, keywords_message'dan anahtar kelimeleri çıkarabiliriz
+    const keywordsText = content.keywords?.keywords_message || '';
+    const baseKeywords = keywordsText
+      .split(/[,;.\n]/)
+      .map(k => k.trim())
+      .filter(k => k.length > 0)
+      .slice(0, 5); // İlk 5 kelimeyi al
+    
     const localeKeywords =
       locale === 'tr'
         ? ['tarot', 'kartlar', 'anlamlar']
@@ -186,7 +193,7 @@ export class SEOUtils {
           ? ['tarot', 'cards', 'meanings']
           : ['tarot', 'karte', 'značenja'];
 
-    const allKeywords = baseKeywords.concat(localeKeywords);
+    const allKeywords = [...baseKeywords, ...localeKeywords];
     return Array.from(new Set(allKeywords));
   }
 }

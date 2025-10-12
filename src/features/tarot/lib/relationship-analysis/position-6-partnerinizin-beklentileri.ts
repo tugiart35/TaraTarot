@@ -1188,20 +1188,20 @@ export const getRelationshipAnalysisPosition6MeaningByCardName = (
 };
 
 // Tüm pozisyon 6 anlamlarını alma fonksiyonu
-export const getAllPosition6Meanings =
+export const getAllposition6Meanings =
   (): RelationshipAnalysisPositionMeaning[] => {
     return position6Meanings;
   };
 
 // Pozisyon 6 anlamlarını filtreleme fonksiyonu
-export const getPosition6MeaningsByGroup = (
+export const getposition6MeaningsByGroup = (
   group: 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar'
 ): RelationshipAnalysisPositionMeaning[] => {
   return position6Meanings.filter(meaning => meaning.group === group);
 };
 
 // Anahtar kelimeye göre pozisyon 6 anlamlarını arama
-export const searchPosition6MeaningsByKeyword = (
+export const searchposition6MeaningsByKeyword = (
   keyword: string
 ): RelationshipAnalysisPositionMeaning[] => {
   return position6Meanings.filter(meaning =>
@@ -1216,6 +1216,6 @@ export default {
   position6Meanings,
   getRelationshipAnalysisPosition6Meaning,
   getRelationshipAnalysisPosition6MeaningByCardName,
-  getAllPosition6Meanings: getAllPosition6Meanings,
-  getRelationshipAnalysisPosition6MeaningsByGroup: getPosition6MeaningsByGroup,
+  getAllposition6Meanings: getAllposition6Meanings,
+  getRelationshipAnalysisposition6MeaningsByGroup: getposition6MeaningsByGroup,
 };

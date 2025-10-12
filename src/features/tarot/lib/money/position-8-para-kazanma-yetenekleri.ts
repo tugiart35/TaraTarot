@@ -1072,12 +1072,12 @@ export const position8Meanings: MoneyPosition8Meaning[] = [
  * @param card - Tarot kartı
  * @returns Pozisyon 1 anlamı veya null
  */
-export function getMoneyPosition8meaning(
+export function getMoneyPosition8Meaning(
   card: TarotCard
-): MoneyPosition8meaning | null {
+): MoneyPosition8Meaning | null {
   // Kart ismi eşleştirmesi için hem İngilizce hem Türkçe isimleri kontrol et
   // Önce doğrudan eşleşme ara
-  let meaning = position8meanings.find(
+  let meaning = position8Meanings.find(
     m =>
       m.card === card.name ||
       m.card === card.nameTr ||
@@ -1124,7 +1124,7 @@ export function getMoneyPosition8meaning(
   const englishName = cardNameMapping[card.nameTr] || card.nameTr;
 
   // İngilizce isimle tekrar ara
-  meaning = position8meanings.find(m => m.card === englishName);
+  meaning = position8Meanings.find(m => m.card === englishName);
 
   return meaning || null;
 }
@@ -1134,18 +1134,18 @@ export function getMoneyPosition8meaning(
  * @param cardName - Kart ismi
  * @returns Pozisyon 1 anlamı veya null
  */
-export function getMoneyPosition8meaningByCardName(
+export function getMoneyPosition8MeaningByCardName(
   cardName: string
-): MoneyPosition8meaning | null {
-  return position8meanings.find(m => m.card === cardName) || null;
+): MoneyPosition8Meaning | null {
+  return position8Meanings.find(m => m.card === cardName) || null;
 }
 
 /**
  * Tüm pozisyon 1 anlamlarını getirir
  * @returns Pozisyon 1 anlamları array'i
  */
-export function getAllMoneyPosition8meanings(): MoneyPosition8meaning[] {
-  return position8meanings;
+export function getAllMoneyPosition8Meanings(): MoneyPosition8Meaning[] {
+  return position8Meanings;
 }
 
 /**
@@ -1153,10 +1153,10 @@ export function getAllMoneyPosition8meanings(): MoneyPosition8meaning[] {
  * @param group - Kart grubu
  * @returns Filtrelenmiş anlamlar
  */
-export function getMoneyPosition8meaningsByGroup(
+export function getMoneyPosition8MeaningsByGroup(
   group: 'Majör Arkana' | 'Kupalar' | 'Kılıçlar' | 'Asalar' | 'Tılsımlar'
-): MoneyPosition8meaning[] {
-  return position8meanings.filter(meaning => meaning.group === group);
+): MoneyPosition8Meaning[] {
+  return position8Meanings.filter(meaning => meaning.group === group);
 }
 
 // i18n destekli fonksiyonlar - şu an kullanılmıyor
@@ -1188,11 +1188,11 @@ export const useI18nPosition8meanings = (): I18nMoneyPosition8meaning[] => {
 */
 
 // Belirli bir kart için i18n destekli anlam al (hook kullanmadan)
-export const getI18nPosition8meaning = (
+export const getI18nPosition8Meaning = (
   cardName: string,
   t: (_key: string) => string
-): I18nMoneyPosition8meaning | null => {
-  const originalMeaning = position8meanings.find(m => m.card === cardName);
+): I18nMoneyPosition8Meaning | null => {
+  const originalMeaning = position8Meanings.find(m => m.card === cardName);
   if (!originalMeaning) {
     return null;
   }
@@ -1226,12 +1226,12 @@ export const getI18nPosition8meaning = (
 
 // Varsayılan export
 const moneyPosition8Exports = {
-  position8meanings,
-  getMoneyPosition8meaning,
-  getMoneyPosition8meaningByCardName,
-  getAllMoneyPosition8meanings,
-  getMoneyPosition8meaningsByGroup,
-  getI18nPosition8meaning,
+  position8Meanings,
+  getMoneyPosition8Meaning,
+  getMoneyPosition8MeaningByCardName,
+  getAllMoneyPosition8Meanings,
+  getMoneyPosition8MeaningsByGroup,
+  getI18nPosition8Meaning,
 };
 
 export default moneyPosition8Exports;

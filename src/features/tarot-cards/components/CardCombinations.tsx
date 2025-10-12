@@ -5,7 +5,7 @@ interface CardCombinationsProps {
   locale: 'tr' | 'en' | 'sr';
 }
 
-export function CardCombinations({ content, locale }: CardCombinationsProps) {
+export function CardCombinations({ content, locale: _locale }: CardCombinationsProps) {
   const { card_combinations } = content;
 
   if (!card_combinations || !card_combinations.combinations.length) return null;
