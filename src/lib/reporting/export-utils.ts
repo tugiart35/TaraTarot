@@ -21,7 +21,7 @@ Geliştirme önerileri:
 */
 
 import jsPDF from 'jspdf';
-import * as XLSX from 'xlsx';
+import ExcelJS from 'exceljs';
 
 /*
  * Dosya boyutu optimizasyonu
@@ -122,56 +122,58 @@ export const exportToExcel = async (
   data: ReportData,
   _options: ExportOptions
 ): Promise<Blob> => {
-  const workbook = XLSX.utils.book_new();
+  const workbook = new ExcelJS.Workbook();
 
   // Ana özet sayfası
-  const summaryData = [
-    ['Metrik', 'Değer'],
-    ['Toplam Kullanıcı', data.totalUsers],
-    ['Günlük Kullanıcı', data.dailyUsers],
-    ['Kullanıcı Büyümesi (%)', data.userGrowth],
-    ['Toplam Gelir (€)', data.totalRevenue],
-    ['Gelir Büyümesi (%)', data.revenueGrowth],
-    ['Satılan Krediler', data.creditsSold],
-    ['Kullanılan Krediler', data.creditUsage],
+  const summarySheet = workbook.addWorksheet('Özet');
+  summarySheet.columns = [
+    { header: 'Metrik', key: 'metric', width: 30 },
+    { header: 'Değer', key: 'value', width: 15 }
   ];
-
-  const summarySheet = XLSX.utils.aoa_to_sheet(summaryData);
-  XLSX.utils.book_append_sheet(workbook, summarySheet, 'Özet');
+  summarySheet.addRows([
+    { metric: 'Toplam Kullanıcı', value: data.totalUsers },
+    { metric: 'Günlük Kullanıcı', value: data.dailyUsers },
+    { metric: 'Kullanıcı Büyümesi (%)', value: data.userGrowth },
+    { metric: 'Toplam Gelir (€)', value: data.totalRevenue },
+    { metric: 'Gelir Büyümesi (%)', value: data.revenueGrowth },
+    { metric: 'Satılan Krediler', value: data.creditsSold },
+    { metric: 'Kullanılan Krediler', value: data.creditUsage },
+  ]);
 
   // Kullanıcı kayıtları
-  const userRegData = [
-    ['Gün', 'Kayıt Sayısı'],
-    ...data.userRegistrations.map(item => [item.name, item.value]),
+  const userRegSheet = workbook.addWorksheet('Kullanıcı Kayıtları');
+  userRegSheet.columns = [
+    { header: 'Gün', key: 'name', width: 20 },
+    { header: 'Kayıt Sayısı', key: 'value', width: 15 }
   ];
-  const userRegSheet = XLSX.utils.aoa_to_sheet(userRegData);
-  XLSX.utils.book_append_sheet(workbook, userRegSheet, 'Kullanıcı Kayıtları');
+  userRegSheet.addRows(data.userRegistrations);
 
   // Paket satışları
-  const packageData = [
-    ['Paket Adı', 'Satış Sayısı'],
-    ...data.packageSales.map(item => [item.name, item.value]),
+  const packageSheet = workbook.addWorksheet('Paket Satışları');
+  packageSheet.columns = [
+    { header: 'Paket Adı', key: 'name', width: 30 },
+    { header: 'Satış Sayısı', key: 'value', width: 15 }
   ];
-  const packageSheet = XLSX.utils.aoa_to_sheet(packageData);
-  XLSX.utils.book_append_sheet(workbook, packageSheet, 'Paket Satışları');
+  packageSheet.addRows(data.packageSales);
 
   // Özellik kullanımı
-  const featureData = [
-    ['Özellik', 'Kullanım Sayısı'],
-    ...data.featureUsage.map(item => [item.name, item.value]),
+  const featureSheet = workbook.addWorksheet('Özellik Kullanımı');
+  featureSheet.columns = [
+    { header: 'Özellik', key: 'name', width: 30 },
+    { header: 'Kullanım Sayısı', key: 'value', width: 15 }
   ];
-  const featureSheet = XLSX.utils.aoa_to_sheet(featureData);
-  XLSX.utils.book_append_sheet(workbook, featureSheet, 'Özellik Kullanımı');
+  featureSheet.addRows(data.featureUsage);
 
   // Gelir verileri
-  const revenueData = [
-    ['Tarih', 'Gelir (€)'],
-    ...data.revenueData.map(item => [item.date, item.revenue]),
+  const revenueSheet = workbook.addWorksheet('Gelir Verileri');
+  revenueSheet.columns = [
+    { header: 'Tarih', key: 'date', width: 15 },
+    { header: 'Gelir (€)', key: 'revenue', width: 15 }
   ];
-  const revenueSheet = XLSX.utils.aoa_to_sheet(revenueData);
-  XLSX.utils.book_append_sheet(workbook, revenueSheet, 'Gelir Verileri');
+  revenueSheet.addRows(data.revenueData);
 
-  return XLSX.write(workbook, { bookType: 'xlsx', type: 'array' });
+  const buffer = await workbook.xlsx.writeBuffer();
+  return new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
 };
 
 // Yardımcı fonksiyonlar
