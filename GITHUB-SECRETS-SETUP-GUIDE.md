@@ -398,7 +398,7 @@ Deployment başarılı olduğunda göreceğiniz şeyler:
 - Domain aktif
 
 ✅ **Site Kontrolü:**
-- https://taratarot.com → Açılıyor
+- https://busbuskimki.com → Açılıyor
 - /tr → Çalışıyor
 - /en → Çalışıyor
 - /sr → Çalışıyor

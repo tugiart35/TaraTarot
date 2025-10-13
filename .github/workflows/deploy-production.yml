@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: production
-      url: https://taratarot.com
+      url: https://busbuskimki.com
 
     steps:
       - name: Checkout code
@@ -75,7 +75,7 @@ jobs:
 
       - name: Check production health
         run: |
-          RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" https://taratarot.com/api/health)
+          RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" https://busbuskimki.com/api/health)
           if [ $RESPONSE -eq 200 ]; then
             echo "✅ Health check passed - Status: $RESPONSE"
           else
@@ -86,10 +86,10 @@ jobs:
       - name: Test main endpoints
         run: |
           echo "Testing main endpoints..."
-          curl -f https://taratarot.com/ || exit 1
-          curl -f https://taratarot.com/tr || exit 1
-          curl -f https://taratarot.com/en || exit 1
-          curl -f https://taratarot.com/sr || exit 1
+          curl -f https://busbuskimki.com/ || exit 1
+          curl -f https://busbuskimki.com/tr || exit 1
+          curl -f https://busbuskimki.com/en || exit 1
+          curl -f https://busbuskimki.com/sr || exit 1
           echo "✅ All endpoints responding"
 
   # ==========================================================================

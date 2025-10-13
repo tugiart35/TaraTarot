@@ -402,15 +402,15 @@ Durum: PRODÜKSİYON ÖNCESİ İNCELEME
    a) UptimeRobot hesabı oluştur (https://uptimerobot.com)
    
    b) Monitörler ekle:
-      • Ana sayfa: https://taratarot.com
-      • API health: https://taratarot.com/api/health
-      • Auth endpoint: https://taratarot.com/api/auth/check
-      • Payment webhook: https://taratarot.com/api/webhook/shopier/health
+      • Ana sayfa: https://busbuskimki.com
+      • API health: https://busbuskimki.com/api/health
+      • Auth endpoint: https://busbuskimki.com/api/auth/check
+      • Payment webhook: https://busbuskimki.com/api/webhook/shopier/health
    
    c) Kontrol aralığı: 5 dakika (free tier)
    
    d) Alert yapılandırması:
-      • Email: admin@taratarot.com
+      • Email: admin@busbuskimki.com
       • SMS: +90 5XX XXX XX XX (opsiyonel, ücretli)
       • Webhook: Slack integration
    
