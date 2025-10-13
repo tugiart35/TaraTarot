@@ -1,0 +1,678 @@
+================================================================================
+                     MONİTORİNG VE ALERTING RAPORU
+================================================================================
+Tarih: 2025-10-13
+Proje: TaraTarot (BusBusKimKi)
+Durum: PRODÜKSİYON ÖNCESİ İNCELEME
+================================================================================
+
+📊 MEVCUT MONİTORİNG ALTYAPISI
+================================================================================
+
+✅ MEVCUT OLAN BILEŞENLER:
+─────────────────────────────────────────────────────────────────────────────
+
+1. SECURE LOGGER SİSTEMİ
+   Dosya: src/lib/logger.ts
+   Durum: ✅ Aktif ve kullanımda
+   
+   Özellikler:
+   • Development/production ortam ayrımı
+   • Hassas veri filtreleme (password, token, secret vb.)
+   • Loglama seviyeleri: debug, info, warn, error
+   • Admin action logging
+   • Supabase error logging
+   
+   Kullanım Alanları:
+   • src/app/[locale]/auth/confirm/route.ts - Email onay işlemleri
+   • src/app/[locale]/auth/reset-password/page.tsx - Şifre sıfırlama
+   • src/app/[locale]/admin/users/page.tsx - Admin kullanıcı yönetimi
+   • src/app/[locale]/admin/readings/page.tsx - Tarot okumaları
+   • src/app/[locale]/admin/page.tsx - Admin dashboard
+   
+   ⚠️ SINIRLAMA: Şu anda sadece console'a yazıyor, harici servise göndermiyor
+
+2. ERROR HANDLER (CENTRALIZED)
+   Dosya: src/lib/error-handler.ts
+   Durum: ✅ Aktif ve kullanımda
+   
+   Özellikler:
+   • AppError, SupabaseError, ValidationError sınıfları
+   • AuthenticationError, AuthorizationError yönetimi
+   • Kullanıcı dostu hata mesajları (Türkçe)
+   • Retry stratejisi önerileri
+   • Context-based error tracking
+   
+   Hata Tipleri:
+   • Supabase errors (PGRST116, PGRST301, vb.)
+   • Network errors
+   • Validation errors
+   • Authentication/Authorization errors
+   
+   ⚠️ SINIRLAMA: Error tracking harici servise gönderilmiyor
+
+3. SYSTEM PERFORMANCE MONITOR
+   Dosya: src/lib/admin/real-system-monitor.ts
+   Durum: ✅ Kısmen aktif
+   
+   Metrikler:
+   • Active user count (son 15 dakika)
+   • Average response time (son 10 request)
+   • Server uptime (statik - 99.98%)
+   • Memory usage (statik - 2.4 GB)
+   • CPU usage (statik - 12%)
+   
+   Özellikler:
+   • Otomatik metrik toplama (5 dakika aralıkla)
+   • Supabase'e kaydetme (system_performance tablosu)
+   • React hook: useRealSystemMonitoring
+   • Rate limit koruması
+   
+   ⚠️ SINIRLAMA:
+   • Gerçek server metrikleri alınmıyor (CPU, Memory, Uptime statik)
+   • Sadece Supabase'e kaydediyor, alerting yok
+   • Vercel deployment metrikleri ile entegre değil
+
+4. VERCEL ANALYTICS
+   Dosya: package.json
+   Durum: ✅ Yüklü ve yapılandırılmış
+   
+   Paketler:
+   • @vercel/analytics@^1.5.0
+   • @vercel/speed-insights@^1.2.0
+   • web-vitals@^5.1.0
+   
+   Özellikler:
+   • Page view tracking
+   • Performance metrics (CLS, FCP, LCP, FID, TTFB)
+   • Real User Monitoring (RUM)
+   
+   ⚠️ NOT: Frontend analytics için mükemmel, ama backend errors için yetersiz
+
+5. GOOGLE ANALYTICS
+   Dosya: src/middleware.ts
+   Durum: ⚠️ CSP headers hazır, entegrasyon eksik
+   
+   CSP Headers:
+   • script-src: https://www.googletagmanager.com
+   • connect-src: https://www.google-analytics.com
+   
+   ⚠️ SINIRLAMA: Google Analytics kodu henüz implemente edilmemiş
+
+
+❌ EKSİK BILEŞENLER:
+─────────────────────────────────────────────────────────────────────────────
+
+1. SENTRY ERROR TRACKING
+   Durum: ❌ YAPILMAMIŞ
+   
+   Environment Variables (env.example):
+   • SENTRY_DSN=  (boş, yorumlu)
+   
+   Bulgular:
+   • .env.local dosyasında SENTRY_DSN tanımlı ama boş
+   • Hiçbir kaynak dosyada Sentry import edilmemiş
+   • Sentry SDK kurulmamış (package.json'da yok)
+   
+   Dokümantasyon:
+   • MONITORING-SETUP.md dosyasında kurulum rehberi var
+   • REFactor-PLAN.md'de örnek kod var
+   
+   ⚠️ KRİTİK: Production'da error tracking için mutlaka gerekli!
+
+2. NEW RELIC APM
+   Durum: ❌ HİÇ BAHSEDILMEMIŞ
+   
+   Bulgular:
+   • Hiçbir dosyada "NEW_RELIC" referansı yok
+   • Package.json'da ilgili paket yok
+   • Env dosyalarında yapılandırma yok
+   
+   ℹ️ NOT: Sentry ile aynı amaca hizmet ediyor, ikisinden biri yeterli
+
+3. REAL-TIME ALERTING SİSTEMİ
+   Durum: ❌ YOK
+   
+   Eksikler:
+   • 5xx error rate monitoring
+   • High error rate detection
+   • Job/cron failure alerts
+   • Performance degradation alerts
+   • Database connection errors
+   • API rate limit alerts
+   
+   ⚠️ KRİTİK: Production'da sorunları zamanında tespit için gerekli!
+
+4. UPTIME MONITORING
+   Durum: ❌ YOK
+   
+   Eksikler:
+   • External uptime checker (UptimeRobot, Pingdom, vb.)
+   • SSL certificate expiration monitoring
+   • DNS monitoring
+   • API endpoint health checks
+   
+   ℹ️ ÖNERİ: Ücretsiz UptimeRobot kullanılabilir
+
+5. LOG AGGREGATION
+   Durum: ❌ YOK
+   
+   Eksikler:
+   • Logları toplayan merkezi sistem yok
+   • Vercel deployment logs manuel incelenmeli
+   • Search ve filtering yapılamıyor
+   • Log retention politikası yok
+   
+   ℹ️ ÖNERİ: Vercel'in kendi log sistemi + Sentry yeterli olabilir
+
+
+================================================================================
+📋 ÖNERİLEN ALERT KURALLARI (ALERT RULES)
+================================================================================
+
+🚨 KRİTİK ALERTS (P1 - Immediate Action Required)
+─────────────────────────────────────────────────────────────────────────────
+
+1. APPLICATION DOWN
+   Metrik: HTTP 5xx rate > 50% (son 5 dakika)
+   Threshold: 50% of requests returning 5xx
+   Süre: 5 dakika boyunca devam ederse
+   Action: SMS + Email + Slack
+   
+   Implementasyon:
+   • Uptime monitoring service (UptimeRobot)
+   • Sentry performance monitoring
+   • Vercel deployment health check
+
+2. DATABASE CONNECTION FAILURE
+   Metrik: Supabase connection errors
+   Threshold: 10+ failed connections (son 10 dakika)
+   Süre: Hemen
+   Action: SMS + Email + PagerDuty
+   
+   Implementasyon:
+   • Logger'da Supabase error tracking
+   • Sentry'ye gönderme
+   • Custom alert rule
+
+3. PAYMENT SYSTEM FAILURE
+   Metrik: Shopier webhook failures
+   Threshold: 3+ consecutive failures
+   Süre: 15 dakika içinde
+   Action: Email + Slack + Phone call
+   
+   Implementasyon:
+   • API route'da webhook error logging
+   • Sentry'ye gönderme
+   • Financial transaction tracking
+
+4. AUTHENTICATION SERVICE DOWN
+   Metrik: Supabase Auth errors
+   Threshold: 5+ auth failures (non-credential errors)
+   Süre: 5 dakika
+   Action: Email + Slack
+   
+   Implementasyon:
+   • Auth error service monitoring
+   • Sentry error tracking
+
+
+⚠️ HIGH PRIORITY ALERTS (P2 - Action within 30 minutes)
+─────────────────────────────────────────────────────────────────────────────
+
+5. HIGH ERROR RATE
+   Metrik: 4xx error rate > 25% (son 15 dakika)
+   Threshold: 25% of requests
+   Süre: 15 dakika
+   Action: Email + Slack
+   
+   Implementasyon:
+   • Vercel Analytics
+   • Sentry error tracking
+   • Custom middleware logging
+
+6. SLOW RESPONSE TIME
+   Metrik: P95 response time > 3 saniye
+   Threshold: 3000ms
+   Süre: 10 dakika
+   Action: Email + Slack
+   
+   Implementasyon:
+   • Vercel Speed Insights
+   • Web Vitals tracking
+   • API route performance monitoring
+
+7. AI SERVICE FAILURE
+   Metrik: Groq/Gemini API errors
+   Threshold: 5+ consecutive failures
+   Süre: 10 dakika
+   Action: Email + Slack
+   
+   Implementasyon:
+   • AI service error tracking
+   • Fallback mechanism monitoring
+   • Rate limit tracking
+
+8. HIGH MEMORY USAGE
+   Metrik: Container memory > 85%
+   Threshold: 85% utilization
+   Süre: 20 dakika
+   Action: Email
+   
+   Implementasyon:
+   • Vercel deployment metrics
+   • System performance monitor
+   • Memory leak detection
+
+
+📊 MONITORING ALERTS (P3 - Review within 24 hours)
+─────────────────────────────────────────────────────────────────────────────
+
+9. ELEVATED ERROR RATE
+   Metrik: 4xx error rate > 10%
+   Threshold: 10% of requests
+   Süre: 1 saat
+   Action: Email
+   
+   Implementasyon:
+   • Vercel Analytics
+   • Daily error report
+
+10. SLOW DATABASE QUERIES
+    Metrik: Supabase query time > 2 saniye
+    Threshold: 2000ms
+    Süre: 30 dakika
+    Action: Email
+    
+    Implementasyon:
+    • Supabase dashboard monitoring
+    • Query performance tracking
+
+11. HIGH API RATE LIMIT USAGE
+    Metrik: Groq/Gemini rate limit > 80%
+    Threshold: 80% of daily quota
+    Süre: Anında
+    Action: Email
+    
+    Implementasyon:
+    • API usage tracking
+    • Rate limit monitoring
+
+12. FAILED CRON JOBS
+    Metrik: Scheduled job failures
+    Threshold: 1+ failure
+    Süre: Hemen (non-critical jobs)
+    Action: Email
+    
+    Implementasyon:
+    • Vercel Cron monitoring
+    • Job execution logging
+    • Success/failure tracking
+
+13. SSL CERTIFICATE EXPIRATION
+    Metrik: SSL cert expiry date
+    Threshold: < 30 gün
+    Süre: Daily check
+    Action: Email
+    
+    Implementasyon:
+    • UptimeRobot SSL monitoring
+    • Vercel otomatik renewal monitoring
+
+14. LOW STORAGE SPACE (Supabase)
+    Metrik: Database storage
+    Threshold: > 80% used
+    Süre: Daily check
+    Action: Email
+    
+    Implementasyon:
+    • Supabase dashboard
+    • Storage quota monitoring
+
+
+================================================================================
+🔧 HEMEN YAPILMASI GEREKENLER (IMMEDIATE ACTIONS)
+================================================================================
+
+🔴 KRİTİK PRİORİTE (1-3 gün)
+─────────────────────────────────────────────────────────────────────────────
+
+1. SENTRY KURULUMU
+   Adımlar:
+   
+   a) Sentry SDK kurulumu:
+      ```bash
+      npm install @sentry/nextjs
+      npx @sentry/wizard@latest -i nextjs
+      ```
+   
+   b) Environment variables (.env.production):
+      ```
+      NEXT_PUBLIC_SENTRY_DSN=https://your-key@o123456.ingest.sentry.io/123456
+      SENTRY_ORG=your-org
+      SENTRY_PROJECT=taratarot
+      SENTRY_AUTH_TOKEN=your-auth-token
+      ```
+   
+   c) Sentry yapılandırması (sentry.client.config.ts):
+      ```typescript
+      import * as Sentry from '@sentry/nextjs';
+      
+      Sentry.init({
+        dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
+        tracesSampleRate: 0.1, // %10 trace
+        environment: process.env.NODE_ENV,
+        beforeSend(event) {
+          // Hassas verileri filtrele
+          if (event.request?.data) {
+            delete event.request.data.password;
+            delete event.request.data.token;
+          }
+          return event;
+        },
+      });
+      ```
+   
+   d) Logger'ı Sentry ile entegre et:
+      src/lib/logger.ts içinde:
+      ```typescript
+      import * as Sentry from '@sentry/nextjs';
+      
+      error(message: string, error?: unknown, context?: LogContext) {
+        // ... mevcut kod ...
+        
+        if (this.isProduction) {
+          Sentry.captureException(error, {
+            contexts: { custom: context },
+            level: 'error',
+          });
+        }
+      }
+      ```
+   
+   e) Error Boundary ekleme:
+      src/app/error.tsx oluştur
+   
+   Tahmini Süre: 4-6 saat
+   Maliyet: $0-29/ay (10,000 events/month free tier)
+
+2. UPTIME MONITORING (UptimeRobot - Ücretsiz)
+   Adımlar:
+   
+   a) UptimeRobot hesabı oluştur (https://uptimerobot.com)
+   
+   b) Monitörler ekle:
+      • Ana sayfa: https://taratarot.com
+      • API health: https://taratarot.com/api/health
+      • Auth endpoint: https://taratarot.com/api/auth/check
+      • Payment webhook: https://taratarot.com/api/webhook/shopier/health
+   
+   c) Kontrol aralığı: 5 dakika (free tier)
+   
+   d) Alert yapılandırması:
+      • Email: admin@taratarot.com
+      • SMS: +90 5XX XXX XX XX (opsiyonel, ücretli)
+      • Webhook: Slack integration
+   
+   e) SSL monitoring aktif et
+   
+   Tahmini Süre: 1 saat
+   Maliyet: Ücretsiz (50 monitor)
+
+3. HEALTH CHECK ENDPOINT
+   Dosya: src/app/api/health/route.ts
+   
+   ```typescript
+   import { NextResponse } from 'next/server';
+   import { supabase } from '@/lib/supabase/server';
+   
+   export async function GET() {
+     const checks = {
+       timestamp: new Date().toISOString(),
+       status: 'healthy',
+       services: {} as Record<string, any>,
+     };
+     
+     try {
+       // Database check
+       const { error: dbError } = await supabase
+         .from('profiles')
+         .select('count')
+         .limit(1);
+       
+       checks.services.database = {
+         status: dbError ? 'unhealthy' : 'healthy',
+         error: dbError?.message,
+       };
+       
+       // AI services check (optional)
+       const groqApiKey = process.env.GROQ_API_KEY;
+       checks.services.groq = {
+         status: groqApiKey ? 'configured' : 'missing',
+       };
+       
+       // Overall status
+       const isHealthy = Object.values(checks.services)
+         .every((s: any) => s.status === 'healthy' || s.status === 'configured');
+       
+       checks.status = isHealthy ? 'healthy' : 'unhealthy';
+       
+       return NextResponse.json(checks, {
+         status: isHealthy ? 200 : 503,
+       });
+     } catch (error) {
+       return NextResponse.json(
+         {
+           status: 'unhealthy',
+           error: 'Health check failed',
+           timestamp: new Date().toISOString(),
+         },
+         { status: 503 }
+       );
+     }
+   }
+   ```
+   
+   Tahmini Süre: 2 saat
+
+
+🟡 ORTA PRİORİTE (1-2 hafta)
+─────────────────────────────────────────────────────────────────────────────
+
+4. VERCEL MONITORING ENTEGRASYONU
+   
+   a) Vercel Dashboard'da alerts kur:
+      • Deployment failures
+      • Build errors
+      • High bandwidth usage
+      • Function timeout errors
+   
+   b) Vercel Log Drains (Sentry'ye):
+      Vercel Dashboard → Settings → Log Drains → Add Sentry
+   
+   c) Performance budgets:
+      vercel.json:
+      ```json
+      {
+        "github": {
+          "silent": true
+        },
+        "builds": [
+          {
+            "src": "package.json",
+            "use": "@vercel/next"
+          }
+        ],
+        "functions": {
+          "app/api/**/*.ts": {
+            "maxDuration": 10
+          }
+        }
+      }
+      ```
+
+5. SUPABASE MONITORING
+   
+   a) Supabase Dashboard → Reports:
+      • Database health
+      • API usage
+      • Auth metrics
+      • Storage usage
+   
+   b) Database performance:
+      • Slow query monitoring
+      • Index usage
+      • Connection pool
+   
+   c) Alert emails kur:
+      • 80% database size
+      • 80% bandwidth
+      • High error rate
+
+6. CUSTOM METRICS DASHBOARD
+   
+   Dosya: src/app/[locale]/admin/monitoring/page.tsx
+   
+   Özellikleri:
+   • Real-time error rate chart
+   • API response time trends
+   • Active users graph
+   • Payment success rate
+   • AI service health
+   • Recent errors list (Sentry widget)
+   
+   Tahmini Süre: 8-12 saat
+
+
+🟢 DÜŞÜK PRİORİTE (1-2 ay)
+─────────────────────────────────────────────────────────────────────────────
+
+7. LOG RETENTION POLICY
+   • Vercel logs: 1 week (free tier)
+   • Sentry events: 90 days
+   • Supabase system_performance: 30 days
+   • Cleanup script oluştur
+
+8. PERFORMANCE REGRESSION ALERTS
+   • Lighthouse CI entegrasyonu
+   • Bundle size monitoring
+   • Core Web Vitals tracking
+
+9. BUSINESS METRICS MONITORING
+   • Daily active users
+   • Reading completion rate
+   • Payment conversion rate
+   • Customer support ticket volume
+
+
+================================================================================
+💰 MALİYET TAHMİNİ (Monthly)
+================================================================================
+
+Ücretsiz Tier:
+─────────────────────────────────────────────────────────────────────────────
+• Sentry:          $0 (10,000 events/month)
+• UptimeRobot:     $0 (50 monitors, 5 min interval)
+• Vercel Analytics: $0 (included)
+• Supabase:        $0 (monitoring included)
+                   ────────────
+                   TOPLAM: $0/ay
+
+
+Ücretli Upgrade (Optional):
+─────────────────────────────────────────────────────────────────────────────
+• Sentry Team:     $26/ay (50,000 events/month)
+• UptimeRobot Pro: $18/ay (1 min interval, SMS alerts)
+• Better Uptime:   $29/ay (status page, incident management)
+                   ────────────
+                   TOPLAM: ~$73/ay
+
+
+================================================================================
+✅ ÖNERİLEN İMPLEMENTASYON PLANI
+================================================================================
+
+HAFTA 1:
+─────────────────────────────────────────────────────────────────────────────
+✅ Gün 1-2: Sentry kurulumu ve yapılandırması
+✅ Gün 3: Health check endpoint implementasyonu
+✅ Gün 4: UptimeRobot kurulumu ve test
+✅ Gün 5: Logger-Sentry entegrasyonu
+✅ Gün 6-7: Test ve doğrulama
+
+HAFTA 2:
+─────────────────────────────────────────────────────────────────────────────
+✅ Gün 8-9: Vercel alerts yapılandırması
+✅ Gün 10-11: Supabase monitoring alerts
+✅ Gün 12-14: Custom metrics dashboard
+
+HAFTA 3-4:
+─────────────────────────────────────────────────────────────────────────────
+✅ Performance monitoring
+✅ Log retention policies
+✅ Dokümantasyon
+✅ Team training
+
+
+================================================================================
+📚 REFERANS DOKÜMANTASYON
+================================================================================
+
+Mevcut Dosyalar:
+─────────────────────────────────────────────────────────────────────────────
+• MONITORING-SETUP.md       - Monitoring kurulum rehberi
+• ENV-AUDIT.md               - Environment değişkenleri audit
+• PRODUCTION-DEPLOYMENT.md   - Production deployment rehberi
+• REFactor-PLAN.md          - Sentry implementasyon örneği
+
+Dış Kaynaklar:
+─────────────────────────────────────────────────────────────────────────────
+• Sentry Docs:      https://docs.sentry.io/platforms/javascript/guides/nextjs/
+• Vercel Monitoring: https://vercel.com/docs/concepts/observability
+• UptimeRobot:      https://uptimerobot.com/api/
+• Supabase Metrics: https://supabase.com/docs/guides/platform/metrics
+
+
+================================================================================
+🎯 SONUÇ VE TAVSİYELER
+================================================================================
+
+DURUM ÖZETİ:
+─────────────────────────────────────────────────────────────────────────────
+✅ İyi Taraflar:
+   • Secure logging sistemi mevcut ve çalışıyor
+   • Error handling centralized ve iyi tasarlanmış
+   • System performance monitoring altyapısı var
+   • Vercel Analytics entegre
+
+❌ Kritik Eksikler:
+   • Sentry/external error tracking YOK → MUTLAKA KURULMALI
+   • Real-time alerting YOK → Production'da sorun tespit edilemez
+   • Uptime monitoring YOK → Downtime'ı kullanıcılar farkedene kadar bilemeyiz
+   • Health check endpoint YOK → Automated monitoring yapılamaz
+
+⚠️ RİSKLER:
+─────────────────────────────────────────────────────────────────────────────
+1. Production'da hata oluştuğunda bilgi alamazsınız (YÜKSEK RİSK)
+2. API/Database down olduğunda haberiniz olmaz (KRİTİK RİSK)
+3. Performance sorunları fark edilmez (ORTA RİSK)
+4. Payment failures izlenemez (YÜKSEK RİSK)
+
+✅ KRİTİK TAVSİYE:
+─────────────────────────────────────────────────────────────────────────────
+Production'a çıkmadan MUTLAKA şunları yapın:
+
+1. Sentry kurulumu (1 gün, ücretsiz)
+2. Health check endpoint (2 saat)
+3. UptimeRobot kurulumu (1 saat, ücretsiz)
+4. Temel alertler (email) (2 saat)
+
+Toplam: 2 gün, $0 maliyet
+
+Bu 4 adımı tamamlamadan production'a çıkmayın!
+
+
+================================================================================
+RAPOR SONU - Hazırlayan: AI Assistant | Tarih: 2025-10-13
+================================================================================
+
