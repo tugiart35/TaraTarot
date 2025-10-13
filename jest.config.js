@@ -7,7 +7,6 @@ const createJestConfig = nextJest({
 
 // Jest için özel konfigürasyon
 const customJestConfig = {
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   testEnvironment: 'jsdom',
   testPathIgnorePatterns: [
     '<rootDir>/.next/',
@@ -29,7 +28,7 @@ const customJestConfig = {
       statements: 70,
     },
   },
-  moduleNameMapping: {
+  moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/src/$1',
     '^@/components/(.*)$': '<rootDir>/src/components/$1',
     '^@/lib/(.*)$': '<rootDir>/src/lib/$1',
