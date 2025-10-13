@@ -1,0 +1,122 @@
+# ============================================================================
+# TaraTarot Production Deployment
+# Automated production deployment to Vercel
+# ============================================================================
+
+name: Production Deployment
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+jobs:
+  # ==========================================================================
+  # Deploy to Production
+  # ==========================================================================
+  deploy-production:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://taratarot.com
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Vercel CLI
+        run: npm install -g vercel@latest
+
+      - name: Pull Vercel environment
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Build project
+        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Deploy to Vercel Production
+        id: deploy
+        run: |
+          DEPLOYMENT_URL=$(vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }})
+          echo "url=$DEPLOYMENT_URL" >> $GITHUB_OUTPUT
+          echo "Production Deployment URL: $DEPLOYMENT_URL"
+
+      - name: Create deployment summary
+        run: |
+          echo "## 🚀 Production Deployment Successful!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "✅ **Deployment URL:** ${{ steps.deploy.outputs.url }}" >> $GITHUB_STEP_SUMMARY
+          echo "📦 **Commit:** ${{ github.sha }}" >> $GITHUB_STEP_SUMMARY
+          echo "👤 **Deployed by:** ${{ github.actor }}" >> $GITHUB_STEP_SUMMARY
+          echo "⏰ **Deployed at:** $(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_STEP_SUMMARY
+
+  # ==========================================================================
+  # Post-deployment Health Check
+  # ==========================================================================
+  health-check:
+    name: Health Check
+    runs-on: ubuntu-latest
+    needs: deploy-production
+
+    steps:
+      - name: Wait for deployment to stabilize
+        run: sleep 30
+
+      - name: Check production health
+        run: |
+          RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" https://taratarot.com/api/health)
+          if [ $RESPONSE -eq 200 ]; then
+            echo "✅ Health check passed - Status: $RESPONSE"
+          else
+            echo "❌ Health check failed - Status: $RESPONSE"
+            exit 1
+          fi
+
+      - name: Test main endpoints
+        run: |
+          echo "Testing main endpoints..."
+          curl -f https://taratarot.com/ || exit 1
+          curl -f https://taratarot.com/tr || exit 1
+          curl -f https://taratarot.com/en || exit 1
+          curl -f https://taratarot.com/sr || exit 1
+          echo "✅ All endpoints responding"
+
+  # ==========================================================================
+  # Notify Deployment Status
+  # ==========================================================================
+  notify:
+    name: Notify Deployment
+    runs-on: ubuntu-latest
+    needs: [deploy-production, health-check]
+    if: always()
+
+    steps:
+      - name: Check deployment status
+        id: status
+        run: |
+          if [[ "${{ needs.deploy-production.result }}" == "success" ]] && \
+             [[ "${{ needs.health-check.result }}" == "success" ]]; then
+            echo "status=✅ SUCCESS" >> $GITHUB_OUTPUT
+            echo "color=good" >> $GITHUB_OUTPUT
+          else
+            echo "status=❌ FAILED" >> $GITHUB_OUTPUT
+            echo "color=danger" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Deployment notification
+        run: |
+          echo "Production Deployment: ${{ steps.status.outputs.status }}"
+          echo "Commit: ${{ github.sha }}"
+          echo "Deployed by: ${{ github.actor }}"
+          # Add your notification service here (Slack, Discord, Email, etc.)

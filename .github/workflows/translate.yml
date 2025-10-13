@@ -1,0 +1,46 @@
+name: Auto Translate with MarianMT
+
+on:
+  workflow_dispatch: # Manuel tetikleme
+  push:
+    paths:
+      - 'messages/tr.json' # tr.json değiştiğinde otomatik çalış
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📂 Checkout
+        uses: actions/checkout@v3
+
+      - name: 🐍 Python Kurulumu
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: 📦 Bağımlılıkları Yükle
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements-translate.txt
+
+      - name: 🌍 Çeviri Yap (tr -> en + sr)
+        run: |
+          python scripts/translate-with-marian.py
+        env:
+          # MarianMT için API key gerekmez!
+          PYTHONUNBUFFERED: 1
+
+      - name: 💾 Değişiklikleri Commit Et
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add messages/en.json messages/sr.json
+          git diff --staged --quiet || git commit -m "🌍 Auto-translate: tr.json -> en.json + sr.json [MarianMT]"
+
+      - name: 🚀 Push
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
